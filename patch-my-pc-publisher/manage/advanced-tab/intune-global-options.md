@@ -2,14 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **Intune Global Options** section of Patch My PC (PMPC) Publisher controls how the Publisher interacts with Microsoft Intune at a global level. They are primarily used to support advanced scenarios such as content extraction from Intune packages and tuning Microsoft Graph query behavior for large tenants.
 
-![Intune Global Options](/_images/image-(161).png "Intune Global Options")
+![Intune Global Options](../../../.gitbook/assets/image-\(161\).png)
 
 ## Store encryption information locally to allow extraction of Win32 .intunewin files
 
@@ -24,10 +23,9 @@ To enable encryption key storage, follow these steps.
 3. Under Intune Global Options, enable the setting labeled **Store encryption information locally to allow extraction of Win32 .intunewin files**.
 4. Click Apply or Save and Close.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Encryption information is only available for apps created after this option is enabled. You cannot extract content from Intune apps or updates that were created before the option was turned on.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Encryption information is only available for apps created after this option is enabled. You cannot extract content from Intune apps or updates that were created before the option was turned on.
 
 ### Extract Content
 
@@ -40,19 +38,18 @@ To extract the content for eligible Win32 apps:
 3. Right click an application or update.
 4. Select **Extract Package**.
 
-![Extract Package](/_images/image-(3954).png "Extract Package")
+![Extract Package](../../../.gitbook/assets/image-\(3954\).png)
 
 5. Specify an output path or browse to a folder.
 6. Click Extract.
 
-![Extraction Complete](/_images/image-(3955).png "Extraction Complete")
+![Extraction Complete](../../../.gitbook/assets/image-\(3955\).png)
 
 After extraction completes, File Explorer opens to the selected directory and displays the extracted content.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If the Extract Content option is unavailable or greyed out, the encryption information was not collected at publish time. This typically occurs when the setting was enabled after the application or update was originally published.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If the Extract Content option is unavailable or greyed out, the encryption information was not collected at publish time. This typically occurs when the setting was enabled after the application or update was originally published.
 
 ## Number of items returned from Microsoft Graph
 

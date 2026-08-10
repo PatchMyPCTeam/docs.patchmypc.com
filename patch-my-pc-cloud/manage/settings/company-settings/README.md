@@ -9,21 +9,20 @@ All user company-related tasks are performed from the **Company** node of the po
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings | Company**
 
-![Navigating to "Settings | Company"](/_images/image-(1380).png "Navigating to “Settings | Company”")
+![Navigating to "Settings | Company"](../../../../.gitbook/assets/image-\(1380\).png)
 
 The **Company** screen is then displayed.
 
-!["Company" screen](/_images/image-(3390).png "“Company” screen")
+!["Company" screen](../../../../.gitbook/assets/image-\(3390\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Company Reference](company-reference.md) for more details on each of the available settings on this screen and their purpose.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Company Reference]\(company-reference.md) for more details on each of the available settings on this screen and their purpose.
 
 3. Make any required changes, then click **Save**.
 
-![Clicking "Save" to save changes](/_images/image-(3389).png "Clicking &#x22;Save&#x22; to save changes")
+![Clicking "Save" to save changes](../../../../.gitbook/assets/image-\(3389\).png)
 
 The **Success - Company information updated** notification is shown.
 
-!["Success - Company information updated" notification](/_images/image-(3391).png "&#x22;Success - Company information updated&#x22; notification")
+!["Success - Company information updated" notification](../../../../.gitbook/assets/image-\(3391\).png)

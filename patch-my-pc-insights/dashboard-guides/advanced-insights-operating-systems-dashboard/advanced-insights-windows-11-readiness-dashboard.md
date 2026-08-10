@@ -6,7 +6,7 @@ description: Windows 11 Upgrade Readiness for Windows 10 Client Devices
 
 _Applies to: Patch My PC Advanced Insights_
 
-![](/_images/image-(4751).png)
+![](../../../.gitbook/assets/image-\(4751\).png)
 
 On the top bar of this page we are showing:
 
@@ -15,15 +15,15 @@ On the top bar of this page we are showing:
 * Ready for Upgrade - Count for all managed Windows 10 client devices that can be immediately upgraded to Windows 11
 * Cannot Upgrade - Count of all managed Windows 10 client devices that cannot be upgraded to Windows 11
 
-The donut chart for OS Upgrade Readiness and Cannot Upgrade Reason you have a properties which you can toggle between the different versions of Windows 11.  On these two donut charts you also have the ability to view the chart data and export from the cog icon.
+The donut chart for OS Upgrade Readiness and Cannot Upgrade Reason you have a properties which you can toggle between the different versions of Windows 11. On these two donut charts you also have the ability to view the chart data and export from the cog icon.
 
-![](/_images/image-(4752).png "OS Update Readiness")
+![](../../../.gitbook/assets/image-\(4752\).png)
 
-![](/_images/image-(4753).png "Cannot Upgrade Reason")
+![](../../../.gitbook/assets/image-\(4753\).png)
 
 The last chart on the left is the Windows 11 Upgrade Readiness Issues chart where you can see the reasons for why the devices are unable to upgrade to Windows 11.
 
-![](/_images/image-(2854).png "Windows 11 Upgrade Readiness Issues")
+![](../../../.gitbook/assets/image-\(2854\).png)
 
 The Reasons column have the following conditions which are flagged if a device is marked as unable to upgrade (Red) to Windows 11:
 
@@ -36,6 +36,4 @@ The Reasons column have the following conditions which are flagged if a device i
 * If the system is in SMode and not a home (core) sku (RedReason=SModeState)
 * If the system drive size is < 64 Gb (RedReason=SystemDriveSize)
 
-<blockquote class="wp-block-quote">
-<p>This information is listed on <a href="https://learn.microsoft.com/en-us/mem/configmgr/osd/deploy-use/manage-windows-11-readiness-dashboard">https://learn.microsoft.com/en-us/mem/configmgr/osd/deploy-use/manage-windows-11-readiness-dashboard</a></p>
-</blockquote>
+> This information is listed on [https://learn.microsoft.com/en-us/mem/configmgr/osd/deploy-use/manage-windows-11-readiness-dashboard](https://learn.microsoft.com/en-us/mem/configmgr/osd/deploy-use/manage-windows-11-readiness-dashboard)

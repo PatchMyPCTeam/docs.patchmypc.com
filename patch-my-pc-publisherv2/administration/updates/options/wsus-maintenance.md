@@ -8,7 +8,7 @@ The **WSUS Maintenance** section provides options to help manage and clean up th
 
 These actions cannot be triggered manually, if enabled, they are performed at the end of a publishing sync cycle.
 
-![WSUS Maintenance Options](/_images/image-(92).png "WSUS Maintenance Options")
+![WSUS Maintenance Options](../../../../.gitbook/assets/image-\(92\).png)
 
 ## Show unreferenced WSUS folders
 
@@ -29,7 +29,7 @@ The results displayed are identifiable by the following fields:
 
 In the example below, a single, unreferenced folder, was found in the UpdateServicesPackages folder. This is the folder where third-party updates are initially staged before being compressed to a CAB file, signed, and then finally copied to the WSUS Content folder.
 
-![Unreferenced WSUS Folders](/_images/image-(73).png "Unreferenced WSUS Folders")
+![Unreferenced WSUS Folders](../../../../.gitbook/assets/image-\(73\).png)
 
 The **Delete selected** action permanently removes the selected unreferenced folders from the WSUS content directory.
 
@@ -37,10 +37,9 @@ Use this option to safely reclaim disk space after reviewing the list of unrefer
 
 ## Enable automatic deletion and cleanup of the UpdateServicesPackages folder
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>By default, **Enable automatic deletion and cleanup of the UpdateServicesPackages folder** is enabled.&#x20;</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> By default, \*\*Enable automatic deletion and cleanup of the UpdateServicesPackages folder\*\* is enabled.
 
 When enabled, the Publisher automatically removes WSUS content associated with declined or deleted third party updates.
 
@@ -50,10 +49,9 @@ This option helps prevent long term WSUS content growth and reduces disk usage w
 
 ### Only delete declined Patch My PC third party updates
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>By default, **Only delete declined Patch My PC third party updates** is enabled.</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> By default, \*\*Only delete declined Patch My PC third party updates\*\* is enabled.
 
 When enabled, automatic cleanup is limited to updates published by Patch My PC. Content from other third party catalogs such as Ivanti, Dell, HP, or Lenovo is not removed, even if those updates are declined.
 
@@ -65,7 +63,6 @@ When **Automatically run the Unneeded update files clean action in the WSUS Serv
 
 This action helps clean up unused content in the WSUS content directory and complements the UpdateServicesPackages cleanup by removing additional unused files managed by WSUS.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>If you have downstream WSUS servers that do not share the same SUSDB, you should give careful consideration to enabling this automatic deletion and cleanup. In WSUS hierarchies, cleanup should be performed from the bottom up to avoid removing content that downstream servers still require.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> If you have downstream WSUS servers that do not share the same SUSDB, you should give careful consideration to enabling this automatic deletion and cleanup. In WSUS hierarchies, cleanup should be performed from the bottom up to avoid removing content that downstream servers still require.

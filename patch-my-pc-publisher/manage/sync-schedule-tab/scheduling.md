@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Scheduling** section of the **Sync Schedule** tab of the Patch My PC (PMPC) Publisher allows you to configure multiple scheduling options to control how often the publishing service runs.
 
-!['Scheduling' section](/_images/image-(4861).png "&#x27;Scheduling&#x27; section")
+!['Scheduling' section](../../../.gitbook/assets/image-\(4861\).png)
 
 The available options are:
 
@@ -21,9 +21,8 @@ The available options are:
 * **Disable Sync Schedule**\
   Use this option to prevent the publishing service from running automatically. When selected, all publishing actions require a [manual sync](sync-status.md#run-publishing-service-sync). This is useful for testing or tightly controlled publishing environments.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Publisher uses a single, global Sync Schedule that applies across all tabs and products. You cannot configure different Sync Schedules per platform or product.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Publisher uses a single, global Sync Schedule that applies across all tabs and products. You cannot configure different Sync Schedules per platform or product.
 
 The **Next scheduled sync** field shows the date and time the next scheduled Sync Schedule will run so you can check your understanding of how you think you've configured the Sync Schedule with how Publisher will actually run it.

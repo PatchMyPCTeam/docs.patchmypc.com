@@ -2,19 +2,17 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **Publishing Options** section in Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in Intune when using the Publisher. These settings apply globally to all applications created from the Intune Apps and Intune Options tabs and directly influence application lifecycle behavior.
 
-![Application Options](/_images/image-(251).png "Application Options")
+![Application Options](../../../../.gitbook/assets/image-\(251\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>Some options in the **Intune Win32 Application Options** section are global defaults. These settings can be overridden at the **vendor** or **product** level within the [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md). When a more specific customization exists at a lower level, it takes precedence over the global setting, following standard product tree inheritance behavior.</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> Some options in the \*\*Intune Win32 Application Options\*\* section are global defaults. These settings can be overridden at the \*\*vendor\*\* or \*\*product\*\* level within the \[product tree]\(../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md). When a more specific customization exists at a lower level, it takes precedence over the global setting, following standard product tree inheritance behavior.
 
 ## Digitally sign the detection method script and enforce signature checking on the application in Intune
 
@@ -22,7 +20,7 @@ When the **Digitally sign the detection method script and enforce signature chec
 
 Specifically, the Publisher sets the **Enforce script signature check and run script silently** property on the Win32 application’s detection and/or requirement rule in Intune. This is an application-level setting and does not modify PowerShell execution policy or device security configuration.
 
-![Enforce script signature check](/_images/image-(3857).png "Enforce script signature check")
+![Enforce script signature check](../../../../.gitbook/assets/image-\(3857\).png)
 
 This option is intended for environments that already enforce signed PowerShell scripts, such as those using an AllSigned execution policy or application control solutions like AppLocker or Windows Defender Application Control (WDAC). By signing the detection and requirement scripts and enabling signature enforcement on the application, the Publisher allows them to run silently and unblocked where unsigned scripts would otherwise be blocked or require user confirmation.
 
@@ -32,16 +30,16 @@ To select a code-signing certificate for signing detection and requirement scrip
 2. Select Browse next to Select code-signing certificate.
 3. In the certificate selection window, choose a valid code-signing certificate from the Local Computer – Personal certificate store.
 
-![Browse the Local Computer Store for a Code-Signing Certificate](/_images/image-(86).png "Browse the Local Computer Store for a Code-Signing Certificate")
+![Browse the Local Computer Store for a Code-Signing Certificate](../../../../.gitbook/assets/image-\(86\).png)
 
 4. Select OK to confirm the certificate selection.
 5. Select OK again to save the Intune Options.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If the Publisher is also being used for WSUS or ConfigMgr publishing, it is acceptable to select the existing WSUS code-signing certificate, if present. This allows the same trusted certificate to be reused for both third-party update publishing and Intune Win32 detection and requirement script signing.</p>
-<p>The certificate</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If the Publisher is also being used for WSUS or ConfigMgr publishing, it is acceptable to select the existing WSUS code-signing certificate, if present. This allows the same trusted certificate to be reused for both third-party update publishing and Intune Win32 detection and requirement script signing.
+>
+> The certificate
 
 ### Copy assignments from the previous release when a new application or update is published
 
@@ -51,10 +49,9 @@ When **Copy the assignments from previously created applications when an updated
 
 By enabling the option, the assumption is that any assignments present on the previous application represent the administrator’s intended targeting and should continue to apply to the updated version. This ensures assignment targeting remains consistent across application updates without requiring manual reassignment.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Assignments are copied only at application creation time. Enabling this option after a newer version already exists in Intune does not apply assignments, from an older version of the application, retroactively.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Assignments are copied only at application creation time. Enabling this option after a newer version already exists in Intune does not apply assignments, from an older version of the application, retroactively.
 
 ### Delete assignments from previously created applications when an updated application is created
 
@@ -62,10 +59,9 @@ When **Delete assignments from previously created applications when an updated a
 
 If application retention is enabled, older Win32 applications may still exist in the Intune admin center and would otherwise remain assigned. Removing assignments from the previous version ensures that only the latest version of the application is targeted to Microsoft Entra ID groups, avoiding multiple versions being deployed unnecessarily to the same devices or users.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Assignments are removed only at the time a new application is created. If this option is enabled after a newer version already exists in Intune, assignments are not removed retroactively.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Assignments are removed only at the time a new application is created. If this option is enabled after a newer version already exists in Intune, assignments are not removed retroactively.
 
 ## Application-Specific Options
 
@@ -79,12 +75,11 @@ This ensures that when new devices go through Autopilot, the Enrollment Status P
 
 Applications must be explicitly associated with an Enrollment Status Page profile using the [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md). This is done by right-clicking a product and selecting [Manage ESP profiles](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-esp-profiles.md), where you choose which ESP configuration the application should be included in. For more information on all of the available right-click customization options, see [Customizations (Right-Click Options)](../../../../patch-my-pc-publisherv2/customizations-right-click-options/).
 
-![Manage ESP Profiles in the Product Tree](/_images/image-(258).png "Manage ESP Profiles in the Product Tree")
+![Manage ESP Profiles in the Product Tree](../../../../.gitbook/assets/image-\(258\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Updating the Enrollment Status Page association ensures the correct application is referenced during Autopilot, but it does not create or modify application assignments. The newly published application must still be targeted with a Required assignment to the devices or groups used during Autopilot.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Updating the Enrollment Status Page association ensures the correct application is referenced during Autopilot, but it does not create or modify application assignments. The newly published application must still be targeted with a Required assignment to the devices or groups used during Autopilot.
 
 ### Update application dependencies from previously created applications when an updated application is created
 
@@ -92,19 +87,17 @@ When **Update application dependencies from previously created applications when
 
 If a Win32 application has dependencies that reference other Win32 applications created by the Publisher, the Publisher updates those dependency references to point to the latest published versions when a new application version is created. This ensures dependency chains remain valid and up to date without requiring administrators to manually maintain dependencies after each update.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Applications that are part of an active dependency chain remain protected from deletion. However, once dependencies are replaced with newer versions, older applications created by the publisher, that are no longer referenced, may become eligible for deletion based on the application retention policy configured in the Publisher.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Applications that are part of an active dependency chain remain protected from deletion. However, once dependencies are replaced with newer versions, older applications created by the publisher, that are no longer referenced, may become eligible for deletion based on the application retention policy configured in the Publisher.
 
 ### Copy requirements from previous release when a new application or update is published
 
 When the **Copy requirements from previous release when a new application or update is published** option is enabled, any customer-defined Win32 requirement rules added to the previous application after it was initially published are copied forward and applied to future Win32 applications created by Publisher.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Requirement rules are copied forward only when a new application is created. If this option is enabled after a newer version already exists in Intune, requirements are not copied retroactively.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Requirement rules are copied forward only when a new application is created. If this option is enabled after a newer version already exists in Intune, requirements are not copied retroactively.
 
 ### Delete any previously created applications when an updated application is published
 
@@ -123,12 +116,13 @@ Retention settings can be overideden at the vendor and product level in the [pro
 * Applications with a faster release cadence, such as web browsers, may retain **3** to **5** versions.
 * The maximum supported retention value is **10**.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>The Publisher tracks application retention based on catalog metadata, which includes the product IDs for the most recent 10 versions of an application. This means retention and cleanup decisions can be made only for those versions that still fall within the latest 10 versions tracked by the catalog.</p>
-<p>If older Win32 applications exist in Intune that fall outside of the last 10 tracked versions, the Publisher can no longer associate them with the product lifecycle. Even if retention is enabled, those older applications are not automatically managed or removed.</p>
-<p>In these cases, any applications that fall outside the tracked window must be reviewed and cleaned up manually using the [Intune Application Manager](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/form-controls/intune-application-manager.md).</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> The Publisher tracks application retention based on catalog metadata, which includes the product IDs for the most recent 10 versions of an application. This means retention and cleanup decisions can be made only for those versions that still fall within the latest 10 versions tracked by the catalog.
+>
+> If older Win32 applications exist in Intune that fall outside of the last 10 tracked versions, the Publisher can no longer associate them with the product lifecycle. Even if retention is enabled, those older applications are not automatically managed or removed.
+>
+> In these cases, any applications that fall outside the tracked window must be reviewed and cleaned up manually using the \[Intune Application Manager]\(../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/form-controls/intune-application-manager.md).
 
 ### Retention Best Practice
 
@@ -152,10 +146,10 @@ If an installation exceeds the configured runtime, Intune marks the install as f
 
 This setting is visible on the Program tab of the Win32 application properties in the Intune admin center.
 
-![Installation time required](/_images/image-(241).png "Installation time required")
+![Installation time required](../../../../.gitbook/assets/image-\(241\).png)
 
 ## Enable 'Allow available uninstall'
 
 When **Enable "Allow available uninstall"** is enabled, the Publisher configures Win32 applications in Intune to allow users to uninstall the application from the Company Portal when the app is assigned as Available.
 
-![Allow available uninstall](/_images/image-(3859).png "Allow available uninstall")
+![Allow available uninstall](../../../../.gitbook/assets/image-\(3859\).png)

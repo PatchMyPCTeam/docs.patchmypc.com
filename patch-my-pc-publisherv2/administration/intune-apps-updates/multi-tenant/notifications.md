@@ -14,12 +14,11 @@ If an MSP enables email notifications, the configured email address will receive
 
 The email clearly separates activity by tenant so administrators can see which applications or updates were published for each customer.
 
-![Multi-tenant Email Notifications](/_images/image-(4125).png "Multi-tenant Email Notifications")
+![Multi-tenant Email Notifications](../../../../.gitbook/assets/image-\(4125\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Email notifications cannot be configured per tenant. It is not possible to send separate synchronization emails to individual customer email addresses. For this reason, MSPs typically configure a centralized operations or service mailbox to receive synchronization notifications.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Email notifications cannot be configured per tenant. It is not possible to send separate synchronization emails to individual customer email addresses. For this reason, MSPs typically configure a centralized operations or service mailbox to receive synchronization notifications.
 
 ## Webhook Notifications
 
@@ -40,7 +39,7 @@ This enables flexible notification routing. For example:
 
 Within the webhook configuration window, use the **Tenant Selection** section to control scope. If no tenants are selected, the webhook applies to all tenants. If one or more tenants are selected, the webhook applies only to the selected tenants.
 
-![Tenant Specific Webhook Notifications](/_images/image-(4128).png "Tenant Specific Webhook Notifications")
+![Tenant Specific Webhook Notifications](../../../../.gitbook/assets/image-\(4128\).png)
 
 This provides granular control over how and where notifications are delivered in a multi-tenant Publisher scneario.
 

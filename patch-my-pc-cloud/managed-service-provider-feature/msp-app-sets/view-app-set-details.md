@@ -4,7 +4,7 @@ _Applies to: Patch My PC Cloud_
 
 Once you have created an App Set in Patch My PC (PMPC) Cloud, you can click on it to open its properties page.
 
-![Opening the "Properties" page of an App Set.](/_images/image-(3484).png "Opening the “Properties” page of an App Set.")
+![Opening the "Properties" page of an App Set.](../../../.gitbook/assets/image-\(3484\).png)
 
 The properties page shows more detailed information about the App Set, including:
 
@@ -17,16 +17,15 @@ The properties page shows more detailed information about the App Set, including
 
 Clicking **Edit** allows you to [Edit the App Set](edit-an-msp-app-set.md).
 
-![Clicking "Edit"](/_images/image-(3485).png "Clicking “Edit”")
+![Clicking "Edit"](../../../.gitbook/assets/image-\(3485\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Only App Sets with a **Status** of **Success** can be edited.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Only App Sets with a \*\*Status\*\* of \*\*Success\*\* can be edited.
 
 Clicking **Delete** allows you to [Delete the App Set](delete-an-msp-app-set.md).
 
-![](/_images/image-(3486).png)
+![](../../../.gitbook/assets/image-\(3486\).png)
 
 Clicking **More Info** at the bottom of the property page displays the **Deployment Info** page, which gives a breakdown by each customer within the App Set of the deployment status of the apps within the App Set:
 
@@ -34,21 +33,20 @@ Clicking **More Info** at the bottom of the property page displays the **Deploym
 * Yellow means **In progress**
 * Red means **Failed**
 
-!["Deployment Info" page](/_images/image-(3487).png "“Deployment Info” page")
+!["Deployment Info" page](../../../.gitbook/assets/image-\(3487\).png)
 
 Clicking a specific row expands it to show more details for each app within the App Set for the specific customer.
 
-![Clicking a specific row to see more detailed information](/_images/image-(3488).png "Clicking a specific row to see more detailed information")
+![Clicking a specific row to see more detailed information](../../../.gitbook/assets/image-\(3488\).png)
 
 From this window, you can click **Assignment List**.
 
-![Clicking "Assignment List"](/_images/image-(3489).png "Clicking “Assignment List”")
+![Clicking "Assignment List"](../../../.gitbook/assets/image-\(3489\).png)
 
 This will show the list of assignments defined for this App Set for this customer.
 
-![List of assignments for this App Set for this customer](/_images/image-(3490).png "List of assignments for this App Set for this customer")
+![List of assignments for this App Set for this customer](../../../.gitbook/assets/image-\(3490\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The deployment **Status** automatically updates when viewed from the **Deployment Info** section of the App Set’s properties. You do not need to refresh the Portal.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> The deployment \*\*Status\*\* automatically updates when viewed from the \*\*Deployment Info\*\* section of the App Set’s properties. You do not need to refresh the Portal.

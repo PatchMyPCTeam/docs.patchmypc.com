@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 Webhook notifications are commonly used to notify operations, security, or platform teams when publishing events occur.
 
-![Webhook Notifications](/_images/image-(4208).png "Webhook Notifications")
+![Webhook Notifications](../../../../.gitbook/assets/image-\(4208\).png)
 
 When webhook notifications are enabled, the Publisher sends HTTP POST messages to the configured webhook endpoints based on publishing events and the selected notification level. Each configured webhook represents a single destination, such as a Teams channel or Slack workspace.
 
@@ -22,7 +22,7 @@ Webhook notifications must be enabled before individual webhooks can be configur
 2. Expand **Webhook Notifications**.
 3. Select **Send Webhook Reports** to enable webhook notifications.
 
-![Send Webhook Reports](/_images/image-(31).png "Send Webhook Reports")
+![Send Webhook Reports](../../../../.gitbook/assets/image-\(31\).png)
 
 ## Add a Webhook
 
@@ -30,7 +30,7 @@ Use this option to create a new webhook notification.
 
 1. To add a new webhook notification, click **Add**.
 
-![Add a Webhook Notification](/_images/image-(32).png "Add a Webhook Notification")
+![Add a Webhook Notification](../../../../.gitbook/assets/image-\(32\).png)
 
 2. Continue to [Edit a Webhook](webhook-notification-settings.md#edit-a-webhook).
 
@@ -43,7 +43,7 @@ The **Edit** option opens the webhook configuration dialog. This dialog is used 
 * After clicking [Add](webhook-notification-settings.md#add-a-webhook) when creating a new webhook.
 * When selecting an existing webhook and clicking **Edit**.
 
-![Edit a Webhook](/_images/image-(33).png "Edit a Webhook")
+![Edit a Webhook](../../../../.gitbook/assets/image-\(33\).png)
 
 In both cases, the same configuration screen is used to define or modify the [webhook configuration](webhook-configuration.md).
 
@@ -51,7 +51,7 @@ In both cases, the same configuration screen is used to define or modify the [we
 
 Use this option to create a new webhook configuration based on an existing webhook.
 
-![Copy a Webhook](/_images/image-(34).png "Copy a Webhook")
+![Copy a Webhook](../../../../.gitbook/assets/image-\(34\).png)
 
 When you select a webhook and click Copy, the [webhook configuration](webhook-configuration.md) dialog opens with settings pre populated from the selected webhook. You must provide a new **Name** and **Webhook URL** before the webhook can be saved.
 
@@ -63,12 +63,11 @@ Use this option to delete a webhook.
 
 When you select a webhook and click **Remove**, the webhook is removed from the list and will no longer receive notifications.
 
-![Remove a Webhook](/_images/image-(35).png "Remove a Webhook")
+![Remove a Webhook](../../../../.gitbook/assets/image-\(35\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and re-open the Publisher without savings the Publisher settings, the deleted webhook is restored.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and re-open the Publisher without savings the Publisher settings, the deleted webhook is restored.
 
 ## Test a Webhook
 
@@ -76,14 +75,14 @@ Use this option to validate an individual webhook configuration by sending a tes
 
 Each webhook is tested independently. Only the selected webhook is used when the test is run.
 
-![Test a Webhook](/_images/image-(36).png "Test a Webhook")
+![Test a Webhook](../../../../.gitbook/assets/image-\(36\).png)
 
 The Publisher sends a test HTTP POST message to the webhook URL configured for the selected webhook.
 
 If the test is successful, a confirmation message is displayed indicating that the test webhook notification was sent successfully. The message should also appear in the target system, such as a Microsoft Teams channel or Slack workspace.
 
-![Successful Webhook Test](/_images/image-(3900).png "Successful Webhook Test")
+![Successful Webhook Test](../../../../.gitbook/assets/image-\(3900\).png)
 
 If the test fails, an error message is displayed. The error typically indicates connectivity issues, an invalid webhook URL, or a response error from the destination service. The webhook must be corrected before notifications will work.
 
-![Failed Webhook Test](/_images/image-(3899).png "Failed Webhook Test")
+![Failed Webhook Test](../../../../.gitbook/assets/image-\(3899\).png)

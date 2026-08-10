@@ -8,14 +8,17 @@ description: >-
 
 _Applies to: Patch My PC Advanced Insights_
 
-<blockquote class="wp-block-quote">
-<p>Quick start for Remote Control:</p>
-<p>1. Create a folder on your machine C:\AdvInsRemoteControl</p>
-<p>2. Copy C:\Program Files (x86)\Advanced Insights\Api\Installers\AdvInsRemoteControl.exe file from your Advanced Insights installation into this folder (needs to be unzipped)</p>
-<p>3. Copy CmRcViewer.exe RdpCoreSccm.dll and the relevant locale folder into the C:\AdvInsRemote Control folder too.</p>
-<p>4. Run AdvInsRemoteControl.exe from Windows Explorer to register it</p>
-<p>5. You can now invoke remote control from the Advanced Insights portal</p>
-</blockquote>
+> Quick start for Remote Control:
+>
+> 1\. Create a folder on your machine C:\AdvInsRemoteControl
+>
+> 2\. Copy C:\Program Files (x86)\Advanced Insights\Api\Installers\AdvInsRemoteControl.exe file from your Advanced Insights installation into this folder (needs to be unzipped)
+>
+> 3\. Copy CmRcViewer.exe RdpCoreSccm.dll and the relevant locale folder into the C:\AdvInsRemote Control folder too.
+>
+> 4\. Run AdvInsRemoteControl.exe from Windows Explorer to register it
+>
+> 5\. You can now invoke remote control from the Advanced Insights portal
 
 To launch the Configuration Manager remote control action from the client actions menu in Advanced Insights the user must have some files from the Configuration Manager console install directory and an Advanced Insights utility. If the ConfigMgr console is installed on the user’s computer then no additional configuration is required.
 
@@ -33,11 +36,11 @@ On each Advanced Insight user’s computer, copy these files and folder to a loc
 
 We also need a copy of the Advanced Insights utility AdvInsRemoteControl.exe stored in the same location. The user is prompted to download and run this from the Advanced Insights portal the first time they try to use remote control if the app has not already been executed.
 
-![](/_images/image-(1785).png "Correct folder structure for UK language")
+![](../.gitbook/assets/image-\(1785\).png)
 
 ### The AdvInsRemoteControl.exe file
 
-AdvInsRemoteControl.exe is included with the installation of Advanced Insights in the folder C:\Program Files (x86)\Advanced Insights\Api\Installers. It is a DotNet Core application which handles calling the Configuration Manager Remote Control utility from the Advanced Insights website. On first run AdvInsRemoteControl.exe registers itself in the Registry as a class type under `Computer\HKEY_CURRENT_USER\Software\Classes\cmrc`&#x20;
+AdvInsRemoteControl.exe is included with the installation of Advanced Insights in the folder C:\Program Files (x86)\Advanced Insights\Api\Installers. It is a DotNet Core application which handles calling the Configuration Manager Remote Control utility from the Advanced Insights website. On first run AdvInsRemoteControl.exe registers itself in the Registry as a class type under `Computer\HKEY_CURRENT_USER\Software\Classes\cmrc`
 
 This allows the Advanced Insights website to invoke the ConfigMgr Remote Control agent when required. If you delete or move the AdvInsRemoteControl.exe you can reregister it simply by running it again from Windows Explorer.
 

@@ -8,25 +8,24 @@ When migrating a Configuration Manager (ConfigMgr) application to a Patch My PC 
 * On the **Configurations** tab, under the **Install Parameters** tool/section, check that the **Additional Argument** field is correct and includes any required additional arguments/command line options.
 * On the **Assignments** tab, you can click **ConfigMgr Assignment List** to see a list of the current assignments in ConfigMgr, so you can then review this and set these up in Intune accordingly.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>We do not match ConfigMgr assignments to Entra ID groups. You need to manually configure your assignments during app deployment.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> We do not match ConfigMgr assignments to Entra ID groups. You need to manually configure your assignments during app deployment.
 
 Once you have added your assignments, click **Migrate** and the **Deployment Created, Migration Pending** notification is shown.
 
-![Application migration status](/_images/image-(606).png "Application migration status")
+![Application migration status](../../../.gitbook/assets/image-\(606\).png)
 
 The **Status** field also updates to **In Progress** whilst the deployment is created, with any required content (such as extra files) being zipped and sent to Azure Blob Storage.
 
 You can also monitor deployment progress by clicking the **Deployments** node and watching for the deployment **Status** to change to **Success**.
 
-![Deployment created for migrated application](/_images/image-(3677).png "Deployment created for migrated application")
+![Deployment created for migrated application](../../../.gitbook/assets/image-\(3677\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>To see the migrated app in Intune, within the Microsoft Intune admin center navigate to:</p>
-<p>**Home | Apps | Windows | Windows | Windows Apps | <**_**app\_name**_**>**</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> To see the migrated app in Intune, within the Microsoft Intune admin center navigate to:
+>
+> \*\*Home | Apps | Windows | Windows | Windows Apps | <\*\*\_\*\*app\\\_name\*\*\_\*\*>\*\*
 
-![Migrated application as seen in the Intune admin center](/_images/image-(608).png "Migrated application as seen in the Intune admin center")
+![Migrated application as seen in the Intune admin center](../../../.gitbook/assets/image-\(608\).png)

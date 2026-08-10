@@ -2,9 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-When you click the **Feedback** tab of Patch My PC (PMPC) Publisher, the **Share a suggestion or idea** pop-up appears.&#x20;
+When you click the **Feedback** tab of Patch My PC (PMPC) Publisher, the **Share a suggestion or idea** pop-up appears.
 
-!['Share a suggestion or idea' pop-up](/_images/image-(4471).png "&#x27;Share a suggestion or idea&#x27; pop-up")
+!['Share a suggestion or idea' pop-up](../../../.gitbook/assets/image-\(4471\).png)
 
 Clicking either **Like** or **Dislike** opens a feedback form allowing you to share more information.
 

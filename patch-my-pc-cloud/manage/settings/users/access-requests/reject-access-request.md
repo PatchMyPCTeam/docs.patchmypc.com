@@ -6,20 +6,17 @@ To reject an access request in Patch My PC (PMPC) Cloud:
 
 1.  Click the red **X** in the **Action** column beside the access request you want to reject.<br>
 
-    ![Selecting the Access Request to Reject](/_images/image-(1325).png "Selecting the Access Request to Reject")
-
-
+    ![Selecting the Access Request to Reject](../../../../../.gitbook/assets/image-\(1325\).png)
 2.  On the **Reject request from "<**_**user\_name**_**>"** dialog box, enter an optional **Reason for Deny** then, click **Submit** to confirm your rejection.<br>
 
-    ![](/_images/image-(1326).png)
+    ![](../../../../../.gitbook/assets/image-\(1326\).png)
 
     \
     \
     The portal auto-refreshes to the **Pending Approval** tab to show the user’s request has been rejected, and the **Success - Request rejected** notification is shown.<br>
 
-    !["Success- Request rejected" notification](/_images/image-(1327).png "“Success- Request rejected” notification")
+    !["Success- Request rejected" notification](../../../../../.gitbook/assets/image-\(1327\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Example Access Rejected Email](../../../../technical-references/cloud-email-reference/example-cloud-access-rejected-email.md) for an example of the email.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Example Access Rejected Email]\(../../../../technical-references/cloud-email-reference/example-cloud-access-rejected-email.md) for an example of the email.

@@ -4,12 +4,11 @@ _Applies to: Patch My PC Cloud_
 
 The **General Information** tab of the Patch My PC (PMPC) Cloud deployment wizard allows you to configure various general settings (explained below) for how you want the app to be deployed.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If an app has multiple variants with different version numbers, you will see a yellow triangle with an exclamation mark next to the **Version** number. This is a warning to you to double-check that you are deploying the correct version.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If an app has multiple variants with different version numbers, you will see a yellow triangle with an exclamation mark next to the \*\*Version\*\* number. This is a warning to you to double-check that you are deploying the correct version.
 
-!['General Information' tab](/_images/image-(3528).png "&#x27;General Information&#x27; tab")
+!['General Information' tab](../../../.gitbook/assets/image-\(3528\).png)
 
 Once you have finished configuring the relevant options, go to [Next Steps](general-information-tab.md#next-steps).
 
@@ -17,11 +16,11 @@ Once you have finished configuring the relevant options, go to [Next Steps](gene
 
 Allows you to apply a [Template](../use-template.md) of pre-configured settings to this deployment.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>If you apply a Template to a Deployment and a setting in the Template conflicts with a setting configured in App Catalog, you will see an error.</p>
-<p>For example, you have configured a Requirement Rule in a Template and then applied the Template to a deployment. If the setting in App Catalog conflicts with that in the Template, you will see an error indicating the minimum acceptable value to which it should be configured. You will need to change the relevant setting to dismiss the error before you can continue.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> If you apply a Template to a Deployment and a setting in the Template conflicts with a setting configured in App Catalog, you will see an error.
+>
+> For example, you have configured a Requirement Rule in a Template and then applied the Template to a deployment. If the setting in App Catalog conflicts with that in the Template, you will see an error indicating the minimum acceptable value to which it should be configured. You will need to change the relevant setting to dismiss the error before you can continue.
 
 ## Connection
 
@@ -31,10 +30,9 @@ Shows the type of connection. Currently, we only support connections to Intune.
 
 The unique name for this deployment. This is also the name of the app as it will appear on the target devices.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>This **Display Name** has to be unique per operating system. For example, you can have two deployments for the same app if one is targeted to macOS and the other Windows. You cannot have two deployments with the same name if they are both targeted to either macOS or Windows.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> This \*\*Display Name\*\* has to be unique per operating system. For example, you can have two deployments for the same app if one is targeted to macOS and the other Windows. You cannot have two deployments with the same name if they are both targeted to either macOS or Windows.
 
 ## Language
 
@@ -51,7 +49,7 @@ In such cases, it is the vendor that determines the level of support and the beh
 The architecture of the installer to be deployed:
 
 * 64-bit installers can only be installed on 64-bit devices
-* 32-bit installers can typically be installed on either 32-bit or 64-bit devices.&#x20;
+* 32-bit installers can typically be installed on either 32-bit or 64-bit devices.
 * Unspecified installers typically contain install logic for both architectures.
 
 ## Install Context
@@ -72,17 +70,15 @@ We currently support the following Windows installer types:
 * .exe
 * .msi
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If the **.msi** option is greyed out, it's probably because this is a [Binary Free](../../binary-free-apps/binary-free-apps-overview.md) app, i.e. you need to manually download the installer from the vendor and create it in PMPC Cloud as a [Binary Free App](../../binary-free-apps/deploy-a-binary-free-app.md) (the "**Upload the required installer via 'Manage Files' to enable selection of this variant**" message indicates this).</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If the \*\*.msi\*\* option is greyed out, it's probably because this is a \[Binary Free]\(../../binary-free-apps/binary-free-apps-overview.md) app, i.e. you need to manually download the installer from the vendor and create it in PMPC Cloud as a \[Binary Free App]\(../../binary-free-apps/deploy-a-binary-free-app.md) (the "\*\*Upload the required installer via 'Manage Files' to enable selection of this variant\*\*" message indicates this).
 
 * .msp
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>As per the tooltip, if you select the **msp** installer type, you will only be able to create a deployment with an **Update Only** assignment. If you want to create a deployment using the other assignment types, you will need to select the **exe** installer.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> As per the tooltip, if you select the \*\*msp\*\* installer type, you will only be able to create a deployment with an \*\*Update Only\*\* assignment. If you want to create a deployment using the other assignment types, you will need to select the \*\*exe\*\* installer.
 
 ### **macOS Installer Types**
 
@@ -95,4 +91,4 @@ We currently support the following macOS installer types:
 
 Once you have finished configuring the relevant options, click **Next** to move to the [Configurations ](configurations-tab/)tab.
 
-![Clicking 'Next' to move to the 'Configurations' page](/_images/image-(3529).png "Clicking &#x27;Next&#x27; to move to the &#x27;Configurations&#x27; page")
+![Clicking 'Next' to move to the 'Configurations' page](../../../.gitbook/assets/image-\(3529\).png)

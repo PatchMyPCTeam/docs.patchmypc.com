@@ -1,30 +1,28 @@
 # Assignment Options
 
-_Applies to: Patch My PC Publisher V2.x_
-\
-_Available at level: All Custom Products, All Products, Vendor, Product_
-\
-_Available on tab: Intune Apps, Intune Updates_
+_Applies to: Patch My PC Publisher V2.x_\
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 ## Overview
 
 Assignment Options allow you to configure how an Intune assignment behaves for applications and updates managed by the Publisher.
 
-![Assignment Options](/_images/image-(4028).png "Assignment Options")
+![Assignment Options](../../../.gitbook/assets/image-\(4028\).png)
 
 These options are available only after an assignment has been added. Any changes made here are saved in the Publisher configuration and are applied to the Intune application or update during the next Publisher synchronization.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>All changes made in this window are applied during the next Publisher [synchronization](../../administration/sync-schedule.md). Changes are not applied immediately.</p>
-<p>If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Application Manager](../../administration/intune-apps-updates/form-controls/intune-application-manager.md) instead.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> All changes made in this window are applied during the next Publisher \[synchronization]\(../../administration/sync-schedule.md). Changes are not applied immediately.
+>
+> If you want to make changes to assignments for applications and updates that have already been published to Intune, use the \[Intune Application Manager]\(../../administration/intune-apps-updates/form-controls/intune-application-manager.md) instead.
 
 ## Mode
 
 Mode determines whether a group is included or excluded for the assignment.
 
-![Assignment Mode](/_images/image-(4029).png "Assignment Mode")
+![Assignment Mode](../../../.gitbook/assets/image-\(4029\).png)
 
 * When set to **Include**, Intune applies the assignment to users or devices in the selected Entra group.
 * When set to **Exclude**, Intune explicitly excludes the group even if it is part of a broader included group.
@@ -33,16 +31,15 @@ Exclusions always take precedence over inclusions. This allows precise targeting
 
 The example indicates how Include and Exclude modes work together within the same assignment intent. In the Available for enrolled devices section, the **All Users** group is set to **Include**. This makes the application available in the Company Portal for all targeted users. A second assignment targets the **LAPS Admins** Entra and is set to **Exclude**. This explicitly prevents members of that group from seeing or installing the application, even though they are part of the broader **All Users** group.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The **Exclude** mode is not selectable for the built in **All Users** and **All Devices** targets.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> The \*\*Exclude\*\* mode is not selectable for the built in \*\*All Users\*\* and \*\*All Devices\*\* targets.
 
 ## Notification
 
 Notification controls whether toast notifications are shown to the user when the Intune Management Extension installs or uninstalls the application or update.
 
-![Assignment Notification](/_images/image-(4030).png "Assignment Notification")
+![Assignment Notification](../../../.gitbook/assets/image-\(4030\).png)
 
 * When set to **Show all**, all installation and restart related notifications are displayed.
 * When set to **Show restarts only**, only notifications related to required restarts are displayed.
@@ -58,17 +55,17 @@ The **AOVPN Users group** is configured with **Hide all**. Users in this group d
 
 The **Autopilot Admins** group is configured with **Show restarts only**. Users only receive notifications related to required restarts, while installation progress notifications are suppressed.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Notifications in this context are delivered as Windows toast notifications and are controlled by the Intune Management Extension during application install or uninstall.</p>
-<p>These notifications are not related to and should not be confused with [Manage Conflicting Processes](../manage-conflicting-processes/) notifications, which are a separate feature and serve a different purpose.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Notifications in this context are delivered as Windows toast notifications and are controlled by the Intune Management Extension during application install or uninstall.
+>
+> These notifications are not related to and should not be confused with \[Manage Conflicting Processes]\(../manage-conflicting-processes/) notifications, which are a separate feature and serve a different purpose.
 
 ## DO Priority
 
 Delivery Optimization priority controls how quickly application content is downloaded after the Intune Management Extension evaluates the assignment.
 
-![Assignment DO Priority](/_images/image-(118).png "Assignment DO Priority")
+![Assignment DO Priority](../../../.gitbook/assets/image-\(118\).png)
 
 • When set to **Foreground**, Intune prioritizes the download and processes the application content immediately. This is commonly used for Autopilot scenarios or time sensitive deployments where faster installation is required.
 
@@ -78,22 +75,23 @@ Delivery Optimization priority controls how quickly application content is downl
 
 The example above shows 2 available assignments that use different Delivery Optimization priorities.
 
-**Foreground** is configured for the **LAPS Admins** group. This prioritizes the download and processes the application content immediately.&#x20;
+**Foreground** is configured for the **LAPS Admins** group. This prioritizes the download and processes the application content immediately.
 
 **Background** is configured for the **AOVPN Users** group. This allows Windows to download the content with normal priority based on network conditions and device activity.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>For most Intune Updates, **Background** is recommended because installations are usually not time critical.</p>
-<p>\</p>
-<p>For applications deployed during **Autopilot**, **Foreground** is recommended to reduce onboarding delays.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> For most Intune Updates, \*\*Background\*\* is recommended because installations are usually not time critical.
+>
+> \\
+>
+> For applications deployed during \*\*Autopilot\*\*, \*\*Foreground\*\* is recommended to reduce onboarding delays.
 
 ## Filter Mode and Filter (Name)
 
 Filters allow you to refine assignment targeting using Intune device filters based on attributes such as operating system version, device model, enrollment type, or join type.
 
-![Assignment Intune Filters](/_images/image-(119).png "Assignment Intune Filters")
+![Assignment Intune Filters](../../../.gitbook/assets/image-\(119\).png)
 
 This enables advanced targeting scenarios such as excluding virtual machines, targeting corporate devices only, or limiting deployment to specific OS builds.
 
@@ -119,7 +117,7 @@ For the **Autopilot Admins** group, Filter Mode is set to **Exclude** with the *
 
 The Filter Selection form is used to choose an existing Intune device filter to apply to an assignment when Filter Mode is set to Include or Exclude.
 
-![Filter Selection](/_images/image-(121).png "Filter Selection")
+![Filter Selection](../../../.gitbook/assets/image-\(121\).png)
 
 This form lists all Intune device filters available in your tenant and allows you to search, review, and select the appropriate filter. Only one filter can be selected per assignment.
 
@@ -137,7 +135,7 @@ When configuring assignments, the Publisher validates that a filter is selected 
 
 If Filter Mode is set to Include or Exclude and the Filter column remains set to **n/a**, a validation error is triggered. This indicates that a filter mode has been selected but no Intune device filter has been assigned.
 
-![Filter Validation](/_images/image-(120).png "Filter Validation")
+![Filter Validation](../../../.gitbook/assets/image-\(120\).png)
 
 In this state, the assignment configuration cannot be saved. A validation warning is displayed at the bottom of the form, and details are shown indicating that the assignment is missing a required filter selection.
 
@@ -145,7 +143,7 @@ In this state, the assignment configuration cannot be saved. A validation warnin
 
 The Available Time and Deadline Time form dynamically changes based on the assignment intent. Only the options supported by Intune for that intent are displayed. This ensures that invalid or unsupported configurations cannot be set.
 
-![Availability and Deadline Options](/_images/image-(125).png "Availability and Deadline Options")
+![Availability and Deadline Options](../../../.gitbook/assets/image-\(125\).png)
 
 * **Required for enrolled devices** assignments show both **Availability** and Installation **Deadline**. Availability controls when content is downloaded. Deadline controls when installation is enforced.
 * **Available for enrolled devices** assignments show **Availability** only. Deadlines are not supported. Availability controls when the app appears in the Company Portal and when users can start installation.
@@ -155,24 +153,26 @@ The Available Time and Deadline Time form dynamically changes based on the assig
 
 Available Time controls when an Intune application or update becomes available to devices for a specific assignment.
 
-![Assignment Available Time](/_images/image-(122).png "Assignment Available Time")
+![Assignment Available Time](../../../.gitbook/assets/image-\(122\).png)
 
 * For **Required for enrolled devices** assignments, content download begins at the available time.
 * For **Available for enrolled devices** assignments, the application becomes visible in the Company Portal at the available time.
 
 If no custom availability is configured, the default behavior is **As soon as possible**, which makes the assignment available as soon as policy is received.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Intune has a known issue when multiple **Required** assignments exist for the same application and different availability times are configured.</p>
-<p>If one assignment uses **As soon as possible** and another assignment uses a future availability time, the Intune Management Extension may delay content download and installation until the later availability time is reached.</p>
-<p>This behavior is documented in a Patch My PC blog at <a href="https://patchmypc.com/blog/intune-asap-assignments-bug/">https://patchmypc.com/blog/intune-asap-assignments-bug/</a>.</p>
-<p>A recommended workaround is to configure availability as **Publishing date plus 0 days**. This sets the availability to the application publish time, which is already in the past when the device evaluates the assignment. As a result, Intune processes the assignment immediately and avoids delays caused by mixed availability configurations.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Intune has a known issue when multiple \*\*Required\*\* assignments exist for the same application and different availability times are configured.
+>
+> If one assignment uses \*\*As soon as possible\*\* and another assignment uses a future availability time, the Intune Management Extension may delay content download and installation until the later availability time is reached.
+>
+> This behavior is documented in a Patch My PC blog at [https://patchmypc.com/blog/intune-asap-assignments-bug/](https://patchmypc.com/blog/intune-asap-assignments-bug/).
+>
+> A recommended workaround is to configure availability as \*\*Publishing date plus 0 days\*\*. This sets the availability to the application publish time, which is already in the past when the device evaluates the assignment. As a result, Intune processes the assignment immediately and avoids delays caused by mixed availability configurations.
 
 Available Time is configured per assignment by selecting the value in the **Available Time** column. This opens the **Edit Availability** dialog.
 
-![Availability Configuration](/_images/image-(127).png "Availability Configuration")
+![Availability Configuration](../../../.gitbook/assets/image-\(127\).png)
 
 You can configure availability relative to the publishing date or set a specific date and time. Availability can be evaluated using UTC or the device local time zone.
 
@@ -203,7 +203,7 @@ When setting a specific availability time, plan for a possible delay window and 
 
 Deadline controls when installation or removal is enforced for an assignment.
 
-![Assignment Deadline](/_images/image-(116).png "Assignment Deadline")
+![Assignment Deadline](../../../.gitbook/assets/image-\(116\).png)
 
 Deadlines are supported only for **Required for enrolled devices** and **Uninstall for enrolled devices** assignments. Deadlines are not supported for **Available for enrolled devices** assignments.
 
@@ -212,17 +212,19 @@ Deadlines are supported only for **Required for enrolled devices** and **Uninsta
 
 If **no deadline is configured**, enforcement still occurs, but it happens after the **Available Time** is reached. In this case, installation or uninstall is processed based on availability and policy evaluation scheduling timing rather than a fixed enforcement deadline.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>When multiple **Required** assignments exist for the same application and devices belong to more than one assignment, Intune determines applicability based on availability first. If availability processing is delayed due to a known bug, deadline enforcement is also delayed because the assignment is not considered applicable until availability is reached.</p>
-<p>In scenarios where one assignment uses **As soon as possible** and another uses a future availability time, Intune may defer both content download and subsequent deadline enforcement until the later availability time is reached.</p>
-<p>This behavior is an Intune platform limitation and is documented in the Patch My PC blog <a href="https://patchmypc.com/blog/intune-asap-assignments-bug/">https://patchmypc.com/blog/intune-asap-assignments-bug/</a>.</p>
-<p>To ensure predictable deadline enforcement, avoid mixing **As soon as possible** with future availability times. A recommended approach is to configure availability as **Publishing date plus 0 days**, which sets availability to the publish time and allows both availability processing and deadline enforcement to occur as expected.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> When multiple \*\*Required\*\* assignments exist for the same application and devices belong to more than one assignment, Intune determines applicability based on availability first. If availability processing is delayed due to a known bug, deadline enforcement is also delayed because the assignment is not considered applicable until availability is reached.
+>
+> In scenarios where one assignment uses \*\*As soon as possible\*\* and another uses a future availability time, Intune may defer both content download and subsequent deadline enforcement until the later availability time is reached.
+>
+> This behavior is an Intune platform limitation and is documented in the Patch My PC blog [https://patchmypc.com/blog/intune-asap-assignments-bug/](https://patchmypc.com/blog/intune-asap-assignments-bug/).
+>
+> To ensure predictable deadline enforcement, avoid mixing \*\*As soon as possible\*\* with future availability times. A recommended approach is to configure availability as \*\*Publishing date plus 0 days\*\*, which sets availability to the publish time and allows both availability processing and deadline enforcement to occur as expected.
 
 A Deadline is configured per assignment by selecting the value in the Deadline column. This opens the Edit Availability dialog.
 
-![Deadline Configuration](/_images/image-(117).png "Deadline Configuration")
+![Deadline Configuration](../../../.gitbook/assets/image-\(117\).png)
 
 You can configure the deadline relative to the publishing date or set a specific date and time. Deadline evaluation can be performed using UTC or the device local time zone.
 
@@ -253,11 +255,11 @@ When setting a specific deadline, plan for a possible enforcement delay window a
 
 The **Restart Grace Period** controls how long a device can delay a required reboot after an application install or uninstall is enforced.
 
-![Restart Settings / Grace Period](/_images/image-(4031).png "Restart Settings / Grace Period")
+![Restart Settings / Grace Period](../../../.gitbook/assets/image-\(4031\).png)
 
 During a configured grace period, the user can continue working before a reboot, indicated by the Win32 app, becomes mandatory.
 
-![Restart Grace Period Configuration](/_images/image-(4032).png "Restart Grace Period Configuration")
+![Restart Grace Period Configuration](../../../.gitbook/assets/image-\(4032\).png)
 
 You can configure the Restart grace period settings by selecting the **Grace Period** value in the assignment row.
 
@@ -272,10 +274,9 @@ You can configure the Restart grace period settings by selecting the **Grace Per
 
 The updated restart grace period settings are applied during the next Publisher synchronization.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>For a deeper explanation of how Intune processes restart grace periods, notification behavior, countdown timing, and enforcement nuances, review the Patch My PC blog at <a href="https://patchmypc.com/blog/intune-s-restart-grace-period/">https://patchmypc.com/blog/intune-s-restart-grace-period/</a>.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> For a deeper explanation of how Intune processes restart grace periods, notification behavior, countdown timing, and enforcement nuances, review the Patch My PC blog at [https://patchmypc.com/blog/intune-s-restart-grace-period/](https://patchmypc.com/blog/intune-s-restart-grace-period/).
 
 ### Restart Grace Period Behavior
 

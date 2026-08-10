@@ -18,10 +18,9 @@ When the Publisher is installed on a remote SUP, it is important that the Config
 
 When the Publisher is installed on the site server, it already has the required permissions to interact with ConfigMgr because the service runs under the SYSTEM account. When the Publisher is installed on a remote SUP, these permissions may not be present by default. In that case, the Publisher requires specific ConfigMgr permissions to create, modify, and distribute applications and updates. These permissions can be granted through a Security Role which can be created automatically by the Publisher or configured manually by an administrator.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>While the Publisher can create the necessary Security Role automatically, an administrator still needs to add the computer account of the remote SUP to that Security Role in the ConfigMgr console.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> While the Publisher can create the necessary Security Role automatically, an administrator still needs to add the computer account of the remote SUP to that Security Role in the ConfigMgr console.
 
 There are 2 options to ensure the Publisher, installed on a remote SUP, has the correct permissions.
 
@@ -50,15 +49,15 @@ The Publisher requires the following ConfigMgr permissions:
 * **Software Updates**\
   Read, Modify
 
-![Security Role permissions required for the Publisher](/_images/image-(378).png "Security Role permissions required for the Publisher")
+![Security Role permissions required for the Publisher](../../../../.gitbook/assets/image-\(378\).png)
 
 It is important that you also assign this role to the computer$ account of the remote SUP.
 
-![Assign the role to the computer account of the remote SUP](/_images/image-(379).png "Assign the role to the computer account of the remote SUP")
+![Assign the role to the computer account of the remote SUP](../../../../.gitbook/assets/image-\(379\).png)
 
 The Security Scopes should be assigned to **All instances of the objects that are related to the assigned security roles**.
 
-![All instances of the objects that are related to the assigned security roles](/_images/image-(380).png "All instances of the objects that are related to the assigned security roles")
+![All instances of the objects that are related to the assigned security roles](../../../../.gitbook/assets/image-\(380\).png)
 
 ## WSUS SSL Requirements
 
@@ -68,14 +67,14 @@ If WSUS on a remote SUP _is not_ configured for SSL, `wsyncmgr.log` will log the
 
 > `Remote WSUS connection is not HTTPS. This prevents software update point from getting the signing certificate for third-party updates`
 
-![Remote WSUS connection is not HTTPS](/_images/image-(381).png "Remote WSUS connection is not HTTPS")
+![Remote WSUS connection is not HTTPS](../../../../.gitbook/assets/image-\(381\).png)
 
 This warning indicates that ConfigMgr is unable to retrieve the WSUS signing certificate from the remote SUP. As a result, ConfigMgr cannot store the certificate in the site database or distribute it to client devices during a software update scan. To resolve this, WSUS on the remote SUP must be configured to use HTTPS (SSL) when Configuration Manager is set to manage the signing certificate.
 
 For more information on enabling SSL for WSUS, see [https://learn.microsoft.com/en-us/intune/configmgr/sum/get-started/software-update-point-ssl](https://learn.microsoft.com/en-us/intune/configmgr/sum/get-started/software-update-point-ssl)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>SSL is not a strict requirement in this scenario. However, when SSL is not enabled on a remote SUP, the code-signing certificate must be manually distributed to the site server, any other SUPs, and all client devices.&#x20;</p>
-<p>The certificate must be placed in the **Trusted Publishers** (and the **Trusted Root Certification Authorities** store if its a self-signed certificate) using Group Policy or another certificate deployment method.&#x20;</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> SSL is not a strict requirement in this scenario. However, when SSL is not enabled on a remote SUP, the code-signing certificate must be manually distributed to the site server, any other SUPs, and all client devices.
+>
+> The certificate must be placed in the \*\*Trusted Publishers\*\* (and the \*\*Trusted Root Certification Authorities\*\* store if its a self-signed certificate) using Group Policy or another certificate deployment method.

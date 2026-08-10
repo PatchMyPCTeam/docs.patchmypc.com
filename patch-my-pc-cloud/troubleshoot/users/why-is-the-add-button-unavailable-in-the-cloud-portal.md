@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 I am trying to add a new Entra ID Security Group to the Patch My PC (PMPC) Cloud portal, but the **Add** button on the Users page is greyed out.
 
-!['Add' button greyed out](/_images/image-(580).png "&#x27;Add&#x27; button greyed out")
+!['Add' button greyed out](../../../.gitbook/assets/image-\(580\).png)
 
 ### CAUSE
 

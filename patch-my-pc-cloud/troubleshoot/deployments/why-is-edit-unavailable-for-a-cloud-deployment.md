@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 I am trying to edit a Patch My PC (PMPC) Cloud deployment, but when I view its properties, the **Edit** button is unavailable.
 
-!["Edit" button unavailable on the properties of a deployment](/_images/image-(2749).png "“Edit” button unavailable on the properties of a deployment")
+!["Edit" button unavailable on the properties of a deployment](../../../.gitbook/assets/image-\(2749\).png)
 
 ### CAUSE
 
@@ -16,7 +16,6 @@ This is because Update Rings have been configured for this deployment, and when 
 
 As the [Delayed](../../deployments/update-rings/update-ring-types.md#delayed-update-rings) option was selected for Update Rings when this deployment was created, you cannot edit it until all of the configured Update Rings have finished being created.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Check if an Update Ring has been created](../../deployments/update-rings/check.md) for more details.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Check if an Update Ring has been created]\(../../deployments/update-rings/check.md) for more details.

@@ -2,14 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **Backup and Restore Settings** section in Patch My PC (PMPC) Publisher allows you to export, import, and automatically back up the Publisher configuration settings. This is useful for disaster recovery, migrating the Publisher to a new server, or maintaining historical configuration snapshots.
 
-![Backup and Restore Settings](/_images/image-(3948).png "Backup and Restore Settings")
+![Backup and Restore Settings](../../../.gitbook/assets/image-\(3948\).png)
 
 ## Import Settings from a File
 
@@ -42,10 +41,9 @@ When configured, the Publisher automatically writes an updated backup file to th
 
 This design makes the custom backup path especially useful for **disaster recovery scenarios**, such as rebuilding a Publisher server or restoring settings quickly after an unexpected failure, without needing to manually export configuration files.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Even when a custom automatic backup location is configured, the Publisher continues to maintain backups in its default internal backup location. This internal location retains multiple historical backup versions and supports rollback and recovery scenarios, while the custom location stores only the most recent backup file for quick access.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Even when a custom automatic backup location is configured, the Publisher continues to maintain backups in its default internal backup location. This internal location retains multiple historical backup versions and supports rollback and recovery scenarios, while the custom location stores only the most recent backup file for quick access.
 
 ## Backup Pruning and Retention
 

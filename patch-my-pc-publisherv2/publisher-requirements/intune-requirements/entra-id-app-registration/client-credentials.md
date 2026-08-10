@@ -13,12 +13,13 @@ Microsoft Entra ID supports two client credential types:
 
 Both methods are supported by the Publisher, however, [certificate-based authentication](client-credentials.md#use-a-certificate-for-authentication) is strongly recommended.
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>Certificate-based authentication is recommended because it uses a "**something you have"** security model rather than a "**something you know"** model. The private key is stored securely on the device where the Publisher is isntalled and is never transmitted or shared. Authentication succeeds only if the calling service can prove possession of that private key, making it significantly harder to compromise than a client secret, which is simply a string value that can be copied, leaked, or reused from another location.</p>
-<p>This approach aligns with Microsoft’s security best practices for service-to-service authentication and provides stronger protection for automated workloads that require unattended access to Microsoft Intune.</p>
-<p>More guidance on why a certificate should be used instead of a client secret can be found at <a href="https://learn.microsoft.com/en-us/azure/active-directory/develop/security-best-practices-for-app-registration#certificates-and-secrets">https://learn.microsoft.com/en-us/azure/active-directory/develop/security-best-practices-for-app-registration#certificates-and-secrets</a></p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> Certificate-based authentication is recommended because it uses a "\*\*something you have"\*\* security model rather than a "\*\*something you know"\*\* model. The private key is stored securely on the device where the Publisher is isntalled and is never transmitted or shared. Authentication succeeds only if the calling service can prove possession of that private key, making it significantly harder to compromise than a client secret, which is simply a string value that can be copied, leaked, or reused from another location.
+>
+> This approach aligns with Microsoft’s security best practices for service-to-service authentication and provides stronger protection for automated workloads that require unattended access to Microsoft Intune.
+>
+> More guidance on why a certificate should be used instead of a client secret can be found at [https://learn.microsoft.com/en-us/azure/active-directory/develop/security-best-practices-for-app-registration#certificates-and-secrets](https://learn.microsoft.com/en-us/azure/active-directory/develop/security-best-practices-for-app-registration#certificates-and-secrets)
 
 ## Use a Certificate for Authentication
 
@@ -35,12 +36,13 @@ Certificate-based authentication is the preferred and recommended approach for s
   * Valid and not expired.
   * Private key accessible to the Publisher service.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The following steps detail how to create a self-signed certificate for client authentication. However, this is not the only supported option. If your organization has an established PKI and your PKI administrators provide a client authentication certificate, you may use that certificate instead.&#x20;</p>
-<p>As long as the certificate meets Entra ID requirements and the private key is installed in the Local Machine certificate store on the server where Patch My PC Publisher is installed, the Publisher can use it for authentication in the same way as a self-signed certificate.</p>
-<p>For more information on creating a self-signed certificate for authentication with an app registration, see <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-self-signed-certificate">Create a self-signed public certificate to authenticate your application</a>.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> The following steps detail how to create a self-signed certificate for client authentication. However, this is not the only supported option. If your organization has an established PKI and your PKI administrators provide a client authentication certificate, you may use that certificate instead.
+>
+> As long as the certificate meets Entra ID requirements and the private key is installed in the Local Machine certificate store on the server where Patch My PC Publisher is installed, the Publisher can use it for authentication in the same way as a self-signed certificate.
+>
+> For more information on creating a self-signed certificate for authentication with an app registration, see [Create a self-signed public certificate to authenticate your application](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-self-signed-certificate).
 
 ### Step 1: Create a Self-Signed Certificate
 
@@ -69,7 +71,7 @@ $cert = New-SelfSignedCertificate @newCert
 
 3. Open **certlm.msc** and verify the new certificate appears under **Local Machine > Personal**.
 
-![Client Authentication Certificate](/_images/image-(397).png "Client Authentication Certificate")
+![Client Authentication Certificate](../../../../.gitbook/assets/image-\(397\).png)
 
 3. While still in the elevated PowerShell session, export the **public key** (.cer) to a temporary folder.
 
@@ -81,7 +83,7 @@ Export-Certificate -Cert $cert -FilePath "$certFolder\PatchMyPCIntuneConnector.c
 
 4. Confirm that the `.cer` file exists in **C:\temp\certs**.
 
-![Exported Public Key](/_images/image-(398).png "Exported Public Key")
+![Exported Public Key](../../../../.gitbook/assets/image-\(398\).png)
 
 ### Step 2: Upload the Certificate to the App Registration
 
@@ -91,13 +93,13 @@ Export-Certificate -Cert $cert -FilePath "$certFolder\PatchMyPCIntuneConnector.c
 4. Select the exported `.cer` file and click **Add**.
 5. Verify the certificate’s **thumbprint** appears in the list with the correct expiration.
 
-![Certificate Uploaded](/_images/image-(399).png "Certificate Uploaded")
+![Certificate Uploaded](../../../../.gitbook/assets/image-\(399\).png)
 
 ### Step 3: Configure the Publisher to use the Certificate
 
 For more details on how to use the certificate for authnetication, see [Intune Apps / Updates > Options > Intune Authentication](/broken/pages/fRFRGAjMdaZk5TYWEwkt)
 
-![Certificate Authentication in the Publisher](/_images/image-(4148).png "Certificate Authentication in the Publisher")
+![Certificate Authentication in the Publisher](../../../../.gitbook/assets/image-\(4148\).png)
 
 ## Use a Client Secret for Authentication
 
@@ -108,10 +110,9 @@ This method may be suitable for:
 * Short-term testing or proof-of-concept scenarios.
 * Environments where certificate-based authentication is not possible.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Because client secrets are considered a weak client credential, they carry a higher risk of exposure and should be rotated at regular intervals.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Because client secrets are considered a weak client credential, they carry a higher risk of exposure and should be rotated at regular intervals.
 
 **Prerequisites**
 
@@ -126,23 +127,22 @@ This method may be suitable for:
 4. In the left-hand menu, select **Certificates & secrets**.
 5. Under **Client secrets**, select **New client secret**.
 
-![New Client Secret](/_images/image-(401).png "New Client Secret")
+![New Client Secret](../../../../.gitbook/assets/image-\(401\).png)
 
 6. Enter a **description** _(optional)_.
 7. Choose an **expiration period** appropriate for your organization.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Microsoft recommends short-lived secrets. Expiration periods of **6 months or less** are strongly advised.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Microsoft recommends short-lived secrets. Expiration periods of \*\*6 months or less\*\* are strongly advised.
 
 8. Select **Add**.
 9. After the secret is created, **copy the Value immediately** and store it securely as you will not be able to retrieve the secret once you navigate away from the page.
 
-![Copy the Secret Value](/_images/image-(402).png "Copy the Secret Value")
+![Copy the Secret Value](../../../../.gitbook/assets/image-\(402\).png)
 
 ### Step 2: Configure the Publisher to use the Client Secret
 
 For more details on how to use the certificate for authentication, see [Intune Apps / Updates > Options > Authentication Settings](../../../administration/intune-apps-updates/options/authentication-settings.md).
 
-![Client Secret Authentication Settings in the Publisher](/_images/image-(4150).png "Client Secret Authentication Settings in the Publisher")
+![Client Secret Authentication Settings in the Publisher](../../../../.gitbook/assets/image-\(4150\).png)

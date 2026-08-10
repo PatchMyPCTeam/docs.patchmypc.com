@@ -2,6 +2,6 @@
 
 _Applies to: Patch My PC Advanced and Patch Insights_
 
-![](/_images/22.png)
+![](<../../../.gitbook/assets/22 (1).png>)
 
 This dashboard you can see the compliance data where a windows feature upgrade is detected as needed or installed.

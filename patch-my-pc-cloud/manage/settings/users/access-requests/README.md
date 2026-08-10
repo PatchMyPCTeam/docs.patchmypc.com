@@ -6,26 +6,24 @@ Access to the Patch My PC (PMPC) Cloud portal is controlled through either an ac
 
 This section details how to manage Access Requests.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Managing Invitations](../invitations/) for more information on invitations.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Managing Invitations]\(../invitations/) for more information on invitations.
 
 There are two ways to manage Access Requests to join your PMPC Cloud portal:
 
 * Clicking **Review Request** in the email generated when the user requests access.
 * Navigating to **Settings | Users | Pending Approval**.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Clicking **Review Request** in the email takes you to the **Pending Approval** page. To see an example of the access request email, see [Example Access Request email](../../../../technical-references/cloud-email-reference/example-cloud-access-request-email.md).</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Clicking \*\*Review Request\*\* in the email takes you to the \*\*Pending Approval\*\* page. To see an example of the access request email, see \[Example Access Request email]\(../../../../technical-references/cloud-email-reference/example-cloud-access-request-email.md).
 
-![Navigating to "Settings | Users | Pending Approval"](/_images/image-(1395).png "Navigating to “Settings | Users | Pending Approval”")
+![Navigating to "Settings | Users | Pending Approval"](../../../../../.gitbook/assets/image-\(1395\).png)
 
 Any pending approvals are shown.
 
-![List of Pending Approvals](/_images/image-(1320).png "List of Pending Approvals")
+![List of Pending Approvals](../../../../../.gitbook/assets/image-\(1320\).png)
 
 From this screen, you can:
 

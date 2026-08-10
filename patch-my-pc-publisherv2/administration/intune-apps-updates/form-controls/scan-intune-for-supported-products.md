@@ -2,41 +2,39 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-## ![](/_images/image-(449).png>) Overview
+## &#x20;Overview
 
 The **Scan Intune for Supported Products** form control requires access to your Intune tenant through Microsoft Graph. It inventories installed applications to determine which third-party products are present in your environment.
 
 The scan results are compared against the Publisher catalog to identify supported products. This information helps you decide which products to enable on the Intune Apps or Intune Updates tab for deploying newer versions of applications and updates through Intune as Win32 apps.
 
-![Scan Intune for Supported Products](/_images/image-(4103).png "Scan Intune for Supported Products")
+![Scan Intune for Supported Products](../../../../.gitbook/assets/image-\(4103\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The **Scan Intune for Supported Products** form control is shared between the Intune Apps and the Intune Updates tab and behaves identically in both locations. As a result, the form control on the Intune Apps tab can be used to configure and control auto-publishing behavior on the Intune Updates tab, and vice versa.</p>
-<p>While the form control itself is shared, manually selecting products in the query results only enables them on the tab from which the form was launched. For example, launching the scan wizard from the Intune Apps tab enables products for applications, whereas launching it from the Intune Updates tab enables products as updates.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> The \*\*Scan Intune for Supported Products\*\* form control is shared between the Intune Apps and the Intune Updates tab and behaves identically in both locations. As a result, the form control on the Intune Apps tab can be used to configure and control auto-publishing behavior on the Intune Updates tab, and vice versa.
+>
+> While the form control itself is shared, manually selecting products in the query results only enables them on the tab from which the form was launched. For example, launching the scan wizard from the Intune Apps tab enables products for applications, whereas launching it from the Intune Updates tab enables products as updates.
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>This form control will use the Entra ID App Registration, configured from the [Options](../options/) button, to connect to Microsoft Graph to retrieve data from the Intune Reporting Endpoint. For more details about the required API permissions and authentication options, see [Entra ID App Registration](../../../publisher-requirements/intune-requirements/entra-id-app-registration/).</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> This form control will use the Entra ID App Registration, configured from the \[Options]\(../options/) button, to connect to Microsoft Graph to retrieve data from the Intune Reporting Endpoint. For more details about the required API permissions and authentication options, see \[Entra ID App Registration]\(../../../publisher-requirements/intune-requirements/entra-id-app-registration/).
 
 ## Auto-Publishing Rules
 
-Auto-publishing rules allow the Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.&#x20;
+Auto-publishing rules allow the Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.
 
 When these rules are enabled, the Publisher evaluates discovered application inventory data collected by the Intune Management Extension on managed devices, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
 
-![Auto-Publishing Rules](/_images/image-(4084).png "Auto-Publishing Rules")
+![Auto-Publishing Rules](../../../../.gitbook/assets/image-\(4084\).png)
 
 Auto-publishing rules are evaluated during scheduled [**synchronizations**](../../sync-schedule.md). Each time a sync runs, the Publisher scans application inventory data from the AppInvRawData report, obtained from the Intune Reporting Endpoint, through the Microsoft Graph, and automatically enables any newly detected products that meet the configured thresholds.
 
 This automation can be extremely powerful, but it’s important to configure it thoughtfully.
 
-<blockquote class="wp-block-quote">
-<p>Note</p>
-<p>Automatic enablement of products is based solely on configured device thresholds. Filters in this form only control what is displayed in the query results and do not influence which applications or updates are automatically enabled.</p>
-</blockquote>
+> Note
+>
+> Automatic enablement of products is based solely on configured device thresholds. Filters in this form only control what is displayed in the query results and do not influence which applications or updates are automatically enabled.
 
 ### Auto-enable products to be published as an update
 
@@ -64,10 +62,9 @@ Customers should review the publishing reports after each synchronization to ide
 
 Alternatively, customers can use the [Manage Dynamic Assignments](../../../customizations-right-click-options/manage-dynamic-assignments.md) right-click customization option to automatically apply assignments to autopublished Intune updates. For more information, see [Auto-Enabled Products and Dynamic Assignments](scan-intune-for-supported-products.md#auto-enabled-products-and-dynamic-assignments).
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Reapplying assignments at a higher level in the product tree to force inheritance on products enabled through auto-publishing rules is supported but should be used with caution. Reapplying assignments at the product or vendor level overwrites any assignments already configured on child products. This action can unintentionally replace specific assignment configurations that were intentionally set on individual products.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Reapplying assignments at a higher level in the product tree to force inheritance on products enabled through auto-publishing rules is supported but should be used with caution. Reapplying assignments at the product or vendor level overwrites any assignments already configured on child products. This action can unintentionally replace specific assignment configurations that were intentionally set on individual products.
 
 ### Auto-Enabled Products and Dynamic Assignments
 
@@ -77,19 +74,17 @@ Dynamic Assignments are evaluated only for products that are currently enabled i
 
 A second synchronization is required for Dynamic Assignments to evaluate the newly enabled product and determine whether the update meets the configured criteria for assignment. This behavior is expected and should be considered when designing automation workflows that combine auto publishing rules with Dynamic Assignments.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Assignments added using the Manage Dynamic Assignments feature do not persist indefinitely in the Publisher configuration. Dynamic Assignments are evaluated during each synchronization and applied only to updates that meet the configured criteria at that time.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Assignments added using the Manage Dynamic Assignments feature do not persist indefinitely in the Publisher configuration. Dynamic Assignments are evaluated during each synchronization and applied only to updates that meet the configured criteria at that time.
 
 ### Device Threshold Best Practice
 
 Patch My PC releases approximately 100 new applications per month, so it’s entirely possible for a scheduled scan to detect multiple new products. When low device thresholds are used, auto-publishing can enable these products very quickly, ensuring new additions don’t go unnoticed. However, this speed should be balanced with operational readiness, as downstream processes such as phased deployments and change control may not be prepared for a sudden influx of new applications and updates, particularly when assignments are broadly scoped.
 
-<blockquote class="wp-block-quote">
-<p>**Caution**</p>
-<p>While it may be tempting to set the device threshold to a very low number, even 1, this is generally not recommended for most environments. This would be especially impactful for new customers who have not yet reviewed and enabled products in the product tree, as a very low threshold can cause newly discovered applications to be enabled simultaneously, potentially resulting in a large number of updates being synchronized at once.</p>
-</blockquote>
+> \*\*Caution\*\*
+>
+> While it may be tempting to set the device threshold to a very low number, even 1, this is generally not recommended for most environments. This would be especially impactful for new customers who have not yet reviewed and enabled products in the product tree, as a very low threshold can cause newly discovered applications to be enabled simultaneously, potentially resulting in a large number of updates being synchronized at once.
 
 A common and effective approach is:
 
@@ -114,7 +109,7 @@ The filters section lets you narrow the scan results shown in the list below, ma
 
 These filters do not affect detection or auto-publishing behavior directly, they only control what is displayed, helping you validate and review scan results before taking action.
 
-![Available Filters](/_images/image-(4085).png "Available Filters")
+![Available Filters](../../../../.gitbook/assets/image-\(4085\).png)
 
 ## Query
 
@@ -125,31 +120,29 @@ When clicked, the Publisher queries the obtained Intune report and displays the 
 * What applications detected in the Intune report matches products in the Patch My PC catalog.
 * The device count for each product
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The device count value shown for each product matched is clickable. Selecting it displays a detailed view of the devices and application versions where the product was detected, allowing you to validate inventory results before enabling or publishing the product.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> The device count value shown for each product matched is clickable. Selecting it displays a detailed view of the devices and application versions where the product was detected, allowing you to validate inventory results before enabling or publishing the product.
 
 The Query button does not enable or publish products by itself, it simply retrieves and displays the results based on the current settings, allowing you to review and validate findings before taking further action.
 
-![Query Results](/_images/image-(4086).png "Query Results")
+![Query Results](../../../../.gitbook/assets/image-\(4086\).png)
 
 Selecting products from this list is equivalent to manually selecting the same products in the [product tree](../product-tree.md) either on the Intune Apps tab or Intune Updates tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Because there is no universal standard for how vendors name applications, inventory results cannot always distinguish between multiple variants of the same product. For example, if 7-Zip (x64) is detected in the Intune report, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Because there is no universal standard for how vendors name applications, inventory results cannot always distinguish between multiple variants of the same product. For example, if 7-Zip (x64) is detected in the Intune report, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.
 
-### Count&#x20;
+### Count
 
 The Count value shown for each matched product is clickable. Selecting the count opens a detailed view that lists the devices where the product was detected, along with the reported application version on each device.
 
-![Clicking device count value](/_images/image-(4151).png "Clicking device count value")
+![Clicking device count value](../../../../.gitbook/assets/image-\(4151\).png)
 
-This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.&#x20;
+This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.
 
-Clicking Export CSV will generated CSV file includes the following columns:&#x20;
+Clicking Export CSV will generated CSV file includes the following columns:
 
 * **Device Name**\
   The name of the device where the product was detected.
@@ -162,7 +155,7 @@ Clicking Export CSV will generated CSV file includes the following columns:&#x20
 
 The **Export to CSV** form control is used to export the results displayed in the query window to a comma separated values file for offline review or reporting.
 
-![Export to CSV](/_images/image-(4152).png "Export to CSV")
+![Export to CSV](../../../../.gitbook/assets/image-\(4152\).png)
 
 This control is disabled when no query results are present in the window. After a query is selected and results are displayed, the control becomes available.
 
@@ -171,10 +164,10 @@ To export the results to a CSV:
 1. Run a query so that results are displayed in the window and click **Export to CSV**.
 2. When prompted, choose **Yes** to export only products that match the current filter or choose **No** to export the full unfiltered results.
 
-![Filter Export Option](/_images/image-(4153).png "Filter Export Option")
+![Filter Export Option](../../../../.gitbook/assets/image-\(4153\).png)
 
 3. Select the save location, enter a file name if required.
 
-![Choose a save location](/_images/image-(4154).png "Choose a save location")
+![Choose a save location](../../../../.gitbook/assets/image-\(4154\).png)
 
 4. Click **Save** to complete the export.

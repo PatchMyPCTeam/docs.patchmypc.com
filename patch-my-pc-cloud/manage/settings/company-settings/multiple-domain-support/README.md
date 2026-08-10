@@ -6,32 +6,31 @@ The _Multiple domains_ feature of Patch My PC (PMPC) Cloud allows you to configu
 
 To configure your PMPC Cloud Company for multiple domains:
 
-1\.      Add the relevant custom domain to your tenant.
+1\. Add the relevant custom domain to your tenant.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See <a href="https://learn.microsoft.com/en-us/entra/fundamentals/add-custom-domain">Add your custom domain name to your tenant</a> for more information.</p>
-<p>Also, you cannot add a domain to Entra ID using the portal.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See [Add your custom domain name to your tenant](https://learn.microsoft.com/en-us/entra/fundamentals/add-custom-domain) for more information.
+>
+> Also, you cannot add a domain to Entra ID using the portal.
 
 2. Ensure your PMPC Cloud company is [connected to Intune](/broken/pages/RoXhXa1jcXhIcPcKJk05#connecting-to-an-intune-tenant).
 3. Sign in to your PMPC Cloud company using a user account that has the **Full Admin with Access Management** role (other roles cannot use this feature).
 4. Navigate to **Settings | Company**
 
-![Navigating to ‘Settings | Company'](/_images/image-(567).png "Navigating to ‘Settings | Company’")
+![Navigating to ‘Settings | Company'](../../../../../.gitbook/assets/image-\(567\).png)
 
 5. Click the **Domains** tab.
 
-![Clicking the ‘Domains' tab](/_images/image-(568).png "Clicking the ‘Domains’ tab")
+![Clicking the ‘Domains' tab](../../../../../.gitbook/assets/image-\(568\).png)
 
 The list of custom domains configured for your tenant is displayed. If a domain is listed with a **Status** of **Available**, it means any users within that domain can request access to your PMPC Cloud Company.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Whenever a new custom domain is added, it will be automatically enabled within PMPC Cloud.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Whenever a new custom domain is added, it will be automatically enabled within PMPC Cloud.
 
-![List of configured domains](/_images/image-(569).png "List of configured domains")
+![List of configured domains](../../../../../.gitbook/assets/image-\(569\).png)
 
 6. Complete the relevant task:
    1. [Enable a domain](enable-domain.md)

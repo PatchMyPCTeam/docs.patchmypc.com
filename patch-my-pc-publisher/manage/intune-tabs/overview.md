@@ -2,18 +2,17 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **Intune Apps** and **Intune Updates** tabs in Patch My PC (PMPC) Publisher are where you select which third-party applications and updates should be published to Intune. Products enabled here determine which third-party applications and updates the Publisher will publish and maintain within your environment.
 
-![Intune Apps and Intune Updates Tab Overview](/_images/image-(366).png "Intune Apps and Intune Updates Tab Overview")
+![Intune Apps and Intune Updates Tab Overview](../../../.gitbook/assets/image-\(366\).png)
 
 Third-party applications _and_ updates appear in the **All Apps** node in the Intune Admin Center.
 
-![Applications and Updates appear in the All Apps view in the Intune Admin Center](/_images/image-(365).png "Applications and Updates appear in the All Apps view in the Intune Admin Center")
+![Applications and Updates appear in the All Apps view in the Intune Admin Center](../../../.gitbook/assets/image-\(365\).png)
 
 Additional behavior related to application and update publishing can be configured using the [**Options**](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/options/) button on the either the Intune Apps or Intune Updates tabs.
 

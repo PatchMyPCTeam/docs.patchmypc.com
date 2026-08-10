@@ -2,9 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Sync Schedule** tab in Patch My PC (PMPC) Publisher controls when Publisher runs an automated _publishing sync_.&#x20;
+The **Sync Schedule** tab in Patch My PC (PMPC) Publisher controls when Publisher runs an automated _publishing sync_.
 
-!['Sync Schedule' tab](/_images/image-(4860).png "&#x27;Sync Schedule&#x27; tab")
+!['Sync Schedule' tab](../../../.gitbook/assets/image-\(4860\).png)
 
 A _publishing sync_ evaluates third party apps and updates, and publishes content based on the configured selections in the Product Trees, customizations, and global options across the tabs.
 
@@ -18,11 +18,11 @@ After the catalog is loaded, Publisher evaluates the selected products across al
 
 ## Sync Schedule Recommendations
 
-The primary purpose of the Sync Schedule is to continuously evaluate the latest third party apps and updates as they are released by vendors. Third-party vendors do not release updates on a single predictable schedule, and new versions can be released at any time, particularly for products such as browsers and collaboration tools.&#x20;
+The primary purpose of the Sync Schedule is to continuously evaluate the latest third party apps and updates as they are released by vendors. Third-party vendors do not release updates on a single predictable schedule, and new versions can be released at any time, particularly for products such as browsers and collaboration tools.
 
 As each sync evaluates the latest version available in the catalog, the configured schedule directly determines how quickly newly released content is detected and made available for deployment.
 
-The default configuration is a daily sync, which is suitable for most environments. Running the sync infrequently, such as on a monthly schedule, is generally not recommended unless strict operational processes require that frequency.&#x20;
+The default configuration is a daily sync, which is suitable for most environments. Running the sync infrequently, such as on a monthly schedule, is generally not recommended unless strict operational processes require that frequency.
 
 Infrequent synchronization can result in missed security updates and delayed visibility of newly released third party content. The Sync Schedule should be configured to run as often as practical based on operational constraints.
 
@@ -48,7 +48,6 @@ For updates synced to ConfigMgr from WSUS after they are published, deployment c
 
 For ConfigMgr apps, Publisher is responsible only for creating the applications. Deployment targeting and timing are fully controlled by administrators using standard ConfigMgr deployment practices.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If the [global option to update an application in place](../configmgr-apps-tab/base-install-options/application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) is enabled, newly published app versions will inherit existing deployments. For required deployments, this inheritance may directly influence how quickly devices receive the updated application.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If the \[global option to update an application in place]\(../configmgr-apps-tab/base-install-options/application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) is enabled, newly published app versions will inherit existing deployments. For required deployments, this inheritance may directly influence how quickly devices receive the updated application.

@@ -1,15 +1,14 @@
 # Republish During Next Sync Schedule
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_
-\
-_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Overview
 
 The **Republish During Next Sync Schedule** option instructs the Publisher to rebuild and republish an update or application during the next publishing service sync.
 
-![Republish During Next Sync Schedule](/_images/image-(4067).png "Republish During Next Sync Schedule")
+![Republish During Next Sync Schedule](../../.gitbook/assets/image-\(4067\).png)
 
 This action is used when an item has already been published but its content or core metadata must be rebuilt to restore functionality or include additional files.
 
@@ -19,10 +18,9 @@ Republishing recreates the underlying content rather than issuing a simple metad
 * For **ConfigMgr applications**, republishing creates a new content version.
 * For **Intune apps and Intune updates**, the existing Win32 app content and metadata are replaced while the Win32 application ID remains the same.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>More information on how to configure republished update behavior for WSUS updates can be found on the [Update Republishing Options](../administration/updates/options/update-republishing-options.md) page.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> More information on how to configure republished update behavior for WSUS updates can be found on the \[Update Republishing Options]\(../administration/updates/options/update-republishing-options.md) page.
 
 ## When to Use Republish
 
@@ -51,15 +49,14 @@ Republished apps keep the same application ID and are subject to the Global Re-e
 
 When a WSUS update is marked for republishing, the Publisher displays a confirmation dialog. This dialog reminds you that a Software Update Point sync is required before the republished update becomes available in ConfigMgr.
 
-![Republish WSUS Updates confirmation](/_images/image-(4069).png "Republish WSUS Updates confirmation")
+![Republish WSUS Updates confirmation](../../.gitbook/assets/image-\(4069\).png)
 
 After confirmation, you are prompted to choose whether the new update should supersede the existing update in WSUS. If you choose to supersede, the older update will be marked as superseded once the new update is created.
 
-![Supersede Previous Published Update(s) confirmation](/_images/image-(4070).png "Supersede Previous Published Update(s) confirmation")
+![Supersede Previous Published Update(s) confirmation](../../.gitbook/assets/image-\(4070\).png)
 
 If you prefer older updates to be expired instead of superseded, this can be done manually using the [Modify Published Updates](../administration/updates/options/modify-published-updates.md) wizard in the Publisher.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Avoid deleting previously published updates directly from WSUS or ConfigMgr. Doing so can cause republished updates to reappear unexpectedly and may result in hash validation errors if clients attempt to download content that no longer exists.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Avoid deleting previously published updates directly from WSUS or ConfigMgr. Doing so can cause republished updates to reappear unexpectedly and may result in hash validation errors if clients attempt to download content that no longer exists.

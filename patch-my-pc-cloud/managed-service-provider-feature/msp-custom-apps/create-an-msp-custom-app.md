@@ -13,11 +13,10 @@ To use the Custom Apps for Managed Service Providers (MSPs) feature of Patch My 
   \
   • **No Customers (default) –** This Custom App will not be visible on any child companies of the parent, just the parent itself.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Using the **Specific Customers** option does not automatically make the Custom App visible on any new child companies. If required, these will need to be manually added.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Using the \*\*Specific Customers\*\* option does not automatically make the Custom App visible on any new child companies. If required, these will need to be manually added.
 
-!["Custom App Visibility" section](/_images/image-(1047).png "&#x22;Custom App Visibility” section")
+!["Custom App Visibility" section](../../../.gitbook/assets/image-\(1047\).png)
 
 3. Proceed from Step 13. (clicking **Create** to move to the **Summary** page) of the [Create a Custom App](../../custom-apps/create-a-custom-app/) process.

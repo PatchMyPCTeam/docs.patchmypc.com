@@ -10,18 +10,16 @@ Each version of the software must complete the full Update Ring lifecycle indepe
 
 The diagram below illustrates how each version progresses through the rings independently.
 
-![Example scenario for Patch My PC Cloud Update Rings](/_images/image-(60).png "Example scenario for Patch My PC Cloud Update Rings")
+![Example scenario for Patch My PC Cloud Update Rings](../../../.gitbook/assets/image-\(60\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See the <a href="https://www.youtube.com/watch?v=jgfErZIzNhQ">Patch My PC Update Rings: Mastering Phased Rollouts in Intune | Tips for a Better User Experience</a> on our YouTube channel for more details.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See the [Patch My PC Update Rings: Mastering Phased Rollouts in Intune | Tips for a Better User Experience](https://www.youtube.com/watch?v=jgfErZIzNhQ) on our YouTube channel for more details.
 
 ## Update Rings forecast
 
 To help you predict how your Update Rings will progress, we provide a [PowerShell script](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Other/Reports/Get-UpdateRingForecast.ps1) that generates an HTML report. This report gives you a clear visual overview of your current Update Rings configuration and how each ring is expected to advance.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See the <a href="https://www.youtube.com/watch?v=RelJPqWIGno">Update Ring Forecaster</a> on our YouTube channel for a detailed walkthrough of the script and the report.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See the [Update Ring Forecaster](https://www.youtube.com/watch?v=RelJPqWIGno) on our YouTube channel for a detailed walkthrough of the script and the report.

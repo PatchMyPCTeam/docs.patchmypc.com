@@ -17,27 +17,25 @@ At the end of a [sync](../manage/sync-schedule-tab/), if a new version of Publis
 Starting self-update, the command line is: MsiExec.exe /i C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service.msi /qn /log C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service_Upgrade.log
 ```
 
-![PatchMyPC.log](/_images/image-(4232).png "PatchMyPC.log")
+![PatchMyPC.log](../../.gitbook/assets/image-\(4232\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If you see errors such as "_An error occurred with the SignalR connection_" logged around the time illustrated above, this is normal while some services stop and start again during the update process.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If you see errors such as "\_An error occurred with the SignalR connection\_" logged around the time illustrated above, this is normal while some services stop and start again during the update process.
 
 If a failure occurs during the self-update process and [Alerts](../manage/alerts-tab/) are configured, a notification is generated. The notification will appear similar to the screenshots shown below
 
-![Example alert](/_images/image-(4233).png "Example alert")
+![Example alert](../../.gitbook/assets/image-\(4233\).png)
 
-![Example alert detail](/_images/image-(4234).png "Example alert detail")
+![Example alert detail](../../.gitbook/assets/image-\(4234\).png)
 
-To understand the root cause of the upgrade failure, inspect the log file indicated in **PatchMyPC.log** produced by the MSI installer:&#x20;
+To understand the root cause of the upgrade failure, inspect the log file indicated in **PatchMyPC.log** produced by the MSI installer:
 
 * **C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service\_Upgrade.log**
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Error 1714](installation-upgrade.md#error-1714-1612-the-older-version-of-patch-my-pc-publishing-service-cannot-be-removed) for more details on common causes for upgrade failures.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Error 1714]\(installation-upgrade.md#error-1714-1612-the-older-version-of-patch-my-pc-publishing-service-cannot-be-removed) for more details on common causes for upgrade failures.
 
 ## Error 1714/1612 - The older version of Patch My PC Publishing Service cannot be removed
 
@@ -52,18 +50,17 @@ Error 1714. The older version of Patch My PC Publishing Service cannot be remove
 
 When you attempt to manually install the update by downloading and running the [latest .msi](https://patchmypc.com/msi), you receive a dialogue similar to the one below:
 
-!['The feature you are trying to use is on a network resource that is unavailable' dialog](/_images/image-(4235).png "&#x27;The feature you are trying to use is on a network resource that is unavailable&#x27; dialog")
+!['The feature you are trying to use is on a network resource that is unavailable' dialog](../../.gitbook/assets/image-\(4235\).png)
 
-The 1612 error code is usually thrown when the original installation media for the currently installed application is no longer available on the system - something has deleted it.&#x20;
+The 1612 error code is usually thrown when the original installation media for the currently installed application is no longer available on the system - something has deleted it.
 
 Typically, .msi files cache themselves in the **C:\Windows\installer** folder, and the original .msi file is critical for any application update, repair, or uninstall.
 
 The Windows Installer service first looks in the .msi of the currently installed version in **C:\Windows\installer** folder, and also its last known install location - the self-updater is downloaded and launched from the **C:\Windows\temp** folder.
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>You can read more about system error code 1612 in the following knowledge base article: <a href="https://patchmypc.com/kb/system-error-1612-installation-source/">System Error 1612 – The installation source for this product is not available.</a></p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> You can read more about system error code 1612 in the following knowledge base article: [System Error 1612 – The installation source for this product is not available.](https://patchmypc.com/kb/system-error-1612-installation-source/)
 
 If you encounter this issue, you can resolve it by re-caching the missing .msi file:
 

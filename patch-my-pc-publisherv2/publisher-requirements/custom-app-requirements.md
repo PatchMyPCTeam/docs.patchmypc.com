@@ -15,15 +15,13 @@ To publish Custom Apps to either ConfigMgr or Intune using the the Publisher, yo
 * Your organization must be [onboarded ](custom-app-requirements.md#step-1-onboard-to-patch-my-pc-cloud)to Patch My PC Cloud by creating a Cloud Company.
 * The Publisher must be [connected ](custom-app-requirements.md#step-2-connect-the-publisher-to-patch-my-pc-cloud)to the Cloud Company.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Customers with an MSP or MSP Plus subscription can connect the Publisher to only one Patch My PC Cloud company. We recommend connecting the Publisher to the MSP parent Cloud company, rather than an individual MSP customer Cloud company, to ensure proper management and visibility of the Custom Apps made available to the Publisher.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Customers with an MSP or MSP Plus subscription can connect the Publisher to only one Patch My PC Cloud company. We recommend connecting the Publisher to the MSP parent Cloud company, rather than an individual MSP customer Cloud company, to ensure proper management and visibility of the Custom Apps made available to the Publisher.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>If you only plan to deploy your Custom Apps from Patch My PC Cloud, the Publisher is not required.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> If you only plan to deploy your Custom Apps from Patch My PC Cloud, the Publisher is not required.
 
 ## Step 1: Onboard to Patch My PC Cloud
 
@@ -50,6 +48,6 @@ For detailed connection steps, see [https://docs.patchmypc.com/patch-my-pc-cloud
 
 If the account used to sign in is associated with multiple Patch My PC Cloud companies, a selection window will appear.
 
-![Select a Cloud Company](/_images/image-(4140).png "Select a Cloud Company")
+![Select a Cloud Company](../../.gitbook/assets/image-\(4140\).png)
 
 Select the appropriate company from the list and click OK to complete the connection process.

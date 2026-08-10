@@ -4,4 +4,4 @@ _Applies to: Patch My PC Publisher V3.x_
 
 Clicking the **Update Manager** tab under the **WSUS Updates** section of Patch My PC (PMPC) Publisher runs the **Update Manager**, described in [Modify Published Updates](wsus-options/modify-published-updates.md).
 
-![WSUS Update Manager](/_images/image-(4744).png "WSUS Update Manager")
+![WSUS Update Manager](../../../.gitbook/assets/image-\(4744\).png)

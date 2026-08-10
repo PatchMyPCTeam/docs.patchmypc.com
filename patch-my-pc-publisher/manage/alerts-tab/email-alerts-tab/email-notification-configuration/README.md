@@ -2,21 +2,19 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **Email Notification Configuration** section of the **Email Alerts** tab in Patch My PC (PMPC) Publisher allows you to configure Publisher to send notifications when specific publishing events occur. These alerts provide timely visibility into publishing activity, including successes, warnings, and failures, without requiring administrators to actively monitor logs.
 
-![Email Alerts](/_images/image-(4237).png "Email Alerts")
+![Email Alerts](../../../../../.gitbook/assets/image-\(4237\).png)
 
 Before email alerts can be sent, email settings must be configured. This includes specifying the SMTP server and port or configuring OAuth application details, along with the required authentication settings, sender address, and recipient addresses.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>At the end of a [publishing sync](../../../../../patch-my-pc-publisherv2/administration/sync-schedule.md), the Publisher sends an email containing details about the sync event.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> At the end of a \[publishing sync]\(../../../../../patch-my-pc-publisherv2/administration/sync-schedule.md), the Publisher sends an email containing details about the sync event.
 
 ## Send email reports
 
@@ -24,36 +22,33 @@ When the **Send email reports** option is enabled, Publisher sends email alerts 
 
 ## Disable email for manual sync
 
-When **Disable email for manual sync** is enabled, email notifications are sent only for scheduled syncs.&#x20;
+When **Disable email for manual sync** is enabled, email notifications are sent only for scheduled syncs.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Email notifications are not sent when a sync is initiated manually from the [Sync Schedule](../../../../../patch-my-pc-publisherv2/administration/sync-schedule.md#run-publishing-service-sync) tab.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Email notifications are not sent when a sync is initiated manually from the \[Sync Schedule]\(../../../../../patch-my-pc-publisherv2/administration/sync-schedule.md#run-publishing-service-sync) tab.
 
 ## Provider
 
-The **Provider** dropdown lets you select from a list of predefined providers (such as Gmail, Outlook, Yahoo, or Exchange Online) to automatically populate the relevant fields on this tab with recommended values for the selected service.&#x20;
+The **Provider** dropdown lets you select from a list of predefined providers (such as Gmail, Outlook, Yahoo, or Exchange Online) to automatically populate the relevant fields on this tab with recommended values for the selected service.
 
 For example, selecting **Exchange Online** from the **Provider** dropdown sets the **Server** to **smtp.office365.com**, **port** to **587**, and enables **Use TLS**.
 
 If **Custom SMTP Provider** is selected, all SMTP settings must be configured manually.
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>You can modify any auto-populated values as required to meet the needs of your environment.</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> You can modify any auto-populated values as required to meet the needs of your environment.
 
 ## Test Email
 
 After configuring the required email notification settings, click **Test Email** to verify that the message is successfully sent and received by the configured recipient(s).
 
-If the test email fails, the issue is most commonly related to the SMTP or authentication configuration.&#x20;
+If the test email fails, the issue is most commonly related to the SMTP or authentication configuration.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See <a href="https://patchmypc.com/troubleshooting-smtp-email-sending">Troubleshooting SMTP Email Report Sending When Using Patch My PC</a> for troubleshooting guidance.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See [Troubleshooting SMTP Email Report Sending When Using Patch My PC](https://patchmypc.com/troubleshooting-smtp-email-sending) for troubleshooting guidance.
 
 ## **Email Fields**
 
@@ -92,7 +87,7 @@ Ultimately, the appropriate option depends on the authentication methods support
 You can choose from the following authentication methods:
 
 * [Anonymous](./#id-1.-anonymous)
-* [System account](./#id-3.-system)&#x20;
+* [System account](./#id-3.-system)
 * [Specific user](./#specified-user)
 * [OAuth2 (App Auth)](./#id-4.-oauth2-app-auth)
 
@@ -100,10 +95,9 @@ You can choose from the following authentication methods:
 
 Use the **Anonymous** option only if your SMTP relay explicitly allows unauthenticated sending. Most cloud providers, including Exchange Online, do not support anonymous SMTP. This option typically works only with on-premises SMTP relays configured to accept unauthenticated traffic from trusted internal IP addresses.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>When **Anonymous** is selected, the **Login** and **Password** fields are disabled, as no credentials are required for authentication.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> When \*\*Anonymous\*\* is selected, the \*\*Login\*\* and \*\*Password\*\* fields are disabled, as no credentials are required for authentication.
 
 #### **Server Configuration for Anonymous**
 
@@ -119,10 +113,9 @@ Choose this option only if your SMTP relay supports integrated Windows authentic
 
 By default, the Publisher service runs under the **local SYSTEM** account.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>When Anonymous is selected, the Login and Password fields are disabled, as no credentials are used for authentication.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> When Anonymous is selected, the Login and Password fields are disabled, as no credentials are used for authentication.
 
 #### **Server Configuration for System account**
 
@@ -134,11 +127,11 @@ If you choose to use the **System account** option, configure the settings in th
 
 Use the **Specific user** option when your SMTP server requires authentication with a dedicated username and password. This is the most common configuration and is recommended for most environments, including Exchange Online, Google Workspace, and authenticated SMTP relays.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Microsoft Exchange Online has deprecated Basic SMTP authentication and does not support username/password–based SMTP authentication by default. For Exchange Online, OAuth2 (App Authentication) is recommended.</p>
-<p>Some providers, such as Google Workspace, may still allow authenticated SMTP using a username and password, but this typically requires additional configuration and may be restricted by tenant security policies.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Microsoft Exchange Online has deprecated Basic SMTP authentication and does not support username/password–based SMTP authentication by default. For Exchange Online, OAuth2 (App Authentication) is recommended.
+>
+> Some providers, such as Google Workspace, may still allow authenticated SMTP using a username and password, but this typically requires additional configuration and may be restricted by tenant security policies.
 
 #### **Specified User Configuration**
 
@@ -156,16 +149,14 @@ If you choose to use the **Specific user** option, configure the settings in the
 
 Use the **OAuth2 (App Auth)** option to send email using OAuth 2.0 instead of a mailbox username and password. OAuth2 authenticates using a Microsoft Entra ID app registration and is the recommended approach for modern cloud email services.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [OAuth2 (App Auth) Configuration](../../../../../patch-my-pc-publisherv2/administration/alerts/email-alerts/oauth2-app-auth-configuration.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[OAuth2 (App Auth) Configuration]\(../../../../../patch-my-pc-publisherv2/administration/alerts/email-alerts/oauth2-app-auth-configuration.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.
 
 ## Save Email Notification Settings
 
 Click **Apply** to save the changes. Once the Email Notification settings are saved, Publisher will automatically send an email at the end of each synchronization when any updates or applications have been published.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Example Email Alerts](../../../../technical-references/example-email-alerts.md) for examples of the alerts sent by Publisher.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Example Email Alerts]\(../../../../technical-references/example-email-alerts.md) for examples of the alerts sent by Publisher.

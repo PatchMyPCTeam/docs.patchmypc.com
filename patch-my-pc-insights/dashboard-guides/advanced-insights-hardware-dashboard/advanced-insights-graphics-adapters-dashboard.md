@@ -6,10 +6,10 @@ description: Inventoried video adapters for managed client devices
 
 _Applies to: Patch My PC Advanced Insights_
 
-![](/_images/image-(2238).png "Graphics/Video Adapters table")
+![](../../../.gitbook/assets/image-\(2238\).png)
 
-This page shows a filterable list of each device and the video adapters inventoried by Configuration Manager. Where a device has multiple adapters, multiple rows are listed.&#x20;
+This page shows a filterable list of each device and the video adapters inventoried by Configuration Manager. Where a device has multiple adapters, multiple rows are listed.
 
 Click-through shows the device view with all inventoried adapters and their driver versions.
 
-![](/_images/image-(2239).png "Graphics adapters device view")
+![](../../../.gitbook/assets/image-\(2239\).png)

@@ -6,18 +6,17 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The Cloud tab allows you to connect the Publisher to your Patch My PC Cloud company. This connection enables the use of custom applications created in Patch My PC Cloud within the Publisher.
 
-![Cloud Tab](/_images/image-(4120).png "Cloud Tab")
+![Cloud Tab](../../../../.gitbook/assets/image-\(4120\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>The cloud connection is established between the Publisher instance and a single Patch My PC Cloud company. It is not configured per tenant. In multi-tenant environments, all tenants within the Publisher share the same cloud connection.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> The cloud connection is established between the Publisher instance and a single Patch My PC Cloud company. It is not configured per tenant. In multi-tenant environments, all tenants within the Publisher share the same cloud connection.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The App Migration feature is not available for MSP or MSP Plus licenses. Although the Cloud tab is visible in the Publisher, the App Migration option is not displayed for these license types.</p>
-<p>Customers who have previously seen App Migration under different licensing scenarios may expect it to appear on this page. Its absence is expected behavior for MSP and MSP Plus licenses.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> The App Migration feature is not available for MSP or MSP Plus licenses. Although the Cloud tab is visible in the Publisher, the App Migration option is not displayed for these license types.
+>
+> Customers who have previously seen App Migration under different licensing scenarios may expect it to appear on this page. Its absence is expected behavior for MSP and MSP Plus licenses.
 
 The primary purpose of the Cloud tab in MSP, multi-tenant, scenarios is to enable custom apps created in Patch My PC Cloud to be published through the Publisher.
 
@@ -27,10 +26,9 @@ An **MSP** license does not enable use of the [Custom Apps](../../../../patch-my
 
 While an MSP can create a Patch My PC Cloud company, the custom apps capability cannot be licensed or used with a standard **MSP** license.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>To use custom apps in Patch My PC Cloud, an **MSP Plus**, **Enterprise Plus**, or **Enterprise Premium** license is required.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> To use custom apps in Patch My PC Cloud, an \*\*MSP Plus\*\*, \*\*Enterprise Plus\*\*, or \*\*Enterprise Premium\*\* license is required.
 
 **MSP Plus** customers will typically use Patch My PC Cloud to deliver applications and updates directly to their customers. However, there may be scenarios where an MSP Plus customer still requires the Publisher instance for a specific customer or use case. In this scenario, the recommended approach is:
 

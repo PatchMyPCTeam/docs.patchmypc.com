@@ -7,16 +7,16 @@ To modify a notification in Patch My PC (PMPC) Cloud:
 1. Navigate to **Settings | Notifications**
 2. On the **Notifications** page, click the pencil icon beside the notification you want to modify.
 
-![Clicking the pencil icon](/_images/image-(3843).png "Clicking the pencil icon")
+![Clicking the pencil icon](../../../../.gitbook/assets/image-\(3843\).png)
 
 3. Make the required changes, then click **Save** to save your changes.
 
-![Clicking 'Save'](/_images/image-(3844).png "Clicking &#x27;Save&#x27;")
+![Clicking 'Save'](../../../../.gitbook/assets/image-\(3844\).png)
 
 The **Success - Notification updated** notification is shown.
 
-!['Success' notification](/_images/image-(3845).png "&#x27;Success&#x27; notification")
+!['Success' notification](../../../../.gitbook/assets/image-\(3845\).png)
 
 The Cloud Portal auto-refreshes to show the modified notification.
 
-![Modified notification](/_images/image-(3846).png "Modified notification")
+![Modified notification](../../../../.gitbook/assets/image-\(3846\).png)

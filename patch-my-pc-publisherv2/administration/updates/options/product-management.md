@@ -6,21 +6,21 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Product Management** section is used to manage the Patch My PC update category within ConfigMgr. This category must be enabled for third-party updates published by Patch My PC to be synchronized by the Software Update Point (SUP).
 
-![ConfigMgr/WSUS Product Management](/_images/image-(88).png "ConfigMgr/WSUS Product Management")
+![ConfigMgr/WSUS Product Management](../../../../.gitbook/assets/image-\(88\).png)
 
 Selecting the **Selected in ConfigMgr** checkbox (or leaving it selected if it is already enabled) ensures that the corresponding Patch My PC product category is also selected in the **ConfigMgr Console > Administration > Site Configuration > Sites > {site} > Settings > Configure Site Components > Software Update Point > Products**. This guarantees that Patch My PC third-party updates are evaluated during a SUP sync.
 
-![](/_images/image-(464).png)
+![](../../../../.gitbook/assets/image-\(464\).png)
 
-<blockquote class="wp-block-quote">
-<p><a href="https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/about-synchronizing-the-software-update-point">Important</a></p>
-<p>In some environments, you may see two **Patch My PC** product categories. This most commonly occurs after an operating system upgrade (for example, Windows Server 2012 to 2019), where Microsoft changed how update categories are hashed. When this happens, the existing Patch My PC category is effectively re-hashed, causing ConfigMgr to detect it as a new category. As a result, both categories may appear with the same display name.</p>
-<p>In this scenario, both Patch My PC categories should be enabled in Publisher and under Software Update Point Component Properties > Products. This ensures that all Patch My PC updates continue to synchronize correctly, regardless of which category ID they are associated with.</p>
-</blockquote>
+> [Important](https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/about-synchronizing-the-software-update-point)
+>
+> In some environments, you may see two \*\*Patch My PC\*\* product categories. This most commonly occurs after an operating system upgrade (for example, Windows Server 2012 to 2019), where Microsoft changed how update categories are hashed. When this happens, the existing Patch My PC category is effectively re-hashed, causing ConfigMgr to detect it as a new category. As a result, both categories may appear with the same display name.
+>
+> In this scenario, both Patch My PC categories should be enabled in Publisher and under Software Update Point Component Properties > Products. This ensures that all Patch My PC updates continue to synchronize correctly, regardless of which category ID they are associated with.
 
 Selecting the **Selected in WSUS** checkbox (or leaving it selected if it is already enabled) ensures that the corresponding Patch My PC product category is also selected in the **WSUS Console > Products and Classifications**.
 
-![WSUS Products and Classifications](/_images/image-(89).png "WSUS Products and Classifications")
+![WSUS Products and Classifications](../../../../.gitbook/assets/image-\(89\).png)
 
 ## When does the Patch My PC category become visible?
 
@@ -48,4 +48,4 @@ This functionality is documented in the [ConfigMgr Component Management](configm
 
 Patch My PC product information obtained from the SUP component properties in ConfigMgr, and the result of toggling the checkbox, are recorded in the _%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log_
 
-![%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log](/_images/image-(465).png "%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log")
+![%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log](../../../../.gitbook/assets/image-\(465\).png)

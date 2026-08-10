@@ -12,11 +12,11 @@ To configure this setting:
 
 1. Click the **Desktop Shortcut** tool.
 
-![Clicking the 'Desktop Shortcut' tool](/_images/image-(663).png "Clicking the &#x27;Desktop Shortcut&#x27; tool")
+![Clicking the 'Desktop Shortcut' tool](../../../../../.gitbook/assets/image-\(663\).png)
 
 2. Configure the settings as required.
 
-!['Desktop Shortcut' settings](/_images/image-(664).png "&#x27;Desktop Shortcut&#x27; settings")
+!['Desktop Shortcut' settings](../../../../../.gitbook/assets/image-\(664\).png)
 
 ## Next Steps
 
@@ -24,4 +24,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png "Clicking &#x27;Next&#x27;")
+![Clicking 'Next'](../../../../../.gitbook/assets/image-\(662\).png)

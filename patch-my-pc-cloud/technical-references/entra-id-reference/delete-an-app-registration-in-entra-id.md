@@ -8,54 +8,53 @@ To delete an App Registration:
 
 1. Sign in to the Microsoft Azure portal using an account with the **GlobalAdmin** role and navigate to the [App Registrations](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) blade.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>You must use an account in the same Microsoft 365 subscription (tenant) as your PMPC Company.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> You must use an account in the same Microsoft 365 subscription (tenant) as your PMPC Company.
 
-![Navigating to the "App registrations" blade](/_images/image-(2672).png "Navigating to the “App registrations” blade")
+![Navigating to the "App registrations" blade](../../../.gitbook/assets/image-\(2672\).png)
 
 2.  Click **All applications**.<br>
 
-    ![Clicking "All Applications"](/_images/image-(2673).png "Clicking “All Applications”")
+    ![Clicking "All Applications"](../../../.gitbook/assets/image-\(2673\).png)
 
     <br>
 3.  Click the **PMPC Recovery** application.<br>
 
-    ![Clicking the "PMPC Recovery" application](/_images/image-(2674).png "Clicking the “PMPC Recovery” application")
+    ![Clicking the "PMPC Recovery" application](../../../.gitbook/assets/image-\(2674\).png)
 
     <br>
 
     4.  Click **Delete**.<br>
 
-        ![Clicking "Delete"](/_images/image-(2675).png "Clicking “Delete”")
+        ![Clicking "Delete"](../../../.gitbook/assets/image-\(2675\).png)
 
         <br>
     5.  On the **Delete app registration** screen, check the **I understand the implications of deleting this app registration** checkbox, then click **Delete**.\
         <br>
 
-        ![Checking the "I understand the implications of deleting this app registration" checkbox, then clicking "Delete".](/_images/image-(2676).png "Checking the “I understand the implications of deleting this app registration” checkbox, then clicking “Delete”.")
+        ![Checking the "I understand the implications of deleting this app registration" checkbox, then clicking "Delete".](../../../.gitbook/assets/image-\(2676\).png)
 
         \
         The **Welcome to Azure** page is shown and the **Delete application - Successfully deleted application PMPC Recovery** notification is shown.\
         <br>
 
-        !["App registrations" page refreshes and the "Delete application - Successfully deleted application PMPC Recovery" notification is shown.](/_images/image-(2677).png "“App registrations” page refreshes and the “Delete application - Successfully deleted application PMPC Recovery” notification is shown.")
+        !["App registrations" page refreshes and the "Delete application - Successfully deleted application PMPC Recovery" notification is shown.](../../../.gitbook/assets/image-\(2677\).png)
 
         <br>
     6.  Click **App Registrations**.\
         <br>
 
-        ![Clicking the "App Registrations" blade](/_images/image-(2678).png "Clicking the “App Registrations” blade")
+        ![Clicking the "App Registrations" blade](../../../.gitbook/assets/image-\(2678\).png)
 
         <br>
     7.  On the **App registrations** screen, click **All applications**.\
         <br>
 
-        ![Clicking the "All applications" blade](/_images/image-(2679).png "Clicking the “All applications” blade")
+        ![Clicking the "All applications" blade](../../../.gitbook/assets/image-\(2679\).png)
 
         <br>
     8.  Verify the **PMPC Recovery** application has been deleted.\
         <br>
 
-        ![Verifying the "PMPC Recovery" application has been deleted.](/_images/image-(2680).png "Verifying the “PMPC Recovery” application has been deleted.")
+        ![Verifying the "PMPC Recovery" application has been deleted.](../../../.gitbook/assets/image-\(2680\).png)

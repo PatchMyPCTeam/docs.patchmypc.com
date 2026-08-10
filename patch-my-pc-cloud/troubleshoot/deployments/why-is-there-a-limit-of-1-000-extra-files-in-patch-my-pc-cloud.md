@@ -6,7 +6,7 @@ The Patch My PC (PMPC) Cloud Portal enforces a limit of 1,000 files per Custom A
 
 ## Why is there a 1,000-file limit?
 
-When you upload files using the Cloud Portal, the browser must perform client-side processing for each file before and during upload. In particular, the Portal creates a hashing worker for each file to compute its hash.&#x20;
+When you upload files using the Cloud Portal, the browser must perform client-side processing for each file before and during upload. In particular, the Portal creates a hashing worker for each file to compute its hash.
 
 With very large selections, too many workers can run in parallel, causing memory usage spikes, and the browser can hit an out-of-memory condition and crash.
 
@@ -18,14 +18,14 @@ If you try to select more than 1,000 files, the upload is blocked and you will s
 
 **"You have selected too many files (available: 1000)"**
 
-!['You have selected too many files (available: 1000)'](/_images/image-(4387).png "&#x27;You have selected too many files (available: 1000)&#x27;")
+!['You have selected too many files (available: 1000)'](../../../.gitbook/assets/image-\(4387\).png)
 
 ## Workaround: ZIP the folder and extract during deployment
 
 If your scenario requires thousands of files (for example, a folder with \~3,000 files totaling a few GB), the recommended workaround is:
 
 1. [Compress the folder into a single ZIP file](why-is-there-a-limit-of-1-000-extra-files-in-patch-my-pc-cloud.md#compress-the-folder-into-a-single-zip-file)
-2. [Upload the ZIP as an Extra File ](why-is-there-a-limit-of-1-000-extra-files-in-patch-my-pc-cloud.md#upload-the-zip-as-an-extra-file)
+2. [Upload the ZIP as an Extra File](why-is-there-a-limit-of-1-000-extra-files-in-patch-my-pc-cloud.md#upload-the-zip-as-an-extra-file)
 3. [Extract the ZIP during deployment using a Pre-Install script](why-is-there-a-limit-of-1-000-extra-files-in-patch-my-pc-cloud.md#extract-the-zip-during-deployment-using-a-pre-install-script)
 
 ### Step 1: Compress the folder into a single ZIP file
@@ -38,12 +38,11 @@ Create a ZIP archive of the extra files either manually or using the following P
 # Create the zip archiveCompress-Archive -Path $sourceFolderPath -DestinationPath $zipFilePath -Force -ErrorAction 'Stop'
 ```
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Ensure you keep the same folder structure that your installer expects. If the installer needs files “next to it” in the cache folder, make sure they end up in the same relative location after extraction.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Ensure you keep the same folder structure that your installer expects. If the installer needs files “next to it” in the cache folder, make sure they end up in the same relative location after extraction.
 
-### Step 2: Upload the ZIP as an Extra File&#x20;
+### Step 2: Upload the ZIP as an Extra File
 
 Upload **MyFolder.zip** as an Extra File in your Custom App or Deployment.
 
@@ -51,10 +50,9 @@ Upload **MyFolder.zip** as an Extra File in your Custom App or Deployment.
 
 Whilst deploying the app, use the [Scripts](../../deployments/deploy-app/configurations-tab/additional-tools/scripts/pre-install-scripts.md) configuration tool and configure [this](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Install/Pre-Install/Extract%20Zip/README.md) script as a pre-install script.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Always test your scripts thoroughly outside of the Cloud Portal first.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Always test your scripts thoroughly outside of the Cloud Portal first.
 
 ## Notes and Considerations
 

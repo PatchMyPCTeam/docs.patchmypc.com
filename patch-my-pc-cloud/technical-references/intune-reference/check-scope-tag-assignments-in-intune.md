@@ -8,26 +8,18 @@ If a Patch My PC (PMPC) Cloud deployment has been [configured to use Scope Tags]
 2.  Navigate to **Apps**.\
     <br>
 
-    ![Navigating to "Apps"](/_images/image-(2922).png "Navigating to “Apps”")
-
-
+    ![Navigating to "Apps"](../../../.gitbook/assets/image-\(2922\).png)
 3.  Navigate to **All Apps**.\
     <br>
 
-    ![Navigating to "All Apps"](/_images/image-(2923).png "Navigating to “All Apps”")
-
-
+    ![Navigating to "All Apps"](../../../.gitbook/assets/image-\(2923\).png)
 4.  Click the app if it’s shown in the results or search for it.<br>
 
-    ![Clicking the app](/_images/image-(2924).png "Clicking the app")
-
-
+    ![Clicking the app](../../../.gitbook/assets/image-\(2924\).png)
 5.  Navigate to **Manage | Properties**.\
     <br>
 
-    ![Navigating to "Manage | Properties"](/_images/image-(2925).png "Navigating to “Manage | Properties”")
-
-
+    ![Navigating to "Manage | Properties"](../../../.gitbook/assets/image-\(2925\).png)
 6.  Scroll down to the **Scope tags** section, which will show the tags defined in the PMPC Cloud deployment.<br>
 
-    ![Scrolling down to the "Scope tags" section which shows the tags defined in the PMPC Cloud deployment](/_images/image-(2926).png "Scrolling down to the “Scope tags” section which shows the tags defined in the PMPC Cloud deployment")
+    ![Scrolling down to the "Scope tags" section which shows the tags defined in the PMPC Cloud deployment](../../../.gitbook/assets/image-\(2926\).png)

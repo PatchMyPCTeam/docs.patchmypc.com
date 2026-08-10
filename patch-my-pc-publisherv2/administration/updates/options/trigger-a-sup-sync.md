@@ -8,7 +8,7 @@ The **Trigger a Software Update Point Sync** section is where you configure the 
 
 This section also allows you to manually initiate a SUP sync. A SUP sync is the process by which ConfigMgr retrieves update metadata from WSUS (and ultimately Microsoft Update), making newly published first and third-party updates visible and actionable in the ConfigMgr console.
 
-![Trigger a SUP sync](/_images/image-(4105).png "Trigger a SUP sync")
+![Trigger a SUP sync](../../../../.gitbook/assets/image-\(4105\).png)
 
 ## Perform Delta Synchronization
 
@@ -23,10 +23,9 @@ Key characteristics of delta synchronization:
 * Faster and less resource-intensive.
 * Commonly sufficient after publishing or enabling third-party updates.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>It’s important to note that a delta synchronization does not repair updates that may have been damaged or deleted during previous synchronizations.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> It’s important to note that a delta synchronization does not repair updates that may have been damaged or deleted during previous synchronizations.
 
 ## Perform Full Synchronization
 
@@ -41,15 +40,19 @@ Key characteristics of full synchronization:
 * More time-consuming and resource-intensive.
 * Intended for troubleshooting or recovery scenarios.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>ConfigMgr will typically escalate to a **full sync** when it's required. This occurs when configuration changes are detected that cannot be processed incrementally.</p>
-<p>Examples include:</p>
-<p>* Switching to a different default Software Update Point.</p>
-<p>* Changes to Product and Classification selection in the SUP site component properties.</p>
-<p>* Modifications to supersedence settings or the supersedence window.</p>
-<p>In addition, ConfigMgr periodically performs a full sync on a fixed interval (every 7 days by default). More information on SUP synchronization can be found at <a href="https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/about-synchronizing-the-software-update-point">https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/about-synchronizing-the-software-update-point</a></p>
-</blockquote>
+> \*\*Note\*\*
+>
+> ConfigMgr will typically escalate to a \*\*full sync\*\* when it's required. This occurs when configuration changes are detected that cannot be processed incrementally.
+>
+> Examples include:
+>
+> \* Switching to a different default Software Update Point.
+>
+> \* Changes to Product and Classification selection in the SUP site component properties.
+>
+> \* Modifications to supersedence settings or the supersedence window.
+>
+> In addition, ConfigMgr periodically performs a full sync on a fixed interval (every 7 days by default). More information on SUP synchronization can be found at [https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/about-synchronizing-the-software-update-point](https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/about-synchronizing-the-software-update-point)
 
 ## Configure SMS Provider Connection
 

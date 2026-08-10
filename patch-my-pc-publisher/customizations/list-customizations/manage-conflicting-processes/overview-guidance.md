@@ -1,8 +1,8 @@
 # Overview and Guidance on Managing Conflicting Processes in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Manage Conflicting Processes** right-click option in Patch My PC (PMPC) Publisher is used to handle scenarios in which an application being updated is currently running on an end-user device. Some third party updates require the application to be closed before the installer can run successfully.
 
@@ -10,30 +10,29 @@ This option allows you to define which running processes should be detected and 
 
 ## Guidance
 
-Products shown in the Product Tree with a blue cross icon (![Blue cross icon](/_images/image-(4767 "Blue cross icon").png>)) indicate that the application must be closed before updating.
+Products shown in the Product Tree with a blue cross icon (!\[Blue cross icon]\(/\_images/image-(4767 "Blue cross icon").png>)) indicate that the application must be closed before updating.
 
 PMPC has identified that these applications cannot be reliably updated whilst running.
 
-![Product Tree icon indicating the Manage Conflicting Processes feature should be configured](/_images/image-(4415).png "Product Tree icon indicating the Manage Conflicting Processes feature should be configured")
+![Product Tree icon indicating the Manage Conflicting Processes feature should be configured](../../../../.gitbook/assets/image-\(4415\).png)
 
-For these products, Publisher's default behavior is to configure conflicting processes to [Skip installation when conflicting processes are in use](policy-section.md#skip-installation-when-conflicting-processes-are-in-use).&#x20;
+For these products, Publisher's default behavior is to configure conflicting processes to [Skip installation when conflicting processes are in use](policy-section.md#skip-installation-when-conflicting-processes-are-in-use).
 
 This prevents installation failures when the application is open. The update will retry at the next configured retry interval, which differs between Microsoft ConfigMgr and Intune update workflows.
 
-For many organizations, a better compromise for these applications is to configure [Notify the user to close the application](policy-section.md#notify-the-user-to-close-the-application) and allow the user to [defer the installation](notification-policy.md#defer-snooze-policy) a limited number of times.&#x20;
+For many organizations, a better compromise for these applications is to configure [Notify the user to close the application](policy-section.md#notify-the-user-to-close-the-application) and allow the user to [defer the installation](notification-policy.md#defer-snooze-policy) a limited number of times.
 
 This approach balances application compliance with a positive end-user experience by allowing users time to close the application and save work.
 
 When the notification is presented to the end user, the available actions control how the update proceeds.
 
-![User options for Manage Conflicting Processes](/_images/image-(135).png "User options for Manage Conflicting Processes")
+![User options for Manage Conflicting Processes](../../../../.gitbook/assets/image-\(135\).png)
 
 Selecting **Close All and Install** immediately closes the defined [conflicting processes](management-options.md#manage-process-list) and starts the update installation.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>If an application is closed by this process, it is not automatically reopened after the update completes. Application relaunch behavior depends on the application itself or user action.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> If an application is closed by this process, it is not automatically reopened after the update completes. Application relaunch behavior depends on the application itself or user action.
 
 Selecting **Snooze Install** records a deferral for the installation. The update does not run at that time and is retried during the next evaluation cycle based on the configured [deferral policy](notification-policy.md#defer-snooze-policy) and deployment platform.
 

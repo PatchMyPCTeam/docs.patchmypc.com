@@ -12,7 +12,7 @@ If you use **Intune** to manage your windows updates (**Windows Update for Busin
 
 * You get **complete** visibility of **all** update compliance from Advanced Insights
 
-![The Microsoft Updates Dashboard](/_images/6.jpg "The Microsoft Updates Dashboard")
+![The Microsoft Updates Dashboard](<../.gitbook/assets/6 (1).jpg>)
 
 ***
 
@@ -22,7 +22,7 @@ We supplement your ConfigMgr compliance data with **additional data** from Micro
 
 Our Inventory Extensions WMI Provider runs on clients and scans against Microsoft Update to find update compliance data. This data is then pulled into ConfigMgr via Hardware Inventory for reporting.
 
-![](/_images/image-(2010).png)
+![](../.gitbook/assets/image-\(2010\).png)
 
 ***
 

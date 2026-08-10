@@ -1,15 +1,14 @@
 # Disable Self-Updater
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: All Products, Vendor, Product_
-\
-_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Products, Vendor, Product_\
+_&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Overview
 
 This option disables a product’s built in automatic update feature.
 
-![Disable Self-Updater](/_images/image-(4009).png "Disable Self-Updater")
+![Disable Self-Updater](../../.gitbook/assets/image-\(4009\).png)
 
 When this option is enabled, the Publisher applies the required configuration to prevent the product from updating itself. This may include actions such as setting a registry value or modifying a scheduled task, depending on how the product implements self updating.
 

@@ -2,14 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 Customers often ask which code-signing certificate option they should use when publishing third-party updates using a tool like Patch My PC (PMPC) Publisher.
 
-There is no single correct choice, as the right approach depends on your organization’s security requirements, PKI maturity, and operational preferences.&#x20;
+There is no single correct choice, as the right approach depends on your organization’s security requirements, PKI maturity, and operational preferences.
 
 In practice, many environments successfully use self-signed certificates, whilst others require PKI-issued certificates for compliance or governance reasons.
 
@@ -19,12 +18,11 @@ The same certificate is also used to sign ConfigMgr detection scripts, even in a
 
 Ultimately, whichever method you choose, the certificate residing in the WSUS certificate store is the certificate Publisher will use for signing during ConfigMgr and WSUS publishing operations.
 
-![Code-Signing Certificate in WSUS Store](/_images/image-(3912).png "Code-Signing Certificate in WSUS Store")
+![Code-Signing Certificate in WSUS Store](../../../../../.gitbook/assets/image-\(3912\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If multiple code-signing certificates are present in the WSUS store on the SUP, the certificate with the longest validity is always selected.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If multiple code-signing certificates are present in the WSUS store on the SUP, the certificate with the longest validity is always selected.
 
 Publisher supports multiple approaches to accommodate both ConfigMgr and WSUS environments:
 
@@ -49,17 +47,17 @@ Organizations that want the simplest setup with minimal manual certificate handl
 * The certificate generated is self-signed.
 * May not meet stricter compliance or PKI requirements in some organizations.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>When ConfigMgr is configured to manage the code-signing certificate, an expired certificate is automatically blocked and removed from client devices during a software update scan.</p>
-<p>If you are using a PKI-issued certificate and it expires, ConfigMgr may automatically generate and begin using a self-signed certificate instead.&#x20;</p>
-<p>This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before expiration to avoid unintended changes or disruption.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> When ConfigMgr is configured to manage the code-signing certificate, an expired certificate is automatically blocked and removed from client devices during a software update scan.
+>
+> If you are using a PKI-issued certificate and it expires, ConfigMgr may automatically generate and begin using a self-signed certificate instead.
+>
+> This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before expiration to avoid unintended changes or disruption.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See <a href="https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#automatically-manage-the-wsus-signing-certificate">Automatically manage the WSUS signing certificate</a> for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See [Automatically manage the WSUS signing certificate](https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#automatically-manage-the-wsus-signing-certificate) for more information.
 
 ## Publisher-Generated Self-Signed Certificate
 
@@ -81,12 +79,11 @@ WSUS standalone environments or ConfigMgr environments where self-signed certifi
 * If the private key is compromised, the certificate must be manually removed from client trust stores using ConfigMgr or another method.
 * When the certificate reaches its expiry date, customers must remember to regenerate it to ensure signing operations continue uninterrupted.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Generate a Self-Signed Certificate](../../../../../patch-my-pc-publisherv2/administration/general/certificate-management/generate-a-self-signed-certificate.md) for more details.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Generate a Self-Signed Certificate]\(../../../../../patch-my-pc-publisherv2/administration/general/certificate-management/generate-a-self-signed-certificate.md) for more details.
 
-By default, in this scenario, the generated certificate’s private key is marked as exportable. This is intentional and recommended, as it allows the certificate (including the private key) to be exported and reused if Publisher is later moved to a new top-level SUP.&#x20;
+By default, in this scenario, the generated certificate’s private key is marked as exportable. This is intentional and recommended, as it allows the certificate (including the private key) to be exported and reused if Publisher is later moved to a new top-level SUP.
 
 Without an exportable private key, the same signing certificate could not be transferred to another server.
 
@@ -108,8 +105,8 @@ Organizations with strict security, compliance, or audit requirements that manda
 * Requires access to a PKI and coordination with security or PKI teams.
 * Public Certificate Authority certificates may incur additional cost.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>If you are using a PKI-issued certificate that expires, and ConfigMgr is set to automatically manage the certificate, it may generate and begin using a self-signed certificate instead.&#x20;</p>
-<p>This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before they expire to avoid unintended changes or disruptions.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> If you are using a PKI-issued certificate that expires, and ConfigMgr is set to automatically manage the certificate, it may generate and begin using a self-signed certificate instead.
+>
+> This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before they expire to avoid unintended changes or disruptions.

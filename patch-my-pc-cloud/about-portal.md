@@ -9,7 +9,7 @@ The Cloud Portal is split into two key areas:
 1. **Navigation pane -** Allows you to navigate through the different nodes
 2. **Details pane -** Changes based on the selected node and available actions.
 
-![Cloud Portal](/_images/image-(4002).png "Cloud Portal")
+![Cloud Portal](../.gitbook/assets/image-\(4002\).png)
 
 The Navigation pane consists of the following nodes:
 
@@ -28,61 +28,54 @@ From the **App Catalog** you can:
 * Apply Filters to help you refine the results you see.
 * [Deploy an App](deployments/deploy-app/).
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See the [App Catalog](app-catalog/) section for more details.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See the \[App Catalog]\(app-catalog/) section for more details.
 
 ## Deployments
 
 Clicking the _Deployments_ node lets you view all your current deployments and their status.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Deployments](deployments/overview.md) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Deployments]\(deployments/overview.md) for more information.
 
 ## Events
 
 Clicking the _Events_ node lets you view and manage all of the Cloud-related Events created by the various tasks performed from the Cloud Portal.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Events](events/overview.md) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Events]\(events/overview.md) for more information.
 
 ## Migration
 
 Clicking the _Migration_ node allows you to migrate items from a Microsoft Configuration Manager (ConfigMgr) hierarchy to your PMPC Cloud Company.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Migration](migration/overview.md) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Migration]\(migration/overview.md) for more information.
 
 ## Discovery
 
 Clicking the _Discovery_ node lets you see which apps in our App Catalog are installed in your environment, including any Binary Free Apps or Custom Apps you may have added.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Discovery](discovery/overview.md) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Discovery]\(discovery/overview.md) for more information.
 
 ## Advanced/Patch Insights
 
 Clicking the _Advanced/Patch Insights_ node lets you view a wealth of information about your organization to monitor, maintain, and enhance your environment.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Advanced/Patch Insights](insights-intune/overview.md) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Advanced/Patch Insights]\(insights-intune/overview.md) for more information.
 
 ## Settings
 
 Clicking the _Settings_ node lets you perform various administrative tasks related to how your PMPC Cloud Company is set up and configured.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Administration](manage/) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Administration]\(manage/) for more information.

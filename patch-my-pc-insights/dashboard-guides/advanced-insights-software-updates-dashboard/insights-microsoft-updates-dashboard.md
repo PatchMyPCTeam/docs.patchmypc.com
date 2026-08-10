@@ -2,12 +2,11 @@
 
 _Applies to: Patch My PC Advanced and Patch Insights_
 
-<blockquote class="wp-block-quote">
-<p>This dashboard requires deployment of the [Advanced Insights Inventory Extensions](../../advanced-insights-inventory-extensions/)</p>
-<p>Dashboard will only return data on devices managed by Windows Update for Business (WuFB)</p>
-</blockquote>
+> This dashboard requires deployment of the \[Advanced Insights Inventory Extensions]\(../../advanced-insights-inventory-extensions/)
+>
+> Dashboard will only return data on devices managed by Windows Update for Business (WuFB)
 
-![](/_images/24.png)
+![](<../../../.gitbook/assets/24 (1).png>)
 
 At the top of this dashboard you can see how many devices have reported Microsoft Update Inventory Data, count of Critical and Security updates required by one or more devices, Drivers required by one of more devices and Classifications and/or Products for required updates that you are not currently synchronising into Configuration Manager.
 

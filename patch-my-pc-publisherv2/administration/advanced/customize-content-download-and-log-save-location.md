@@ -4,9 +4,9 @@ _Applies to: Patch My PC Publisher V2.x_
 
 ## Overview
 
-By default, the Publisher downloads content and writes logs to locations derived from the system and installation context.&#x20;
+By default, the Publisher downloads content and writes logs to locations derived from the system and installation context.
 
-![Customize Content Download and Log Save Location](/_images/image-(3946).png "Customize Content Download and Log Save Location")
+![Customize Content Download and Log Save Location](../../../.gitbook/assets/image-\(3946\).png)
 
 Because the Publisher runs under the SYSTEM account, default paths may not always align with organizational requirements for disk usage, monitoring, or security tooling.
 
@@ -15,10 +15,9 @@ The Customize Content Download and Log Save Location options allow you to overri
 * Temporary content downloads used during publishing
 * The Publisher log folder
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>These settings apply only to the Publisher and do not affect client-side installations.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> These settings apply only to the Publisher and do not affect client-side installations.
 
 ## Set a Custom Folder for Temporary Downloads
 
@@ -30,12 +29,11 @@ C:\Windows\Temp
 
 This screenshot shows the Publisher using `C:\Windows\Temp` as a temporary scratch location while preparing packages during a publishing sync.
 
-![Temporary Downloads Folder](/_images/image-(3947).png "Temporary Downloads Folder")
+![Temporary Downloads Folder](../../../.gitbook/assets/image-\(3947\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Temporary content downloaded to this location is automatically removed once publishing operations complete.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Temporary content downloaded to this location is automatically removed once publishing operations complete.
 
 ## Set a Custom Folder for PatchMyPC.log
 

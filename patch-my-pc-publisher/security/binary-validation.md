@@ -13,7 +13,7 @@ Binary validation occurs in two distinct phases:
 * [Phase 2: Runtime validation during publishing](binary-validation.md#phase-2-runtime-validation-during-publishing)\
   **Summary:** When a customer publishes an update, the binary is downloaded again directly from the vendor. Its cryptographic hash is recalculated and compared against the authoritative hash stored in the catalog. Publishing proceeds only if the hashes match exactly.
 
-![Two-Phase Binary Validation Model](/_images/image-(4186).png "Two-Phase Binary Validation Model")
+![Two-Phase Binary Validation Model](../../.gitbook/assets/image-\(4186\).png)
 
 If either phase fails, the update does not proceed.
 
@@ -37,7 +37,7 @@ If the file were modified at any point after acquisition, whether through vendor
 
 In the example below, the catalog metadata contains both the original vendor download URL and the base64 encoded cryptographic hash. These values are used later in the validation process to confirm integrity.
 
-![Example of Binary URL and Hash in the Catalog](/_images/image-(4168).png "Example of Binary URL and Hash in the Catalog")
+![Example of Binary URL and Hash in the Catalog](../../.gitbook/assets/image-\(4168\).png)
 
 This integrity anchoring step establishes a cryptographic trust reference before the catalog is ever signed or distributed. Subsequent validation steps rely on this recorded hash to prevent altered or substituted binaries from being published.
 {% endstep %}
@@ -51,7 +51,7 @@ Where file size permits, the binary is uploaded to VirusTotal and scanned across
 
 In the example below, the 1Password installer URL is analyzed by VirusTotal. The scan result shows 0 detections out of 94 engines, indicating that no participating security vendor flagged the file or URL as malicious at the time of analysis.
 
-![VirusTotal results showing 0/94 detections](/_images/image-(4169).png "VirusTotal results showing 0/94 detections")
+![VirusTotal results showing 0/94 detections](../../.gitbook/assets/image-\(4169\).png)
 
 This multi-engine scanning step provides broad threat intelligence coverage across commercial and open source detection platforms and reduces the risk of introducing malicious or compromised vendor content into the catalog.
 
@@ -92,11 +92,11 @@ This signing step cryptographically protects the integrity of the metadata, incl
 
 When a catalog has been signed and released, details of the addition, including VirusTotal results, can be found at [https://patchmypc.com/catalog-release](https://patchmypc.com/catalog-release).
 
-![https://patchmypc.com/catalog-release](/_images/image-(4170).png "https://patchmypc.com/catalog-release")
+![https://patchmypc.com/catalog-release](../../.gitbook/assets/image-\(4170\).png)
 
 Before Publisher evaluates the catalog metadata for publishing, its hash is validated. This can be observed in the **PatchMyPC-PackageService.log**
 
-![PackageService.log](/_images/image-(4171).png "PackageService.log")
+![PackageService.log](../../.gitbook/assets/image-\(4171\).png)
 {% endstep %}
 {% endstepper %}
 
@@ -110,7 +110,7 @@ When a customer publishes an update, Publisher downloads the binary directly fro
 
 The file download process can be observed in the **PatchMyPC.log**
 
-![PatchMyPC.log](/_images/image-(4172).png "PatchMyPC.log")
+![PatchMyPC.log](../../.gitbook/assets/image-\(4172\).png)
 {% endstep %}
 
 {% step %}
@@ -128,7 +128,7 @@ The hash comparison would fail, and publishing would stop. The update would not 
 
 The hash (digest) verification can be observed in the **PatchMyPC.log**.
 
-![PatchMyPC.log](/_images/image-(4173).png "PatchMyPC.log")
+![PatchMyPC.log](../../.gitbook/assets/image-\(4173\).png)
 {% endstep %}
 {% endstepper %}
 

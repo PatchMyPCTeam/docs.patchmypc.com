@@ -2,10 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 Older Office 365 connectors previously used for Microsoft Teams webhooks are deprecated. Microsoft announced the retirement of these connectors. For more information, see [Retirement of Office 365 connectors within Microsoft Teams on the Microsoft Developer](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) blog.
 
@@ -13,7 +12,7 @@ Microsoft Teams Workflows use the Adaptive Message Card format. Legacy Microsoft
 
 It is recommended that any webhook configured in the Patch My PC (PMPC) Publisher using the **MSTeams** message system be updated to use **MSTeamsWorkflow**.
 
-![MSTeamsWorkflow vs MSTeams Message System](/_images/image-(212).png "MSTeamsWorkflow vs MSTeams Message System")
+![MSTeamsWorkflow vs MSTeams Message System](../../../../.gitbook/assets/image-\(212\).png)
 
 ## Update an Existing Webhook
 
@@ -22,7 +21,7 @@ It is recommended that any webhook configured in the Patch My PC (PMPC) Publishe
 3. Select the existing webhook that uses the Microsoft Teams legacy provider and click Edit.
 4. Change the Webhook Provider from **Microsoft Teams (Legacy Webhook)** to **Microsoft Teams Workflow**.
 
-![Change the Webhook Provider](/_images/image-(213).png "Change the Webhook Provider")
+![Change the Webhook Provider](../../../../.gitbook/assets/image-\(213\).png)
 
 1. Replace the existing Webhook URL with the new workflow webhook URL.
 2. Click **OK**, then click **Apply** to save the changes.

@@ -1,30 +1,30 @@
 # Setting Configuration
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Policy
 
 The **Policy** section defines how the Publisher handles update installation when a conflicting application process is detected on the device. These settings determine whether the update proceeds, how running applications are handled, and whether user interaction is required before installation begins.
 
-![Manage Conflicting Processes Settings](/_images/image-(3965).png "Manage Conflicting Processes Settings")
+![Manage Conflicting Processes Settings](../../../.gitbook/assets/image-\(3965\).png)
 
 ### Perform the Installation
 
 This option allows the update installation to proceed even if a conflicting process is detected. No attempt is made to notify the user or close the running application. This setting relies entirely on the vendor installer behavior and may result in installation failure if the application cannot be updated while running.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>This option is the default setting for most applications in the Patch My PC Catalog where conflicting process configuration is not required. It should only be selected for applications that are designed to be updated while running.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> This option is the default setting for most applications in the Patch My PC Catalog where conflicting process configuration is not required. It should only be selected for applications that are designed to be updated while running.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>While some applications can be updated while running, they often must be closed and reopened before the new version is actually in use. Until the application is restarted, the previous version may continue running in memory.</p>
-<p>Some customers choose to use the [Notify the user to close the application](setting-configuration.md#notify-the-user-to-close-the-application) policy for applications, such as web browsers, to ensure they are closed before updating. This helps ensure that when the user next launches the application, it is immediately running the updated version.</p>
-<p>If an application such as a browser is frequently left open, it may remain vulnerable until it is restarted, even if the update installs successfully in the background.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> While some applications can be updated while running, they often must be closed and reopened before the new version is actually in use. Until the application is restarted, the previous version may continue running in memory.
+>
+> Some customers choose to use the \[Notify the user to close the application]\(setting-configuration.md#notify-the-user-to-close-the-application) policy for applications, such as web browsers, to ensure they are closed before updating. This helps ensure that when the user next launches the application, it is immediately running the updated version.
+>
+> If an application such as a browser is frequently left open, it may remain vulnerable until it is restarted, even if the update installs successfully in the background.
 
 ### Auto-close conflicting application process before installation
 
@@ -32,10 +32,9 @@ This option automatically terminates the configured conflicting processes before
 
 This ensures the update can proceed successfully but may result in data loss if the user has unsaved work.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Automatically closing applications is often considered a poor end user experience, as it can interrupt active work and cause loss of unsaved data. This option should be reserved for scenarios where unattended enforcement is required and update completion is prioritized over user experience.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Automatically closing applications is often considered a poor end user experience, as it can interrupt active work and cause loss of unsaved data. This option should be reserved for scenarios where unattended enforcement is required and update completion is prioritized over user experience.
 
 ### Skip installation when conflicting processes are in use
 
@@ -43,10 +42,9 @@ This option prevents the update from installing if any configured conflicting pr
 
 This option is generally considered a safe approach and is appropriate for non-critical updates that should only install when the application is not actively being used. However, compliance can drift over time if the application is frequently in use and the update is repeatedly skipped.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>This is the default behavior configured by the Publisher for applications that must be closed to update successfully, helping reduce the risk of installation failures. By skipping the update when the application is in use, it avoids failed installations that can be difficult and time consuming to troubleshoot.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> This is the default behavior configured by the Publisher for applications that must be closed to update successfully, helping reduce the risk of installation failures. By skipping the update when the application is in use, it avoids failed installations that can be difficult and time consuming to troubleshoot.
 
 ### Notify the user to close the application
 
@@ -60,14 +58,13 @@ This option provides the best balance between update reliability and user experi
 
 The **Notify Timeout Configuration** setting controls how long the update waits for user action after a notification is displayed when a conflicting process is detected. It is used in conjunction with the policy setting to [Notify the user to close the application](setting-configuration.md#notify-the-user-to-close-the-application).
 
-![Notify Timeout Configuration](/_images/image-(137).png "Notify Timeout Configuration")
+![Notify Timeout Configuration](../../../.gitbook/assets/image-\(137\).png)
 
 The timeout defines the period the user has to close the application before enforcement behavior occurs. If the application is closed within this window, the update proceeds. If no action is taken, the outcome depends on the [configured deferral and enforcement settings](setting-configuration.md#defer-policy).
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>A 15 minute buffer is automatically applied to all configured timeout values. This buffer accounts for platform execution limits and is not configurable.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> A 15 minute buffer is automatically applied to all configured timeout values. This buffer accounts for platform execution limits and is not configurable.
 
 * **For ConfigMgr applications**, the maximum timeout is limited by the configured application run time, minus the 15 minute buffer.
 * **For Intune applications and Intune updates**, the maximum supported run time is **1444 minutes**. The notification timeout is calculated as this maximum minus the 15 minute buffer.
@@ -79,15 +76,15 @@ Patch My PC recommends configuring a timeout of one 105 minutes, which aligns wi
 
 The **Process Restart Prevention** option prevents the end user from reopening the application while the update is in progress. This helps avoid scenarios where the application is closed for the update but immediately relaunched, which could cause the installation to fail or be delayed.
 
-![Process Start Prevention](/_images/image-(138).png "Process Start Prevention")
+![Process Start Prevention](../../../.gitbook/assets/image-\(138\).png)
 
 This option is only available at the Product level and should be used for applications where restarting the process during installation is likely to interfere with a successful update.
 
-<blockquote class="wp-block-quote">
-<p>**Caution**</p>
-<p>This setting is **not recommended** in most scenarios due to the potential for user disruption and residual system changes if the update process does not complete cleanly.</p>
-<p>For some applications, such as **Google Chrome**, enabling this setting can prevent the application from updating. These applications rely on helper processes or self update mechanisms that must be able to launch during the update process. Blocking the executable using Image File Execution Options can interfere with this behavior and cause the update to fail consistently.</p>
-</blockquote>
+> \*\*Caution\*\*
+>
+> This setting is \*\*not recommended\*\* in most scenarios due to the potential for user disruption and residual system changes if the update process does not complete cleanly.
+>
+> For some applications, such as \*\*Google Chrome\*\*, enabling this setting can prevent the application from updating. These applications rely on helper processes or self update mechanisms that must be able to launch during the update process. Blocking the executable using Image File Execution Options can interfere with this behavior and cause the update to fail consistently.
 
 ### How the setting works
 
@@ -101,12 +98,11 @@ or
 
 > "The requested operation requires elevation"
 
-![Prevent the end user from opening an application](/_images/image-(3986).png "Prevent the end user from opening an application")
+![Prevent the end user from opening an application](../../../.gitbook/assets/image-\(3986\).png)
 
 ### Potential Risk
 
-If the ScriptRunner process is forcefully terminated or exits unexpectedly, the Image File Execution Options registry entries may not be cleaned up correctly. When this occurs, users may continue to see the blocking message even though no installation or update is actively running.
-\
+If the ScriptRunner process is forcefully terminated or exits unexpectedly, the Image File Execution Options registry entries may not be cleaned up correctly. When this occurs, users may continue to see the blocking message even though no installation or update is actively running.\
 If this happens, the registry entry for the affected process must be removed manually.
 
 Depending on the operating system architecture and the application being blocked, you may need to check one or both of the following registry paths:
@@ -118,14 +114,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Imag
 
 Look for subkeys named after the blocked executable, such as `notepad++.exe`.
 
-![Image File Execution Options registry entries](/_images/image-(3987).png "Image File Execution Options registry entries")
+![Image File Execution Options registry entries](../../../.gitbook/assets/image-\(3987\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>When Patch My PC ScriptRunner executes on a device, it checks for legacy Image File Execution Options entries that were created by previous Patch My PC update attempts that were not cleaned up correctly. If these entries are detected, ScriptRunner will remove them automatically.</p>
-<p>This cleanup only occurs when another Patch My PC application or update is executed on the device. If no further Patch My PC deployments run, the stale registry entries may remain in place.</p>
-<p>For this reason, if users are blocked from launching an application due to leftover Image File Execution Options entries, a manual registry cleanup or [PowerShell based remediation](setting-configuration.md#powershell-based-remediation) is often required to immediately restore application access.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> When Patch My PC ScriptRunner executes on a device, it checks for legacy Image File Execution Options entries that were created by previous Patch My PC update attempts that were not cleaned up correctly. If these entries are detected, ScriptRunner will remove them automatically.
+>
+> This cleanup only occurs when another Patch My PC application or update is executed on the device. If no further Patch My PC deployments run, the stale registry entries may remain in place.
+>
+> For this reason, if users are blocked from launching an application due to leftover Image File Execution Options entries, a manual registry cleanup or \[PowerShell based remediation]\(setting-configuration.md#powershell-based-remediation) is often required to immediately restore application access.
 
 ### **PowerShell-based Remediation**
 
@@ -154,23 +151,22 @@ The **Notification Policy** options become available when the policy [Notify the
 
 These settings control how end user notifications behave when a conflicting process is detected and the application is running.
 
-![Notification Policy](/_images/image-(3979).png "Notification Policy")
+![Notification Policy](../../../.gitbook/assets/image-\(3979\).png)
 
 ### Notification behavior
 
 If the application to be updated is running, this setting controls how notifications are handled when Windows Focus Assist is active.
 
-![Notification behavior](/_images/image-(3980).png "Notification behavior")
+![Notification behavior](../../../.gitbook/assets/image-\(3980\).png)
 
 **Discard the notification**\
 When selected, the notification is suppressed while Focus Assist is enabled. No visible notification is shown to the user during this time.
 
 The update behavior continues based on the configured [deferral settings](setting-configuration.md#defer-policy). This option minimizes user interruption but increases the likelihood that the user does not see the notification before enforcement occurs.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>This is the default option.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> This is the default option.
 
 **Always show the notification**\
 When selected, the notification is shown to the user even if Focus Assist is enabled.
@@ -187,42 +183,38 @@ Once the user has exhausted the allowed deferrals or the deferral time window ha
 **Allow the user to defer the installation**\
 This setting allows the end user to postpone the installation when a conflicting process is detected and a notification is displayed.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>When a user chooses to defer, the installation is recorded as a failed attempt for that evaluation cycle. The update or application will retry during the next evaluation cycle, which depends on the deployment platform being used, such as ConfigMgr software updates, ConfigMgr applications, or Intune Win32 applications.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> When a user chooses to defer, the installation is recorded as a failed attempt for that evaluation cycle. The update or application will retry during the next evaluation cycle, which depends on the deployment platform being used, such as ConfigMgr software updates, ConfigMgr applications, or Intune Win32 applications.
 
 When this option is enabled, the following deferral policies are available.
 
 * **Indefinitely**\
   The user can defer the update without limit.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This option may result in the update never being installed if the user continues to defer and should be used with caution.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This option may result in the update never being installed if the user continues to defer and should be used with caution.
 
 * **Up to X times**\
   The user can defer the update up to the specified number of times. The minimum value is **once** and the maximum value is **999 times**.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Each deferral consumes 1 count. Once the maximum number of deferrals is reached, the notification is still shown but the option to snooze or defer is no longer available. The installation will then proceed based on the remaining notification and timeout settings.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Each deferral consumes 1 count. Once the maximum number of deferrals is reached, the notification is still shown but the option to snooze or defer is no longer available. The installation will then proceed based on the remaining notification and timeout settings.
 
 * **First notification displayed plus X days**\
   The user can defer the update for a specified number of days starting from when the first notification was displayed, or when it would have been displayed based on Focus Assist behavior. The minimum value is **1** day and the maximum value is **15** days.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>After the configured number of days has elapsed, the notification is shown without the option to snooze or defer.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> After the configured number of days has elapsed, the notification is shown without the option to snooze or defer.
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>This option is particularly useful when updates must be installed within a defined compliance window after being targeted, such as environments with Cyber Essentials Plus requirements where patches must be installed within 14 days.&#x20;</p>
-<p>It allows organizations to use user notifications and deferrals early in the deployment while still enforcing installation once the allowed deferral period is reached.</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> This option is particularly useful when updates must be installed within a defined compliance window after being targeted, such as environments with Cyber Essentials Plus requirements where patches must be installed within 14 days.
+>
+> It allows organizations to use user notifications and deferrals early in the deployment while still enforcing installation once the allowed deferral period is reached.
 
 * **Timeout expiration behavior**\
   This setting controls what happens if the notification timeout expires and the user takes no action. The available optiosn are:
@@ -244,7 +236,7 @@ If the application is still running when the notification timeout expires and no
 
 The **Management Options** section allows you to control which running processes are evaluated for conflicting process management and configure the notification branding.
 
-![Management Options](/_images/image-(3981).png "Management Options")
+![Management Options](../../../.gitbook/assets/image-\(3981\).png)
 
 ### Manage process list
 
@@ -254,7 +246,7 @@ The default process list is populated automatically based on the processes defin
 
 You can add additional process names if your environment uses processes that should also be considered conflicting. You can also remove processes if required, although this is generally not recommended unless you are certain the process does not interfere with updates.
 
-![Manage process list](/_images/image-(3982).png "Manage process list")
+![Manage process list](../../../.gitbook/assets/image-\(3982\).png)
 
 Use the process list to define which running executables are treated as conflicting during update installation.
 

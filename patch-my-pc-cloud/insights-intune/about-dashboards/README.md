@@ -14,26 +14,24 @@ The Dashboards are split into the following sections:
 * [Statistics](./#statistics)
 * [Charts](./#charts)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Like other pages in the portal, a Dashboard’s layout can be controlled by adjusting your browser's zoom level.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Like other pages in the portal, a Dashboard’s layout can be controlled by adjusting your browser's zoom level.
 
-!['Home' page](/_images/image-(4279).png "&#x27;Home&#x27; page")
+!['Home' page](../../../.gitbook/assets/image-\(4279\).png)
 
 ## Statistics
 
 The top row of a Dashboard is called _Statistics_, and displays a summary of data points from your environment.
 
-![Statistics](/_images/image-(4280).png "Statistics")
+![Statistics](../../../.gitbook/assets/image-\(4280\).png)
 
 ## Charts
 
 The _Charts_ section contains a series of donut charts.
 
-!['Charts' section](/_images/image-(4281).png "&#x27;Charts&#x27; section")
+!['Charts' section](../../../.gitbook/assets/image-\(4281\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Home Page for Advanced/Patch Insights for Intune](home-page.md) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Home Page for Advanced/Patch Insights for Intune]\(home-page.md) for more information.

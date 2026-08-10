@@ -26,25 +26,23 @@ The certificate must meet the following minimum requirements:
   * **Scenario 3 - CNAME / Alias certificate.**
     * For Advanced Insights URL deployment using a **CNAME / Alias,** (e.g. _https://AdvancedInsights.contoso.local_) the certificate SAN must contain an entry which represents the CNAME / Alias. e.g. '_AdvancedInsights.contoso.local'._
 
-<blockquote class="wp-block-quote">
-<p>When using a **CNAME / Alias** or **Wilcard** certificate for custom Advanced Insights deployment URL, ensure that DNS has been updated to include an entry which represents the chosen CNAME / Alias.</p>
-<p>_Example:_</p>
-<p>![](/_images/image-(1726).png>)</p>
-</blockquote>
+> When using a \*\*CNAME / Alias\*\* or \*\*Wilcard\*\* certificate for custom Advanced Insights deployment URL, ensure that DNS has been updated to include an entry which represents the chosen CNAME / Alias.
+>
+> \_Example:\_
+>
+> !\[]\(/\_images/image-(1726).png>)
 
 Certificate SAN values can be also verified within the certificate properties.
 
 _Examples:_
 
-![](/_images/image-(1727).png "Server Host Certificate - Subject Alternative Name (SAN) properties.")
+![](../../.gitbook/assets/image-\(1727\).png)
 
-![](/_images/image-(1728).png "CNAME - Alias Certificate - Subject Alternative Name (SAN) properties.")
+![](../../.gitbook/assets/image-\(1728\).png)
 
-![](/_images/image-(1729).png "Wildcard Host Certificate - Subject Alternative Name (SAN) properties.")
+![](../../.gitbook/assets/image-\(1729\).png)
 
-<blockquote class="wp-block-quote">
-<p>On the Windows Server OS which will host Advanced Insights, the following PowerShell script can be executed to list supported certificates.</p>
-</blockquote>
+> On the Windows Server OS which will host Advanced Insights, the following PowerShell script can be executed to list supported certificates.
 
 {% code lineNumbers="true" %}
 ```powershell
@@ -168,16 +166,20 @@ if ($uncapturedCerts.Count -gt 0) {
 
 Example PowerShell outputs:
 
-![](/_images/image-(2014).png "Valid Certificates")
+![](../../.gitbook/assets/image-\(2014\).png)
 
-![](/_images/image-(2015).png "Unsupported Certificates")
+![](../../.gitbook/assets/image-\(2015\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Self-signed certificate use.**</p>
-<p>When deploying Advanced Insights using a self-signed certificate, the installer will automatically create the certificate using the server host name value to create the Advanced Insights URL.</p>
-<p>Example:</p>
-<p>_https://server01.contoso.local_</p>
-<p>We don't recommend using a self-signed certificate long-term in production as it won't be trusted by other client browsers by default.\</p>
-<p>\</p>
-<p>You can replace a self-signed certificate or modify the certificate in use using the Add/Remove Programs "Change" option as detailed [here](../modify-insights/modify-insights-ssl-certificate.md).</p>
-</blockquote>
+> \*\*Self-signed certificate use.\*\*
+>
+> When deploying Advanced Insights using a self-signed certificate, the installer will automatically create the certificate using the server host name value to create the Advanced Insights URL.
+>
+> Example:
+>
+> \_https://server01.contoso.local\_
+>
+> We don't recommend using a self-signed certificate long-term in production as it won't be trusted by other client browsers by default.\\
+>
+> \\
+>
+> You can replace a self-signed certificate or modify the certificate in use using the Add/Remove Programs "Change" option as detailed \[here]\(../modify-insights/modify-insights-ssl-certificate.md).

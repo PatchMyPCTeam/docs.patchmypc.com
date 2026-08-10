@@ -8,13 +8,13 @@ The _Home_ page of Patch My PC (PMPC) Advanced/Patch Insights for Intune shows k
 * [Charts](home-page.md#charts)
 * [Compliance](home-page.md#compliance)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [About Advanced/Patch Insights for Intune Dashboards](./) and [Working with Advanced/Patch Insights for Intune Dashboards](../working-dashboards.md) for more information.</p>
-<p>Also, only devices running the Patch My PC (PMPC) Client will appear on this page. See [Manage the Patch My PC Client](../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[About Advanced/Patch Insights for Intune Dashboards]\(./) and \[Working with Advanced/Patch Insights for Intune Dashboards]\(../working-dashboards.md) for more information.
+>
+> Also, only devices running the Patch My PC (PMPC) Client will appear on this page. See \[Manage the Patch My PC Client]\(../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
 
-!['Home' page](/_images/image-(4277).png "&#x27;Home&#x27; page")
+!['Home' page](../../../.gitbook/assets/image-\(4277\).png)
 
 ## Statistics
 
@@ -28,6 +28,6 @@ The device list modal for statistics contains the following information:
 
 The _Charts_ section of the Home page contains the following charts:
 
-<table><thead><tr><th width="165.3333740234375" valign="top">Name</th><th valign="top">Displays</th></tr></thead><tbody><tr><td valign="top">Client Information</td><td valign="top"><p>A breakdown of the different versions of the PMPC Client running in your environment.</p><p></p><p>By clicking the hamburger menu beside the chart name, you can switch to the <strong>Last Check-in Time</strong> view.</p></td></tr><tr><td valign="top">Windows Versions</td><td valign="top">Of the different versions of Windows running in your environment.</td></tr><tr><td valign="top">Windows SKUs</td><td valign="top">Of the different Windows SKUs running in your environment.</td></tr><tr><td valign="top">Device Specs</td><td valign="top">Of the different device manufacturers running in your environment.</td></tr></tbody></table>
+<table><thead><tr><th width="165.3333740234375" valign="top">Name</th><th valign="top">Displays</th></tr></thead><tbody><tr><td valign="top">Client Information</td><td valign="top"><p>A breakdown of the different versions of the PMPC Client running in your environment.</p><p>By clicking the hamburger menu beside the chart name, you can switch to the <strong>Last Check-in Time</strong> view.</p></td></tr><tr><td valign="top">Windows Versions</td><td valign="top">Of the different versions of Windows running in your environment.</td></tr><tr><td valign="top">Windows SKUs</td><td valign="top">Of the different Windows SKUs running in your environment.</td></tr><tr><td valign="top">Device Specs</td><td valign="top">Of the different device manufacturers running in your environment.</td></tr></tbody></table>
 
-![Charts](/_images/image-(4278).png "Charts")
+![Charts](../../../.gitbook/assets/image-\(4278\).png)

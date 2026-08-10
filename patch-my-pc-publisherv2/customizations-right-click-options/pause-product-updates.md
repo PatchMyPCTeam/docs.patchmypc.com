@@ -1,15 +1,15 @@
 # Pause Product Updates
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: Product_\
-_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_\
-_Limited to SKU: Enterprise Plus, Enterprise Premium, MSP, MSP+_
+_&#x41;vailable at level: Product_\
+_&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_\
+_&#x4C;imited to SKU: Enterprise Plus, Enterprise Premium, MSP, MSP+_
 
 ## Overview
 
 The **Pause Product Updates** option allows you to temporarily stop publishing new application versions or updates for a specific product until a selected date. This is commonly used to enforce short term change control or freeze periods.
 
-![Pause Product Updates](/_images/image-(155).png "Pause Product Updates")
+![Pause Product Updates](../../.gitbook/assets/image-\(155\).png)
 
 When a product is paused, any new versions released before the selected resume date are skipped when the Publisher performs a synchronization. The currently published version remains unchanged.
 
@@ -17,7 +17,7 @@ When a product is paused, any new versions released before the selected resume d
 
 In the example scenario, **Google Chrome (EXE x64)** is paused until **4th March 2026**. If one or more new versions are released during the pause period, they are not published by the Publisher.
 
-![](/_images/image-(156).png)
+![](../../.gitbook/assets/image-\(156\).png)
 
 Once the pause period expires, the Publisher resumes normal behavior. The next new version that becomes available after the pause ends will be published. If no new version is available when the pause expires and the current version is already published, no action is taken.
 
@@ -31,9 +31,9 @@ The notification includes the product name, the resume date, the update classifi
 
 Email reports show the paused product under **Paused ConfigMgr Applications** or the equivalent paused product section for the publishing target. Webhook notifications show the same pause information in a card format.
 
-![Email alert for paused products](/_images/image-(4362).png "Email alert for paused products")
+![Email alert for paused products](../../.gitbook/assets/image-\(4362\).png)
 
-![Webhook alert for paused products](/_images/image-(4363).png "Webhook alert for paused products")
+![Webhook alert for paused products](../../.gitbook/assets/image-\(4363\).png)
 
 ## Limitations and guidance
 

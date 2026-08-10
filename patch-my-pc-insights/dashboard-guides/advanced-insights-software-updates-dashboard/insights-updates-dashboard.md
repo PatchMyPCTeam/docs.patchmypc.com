@@ -2,6 +2,6 @@
 
 _Applies to: Patch My PC Advanced and Patch Insights_
 
-![](/_images/19.png)
+![](<../../../.gitbook/assets/19 (1).png>)
 
-This dashboard displays all the software updates and compliance data including superseded updates.  You can also create custom reports by using the search and filter functions on this page.
+This dashboard displays all the software updates and compliance data including superseded updates. You can also create custom reports by using the search and filter functions on this page.

@@ -2,14 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
-By default, the Patch My PC (PMPC) Publisher downloads content and writes logs to locations derived from the system and installation context.&#x20;
+By default, the Patch My PC (PMPC) Publisher downloads content and writes logs to locations derived from the system and installation context.
 
-![Customize Content Download and Log Save Location](/_images/image-(3946).png "Customize Content Download and Log Save Location")
+![Customize Content Download and Log Save Location](../../../.gitbook/assets/image-\(3946\).png)
 
 Because the Publisher runs under the SYSTEM account, default paths may not always align with organizational requirements for disk usage, monitoring, or security tooling.
 
@@ -18,10 +17,9 @@ The Customize Content Download and Log Save Location options allow you to overri
 * Temporary content downloads used during publishing
 * The Publisher log folder
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>These settings apply only to the Publisher and do not affect client-side installations.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> These settings apply only to the Publisher and do not affect client-side installations.
 
 ## Set a Custom Folder for Temporary Downloads
 
@@ -33,12 +31,11 @@ C:\Windows\Temp
 
 This screenshot shows the Publisher using `C:\Windows\Temp` as a temporary scratch location while preparing packages during a publishing sync.
 
-![Temporary Downloads Folder](/_images/image-(3947).png "Temporary Downloads Folder")
+![Temporary Downloads Folder](../../../.gitbook/assets/image-\(3947\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Temporary content downloaded to this location is automatically removed once publishing operations complete.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Temporary content downloaded to this location is automatically removed once publishing operations complete.
 
 ## Set a Custom Folder for PatchMyPC.log
 
@@ -62,16 +59,14 @@ Because the Publisher runs under the SYSTEM account, the computer account of the
 
 The **Logs to retain** setting specifies how many log files to keep before older logs are overwritten.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>It is recommended to set **Logs to Retain** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> It is recommended to set \*\*Logs to Retain\*\* to \*\*10\*\*. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.
 
 ## Max size in MB
 
 The **Max size in MB** setting specifies the maximum size of each individual log file before a new log is created.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>It is recommended to set **Max size in MB** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> It is recommended to set \*\*Max size in MB\*\* to \*\*10\*\*. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.

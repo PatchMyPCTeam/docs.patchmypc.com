@@ -12,7 +12,7 @@ However, after clicking **Connect** and authenticating, I get the following erro
 
 **Intune connection with the same Id found in another environment!**
 
-!["Intune connection with the same Id found in another environment!" error](/_images/image-(2796).png "“Intune connection with the same Id found in another environment!” error")
+!["Intune connection with the same Id found in another environment!" error](../../../.gitbook/assets/image-\(2796\).png)
 
 ### CAUSE
 
@@ -22,9 +22,8 @@ We do not support sharing an Intune tenant between multiple PMPC Cloud companies
 
 ### RESOLUTION
 
-Sign in to the child company and navigate to  **Settings | Environments** and if Intune is already connected, delete the connection.
+Sign in to the child company and navigate to **Settings | Environments** and if Intune is already connected, delete the connection.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Deleting an Intune tenant connection](/broken/pages/RoXhXa1jcXhIcPcKJk05#deleting-an-intune-tenant-connection) for more information.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> See \[Deleting an Intune tenant connection]\(/broken/pages/RoXhXa1jcXhIcPcKJk05#deleting-an-intune-tenant-connection) for more information.

@@ -10,10 +10,10 @@ To upgrade an existing Enterprise Plus subscription to an Enterprise Premium tri
 2. Navigate to any Enterprise Premium feature such as **Reporting**
 3. Click **Upgrade Now**
 
-![Clicking ‘Upgrade Now'](/_images/image-(3591).png "Clicking ‘Upgrade Now’")
+![Clicking ‘Upgrade Now'](../../../../../.gitbook/assets/image-\(3591\).png)
 
 4. On the Subscriptions page, click either:
    1. [Start 30-day trial](../../company-settings/sign-up-enterprise-premium-trial.md)
    2. [Request a Quote](request-quote.md) to request a quote for an Enterprise Premium subscription.
 
-![‘Subscription' page](/_images/image-(3592).png "‘Subscription’ page")
+![‘Subscription' page](../../../../../.gitbook/assets/image-\(3592\).png)

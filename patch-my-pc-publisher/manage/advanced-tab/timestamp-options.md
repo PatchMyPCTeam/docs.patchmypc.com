@@ -2,19 +2,17 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **Timestamp Options** section of Patch My PC (PMPC) Publisher controls how the Publisher applies digital timestamps when signing scripts and CAB files. Timestamping ensures that signatures remain valid after the signing certificate expires and is a recommended best practice for both applications and updates.
 
-![Timestamp Options](/_images/image-(175).png "Timestamp Options")
+![Timestamp Options](../../../.gitbook/assets/image-\(175\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>For a detailed technical explanation of how timestamping works, including certificate trust, CAB signing, and troubleshooting scenarios, see the following blog post at <a href="https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab">https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab</a>&#x20;</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> For a detailed technical explanation of how timestamping works, including certificate trust, CAB signing, and troubleshooting scenarios, see the following blog post at [https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab](https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab)
 
 ## Timestamp Server URL
 

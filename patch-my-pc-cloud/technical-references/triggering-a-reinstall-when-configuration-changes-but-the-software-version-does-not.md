@@ -10,9 +10,7 @@ This article describes a workaround in **Patch My PC Cloud with Microsoft Intune
 
 This approach relies on creating a _second deployment_, using **custom detection logic**, and optionally using **Intune supersedence** to force an uninstall and reinstall (if necessary).
 
-<blockquote class="wp-block-quote">
-<p>This is a workaround, not native behavior. It requires careful testing.</p>
-</blockquote>
+> This is a workaround, not native behavior. It requires careful testing.
 
 The guidance offered in this article is for Patch My PC Cloud. While it's possible to achieve this with the Patch My PC Publisher (OnPrem), the guidance can be more nuanced. If you need support with this using the OnPrem Publisher, please open a [technical support case](https://patchmypc.com/technical-support/).
 
@@ -27,11 +25,11 @@ You may need this process if all of the below are true:
   * Updated pre- or post-install scripts
   * A different license key or configuration file
 
-<blockquote class="wp-block-quote">
-<p>If you are unable to create a new deployment for the same version because a new version has been added to our catalogue, then you have two choices:</p>
-<p>1. Implement your new configuration on your existing deployment and deploy the update - there is no need to follow the guidance in this article.</p>
-<p>2. However, if you are unable to use the new version, then you can create a <a href="https://docs.patchmypc.com/patch-my-pc-cloud/custom-apps">Custom App</a> for the same version because today it is not possible to publish old versions with Patch My PC.</p>
-</blockquote>
+> If you are unable to create a new deployment for the same version because a new version has been added to our catalogue, then you have two choices:
+>
+> 1\. Implement your new configuration on your existing deployment and deploy the update - there is no need to follow the guidance in this article.
+>
+> 2\. However, if you are unable to use the new version, then you can create a [Custom App](https://docs.patchmypc.com/patch-my-pc-cloud/custom-apps) for the same version because today it is not possible to publish old versions with Patch My PC.
 
 If this is a recurring need, consider upvoting or tracking the related feature request:
 
@@ -80,23 +78,21 @@ Set-ADTRegistryKey -LiteralPath 'HKEY_LOCAL_MACHINE\SOFTWARE\Contoso\ChromeConfi
 
 3. For assignments, we recommend choosing the **Install App** under [App Without Assignment](https://docs.patchmypc.com/patch-my-pc-cloud/cloud-deployments/create-a-cloud-deployment-without-assignments) - we will manage the assignments in Intune for this roll out.
 
-![](/_images/Pasted-image-20260128131019.png)
+![](../../.gitbook/assets/Pasted-image-20260128131019.png)
 
 4. Uncheck the box to "**Copy-Forward**" - this prevents assignments being immediately copied forward to the next version if you decide not to pause the deployments (this is the next step)
 
-![](/_images/Pasted-image-20260128130844.png)
+![](../../.gitbook/assets/Pasted-image-20260128130844.png)
 
-<blockquote class="wp-block-quote">
-<p>**Do not delete or modify the original deployment yet.** You may need the original application/package later when configuring supersedence.</p>
-</blockquote>
+> \*\*Do not delete or modify the original deployment yet.\*\* You may need the original application/package later when configuring supersedence.
 
 At this point, you should have both the original deployment and the new deployment with your new configuration:
 
-![](/_images/Pasted-image-20260129105445.png)
+![](../../.gitbook/assets/Pasted-image-20260129105445.png)
 
 Both packages should also be visible in Intune, too:
 
-![](/_images/Pasted-image-20260129113934.png)
+![](../../.gitbook/assets/Pasted-image-20260129113934.png)
 
 ### Step 2: Pause both deployments
 
@@ -104,7 +100,7 @@ Before continuing, it is recommended to [pause](https://docs.patchmypc.com/patch
 
 You will un-pause one deployment and delete the other when you have completed your roll-out of your new configuration changes.
 
-![](/_images/Pasted-image-20260129105154.png)
+![](../../.gitbook/assets/Pasted-image-20260129105154.png)
 
 ### Step 3: Update detection logic to reflect the new configuration
 
@@ -119,16 +115,13 @@ Instead of modifying the Patch My PC-generated detection script (_not recommende
 * The installed software version **AND**
 * the unique configuration marker
 
-<blockquote class="wp-block-quote">
-<p>The reason why we don't recommend you edit the Patch My PC detection script is because it's a heavily condensed script purposefully written to be as concise as possible, to <a href="https://patchmypc.com/blog/powershell-scripts-not-executing-maxjsonlength/">avoid Intune policy capacity limits</a>.</p>
-<p>As a result, the guidance to correctly modify the script to suit your needs would be non-trivial. It's simpler to use Intune's native detection rules for this one-off purpose.</p>
-</blockquote>
+> The reason why we don't recommend you edit the Patch My PC detection script is because it's a heavily condensed script purposefully written to be as concise as possible, to [avoid Intune policy capacity limits](https://patchmypc.com/blog/powershell-scripts-not-executing-maxjsonlength/).
+>
+> As a result, the guidance to correctly modify the script to suit your needs would be non-trivial. It's simpler to use Intune's native detection rules for this one-off purpose.
 
 On the **new package only**, remove the Patch My PC–generated detection script and replace it with your custom detection logic.
 
-<blockquote class="wp-block-quote">
-<p>When comparing version numbers, use the **Greater than or equal to** operator. This can help prevent future detection issues if a newer version is released while older packages remain assigned.</p>
-</blockquote>
+> When comparing version numbers, use the \*\*Greater than or equal to\*\* operator. This can help prevent future detection issues if a newer version is released while older packages remain assigned.
 
 **Example:**
 
@@ -139,7 +132,7 @@ On the **new package only**, remove the Patch My PC–generated detection script
 * Operator: `Greater than or equal to`
 * Value: `2`
 
-![](/_images/Pasted-image-20260129110609.png)
+![](../../.gitbook/assets/Pasted-image-20260129110609.png)
 
 In this particular case where I'm using Google Chrome 144.0.7559.110 as an example, I added a secondary detection rule - adapt yours accordingly.
 
@@ -150,13 +143,11 @@ In this particular case where I'm using Google Chrome 144.0.7559.110 as an examp
 * Operator: `Greater than or equal to`
 * Value: `144.0.7559.110`
 
-![](/_images/Pasted-image-20260129110511.png)
+![](../../.gitbook/assets/Pasted-image-20260129110511.png)
 
 Only when _both_ conditions are met, Intune will evaluate the new app as installed.
 
-<blockquote class="wp-block-quote">
-<p>Customers are responsible for authoring, validating, and maintaining custom detection logic. Extensive testing is strongly recommended.</p>
-</blockquote>
+> Customers are responsible for authoring, validating, and maintaining custom detection logic. Extensive testing is strongly recommended.
 
 ### Step 4: (Optional) Configure Supersedence in Intune
 
@@ -186,14 +177,15 @@ In Intune:
 4. Toggle the **Uninstall previous version** to **Yes**
 5. Click **Review + save**
 
-![](/_images/Pasted-image-20260129182844.png)
+![](../../.gitbook/assets/Pasted-image-20260129182844.png)
 
-<blockquote class="wp-block-quote">
-<p>When using supersedence, ensure you select the **Install and Update App** package type.\</p>
-<p>The **Update Only** package type does not support supersedence scenarios.</p>
-<p>The **Install and Update App** package is made when you create a required, available, or uninstall assignment on your deployment in Patch My PC Cloud.</p>
-<p>Whereas the **Update Only** package type is made when you create an **Update Only** assignment.</p>
-</blockquote>
+> When using supersedence, ensure you select the \*\*Install and Update App\*\* package type.\\
+>
+> The \*\*Update Only\*\* package type does not support supersedence scenarios.
+>
+> The \*\*Install and Update App\*\* package is made when you create a required, available, or uninstall assignment on your deployment in Patch My PC Cloud.
+>
+> Whereas the \*\*Update Only\*\* package type is made when you create an \*\*Update Only\*\* assignment.
 
 When you complete the next step, this will force the Intune client to uninstall the software and install the software again with the new configuration.
 

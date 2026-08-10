@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **About** tab provides version and support information for the Publisher. The primary area of interest on this tab is Version Details. The remaining sections provide quick links to helpful resources on our website.
 
-![About Tab](/_images/image-(167).png "About Tab")
+![About Tab](../../.gitbook/assets/image-\(167\).png)
 
 ## Version Details
 
@@ -25,10 +25,9 @@ The date shown indicates the date and time when the Publisher last checked for u
 
 This option can be used in controlled environments where version changes are managed through internal risk groups or formal change control processes. When this option is enabled, the Publisher will not automatically update to a newer version.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>If a critical fix or required feature is released, updates must be installed manually. In these scenarios, ensure operational procedures are in place to regularly review available updates so important releases are not missed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> If a critical fix or required feature is released, updates must be installed manually. In these scenarios, ensure operational procedures are in place to regularly review available updates so important releases are not missed.
 
 ### Install preview builds
 

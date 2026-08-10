@@ -6,9 +6,7 @@ description: Modify configuration.
 
 _Applies to: Patch My PC Advanced and Patch Insights_
 
-<blockquote class="wp-block-quote">
-<p>The ability to use the modify feature is supported in version 2.1.0 and later.</p>
-</blockquote>
+> The ability to use the modify feature is supported in version 2.1.0 and later.
 
 The following configurations can be modified for an existing Advanced Insights deployment.\
 \
@@ -24,16 +22,16 @@ If the install executable version that was originally used to deploy Advanced In
 
 Click **'Modify'**
 
-![Clicking 'Modify'](/_images/image-(4347).png "Clicking &#x27;Modify&#x27;")
+![Clicking 'Modify'](../../.gitbook/assets/image-\(4347\).png)
 
 Click **'Yes'**
 
-![UAC](/_images/image-(4348).png "UAC")
+![UAC](../../.gitbook/assets/image-\(4348\).png)
 
 Click **'Modify'**
 
-![Clicking 'Modify'](/_images/image-(4349).png "Clicking &#x27;Modify&#x27;")
+![Clicking 'Modify'](../../.gitbook/assets/image-\(4349\).png)
 
 Select the required modification option checkbox to enable the related '**Change**' button
 
-![Selecting the required modification option checkbox](/_images/image-(4350).png "Selecting the required modification option checkbox")
+![Selecting the required modification option checkbox](../../.gitbook/assets/image-\(4350\).png)

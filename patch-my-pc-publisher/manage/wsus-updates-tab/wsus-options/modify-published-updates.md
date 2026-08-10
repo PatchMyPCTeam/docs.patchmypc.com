@@ -2,20 +2,19 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **Modify Published Updates** wizard in Patch My PC (PMPC) Publisher is used to manage third party updates that have already been published to WSUS. It provides a centralized view of published updates and allows administrators to safely maintain, clean up, and correct updates without needing to manually interacting with the WSUS console.
 
 This wizard is commonly used during troubleshooting, republishing workflows, and ongoing maintenance to ensure WSUS and ConfigMgr only evaluate and display the correct updates.
 
-![Modify Published Updates](/_images/image-(91).png "Modify Published Updates")
+![Modify Published Updates](../../../../.gitbook/assets/image-\(91\).png)
 
 Clicking **Run Wizard** opens the **Modify Updates Wizard**.
 
-![Modify Updates Wizard](/_images/image-(195).png "Modify Updates Wizard")
+![Modify Updates Wizard](../../../../.gitbook/assets/image-\(195\).png)
 
 The **Modify Updates Wizard** is divided into two main areas that make it easy to locate and manage published, third-party, updates. The upper portion of the window contains filtering controls, while the main pane displays the list of matching updates and their current state.
 
@@ -31,17 +30,17 @@ This typically indicates that publishing did not complete successfully or that u
 
 The yellow highlight is an attention indicator. Click [**More Details**](modify-published-updates.md#more-details) so see the update status.
 
-![Conditional Formatting](/_images/image-(196).png "Conditional Formatting")
+![Conditional Formatting](../../../../.gitbook/assets/image-\(196\).png)
 
 If you select an update that is highlighted in yellow and choose [**Show in WSUS**](modify-published-updates.md#show-in-wsus), the WSUS console provides more detailed state information. This additional detail can help identify why the update is flagged, such as missing content.
 
-![Update Missing Content](/_images/image-(472).png "Update Missing Content")
+![Update Missing Content](../../../../.gitbook/assets/image-\(472\).png)
 
 ## Filtering
 
 The filtering options at the top of are used to quickly narrow down the list of published updates. This is especially important in environments with a large number of third party updates, where manually scrolling through the list would be inefficient.
 
-<table><thead><tr><th width="168" valign="top">Filter name</th><th valign="top">Description</th><th valign="top">Values</th></tr></thead><tbody><tr><td valign="top">Vendor</td><td valign="top">Filters updates by the publishing vendor. This is commonly used to isolate Patch My PC updates or updates from a specific third-party vendor.</td><td valign="top">Default = All Vendors<br>&#x3C;Patch My PC><br>&#x3C;vendor 2></td></tr><tr><td valign="top">Declined Status</td><td valign="top">Filters updates based on whether they are currently declined in WSUS. This is useful when identifying updates that are still active versus those already retired.</td><td valign="top"><p></p><p>Default - All Declined Status</p><p>Yes = Declined<br>No = Not Declined</p></td></tr><tr><td valign="top">Expired Status</td><td valign="top">Filters updates based on whether they are marked as expired. Expired updates are no longer evaluated by ConfigMgr clients.</td><td valign="top"><p>Default - All Expired Status</p><p>Yes = Expired</p><p>No = Not Expired</p></td></tr><tr><td valign="top">Superseded Status</td><td valign="top">Filters updates based on whether they are superseded by another update.</td><td valign="top"><p>Default = All Superseded Status<br>Yes = Superseded</p><p>No = Not Superseded</p></td></tr><tr><td valign="top">Metadata Status</td><td valign="top">Filters updates based on whether the update is published with Full Content or Metadata only.</td><td valign="top"><p>Default = All Metadata Status<br>Yes = Metadata Only</p><p>No = Full Content</p></td></tr><tr><td valign="top">Enabled Status</td><td valign="top">Filters updates based on if they are selected (Enabled) in the Publisher</td><td valign="top">Default = All Enabled Status<br>Yes = Enabled<br>No = Not Enabled</td></tr><tr><td valign="top">Title Filter</td><td valign="top">Allows searching by update name. This is useful for locating specific products or versions, including republished updates that include a timestamp in the name.</td><td valign="top">&#x3C;string></td></tr></tbody></table>
+<table><thead><tr><th width="168" valign="top">Filter name</th><th valign="top">Description</th><th valign="top">Values</th></tr></thead><tbody><tr><td valign="top">Vendor</td><td valign="top">Filters updates by the publishing vendor. This is commonly used to isolate Patch My PC updates or updates from a specific third-party vendor.</td><td valign="top">Default = All Vendors<br>&#x3C;Patch My PC><br>&#x3C;vendor 2></td></tr><tr><td valign="top">Declined Status</td><td valign="top">Filters updates based on whether they are currently declined in WSUS. This is useful when identifying updates that are still active versus those already retired.</td><td valign="top"><p>Default - All Declined Status</p><p>Yes = Declined<br>No = Not Declined</p></td></tr><tr><td valign="top">Expired Status</td><td valign="top">Filters updates based on whether they are marked as expired. Expired updates are no longer evaluated by ConfigMgr clients.</td><td valign="top"><p>Default - All Expired Status</p><p>Yes = Expired</p><p>No = Not Expired</p></td></tr><tr><td valign="top">Superseded Status</td><td valign="top">Filters updates based on whether they are superseded by another update.</td><td valign="top"><p>Default = All Superseded Status<br>Yes = Superseded</p><p>No = Not Superseded</p></td></tr><tr><td valign="top">Metadata Status</td><td valign="top">Filters updates based on whether the update is published with Full Content or Metadata only.</td><td valign="top"><p>Default = All Metadata Status<br>Yes = Metadata Only</p><p>No = Full Content</p></td></tr><tr><td valign="top">Enabled Status</td><td valign="top">Filters updates based on if they are selected (Enabled) in the Publisher</td><td valign="top">Default = All Enabled Status<br>Yes = Enabled<br>No = Not Enabled</td></tr><tr><td valign="top">Title Filter</td><td valign="top">Allows searching by update name. This is useful for locating specific products or versions, including republished updates that include a timestamp in the name.</td><td valign="top">&#x3C;string></td></tr></tbody></table>
 
 ## Decline (Updates)
 
@@ -56,19 +55,19 @@ To decline one or more published updates:
 1. Locate and select the update or updates you want to decline using the available filters.
 2. Select **Decline** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Decline Update(s)](/_images/image-(197).png "Decline Update(s)")
+![Decline Update(s)](../../../../.gitbook/assets/image-\(197\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Declining updates is also important for managing WSUS product category limits. Some patch management solutions create a separate WSUS product category for each product or vendor. Over time, this can cause the total number of enabled categories to exceed the Microsoft supported limit of 100, which can lead to publishing and synchronization failures.&#x20;</p>
-<p>Declining updates from unused catalogs helps reduce the effective category footprint in WSUS and prevents hitting this limit.</p>
-<p>For more information on category limits and related publishing errors, see: <a href="https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/">https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/</a></p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Declining updates is also important for managing WSUS product category limits. Some patch management solutions create a separate WSUS product category for each product or vendor. Over time, this can cause the total number of enabled categories to exceed the Microsoft supported limit of 100, which can lead to publishing and synchronization failures.
+>
+> Declining updates from unused catalogs helps reduce the effective category footprint in WSUS and prevents hitting this limit.
+>
+> For more information on category limits and related publishing errors, see: [https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/](https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/)
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>Only after a Software Update Point synchronization are declined updates marked as expired in ConfigMgr.</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> Only after a Software Update Point synchronization are declined updates marked as expired in ConfigMgr.
 
 ## Un-decline (Updates)
 
@@ -83,7 +82,7 @@ To un-decline one or more published updates:
 1. Locate and select the update or updates you want to decline using the available filters.
 2. Select **Un-decline** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Un-decline Update(s)](/_images/image-(198).png "Un-decline Update(s)")
+![Un-decline Update(s)](../../../../.gitbook/assets/image-\(198\).png)
 
 ## Delete Updates
 
@@ -91,13 +90,13 @@ The **Delete** option permanently removes selected published updates from WSUS. 
 
 Deleting updates is intended only for exceptional scenarios, such as updates that were published in error, cleaning up unused third party vendors, or reducing WSUS product categories that should no longer exist. It is not recommended for routine maintenance or general cleanup. In most cases, declining updates is the preferred and safer option, as it avoids potential update identity and hash related issues.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Deleting updates permanently removes them from WSUS. If the associated product remains enabled in the Publisher, the Publisher will publish the same update on the next sync, using the same Update ID. When this happens, ConfigMgr can resynchronize the update and clients may already have cached content that no longer matches the republished update.</p>
-<p>This mismatch can cause hash validation failures during deployment and prevent updates from installing successfully on clients.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Deleting updates permanently removes them from WSUS. If the associated product remains enabled in the Publisher, the Publisher will publish the same update on the next sync, using the same Update ID. When this happens, ConfigMgr can resynchronize the update and clients may already have cached content that no longer matches the republished update.
+>
+> This mismatch can cause hash validation failures during deployment and prevent updates from installing successfully on clients.
 
-![Delete option disabled by default](/_images/image-(199).png "Delete option disabled by default")
+![Delete option disabled by default](../../../../.gitbook/assets/image-\(199\).png)
 
 To delete one or more published updates:
 
@@ -106,7 +105,7 @@ To delete one or more published updates:
 3. Select **Delete** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 4. Click **Yes** to delete the update(s) or click **No** to abort the deletion.
 
-![Confirm deletion](/_images/image-(201).png "Confirm deletion")
+![Confirm deletion](../../../../.gitbook/assets/image-\(201\).png)
 
 5. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
@@ -139,7 +138,7 @@ To show one or more published updates in the WSUS console:
 2. Select **Show in WSUS** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 3. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
-![Show Update(s) in WSUS](/_images/image-(202).png "Show Update(s) in WSUS")
+![Show Update(s) in WSUS](../../../../.gitbook/assets/image-\(202\).png)
 
 ## Hide in WSUS
 
@@ -147,18 +146,18 @@ The **Hide in WSU**S option control whether locally published third party update
 
 When this option is selected, the Publisher marks the update so it is removed from view in the WSUS console.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Hiding updates in WSUS is one effective way to help control the WSUS product category limit. Some third party vendors create a large number of locally published categories, and over time this can result in tens of categories being visible in the WSUS console. When the total number of locally published categories approaches or exceeds the Microsoft supported limit of 100, publishing and synchronization errors can occur.</p>
-<p>Using Hide in WSUS can reduce the number of locally published categories exposed in the WSUS console while still allowing ConfigMgr to manage the updates normally. This is a recommended mitigation when cleaning up unused vendors or when addressing errors related to too many locally published categories. For more information on the consequence and remediation of too many WSUS categories, see <a href="https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/">https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/</a></p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Hiding updates in WSUS is one effective way to help control the WSUS product category limit. Some third party vendors create a large number of locally published categories, and over time this can result in tens of categories being visible in the WSUS console. When the total number of locally published categories approaches or exceeds the Microsoft supported limit of 100, publishing and synchronization errors can occur.
+>
+> Using Hide in WSUS can reduce the number of locally published categories exposed in the WSUS console while still allowing ConfigMgr to manage the updates normally. This is a recommended mitigation when cleaning up unused vendors or when addressing errors related to too many locally published categories. For more information on the consequence and remediation of too many WSUS categories, see [https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/](https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/)
 
 To hide one or more published updates in the WSUS console:
 
 1. Locate and select the update or updates you want to hide in WSUS using the available filters.
 2. Select **Hide in WSUS** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Hide Update(s) in WSUS](/_images/image-(203).png "Hide Update(s) in WSUS")
+![Hide Update(s) in WSUS](../../../../.gitbook/assets/image-\(203\).png)
 
 ## Show Applicability Rules
 
@@ -172,21 +171,21 @@ To view applicability rules for an update:
 * Select **Show Applicability Rules** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 * Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
-![Show Applicability Rules](/_images/image-(204).png "Show Applicability Rules")
+![Show Applicability Rules](../../../../.gitbook/assets/image-\(204\).png)
 
-![Applicability Rules Example](/_images/image-(205).png "Applicability Rules Example")
+![Applicability Rules Example](../../../../.gitbook/assets/image-\(205\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Not all third party updates display detailed applicability rules in this view. For MSP based updates, applicability is evaluated using MSI patch metadata rather than standard WSUS file, registry, or WMI detection rules.</p>
-<p>The MSI patch metadata defined in the catalog can be extensive and evaluates conditions such as target product codes, supported version ranges, and upgrade codes to determine whether the patch is applicable or already installed. Instead of displaying this extensive evaluation logic, the Publisher displays a placeholder labeled **WSUS Generated MSP Rule.**</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> Not all third party updates display detailed applicability rules in this view. For MSP based updates, applicability is evaluated using MSI patch metadata rather than standard WSUS file, registry, or WMI detection rules.
+>
+> The MSI patch metadata defined in the catalog can be extensive and evaluates conditions such as target product codes, supported version ranges, and upgrade codes to determine whether the patch is applicable or already installed. Instead of displaying this extensive evaluation logic, the Publisher displays a placeholder labeled \*\*WSUS Generated MSP Rule.\*\*
 
 ## More Details
 
 The **More Details** option opens an **Update Details** window for a selected update. This view exposes the underlying WSUS metadata for the update and is intended for validation and troubleshooting. The information shown here is read only and reflects exactly what was published to WSUS.
 
-![More Details](/_images/image-(207).png "More Details")
+![More Details](../../../../.gitbook/assets/image-\(207\).png)
 
 This view is useful when confirming update identity, revision state, and metadata values that affect installation behavior.
 
@@ -194,18 +193,18 @@ The table below describes each field displayed in the Update Details window.
 
 <table><thead><tr><th width="150.00006103515625" valign="top">Field</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Title</td><td valign="top">The full update title as published to WSUS.</td></tr><tr><td valign="top">State</td><td valign="top">The current WSUS processing state of the update. Ready indicates the update is fully processed and usable.</td></tr><tr><td valign="top">Description</td><td valign="top">The update description.</td></tr><tr><td valign="top">Information URL</td><td valign="top">A URL with additional information about the update.</td></tr><tr><td valign="top">Support URL</td><td valign="top">A vendor provided support or documentation link.</td></tr><tr><td valign="top">Creation Date</td><td valign="top">The date and time when this revision of the update's metadata was authored. The date is in Coordinated Universal Time.</td></tr><tr><td valign="top">Arrival Date</td><td valign="top">The date and time when the metadata for this revision of the update finished downloading to the WSUS server</td></tr><tr><td valign="top">Classification</td><td valign="top">The WSUS classification assigned to the update such as Updates or Security Updates.</td></tr><tr><td valign="top">Severity</td><td valign="top">The severity level associated with the update when applicable.</td></tr><tr><td valign="top">UpdateID</td><td valign="top">The unique WSUS update identifier. Note: This value changes for republished updates.</td></tr><tr><td valign="top">Filename</td><td valign="top">The primary file name associated with the update content.</td></tr><tr><td valign="top">Command Line</td><td valign="top">The installation command line that WSUS and clients use to install the update.</td></tr><tr><td valign="top">CVE IDs</td><td valign="top">Any CVE identifiers associated with the update.</td></tr><tr><td valign="top">Revision</td><td valign="top">The WSUS revision number for the update. The revision increments when WSUS detects a change in the update metadata during synchronization.</td></tr><tr><td valign="top">Hash</td><td valign="top">The content hash for the update. This value is shown in Base64 format and is used for content integrity validation.</td></tr><tr><td valign="top">Approved</td><td valign="top">Indicates whether the update is approved in WSUS.</td></tr><tr><td valign="top">Declined</td><td valign="top">Indicates whether the update is declined in WSUS.</td></tr><tr><td valign="top">Expired</td><td valign="top">Indicates whether the update is expired in WSUS.</td></tr><tr><td valign="top">Superseded</td><td valign="top">Indicates whether the update is superseded by another update.</td></tr></tbody></table>
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If the update includes customizations, the **Filename** is always **PatchMyPC-ScriptRunner.exe**. This indicates that the Script Runner is used to execute the customized installation logic.</p>
-<p>If no customizations are applied to the update in the Publisher, the original vendor provided installer filename is shown instead.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> If the update includes customizations, the \*\*Filename\*\* is always \*\*PatchMyPC-ScriptRunner.exe\*\*. This indicates that the Script Runner is used to execute the customized installation logic.
+>
+> If no customizations are applied to the update in the Publisher, the original vendor provided installer filename is shown instead.
 
 To view more details about an update:
 
 1. Locate and select the update you want to view more details for for by using the available filters.
 2. Select **More Details** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Update Details](/_images/image-(206).png "Update Details")
+![Update Details](../../../../.gitbook/assets/image-\(206\).png)
 
 ## Extract Content
 
@@ -218,35 +217,34 @@ To extract content for an update:
 3. In the Browse For Folder window, select an existing folder or create a new folder.
 4. Select **OK** to begin extraction.
 
-![Extract Content](/_images/image-(208).png "Extract Content")
+![Extract Content](../../../../.gitbook/assets/image-\(208\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>The CAB file from the WSUS Content folder is copied to the folder specified in step 3. Typically, double clicking a CAB file in Windows Explorer displays the vendor installer binary along with any supporting Patch My PC files required to install a customized update.</p>
-</blockquote>
+> \*\*Tip\*\*
+>
+> The CAB file from the WSUS Content folder is copied to the folder specified in step 3. Typically, double clicking a CAB file in Windows Explorer displays the vendor installer binary along with any supporting Patch My PC files required to install a customized update.
 
 ## Re-Sign Update
 
 The **Re-Sign Update** option allows you to re-sign an already published update using a new WSUS code signing certificate. This is typically required when the original code signing certificate has expired and timestamping was not enabled at the time the update was published.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Timestamping keeps an update cryptographically valid after a code signing certificate expires. In WSUS standalone environments, re-signing may not be required, even if the certificate has expired, as long as the certificate is still present in the client Trusted Publishers certificate store.</p>
-<p>If ConfigMgr is configured to <a href="https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#configure-the-wsus-signing-certificate">manage certificates for third-party updates</a> it will block expired code signing certificates. During a Software Update Scan Cycle, ConfigMgr removes expired certificates from the Trusted Publishers store on clients. If the certificate is no longer present on the client device, updates signed with that certificate are not trusted, even if timestamping was enabled, and the updates must be re-signed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Timestamping keeps an update cryptographically valid after a code signing certificate expires. In WSUS standalone environments, re-signing may not be required, even if the certificate has expired, as long as the certificate is still present in the client Trusted Publishers certificate store.
+>
+> If ConfigMgr is configured to [manage certificates for third-party updates](https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#configure-the-wsus-signing-certificate) it will block expired code signing certificates. During a Software Update Scan Cycle, ConfigMgr removes expired certificates from the Trusted Publishers store on clients. If the certificate is no longer present on the client device, updates signed with that certificate are not trusted, even if timestamping was enabled, and the updates must be re-signed.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Re-signing changes the update content hash. Because of this, existing content already downloaded into ConfigMgr deployment packages is no longer valid.</p>
-<p>After updates are re signed, you must remove the old content and allow ConfigMgr to download the newly signed content.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> Re-signing changes the update content hash. Because of this, existing content already downloaded into ConfigMgr deployment packages is no longer valid.
+>
+> After updates are re signed, you must remove the old content and allow ConfigMgr to download the newly signed content.
 
-![Re-sign Update](/_images/image-(209).png "Re-sign Update")
+![Re-sign Update](../../../../.gitbook/assets/image-\(209\).png)
 
 To re-sign an update
 
 1. Locate and select the update you want to re-sign by using the available filtering options.
 2. Select **Re-Sign Update** at the bottom of the wizard.
 3. Review the warning message indicating that deployment package content must be deleted and redistributed. Select **OK** to continue, or **Cancel** to abort.
-4. After re-signing completes, delete the affected updates from the ConfigMgr deployment package.&#x20;
+4. After re-signing completes, delete the affected updates from the ConfigMgr deployment package.
 5. After a Software Update Point synchronization refreshes the update metadata, re-download the content to the deployment package. This can be done manually from the ConfigMgr console or automatically through an Automatic Deployment Rule, depending on how updates are managed in your environment.

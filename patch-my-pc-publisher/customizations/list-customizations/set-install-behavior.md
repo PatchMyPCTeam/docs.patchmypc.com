@@ -1,41 +1,37 @@
 # Set Install Behavior option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_
-\
-_Available on tab: ConfigMgr Apps_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: ConfigMgr Apps_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
-The **Set Install Behavior** right-click option in Patch My PC (PMPC) Publisher allows the Publisher to define which running processes must be closed for a ConfigMgr application installation to succeed.&#x20;
+The **Set Install Behavior** right-click option in Patch My PC (PMPC) Publisher allows the Publisher to define which running processes must be closed for a ConfigMgr application installation to succeed.
 
 These executables are applied to the deployment type’s **Install Behavior** settings and control how ConfigMgr responds when an application is in use during an install.
 
-!['Install Behavior' tab in the application's deployment type properties](/_images/image-(4739).png "&#x27;Install Behavior&#x27; tab in the application’s deployment type properties")
+!['Install Behavior' tab in the application's deployment type properties](../../../.gitbook/assets/image-\(4739\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>We strongly recommend using the [Manage Conflicting Processes](manage-conflicting-processes/) right-click option to notify users about running applications. This option provides greater configuration flexibility and control, allowing you to deliver a smoother and more predictable user experience during application installations and updates.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> We strongly recommend using the \[Manage Conflicting Processes]\(manage-conflicting-processes/) right-click option to notify users about running applications. This option provides greater configuration flexibility and control, allowing you to deliver a smoother and more predictable user experience during application installations and updates.
 
 ## Deployment Behavior
 
-### Available Deployments&#xD;
+### Available Deployments
 
-If any of the specified executables are running when the user initiates the installation from Software Center, the installation will fail.&#x20;
+If any of the specified executables are running when the user initiates the installation from Software Center, the installation will fail.
 
-![Available Deployments](/_images/image-(107).png "Available Deployments")
+![Available Deployments](../../../.gitbook/assets/image-\(107\).png)
 
 The user is notified and must close the application before retrying the install.
 
-![Install Behavior User Notification from the Software Center](/_images/image-(108).png "Install Behavior User Notification from the Software Center")
+![Install Behavior User Notification from the Software Center](../../../.gitbook/assets/image-\(108\).png)
 
-### Required Deployments&#xD;
-
+### Required Deployments
 
 If the executable remains running, the required installation will fail. If an installation fails due to a running executable, the failure reason can be reviewed in **CIAgent.log** on the client device.
 
-!['CIAgent.log' on the client device](/_images/image-(4740).png "&#x27;CIAgent.log&#x27; on the client device")
+!['CIAgent.log' on the client device](../../../.gitbook/assets/image-\(4740\).png)

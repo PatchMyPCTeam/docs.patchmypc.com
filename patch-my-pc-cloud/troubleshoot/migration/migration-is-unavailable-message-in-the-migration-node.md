@@ -8,7 +8,7 @@ Why, when I click on the **Migration** node, does the Migration page say:
 
 **Migration is Unavailable**
 
-!["Migration is Unavailable"](/_images/image-(3420).png "“Migration is Unavailable”")
+!["Migration is Unavailable"](../../../.gitbook/assets/image-\(3420\).png)
 
 ### CAUSE
 
@@ -21,8 +21,8 @@ To resolve this issue:
 1. Load Publisher.
 2. Click the **Cloud** tab.
 
-![Clicking the "Cloud" tab](/_images/image-(3421).png "Clicking the &#x22;Cloud&#x22; tab")
+![Clicking the "Cloud" tab](../../../.gitbook/assets/image-\(3421\).png)
 
 3. Ensure the **Enable Application Migration** checkbox is checked.
 
-![Ensuring the "Enable Application Migration" checkbox is checked](/_images/image-(3422).png "Ensuring the “Enable Application Migration” checkbox is checked")
+![Ensuring the "Enable Application Migration" checkbox is checked](../../../.gitbook/assets/image-\(3422\).png)

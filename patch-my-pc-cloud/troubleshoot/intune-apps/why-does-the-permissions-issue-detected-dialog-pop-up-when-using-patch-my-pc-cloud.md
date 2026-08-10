@@ -6,11 +6,11 @@ _Applies to: Patch My PC Cloud_
 
 Why does the **Permissions Issue Detected** dialog pop up when using the Patch My PC (PMPC) Cloud Portal?
 
-!['Permissions Issue Detected' dialog](/_images/image-(4510).png "&#x27;Permissions Issue Detected&#x27; dialog")
+!['Permissions Issue Detected' dialog](../../../.gitbook/assets/image-\(4510\).png)
 
 ### CAUSE
 
-This dialog appears if the [Permissions required for Intune Apps](../../technical-references/cloud-permissions-reference/permissions-required-for-intune-apps.md) have been revoked.&#x20;
+This dialog appears if the [Permissions required for Intune Apps](../../technical-references/cloud-permissions-reference/permissions-required-for-intune-apps.md) have been revoked.
 
 ### RESOLUTION
 

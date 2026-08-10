@@ -2,16 +2,15 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**IMPORTANT**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+> \*\*IMPORTANT\*\*
+>
+> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
 
 The **SMS Provider** is the interface that enables all interactions with Microsoft ConfigMgr, including actions performed in the ConfigMgr console and through supported APIs. The Patch My PC (PMPC) Publisher also relies on the SMS Provider to perform operations such as triggering SUP synchronizations, creating and modifying applications, and distributing content.
 
 Configuring the SMS Provider connection is therefore a foundational step for enabling the Publisher to interact with ConfigMgr.
 
-![SMS Provider Connection](/_images/image-(3956).png "SMS Provider Connection")
+![SMS Provider Connection](../../.gitbook/assets/image-\(3956\).png)
 
 ## Connection Settings
 
@@ -26,23 +25,27 @@ Both options are valid, as long as the specified server is hosting the SMS Provi
 
 You can identify which site systems host the SMS Provider site system role by navigating to **Monitoring | System Status | Component Status** in the ConfigMgr console, then filtering for **SMS\_Provider**.
 
-![Identify an SMS Provider](/_images/image-(516).png "Identify an SMS Provider")
+![Identify an SMS Provider](../../.gitbook/assets/image-\(516\).png)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>When connecting to ConfigMgr, either using the Publisher or the ConfigMgr remote console, the SMS Provider you connect to isn’t always the one you specified. The site server ultimately decides which SMS Provider instance is used.&#x20;</p>
-<p>Even if multiple SMS Providers exist, the ConfigMgr site server’s boundaries and role placement determine the connection endpoint. This is the same behavior the ConfigMgr console uses when it discovers and connects to an SMS Provider.</p>
-<p>With this in mind, if a firewall is in place between the Publisher and any SMS Provider server in the site, ensure that the Publisher server can communicate with them all using:</p>
-<p>* **TCP 135** (RPC Endpoint Mapper)</p>
-<p>* **Dynamic RPC ports** (default **TCP 49152–65535**)</p>
-<p>Restricting firewall access to only a specific site system with the SMS Provider role may result in intermittent or unexpected connection failures.</p>
-</blockquote>
+> \*\*Note\*\*
+>
+> When connecting to ConfigMgr, either using the Publisher or the ConfigMgr remote console, the SMS Provider you connect to isn’t always the one you specified. The site server ultimately decides which SMS Provider instance is used.
+>
+> Even if multiple SMS Providers exist, the ConfigMgr site server’s boundaries and role placement determine the connection endpoint. This is the same behavior the ConfigMgr console uses when it discovers and connects to an SMS Provider.
+>
+> With this in mind, if a firewall is in place between the Publisher and any SMS Provider server in the site, ensure that the Publisher server can communicate with them all using:
+>
+> \* \*\*TCP 135\*\* (RPC Endpoint Mapper)
+>
+> \* \*\*Dynamic RPC ports\*\* (default \*\*TCP 49152–65535\*\*)
+>
+> Restricting firewall access to only a specific site system with the SMS Provider role may result in intermittent or unexpected connection failures.
 
 ## Required Software
 
 To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/software.md) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is not installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
 
-![ConfigMgr Remote Console Missing](/_images/image-(74).png "ConfigMgr Remote Console Missing")
+![ConfigMgr Remote Console Missing](../../.gitbook/assets/image-\(74\).png)
 
 The PatchMyPC.log will also indicate when the ConfigMgr Remote Console is not installed:
 
@@ -54,16 +57,15 @@ Access to the SMS Provider is controlled entirely by ConfigMgr security roles an
 
 ### **When no action is required (most common scenario)**
 
-If the Publisher is installed on the ConfigMgr site server, and that server is also hosting the **SMS Provider role** (the most common deployment), no additional permission configuration is required. The Publisher runs under the local SYSTEM account and connects to the SMS Provider locally, using the same path as the ConfigMgr console would.&#x20;
+If the Publisher is installed on the ConfigMgr site server, and that server is also hosting the **SMS Provider role** (the most common deployment), no additional permission configuration is required. The Publisher runs under the local SYSTEM account and connects to the SMS Provider locally, using the same path as the ConfigMgr console would.
 
 ### **When additional configuration is required**
 
 If the Publisher is installed remotely, the site server ultimately determines which SMS Provider instance is used. Even if Publisher is installed on a server that has the SMS Provider site system role (for example, a remote SUP), it is not guaranteed that connections will be made to that local provider. For this reason, the computer account where the Publisher is installed (DOMAIN\SERVER$) must be granted the appropriate ConfigMgr permissions, _or_ you must configure alternate credentials using a dedicated service account.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>If the Publisher detects that it is installed on the site server, the option to use alternate credentials to connect to the SMS Provider are disabled.</p>
-</blockquote>
+> \*\*Important\*\*
+>
+> If the Publisher detects that it is installed on the site server, the option to use alternate credentials to connect to the SMS Provider are disabled.
 
 To satisfy these requirements, you can either:
 
@@ -98,12 +100,12 @@ To satisfy these requirements, you can either:
 6. Click **Security Roles.**
 7. Click **Import Security Role.**
 
-![Import Security Role](/_images/image-(517).png "Import Security Role")
+![Import Security Role](../../.gitbook/assets/image-\(517\).png)
 
 8. Browse to the file created in step 2.
 9. Confirm the security role has been created succesfully.
 
-![Confirm Role Created](/_images/image-(518).png "Confirm Role Created")
+![Confirm Role Created](../../.gitbook/assets/image-\(518\).png)
 
 For reference, the following permissions are configured on the **Patch My PC Publisher** custom security role:
 
@@ -123,7 +125,7 @@ To assign the account to the security role:
 5. Assign the **Patch My PC Publisher** security role.
 6. Assign the required **security scopes**, ensuring the account has access to **All instances of the objects that are related to the assigned security roles.**
 
-![Assigned Security Scopes](/_images/image-(519).png "Assigned Security Scopes")
+![Assigned Security Scopes](../../.gitbook/assets/image-\(519\).png)
 
 7. Complete the wizard and apply the changes.
 8. Restart the **Patch My PC Publisher** service to ensure the updated permissions are applied.
@@ -134,22 +136,21 @@ Patch My PC provides a ConfigMgr security role in **XML format** that has the mi
 
 This role can be imported directly into ConfigMgr if the user logged in with the Publisher application open already has the necessary permissions to create security roles in ConfigMgr.
 
-<blockquote class="wp-block-quote">
-<p>When importing the Patch My PC security role from the Publisher, the user currently logged in and running Publisher must have **Full Administrator** permissions in ConfigMgr.</p>
-<p>Once the role has been imported, Full Administrator permissions are no longer required. The Publisher connects to the SMS Provider using the assigned role and security scopes only.</p>
-</blockquote>
+> When importing the Patch My PC security role from the Publisher, the user currently logged in and running Publisher must have \*\*Full Administrator\*\* permissions in ConfigMgr.
+>
+> Once the role has been imported, Full Administrator permissions are no longer required. The Publisher connects to the SMS Provider using the assigned role and security scopes only.
 
 1. In the **SMS Provider Connection** form, click **Import Security Role.**
 
-![Import Security Role](/_images/image-(3957).png "Import Security Role")
+![Import Security Role](../../.gitbook/assets/image-\(3957\).png)
 
 2. If the role already exists, you will be prompted to overwrite it.
 
-![Overwrite Security Role](/_images/image-(3958).png "Overwrite Security Role")
+![Overwrite Security Role](../../.gitbook/assets/image-\(3958\).png)
 
 3. The role is imported sucessfully.
 
-![Security Role Imported](/_images/image-(3959).png "Security Role Imported")
+![Security Role Imported](../../.gitbook/assets/image-\(3959\).png)
 
 #### Role Import Error
 
@@ -159,7 +160,7 @@ When importing the Publisher security role, the import may fail with the followi
 
 This error occurs when the user running the Publisher does not have sufficient permissions in ConfigMgr to create or import security roles.
 
-![Role Import Error](/_images/image-(4366).png "Role Import Error")
+![Role Import Error](../../.gitbook/assets/image-\(4366\).png)
 
 The following error may be recorded in the _%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\\_&#x50;atchMyPC-SmsProviderConfigMgrRepository.log:
 
@@ -180,8 +181,8 @@ After the role is imported, Full Administrator permissions are no longer require
 
 To test that the Publisher has the correct permissions to the SMS Provider, click **Test Connection.**
 
-![Test SMS Provider Connection](/_images/image-(3960).png "Test SMS Provider Connection")
+![Test SMS Provider Connection](../../.gitbook/assets/image-\(3960\).png)
 
 Connection activity for the SMS Provider from the Publisher can be found in the _%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log_
 
-![PatchMyPC-SmsProviderConfigMgrRepository.log](/_images/image-(524).png "PatchMyPC-SmsProviderConfigMgrRepository.log")
+![PatchMyPC-SmsProviderConfigMgrRepository.log](../../.gitbook/assets/image-\(524\).png)

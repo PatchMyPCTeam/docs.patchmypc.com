@@ -11,9 +11,7 @@ _Applies to: On-premises Publisher_
 
 ## Local Content Repository
 
-Certain [products](https://patchmypc.com/local-content-repository-for-licensed-applications-that-require-manual-download) require the content to be downloaded ahead of time into a known folder. This typically is related to specific vendors who's content can only be downloaded after logging in or paying for the software. &#x20;
-
-![](/_images/image-(1934).png>)
+Certain [products](https://patchmypc.com/local-content-repository-for-licensed-applications-that-require-manual-download) require the content to be downloaded ahead of time into a known folder. This typically is related to specific vendors who's content can only be downloaded after logging in or paying for the software.
 
 The products that need to be downloaded and stored locally are listed below.
 
@@ -34,5 +32,3 @@ The products that need to be downloaded and stored locally are listed below.
 ## Backup and Restore
 
 All settings within the publisher are backed up the publisher is closed using the "OK" button, or the "Apply" button. These settings are stored in the backup directory where the Publisher is installed. You can get an immediate backup of the publisher at any time using the options in the Advanced tab.
-
-![](/_images/image-(1772).png>)
