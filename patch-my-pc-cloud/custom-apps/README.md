@@ -1,6 +1,27 @@
-# Custom Apps
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
 
-_Applies to: Custom Apps_
+# Patch My PC Custom Apps
+
+_Applies to: Patch My PC Cloud Custom Apps_
 
 Welcome to the Custom Apps section for Patch My PC (PMPC) Cloud.
 

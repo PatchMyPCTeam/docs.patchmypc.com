@@ -1,0 +1,29 @@
+# Delete Desktop Shortcut(s)
+
+_Applies to: Patch My PC Publisher V2.x_\
+_Available at level: All Products, Vendor, Product_\
+_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+
+The **Delete desktop shortcut(s)** option automatically removes public desktop shortcuts created by an application installer. This applies only to shortcuts that are defined in the Patch My PC catalog for the product.
+
+<figure><img src="../../.gitbook/assets/image (4005).png" alt="Delete Desktop Shortcuts(s)" width="563"><figcaption></figcaption></figure>
+
+When enabled, Patch My PC ScriptRunner checks the public desktop location on the client device and deletes any shortcuts created by the installer that match the Patch My PC catalog definition.&#x20;
+
+When enabled at the **Product** level, the setting applies only to that specific application. No confirmation dialog is displayed.
+
+When enabled at the **Vendor** level, such as Oracle, the setting applies to all supported products for that vendor.
+
+<figure><img src="../../.gitbook/assets/image (4007).png" alt="Delete Desktop Shortcut(s) set at the Vendor level" width="375"><figcaption></figcaption></figure>
+
+When enabled at the **All Products** level, the setting applies to all products that support desktop shortcut deletion.
+
+<figure><img src="../../.gitbook/assets/image (4006).png" alt="Delete Desktop Shortcut(s) set at the All Products level" width="414"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+Some applications create a desktop shortcut for the user the next time they sign in after an application or update is installed. In these cases, Patch My PC ScriptRunner, which managed the installation, cannot remove the shortcut retrospectively, as it is created outside of the installation process.
+
+If required, these shortcuts must be removed using a separate automation or cleanup mechanism.
+{% endhint %}

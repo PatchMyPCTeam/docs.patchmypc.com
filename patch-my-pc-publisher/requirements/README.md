@@ -1,0 +1,8 @@
+# Requirements for Patch My PC Publisher
+
+_Applies to: Patch My PC Publisher V3.x_
+
+There are several core and platform-specific requirements to successfully install and use Patch My PC (PMPC) Publisher with Microsoft ConfigMgr, WSUS, and Intune.
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="core-requirements.md"><strong>Core Requirements</strong></a><br>Requirements for the Publisher regardless of the platform</td></tr><tr><td><a href="certificate-requirements.md"><strong>Certificate Requirements</strong></a><br>Learn about the Certificate Requirements when working with ConfigMgr or WSUS</td></tr><tr><td><a href="configmgr-requirements/"><strong>ConfigMgr Requirements</strong></a><br>Specific requirements for publishing apps and updates to ConfigMgr</td></tr><tr><td><a href="intune-requirements/"><strong>Intune Requirements</strong></a><br>Specific requirements for publishing apps and updates to ConfigMgr</td></tr><tr><td><a href="wsus-requirements/"><strong>WSUS Requirements</strong></a><br>Specific requirements for publishing apps and updates to WSUS</td></tr><tr><td><a href="../../patch-my-pc-cloud/custom-apps/custom-apps-requirements.md"><strong>Custom App Requirements</strong></a><br>Specific requirements to publish Custom Apps from PMPC Cloud through the Publisher</td></tr></tbody></table>
+

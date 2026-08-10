@@ -1,0 +1,5 @@
+# ConfigMgr Requirements
+
+_Applies to: Patch My PC Publisher V2.x_
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="software.md"><strong>Software</strong></a><br>Software or features required publish applications to ConfigMgr</td></tr><tr><td><a href="permissions.md"><strong>Permissions</strong></a><br>Permissions and roles required to publish applications to ConfigMgr</td></tr><tr><td><a href="disk-space.md"><strong>Disk Space</strong></a><br>Disk space requirements and considerations for ConfigMgr</td></tr><tr><td><a href="network.md"><strong>Network</strong></a><br>Network requirements and considerations for ConfigMgr</td></tr><tr><td><a href="site-system-role/"><strong>Site System Role</strong></a><br>Choose and configure the ConfigMgr site system requirements for third-party patching</td></tr><tr><td><a href="client-settings.md"><strong>Client Settings</strong></a><br>ConfigMgr client setting requirements for third-party patching</td></tr></tbody></table>

@@ -8,14 +8,15 @@ description: >-
 
 _Applies to: Patch My PC Advanced Insights_
 
-<blockquote class="wp-block-quote">
-<p>Quick start for Remote Control:</p>
-<p>1. Create a folder on your machine C:\AdvInsRemoteControl</p>
-<p>2. Copy C:\Program Files (x86)\Advanced Insights\Api\Installers\AdvInsRemoteControl.exe file from your Advanced Insights installation into this folder (needs to be unzipped)</p>
-<p>3. Copy CmRcViewer.exe RdpCoreSccm.dll and the relevant locale folder into the C:\AdvInsRemote Control folder too.</p>
-<p>4. Run AdvInsRemoteControl.exe from Windows Explorer to register it</p>
-<p>5. You can now invoke remote control from the Advanced Insights portal</p>
-</blockquote>
+{% hint style="info" %}
+Quick start for Remote Control:
+
+1. Create a folder on your machine C:\AdvInsRemoteControl
+2. Copy C:\Program Files (x86)\Advanced Insights\Api\Installers\AdvInsRemoteControl.exe file from your Advanced Insights installation into this folder (needs to be unzipped)
+3. Copy CmRcViewer.exe RdpCoreSccm.dll and the relevant locale folder into the C:\AdvInsRemote Control folder too.
+4. Run AdvInsRemoteControl.exe from Windows Explorer to register it
+5. You can now invoke remote control from the Advanced Insights portal
+{% endhint %}
 
 To launch the Configuration Manager remote control action from the client actions menu in Advanced Insights the user must have some files from the Configuration Manager console install directory and an Advanced Insights utility. If the ConfigMgr console is installed on the user’s computer then no additional configuration is required.
 
@@ -33,7 +34,7 @@ On each Advanced Insight user’s computer, copy these files and folder to a loc
 
 We also need a copy of the Advanced Insights utility AdvInsRemoteControl.exe stored in the same location. The user is prompted to download and run this from the Advanced Insights portal the first time they try to use remote control if the app has not already been executed.
 
-![](/_images/image-(1083).png "Correct folder structure for UK language")
+<figure><img src="../.gitbook/assets/image (1785).png" alt=""><figcaption><p>Correct folder structure for UK language</p></figcaption></figure>
 
 ### The AdvInsRemoteControl.exe file
 

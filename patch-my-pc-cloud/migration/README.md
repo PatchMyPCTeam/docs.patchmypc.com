@@ -1,0 +1,6 @@
+# ConfigMgr to Intune App Migration using Patch My PC Cloud
+
+_Applies to: Patch My PC Cloud_
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="overview.md">Overview of Migration</a><br>An overview of the Migration feature</td></tr><tr><td><a href="requirements.md">Migration Requirements</a><br>What's required to use the Migration feature</td></tr><tr><td><a href="setting-migration.md">Setting up Migration</a><br>How to set up the Migration feature</td></tr><tr><td><a href="how-migration-type-determined.md">How Migration Type is Determined</a><br>What logic is used to evaluate how we migrate ConfigMgr apps </td></tr><tr><td><a href="how-different-apps-migrated/">How Different Applications are Migrated</a><br>How PMPC Cloud identifies and handles different types of ConfigMgr apps for migration</td></tr><tr><td><a href="migrate-application/">Performing an Application Migration</a><br>How to perform an application migration as a catalog app, suggested catalog app, or a custom app</td></tr><tr><td><a href="refresh-migration-data.md">Refresh Migration Data</a><br>How to refresh migration data by triggering an immediate sync from Publisher</td></tr><tr><td><a href="post-migration.md">Post Migration</a><br>What to do once a migration is complete</td></tr></tbody></table>
+

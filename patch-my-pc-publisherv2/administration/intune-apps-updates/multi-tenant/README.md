@@ -1,0 +1,6 @@
+# Multi-tenant
+
+_Applies to: Patch My PC Publisher V2.x_
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="overview.md"><strong>Overview</strong></a><br>Overview of the multi-tenant functionality in the Publisher</td></tr><tr><td><a href="tenant-management.md"><strong>Tenant Management</strong></a><br>How to add, import, delete, and select different customer Intune tenants</td></tr><tr><td><a href="cloud-connection.md"><strong>Cloud Connection</strong></a><br>How the Publisher connects to a Patch My PC Cloud company in a multi-tenant scenario</td></tr><tr><td><a href="sync-schedule.md"><strong>Sync Schedule</strong></a><br>How synchronization behaves when multiple tenants are configured</td></tr><tr><td><a href="notifications.md"><strong>Notifications</strong></a><br>How email and webhook notifications function in a multi-tenant scenario</td></tr></tbody></table>
+

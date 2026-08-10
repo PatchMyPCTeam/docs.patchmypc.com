@@ -1,7 +1,7 @@
 ---
-description: Overview of Advanced Insights dashboards
+description: Overview of Advanced and Patch Insights dashboards
 ---
 
-# Advanced Insights Dashboard Guides
+# Insights Dashboard Guides
 
-_Applies to: Patch My PC Advanced Insights_
+_Applies to: Patch My PC Advanced Insights and Patch Inisghts where indicated_

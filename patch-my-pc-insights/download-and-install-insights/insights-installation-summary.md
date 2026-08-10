@@ -6,16 +6,22 @@ Installation Summary
 
 This completes the pre-install configuration of Advanced Insights, a summary screen is shown and you can review and click **Install** to begin the installation.
 
-![](/_images/vmconnect_LDvkhQTKhv.png)
+<figure><img src="../../.gitbook/assets/image (4338).png" alt="Installation Summary" width="563"><figcaption></figcaption></figure>
 
 **Installation**
 
 The installer may take up to 30 minutes to complete.
 
-![](/_images/10-Installing-(1).png)
+<figure><img src="../../.gitbook/assets/image (4339).png" alt="Installation in progress" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> The installer will automatically create an installation log at \_\*\*%temp%\AdvInsights.log\*\*\_
->
-> Additionally, a copy (.zip) of the install log is placed into \_\*\*C:\ProgramData\AdvancedInsights\Logs\Installer\*\*\_
+{% hint style="info" %}
+**Note**
+
+The installer will automatically create an installation log at:
+
+`%temp%\AdvInsights.log`
+
+Additionally, a copy (.zip) of the install log is placed into the following folder:
+
+`C:\ProgramData\AdvancedInsights\Logs\Installer`
+{% endhint %}

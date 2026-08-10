@@ -1,11 +1,13 @@
----
-description: Official product documentation for Patch My PC Insights suite.
----
+# Patch My PC Insights documentation
 
-# Patch My PC Insights
+Official product documentation for the Patch My PC Insights suite
 
-_Applies to: Patch My PC Advanced and Patch Insights_
-
-Advanced Insights & Patch Insights share a base install, the functionality provided is governed by the license key you provide when first using the interface.
+Advanced Insights and Patch Insights share a base install, the functionality provided is governed by the license key you provide when first using the interface.
 
 All setup and configuration instructions are valid for both Advanced Insights and Patch Insights unless stated.
+
+{% hint style="info" %}
+Note&#x20;
+
+These documents are for the On-premises version of our reporting products, Advanced Insights and Patch Insights. See [Advanced/Patch Insights for Intune](../patch-my-pc-cloud/insights-intune/) if you are using the Intune versions of these products.
+{% endhint %}

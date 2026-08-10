@@ -1,0 +1,5 @@
+# Options
+
+_Applies to: Patch My PC Publisher V2.x_
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="connection-and-source-options.md"><strong>Connection and Source Options</strong></a><br>Configure the SMS Provider and content source folder for applications<br></td></tr><tr><td><a href="application-creation-options.md"><strong>Application Creation Options</strong></a><br>Manage global application creation and lifecycle behaviour<br></td></tr><tr><td><a href="content-distribution-options.md"><strong>Content Distribution Options</strong></a><br>Manage automatic content distribution behaviour when an application is published</td></tr><tr><td><a href="run-configmgr-application-manager.md">Run ConfigMgr Application Manager</a><br>Manage applications created in ConfigMgr by the Publisher</td></tr></tbody></table>

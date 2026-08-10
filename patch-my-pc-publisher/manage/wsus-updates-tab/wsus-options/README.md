@@ -1,0 +1,13 @@
+# WSUS Options in Patch My PC Publisher
+
+_Applies to: Patch My PC Publisher V3.x_
+
+{% hint style="danger" %}
+**Important**
+
+This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% endhint %}
+
+Various configuration options are available for Patch My PC (PMPC) Publisher as detailed in this section.
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/configure-sms-provider-connection.md"><strong>Configure SMS Provider Connection</strong></a><br>Configure the SMS Provider connection</td></tr><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/trigger-a-sup-sync.md"><strong>Trigger a SUP Sync</strong></a><br>Initiate a SUP sync and configure the SMS Provider connection</td></tr><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/configmgr-component-management.md"><strong>ConfigMgr Component Management</strong></a><br>Query and Restart the WCM ConfigMgr Component</td></tr><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/product-management.md"><strong>Product Management</strong></a><br>View the status of the Patch My PC product category on the SUP and in WSUS</td></tr><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/update-republishing-options.md"><strong>Update Republishing Options</strong></a><br>Modify the default naming policy for updates that are republished</td></tr><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/modify-published-updates.md"><strong>Modify Published Updates</strong></a><br>View and manage third-party updates in the WSUS database</td></tr><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/wsus-maintenance.md"><strong>WSUS Maintenance</strong></a><br>Configure third-party update content clean-up</td></tr><tr><td><a href="../../../../patch-my-pc-publisherv2/administration/updates/options/standalone-wsus-mode.md"><strong>Standalone WSUS Mode</strong></a><br>Configure visibility of third-party updates in the WSUS management console</td></tr></tbody></table>

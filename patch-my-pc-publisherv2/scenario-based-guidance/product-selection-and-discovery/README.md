@@ -1,0 +1,5 @@
+# Product Selection and Discovery
+
+_Applies to: Patch My PC Publisher V2.x_
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="scenario-1-configmgr-applications.md"><strong>Scenario 1: ConfigMgr Applications</strong></a><br>Discover or manually select third party products to publish as ConfigMgr applications</td></tr><tr><td><a href="scenario-2-configmgr-wsus-updates.md"><strong>Scenario 2: ConfigMgr / WSUS Updates</strong></a><br>Discover or manually select third party products to publish as WSUS updates</td></tr><tr><td><a href="scenario-3-intune-applications-and-updates.md"><strong>Scenario 3: Intune Applications and Updates</strong></a><br>Discover or manually select third party products to publish as Intune applications and updates<br></td></tr></tbody></table>

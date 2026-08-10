@@ -1,0 +1,507 @@
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC Batteries"),
+  SMS_Class_ID ("MICROSOFT|PMPC_BATTERIES|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class PMPC_Batteries : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     BatteryID;
+    [ SMS_Report (TRUE) ]
+    String     Chemistry;
+    [ SMS_Report (TRUE) ]
+    String     DesignCapacity;
+    [ SMS_Report (TRUE) ]
+    String     FullChargeCapacity;
+    [ SMS_Report (TRUE) ]
+    String     Health;
+    [ SMS_Report (TRUE) ]
+    String     ManufactureDate;
+    [ SMS_Report (TRUE) ]
+    String     Manufacturer;
+    [ SMS_Report (TRUE) ]
+    String     SerialNumber;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC Disks"),
+  SMS_Class_ID ("MICROSOFT|PMPC_DISKS|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class PMPC_Disks : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     DeviceID;
+    [ SMS_Report (TRUE) ]
+    String     BusType;
+    [ SMS_Report (TRUE) ]
+    String     FlushLatencyMax;
+    [ SMS_Report (TRUE) ]
+    String     HealthStatus;
+    [ SMS_Report (TRUE) ]
+    String     Manufacturer;
+    [ SMS_Report (TRUE) ]
+    String     MediaType;
+    [ SMS_Report (TRUE) ]
+    String     Model;
+    [ SMS_Report (TRUE) ]
+    String     OperationalStatus;
+    [ SMS_Report (TRUE) ]
+    String     PowerOnHours;
+    [ SMS_Report (TRUE) ]
+    String     ReadErrorsTotal;
+    [ SMS_Report (TRUE) ]
+    String     ReadLatencyMax;
+    [ SMS_Report (TRUE) ]
+    String     SerialNumber;
+    [ SMS_Report (TRUE) ]
+    String     Temperature;
+    [ SMS_Report (TRUE) ]
+    String     TemperatureMax;
+    [ SMS_Report (TRUE) ]
+    String     Wear;
+    [ SMS_Report (TRUE) ]
+    String     WriteErrorsTotal;
+    [ SMS_Report (TRUE) ]
+    String     WriteLatencyMax;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC Dock"),
+  SMS_Class_ID ("MICROSOFT|PMPC_DOCK|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class PMPC_Dock : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     DeviceName;
+    [ SMS_Report (TRUE) ]
+    String     Firmware;
+    [ SMS_Report (TRUE) ]
+    String     Manufacturer;
+    [ SMS_Report (TRUE) ]
+    String     PnPID;
+    [ SMS_Report (TRUE) ]
+    String     SerialNumber;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC LocalGroups"),
+  SMS_Class_ID ("MICROSOFT|PMPC_LOCALGROUPS|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class PMPC_LocalGroups : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     GroupName;
+    [ SMS_Report (TRUE) ]
+    String     GroupMembers[];
+    [ SMS_Report (TRUE) ]
+    String     Members[];
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC Monitors"),
+  SMS_Class_ID ("MICROSOFT|PMPC_MONITORS|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class PMPC_Monitors : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     InstanceName;
+    [ SMS_Report (TRUE) ]
+    String     BoundBottom;
+    [ SMS_Report (TRUE) ]
+    String     BoundLeft;
+    [ SMS_Report (TRUE) ]
+    String     BoundRight;
+    [ SMS_Report (TRUE) ]
+    String     BoundTop;
+    [ SMS_Report (TRUE) ]
+    String     BoundX;
+    [ SMS_Report (TRUE) ]
+    String     BoundY;
+    [ SMS_Report (TRUE) ]
+    String     CMHeight;
+    [ SMS_Report (TRUE) ]
+    String     CMWidth;
+    [ SMS_Report (TRUE) ]
+    String     ConnectionType;
+    [ SMS_Report (TRUE) ]
+    String     DeviceName;
+    [ SMS_Report (TRUE) ]
+    String     InchSize;
+    [ SMS_Report (TRUE) ]
+    String     Manufacturer;
+    [ SMS_Report (TRUE) ]
+    String     ManufactureYear;
+    [ SMS_Report (TRUE) ]
+    String     Model;
+    [ SMS_Report (TRUE) ]
+    String     Primary;
+    [ SMS_Report (TRUE) ]
+    String     ResolutionHorizontal;
+    [ SMS_Report (TRUE) ]
+    String     ResolutionVertical;
+    [ SMS_Report (TRUE) ]
+    String     SerialNumber;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC Updates"),
+  SMS_Class_ID ("MICROSOFT|PMPC_UPDATES|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class PMPC_Updates : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     UpdateId;
+    [ SMS_Report (TRUE) ]
+    String     ArticleId;
+    [ SMS_Report (TRUE) ]
+    String     Classification;
+    [ SMS_Report (TRUE) ]
+    String     DatePosted;
+    [ SMS_Report (TRUE) ]
+    String     DetectionDate;
+    [ SMS_Report (TRUE) ]
+    String     InstalledOn;
+    [ SMS_Report (TRUE) ]
+    String     Product;
+    [ SMS_Report (TRUE) ]
+    String     ProductID;
+    [ SMS_Report (TRUE) ]
+    String     Service;
+    [ SMS_Report (TRUE) ]
+    String     Status;
+    [ SMS_Report (TRUE) ]
+    String     Title;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC UserApps"),
+  SMS_Class_ID ("MICROSOFT|PMPC_USERAPPS|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class PMPC_UserApps : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     InstallLocation;
+    [ SMS_Report (TRUE) ]
+    String     DisplayName;
+    [ SMS_Report (TRUE) ]
+    String     DisplayVersion;
+    [ SMS_Report (TRUE) ]
+    String     InstallDate;
+    [ SMS_Report (TRUE) ]
+    String     Publisher;
+    [ SMS_Report (TRUE) ]
+    String     QuietUninstallString;
+    [ SMS_Report (TRUE) ]
+    String     UninstallString;
+    [ SMS_Report (TRUE) ]
+    String     User;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC ODBC"),
+  SMS_Class_ID ("MICROSOFT|PMPC_ODBC|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class PMPC_ODBC : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     DataSourceName;
+    [ SMS_Report (TRUE) ]
+    String     Database;
+    [ SMS_Report (TRUE) ]
+    String     Description;
+    [ SMS_Report (TRUE) ]
+    String     Driver;
+    [ SMS_Report (TRUE) ]
+    String     DriverVersion;
+    [ SMS_Report (TRUE) ]
+    String     Platform;
+    [ SMS_Report (TRUE) ]
+    String     Server;
+    [ SMS_Report (TRUE) ]
+    String     ServerSPN;
+    [ SMS_Report (TRUE) ]
+    String     TrustedConnection;
+    [ SMS_Report (TRUE) ]
+    String     TrustServerCertificate;
+    [ SMS_Report (TRUE) ]
+    String     User;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("Logical Disk To Partition"),
+  SMS_Class_ID ("MICROSOFT|LOGICAL_DISK_TO_PARTITION|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class Win32_LogicalDiskToPartition : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     Antecedent;
+    [ SMS_Report (TRUE) ]
+    String     Dependent;
+    [ SMS_Report (TRUE) ]
+    String     EndingAddress;
+    [ SMS_Report (TRUE) ]
+    String     StartingAddress;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("BitLocker Encryption Details"),
+  SMS_Class_ID ("MICROSOFT|BITLOCKER_DETAILS|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class Win32_BitLockerEncryptionDetails : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     DeviceId;
+    [ SMS_Report (TRUE) ]
+    String     BitlockerPersistentVolumeId;
+    [ SMS_Report (TRUE) ]
+    SInt32     Compliant;
+    [ SMS_Report (TRUE) ]
+    SInt32     ConversionStatus;
+    [ SMS_Report (TRUE) ]
+    String     DriveLetter;
+    [ SMS_Report (TRUE) ]
+    SInt32     EncryptionMethod;
+    [ SMS_Report (TRUE) ]
+    String     EnforcePolicyDate;
+    [ SMS_Report (TRUE) ]
+    Boolean     IsAutoUnlockEnabled;
+    [ SMS_Report (TRUE) ]
+    SInt32     KeyProtectorTypes[];
+    [ SMS_Report (TRUE) ]
+    String     MbamPersistentVolumeId;
+    [ SMS_Report (TRUE) ]
+    SInt32     MbamVolumeType;
+    [ SMS_Report (TRUE) ]
+    String     NoncomplianceDetectedDate;
+    [ SMS_Report (TRUE) ]
+    SInt32     ProtectionStatus;
+    [ SMS_Report (TRUE) ]
+    SInt32     ReasonsForNonCompliance[];
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("BitLocker Policy"),
+  SMS_Class_ID ("MICROSOFT|MBAM_POLICY|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2") ]
+class Win32Reg_MBAMPolicy : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     KeyName;
+    [ SMS_Report (TRUE) ]
+    String     EncodedComputerName;
+    [ SMS_Report (TRUE) ]
+    UInt32     EncryptionMethod;
+    [ SMS_Report (TRUE) ]
+    UInt32     EncryptionMethodWithXtsFdv;
+    [ SMS_Report (TRUE) ]
+    UInt32     EncryptionMethodWithXtsOs;
+    [ SMS_Report (TRUE) ]
+    UInt32     EncryptionMethodWithXtsRdv;
+    [ SMS_Report (TRUE) ]
+    UInt32     FixedDataDriveAutoUnlock;
+    [ SMS_Report (TRUE) ]
+    UInt32     FixedDataDriveEncryption;
+    [ SMS_Report (TRUE) ]
+    UInt32     FixedDataDrivePassphrase;
+    [ SMS_Report (TRUE) ]
+    String     LastConsoleUser;
+    [ SMS_Report (TRUE) ]
+    UInt32     MBAMMachineError;
+    [ SMS_Report (TRUE) ]
+    UInt32     MBAMPolicyEnforced;
+    [ SMS_Report (TRUE) ]
+    UInt32     OsDriveEncryption;
+    [ SMS_Report (TRUE) ]
+    UInt32     OsDriveProtector;
+    [ SMS_Report (TRUE) ]
+    DateTime     UserExemptionDate;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("TPM"),
+  SMS_Class_ID ("MICROSOFT|TPM|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\CIMv2\\\\Security\\\\MicrosoftTpm") ]
+class Win32_Tpm : SMS_Class_Template
+{
+    [ SMS_Report (TRUE) ]
+    Boolean     IsActivated_InitialValue;
+    [ SMS_Report (TRUE) ]
+    Boolean     IsEnabled_InitialValue;
+    [ SMS_Report (TRUE) ]
+    Boolean     IsOwned_InitialValue;
+    [ SMS_Report (TRUE) ]
+    UInt32     ManufacturerId;
+    [ SMS_Report (TRUE) ]
+    String     ManufacturerVersion;
+    [ SMS_Report (TRUE) ]
+    String     ManufacturerVersionInfo;
+    [ SMS_Report (TRUE) ]
+    String     PhysicalPresenceVersionInfo;
+    [ SMS_Report (TRUE) ]
+    String     SpecVersion;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("TPM Status"),
+  SMS_Class_ID ("MICROSOFT|TPM_STATUS|1.0"),
+  Namespace ("\\\\\\\\.\\\\root\\\\cimv2\\\\sms") ]
+class SMS_TPM : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    Boolean     IsReady;
+    [ SMS_Report (TRUE) ]
+    UInt32     Information;
+    [ SMS_Report (TRUE) ]
+    Boolean     IsApplicable;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC UserProfile"),
+  SMS_Class_ID ("MICROSOFT|PMPC_USERPROFILE|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class PMPC_UserProfile : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     SID;
+    [ SMS_Report (TRUE) ]
+    String     AccountName;
+    [ SMS_Report (TRUE) ]
+    String     LastLoggedIn;
+    [ SMS_Report (TRUE) ]
+    String     Path;
+    [ SMS_Report (TRUE) ]
+    String     SizeGB;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC WifiInterface"),
+  SMS_Class_ID ("MICROSOFT|PMPC_WIFIINTERFACE|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class PMPC_WifiInterface : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     GUID;
+    [ SMS_Report (TRUE) ]
+    String     Authentication;
+    [ SMS_Report (TRUE) ]
+    String     Band;
+    [ SMS_Report (TRUE) ]
+    String     Channel;
+    [ SMS_Report (TRUE) ]
+    String     Cipher;
+    [ SMS_Report (TRUE) ]
+    String     ConnectionMode;
+    [ SMS_Report (TRUE) ]
+    String     Description;
+    [ SMS_Report (TRUE) ]
+    String     DriverVersion;
+    [ SMS_Report (TRUE) ]
+    String     PhysicalAddress;
+    [ SMS_Report (TRUE) ]
+    String     RadioType;
+    [ SMS_Report (TRUE) ]
+    String     Signal;
+    [ SMS_Report (TRUE) ]
+    String     SSID;
+    [ SMS_Report (TRUE) ]
+    String     State;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC BrowserExtension"),
+  SMS_Class_ID ("MICROSOFT|PMPC_BROWSEREXTENSION|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class PMPC_BrowserExtension : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     InstallPath;
+    [ SMS_Report (TRUE) ]
+    String     Author;
+    [ SMS_Report (TRUE) ]
+    String     Browser;
+    [ SMS_Report (TRUE) ]
+    String     InstalledOn;
+    [ SMS_Report (TRUE) ]
+    String     Name;
+    [ SMS_Report (TRUE) ]
+    String     User;
+    [ SMS_Report (TRUE) ]
+    String     Version;
+    [ SMS_Report (TRUE) ]
+    String     ID;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC Compliance"),
+  SMS_Class_ID ("MICROSOFT|PMPC_COMPLIANCE|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class PMPC_Compliance : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     PackageId;
+    [ SMS_Report (TRUE) ]
+    Boolean     IsInstalled;
+    [ SMS_Report (TRUE) ]
+    String     Name;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC SecureBoot"),
+  SMS_Class_ID ("MICROSOFT|PMPC_SECUREBOOT|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class PMPC_SecureBoot : SMS_Class_Template
+{
+    [ SMS_Report (TRUE) ]
+    String     AvailableUpdatesRegValue;
+    [ SMS_Report (TRUE) ]
+    String     BootmgfwCert;
+    [ SMS_Report (TRUE) ]
+    String     BootmgfwSvn;
+    [ SMS_Report (TRUE) ]
+    String     Description;
+    [ SMS_Report (TRUE) ]
+    String     FirmwareVersion;
+    [ SMS_Report (TRUE) ]
+    Boolean     Kek2023Present;
+    [ SMS_Report (TRUE) ]
+    Boolean     MicrosoftUefi2023Present;
+    [ SMS_Report (TRUE) ]
+    String     MinimumFirmwareVersion;
+    [ SMS_Report (TRUE) ]
+    Boolean     OptionRom2023Present;
+    [ SMS_Report (TRUE) ]
+    String     Progress;
+    [ SMS_Report (TRUE) ]
+    Boolean     RequiresFirmwareUpdate;
+    [ SMS_Report (TRUE) ]
+    Boolean     SecurebootDbUpdated;
+    [ SMS_Report (TRUE) ]
+    Boolean     SecureBootEnabled;
+    [ SMS_Report (TRUE) ]
+    String     Uefi2023Error;
+    [ SMS_Report (TRUE) ]
+    String     Uefi2023ErrorEventId;
+    [ SMS_Report (TRUE) ]
+    String     UefiCa2023Status;
+    [ SMS_Report (TRUE) ]
+    Boolean     WindowsUefi2023Present;
+    [ SMS_Report (TRUE) ]
+    string     ProviderException;
+};
+
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("PMPC_MissingMsiSource"),
+  SMS_Class_ID ("MICROSOFT|PMPC_MISSINGMSISOURCE|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class PMPC_MissingMsiSource : SMS_Class_Template
+{
+    [ SMS_Report (TRUE), key ]
+    String     MsiCode;
+    [ SMS_Report (TRUE) ]
+    String     DisplayName;
+    [ SMS_Report (TRUE) ]
+    String     DisplayVersion;
+    [ SMS_Report (TRUE) ]
+    String     Publisher;
+    [ SMS_Report (TRUE) ]
+    String     SourcePaths[];
+};

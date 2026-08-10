@@ -1,0 +1,7 @@
+# Administration
+
+_Applies to: Patch My PC Publisher V2.x_
+
+The **Administration** section outlines how to configure various elements across the different tabs in the Publisher.
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="general/"><strong>General</strong></a><br>License information, usage statistics, certificate management and logging options<br></td></tr><tr><td><a href="updates/"><strong>Updates</strong></a><br>Configuration and customization for third-party WSUS/ConfigMgr updates</td></tr><tr><td><a href="configmgr-apps/"><strong>ConfigMgr Apps</strong></a><br>Configuration and customization for third-party ConfigMgr applications</td></tr><tr><td><a href="intune-apps-updates/"><strong>Intune Apps / Updates</strong></a><br>Configuration and customization for third-party Intune applications and updates</td></tr><tr><td><a href="sync-schedule.md"><strong>Sync Schedule</strong></a><br>Configure the synchronization schedule for the Publisher</td></tr><tr><td><a href="alerts/"><strong>Alerts</strong></a><br>Configure Email and Webhook alerts for Teams/Slack</td></tr><tr><td><a href="advanced/"><strong>Advanced</strong></a><br>Advanced configurations for the Publisher</td></tr><tr><td><a href="cloud.md"><strong>Cloud</strong></a><br>Configuration for Patch My PC Cloud features.</td></tr><tr><td><a href="about.md"><strong>About</strong></a><br>Release channel management and in-app helpful links.</td></tr></tbody></table>

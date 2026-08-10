@@ -1,0 +1,8 @@
+# Manage Conflicting Processes in Patch My PC Publisher
+
+_Applies to: Patch My PC Publisher V3.x_\
+_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="overview-guidance.md"><strong>Overview and Guidance</strong></a><br>Introduction to the Manage Conflicting Processes feature and general guidance</td></tr><tr><td><a href="policy-section.md"><strong>Policy section</strong></a><br>Understand and configure how Publisher handles update installation when a conflicting application process is detected on the device</td></tr><tr><td><a href="process-restart-prevention.md"><strong>Process Restart Prevention</strong></a><br>Learn how to prevent the end user from reopening the application whilst the update is in progress</td></tr><tr><td><a href="notification-policy.md"><strong>Notification Policy</strong></a><br>Learn how to control how end-user notifications behave when a conflicting process is detected and the application is running</td></tr><tr><td><a href="management-options.md"><strong>Management Options</strong></a><br>Learn how you can control which running processes are evaluated for conflicting process management and configure the notification branding</td></tr><tr><td><a href="conflicting-process-ui-settings-window.md"><strong>Conflicting Process UI Settings</strong></a><br>Learn how to customize the end-user notification experience shown when an application must be closed to complete an update</td></tr></tbody></table>
+

@@ -13,10 +13,11 @@ Advanced Insights use the following ports, and the installer will automatically 
 * Advanced Insights Frontend - **tcp/443** (or whatever you have customised this to in the installer)
 * Advanced Insights API - **tcp/44301** (cannot be changed)
 
-<blockquote class="wp-block-quote">
-<p>Both ports (443/custom frontend port and 44301) need to allowed through your firewall or network filtering software for internal network access to the application. If you want Advanced Insights to be accessed by multiple remote devices, please follow the appropriate procedure to unblock these two ports on your network.</p>
-<p>You will more than likely see either no login screen, or an error message stating "Unable to Connect to the API Server" if either of these ports are blocked. &#x20;</p>
-</blockquote>
+{% hint style="warning" %}
+Both ports (443/custom frontend port and 44301) need to allowed through your firewall or network filtering software for internal network access to the application. If you want Advanced Insights to be accessed by multiple remote devices, please follow the appropriate procedure to unblock these two ports on your network.
+
+You will more than likely see either no login screen, or an error message stating "Unable to Connect to the API Server" if either of these ports are blocked. &#x20;
+{% endhint %}
 
 ***
 
@@ -39,12 +40,16 @@ The Advanced Insights server needs access to various domains and APIs to functio
 
 * **api.patchmypc.com:443**
   * Reason: For licensing
+* **updateadvancedinsights.patchmypc.com:443**
+  * Reason: For Advanced Insights Update notification feature
+* [http://e7.c.lencr.org/26.crl](http://e7.c.lencr.org/26.crl)
+  * Reason: For Advanced Insights Updater certificate revocation checks
 * **learn.microsoft.com:443**
   * Reason: For ConfigMgr, Windows, and Office 365 release and support statements
 
-<blockquote class="wp-block-quote">
-<p>Important: To activate and use Advanced Insights, you must permit outbound access for api.patchmypc.com:443</p>
-</blockquote>
+{% hint style="danger" %}
+Important: To activate and use Advanced Insights, you must permit outbound access for api.patchmypc.com:443
+{% endhint %}
 
 #### Recommended Addresses
 
@@ -54,8 +59,6 @@ The Advanced Insights server needs access to various domains and APIs to functio
   * Reason: The Threat Analytics dashboard uses data from this external API for PMPC CVE data
 * **access.redhat.com:443**
   * Reason: The Threat Analytics dashboard uses data from this external API for PMPC CVE data
-* **getcallisto.io:443**
-  * Reason: The Advanced Insights inventory extensions
 * **api.callisto.co:443**
   * Reason: The Advanced Insights Threat Analytics API&#x20;
 * **supportapi.lenovo.com:443**
@@ -67,14 +70,14 @@ The Advanced Insights server needs access to various domains and APIs to functio
 * **eu.daas.api.hp.com:443** or **daas.api.hp.com:433** (depending on your region)
   * Reason: To retrieve data from the HP Workforce Experience warranty service
 
-<blockquote class="wp-block-quote">
-<p>To use these features of Advanced Insights, you will need outbound access to the above addresses.</p>
-</blockquote>
+{% hint style="warning" %}
+To use these features of Advanced Insights, you will need outbound access to the above addresses.
+{% endhint %}
 
 ***
 
 ### Browsers
 
-<blockquote class="wp-block-quote">
-<p>We do not support Internet Explorer for Advanced Insights. Please use Firefox, Edge, Chrome or any other modern browser to access Advanced Insights.</p>
-</blockquote>
+{% hint style="warning" %}
+We do not support Internet Explorer for Advanced Insights. Please use Firefox, Edge, Chrome or any other modern browser to access Advanced Insights.
+{% endhint %}

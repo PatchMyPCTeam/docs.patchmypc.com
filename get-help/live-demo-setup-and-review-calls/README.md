@@ -7,14 +7,17 @@ description: >-
 
 # Live Demo, Setup & Review Calls
 
-<blockquote class="wp-block-quote">
-<p>For general product advice or support, please visit our <a href="https://patchmypc.com/technical-support">Technical Support</a> page. Submitting your request there ensures immediate notification to our engineers, who will assign a qualified expert to your case.</p>
-<p>Booking a call using the links on this page for other support needs may result in the assigned engineer redirecting you to our <a href="https://patchmypc.com/technical-support">Technical Support</a> page to ensure proper handling of your support case by a qualified support expert.</p>
-</blockquote>
+{% hint style="warning" %}
+For general product advice or support, please visit our [Technical Support](https://patchmypc.com/technical-support) page. Submitting your request there ensures immediate notification to our engineers, who will assign a qualified expert to your case.
+
+
+
+Booking a call using the links on this page for other support needs may result in the assigned engineer redirecting you to our [Technical Support](https://patchmypc.com/technical-support) page to ensure proper handling of your support case by a qualified support expert.
+{% endhint %}
 
 If you are unsure which type of call you would like to book, please use this decision tree below.
 
-![](/_images/image-(595).png "Book a call - decision tree")
+<figure><img src="../../.gitbook/assets/image (1297).png" alt=""><figcaption><p>Book a call - decision tree</p></figcaption></figure>
 
 ## Book a Live Demo
 
@@ -30,15 +33,15 @@ During a live demo, an [engineer](https://patchmypc.com/about-us#meet-the-team) 
 * Reporting
 * Answer all your questions
 
-<blockquote class="wp-block-quote">
-<p><a href="https://patchmypc.com/schedule-live-demo">Book a Live Demo</a><a href="https://patchmypc.com/schedule-live-demo?utm_source=github\&utm_medium=referral\&utm_content=docs-article"> </a></p>
-</blockquote>
+{% hint style="success" %}
+[Book a Live Demo](https://patchmypc.com/schedule-live-demo)[ ](https://patchmypc.com/schedule-live-demo?utm_source=github\&utm_medium=referral\&utm_content=docs-article)
+{% endhint %}
 
 ### Book a Guided Setup Call
 
-<blockquote class="wp-block-quote">
-<p>If Patch My PC is already set up in your environment, you may wish to schedule an <a href="https://patchmypc.com/environment-review-call">Environment Review and Q\&A Session</a> where our engineers can provide a proactive review of your current installation.</p>
-</blockquote>
+{% hint style="warning" %}
+If Patch My PC is already set up in your environment, you may wish to schedule an [Environment Review and Q\&A Session](https://patchmypc.com/environment-review-call) where our engineers can provide a proactive review of your current installation.
+{% endhint %}
 
 During a setup call, an [engineer](https://patchmypc.com/about-us#meet-the-team) will help you with the initial setup of Patch My PC solutions and their integration with Microsoft Intune, Microsoft Configuration or Microsoft WSUS. We will show you the [customization options](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications) and will have plenty of time for Q\&A throughout the call.
 
@@ -57,15 +60,15 @@ During a setup call, an [engineer](https://patchmypc.com/about-us#meet-the-team)
 * With technical support enquiries that are not related to the initial setting up & integration of our products in your environment
 * Build & troubleshoot Custom Apps
 
-<blockquote class="wp-block-quote">
-<p><a href="https://patchmypc.com/schedule-setup-call?utm_source=github\&utm_medium=referral\&utm_content=docs-article">Book a Guided Setup Call</a></p>
-</blockquote>
+{% hint style="success" %}
+[Book a Guided Setup Call](https://patchmypc.com/schedule-setup-call?utm_source=github\&utm_medium=referral\&utm_content=docs-article)
+{% endhint %}
 
 ### Book an Environment Review Call
 
-<blockquote class="wp-block-quote">
-<p>If Patch My PC is not yet set up in your environment, you may wish to schedule a <a href="https://patchmypc.com/schedule-setup-call">Guided Product Setup Call</a> instead so an engineer can help you with the initial implementation of Patch My PC.</p>
-</blockquote>
+{% hint style="warning" %}
+If Patch My PC is not yet set up in your environment, you may wish to schedule a [Guided Product Setup Call](https://patchmypc.com/schedule-setup-call) instead so an engineer can help you with the initial implementation of Patch My PC.
+{% endhint %}
 
 During an environment review call, an [engineer](https://patchmypc.com/about-us#meet-the-team) will provide a proactive review of your current configuration of Patch My PC's products, how they integrate with Microsoft Intune, Microsoft Configuration or Microsoft WSUS and will have plenty of time for Q\&A throughout the call.
 
@@ -82,6 +85,6 @@ During an environment review call, an [engineer](https://patchmypc.com/about-us#
 * With technical support enquiries
 * Build & troubleshoot Custom Apps
 
-<blockquote class="wp-block-quote">
-<p><a href="https://patchmypc.com/environment-review-call?utm_source=github\&utm_medium=referral\&utm_content=docs-article">Book an Environment Review Call</a></p>
-</blockquote>
+{% hint style="success" %}
+[Book an Environment Review Call](https://patchmypc.com/environment-review-call?utm_source=github\&utm_medium=referral\&utm_content=docs-article)
+{% endhint %}

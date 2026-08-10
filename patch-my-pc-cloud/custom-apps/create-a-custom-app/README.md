@@ -1,24 +1,34 @@
 # Create a Custom App
 
-_Applies to: Custom Apps_
+_Applies to: Patch My PC Cloud Custom Apps_
 
-Patch My PC (PMPC) Cloud allows you to create your own Custom Apps, which are typically in-house developed.
+Patch My PC (PMPC) Cloud allows you to create your own _Custom Apps_, which are typically in-house developed.
 
-> \*\*Note\*\*
->
-> If you are using our on-premises Publisher, you should follow the \[Publish a Custom App]\(../publish-a-custom-app.md) process instead.
->
-> Likewise, if you are a Managed Service Provider (MSP) wanting to deploy a Custom App to one or more managed companies, see \[MSP Custom Apps]\(../../managed-service-provider/msp-custom-apps/) for more details.
+{% hint style="danger" %}
+**Important**
 
-Creating a Custom App involves:
+If you also intend to deploy apps from our App Catalog in addition to creating Custom Apps, you must establish a connection to your Intune Tenant using the [Add an Intune Connection](../../manage/settings/connections/add-connection.md#add-an-intune-connection) process.
+{% endhint %}
 
-* [Uploading the Primary Installer](upload-the-primary-installer-for-a-custom-app.md)
-* [Uploading Extra Folders or Files](custom-apps-file-tab.md) (optional)
-* [Configuring General Information](custom-apps-general-information-tab.md)
-* [Configuring the Custom App](custom-apps-configuration-tab.md)
-* [Configuring Native Detection Rules](custom-apps-detection-rules-tab.md) (optional)
-* [Reviewing the Summary](custom-apps-summary-tab.md) (optional but recommended)
+{% hint style="info" %}
+**Note**
 
-> \*\*Note\*\*
->
-> See [How to package Visual Studio 2022 as Custom App](https://patchmypc.com/how-to-package-visual-studio-2022-custom-app) for a real-life example.
+If you are using our on-premises Publisher, you should follow the [Publish a Custom App](../publish-a-custom-app.md) process instead.
+
+Likewise, if you are a Managed Service Provider (MSP) wanting to deploy a Custom App to one or more managed companies, see [MSP Custom Apps](../../managed-service-provider-feature/msp-custom-apps/) for more details.
+{% endhint %}
+
+To create a PMPC Custom App, you first need to add it to our App Catalog as follows:
+
+1. Sign in to the PMPC Cloud Portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
+2. Click **Add App** on the **App Catalog** page.
+
+<figure><img src="../../../.gitbook/assets/image (4299).png" alt="Clicking ‘Add App’" width="563"><figcaption></figcaption></figure>
+
+The Custom Apps Deployment Wizard starts.
+
+{% hint style="info" %}
+**Note**
+
+See [How to package Visual Studio 2022 as a Custom App](https://patchmypc.com/how-to-package-visual-studio-2022-custom-app) for a real-life example.
+{% endhint %}

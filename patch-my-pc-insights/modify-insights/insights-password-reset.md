@@ -8,22 +8,22 @@ _Applies to: Patch My PC Advanced and Patch Insights_
 
 This section describes the steps required to reset the password for the default 'admin' account for an existing Advanced Insights deployment.
 
-<blockquote class="wp-block-quote">
-<p>The ability to reset the default admin password using the modify feature is supported in version 2.2.1 and later.</p>
-</blockquote>
+{% hint style="warning" %}
+The ability to reset the default admin password using the modify feature is supported in version 2.2.1 and later.
+{% endhint %}
 
 In the configuration modification page, select the checkbox for **'Default Admin Password Reset'** then click **'Reset Password'**:
 
-![](/_images/image-(1661).png "Reset Admin Password option dialog")
+<figure><img src="../../.gitbook/assets/image (4353).png" alt="Clicking &#x27;Reset Password&#x27;" width="563"><figcaption></figcaption></figure>
 
 The password reset confirmation is then displayed. Click **'Close'**
 
-![](/_images/image-(1662).png "Password reset confirmed dialog")
+<figure><img src="../../.gitbook/assets/image (2364).png" alt=""><figcaption><p>Password reset confirmed dialog</p></figcaption></figure>
 
 Click **'Finish'**
 
-![](/_images/image-(1663).png "Password reset completion")
+<figure><img src="../../.gitbook/assets/image (4354).png" alt="Clicking &#x27;Finish&#x27;" width="563"><figcaption></figcaption></figure>
 
-<blockquote class="wp-block-quote">
-<p>On next login using the default 'admin' account, <mark style="color:orange;">you will be prompted to change the password.</mark></p>
-</blockquote>
+{% hint style="warning" %}
+On next login using the default 'admin' account, <mark style="color:orange;">you will be prompted to change the password.</mark>
+{% endhint %}
