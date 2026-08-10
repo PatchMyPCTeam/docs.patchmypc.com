@@ -12,13 +12,13 @@ Each tenant added to the Patch My PC (PMPC) Publisher has its own authentication
 
 The Add Tenant button allows you to create a new tenant configuration within the Publisher.
 
-![Add a Tenant](../../../.gitbook/assets/image-\(4108\).png)
+![Add a Tenant](/_images/image-(4108).png)
 
 To add a new Tenant:
 
 1. Click the **Add Tenant** button. The Intune Options form open automatically for tenant configuration.
 
-![Intune Options form opened when adding a new tenant](../../../.gitbook/assets/image-\(4110\).png)
+![Intune Options form opened when adding a new tenant](/_images/image-(4110).png)
 
 2. Complete the configuration by following [Scenario 4: Intune Applications and Updates](../../../patch-my-pc-publisherv2/scenario-based-guidance/installation-and-configuration/scenario-4-intune-applications-and-updates.md) . Specifically **Steps 7 through 14**.
 
@@ -30,7 +30,7 @@ To add a new Tenant:
 
 3. Once the Intune Options have been configured, click **OK** to close the form and return to the main Publisher window.
 
-![Saving Intune Options for the newly added tenant](../../../.gitbook/assets/image-\(4112\).png)
+![Saving Intune Options for the newly added tenant](/_images/image-(4112).png)
 
 > \*\*Important\*\*
 >
@@ -50,7 +50,7 @@ To add a new Tenant:
 
 The Delete Tenant button allows you to remove an existing tenant configuration from the Publisher.
 
-![Delete a Tenant](../../../.gitbook/assets/image-\(4109\).png)
+![Delete a Tenant](/_images/image-(4109).png)
 
 To delete a Tenant:
 
@@ -58,7 +58,7 @@ To delete a Tenant:
 2. Click the **Delete Tenant button**.
 3. When the confirmation dialog appears, Click **Yes** to permanently remove the tenant, or click **No** to cancel.
 
-![Delete a tenant confirmation](../../../.gitbook/assets/image-\(4111\).png)
+![Delete a tenant confirmation](/_images/image-(4111).png)
 
 After confirmation, the tenant configuration is removed from the current Publisher instance and no longer appears in the tenant drop down list.
 
@@ -80,7 +80,7 @@ After confirmation, the tenant configuration is removed from the current Publish
 
 Tenant import allows you to add an existing tenant configuration into a multi-tenant Publisher instance.
 
-![Import a Tenant](../../../.gitbook/assets/image-\(4113\).png)
+![Import a Tenant](/_images/image-(4113).png)
 
 > \*\*Important\*\*
 >
@@ -98,16 +98,16 @@ To import a tenant configuration from another Publisher instance:
 2. Click the **Import Intune Tenants** button.
 3. Browse to the exported file from the source Publisher instance. If the file was exported from another Publisher instance as a .cab file, change the file type filter to .cab.
 
-![Select the correct file type filter](../../../.gitbook/assets/image-\(4114\).png)
+![Select the correct file type filter](/_images/image-(4114).png)
 
 4. Select the appropriate .cab or .xml file and click **Open**.
 5. Wait for the import process to complete. A confirmation message will indicate that the Intune tenant has been successfully imported. Click **OK**.
 
-![Tenant import successful](../../../.gitbook/assets/image-\(4115\).png)
+![Tenant import successful](/_images/image-(4115).png)
 
 6. Select the newly imported tenant from the Tenant drop down list and click **Options**.
 
-![Configure the imported tenant](../../../.gitbook/assets/image-\(4116\).png)
+![Configure the imported tenant](/_images/image-(4116).png)
 
 7. Review the imported configuration is correct.
 
@@ -119,7 +119,7 @@ To import a tenant configuration from another Publisher instance:
 
 8. Once the Intune Options have been configured, click **OK** to close the form and return to the main Publisher window.
 
-![Saving Intune Options for the newly added tenant](../../../.gitbook/assets/image-\(4112\).png)
+![Saving Intune Options for the newly added tenant](/_images/image-(4112).png)
 
 > \*\*Important\*\*
 >
@@ -150,16 +150,16 @@ To Import Multiple Tenants:
 2. On the target multi-tenant Publisher instance, click the **Import Intune Tenant** button.
 3. Browse to the exported files from the source Publisher instance. If the files were exported from another Publisher instance as a .cab file, change the file type filter to .cab.
 
-![Import multiple tenants](../../../.gitbook/assets/image-\(4117\).png)
+![Import multiple tenants](/_images/image-(4117).png)
 
 4. Select the appropriate .cab or .xml files and click **Open**.
 5. Wait for the import process to complete. A confirmation message will indicate that the Intune tenants were successfully imported. Click **OK**.
 
-![Tenant import successful](../../../.gitbook/assets/image-\(4118\).png)
+![Tenant import successful](/_images/image-(4118).png)
 
 6. Select the first tenant from Tenant drop down box that you want to review and continue from **Step 8** in [Import a Tenant](tenant-management.md#import-a-tenant). In the example below, 2 tenants were imported.
 
-![Imported Tenants](../../../.gitbook/assets/image-\(4119\).png)
+![Imported Tenants](/_images/image-(4119).png)
 
 ## Select and Manage a Tenant
 

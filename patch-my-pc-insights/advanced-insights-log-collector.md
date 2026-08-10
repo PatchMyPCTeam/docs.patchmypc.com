@@ -14,7 +14,7 @@ To collect logs via Advanced Insights, as the Admin or a user with Admin privile
 
 You will see on the first tab, at the bottom there is a button to "Export Debug File". Click the button, there will a wait whilst logs are collected. Once the logs are collected, a download will be initiated with a zip containing all the logs required. If for any reason this fails or you receive no download, please try the server approach outlined below.
 
-![](../.gitbook/assets/image-\(4526\).png)
+![](/_images/image-(4526).png)
 
 ### Via Server hosting Advanced Insights
 
@@ -42,7 +42,7 @@ You will see on the first tab, at the bottom there is a button to "Export Debug 
 >
 > \_Example output:\_
 
-![](../.gitbook/assets/image-\(2628\).png)
+![](/_images/image-(2628).png)
 
 **This page provides details about what information the AdvancedInsightsLogDiag.exe collects.**
 
@@ -52,7 +52,7 @@ The contents of the following directory are collected, which consist of the 'Adv
 
 C:\ProgramData\AdvancedInsights\Logs
 
-![](../.gitbook/assets/image-\(2626\).png)
+![](/_images/image-(2626).png)
 
 ### Windows Application Event Log
 

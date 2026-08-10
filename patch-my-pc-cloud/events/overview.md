@@ -9,7 +9,7 @@ To access the Events node:
 1. Using your portal account, sign in at [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2.  Navigate to **Events**.<br>
 
-    ![Navigating to "Events" to access the Events page](../../.gitbook/assets/image-\(2462\).png)
+    ![Navigating to "Events" to access the Events page](/_images/image-(2462).png)
 
 > \*\*Important\*\*
 >
@@ -27,7 +27,7 @@ The **Events** page is then displayed, allowing you to:
 * [Change the number of Events per page](configure.md)
 * [Navigate between pages of Events](navigate.md)
 
-![The "Events" page](../../.gitbook/assets/image-\(2464\).png)
+![The "Events" page](/_images/image-(2464).png)
 
 > \*\*Important\*\*
 >

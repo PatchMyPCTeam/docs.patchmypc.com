@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The Cloud tab allows you to connect the Publisher to your Patch My PC Cloud company. This connection enables the use of custom applications created in Patch My PC Cloud within the Publisher.
 
-![Cloud Tab](../../../../.gitbook/assets/image-\(4120\).png)
+![Cloud Tab](/_images/image-(4120).png)
 
 > \*\*Important\*\*
 >

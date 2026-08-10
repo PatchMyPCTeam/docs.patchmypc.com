@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Republish During Next Sync Schedule** option instructs the Publisher to rebuild and republish an update or application during the next publishing service sync.
 
-![Republish During Next Sync Schedule](../../.gitbook/assets/image-\(4067\).png)
+![Republish During Next Sync Schedule](/_images/image-(4067).png)
 
 This action is used when an item has already been published but its content or core metadata must be rebuilt to restore functionality or include additional files.
 
@@ -49,11 +49,11 @@ Republished apps keep the same application ID and are subject to the Global Re-e
 
 When a WSUS update is marked for republishing, the Publisher displays a confirmation dialog. This dialog reminds you that a Software Update Point sync is required before the republished update becomes available in ConfigMgr.
 
-![Republish WSUS Updates confirmation](../../.gitbook/assets/image-\(4069\).png)
+![Republish WSUS Updates confirmation](/_images/image-(4069).png)
 
 After confirmation, you are prompted to choose whether the new update should supersede the existing update in WSUS. If you choose to supersede, the older update will be marked as superseded once the new update is created.
 
-![Supersede Previous Published Update(s) confirmation](../../.gitbook/assets/image-\(4070\).png)
+![Supersede Previous Published Update(s) confirmation](/_images/image-(4070).png)
 
 If you prefer older updates to be expired instead of superseded, this can be done manually using the [Modify Published Updates](../administration/updates/options/modify-published-updates.md) wizard in the Publisher.
 

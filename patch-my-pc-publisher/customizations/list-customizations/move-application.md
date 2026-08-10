@@ -12,7 +12,7 @@ The **Move Application** right-click option in Patch My PC (PMPC) Publisher allo
 
 Instead of leaving newly created applications in the default Applications root node, this setting automatically moves them into a folder structure that better aligns with how you organize and manage software.
 
-![ConfigMgr Application Folders](../../../.gitbook/assets/image-\(104\).png)
+![ConfigMgr Application Folders](/_images/image-(104).png)
 
 ## Override Behavior
 
@@ -22,7 +22,7 @@ This option will override the global [Move applications to a specific console fo
 
 When using this right-click option, the **Select Console Folder** dialog allows you to choose where newly created ConfigMgr applications should be placed after publishing.
 
-![Select a console folder](../../../.gitbook/assets/image-\(103\).png)
+![Select a console folder](/_images/image-(103).png)
 
 1. Right-click the **Vendor** or **Product** you want to configure.
 2. Select **Move the application to a custom folder**.

@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Scan ConfigMgr Database for Supported Products** form control requires access to your ConfigMgr site database to inventory installed applications, via a Hardware Inventory Collection (HINV) and determine which third-party products are present in your environment. The scan results are then compared against the Patch My PC catalog to identify matches, helping you make informed decisions about which products to enable on the **Updates** tab to ensure the applications detected receive the patches they require.
 
-![Scan ConfigMgr Database for Supported Products](../../../../.gitbook/assets/image-\(3923\).png)
+![Scan ConfigMgr Database for Supported Products](/_images/image-(3923).png)
 
 > \*\*Note\*\*
 >

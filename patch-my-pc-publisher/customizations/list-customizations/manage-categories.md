@@ -16,11 +16,11 @@ The list of available categories is pulled directly from the selected management
 
 In ConfigMgr, categories are configured directly on applications in the console and can be scoped to User Categories or Device Categories.
 
-![ConfigMgr Categories](../../../.gitbook/assets/image-\(4048\).png)
+![ConfigMgr Categories](/_images/image-(4048).png)
 
 In Intune, application categories are managed in the Intune admin center and are used to organize apps in the Company Portal.
 
-![Intune Categories](../../../.gitbook/assets/image-\(4047\).png)
+![Intune Categories](/_images/image-(4047).png)
 
 > \*\*Note\*\*
 >

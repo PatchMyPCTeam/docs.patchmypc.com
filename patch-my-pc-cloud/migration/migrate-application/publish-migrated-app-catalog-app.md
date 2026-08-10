@@ -14,13 +14,13 @@ When migrating a Configuration Manager (ConfigMgr) application to a Patch My PC 
 
 Once you have added your assignments, click **Migrate** and the **Deployment Created, Migration Pending** notification is shown.
 
-![Application migration status](../../../.gitbook/assets/image-\(606\).png)
+![Application migration status](/_images/image-(606).png)
 
 The **Status** field also updates to **In Progress** whilst the deployment is created, with any required content (such as extra files) being zipped and sent to Azure Blob Storage.
 
 You can also monitor deployment progress by clicking the **Deployments** node and watching for the deployment **Status** to change to **Success**.
 
-![Deployment created for migrated application](../../../.gitbook/assets/image-\(3677\).png)
+![Deployment created for migrated application](/_images/image-(3677).png)
 
 > \*\*Tip\*\*
 >
@@ -28,4 +28,4 @@ You can also monitor deployment progress by clicking the **Deployments** node an
 >
 > \*\*Home | Apps | Windows | Windows | Windows Apps | <\*\*\_\*\*app\\\_name\*\*\_\*\*>\*\*
 
-![Migrated application as seen in the Intune admin center](../../../.gitbook/assets/image-\(608\).png)
+![Migrated application as seen in the Intune admin center](/_images/image-(608).png)

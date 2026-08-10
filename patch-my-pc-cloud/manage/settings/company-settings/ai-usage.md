@@ -31,16 +31,16 @@ To toggle AI usage:
 1. Navigate to **Settings | Company**
 2. Scroll down to the **AI Usage** section.
 
-![Scrolling down to the 'AI Usage' section](../../../../.gitbook/assets/image-\(528\).png)
+![Scrolling down to the 'AI Usage' section](/_images/image-(528).png)
 
 3. Click the **Enable AI Usage** slider to enable it.
 
-![Clicking the 'Enable AI Usage' slider to enable it](../../../../.gitbook/assets/image-\(527\).png)
+![Clicking the 'Enable AI Usage' slider to enable it](/_images/image-(527).png)
 
 4. Click **Save** to save your changes.
 
-![Clicking 'Save' to save your changes](../../../../.gitbook/assets/image-\(529\).png)
+![Clicking 'Save' to save your changes](/_images/image-(529).png)
 
 The **Success - Company information updated** notification is shown.
 
-!['Success - Company information updated' notification](../../../../.gitbook/assets/image-\(530\).png)
+!['Success - Company information updated' notification](/_images/image-(530).png)

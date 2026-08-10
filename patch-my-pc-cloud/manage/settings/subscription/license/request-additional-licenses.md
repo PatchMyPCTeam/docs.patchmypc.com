@@ -7,7 +7,7 @@ If you determine you need additional licenses for your Patch My PC (PMPC) Cloud 
 1. Navigate to **Settings | Subscription**
 2. Under your current plan, click **Request More**
 
-![Clicking ‘Request More' under your current plan](../../../../../.gitbook/assets/image-\(3557\).png)
+![Clicking ‘Request More' under your current plan](/_images/image-(3557).png)
 
 > \*\*Note\*\*
 >
@@ -15,8 +15,8 @@ If you determine you need additional licenses for your Patch My PC (PMPC) Cloud 
 
 3. On the **Request Devices** screen, verify your email address, then increase the number of devices you are currently licensed for to the required number, then click **Send Request**
 
-![Completing the ‘Request Devices' screen and clicking ‘Send Request'](../../../../../.gitbook/assets/image-\(3558\).png)
+![Completing the ‘Request Devices' screen and clicking ‘Send Request'](/_images/image-(3558).png)
 
 4. Click **Close** on the **Request Sent** screen.
 
-![Clicking ‘Close' on the ‘Request Sent' screen](../../../../../.gitbook/assets/image-\(3559\).png)
+![Clicking ‘Close' on the ‘Request Sent' screen](/_images/image-(3559).png)

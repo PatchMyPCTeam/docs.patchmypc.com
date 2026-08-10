@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 I’ve successfully deployed an app using Patch My PC (PMPC) Cloud, but when I look at the deployment, I see a yellow exclamation mark ("**!**") beside it in the **Status** column.
 
-![Yellow exclamation mark beside a deployment](../../../.gitbook/assets/image-\(3048\).png)
+![Yellow exclamation mark beside a deployment](/_images/image-(3048).png)
 
 ### CAUSE
 
@@ -18,7 +18,7 @@ Follow the relevant section for the error message you are seeing.
 
 #### Failed to add application with version ‘_\<version\_number>_’ to app limit reached’ ESP Profile.
 
-![](../../../.gitbook/assets/image-\(3050\).png)
+![](/_images/image-(3050).png)
 
 This message is telling you that when the Sync Schedule ran, a new version of an app was detected, which we successfully deployed.
 
@@ -35,7 +35,7 @@ To resolve this issue, you need to use the Intune admin center and from the ESP 
 
 #### Failed to apply new parent dependency for the child app '<_app\_name_>' '<_app\_version_>'
 
-![](../../../.gitbook/assets/image-\(3051\).png)
+![](/_images/image-(3051).png)
 
 This message is telling you that the deployment of a dependency for this app has failed.
 

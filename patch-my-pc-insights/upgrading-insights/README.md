@@ -18,11 +18,11 @@ To manually upgrade Advanced Insights, we need to re-run the installer using the
 
 When you run the installer, it will prompt for you to accept the license terms.
 
-![License T\&Cs](../../.gitbook/assets/image-\(4341\).png)
+![License T\&Cs](/_images/image-(4341).png)
 
 You will be presented with the upgrade summary page. There is also the option to change the certificate, network port or IIS application pool identity if required.
 
-![Upgrade summary page](../../.gitbook/assets/image-\(4342\).png)
+![Upgrade summary page](/_images/image-(4342).png)
 
 If upgrading from 1.0.x and 2.0.x versions of Advanced Insights, the upgrade summary page will also include summary information about the Advanced Insights SQL DB migration to SQLite.
 
@@ -30,10 +30,10 @@ See section: [upgrading-to-advanced-insights-2.1-and-later-from-1.0.x-and-2.0.x-
 
 If you wish to do so, click the **'View / Change Cert'** button will show additional information about any warnings being flagged.
 
-![Certificate properties](../../.gitbook/assets/image-\(4343\).png)
+![Certificate properties](/_images/image-(4343).png)
 
 Following this, click **Install** to start the upgrade process.
 
 The upgrade success page is displayed upon completion.
 
-![Upgrade successful](../../.gitbook/assets/image-\(4344\).png)
+![Upgrade successful](/_images/image-(4344).png)

@@ -10,7 +10,7 @@ The _Deployment Templates_ (_Templates_) feature of Patch My PC (PMPC) Cloud all
 
 All deployment template-related tasks are performed from the **Templates** node of the portal, accessed by navigating to **Settings | Templates**.
 
-![Navigating to 'Settings | Templates'](../../../../.gitbook/assets/image-\(975\).png)
+![Navigating to 'Settings | Templates'](/_images/image-(975).png)
 
 The **Templates** page is then displayed, showing any existing templates and allowing you to:
 
@@ -19,4 +19,4 @@ The **Templates** page is then displayed, showing any existing templates and all
 * [Configure a Default Template](configure-default-template.md)
 * [Delete a Template](delete-template.md)
 
-!['Templates' page](../../../../.gitbook/assets/image-\(573\).png)
+!['Templates' page](/_images/image-(573).png)

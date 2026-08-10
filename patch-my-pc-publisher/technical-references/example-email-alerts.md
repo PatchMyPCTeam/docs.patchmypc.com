@@ -13,11 +13,11 @@ If [email notifications](../manage/alerts-tab/email-alerts-tab/email-notificatio
 
 In the example below, you can see an email alert where both **WSUS updates** and **ConfigMgr applications** were published successfully.
 
-![Email notification for WSUS updates and ConfigMgr applications](../../.gitbook/assets/image-\(3878\).png)
+![Email notification for WSUS updates and ConfigMgr applications](/_images/image-(3878).png)
 
 For products published to **Intune**, the email includes the following additional information
 
 * Intune Tenant friendly name
 * Intune assignments set during Publishing.
 
-![Email notification for Intune applications](../../.gitbook/assets/image-\(3879\).png)
+![Email notification for Intune applications](/_images/image-(3879).png)

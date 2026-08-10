@@ -58,7 +58,7 @@ The ConfigMgr Remote Console exposes some SDK helper files Publisher utilizes to
 
 If the ConfigMgr Remote Console is _not_ installed, the following message is also indicated in the Publisher when attempting to [Configure the SMS Provider](../../manage/configmgr-apps-tab/base-install-options/connection-source-options.md#configure-sms-provider-connection).
 
-![Configure the SMS Provider - Missing SDK](../../../.gitbook/assets/image-\(75\).png)
+![Configure the SMS Provider - Missing SDK](/_images/image-(75).png)
 
 ## WSUS Role
 

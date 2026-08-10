@@ -12,14 +12,14 @@ This section describes the steps required to reset the password for the default 
 
 In the configuration modification page, select the checkbox for **'Default Admin Password Reset'** then click **'Reset Password'**:
 
-![Clicking 'Reset Password'](../../.gitbook/assets/image-\(4353\).png)
+![Clicking 'Reset Password'](/_images/image-(4353).png)
 
 The password reset confirmation is then displayed. Click **'Close'**
 
-![](../../.gitbook/assets/image-\(2364\).png)
+![](/_images/image-(2364).png)
 
 Click **'Finish'**
 
-![Clicking 'Finish'](../../.gitbook/assets/image-\(4354\).png)
+![Clicking 'Finish'](/_images/image-(4354).png)
 
 > On next login using the default 'admin' account, <mark style="color:orange;">you will be prompted to change the password.</mark>

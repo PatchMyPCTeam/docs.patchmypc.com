@@ -13,15 +13,15 @@ To create an email notification:
 1. Navigate to **Settings | Notifications**
 2. On the **Add Notifications** screen, enter a unique name for this notification in the **Name** field.
 
-!['Add Notifications' screen](../../../../.gitbook/assets/image-\(3837\).png)
+!['Add Notifications' screen](/_images/image-(3837).png)
 
 3. In the **User Email** field, select the relevant administrator’s email address from the dropdown or type their email address.
 
-![Selecting the relevant administrator's email address from the dropdown or type their email address](../../../../.gitbook/assets/image-\(3838\).png)
+![Selecting the relevant administrator's email address from the dropdown or type their email address](/_images/image-(3838).png)
 
 The user's email address is added to the **Email** list that will receive the notification.
 
-![User's email address is added to the email list that will receive the notification](../../../../.gitbook/assets/image-\(3839\).png)
+![User's email address is added to the email list that will receive the notification](/_images/image-(3839).png)
 
 4. Repeat Step 3 to add any additional email addresses.
 
@@ -37,12 +37,12 @@ The user's email address is added to the **Email** list that will receive the no
 
 5. Click **Save** on the **Add Notifications** screen to save the notification.
 
-![Clicking 'Save'](../../../../.gitbook/assets/image-\(3840\).png)
+![Clicking 'Save'](/_images/image-(3840).png)
 
 The **Success - Notification created** notification is shown.
 
-!['Success' notification](../../../../.gitbook/assets/image-\(3841\).png)
+!['Success' notification](/_images/image-(3841).png)
 
 The Cloud Portal auto-refreshes to show the new notification, including abbreviations of the users who will receive the email notification.
 
-![Cloud Portal auto-refreshing](../../../../.gitbook/assets/image-\(3842\).png)
+![Cloud Portal auto-refreshing](/_images/image-(3842).png)

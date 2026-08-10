@@ -18,16 +18,16 @@ To delete your company from Patch My PC (PMPC) Cloud:
 
 1.  Navigate to **Settings | Company**.<br>
 
-    ![Navigating to "Settings | Company"](../../../../.gitbook/assets/image-\(1299\).png)
+    ![Navigating to "Settings | Company"](/_images/image-(1299).png)
 2.  Scroll down to the bottom of the **Company** page and click **Delete Company**.<br>
 
-    ![Scrolling down to the bottom of the "Company" page and clicking "Delete Company."](../../../../.gitbook/assets/image-\(1300\).png)
+    ![Scrolling down to the bottom of the "Company" page and clicking "Delete Company."](/_images/image-(1300).png)
 3.  On the **Are you sure you want to delete the company <**_**company\_name**_**>?** dialog box, click **Yes** to confirm the deletion.<br>
 
-    ![](../../../../.gitbook/assets/image-\(1501\).png)
+    ![](/_images/image-(1501).png)
 
     \
     The Patch My PC Signup screen is displayed.<br>
 
-    ![Patch My PC Signup screen](../../../../.gitbook/assets/image-\(1502\).png)
+    ![Patch My PC Signup screen](/_images/image-(1502).png)
 4. Follow the [Deleting the Patch My PC Cloud Enterprise Application](../../delete-enterprise-app.md) process to delete the PMPC Enterprise Application and complete the deletion of your company.

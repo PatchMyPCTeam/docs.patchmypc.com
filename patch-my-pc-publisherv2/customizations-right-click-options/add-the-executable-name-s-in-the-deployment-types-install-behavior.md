@@ -8,11 +8,11 @@ _&#x41;vailable on tab: ConfigMgr Apps_
 
 The **Add the Executable Name(s) in the Deployment Type’s Install Behavior** option allows the Publisher to define which running processes must be closed for a ConfigMgr application installation to succeed.
 
-![Add the Executable Name(s) in the Deployment Type's Install Behavior](../../.gitbook/assets/image-\(105\).png)
+![Add the Executable Name(s) in the Deployment Type's Install Behavior](/_images/image-(105).png)
 
 These executables are applied to the deployment type’s **Install Behavior** settings and control how ConfigMgr responds when an application is in use during an install.
 
-![Install Behavior](../../.gitbook/assets/image-\(106\).png)
+![Install Behavior](/_images/image-(106).png)
 
 > \*\*Important\*\*
 >
@@ -24,14 +24,14 @@ These executables are applied to the deployment type’s **Install Behavior** se
 
 If any of the specified executables are running when the user initiates the installation from Software Center, the installation will fail.
 
-![Available Deployments](../../.gitbook/assets/image-\(107\).png)
+![Available Deployments](/_images/image-(107).png)
 
 The user is notified and must close the application before retrying the install.
 
-![Install Behavior User Notification from the Software Center](../../.gitbook/assets/image-\(108\).png)
+![Install Behavior User Notification from the Software Center](/_images/image-(108).png)
 
 ### Required Deployments
 
 If the executable remains running, the required installation will fail. If an installation fails due to a running executable, the failure reason can be reviewed in **CIAgent.log** on the client device.
 
-![Install Behavior failure in CIAgent.log](../../.gitbook/assets/image-\(109\).png)
+![Install Behavior failure in CIAgent.log](/_images/image-(109).png)

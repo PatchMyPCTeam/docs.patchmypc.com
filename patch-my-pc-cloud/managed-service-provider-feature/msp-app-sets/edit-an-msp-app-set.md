@@ -10,10 +10,10 @@ To edit an MSP App Set in Patch My PC (PMPC) Cloud :
 
 1.  Navigate to **App Sets**<br>
 
-    ![Navigating to "App Sets"](../../../.gitbook/assets/image-\(813\).png)
+    ![Navigating to "App Sets"](/_images/image-(813).png)
 2.  Click the ellipsis (**⋮**) beside the App Set you want to edit and select **Edit**<br>
 
-    ![Clicking the ellipsis beside the App Set you want to edit](../../../.gitbook/assets/image-\(814\).png)
+    ![Clicking the ellipsis beside the App Set you want to edit](/_images/image-(814).png)
 3. Make any required changes such as:
    1. Editing the name of the App Set
    2. Editing or deleting apps and assignments
@@ -27,4 +27,4 @@ To edit an MSP App Set in Patch My PC (PMPC) Cloud :
 >
 > Also, deleting a company from an App Set removes all of the deployments for the apps within that App Set from the relevant company.
 
-![Clicking "Deploy"](../../../.gitbook/assets/image-\(815\).png)
+![Clicking "Deploy"](/_images/image-(815).png)

@@ -6,13 +6,13 @@ Advanced Insights (this is not relevant for Patch Insights) can access device wa
 
 First you will browse to [https://techdirect.dell.com](https://techdirect.dell.com/) and register or log in, you will need to be associated with your Dell Company account. Once all that is sorted you can select to go to the APIs section.
 
-![](../.gitbook/assets/image-\(1995\).png)
+![](/_images/image-(1995).png)
 
-![](../.gitbook/assets/image-\(1991\).png)
+![](/_images/image-(1991).png)
 
-![](../.gitbook/assets/image-\(2264\).png)
+![](/_images/image-(2264).png)
 
-![](../.gitbook/assets/image-\(2265\).png)
+![](/_images/image-(2265).png)
 
 > Advanced Insights makes a single API call for every 100 Dell clients when importing warranty information. To estimate the number of API calls you will require, we recommend specify 1% of the total Dell client device count.
 
@@ -22,4 +22,4 @@ Enter the provided Dell warranty text for Client ID, Client Secret and click sav
 
 \*Please only enter in the text in-between the brackets for the API Client Secret.
 
-![Example of Dell API Client ID and Client Secret](<../.gitbook/assets/2 (1).jpg>)
+![Example of Dell API Client ID and Client Secret](/_images/2-(1 "Example of Dell API Client ID and Client Secret").jpg>)

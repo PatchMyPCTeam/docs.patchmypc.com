@@ -10,11 +10,11 @@ The **General Information** tab is where you configure the basic information for
    1. Click **Upload Icon** to upload a suitable file (png, jpg or jpeg) to use as the icon for this app.
    2. Drag and drop the image file onto this page.
 
-![Clicking 'Upload Icon'](../../../.gitbook/assets/image-\(3601\).png)
+![Clicking 'Upload Icon'](/_images/image-(3601).png)
 
 2. In the **App Name** field, enter a unique name for the app.
 
-![Entering a unique name in the 'App Name' field](../../../.gitbook/assets/image-\(3602\).png)
+![Entering a unique name in the 'App Name' field](/_images/image-(3602).png)
 
 > \*\*Note\*\*
 >
@@ -22,7 +22,7 @@ The **General Information** tab is where you configure the basic information for
 
 3. In the **Vendor** field, either select an existing entry from the dropdown or enter the required name.
 
-![Entering the vendor's name](../../../.gitbook/assets/image-\(3603\).png)
+![Entering the vendor's name](/_images/image-(3603).png)
 
 > \*\*Note\*\*
 >
@@ -30,8 +30,8 @@ The **General Information** tab is where you configure the basic information for
 
 4. In the **Description** field, enter a description of the app.
 
-![Entering a description](../../../.gitbook/assets/image-\(3604\).png)
+![Entering a description](/_images/image-(3604).png)
 
 5. Enter any optional internal notes, then click **Next** to move to the [Configuration ](custom-apps-configuration-tab.md)tab.
 
-![Clicking 'Next' to move to the 'Configuration' page](../../../.gitbook/assets/image-\(3605\).png)
+![Clicking 'Next' to move to the 'Configuration' page](/_images/image-(3605).png)

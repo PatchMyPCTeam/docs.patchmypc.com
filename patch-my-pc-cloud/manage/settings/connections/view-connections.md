@@ -7,11 +7,11 @@ To view all of the current connections to your Patch My PC (PMPC) Cloud Portal:
 1. Sign in to the Portal at [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings | Connections**
 
-![Navigating to 'Settings | Connections'](../../../../.gitbook/assets/image-\(340\).png)
+![Navigating to 'Settings | Connections'](/_images/image-(340).png)
 
 The **Connections** page shows any current connections and their status.
 
-!['Connections' page showing any current connections and their status](../../../../.gitbook/assets/image-\(313\).png)
+!['Connections' page showing any current connections and their status](/_images/image-(313).png)
 
 > \*\*Note\*\*
 >

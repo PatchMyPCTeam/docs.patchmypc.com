@@ -12,7 +12,7 @@ As per the dialog box:
 
 You will be prompted to grant these during the onboarding process by clicking **Accept** on the **Permissions requested** dialog box.
 
-!["Permissions required" prompting to grant permissions to your environment.](../../../.gitbook/assets/image-\(2053\).png)
+!["Permissions required" prompting to grant permissions to your environment.](/_images/image-(2053).png)
 
 > \*\*Note\*\*
 >

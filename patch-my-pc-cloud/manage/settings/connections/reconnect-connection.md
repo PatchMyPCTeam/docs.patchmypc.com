@@ -14,24 +14,24 @@ To reconnect your Cloud Portal to an Intune tenant you’ve previously connected
 
 1. Navigate to **Settings | Connections**
 
-![Navigating to 'Settings | Connections'](../../../../.gitbook/assets/image-\(310\).png)
+![Navigating to 'Settings | Connections'](/_images/image-(310).png)
 
 2. Click the reconnect icon beside your Intune connection.
 
-![Clicking the reconnect icon beside your Intune connection](../../../../.gitbook/assets/image-\(311\).png)
+![Clicking the reconnect icon beside your Intune connection](/_images/image-(311).png)
 
 3. Enter the Entra ID you used to onboard to PMPC Cloud or click to select the relevant account from the list of already signed-in accounts. Then click **Next**.
 
-!['Sign in' prompt](../../../../.gitbook/assets/image-\(304\).png)
+!['Sign in' prompt](/_images/image-(304).png)
 
 4. Enter the password and click **Sign in**.
 
-![Entering the password](../../../../.gitbook/assets/image-\(305\).png)
+![Entering the password](/_images/image-(305).png)
 
 5. On the **Permissions requested** screen, click **Accept**.
 
-![Clicking 'Accept' on the 'Permissions requested' screen](../../../../.gitbook/assets/image-\(306\).png)
+![Clicking 'Accept' on the 'Permissions requested' screen](/_images/image-(306).png)
 
 If the reconnection is successful, the **Connections** page is redisplayed, showing **Connected** if your Cloud Portal is now reconnected to your Intune tenant.
 
-![New Intune connection](../../../../.gitbook/assets/image-\(307\).png)
+![New Intune connection](/_images/image-(307).png)

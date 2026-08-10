@@ -6,7 +6,7 @@ description: Windows 11 Upgrade Readiness for Windows 10 Client Devices
 
 _Applies to: Patch My PC Advanced Insights_
 
-![](../../../.gitbook/assets/image-\(4751\).png)
+![](/_images/image-(4751).png)
 
 On the top bar of this page we are showing:
 
@@ -17,13 +17,13 @@ On the top bar of this page we are showing:
 
 The donut chart for OS Upgrade Readiness and Cannot Upgrade Reason you have a properties which you can toggle between the different versions of Windows 11. On these two donut charts you also have the ability to view the chart data and export from the cog icon.
 
-![](../../../.gitbook/assets/image-\(4752\).png)
+![](/_images/image-(4752).png)
 
-![](../../../.gitbook/assets/image-\(4753\).png)
+![](/_images/image-(4753).png)
 
 The last chart on the left is the Windows 11 Upgrade Readiness Issues chart where you can see the reasons for why the devices are unable to upgrade to Windows 11.
 
-![](../../../.gitbook/assets/image-\(2854\).png)
+![](/_images/image-(2854).png)
 
 The Reasons column have the following conditions which are flagged if a device is marked as unable to upgrade (Red) to Windows 11:
 

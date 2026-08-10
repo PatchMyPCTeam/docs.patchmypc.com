@@ -8,7 +8,7 @@ _Applies to: Patch My PC Advanced and Patch Insights_
 
 Advanced and Patch Insights support integration with Active Directory for user authentication. This feature is enabled by an administrator in **Administration** > **Settings** > **User management**. Once enabled, this will ensure that any users signing in can use their AD username and password. If users have an RBAC role defined in Configuration Manager, Advanced Insights will adhere to that role, only showing the clients they are permitted to view.
 
-![User management settings tab](<../.gitbook/assets/7 (1).png>)
+![User management settings tab](/_images/7-(1 "User management settings tab").png>)
 
 To enable Active Directory authentication capabilities:
 

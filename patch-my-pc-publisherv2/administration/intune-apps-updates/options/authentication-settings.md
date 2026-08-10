@@ -8,7 +8,7 @@ The **Authentication Settings** section defines how the Publisher authenticates 
 
 This section establishes the trust relationship between the Publisher and your Intune tenant by configuring the tenant authority, application identifier, and authentication method. Authentication can be performed by using either a client secret or a certificate, depending on your organization security requirements.
 
-![Authentication Settings](../../../../.gitbook/assets/image-\(248\).png)
+![Authentication Settings](/_images/image-(248).png)
 
 ## Tenant Friendly name
 
@@ -22,13 +22,13 @@ The **Authority** URL is constructed by using the Microsoft sign in endpoint and
 
 To complete the authority value, append your tenant name to the URL. The tenant name can be found in the [**Tenant status**](https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/TenantAdminMenu/~/tenantStatus) page in the Intune admin center.
 
-![Find the Tenant Name in the Intune admin center](../../../../.gitbook/assets/image-\(244\).png)
+![Find the Tenant Name in the Intune admin center](/_images/image-(244).png)
 
 The completed authority value should follow this format:
 
 `https://login.microsoftonline.com/tenantname.onmicrosoft.com`
 
-![Full Authority URL](../../../../.gitbook/assets/image-\(245\).png)
+![Full Authority URL](/_images/image-(245).png)
 
 > \*\*Note\*\*
 >
@@ -60,7 +60,7 @@ The **Application ID** field must contain the Application client ID from your En
 
 To obtain this value, select **App registrations** in the [Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/quickStartType~/null/sourceType/Microsoft_AAD_IAM), and copy the **Application (client) ID** value.
 
-![Application (Client) ID](../../../../.gitbook/assets/image-\(3778\).png)
+![Application (Client) ID](/_images/image-(3778).png)
 
 For more details on how to create an Entra ID App Registration for use with the Publisher, see: [Entra ID App Registration](../../../publisher-requirements/intune-requirements/entra-id-app-registration/).
 
@@ -76,7 +76,7 @@ For more information, and to help decide which client credential method to use i
 
 Whichever client credential method is used, the Intune Options form displays the credential expiration date below the credential field.
 
-![Credential expiration date](../../../../.gitbook/assets/image-\(249\).png)
+![Credential expiration date](/_images/image-(249).png)
 
 > \*\*Tip\*\*
 >
@@ -88,7 +88,7 @@ Press the **Test Connection** button to validate authentication, connectivity, a
 
 The test confirms that the Publisher can successfully connect to the Intune tenant via Microsoft Graph and that all required Microsoft Graph permissions are available. When the test completes successfully and all permissions show as enabled, the Publisher is ready to publish applications and updates to Intune.
 
-![App Registration Connection Status](../../../../.gitbook/assets/image-\(250\).png)
+![App Registration Connection Status](/_images/image-(250).png)
 
 For more information about the API permissions required for the Publisher, see: [API Permissions](../../../publisher-requirements/intune-requirements/entra-id-app-registration/api-permissions.md).
 

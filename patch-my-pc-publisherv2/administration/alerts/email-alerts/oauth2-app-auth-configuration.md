@@ -54,7 +54,7 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-![Add an API Permission](../../../../.gitbook/assets/image-\(394\).png)
+![Add an API Permission](/_images/image-(394).png)
 
 5. In the **Request API permissions** pane, choose **Microsoft Graph**.
 6. Select **Application permissions** (not Delegated permissions).
@@ -63,13 +63,13 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 8. Select **Add permissions** to apply the selected permissions.
 9. Select **Grant admin consent** and confirm the prompt to approve the permission.
 
-![Confirm the Mail.Send permissions has been added and granted](../../../../.gitbook/assets/image-\(238\).png)
+![Confirm the Mail.Send permissions has been added and granted](/_images/image-(238).png)
 
 ### Configure the Publisher
 
 After selecting OAuth2 as the email authentication type, select **Use existing app registration** to reuse the same Microsoft Entra ID app registration configured under [Intune Apps/Updates > Options](../../intune-apps-updates/options/). The available fields are automatically updated to reflect the existing app registration details and authentication method.
 
-![Use existing app registration](../../../../.gitbook/assets/image-\(4206\).png)
+![Use existing app registration](/_images/image-(4206).png)
 
 Click [Test Permissions](oauth2-app-auth-configuration.md#test-permissions) to verify the API permissions has been configured correctly.
 
@@ -116,7 +116,7 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-![Add an API Permission](../../../../.gitbook/assets/image-\(394\).png)
+![Add an API Permission](/_images/image-(394).png)
 
 5. In the **Request API permissions** pane, choose **Microsoft Graph**.
 6. Select **Application permissions** (not Delegated permissions).
@@ -125,7 +125,7 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 8. Select **Add permissions** to apply the selected permissions.
 9. Select **Grant admin consent** and confirm the prompt to approve the permission.
 
-![Confirm the Mail.Send permissions has been added and granted](../../../../.gitbook/assets/image-\(239\).png)
+![Confirm the Mail.Send permissions has been added and granted](/_images/image-(239).png)
 
 10. Navigate to **Certificates & secrets** in the Entra ID app registration. Create or identify the client credential that will be used by the Publisher for email notifications. This can be either a certificate or a client secret, depending on the selected authentication method. Record the required values, such as the Application Client ID, Tenant ID, and certificate or secret details so you can [Configure the Publisher](oauth2-app-auth-configuration.md#configure-the-publisher-1).
 
@@ -171,9 +171,9 @@ The **App Registration Connection Status** window displays the status of each pe
 **Green check (OK)**\
 The **Mail.Send** permission is present and correctly granted.
 
-![App Registration Connection Status OK](../../../../.gitbook/assets/image-\(237\).png)
+![App Registration Connection Status OK](/_images/image-(237).png)
 
 **Red error (Missing)**\
 The **Mail.Send** permission is missing or has not been granted. Email Notifications will not work until the permission is added and admin consent is granted.
 
-![App Registration Connection Status Failed](../../../../.gitbook/assets/image-\(240\).png)
+![App Registration Connection Status Failed](/_images/image-(240).png)

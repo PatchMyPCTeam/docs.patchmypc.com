@@ -18,7 +18,7 @@ It is a hierarchical view that lets you enable updates at different levels of gr
 
 The Product Tree can be expanded or collapsed to three main levels:
 
-![Product Tree Structure](../../../.gitbook/assets/image-\(4516\).png)
+![Product Tree Structure](/_images/image-(4516).png)
 
 1. **All Vendors**
    * The root of the tree.
@@ -56,11 +56,11 @@ This visual feedback allows you to quickly understand whether you are managing a
 
 In the example below, only the **3CXPhone for Windows (MSI-x86)** checkbox is checked, showing a single product selection. The **3CX Ltd** checkbox shows a colored square (indeterminate state) rather than a full checkmark. This indicates that Publisher will manage updates for that specific product only, and no other products from the **3CX Ltd** vendor will be published at the next Publisher sync.
 
-![Product level selection](../../../.gitbook/assets/image-\(4747\).png)
+![Product level selection](/_images/image-(4747).png)
 
 In contrast, **8x8, Inc.** demonstrates a vendor-level selection. The **8x8, Inc.** checkbox shows a full checkmark rather than a colored square (indeterminate state). This indicates that all products under the **8x8, Inc.** vendor are selected.
 
-![Vendor level example](../../../.gitbook/assets/image-\(4748\).png)
+![Vendor level example](/_images/image-(4748).png)
 
 ## Which Products should I select?
 
@@ -98,7 +98,7 @@ This may be undesirable if:
 * The upgrade introduces breaking changes
 * Compatibility with other systems is not yet confirmed.
 
-![(Latest) Version Consideration](../../../.gitbook/assets/image-\(4519\).png)
+![(Latest) Version Consideration](/_images/image-(4519).png)
 
 In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](overview.md#product-level-recommended) provides significantly more control over update behavior and helps prevent unintended major-version upgrades.
 
@@ -148,7 +148,7 @@ When a product containing conflicting processes is selected, the [Manage Conflic
 
 The blue _chain_ icon indicates that the product has one or more dependencies. Right-clicking on the product and selecting **Show Dependencies** opens a window showing the relevant product(s).
 
-![Show dependencies](../../../.gitbook/assets/image-\(4525\).png)
+![Show dependencies](/_images/image-(4525).png)
 
 ### !\[Customer-Provided Installer Required]\(/\_images/image-(4522 "Customer-Provided Installer Required").png>) **Customer-Provided Installer Required**
 

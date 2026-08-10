@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Update Republishing Options** section in Patch My PC (PMPC) Publisher controls how republished third party updates are named. Republishing is required when an existing update needs to be replaced due to changes in content or metadata.
 
-![Update Republishing Options](../../../../.gitbook/assets/image-\(90\).png)
+![Update Republishing Options](/_images/image-(90).png)
 
 Common scenarios that require republishing include updates where customizations were added or modified, detection logic was corrected, or the update needs to be signed with a new code signing certificate. In general, any change that affects the update CAB file or its digital signature requires the update to be republished.
 

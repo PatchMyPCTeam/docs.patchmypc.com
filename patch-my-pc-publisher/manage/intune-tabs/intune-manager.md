@@ -12,7 +12,7 @@ The **Intune Manager** is available under both the **Intune Apps** tab and **Int
 
 This form control in Patch My PC (PMPC) Publisher is used to view and manage Win32 apps (applications and updates) in Intune. It provides a centralized interface to review application properties, assignments and installation status before performing application modifications.
 
-![Intune Application Manager](../../../.gitbook/assets/image-\(4087\).png)
+![Intune Application Manager](/_images/image-(4087).png)
 
 The form queries Intune, through Microsoft Graph, and displays all Win32 apps in the Intune tenant.
 
@@ -40,7 +40,7 @@ Clearing the search field restores the full list of results.
 
 The **Show** dropdown filters the applications displayed in the Intune Application Manager based on application type and origin. It allows you to quickly narrow the list to Win32 applications created or managed by the Publisher, or to view all applications regardless of source.
 
-![Show](../../../.gitbook/assets/image-\(4228\).png)
+![Show](/_images/image-(4228).png)
 
 It primarily controls whether the grid shows Publisher managed Win32 apps, non Publisher apps, or both.
 
@@ -92,7 +92,7 @@ The **Export** button is used to export the currently displayed Intune Win32 app
 
 The CSV file is created immediately and can be opened in tools such as Microsoft Excel or Power BI.
 
-![PatchMyPC-IntuneAppManager.csv](../../../.gitbook/assets/image-\(361\).png)
+![PatchMyPC-IntuneAppManager.csv](/_images/image-(361).png)
 
 > \*\*Note\*\*
 >
@@ -120,7 +120,7 @@ This option allows you to view and manage Enrollment Status Page (ESP) associati
 
 When you click this option, select the ESP profile you want the selected app(s) to be associated with.
 
-![Manage ESP Associations](../../../.gitbook/assets/image-\(4088\).png)
+![Manage ESP Associations](/_images/image-(4088).png)
 
 > \*\*Note\*\*
 >
@@ -128,7 +128,7 @@ When you click this option, select the ESP profile you want the selected app(s) 
 
 Once you have selected the profile(s), the **Select ESP Association** window displays a summary of the selected application and the ESP changes that will be applied.
 
-![Select ESP Association](../../../.gitbook/assets/image-\(4136\).png)
+![Select ESP Association](/_images/image-(4136).png)
 
 The grid includes the following columns:
 
@@ -153,7 +153,7 @@ This option is available only when a single Win32 application is selected. Selec
 
 This window provides a live view of all assignments currently configured for that application in Intune. The assignments shown reflect the current state in Intune, and any changes made are applied immediately when saved.
 
-![Manage Application Assignments Form](../../../.gitbook/assets/image-\(4089\).png)
+![Manage Application Assignments Form](/_images/image-(4089).png)
 
 For more information about the various configuration options for assignments, see [Manage Assignments](../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-assignments/).
 
@@ -169,7 +169,7 @@ This action is read only and does not modify the application or its assignments.
 
 Selecting this option opens a read-only window and display any categories that are associated with the selected Win32 app(s).
 
-![Show Categories](../../../.gitbook/assets/image-\(4090\).png)
+![Show Categories](/_images/image-(4090).png)
 
 For more information about the various configuration options for Categories, see [Manage Categories](../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-categories.md).
 
@@ -185,7 +185,7 @@ Click **Extract Package** and specify an **Output Folder** where the package con
 >
 > The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
 
-![Extract Package](../../../.gitbook/assets/image-\(4091\).png)
+![Extract Package](/_images/image-(4091).png)
 
 > \*\*Note\*\*
 >
@@ -201,6 +201,6 @@ This option supports multi select and is applied immediately after confirmation.
 
 This option deletes the selected Win32 application(s) from the Intune tenant. This action also removes any associated assignments and cannot be undone.
 
-![Delete Application](../../../.gitbook/assets/image-\(4229\).png)
+![Delete Application](/_images/image-(4229).png)
 
 This option supports multi-select and permanently removes the applications from Intune. It is intended for cleanup scenarios where applications are no longer required in the tenant.

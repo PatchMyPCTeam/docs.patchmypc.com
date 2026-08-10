@@ -17,7 +17,7 @@ You can leverage an existing application or create a new one. The following sect
 3.  **Navigate to App registrations**\
     Under **Microsoft Entra ID** > **App registrations**, select **New registration**.<br>
 
-    ![New app registration](../../../../.gitbook/assets/image-\(392\).png)
+    ![New app registration](/_images/image-(392).png)
 4.  **Enter registration details**
 
     1. Choose a friendly **Name** for the app (e.g., _Patch My PC Publisher – Intune Connector_)
@@ -26,6 +26,6 @@ You can leverage an existing application or create a new one. The following sect
     4. **Register the application**\
        Click **Register** to create the app. Once complete, the **Overview** page will show the newly assigned **Application (client) ID** and **Directory (tenant) ID** — record both for later use.<br>
 
-    ![App registration details](../../../../.gitbook/assets/image-\(393\).png)
+    ![App registration details](/_images/image-(393).png)
 
 Once the application has been created, the next step is to configure the correct [API Permisisons](api-permissions.md).

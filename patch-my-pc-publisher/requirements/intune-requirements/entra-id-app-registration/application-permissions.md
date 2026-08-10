@@ -34,7 +34,7 @@ To add the required Microsoft Graph **Application permissions** to the Entra ID 
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-![Add an API Permission](../../../../.gitbook/assets/image-\(394\).png)
+![Add an API Permission](/_images/image-(394).png)
 
 6. In the **Request API permissions** pane, choose **Microsoft Graph**.
 7. Select **Application permissions** (not Delegated permissions).
@@ -52,11 +52,11 @@ To add the required Microsoft Graph **Application permissions** to the Entra ID 
 9. Select **Add permissions** to apply the selected permissions.
 10. Select **Grant admin consent** and confirm the prompt to approve the permissions.<br>
 
-    ![Grant admin consent](../../../../.gitbook/assets/image-\(395\).png)
+    ![Grant admin consent](/_images/image-(395).png)
 
 The image below reflects the required, granted, permissions.
 
-![Granted API Permissions](../../../../.gitbook/assets/image-\(396\).png)
+![Granted API Permissions](/_images/image-(396).png)
 
 > \*\*Note\*\*
 >

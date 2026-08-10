@@ -11,19 +11,19 @@ To disable an Entra ID Custom Domain for your Patch My PC (PMPC) Cloud company:
 1. Sign in to your PMPC Cloud company using a user account that has the **Full Admin with Access Management** role.
 2. Navigate to **Settings | Company**
 
-![Navigating to ‘Settings | Company'](../../../../../.gitbook/assets/image-\(563\).png)
+![Navigating to ‘Settings | Company'](/_images/image-(563).png)
 
 3. Click the **Domains** tab.
 
-![Clicking the ‘Domains' tab](../../../../../.gitbook/assets/image-\(564\).png)
+![Clicking the ‘Domains' tab](/_images/image-(564).png)
 
 4. Uncheck the checkbox beside the relevant domain(s) you want to disable and click **Save**
 
-![Unchecking the checkbox beside the relevant domain you want to disable and clicking ‘Save'](../../../../../.gitbook/assets/image-\(565\).png)
+![Unchecking the checkbox beside the relevant domain you want to disable and clicking ‘Save'](/_images/image-(565).png)
 
 The **Success – Domains updated** notification is shown.
 
-![‘Success – Domains updated' notification](../../../../../.gitbook/assets/image-\(566\).png)
+![‘Success – Domains updated' notification](/_images/image-(566).png)
 
 Once the domain has been disabled, your PMPC Cloud Company will no longer appear on the **Sign In** page for any users in that domain.
 

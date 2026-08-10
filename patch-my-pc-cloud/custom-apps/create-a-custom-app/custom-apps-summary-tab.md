@@ -11,7 +11,7 @@ On the **Summary** tab, review you have configured the Custom App correctly.
 * If you are happy, click **Create**.
 * If you need to change something, click **< Prev** to backtrack through the Deployment Wizard to the relevant setting. Make the change, then step back through the wizard to this tab. If everything is now correct, click **Create**.
 
-![Clicking 'Create' on the 'Summary' page](../../../.gitbook/assets/image-\(3616\).png)
+![Clicking 'Create' on the 'Summary' page](/_images/image-(3616).png)
 
 > \*\*Note\*\*
 >
@@ -29,6 +29,6 @@ The App Catalog is displayed and the following notification is displayed:\
 >
 > If this is the first time you have created a Custom App, the \*\*Rate Your Experience\*\* popup is included as part of the usual notification to allow you to give us your feedback.
 
-![Success notification](../../../.gitbook/assets/image-\(3617\).png)
+![Success notification](/_images/image-(3617).png)
 
 You can now [deploy](../../deployments/) and manage your Custom App in the same way as other PMPC Cloud apps.

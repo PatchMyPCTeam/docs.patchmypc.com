@@ -14,16 +14,16 @@ To add a new branding app to your Patch My PC (PMPC) Cloud company:
 
 1. Navigate to **Settings | Branding**
 
-![Navigating to ‘Settings | Branding'](../../../../.gitbook/assets/image-\(545\).png)
+![Navigating to ‘Settings | Branding'](/_images/image-(545).png)
 
 2. Click **Add Branding**
 
-![Clicking ‘Add Branding'](../../../../.gitbook/assets/image-\(546\).png)
+![Clicking ‘Add Branding'](/_images/image-(546).png)
 
 3. If you want to continue with the default **Classic** branding, go to Step 5.
 4. If you want to create modern branding, **click Modern (PSASDT)**
 
-![Clicking ‘Modern(PSASDT)'](../../../../.gitbook/assets/image-\(547\).png)
+![Clicking ‘Modern(PSASDT)'](/_images/image-(547).png)
 
 > \*\*Important\*\*
 >
@@ -43,7 +43,7 @@ To add a new branding app to your Patch My PC (PMPC) Cloud company:
 
 5. In the **Branding Intune App Name** field, type a name for the branding app that will be created in Intune, containing your branding. For example, use the **Branding** prefix followed by the name of the Entra ID group this branding app will be deployed to.
 
-![Entering the name for the Branding app](../../../../.gitbook/assets/image-\(548\).png)
+![Entering the name for the Branding app](/_images/image-(548).png)
 
 > \*\*Note\*\*
 >
@@ -51,7 +51,7 @@ To add a new branding app to your Patch My PC (PMPC) Cloud company:
 
 6. In the **Company Name** field, if required, set the name of the company you want to appear on the branding notification when it is displayed on the assigned devices for this branding app. By default, this is the same as the the **Company Name** configured under **Settings | Company | General**.
 
-![Entering your company name](../../../../.gitbook/assets/image-\(549\).png)
+![Entering your company name](/_images/image-(549).png)
 
 7. Click **Upload Logo** to upload the logo for your branding that meets the requirements detailed on the **Branding** screen.
 
@@ -59,16 +59,16 @@ To add a new branding app to your Patch My PC (PMPC) Cloud company:
 >
 > The logo you are uploading must be less than 50 MB.
 
-![Clicking ‘Upload Logo'](../../../../.gitbook/assets/image-\(550\).png)
+![Clicking ‘Upload Logo'](/_images/image-(550).png)
 
 The selected image is shown on the **Branding** screen and the **Notification Preview** updates to show what the notification will look like when shown on the assigned devices.
 
-![Notification Preview](../../../../.gitbook/assets/image-\(551\).png)
+![Notification Preview](/_images/image-(551).png)
 
 8. Adjust the logo until you are happy.
 9. In the **Localizations** section, click the language you want to use to display this branding app on the relevant devices (**English** is selected by default).
 
-![‘Localizations' section](../../../../.gitbook/assets/image-\(552\).png)
+![‘Localizations' section](/_images/image-(552).png)
 
 > \*\*Note\*\*
 >
@@ -88,7 +88,7 @@ The selected image is shown on the **Branding** screen and the **Notification Pr
 
 10. If you need to add a localization for this branding, click **Add Language** and follow the [Add a Localization](localizations.md#add-a-localization) section of [Managing Localizations](localizations.md).
 
-![Clicking ‘Add Language'](../../../../.gitbook/assets/image-\(553\).png)
+![Clicking ‘Add Language'](/_images/image-(553).png)
 
 Now, you need to decide who to assign this branding app to.
 
@@ -98,11 +98,11 @@ To assign a branding app:
 
 1. Click the **Assignments** tab.
 
-![Clicking the ‘Assignments' tab.](../../../../.gitbook/assets/image-\(3720\).png)
+![Clicking the ‘Assignments' tab.](/_images/image-(3720).png)
 
 2. Click **Add Assignment**
 
-![Clicking ‘Add Assignment'](../../../../.gitbook/assets/image-\(3721\).png)
+![Clicking ‘Add Assignment'](/_images/image-(3721).png)
 
 3. On the **Add Required Assignment** screen, choose the relevant users/Entra ID security groups to target for this branding app, then click **Save**.
 
@@ -112,11 +112,11 @@ To assign a branding app:
 >
 > You should also check that if an Uninstall Branding App exists (it will appear at the top of the list of Branding Apps), that the assignments for it don't overlap with those for the new Branding App you are deploying.
 
-![Choosing the relevant Entra ID security groups to target for this branding app on the 'Add Required Assignment' screen, then clicking 'Save'](../../../../.gitbook/assets/image-\(3121\).png)
+![Choosing the relevant Entra ID security groups to target for this branding app on the 'Add Required Assignment' screen, then clicking 'Save'](/_images/image-(3121).png)
 
 The **Assignments** tab is redisplayed, showing all of the assignments for this branding app.
 
-![‘Assignments' tab is redisplayed.](../../../../.gitbook/assets/image-\(3722\).png)
+![‘Assignments' tab is redisplayed.](/_images/image-(3722).png)
 
 > \*\*Note\*\*
 >
@@ -130,15 +130,15 @@ The **Assignments** tab is redisplayed, showing all of the assignments for this 
 
 Once you have configured the branding app and added the required assignments, click **Save** to save and deploy the branding.
 
-![Clicking ‘Save'](../../../../.gitbook/assets/image-\(3723\).png)
+![Clicking ‘Save'](/_images/image-(3723).png)
 
 The **Success – Branding created** notification is displayed, and the Status of the branding app is shown as **In Progress**.
 
-!['Success – Branding created' notification and the 'Status' of the branding app is shown as 'In Progress'](../../../../.gitbook/assets/image-\(3741\).png)
+!['Success – Branding created' notification and the 'Status' of the branding app is shown as 'In Progress'](/_images/image-(3741).png)
 
 Once the branding app has been successfully deployed, the **Status** field will automatically update to **Success** and the **Last Updated** field will show the last time this branding app was updated.
 
-![‘Status' showing as ‘Success' and the ‘Last Updated' value is updated.](../../../../.gitbook/assets/image-\(3742\).png)
+![‘Status' showing as ‘Success' and the ‘Last Updated' value is updated.](/_images/image-(3742).png)
 
 > \*\*Tip\*\*
 >
@@ -150,7 +150,7 @@ Once the branding app has been successfully deployed, the **Status** field will 
 
 If you look in the Intune admin center, you will see the branding app listed along with your other apps.
 
-![Branding app listed with all of your other apps](../../../../.gitbook/assets/image-\(3199\).png)
+![Branding app listed with all of your other apps](/_images/image-(3199).png)
 
 When ScriptRunner runs on your devices, it checks to see if the device has the branding. If it doesn't, ScriptRunner installs it.
 

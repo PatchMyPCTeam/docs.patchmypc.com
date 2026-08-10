@@ -11,4 +11,3 @@ To use install and Patch My PC (PMPC) Home Updater, you need a computer:
 * [Microsoft Windows Desktop Runtime 8.0 (64-Bit)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 * A copy of the Home Updater download available from:\
   [https://patchmypc.com/product/home-updater](https://patchmypc.com/product/home-updater)
-

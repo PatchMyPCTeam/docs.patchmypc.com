@@ -10,11 +10,11 @@ ConfigMgr does not explicitly label an application as PSADT-based. In most cases
 
 If the **Installation Program** contains a **Deploy-Application.exe**, **Deploy-Application.ps1**, **Invoke-AppDeployToolkit.exe** or **Invoke-AppDeployToolkit.ps1**, the application can be considered PSADT-based.
 
-![PSADT-based app identified from the installation program](../../../.gitbook/assets/image-\(3825\).png)
+![PSADT-based app identified from the installation program](/_images/image-(3825).png)
 
 During the migration deployment flow, the **Configuration** tab indicates when an application has been identified as PSADT-based. Detection is based on the presence of PSADT functions in the script; when detected, the PSADT module is automatically enabled. The script content is analyzed and logically split into pre-install and post-install scripts.
 
-![PSADT-based app shown in the deployment flow](../../../.gitbook/assets/image-\(3826\).png)
+![PSADT-based app shown in the deployment flow](/_images/image-(3826).png)
 
 When migrating PSADT-based applications, AI can assist with parsing the PowerShell script and identifying key components, including the primary installer and the **MARK: Pre-Install**, **MARK: Install**, and **MARK: Post-Install** sections. This allows the script to be accurately split around the main installer and mapped to the appropriate pre-install and post-install execution stages.
 
@@ -30,17 +30,17 @@ When the application is migrated, **PatchMyPC-ScriptRunner.exe** becomes the pri
 
 In the example below, the Rainbow application has been identified as PSADT-based, and the PSADT script has been automatically split during the migration flow. Logic originally contained within the **MARK: Pre-Install** section of the PSADT script has been mapped to the Pre-install script.
 
-![PSADT script automatically split during the migration flow](../../../.gitbook/assets/image-\(3828\).png)
+![PSADT script automatically split during the migration flow](/_images/image-(3828).png)
 
 In the original PSADT script for Rainbow, both the **MARK: Pre-Install** and **MARK: Install** sections contain executable actions.
 
-![Original PSADT script](../../../.gitbook/assets/image-\(3830\).png)
+![Original PSADT script](/_images/image-(3830).png)
 
 The pre-install section runs a prerequisite installer (**vstor\_redist.exe**), whilst the install section performs the primary application installation (**Rainbow\_Installer\_Machine\_Offline.msi**). During migration, these sections are analyzed and separated so that prerequisite logic is mapped to the **Pre-install** script, and the primary installer is executed as the main install action, preserving the original execution order.
 
 You can edit any generated Pre-install and Post-install scripts to review whether PMPC Cloud has correctly identified the **MARK: Pre-Install**, **MARK: Install**, and **MARK: Post-Install** execution order.
 
-![PSADT script editing in the migration flow](../../../.gitbook/assets/image-\(3827\).png)
+![PSADT script editing in the migration flow](/_images/image-(3827).png)
 
 > \*\*Important\*\*\\
 >

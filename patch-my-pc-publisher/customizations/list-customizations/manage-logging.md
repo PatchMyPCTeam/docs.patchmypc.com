@@ -22,7 +22,7 @@ When enabled, the Publisher configures the installer to generate a Patch My PC i
 
 The Manage Installation Logging window provides the following settings.
 
-![Logging Options](../../../.gitbook/assets/image-\(129\).png)
+![Logging Options](/_images/image-(129).png)
 
 ## **Folder path**
 

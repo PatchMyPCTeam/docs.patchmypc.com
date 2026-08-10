@@ -18,7 +18,7 @@ If you try to select more than 1,000 files, the upload is blocked and you will s
 
 **"You have selected too many files (available: 1000)"**
 
-!['You have selected too many files (available: 1000)'](../../../.gitbook/assets/image-\(4387\).png)
+!['You have selected too many files (available: 1000)'](/_images/image-(4387).png)
 
 ## Workaround: ZIP the folder and extract during deployment
 

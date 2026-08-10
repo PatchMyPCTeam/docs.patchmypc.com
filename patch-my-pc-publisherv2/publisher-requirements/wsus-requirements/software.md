@@ -46,4 +46,4 @@ When the WSUS role is installed, either standalone or as part of a ConfigMgr SUP
     * WSUS Management Console (MMC snap-in)
     * Supporting PowerShell and administrative components
 
-![WSUS Roles and Features](../../../.gitbook/assets/image-\(384\).png)
+![WSUS Roles and Features](/_images/image-(384).png)

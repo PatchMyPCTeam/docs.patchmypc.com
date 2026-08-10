@@ -20,7 +20,7 @@ To download the Patch My PC (PMPC) Publisher installer:
 
 2. The download begins automatically.
 
-![Download the Publisher from https://patchmypc.com/msi](../../.gitbook/assets/image-\(404\).png)
+![Download the Publisher from https://patchmypc.com/msi](/_images/image-(404).png)
 
 3. Once completed, confirm the **PatchMyPC-Publishing-Service.msi** file has been downloaded.
 4. Copy the installer to the target server (if required), then proceed to [Installing Publisher](installing.md).

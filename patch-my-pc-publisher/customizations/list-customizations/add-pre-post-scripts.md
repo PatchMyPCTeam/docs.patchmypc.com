@@ -19,7 +19,7 @@ The feature also allows additional files and folders to be bundled with the appl
 
 Selecting this option opens the configuration dialog where scripts, arguments, and additional content can be defined.
 
-![Add Pre/Post Scripts dialog](../../../.gitbook/assets/image-\(4764\).png)
+![Add Pre/Post Scripts dialog](/_images/image-(4764).png)
 
 The Add Pre/Post Scripts form defines how scripts and additional content are associated with an application or update. The options are available separately for Install and Uninstall.
 
@@ -131,7 +131,7 @@ This allows scripts to source configuration files or other supporting content di
 
 The **Recommended Scripts** tab contains scripts provided by Patch My PC for certain products that, for example, cannot remove older versions on their own, such as Oracle Java. If the recommended script cannot run or does not exit cleanly, ScriptRunner stops the installation immediately and returns exit code **32768**.
 
-!['Recommended Scripts' tab](../../../.gitbook/assets/image-\(4765\).png)
+!['Recommended Scripts' tab](/_images/image-(4765).png)
 
 ### Disable the Patch My PC recommended post-update script for this product
 

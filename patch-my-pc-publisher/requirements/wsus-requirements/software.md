@@ -43,4 +43,4 @@ WSUS is installed through **Server Manager** and requires the following componen
     * WSUS Management Console (MMC snap-in)
     * Supporting PowerShell and administrative components
 
-![WSUS Roles and Features](../../../.gitbook/assets/image-\(384\).png)
+![WSUS Roles and Features](/_images/image-(384).png)

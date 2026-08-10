@@ -8,6 +8,6 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Advanced** tab of Patch My PC (PMPC) Publisher contains configuration options used to customize the Publisher's behavior beyond standard publishing settings. These options allow administrators to control proxy configuration, content storage locations, logging behavior, script execution safeguards, and other environment-specific requirements.
 
-![Advanced tab](../../../.gitbook/assets/image-\(3930\).png)
+![Advanced tab](/_images/image-(3930).png)
 
 The settings in this tab are typically used for specialized scenarios, troubleshooting, performance tuning, or to align the Publisher with organizational infrastructure and security standards.

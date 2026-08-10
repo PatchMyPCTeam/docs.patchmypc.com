@@ -71,7 +71,7 @@ $cert = New-SelfSignedCertificate @newCert
 
 3. Open **certlm.msc** and verify the new certificate appears under **Local Machine > Personal**.
 
-![Client Authentication Certificate](../../../../.gitbook/assets/image-\(397\).png)
+![Client Authentication Certificate](/_images/image-(397).png)
 
 3. While still in the elevated PowerShell session, export the **public key** (.cer) to a temporary folder.
 
@@ -83,7 +83,7 @@ Export-Certificate -Cert $cert -FilePath "$certFolder\PatchMyPCIntuneConnector.c
 
 4. Confirm that the `.cer` file exists in **C:\temp\certs**.
 
-![Exported Public Key](../../../../.gitbook/assets/image-\(398\).png)
+![Exported Public Key](/_images/image-(398).png)
 
 ### Step 2: Upload the Certificate to the App Registration
 
@@ -93,13 +93,13 @@ Export-Certificate -Cert $cert -FilePath "$certFolder\PatchMyPCIntuneConnector.c
 4. Select the exported `.cer` file and click **Add**.
 5. Verify the certificate’s **thumbprint** appears in the list with the correct expiration.
 
-![Certificate Uploaded](../../../../.gitbook/assets/image-\(399\).png)
+![Certificate Uploaded](/_images/image-(399).png)
 
 ### Step 3: Configure the Publisher to use the Certificate
 
 For more details on how to use the certificate for authnetication, see [Intune Apps / Updates > Options > Intune Authentication](/broken/pages/fRFRGAjMdaZk5TYWEwkt)
 
-![Certificate Authentication in the Publisher](../../../../.gitbook/assets/image-\(4148\).png)
+![Certificate Authentication in the Publisher](/_images/image-(4148).png)
 
 ## Use a Client Secret for Authentication
 
@@ -127,7 +127,7 @@ This method may be suitable for:
 4. In the left-hand menu, select **Certificates & secrets**.
 5. Under **Client secrets**, select **New client secret**.
 
-![New Client Secret](../../../../.gitbook/assets/image-\(401\).png)
+![New Client Secret](/_images/image-(401).png)
 
 6. Enter a **description** _(optional)_.
 7. Choose an **expiration period** appropriate for your organization.
@@ -139,10 +139,10 @@ This method may be suitable for:
 8. Select **Add**.
 9. After the secret is created, **copy the Value immediately** and store it securely as you will not be able to retrieve the secret once you navigate away from the page.
 
-![Copy the Secret Value](../../../../.gitbook/assets/image-\(402\).png)
+![Copy the Secret Value](/_images/image-(402).png)
 
 ### Step 2: Configure the Publisher to use the Client Secret
 
 For more details on how to use the certificate for authentication, see [Intune Apps / Updates > Options > Authentication Settings](../../../administration/intune-apps-updates/options/authentication-settings.md).
 
-![Client Secret Authentication Settings in the Publisher](../../../../.gitbook/assets/image-\(4150\).png)
+![Client Secret Authentication Settings in the Publisher](/_images/image-(4150).png)

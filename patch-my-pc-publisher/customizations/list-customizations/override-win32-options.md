@@ -69,7 +69,7 @@ To configure **Override Win32 Options:**
 >
 > See \[Publishing Options]\(../../manage/intune-tabs/intune-options/publishing-options.md) for more information about each option.
 
-![Override Win32 Options](../../../.gitbook/assets/image-\(4778\).png)
+![Override Win32 Options](/_images/image-(4778).png)
 
 3. Configure the required settings to override the global behavior.
 4. Click **OK** to save the configuration.

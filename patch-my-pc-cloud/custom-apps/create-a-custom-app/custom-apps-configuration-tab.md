@@ -12,13 +12,13 @@ The **Configuration** tab is where you configure various properties for the Cust
 
 The **Install Context** setting (if available) configures the context in which the app is installed, either **System** or **User**.
 
-!['Install Context' setting](../../../.gitbook/assets/image-\(4210\).png)
+!['Install Context' setting](/_images/image-(4210).png)
 
 ## Architecture
 
 The **Architecture** setting (if available) configures the app's architecture.
 
-!['Architecture' setting](../../../.gitbook/assets/image-\(4211\).png)
+!['Architecture' setting](/_images/image-(4211).png)
 
 > \*\*Note\*\*
 >
@@ -34,7 +34,7 @@ The **Architecture** setting (if available) configures the app's architecture.
 
 In the **Version** field, enter the version number for this app.
 
-!['Version' setting](../../../.gitbook/assets/image-\(4212\).png)
+!['Version' setting](/_images/image-(4212).png)
 
 > \*\*Note\*\*
 >
@@ -48,7 +48,7 @@ In the **Version** field, enter the version number for this app.
 
 In the **Language** field, either type the language for this app or select it from the dropdown list.
 
-!['Language' setting](../../../.gitbook/assets/image-\(4213\).png)
+!['Language' setting](/_images/image-(4213).png)
 
 ## Installed Apps Name
 
@@ -62,7 +62,7 @@ In the **Installed Apps Name** field, type the name of the app as it appears in 
 >
 > If you type a version number in this field we replace it with "\`%\`".
 
-!['Installed Apps Name' setting](../../../.gitbook/assets/image-\(4214\).png)
+!['Installed Apps Name' setting](/_images/image-(4214).png)
 
 > \*\*Note\*\*
 >
@@ -82,13 +82,13 @@ In the **Installed Apps Name** field, type the name of the app as it appears in 
 
 In the **Conflicting processes** field, type a comma-separated list of executables that may interfere with the installation of this app. This field populates the list for the [Manage Conflicting Processes](https://patchmypc.com/manage-conflicting-processes-when-updating-third-party-applications) right-click feature.
 
-!['Conflicting processes' setting](../../../.gitbook/assets/image-\(4215\).png)
+!['Conflicting processes' setting](/_images/image-(4215).png)
 
 ## Silent Install Parameters
 
 In the **Silent Install Parameters** field, enter the command-line arguments (up to a maximum of 2,048 characters) used to install the app silently (i.e. the user is not aware of the installation occurring).
 
-!['Silent Install Parameters' setting](../../../.gitbook/assets/image-\(4216\).png)
+!['Silent Install Parameters' setting](/_images/image-(4216).png)
 
 > \*\*Note\*\*
 >
@@ -100,7 +100,7 @@ In the **Silent Install Parameters** field, enter the command-line arguments (up
 
 In the **MSI Product Code** field, enter the MSI product code for this app, which is used for detection.
 
-!['MSI Product Code' setting](../../../.gitbook/assets/image-\(3469\).png)
+!['MSI Product Code' setting](/_images/image-(3469).png)
 
 > \*\*Note\*\*
 >
@@ -144,7 +144,7 @@ When selected, you can import or enter an uninstall script in the script editor.
 >
 > Currently, if you select the \*\*Use Custom\*\* option to add a script to publish with this app to ConfigMgr via the Publisher, the script itself is not published. We are aware of this and are working on a solution.
 
-!['Use Custom' option](../../../.gitbook/assets/image-\(4312\).png)
+!['Use Custom' option](/_images/image-(4312).png)
 
 ## Requirements
 
@@ -156,7 +156,7 @@ This includes:
 * [OS Architecture Requirements](custom-apps-configuration-tab.md#os-architecture-requirements)
 * [Additional Requirements Rules](custom-apps-configuration-tab.md#additional-requirements-rules)
 
-![Requirements section](../../../.gitbook/assets/image-\(4254\).png)
+![Requirements section](/_images/image-(4254).png)
 
 > \*\*Note\*\*
 >
@@ -220,11 +220,11 @@ To configure an Additional Requirement Rule:
 
 1. Click **Add** in the **Additional Requirements Rules** section.
 
-![Clicking ‘Add' in the ‘Additional Requirements Rules' section](../../../.gitbook/assets/image-\(4255\).png)
+![Clicking ‘Add' in the ‘Additional Requirements Rules' section](/_images/image-(4255).png)
 
 2. On the **Add Requirement Rule** screen, select the relevant type of rule from the **Rule Type** dropdown, then configure the required options as required.
 
-![Selecting the required ‘Rule Type'](../../../.gitbook/assets/image-\(4251\).png)
+![Selecting the required ‘Rule Type'](/_images/image-(4251).png)
 
 > \*\*Note\*\*
 >
@@ -248,11 +248,11 @@ To configure an Additional Requirement Rule:
 
 4. Click **Add Rule** to add the requirement rule.
 
-![Clicking ‘Add Rule' to add the requirement rule](../../../.gitbook/assets/image-\(4252\).png)
+![Clicking ‘Add Rule' to add the requirement rule](/_images/image-(4252).png)
 
 The rule is added to the list of requirement rules.
 
-![Rule added to the list of requirement rules](../../../.gitbook/assets/image-\(4256\).png)
+![Rule added to the list of requirement rules](/_images/image-(4256).png)
 
 > \*\*Note\*\*
 >
@@ -280,7 +280,7 @@ If you do not want to modify the **Return Codes** for this app, go to [Next Step
 
 If you do not want to add a new Return Code, proceed to [Edit a Return Code](custom-apps-configuration-tab.md#edit-a-return-code).
 
-![Adding a new Return Code](../../../.gitbook/assets/image-\(3327\).png)
+![Adding a new Return Code](/_images/image-(3327).png)
 
 To add a new Return Code for this Custom App, enter the numerical value in the **Return Code** field, select its meaning from the **Code type** dropdown, then click **Add**.
 
@@ -290,37 +290,37 @@ To add a new Return Code for this Custom App, enter the numerical value in the *
 
 The new Return Code is added to the list.
 
-![New Return Code added to the list.](../../../.gitbook/assets/image-\(3328\).png)
+![New Return Code added to the list.](/_images/image-(3328).png)
 
 ### Edit a Return Code
 
 If you do not want to edit a Return Code, go to [Delete a Return Code](custom-apps-configuration-tab.md#delete-a-return-code).
 
-![Clicking the pencil icon beside a Return Code to edit it.](../../../.gitbook/assets/image-\(3329\).png)
+![Clicking the pencil icon beside a Return Code to edit it.](/_images/image-(3329).png)
 
 To edit a Return Code, click the pencil icon beside it, then choose the correct **Code type** for this Return Code from the dropdown list.
 
-![Choosing the correct 'Code type' from the dropdown list](../../../.gitbook/assets/image-\(3330\).png)
+![Choosing the correct 'Code type' from the dropdown list](/_images/image-(3330).png)
 
 Next, click the green tick to save your changes.
 
-![Clicking the green tick](../../../.gitbook/assets/image-\(3331\).png)
+![Clicking the green tick](/_images/image-(3331).png)
 
 The **Code type** field is updated.
 
-!['Code type' field updated.](../../../.gitbook/assets/image-\(3332\).png)
+!['Code type' field updated.](/_images/image-(3332).png)
 
 ### Delete a Return Code
 
 If you do not want to delete a Return Code, go to [Next Steps](custom-apps-configuration-tab.md#next-steps).
 
-![Deleting a Return Code](../../../.gitbook/assets/image-\(3333\).png)
+![Deleting a Return Code](/_images/image-(3333).png)
 
 To delete a Return Code, click the red trash can beside the relevant code.
 
 The code is deleted from the list.
 
-![Code deleted from the list](../../../.gitbook/assets/image-\(3334\).png)
+![Code deleted from the list](/_images/image-(3334).png)
 
 ## App Info
 
@@ -332,7 +332,7 @@ The **App Info** section enables you to define default values for items that wil
 * **Privacy URL -** A link for people who want to learn more about the app's privacy settings and terms
 * **Developer –** The name/contact details of the developer as this is a plain text field.
 
-![‘App Info' section](../../../.gitbook/assets/image-\(3615\).png)
+![‘App Info' section](/_images/image-(3615).png)
 
 ## Next Steps
 

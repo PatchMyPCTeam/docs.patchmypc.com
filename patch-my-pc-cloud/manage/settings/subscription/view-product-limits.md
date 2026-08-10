@@ -6,11 +6,11 @@ To view the Product Limits for each Patch My PC Cloud (PMPC) Subscription level:
 
 1. Navigate to **Settings | Subscription**
 
-![Navigating to 'Settings | Subscription'](../../../../.gitbook/assets/image-\(27\).png)
+![Navigating to 'Settings | Subscription'](/_images/image-(27).png)
 
 2. Expand the **Cloud Limits** section to view a list of product limits per subscription level.
 
-![Expanding the 'Cloud Limits' section](../../../../.gitbook/assets/image-\(28\).png)
+![Expanding the 'Cloud Limits' section](/_images/image-(28).png)
 
 > \*\*Note\*\*
 >

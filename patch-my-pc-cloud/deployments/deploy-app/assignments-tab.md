@@ -58,7 +58,7 @@ f. **Update Only App -** Allows the Intune admin to add an **Update Only** assig
 >
 > Also, if the \*\*Installed Apps Name\*\* field on the \*\*Configuration\*\* tab of a Custom App is not completed, then the \*\*Add Update Only\*\* and \*\*Update Only App\*\* assignment types are unavailable, as per the tooltip you will see if you hover your mouse over either of these assignment types.
 
-![Choosing the desired assignment type](../../../.gitbook/assets/image-\(3088\).png)
+![Choosing the desired assignment type](/_images/image-(3088).png)
 
 > \*\*Note\*\*
 >
@@ -71,7 +71,7 @@ f. **Update Only App -** Allows the Intune admin to add an **Update Only** assig
 | Include | If checked, all of the items in this group will receive the assigned app.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Exclude | <p>If checked, all of the items in this group will not receive the assigned app.<br><br>Can be used in conjunction with <strong>Include</strong> to exclude a subset of devices when you have an <strong>Include</strong> of a superset of devices.<br><br>For example, you want to target all of your computers except for your test devices. To achieve this, you'd configure your Entra ID groups as follows:<br><br>o Check <strong>Include</strong> for your <strong>All Company Devices</strong> Entra ID group.<br>o Check <strong>Exclude</strong> for your <strong>Test Devices</strong> Entra ID group.</p> |
 
-![Choosing the relevant Entra ID security groups to target for this assignment](../../../.gitbook/assets/image-\(3089\).png)
+![Choosing the relevant Entra ID security groups to target for this assignment](/_images/image-(3089).png)
 
 > \*\*Note\*\*
 >
@@ -81,7 +81,7 @@ f. **Update Only App -** Allows the Intune admin to add an **Update Only** assig
 
 The **Assignments** page updates to show the newly added assignments, including their configuration.
 
-!["Assignments" page updates to show the newly added assignments](../../../.gitbook/assets/image-\(3090\).png)
+!["Assignments" page updates to show the newly added assignments](/_images/image-(3090).png)
 
 3. Make any of the following optional modifications to the assignment(s).
 
@@ -102,4 +102,4 @@ The **Assignments** page updates to show the newly added assignments, including 
 4. Add any additional assignments for this deployment by clicking **Add Assignment** and repeating the steps in this section.
 5.  If you are happy you have entered all of the details for the deployment correctly, click **Deploy** to deploy the app. However, we recommend you click **Next** to move to the [**Summary** ](summary-tab.md)tab, where you can verify the settings for this deployment before you deploy this app.<br>
 
-    ![Clicking "Deploy" to deploy the app](../../../.gitbook/assets/image-\(3092\).png)
+    ![Clicking "Deploy" to deploy the app](/_images/image-(3092).png)

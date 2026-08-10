@@ -12,7 +12,7 @@ The **Set Install Behavior** right-click option in Patch My PC (PMPC) Publisher 
 
 These executables are applied to the deployment type’s **Install Behavior** settings and control how ConfigMgr responds when an application is in use during an install.
 
-!['Install Behavior' tab in the application's deployment type properties](../../../.gitbook/assets/image-\(4739\).png)
+!['Install Behavior' tab in the application's deployment type properties](/_images/image-(4739).png)
 
 > \*\*Important\*\*
 >
@@ -24,14 +24,14 @@ These executables are applied to the deployment type’s **Install Behavior** se
 
 If any of the specified executables are running when the user initiates the installation from Software Center, the installation will fail.
 
-![Available Deployments](../../../.gitbook/assets/image-\(107\).png)
+![Available Deployments](/_images/image-(107).png)
 
 The user is notified and must close the application before retrying the install.
 
-![Install Behavior User Notification from the Software Center](../../../.gitbook/assets/image-\(108\).png)
+![Install Behavior User Notification from the Software Center](/_images/image-(108).png)
 
 ### Required Deployments
 
 If the executable remains running, the required installation will fail. If an installation fails due to a running executable, the failure reason can be reviewed in **CIAgent.log** on the client device.
 
-!['CIAgent.log' on the client device](../../../.gitbook/assets/image-\(4740\).png)
+!['CIAgent.log' on the client device](/_images/image-(4740).png)

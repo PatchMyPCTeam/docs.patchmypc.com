@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 **Manage Naming Convention** allows you to define a custom naming standard for the Win32 applications and updates created by the Publisher. This helps ensure application names in Intune are consistent, descriptive, and aligned with your organizational standards.
 
-![Manage Naming Convention](../../.gitbook/assets/image-\(4060\).png)
+![Manage Naming Convention](/_images/image-(4060).png)
 
 If no custom naming convention is configured, or if the pattern is left empty, the Publisher uses its default naming format.
 
@@ -20,7 +20,7 @@ If no custom naming convention is configured, or if the pattern is left empty, t
 
 When you select **Manage naming convention**, the **Intune Naming Convention** dialog is used to define a custom name format for Win32 applications created by the Publisher.
 
-![Intune Naming Convention](../../.gitbook/assets/image-\(4061\).png)
+![Intune Naming Convention](/_images/image-(4061).png)
 
 > \*\*Note\*\*
 >

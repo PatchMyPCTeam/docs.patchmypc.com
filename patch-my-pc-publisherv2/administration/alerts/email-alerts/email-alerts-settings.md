@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Email Alerts** option allows the Publisher to be configured to send notifications when specific publishing events occur. These alerts provide timely visibility into publishing activity, including successes, warnings, and failures, without requiring administrators to actively monitor logs.
 
-![Email Alerts](../../../../.gitbook/assets/image-\(4237\).png)
+![Email Alerts](/_images/image-(4237).png)
 
 Before email alerts can be sent, email settings must be configured. This includes specifying the SMTP server and port or configuring OAuth application details, along with the required authentication settings, sender address, and recipient addresses.
 
@@ -172,11 +172,11 @@ The email sent at the end of the sync will include the following details for all
 
 In the example below, you can see an email alert where both **WSUS updates and ConfigMgr applications** were published succesfully.
 
-![Email notification for WSUS updates and ConfigMgr applications](../../../../.gitbook/assets/image-\(3878\).png)
+![Email notification for WSUS updates and ConfigMgr applications](/_images/image-(3878).png)
 
 For products published to **Intune**, The email will include the following additional information
 
 * Intune Tenant friendly name
 * Intune assignments set during Publishing.
 
-![Email notification for Intune applications](../../../../.gitbook/assets/image-\(3879\).png)
+![Email notification for Intune applications](/_images/image-(3879).png)

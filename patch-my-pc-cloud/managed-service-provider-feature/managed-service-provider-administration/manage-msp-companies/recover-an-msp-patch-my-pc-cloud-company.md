@@ -12,7 +12,7 @@ When a user attempts to sign in to a Child MSP company for which they have no us
 
 However, if the Child MSP Company does not contain at least one user assigned the **Full Admin and Access Management** user role, the user requesting access will see the **No Active Administrator** dialog box.
 
-![‘No Active Administrator' dialog box](../../../../.gitbook/assets/image-\(4381\).png)
+![‘No Active Administrator' dialog box](/_images/image-(4381).png)
 
 At this point, they have three options:
 

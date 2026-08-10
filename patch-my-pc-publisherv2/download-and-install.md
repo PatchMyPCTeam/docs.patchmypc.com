@@ -50,7 +50,7 @@ To download the Publisher installer, follow the steps below:
 
 1.  The download will begin automatically.<br>
 
-    ![Download the Publisher from https://patchmypc.com/msi](../.gitbook/assets/image-\(404\).png)
+    ![Download the Publisher from https://patchmypc.com/msi](/_images/image-(404).png)
 2. Once complete, confirm that the file **`PatchMyPC-Publishing-Service.msi`** has been downloaded.
 3. Copy the installer to the target server, if required, then proceed to [Install the Publisher](download-and-install.md#install-publisher).
 
@@ -61,21 +61,21 @@ After carefully observing and understanding the [requirements](publisher-require
 1. Once you have [downloaded the Publisher](download-and-install.md#download-publisher), double click the msi to launch the installer.
 2.  Click **Next** to begin the installation wizard. Agree to the terms of service and click **Next** again.<br>
 
-    ![Install Publisher and accept the end-user license agreement](../.gitbook/assets/image-\(405\).png)
+    ![Install Publisher and accept the end-user license agreement](/_images/image-(405).png)
 3.  If you are only using the Publisher to publish applications and updates in Intune, you can check the **Enable Microsoft Intune standalone mode\*** box. Click **Next**.<br>
 
-    ![Optionally select Intune standalone mode](../.gitbook/assets/image-\(406\).png)
+    ![Optionally select Intune standalone mode](/_images/image-(406).png)
 
     \*Intune standalone mode simply removes some tabs in the Publisher that are specifically used for publishing applications and updates to ConfigMgr and WSUS. These tabs can be re-enabled retrospectively after installation from the Advanced tab in Publisher.
 4.  Select a folder to install the Publisher, and click **Next**. The default folder is `C:\Program Files\Patch My PC\Patch My PC Publishing Service\`.<br>
 
-    ![Select the folder for the Publisher installation files](../.gitbook/assets/image-\(407\).png)
+    ![Select the folder for the Publisher installation files](/_images/image-(407).png)
 5.  When you are ready to being, click **Install**.<br>
 
-    ![Begin Publisher installation](../.gitbook/assets/image-\(408\).png)
+    ![Begin Publisher installation](/_images/image-(408).png)
 6.  Click **Yes** if you receive a UAC prompt. When installation has completed, you can choose to not immediately launch the Publisher by un-checking **Launch Patch My PC Publishing Service**. Click **Finish**.<br>
 
-    ![Authorize and Complete Installation](../.gitbook/assets/image-\(409\).png)
+    ![Authorize and Complete Installation](/_images/image-(409).png)
 
 ### What Next?
 

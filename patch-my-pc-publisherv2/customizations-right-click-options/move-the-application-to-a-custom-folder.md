@@ -8,11 +8,11 @@ _&#x41;vailable on tab: ConfigMgr Apps_
 
 The **Move the Application to a Custom Folder** option allows you to control where ConfigMgr applications created by the Publisher are stored within the ConfigMgr console.
 
-![Move the Application to a Custom Folder](../../.gitbook/assets/image-\(102\).png)
+![Move the Application to a Custom Folder](/_images/image-(102).png)
 
 Instead of leaving newly created applications in the default Applications root node, this setting automatically moves them into a folder structure that better aligns with how you organize and manage software.
 
-![ConfigMgr Application Folders](../../.gitbook/assets/image-\(104\).png)
+![ConfigMgr Application Folders](/_images/image-(104).png)
 
 ## Override Behavior
 
@@ -22,7 +22,7 @@ This option will override the global [Move applications to a specific console fo
 
 When using this right-click option, the **Select Console Folder** dialog allows you to choose where newly created ConfigMgr applications should be placed after publishing.
 
-![Select a console folder](../../.gitbook/assets/image-\(103\).png)
+![Select a console folder](/_images/image-(103).png)
 
 1. Right-click the **Vendor** or **Product** you want to configure.
 2. Select **Move the application to a custom folder**.

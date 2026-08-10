@@ -17,6 +17,6 @@ The **Usage Statistics** section provides a real-time summary of publishing acti
 * **Total syncs**\
   The total number of synchronization operations performed by Publisher.
 
-![Usage statistics for the Publisher](../../../.gitbook/assets/image-\(415\).png)
+![Usage statistics for the Publisher](/_images/image-(415).png)
 
 For more information on the telemetry information we collect through the Publisher, see: [Telemetry Data collected by the Publisher](../../publisher-reference/telemetry-data-collected-by-the-publisher.md).

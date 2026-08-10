@@ -36,11 +36,11 @@ Certificate SAN values can be also verified within the certificate properties.
 
 _Examples:_
 
-![](../../.gitbook/assets/image-\(1727\).png)
+![](/_images/image-(1727).png)
 
-![](../../.gitbook/assets/image-\(1728\).png)
+![](/_images/image-(1728).png)
 
-![](../../.gitbook/assets/image-\(1729\).png)
+![](/_images/image-(1729).png)
 
 > On the Windows Server OS which will host Advanced Insights, the following PowerShell script can be executed to list supported certificates.
 
@@ -166,9 +166,9 @@ if ($uncapturedCerts.Count -gt 0) {
 
 Example PowerShell outputs:
 
-![](../../.gitbook/assets/image-\(2014\).png)
+![](/_images/image-(2014).png)
 
-![](../../.gitbook/assets/image-\(2015\).png)
+![](/_images/image-(2015).png)
 
 > \*\*Self-signed certificate use.\*\*
 >

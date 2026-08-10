@@ -8,7 +8,7 @@ The **SMS Provider** is the interface that enables all interactions with ConfigM
 
 Configuring the SMS Provider connection is therefore a foundational step for enabling the Publisher to interact with ConfigMgr.
 
-![SMS Provider Connection](../../.gitbook/assets/image-\(3956\).png)
+![SMS Provider Connection](/_images/image-(3956).png)
 
 ## Connection Settings
 
@@ -23,7 +23,7 @@ Both options are valid, as long as the specified server is hosting the SMS Provi
 
 You can identify which site systems host the SMS Provider site system role by navigating to **Monitoring > System Status > Component Status** in the ConfigMgr console, then filter for **SMS\_Provider**.
 
-![Identify an SMS Provider](../../.gitbook/assets/image-\(516\).png)
+![Identify an SMS Provider](/_images/image-(516).png)
 
 > When connecting to ConfigMgr, either using the Publisher or the ConfigMgr remote conosle, the SMS Provider you connect to isn’t always the one you specified. The site server ultimately decides which SMS Provider instance is used.
 >
@@ -41,7 +41,7 @@ You can identify which site systems host the SMS Provider site system role by na
 
 To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../publisher-requirements/configmgr-requirements/software.md) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is not installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
 
-![ConfigMgr Remote Console Missing](../../.gitbook/assets/image-\(74\).png)
+![ConfigMgr Remote Console Missing](/_images/image-(74).png)
 
 The PatchMyPC.log will also indicate when the ConfigMgr Remote Console is not installed:
 
@@ -94,12 +94,12 @@ To satisfy these requirements, you can either:
 6. Click **Security Roles.**
 7. Click **Import Security Role.**
 
-![Import Security Role](../../.gitbook/assets/image-\(517\).png)
+![Import Security Role](/_images/image-(517).png)
 
 8. Browse to the file created in step 2.
 9. Confirm the security role has been created succesfully.
 
-![Confirm Role Created](../../.gitbook/assets/image-\(518\).png)
+![Confirm Role Created](/_images/image-(518).png)
 
 For reference, the following permissions are configured on the **Patch My PC Publisher** custom security role:
 
@@ -127,7 +127,7 @@ To assign the account to the security role:
 5. Assign the **Patch My PC Publisher** security role.
 6. Assign the required **security scopes**, ensuring the account has access to **All instances of the objects that are related to the assigned security roles.**
 
-![Assigned Security Scopes](../../.gitbook/assets/image-\(519\).png)
+![Assigned Security Scopes](/_images/image-(519).png)
 
 7. Complete the wizard and apply the changes.
 8. Restart the **Patch My PC Publisher** service to ensure the updated permissions are applied.
@@ -144,15 +144,15 @@ This role can be imported directly into ConfigMgr if the user logged in with the
 
 1. In the **SMS Provider Connection** form, click **Import Security Role.**
 
-![Import Security Role](../../.gitbook/assets/image-\(3957\).png)
+![Import Security Role](/_images/image-(3957).png)
 
 2. If the role already exists, you will be prompted to overwrite it.
 
-![Overwrite Security Role](../../.gitbook/assets/image-\(3958\).png)
+![Overwrite Security Role](/_images/image-(3958).png)
 
 3. The role is imported sucessfully.
 
-![Security Role Imported](../../.gitbook/assets/image-\(3959\).png)
+![Security Role Imported](/_images/image-(3959).png)
 
 #### Role Import Error
 
@@ -162,7 +162,7 @@ When importing the Publisher security role, the import may fail with the followi
 
 This error occurs when the user running the Publisher does not have sufficient permissions in ConfigMgr to create or import security roles.
 
-![Role Import Error](../../.gitbook/assets/image-\(4366\).png)
+![Role Import Error](/_images/image-(4366).png)
 
 The following error may be recorded in the _%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\\_&#x50;atchMyPC-SmsProviderConfigMgrRepository.log:
 
@@ -183,8 +183,8 @@ After the role is imported, Full Administrator permissions are no longer require
 
 To test that the Publisher has the correct permissions to the SMS Provider, click **Test Connection.**
 
-![Test SMS Provider Connection](../../.gitbook/assets/image-\(3960\).png)
+![Test SMS Provider Connection](/_images/image-(3960).png)
 
 Connection activity for the SMS Provider from the Publisher can be found in the _%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log_
 
-![PatchMyPC-SmsProviderConfigMgrRepository.log](../../.gitbook/assets/image-\(524\).png)
+![PatchMyPC-SmsProviderConfigMgrRepository.log](/_images/image-(524).png)

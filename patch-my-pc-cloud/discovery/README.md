@@ -13,5 +13,3 @@ Welcome to the Discovery section for Patch My PC (PMPC) Cloud.
 
 
 
-
-

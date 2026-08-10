@@ -21,7 +21,7 @@ To create a self-signed code-signing certificate:
    2. **Valid for** (Default: **5 years**)
    3. **Key length** (Default: 2048 **bits**)
 
-!['WSUS Code Signing Certificate' screen](../../../../../../.gitbook/assets/image-\(4482\).png)
+!['WSUS Code Signing Certificate' screen](/_images/image-(4482).png)
 
 4. Optionally, leave the **Disable Private Key Export** checkbox unchecked if you may need to move Publisher to another top-level Software Update Point (SUP) in the future and want to take the same code-signing certificate to the new server.
 5. Click the **Generate** button.
@@ -29,7 +29,7 @@ To create a self-signed code-signing certificate:
     \
     The **Certificate Management** section updates to show the certificate is valid and it's expiry date.<br>
 
-    ![Valid certificate](../../../../../../.gitbook/assets/image-\(4484\).png)
+    ![Valid certificate](/_images/image-(4484).png)
 
 > \*\*Note\*\*
 >

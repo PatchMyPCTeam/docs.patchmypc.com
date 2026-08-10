@@ -9,4 +9,3 @@ In order to function and to help improve our product and services, Advanced Insi
 | Installer Telemetry | To track installations and their success state.                                         |
 | Activation          | Collected by our licensing API to tell us which products have been activated.           |
 | Installed version   | Collected by our licensing API to tell us which version of software has been installed. |
-

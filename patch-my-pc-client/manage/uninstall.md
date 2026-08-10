@@ -22,11 +22,11 @@ To uninstall the PMPC Client from specific Entra ID groups:
 1. Navigate to **Settings | Deploy Client**
 2. Click the relevant **Uninstall Client** button.
 
-![Clicking the relevant 'Uninstall Client' button](../../.gitbook/assets/image-\(598\).png)
+![Clicking the relevant 'Uninstall Client' button](/_images/image-(598).png)
 
 3. Select the relevant group.
 
-![](../../.gitbook/assets/image-\(599\).png)
+![](/_images/image-(599).png)
 
 > \*\*Note\*\*
 >
@@ -35,11 +35,11 @@ To uninstall the PMPC Client from specific Entra ID groups:
 4. Add any additional Groups as required.
 5. Click **Save**.
 
-![Clicking "Save"](../../.gitbook/assets/image-\(704\).png)
+![Clicking "Save"](/_images/image-(704).png)
 
 The **Deploy Client** page is displayed along with the **Success – Updated** notification.
 
-!['Success | Updated' notification](../../.gitbook/assets/image-\(600\).png)
+!['Success | Updated' notification](/_images/image-(600).png)
 
 The Client will then be uninstalled from all the devices within the selected Entra ID Group(s).
 
@@ -51,7 +51,7 @@ You can create an uninstall deployment in the Intune admin center that has the c
 MSIExec.exe /x PatchMyPC.ClientInstaller.msi /qn
 ```
 
-![Configuring the uninstall command line for the PMPC Client](../../.gitbook/assets/image-\(4188\).png)
+![Configuring the uninstall command line for the PMPC Client](/_images/image-(4188).png)
 
 ## If Your Trial License has Expired
 
@@ -61,6 +61,6 @@ If you have deployed the PMPC Client during your trial, you should click **Unins
 
 On the **Confirm Uninstall Action** dialog box, click **Uninstall**.
 
-!['Confirm Uninstall Action' dialog box](../../.gitbook/assets/image-\(4383\).png)
+!['Confirm Uninstall Action' dialog box](/_images/image-(4383).png)
 
 A new app is created in Intune for the relevant Entra ID groups with an **Uninstall** assignment to uninstall our Client.

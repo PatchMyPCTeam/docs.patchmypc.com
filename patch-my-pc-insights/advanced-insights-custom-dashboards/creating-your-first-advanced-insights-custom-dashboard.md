@@ -12,14 +12,14 @@ Custom Dashboards are created and maintained in the Administration node.
 
 Click Create New to open the dashboard editor.
 
-![](../../.gitbook/assets/image-\(2282\).png)
+![](/_images/image-(2282).png)
 
 Here I have provide a name, description and chosen an icon for my dashboard. I have filtered the "page" column of the dashboard items column to find the objects I want.
 
-![](../../.gitbook/assets/image-\(2283\).png)
+![](/_images/image-(2283).png)
 
 Each item I add to my custom dashboard can have dedicated filter options applied. Here I have selected the update I wish to see the trend data for and have set that I want to render data from the date posted. I will add a second Update Installation Trend chart top my dashboard and set it to show the state of a different update.
 
-![My first custom dashboard](<../../.gitbook/assets/14 (1).jpg>)
+![My first custom dashboard](/_images/14-(1 "My first custom dashboard").jpg>)
 
 Having saved my dashboard, it now shows up in the menu and I can select it to render my chosen charts.

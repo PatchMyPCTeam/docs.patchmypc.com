@@ -13,16 +13,16 @@ To onboard to the Intune Apps for Cloud (Intune Apps):
 1. Sign in to the Portal at [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2.  On the **App Catalog** page, click **Connect** under **Intune**.<br>
 
-    ![Clicking "Connect" under Intune on the App Catalog page](../../../.gitbook/assets/image-\(2447\).png)
+    ![Clicking "Connect" under Intune on the App Catalog page](/_images/image-(2447).png)
 3.  Enter the Entra ID you used to onboard to PMPC Cloud or click to select the relevant account from the list of already signed-in accounts. Then click **Next**.<br>
 
-    !["Microsoft Sign in" screen](../../../.gitbook/assets/image-\(1628\).png)
+    !["Microsoft Sign in" screen](/_images/image-(1628).png)
 4.  Enter the password and click **Sign in**.
 
-    !["Microsoft Enter password" screen](../../../.gitbook/assets/image-\(1629\).png)
+    !["Microsoft Enter password" screen](/_images/image-(1629).png)
 5.  On the **Permission requested** screen, click **Accept**.<br>
 
-    !["Permissions requested" screen](../../../.gitbook/assets/image-\(1631\).png)
+    !["Permissions requested" screen](/_images/image-(1631).png)
 
 > \*\*Note\*\*
 >
@@ -38,7 +38,7 @@ To onboard to the Intune Apps for Cloud (Intune Apps):
     \
     If you do not see this screen, it is probably because you already have a suitable, valid PMPC license. Continue to Step 8.<br>
 
-    !["Intune connected successfully" screen](../../../.gitbook/assets/image-\(1632\).png)
+    !["Intune connected successfully" screen](/_images/image-(1632).png)
 7.  On the **Intune connected successfully** screen, either:\
     \
     Start an Enterprise Plus trial by entering a maximum of two devices in the **Enter total number of managed devices in production box** and clicking **Start Now**.\
@@ -47,7 +47,7 @@ To onboard to the Intune Apps for Cloud (Intune Apps):
 
     Enter your current PMPC license key in the **Enter License Key** field and click **Activate Now**.<br>
 
-    !["Intune connected successfully" screen](../../../.gitbook/assets/image-\(1633\).png)
+    !["Intune connected successfully" screen](/_images/image-(1633).png)
 
 > \*\*Note\*\*
 >
@@ -55,4 +55,4 @@ To onboard to the Intune Apps for Cloud (Intune Apps):
 
 8.  Once connected successfully, the **App Catalog** shows applications that can be deployed and managed using Intune Apps.<br>
 
-    !["App Catalog" screen](../../../.gitbook/assets/image-\(2449\).png)
+    !["App Catalog" screen](/_images/image-(2449).png)

@@ -41,16 +41,16 @@ The following examples show how EOL will appear in the Cloud Portal:
 
 An existing deployment of an EOL app will be shown as follows.
 
-![EOL deployment](../../.gitbook/assets/image-\(4262\).png)
+![EOL deployment](/_images/image-(4262).png)
 
 ### Discovery
 
 A managed app in **Discovery** that is EOL will be shown as follows.
 
-![EOL app in Discovery](../../.gitbook/assets/image-\(4263\).png)
+![EOL app in Discovery](/_images/image-(4263).png)
 
 ### App Set
 
 An EOL app deployment that is part of an existing App Set will be shown as follows.
 
-![EOL app in an App Set](../../.gitbook/assets/image-\(4264\).png)
+![EOL app in an App Set](/_images/image-(4264).png)

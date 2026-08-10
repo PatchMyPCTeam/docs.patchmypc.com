@@ -14,6 +14,6 @@ This section describes the steps required to change the frontend network port us
 
 In the configuration modification page, select the checkbox for **'Frontend SSL Port Configuration'** then click **'Change SSL Port'**:
 
-![Selecting 'Change SSL Port'](../../.gitbook/assets/image-\(4352\).png)
+![Selecting 'Change SSL Port'](/_images/image-(4352).png)
 
 Continue with the [Insights IIS Configuration selection](../download-and-install-insights/insights-iis-configuration-selection.md) process.

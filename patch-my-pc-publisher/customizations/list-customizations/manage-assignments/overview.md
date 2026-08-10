@@ -8,7 +8,7 @@ The **Manage Assignments** right-click option in Patch My PC (PMPC) Publisher al
 
 When selected, the **Manage Application Assignments** form opens.
 
-!['Manage Application Assignments' form](../../../../.gitbook/assets/image-\(4766\).png)
+!['Manage Application Assignments' form](/_images/image-(4766).png)
 
 From this form, you can add new assignments, remove existing assignments, and control whether Publisher should override manual assignment changes made directly in Intune.
 

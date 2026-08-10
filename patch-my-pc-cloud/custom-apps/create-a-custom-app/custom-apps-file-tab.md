@@ -14,7 +14,7 @@ To configure the **File** tab:
 >
 > Changing the \*\*Install Method\*\* will reset all of the settings in the Custom Apps Deployment Wizard.
 
-!['Install Method' section](../../../.gitbook/assets/image-\(4492\).png)
+!['Install Method' section](/_images/image-(4492).png)
 
 > \*\*Note\*\*
 >
@@ -48,7 +48,7 @@ To add the primary installer for a Custom App:
 >
 > We do not support macOS in Custom Apps. If you select a .pkg/.dmg you will see a warning stating this and explaining how you can upvote this idea.
 
-![Clicking ‘Add Primary Install File'](../../../.gitbook/assets/image-\(4493\).png)
+![Clicking ‘Add Primary Install File'](/_images/image-(4493).png)
 
 > \*\*Tip\*\*
 >
@@ -56,7 +56,7 @@ To add the primary installer for a Custom App:
 
 The hash for the file is calculated as it is uploaded to your Cloud Portal and will appear as completed once the upload has finished.
 
-![Uploading the installer](../../../.gitbook/assets/image-\(4494\).png)
+![Uploading the installer](/_images/image-(4494).png)
 
 2. If the installer does not require any additional folders or files, click **Next** to go to the [General Information](custom-apps-general-information-tab.md) tab.\
    \
@@ -79,11 +79,11 @@ To import an existing script:
 
 1. Click **Import Script** and browse to the location containing the script and select it.
 
-![Clicking ‘Import Script'](../../../.gitbook/assets/image-\(4495\).png)
+![Clicking ‘Import Script'](/_images/image-(4495).png)
 
 The **App Installation Script** editor appears with the **Script Name** and **Script Format** fields automatically populated, and the script editor is populated with the imported script.
 
-![‘App Installation Script'](../../../.gitbook/assets/image-\(4304\).png)
+![‘App Installation Script'](/_images/image-(4304).png)
 
 > \*\*Note\*\*
 >
@@ -95,7 +95,7 @@ The **App Installation Script** editor appears with the **Script Name** and **Sc
 
 2. Click **Save** to save the script and return to the **File** tab, where details of the script appear under the **Script** section.
 
-![Script details](../../../.gitbook/assets/image-\(4496\).png)
+![Script details](/_images/image-(4496).png)
 
 > \*\*Important\*\*
 >
@@ -119,11 +119,11 @@ To manually add a script:
 
 1. Click **Add Manually**
 
-![Clicking 'Add Manually'](../../../.gitbook/assets/image-\(4497\).png)
+![Clicking 'Add Manually'](/_images/image-(4497).png)
 
 The **App Installation Script** editor appears, prefilled with some values.
 
-![‘App Installation Script' editor](../../../.gitbook/assets/image-\(4308\).png)
+![‘App Installation Script' editor](/_images/image-(4308).png)
 
 2. If required, change the:
    1. Name of the script in the **Script Name** field.
@@ -135,7 +135,7 @@ The **App Installation Script** editor appears, prefilled with some values.
 
 3. In the script editor, type your script, then click **Save**
 
-![Entering a script and clicking ‘Save'](../../../.gitbook/assets/image-\(4309\).png)
+![Entering a script and clicking ‘Save'](/_images/image-(4309).png)
 
 > \*\*Note\*\*
 >
@@ -151,7 +151,7 @@ The **App Installation Script** editor appears, prefilled with some values.
 
 The **File** tab is redisplayed, showing details of the script under the **Script** section.
 
-![Script details](../../../.gitbook/assets/image-\(4498\).png)
+![Script details](/_images/image-(4498).png)
 
 > \*\*Important\*\*
 >
@@ -187,8 +187,8 @@ If the installer requires additional folders or files, either:
 >
 > If you add any PSADT scripts to your Custom App, you need to ensure that .NET version 4.7.2 is installed on any devices to which this Custom App is deployed.
 
-![Adding files or folders](../../../.gitbook/assets/image-\(4499\).png)
+![Adding files or folders](/_images/image-(4499).png)
 
 2. Click **Next** to move to the [General Information](custom-apps-general-information-tab.md) tab.
 
-![Clicking 'Next' to move to the 'General Information' tab](../../../.gitbook/assets/image-\(4500\).png)
+![Clicking 'Next' to move to the 'General Information' tab](/_images/image-(4500).png)

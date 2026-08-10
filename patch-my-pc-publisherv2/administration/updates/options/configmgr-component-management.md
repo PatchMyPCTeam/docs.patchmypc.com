@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **ConfigMgr Component Management** section provides visibility into the **WSUS Configuration Manager (WCM)** component status. This section is primarily used during initial onboarding and troubleshooting scenarios where ConfigMgr needs to immediately re-evaluate WSUS configuration data.
 
-![ConfigMgr Component Management](../../../../.gitbook/assets/image-\(87\).png)
+![ConfigMgr Component Management](/_images/image-(87).png)
 
 When you publish your first Patch My PC update, the update is written to WSUS, but ConfigMgr does not become aware of the new Patch My PC product category until it re-processes WSUS configuration data. Normally, this happens during a Software Update Point (SUP) synchronization.
 
@@ -27,4 +27,4 @@ The available actions are:
 
 These actions are logged in the _%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-ConfigMgrClient.log_ log.
 
-![%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-ConfigMgrClient.log](../../../../.gitbook/assets/image-\(467\).png)
+![%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-ConfigMgrClient.log](/_images/image-(467).png)

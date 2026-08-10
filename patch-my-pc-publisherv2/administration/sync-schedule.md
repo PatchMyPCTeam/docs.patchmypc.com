@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Sync Schedule** tab controls when the Publisher runs an automated publishing sync. A sync evaluates third party apps and updates and publishes content based on the configured selections in the product trees, customizations, and global options across the tabs.
 
-![Publisher scheduling options](../../.gitbook/assets/image-\(252\).png)
+![Publisher scheduling options](/_images/image-(252).png)
 
 ## How a Publishing Sync Works
 

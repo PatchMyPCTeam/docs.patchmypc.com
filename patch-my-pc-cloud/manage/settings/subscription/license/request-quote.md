@@ -14,15 +14,15 @@ To request a quote for an Enterprise Plus subscription:
 1. Navigate to **Settings | Subscription**
 2. Click **Request a Quote** under **Enterprise Plus**
 
-![Clicking ‘Request a Quote' under ‘Enterprise Plus'](../../../../../.gitbook/assets/image-\(3593\).png)
+![Clicking ‘Request a Quote' under ‘Enterprise Plus'](/_images/image-(3593).png)
 
 3. On the **Enterprise Plus** screen, add your email address and select the number of devices you want a quote for, then click **Send Request**
 
-![Adding your email address, selecting the number of devices you want a quote for and clicking ‘Send Request'](../../../../../.gitbook/assets/image-\(3594\).png)
+![Adding your email address, selecting the number of devices you want a quote for and clicking ‘Send Request'](/_images/image-(3594).png)
 
 4. On the **Request Sent** screen, click **Close**
 
-![Clicking ‘Close' on the ‘Request Sent' screen](../../../../../.gitbook/assets/image-\(3595\).png)
+![Clicking ‘Close' on the ‘Request Sent' screen](/_images/image-(3595).png)
 
 A member of our Sales Team will review your request and email the quote to you at the email address you have provided.
 
@@ -33,14 +33,14 @@ To request a quote for an Enterprise Premium subscription:
 1. Navigate to **Settings | Subscription**
 2. Click **Request a Quote** under **Enterprise Premium**
 
-![Clicking ‘Request a Quote' under ‘Enterprise Premium'](../../../../../.gitbook/assets/image-\(3596\).png)
+![Clicking ‘Request a Quote' under ‘Enterprise Premium'](/_images/image-(3596).png)
 
 3. On the **Enterprise Premium** screen, add your email address and select the number of devices you want a quote for, then click Send Request
 
-![Adding your email address, selecting the number of devices you want a quote for, then clicking ‘Send Request'](../../../../../.gitbook/assets/image-\(3597\).png)
+![Adding your email address, selecting the number of devices you want a quote for, then clicking ‘Send Request'](/_images/image-(3597).png)
 
 4. On the **Request Sent** screen, click **Close**
 
-![Clicking ‘Close' on the ‘Request Sent' screen](../../../../../.gitbook/assets/image-\(3598\).png)
+![Clicking ‘Close' on the ‘Request Sent' screen](/_images/image-(3598).png)
 
 A member of our Sales Team will review your request and email the quote to you at the email address you have provided.

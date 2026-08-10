@@ -10,11 +10,11 @@ ConfigMgr does not explicitly label an application as MSI-based. In most cases, 
 
 If the **Installation Program** contains both **msiexec** and a reference to a **.msi** file, the application can be considered MSI-based.
 
-![MSI-based app identified from the installation program](../../../.gitbook/assets/image-\(3819\).png)
+![MSI-based app identified from the installation program](/_images/image-(3819).png)
 
 During the migration deployment flow, the **Installer Type** field also indicates when an application is being treated as MSI-based.
 
-![MSI-based app shown in the deployment flow](../../../.gitbook/assets/image-\(3820\).png)
+![MSI-based app shown in the deployment flow](/_images/image-(3820).png)
 
 If an application is identified as MSI-based, as much existing metadata as possible is captured to support migration, drawing from both the ConfigMgr application and the MSI properties table.
 

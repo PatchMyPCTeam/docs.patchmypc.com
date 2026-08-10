@@ -10,7 +10,7 @@ _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Update
 
 The **Management Options** section allows you to control which running processes are evaluated for conflicting process management and configure the notification branding.
 
-![Management Options](../../../../.gitbook/assets/image-\(3981\).png)
+![Management Options](/_images/image-(3981).png)
 
 ## Manage process list
 
@@ -20,7 +20,7 @@ The default process list is populated automatically based on the processes defin
 
 You can add additional process names if your environment uses processes that should also be considered conflicting. You can also remove processes if required, although this is generally not recommended unless you are certain the process does not interfere with updates.
 
-![Manage process list](../../../../.gitbook/assets/image-\(3982\).png)
+![Manage process list](/_images/image-(3982).png)
 
 Use the process list to define which running executables are treated as conflicting during update installation.
 

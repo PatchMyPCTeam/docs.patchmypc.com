@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates_
 
 The **Show Applicability Rules** option displays the detection and applicability logic defined in the Patch My PC catalog for the selected WSUS update.
 
-![Show Applicability Rules](../../.gitbook/assets/image-\(78\).png)
+![Show Applicability Rules](/_images/image-(78).png)
 
 This view allows you to review the rules used to determine whether a software update is applicable, installed, or required on a client device. The rules shown are read directly from the catalog metadata and represent the same logic that is published to WSUS.
 
@@ -18,7 +18,7 @@ This view allows you to review the rules used to determine whether a software up
 
 When you select **Show Applicability Rules**, a window opens displaying the following sections for the selected update.
 
-![Applpicability Rules](../../.gitbook/assets/image-\(79\).png)
+![Applpicability Rules](/_images/image-(79).png)
 
 * **Update Title**\
   Displays the full update name as defined in the catalog.
@@ -65,7 +65,7 @@ These elements are combined to build the full compliance logic.
 
 The example below shows the applicability logic (Is Installable Rule) for Google Earth Pro x64.
 
-![Applicability Rules Explained](../../.gitbook/assets/image-\(80\).png)
+![Applicability Rules Explained](/_images/image-(80).png)
 
 * The rule uses `bar:RegKeyLoop` to iterate through all subkeys under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall.`
 * The attribute `TrueIf="Any"` means the rule evaluates to true if any single uninstall entry matches the conditions inside the loop.

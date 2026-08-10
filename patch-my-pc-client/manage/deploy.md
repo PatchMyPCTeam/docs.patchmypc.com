@@ -6,14 +6,14 @@ To deploy the Patch my PC (PMPC) Client:
 
 1. Navigate to **Settings | Deploy Client**
 
-![Navigating to 'Settings | Deploy Client'](../../.gitbook/assets/image-\(593\).png)
+![Navigating to 'Settings | Deploy Client'](/_images/image-(593).png)
 
 The **Deploy Client** screen is shown, which is split into two sections:
 
 * **Preview Version Deployment –** Shows details of the preview version of our Client and which Entra ID groups it is targeted to (if relevant).
 * **Production Version Deployment -** Shows details of the production version of our Client and which Entra ID groups it is targeted to (if relevant).
 
-!['Deploy Client Deployment' screen](../../.gitbook/assets/image-\(594\).png)
+!['Deploy Client Deployment' screen](/_images/image-(594).png)
 
 2. To deploy the Client (**Preview** or **Production**), click the **Groups** dropdown and select the relevant Entra ID group(s) you want to deploy the Client to.
 
@@ -27,19 +27,19 @@ The **Deploy Client** screen is shown, which is split into two sections:
 >
 > \* You do not have the same devices in the Entra ID groups being used to target the installation of the Preview and Production versions of the Client.
 
-![Selecting the Entra ID Group(s) you want to deploy the client to](../../.gitbook/assets/image-\(595\).png)
+![Selecting the Entra ID Group(s) you want to deploy the client to](/_images/image-(595).png)
 
 3. Click **Save**
 
-![Clicking 'Save'](../../.gitbook/assets/image-\(596\).png)
+![Clicking 'Save'](/_images/image-(596).png)
 
 The **Success - Created** notification is shown.
 
-!['Success – Created' notification](../../.gitbook/assets/image-\(603\).png)
+!['Success – Created' notification](/_images/image-(603).png)
 
 Once the Win32 app for the Client has been created in Intune, the status updates to **Success** and the Client will be deployed to the targeted devices.
 
-![Client deployed successfully](../../.gitbook/assets/image-\(592\).png)
+![Client deployed successfully](/_images/image-(592).png)
 
 As the Client is installed on the targeted devices, the number of **Devices Managed** shown in the **Dashboard** will increase.
 

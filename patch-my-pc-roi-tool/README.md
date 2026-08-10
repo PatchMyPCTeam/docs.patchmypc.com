@@ -8,7 +8,7 @@ The Patch My PC Return on Investment (ROI) tool helps identify the products supp
 >
 > At this time, the ROI Tool does not support Intune scanning for GCC High and DoD tenants
 
-![](../.gitbook/assets/image-\(1980\).png)
+![](/_images/image-(1980).png)
 
 ## Download
 
@@ -60,7 +60,7 @@ When you choose **Scan ConfigMgr**, the tool queries the below local WMI classes
 
 Assuming the permissions required below are satisfied, running the tool will allow the user to click on the Scan Intune or Scan ConfigMgr buttons:
 
-![](<../.gitbook/assets/ROITool (1).gif>)
+![](/_images/ROITool-(1).gif>)
 
 The interface will update dynamically as the tool runs, showing progress as it scans all inventory. In testing the tool requires around 1 minute for every 5,000 clients.
 
@@ -83,7 +83,7 @@ This section will detail what permissions are required to run the ROI tool in yo
 
 To scan Intune you must accept the application's request to read your Intune data. The account approving the request must have at least the "**Application Administrator"** role in azure. The Tool's access to this data will only persist for as long as you keep your session open (1 hour max).
 
-![](../.gitbook/assets/image-\(1983\).png)
+![](/_images/image-(1983).png)
 
 > \*\*Note\*\*
 >
@@ -99,7 +99,7 @@ To scan Intune you must accept the application's request to read your Intune dat
 
 Once the app registration is approved, subsequent executions will ask for a run-as account only. This account requires, as a minimum, Intune **DeviceManagementManagedDevices.Read.All** rights.
 
-![](../.gitbook/assets/image-\(1981\).png)
+![](/_images/image-(1981).png)
 
 ### Configuration Manager
 

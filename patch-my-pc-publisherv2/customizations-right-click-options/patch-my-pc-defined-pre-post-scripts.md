@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 Patch My PC defined pre and post scripts are provided for specific products that cannot fully manage certain scenarios on their own. A common example is software that is unable to remove older versions during an upgrade, such as Oracle Java.
 
-![Patch My PC Defined Pre/Post Scripts](../../.gitbook/assets/image-\(4003\).png)
+![Patch My PC Defined Pre/Post Scripts](/_images/image-(4003).png)
 
 These scripts are downloaded and bundled automatically with the application or update when it is published.
 
@@ -20,7 +20,7 @@ Required Scripts are enforced and cannot be modified or disabled. They are alway
 
 Recommended Scripts are optional. They are included with the application or update but can be disabled if you prefer not to use them.
 
-![Recommended Scripts](../../.gitbook/assets/image-\(4004\).png)
+![Recommended Scripts](/_images/image-(4004).png)
 
 ### Review the Recommended Script
 

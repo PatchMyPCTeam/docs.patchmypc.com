@@ -199,16 +199,16 @@ You can see the script being processed by the Intune Management Extension by loo
 
 Observe the **Proactive Remediation Device Status** blade.
 
-![Observing the "Proactive Remediation Device Status" blade.](../../../.gitbook/assets/image-\(1351\).png)
+![Observing the "Proactive Remediation Device Status" blade.](/_images/image-(1351).png)
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script found the certificate already installed in the local computer’s Trusted Publishers store.
 
-!["HealthScripts.log" snippet showing if the pre-remediation (detection) script has found the certificate already installed in the local machine's Trusted Publishers store.](../../../.gitbook/assets/image-\(1352\).png)
+!["HealthScripts.log" snippet showing if the pre-remediation (detection) script has found the certificate already installed in the local machine's Trusted Publishers store.](/_images/image-(1352.log\" snippet showing if the pre-remediation (detection "\"HealthScripts.log\" snippet showing if the pre-remediation (detection) script has found the certificate already installed in the local machine's Trusted Publishers store.") script has found the certificate already installed in the local machine's Trusted Publishers store.").png)
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script did not find the certificate already installed in the local machine’s Trusted Publishers store (the Exit code of the script is **1**).
 
-!["HealthScripts.log" snippet showing if the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store (the Exit code of the script is 1).](../../../.gitbook/assets/image-\(1353\).png)
+!["HealthScripts.log" snippet showing if the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store (the Exit code of the script is 1).](/_images/image-(1353.log\" snippet showing if the pre-remediation (detection "\"HealthScripts.log\" snippet showing if the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store (the Exit code of the script is 1).") script did not find the certificate already installed in the local machine's Trusted Publishers store (the Exit code of the script is 1).").png)
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script did not find the certificate already installed in the local machine’s Trusted Publishers store and the remediation script was run successfully (Exit code of the script is **0**).
 
-!["HealthScripts.log" snippet showing the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0).](../../../.gitbook/assets/image-\(1354\).png)
+!["HealthScripts.log" snippet showing the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0).](/_images/image-(1354.log\" snippet showing the pre-remediation (detection "\"HealthScripts.log\" snippet showing the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0).") script did not find the certificate already installed in the local machine's Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0).").png)

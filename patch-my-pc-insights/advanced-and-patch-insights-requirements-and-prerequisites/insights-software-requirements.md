@@ -28,9 +28,9 @@ _Applies to: Patch My PC Advanced and Patch Insights_
 
 The following is an example of 'OPTIONS' HTTP Verb **'Not allowed'** This configuration will prevent the Advanced Insights install from completing successfully.
 
-![](<../../.gitbook/assets/vmconnect_OBXSaNs8bz (1).png>)
+![](/_images/vmconnect_OBXSaNs8bz-(1).png>)
 
-![](<../../.gitbook/assets/vmconnect_4TA8FfVlNk (1).png>)
+![](/_images/vmconnect_4TA8FfVlNk-(1).png>)
 
 > If 'OPTIONS' HTTP verb is present at the IIS Server level and \*\*'Allowed'\*\* value set to \*\*'False',\*\* remove this item and re-run the Advanced Insights installer.
 >
