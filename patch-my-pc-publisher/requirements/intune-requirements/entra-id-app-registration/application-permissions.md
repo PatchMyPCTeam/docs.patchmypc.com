@@ -8,25 +8,21 @@ The table below lists the required and optional permissions, along with an expla
 
 <table data-search="true"><thead><tr><th valign="top">Permission</th><th valign="top">Description</th><th valign="top">Used For</th></tr></thead><tbody><tr><td valign="top">DeviceManagementApps.ReadWrite.All</td><td valign="top">Read and write Intune applications</td><td valign="top">Create, update, and manage Win32 applications</td></tr><tr><td valign="top">DeviceManagementConfiguration.Read.All</td><td valign="top">Read Intune configuration data</td><td valign="top">Read assignment filter properties</td></tr><tr><td valign="top">DeviceManagementManagedDevices.Read.All</td><td valign="top">Read managed device information</td><td valign="top">Device inventory used by auto-publishing logic</td></tr><tr><td valign="top">DeviceManagementRBAC.Read.All</td><td valign="top">Read role-based access control information</td><td valign="top">Read scope tags and RBAC assignments</td></tr><tr><td valign="top">DeviceManagementServiceConfig.ReadWrite.All</td><td valign="top">Read and write Intune service configuration</td><td valign="top">Manage Enrollment Status Page (ESP) settings</td></tr><tr><td valign="top">GroupMember.Read.All</td><td valign="top">Read group memberships</td><td valign="top">Assign applications to Entra ID groups</td></tr></tbody></table>
 
-{% hint style="danger" %}
-**Important**
-
-The **DeviceManagementServiceConfig.ReadWrite.All** permission is required to manage blocking apps in the Enrollment Status Page (ESP). This is the only feature in Publisher that relies on this permission.
-
-Although we understand this permission may appear broad, Microsoft does not currently provide a more granular Graph permission for updating the blocking apps configuration within ESP profiles.
-
-If you revoke this permission from the app registration application, Publisher will no longer be able to manage or keep ESP blocking apps up to date in Intune.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>The **DeviceManagementServiceConfig.ReadWrite.All** permission is required to manage blocking apps in the Enrollment Status Page (ESP). This is the only feature in Publisher that relies on this permission.</p>
+<p>Although we understand this permission may appear broad, Microsoft does not currently provide a more granular Graph permission for updating the blocking apps configuration within ESP profiles.</p>
+<p>If you revoke this permission from the app registration application, Publisher will no longer be able to manage or keep ESP blocking apps up to date in Intune.</p>
+</blockquote>
 
 These permissions are not strictly required for publishing, but improve the user experience within the Publisher UI.
 
 <table><thead><tr><th width="169.55560302734375" valign="top">Permission</th><th valign="top">Description</th><th valign="top">Used For</th></tr></thead><tbody><tr><td valign="top">User.ReadBasic.All</td><td valign="top">Read basic user profile information</td><td valign="top">Display user names when resolving group members</td></tr><tr><td valign="top">Device.Read.All</td><td valign="top">Read device properties</td><td valign="top">Display device names when resolving group members</td></tr></tbody></table>
 
-{% hint style="info" %}
-**Note**
-
-Although Publisher can detect that groups contain members, without the optional permissions above, Publisher cannot resolve those members into readable user or device names in any group picker interface.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Although Publisher can detect that groups contain members, without the optional permissions above, Publisher cannot resolve those members into readable user or device names in any group picker interface.</p>
+</blockquote>
 
 ## Add API Permissions
 
@@ -38,7 +34,7 @@ To add the required Microsoft Graph **Application permissions** to the Entra ID 
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-<figure><img src="../../../../.gitbook/assets/image (394).png" alt="Add an API Permission" width="563"><figcaption></figcaption></figure>
+![Add an API Permission](/_images/image-(394).png "Add an API Permission")
 
 6. In the **Request API permissions** pane, choose **Microsoft Graph**.
 7. Select **Application permissions** (not Delegated permissions).
@@ -56,14 +52,13 @@ To add the required Microsoft Graph **Application permissions** to the Entra ID 
 9. Select **Add permissions** to apply the selected permissions.
 10. Select **Grant admin consent** and confirm the prompt to approve the permissions.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (395).png" alt="Grant admin consent" width="563"><figcaption></figcaption></figure>
+    ![Grant admin consent](/_images/image-(395).png "Grant admin consent")
 
 The image below reflects the required, granted, permissions.
 
-<figure><img src="../../../../.gitbook/assets/image (396).png" alt="Granted API Permissions" width="563"><figcaption></figcaption></figure>
+![Granted API Permissions](/_images/image-(396).png "Granted API Permissions")
 
-{% hint style="info" %}
-**Note**
-
-Granting admin consent requires an account with sufficient privileges, such as **Global Administrator** or **Privileged Role Administrator**. Until admin consent is granted, Publisher will be unable to authenticate successfully or perform Intune operations.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Granting admin consent requires an account with sufficient privileges, such as **Global Administrator** or **Privileged Role Administrator**. Until admin consent is granted, Publisher will be unable to authenticate successfully or perform Intune operations.</p>
+</blockquote>

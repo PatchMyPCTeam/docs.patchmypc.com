@@ -1,16 +1,16 @@
 # App Update Mode & Retention option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Vendor, Product_\
+_Available at level: Vendor, Product_
+\
 _Available on tab: ConfigMgr Apps_
 
 The **App Update Mode & Retention** right-click option in Patch My PC (PMPC) Publisher allows you to override the global Microsoft ConfigMgr application behavior for a specific vendor or individual product.
 
-{% hint style="info" %}
-**Note**
-
-Global behavior for application updates and retention is configured under the [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) section of the [Base Install Options](../../manage/configmgr-apps-tab/base-install-options/) tab.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Global behavior for application updates and retention is configured under the [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) section of the [Base Install Options](../../manage/configmgr-apps-tab/base-install-options/) tab.</p>
+</blockquote>
 
 ## When Overrides Are Useful
 
@@ -30,7 +30,7 @@ To configure **Application Update Mode**:
    \
    The **ConfigMgr Application Retention Options** dialog appears.
 
-<figure><img src="../../../.gitbook/assets/image (4794).png" alt="&#x27;ConfigMgr Application Retention Options&#x27; dialog appears." width="333"><figcaption></figcaption></figure>
+!['ConfigMgr Application Retention Options' dialog appears.](/_images/image-(4794).png "&#x27;ConfigMgr Application Retention Options&#x27; dialog appears.")
 
 2. Under **Application Update Mode**, choose one of the following:
    1. **Create a new application** to publish each new version as a separate ConfigMgr application.
@@ -45,8 +45,7 @@ To configure **Application Update Mode**:
 
 The override is evaluated and applied during the next Publisher [synchronization](../../manage/sync-schedule-tab/) and affects only the selected vendor or product.
 
-{% hint style="info" %}
-**Note**
-
-See [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) for more details about Application and Retention Settings.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) for more details about Application and Retention Settings.</p>
+</blockquote>

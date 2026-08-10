@@ -6,25 +6,19 @@ Patch My PC (PMPC) Publisher can be installed on either a Microsoft Windows clie
 
 However, even in Intune-only scenarios, particularly when Publisher is installed on a Windows client operating system, specific WSUS components are still required. These components provide the WSUS API functionality needed to process and deserialize the update catalog format used by Patch My PC.
 
-{% hint style="success" %}
-**Tip**
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>Some organizations have strict security or operational requirements mandating the use of Publisher instead of Patch My PC Cloud, or require separation of duties between Intune and ConfigMgr/WSUS administration teams.</p>
+<p>In these cases, it is fully supported to deploy a separate instance of Publisher dedicated solely to Intune publishing, even if another Publisher instance already exists for WSUS or ConfigMgr.&#x20;</p>
+<p>This approach aligns with least-privilege principles, allowing permissions, credentials, and administrative access to be scoped specifically to the Intune publishing workflow.</p>
+</blockquote>
 
-Some organizations have strict security or operational requirements mandating the use of Publisher instead of Patch My PC Cloud, or require separation of duties between Intune and ConfigMgr/WSUS administration teams.
-
-In these cases, it is fully supported to deploy a separate instance of Publisher dedicated solely to Intune publishing, even if another Publisher instance already exists for WSUS or ConfigMgr.&#x20;
-
-This approach aligns with least-privilege principles, allowing permissions, credentials, and administrative access to be scoped specifically to the Intune publishing workflow.
-{% endhint %}
-
-{% hint style="danger" %}
-**Important**
-
-Publisher does not need to be installed on each device receiving apps or updates from Intune.
-
-Publisher is used only to publish apps and updates into Intune. Once published, delivery, installation, and enforcement on client devices is handled entirely by the Intune Management Extension (IME), which is already automatically installed on Intune-managed Windows devices.
-
-Installing Publisher on individual client devices is not required and provides no benefit for app or update deployment.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Publisher does not need to be installed on each device receiving apps or updates from Intune.</p>
+<p>Publisher is used only to publish apps and updates into Intune. Once published, delivery, installation, and enforcement on client devices is handled entirely by the Intune Management Extension (IME), which is already automatically installed on Intune-managed Windows devices.</p>
+<p>Installing Publisher on individual client devices is not required and provides no benefit for app or update deployment.</p>
+</blockquote>
 
 ## Windows Server Operating System
 
@@ -53,7 +47,7 @@ Get-WindowsFeature UpdateServices-API
 
 The feature should show as **Installed**.
 
-<figure><img src="../../../.gitbook/assets/image (389).png" alt="Get-WindowsFeature UpdateServices-API" width="563"><figcaption></figcaption></figure>
+![Get-WindowsFeature UpdateServices-API](/_images/image-(389).png "Get-WindowsFeature UpdateServices-API")
 
 ## Windows Client Operating System
 
@@ -61,7 +55,7 @@ When installing Publisher on a Windows 11 device (typical for Intune-only publis
 
 If the RSAT tools are not installed, you will see the following message when [installing Publisher](../../install/installing.md).
 
-<figure><img src="../../../.gitbook/assets/image (390).png" alt="WSUS RSAT tools missing" width="272"><figcaption></figcaption></figure>
+![WSUS RSAT tools missing](/_images/image-(390).png "WSUS RSAT tools missing")
 
 The following steps explain how to install the required components for this scenario.
 
@@ -84,10 +78,9 @@ Get-WindowsCapability -Online -Name Rsat.WSUS.Tools~~~~0.0.1.0
 
 The output should show the capability state as **Installed**.
 
-<figure><img src="../../../.gitbook/assets/image (391).png" alt="Get-WindowsCapability -Online -Name Rsat.WSUS.Tools~~~~0.0.1.0" width="563"><figcaption></figcaption></figure>
+![Get-WindowsCapability -Online -Name Rsat.WSUS.Tools~~~~0.0.1.0](/_images/image-(391).png "Get-WindowsCapability -Online -Name Rsat.WSUS.Tools~~~~0.0.1.0")
 
-{% hint style="info" %}
-**Note**
-
-It is typical for the download and installation of the WSUS RSAT tools to take \~15 minutes. Review `C:\Windows\Logs\CBS\CBS.log` and `C:\Windows\Logs\DISM\dism.log` for the download and installation progress.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>It is typical for the download and installation of the WSUS RSAT tools to take \~15 minutes. Review `C:\Windows\Logs\CBS\CBS.log` and `C:\Windows\Logs\DISM\dism.log` for the download and installation progress.</p>
+</blockquote>

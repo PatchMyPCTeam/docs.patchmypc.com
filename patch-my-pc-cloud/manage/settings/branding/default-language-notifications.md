@@ -15,15 +15,30 @@ The following is a list of the default localization settings for a Patch My PC (
 
 ### Install tab <a href="#cinstall" id="cinstall"></a>
 
-<table><thead><tr><th width="166.77777099609375">Field</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>%OrganizationName% requires the install of %ProductName%.</td></tr><tr><td>Main Text</td><td>To ensure files aren't in use during the install, %ProductName% needs to be closed. Please save your work and close the application to proceed with the install.</td></tr><tr><td>Defer Policy Count</td><td>You can postpone the install for up to %DeferralCount% time(s).</td></tr><tr><td>Defer Policy Date</td><td>You can postpone the install until<br>%DeferralDate%.</td></tr><tr><td>Default to Defer</td><td>If no action is taken before the timer expires the install for %ProductName% will be deferred.</td></tr><tr><td>Default to Proceed</td><td>%ProductName% will automatically close when the timer expires to complete the install.</td></tr></tbody></table>
+<table><thead><tr><th width="166.77777099609375">Field</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>%OrganizationName%
+ requires the install of %ProductName%
+.</td></tr><tr><td>Main Text</td><td>To ensure files aren't in use during the install,
+ %ProductName%
+ needs to be closed. Please save your work and close the application to proceed with the install.</td></tr><tr><td>Defer Policy Count</td><td>You can postpone the install for up to
+ %DeferralCount% time(s).</td></tr><tr><td>Defer Policy Date</td><td>You can postpone the install until
+<br>%DeferralDate%
+.</td></tr><tr><td>Default to Defer</td><td>If no action is taken before the timer expires the install for %ProductName% will be deferred.</td></tr><tr><td>Default to Proceed</td><td>%ProductName%
+ will automatically close when the timer expires to complete the install.</td></tr></tbody></table>
 
 ### Uninstall Tab <a href="#cuninstall" id="cuninstall"></a>
 
-<table><thead><tr><th width="166.77777099609375">Field</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>%OrganizationName% requires the uninstall of %ProductName%.</td></tr><tr><td>Main Text</td><td>To ensure files aren't in use during the uninstall, %ProductName% needs to be closed. Please save your work and close the application to proceed with the uninstall.</td></tr><tr><td>Defer Policy Count</td><td>You can postpone the uninstall for up to %DeferralCount% time(s).</td></tr><tr><td>Defer Policy Date</td><td>You can postpone the uninstall until %DeferralDate%.</td></tr><tr><td>Default to Defer</td><td>If no action is taken before the timer expires the uninstall for %ProductName% will be deferred.</td></tr><tr><td>Default to Proceed</td><td>%ProductName% will automatically close when the timer expires to complete the uninstall.</td></tr></tbody></table>
+<table><thead><tr><th width="166.77777099609375">Field</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>%OrganizationName%
+ requires the uninstall of %ProductName%
+.</td></tr><tr><td>Main Text</td><td>To ensure files aren't in use during the uninstall,
+ %ProductName% needs to be closed. Please save your work and close the application to proceed with the uninstall.</td></tr><tr><td>Defer Policy Count</td><td>You can postpone the uninstall for up to %DeferralCount% time(s).</td></tr><tr><td>Defer Policy Date</td><td>You can postpone the uninstall until %DeferralDate%.</td></tr><tr><td>Default to Defer</td><td>If no action is taken before the timer expires the uninstall for %ProductName% will be deferred.</td></tr><tr><td>Default to Proceed</td><td>%ProductName%
+ will automatically close when the timer expires to complete the uninstall.</td></tr></tbody></table>
 
 ### Update Tab <a href="#cupdate" id="cupdate"></a>
 
-<table><thead><tr><th width="166.77777099609375">Field</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>%OrganizationName% requires an update for %ProductName%.</td></tr><tr><td>Main Text</td><td>To ensure files aren't in use during the update, %ProductName% needs to be closed. Please save your work and close the application to proceed with the update.</td></tr><tr><td>Defer Policy Count</td><td>You can postpone the update up to %DeferralCount% time(s).</td></tr><tr><td>Defer Policy Date</td><td>You can postpone the update until %DeferralDate%.</td></tr><tr><td>Default to Defer</td><td>If no action is taken before the timer expires the update for %ProductName% will be deferred.</td></tr><tr><td>Default to Proceed</td><td>%ProductName% will automatically close when the timer expires to complete the update.</td></tr></tbody></table>
+<table><thead><tr><th width="166.77777099609375">Field</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>%OrganizationName% requires an update for
+ %ProductName%.</td></tr><tr><td>Main Text</td><td>To ensure files aren't in use during the update, %ProductName% needs to be closed. Please save your work and close the application to proceed with the update.</td></tr><tr><td>Defer Policy Count</td><td>You can postpone the update up to %DeferralCount% time(s).</td></tr><tr><td>Defer Policy Date</td><td>You can postpone the update until
+ %DeferralDate%.</td></tr><tr><td>Default to Defer</td><td>If no action is taken before the timer expires the update for %ProductName% will be deferred.</td></tr><tr><td>Default to Proceed</td><td>%ProductName%
+ will automatically close when the timer expires to complete the update.</td></tr></tbody></table>
 
 ## Modern (PSADT) Branding
 

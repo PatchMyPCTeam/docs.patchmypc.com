@@ -6,17 +6,16 @@ _Applies to: Patch My PC Cloud_
 
 I have signed into the Patch My PC (PMPC) Cloud portal, but I don’t see the **Notifications** node under **Settings**.
 
-<figure><img src="../../../.gitbook/assets/image (2272).png" alt="No &#x22;Branding&#x22; node"><figcaption></figcaption></figure>
+![No "Branding" node](/_images/image-(2272).png "No &#x22;Branding&#x22; node")
 
 ### CAUSE
 
 This is because your portal is not connected to an Intune tenant.
 
-{% hint style="info" %}
-**Note**
-
-Not having an Intune tenant connected will also prevent the **Branding** node from appearing.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Not having an Intune tenant connected will also prevent the **Branding** node from appearing.</p>
+</blockquote>
 
 ### RESOLUTION
 
@@ -24,4 +23,4 @@ To resolve this issue, follow the [Connecting to an Intune tenant](/broken/pages
 
 Once your portal has been connected to an Intune tenant you will see the **Notifications** node.
 
-<figure><img src="../../../.gitbook/assets/image (2274).png" alt="&#x22;Notifications&#x22; node is now visible"><figcaption></figcaption></figure>
+!["Notifications" node is now visible](/_images/image-(2274).png "&#x22;Notifications&#x22; node is now visible")

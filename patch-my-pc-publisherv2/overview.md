@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 Patch My PC Publisher is an on-premises publishing service that automates the creation, update, and lifecycle management of third-party applications and updates for Microsoft management platforms.
 
-<figure><img src="../.gitbook/assets/image (4231).png" alt="Patch My PC Publisher" width="563"><figcaption></figcaption></figure>
+![Patch My PC Publisher](/_images/image-(4231).png "Patch My PC Publisher")
 
 The Publisher integrates with:
 
@@ -56,15 +56,13 @@ At a high level, the workflow is:
    * Publishes to WSUS, ConfigMgr, and/or Intune
 4. The management platform then distributes the update or application to client devices using its native mechanisms.
 
-<figure><img src="../.gitbook/assets/image (4187).png" alt="How the Publisher Works" width="563"><figcaption></figcaption></figure>
+![How the Publisher Works](/_images/image-(4187).png "How the Publisher Works")
 
-{% hint style="success" %}
-**Tip**
-
-The Publisher is installed on a Windows device and operates within your existing infrastructure and security boundaries.
-
-If you are soley publishing to Intune, we recommend our SaaS based solution, [Patch My PC Cloud](https://portal.patchmypc.com/).
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>The Publisher is installed on a Windows device and operates within your existing infrastructure and security boundaries.</p>
+<p>If you are soley publishing to Intune, we recommend our SaaS based solution, <a href="https://portal.patchmypc.com/">Patch My PC Cloud</a>.</p>
+</blockquote>
 
 ## Next Steps
 

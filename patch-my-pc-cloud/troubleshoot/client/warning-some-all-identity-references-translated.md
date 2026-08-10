@@ -6,11 +6,16 @@ _Applies to: Patch My PC Client_
 
 Why do I see warnings like the following every 24 hours in the Patch My PC Client log (**C:\ProgramData\PatchMyPC\Logs\Client.log**):
 
-`WARNING: Some or all identity references could not be translated.`\
-`Exception: System.Security.Principal.IdentityNotMappedException: Some or all identity references could not be translated.`\
-`at System.Security.Principal.SecurityIdentifier.Translate(IdentityReferenceCollection sourceSids, Type targetType, Boolean forceSuccess)`\
-`at System.Security.Principal.SecurityIdentifier.Translate(Type targetType)`\
-`at PatchMyPC.Agent.Modules.DeviceInventory.Providers.Windows.ComputedInventory.UserProfileProvider.GetAccountName(String sid) in D:\a\1\s\Modules\PatchMyPC.Agent.Modules.DeviceInventory\Providers\Windows\ComputedInventory\UserProfileProvider.cs:line 66 PatchMyPC.Agent.Modules.DeviceInventory, Version=1.0.50.19, Culture=neutral, PublicKeyToken=null 10/17/2025 8:28:42 AM 16 (0x0010)`\
+`WARNING: Some or all identity references could not be translated.`
+\
+`Exception: System.Security.Principal.IdentityNotMappedException: Some or all identity references could not be translated.`
+\
+`at System.Security.Principal.SecurityIdentifier.Translate(IdentityReferenceCollection sourceSids, Type targetType, Boolean forceSuccess)`
+\
+`at System.Security.Principal.SecurityIdentifier.Translate(Type targetType)`
+\
+`at PatchMyPC.Agent.Modules.DeviceInventory.Providers.Windows.ComputedInventory.UserProfileProvider.GetAccountName(String sid) in D:\a\1\s\Modules\PatchMyPC.Agent.Modules.DeviceInventory\Providers\Windows\ComputedInventory\UserProfileProvider.cs:line 66 PatchMyPC.Agent.Modules.DeviceInventory, Version=1.0.50.19, Culture=neutral, PublicKeyToken=null 10/17/2025 8:28:42 AM 16 (0x0010)`
+\
 `llationToken cancellationToken) in D:\a\1\s\Modules\PatchMyPC.Agent.Modules.StateManagement\Communicat`i`ons\WebApiStateChannel.cs:line 54`
 
 ## CAUSE

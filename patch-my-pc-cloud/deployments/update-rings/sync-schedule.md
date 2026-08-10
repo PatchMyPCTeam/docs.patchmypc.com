@@ -17,11 +17,10 @@ Also:
 * The Sync Schedule evaluates your Update Rings. When a ring’s configured Days Delay has been reached, the assignments for that ring are created.
 * As Update Rings are evaluated only during the Sync Schedule, the frequency of your sync sets the minimum pace at which the rings can progress. For example, if your Sync Schedule runs weekly, the Update Rings cannot move faster than a weekly cadence.
 
-{% hint style="info" %}
-**Note**
-
-If you want Update Rings to be evaluated more frequently, but prefer a slower schedule for packaging new versions, you can support this request by upvoting [Update rings independent of sync schedule](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-5986) on our UserVoice page.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If you want Update Rings to be evaluated more frequently, but prefer a slower schedule for packaging new versions, you can support this request by upvoting <a href="https://ideas.patchmypc.com/ideas/PATCHMYPC-I-5986">Update rings independent of sync schedule</a> on our UserVoice page.</p>
+</blockquote>
 
 * If you create your Update Rings with an **Immediate** start time, the Sync Schedule configuration only impacts the daily update of the rings and their assignments (promotion to the new version).
 * If you create your Update Rings with the **Delayed** start time, the Sync Schedule configuration impacts both the initial creation of the rings and the daily update of their assignments (promotion to the new version). For example, you create a deployment with two Update Rings with the default two-day delay between them. The first ring will be created when you deploy the software. The second ring won’t be created until two days have passed since the time the deployment was created and the next Sync Schedule run.

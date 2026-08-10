@@ -1,18 +1,19 @@
 # Manage Application Updates and Retention
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: Vendor, Product_\
+_Available at level: Vendor, Product_
+\
 _Available on tab: ConfigMgr Apps_
 
 ## Overview
 
 Manage Application Updates and Retention allows you to override the global ConfigMgr application behavior for a specific vendor or individual product.
 
-<figure><img src="../../.gitbook/assets/image (4055).png" alt="Manage Application Updates and Retention" width="563"><figcaption></figcaption></figure>
+![Manage Application Updates and Retention](/_images/image-(4055).png "Manage Application Updates and Retention")
 
 Global behavior for application updates and retention is configured on the [ConfigMgr Apps](../administration/configmgr-apps/) tab by clicking [Options](../administration/configmgr-apps/options/). These settings define how new application versions are handled, whether applications are updated in place or created as new applications, and how many previous versions are retained.
 
-<figure><img src="../../.gitbook/assets/image (4056).png" alt="ConfigMgr Apps Options" width="563"><figcaption></figcaption></figure>
+![ConfigMgr Apps Options](/_images/image-(4056).png "ConfigMgr Apps Options")
 
 In some cases, a one size fits all approach is not ideal. This option allows you to customize update and retention behavior at the vendor or product level without changing your global defaults.
 
@@ -28,7 +29,7 @@ By configuring a product level override, you can retain more versions for specif
 
 Overrides configured here take precedence over the global options defined on the ConfigMgr Apps tab and are applied only to the selected vendor or product during publishing.
 
-<figure><img src="../../.gitbook/assets/image (4057).png" alt="ConfigMgr Application Retention Options Override" width="338"><figcaption></figcaption></figure>
+![ConfigMgr Application Retention Options Override](/_images/image-(4057).png "ConfigMgr Application Retention Options Override")
 
 To Configure Application Update Mode:
 
@@ -50,8 +51,7 @@ To confiure Application Retention Settings:
 
 The override is evaluated and applied during the next Publisher [synchronization](../administration/sync-schedule.md) and affects only the selected vendor or product.
 
-{% hint style="info" %}
-Note
-
-For more details about Application and Retention Settings, use the [ConfigMgr Apps Global Options page](../administration/configmgr-apps/options/application-creation-options.md) for reference.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>Note</p>
+<p>For more details about Application and Retention Settings, use the [ConfigMgr Apps Global Options page](../administration/configmgr-apps/options/application-creation-options.md) for reference.</p>
+</blockquote>

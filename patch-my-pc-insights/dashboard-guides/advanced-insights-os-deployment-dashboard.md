@@ -4,7 +4,7 @@ description: Tracking Task Sequence execution
 
 # Advanced Insights "OS Deployment" Dashboard
 
-<figure><img src="../../.gitbook/assets/image (4788).png" alt=""><figcaption><p>OS Deployment Dashboard</p></figcaption></figure>
+![](/_images/image-(4788).png "OS Deployment Dashboard")
 
 The Advanced Insights OS Deployment Dashboard helps you track Task Sequence performance and status over time. The default view shows two week's execution hitory for all Task Sequences with Boot Media assosicated to them. Thje timescale can be extended using the calendar picker.
 
@@ -12,7 +12,7 @@ The OS Deployment Activity chart shows a breakdown of execution time, and status
 
 The OS Deployment Activity table lists each device built, completion time and status. Clicking any individual machine takes you to the Device View OSD Tab. This view shows the status for each task completed during the Task Sequence execution on that device.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4789).png" alt=""><figcaption><p>Device view showing OS Deployment Activity</p></figcaption></figure>
+![](/_images/image-(4789).png "Device view showing OS Deployment Activity")
 
 Where a task has additional script output, the info icon shows the verbose script output.&#x20;
 

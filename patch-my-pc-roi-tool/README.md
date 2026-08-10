@@ -4,13 +4,12 @@ Official product documentation for the Patch My PC Return on Investment Tool
 
 The Patch My PC Return on Investment (ROI) tool helps identify the products supported in the current Patch My PC catalog that are in use in your environment.
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>At this time, the ROI Tool does not support Intune scanning for GCC High and DoD tenants</p>
+</blockquote>
 
-At this time, the ROI Tool does not support Intune scanning for GCC High and DoD tenants
-{% endhint %}
-
-<figure><img src="../.gitbook/assets/image (1980).png" alt=""><figcaption></figcaption></figure>
+![](/_images/image-(1980).png)
 
 ## Download
 
@@ -62,7 +61,7 @@ When you choose **Scan ConfigMgr**, the tool queries the below local WMI classes
 
 Assuming the permissions required below are satisfied, running the tool will allow the user to click on the Scan Intune or Scan ConfigMgr buttons:
 
-<figure><img src="../.gitbook/assets/ROITool.gif" alt=""><figcaption><p>The ROI Tool Scanning Configuration Manager</p></figcaption></figure>
+![](/_images/ROITool.gif)
 
 The interface will update dynamically as the tool runs, showing progress as it scans all inventory. In testing the tool requires around 1 minute for every 5,000 clients.
 
@@ -85,31 +84,26 @@ This section will detail what permissions are required to run the ROI tool in yo
 
 To scan Intune you must accept the application's request to read your Intune data. The account approving the request must have at least the "**Application Administrator"** role in azure. The Tool's access to this data will only persist for as long as you keep your session open (1 hour max).
 
-<figure><img src="../.gitbook/assets/image (1983).png" alt=""><figcaption><p>App registration approval request</p></figcaption></figure>
+![](/_images/image-(1983).png "App registration approval request")
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>You do not need to check the optional **Consent on behalf of your organization** checkbox, which is only visible to Global or Application administrators.</p>
+<p>However, if you are a Global or Application administrator and want to accept the request to read the profile for all users in your tenant and prevent this message from being displayed for them, you should check it.</p>
+<p>Either way, checking or unchecking this checkbox does not affect the ROI tool functionality.</p>
+<p>Once you accept the permissions, you will not see this dialog box again on subsequent sign-ins.</p>
+</blockquote>
 
-You do not need to check the optional **Consent on behalf of your organization** checkbox, which is only visible to Global or Application administrators.
-
-However, if you are a Global or Application administrator and want to accept the request to read the profile for all users in your tenant and prevent this message from being displayed for them, you should check it.
-
-Either way, checking or unchecking this checkbox does not affect the ROI tool functionality.
-
-Once you accept the permissions, you will not see this dialog box again on subsequent sign-ins.
-{% endhint %}
-
-{% hint style="success" %}
-You can click the down arrow beside each permission to get more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>You can click the down arrow beside each permission to get more information.</p>
+</blockquote>
 
 Once the app registration is approved, subsequent executions will ask for a run-as account only. This account requires, as a minimum, Intune **DeviceManagementManagedDevices.Read.All** rights.
 
-<figure><img src="../.gitbook/assets/image (1981).png" alt=""><figcaption><p>Executing the ROI tool once the app registration is complete</p></figcaption></figure>
+![](/_images/image-(1981).png "Executing the ROI tool once the app registration is complete")
 
 ### Configuration Manager
 
 * **Read-only Analyst**
 
 To scan Configuration Manager the tool **must be run on your SMS Provider Server.** By default, this will be your primary site or CAS. The account running the tool must have at least the **"Read-only Analyst"** role in Configuration Manager.
-

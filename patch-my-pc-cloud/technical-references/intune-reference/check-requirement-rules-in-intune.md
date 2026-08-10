@@ -7,20 +7,20 @@ If a Patch My PC (PMPC) Cloud Custom App or deployment has been configured to us
 1. Sign in to the **Intune admin center**
 2. Navigate to **Apps**
 
-<figure><img src="../../../.gitbook/assets/image (4257).png" alt="Navigating to ‘Apps’" width="563"><figcaption></figcaption></figure>
+![Navigating to ‘Apps'](/_images/image-(4257).png "Navigating to ‘Apps’")
 
 3. Navigate to **All Apps**
 
-<figure><img src="../../../.gitbook/assets/image (4258).png" alt="Navigating to ‘All Apps’" width="563"><figcaption></figcaption></figure>
+![Navigating to ‘All Apps'](/_images/image-(4258).png "Navigating to ‘All Apps’")
 
 4. Click the app if it’s shown in the results or search for it.
 
-<figure><img src="../../../.gitbook/assets/image (4259).png" alt="Clicking the app" width="563"><figcaption></figcaption></figure>
+![Clicking the app](/_images/image-(4259).png "Clicking the app")
 
 5. Navigate to **Manage | Properties**
 
-<figure><img src="../../../.gitbook/assets/image (4260).png" alt="Navigating to ‘Manage | Properties’" width="563"><figcaption></figcaption></figure>
+![Navigating to ‘Manage | Properties'](/_images/image-(4260).png "Navigating to ‘Manage | Properties’")
 
 6. Scroll down to **Requirements**, where any configured Requirement Rules are shown.
 
-<figure><img src="../../../.gitbook/assets/image (4261).png" alt="Any configured Requirement Rules" width="563"><figcaption></figcaption></figure>
+![Any configured Requirement Rules](/_images/image-(4261).png "Any configured Requirement Rules")

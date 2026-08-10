@@ -6,13 +6,12 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Cloud** tab connects the Publisher to Patch My PC Cloud. This connection enables Cloud based features such as Custom Apps and application migration from Configuration Manager to Intune.
 
-<figure><img src="../../.gitbook/assets/image (174).png" alt="Cloud Settings" width="545"><figcaption></figcaption></figure>
+![Cloud Settings](/_images/image-(174).png "Cloud Settings")
 
-{% hint style="warning" %}
-**Important**
-
-An account on [https://portal.patchmypc.com](https://portal.patchmypc.com/) is required to use Cloud features.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>An account on <a href="https://portal.patchmypc.com/">https://portal.patchmypc.com</a> is required to use Cloud features.</p>
+</blockquote>
 
 ## Cloud Connection
 
@@ -22,7 +21,7 @@ The Cloud connection links the on premises Publisher to Patch My PC Cloud. Once 
 
 The Connection Name configured in the Publisher is displayed in Patch My PC Cloud and is used to identify the associated Publisher instance. Using a descriptive name is recommended.
 
-<figure><img src="../../.gitbook/assets/image (169).png" alt="Connection Name" width="563"><figcaption></figcaption></figure>
+![Connection Name](/_images/image-(169).png "Connection Name")
 
 ### Connect
 
@@ -32,17 +31,16 @@ After a successful connection, the status changes to Connected and the Publisher
 
 See [**Add a Connection**](../../patch-my-pc-cloud/manage/settings/connections/add-connection.md) for detailed steps on connecting the Publisher to Patch My PC Cloud.
 
-{% hint style="warning" %}
-**Important**
-
-When selecting **Connect**, sign in using the same account that was used to create the Patch My PC Cloud company, or an account that has **Full Admin** privileges in Patch My PC Cloud. See [User Roles](../../patch-my-pc-cloud/manage/settings/users/user-roles-reference.md) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>When selecting **Connect**, sign in using the same account that was used to create the Patch My PC Cloud company, or an account that has **Full Admin** privileges in Patch My PC Cloud. See [User Roles](../../patch-my-pc-cloud/manage/settings/users/user-roles-reference.md) for more information.</p>
+</blockquote>
 
 #### Multiple Cloud Companies
 
 If the account used to sign in is associated with multiple Patch My PC Cloud companies, a selection window will appear.
 
-<figure><img src="../../.gitbook/assets/image (4140).png" alt="Select a Cloud Company" width="375"><figcaption></figcaption></figure>
+![Select a Cloud Company](/_images/image-(4140).png "Select a Cloud Company")
 
 Select the appropriate company from the list and click OK to complete the connection process.
 
@@ -67,13 +65,11 @@ See [Setting up Migration](../../patch-my-pc-cloud/migration/setting-migration.m
 
 When an app migration inventory runs, the Publisher saves the inventoried ConfigMgr results in the Publishing Service installation folder under the **Database** subfolder.
 
-<figure><img src="../../.gitbook/assets/image (168).png" alt="Migration Database" width="563"><figcaption></figcaption></figure>
+![Migration Database](/_images/image-(168).png "Migration Database")
 
 This folder contains two files. **AppMigration.db** stores the app migration inventory data and processing state. **existingApps.json** contains a JSON copy of the discovery data.
 
-{% hint style="warning" %}
-**Important**
-
-For reliability, consider exclude the **AppMigration.db** file from antivirus or endpoint protection scanning. This prevents the AppMigration.db file from being locked during scheduled scans, which can cause inventory or migration operations to fail.
-{% endhint %}
-
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>For reliability, consider exclude the **AppMigration.db** file from antivirus or endpoint protection scanning. This prevents the AppMigration.db file from being locked during scheduled scans, which can cause inventory or migration operations to fail.</p>
+</blockquote>

@@ -8,7 +8,7 @@ Why do I see the following message at the top of my screen when signing into the
 
 **You currently have only one user with Access Management privileges. To prevent access issues please add a second user with Access Management privileges.**
 
-<figure><img src="../../../.gitbook/assets/image (2460).png" alt="PMPC Portal showing the “You currently have only one user with Access Management privileges” message"><figcaption></figcaption></figure>
+![PMPC Portal showing the "You currently have only one user with Access Management privileges" message](/_images/image-(2460).png "PMPC Portal showing the “You currently have only one user with Access Management privileges” message")
 
 ### CAUSE
 

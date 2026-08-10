@@ -1,7 +1,8 @@
 # Override Win32 Options in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Vendor, Product_\
+_Available at level: Vendor, Product_
+\
 _Available on tab: Intune Apps, Intune Updates_
 
 The **Override Win32 Options** right-click option in Patch My PC (PMPC) Publisher allows you to override the global Win32 application options for a specific vendor or product when certain Microsoft Intune applications or updates require different behavior than what is defined globally.
@@ -57,24 +58,22 @@ Configure Overrides
 
 Overrides can be configured both globally under the [Publishing Options](../../manage/intune-tabs/intune-options/publishing-options.md) section of the [Intune tabs](../../manage/intune-tabs/), or by using the **Override Win32 Options** right-click option.
 
-{% hint style="danger" %}
-**Important**
-
-Any overrides configured at the Vendor/Product level take precedence over the global options and are applied only to the selected vendor or product during publishing.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Any overrides configured at the Vendor/Product level take precedence over the global options and are applied only to the selected vendor or product during publishing.</p>
+</blockquote>
 
 To configure **Override Win32 Options:**
 
 1. Right-click the Vendor/Product you want to customize and select **Override Win32 Options**.
 2. Review the available options based on whether you are configuring an app or an update.
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Publishing Options](../../manage/intune-tabs/intune-options/publishing-options.md) for more information about each option.</p>
+</blockquote>
 
-See [Publishing Options](../../manage/intune-tabs/intune-options/publishing-options.md) for more information about each option.
-{% endhint %}
-
-<figure><img src="../../../.gitbook/assets/image (4778).png" alt="Override Win32 Options" width="563"><figcaption></figcaption></figure>
+![Override Win32 Options](/_images/image-(4778).png "Override Win32 Options")
 
 3. Configure the required settings to override the global behavior.
 4. Click **OK** to save the configuration.

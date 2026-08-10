@@ -1,7 +1,8 @@
 # Manage Return Codes option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
+_Available at level: Product_
+\
 _Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Manage Return Codes** right-click option in Patch My PC (PMPC) Publisher lets you control how installer exit codes are interpreted for a product in Publisher.&#x20;
@@ -10,13 +11,11 @@ Each Return Code can be mapped to a specific code type to influence how the inst
 
 This feature is commonly used to suppress reboot behavior or to ensure that non-standard success codes are correctly treated as successful installations.
 
-{% hint style="danger" %}
-**Important**
-
-The management platform can also influence how devices respond to Return Codes, particularly regarding restart behavior.&#x20;
-
-Review the relevant Microsoft documentation for [Intune](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-win32-app-management#set-win32-app-availability-and-notifications), [ConfigMgr](https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/device-restart-notifications), or [WSUS](https://learn.microsoft.com/en-us/windows/deployment/update/waas-restart) to ensure Return Codes and restart actions behave as expected in your environment.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>The management platform can also influence how devices respond to Return Codes, particularly regarding restart behavior.&#x20;</p>
+<p>Review the relevant Microsoft documentation for <a href="https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-win32-app-management#set-win32-app-availability-and-notifications">Intune</a>, <a href="https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/device-restart-notifications">ConfigMgr</a>, or <a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-restart">WSUS</a> to ensure Return Codes and restart actions behave as expected in your environment.</p>
+</blockquote>
 
 ## Return Code Mapping
 
@@ -24,7 +23,7 @@ Each Return Code returned by the installer is associated with a code type. The c
 
 When you select the **Manage Return Codes** right-click option, the **Manage Return Codes** dialog appears, where you can manage Return Codes for the selected product.
 
-<figure><img src="../../../.gitbook/assets/image (4769).png" alt="Manage Return Codes dialog" width="446"><figcaption></figcaption></figure>
+![Manage Return Codes dialog](/_images/image-(4769).png "Manage Return Codes dialog")
 
 The following Return Codes are commonly used by default:
 
@@ -44,18 +43,18 @@ To add a custom Return Code:
 2. Right-click it and select **Manage Return Codes**
 3. On the **Manage Return Codes** dialog, click **Add**
 
-<figure><img src="../../../.gitbook/assets/image (4770).png" alt="Clicking &#x27;Add&#x27; on the &#x27;Manage Return Codes&#x27; dialog" width="446"><figcaption></figcaption></figure>
+![Clicking 'Add' on the 'Manage Return Codes' dialog](/_images/image-(4770).png "Clicking &#x27;Add&#x27; on the &#x27;Manage Return Codes&#x27; dialog")
 
 
 
 4. In the **Return Code** field, enter the required Return Code (for example **19**), and if the **Code Type** should be anything other than **Success**, select the relevant value from the **Code Type** dropdown beside the new Return Code.
 
-<figure><img src="../../../.gitbook/assets/image (4771).png" alt="Configuring the new Return Code" width="449"><figcaption></figcaption></figure>
+![Configuring the new Return Code](/_images/image-(4771).png "Configuring the new Return Code")
 
 5. Click **OK** to save your changes.
 
-<figure><img src="../../../.gitbook/assets/image (4773).png" alt="Clicking &#x27;OK&#x27; to save your changes" width="449"><figcaption></figcaption></figure>
+![Clicking 'OK' to save your changes](/_images/image-(4773).png "Clicking &#x27;OK&#x27; to save your changes")
 
 The **Manage Return Codes** dialog updates to show the new Return Code.
 
-<figure><img src="../../../.gitbook/assets/image (4774).png" alt="&#x27;Manage Return Codes&#x27; dialog showing the new Return Code" width="447"><figcaption></figcaption></figure>
+!['Manage Return Codes' dialog showing the new Return Code](/_images/image-(4774).png "&#x27;Manage Return Codes&#x27; dialog showing the new Return Code")

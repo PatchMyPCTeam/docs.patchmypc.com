@@ -9,7 +9,7 @@ All user company-related tasks are performed from the **Company** node of the po
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings**
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt="Navigating to &#x27;Company | Settings&#x27;" width="158"><figcaption></figcaption></figure>
+![Navigating to 'Company | Settings'](/_images/image-(26).png "Navigating to &#x27;Company | Settings&#x27;")
 
 
 

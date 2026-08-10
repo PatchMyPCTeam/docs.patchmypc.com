@@ -1,14 +1,14 @@
 # Manage Categories option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available at level: All Custom Products, All Products, Vendor, Product_
+\
 _Available on tab: ConfigMgr Apps, Intune Apps, Intune Updates_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Manage Categories** right-click option in Patch My PC (PMPC) Publisher allows you to define which categories are assigned to applications and updates published by Publisher.
 
@@ -18,16 +18,14 @@ The list of available categories is pulled directly from the selected management
 
 In ConfigMgr, categories are configured directly on applications in the console and can be scoped to User Categories or Device Categories.
 
-<figure><img src="../../../.gitbook/assets/image (4048).png" alt="ConfigMgr Categories" width="563"><figcaption></figcaption></figure>
+![ConfigMgr Categories](/_images/image-(4048).png "ConfigMgr Categories")
 
 In Intune, application categories are managed in the Intune admin center and are used to organize apps in the Company Portal.
 
-<figure><img src="../../../.gitbook/assets/image (4047).png" alt="Intune Categories" width="563"><figcaption></figcaption></figure>
+![Intune Categories](/_images/image-(4047).png "Intune Categories")
 
-{% hint style="info" %}
-**Note**
-
-Categories are applied to newly created applications and updates during publishing. For existing applications and updates, categories are added during the next Publisher synchronization, but previously assigned categories are not removed.&#x20;
-
-The Publisher always ensures that the currently configured categories are present for newly created content.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Categories are applied to newly created applications and updates during publishing. For existing applications and updates, categories are added during the next Publisher synchronization, but previously assigned categories are not removed.&#x20;</p>
+<p>The Publisher always ensures that the currently configured categories are present for newly created content.</p>
+</blockquote>

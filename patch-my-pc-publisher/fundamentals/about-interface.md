@@ -16,25 +16,23 @@ Regardless of the tab selected, at the bottom of Publisher you will find the fol
 
 The _Theme Control_ lets you decide which theme to use to display the Publisher.
 
-{% hint style="info" %}
-**Note**
-
-See [Switch Themes](switch-themes.md) for more information on how to switch themes and examples.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Switch Themes](switch-themes.md) for more information on how to switch themes and examples.</p>
+</blockquote>
 
 ## Show Granted Permissions Shield
 
-Clicking the _Show Granted Permissions_ shield (![Show Granted Permissions Shield](<../../.gitbook/assets/image (4585).png>)) at the bottom of the Publisher UI opens the read-only **Permissions** screen showing a list of every Publisher permission and whether your account currently holds it, resolved against the server you are connected to.
+Clicking the _Show Granted Permissions_ shield (![Show Granted Permissions Shield](/_images/image-(4585 "Show Granted Permissions Shield").png>)) at the bottom of the Publisher UI opens the read-only **Permissions** screen showing a list of every Publisher permission and whether your account currently holds it, resolved against the server you are connected to.
 
 This works the same regardless of the Settings console being accessed locally or remotely, so you can confirm your effective access at any time.
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See the [Access and Permissions Reference](../remote-ui/technical-references/access-permissions-reference.md) for more information about these permissions.</p>
+</blockquote>
 
-See the [Access and Permissions Reference](../remote-ui/technical-references/access-permissions-reference.md) for more information about these permissions.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (4586).png" alt=""><figcaption></figcaption></figure>
+![](/_images/image-(4586).png)
 
 ## Version Number
 

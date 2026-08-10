@@ -10,8 +10,7 @@ However, if Publisher is installed on a remote device, the following additional 
 
 **\*** Default dynamic RPC port range.
 
-{% hint style="info" %}
-**Note**
-
-The Site Server ultimately determines which SMS Provider is contacted. Consideration should be given to all Site Systems that hold the SMS Provider Site System role.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The Site Server ultimately determines which SMS Provider is contacted. Consideration should be given to all Site Systems that hold the SMS Provider Site System role.</p>
+</blockquote>

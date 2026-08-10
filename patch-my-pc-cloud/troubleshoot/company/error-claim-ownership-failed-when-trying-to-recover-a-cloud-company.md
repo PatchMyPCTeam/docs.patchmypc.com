@@ -12,7 +12,7 @@ I have tried running through the [Recover Your Company](../../manage/settings/co
 
 **Claim Ownership Failed**
 
-<figure><img src="../../../.gitbook/assets/image (2661).png" alt="“Error - Claim Ownership Failed”"><figcaption></figcaption></figure>
+!["Error - Claim Ownership Failed"](/_images/image-(2661).png "“Error - Claim Ownership Failed”")
 
 ### CAUSE
 
@@ -28,12 +28,9 @@ To resolve this issue:
 1. Verify you are entering the right values in the correct fields of the **Claim Ownership** wizard.
 2. Verify that the last five characters shown for the company you are trying to recover match the last five characters of the Entra ID tenant (the **Directory (tenant) ID**).
 
-{% hint style="warning" %}
-**Important**
-
-You only have three attempts to complete the **Claim Ownership** wizard. After the third failed attempt, you will see the following error:
-
-**You've reached the maximum number of claim ownership attempts. Please try again later.**
-
-You will be locked out and prevented from attempting the recovery for 12 hours.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>You only have three attempts to complete the **Claim Ownership** wizard. After the third failed attempt, you will see the following error:</p>
+<p>**You've reached the maximum number of claim ownership attempts. Please try again later.**</p>
+<p>You will be locked out and prevented from attempting the recovery for 12 hours.</p>
+</blockquote>

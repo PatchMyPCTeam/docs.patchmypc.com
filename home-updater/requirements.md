@@ -12,5 +12,3 @@ To use install and Patch My PC (PMPC) Home Updater, you need a computer:
 * A copy of the Home Updater download available from:\
   [https://patchmypc.com/product/home-updater](https://patchmypc.com/product/home-updater)
 
-
-

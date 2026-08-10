@@ -7,11 +7,10 @@ In Patch My PC (PMPC) Cloud, there are two different types of _Update Rings,_ bo
 * [Delayed Update Rings](update-ring-types.md#delayed-update-rings)
 * [Immediate Update Rings](update-ring-types.md#immediate-update-rings)
 
-{% hint style="info" %}
-**Note**
-
-Only once the configured start time has passed will the assignments under an Update Ring be created in Intune for the corresponding Win32 app.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Only once the configured start time has passed will the assignments under an Update Ring be created in Intune for the corresponding Win32 app.</p>
+</blockquote>
 
 ## Delayed Update Rings
 
@@ -62,12 +61,10 @@ The disadvantages of the immediate option are:
 * If the software in one ring causes an issue, if the admin forgets to pause the deployment or remove any additional rings, the issue could be spread to the next ring, even if a delay between rings is configured.
 * All assignments from all Update Rings are applied to the same version of the application that the deployment was created with. However, this is only true for the initial creation of the Update Rings. All other functionality of Update Rings will continue to work as normal in any new app versions.
 
-{% hint style="danger" %}
-**Important**
-
-You need to consider the following when working with Update Rings:
-
-* You cannot mix standard deployments (that don’t use Update Rings) and Update Rings in a single deployment.
-* [How the Sync Schedule Affects Update Rings](sync-schedule.md) for more information on how your configuration of the Sync Schedule will affect how Update Rings behave.
-* [How Update Rings Handle New Versions](new-versions.md) for more information about how update rings handle new versions, including worked examples.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>You need to consider the following when working with Update Rings:</p>
+<p>* You cannot mix standard deployments (that don’t use Update Rings) and Update Rings in a single deployment.</p>
+<p>* [How the Sync Schedule Affects Update Rings](sync-schedule.md) for more information on how your configuration of the Sync Schedule will affect how Update Rings behave.</p>
+<p>* [How Update Rings Handle New Versions](new-versions.md) for more information about how update rings handle new versions, including worked examples.</p>
+</blockquote>

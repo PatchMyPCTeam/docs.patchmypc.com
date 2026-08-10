@@ -4,7 +4,7 @@ description: Applies to Advanced Insights and Patch Insights
 
 # Advanced Insights Patch My PC "Activity" Dashboard
 
-<figure><img src="../../.gitbook/assets/16.jpg" alt=""><figcaption></figcaption></figure>
+![](/_images/16.jpg)
 
 The Patch My PC Activity dashboard shows summary and detail information of all update and application activities in your environment resulting from the Patch My PC service. Information regarding your Patch My PC license and all applications and updates published in ConfigMgr is shown across the statistics and tables.
 

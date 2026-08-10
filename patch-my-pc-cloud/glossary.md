@@ -20,4 +20,3 @@ The following is a glossary of terms and abbreviations for our Patch My PC (PMPC
 | Term | Description |
 | ---- | ----------- |
 | PMPC | Patch My PC |
-

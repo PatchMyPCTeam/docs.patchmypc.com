@@ -4,11 +4,10 @@ _Applies to: Patch My PC Publisher V2.x_
 
 Details the production release history for preview versions of Patch My PC (PMPC) Publisher, the most recent release being shown first.
 
-{% hint style="info" %}
-**Note**
-
-You can find the Preview release notes below, and you can also learn more about the Preview channel here: [Publisher Preview Channel](https://patchmypc.com/preview-channel).
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>You can find the Preview release notes below, and you can also learn more about the Preview channel here: <a href="https://patchmypc.com/preview-channel">Publisher Preview Channel</a>.</p>
+</blockquote>
 
 
 
@@ -945,28 +944,24 @@ As an alternative to using your standard WSUS certificate, you can now supply a 
 
 * Fixed issue where ScriptRunner was not correctly appending MSI and MSP installers with /qn (Introduced in Preview release 2.1.36.80)&#x20;
 
-{% hint style="warning" %}
-#### Remediation Options:
-
-To resolve this issue, please choose one of the following options:
-
-1. **Update to the latest Preview Release (Version 2.1.36.90)**
-   1. In the Publisher, navigate to the About tab.
-   2. You may already have the "Install preview builds" option checked **(1)**
-   3. If the "Currently Installed Version" is 2.1.36.80 **(2)** and the "Latest Available Preview Version" is 2.1.36.90 **(2)**, click "Upgrade Now" **(3)**\
-      \
-      _**Note:** If the "Install preview builds" option is not checked **(1)**, please check it and click "Apply" and version 2.1.36.90 will be offered. You can now select "Upgrade Now"_.<br>
-2. **Roll back to the latest Production Release (Version 2.1.36.0)**\
-   If you do not wish to remain on the Preview Release channel, uncheck the "Install preview builds" checkbox on the About tab in the Publisher and click "Apply".&#x20;
-   1. Download the latest Publisher production release from [https://patchmypc.com/msi](https://patchmypc.com/msi)
-   2. Follow [this guide](https://patchmypc.com/kb/backup-restore-publisher-settings/#h-backup-the-publisher-settings) to create a backup the Publisher settings (not required to roll back but recommended)
-   3. Uninstall Patch My PC Publisher from Add/Remove Programs (your settings will be preserved)
-   4. Install the Publisher production build MSI you downloaded in step 1
-
-**Important:** Regardless of the option you choose, you will need to **re-publish any applications that were published using version 2.1.36.80** to ensure the correct installation parameters are applied.
-
-If you need assistance or have any questions, please visit our Technical Support page at [https://patchmypc.com/technical-support/](https://patchmypc.com/technical-support/) to open a support case.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>#### Remediation Options:</p>
+<p>To resolve this issue, please choose one of the following options:</p>
+<p>1. **Update to the latest Preview Release (Version 2.1.36.90)**</p>
+<p>1. In the Publisher, navigate to the About tab.</p>
+<p>2. You may already have the "Install preview builds" option checked **(1)**</p>
+<p>3. If the "Currently Installed Version" is 2.1.36.80 **(2)** and the "Latest Available Preview Version" is 2.1.36.90 **(2)**, click "Upgrade Now" **(3)**\</p>
+<p>\</p>
+<p>_**Note:** If the "Install preview builds" option is not checked **(1)**, please check it and click "Apply" and version 2.1.36.90 will be offered. You can now select "Upgrade Now"_.<br></p>
+<p>2. **Roll back to the latest Production Release (Version 2.1.36.0)**\</p>
+<p>If you do not wish to remain on the Preview Release channel, uncheck the "Install preview builds" checkbox on the About tab in the Publisher and click "Apply".&#x20;</p>
+<p>1. Download the latest Publisher production release from <a href="https://patchmypc.com/msi">https://patchmypc.com/msi</a></p>
+<p>2. Follow <a href="https://patchmypc.com/kb/backup-restore-publisher-settings/#h-backup-the-publisher-settings">this guide</a> to create a backup the Publisher settings (not required to roll back but recommended)</p>
+<p>3. Uninstall Patch My PC Publisher from Add/Remove Programs (your settings will be preserved)</p>
+<p>4. Install the Publisher production build MSI you downloaded in step 1</p>
+<p>**Important:** Regardless of the option you choose, you will need to **re-publish any applications that were published using version 2.1.36.80** to ensure the correct installation parameters are applied.</p>
+<p>If you need assistance or have any questions, please visit our Technical Support page at <a href="https://patchmypc.com/technical-support/">https://patchmypc.com/technical-support/</a> to open a support case.</p>
+</blockquote>
 
 </details>
 
@@ -1393,7 +1388,7 @@ If you need assistance or have any questions, please visit our Technical Support
   * If needed, the embedded web browser can still be used with a [registry flag](https://patchmypc.com/advanced-configurations-available-using-the-registry-for-patch-my-pcs-publishing-service#MsalUseEmbeddedWebView).
 * The ‘[Collect Logs](https://patchmypc.com/logging-options#collectlogs)‘ button now collects all PowerShell detection scripts modified within the last 7 days. The scripts are renamed to have a .txt extension before being added to the zip file.&#x20;
 * Icons in the product treeview now indicate if the product requires local content, or is configured to skip the install if running by default.
-  * ![image (2).png](https://dev.azure.com/PatchMyPC/1ee7e4b8-3e4e-4b11-8e25-c439149d3d3c/_apis/git/repositories/5ac414fe-cf4b-44e0-8299-c28f89a2f3b1/pullRequests/4918/attachments/image%20\(2\).png)
+  * ![image (2).png](/_images/image-(2).png)
 
 </details>
 
@@ -2676,7 +2671,7 @@ If you need assistance or have any questions, please visit our Technical Support
 * Added support to add a future Home Lab subscription
   * Idea: [PATCHMYPC-I-1213](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1213)
 * Added a new context menu in the Intune Application Manager
-  * <img src="../../.gitbook/assets/image (1907).png" alt="" data-size="original">&#x20;
+  * ![](/_images/image-(1907).png)&#x20;
 
 ### Improvements
 
@@ -2689,7 +2684,7 @@ If you need assistance or have any questions, please visit our Technical Support
 * Added support to add a future Home Lab subscription
   * Idea: [PATCHMYPC-I-1213](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1213)
 * Added a new context menu in the Intune Application Manager
-  * <img src="../../.gitbook/assets/image (1907).png" alt="" data-size="original">&#x20;
+  * ![](/_images/image-(1907).png)&#x20;
 
 ### Improvements
 
@@ -2702,7 +2697,7 @@ If you need assistance or have any questions, please visit our Technical Support
 * Added support to add a future Home Lab subscription
   * Idea: [PATCHMYPC-I-1213](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1213)
 * Added a new context menu in the Intune Application Manager
-  * <img src="../../.gitbook/assets/image (1907).png" alt="" data-size="original">&#x20;
+  * ![](/_images/image-(1907).png)&#x20;
 
 ### Improvements
 

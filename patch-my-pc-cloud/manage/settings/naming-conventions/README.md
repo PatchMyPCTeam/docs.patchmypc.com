@@ -11,11 +11,11 @@ You can configure naming conventions for both:
 
 All naming convention-related tasks are performed from the **Naming** node, accessed by navigating to **Settings | Naming**.
 
-<figure><img src="../../../../.gitbook/assets/image (1359).png" alt="Navigating to “Settings | Naming”"><figcaption></figcaption></figure>
+![Navigating to "Settings | Naming"](/_images/image-(1359).png "Navigating to “Settings | Naming”")
 
 The **Naming Conventions** page is then displayed, allowing you to:
 
 * [Configure Naming Conventions](configure.md)
 * [Modify Naming Conventions](modify.md)
 
-<figure><img src="../../../../.gitbook/assets/image (1360).png" alt="“Naming Conventions” page"><figcaption></figcaption></figure>
+!["Naming Conventions" page](/_images/image-(1360).png "“Naming Conventions” page")

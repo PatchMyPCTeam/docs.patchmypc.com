@@ -1,14 +1,15 @@
 # Publish this Product During the Next Manual Sync (Selective Sync)
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available at level: All Custom Products, All Products, Vendor, Product_
+\
 _Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Overview
 
 The **Publish This Product During the Next Manual Sync** option allows you to selectively publish one or more specific products during the next manual publishing service sync.
 
-<figure><img src="../../.gitbook/assets/image (4071).png" alt="Selective Sync" width="556"><figcaption></figcaption></figure>
+![Selective Sync](/_images/image-(4071).png "Selective Sync")
 
 When this option is used, only the selected products are evaluated and processed during the next manual publishing service sync.
 
@@ -20,11 +21,10 @@ By default, running a [manual publishing service sync](../administration/sync-sc
 
 When Selective Sync is enabled for a product, the Publisher flags that product to be included in the next manual sync. During that sync, only products marked for Selective Sync are processed.
 
-{% hint style="info" %}
-**Note**
-
-Selective Sync applies only to manual syncs initiated from the Sync Schedule tab. It does not apply to scheduled syncs.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Selective Sync applies only to manual syncs initiated from the Sync Schedule tab. It does not apply to scheduled syncs.</p>
+</blockquote>
 
 ## When to Use Selective Sync
 
@@ -36,19 +36,19 @@ Common use cases include testing a new configuration, validating a recent change
 
 When you use the right-click option to select a product or products for selective sync, you are prompted to confirm that decision.
 
-<figure><img src="../../.gitbook/assets/image (4073).png" alt="Selective Sync confirmation" width="430"><figcaption></figcaption></figure>
+![Selective Sync confirmation](/_images/image-(4073).png "Selective Sync confirmation")
 
 When you select Run Publishing Service Sync from the Sync Schedule tab, the Publisher displays a list of all products currently marked for Selective Sync.
 
-<figure><img src="../../.gitbook/assets/image (4072).png" alt="Run a manual Publishing Service Sync" width="545"><figcaption></figcaption></figure>
+![Run a manual Publishing Service Sync](/_images/image-(4072).png "Run a manual Publishing Service Sync")
 
-<figure><img src="../../.gitbook/assets/image (4074).png" alt="Confirm Product(s) for Selective Sync" width="525"><figcaption></figcaption></figure>
+![Confirm Product(s) for Selective Sync](/_images/image-(4074).png "Confirm Product(s) for Selective Sync")
 
 Clicking **OK** starts a manual sync that processes only those selected products.
 
 If you click **Cancel** instead, you are prompted to choose how to proceed.
 
-<figure><img src="../../.gitbook/assets/image (4075).png" alt="Cancelled Selective Sync" width="383"><figcaption></figcaption></figure>
+![Cancelled Selective Sync](/_images/image-(4075).png "Cancelled Selective Sync")
 
 Clicking **Yes** clears all Selective Sync flags and immediately runs a normal full publishing service sync. All enabled products across all platforms will be evaluated and processed.
 

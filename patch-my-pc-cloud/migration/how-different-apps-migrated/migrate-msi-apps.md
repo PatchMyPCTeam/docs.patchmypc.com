@@ -10,11 +10,11 @@ ConfigMgr does not explicitly label an application as MSI-based. In most cases, 
 
 If the **Installation Program** contains both **msiexec** and a reference to a **.msi** file, the application can be considered MSI-based.
 
-<figure><img src="../../../.gitbook/assets/image (3819).png" alt="MSI-based app identified from the installation program" width="563"><figcaption></figcaption></figure>
+![MSI-based app identified from the installation program](/_images/image-(3819).png "MSI-based app identified from the installation program")
 
 During the migration deployment flow, the **Installer Type** field also indicates when an application is being treated as MSI-based.
 
-<figure><img src="../../../.gitbook/assets/image (3820).png" alt="MSI-based app shown in the deployment flow" width="563"><figcaption></figcaption></figure>
+![MSI-based app shown in the deployment flow](/_images/image-(3820).png "MSI-based app shown in the deployment flow")
 
 If an application is identified as MSI-based, as much existing metadata as possible is captured to support migration, drawing from both the ConfigMgr application and the MSI properties table.&#x20;
 
@@ -29,11 +29,10 @@ This includes analyzing the following to help ensure the application behaves the
 
 The information analyzed is used to determine how the application is migrated and how the installation is executed. All supporting files in the original content source folder are included in the migration.
 
-{% hint style="info" %}
-**Note**
-
-The only exception is the primary installer itself. When an application is migrated as a PMPC Catalog App, the original installer and version are replaced with the latest version available in the PMPC catalog. When migrating as a PMPC Custom App, the original installer and version are retained and used.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The only exception is the primary installer itself. When an application is migrated as a PMPC Catalog App, the original installer and version are replaced with the latest version available in the PMPC catalog. When migrating as a PMPC Custom App, the original installer and version are retained and used.</p>
+</blockquote>
 
 MSI properties (**PROPERTY=value**) are preserved and applied to the created deployment.
 
@@ -45,11 +44,10 @@ When the application is migrated, **PatchMyPC-ScriptRunner.exe** becomes the new
 
 The following information indicates the properties that are carried forward from the ConfigMgr application to the migration deployment flow when the application is either matched to a PMPC Catalog App or a PMPC Custom App.&#x20;
 
-{% hint style="info" %}
-**Note**
-
-See [How Migration Type is Determined](../how-migration-type-determined.md) to understand how ConfigMgr applications are matched during migration.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [How Migration Type is Determined](../how-migration-type-determined.md) to understand how ConfigMgr applications are matched during migration.</p>
+</blockquote>
 
 ### PMPC Catalog App Properties Preserved
 

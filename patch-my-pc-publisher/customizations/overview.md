@@ -6,6 +6,7 @@ You can tailor third-party application updates and deployments using the right-c
 
 ## **Watch the Live Webinar Playback on Right-Click Options with Q\&A**
 
-You can review our webinar about all the available right-click options for customizing applications in the video below:
+
+You can review our webinar about all the available right-click options for customizing applications in the video below:
 
 {% embed url="https://youtu.be/je0KgiLNUR8" %}

@@ -1,14 +1,16 @@
 # Add/Remove an Assignment
 
-_Applies to: Patch My PC Publisher V2.x_\
-Available at level: All Custom Products, All Products, Vendor, Product\
+_Applies to: Patch My PC Publisher V2.x_
+\
+Available at level: All Custom Products, All Products, Vendor, Product
+\
 Available on tab: Intune Apps, Intune Updates
 
 ## Add an Assignment
 
 When you select **Add Assignment**, a window opens that displays the Entra ID groups in your tenant. You can filter the list to quickly locate the groups you want to target and select one or more groups at the same time.
 
-<figure><img src="../../../.gitbook/assets/image (4024).png" alt="Add Assignment" width="563"><figcaption></figcaption></figure>
+![Add Assignment](/_images/image-(4024).png "Add Assignment")
 
 After an assignment is added, it appears in the assignment list. Each column value such as Name, Mode, Notification, Delivery Optimization priority, Availability, Deadline, or Restart grace period can be selected to open the Assignment editor. The Assignment editor allows you to configure detailed behavior for that specific assignment.
 
@@ -18,35 +20,40 @@ The Add Assignment form is used to select Entra groups that will be targeted for
 
 The form displays a searchable list of Entra groups available in your tenant. You can select one or more groups and add them to the assignment in a single action.
 
-<figure><img src="../../../.gitbook/assets/image (4025).png" alt="Select Entra Groups" width="563"><figcaption></figcaption></figure>
+![Select Entra Groups](/_images/image-(4025).png "Select Entra Groups")
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>All filters automatically work like a contains search and match text anywhere in the field.</p>
+<p>Use explicit wildcards such as \* and ? for more precise matching. Filters are evaluated server side against Entra groups.</p>
+</blockquote>
 
-All filters automatically work like a contains search and match text anywhere in the field.
-
-Use explicit wildcards such as \* and ? for more precise matching. Filters are evaluated server side against Entra groups.
-{% endhint %}
-
-**Search**\
+**Search**
+\
 Allows you to search for Entra groups by name or description. Filters support **Contains and Starts With**. The **Contains** search filter is selected by default. **Reload** refreshes the group list using the current Search box content while preserving any selected groups.
 
-**Name like**\
+**Name like**
+\
 Filters the group list by matching text in the group name from the results returned by the Search.
 
-**Description like**\
+**Description like**
+\
 Filters the group list by matching text in the group description from the results returned by the Search.
 
-**Load More Groups**\
+**Load More Groups**
+\
 When the Add Assignment form first opens, the Publisher loads an initial limited set of Entra groups. This initial list is intentionally constrained for performance reasons and typically includes the first set of \~20 groups returned by Entra ID.
 
-**Load All Groups**\
+**Load All Groups**
+\
 Loads all Entra groups from Entra ID and replaces the current search results. This performs a full retrieval of groups, still limited to the first set of \~20 groups returned by Entra ID, but does not clear any existing selections.
 
-**Built in Targets**\
+**Built in Targets**
+\
 Allows selection of the built in Intune targets **All Users** and **All Devices**.
 
-**Selected Groups Counter**\
+**Selected Groups Counter**
+\
 Shows the number of groups currently selected.
 
 ### Steps to Add an Assignment
@@ -58,13 +65,11 @@ Shows the number of groups currently selected.
 
 After the assignment is added, it appears in the assignment list where you can configure assignment options such as mode notifications availability deadlines and restart grace period.
 
-{% hint style="warning" %}
-**Important**
-
-All changes made in this window are applied during the next Publisher [synchronization](../../administration/sync-schedule.md). Changes are not applied immediately to Win32 apps that already exist in Intune.
-
-If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Application Manager](../../administration/intune-apps-updates/form-controls/intune-application-manager.md) instead.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>All changes made in this window are applied during the next Publisher [synchronization](../../administration/sync-schedule.md). Changes are not applied immediately to Win32 apps that already exist in Intune.</p>
+<p>If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Application Manager](../../administration/intune-apps-updates/form-controls/intune-application-manager.md) instead.</p>
+</blockquote>
 
 ## Remove an Assignment
 
@@ -81,21 +86,18 @@ The removal takes effect during the next Publisher synchronization. Removing an 
 
 The removed assignments are deleted from the Publisher configuration and will no longer be recreated for future versions. The change is applied during the next Publisher synchronization.
 
-{% hint style="warning" %}
-**Important**
-
-When an assignment is removed in the Publisher, it will not be recreated for future application or update versions. However, the assignment that already exists in Intune remains unless it is manually removed.
-
-All changes made in this window are applied during the next Publisher [synchronization](../../administration/sync-schedule.md). Changes are not applied immediately to Win32 apps that already exist in Intune.
-
-If you want to make changes to assignments for applications and updates that have already been published to Intune, use the[ Intune Application Manager](../../administration/intune-apps-updates/form-controls/intune-application-manager.md) instead.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>When an assignment is removed in the Publisher, it will not be recreated for future application or update versions. However, the assignment that already exists in Intune remains unless it is manually removed.</p>
+<p>All changes made in this window are applied during the next Publisher [synchronization](../../administration/sync-schedule.md). Changes are not applied immediately to Win32 apps that already exist in Intune.</p>
+<p>If you want to make changes to assignments for applications and updates that have already been published to Intune, use the[ Intune Application Manager](../../administration/intune-apps-updates/form-controls/intune-application-manager.md) instead.</p>
+</blockquote>
 
 ## Override Manual Assignment Changes
 
 By default, assignment settings such as Mode, Notification, and Restart grace period are configured when a new Win32 app is first published. During future syncs, the Publisher does not overwrite manual changes made directly in Intune for existing assignments.
 
-<figure><img src="../../../.gitbook/assets/image (72).png" alt="Override Manual Assignment Changes" width="563"><figcaption></figcaption></figure>
+![Override Manual Assignment Changes](/_images/image-(72).png "Override Manual Assignment Changes")
 
 Enabling **Override manual assignment changes made in Intune during the synchronization of the Publisher** instructs the Publisher to reapply the configured assignment settings on each sync.
 

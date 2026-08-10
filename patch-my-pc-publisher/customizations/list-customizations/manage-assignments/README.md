@@ -1,7 +1,8 @@
 # Manage Assignments option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available at level: All Custom Products, All Products, Vendor, Product_
+\
 _Available on tab: Intune Apps, Intune Updates_
 
 The **Manage Assignments** right-click option in Patch My PC (PMPC) Publisher allows you to control which Intune assignments the Publisher creates and maintains for Intune applications and Intune updates.

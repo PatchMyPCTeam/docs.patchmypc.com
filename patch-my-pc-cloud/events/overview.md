@@ -9,15 +9,13 @@ To access the Events node:
 1. Using your portal account, sign in at [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2.  Navigate to **Events**.<br>
 
-    <figure><img src="../../.gitbook/assets/image (2462).png" alt="Navigating to “Events” to access the Events page"><figcaption></figcaption></figure>
+    ![Navigating to "Events" to access the Events page](/_images/image-(2462).png "Navigating to “Events” to access the Events page")
 
-{% hint style="danger" %}
-**Important**
-
-Only users assigned the **Full Admin** role will be able to see the **Events** node.
-
-See [User Roles](../manage/settings/users/user-roles-reference.md) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Only users assigned the **Full Admin** role will be able to see the **Events** node.</p>
+<p>See [User Roles](../manage/settings/users/user-roles-reference.md) for more information.</p>
+</blockquote>
 
 The **Events** page is then displayed, allowing you to:
 
@@ -29,10 +27,9 @@ The **Events** page is then displayed, allowing you to:
 * [Change the number of Events per page](configure.md)
 * [Navigate between pages of Events](navigate.md)
 
-<figure><img src="../../.gitbook/assets/image (2464).png" alt="The “Events” page"><figcaption></figcaption></figure>
+![The "Events" page](/_images/image-(2464).png "The “Events” page")
 
-{% hint style="danger" %}
-**Important**
-
-Events are only held in the portal for 30 days, after which they are automatically groomed from the database. If you wish to keep events longer than 30 days, follow the [Export Events](export.md) process.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Events are only held in the portal for 30 days, after which they are automatically groomed from the database. If you wish to keep events longer than 30 days, follow the [Export Events](export.md) process.</p>
+</blockquote>

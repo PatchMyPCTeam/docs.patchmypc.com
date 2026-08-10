@@ -4,11 +4,11 @@ description: Tracking Secure Boot Compliance with Advanced Insights
 
 # Advanced Insights Secure Boot Dashboard
 
-{% hint style="info" %}
-The Secure Boot dashboard relies on data from the Advanced Insights Inventory Extensions version 2.2.0.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>The Secure Boot dashboard relies on data from the Advanced Insights Inventory Extensions version 2.2.0.</p>
+</blockquote>
 
-<figure><img src="../../../.gitbook/assets/26.jpg" alt=""><figcaption></figcaption></figure>
+![](/_images/26.jpg)
 
 The Secure Boot dashboard helps you track the status of Secure Boot in the environment, especially with respect to the changes needed to firmware and Secure Platform updates required in 2026 (further info on this from Microsoft here [https://support.microsoft.com/en-us/topic/secure-boot-certificate-update-status-in-the-windows-security-app-5ce39986-7dd2-4852-8c21-ef30dd04f046](https://support.microsoft.com/en-us/topic/secure-boot-certificate-update-status-in-the-windows-security-app-5ce39986-7dd2-4852-8c21-ef30dd04f046)).
 

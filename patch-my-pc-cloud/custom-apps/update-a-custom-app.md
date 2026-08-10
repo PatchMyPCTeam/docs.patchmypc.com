@@ -4,33 +4,31 @@ _Applies to: Patch My PC Cloud Custom Apps_
 
 Once you have created and deployed a Custom App, you will probably need to update it at some point to a later version.
 
-{% hint style="info" %}
-Note
-
-See [Modifying a Custom App](modify-a-custom-app.md) for details on how to make other changes to an existing Custom App.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>Note</p>
+<p>See [Modifying a Custom App](modify-a-custom-app.md) for details on how to make other changes to an existing Custom App.</p>
+</blockquote>
 
 To update a Custom App using Patch My PC (PMPC) Cloud:
 
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. On the **App Catalog** page, search for the relevant app.
 
-<figure><img src="../../.gitbook/assets/image (1174).png" alt="Searching for your Custom App" width="563"><figcaption></figcaption></figure>
+![Searching for your Custom App](/_images/image-(1174).png "Searching for your Custom App")
 
 3. Click the app to open it.
 4. On the app’s properties page, click **Add Version**.
 
-<figure><img src="../../.gitbook/assets/image (1175).png" alt="Clicking &#x27;Add Version&#x27;" width="563"><figcaption></figcaption></figure>
+![Clicking 'Add Version'](/_images/image-(1175).png "Clicking &#x27;Add Version&#x27;")
 
 The Custom Apps Deployment Wizard starts and opens at the **File** page.
 
-<figure><img src="../../.gitbook/assets/image (4502).png" alt="Add Version" width="563"><figcaption></figcaption></figure>
+![Add Version](/_images/image-(4502).png "Add Version")
 
-{% hint style="info" %}
-**Note**
-
-You cannot modify the **Installer Type** of a Custom App.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>You cannot modify the **Installer Type** of a Custom App.</p>
+</blockquote>
 
 5. Follow the respective section for the respective **Installer Type** of this app:
    1. [Add a new version based on a new Installer Script](update-a-custom-app.md#add-a-new-version-based-on-a-new-installer-script)
@@ -49,11 +47,11 @@ To add a new version of a Custom App based on a new installer file, on the **Add
 * Click **Add Primary Install File** and browse to the location containing the updated version of the app’s installer (EXE or MSI).
 * Drag and drop the installer file onto this page.
 
-<figure><img src="../../.gitbook/assets/image (4503).png" alt="Clicking &#x27;Add Primary Install File&#x27; on the &#x27;Add Version&#x27; page " width="563"><figcaption></figcaption></figure>
+![Clicking 'Add Primary Install File' on the 'Add Version' page](/_images/image-(4503).png "Clicking &#x27;Add Primary Install File&#x27; on the &#x27;Add Version&#x27; page")
 
 The hash for the file is calculated as the file is uploaded to your portal.
 
-<figure><img src="../../.gitbook/assets/image (4504).png" alt="Calculating the hash for the file as its uploaded to your portal." width="563"><figcaption></figcaption></figure>
+![Calculating the hash for the file as its uploaded to your portal.](/_images/image-(4504).png "Calculating the hash for the file as its uploaded to your portal.")
 
 Once completed, goto Step 6.
 
@@ -62,53 +60,50 @@ Once completed, goto Step 6.
    1. Click the relevant **Add** button and browse to the location containing the additional files/folders.
    2.  Drag and drop the files onto this page.<br>
 
-       <figure><img src="../../.gitbook/assets/image (4505).png" alt="Adding additional files or folders" width="563"><figcaption></figcaption></figure>
+       ![Adding additional files or folders](/_images/image-(4505).png "Adding additional files or folders")
 
-{% hint style="info" %}
-**Note**
-
-If you choose to upload additional folders, you will be prompted to confirm you trust this site:
-
-![Trust prompt](<../../.gitbook/assets/image (3342).png>)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If you choose to upload additional folders, you will be prompted to confirm you trust this site:</p>
+<p>![Trust prompt](/_images/image-(3342 "Trust prompt").png>)</p>
+</blockquote>
 
 8. Once the files/folders have been uploaded, click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (4506).png" alt="Clicking &#x27;Next&#x27;" width="563"><figcaption></figcaption></figure>
+![Clicking 'Next'](/_images/image-(4506).png "Clicking &#x27;Next&#x27;")
 
 9. On the **Configuration** page, enter the version number and update any other fields as required.
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If a Return Code defined in a Custom App has the same value but a different **Code type** to that defined in the deployment, the settings in the deployment take precedence.</p>
+</blockquote>
 
-If a Return Code defined in a Custom App has the same value but a different **Code type** to that defined in the deployment, the settings in the deployment take precedence.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (3344).png" alt="Entering the version of the “Configuration page”" width="563"><figcaption></figcaption></figure>
+![Entering the version of the "Configuration page"](/_images/image-(3344).png "Entering the version of the “Configuration page”")
 
 10. If you are happy you have entered all of the details for the app correctly, click **Save** otherwise, click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (3345).png" alt="Clicking “Next”" width="563"><figcaption></figcaption></figure>
+![Clicking "Next"](/_images/image-(3345).png "Clicking “Next”")
 
 11. On the **Detection Rules** page, make any required changes.
 
-<figure><img src="../../.gitbook/assets/image (3346).png" alt="Making any required changes on the &#x22;Detection Rules&#x22; page" width="563"><figcaption></figcaption></figure>
+![Making any required changes on the "Detection Rules" page](/_images/image-(3346).png "Making any required changes on the &#x22;Detection Rules&#x22; page")
 
 12. If you are happy you have entered all of the details for the app correctly, click **Save** otherwise, click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (3347).png" alt="Clicking &#x22;Next&#x22;" width="563"><figcaption></figcaption></figure>
+![Clicking "Next"](/_images/image-(3347).png "Clicking &#x22;Next&#x22;")
 
 13. On the **Summary** page, review you have configured the app correctly.
     1. If you are happy, click **Create**.
     2. If you need to change something, click **< Prev** to backtrack through the Deployment Wizard to the relevant setting. Make the change, then step back through the wizard to this page. If everything is now correct, click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (3348).png" alt="Clicking “Save” on the “Summary” page" width="563"><figcaption></figcaption></figure>
+![Clicking "Save" on the "Summary" page](/_images/image-(3348).png "Clicking “Save” on the “Summary” page")
 
 11. The App Catalog is displayed showing the version of the app along with the following notification:\
     \
     **Success Version <**_**version\_number**_**> has been successfully added to <**_**app\_name**_**>**.
 
-<figure><img src="../../.gitbook/assets/image (1185).png" alt="Success Version <version_number> has been successfully added to <app_name>" width="563"><figcaption></figcaption></figure>
+![](/_images/image-(1185).png)
 
 If the previous version of the app was deployed successfully, depending on the configured assignments, the new version will be installed the next time the daily sync runs.
 

@@ -4,10 +4,10 @@ _Applies to: Patch My PC Cloud_
 
 You can display more information about a Patch My PC (PMPC) Cloud Event by clicking it.
 
-<figure><img src="../../.gitbook/assets/image (1517).png" alt="Click the event you want more information about"><figcaption></figcaption></figure>
+![Click the event you want more information about](/_images/image-(1517).png "Click the event you want more information about")
 
 The details page is displayed for the Event.
 
-<figure><img src="../../.gitbook/assets/image (1519).png" alt="Details page for the Event "><figcaption></figcaption></figure>
+![Details page for the Event](/_images/image-(1519).png "Details page for the Event")
 
 Either click the **X** or click outside of the details page to close it.

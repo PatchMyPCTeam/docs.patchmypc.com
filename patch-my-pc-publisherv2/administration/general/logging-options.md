@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 Logging options control the level of detail written to Publisher log files and provide tools to assist with troubleshooting and support.
 
-<figure><img src="../../../.gitbook/assets/image (3918).png" alt="Logging Options" width="552"><figcaption></figcaption></figure>
+![Logging Options](/_images/image-(3918).png "Logging Options")
 
 ## Logging Level
 
@@ -23,31 +23,28 @@ When troubleshooting, it is recommended to temporarily enable Debug logging and 
 
 Specifies the number of log files to keep before older logs are overwritten.
 
-{% hint style="info" %}
-**Note**
-
-It is recommended to set **Logs to Retain** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>It is recommended to set **Logs to Retain** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.</p>
+</blockquote>
 
 ## Max Size in MB
 
 Specifies the maximum size of each individual log file before a new log is created.
 
-{% hint style="info" %}
-**Note**
-
-It is recommended to set **Max Size in MB** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>It is recommended to set **Max Size in MB** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.</p>
+</blockquote>
 
 ## Open PatchMyPC.log
 
 Opens the primary Publisher log file. This log contains the main operational and publishing activity for the Publisher.
 
-{% hint style="info" %}
-**Note**
-
-It is recommended to view this log using CMTrace to improve readability and highlight warnings and errors.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>It is recommended to view this log using CMTrace to improve readability and highlight warnings and errors.</p>
+</blockquote>
 
 ## Open wsyncmgr.log
 
@@ -154,6 +151,4 @@ When reviewing an issue, merge the relevant logs and sort entries by timestamp. 
 * `PatchMyPC-WsusClient.log`
 * `PatchMyPC-WsusController.log`
 * `PatchMyPC-WsusOptionsViewModel.log`
-
-
 

@@ -9,7 +9,7 @@ _Limited to SKU: Enterprise Plus, Enterprise Premium, MSP, MSP+_
 
 The **Pause Product Updates** option allows you to temporarily stop publishing new application versions or updates for a specific product until a selected date. This is commonly used to enforce short term change control or freeze periods.
 
-<figure><img src="../../.gitbook/assets/image (155).png" alt="Pause Product Updates" width="521"><figcaption></figcaption></figure>
+![Pause Product Updates](/_images/image-(155).png "Pause Product Updates")
 
 When a product is paused, any new versions released before the selected resume date are skipped when the Publisher performs a synchronization. The currently published version remains unchanged.
 
@@ -17,7 +17,7 @@ When a product is paused, any new versions released before the selected resume d
 
 In the example scenario, **Google Chrome (EXE x64)** is paused until **4th March 2026**. If one or more new versions are released during the pause period, they are not published by the Publisher.
 
-<figure><img src="../../.gitbook/assets/image (156).png" alt="" width="300"><figcaption></figcaption></figure>
+![](/_images/image-(156).png)
 
 Once the pause period expires, the Publisher resumes normal behavior. The next new version that becomes available after the pause ends will be published. If no new version is available when the pause expires and the current version is already published, no action is taken.
 
@@ -31,9 +31,9 @@ The notification includes the product name, the resume date, the update classifi
 
 Email reports show the paused product under **Paused ConfigMgr Applications** or the equivalent paused product section for the publishing target. Webhook notifications show the same pause information in a card format.
 
-<figure><img src="../../.gitbook/assets/image (4362).png" alt="Email alert for paused products" width="563"><figcaption></figcaption></figure>
+![Email alert for paused products](/_images/image-(4362).png "Email alert for paused products")
 
-<figure><img src="../../.gitbook/assets/image (4363).png" alt="Webhook alert for paused products" width="525"><figcaption></figcaption></figure>
+![Webhook alert for paused products](/_images/image-(4363).png "Webhook alert for paused products")
 
 ## Limitations and guidance
 

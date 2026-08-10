@@ -2,11 +2,11 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-## ![](<../../../../.gitbook/assets/image (497).png>) Overview
+## ![](/_images/image-(497).png>) Overview
 
 This form control synchronizes product selections and/or customizations from the **Updates** tab to the **Intune Apps** tab and/or the **Intune Apps** tab to the **Intune Updates** tab. This option is intended to provide a quick and consistent way to align application management behavior with update publishing selections while preserving the standard inheritance behavior of the product tree.
 
-<figure><img src="../../../../.gitbook/assets/image (498).png" alt="" width="545"><figcaption></figcaption></figure>
+![](/_images/image-(498).png)
 
 ## **Form Control behavior on the Intune Apps tab**
 
@@ -18,11 +18,10 @@ If you choose to copy product selections with customizations, the Publisher copi
 
 The copy operation for customizations is **not cumulative**. If customizations already exist on the Intune Apps tab at the same level, they are **overwritten**, not merged.&#x20;
 
-{% hint style="warning" %}
-**Important**
-
-Product level selections that exist only on the Intune Apps tab and are not selected on the Updates tab remain unchanged. However, if a customization is applied at the **vendor** or **All Products** level, that configuration is inherited by all child products, including those that were previously configured only on the Intune Apps tab.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Product level selections that exist only on the Intune Apps tab and are not selected on the Updates tab remain unchanged. However, if a customization is applied at the **vendor** or **All Products** level, that configuration is inherited by all child products, including those that were previously configured only on the Intune Apps tab.</p>
+</blockquote>
 
 ## **Form Control behavior on the Intune Updates tab**
 
@@ -34,11 +33,10 @@ If you choose to copy product selections with customizations, the Publisher copi
 
 The copy operation for customizations is **not cumulative**. If customizations already exist on the Intune Updates tab at the same level, they are **overwritten**, not merged.&#x20;
 
-{% hint style="warning" %}
-**Important**
-
-Product level selections that exist only on the Intune Updates tab and are not selected on the Intune Apps tab remain unchanged. However, if a customization is applied at the **vendor** or **All Products** level, that configuration is inherited by all child products, including those that were previously configured only on the Intune Updates tab.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Product level selections that exist only on the Intune Updates tab and are not selected on the Intune Apps tab remain unchanged. However, if a customization is applied at the **vendor** or **All Products** level, that configuration is inherited by all child products, including those that were previously configured only on the Intune Updates tab.</p>
+</blockquote>
 
 ## **Form Control behavior on both the Intune Apps and Intune Updates tab**
 
@@ -47,14 +45,13 @@ To copy selected products and customizations from the Updates tab to the Intune 
 1. Select the **Enable the selected products from the Updates tab that support installation packages** button.
 2. When prompted with the confirmation dialog, choose one of the following options.
 
-<figure><img src="../../../../.gitbook/assets/image (4083).png" alt="Confirm Customizations &#x26; Selections Copy" width="444"><figcaption></figcaption></figure>
+![Confirm Customizations & Selections Copy](/_images/image-(4083).png "Confirm Customizations &#x26; Selections Copy")
 
 * Select **Yes** to copy custom actions, as well as products, from the Updates tab, including pre and post scripts, disabling updates, and removing shortcuts.
 * Select **No** to copy only the product selections without copying custom actions.
 * Select **Cancel** to stop the operation and make no changes.
 
-{% hint style="info" %}
-**Note**
-
-In non-WSUS environments, the Updates tab may have been hidden by using the **Disable the Updates tab for publishing software to WSUS** setting in the [Intune Standalone Options](../../advanced/intune-standalone-options.md) section on the [Advanced](../../advanced/) tab. In this scenario, the form control is not visible on the Intune Apps tab.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>In non-WSUS environments, the Updates tab may have been hidden by using the **Disable the Updates tab for publishing software to WSUS** setting in the [Intune Standalone Options](../../advanced/intune-standalone-options.md) section on the [Advanced](../../advanced/) tab. In this scenario, the form control is not visible on the Intune Apps tab.</p>
+</blockquote>

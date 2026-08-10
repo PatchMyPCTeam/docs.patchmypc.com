@@ -6,13 +6,11 @@ In Patch My PC (PMPC) Cloud, the [Delayed](update-ring-types.md#delayed-update-r
 
 As a result, you cannot edit a deployment that uses Delayed Update Rings until all rings have been created.
 
-{% hint style="info" %}
-**Note**
-
-If you try editing a deployment that uses Delayed Update Rings and not all of the rings have been completed, you will see the following error:
-
-[Error - Editing is not allowed until all rings are created after the configured delay.](../../troubleshoot/update-rings/error-editing-is-not-allowed-until-all-rings-are-created-after-the-configured-delay-cloud-error.md)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If you try editing a deployment that uses Delayed Update Rings and not all of the rings have been completed, you will see the following error:</p>
+<p>[Error - Editing is not allowed until all rings are created after the configured delay.](../../troubleshoot/update-rings/error-editing-is-not-allowed-until-all-rings-are-created-after-the-configured-delay-cloud-error.md)</p>
+</blockquote>
 
 To determine if a specific Update Ring has been created:
 
@@ -24,15 +22,14 @@ To determine if a specific Update Ring has been created:
     \
     In the following example, **Ring 1** has been created as it has a status of **Success**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1115).png" alt="“Ring 1” has been created as it has a status of “Success”."><figcaption></figcaption></figure>
+    !["Ring 1" has been created as it has a status of "Success".](/_images/image-(1115).png "“Ring 1” has been created as it has a status of “Success”.")
 
     \
     However, as **Ring 2** has a status of **Scheduled**, it has yet to be created as the configured delay has not passed.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1116).png" alt="“Ring 2” has a status of Scheduled meaning it has yet to be created as the configured delay has not passed."><figcaption></figcaption></figure>
+    !["Ring 2" has a status of Scheduled meaning it has yet to be created as the configured delay has not passed.](/_images/image-(1116).png "“Ring 2” has a status of Scheduled meaning it has yet to be created as the configured delay has not passed.")
 
-{% hint style="success" %}
-**Tip**
-
-If you look in the top right-hand corner of the deployment, the timestamp shows when the deployment was created. From this and looking at the number of days delay configured for a ring, you can work out when a specific ring will be created.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>If you look in the top right-hand corner of the deployment, the timestamp shows when the deployment was created. From this and looking at the number of days delay configured for a ring, you can work out when a specific ring will be created.</p>
+</blockquote>

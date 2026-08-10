@@ -6,17 +6,16 @@ _Applies to: Patch My PC Publisher V2.x_
 
 **ARM Architecture Application Support** controls whether the Publisher evaluates and publishes ARM64 applications.
 
-<figure><img src="../../../.gitbook/assets/image (170).png" alt="ARM Architecture Application Support" width="545"><figcaption></figcaption></figure>
+![ARM Architecture Application Support](/_images/image-(170).png "ARM Architecture Application Support")
 
 ## Enable support for ARM Architecture applications
 
 When this option is enabled, the Publisher begins supporting ARM64 applications. ARM64 products are evaluated during Publisher syncs using existing auto publishing rules.
 
-{% hint style="warning" %}
-**Important**
-
-Once enabled, this setting cannot be disabled.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Once enabled, this setting cannot be disabled.</p>
+</blockquote>
 
 Enabling this option causes ARM64 applications to be included in evaluation and publishing logic. Existing auto publishing rules are applied without modification, which may result in new ARM64 applications being published automatically.
 
@@ -33,7 +32,7 @@ When ARM Architecture Application Support is enabled, ARM based applications are
 
 ARM applications are identified by ARM64 appended to the application name. This naming clearly distinguishes ARM64 installers from x64 and x86 variants.
 
-<figure><img src="../../../.gitbook/assets/image (171).png" alt="ARM64 Products in the product tree" width="545"><figcaption></figcaption></figure>
+![ARM64 Products in the product tree](/_images/image-(171).png "ARM64 Products in the product tree")
 
 ## Automatic Requirement Handling
 
@@ -49,11 +48,11 @@ For third party updates published to WSUS, ARM64 applicability is controlled by 
 
 For ConfigMgr applications, ARM64 applications automatically include an operating system requirement that limits installation to Windows ARM64. This ensures the application is only offered to supported devices.
 
-<figure><img src="../../../.gitbook/assets/image (172).png" alt="ConfigMgr OS Requirements" width="563"><figcaption></figcaption></figure>
+![ConfigMgr OS Requirements](/_images/image-(172).png "ConfigMgr OS Requirements")
 
 For Intune Win32 applications, the operating system architecture requirements are automatically configured during publishing. ARM64 applications are limited to ARM64 devices, while most x64 applications are allowed to install on both x64 and ARM64 devices.
 
-<figure><img src="../../../.gitbook/assets/image (173).png" alt="Intune OS Requirements" width="563"><figcaption></figcaption></figure>
+![Intune OS Requirements](/_images/image-(173).png "Intune OS Requirements")
 
 ## Assignments
 

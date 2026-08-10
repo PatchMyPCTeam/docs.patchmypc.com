@@ -10,11 +10,8 @@ To help you easily locate the Release notes for each Patch My PC (PMPC) product,
 * [Insights (Advanced and Patch Insights for Configuration Manager)](patch-my-pc-insights/advanced-insights-release-note/)
 * [Return on Investment (ROI) Tool](patch-my-pc-roi-tool/release-notes.md)
 
-{% hint style="info" %}
-Note
-
-The current products do not currently have Release notes:
-
-* [MEM Optimizer](patch-my-pc-mem-optimizer/)
-{% endhint %}
-
+<blockquote class="wp-block-quote">
+<p>Note</p>
+<p>The current products do not currently have Release notes:</p>
+<p>* [MEM Optimizer](patch-my-pc-mem-optimizer/)</p>
+</blockquote>

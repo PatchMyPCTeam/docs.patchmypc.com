@@ -2,13 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**PRE-RELEASE DOCUMENTATION**
-
-This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
-
-Once this feature is released, it will be announced, and this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**PRE-RELEASE DOCUMENTATION**</p>
+<p>This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.</p>
+<p>Once this feature is released, it will be announced, and this banner will be removed.</p>
+</blockquote>
 
 Setting up the Patch My PC (PMPC) Publisher _Remote User Interface (UI)_ feature involves the following two steps:
 
@@ -17,11 +15,10 @@ Setting up the Patch My PC (PMPC) Publisher _Remote User Interface (UI)_ feature
 
 ## Enabling external access on the server
 
-{% hint style="info" %}
-**Note**
-
-This process only needs to be completed once.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>This process only needs to be completed once.</p>
+</blockquote>
 
 On the computer running the Publisher **PatchMyPCService**:
 
@@ -34,11 +31,10 @@ On the computer running the Publisher **PatchMyPCService**:
 7. Make a note of both the chosen hostname and port, as each administrator needs the same hostname and port.
 8. Select the **server certificate** to secure the connection, then click **Apply**.
 
-{% hint style="info" %}
-**Note**
-
-As binding the certificate needs elevation, you may see a User Account Control prompt.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>As binding the certificate needs elevation, you may see a User Account Control prompt.</p>
+</blockquote>
 
 If you do not yet have a suitable certificate, see [Using a Different Computer](technical-references/using-different-computer.md) for details of the certificate requirements and how to create or request one.
 

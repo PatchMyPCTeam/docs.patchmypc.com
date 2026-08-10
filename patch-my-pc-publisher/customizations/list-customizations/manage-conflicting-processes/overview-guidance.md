@@ -10,11 +10,11 @@ This option allows you to define which running processes should be detected and 
 
 ## Guidance
 
-Products shown in the Product Tree with a blue cross icon (![Blue cross icon](<../../../../.gitbook/assets/image (4767).png>)) indicate that the application must be closed before updating.
+Products shown in the Product Tree with a blue cross icon (![Blue cross icon](/_images/image-(4767 "Blue cross icon").png>)) indicate that the application must be closed before updating.
 
 PMPC has identified that these applications cannot be reliably updated whilst running.
 
-<figure><img src="../../../../.gitbook/assets/image (4415).png" alt="Product Tree icon indicating the Manage Conflicting Processes feature should be configured" width="563"><figcaption></figcaption></figure>
+![Product Tree icon indicating the Manage Conflicting Processes feature should be configured](/_images/image-(4415).png "Product Tree icon indicating the Manage Conflicting Processes feature should be configured")
 
 For these products, Publisher's default behavior is to configure conflicting processes to [Skip installation when conflicting processes are in use](policy-section.md#skip-installation-when-conflicting-processes-are-in-use).&#x20;
 
@@ -26,15 +26,14 @@ This approach balances application compliance with a positive end-user experienc
 
 When the notification is presented to the end user, the available actions control how the update proceeds.
 
-<figure><img src="../../../../.gitbook/assets/image (135).png" alt="User options for Manage Conflicting Processes" width="282"><figcaption></figcaption></figure>
+![User options for Manage Conflicting Processes](/_images/image-(135).png "User options for Manage Conflicting Processes")
 
 Selecting **Close All and Install** immediately closes the defined [conflicting processes](management-options.md#manage-process-list) and starts the update installation.
 
-{% hint style="danger" %}
-**Important**
-
-If an application is closed by this process, it is not automatically reopened after the update completes. Application relaunch behavior depends on the application itself or user action.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>If an application is closed by this process, it is not automatically reopened after the update completes. Application relaunch behavior depends on the application itself or user action.</p>
+</blockquote>
 
 Selecting **Snooze Install** records a deferral for the installation. The update does not run at that time and is retried during the next evaluation cycle based on the configured [deferral policy](notification-policy.md#defer-snooze-policy) and deployment platform.
 

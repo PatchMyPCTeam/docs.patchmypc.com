@@ -1,7 +1,8 @@
 # Manage Installation Logging
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available at level: All Custom Products, All Products, Vendor, Product_
+\
 _Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Overview
@@ -10,21 +11,18 @@ The **Manage Installation Logging** option enables _additional_ client side logg
 
 When enabled, the Publisher configures the installer to generate a Patch My PC installation log and, when supported, the vendor’s native installation log. These logs are created during product installation on the client device and can be collected for diagnostic purposes.
 
-<figure><img src="../../.gitbook/assets/image (128).png" alt="Manage Installation Logging" width="563"><figcaption></figcaption></figure>
+![Manage Installation Logging](/_images/image-(128).png "Manage Installation Logging")
 
-{% hint style="info" %}
-**Note**
-
-Some vendor installers can generate their own installation logs, most commonly MSI based installers. The **Manage Installation Logging** option facilitates Patch My PC ScriptRunner, which manages the installation, to pass the appropriate logging parameters to the installer so that additional vendor specific logs are created. These logs are useful for client side troubleshooting when an installation fails.
-
-This option only affects vendor logging behavior. The Patch My PC ScriptRunner logs are created regardless of whether this option is enabled.
-
-More information on log files and locations can be found [https://docs.patchmypc.com/get-help/log-reference-guide](https://docs.patchmypc.com/get-help/log-reference-guide).
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Some vendor installers can generate their own installation logs, most commonly MSI based installers. The **Manage Installation Logging** option facilitates Patch My PC ScriptRunner, which manages the installation, to pass the appropriate logging parameters to the installer so that additional vendor specific logs are created. These logs are useful for client side troubleshooting when an installation fails.</p>
+<p>This option only affects vendor logging behavior. The Patch My PC ScriptRunner logs are created regardless of whether this option is enabled.</p>
+<p>More information on log files and locations can be found <a href="https://docs.patchmypc.com/get-help/log-reference-guide">https://docs.patchmypc.com/get-help/log-reference-guide</a>.</p>
+</blockquote>
 
 The Manage Installation Logging window provides the following settings.
 
-<figure><img src="../../.gitbook/assets/image (129).png" alt="Logging Options" width="450"><figcaption></figcaption></figure>
+![Logging Options](/_images/image-(129).png "Logging Options")
 
 ## **Folder path**
 
@@ -33,11 +31,10 @@ Specifies the location where client side installation logs are written. The defa
 * Products installed from **ConfigMgr and WSUS** store logs in `C:\Windows\CCM\Logs\PatchMyPCInstallLogs`
 * Products installed from **Intune** store logs in `%ProgramData%\PatchMyPCInstallLogs`
 
-{% hint style="warning" %}
-**Important**
-
-User-based installations write logs to folders within the user profile. More information on log files and locations can be found [https://docs.patchmypc.com/get-help/log-reference-guide](https://docs.patchmypc.com/get-help/log-reference-guidehttps://docs.patchmypc.com/get-help/log-reference-guide).
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>User-based installations write logs to folders within the user profile. More information on log files and locations can be found <a href="https://docs.patchmypc.com/get-help/log-reference-guidehttps://docs.patchmypc.com/get-help/log-reference-guide">https://docs.patchmypc.com/get-help/log-reference-guide</a>.</p>
+</blockquote>
 
 ## **Enable verbose logging for MSI installation**
 

@@ -13,7 +13,7 @@ To manage the conflicting process for a Deployment:
 
 1. Click the **Conflicting Process** tool.
 
-<figure><img src="../../../../../.gitbook/assets/image (4203).png" alt="Clicking the &#x27;Conflicting Process&#x27; tool" width="563"><figcaption></figcaption></figure>
+![Clicking the 'Conflicting Process' tool](/_images/image-(4203).png "Clicking the &#x27;Conflicting Process&#x27; tool")
 
 2. Configure the required settings as detailed below.
 
@@ -25,11 +25,10 @@ This is the default option for software that can install, update, or uninstall, 
 
 Automatically closes the app/process causing the conflict to allow this app to be installed.
 
-{% hint style="danger" %}
-**Important**
-
-This can result in data loss, so use it with care.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This can result in data loss, so use it with care.</p>
+</blockquote>
 
 ### Skip installation when conflicting processes are in use
 
@@ -37,13 +36,11 @@ The installation is skipped until the conflicting process is no longer in use. T
 
 `The user cancelled the app installation. (0x80070642)`&#x20;
 
-{% hint style="info" %}
-**Note**
-
-If the user snoozes/defers the update, Intune reports the installation as a failure and retries 24 hours later.
-
-See [Win32app Retry Interval – Demystified](https://patchtuesday.com/blog/tech-blog/win32app-retry-interval/) for more information about the retry behavior of Win32 packages in Intune.&#x20;
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If the user snoozes/defers the update, Intune reports the installation as a failure and retries 24 hours later.</p>
+<p>See <a href="https://patchtuesday.com/blog/tech-blog/win32app-retry-interval/">Win32app Retry Interval – Demystified</a> for more information about the retry behavior of Win32 packages in Intune.&#x20;</p>
+</blockquote>
 
 This option can be configured with either of the following options:
 
@@ -54,16 +51,15 @@ This option can be configured with either of the following options:
 
 This is the default option for software that cannot successfully install, update, or uninstall when conflicting processes are running. The user sees a notification requesting they close the app, which is preventing this install. These apps will leverage your [Branding](../../../../manage/settings/branding/).
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If the user snoozes/defers the update, Intune reports the installation as a failure and retries 24 hours later.&#x20;</p>
+</blockquote>
 
-If the user snoozes/defers the update, Intune reports the installation as a failure and retries 24 hours later.&#x20;
-{% endhint %}
-
-{% hint style="success" %}
-**Tip**\
-See [Manage Conflicting Processes when Updating Third-Party Applications - Patch My PC](https://patchmypc.com/manage-conflicting-processes-when-updating-third-party-applications#topic4) for a list of products we know will generally fail to update if they are in use.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**\</p>
+<p>See <a href="https://patchmypc.com/manage-conflicting-processes-when-updating-third-party-applications#topic4">Manage Conflicting Processes when Updating Third-Party Applications - Patch My PC</a> for a list of products we know will generally fail to update if they are in use.</p>
+</blockquote>
 
 ## Conflicting Process - Settings
 
@@ -103,31 +99,27 @@ Two options exist for this setting:
 
 * Defer the installation on behalf of the user (default)
 
-{% hint style="info" %}
-**Note**
-
-When selected, the notification closes after the timeout expires, and the deferral is automatically applied on the user's behalf. This counts toward either the configured deferral count or deferral time window. If a deferral limit is reached (such as 5 missed notifications when the deferral count is set to 5), the application will be closed, and the update will proceed automatically.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>When selected, the notification closes after the timeout expires, and the deferral is automatically applied on the user's behalf. This counts toward either the configured deferral count or deferral time window. If a deferral limit is reached (such as 5 missed notifications when the deferral count is set to 5), the application will be closed, and the update will proceed automatically.</p>
+</blockquote>
 
 * Close the application and perform the update
 
-{% hint style="info" %}
-**Note**
-
-When selected, the notification closes after the timeout expires and the installation begins immediately.
-
-This setting is incompatible with **Modern (PSADT) branding**. When **Modern (PSADT) branding** is used, this option behaves the same as **Defer the installation on behalf of the user**. If the timeout expires and the user takes no action, the installation is deferred on the user's behalf. Once all allowed deferrals have been exhausted, the application is closed and the installation proceeds automatically.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>When selected, the notification closes after the timeout expires and the installation begins immediately.</p>
+<p>This setting is incompatible with **Modern (PSADT) branding**. When **Modern (PSADT) branding** is used, this option behaves the same as **Defer the installation on behalf of the user**. If the timeout expires and the user takes no action, the installation is deferred on the user's behalf. Once all allowed deferrals have been exhausted, the application is closed and the installation proceeds automatically.</p>
+</blockquote>
 
 #### Prevent the application from being opened while it is updating
 
 Prevents the app from opening whilst it is being updated.
 
-{% hint style="info" %}
-**Note**
-
-See the [Update in progress](https://patchmypc.com/kb/manage-conflicting-processes-when-updating/#h-update-in-progress) section of [Manage Conflicting Processes when Updating Third-Party Applications](https://patchmypc.com/kb/manage-conflicting-processes-when-updating/) for more information about this option.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See the <a href="https://patchmypc.com/kb/manage-conflicting-processes-when-updating/#h-update-in-progress">Update in progress</a> section of <a href="https://patchmypc.com/kb/manage-conflicting-processes-when-updating/">Manage Conflicting Processes when Updating Third-Party Applications</a> for more information about this option.</p>
+</blockquote>
 
 ### Conflicting Process - Conflicting Process
 
@@ -141,4 +133,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-<figure><img src="../../../../../.gitbook/assets/image (662).png" alt="Clicking &#x27;Next&#x27;" width="563"><figcaption></figcaption></figure>
+![Clicking 'Next'](/_images/image-(662).png "Clicking &#x27;Next&#x27;")

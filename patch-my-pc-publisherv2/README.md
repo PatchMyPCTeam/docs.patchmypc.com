@@ -11,23 +11,20 @@ Official product documentation for Patch My PC Publisher, our on-premises based 
 
 <table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="release-notes-for-patch-my-pc-publisher/"><strong>Publisher Release Notes</strong></a><br>Latest product and feature updates and bug fixes</td></tr><tr><td><a href="overview.md"><strong>Overview</strong></a><br>A general overview of the capabilities and use cases for the Publisher</td></tr><tr><td><a href="resources.md"><strong>Resources</strong></a><br>Useful resources to ensure a succesful implementation and continued use of the Publisher</td></tr><tr><td><a href="getting-started.md"><strong>Getting Started</strong></a><br>Steps for getting started with the Publisher</td></tr><tr><td><a href="publisher-requirements/"><strong>Publisher Requirements</strong></a><br>What's required to run the Publisher for ConfigMgr, WSUS and Intune environments</td></tr><tr><td><a href="download-and-install.md"><strong>Download and Install</strong></a><br>How to download the Publisher and whereto install it</td></tr><tr><td><a href="administration/"><strong>Administration</strong></a><br>How to configure and manage the various tabs and settings for your environment</td></tr><tr><td><a href="customizations-right-click-options/"><strong>Customizations (Right-Click Options)</strong></a><br>Right-Click options to customize applications and updates</td></tr><tr><td><a href="scenario-based-guidance/"><strong>Scenario-based Guidance</strong></a><br>How to use the Publisher in different scenarios and environments</td></tr><tr><td><a href="security/"><strong>Security</strong></a><br>Learn about our binary validation methodology and the platform trust model for the Publisher</td></tr><tr><td><a href="troubleshooting/"><strong>Troubleshooting</strong></a><br>Common troubleshooting scenarios when using the Publisher</td></tr><tr><td><a href="publisher-reference/"><strong>Publisher References</strong></a><br>Various reference articles about the Publisher</td></tr></tbody></table>
 
-{% hint style="info" %}
-**Note**
-
-If you have any feedback or comments on our docs, please email [docs@patchmypc.com](mailto:docs@patchmypc.com)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If you have any feedback or comments on our docs, please email [docs@patchmypc.com](mailto:docs@patchmypc.com)</p>
+</blockquote>
 
 <details>
 
 <summary>Legacy Links</summary>
 
-{% hint style="warning" %}
-**Important**
-
-The **Legacy Links** section is maintained temporarily while we migrate to the new Publisher documentation to prevent existing references in documentation and external content from returning errors. Some content may be outdated.
-
-If you encounter any documentation-related issues or have any feedback, feel free to email [docs@patchmypc.com](mailto:docs@patchmypc.com)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>The **Legacy Links** section is maintained temporarily while we migrate to the new Publisher documentation to prevent existing references in documentation and external content from returning errors. Some content may be outdated.</p>
+<p>If you encounter any documentation-related issues or have any feedback, feel free to email [docs@patchmypc.com](mailto:docs@patchmypc.com)</p>
+</blockquote>
 
 #### Installation
 

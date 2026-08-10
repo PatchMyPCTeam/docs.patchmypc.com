@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Alerts** tab in Patch My PC (PMPC) Publisher provides visibility into publishing activity and operational events. Alerts are generated during [publishing syncs](../sync-schedule-tab/overview.md) to inform administrators about successful actions, warnings, and failures.
 
-<figure><img src="../../../.gitbook/assets/image (4864).png" alt="&#x27;Alerts&#x27; tab" width="563"><figcaption></figcaption></figure>
+!['Alerts' tab](/_images/image-(4864).png "&#x27;Alerts&#x27; tab")
 
 _Alerts_ are intended to help administrators quickly understand the state of the publishing process without needing to review detailed logs.
 

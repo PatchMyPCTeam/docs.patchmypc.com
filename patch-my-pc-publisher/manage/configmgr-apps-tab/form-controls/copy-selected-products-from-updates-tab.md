@@ -2,15 +2,14 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Copy Selected Products from the Updates Tab** form control in Patch My PC (PMPC) Publisher synchronizes product selections and/or customizations from the **Updates** tab to the **ConfigMgr Apps** tab. This option is intended to provide a quick and consistent way to align application management behavior with update publishing selections while preserving the standard inheritance behavior of the product tree.
 
-<figure><img src="../../../../.gitbook/assets/image (498).png" alt="" width="545"><figcaption></figcaption></figure>
+![](/_images/image-(498).png)
 
 When this form control is used, the Publisher can copy product selections only or product selections together with customizations from the Updates tab to the ConfigMgr Apps tab.
 
@@ -20,18 +19,17 @@ If you choose to copy product selections with customizations, the Publisher copi
 
 The copy operation is **not cumulative**. If customizations already exist on the ConfigMgr Apps tab at the same level, they are **overwritten**, not merged.&#x20;
 
-{% hint style="danger" %}
-**Important**
-
-Product level selections that exist only on the ConfigMgr Apps tab and are not selected on the Updates tab remain unchanged. However, if a customization is applied at the **vendor** or **All Products** level, that configuration is inherited by all child products, including those that were previously configured only on the ConfigMgr Apps tab.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Product level selections that exist only on the ConfigMgr Apps tab and are not selected on the Updates tab remain unchanged. However, if a customization is applied at the **vendor** or **All Products** level, that configuration is inherited by all child products, including those that were previously configured only on the ConfigMgr Apps tab.</p>
+</blockquote>
 
 To copy selected products and customizations from the **Updates** tab for ConfigMgr Apps tab:
 
 1. Select the **Enable the selected products from the Updates tab that support installation packages** button.
 2. When prompted with the confirmation dialog, choose one of the following options.
 
-<figure><img src="../../../../.gitbook/assets/image (85).png" alt="Confirm Customizations &#x26; Selections Copy" width="444"><figcaption></figcaption></figure>
+![Confirm Customizations & Selections Copy](/_images/image-(85).png "Confirm Customizations &#x26; Selections Copy")
 
 * Select **Yes** to copy custom actions, as well as products, from the Updates tab, including pre and post scripts, disabling updates, and removing shortcuts.
 * Select **No** to copy only the product selections without copying custom actions.

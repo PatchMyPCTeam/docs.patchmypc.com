@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 Why does the **Permissions Issue Detected** dialog pop up when using the Patch My PC (PMPC) Cloud Portal?
 
-<figure><img src="../../../.gitbook/assets/image (4510).png" alt="&#x27;Permissions Issue Detected&#x27; dialog" width="279"><figcaption></figcaption></figure>
+!['Permissions Issue Detected' dialog](/_images/image-(4510).png "&#x27;Permissions Issue Detected&#x27; dialog")
 
 ### CAUSE
 

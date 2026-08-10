@@ -1,14 +1,14 @@
 # Republish Product option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available at level: All Custom Products, All Products, Vendor, Product_
+\
 _Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Republish Product** right-click option in Patch My PC (PMPC) Publisher instructs the Publisher to rebuild and republish an update or application during the next publishing service sync.
 
@@ -20,11 +20,10 @@ Republishing recreates the underlying content rather than issuing a simple metad
 * For **ConfigMgr applications**, republishing creates a new content version.
 * For **Intune apps and updates**, the existing Win32 app content and metadata are replaced, whilst the Win32 application ID remains the same.
 
-{% hint style="info" %}
-**Note**
-
-See the [Update Republishing Options](../../../patch-my-pc-publisherv2/administration/updates/options/update-republishing-options.md) for more information on how to configure republished update behavior for WSUS updates.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See the [Update Republishing Options](../../../patch-my-pc-publisherv2/administration/updates/options/update-republishing-options.md) for more information on how to configure republished update behavior for WSUS updates.</p>
+</blockquote>
 
 ## When to Use Republish
 
@@ -55,16 +54,15 @@ As a result, clients may take significantly longer to detect republished apps Vs
 
 When a WSUS update is marked for republishing, the Publisher displays a confirmation dialog. This dialog reminds you that a Software Update Point sync is required before the republished update becomes available in ConfigMgr.
 
-<figure><img src="../../../.gitbook/assets/image (4069).png" alt="Republish WSUS Updates confirmation" width="446"><figcaption></figcaption></figure>
+![Republish WSUS Updates confirmation](/_images/image-(4069).png "Republish WSUS Updates confirmation")
 
 After confirmation, you are prompted to choose whether the new update should supersede the existing update in WSUS. If you choose to supersede, the older update will be marked as superseded once the new update is created.
 
-<figure><img src="../../../.gitbook/assets/image (4070).png" alt="Supersede Previous Published Update(s) confirmation" width="446"><figcaption></figcaption></figure>
+![Supersede Previous Published Update(s) confirmation](/_images/image-(4070).png "Supersede Previous Published Update(s) confirmation")
 
 If you prefer older updates to be expired instead of superseded, this can be done manually using the [Modify Published Updates](../../../patch-my-pc-publisherv2/administration/updates/options/modify-published-updates.md) wizard in the Publisher.
 
-{% hint style="danger" %}
-**Important**
-
-Avoid deleting previously published updates directly from WSUS or ConfigMgr. Doing so can cause republished updates to reappear unexpectedly and may result in hash validation errors if clients attempt to download content that no longer exists.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Avoid deleting previously published updates directly from WSUS or ConfigMgr. Doing so can cause republished updates to reappear unexpectedly and may result in hash validation errors if clients attempt to download content that no longer exists.</p>
+</blockquote>

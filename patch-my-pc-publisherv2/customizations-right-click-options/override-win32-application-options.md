@@ -1,14 +1,15 @@
 # Override Win32 Application Options
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: Vendor, Product_\
+_Available at level: Vendor, Product_
+\
 _Available on tab: Intune Apps, Intune Updates_
 
 ## Overview
 
 **Override Win32 Application Options** allows you to override the global Win32 application options for a specific vendor or product. It is used when certain Intune applications or updates require different behavior than what is defined globally.
 
-<figure><img src="../../.gitbook/assets/image (4058).png" alt="Override Win32 Application Options" width="563"><figcaption></figcaption></figure>
+![Override Win32 Application Options](/_images/image-(4058).png "Override Win32 Application Options")
 
 Global Win32 app options are configured on the [Intune Apps and Intune Updates](../administration/intune-apps-updates/) tab by selecting [Options](../administration/intune-apps-updates/options/). These settings control behaviors such as assignment copying, retention of previous versions, dependency handling, runtime limits, and cleanup of older apps or updates.
 
@@ -51,7 +52,7 @@ Configuring Overrides
 
 Overrides configured here take precedence over the global options defined on the Intune Apps and Intune Updates tab and are applied only to the selected vendor or product during publishing.
 
-<figure><img src="../../.gitbook/assets/image (4059).png" alt="Override Win32 Application Options" width="563"><figcaption></figcaption></figure>
+![Override Win32 Application Options](/_images/image-(4059).png "Override Win32 Application Options")
 
 To Configure a Win32 Application Option Override:
 
@@ -63,8 +64,7 @@ To Configure a Win32 Application Option Override:
 
 The override is evaluated and applied during the next Publisher [synchronization](../administration/sync-schedule.md) and affects only the selected vendor or product.
 
-{% hint style="info" %}
-Note
-
-For more details about Application and Retention Settings, use the [Intune Apps/Updates Global Options](../administration/intune-apps-updates/options/application-options.md) page for reference.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>Note</p>
+<p>For more details about Application and Retention Settings, use the [Intune Apps/Updates Global Options](../administration/intune-apps-updates/options/application-options.md) page for reference.</p>
+</blockquote>

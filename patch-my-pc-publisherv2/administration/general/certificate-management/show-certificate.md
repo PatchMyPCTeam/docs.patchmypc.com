@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The Show Certificate option displays detailed information about the code-signing certificate currently configured for use by the Publisher. This view allows you to verify that a valid certificate is selected, confirm its trust status, and ensure it meets WSUS and ConfigMgr signing requirements.
 
-<figure><img src="../../../../.gitbook/assets/image (3913).png" alt="Show the Certificate being used by the Publisher" width="563"><figcaption></figcaption></figure>
+![Show the Certificate being used by the Publisher](/_images/image-(3913).png "Show the Certificate being used by the Publisher")
 
 When you select **Show Certificate**, the following information is displayed:
 
@@ -33,7 +33,7 @@ When you select **Show Certificate**, the following information is displayed:
 
 Selecting **Validate Trust Chain** checks whether the certificate and its issuing chain are trusted by the local system. This is a useful troubleshooting step if update publishing fails due to certificate or trust-related errors.
 
-<figure><img src="../../../../.gitbook/assets/image (3914).png" alt="Validate the certificate trust chain" width="300"><figcaption></figcaption></figure>
+![Validate the certificate trust chain](/_images/image-(3914).png "Validate the certificate trust chain")
 
 ## Troubleshooting
 
@@ -41,13 +41,14 @@ If you receive an error when you click **Show Certificate**, use the troubleshoo
 
 ### No Certificate foundin the WSUS Store on this Server
 
-<figure><img src="../../../../.gitbook/assets/image (4266).png" alt="No Certificate foundin the WSUS Store on this Server" width="358"><figcaption></figcaption></figure>
+![No Certificate foundin the WSUS Store on this Server](/_images/image-(4266).png "No Certificate foundin the WSUS Store on this Server")
 
 If clicking **Show Certificate** displays **No certificate found in the WSUS store on this server**, review **PatchMyPC.log** for related certificate extraction errors. An entry such as
 
-`An error occurred while extracting the certificate from WSUS: C:\WINDOWS\SystemTemp\PMP-1d2xluld\jwpcs1ov.tmp : The request failed with HTTP status 503: Service Unavailable. CertManager 18/04/2026 12:12:54 34 (0x0022)`\
+`An error occurred while extracting the certificate from WSUS: C:\WINDOWS\SystemTemp\PMP-1d2xluld\jwpcs1ov.tmp : The request failed with HTTP status 503: Service Unavailable. CertManager 18/04/2026 12:12:54 34 (0x0022)`
+\
 `Failed to extract the certificate from WSUS CertManager 18/04/2026 12:12:54 34 (0x0022)`
 
 Verify that the WSUS Application Pool is started in IIS, then retry the action.
 
-<figure><img src="../../../../.gitbook/assets/image (4267).png" alt="Verify that the WSUS Application Pool is started in IIS, then retry the action." width="563"><figcaption></figcaption></figure>
+![Verify that the WSUS Application Pool is started in IIS, then retry the action.](/_images/image-(4267).png "Verify that the WSUS Application Pool is started in IIS, then retry the action.")

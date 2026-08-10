@@ -10,9 +10,9 @@ _Applies to: Patch My PC Advanced and Patch Insights_
 
 Run the installation
 
-{% hint style="warning" %}
-Ensure the Software requirements have been reviewed here: [insights-software-requirements.md](../advanced-and-patch-insights-requirements-and-prerequisites/insights-software-requirements.md "mention")
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>Ensure the Software requirements have been reviewed here: [insights-software-requirements.md](../advanced-and-patch-insights-requirements-and-prerequisites/insights-software-requirements.md "mention")</p>
+</blockquote>
 
 Download the latest installer for Advanced Insights by clicking the [link below](https://api.patchmypc.com/downloads/exe/AdvancedInsights.exe).&#x20;
 
@@ -24,52 +24,48 @@ You can view the release history for Advanced Insights on our [release history p
 
 Start the installation by double-clicking the downloaded **AdvancedInsights.exe**
 
-<figure><img src="../../.gitbook/assets/image (4318).png" alt="AdvancedInsights.exe" width="106"><figcaption></figcaption></figure>
+![AdvancedInsights.exe](/_images/image-(4318).png "AdvancedInsights.exe")
 
 If prompted, click **Yes** on the **User Account Control** screen.
 
-<figure><img src="../../.gitbook/assets/image (4319).png" alt="&#x27;User Account Control&#x27; screen" width="563"><figcaption></figcaption></figure>
+!['User Account Control' screen](/_images/image-(4319).png "&#x27;User Account Control&#x27; screen")
 
 #### Prerequisites Screen
 
 Once the installation starts, you will likely be greeted by the prerequisite screen in our installer wizard, click **Next.**
 
-{% hint style="info" %}
-If you have already met the prerequisite requirements, these screens will not be shown, and you can step down to the [#license-terms-and-conditions](./#license-terms-and-conditions "mention") step.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>If you have already met the prerequisite requirements, these screens will not be shown, and you can step down to the [#license-terms-and-conditions](./#license-terms-and-conditions "mention") step.</p>
+</blockquote>
 
-<figure><img src="../../.gitbook/assets/image (4320).png" alt="" width="563"><figcaption></figcaption></figure>
+![](/_images/image-(4320).png)
 
 #### Select Prerequisites
 
 Any required prerequisites are listed. These can all install without requiring a restart. Confirm the requirements and click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (4321).png" alt="Any required prerequisites are listed" width="563"><figcaption></figcaption></figure>
+![Any required prerequisites are listed](/_images/image-(4321).png "Any required prerequisites are listed")
 
 Any required prerequisites are installed.
 
-<figure><img src="../../.gitbook/assets/image (4323).png" alt="Any required prerequisites are installed" width="563"><figcaption></figcaption></figure>
+![Any required prerequisites are installed](/_images/image-(4323).png "Any required prerequisites are installed")
 
 #### License Terms and Conditions
 
 Once the required prerequisites have been installed, you must accept the Terms and Conditions of use. Tick the "I agree" box and click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (4324).png" alt="Licensing Terms and Conditions" width="563"><figcaption></figcaption></figure>
+![Licensing Terms and Conditions](/_images/image-(4324).png "Licensing Terms and Conditions")
 
 #### Installation Folder
 
 Advanced Insights requires approximately 1.5GB of storage space. Confirm the installation directory and click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (4325).png" alt="Select Installation Folder" width="563"><figcaption></figcaption></figure>
+![Select Installation Folder](/_images/image-(4325).png "Select Installation Folder")
 
-{% hint style="info" %}
-**Note**
-
-The installer will automatically create an installation log at:
-
-`%temp%\AdvInsights.log`
-
-Additionally, a copy (.zip) of the install log is placed into the following folder:
-
-`C:\ProgramData\AdvancedInsights\Logs\Installer`
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The installer will automatically create an installation log at:</p>
+<p>`%temp%\AdvInsights.log`</p>
+<p>Additionally, a copy (.zip) of the install log is placed into the following folder:</p>
+<p>`C:\ProgramData\AdvancedInsights\Logs\Installer`</p>
+</blockquote>

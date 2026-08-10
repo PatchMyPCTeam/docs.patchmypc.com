@@ -2,15 +2,14 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Intune Standalone Options** section of the Patch My PC (PMPC) Publisher is used to limit the Publisher to Intune-only functionality. These settings hide the ConfigMgr and WSUS-related publishing features from the user interface.
 
-<figure><img src="../../../.gitbook/assets/image (176).png" alt="Intune Standalone Options" width="545"><figcaption></figcaption></figure>
+![Intune Standalone Options](/_images/image-(176).png "Intune Standalone Options")
 
 The following options are available:
 
@@ -23,6 +22,6 @@ The following options are available:
 
 These options are automatically enabled if **Enable Microsoft Intune standalone mode** was selected during installation of the Publisher.
 
-<figure><img src="../../../.gitbook/assets/image (177).png" alt="Enable Microsoft Intune standalone mode" width="371"><figcaption></figcaption></figure>
+![Enable Microsoft Intune standalone mode](/_images/image-(177).png "Enable Microsoft Intune standalone mode")
 
 Intune standalone mode is not permanent. The ConfigMgr Apps tab and the Updates tab can be re-enabled at any time by clearing the corresponding options in the Advanced tab of the Publisher.

@@ -6,11 +6,10 @@ description: Definition and technical description of each of our custom WMI Clas
 
 _Applies to: Patch My PC Advanced Insights_
 
-{% hint style="info" %}
-<mark style="color:yellow;">**Properties marked with \***</mark>
-
-<mark style="color:yellow;">These properties can vary by hardware manufacturer. Data generation methods may differ between manufacturers and not all manufacturers may be supported. Users should consult the manufacturer's documentation for accurate interpretation of these properties where applicable.</mark>
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p><mark style="color:yellow;">**Properties marked with \***</mark></p>
+<p><mark style="color:yellow;">These properties can vary by hardware manufacturer. Data generation methods may differ between manufacturers and not all manufacturers may be supported. Users should consult the manufacturer's documentation for accurate interpretation of these properties where applicable.</mark></p>
+</blockquote>
 
 ***
 
@@ -120,13 +119,12 @@ _Applies to: Patch My PC Advanced Insights_
 
 ### PMPC\_Dock
 
-{% hint style="warning" %}
-Please note that collection of this data requires additional software from the vendors to be installed on clients:
-
-* HP - [HP Dock Accessory Provider](https://www.hp.com/us-en/solutions/client-management-solutions/download.html)
-* Lenovo - [Lenovo Dock Manager](https://pcsupport.lenovo.com/us/el/solutions/ht037099)
-* DELL - [Dell Command Monitor](https://www.dell.com/support/kbdoc/en-us/000177080/dell-command-monitor) (or DSIA)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>Please note that collection of this data requires additional software from the vendors to be installed on clients:</p>
+<p>* HP - <a href="https://www.hp.com/us-en/solutions/client-management-solutions/download.html">HP Dock Accessory Provider</a></p>
+<p>* Lenovo - <a href="https://pcsupport.lenovo.com/us/el/solutions/ht037099">Lenovo Dock Manager</a></p>
+<p>* DELL - <a href="https://www.dell.com/support/kbdoc/en-us/000177080/dell-command-monitor">Dell Command Monitor</a> (or DSIA)</p>
+</blockquote>
 
 **DeviceName:** Identified name of the dock device.
 
@@ -236,17 +234,15 @@ Please note that collection of this data requires additional software from the v
 
 ### PMPC\_BrowserExtension
 
-{% hint style="info" %}
-**Note**
-
-Supported Browsers:
-
-* Chrome
-* Edge
-* Brave
-* Firefox
-* Opera
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Supported Browsers:</p>
+<p>* Chrome</p>
+<p>* Edge</p>
+<p>* Brave</p>
+<p>* Firefox</p>
+<p>* Opera</p>
+</blockquote>
 
 **InstallPath:** Path of the extension content and manifest
 

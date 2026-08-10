@@ -1325,9 +1325,9 @@ Support applications in the catalog that download a zip file.
 
 ## 2.1.7 - 2022-10-06
 
-{% hint style="info" %}
-**Note:** Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note:** Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.</p>
+</blockquote>
 
 <details>
 

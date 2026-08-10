@@ -18,7 +18,7 @@ If you try to select more than 1,000 files, the upload is blocked and you will s
 
 **"You have selected too many files (available: 1000)"**
 
-<figure><img src="../../../.gitbook/assets/image (4387).png" alt="&#x27;You have selected too many files (available: 1000)&#x27;" width="287"><figcaption></figcaption></figure>
+!['You have selected too many files (available: 1000)'](/_images/image-(4387).png "&#x27;You have selected too many files (available: 1000)&#x27;")
 
 ## Workaround: ZIP the folder and extract during deployment
 
@@ -38,11 +38,10 @@ Create a ZIP archive of the extra files either manually or using the following P
 # Create the zip archiveCompress-Archive -Path $sourceFolderPath -DestinationPath $zipFilePath -Force -ErrorAction 'Stop'
 ```
 
-{% hint style="danger" %}
-**Important**
-
-Ensure you keep the same folder structure that your installer expects. If the installer needs files “next to it” in the cache folder, make sure they end up in the same relative location after extraction.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Ensure you keep the same folder structure that your installer expects. If the installer needs files “next to it” in the cache folder, make sure they end up in the same relative location after extraction.</p>
+</blockquote>
 
 ### Step 2: Upload the ZIP as an Extra File&#x20;
 
@@ -52,11 +51,10 @@ Upload **MyFolder.zip** as an Extra File in your Custom App or Deployment.
 
 Whilst deploying the app, use the [Scripts](../../deployments/deploy-app/configurations-tab/additional-tools/scripts/pre-install-scripts.md) configuration tool and configure [this](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Install/Pre-Install/Extract%20Zip/README.md) script as a pre-install script.
 
-{% hint style="danger" %}
-**Important**
-
-Always test your scripts thoroughly outside of the Cloud Portal first.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Always test your scripts thoroughly outside of the Cloud Portal first.</p>
+</blockquote>
 
 ## Notes and Considerations
 

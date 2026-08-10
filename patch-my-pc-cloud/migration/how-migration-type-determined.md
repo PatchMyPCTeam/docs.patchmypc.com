@@ -16,11 +16,10 @@ When we migrate ConfigMgr applications using this method, we also migrate any in
 
 The end result is that you now have a version of the app deployed that can be managed and kept up to date for the app's lifetime.
 
-{% hint style="info" %}
-**Note**
-
-See [Publish the App in Intune as a PMPC Catalog App](migrate-application/publish-migrated-app-catalog-app.md) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Publish the App in Intune as a PMPC Catalog App](migrate-application/publish-migrated-app-catalog-app.md) for more information.</p>
+</blockquote>
 
 ### Option 2: Publish the App in Intune as a **Suggested** PMPC Catalog App
 
@@ -35,11 +34,10 @@ This evaluation may include:
 
 If these indicators collectively align with a known catalog app, we may suggest migrating the application as a PMPC Catalog App even when a direct installer hash match isn’t available. This allows you to leverage our catalog-based updates while making it clear that the match is based on metadata rather than binary identification.
 
-{% hint style="info" %}
-**Note**
-
-See [Publish the App in Intune as a Suggested PMPC Catalog App](migrate-application/publish-migrated-app-suggested-app.md) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Publish the App in Intune as a Suggested PMPC Catalog App](migrate-application/publish-migrated-app-suggested-app.md) for more information.</p>
+</blockquote>
 
 ### Option 3: Publish the App in Intune as a PMPC Custom App
 
@@ -49,8 +47,7 @@ When we migrate ConfigMgr applications using this method, we migrate the exact v
 
 You will be able to modify and manage the app from within the PMPC Cloud Portal and take advantage of the various customizations and features of PMPC Cloud Custom Apps.
 
-{% hint style="info" %}
-**Note**
-
-See [Publish the App in Intune as a PMPC Custom App](migrate-application/publish-migrated-app-catalog-app-1.md) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Publish the App in Intune as a PMPC Custom App](migrate-application/publish-migrated-app-catalog-app-1.md) for more information.</p>
+</blockquote>

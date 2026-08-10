@@ -2,11 +2,10 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 Use this checklist when the Patch My PC (PMPC) Publisher is used exclusively to create and manage third party updates in Microsoft Windows Server Update Services (WSUS).
 
@@ -16,7 +15,7 @@ After completing the configuration steps in this section, the Publisher will be 
 
 ## Prerequisites
 
-<table><thead><tr><th width="83" valign="top">Item</th><th width="323" valign="top">Task</th><th valign="top">Done?</th></tr></thead><tbody><tr><td valign="top"></td><td valign="top"></td><td valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top"></td><td valign="top"></td><td valign="top"></td></tr><tr><td valign="top"></td><td valign="top"></td><td valign="top"></td></tr></tbody></table>
+<table><thead><tr><th width="83" valign="top">Item</th><th width="323" valign="top">Task</th><th valign="top">Done?</th></tr></thead><tbody><tr><td valign="top"></td><td valign="top"></td><td valign="top">![](/_images/image-(4460).png)</td></tr><tr><td valign="top"></td><td valign="top"></td><td valign="top"></td></tr><tr><td valign="top"></td><td valign="top"></td><td valign="top"></td></tr></tbody></table>
 
 
 
@@ -24,7 +23,7 @@ After completing the configuration steps in this section, the Publisher will be 
 
 Before continuing to configure Publisher to manage WSUS (Standalone), ensure you have completed the following checklist:
 
-<table><thead><tr><th width="83" valign="top">Item</th><th width="444" valign="top">Task</th><th width="99" align="center" valign="top">Done?</th></tr></thead><tbody><tr><td valign="top">1.</td><td valign="top">You have started a trial and/or have a valid <a href="../../../patch-my-pc-publisherv2/administration/general/license-information.md">license key</a>.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top">2.</td><td valign="top">You have identified Publisher's <a href="../../../patch-my-pc-publisherv2/download-and-install.md#where-should-i-install-the-publisher">installation location</a>.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top">3.</td><td valign="top">Publisher's <a href="../../../patch-my-pc-publisherv2/publisher-requirements/core-requirements.md">core requirements</a> are met.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top">4.</td><td valign="top">Publisher's <a href="../../../patch-my-pc-publisherv2/publisher-requirements/wsus-requirements/">requirements for WSUS</a> are met.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr></tbody></table>
+<table><thead><tr><th width="83" valign="top">Item</th><th width="444" valign="top">Task</th><th width="99" align="center" valign="top">Done?</th></tr></thead><tbody><tr><td valign="top">1.</td><td valign="top">You have started a trial and/or have a valid <a href="../../../patch-my-pc-publisherv2/administration/general/license-information.md">license key</a>.</td><td align="center" valign="top">![](/_images/image-(4460).png)</td></tr><tr><td valign="top">2.</td><td valign="top">You have identified Publisher's <a href="../../../patch-my-pc-publisherv2/download-and-install.md#where-should-i-install-the-publisher">installation location</a>.</td><td align="center" valign="top">![](/_images/image-(4460).png)</td></tr><tr><td valign="top">3.</td><td valign="top">Publisher's <a href="../../../patch-my-pc-publisherv2/publisher-requirements/core-requirements.md">core requirements</a> are met.</td><td align="center" valign="top">![](/_images/image-(4460).png)</td></tr><tr><td valign="top">4.</td><td valign="top">Publisher's <a href="../../../patch-my-pc-publisherv2/publisher-requirements/wsus-requirements/">requirements for WSUS</a> are met.</td><td align="center" valign="top">![](/_images/image-(4460).png)</td></tr></tbody></table>
 
 
 

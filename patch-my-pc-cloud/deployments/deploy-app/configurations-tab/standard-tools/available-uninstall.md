@@ -10,11 +10,11 @@ To configure this setting:
 
 1. Click the **Available Uninstall** tool.
 
-<figure><img src="../../../../../.gitbook/assets/image (665).png" alt="Clicking the &#x27;Available Uninstall&#x27; tool" width="563"><figcaption></figcaption></figure>
+![Clicking the 'Available Uninstall' tool](/_images/image-(665).png "Clicking the &#x27;Available Uninstall&#x27; tool")
 
 2. Configure the settings as required.
 
-<figure><img src="../../../../../.gitbook/assets/image (666).png" alt="&#x27;Available Uninstall&#x27; settings" width="563"><figcaption></figcaption></figure>
+!['Available Uninstall' settings](/_images/image-(666).png "&#x27;Available Uninstall&#x27; settings")
 
 ## Next Steps
 
@@ -22,4 +22,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-<figure><img src="../../../../../.gitbook/assets/image (662).png" alt="Clicking &#x27;Next&#x27;" width="563"><figcaption></figcaption></figure>
+![Clicking 'Next'](/_images/image-(662).png "Clicking &#x27;Next&#x27;")

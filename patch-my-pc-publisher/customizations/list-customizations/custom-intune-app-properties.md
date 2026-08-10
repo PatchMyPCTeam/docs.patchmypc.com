@@ -1,22 +1,22 @@
 # Custom Intune App Properties option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
+_Available at level: Product_
+\
 _Available on tab: Intune Apps, Intune Updates_
 
 The **Custom Intune App Properties** right-click option in Patch My PC (PMPC) Publisher allows you to define a custom naming standard for the Win32 applications and updates created by Publisher at the product level. This helps ensure application names in Intune are consistent, descriptive, and aligned with your organizational standards.
 
 If no custom naming convention is configured, or if the pattern is left empty, Publisher uses its default naming format.
 
-{% hint style="info" %}
-**Note**
-
-This right-click option is only available at the Product level in the Product Tree for Intune Apps and Updates. For options available at the All Vendors and Vendor level, see the [Manage Naming Convention](manage-naming-convention.md) option.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>This right-click option is only available at the Product level in the Product Tree for Intune Apps and Updates. For options available at the All Vendors and Vendor level, see the [Manage Naming Convention](manage-naming-convention.md) option.</p>
+</blockquote>
 
 When you select the **Custom Intune App Properties** right-click option, the **Custom Intune Application Properties** dialog appears.
 
-<figure><img src="../../../.gitbook/assets/image (4805).png" alt="&#x27;Custom Intune Application Properties&#x27; dialog" width="372"><figcaption></figcaption></figure>
+!['Custom Intune Application Properties' dialog](/_images/image-(4805).png "&#x27;Custom Intune Application Properties&#x27; dialog")
 
 From here, you can configure a custom name format for Win32 applications created by Publisher by using at least one or more of the provided token values (which can be clicked to insert them at the cursor position):
 
@@ -43,13 +43,11 @@ Resulting Intune application name:
 [App] - Google Chrome 142.0.7444.176 (x64)
 ```
 
-{% hint style="info" %}
-**Note**
-
-When creating naming conventions for **Intune Updates**, remember that **%OriginalName%** already includes the **Update** **for** prefix.
-
-Avoid adding additional wording like **Update** to prevent duplicated names.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>When creating naming conventions for **Intune Updates**, remember that **%OriginalName%** already includes the **Update** **for** prefix.</p>
+<p>Avoid adding additional wording like **Update** to prevent duplicated names.</p>
+</blockquote>
 
 This approach allows you to clearly identify Publisher-created applications whilst retaining the original product and version details.
 
@@ -63,8 +61,7 @@ To configure a naming convention:
 
 The naming convention is applied during the next Publisher [Synchronization](../../manage/sync-schedule-tab/) and affects newly created applications and updates only.
 
-{% hint style="danger" %}
-**Important**
-
-If a [naming convention](manage-naming-convention.md) is configured at the All Products or Vendor level, that configuration is inherited automatically by any products lower in the Product Tree unless it is overridden using the **Custom Intune App Properties** right-click option.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>If a [naming convention](manage-naming-convention.md) is configured at the All Products or Vendor level, that configuration is inherited automatically by any products lower in the Product Tree unless it is overridden using the **Custom Intune App Properties** right-click option.</p>
+</blockquote>

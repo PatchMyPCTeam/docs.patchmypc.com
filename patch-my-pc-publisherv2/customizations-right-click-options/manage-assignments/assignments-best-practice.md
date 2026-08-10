@@ -1,18 +1,19 @@
 # Assignments Best Practice
 
-_Applies to: Patch My PC Publisher V2.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Applies to: Patch My PC Publisher V2.x_
+\
+_Available at level: All Custom Products, All Products, Vendor, Product_
+\
 _Available on tab: Intune Apps, Intune Updates_
 
 ## Overview
 
 Assignment strategy varies by organization and is often driven by internal policy, regulatory requirements, or security frameworks. The guidance in this section is illustrative, not prescriptive. It provides a practical example of how assignments configured in the Publisher can be used to deliver updates in a staged and controlled manner.
 
-{% hint style="warning" %}
-**Important**
-
-Always align assignment configuration with your own risk tolerance, compliance obligations, and operational processes.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Always align assignment configuration with your own risk tolerance, compliance obligations, and operational processes.</p>
+</blockquote>
 
 ## Where to Configure Assignments in the Product Tree
 
@@ -34,7 +35,7 @@ Whichever approach you choose, avoid mixing assignment strategies across multipl
 
 A common and effective approach is to deploy updates in phases. Otherwise known as **Phased Deployments** or **Update Rings**, where availability is consistent but enforcement is staggered using different deadlines.
 
-<figure><img src="../../../.gitbook/assets/image (4035).png" alt="Example of a phased deployment " width="563"><figcaption></figcaption></figure>
+![Example of a phased deployment](/_images/image-(4035).png "Example of a phased deployment")
 
 In the example shown, 3 **Required for enrolled devices** assignments are configured at the Vendor level for all Google products on the **Intune Updates** tab. The same approach outlined here can also be applied at the All Products or individual Product level.
 
@@ -56,13 +57,11 @@ The time gap between Ring 1 and Ring 2 provides an opportunity to detect issues 
 
 Ring 3 usually represents the widest production audience and aligns with compliance driven deadlines such as Cyber Essentials Plus, where updates must be deployed within a defined timeframe.
 
-{% hint style="warning" %}
-**Important**
-
-The specific number of days used for each ring and the number of rings themselves should be adjusted to match your organization’s policy.
-
-Striking the right balance between sufficient testing time in each ring and timely update compliance is an important consideration and will vary between environments.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>The specific number of days used for each ring and the number of rings themselves should be adjusted to match your organization’s policy.</p>
+<p>Striking the right balance between sufficient testing time in each ring and timely update compliance is an important consideration and will vary between environments.</p>
+</blockquote>
 
 ### Why use Publishing Date Plus 0 Days?
 
@@ -78,11 +77,10 @@ To ensure predictable deadline enforcement, avoid mixing **As soon as possible**
 
 The success of a phased deployment relies effective communication and monitoring.
 
-{% hint style="info" %}
-**Note**
-
-Configure [Alerts](../../administration/alerts/) in the Publisher to notify you when new updates are published. Email notifications or webhooks should act as a signal that a new version has entered your deployment pipeline.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Configure [Alerts](../../administration/alerts/) in the Publisher to notify you when new updates are published. Email notifications or webhooks should act as a signal that a new version has entered your deployment pipeline.</p>
+</blockquote>
 
 Users in the first phase/ring should be explicitly informed that they are receiving updates earlier than the wider organization and that their feedback is important. This sets expectations and encourages proactive reporting.
 
@@ -110,11 +108,10 @@ If a deployed update causes significant problems, you can use configure a supers
 
 This approach provides a controlled rollback path without rebuilding applications.
 
-{% hint style="info" %}
-**Note**
-
-Supersedence relationships must be configured directly in the Intune admin center.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Supersedence relationships must be configured directly in the Intune admin center.</p>
+</blockquote>
 
 ## Testing New Applications and Major Versions
 
@@ -126,7 +123,7 @@ This approach is strongly recommended for **major version upgrades**, where appl
 
 Some vendors support and maintain **multiple major versions in parallel** due to breaking changes between versions. In these cases, the Publisher catalog may contain several major versions of the same product side by side, such as multiple FortiClient VPN releases alongside a **Latest** entry.
 
-<figure><img src="../../../.gitbook/assets/image (4034).png" alt="Major Version Testing" width="545"><figcaption></figcaption></figure>
+![Major Version Testing](/_images/image-(4034).png "Major Version Testing")
 
 For products like VPN clients, major version upgrades can affect drivers, connectivity, or security posture. Treating these upgrades as a new deployment scenario allows administrators and pilot users to verify that the new version installs correctly, functions as expected, and properly upgrades or replaces the previous version.
 
@@ -136,11 +133,10 @@ Once testing is complete and confidence is established, deployment can move to t
 
 This staged approach reduces risk and provides a controlled path from testing to enforcement for both new applications and high impact upgrades.
 
-{% hint style="info" %}
-**Note**
-
-For more information about products labeled with a **Latest** suffix in the Patch My PC catalog, refer to the dedicated [Latest Products](../../publisher-reference/catalog-information.md#latest) documentation page.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>For more information about products labeled with a **Latest** suffix in the Patch My PC catalog, refer to the dedicated [Latest Products](../../publisher-reference/catalog-information.md#latest) documentation page.</p>
+</blockquote>
 
 This stage should be treated as testing only. The objective is to validate installation behavior, user experience, and version transition before enforcement.
 

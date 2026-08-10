@@ -457,7 +457,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, the mos
   * Fixed Dutch translation
 * Icons in the product treeview now indicate if the product requires local content, or is configured to skip the install if running by default.
 
-<img src="https://patchmypc.com/wp-content/uploads/2024/03/CallToActionIcons.png" alt="An image showing the Patch My PC Publisher product treeview with icons and tooltips indicating if a product needs a manual downoad, or Manage Conflicting Processes configured." height="563" width="726">
+![](/_images/CallToActionIcons.png)
 
 ### Fixes <a href="#fixes" id="fixes"></a>
 
@@ -525,13 +525,13 @@ Details the production release history for Patch My PC (PMPC) Publisher, the mos
 * Support detecting software that translates DisplayName
   * Idea: [PATCHMYPC-I-1335](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1335)
 * Add support for configuring Win32 application max runtime in minutes
-  * ![](https://patchmypc.com/wp-content/uploads/2023/11/max-runtime.png)
+  * ![](/_images/max-runtime.png)
 
 ### Improvements <a href="#improvements" id="improvements"></a>
 
 * \*\*\* Report lines have been updated.
   * As the catalog grows and the number of syncing products increases, our \*\*\* report line has gotten too long! CMTrace does not parse the line, and it will not show it. To prevent this, we have split up the report line into one line per type. Below is an example.
-  * ![Patch My PC log file with four separate report lines all prepended by \*\*\*](https://patchmypc.com/wp-content/uploads/2023/11/report-line-change.png)
+  * ![Patch My PC log file with four separate report lines all prepended by \*\*\*](/_images/report-line-change.png "Patch My PC log file with four separate report lines all prepended by \*\*\*")
 * Implement certificate pinning. All requests to Patch My PC domains will have the certificate validated.
 * Implement a safety check prior to deleting a ConfigMgr application. In some instances, the SMS provider returns an empty list of apps instead of a connection exception. To account for this, we ensure at least one Site is returned by the SMS provider prior to application deletion.
 * ConfigMgr script size is reduced. No functional changes. This should help with metadata download issues over CMG.
@@ -575,7 +575,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, the mos
   * Note: Existing DO configuration on an assignment will also carry forward now when a new version of the software is Published.
 * The [Intune Application Manager Utility](https://patchmypc.com/intune-application-manager-utility) now has some multi-select bulk options.
 
-<img src="https://patchmypc.com/wp-content/uploads/2023/08/intune-app-man-bulk-options-zoomed.png" alt="A right-click menu in the Intune App manager tool, showing the options available. Manage DO priority. Manage ESP associations. Delete assignments. Delete applications. Extract content(s)." height="240" width="471">
+![](/_images/intune-app-man-bulk-options-zoomed.png)
 
 ### Improvements <a href="#improvements" id="improvements"></a>
 
@@ -782,9 +782,9 @@ This release contains a variety of features, improvements, and fixes, as noted b
 
 This will be made available via the self-update channel over the next 2 weeks. You can upgrade in place now by downloading the latest [**MSI installer**](https://patchmypc.com/publishing-service-setup-documentation).
 
-{% hint style="info" %}
-**Note:** Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note:** Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.</p>
+</blockquote>
 
 ### Features -
 

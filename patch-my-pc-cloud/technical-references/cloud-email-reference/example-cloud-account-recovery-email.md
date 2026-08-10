@@ -10,4 +10,4 @@ Whenever a user successfully completes the [Recover Your Company](../../manage/s
 
 The email is sent from the [noreply@patchmypc.com](mailto:noreply@patchmypc.com) mailbox with the subject **Access Recover to “PMPC\_**_**company\_name**_**>**.
 
-<figure><img src="../../../.gitbook/assets/image (2681).png" alt="Example Account Recovery Email"><figcaption></figcaption></figure>
+![Example Account Recovery Email](/_images/image-(2681).png "Example Account Recovery Email")

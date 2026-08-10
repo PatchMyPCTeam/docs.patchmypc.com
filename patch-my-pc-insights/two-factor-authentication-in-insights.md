@@ -16,7 +16,7 @@ To enable 2FA, first go to Administration -> Settings -> Security and tick Enabl
 
 Once enabled, you can also enable the ability to allow users to trust the browser they are using. This skips 2FA on subsequent logins but this is optional.&#x20;
 
-<figure><img src="../.gitbook/assets/27.png" alt=""><figcaption><p>Settings page with 2FA toggle</p></figcaption></figure>
+![](/_images/27.png)
 
 As an admin, you can also enable and disable 2FA for a user. This will override the users 2FA settings.
 
@@ -26,7 +26,7 @@ Go to Administration -> Users -> and click on the Actions button for the user yo
 
 On the user properties modal, click Two factor authentication enabled and then Save.
 
-<figure><img src="../.gitbook/assets/image (1030).png" alt="" width="375"><figcaption><p>Option to disable 2FA on a users account</p></figcaption></figure>
+![](/_images/image-(1030).png "Option to disable 2FA on a users account")
 
 ### 2FA - User Settings
 
@@ -34,11 +34,11 @@ On the user properties modal, click Two factor authentication enabled and then S
 
 When logged in, click on your user profile in the top right of the webpage, then click My Settings from the dropdown.
 
-<figure><img src="../.gitbook/assets/image (1023).png" alt=""><figcaption><p>My settings</p></figcaption></figure>
+![](/_images/image-(1023).png "My settings")
 
 You will now be presented with your users settings. You will see a banner at the bottom to enabled 2FA
 
-<figure><img src="../.gitbook/assets/image (1024).png" alt=""><figcaption><p>Settings modal with 2FA</p></figcaption></figure>
+![](/_images/image-(1024).png "Settings modal with 2FA")
 
 Click Enable, then the modal will load with the steps to enable 2FA.&#x20;
 
@@ -47,11 +47,11 @@ Click Enable, then the modal will load with the steps to enable 2FA.&#x20;
 3. Click Download on the security code, the continue button will now enable.&#x20;
 4. Your account will now have 2FA enabled, click done.
 
-<figure><img src="../.gitbook/assets/image (1034).png" alt=""><figcaption><p>2FA Flow</p></figcaption></figure>
+![](/_images/image-(1034).png "2FA Flow")
 
 Once you have enabled 2FA, you will be greeted on login for a code.&#x20;
 
-<figure><img src="../.gitbook/assets/28.png" alt=""><figcaption><p>2FA prompt.</p></figcaption></figure>
+![](/_images/28.png)
 
 
 
@@ -59,4 +59,4 @@ Once you have enabled 2FA, you will be greeted on login for a code.&#x20;
 
 To disable 2FA, go back into My Settings, on the bottom you will see two new buttons called Recovery codes and disable. Click disable and then enter the code generated in your 2FA app.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1031).png" alt="" width="375"><figcaption><p>My settings with 2FA enabled</p></figcaption></figure>
+![](/_images/image-(1031).png "My settings with 2FA enabled")

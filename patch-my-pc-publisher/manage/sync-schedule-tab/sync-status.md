@@ -21,18 +21,18 @@ What happens when you click **Run Publishing Service Sync** depends on whether o
 
 If you have used the [Publish Now](../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher displays the **Products for Selective Sync** dialog box listing of all products currently marked for Selective Sync.
 
-<figure><img src="../../../.gitbook/assets/image (4780).png" alt="&#x27;Products for Selective Sync&#x27; dialog box" width="522"><figcaption></figcaption></figure>
+!['Products for Selective Sync' dialog box](/_images/image-(4780).png "&#x27;Products for Selective Sync&#x27; dialog box")
 
 If you click **OK**, the **Selective Sync Successful** dialog box is displayed stating that the sync command has been sent to the Publisher service to run the sync.
 
-<figure><img src="../../../.gitbook/assets/image (4781).png" alt="&#x27;Selective Sync Successful&#x27; dialog box" width="330"><figcaption></figcaption></figure>
+!['Selective Sync Successful' dialog box](/_images/image-(4781).png "&#x27;Selective Sync Successful&#x27; dialog box")
 
 If you click **Cancel**, the **Selective Sync canceled** dialog box is displayed asking you how you want to proceed:
 
 * Clicking **Yes** clears all Selective Sync flags and immediately runs a normal full publishing service sync. All enabled products across all platforms will be evaluated and processed.
 * Clicking **No** keeps the existing Selective Sync flags in place and returns you to the main Publisher window without running a sync. This allows you to modify the current Selective Sync selections or run a manual sync later using the same selected products.
 
-<figure><img src="../../../.gitbook/assets/image (4445).png" alt="&#x27;Selective Sync cancelled&#x27; dialog" width="383"><figcaption></figcaption></figure>
+!['Selective Sync cancelled' dialog](/_images/image-(4445).png "&#x27;Selective Sync cancelled&#x27; dialog")
 
 ### Full Sync
 
@@ -44,18 +44,18 @@ To run a Full Sync:
 
 1. Navigate to the **Sync Schedule** tab and click **Run Publishing Service Sync**
 
-<figure><img src="../../../.gitbook/assets/image (4779).png" alt="Navigating to the &#x27;Sync Schedule&#x27; tab and clicking &#x27;Run Publishing Service Sync&#x27;" width="563"><figcaption></figcaption></figure>
+![Navigating to the 'Sync Schedule' tab and clicking 'Run Publishing Service Sync'](/_images/image-(4779).png "Navigating to the &#x27;Sync Schedule&#x27; tab and clicking &#x27;Run Publishing Service Sync&#x27;")
 
 2. On the **Run Publishing Service Sync** dialog box, read the message and click **Yes** if you want to proceed or **No** to cancel.
 
-<figure><img src="../../../.gitbook/assets/image (4782).png" alt="&#x27;Run Publishing Service Sync&#x27; dialog box" width="453"><figcaption></figcaption></figure>
+!['Run Publishing Service Sync' dialog box](/_images/image-(4782).png "&#x27;Run Publishing Service Sync&#x27; dialog box")
 
 The **Run Now Successful** dialog box is displayed stating that the sync command has been sent to the Publisher service to run the sync.
 
-<figure><img src="../../../.gitbook/assets/image (4784).png" alt="&#x27;Run Now Successful&#x27; dialog box" width="290"><figcaption></figcaption></figure>
+!['Run Now Successful' dialog box](/_images/image-(4784).png "&#x27;Run Now Successful&#x27; dialog box")
 
 After a period of time, the **Status** field under the **Sync Status** section will change to **Syncing** to show the sync is in progress.
 
-<figure><img src="../../../.gitbook/assets/image (4785).png" alt=""><figcaption></figcaption></figure>
+![](/_images/image-(4785).png)
 
 Once the sync has completed, the **Status** field changes to **Completed** as detailed at the top of this article.

@@ -6,9 +6,9 @@ description: Modify configuration.
 
 _Applies to: Patch My PC Advanced and Patch Insights_
 
-{% hint style="warning" %}
-The ability to use the modify feature is supported in version 2.1.0 and later.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>The ability to use the modify feature is supported in version 2.1.0 and later.</p>
+</blockquote>
 
 The following configurations can be modified for an existing Advanced Insights deployment.\
 \
@@ -24,16 +24,16 @@ If the install executable version that was originally used to deploy Advanced In
 
 Click **'Modify'**
 
-<figure><img src="../../.gitbook/assets/image (4347).png" alt="Clicking &#x27;Modify&#x27;" width="546"><figcaption></figcaption></figure>
+![Clicking 'Modify'](/_images/image-(4347).png "Clicking &#x27;Modify&#x27;")
 
 Click **'Yes'**
 
-<figure><img src="../../.gitbook/assets/image (4348).png" alt="UAC" width="563"><figcaption></figcaption></figure>
+![UAC](/_images/image-(4348).png "UAC")
 
 Click **'Modify'**
 
-<figure><img src="../../.gitbook/assets/image (4349).png" alt="Clicking &#x27;Modify&#x27;" width="563"><figcaption></figcaption></figure>
+![Clicking 'Modify'](/_images/image-(4349).png "Clicking &#x27;Modify&#x27;")
 
 Select the required modification option checkbox to enable the related '**Change**' button
 
-<figure><img src="../../.gitbook/assets/image (4350).png" alt="Selecting the required modification option checkbox" width="563"><figcaption></figcaption></figure>
+![Selecting the required modification option checkbox](/_images/image-(4350).png "Selecting the required modification option checkbox")

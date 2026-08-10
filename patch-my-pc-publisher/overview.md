@@ -12,7 +12,7 @@ Publisher integrates with:
 
 It allows organizations to deploy and maintain third-party software using the same native workflows they already use for Microsoft updates and applications.
 
-<figure><img src="../.gitbook/assets/image (4743).png" alt="Patch My PC Publisher" width="563"><figcaption></figcaption></figure>
+![Patch My PC Publisher](/_images/image-(4743).png "Patch My PC Publisher")
 
 ## Capabilities
 

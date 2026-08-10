@@ -11,39 +11,36 @@ You can use the following methods to uninstall the Patch My PC (PMPC) Client:
 
 To uninstall the Patch My PC (PMPC) Client you can select specific Entra ID groups to uninstall the client from.
 
-{% hint style="danger" %}
-**Important**
-
-Deleting a device from Intune that has the PMPC Client installed will **NOT** uninstall the PMPC Client, meaning the device will still show in PMPC Reporting. The only way to uninstall the PMPC Client is to use one of the above methods.
-
-Also, if your trial license has expired and you have installed the PMPC Client during your trial, please see the [If your Trial License has Expired](uninstall.md#if-your-trial-license-has-expired) section below.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Deleting a device from Intune that has the PMPC Client installed will **NOT** uninstall the PMPC Client, meaning the device will still show in PMPC Reporting. The only way to uninstall the PMPC Client is to use one of the above methods.</p>
+<p>Also, if your trial license has expired and you have installed the PMPC Client during your trial, please see the [If your Trial License has Expired](uninstall.md#if-your-trial-license-has-expired) section below.</p>
+</blockquote>
 
 To uninstall the PMPC Client from specific Entra ID groups:
 
 1. Navigate to **Settings | Deploy Client**
 2. Click the relevant **Uninstall Client** button.
 
-<figure><img src="../../.gitbook/assets/image (598).png" alt="Clicking the relevant &#x27;Uninstall Client&#x27; button" width="563"><figcaption></figcaption></figure>
+![Clicking the relevant 'Uninstall Client' button](/_images/image-(598).png "Clicking the relevant &#x27;Uninstall Client&#x27; button")
 
 3. Select the relevant group.
 
-<figure><img src="../../.gitbook/assets/image (599).png" alt=""><figcaption></figcaption></figure>
+![](/_images/image-(599).png)
 
-{% hint style="info" %}
-**Note**
-
-If a group is greyed out, it means the current Client deployment is targeted to that group, and must be cleared first from the (Install) deployment before it can be selected for Uninstall.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If a group is greyed out, it means the current Client deployment is targeted to that group, and must be cleared first from the (Install) deployment before it can be selected for Uninstall.</p>
+</blockquote>
 
 4. Add any additional Groups as required.
 5. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (704).png" alt="Clicking “Save” " width="563"><figcaption></figcaption></figure>
+![Clicking "Save"](/_images/image-(704).png "Clicking “Save”")
 
 The **Deploy Client** page is displayed along with the **Success – Updated** notification.
 
-<figure><img src="../../.gitbook/assets/image (600).png" alt="&#x27;Success | Updated&#x27; notification" width="563"><figcaption></figcaption></figure>
+!['Success | Updated' notification](/_images/image-(600).png "&#x27;Success | Updated&#x27; notification")
 
 The Client will then be uninstalled from all the devices within the selected Entra ID Group(s).
 
@@ -55,7 +52,7 @@ You can create an uninstall deployment in the Intune admin center that has the c
 MSIExec.exe /x PatchMyPC.ClientInstaller.msi /qn
 ```
 
-<figure><img src="../../.gitbook/assets/image (4188).png" alt="Configuring the uninstall command line for the PMPC Client" width="563"><figcaption></figcaption></figure>
+![Configuring the uninstall command line for the PMPC Client](/_images/image-(4188).png "Configuring the uninstall command line for the PMPC Client")
 
 ## If Your Trial License has Expired
 
@@ -65,6 +62,6 @@ If you have deployed the PMPC Client during your trial, you should click **Unins
 
 On the **Confirm Uninstall Action** dialog box, click **Uninstall**.
 
-<figure><img src="../../.gitbook/assets/image (4383).png" alt="&#x27;Confirm Uninstall Action&#x27; dialog box" width="395"><figcaption></figcaption></figure>
+!['Confirm Uninstall Action' dialog box](/_images/image-(4383).png "&#x27;Confirm Uninstall Action&#x27; dialog box")
 
 A new app is created in Intune for the relevant Entra ID groups with an **Uninstall** assignment to uninstall our Client.

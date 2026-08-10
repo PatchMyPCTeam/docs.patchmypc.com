@@ -16,11 +16,10 @@ Clicking the **Open Logs Folder** button opens the folder used to store the logs
 
 Clicking the **Open wsyncmgr.log** button opens the **wsyncmgr.log** file, which can be useful for troubleshooting software update synchronization behavior.
 
-{% hint style="info" %}
-**Note**
-
-The **Open wsyncmgr.log** button is only available if Publisher is installed on a ConfigMgr Site Server.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The **Open wsyncmgr.log** button is only available if Publisher is installed on a ConfigMgr Site Server.</p>
+</blockquote>
 
 ## Collect Logs
 
@@ -36,11 +35,10 @@ For example:
 
 The generated ZIP file is intended for troubleshooting and is particularly useful when working with support, as it includes the files needed to diagnose most Publisher-related issues.
 
-{% hint style="info" %}
-**Note**
-
-See the [Log File Reference](../technical-references/log-file-reference.md) for more details about the logs created by Publisher.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See the [Log File Reference](../technical-references/log-file-reference.md) for more details about the logs created by Publisher.</p>
+</blockquote>
 
 ### Logs collected
 
@@ -49,11 +47,10 @@ Publisher keeps logs in two places, and where they live depends on whether you a
 * **Settings Console (client) logs** - These are written by the Settings console you are using. On a remote workstation, these are stored in your own user profile, not on the server.
 * **Service logs** - written by the Publisher **PatchMyPCService** on the server.
 
-{% hint style="info" %}
-**Note**
-
-See [Overview Remote UI](../remote-ui/overview.md) for more information on the Remote UI feature of Publisher.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Overview Remote UI](../remote-ui/overview.md) for more information on the Remote UI feature of Publisher.</p>
+</blockquote>
 
 There are two scenarios for collecting logs, depending on where the Settings console is running:
 

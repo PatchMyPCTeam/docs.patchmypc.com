@@ -10,11 +10,10 @@ You’ll learn how to review and validate prerequisites, determine the correct i
 
 You’ll also be guided through initial configuration and common customization options, ensuring the Publisher is aligned with your operational requirements before you begin publishing applications and updates.
 
-{% hint style="info" %}
-**Note**
-
-If you have security or compliance questions prior to installation, we recommend reviewing the [Security section](security/) of this documentation before proceeding. It provides detailed information on catalog validation, binary verification, platform trust models, and software supply chain protections.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If you have security or compliance questions prior to installation, we recommend reviewing the [Security section](security/) of this documentation before proceeding. It provides detailed information on catalog validation, binary verification, platform trust models, and software supply chain protections.</p>
+</blockquote>
 
 {% stepper %}
 {% step %}
@@ -68,4 +67,3 @@ Once the Publisher is installed, configure it based on how you plan to use it. C
 * [Publish applications and updates](administration/sync-schedule.md)
 {% endstep %}
 {% endstepper %}
-

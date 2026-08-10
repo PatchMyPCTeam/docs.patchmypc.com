@@ -26,27 +26,25 @@ The certificate must meet the following minimum requirements:
   * **Scenario 3 - CNAME / Alias certificate.**
     * For Advanced Insights URL deployment using a **CNAME / Alias,** (e.g. _https://AdvancedInsights.contoso.local_) the certificate SAN must contain an entry which represents the CNAME / Alias. e.g. '_AdvancedInsights.contoso.local'._
 
-{% hint style="danger" %}
-When using a **CNAME / Alias** or **Wilcard** certificate for custom Advanced Insights deployment URL, ensure that DNS has been updated to include an entry which represents the chosen CNAME / Alias.
-
-_Example:_
-
-![](<../../.gitbook/assets/image (1726).png>)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>When using a **CNAME / Alias** or **Wilcard** certificate for custom Advanced Insights deployment URL, ensure that DNS has been updated to include an entry which represents the chosen CNAME / Alias.</p>
+<p>_Example:_</p>
+<p>![](/_images/image-(1726).png>)</p>
+</blockquote>
 
 Certificate SAN values can be also verified within the certificate properties.
 
 _Examples:_
 
-<figure><img src="../../.gitbook/assets/image (1727).png" alt=""><figcaption><p>Server Host Certificate - Subject Alternative Name (SAN) properties.</p></figcaption></figure>
+![](/_images/image-(1727).png "Server Host Certificate - Subject Alternative Name (SAN) properties.")
 
-<figure><img src="../../.gitbook/assets/image (1728).png" alt=""><figcaption><p>CNAME - Alias Certificate - Subject Alternative Name (SAN) properties.</p></figcaption></figure>
+![](/_images/image-(1728).png "CNAME - Alias Certificate - Subject Alternative Name (SAN) properties.")
 
-<figure><img src="../../.gitbook/assets/image (1729).png" alt=""><figcaption><p>Wildcard Host Certificate - Subject Alternative Name (SAN) properties.</p></figcaption></figure>
+![](/_images/image-(1729).png "Wildcard Host Certificate - Subject Alternative Name (SAN) properties.")
 
-{% hint style="info" %}
-On the Windows Server OS which will host Advanced Insights, the following PowerShell script can be executed to list supported certificates.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>On the Windows Server OS which will host Advanced Insights, the following PowerShell script can be executed to list supported certificates.</p>
+</blockquote>
 
 {% code lineNumbers="true" %}
 ```powershell
@@ -56,7 +54,7 @@ Param()
 $CertsToExclude = @("ConfigMgr SQL Server Identification Certificate","WMSVC-SHA2")
 
 # Get the FQDN of the machine
-$machineFQDN = [System.Net.Dns]::GetHostEntry($env:COMPUTERNAME).HostName
+[System.Net.Dns]:/_images/GetHostEntry(-env-COMPUTERNAME).hostname
 
 # Certificate filtering
 
@@ -148,7 +146,7 @@ if ($uncapturedCerts.Count -gt 0) {
         
         {
             $sanNames = $sanExtension.Format(0) -split ', ' | ForEach-Object { $_.Split('=')[1].Trim() }
-            if ([string]::IsNullOrEmpty($sanNames)) {
+[string]:/_images/IsNullOrEmpty(-sanNames))
                 Write-Host "5 Subject Alternative Name (SAN) requires at least one entry matches the server FQDN or is a wildcard which matches the server domain name e.g. '*.internaldomain.local. SAN value(s): $($sanNames -join ', ')"
                 }
         }
@@ -170,20 +168,16 @@ if ($uncapturedCerts.Count -gt 0) {
 
 Example PowerShell outputs:
 
-<figure><img src="../../.gitbook/assets/image (2014).png" alt=""><figcaption><p>Valid Certificates</p></figcaption></figure>
+![](/_images/image-(2014).png "Valid Certificates")
 
-<figure><img src="../../.gitbook/assets/image (2015).png" alt=""><figcaption><p>Unsupported Certificates</p></figcaption></figure>
+![](/_images/image-(2015).png "Unsupported Certificates")
 
-{% hint style="info" %}
-**Self-signed certificate use.**
-
-When deploying Advanced Insights using a self-signed certificate, the installer will automatically create the certificate using the server host name value to create the Advanced Insights URL.
-
-Example:
-
-_https://server01.contoso.local_
-
-We don't recommend using a self-signed certificate long-term in production as it won't be trusted by other client browsers by default.\
-\
-You can replace a self-signed certificate or modify the certificate in use using the Add/Remove Programs "Change" option as detailed [here](../modify-insights/modify-insights-ssl-certificate.md).
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Self-signed certificate use.**</p>
+<p>When deploying Advanced Insights using a self-signed certificate, the installer will automatically create the certificate using the server host name value to create the Advanced Insights URL.</p>
+<p>Example:</p>
+<p>_https://server01.contoso.local_</p>
+<p>We don't recommend using a self-signed certificate long-term in production as it won't be trusted by other client browsers by default.\</p>
+<p>\</p>
+<p>You can replace a self-signed certificate or modify the certificate in use using the Add/Remove Programs "Change" option as detailed [here](../modify-insights/modify-insights-ssl-certificate.md).</p>
+</blockquote>

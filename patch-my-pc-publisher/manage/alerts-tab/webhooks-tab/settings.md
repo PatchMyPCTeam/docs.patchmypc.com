@@ -2,17 +2,16 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 **Webhook notifications** allow the Patch My PC (PMPC) Publisher to send publishing alerts and reports to external messaging systems such as Microsoft Teams workflows and Slack. Webhooks provide near real time visibility into publishing activity without relying on email notifications.
 
 Webhook notifications are commonly used to notify operations, security, or platform teams when publishing events occur.
 
-<figure><img src="../../../../.gitbook/assets/image (4208).png" alt="Webhook Notifications" width="563"><figcaption></figcaption></figure>
+![Webhook Notifications](/_images/image-(4208).png "Webhook Notifications")
 
 When webhook notifications are enabled, the Publisher sends HTTP POST messages to the configured webhook endpoints based on publishing events and the selected notification level. Each configured webhook represents a single destination, such as a Teams channel or Slack workspace.
 
@@ -26,7 +25,7 @@ Webhook notifications must be enabled before individual webhooks can be configur
 2. Expand **Webhook Notifications**.
 3. Select **Send Webhook Reports** to enable webhook notifications.
 
-<figure><img src="../../../../.gitbook/assets/image (31).png" alt="Send Webhook Reports" width="545"><figcaption></figcaption></figure>
+![Send Webhook Reports](/_images/image-(31).png "Send Webhook Reports")
 
 ## Add a Webhook
 
@@ -34,7 +33,7 @@ Use this option to create a new webhook notification.
 
 1. To add a new webhook notification, click **Add**.
 
-<figure><img src="../../../../.gitbook/assets/image (32).png" alt="Add a Webhook Notification" width="545"><figcaption></figcaption></figure>
+![Add a Webhook Notification](/_images/image-(32).png "Add a Webhook Notification")
 
 2. Continue to [Edit a Webhook](settings.md#edit-a-webhook).
 
@@ -47,7 +46,7 @@ The **Edit** option opens the webhook configuration dialog. This dialog is used 
 * After clicking [Add](settings.md#add-a-webhook) when creating a new webhook.
 * When selecting an existing webhook and clicking **Edit**.
 
-<figure><img src="../../../../.gitbook/assets/image (33).png" alt="Edit a Webhook" width="545"><figcaption></figcaption></figure>
+![Edit a Webhook](/_images/image-(33).png "Edit a Webhook")
 
 In both cases, the same configuration screen is used to define or modify the [webhook configuration](../../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/webhook-configuration.md).
 
@@ -55,7 +54,7 @@ In both cases, the same configuration screen is used to define or modify the [we
 
 Use this option to create a new webhook configuration based on an existing webhook.
 
-<figure><img src="../../../../.gitbook/assets/image (34).png" alt="Copy a Webhook" width="545"><figcaption></figcaption></figure>
+![Copy a Webhook](/_images/image-(34).png "Copy a Webhook")
 
 When you select a webhook and click Copy, the [webhook configuration](../../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/webhook-configuration.md) dialog opens with settings pre populated from the selected webhook. You must provide a new **Name** and **Webhook URL** before the webhook can be saved.
 
@@ -67,13 +66,12 @@ Use this option to delete a webhook.
 
 When you select a webhook and click **Remove**, the webhook is removed from the list and will no longer receive notifications.
 
-<figure><img src="../../../../.gitbook/assets/image (35).png" alt="Remove a Webhook" width="545"><figcaption></figcaption></figure>
+![Remove a Webhook](/_images/image-(35).png "Remove a Webhook")
 
-{% hint style="danger" %}
-**Important**
-
-Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and re-open the Publisher without savings the Publisher settings, the deleted webhook is restored.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and re-open the Publisher without savings the Publisher settings, the deleted webhook is restored.</p>
+</blockquote>
 
 ## Test a Webhook
 
@@ -81,15 +79,14 @@ Use this option to validate an individual webhook configuration by sending a tes
 
 Each webhook is tested independently. Only the selected webhook is used when the test is run.
 
-<figure><img src="../../../../.gitbook/assets/image (36).png" alt="Test a Webhook" width="545"><figcaption></figcaption></figure>
+![Test a Webhook](/_images/image-(36).png "Test a Webhook")
 
 The Publisher sends a test HTTP POST message to the webhook URL configured for the selected webhook.
 
 If the test is successful, a confirmation message is displayed indicating that the test webhook notification was sent successfully. The message should also appear in the target system, such as a Microsoft Teams channel or Slack workspace.
 
-<figure><img src="../../../../.gitbook/assets/image (3900).png" alt="Successful Webhook Test" width="320"><figcaption></figcaption></figure>
+![Successful Webhook Test](/_images/image-(3900).png "Successful Webhook Test")
 
 If the test fails, an error message is displayed. The error typically indicates connectivity issues, an invalid webhook URL, or a response error from the destination service. The webhook must be corrected before notifications will work.
 
-<figure><img src="../../../../.gitbook/assets/image (3899).png" alt="Failed Webhook Test" width="427"><figcaption></figcaption></figure>
-
+![Failed Webhook Test](/_images/image-(3899).png "Failed Webhook Test")

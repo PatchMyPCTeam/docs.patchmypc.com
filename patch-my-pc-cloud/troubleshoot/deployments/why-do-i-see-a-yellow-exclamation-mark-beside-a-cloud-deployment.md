@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 I’ve successfully deployed an app using Patch My PC (PMPC) Cloud, but when I look at the deployment, I see a yellow exclamation mark ("**!**") beside it in the **Status** column.
 
-<figure><img src="../../../.gitbook/assets/image (3048).png" alt="Yellow exclamation mark beside a deployment"><figcaption></figcaption></figure>
+![Yellow exclamation mark beside a deployment](/_images/image-(3048).png "Yellow exclamation mark beside a deployment")
 
 ### CAUSE
 
@@ -18,17 +18,16 @@ Follow the relevant section for the error message you are seeing.
 
 #### Failed to add application with version ‘_\<version\_number>_’ to app limit reached’ ESP Profile.
 
-<figure><img src="../../../.gitbook/assets/image (3050).png" alt="“Failed to add application with version ‘<version_number>’ to app limit reached’ ESP Profile” error"><figcaption></figcaption></figure>
+![](/_images/image-(3050).png)
 
 This message is telling you that when the Sync Schedule ran, a new version of an app was detected, which we successfully deployed.
 
 However, we could not add this new version to the Enrollment Status Page (ESP) Profile to which this app is deployed, as the profile has reached the limit of 100 apps.
 
-{% hint style="info" %}
-**Note**
-
-See [ESP Profiles](../../deployments/deploy-app/configurations-tab/additional-tools/esp-profiles.md) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [ESP Profiles](../../deployments/deploy-app/configurations-tab/additional-tools/esp-profiles.md) for more information.</p>
+</blockquote>
 
 To resolve this issue, you need to use the Intune admin center and from the ESP Profile remove either:
 
@@ -37,7 +36,7 @@ To resolve this issue, you need to use the Intune admin center and from the ESP 
 
 #### Failed to apply new parent dependency for the child app '<_app\_name_>' '<_app\_version_>'
 
-<figure><img src="../../../.gitbook/assets/image (3051).png" alt="“Failed to apply new parent dependency for the child app &#x27;<app_name>&#x27; &#x27;<app_version>&#x27;” error"><figcaption></figcaption></figure>
+![](/_images/image-(3051).png)
 
 This message is telling you that the deployment of a dependency for this app has failed.
 

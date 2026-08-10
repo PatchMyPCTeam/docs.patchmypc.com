@@ -9,12 +9,12 @@ To manage deployments:
 1. Sign in to the Portal at [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2.  Navigate to the **Deployments** node.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2159).png" alt="Navigating to the “Deployments” page"><figcaption></figcaption></figure>
+    ![Navigating to the "Deployments" page](/_images/image-(2159).png "Navigating to the “Deployments” page")
 
     \
     The **Deployments** page is displayed.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2160).png" alt="The “Deployments” page"><figcaption></figcaption></figure>
+    ![The "Deployments" page](/_images/image-(2160).png "The “Deployments” page")
 
 Clicking the ellipsis (**⋮**) beside a deployment opens the management menu, allowing you to:
 
@@ -23,8 +23,7 @@ Clicking the ellipsis (**⋮**) beside a deployment opens the management menu, a
 * [Sort deployments](sort.md)
 * [Delete a deployment](delete.md)
 
-{% hint style="info" %}
-**Note**
-
-See [View a Deployment’s Properties](view-properties.md) for more details on how to view the properties of a deployment.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [View a Deployment’s Properties](view-properties.md) for more details on how to view the properties of a deployment.</p>
+</blockquote>

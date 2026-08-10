@@ -1,7 +1,8 @@
 # Manage MST File option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product (only for MSI and MSP installers)_\
+_Available at level: Product (only for MSI and MSP installers)_
+\
 _Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Manage MST File** right-click option in Patch My PC (PMPC) Publisher allows you to apply an MST transform (Microsoft Transform) file to products that use MSI-based installers.
@@ -16,15 +17,14 @@ In both cases, the transform is applied during installation in the same manner.
 
 In the **MST Transform Files** dialog, select the MST file you want to apply during installation. If the transform requires additional files, you can also select an optional supporting CAB file.
 
-<figure><img src="../../../.gitbook/assets/image (4768).png" alt="&#x27;MST Transform Files&#x27; dialog" width="447"><figcaption></figcaption></figure>
+!['MST Transform Files' dialog](/_images/image-(4768).png "&#x27;MST Transform Files&#x27; dialog")
 
 The selected MST and CAB files are automatically included when the application or update is published. You do not need to add these files separately as additional content.
 
-{% hint style="info" %}
-**Note**
-
-For Microsoft ConfigMgr applications and Intune apps/updates, the MST and CAB files are placed in the application content folder. For WSUS and ConfigMgr updates, the files are packaged inside the update CAB file.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>For Microsoft ConfigMgr applications and Intune apps/updates, the MST and CAB files are placed in the application content folder. For WSUS and ConfigMgr updates, the files are packaged inside the update CAB file.</p>
+</blockquote>
 
 Once configured, these selections persist across future updates. The same transform is automatically applied when newer versions of the product are published.
 

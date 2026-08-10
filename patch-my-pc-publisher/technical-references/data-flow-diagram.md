@@ -8,19 +8,18 @@ At a high level, Publisher acts as a publishing engine that prepares and deliver
 
 Publisher does not deploy software directly to devices. Instead, it integrates with management platforms (such as Microsoft Intune, WSUS, and ConfigMgr), which remain responsible for policy assignment, update deployment, and device communication.
 
-<figure><img src="../../.gitbook/assets/image (4209).png" alt="High-Level Data Flow" width="563"><figcaption></figcaption></figure>
+![High-Level Data Flow](/_images/image-(4209).png "High-Level Data Flow")
 
 The more detailed data flow diagram below illustrates how Publisher integrates with WSUS, ConfigMgr, Intune, PMPC Cloud, vendor content sources, and client devices.&#x20;
 
 It represents logical communication flows between components and does not represent firewall rules, network boundaries, or required directional access paths.
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Arrows in the diagram indicate the communication relationships between services. They are intended to show how data moves through the system during publishing, synchronization, and deployment operations. They should not be interpreted as strict one-way connections or prescriptive firewall requirements.</p>
+</blockquote>
 
-Arrows in the diagram indicate the communication relationships between services. They are intended to show how data moves through the system during publishing, synchronization, and deployment operations. They should not be interpreted as strict one-way connections or prescriptive firewall requirements.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (4167).png" alt="More detailed data flow diagram" width="563"><figcaption></figcaption></figure>
+![More detailed data flow diagram](/_images/image-(4167).png "More detailed data flow diagram")
 
 ## Core Publishing Flow
 

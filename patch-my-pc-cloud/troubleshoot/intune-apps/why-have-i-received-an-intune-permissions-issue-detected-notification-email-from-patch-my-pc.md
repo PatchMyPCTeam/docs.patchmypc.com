@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 I have received an email notification from Patch My PC (PMPC) with the subject **Intune Permissions Issue Detected**
 
-<figure><img src="../../../.gitbook/assets/image (4509).png" alt="&#x27;Intune Permissions Issue Detected&#x27; email" width="488"><figcaption></figcaption></figure>
+!['Intune Permissions Issue Detected' email](/_images/image-(4509).png "&#x27;Intune Permissions Issue Detected&#x27; email")
 
 ### CAUSE
 

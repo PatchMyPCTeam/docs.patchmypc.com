@@ -8,5 +8,4 @@ This email contains details of the parent MSP company and the email address of t
 
 _**\<MSP\_parent\_company\_name>**_**&#x20;has invited you to connect**
 
-<figure><img src="../../../../.gitbook/assets/image (581).png" alt="Example MSP Parent email invitation" width="563"><figcaption></figcaption></figure>
-
+![Example MSP Parent email invitation](/_images/image-(581).png "Example MSP Parent email invitation")

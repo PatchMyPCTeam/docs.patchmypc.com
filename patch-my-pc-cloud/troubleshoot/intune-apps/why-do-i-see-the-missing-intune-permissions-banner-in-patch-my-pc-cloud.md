@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 Why does the **Missing Intune permissions detected. Reconnect Intune to restore full functionality** banner appear in the Patch My PC (PMPC) Cloud Portal?
 
-<figure><img src="../../../.gitbook/assets/image (4511).png" alt="&#x27;Missing Intune permissions detected. Reconnect Intune to restore full functionality&#x27; banner" width="563"><figcaption></figcaption></figure>
+!['Missing Intune permissions detected. Reconnect Intune to restore full functionality' banner](/_images/image-(4511).png "&#x27;Missing Intune permissions detected. Reconnect Intune to restore full functionality&#x27; banner")
 
 ### CAUSE
 

@@ -27,13 +27,11 @@ During this session, an engineer will assist with:
 
 This session focuses on correctly installing and integrating Publisher into your environment.
 
-{% hint style="info" %}
-**Note**
-
-A guided setup call assists with initial installation and configuration and is not intended for technical troubleshooting or support. We cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;
-
-For technical issues, application-specific problems, or deployment failures, please contact [Support](resources.md#support) to ensure proper case routing and assignment to an engineer.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>A guided setup call assists with initial installation and configuration and is not intended for technical troubleshooting or support. We cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;</p>
+<p>For technical issues, application-specific problems, or deployment failures, please contact [Support](resources.md#support) to ensure proper case routing and assignment to an engineer.</p>
+</blockquote>
 
 To schedule a guided setup call with an engineer, visit [https://patchmypc.com/setup-call](https://patchmypc.com/setup-call/)
 
@@ -42,15 +40,12 @@ Environment Review
 
 An _Environment Review_ call is designed to provide a proactive review of your current Publisher configuration and to answer product-related questions. During the session, an engineer can help you validate best practices, discuss new features, and provide reassurance that your configuration aligns with recommended guidance.
 
-{% hint style="info" %}
-**Note**
-
-Environment Review calls are not intended for technical support or break/fix troubleshooting, and we cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;
-
-For technical issues, application-specific problems, or deployment failures, please contact [Support ](resources.md#support)to ensure proper case routing and assignment to an engineer.
-
-To schedule an environment review call with an engineer, visit [https://patchmypc.com/environment-review-call](https://patchmypc.com/environment-review-call/)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Environment Review calls are not intended for technical support or break/fix troubleshooting, and we cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;</p>
+<p>For technical issues, application-specific problems, or deployment failures, please contact [Support ](resources.md#support)to ensure proper case routing and assignment to an engineer.</p>
+<p>To schedule an environment review call with an engineer, visit <a href="https://patchmypc.com/environment-review-call/">https://patchmypc.com/environment-review-call</a></p>
+</blockquote>
 
 ## Learning Hub
 
@@ -58,21 +53,19 @@ Our _Learning Hub_ is designed to provide structured, engineer-led guidance acro
 
 The Learning Hub offers practical tutorials, best practice guidance, and real-world implementation walkthroughs to help customers build confidence and operational maturity. Content is created by experienced engineers who work directly with customers, ensuring that guidance reflects real deployment scenarios and common challenges.
 
-{% hint style="info" %}
-**Note**
-
-For more information, visit [https://patchmypc.com/learning-hub](https://patchmypc.com/learning-hub/)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>For more information, visit <a href="https://patchmypc.com/learning-hub/">https://patchmypc.com/learning-hub</a></p>
+</blockquote>
 
 ## YouTube
 
 Our _YouTube channel_ includes feature deep dives, recorded webinars, walkthroughs, and practical demonstrations of real-world scenarios.
 
-{% hint style="info" %}
-**Note**
-
-You can access our YouTube channel at: [https://www.youtube.com/channel/UCT9BKiLpbO1pGxXsU1-\_zBg](https://www.youtube.com/channel/UCT9BKiLpbO1pGxXsU1-_zBg)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>You can access our YouTube channel at: <a href="https://www.youtube.com/channel/UCT9BKiLpbO1pGxXsU1-_zBg">https://www.youtube.com/channel/UCT9BKiLpbO1pGxXsU1-\_zBg</a></p>
+</blockquote>
 
 ## Knowledge Base
 
@@ -80,11 +73,10 @@ Our _Knowledge Base_ contains detailed technical documentation, configuration gu
 
 Many articles are based on patterns and scenarios that our Support team frequently encounters. This makes our Knowledge Base a valuable source of practical expertise, especially when navigating edge cases, advanced configurations, or vendor-specific behavior.
 
-{% hint style="info" %}
-**Note**
-
-For more information, visit [https://patchmypc.com/kb](https://patchmypc.com/kb/)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>For more information, visit <a href="https://patchmypc.com/kb/">https://patchmypc.com/kb</a></p>
+</blockquote>
 
 ## Blog
 
@@ -92,11 +84,10 @@ The _Patch My PC Blog_ provides in-depth technical dives, industry-focused insig
 
 In addition to feature announcements and catalog updates, our blog often explores platform-specific behavior, architectural considerations, and real-world deployment strategies. If you’re looking for context, technical depth, or perspective beyond step-by-step documentation, the blog is a valuable resource.
 
-{% hint style="info" %}
-**Note**
-
-For more information, visit [https://patchmypc.com/blog](https://patchmypc.com/blog/)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>For more information, visit <a href="https://patchmypc.com/blog/">https://patchmypc.com/blog</a></p>
+</blockquote>
 
 ## Support
 
@@ -106,8 +97,7 @@ When you open a support case, your request is triaged and routed to the engineer
 
 When submitting a case, including relevant log files significantly increases the speed of resolution. Our engineers work with Publisher, ConfigMgr, WSUS, and Intune logs daily and can quickly interpret patterns and pinpoint issues. Providing logs upfront often eliminates back-and-forth communication and accelerates root cause identification.
 
-{% hint style="info" %}
-**Note**
-
-To explore the different support resources or to log a case and work with our support team, visit [https://patchmypc.com/support](https://patchmypc.com/support/)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>To explore the different support resources or to log a case and work with our support team, visit <a href="https://patchmypc.com/support/">https://patchmypc.com/support</a></p>
+</blockquote>

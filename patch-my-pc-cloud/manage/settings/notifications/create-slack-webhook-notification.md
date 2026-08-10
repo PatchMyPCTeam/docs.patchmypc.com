@@ -9,30 +9,29 @@ To create a Slack webhook notification in Patch My PC (PMPC) Cloud:
 3. Follow the [Create a Webhook notification in Cloud](create-webhook-notification.md) and select **Slack** from the **Add Webhook** dropdown.
 4. On the **Add Slack** screen, enter a unique name for the webhook in the **Webhook Name** field. For example, **Patch My PC**
 
-<figure><img src="../../../../.gitbook/assets/image (1455).png" alt="Entering a unique name for the webhook in the “Webhook Name” field" width="239"><figcaption></figcaption></figure>
+![Entering a unique name for the webhook in the "Webhook Name" field](/_images/image-(1455).png "Entering a unique name for the webhook in the “Webhook Name” field")
 
 5. In the **Webhook URL** field, enter the unique URL of your Slack webhook and click **Save**
 
-<figure><img src="../../../../.gitbook/assets/image (1456).png" alt="Entering the unique URL for your Slack webhook" width="241"><figcaption></figcaption></figure>
+![Entering the unique URL for your Slack webhook](/_images/image-(1456).png "Entering the unique URL for your Slack webhook")
 
 The new webhook notification is shown under the **Webhook Notifications** section.
 
-<figure><img src="../../../../.gitbook/assets/image (3833).png" alt="New webhook notification" width="563"><figcaption></figcaption></figure>
+![New webhook notification](/_images/image-(3833).png "New webhook notification")
 
-{% hint style="success" %}
-**Tip**
-
-You can click the small envelope beside the webhook URL (![](<../../../../.gitbook/assets/image (2602).png>)) to send a test notification. See [Testing a Slack Webhook Notification](technical-references/test-slack-webhook-notification.md) for more details.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>You can click the small envelope beside the webhook URL (![](/_images/image-(2602).png>)) to send a test notification. See [Testing a Slack Webhook Notification](technical-references/test-slack-webhook-notification.md) for more details.</p>
+</blockquote>
 
 6. Click **Save** to save the newly added notification.
 
-<figure><img src="../../../../.gitbook/assets/image (3834).png" alt="Clicking &#x27;Save&#x27;" width="563"><figcaption></figcaption></figure>
+![Clicking 'Save'](/_images/image-(3834).png "Clicking &#x27;Save&#x27;")
 
 The **Success – Notification created** notification is shown.
 
-<figure><img src="../../../../.gitbook/assets/image (3835).png" alt="&#x27;Success&#x27; notification" width="563"><figcaption></figcaption></figure>
+!['Success' notification](/_images/image-(3835).png "&#x27;Success&#x27; notification")
 
 The Cloud Portal auto-refreshes to show the new notification.
 
-<figure><img src="../../../../.gitbook/assets/image (3836).png" alt="Cloud Portal auto-refreshing" width="563"><figcaption></figcaption></figure>
+![Cloud Portal auto-refreshing](/_images/image-(3836).png "Cloud Portal auto-refreshing")

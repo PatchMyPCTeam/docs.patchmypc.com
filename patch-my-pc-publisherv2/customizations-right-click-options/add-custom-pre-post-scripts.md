@@ -1,14 +1,15 @@
 # Add Custom Pre/Post Scripts
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: Product_\
+_Available at level: Product_
+\
 _Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Overview
 
 The **Add Custom Pre/Post Scripts** option in the Publisher allows you to run your own scripts before or after an installation or an uninstallation. This includes pre install, post install, pre uninstall, and post uninstall scenarios.
 
-<figure><img src="../../.gitbook/assets/image (3999).png" alt="Add Custom Pre/Post Scripts" width="527"><figcaption></figcaption></figure>
+![Add Custom Pre/Post Scripts](/_images/image-(3999).png "Add Custom Pre/Post Scripts")
 
 This feature provides flexibility for handling scenarios that are not supported by the installer alone. It allows you to perform preparation steps before an install or update, as well as cleanup or validation steps after completion.
 
@@ -18,13 +19,14 @@ The feature also allows additional files and folders to be bundled with the appl
 
 Selecting this option opens the configuration dialog where scripts, arguments, and additional content can be defined.
 
-<figure><img src="../../.gitbook/assets/image (4000).png" alt="Custom Pre/Post Scripts and Files UI" width="563"><figcaption></figcaption></figure>
+![Custom Pre/Post Scripts and Files UI](/_images/image-(4000).png "Custom Pre/Post Scripts and Files UI")
 
 The Add Custom Pre Post Scripts form defines how scripts and additional content are associated with an application or update. The options are available separately for Install and Uninstall.
 
 ## Install and Uninstall tabs
 
-The Install tab controls the scripts that run during installation or update.The Uninstall tab controls the scripts that run during application removal.
+The Install tab controls the scripts that run during installation or update.
+The Uninstall tab controls the scripts that run during application removal.
 
 Each tab is configured independently, allowing different pre and post scripts to be defined for install and uninstall scenarios.
 
@@ -65,11 +67,10 @@ Use the steps below to configure a pre script or post script:
 3. Place the cursor where a variable is required.
 4. Select the appropriate option under Insert Variable to add it to the field.
 
-{% hint style="info" %}
-**Note**
-
-Variables are expanded at runtime and provide application specific values to the script.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Variables are expanded at runtime and provide application specific values to the script.</p>
+</blockquote>
 
 **Include Quotes in Arguments**\
 If you need to include quotes in the Arguments field, escape the quotes with a backslash.
@@ -91,7 +92,7 @@ Example:
 -MyParameter "Item1,Item2,Item3"
 ```
 
-<figure><img src="../../.gitbook/assets/image (4001).png" alt="Parse a PowerShell array as a parameter" width="461"><figcaption></figcaption></figure>
+![Parse a PowerShell array as a parameter](/_images/image-(4001).png "Parse a PowerShell array as a parameter")
 
 ### Configure Pre Script Behavior
 
@@ -108,11 +109,10 @@ More information on ScriptRunner exit codes can be found at [https://patchmypc.c
 
 The **Run the pre update script before performing any auto close or skip process checks** option can be checked if the pre script must run before conflicting process handling. If you are using the [Manage Conflicting Processes](manage-conflicting-processes/) option and this box is enabled, the pre script runs before the process check.
 
-{% hint style="warning" %}
-**Important**
-
-These 2 options apply only to pre scripts and have no effect on post scripts.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>These 2 options apply only to pre scripts and have no effect on post scripts.</p>
+</blockquote>
 
 ## Additional Files and Folders
 
@@ -132,11 +132,10 @@ To add files:
 
 Typical use cases include configuration files, license files, or other supporting resources required by the installer or scripts.
 
-{% hint style="info" %}
-**Note**
-
-To bundle an MST file with an MSI application, it is simpler to use the [Add MST Transformation File](add-mst-transformation-file.md) customization option.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>To bundle an MST file with an MSI application, it is simpler to use the [Add MST Transformation File](add-mst-transformation-file.md) customization option.</p>
+</blockquote>
 
 ### **Additional folders**
 
@@ -186,11 +185,10 @@ The Uninstall Software community script supports parameters such as **DisplayNam
 
 When configuring this script in the Publisher, the **Uninstall-Software.ps1** script file itself is selected in the Pre Script field. The Arguments field must contain only the parameters.
 
-{% hint style="info" %}
-**Note**
-
-Any quotation marks in the arguments must be escaped with a backslash.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Any quotation marks in the arguments must be escaped with a backslash.</p>
+</blockquote>
 
 The following example is shown in the script [README](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Uninstall/Pre-Uninstall/Uninstall-Software/readme.md) and represents native PowerShell usage.
 
@@ -200,8 +198,10 @@ Uninstall-Software.ps1 -DisplayName "Greenshot"
 
 In the Publisher, configure the script as follows.
 
-* Pre Script  : `Uninstall-Software.ps1`
-* Arguments  : `-DisplayName \"Greenshot\"`
+* Pre Script
+  : `Uninstall-Software.ps1`
+* Arguments
+  : `-DisplayName \"Greenshot\"`
 
 In this example, the script attempts to uninstall any installed application with a display name matching **Greenshot** before the main installation or uninstallation proceeds. Other parameters documented in the script [README](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Uninstall/Pre-Uninstall/Uninstall-Software/readme.md) can also be used to perform more targeted uninstall
 

@@ -12,11 +12,10 @@ If the public key is not trusted, PowerShell may wait for the certificate trust 
 
 Additionally, in environments using application control technologies such as Windows Defender Application Control (WDAC), AppLocker, or similar controls, the relevant Patch My PC code-signing certificate may need to be explicitly trusted or allowlisted for the signed scripts or modules to run.
 
-{% hint style="danger" %}
-**Important**
-
-Patch My PC **only** signs scripts that we author. Any customer-provided scripts added using the [Cloud "Scripts" Deployment Tool](../../deployments/deploy-app/configurations-tab/additional-tools/scripts/) will not be signed with the Patch My PC code-signing certificate.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Patch My PC **only** signs scripts that we author. Any customer-provided scripts added using the [Cloud "Scripts" Deployment Tool](../../deployments/deploy-app/configurations-tab/additional-tools/scripts/) will not be signed with the Patch My PC code-signing certificate.</p>
+</blockquote>
 
 ## Certificates used&#x20;
 
@@ -47,26 +46,24 @@ You have two deployment options:
 * [Using a Custom Configuration Policy](using-custom-configuration-policy-deploy-pmpc-certificate.md) (recommended)
 * [Using a script](using-a-script-to-deploy-a-pmpc-certificate.md)
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If you prefer to deploy a certificate using a method not described here, see [Download PMPC Code-Signing Certificates](download-pmpc-code-signing-certificates.md).</p>
+</blockquote>
 
-If you prefer to deploy a certificate using a method not described here, see [Download PMPC Code-Signing Certificates](download-pmpc-code-signing-certificates.md).
-{% endhint %}
-
-{% hint style="danger" %}
-**Important**
-
-In addition, the computer must trust the certificate chain for the code-signing certificate, which is generally the case with certificates issued by public CAs. By importing the code-signing certificate's public key into the Trusted Publishers store, you ensure PowerShell can successfully verify and run the signed scripts.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>In addition, the computer must trust the certificate chain for the code-signing certificate, which is generally the case with certificates issued by public CAs. By importing the code-signing certificate's public key into the Trusted Publishers store, you ensure PowerShell can successfully verify and run the signed scripts.</p>
+</blockquote>
 
 ## Intune Detection and Requirement Script Execution
 
 Specifically for Intune detection and requirement scripts, **AgentExecutor.exe** (the Intune client process responsible for calling Win32 app detection or requirement scripts) runs in session 0; it is not visible by the logged on user and PowerShell is awaiting input by the user to accept the code-signing certificate.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2534).png" alt=""><figcaption><p>powershell.exe waiting for user input</p></figcaption></figure>
+![](/_images/image-(2534).png "powershell.exe waiting for user input")
 
 The Intune Management Extension enforces a hardcoded 60-minute timeout for PowerShell script execution. This timeout is not configurable.
 
 If the script is still running after 60 minutes, the Intune Management Extension service terminates the powershell.exe process and records entries similar to the following in IntuneManagementExtension.log.
 
-<figure><img src="../../../.gitbook/assets/image (2535).png" alt=""><figcaption><p>powershell.exe being terminated after 60 minutes timeout</p></figcaption></figure>
+![](/_images/image-(2535).png "powershell.exe being terminated after 60 minutes timeout")

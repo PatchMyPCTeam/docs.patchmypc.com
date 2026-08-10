@@ -1,14 +1,14 @@
 # Manage Security Scopes option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available at level: All Custom Products, All Products, Vendor, Product_
+\
 _Available on tab: ConfigMgr Apps_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Manage security scopes** right-click option in Patch My PC (PMPC) Publisher allows you to control which ConfigMgr security scopes are applied to applications created by the Publisher.
 
@@ -16,7 +16,7 @@ During each synchronization, the Publisher applies the selected security scopes 
 
 The list of available security scopes is pulled directly from your ConfigMgr environment. You can refresh the list using the refresh button in the top right corner.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (115).png" alt="Selecting a Security Scope" width="450"><figcaption></figcaption></figure>
+![Selecting a Security Scope](/_images/image-(115).png "Selecting a Security Scope")
 
 The list supports filtering using the **Filter items** field, and the visible columns can be customized by right-clicking the column headers.
 
@@ -28,17 +28,12 @@ When enforcement is enabled, the Publisher ensures that only the selected scopes
 
 This option is useful when you want to maintain strict control over application visibility and prevent scope drift caused by manual changes.
 
-{% hint style="danger" %}
-**Important**
-
-When the Publisher runs on the ConfigMgr site server, no additional permissions are required. The Local System account already has the necessary rights to read and assign security scopes.
-
-Additional permissions are required only when the Publisher is installed on a remote server and connects to ConfigMgr.
-
-If you are using a custom ConfigMgr security role for the Publisher in a remote deployment, that role must include the following permissions:
-
-* Application > Set Security Scope
-* Security Scopes > Read
-
-If you are using the Patch My PC security role that is created when [configuring the SMS Provider](../../../patch-my-pc-publisherv2/publisher-reference/configure-the-sms-provider-connection.md#option-2-import-security-roles) integration, these permissions are already included.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>When the Publisher runs on the ConfigMgr site server, no additional permissions are required. The Local System account already has the necessary rights to read and assign security scopes.</p>
+<p>Additional permissions are required only when the Publisher is installed on a remote server and connects to ConfigMgr.</p>
+<p>If you are using a custom ConfigMgr security role for the Publisher in a remote deployment, that role must include the following permissions:</p>
+<p>* Application > Set Security Scope</p>
+<p>* Security Scopes > Read</p>
+<p>If you are using the Patch My PC security role that is created when [configuring the SMS Provider](../../../patch-my-pc-publisherv2/publisher-reference/configure-the-sms-provider-connection.md#option-2-import-security-roles) integration, these permissions are already included.</p>
+</blockquote>

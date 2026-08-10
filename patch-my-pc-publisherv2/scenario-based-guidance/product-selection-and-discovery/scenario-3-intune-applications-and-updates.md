@@ -33,7 +33,7 @@ You can enable applications and updates for publishing in one of two ways:
 
 The [Scan Wizard](../../administration/intune-apps-updates/form-controls/scan-intune-for-supported-products.md) is generally a recommended starting point. It leverages Intune Discovered Apps data to identify supported third-party products currently present in your environment and compares those results against the Patch My PC catalog. This allows you to review what is installed today before enabling publishing.
 
-<figure><img src="../../../.gitbook/assets/image (4161).png" alt="Scan Intune for SUpported Products" width="563"><figcaption></figcaption></figure>
+![Scan Intune for SUpported Products](/_images/image-(4161).png "Scan Intune for SUpported Products")
 
 After running a scan, review the results carefully. The device count and version information help validate inventory accuracy and determine publishing priority. Exporting the results to CSV can assist with internal review, change control discussions, or phased rollout planning.
 
@@ -43,11 +43,13 @@ Once you are comfortable with how applications and updates are created and maint
 
 ### Manually browse and select products directly from the product tree on the Intune Apps and Intune Updates tabs
 
-Applications and updates can also be enabled manually by selecting products directly from the [product tree](../../administration/intune-apps-updates/product-tree.md) on the [Intune Apps and Intune Updates](../../administration/intune-apps-updates/) tabs.
+
+
+Applications and updates can also be enabled manually by selecting products directly from the [product tree](../../administration/intune-apps-updates/product-tree.md) on the [Intune Apps and Intune Updates](../../administration/intune-apps-updates/) tabs.
 
 Manual selection remains a valid and flexible option, especially when you want to proactively publish applications that may not yet appear in the inventory returned by the scan results.
 
-<figure><img src="../../../.gitbook/assets/image (4162).png" alt="Manual Product Selection" width="545"><figcaption></figcaption></figure>
+![Manual Product Selection](/_images/image-(4162).png "Manual Product Selection")
 
 You can expand vendors to browse available products or use the [Search](../../administration/intune-apps-updates/form-controls/search-products.md) form control to quickly locate a specific application by name.
 
@@ -57,8 +59,10 @@ When selecting _applications_, we recommend to standardize on a single installer
 * x86 and x64 architectures
 * ARM64 variants
 
-In most environments, it is recommended to standardize on a single architecture and installer type, such as MSI (x64), unless there is a specific requirement for an alternative variant.\
-\
+In most environments, it is recommended to standardize on a single architecture and installer type, such as MSI (x64), unless there is a specific requirement for an alternative variant.
+\
+
+\
 When selecting _updates_, it is often appropriate to enable multiple update variants if they exist in your estate. For example, if both x86 and x64 variants are detected, publishing updates for both ensures all devices remain compliant while you work toward long term standardization.
 
 As a best practice, begin by enabling a small number of familiar, low-impact applications to understand how Intune applications and updates are created by the Publisher. Many customers start with widely used utilities such as 7-Zip or Notepad++ to gain confidence in the workflow.

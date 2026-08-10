@@ -20,7 +20,7 @@ The **Advanced Insights** node consists of the following sub-nodes, each of whic
 * **Hardware -** Contains a summary of the most common hardware-related information.
 * **Intune  -** Contains a summary of the most common information from your Intune tenant.
 
-<figure><img src="../../.gitbook/assets/image (574).png" alt="&#x27;Advanced Insights&#x27; node" width="142"><figcaption></figcaption></figure>
+!['Advanced Insights' node](/_images/image-(574).png "&#x27;Advanced Insights&#x27; node")
 
 ## Patch Insights
 
@@ -28,18 +28,15 @@ If you are using the Enterprise Plus license, the node will be named **Patch Ins
 
 You can only access the **Intune** sub-node, which contains a summary of the most common information from your Intune tenant.
 
-<figure><img src="../../.gitbook/assets/image (577).png" alt="&#x27;Patch Insights&#x27; node" width="196"><figcaption></figcaption></figure>
+!['Patch Insights' node](/_images/image-(577).png "&#x27;Patch Insights&#x27; node")
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>You will see the other sub-nodes available for **Advanced Insights**, but you will be unable to access them unless you upgrade your license to an Enterprise Premium license or [sign up for an Enterprise Premium Trial](../manage/settings/company-settings/sign-up-enterprise-premium-trial.md).</p>
+</blockquote>
 
-You will see the other sub-nodes available for **Advanced Insights**, but you will be unable to access them unless you upgrade your license to an Enterprise Premium license or [sign up for an Enterprise Premium Trial](../manage/settings/company-settings/sign-up-enterprise-premium-trial.md).
-{% endhint %}
-
-{% hint style="danger" %}
-**Important**
-
-The data in the **Intune** sub-node is populated using Microsoft Graph calls to your Intune tenant.
-
-For data to appear and update in the other sub-nodes, you need to install our client on any devices you wish to collect data from. See [Patch My PC Client](../../patch-my-pc-client/) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>The data in the **Intune** sub-node is populated using Microsoft Graph calls to your Intune tenant.</p>
+<p>For data to appear and update in the other sub-nodes, you need to install our client on any devices you wish to collect data from. See [Patch My PC Client](../../patch-my-pc-client/) for more information.</p>
+</blockquote>

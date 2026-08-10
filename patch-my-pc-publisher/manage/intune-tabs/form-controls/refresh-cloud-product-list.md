@@ -2,11 +2,10 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Refresh Cloud Product List** form control refreshes the list of custom products displayed in the **All Custom Products** [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md). This list includes applications that were created as [Custom Apps in a Patch My PC Cloud company](https://docs.patchmypc.com/patch-my-pc-cloud/custom-apps) and synchronized to the Publisher.
 

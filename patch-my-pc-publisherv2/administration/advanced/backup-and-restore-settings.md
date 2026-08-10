@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Backup and Restore Settings** section allows you to export, import, and automatically back up the Publisher configuration settings. This is useful for disaster recovery, migrating the Publisher to a new server, or maintaining historical configuration snapshots.
 
-<figure><img src="../../../.gitbook/assets/image (3948).png" alt="Backup and Restore Settings" width="557"><figcaption></figcaption></figure>
+![Backup and Restore Settings](/_images/image-(3948).png "Backup and Restore Settings")
 
 ## Import Settings from a File
 
@@ -39,11 +39,10 @@ When configured, the Publisher automatically writes an updated backup file to th
 
 This design makes the custom backup path especially useful for **disaster recovery scenarios**, such as rebuilding a Publisher server or restoring settings quickly after an unexpected failure, without needing to manually export configuration files.
 
-{% hint style="warning" %}
-**Important**
-
-Even when a custom automatic backup location is configured, the Publisher continues to maintain backups in its default internal backup location. This internal location retains multiple historical backup versions and supports rollback and recovery scenarios, while the custom location stores only the most recent backup file for quick access.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Even when a custom automatic backup location is configured, the Publisher continues to maintain backups in its default internal backup location. This internal location retains multiple historical backup versions and supports rollback and recovery scenarios, while the custom location stores only the most recent backup file for quick access.</p>
+</blockquote>
 
 ## Backup Pruning and Retention
 

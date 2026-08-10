@@ -2,9 +2,9 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-{% hint style="success" %}
-Please review the [core Publisher requirements](publisher-requirements/core-requirements.md), which apply regardless of the platform being used, before beginning installation.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>Please review the [core Publisher requirements](publisher-requirements/core-requirements.md), which apply regardless of the platform being used, before beginning installation.</p>
+</blockquote>
 
 ## Where should I install the Publisher?
 
@@ -26,21 +26,17 @@ Use the table below to understand where the Publisher should be installed in you
 | **Intune only**                          | **Any suitable Windows system**                  | The Publisher communicates directly with Intune via Microsoft Graph.                                                      |
 | **Mixed environments**                   | **Top level WSUS Server /** **SUP**              | Install the Publisher on the top-level WSUS/SUP server if publishing updates to both ConfigMgr/WSUS and Intune.           |
 
-{% hint style="success" %}
-**Tip**
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>Some customers who use Intune only choose to install the Publisher on a dedicated Azure virtual machine. A B2 size virtual machine or equivalent is commonly used.&#x20;</p>
+<p>The virtual machine should still meet or exceed the [minimum core requirements](publisher-requirements/core-requirements.md) and [additional requirements needed for Intune publishing](publisher-requirements/intune-requirements/).</p>
+</blockquote>
 
-Some customers who use Intune only choose to install the Publisher on a dedicated Azure virtual machine. A B2 size virtual machine or equivalent is commonly used.&#x20;
-
-The virtual machine should still meet or exceed the [minimum core requirements](publisher-requirements/core-requirements.md) and [additional requirements needed for Intune publishing](publisher-requirements/intune-requirements/).
-{% endhint %}
-
-{% hint style="info" %}
-**Note**
-
-If you intend to publish third-party applications and updates to Intune only, we generally recommend using Patch My PC Cloud, our cloud-based service, as it removes the need to manage on-premises infrastructure and simplifies ongoing operations.&#x20;
-
-However, some customers are required to use the Publisher instead, such as those with restrictions around enterprise application usage, environments that require GCC High, or scenarios where cloud-hosted services are not permitted. In these cases, the Publisher provides a fully supported alternative that allows publishing to Intune while keeping control within your environment.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If you intend to publish third-party applications and updates to Intune only, we generally recommend using Patch My PC Cloud, our cloud-based service, as it removes the need to manage on-premises infrastructure and simplifies ongoing operations.&#x20;</p>
+<p>However, some customers are required to use the Publisher instead, such as those with restrictions around enterprise application usage, environments that require GCC High, or scenarios where cloud-hosted services are not permitted. In these cases, the Publisher provides a fully supported alternative that allows publishing to Intune while keeping control within your environment.</p>
+</blockquote>
 
 ## Download the Publisher
 
@@ -50,15 +46,14 @@ To download the Publisher installer, follow the steps below:
 2. Navigate to the following URL:\
    [**https://patchmypc.com/msi**](https://patchmypc.com/msi)
 
-{% hint style="info" %}
-**Note**
-
-SHA256: EAF6A570087C2B67D9A945EADB9BB7DD503B86BD1E145D41E80BE2770BC69414
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>SHA256: EAF6A570087C2B67D9A945EADB9BB7DD503B86BD1E145D41E80BE2770BC69414</p>
+</blockquote>
 
 1.  The download will begin automatically.<br>
 
-    <figure><img src="../.gitbook/assets/image (404).png" alt="Download the Publisher from https://patchmypc.com/msi" width="563"><figcaption></figcaption></figure>
+    ![Download the Publisher from https://patchmypc.com/msi](/_images/image-(404).png "Download the Publisher from https://patchmypc.com/msi")
 2. Once complete, confirm that the file **`PatchMyPC-Publishing-Service.msi`** has been downloaded.
 3. Copy the installer to the target server, if required, then proceed to [Install the Publisher](download-and-install.md#install-publisher).
 
@@ -69,23 +64,23 @@ After carefully observing and understanding the [requirements](publisher-require
 1. Once you have [downloaded the Publisher](download-and-install.md#download-publisher), double click the msi to launch the installer.
 2.  Click **Next** to begin the installation wizard. Agree to the terms of service and click **Next** again.<br>
 
-    <figure><img src="../.gitbook/assets/image (405).png" alt="Install Publisher and accept the end-user license agreement" width="563"><figcaption></figcaption></figure>
+    ![Install Publisher and accept the end-user license agreement](/_images/image-(405).png "Install Publisher and accept the end-user license agreement")
 3.  If you are only using the Publisher to publish applications and updates in Intune, you can check the **Enable Microsoft Intune standalone mode\*** box. Click **Next**.<br>
 
-    <figure><img src="../.gitbook/assets/image (406).png" alt="Optionally select Intune standalone mode" width="371"><figcaption></figcaption></figure>
+    ![Optionally select Intune standalone mode](/_images/image-(406).png "Optionally select Intune standalone mode")
 
     \*Intune standalone mode simply removes some tabs in the Publisher that are specifically used for publishing applications and updates to ConfigMgr and WSUS. These tabs can be re-enabled retrospectively after installation from the Advanced tab in Publisher.
 4.  Select a folder to install the Publisher, and click **Next**. The default folder is `C:\Program Files\Patch My PC\Patch My PC Publishing Service\`.<br>
 
-    <figure><img src="../.gitbook/assets/image (407).png" alt="Select the folder for the Publisher installation files" width="371"><figcaption></figcaption></figure>
+    ![Select the folder for the Publisher installation files](/_images/image-(407).png "Select the folder for the Publisher installation files")
 5.  When you are ready to being, click **Install**.<br>
 
-    <figure><img src="../.gitbook/assets/image (408).png" alt="Begin Publisher installation" width="371"><figcaption></figcaption></figure>
+    ![Begin Publisher installation](/_images/image-(408).png "Begin Publisher installation")
 
 
 6.  Click **Yes** if you receive a UAC prompt. When installation has completed, you can choose to not immediately launch the Publisher by un-checking **Launch Patch My PC Publishing Service**. Click **Finish**.<br>
 
-    <figure><img src="../.gitbook/assets/image (409).png" alt="Authorize and Complete Installation" width="563"><figcaption></figcaption></figure>
+    ![Authorize and Complete Installation](/_images/image-(409).png "Authorize and Complete Installation")
 
 ### What Next?
 

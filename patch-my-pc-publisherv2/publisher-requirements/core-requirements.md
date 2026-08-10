@@ -2,11 +2,10 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-{% hint style="success" %}
-**Tip**
-
-Before you get started, make sure you take advantage of our [free trial](https://patchmypc.com/free-trial)
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>Before you get started, make sure you take advantage of our <a href="https://patchmypc.com/free-trial">free trial</a></p>
+</blockquote>
 
 This section details requirements for the Publisher that apply regardless of the platform being used.
 
@@ -18,11 +17,10 @@ Publisher requires the following permissions:
 
 The user installing and/or accessing the Publisher application, to configure third-party applications and updates, must be an administrator on the computer where the Publisher is installed.
 
-{% hint style="info" %}
-**Note**
-
-The Publisher currently does not support a remote console. The Publisher application must be accessed directly on the device where it’s installed. However, you can use Remote Desktop to access the application. Only one instance of the Publisher application can be open at a time.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The Publisher currently does not support a remote console. The Publisher application must be accessed directly on the device where it’s installed. However, you can use Remote Desktop to access the application. Only one instance of the Publisher application can be open at a time.</p>
+</blockquote>
 
 ### Service Account
 
@@ -43,11 +41,10 @@ When using a gMSA, review [gMSA support for the Publisher](../publisher-referenc
   * Windows Server 2025
   * Windows 11
 
-{% hint style="warning" %}
-**Important**
-
-The Publisher can be installed on Windows 11 only if it is soley being used to publish applications and updates to Intune.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>The Publisher can be installed on Windows 11 only if it is soley being used to publish applications and updates to Intune.</p>
+</blockquote>
 
 ## Hardware <a href="#hardware" id="hardware"></a>
 
@@ -62,17 +59,13 @@ The table below illustrates the estimated disk space requirements based on the n
 
 Additional disk space considerations are needed when publishing applications/updates to [ConfigMgr ](configmgr-requirements/disk-space.md)and [WSUS](wsus-requirements/disk-space.md).
 
-{% hint style="info" %}
-**Note**
-
-120 GB is an estimated requirement based on enabling approximately 700 products in the Publisher. The average application size, calculated from all apps in our catalog, is around 180 MB, with individual apps ranging from 1 MB to 2 GB.
-
-The disk space recommendation covers the space the Publisher needs to download and package vendor installers. Actual storage requirements may be higher depending on the number of products and the platforms you publish to.&#x20;
-
-For example, ConfigMgr requires space for the application content source folder, retained app versions, and the content library. WSUS duplicates content in both the UpdateServicesPackages and WSUS Content folders.&#x20;
-
-See the platform-specific sections for more detailed guidance.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>120 GB is an estimated requirement based on enabling approximately 700 products in the Publisher. The average application size, calculated from all apps in our catalog, is around 180 MB, with individual apps ranging from 1 MB to 2 GB.</p>
+<p>The disk space recommendation covers the space the Publisher needs to download and package vendor installers. Actual storage requirements may be higher depending on the number of products and the platforms you publish to.&#x20;</p>
+<p>For example, ConfigMgr requires space for the application content source folder, retained app versions, and the content library. WSUS duplicates content in both the UpdateServicesPackages and WSUS Content folders.&#x20;</p>
+<p>See the platform-specific sections for more detailed guidance.</p>
+</blockquote>
 
 | Enabled Apps | Space Required |
 | ------------ | -------------- |
@@ -89,13 +82,11 @@ The Publisher requires access to the following URLs for core functionality. Ther
 
 <table><thead><tr><th width="249">Domain</th><th width="243">Reason</th><th>Port</th><th>Protocol</th></tr></thead><tbody><tr><td>patchmypc.com</td><td>Catalog download</td><td>443</td><td>https</td></tr><tr><td>content.patchmypc.com</td><td>Icons, scripts and other resources</td><td>443</td><td>https</td></tr><tr><td>api.patchmypc.com</td><td>Licensing validation</td><td>443</td><td>https</td></tr><tr><td>portal.patchmypc.com</td><td>Patch My PC Cloud services</td><td>443</td><td>https</td></tr><tr><td>us.portal.patchmypc.com</td><td>Patch My PC Cloud services</td><td>443</td><td>https</td></tr><tr><td>eu.portal.patchmypc.com</td><td>Patch My PC Cloud services</td><td>443</td><td>https</td></tr><tr><td>signalr-us.patchmypc.com</td><td>Patch My PC Cloud services</td><td>443</td><td>https</td></tr><tr><td>signalr-eu.patchmypc.com</td><td>Patch My PC Cloud services</td><td>443</td><td>https</td></tr><tr><td>login.microsoftonline.com</td><td>Patch My PC Cloud services</td><td>443</td><td>https</td></tr><tr><td>*.digicert.com</td><td>CRL checking</td><td>80</td><td>http</td></tr><tr><td>timestamp.digicert.com</td><td>timestamping</td><td>80</td><td>http</td></tr><tr><td>ocsp.digicert.com</td><td>timestamping</td><td>80</td><td>http</td></tr></tbody></table>
 
-{% hint style="info" %}
-**Note**
-
-The Publisher requires access to `timestamp.digicert.com` and `ocsp.digicert.com` to support timestamping operations. Additional DigiCert hostnames may appear in network monitoring, such as `ocsp.digicert.cn` , because the specific OCSP or CRL endpoint Windows contacts is not predetermined.&#x20;
-
-When Windows CryptoAPI processes certificate validation, it follows the certificate chain and resolves whichever revocation endpoint is referenced by that chain at runtime, which can vary by region and certificate. These endpoints are not chosen or contacted directly by the Publisher, which is why the wildcard `*.digicert.com` is required.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The Publisher requires access to `timestamp.digicert.com` and `ocsp.digicert.com` to support timestamping operations. Additional DigiCert hostnames may appear in network monitoring, such as `ocsp.digicert.cn` , because the specific OCSP or CRL endpoint Windows contacts is not predetermined.&#x20;</p>
+<p>When Windows CryptoAPI processes certificate validation, it follows the certificate chain and resolves whichever revocation endpoint is referenced by that chain at runtime, which can vary by region and certificate. These endpoints are not chosen or contacted directly by the Publisher, which is why the wildcard `*.digicert.com` is required.</p>
+</blockquote>
 
 ### Local Configuration API
 
@@ -115,17 +106,15 @@ The following list contains domains that must be accessible to download update c
 List of domains for vendor installer content
 {% endembed %}
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Given the large number of applications supported in the Patch My PC catalog, we recommend allowing outbound HTTP (port 80) and HTTPS (port 443) traffic. Creating and maintaining explicit allow lists for each vendor domain can be labor-intensive, and vendor-hosted installer URLs are subject to change without notice. Blocking these URLs could disrupt the publishing process and prevent updates from being downloaded successfully.</p>
+</blockquote>
 
-Given the large number of applications supported in the Patch My PC catalog, we recommend allowing outbound HTTP (port 80) and HTTPS (port 443) traffic. Creating and maintaining explicit allow lists for each vendor domain can be labor-intensive, and vendor-hosted installer URLs are subject to change without notice. Blocking these URLs could disrupt the publishing process and prevent updates from being downloaded successfully.
-{% endhint %}
-
-{% hint style="warning" %}
-**Important**
-
-If your network filters based on user-agent, make sure to allow `Patch My PC Publishing Service*` to ensure downloads are not blocked.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>If your network filters based on user-agent, make sure to allow `Patch My PC Publishing Service*` to ensure downloads are not blocked.</p>
+</blockquote>
 
 ## Platform Specific Requirements
 

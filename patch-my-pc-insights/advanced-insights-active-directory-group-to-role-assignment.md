@@ -22,12 +22,12 @@ Navigate to **Administration** > **Roles**.
 2. Enter a name for the role (in this example, "Helpdesk"
 3. Type the name of the associated Active Directory Security Group, here, we are using "sg-Helpdesk". Ensure the group name is validated on save.
 
-<figure><img src="../.gitbook/assets/Role Group.jpg" alt=""><figcaption><p>Role creation dialog</p></figcaption></figure>
+![](/_images/Role-Group.jpg)
 
 Now click the Permissions tab and select the pages and permissions you want to grant to this role.
 
-<figure><img src="../.gitbook/assets/image (1928).png" alt=""><figcaption><p>Role Permissions</p></figcaption></figure>
+![](/_images/image-(1928).png "Role Permissions")
 
 Logging on with an account in the helpdesk role, the user is granted only the access stated in the role configuration:
 
-<figure><img src="../.gitbook/assets/8.jpg" alt=""><figcaption></figcaption></figure>
+![](/_images/8.jpg)

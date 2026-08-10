@@ -6,22 +6,18 @@ Installation Summary
 
 This completes the pre-install configuration of Advanced Insights, a summary screen is shown and you can review and click **Install** to begin the installation.
 
-<figure><img src="../../.gitbook/assets/image (4338).png" alt="Installation Summary" width="563"><figcaption></figcaption></figure>
+![Installation Summary](/_images/image-(4338).png "Installation Summary")
 
 **Installation**
 
 The installer may take up to 30 minutes to complete.
 
-<figure><img src="../../.gitbook/assets/image (4339).png" alt="Installation in progress" width="563"><figcaption></figcaption></figure>
+![Installation in progress](/_images/image-(4339).png "Installation in progress")
 
-{% hint style="info" %}
-**Note**
-
-The installer will automatically create an installation log at:
-
-`%temp%\AdvInsights.log`
-
-Additionally, a copy (.zip) of the install log is placed into the following folder:
-
-`C:\ProgramData\AdvancedInsights\Logs\Installer`
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The installer will automatically create an installation log at:</p>
+<p>`%temp%\AdvInsights.log`</p>
+<p>Additionally, a copy (.zip) of the install log is placed into the following folder:</p>
+<p>`C:\ProgramData\AdvancedInsights\Logs\Installer`</p>
+</blockquote>

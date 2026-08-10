@@ -2,11 +2,10 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 In a multi-tenant configuration, Patch My PC )PMPC) Publisher notification behavior differs between email and webhook notifications. It is important to understand how each type is scoped.
 
@@ -18,13 +17,12 @@ If an MSP enables email notifications, the configured email address will receive
 
 The email clearly separates activity by tenant so administrators can see which applications or updates were published for each customer.
 
-<figure><img src="../../../.gitbook/assets/image (4125).png" alt="Multi-tenant Email Notifications" width="563"><figcaption></figcaption></figure>
+![Multi-tenant Email Notifications](/_images/image-(4125).png "Multi-tenant Email Notifications")
 
-{% hint style="info" %}
-**Note**
-
-Email notifications cannot be configured per tenant. It is not possible to send separate synchronization emails to individual customer email addresses. For this reason, MSPs typically configure a centralized operations or service mailbox to receive synchronization notifications.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Email notifications cannot be configured per tenant. It is not possible to send separate synchronization emails to individual customer email addresses. For this reason, MSPs typically configure a centralized operations or service mailbox to receive synchronization notifications.</p>
+</blockquote>
 
 ## Webhook Notifications
 
@@ -45,7 +43,7 @@ This enables flexible notification routing. For example:
 
 Within the webhook configuration window, use the **Tenant Selection** section to control scope. If no tenants are selected, the webhook applies to all tenants. If one or more tenants are selected, the webhook applies only to the selected tenants.
 
-<figure><img src="../../../.gitbook/assets/image (4128).png" alt="Tenant Specific Webhook Notifications" width="450"><figcaption></figcaption></figure>
+![Tenant Specific Webhook Notifications](/_images/image-(4128).png "Tenant Specific Webhook Notifications")
 
 This provides granular control over how and where notifications are delivered in a multi-tenant Publisher scenario.
 

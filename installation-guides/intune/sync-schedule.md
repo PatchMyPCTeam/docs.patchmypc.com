@@ -12,15 +12,15 @@ _Applies to: On-premises Publisher_
 
 By default, we recommend the Publisher sync runs on a daily basis. The sync schedule only controls **when updates or applications are published** to your environment. Keep in mind this will also affect assignment scheduling if you use the manage assignments feature.
 
-{% hint style="success" %}
-**Tip**: Generally, Patch My PC releases an update to the catalog **three to five times a week**. These updates are released usually posted by **4:00 PM Eastern Time**.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**: Generally, Patch My PC releases an update to the catalog **three to five times a week**. These updates are released usually posted by **4:00 PM Eastern Time**.</p>
+</blockquote>
 
 When Patch My PC releases these new updates, the **sync schedule is what automates the publication process**.&#x20;
 
 You can also manually start the sync and publication process at any time by selecting the **Run Publishing Service Sync** option.
 
-![Publishing Daily Sync Options](<../../.gitbook/assets/image (1825).png>)
+![Publishing Daily Sync Options](/_images/image-(1825 "Publishing Daily Sync Options").png>)
 
 ### Intune Application Manager
 
@@ -34,8 +34,8 @@ It can help you:
 
 The utility can be found within the Publisher in either the **Intune Apps** or **Intune Updates** tab, on the right-hand side as a cloud icon with a magnifying glass:
 
-![](<../../.gitbook/assets/image (1824).png>)
+![](/_images/image-(1824).png>)
 
 Below is an example screenshot of what the utility looks like in a tenant with some Win32 apps. This is a **live view of all Win32 apps** currently in your tenant.
 
-![](<../../.gitbook/assets/image (1827).png>)
+![](/_images/image-(1827).png>)

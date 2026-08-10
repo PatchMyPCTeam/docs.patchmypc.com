@@ -8,4 +8,4 @@ The email is sent from the [noreply@patchmypc.com](mailto:noreply@patchmypc.com)
 
 An example is shown below.
 
-<figure><img src="../../../.gitbook/assets/image (1065).png" alt="Example “Updates Report” email"><figcaption></figcaption></figure>
+![Example "Updates Report" email](/_images/image-(1065).png "Example “Updates Report” email")

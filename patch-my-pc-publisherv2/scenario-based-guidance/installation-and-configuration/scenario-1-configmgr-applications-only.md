@@ -55,4 +55,3 @@ The following steps are suitable for getting the Publisher up and running in mos
 After completing these steps, the Publisher is configured and ready to publish third-party applications to ConfigMgr.
 
 The next step is to [Customize and publish applications and updates](../../getting-started.md#customize-and-publish-applications-and-updates).
-

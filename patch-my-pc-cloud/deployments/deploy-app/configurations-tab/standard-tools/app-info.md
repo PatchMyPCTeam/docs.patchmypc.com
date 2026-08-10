@@ -17,29 +17,26 @@ Any values set for the following items will appear in the app’s properties whe
 
 <mark style="color:red;">**\***</mark> denotes a required field
 
-{% hint style="success" %}
-**Tip**
-
-If you make a mistake and want to reset the information in this section, click **Reset to Default** followed by **OK** on the **Are you sure you want to reset to the default values?** dialog box.
-
-Also, if the **App Info** section has been configured, you can view it as part of the app’s properties in the Microsoft Intune admin center.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>If you make a mistake and want to reset the information in this section, click **Reset to Default** followed by **OK** on the **Are you sure you want to reset to the default values?** dialog box.</p>
+<p>Also, if the **App Info** section has been configured, you can view it as part of the app’s properties in the Microsoft Intune admin center.</p>
+</blockquote>
 
 To manage the App Info for a Deployment:
 
 1. Click the **App Info** tool.
 
-<figure><img src="../../../../../.gitbook/assets/image (660).png" alt="Clicking the &#x27;App Info&#x27; tool" width="563"><figcaption></figcaption></figure>
+![Clicking the 'App Info' tool](/_images/image-(660).png "Clicking the &#x27;App Info&#x27; tool")
 
 2. Configure the settings as required.
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>We pre-populate this screen with the information received from the vendor/added by us.</p>
+</blockquote>
 
-We pre-populate this screen with the information received from the vendor/added by us.
-{% endhint %}
-
-<figure><img src="../../../../../.gitbook/assets/image (661).png" alt="&#x27;App Info&#x27; tool" width="563"><figcaption></figcaption></figure>
+!['App Info' tool](/_images/image-(661).png "&#x27;App Info&#x27; tool")
 
 ## Next Steps
 
@@ -47,4 +44,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-<figure><img src="../../../../../.gitbook/assets/image (662).png" alt="Clicking &#x27;Next&#x27;" width="563"><figcaption></figcaption></figure>
+![Clicking 'Next'](/_images/image-(662).png "Clicking &#x27;Next&#x27;")

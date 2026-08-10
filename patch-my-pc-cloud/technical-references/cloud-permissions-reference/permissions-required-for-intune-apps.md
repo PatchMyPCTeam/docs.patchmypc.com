@@ -13,14 +13,12 @@ In addition to the [Permissions required for Patch My PC Cloud](permissions-requ
 * [Read Microsoft Intune devices](permissions-required-for-intune-apps.md#read-microsoft-intune-devices)
 * [Read Microsoft Intune RBAC settings](permissions-required-for-intune-apps.md#read-microsoft-intune-rbac-settings)
 
-{% hint style="info" %}
-**Note**
-
-To connect with Intune, the signed-in user must have the **Cloud Application Administrator** or **Application Administrator** role to allow creation of the Enterprise app, and the **Privileged Role Administrator** role to approve the Graph API permissions we require. A **Global Administrator** can also perform both steps. The exact permission actions required are `microsoft.directory/servicePrincipals/create` and `microsoft.directory/servicePrincipals/managePermissionGrantsForAll.microsoft-company-admin`.
-
-\
-You can read more about Entra ID roles at [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference).
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>To connect with Intune, the signed-in user must have the **Cloud Application Administrator** or **Application Administrator** role to allow creation of the Enterprise app, and the **Privileged Role Administrator** role to approve the Graph API permissions we require. A **Global Administrator** can also perform both steps. The exact permission actions required are `microsoft.directory/servicePrincipals/create` and `microsoft.directory/servicePrincipals/managePermissionGrantsForAll.microsoft-company-admin`.</p>
+<p>\</p>
+<p>You can read more about Entra ID roles at <a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference">Microsoft Entra built-in roles</a>.</p>
+</blockquote>
 
 ## Read all group memberships
 
@@ -38,17 +36,13 @@ You can read more about Entra ID roles at [Microsoft Entra built-in roles](https
 
 <table data-header-hidden><thead><tr><th width="156" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Claim</td><td valign="top">DeviceManagementServiceConfig.ReadWrite.All</td></tr><tr><td valign="top">Description</td><td valign="top">Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration, without a signed-in user.</td></tr><tr><td valign="top">Permission Type</td><td valign="top">Application</td></tr><tr><td valign="top">Impact if revoked</td><td valign="top"><ul><li>Deployments will fail to auto-create during a Sync Schedule. You will need to click <strong>Recreate</strong> manually each time to recreate the affected deployments.</li><li>Deployments can still be created, but <strong>ESP Profiles</strong> will be unavailable as detailed by the tooltip.</li><li>Existing deployments containing <strong>ESP Profiles</strong> will show an error when on the <strong>Configurations</strong> tab, under the <strong>ESP Profiles</strong> section, and you will be unable to save your changes without deleting the ESP Profiles.</li></ul></td></tr></tbody></table>
 
-{% hint style="info" %}
-**Note**
-
-This permission is required to manage blocking apps in the Enrollment Status Page (ESP) profile directly from the PMPC Cloud Portal. This is the only feature in our solution that relies on this permission.
-
-We understand this permission may seem broad, but Microsoft does not offer a more granular alternative for updating the blocking apps feature in ESP profiles.&#x20;
-
-If you have concerns and choose to revoke this permission from the **Patch My PC Cloud** Enterprise App in your Entra ID tenant, please be aware that this will impair our ability to update deployments.
-
-See [DeviceManagementServiceConfig.ReadWrite.All | Graph Permissions](https://graphpermissions.merill.net/permission/DeviceManagementServiceConfig.ReadWrite.All?tabs=apiv1%2CdeviceManagement1) for more details on the Graph endpoints covered by this API permission.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>This permission is required to manage blocking apps in the Enrollment Status Page (ESP) profile directly from the PMPC Cloud Portal. This is the only feature in our solution that relies on this permission.</p>
+<p>We understand this permission may seem broad, but Microsoft does not offer a more granular alternative for updating the blocking apps feature in ESP profiles.&#x20;</p>
+<p>If you have concerns and choose to revoke this permission from the **Patch My PC Cloud** Enterprise App in your Entra ID tenant, please be aware that this will impair our ability to update deployments.</p>
+<p>See <a href="https://graphpermissions.merill.net/permission/DeviceManagementServiceConfig.ReadWrite.All?tabs=apiv1%2CdeviceManagement1">DeviceManagementServiceConfig.ReadWrite.All | Graph Permissions</a> for more details on the Graph endpoints covered by this API permission.</p>
+</blockquote>
 
 ## Read domains
 
@@ -76,4 +70,4 @@ _Does this app look suspicious?_ [_Report it here_](https://login.microsoftonlin
 
 You will be prompted to grant these during whenever you connect an Intune Tenant to your PMPC Cloud Portal by clicking **Accept** on the **Permissions requested** dialog box.
 
-<figure><img src="../../../.gitbook/assets/image (1044).png" alt="&#x22;Permissions requested&#x22; dialog box showing which permissions we require to connect to your Intune Tenant to connect "><figcaption></figcaption></figure>
+!["Permissions requested" dialog box showing which permissions we require to connect to your Intune Tenant to connect](/_images/image-(1044).png "&#x22;Permissions requested&#x22; dialog box showing which permissions we require to connect to your Intune Tenant to connect")

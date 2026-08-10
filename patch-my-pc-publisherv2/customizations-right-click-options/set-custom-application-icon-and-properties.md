@@ -1,14 +1,15 @@
 # Set Custom Application Icon and Properties
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: Product_\
+_Available at level: Product_
+\
 _Available on tab: ConfigMgr Apps, Intune Apps_
 
 ## Overview
 
 **Set Custom Application Icon and Properties** allows you to override the default name, description, and icon used for applications created by the Publisher.
 
-<figure><img src="../../.gitbook/assets/image (110).png" alt="Set Custom Application Icon and Properties" width="563"><figcaption></figcaption></figure>
+![Set Custom Application Icon and Properties](/_images/image-(110).png "Set Custom Application Icon and Properties")
 
 This option is used when you want application metadata to remain consistent across ConfigMgr and Intune apps, rather than changing automatically with each new version. The Publisher applies the configured properties when the application is first created and reapplies them whenever the application is updated.
 
@@ -16,27 +17,32 @@ You can configure a custom application name, description, and icon. For ConfigMg
 
 If no custom values are specified, the Publisher uses the default Patch My PC generated values.
 
-{% hint style="info" %}
-**Note**
-
-This option is especially useful for task sequence scenarios or long running deployments where a static application name or icon is required and changes between versions could cause confusion or unexpected behavior.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>This option is especially useful for task sequence scenarios or long running deployments where a static application name or icon is required and changes between versions could cause confusion or unexpected behavior.</p>
+</blockquote>
 
 ### Token Values&#xD;
 
-Naming conventions are built using token values. At least one token must be included.\
+Naming conventions are built using token values. At least one token must be included.
+\
 The available tokens are shown at the top of the dialog and can be clicked to insert them at the cursor position.
 
-* **%VendorName%**  \
+* **%VendorName%**
+  \
   Resolves to the software vendor name.
-* **%ProductName%**  \
+* **%ProductName%**
+  \
   Resolves to the product name and architecture.
-* **%Version%**  \
+* **%Version%**
+  \
   Resolves to the application version.
-* **%OriginalName%**  \
+* **%OriginalName%**
+  \
   Resolves to the default Patch My PC application name.
 
-**Example**\
+**Example**
+\
 Custom ConfigMgr App name configured as:
 
 ```
@@ -49,21 +55,19 @@ Resulting ConfigMgr application name:
 DEV - Brave 144.1.86.148 (EXE-x64)
 ```
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Token values are populated from the Publisher catalog definition. These values are stored in English and are not automatically translated to another language.</p>
+</blockquote>
 
-Token values are populated from the Publisher catalog definition. These values are stored in English and are not automatically translated to another language.
-{% endhint %}
-
-{% hint style="warning" %}
-**Important**
-
-If the ConfigMgr apps global option to [Do not include the version in the application name](../administration/configmgr-apps/options/application-creation-options.md#do-not-include-the-version-in-the-application-name) is enabled, the **%OriginalName%** token will also omit the version number. In this scenario, the original name resolves to the product name and variant/architecture only, without the version suffix.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>If the ConfigMgr apps global option to [Do not include the version in the application name](../administration/configmgr-apps/options/application-creation-options.md#do-not-include-the-version-in-the-application-name) is enabled, the **%OriginalName%** token will also omit the version number. In this scenario, the original name resolves to the product name and variant/architecture only, without the version suffix.</p>
+</blockquote>
 
 ## **Configure** Custom Application Properties
 
-<figure><img src="../../.gitbook/assets/image (111).png" alt="Configure Custom Application Properties" width="375"><figcaption></figcaption></figure>
+![Configure Custom Application Properties](/_images/image-(111).png "Configure Custom Application Properties")
 
 To configure Custom Application Properties:
 
@@ -76,6 +80,6 @@ To configure Custom Application Properties:
 
 \*Click **Show default description** to display the original catalog description. Copy the text to the clipboard, paste it into the **Custom Description** field, and edit it to create your custom description.
 
-<figure><img src="../../.gitbook/assets/image (77).png" alt="Show default description" width="557"><figcaption></figcaption></figure>
+![Show default description](/_images/image-(77).png "Show default description")
 
 The custom properties are applied during the next Publisher [synchronization](../administration/sync-schedule.md) and affect newly created and updated applications for that product.

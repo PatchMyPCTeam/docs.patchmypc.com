@@ -4,7 +4,7 @@ _Applies to: Patch My PC Cloud_
 
 As detailed in ["Assignments" tab of a Patch My PC Cloud Deployment](../deploy-app/assignments-tab.md) and [Create a Deployment without Assignments in Patch My PC Cloud](deployment-without-assignments.md), there are several different types of assignments you can configure for a Patch My PC (PMPC) Cloud deployment.
 
-<figure><img src="../../../.gitbook/assets/image (61).png" alt="Assignment types" width="563"><figcaption></figcaption></figure>
+![Assignment types](/_images/image-(61).png "Assignment types")
 
 This article focuses on some caveats and considerations specific to configuring assignments, which, if overlooked, can sometimes lead to errors.
 

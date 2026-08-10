@@ -4,31 +4,27 @@ _Applies to: Patch My PC Publisher V3.x_\
 _Available at level: All Custom Products, All Products, Vendor, Product_\
 _Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Conflicting Process UI Settings** window in Patch My PC (PMPC) Publisher is used to customize the end-user notification experience shown when an application must be closed to complete an update.
 
-<figure><img src="../../../../.gitbook/assets/image (3983).png" alt="Conflicting Process UI Settings" width="450"><figcaption></figcaption></figure>
+![Conflicting Process UI Settings](/_images/image-(3983).png "Conflicting Process UI Settings")
 
 These settings allow you to control branding, organization identity, language, and the notification text displayed to users during conflicting process scenarios.
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The **Conflicting Process UI Settings** window is leveraged when the [Notify the user to close the application](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-conflicting-processes/setting-configuration.md#notify-the-user-to-close-the-application) policy is selected.</p>
+</blockquote>
 
-The **Conflicting Process UI Settings** window is leveraged when the [Notify the user to close the application](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-conflicting-processes/setting-configuration.md#notify-the-user-to-close-the-application) policy is selected.
-{% endhint %}
-
-{% hint style="danger" %}
-**Important**
-
-Branding and localization settings are global. You cannot configure different branding or localization profiles for different applications or updates. The configured branding and language settings apply to every application or update where conflicting process management is enabled.
-
-For customers using an **MSP** or **MSP Plus** license with multiple Intune tenants configured, branding and localization settings are global **per tenant**. Each configured tenant maintains its own branding configuration, but all applications and updates within that tenant share the same branding and localization settings.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Branding and localization settings are global. You cannot configure different branding or localization profiles for different applications or updates. The configured branding and language settings apply to every application or update where conflicting process management is enabled.</p>
+<p>For customers using an **MSP** or **MSP Plus** license with multiple Intune tenants configured, branding and localization settings are global **per tenant**. Each configured tenant maintains its own branding configuration, but all applications and updates within that tenant share the same branding and localization settings.</p>
+</blockquote>
 
 ## Is a seperate Client or Agent required to show the Notification?
 
@@ -42,13 +38,12 @@ During installation, Patch My PC ScriptRunner, which manages the installation on
 
 In the example below, the highlighted files show the components involved in displaying the end user notification. These files are downloaded to the local cache folder alongside the application or update package and are used at runtime to render the notification experience.
 
-<figure><img src="../../../../.gitbook/assets/image (133).png" alt="Manage Conflicting Processes Files" width="549"><figcaption></figcaption></figure>
+![Manage Conflicting Processes Files](/_images/image-(133).png "Manage Conflicting Processes Files")
 
-{% hint style="danger" %}
-**Important**
-
-Any changes made to branding or notification content apply to newly published applications and updates. Existing deployments must be [republished](../../../../patch-my-pc-publisherv2/customizations-right-click-options/republish-during-next-sync-schedule.md) for updated branding settings to be included.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>Any changes made to branding or notification content apply to newly published applications and updates. Existing deployments must be [republished](../../../../patch-my-pc-publisherv2/customizations-right-click-options/republish-during-next-sync-schedule.md) for updated branding settings to be included.</p>
+</blockquote>
 
 ## Company Logo
 
@@ -66,25 +61,24 @@ You can manage the company logo using the following options.
 • **Use Default** to revert to the default banner image.\
 • **Preview** to see how the logo will appear to end users before saving the configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (132).png" alt="Notification Preview" width="282"><figcaption></figcaption></figure>
+![Notification Preview](/_images/image-(132).png "Notification Preview")
 
-{% hint style="info" %}
-**Note**
-
-Selecting **Close and Install** or **Snooze and Install** in the preview window only closes the preview. These buttons do not trigger any installation or enforcement action and are provided for visualization purposes only.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Selecting **Close and Install** or **Snooze and Install** in the preview window only closes the preview. These buttons do not trigger any installation or enforcement action and are provided for visualization purposes only.</p>
+</blockquote>
 
 ## Organization Name
 
 The **Organization Name** field allows you to specify the organization name displayed in notification text. This value can be referenced dynamically within notification messages using the supported variables.
 
-<figure><img src="../../../../.gitbook/assets/image (136).png" alt="The Organization Name replaces this text in the notification window" width="282"><figcaption></figcaption></figure>
+![The Organization Name replaces this text in the notification window](/_images/image-(136).png "The Organization Name replaces this text in the notification window")
 
 ## Localization
 
 The **Localization** section controls the language and user facing text displayed in conflicting process notifications.
 
-<figure><img src="../../../../.gitbook/assets/image (3984).png" alt="Localization Options" width="450"><figcaption></figcaption></figure>
+![Localization Options](/_images/image-(3984).png "Localization Options")
 
 ### Selected Language
 
@@ -92,7 +86,7 @@ The **Localization** section controls the language and user facing text displaye
 
 To add or manage languages, click **Add/Remove**. This opens the language selection window where you can choose languages from the available list, add them to the selected languages list, and define which language is the default.
 
-<figure><img src="../../../../.gitbook/assets/image (3989).png" alt="Select Language for Conflicting Process UI Translation" width="488"><figcaption></figcaption></figure>
+![Select Language for Conflicting Process UI Translation](/_images/image-(3989).png "Select Language for Conflicting Process UI Translation")
 
 At runtime, Patch My PC ScriptRunner detects the locale of the device and displays notifications in the matching language if that language has been configured. If the device locale does not match any configured language in the **Selected Languages** list, the default language is used to display the notification.
 
@@ -119,8 +113,7 @@ Available variables include organization name, product name, deferral count, and
 
 To insert a variable into any text field, select the field where you want the variable to appear, then select the variable from the list at the bottom of the form. The variable is inserted at the current cursor position and is expanded automatically at runtime.
 
-{% hint style="info" %}
-**Note**
-
-The product name is populated automatically and cannot be customized.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The product name is populated automatically and cannot be customized.</p>
+</blockquote>

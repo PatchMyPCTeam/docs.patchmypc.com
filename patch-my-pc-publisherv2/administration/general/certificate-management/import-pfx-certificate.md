@@ -6,11 +6,11 @@ The **Import PFX Certificate** option allows you to import a code signing certif
 
 When importing a new certificate, the Publisher checks whether an existing certificate is already configured. If the current certificate is still valid, you are prompted to confirm before it is replaced. This helps prevent accidental replacement of an active and trusted signing certificate.
 
-<figure><img src="../../../../.gitbook/assets/image (420).png" alt="Import a PFX certificate" width="563"><figcaption></figcaption></figure>
+![Import a PFX certificate](/_images/image-(420).png "Import a PFX certificate")
 
 When importing a new certificate, the Publisher will prompt you to confirm if an existing certificate is still valid, helping prevent accidental replacement of an active and trusted signing certificate.
 
-<figure><img src="../../../../.gitbook/assets/image (3915).png" alt="Overwrite Certificate Validation" width="328"><figcaption></figcaption></figure>
+![Overwrite Certificate Validation](/_images/image-(3915).png "Overwrite Certificate Validation")
 
 To import a PFX certificate:
 
@@ -19,7 +19,7 @@ To import a PFX certificate:
 3. Click Open.
 4. Enter the password for the private key
 
-<figure><img src="../../../../.gitbook/assets/image (81).png" alt="Enter the PFX password" width="390"><figcaption></figcaption></figure>
+![Enter the PFX password](/_images/image-(81).png "Enter the PFX password")
 
 
 
@@ -27,14 +27,13 @@ To import a PFX certificate:
 
 If the certificate is valid and suitable for code signing, the import completes successfully.
 
-<figure><img src="../../../../.gitbook/assets/image (82).png" alt="Import was succesful" width="444"><figcaption></figcaption></figure>
+![Import was succesful](/_images/image-(82).png "Import was succesful")
 
 If the PFX certificate is not suitable for code signing operations, an error dialog will indicate that.
 
-<figure><img src="../../../../.gitbook/assets/image (4139).png" alt="Certificate not suitable" width="317"><figcaption></figcaption></figure>
+![Certificate not suitable](/_images/image-(4139).png "Certificate not suitable")
 
-{% hint style="info" %}
-**Note**
-
-When importing a new certificate, the Publisher will prompt you to confirm if an existing certificate is still valid, helping prevent accidental replacement of an active and trusted signing certificate.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>When importing a new certificate, the Publisher will prompt you to confirm if an existing certificate is still valid, helping prevent accidental replacement of an active and trusted signing certificate.</p>
+</blockquote>

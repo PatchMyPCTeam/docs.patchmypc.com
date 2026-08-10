@@ -2,11 +2,10 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 The **Search Products** dialog in Patch My PC (PMPC) Publisher allows you to quickly locate vendors or products within the product tree without manually scrolling through the entire catalog.
 
@@ -17,7 +16,7 @@ You can open the search dialog in either of the following ways:
 * Press **CTRL + F** anywhere in the product tree.
 * Click the S**earch Product (magnifying glass)** form control.
 
-<figure><img src="../../../../.gitbook/assets/image (3962).png" alt="Search Products" width="563"><figcaption></figcaption></figure>
+![Search Products](/_images/image-(3962).png "Search Products")
 
 ## Using the Search
 
@@ -27,8 +26,7 @@ You can open the search dialog in either of the following ways:
    * **F3** - Find next match
    * **Shift + F3** - Find previous match
 
-{% hint style="info" %}
-**Note**
-
-When no further matches are found, a dialog is displayed indicating **No match found for: \<search term>**. This confirms that all occurrences of the search term in the product tree have been reached.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>When no further matches are found, a dialog is displayed indicating **No match found for: \<search term>**. This confirms that all occurrences of the search term in the product tree have been reached.</p>
+</blockquote>

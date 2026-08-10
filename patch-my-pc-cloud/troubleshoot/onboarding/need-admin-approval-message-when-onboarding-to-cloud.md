@@ -9,7 +9,7 @@ I am trying to onboard to Patch My PC (PMPC) Cloud. I’ve signed in, expecting 
 **Patch My PC LLC needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.**\
 <br>
 
-<figure><img src="../../../.gitbook/assets/image (1608).png" alt="“Need admin approval” dialog box"><figcaption></figcaption></figure>
+!["Need admin approval" dialog box](/_images/image-(1608).png "“Need admin approval” dialog box")
 
 ### CAUSE
 

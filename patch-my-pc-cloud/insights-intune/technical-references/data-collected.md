@@ -10,15 +10,14 @@ On the first time launch of a tab/dashboard view, a data caching process runs to
 
 Whilst report generation/processing is in process the following message is shown.
 
-<figure><img src="../../../.gitbook/assets/image (4247).png" alt="Loading of Advanced Insights for Intune using Microsoft graph APIs" width="563"><figcaption></figcaption></figure>
+![Loading of Advanced Insights for Intune using Microsoft graph APIs](/_images/image-(4247).png "Loading of Advanced Insights for Intune using Microsoft graph APIs")
 
 Once the data export generation has completed for all requested reports, Advanced Insights for Intune processes the data export and stores the results in the database. The dashboard then loads fully.
 
-{% hint style="danger" %}
-**Important**
-
-We store your Intune data in a secure database for a total of three (3) hours, after which it is automatically deleted from our systems.&#x20;
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>We store your Intune data in a secure database for a total of three (3) hours, after which it is automatically deleted from our systems.&#x20;</p>
+</blockquote>
 
 ## Reports used
 

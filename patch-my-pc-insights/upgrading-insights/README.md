@@ -14,17 +14,17 @@ Prior to version 2.5.1, upgrading Advanced Insights was an entirely manual proce
 
 To manually upgrade Advanced Insights, we need to re-run the installer using the latest version downloaded from [here](../download-and-install-insights/).&#x20;
 
-{% hint style="info" %}
-To upgrade silently please run AdvancedInsights.exe /q /l\*v %temp%\AdvInsights.log
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>To upgrade silently please run AdvancedInsights.exe /q /l\*v %temp%\AdvInsights.log</p>
+</blockquote>
 
 When you run the installer, it will prompt for you to accept the license terms.
 
-<figure><img src="../../.gitbook/assets/image (4341).png" alt="License T&#x26;Cs" width="563"><figcaption></figcaption></figure>
+![License T&Cs](/_images/image-(4341).png "License T&#x26;Cs")
 
 You will be presented with the upgrade summary page. There is also the option to change the certificate, network port or IIS application pool identity if required.
 
-<figure><img src="../../.gitbook/assets/image (4342).png" alt="Upgrade summary page" width="563"><figcaption></figcaption></figure>
+![Upgrade summary page](/_images/image-(4342).png "Upgrade summary page")
 
 If upgrading from 1.0.x and 2.0.x versions of Advanced Insights, the upgrade summary page will also include summary information about the Advanced Insights SQL DB migration to SQLite.
 
@@ -32,10 +32,10 @@ See section: [upgrading-to-advanced-insights-2.1-and-later-from-1.0.x-and-2.0.x-
 
 If you wish to do so, click the **'View / Change Cert'** button will show additional information about any warnings being flagged.
 
-<figure><img src="../../.gitbook/assets/image (4343).png" alt="Certificate properties" width="563"><figcaption></figcaption></figure>
+![Certificate properties](/_images/image-(4343).png "Certificate properties")
 
 Following this, click **Install** to start the upgrade process.
 
 The upgrade success page is displayed upon completion.
 
-<figure><img src="../../.gitbook/assets/image (4344).png" alt="Upgrade successful" width="563"><figcaption></figcaption></figure>
+![Upgrade successful](/_images/image-(4344).png "Upgrade successful")

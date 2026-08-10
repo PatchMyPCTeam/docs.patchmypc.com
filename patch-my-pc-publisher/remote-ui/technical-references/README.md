@@ -2,13 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**PRE-RELEASE DOCUMENTATION**
-
-This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
-
-Once this feature is released, it will be announced, and this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**PRE-RELEASE DOCUMENTATION**</p>
+<p>This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.</p>
+<p>Once this feature is released, it will be announced, and this banner will be removed.</p>
+</blockquote>
 
 Welcome to the Technical references section for Patch My PC (PMPC) Publisher Remote User Interface (UI).
 

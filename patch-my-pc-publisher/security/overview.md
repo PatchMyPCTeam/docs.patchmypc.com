@@ -34,11 +34,10 @@ A curated approach reduces supply chain exposure by enforcing controlled release
 
 Each catalog entry is created, validated, signed, and approved through a controlled internal process before being made available to customers.
 
-{% hint style="info" %}
-**Note**
-
-For more information on why curated catalogs are more secure than community-based catalogs, see our blog [Curated vs. Crowdsourced: Why Enterprise Software Catalogs Require Professional Curation](https://patchmypc.com/blog/curated-vs-crowdsourced/).
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>For more information on why curated catalogs are more secure than community-based catalogs, see our blog <a href="https://patchmypc.com/blog/curated-vs-crowdsourced/">Curated vs. Crowdsourced: Why Enterprise Software Catalogs Require Professional Curation</a>.</p>
+</blockquote>
 
 ## Vendor Binary Acquisition and Validation
 
@@ -48,11 +47,10 @@ The original download URL and cryptographic file hash are recorded in the catalo
 
 Before release, binaries undergo malware and integrity validation. Files are uploaded to VirusTotal and scanned across dozens of antivirus engines.
 
-{% hint style="info" %}
-**Note**
-
-See [Binary Validation](binary-validation.md) for more information on this acquisition and validation process.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Binary Validation](binary-validation.md) for more information on this acquisition and validation process.</p>
+</blockquote>
 
 ## Catalog Creation and Code Signing
 
@@ -112,8 +110,7 @@ For customers using WSUS, Publisher adds one final layer. Mandatory customer-sid
 
 Taken together, these controls are designed to protect against catalog tampering, man-in-the-middle attacks, vendor mirror compromise, unauthorized content injection, insider manipulation, and unauthorized client installation.
 
-{% hint style="info" %}
-**Note**
-
-Please refer to the [Patch My PC Trust Center](https://trust.patchmypc.com/) for detailed documentation of our broader security posture, compliance practices, and operational controls.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Please refer to the <a href="https://trust.patchmypc.com/">Patch My PC Trust Center</a> for detailed documentation of our broader security posture, compliance practices, and operational controls.</p>
+</blockquote>

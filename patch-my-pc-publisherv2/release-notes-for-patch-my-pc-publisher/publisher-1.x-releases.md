@@ -201,7 +201,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
         &#x20; -2147467259 in exit codes table\*\*
     * **Unmatched exit code (2147500037) is considered an execution failure.**&#x20;
-      * ![Bug with Percentage Sign in Application File Name](https://patchmypc.com/wp-content/uploads/2018/05/Bug-with-Percentage-Sign-in-Application-File-Name.jpg)
+      * ![Bug with Percentage Sign in Application File Name](/_images/Bug-with-Percentage-Sign-in-Application-File-Name.jpg "Bug with Percentage Sign in Application File Name")
 
 ### 1.8.9 - 2020-09-10
 

@@ -2,11 +2,10 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
+</blockquote>
 
 ## Create a Workflow
 
@@ -17,23 +16,23 @@ To create a webhook URL:
 1. Open Microsoft Teams and navigate to the Channel where you want to receive Webhook Notifications.
 2. Click the More Options button **…** and select **Workflows**.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (225).png" alt="Teams Workflows" width="524"><figcaption></figcaption></figure>
+![Teams Workflows](/_images/image-(225).png "Teams Workflows")
 
 3. Select **Send webhook alerts to a channel**.
 
-<figure><img src="../../../../.gitbook/assets/image (226).png" alt="Send webhook alerts to a channel" width="429"><figcaption></figcaption></figure>
+![Send webhook alerts to a channel](/_images/image-(226).png "Send webhook alerts to a channel")
 
 4. Allow a moment for the template to load, it can take a minute. Optionally, update the **Name** of the workflow so it can be easily distingushed in PowerAutomate. Click **Next.**
 
-<figure><img src="../../../../.gitbook/assets/image (227).png" alt="Name the workflow" width="563"><figcaption></figcaption></figure>
+![Name the workflow](/_images/image-(227).png "Name the workflow")
 
 5. Allow a moment for the details tab to load to verify which Team and Channel the webhook URL will be created for and click **Add workflow**.
 
-<figure><img src="../../../../.gitbook/assets/image (228).png" alt="Add the workflow" width="563"><figcaption></figcaption></figure>
+![Add the workflow](/_images/image-(228).png "Add the workflow")
 
 6. Click the **copy** icon to copy the webhook URL to your clipboard before click **Done**.
 
-<figure><img src="../../../../.gitbook/assets/image (229).png" alt="Copy the webhook URL" width="563"><figcaption></figcaption></figure>
+![Copy the webhook URL](/_images/image-(229).png "Copy the webhook URL")
 
 The copied URL can be used when [adding ](../../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/webhook-notification-settings.md#add-a-webhook)or [editing ](../../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/webhook-notification-settings.md#edit-a-webhook)a webhook in the Publisher.
 
@@ -48,12 +47,12 @@ Update the Workflow **Post As** Setting:
 1. Navigate to [https://make.powerautomate.com](https://make.powerautomate.com/)
 2. Locate the workflow used for Teams notifications targeting the private channel and select **Edit**.
 
-<figure><img src="../../../../.gitbook/assets/image (3910).png" alt="Edit the Workflow" width="563"><figcaption></figcaption></figure>
+![Edit the Workflow](/_images/image-(3910).png "Edit the Workflow")
 
 3. Select the workflow step named **Post card in a chat or channel**
 4. Change the **Post As** value from **Bot** to **User**.
 
-<figure><img src="../../../../.gitbook/assets/image (3911).png" alt="Post as User not Bot" width="563"><figcaption></figcaption></figure>
+![Post as User not Bot](/_images/image-(3911).png "Post as User not Bot")
 
 5\. Save the workflow.
 

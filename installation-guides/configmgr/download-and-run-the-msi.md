@@ -18,21 +18,21 @@ Download Patch My PC Publisher
 
 Start the installation by double-clicking the downloaded MSI.&#x20;
 
-{% hint style="info" %}
-Depending on user account control settings, you may need to run an elevated command prompt and launch the MSI from the command prompt.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>Depending on user account control settings, you may need to run an elevated command prompt and launch the MSI from the command prompt.</p>
+</blockquote>
 
 ### Welcome Screen
 
 Once the installation starts you'll be greeted by the welcome screen in our installer wizard, click **Next**.
 
-![Select next to continue past the welcome screen](<../../.gitbook/assets/image (1779).png>)
+![Select next to continue past the welcome screen](/_images/image-(1779 "Select next to continue past the welcome screen").png>)
 
 ### End-User License Agreement
 
 Read the End-User License Agreement. After that, select **I accept the terms in the License Agreement** and click **Next**.
 
-![End-User License Agreement](<../../.gitbook/assets/image (1955).png>)
+![End-User License Agreement](/_images/image-(1955 "End-User License Agreement").png>)
 
 ### Disable Microsoft Intune Standalone Mode
 
@@ -42,7 +42,7 @@ This option is for customers who intend to publish only to Microsoft Intune.&#x2
 
 Click **Next**.
 
-![Option for Microsoft Intune standalone mode](<../../.gitbook/assets/image (1918).png>)
+![Option for Microsoft Intune standalone mode](/_images/image-(1918 "Option for Microsoft Intune standalone mode").png>)
 
 ### Select Installation Folder
 
@@ -50,22 +50,22 @@ By default the Publisher is installed in **C:\Program Files\Patch My PC\Patch My
 \
 This location is where we store all of the product's configuration information.&#x20;
 
-![Select the folder where the service should be installed](<../../.gitbook/assets/image (1768).png>)
+![Select the folder where the service should be installed](/_images/image-(1768 "Select the folder where the service should be installed").png>)
 
 ### Ready To Install
 
 Click **Install**.
 
-![Select install to start the installation.](<../../.gitbook/assets/image (1876).png>)
+![Select install to start the installation.](/_images/image-(1876 "Select install to start the installation.").png>)
 
-![](<../../.gitbook/assets/image (1919).png>)
+![](/_images/image-(1919).png>)
 
 ### Completed
 
 Once the Publisher has finished installing, click **Finish** to close the installation wizard.&#x20;
 
-{% hint style="info" %}
-By default, the "**Launch Patch My PC Publishing Service**" is enabled - this will launch the Publisher when you click **Finish**.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>By default, the "**Launch Patch My PC Publishing Service**" is enabled - this will launch the Publisher when you click **Finish**.</p>
+</blockquote>
 
-![](<../../.gitbook/assets/image (1900).png>)
+![](/_images/image-(1900).png>)

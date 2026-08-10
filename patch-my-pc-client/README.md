@@ -8,5 +8,3 @@ Official product documentation for Patch My PC Client
 
 
 
-
-

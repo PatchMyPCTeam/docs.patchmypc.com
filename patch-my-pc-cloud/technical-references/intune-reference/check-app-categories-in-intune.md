@@ -8,29 +8,29 @@ If a Patch My PC (PMPC) Cloud deployment has been configured to use [Categories]
 2.  Navigate to **Apps**.\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/image (983).png" alt="Navigating to “Apps”"><figcaption></figcaption></figure>
+    ![Navigating to "Apps"](/_images/image-(983).png "Navigating to “Apps”")
 
 
 3.  Navigate to **All Apps**.\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/image (984).png" alt="Navigating to “All Apps”"><figcaption></figcaption></figure>
+    ![Navigating to "All Apps"](/_images/image-(984).png "Navigating to “All Apps”")
 
 
 4.  Click the app if it’s shown in the results or search for it.\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/image (985).png" alt="Clicking the app if it’s shown in the results or searching for it"><figcaption></figcaption></figure>
+    ![Clicking the app if it's shown in the results or searching for it](/_images/image-(985).png "Clicking the app if it’s shown in the results or searching for it")
 
 
 5.  Navigate to **Manage | Properties**\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/image (986).png" alt="Navigating to “Manage | Properties”"><figcaption></figcaption></figure>
+    ![Navigating to "Manage | Properties"](/_images/image-(986).png "Navigating to “Manage | Properties”")
 
 
 
 
 6.  <br>
 
-    <figure><img src="../../../.gitbook/assets/image (987).png" alt="List of Categories is shown in the “Category” field."><figcaption></figcaption></figure>
+    ![List of Categories is shown in the "Category" field.](/_images/image-(987).png "List of Categories is shown in the “Category” field.")

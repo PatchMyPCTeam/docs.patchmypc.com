@@ -6,11 +6,10 @@ When working with Microsoft ConfigMgr or WSUS, correct certificate configuration
 
 Microsoft enforces this by requiring all third-party and custom updates to be code signed before they can be published into WSUS. This applies specifically to the CAB files that contain update metadata and content.
 
-{% hint style="success" %}
-**Tip**
-
-Detailed guidance on certificate creation, selection, trust requirements, and lifecycle management is covered on the [Certificate Management](../manage/wsus-updates-tab/wsus-options/certificate-management/) page.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>Detailed guidance on certificate creation, selection, trust requirements, and lifecycle management is covered on the [Certificate Management](../manage/wsus-updates-tab/wsus-options/certificate-management/) page.</p>
+</blockquote>
 
 To meet this requirement, Patch My PC (PMPC) Publisher must be provided with a code-signing certificate. This certificate is used to sign third-party updates during publishing, allowing WSUS and managed devices to validate the origin and integrity of the updates.
 

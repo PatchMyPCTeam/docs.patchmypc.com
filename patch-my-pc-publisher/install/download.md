@@ -4,11 +4,10 @@ _Applies to: Patch My PC Publisher V3.x_
 
 This article details how to download the Patch My PC (PMPC) Publisher installer.
 
-{% hint style="success" %}
-**Tip**
-
-Please review the [Core Requirements for Publisher](../requirements/core-requirements.md) before continuing, as these apply regardless of the platform being used, before beginning installation.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>Please review the [Core Requirements for Publisher](../requirements/core-requirements.md) before continuing, as these apply regardless of the platform being used, before beginning installation.</p>
+</blockquote>
 
 To download the Patch My PC (PMPC) Publisher installer:
 
@@ -16,15 +15,14 @@ To download the Patch My PC (PMPC) Publisher installer:
    \
    [**https://patchmypc.com/msi**](https://patchmypc.com/msi)
 
-{% hint style="info" %}
-**Note**
-
-SHA256: 4217DFDA126C28AB2BC6BE261ACA34CF19C2A2C943435DA400E22E33BF0B7CC5
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>SHA256: 4217DFDA126C28AB2BC6BE261ACA34CF19C2A2C943435DA400E22E33BF0B7CC5</p>
+</blockquote>
 
 2. The download begins automatically.
 
-<figure><img src="../../.gitbook/assets/image (404).png" alt="Download the Publisher from https://patchmypc.com/msi" width="563"><figcaption></figcaption></figure>
+![Download the Publisher from https://patchmypc.com/msi](/_images/image-(404).png "Download the Publisher from https://patchmypc.com/msi")
 
 3. Once completed, confirm the **PatchMyPC-Publishing-Service.msi** file has been downloaded.
 4. Copy the installer to the target server (if required), then proceed to [Installing Publisher](installing.md).

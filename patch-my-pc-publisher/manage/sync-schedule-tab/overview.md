@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Sync Schedule** tab in Patch My PC (PMPC) Publisher controls when Publisher runs an automated _publishing sync_.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4860).png" alt="&#x27;Sync Schedule&#x27; tab" width="563"><figcaption></figcaption></figure>
+!['Sync Schedule' tab](/_images/image-(4860).png "&#x27;Sync Schedule&#x27; tab")
 
 A _publishing sync_ evaluates third party apps and updates, and publishes content based on the configured selections in the Product Trees, customizations, and global options across the tabs.
 
@@ -48,8 +48,7 @@ For updates synced to ConfigMgr from WSUS after they are published, deployment c
 
 For ConfigMgr apps, Publisher is responsible only for creating the applications. Deployment targeting and timing are fully controlled by administrators using standard ConfigMgr deployment practices.
 
-{% hint style="info" %}
-**Note**
-
-If the [global option to update an application in place](../configmgr-apps-tab/base-install-options/application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) is enabled, newly published app versions will inherit existing deployments. For required deployments, this inheritance may directly influence how quickly devices receive the updated application.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If the [global option to update an application in place](../configmgr-apps-tab/base-install-options/application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) is enabled, newly published app versions will inherit existing deployments. For required deployments, this inheritance may directly influence how quickly devices receive the updated application.</p>
+</blockquote>

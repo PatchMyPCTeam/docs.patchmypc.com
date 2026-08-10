@@ -6,4 +6,4 @@ The **Export Certificate** option allows you to export the currently configured 
 
 When exporting the certificate, Publisher saves it as a **`.cer` file**, which contains the **public portion of the certificate only**. The private key is **not exported**, even if the key is marked as exportable.
 
-<figure><img src="../../../../.gitbook/assets/image (419).png" alt="" width="563"><figcaption></figcaption></figure>
+![](/_images/image-(419).png)

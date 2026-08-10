@@ -69,8 +69,7 @@ Use the following tables to help you decide which role you should assign a user 
 | Naming Conventions      | Read            | No Access              | No Access        | Read and Write   | Read and Write   | Read and Write                    |
 | Templates               | Read            | No Access              | No Access        | Read and Write   | Read and Write   | Read and Write                    |
 
-{% hint style="danger" %}
-**Important**
-
-**\*** Disconnecting Intune or Publisher from your PMPC Cloud Company can have a severe impact. Please ensure you read [Disconnect a Connection in Patch My PC Cloud](../connections/disconnect-connection.md) before removing a connection from your Cloud Company.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>**\*** Disconnecting Intune or Publisher from your PMPC Cloud Company can have a severe impact. Please ensure you read [Disconnect a Connection in Patch My PC Cloud](../connections/disconnect-connection.md) before removing a connection from your Cloud Company.</p>
+</blockquote>

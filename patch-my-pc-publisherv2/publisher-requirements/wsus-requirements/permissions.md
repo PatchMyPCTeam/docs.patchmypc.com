@@ -27,13 +27,11 @@ Understanding the WSUS content location is essential, as this is where third-par
 
 Before validating permissions, you should first confirm where WSUS content is stored. There are two reliable ways to do this.
 
-{% hint style="success" %}
-**Tip**
-
-When you consider the options below to validate the location of the WSUS content directoy, you may notice that the **`ContentDir`** registry value references the root WSUS content directory, while the IIS Content virtual directory points specifically to the `WSUSContent` subfolder beneath that root. This is expected and represents a correct configuration.
-
-The registry defines the overall WSUS content location, which contains both WSUSContent and UpdateServicesPackages, while IIS is intentionally mapped only to the WSUSContent folder to serve update binaries to clients.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>When you consider the options below to validate the location of the WSUS content directoy, you may notice that the **`ContentDir`** registry value references the root WSUS content directory, while the IIS Content virtual directory points specifically to the `WSUSContent` subfolder beneath that root. This is expected and represents a correct configuration.</p>
+<p>The registry defines the overall WSUS content location, which contains both WSUSContent and UpdateServicesPackages, while IIS is intentionally mapped only to the WSUSContent folder to serve update binaries to clients.</p>
+</blockquote>
 
 ### Option 1: Registry
 
@@ -44,7 +42,7 @@ The **`ContentDir`** value defines the root WSUS content path. This directory co
 * **WSUSContent**
 * **UpdateServicesPackages**
 
-<figure><img src="../../../.gitbook/assets/image (385).png" alt="WSUS ContentDir Value" width="563"><figcaption></figcaption></figure>
+![WSUS ContentDir Value](/_images/image-(385).png "WSUS ContentDir Value")
 
 ### Option 2: IIS (Content Virtual Directory)
 
@@ -57,26 +55,21 @@ You can also verify the content location in **IIS Manager**:
 
 The **Physical path** shown here maps directly to the WSUSContent directory on disk.
 
-<figure><img src="../../../.gitbook/assets/image (386).png" alt="WSUS Content reference via IIS" width="563"><figcaption></figcaption></figure>
+![WSUS Content reference via IIS](/_images/image-(386).png "WSUS Content reference via IIS")
 
 ## Scenario 1: WSUS Content Stored Locally
 
 When WSUS content is stored locally, the WSUS application pool identity (typically the Network Service) must have **Full Control** permissions on the `WSUSContent` and `UpdateServicesPackages` directories. These permissions may be granted directly on the folders or inherited from the WSUS content root, depending on how the server was configured.
 
-{% hint style="info" %}
-**Note**
-
-If the **`ContentDir`** value is set to **`%ProgramFiles%\Update Services`**, this indicates that a custom WSUS content location was not specified during the WSUS configuration wizard. In this case, WSUS stores content on the system drive by default.
-
-While this configuration can work in small or single-WSUS environments with sufficient free space on the system drive, it is generally sub-optimal for larger environments or for third-party patching scenarios where additional content is introduced. Storing WSUS content on the system drive can quickly consume disk space and complicate future scaling or maintenance.
-
-The **`wsusutil movecontent`** command can be used to relocate the WSUS content directory to a dedicated drive or directory. Moving WSUS content off the system drive helps support better scalability, simplifies disk management, and makes it easier to share content if additional WSUS servers are introduced later.
-
-For step-by-step guidance and important considerations when moving the WSUS content folder, see\
-[https://patchmypc.com/kb/how-move-wsus-content-folder/](https://patchmypc.com/kb/how-move-wsus-content-folder/)
-
-For guidance on recommended storage locations and disk space planning for third-party patching, see the [Disk Space](disk-space.md) section later in this document.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>If the **`ContentDir`** value is set to **`%ProgramFiles%\Update Services`**, this indicates that a custom WSUS content location was not specified during the WSUS configuration wizard. In this case, WSUS stores content on the system drive by default.</p>
+<p>While this configuration can work in small or single-WSUS environments with sufficient free space on the system drive, it is generally sub-optimal for larger environments or for third-party patching scenarios where additional content is introduced. Storing WSUS content on the system drive can quickly consume disk space and complicate future scaling or maintenance.</p>
+<p>The **`wsusutil movecontent`** command can be used to relocate the WSUS content directory to a dedicated drive or directory. Moving WSUS content off the system drive helps support better scalability, simplifies disk management, and makes it easier to share content if additional WSUS servers are introduced later.</p>
+<p>For step-by-step guidance and important considerations when moving the WSUS content folder, see\</p>
+<p><a href="https://patchmypc.com/kb/how-move-wsus-content-folder/">https://patchmypc.com/kb/how-move-wsus-content-folder/</a></p>
+<p>For guidance on recommended storage locations and disk space planning for third-party patching, see the [Disk Space](disk-space.md) section later in this document.</p>
+</blockquote>
 
 In this scenario:
 
@@ -84,15 +77,13 @@ In this scenario:
 * The WSUS application pool identity (typically Network Service) has **Full control** to these folders.
 * Default NTFS permissions when the WSUS role is installed are usually sufficient.
 
-<figure><img src="../../../.gitbook/assets/image (387).png" alt="Security permissions for local wsus content directory" width="563"><figcaption></figcaption></figure>
+![Security permissions for local wsus content directory](/_images/image-(387).png "Security permissions for local wsus content directory")
 
-{% hint style="warning" %}
-**Important**
-
-In a shared WSUS database configuration, where multiple WSUS servers use the same SUSDB, all WSUS servers must reference the WSUS content location using an identical path. This path must be accessible in the same way from every WSUS server in the deployment. In practice, this is most commonly achieved by using a UNC path to a shared content location.
-
-Shared WSUS database configurations require a single, shared WSUS content location. Maintaining separate local content copies on each WSUS server is not supported.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Important**</p>
+<p>In a shared WSUS database configuration, where multiple WSUS servers use the same SUSDB, all WSUS servers must reference the WSUS content location using an identical path. This path must be accessible in the same way from every WSUS server in the deployment. In practice, this is most commonly achieved by using a UNC path to a shared content location.</p>
+<p>Shared WSUS database configurations require a single, shared WSUS content location. Maintaining separate local content copies on each WSUS server is not supported.</p>
+</blockquote>
 
 ## Scenario 2: WSUS Content Stored Remotely (SMB Share)
 
@@ -107,29 +98,25 @@ In these scenarios, WSUS no longer accesses content as a local file system opera
 
 In the following example, a shared WSUS database is used, with WSUS content physically hosted on BB-CM1, while BB-APP1 acts as an additional WSUS server accessing that content remotely. Because the content is accessed via a UNC path, SMB permissions are always required. On the content-hosting server (BB-CM1), the WSUS application pool runs under Network Service, which performs local WSUS operations and accesses the content over SMB. When accessing a UNC path, Network Service authenticates as the WSUS server’s computer account, which is why granting permissions to either identity is functionally equivalent.
 
-{% hint style="info" %}
-**Note**
-
-The image shows the Network Service (for BB-CM1) being granted the required SMB and NTFS permissions. It would be equally valid to grant these permissions to the computer account of BB-CM1 instead, as Network Service authenticates as the server’s computer account when accessing the content over a UNC path.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>The image shows the Network Service (for BB-CM1) being granted the required SMB and NTFS permissions. It would be equally valid to grant these permissions to the computer account of BB-CM1 instead, as Network Service authenticates as the server’s computer account when accessing the content over a UNC path.</p>
+</blockquote>
 
 In addition, the computer account of the remote WSUS server (BB-APP1$) must be granted permissions, as it accesses the same content over SMB when serving clients. Granting permissions to the appropriate identities ensures that WSUS operations and content delivery function correctly across all WSUS servers participating in the shared database scenario.
 
-<figure><img src="../../../.gitbook/assets/image (388).png" alt="SMB and NTFS Permission Considerations" width="563"><figcaption></figcaption></figure>
+![SMB and NTFS Permission Considerations](/_images/image-(388).png "SMB and NTFS Permission Considerations")
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Even in a single WSUS server environment, if WSUS content is stored on a remote UNC path, the computer account of the WSUS server must have permissions on both the SMB share and NTFS folders.</p>
+</blockquote>
 
-Even in a single WSUS server environment, if WSUS content is stored on a remote UNC path, the computer account of the WSUS server must have permissions on both the SMB share and NTFS folders.
-{% endhint %}
-
-{% hint style="success" %}
-**Tip**
-
-No additional, separate SMB configuration is required for the WSUSContent and UpdateServicesPackages shares themselves when WSUS content is stored remotely. These shares are created automatically during the initial WSUS configuration and are not accessed independently. All access occurs through the WSUS content _root_ share.
-
-As long as inheritance is enabled on the WSUSContent and UpdateServicesPackages folders, the required NTFS permissions applied at the WSUS content root will propagate correctly to these subfolders.&#x20;
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Tip**</p>
+<p>No additional, separate SMB configuration is required for the WSUSContent and UpdateServicesPackages shares themselves when WSUS content is stored remotely. These shares are created automatically during the initial WSUS configuration and are not accessed independently. All access occurs through the WSUS content _root_ share.</p>
+<p>As long as inheritance is enabled on the WSUSContent and UpdateServicesPackages folders, the required NTFS permissions applied at the WSUS content root will propagate correctly to these subfolders.&#x20;</p>
+</blockquote>
 
 ### Common Remote Content Misconfigurations
 
@@ -139,6 +126,6 @@ In this scenario, WSUS correctly stores the content location in the registry, fo
 
 This mismatch can prevent clients and downstream systems from accessing WSUS content correctly, even though the registry configuration appears valid.
 
-<figure><img src="../../../.gitbook/assets/image (97).png" alt="UNC Path Incomplete" width="563"><figcaption></figcaption></figure>
+![UNC Path Incomplete](/_images/image-(97).png "UNC Path Incomplete")
 
 When the WSUS Content virtual directory in IIS is misconfigured like this, third-party updates can still be published successfully, but clients will be unable to download the update content. In the example below a 404 is shown while attempting to download a third-party update (CAB file).

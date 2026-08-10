@@ -14,28 +14,26 @@ The Dashboards are split into the following sections:
 * [Statistics](./#statistics)
 * [Charts](./#charts)
 
-{% hint style="info" %}
-**Note**
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>Like other pages in the portal, a Dashboard’s layout can be controlled by adjusting your browser's zoom level.</p>
+</blockquote>
 
-Like other pages in the portal, a Dashboard’s layout can be controlled by adjusting your browser's zoom level.
-{% endhint %}
-
-<figure><img src="../../../.gitbook/assets/image (4279).png" alt="&#x27;Home&#x27; page" width="563"><figcaption></figcaption></figure>
+!['Home' page](/_images/image-(4279).png "&#x27;Home&#x27; page")
 
 ## Statistics
 
 The top row of a Dashboard is called _Statistics_, and displays a summary of data points from your environment.
 
-<figure><img src="../../../.gitbook/assets/image (4280).png" alt="Statistics" width="563"><figcaption></figcaption></figure>
+![Statistics](/_images/image-(4280).png "Statistics")
 
 ## Charts
 
 The _Charts_ section contains a series of donut charts.
 
-<figure><img src="../../../.gitbook/assets/image (4281).png" alt="&#x27;Charts&#x27; section" width="563"><figcaption></figcaption></figure>
+!['Charts' section](/_images/image-(4281).png "&#x27;Charts&#x27; section")
 
-{% hint style="info" %}
-**Note**
-
-See [Home Page for Advanced/Patch Insights for Intune](home-page.md) for more information.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Home Page for Advanced/Patch Insights for Intune](home-page.md) for more information.</p>
+</blockquote>

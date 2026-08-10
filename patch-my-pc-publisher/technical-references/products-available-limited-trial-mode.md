@@ -6,11 +6,10 @@ The **Limited Trial Mode** of Patch My PC (PMPC) Publisher includes a curated se
 
 This allows you to test publishing workflows without requiring a license key.
 
-{% hint style="info" %}
-**Note**
-
-See [Enable Limited Trial Mode](../manage/general-tab/license-information.md#enable-limited-trial-mode) for more details on how to enable Limited Trial Mode.
-{% endhint %}
+<blockquote class="wp-block-quote">
+<p>**Note**</p>
+<p>See [Enable Limited Trial Mode](../manage/general-tab/license-information.md#enable-limited-trial-mode) for more details on how to enable Limited Trial Mode.</p>
+</blockquote>
 
 The following products are available in Limited Trial Mode:
 

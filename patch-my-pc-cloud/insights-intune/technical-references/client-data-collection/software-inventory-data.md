@@ -142,4 +142,3 @@ This article documents the software inventory data collected by the Patch My PC 
 | WuaLastStatusMessage | string | Last status message from the Windows Update Agent     | Windows Update API |
 | WuaLastStatusCode    | int    | Last status code returned by the Windows Update Agent | Windows Update API |
 | WuaAgentVersion      | string | Version of the Windows Update Agent                   | Windows Update API |
-
