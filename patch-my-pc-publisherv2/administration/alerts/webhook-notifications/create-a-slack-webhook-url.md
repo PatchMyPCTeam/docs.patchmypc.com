@@ -6,35 +6,35 @@ Slack webhooks allow the Publisher to send publishing notifications to a specifi
 
 To configure a Slack webhook URL:
 
-1. Navigate to [https://api.slack.com/apps](https://api.slack.com/apps) and and sign in to your Slack account.
+1. Navigate to [https://api.slack.com/apps](https://api.slack.com/apps) and and sign in to your Slack account.&#x20;
 2. Select **Create an App** or **Create New App** if you have already created apps previously. Depending on your Slack configuration, you may need to be a workspace owner or have permission to create apps.
 
-![Create an App](/_images/image-(180).png)
+<figure><img src="../../../../.gitbook/assets/image (180).png" alt="Create an App" width="563"><figcaption></figcaption></figure>
 
-![Create New App](/_images/image-(181).png)
+<figure><img src="../../../../.gitbook/assets/image (181).png" alt="Create New App" width="563"><figcaption></figcaption></figure>
 
 3. Select From scratch.
 
-![From Scratch](/_images/image-(183).png)
+<figure><img src="../../../../.gitbook/assets/image (183).png" alt="From Scratch" width="403"><figcaption></figcaption></figure>
 
 4. Enter an app name, select the workspace where the app will be created, then select **Create App**.
 
-![Select the Workspace and name the App](/_images/image-(184).png)
+<figure><img src="../../../../.gitbook/assets/image (184).png" alt="Select the Workspace and name the App" width="409"><figcaption></figcaption></figure>
 
 5. In the app configuration, toggle On **Activate Incoming Webhooks**.
 
-![Activate Incoming Webhooks](/_images/image-(186).png)
+<figure><img src="../../../../.gitbook/assets/image (186).png" alt="Activate Incoming Webhooks" width="563"><figcaption></figcaption></figure>
 
 6. Select Add New Webhook to Workspace.
 
-![Add New Webhook](/_images/image-(187).png)
+<figure><img src="../../../../.gitbook/assets/image (187).png" alt="Add New Webhook" width="439"><figcaption></figcaption></figure>
 
 7. Select the Slack channel where you want to receive Publisher notifications, then select **Allow**.
 
-![Allow the app to access Slack](/_images/image-(188).png)
+<figure><img src="../../../../.gitbook/assets/image (188).png" alt="Allow the app to access Slack" width="563"><figcaption></figcaption></figure>
 
 8. **Copy** the generated webhook URL.
 
-![Copy the Webhook URL](/_images/image-(189).png)
+<figure><img src="../../../../.gitbook/assets/image (189).png" alt="Copy the Webhook URL" width="563"><figcaption></figcaption></figure>
 
 The copied URL can be used when [adding](webhook-notification-settings.md#add-a-webhook) or [editing](webhook-notification-settings.md#edit-a-webhook) a webhook in the Publisher.

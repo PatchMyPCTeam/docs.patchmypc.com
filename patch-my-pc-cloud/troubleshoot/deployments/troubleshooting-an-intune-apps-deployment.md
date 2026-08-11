@@ -6,4 +6,4 @@ As Intune Apps for Cloud (Intune Apps) is reliant on your Intune tenant, if you 
 
 If a deployment shows a status of **Failed**, you should follow the [Recreate a Deployment](../../deployments/manage-deployments/recreate.md) process.
 
-!["Failed" deployments](/_images/image-(2215).png)
+<figure><img src="../../../.gitbook/assets/image (2215).png" alt="“Failed” deployments"><figcaption></figcaption></figure>

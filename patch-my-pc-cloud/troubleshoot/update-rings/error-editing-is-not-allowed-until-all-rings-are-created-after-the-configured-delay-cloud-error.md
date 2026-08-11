@@ -8,7 +8,7 @@ I am trying to edit a Patch My PC (PMPC) Cloud deployment, but when I click on t
 
 **Error - Editing is not allowed until all rings are created after the configured delay.**
 
-!["Error - Editing is not allowed until all rings are created after the configured delay." when trying to edit a deployment](/_images/image-(1160).png)
+<figure><img src="../../../.gitbook/assets/image (1160).png" alt="“Error - Editing is not allowed until all rings are created after the configured delay.” when trying to edit a deployment"><figcaption></figcaption></figure>
 
 ### CAUSE
 
@@ -18,6 +18,8 @@ This is because when the Update Rings were created for this deployment, the **De
 
 As the **Delayed** option was selected for the Update Rings when this deployment was created, you cannot edit it until all of the configured Update Rings have finished being created.
 
-> \*\*Note\*\*
->
-> Use the \[Check if an Update Ring has been created]\(../../deployments/update-rings/check.md) process to check if one or more Update Rings have yet to be created. If a ring shows as \*\*Scheduled\*\*, then you know this deployment was created with the \*\*Delayed\*\* option for the Update Rings.
+{% hint style="info" %}
+**Note**
+
+Use the [Check if an Update Ring has been created](../../deployments/update-rings/check.md) process to check if one or more Update Rings have yet to be created. If a ring shows as **Scheduled**, then you know this deployment was created with the **Delayed** option for the Update Rings.
+{% endhint %}

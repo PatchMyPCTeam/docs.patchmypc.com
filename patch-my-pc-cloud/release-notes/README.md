@@ -4,18 +4,25 @@ _Applies to: Patch My PC Cloud_
 
 Details the production release history for Patch My PC (PMPC) Cloud, the most recent release being shown first.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>We aim to release new features, updates, and fixes at 12:00 CEST every Wednesday.</p>
-<p>_Production Release_ means we have released that item to our Production environment i.e. customers can access it, although a specific feature maybe in one of the following three production states:<br></p>
-<p>* Private Preview, which is invitation-only.</p>
-<p>* Public Preview for which you will need to have [Preview Features enabled](../manage/settings/company-settings/preview-features.md) in your company to access it.</p>
-<p>* General Availability (GA) which is available to everyone.&#x20;</p>
-<p>Please see the relevant docs for a feature for more information which will indicate the state of the feature, plus you can see a list of [Cloud Preview Features](../preview-features.md) for more information.</p>
-<p>You can also access this page from within the Cloud Portal by clicking the support button (!["support" button](/_images/image-(1289 "\"support\" button").png>)) in the header area and selecting **Release Notes**.</p>
-<p>Release Notes for previous years can be accessed using the following links:</p>
-<p>[2025](2025.md) | [2024](2024.md)</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+We aim to release new features, updates, and fixes at 12:00 CEST every Wednesday.
+
+_Production Release_ means we have released that item to our Production environment i.e. customers can access it, although a specific feature maybe in one of the following three production states:<br>
+
+* Private Preview, which is invitation-only.
+* Public Preview for which you will need to have [Preview Features enabled](../manage/settings/company-settings/preview-features.md) in your company to access it.
+* General Availability (GA) which is available to everyone.&#x20;
+
+Please see the relevant docs for a feature for more information which will indicate the state of the feature, plus you can see a list of [Cloud Preview Features](../preview-features.md) for more information.
+
+You can also access this page from within the Cloud Portal by clicking the support button (!["support" button](<../../.gitbook/assets/image (1289).png>)) in the header area and selecting **Release Notes**.
+
+Release Notes for previous years can be accessed using the following links:
+
+[2025](2025.md) | [2024](2024.md)
+{% endhint %}
 
 ## Week of July 22nd, 2026
 

@@ -8,10 +8,11 @@ You’ll learn how to review and validate prerequisites, determine the correct i
 
 You’ll also be guided through the initial configuration and common customization options, ensuring Publisher aligns with your operational requirements before you begin publishing applications and updates.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If you have security or compliance questions prior to installation, we recommend reviewing the [Security](security/) section first, which provides detailed information on catalog validation, binary verification, platform trust models, software supply chain protections, amongst others.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+If you have security or compliance questions prior to installation, we recommend reviewing the [Security](security/) section first, which provides detailed information on catalog validation, binary verification, platform trust models, software supply chain protections, amongst others.
+{% endhint %}
 
 {% stepper %}
 {% step %}

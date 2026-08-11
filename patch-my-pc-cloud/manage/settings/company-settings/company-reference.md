@@ -28,10 +28,11 @@ The geographical region where your company stores its data, as specified during 
 
 Unchecked by default and controls if your company gets automatic access to _Preview Features._
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Enable Preview Features](preview-features.md) for more information.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [Enable Preview Features](preview-features.md) for more information.
+{% endhint %}
 
 ## Company Recovery
 
@@ -41,7 +42,8 @@ Disabled by default, enabling the **Enable Company Recovery** option allows you 
 
 Allows you to grant PMPC support access to your portal to help troubleshoot issues.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Granting Patch My PC Support access to your portal](customer-support.md) for more details.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [Granting Patch My PC Support access to your portal](customer-support.md) for more details.
+{% endhint %}

@@ -4,20 +4,22 @@ _Applies to: Patch My PC Cloud_
 
 When migrating a Configuration Manager (ConfigMgr) application as a suggested Patch My PC (PMPC) Catalog App, the migration flow depends on how many catalog matches are found.
 
-If multiple PMPC Catalog Apps match the ConfigMgr application, you are first presented with the **Matched App** step, which allows you to review the available matches and select the PMPC Catalog App to migrate to.
+If multiple PMPC Catalog Apps match the ConfigMgr application, you are first presented with the **Matched App** step, which allows you to review the available matches and select the PMPC Catalog App to migrate to.&#x20;
 
-![Multiple suggested apps identified](/_images/image-(3816).png)
+<figure><img src="../../../.gitbook/assets/image (3816).png" alt="Multiple suggested apps identified" width="563"><figcaption></figcaption></figure>
 
 After you select the appropriate match, the migration continues into the deployment flow with the selected application pre-selected.
 
-![Migration deployment flow](/_images/image-(3817).png)
+<figure><img src="../../../.gitbook/assets/image (3817).png" alt="Migration deployment flow" width="563"><figcaption></figcaption></figure>
 
 If only a single unique PMPC Catalog App match is identified, the **Matched App** step is skipped entirely and the migration moves straight into the deployment flow with that application automatically pre-selected.
 
-![Single suggested app is matched](/_images/image-(325 "Single suggested app is matched") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (325).png" alt="Single suggested app is matched" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> Where possible, details such as architecture and installer type are inferred from the original ConfigMgr application and populated automatically to reduce manual configuration.
+{% hint style="info" %}
+**Note**
+
+Where possible, details such as architecture and installer type are inferred from the original ConfigMgr application and populated automatically to reduce manual configuration.
+{% endhint %}
 
 From this point, continue following [Publish the App in Intune as a PMPC Catalog App](publish-migrated-app-catalog-app.md), where the remaining steps of the deployment flow are completed.

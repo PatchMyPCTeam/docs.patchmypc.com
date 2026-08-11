@@ -9,27 +9,29 @@ To create a Microsoft Teams (Teams) webhook notification in Patch My PC (PMPC) C
 3. Follow the [Create a Webhook notification in Cloud](create-webhook-notification.md) and select **Microsoft Teams** from the **Add Webhook** dropdown.
 4.  On the **Add Microsoft Teams** screen, enter a unique name for the webhook in the **Webhook Name** field. For example, **Patch My PC**.<br>
 
-    ![](/_images/image-(2303).png)
+    <figure><img src="../../../../.gitbook/assets/image (2303).png" alt="" width="239"><figcaption></figcaption></figure>
 5. In the **Webhook URL** field, enter the unique URL of your Teams webhook created in Step 1. and click **Save**.
 
-![](/_images/image-(2304).png)
+<figure><img src="../../../../.gitbook/assets/image (2304).png" alt="" width="239"><figcaption></figcaption></figure>
 
 The new webhook notification is shown under the **Webhook Notifications** section.
 
-![New webhook notification](/_images/image-(294).png)
+<figure><img src="../../../../.gitbook/assets/image (294).png" alt="New webhook notification" width="563"><figcaption></figcaption></figure>
 
-> \*\*Tip\*\*
->
-> You can click the small envelope beside the webhook URL (!\[]\(/\_images/image-(2602).png>)) to send a test notification. See \[Testing a Microsoft Teams Webhook Notification]\(technical-references/test-teams-webhook-notification.md) for more details.
+{% hint style="success" %}
+**Tip**
+
+You can click the small envelope beside the webhook URL (![](<../../../../.gitbook/assets/image (2602).png>)) to send a test notification. See [Testing a Microsoft Teams Webhook Notification](technical-references/test-teams-webhook-notification.md) for more details.
+{% endhint %}
 
 6. Click **Save** to save the newly added notification.
 
-![Clicking 'Save'](/_images/image-(295).png)
+<figure><img src="../../../../.gitbook/assets/image (295).png" alt="Clicking &#x27;Save&#x27;" width="563"><figcaption></figcaption></figure>
 
 The **Success – Notification created** notification is shown.
 
-![Success notification](/_images/image-(296).png)
+<figure><img src="../../../../.gitbook/assets/image (296).png" alt="Success notification" width="563"><figcaption></figcaption></figure>
 
 The Cloud Portal auto-refreshes to show the new notification.
 
-![Cloud portal auto-refreshing to show the new notification](/_images/image-(297).png)
+<figure><img src="../../../../.gitbook/assets/image (297).png" alt="Cloud portal auto-refreshing to show the new notification" width="563"><figcaption></figcaption></figure>

@@ -12,10 +12,11 @@ As part of the migration process, PMPC Cloud analyzes your existing ConfigMgr ap
 * Applications exposed to known Common Vulnerabilities and Exposures (CVEs)
 * Opportunities to upgrade to newer, supported versions that are available in the PMPC catalog.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Migrating ConfigMgr Packages to Intune is unsupported.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+Migrating ConfigMgr Packages to Intune is unsupported.
+{% endhint %}
 
 All migrated applications benefit from additional customization and management capabilities to ensure they remain secure, maintainable, and aligned with modern desktop management practices.
 
@@ -28,10 +29,11 @@ PMPC Cloud supports two methods for migrating applications from ConfigMgr to Int
 
 The migration path is determined through ongoing application evaluation, not when the migration is initiated.&#x20;
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [How Migration Type Is Determined](how-migration-type-determined.md) for more information on how PMPC Cloud determines the appropriate migration path.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [How Migration Type Is Determined](how-migration-type-determined.md) for more information on how PMPC Cloud determines the appropriate migration path.
+{% endhint %}
 
 ### PMPC Catalog App
 

@@ -2,23 +2,25 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-## Overview
+## ![](<../../../../.gitbook/assets/image (501).png>) Overview
 
 The **ConfigMgr Application Manager** form control is used to view and manage applications in ConfigMgr that were created using the Publisher. It provides a centralized interface to review application properties, deployments, task sequence usage and dependency relationships before performing application cleanup.
 
-![ConfigMgr Application Manager](/_images/image-(94 "ConfigMgr Application Manager") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (94).png" alt="ConfigMgr Application Manager" width="563"><figcaption></figcaption></figure>
 
 The form queries the ConfigMgr SMS Provider and displays only applications that were published by the Publisher.
 
-The primary use case for this form is application cleanup. It allows administrators to identify unused applications, remove deployments, extract content, or delete applications in a controlled and supported manner.
+The primary use case for this form is application cleanup. It allows administrators to identify unused applications, remove deployments, extract content, or delete applications in a controlled and supported manner.&#x20;
 
-> \*\*Note\*\*
->
-> The Publisher relies on both the application XML representation stored in the ConfigMgr database and the associated content source folders to validate previous update versions and retained application chains. These components are evaluated together by the Publisher to ensure application retention and lifecycles are managed correctly.
->
-> Removing an application directly from the ConfigMgr console deletes the console object but does not remove the corresponding content source folder from disk. This results in orphaned content remaining on disk. While the Publisher is designed to tolerate this condition, it is not the recommended cleanup approach.
->
-> The ConfigMgr Application Manager is the preferred tool when performing application cleanup for Publisher created applications. It ensures that the ConfigMgr application object and the related content source paths are removed together, maintaining consistency between the console and the file system.
+{% hint style="info" %}
+**Note**
+
+The Publisher relies on both the application XML representation stored in the ConfigMgr database and the associated content source folders to validate previous update versions and retained application chains. These components are evaluated together by the Publisher to ensure application retention and lifecycles are managed correctly.
+
+Removing an application directly from the ConfigMgr console deletes the console object but does not remove the corresponding content source folder from disk. This results in orphaned content remaining on disk. While the Publisher is designed to tolerate this condition, it is not the recommended cleanup approach.
+
+The ConfigMgr Application Manager is the preferred tool when performing application cleanup for Publisher created applications. It ensures that the ConfigMgr application object and the related content source paths are removed together, maintaining consistency between the console and the file system.
+{% endhint %}
 
 The table below outlines the available columns in this form:
 
@@ -35,13 +37,17 @@ The table below outlines the available columns in this form:
 | Model Name    | Displays the internal ConfigMgr CI Unique ID for the application. This value is primarily used for backend identification and troubleshooting. |
 |               |                                                                                                                                                |
 
-> \*\*Note\*\*
->
-> Applications referenced by task sequences cannot be deleted until those references are removed.
+{% hint style="info" %}
+**Note**
 
-> \*\*Tip\*\*
->
-> Highlighting a row in the application results table and pressing \*\*Ctrl + C\*\* will copy the entire row to the clipboard. This is useful for application management and troubleshooting scenarios.
+Applications referenced by task sequences cannot be deleted until those references are removed.
+{% endhint %}
+
+{% hint style="success" %}
+**Tip**
+
+Highlighting a row in the application results table and pressing **Ctrl + C** will copy the entire row to the clipboard. This is useful for application management and troubleshooting scenarios.
+{% endhint %}
 
 ## Search
 
@@ -74,15 +80,17 @@ To extract the content for one or more published applications:
 1. Locate the application or applications you want to extract the content for using the available filters. Select the checkbox next to each update you want to process.
 2. Select **Extract Content** at the bottom of the wizard.
 
-![Extact Content](/_images/image-(95 "Extact Content") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (95).png" alt="Extact Content" width="563"><figcaption></figcaption></figure>
 
-3. An output folder selection dialog is displayed. Review your selection choice and click **Browse** to choose a destination path for the extracted content.
+3. An output folder selection dialog is displayed. Review your selection choice and click **Browse** to choose a destination path for the extracted content.&#x20;
 
-> \*\*Note\*\*
->
-> The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
+{% hint style="info" %}
+**Note**
 
-![Content Extraction Summary](/_images/image-(96 "Content Extraction Summary") (1).png>)
+The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/image (96).png" alt="Content Extraction Summary" width="563"><figcaption></figcaption></figure>
 
 4. Click **OK**.
 
@@ -90,13 +98,15 @@ After clicking OK, a summary dialog is displayed showing the results of the extr
 
 Clicking OK on the summary dialog automatically opens Windows Explorer to the specified output directory. This allows you to immediately review the extracted application content and confirm the files were copied as expected.
 
-> \*\*Note\*\*
->
-> Each application is written to its own subfolder within the selected destination, making it easier to inspect version specific files and determine whether the content should be retained or safely removed.
->
-> Only applications with available source content can be extracted.
->
-> If the destination folder does not already exist, it is created automatically during the extraction process.
+{% hint style="info" %}
+**Note**
+
+Each application is written to its own subfolder within the selected destination, making it easier to inspect version specific files and determine whether the content should be retained or safely removed.
+
+Only applications with available source content can be extracted.&#x20;
+
+If the destination folder does not already exist, it is created automatically during the extraction process.
+{% endhint %}
 
 ## Delete Deployment(s)
 
@@ -116,7 +126,7 @@ After confirmation, the Publisher removes the deployments from ConfigMgr. The ap
 
 ## Delete Application(s)
 
-The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
+The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.&#x20;
 
 To delete one or more applications:
 

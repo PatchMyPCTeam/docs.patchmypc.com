@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Local Content Repository** allows the Publisher to store update and application content locally instead of downloading it directly from the internet during publishing. This is primarily used for binary free and licensed applications, where customers must obtain the installer or update binaries themselves because the content is behind a paywall, login, or other restricted access and is not publicly available.
 
-![Local Content Repository](/_images/image-(3932).png)
+<figure><img src="../../../.gitbook/assets/image (3932).png" alt="Local Content Repository" width="545"><figcaption></figcaption></figure>
 
 The **Local Content Repository** can also be used as a fallback mechanism to improve reliability during publishing, such as recovering from download failures or preventing hash mismatches. In environments where outbound access to specific vendor websites or CDNs is restricted, customers can download the required binaries from another machine with internet access and place them into the Local Content Repository for the Publisher to consume during publishing.
 
@@ -43,7 +43,7 @@ Products that require manual downloads, often refered to as "binary free", are i
 * Intune Apps
 * Intune Updates
 
-![Product requires a manual download of the installer binary](/_images/image-(3933).png)
+<figure><img src="../../../.gitbook/assets/image (3933).png" alt="Product requires a manual download of the installer binary" width="545"><figcaption></figcaption></figure>
 
 When this icon is present, the Publisher will search the configured Local Content Repository path for the required installer during publishing.
 
@@ -58,13 +58,15 @@ To configure the Local Content Repository, you must specify a folder that the Pu
 3. In **Local Content Path**, specify a local folder or UNC path where installer files will be stored.
 4. Click **Apply**.
 
-> \*\*Important\*\*
->
-> If you use a UNC path, ensure the computer account of the server running the Publishing Service has read and modify permissions to the share.
+{% hint style="warning" %}
+**Important**
+
+If you use a UNC path, ensure the computer account of the server running the Publishing Service has read and modify permissions to the share.
+{% endhint %}
 
 If the folder configured in Step 3 does not exist, a warngin is displayed in the form.
 
-![The folder does not exist](/_images/image-(3945).png)
+<figure><img src="../../../.gitbook/assets/image (3945).png" alt="The folder does not exist" width="545"><figcaption></figcaption></figure>
 
 ### Folder Structure in the Local Content Repository
 
@@ -84,7 +86,7 @@ To support this, you can organize the repository using versioned subfolders, suc
 * Product name
 * Product version
 
-![Example Local Content Repository Folder Layout](/_images/image-(3936).png)
+<figure><img src="../../../.gitbook/assets/image (3936).png" alt="Example Local Content Repository Folder Layout" width="563"><figcaption></figcaption></figure>
 
 This structure is fully supported and does not affect publishing, as long as the correct installer file exists somewhere in the repository and matches the expected file name and hash.
 
@@ -102,17 +104,19 @@ To identify the correct installer file name and version, use the Product Tree:
 2. Right click the product.
 3. Select **Show package info: title, command-line, download URL, etc.**
 
-![Show package info: title, command-line, download URL, etc.](/_images/image-(3935).png)
+<figure><img src="../../../.gitbook/assets/image (3935).png" alt="Show package info: title, command-line, download URL, etc." width="563"><figcaption></figcaption></figure>
 
 4. Review the Title and File column in the Package Details window to confirm the expected installer file name and version.
 
-![Review the Title and File column in the Package Details window](/_images/image-(3934).png)
+<figure><img src="../../../.gitbook/assets/image (3934).png" alt="Review the Title and File column in the Package Details window" width="563"><figcaption></figcaption></figure>
 
 If the file is not found or does not match the catalog definition, the product will be skipped and a notification is generated.
 
-> \*\*Important\*\*
->
-> Enabling Email Notifications or Webhook Notifications is strongly recommended, as these alerts include the exact installer name and file hash expected when manual action is required.
+{% hint style="warning" %}
+**Important**
+
+Enabling Email Notifications or Webhook Notifications is strongly recommended, as these alerts include the exact installer name and file hash expected when manual action is required.
+{% endhint %}
 
 ## Optional Settings
 
@@ -160,30 +164,29 @@ When notifications are configured on the [Alerts tab](../alerts/), additional no
 
 An email notification is sent listing the product that failed and the exact installer file name expected:
 
-![Email Notification when a file is missing from the Local Content Repository](/_images/image-(3940).png)
+<figure><img src="../../../.gitbook/assets/image (3940).png" alt="Email Notification when a file is missing from the Local Content Repository" width="563"><figcaption></figcaption></figure>
 
 A webhook notification is sent with the same details if webhook alerts are enabled:
 
-![Webhook Notification when a file is missing from the Local Content Repository](/_images/image-(3937).png)
+<figure><img src="../../../.gitbook/assets/image (3937).png" alt="Webhook Notification when a file is missing from the Local Content Repository" width="563"><figcaption></figcaption></figure>
 
 ### File Present but the Hash Does Not Match
 
 If the installer file is present, but the file hash does not match the value defined in the Patch My PC catalog, the Publisher does not consume the file and publishing fails for that product. This failure is recorded in the PatchMyPC.log, indicating that the installer file could not be located. For example:
 
-> The digest of the local content file does not match the expected one. Please ensure the latest version of Cisco Jabber 12 12.9.7.57303 is present in the configured local content repository. FileRetriever 2/1/2026 1:12:22 PM 128 (0x0080)\\
->
-> \
+> The digest of the local content file does not match the expected one. Please ensure the latest version of Cisco Jabber 12 12.9.7.57303 is present in the configured local content repository. FileRetriever 2/1/2026 1:12:22 PM 128 (0x0080)\
+>> \
 > Actual digest: \[zIwSblbgxSYSAMzQg2jGmmV6cOc=], expected digest: \[iV2Xx6Ap9T2LMoQZMrfM4slExNw=] FileRetriever 2/1/2026 1:12:22 PM 128 (0x0080)
 
 When notifications are configured on the [Alerts tab](../alerts/), additional notifications are generated to highlight the issue.
 
 An email notification is sent listing the product that failed and the exact installer file name expected:
 
-![Email Notification when a file is present but has the wrong file hash in the Local Content Repository](/_images/image-(3939).png)
+<figure><img src="../../../.gitbook/assets/image (3939).png" alt="Email Notification when a file is present but has the wrong file hash in the Local Content Repository" width="563"><figcaption></figcaption></figure>
 
 A webhook notification is sent with the same details if webhook alerts are enabled:
 
-![Webhook Notification when a file is present but has the wrong file hash in the Local Content Repository](/_images/image-(3941).png)
+<figure><img src="../../../.gitbook/assets/image (3941).png" alt="Webhook Notification when a file is present but has the wrong file hash in the Local Content Repository" width="563"><figcaption></figcaption></figure>
 
 ### Base64 Digest Hash for Local Content Repository Validation
 
@@ -201,7 +204,7 @@ For example:
 Get-FileHash -Path "E:\LocalContent\Cisco Jabber\v2.0\CiscoJabberSetup.msi"
 ```
 
-![Get-FileHash PowerShell Cmdlet](/_images/image-(3943).png)
+<figure><img src="../../../.gitbook/assets/image (3943).png" alt="Get-FileHash PowerShell Cmdlet" width="563"><figcaption></figcaption></figure>
 
 We must convert that SHA1 hex hash into a base64 digest to compare with the Publisher output. A simple PowerShell function can be used for this purpose
 
@@ -221,10 +224,10 @@ function Get-Base64DigestFromFile {
 
     # Convert hex string to byte array, then to base64
     $bytes = for ($i = 0; $i -lt $hex.Length; $i += 2) {
-[Convert]:/_images/ToByte(-hex.substring($i, 2), 16)
+        [Convert]::ToByte($hex.Substring($i, 2), 16)
     }
 
-[Convert]:/_images/ToBase64String(-bytes)
+    [Convert]::ToBase64String($bytes)
 }
 ```
 
@@ -234,7 +237,7 @@ Example Usage:
 Get-Base64DigestFromFile -Path "E:\LocalContent\Cisco Jabber\v2.0\CiscoJabberSetup.msi"
 ```
 
-![Get-Base64DigestFromFile Function](/_images/image-(3944).png)
+<figure><img src="../../../.gitbook/assets/image (3944).png" alt="Get-Base64DigestFromFile Function" width="563"><figcaption></figcaption></figure>
 
 After you calculate the base64 SHA1 digest for the installer file, compare it to the values shown in **PatchMyPC.log** to confirm whether the correct binary is present in the Local Content Repository.
 

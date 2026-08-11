@@ -15,22 +15,23 @@ We currently support two different types of branding:
 * Classic (default)
 * Modern (PSADT), which supports more localizations and additional settings
 
-> \*\*Note\*\*
->
-> The choice of Branding Type you use is largely up to you. The only differences between them are:
->
-> \* Modern branding requires .NET Framework 4.7.2 or later to be installed on any devices to which the Modern branding app is assigned.
->
-> \* Modern branding does not support the \*\*close the application and perform the update\*\* option of the \[Conflicting Processes]\(../../../deployments/deploy-app/configurations-tab/#conflicting-process-settings) \*\*if the timeout expires and no action is taken\*\* setting.
->
-> You can use both types of branding in your company; you just can’t have two different branding app types with overlapping assignments
+{% hint style="info" %}
+**Note**
+
+The choice of Branding Type you use is largely up to you. The only differences between them are:
+
+* Modern branding requires .NET Framework 4.7.2 or later to be installed on any devices to which the Modern branding app is assigned.
+* Modern branding does not support the **close the application and perform the update** option of the [Conflicting Processes](../../../deployments/deploy-app/configurations-tab/#conflicting-process-settings) **if the timeout expires and no action is taken** setting.
+
+You can use both types of branding in your company; you just can’t have two different branding app types with overlapping assignments
+{% endhint %}
 
 All branding-related tasks are performed from the **Branding** node of the portal, which is accessed by:
 
 1. Sign in to the PMPC Portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings | Branding**.
 
-![Navigating to ‘Settings | Branding'](/_images/image-(3718).png)
+<figure><img src="../../../../.gitbook/assets/image (3718).png" alt="Navigating to ‘Settings | Branding’" width="563"><figcaption></figcaption></figure>
 
 The **Branding** screen is then displayed, allowing you to:
 
@@ -40,4 +41,4 @@ The **Branding** screen is then displayed, allowing you to:
 * [Delete Branding](delete-branding.md)
 * [Uninstall Branding](uninstall-branding.md)
 
-![‘Branding' screen](/_images/image-(3719).png)
+<figure><img src="../../../../.gitbook/assets/image (3719).png" alt="‘Branding’ screen" width="563"><figcaption></figcaption></figure>

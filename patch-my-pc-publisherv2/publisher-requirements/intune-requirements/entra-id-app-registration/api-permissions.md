@@ -17,15 +17,17 @@ The table below lists the required and optional permissions, along with an expla
 | DeviceManagementServiceConfig.ReadWrite.All | Read and write Intune service configuration | Manage Enrollment Status Page (ESP) settings   |
 | GroupMember.Read.All                        | Read group memberships                      | Assign applications to Entra ID groups         |
 
-> \*\*Important\*\*
->
-> \*\*DeviceManagementServiceConfig.ReadWrite.All\*\*
->
-> The Read and write Microsoft Intune configuration permission is required to manage blocking apps in the Enrollment Status Page (ESP). This is the only feature in the Publisher that relies on this permission.
->
-> We understand this permission may appear broad, however, Microsoft does not currently provide a more granular Graph permission for updating the blocking apps configuration within ESP profiles.
->
-> If you choose to revoke this permission from the app registration application, the Publisher will no longer be able to manage or keep ESP blocking apps up to date in Intune.
+{% hint style="warning" %}
+**Important**
+
+**DeviceManagementServiceConfig.ReadWrite.All**
+
+The Read and write Microsoft Intune configuration permission is required to manage blocking apps in the Enrollment Status Page (ESP). This is the only feature in the Publisher that relies on this permission.
+
+We understand this permission may appear broad, however, Microsoft does not currently provide a more granular Graph permission for updating the blocking apps configuration within ESP profiles.
+
+If you choose to revoke this permission from the app registration application, the Publisher will no longer be able to manage or keep ESP blocking apps up to date in Intune.
+{% endhint %}
 
 These permissions are not strictly required for publishing, but improve the user experience within the Publisher UI.
 
@@ -34,9 +36,11 @@ These permissions are not strictly required for publishing, but improve the user
 | **User.ReadBasic.All** | Read basic user profile information | Display user names when resolving group members   |
 | **Device.Read.All**    | Read device properties              | Display device names when resolving group members |
 
-> \*\*Note\*\*
->
-> Without the optional permissions above, the Publisher can detect that groups contain members, but it cannot resolve those members into readable \*\*user or device names\*\* in any group picker interface.
+{% hint style="info" %}
+**Note**
+
+Without the optional permissions above, the Publisher can detect that groups contain members, but it cannot resolve those members into readable **user or device names** in any group picker interface.
+{% endhint %}
 
 ## How to add an API Permission
 
@@ -48,7 +52,7 @@ Follow the steps below to add the required Microsoft Graph **Application permiss
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-![Add an API Permission](/_images/image-(394 "Add an API Permission") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (394).png" alt="Add an API Permission" width="563"><figcaption></figcaption></figure>
 
 5. In the **Request API permissions** pane, choose **Microsoft Graph**.
 6. Select **Application permissions** (not Delegated permissions).
@@ -66,12 +70,14 @@ Follow the steps below to add the required Microsoft Graph **Application permiss
 8. Select **Add permissions** to apply the selected permissions.
 9.  Select **Grant admin consent** and confirm the prompt to approve the permissions.<br>
 
-    ![Grant admin consent](/_images/image-(395 "Grant admin consent") (1).png>)
+    <figure><img src="../../../../.gitbook/assets/image (395).png" alt="Grant admin consent" width="563"><figcaption></figcaption></figure>
 
 The image below reflects the required, granted, permissions.
 
-![Granted API Permissions](/_images/image-(396 "Granted API Permissions") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (396).png" alt="Granted API Permissions" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> Granting admin consent requires an account with sufficient privileges, such as \*\*Global Administrator\*\* or \*\*Privileged Role Administrator\*\*. Until admin consent is granted, the Publisher will not be able to authenticate successfully or perform Intune operations.
+{% hint style="info" %}
+**Note**
+
+Granting admin consent requires an account with sufficient privileges, such as **Global Administrator** or **Privileged Role Administrator**. Until admin consent is granted, the Publisher will not be able to authenticate successfully or perform Intune operations.
+{% endhint %}

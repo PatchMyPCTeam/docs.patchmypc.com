@@ -1,14 +1,14 @@
 # Publish with Full-content or Metadata Only
 
 _Applies to: Patch My PC Publisher V2.x_\
-_&#x41;vailable at level: All Products, Vendor, Product_\
-_&#x41;vailable on tab: Updates_
+_Available at level: All Products, Vendor, Product_\
+_Available on tab: Updates_
 
 ## Overview
 
 The **Publish with Full-content or Metadata Only** option can be used to configure how you want software updates to be published to WSUS.
 
-![Publishing with Full-content or Metadata Only](/_images/image-(160).png)
+<figure><img src="../../.gitbook/assets/image (160).png" alt="Publishing with Full-content or Metadata Only" width="521"><figcaption></figcaption></figure>
 
 ## Full Content
 
@@ -24,6 +24,8 @@ Devices can scan against the metadata, which means update compliance and applica
 
 This option is commonly used to evaluate the impact and requirements of updates across the environment before making them deployable.
 
-> \*\*Note\*\*
->
-> If you select the metdata only option, and later decide the binaries for that update should be published, you can change that specific update to Full Content. On the next sync, the Publisher will download the binaries and publish the update with full content automatically.
+{% hint style="info" %}
+**Note**
+
+If you select the metdata only option, and later decide the binaries for that update should be published, you can change that specific update to Full Content. On the next sync, the Publisher will download the binaries and publish the update with full content automatically.
+{% endhint %}

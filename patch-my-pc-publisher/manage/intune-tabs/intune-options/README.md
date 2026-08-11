@@ -2,10 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This article has not been updated for Version 3.x. Once it has, this banner will be removed.</p>
-</blockquote>
+{% hint style="danger" %}
+**Important**
+
+This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% endhint %}
 
 The **Options** button in the **Intune Apps** and **Intune Updates** tabs of Patch My PC (PMPC) Publisher allows you to configure various options for how Publisher interacts with Microsoft Intune.
 

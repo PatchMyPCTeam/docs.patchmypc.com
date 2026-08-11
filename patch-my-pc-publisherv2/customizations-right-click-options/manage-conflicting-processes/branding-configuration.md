@@ -1,26 +1,30 @@
 # Branding Configuration
 
 _Applies to: Patch My PC Publisher V2.x_\
-_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
-_&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Overview
 
 The **Conflicting Process UI Settings** window is used to customize the end user notification experience shown when an application must be closed to complete an update.
 
-![Conflicting Process UI Settings](/_images/image-(3983).png)
+<figure><img src="../../../.gitbook/assets/image (3983).png" alt="Conflicting Process UI Settings" width="450"><figcaption></figcaption></figure>
 
 These settings allow you to control branding, organization identity, language, and the notification text displayed to users during conflicting process scenarios.
 
-> \*\*Note\*\*
->
-> The \*\*Conflicting Process UI Settings\*\* window is leveraged when the \[Notify the user to close the application]\(setting-configuration.md#notify-the-user-to-close-the-application) policy is selected.
+{% hint style="info" %}
+**Note**
 
-> \*\*Important\*\*
->
-> Branding and localization settings are global. You cannot configure different branding or localization profiles for different applications or updates. The configured branding and language settings apply to every application or update where conflicting process management is enabled.
->
-> For customers using an \*\*MSP\*\* or \*\*MSP Plus\*\* license with multiple Intune tenants configured, branding and localization settings are global \*\*per tenant\*\*. Each configured tenant maintains its own branding configuration, but all applications and updates within that tenant share the same branding and localization settings.
+The **Conflicting Process UI Settings** window is leveraged when the [Notify the user to close the application](setting-configuration.md#notify-the-user-to-close-the-application) policy is selected.
+{% endhint %}
+
+{% hint style="warning" %}
+**Important**
+
+Branding and localization settings are global. You cannot configure different branding or localization profiles for different applications or updates. The configured branding and language settings apply to every application or update where conflicting process management is enabled.
+
+For customers using an **MSP** or **MSP Plus** license with multiple Intune tenants configured, branding and localization settings are global **per tenant**. Each configured tenant maintains its own branding configuration, but all applications and updates within that tenant share the same branding and localization settings.
+{% endhint %}
 
 ## Is a seperate Client or Agent required to show the Notification?
 
@@ -34,11 +38,13 @@ During installation, Patch My PC ScriptRunner, which manages the installation on
 
 In the example below, the highlighted files show the components involved in displaying the end user notification. These files are downloaded to the local cache folder alongside the application or update package and are used at runtime to render the notification experience.
 
-![Manage Conflicting Processes Files](/_images/image-(133).png)
+<figure><img src="../../../.gitbook/assets/image (133).png" alt="Manage Conflicting Processes Files" width="549"><figcaption></figcaption></figure>
 
-> \*\*Important\*\*
->
-> Any changes made to branding or notification content apply to newly published applications and updates. Existing deployments must be \[republished]\(../republish-during-next-sync-schedule.md) for updated branding settings to be included.
+{% hint style="warning" %}
+**Important**
+
+Any changes made to branding or notification content apply to newly published applications and updates. Existing deployments must be [republished](../republish-during-next-sync-schedule.md) for updated branding settings to be included.
+{% endhint %}
 
 ## Company Logo
 
@@ -46,7 +52,7 @@ The **Company logo** setting allows you to display a custom banner image in conf
 
 The configured logo appears at the top of the notification experience in the bottom right of the screen. This helps users clearly identify that the notification is coming from your organization.
 
-Supported image formats include BMP, GIF, JPG, and PNG.
+Supported image formats include BMP, GIF, JPG, and PNG.&#x20;
 
 The recommended image size is **370 x 100 pixels** to ensure proper scaling and alignment within the notification UI.
 
@@ -56,23 +62,25 @@ You can manage the company logo using the following options.
 • **Use Default** to revert to the default banner image.\
 • **Preview** to see how the logo will appear to end users before saving the configuration.
 
-![Notification Preview](/_images/image-(132).png)
+<figure><img src="../../../.gitbook/assets/image (132).png" alt="Notification Preview" width="282"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> Selecting \*\*Close and Install\*\* or \*\*Snooze and Install\*\* in the preview window only closes the preview. These buttons do not trigger any installation or enforcement action and are provided for visualization purposes only.
+{% hint style="info" %}
+**Note**
+
+Selecting **Close and Install** or **Snooze and Install** in the preview window only closes the preview. These buttons do not trigger any installation or enforcement action and are provided for visualization purposes only.
+{% endhint %}
 
 ## Organization Name
 
 The **Organization Name** field allows you to specify the organization name displayed in notification text. This value can be referenced dynamically within notification messages using the supported variables.
 
-![The Organization Name replaces this text in the notification window](/_images/image-(136).png)
+<figure><img src="../../../.gitbook/assets/image (136).png" alt="The Organization Name replaces this text in the notification window" width="282"><figcaption></figcaption></figure>
 
 ## Localization
 
 The **Localization** section controls the language and user facing text displayed in conflicting process notifications.
 
-![Localization Options](/_images/image-(3984).png)
+<figure><img src="../../../.gitbook/assets/image (3984).png" alt="Localization Options" width="450"><figcaption></figcaption></figure>
 
 ### Selected Language
 
@@ -80,7 +88,7 @@ The **Localization** section controls the language and user facing text displaye
 
 To add or manage languages, click **Add/Remove**. This opens the language selection window where you can choose languages from the available list, add them to the selected languages list, and define which language is the default.
 
-![Select Language for Conflicting Process UI Translation](/_images/image-(3989).png)
+<figure><img src="../../../.gitbook/assets/image (3989).png" alt="Select Language for Conflicting Process UI Translation" width="488"><figcaption></figcaption></figure>
 
 At runtime, Patch My PC ScriptRunner detects the locale of the device and displays notifications in the matching language if that language has been configured. If the device locale does not match any configured language in the **Selected Languages** list, the default language is used to display the notification.
 
@@ -103,10 +111,12 @@ When you change the intent, the text fields below update to reflect the messagin
 
 You can customize all notification text fields, including the header, main message, deferral messaging, and default actions. These fields support variables that are replaced dynamically at runtime.
 
-Available variables include organization name, product name, deferral count, and deferral date.
+Available variables include organization name, product name, deferral count, and deferral date.&#x20;
 
 To insert a variable into any text field, select the field where you want the variable to appear, then select the variable from the list at the bottom of the form. The variable is inserted at the current cursor position and is expanded automatically at runtime.
 
-> \*\*Note\*\*
->
-> The product name is populated automatically and cannot be customized.
+{% hint style="info" %}
+**Note**
+
+The product name is populated automatically and cannot be customized.
+{% endhint %}

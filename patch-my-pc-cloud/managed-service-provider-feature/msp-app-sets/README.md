@@ -13,17 +13,23 @@ Using the App Sets feature you can:
 * [Delete an App Set](delete-an-msp-app-set.md)
 * [View details for an App Set](view-app-set-details.md)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>To use the App Sets feature, you need to be assigned one of the following PMPC Cloud portal roles:</p>
-<p>* Full Admins (with and without access)</p>
-<p>* Intune Admins.</p>
-<p>**Read-Only Admins** can view the App Sets page, but will not be able to make any changes.</p>
-<p>**Custom App Admins** cannot view the App Sets page</p>
-<p>Also, App Sets are not supported on macOS.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>We currently do not support adding script-based Custom Apps or Binary Free Apps to MSP App Sets.</p>
-</blockquote>
+To use the App Sets feature, you need to be assigned one of the following PMPC Cloud portal roles:
+
+* Full Admins (with and without access)
+* Intune Admins.
+
+**Read-Only Admins** can view the App Sets page, but will not be able to make any changes.
+
+**Custom App Admins** cannot view the App Sets page
+
+Also, App Sets are not supported on macOS.
+{% endhint %}
+
+{% hint style="danger" %}
+**Important**
+
+We currently do not support adding script-based Custom Apps or Binary Free Apps to MSP App Sets.
+{% endhint %}

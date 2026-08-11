@@ -12,11 +12,13 @@ This authentication method is intended for environments where SMTP basic authent
 
 OAuth2 email authentication requires a **Microsoft Entra ID app registration** with the **Microsoft Graph Mail.Send (Application)** permission granted.
 
-> \*\*Important\*\*
->
-> This guidance applies to customers who choose to use OAuth with Microsoft Graph instead of SMTP based mail delivery. When using this approach, the Publisher sends email through Microsoft Graph as an unattended background service. Because no signed in user is present, OAuth 2.0 application permissions must be used along with the \`/users/{user}/sendMail\` endpoint, which requires the \`Mail.Send\` application permission. When granted, this permission allows the application to send mail as \*\*any\*\* mailbox in the tenant.
->
-> [Exchange Online documentation](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac#why-does-my-application-still-have-access-to-mailboxes-that-arent-granted-by-the-scope-i-used-in-exchange-online-application-rbac) explains that permissions assigned in Microsoft Entra ID and Exchange Online RBAC are additive and evaluated independently. If a tenant wide Microsoft Entra \`Mail.Send\` permission is granted, any scoped permission configured using Exchange Online RBAC or Application Access Policies is combined with the broader permission. The effective result is the union of both permissions, which still allows sending as any mailbox. For this reason, Exchange Online RBAC and Application Access Policies do not effectively restrict Microsoft Graph app only send operations. This behavior is a Microsoft platform limitation, not a Publisher specific design choice.
+{% hint style="warning" %}
+**Important**
+
+This guidance applies to customers who choose to use OAuth with Microsoft Graph instead of SMTP based mail delivery. When using this approach, the Publisher sends email through Microsoft Graph as an unattended background service. Because no signed in user is present, OAuth 2.0 application permissions must be used along with the `/users/{user}/sendMail` endpoint, which requires the `Mail.Send` application permission. When granted, this permission allows the application to send mail as **any** mailbox in the tenant.
+
+[Exchange Online documentation](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac#why-does-my-application-still-have-access-to-mailboxes-that-arent-granted-by-the-scope-i-used-in-exchange-online-application-rbac) explains that permissions assigned in Microsoft Entra ID and Exchange Online RBAC are additive and evaluated independently. If a tenant wide Microsoft Entra `Mail.Send` permission is granted, any scoped permission configured using Exchange Online RBAC or Application Access Policies is combined with the broader permission. The effective result is the union of both permissions, which still allows sending as any mailbox. For this reason, Exchange Online RBAC and Application Access Policies do not effectively restrict Microsoft Graph app only send operations. This behavior is a Microsoft platform limitation, not a Publisher specific design choice.
+{% endhint %}
 
 When configuring the app registration, you can apply standard Entra ID security practices such as:
 
@@ -54,7 +56,7 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-![Add an API Permission](/_images/image-(394 "Add an API Permission") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (394).png" alt="Add an API Permission" width="563"><figcaption></figcaption></figure>
 
 5. In the **Request API permissions** pane, choose **Microsoft Graph**.
 6. Select **Application permissions** (not Delegated permissions).
@@ -63,27 +65,31 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 8. Select **Add permissions** to apply the selected permissions.
 9. Select **Grant admin consent** and confirm the prompt to approve the permission.
 
-![Confirm the Mail.Send permissions has been added and granted](/_images/image-(238).png)
+<figure><img src="../../../../.gitbook/assets/image (238).png" alt="Confirm the Mail.Send permissions has been added and granted" width="563"><figcaption></figcaption></figure>
 
 ### Configure the Publisher
 
 After selecting OAuth2 as the email authentication type, select **Use existing app registration** to reuse the same Microsoft Entra ID app registration configured under [Intune Apps/Updates > Options](../../intune-apps-updates/options/). The available fields are automatically updated to reflect the existing app registration details and authentication method.
 
-![Use existing app registration](/_images/image-(4206).png)
+<figure><img src="../../../../.gitbook/assets/image (4206).png" alt="Use existing app registration" width="446"><figcaption></figcaption></figure>
 
 Click [Test Permissions](oauth2-app-auth-configuration.md#test-permissions) to verify the API permissions has been configured correctly.
 
-> \*\*Note\*\*
->
-> If multiple tenants are configured in the Publisher using an \*\*MSP\*\* or \*\*MSP Plus\*\* license, select the appropriate \*\*tenant\*\* from the tenant selector to use the app registration for that specific tenant.
+{% hint style="info" %}
+**Note**
+
+If multiple tenants are configured in the Publisher using an **MSP** or **MSP Plus** license, select the appropriate **tenant** from the tenant selector to use the app registration for that specific tenant.
+{% endhint %}
 
 ## Option 2: Create a new (or use a different) App Registration
 
 This option uses a separate Microsoft Entra ID app registration that is not shared with Intune app and update publishing (if configured). The app registration can be newly created or an existing one in the tenant that you choose to use specifically for sending email from the Publisher.
 
-> \*\*Note\*\*
->
-> Using a separate app registration allows you to isolate email-sending permissions from Intune publishing and manage credentials independently.
+{% hint style="info" %}
+**Note**
+
+Using a separate app registration allows you to isolate email-sending permissions from Intune publishing and manage credentials independently.
+{% endhint %}
 
 ### When to choose this option
 
@@ -116,7 +122,7 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-![Add an API Permission](/_images/image-(394 "Add an API Permission") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (394).png" alt="Add an API Permission" width="563"><figcaption></figcaption></figure>
 
 5. In the **Request API permissions** pane, choose **Microsoft Graph**.
 6. Select **Application permissions** (not Delegated permissions).
@@ -125,13 +131,15 @@ Follow the steps below to add the required Microsoft Graph **Mail.Send (Applicat
 8. Select **Add permissions** to apply the selected permissions.
 9. Select **Grant admin consent** and confirm the prompt to approve the permission.
 
-![Confirm the Mail.Send permissions has been added and granted](/_images/image-(239).png)
+<figure><img src="../../../../.gitbook/assets/image (239).png" alt="Confirm the Mail.Send permissions has been added and granted" width="563"><figcaption></figcaption></figure>
 
 10. Navigate to **Certificates & secrets** in the Entra ID app registration. Create or identify the client credential that will be used by the Publisher for email notifications. This can be either a certificate or a client secret, depending on the selected authentication method. Record the required values, such as the Application Client ID, Tenant ID, and certificate or secret details so you can [Configure the Publisher](oauth2-app-auth-configuration.md#configure-the-publisher-1).
 
-> \*\*Note\*\*
->
-> For additional guidance on choosing and configuring app registration credentials, refer to the \[Client Credentials]\(../../../publisher-requirements/intune-requirements/entra-id-app-registration/client-credentials.md), which explains credential types, requirements, and best practices in more detail.
+{% hint style="info" %}
+**Note**
+
+For additional guidance on choosing and configuring app registration credentials, refer to the [Client Credentials](../../../publisher-requirements/intune-requirements/entra-id-app-registration/client-credentials.md), which explains credential types, requirements, and best practices in more detail.
+{% endhint %}
 
 ### Configure the Publisher
 
@@ -171,9 +179,9 @@ The **App Registration Connection Status** window displays the status of each pe
 **Green check (OK)**\
 The **Mail.Send** permission is present and correctly granted.
 
-![App Registration Connection Status OK](/_images/image-(237).png)
+<figure><img src="../../../../.gitbook/assets/image (237).png" alt="App Registration Connection Status OK" width="563"><figcaption></figcaption></figure>
 
 **Red error (Missing)**\
 The **Mail.Send** permission is missing or has not been granted. Email Notifications will not work until the permission is added and admin consent is granted.
 
-![App Registration Connection Status Failed](/_images/image-(240).png)
+<figure><img src="../../../../.gitbook/assets/image (240).png" alt="App Registration Connection Status Failed" width="563"><figcaption></figcaption></figure>

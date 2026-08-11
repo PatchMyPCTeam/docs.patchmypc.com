@@ -6,9 +6,9 @@ description: Software Applications provided by Configuration Manager
 
 _Applies to: Patch My PC Advanced Insights_
 
-![](/_images/image-(2242).png)
+<figure><img src="../../../.gitbook/assets/image (2242).png" alt=""><figcaption><p>Software Applications Dashboard</p></figcaption></figure>
 
-This dashboard shows details for all Applications defined in the Configuration Manager console.
+This dashboard shows details for all Applications defined in the Configuration Manager console.&#x20;
 
 The top row of statistics give you quick access to any applications modified recently as well as enabling you to see unused applications which can potentially be retired.
 
@@ -18,24 +18,24 @@ Click through to any individual application shows additional detail, including i
 
 ### General Information
 
-![](/_images/image-(2244).png)
+<figure><img src="../../../.gitbook/assets/image (2244).png" alt=""><figcaption><p>Application General Information tab</p></figcaption></figure>
 
 The General Information tab lists the metadata for the application and details of the distribution point status for the application.
 
 ### Deployment Types
 
-![](/_images/image-(2245).png)
+<figure><img src="../../../.gitbook/assets/image (2245).png" alt=""><figcaption><p>Deployment Types tab</p></figcaption></figure>
 
 The Deployment Types tab lists all deployment types defined for the application, the relevant technology and content size with the source path.
 
 ### Deployments
 
-![](/_images/image-(2246).png)
+<figure><img src="../../../.gitbook/assets/image (2246).png" alt=""><figcaption><p>Deployments tab</p></figcaption></figure>
 
 The deployments tab lists each deployment and its related compliance.
 
 ### Compliance
 
-![](/_images/image-(2247).png)
+<figure><img src="../../../.gitbook/assets/image (2247).png" alt=""><figcaption><p>Compliance tab</p></figcaption></figure>
 
 The compliance tab lists each targeted client and its overall application deployment compliance. Clicking any individual machine will take you to the device view focused on the software - applications tab.

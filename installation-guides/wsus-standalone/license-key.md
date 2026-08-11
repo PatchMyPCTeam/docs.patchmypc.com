@@ -14,18 +14,18 @@ When the publisher first launches, you will be required to provide a license key
 
 The first option is to enable the [**Limited Trial Mode**.](https://patchmypc.com/frequently-asked-questions#trial-catalog) This limited trial mode does have some restrictions including a limited number of products as covered in the link above. We encourage you to [**request a free thirty-day trial**](https://patchmypc.com/free-trial) from our website. When you receive your full-trial or customer license email, it will contain your 20 character license key.
 
-![Example license key email](/_images/image-(1891 "Example license key email").png>)
+![Example license key email](<../../.gitbook/assets/image (1891).png>)
 
-![Enter your license information](/_images/image-(1956 "Enter your license information").png>)
+![Enter your license information](<../../.gitbook/assets/image (1956).png>)
 
-<blockquote class="wp-block-quote">
-<p>The <a href="https://patchmypc.com/free-trial">**full-access 30-day trial**</a> contains all features and access to all products.</p>
-</blockquote>
+{% hint style="success" %}
+The [**full-access 30-day trial**](https://patchmypc.com/free-trial) contains all features and access to all products.
+{% endhint %}
 
 If the license validation is successful, it should look like the below image.
 
-![Licensed product information validation.](/_images/image-(1820 "Licensed product information validation.").png>)
+![Licensed product information validation.](<../../.gitbook/assets/image (1820).png>)
 
-<blockquote class="wp-block-quote">
-<p>If you receive an error when clicking Validate URL, please review our knowledge base article <a href="https://patchmypc.com/troubleshooting-license-activation-issues">Troubleshooting License Activation Issues</a>. License activation errors are often related to firewall or proxy configurations.</p>
-</blockquote>
+{% hint style="warning" %}
+If you receive an error when clicking Validate URL, please review our knowledge base article [Troubleshooting License Activation Issues](https://patchmypc.com/troubleshooting-license-activation-issues). License activation errors are often related to firewall or proxy configurations.
+{% endhint %}

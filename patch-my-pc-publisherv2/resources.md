@@ -25,11 +25,13 @@ During this session, an engineer will assist with:
 
 This session focuses on getting the Publisher correctly installed and integrated into your environment.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>A guided setup call assists with initial installation and configuration and is not intended for technical troubleshooting or support. We cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;</p>
-<p>For technical issues, application-specific problems, or deployment failures, please contact [Support](resources.md#support) to ensure proper case routing and engineer assignment.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+A guided setup call assists with initial installation and configuration and is not intended for technical troubleshooting or support. We cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;
+
+For technical issues, application-specific problems, or deployment failures, please contact [Support](resources.md#support) to ensure proper case routing and engineer assignment.
+{% endhint %}
 
 To schedule a guided setup call with an engineer, visit [https://patchmypc.com/setup-call](https://patchmypc.com/setup-call/)
 
@@ -38,11 +40,13 @@ Environment Review
 
 Environment Review calls are designed to provide a proactive review of your current Publisher configuration and to answer product-related questions. During the session, an engineer can help you validate best practices, discuss new features, and provide reassurance that your configuration aligns with recommended guidance.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Environment Review calls are not intended for technical support or break/fix troubleshooting, and we cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;</p>
-<p>For technical issues, application-specific problems, or deployment failures, please contact [Support](resources.md#support) to ensure proper case routing and engineer assignment.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+Environment Review calls are not intended for technical support or break/fix troubleshooting, and we cannot guarantee that the appropriate support resources will be available if used for that purpose.&#x20;
+
+For technical issues, application-specific problems, or deployment failures, please contact [Support](resources.md#support) to ensure proper case routing and engineer assignment.
+{% endhint %}
 
 To schedule an environment review call with an engineer, visit [https://patchmypc.com/environment-review-call](https://patchmypc.com/environment-review-call/)
 

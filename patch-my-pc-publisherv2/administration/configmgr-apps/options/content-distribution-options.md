@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Content Distribution Options** section controls how application content created by the Publisher is distributed to ConfigMgr Distribution Points (DPs) when apps are published.
 
-![Content Distribution Options](/_images/image-(4012).png)
+<figure><img src="../../../../.gitbook/assets/image (4012).png" alt="Content Distribution Options" width="563"><figcaption></figcaption></figure>
 
 By default, the Publisher automatically distributes application content as soon as a new application is created. This ensures content is available on Distribution Points as soon as possible, preventing deployment failures caused by missing or undistributed content.
 
@@ -22,7 +22,7 @@ In the example below, the environment includes a Distribution Point Group that c
 
 To achieve this, only the on-premises Distribution Point Group (**BBCM1**) is selected in the **Manage Edit DP groups** dialog, while the group containing the CMG (**BBCMG1**) is left unchecked.
 
-![Manage Distribution Point Group(s)](/_images/image-(4013).png)
+<figure><img src="../../../../.gitbook/assets/image (4013).png" alt="Manage Distribution Point Group(s)" width="563"><figcaption></figcaption></figure>
 
 ## Do Not Distribute Content
 

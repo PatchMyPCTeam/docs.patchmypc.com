@@ -17,6 +17,15 @@ Details the production release history for Patch My PC (PMPC) Publisher, the mos
 
 ## 3.0.1.0 - 2026-07-28
 
+<details>
+
+<summary>Fixes</summary>
+
+* Fixed a bug causing the sync schedule to drift away from the scheduled time in some cases.
+* When the Publisher is configured with an MSP license, and two or more tenants are syncing the same application, an incomplete application can be published. For example, two or more tenants are processing Google Chrome at the same time. Some of the tenants may publish the product before the download is complete.
+
+</details>
+
 Further documentation can be found [here](https://docs.patchmypc.com/patch-my-pc-publisher/whats-new).
 
 <details>
@@ -1335,9 +1344,9 @@ Support applications in the catalog that download a zip file.
 
 ## 2.1.7 - 2022-10-06
 
-<blockquote class="wp-block-quote">
-<p>**Note:** Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.</p>
-</blockquote>
+{% hint style="info" %}
+**Note:** Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.
+{% endhint %}
 
 <details>
 

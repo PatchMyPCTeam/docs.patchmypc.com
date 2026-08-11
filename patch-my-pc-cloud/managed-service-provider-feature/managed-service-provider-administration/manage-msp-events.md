@@ -11,7 +11,8 @@ The **Events** node of the parent Managed Service Provider (MSP) Patch My PC (PM
 
 The **Events** node of the child company shows all of the events performed by both the parent company administrator on the child company and any events performed on the child company by the administrator users of that company.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Events that occur on any child companies are not replicated up to the parent company.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+Events that occur on any child companies are not replicated up to the parent company.
+{% endhint %}

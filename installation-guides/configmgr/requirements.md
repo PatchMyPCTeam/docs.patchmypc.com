@@ -6,9 +6,9 @@ description: Prerequisites for installing the Publisher with Configuration Manag
 
 _Applies to: On-premises Publisher_
 
-<blockquote class="wp-block-quote">
-<p>Before you get started, make sure you take advantage of our <a href="https://patchmypc.com/free-trial">free trial</a>!</p>
-</blockquote>
+{% hint style="success" %}
+Before you get started, make sure you take advantage of our [free trial](https://patchmypc.com/free-trial)!
+{% endhint %}
 
 When installing the Publisher for Configuration Manager, please ensure you meet the following requirements:
 
@@ -24,13 +24,13 @@ When installing the Publisher for Configuration Manager, please ensure you meet 
   * Windows Server 2012, Windows Server 2016, Windows Server 2019, Windows Server 2022, Windows Server 2019 and Windows Server 2025
   * Windows Server Update Services (WSUS) installed and configured
 
-<blockquote class="wp-block-quote">
-<p>More information on supported Configuration Manager and WSUS versions can be found at <a href="https://patchmypc.com/supported-versions-of-configuration-manager-and-wsus-for-patch-my-pc">https://patchmypc.com/supported-versions-of-configuration-manager-and-wsus-for-patch-my-pc</a></p>
-</blockquote>
+{% hint style="info" %}
+More information on supported Configuration Manager and WSUS versions can be found at [https://patchmypc.com/supported-versions-of-configuration-manager-and-wsus-for-patch-my-pc](https://patchmypc.com/supported-versions-of-configuration-manager-and-wsus-for-patch-my-pc)
+{% endhint %}
 
-<blockquote class="wp-block-quote">
-<p>The Patch My PC Publisher will require the user launching the Publisher tool to be a local administrator on the server. This requirement is for both the installation as well as running the Publisher after it has been installed and configured.</p>
-</blockquote>
+{% hint style="info" %}
+The Patch My PC Publisher will require the user launching the Publisher tool to be a local administrator on the server. This requirement is for both the installation as well as running the Publisher after it has been installed and configured.
+{% endhint %}
 
 ### Hardware:
 

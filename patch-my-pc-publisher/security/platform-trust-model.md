@@ -44,10 +44,11 @@ This creates a layered trust chain:
 
 PMPC does not control this final trust boundary. The customer’s certificate and endpoint trust configuration ultimately determine whether installation is permitted.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Certificate Requirements](../requirements/certificate-requirements.md) for more information on the certificate requirements for WSUS.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [Certificate Requirements](../requirements/certificate-requirements.md) for more information on the certificate requirements for WSUS.
+{% endhint %}
 
 ## ConfigMgr Trust Model
 
@@ -67,10 +68,11 @@ If Publisher is installed on a remote SUP, the server's computer account (for ex
 
 This is done through ConfigMgr security roles and administrative user configuration. The remote computer account is added as an administrative user and assigned a role that grants the required permissions for application creation and management.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Remote SUP Requirements](../requirements/configmgr-requirements/sup-requirements/remote-sup.md) for more information.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [Remote SUP Requirements](../requirements/configmgr-requirements/sup-requirements/remote-sup.md) for more information.
+{% endhint %}
 
 ConfigMgr clients receive policy from the MP, which includes software update configuration, intranet update service location settings, and certificate trust requirements.&#x20;
 
@@ -78,10 +80,11 @@ When properly configured, ConfigMgr can automatically enable the required Group 
 
 This central management capability reduces administrative overhead compared to standalone WSUS deployments, as certificate distribution and policy enforcement can be controlled directly through the ConfigMgr infrastructure.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Choosing a Certificate](../manage/wsus-updates-tab/wsus-options/certificate-management/choosing.md) for more information on ConfigMgr certificate management options.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [Choosing a Certificate](../manage/wsus-updates-tab/wsus-options/certificate-management/choosing.md) for more information on ConfigMgr certificate management options.
+{% endhint %}
 
 ### ConfigMgr Applications
 
@@ -91,10 +94,11 @@ Installation trust is enforced through ConfigMgr’s content distribution system
 
 Publisher communicates with ConfigMgr via the ConfigMgr SDK and interacts with the SMS Provider, following standard management practices. All operations are performed through supported APIs and adhere to ConfigMgr’s role-based access control model.&#x20;
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Publisher does not interact directly with the ConfigMgr site database, except for read-only access when [scanning application inventory](../manage/configmgr-apps-tab/scan-configmgr.md).</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+Publisher does not interact directly with the ConfigMgr site database, except for read-only access when [scanning application inventory](../manage/configmgr-apps-tab/scan-configmgr.md).
+{% endhint %}
 
 When the Publisher service is installed on the ConfigMgr Site Server, it runs under the Local System account. In this configuration, the service inherently has the necessary permissions to interact with ConfigMgr as the Site Server’s computer account is already trusted within the ConfigMgr security boundary. No additional role configuration is typically required.
 

@@ -7,9 +7,11 @@ Sometimes we need you to provide log files for troubleshooting. This guide will 
 * [Product Specific Logs](log-reference-guide.md#product-specific-logs)
 * [Scenario Specific Logs](log-reference-guide.md#scenario-specific-logs)
 
-> \*\*Note\*\*
->
-> See \[Enable Debug Logging for Publisher]\(log-reference-guide.md#enable-debug-logging-for-publisher) for details on how to enable debug logging for Publisher, which can help troubleshoot Publisher-related issues.
+{% hint style="info" %}
+**Note**
+
+See [Enable Debug Logging for Publisher](log-reference-guide.md#enable-debug-logging-for-publisher) for details on how to enable debug logging for Publisher, which can help troubleshoot Publisher-related issues.&#x20;
+{% endhint %}
 
 ### Product Specific Logs
 
@@ -133,19 +135,21 @@ To troubleshoot issues with Intune apps installing on a client, we need the foll
 %ProgramData%\PatchMyPCIntuneLogs\PatchMyPC-SoftwareUpdateDetectionScript.log
 ```
 
-> \*\*Important\*\*
->
-> For user-based apps, the logs mentioned above will reside in the following locations:
->
-> \* \*\*%LocalAppData%\PatchMyPCIntuneLogs\PatchMyPC-Scriptrunner.log\*\*
->
-> \* \*\*%Temp%\PatchMyPC-SoftwareDetectionScript.log\*\*
->
-> \* \*\*%Temp%\PatchMyPC-SoftwareUpdateDetectionScript.log\*\*
+{% hint style="warning" %}
+**Important**
 
-> \*\*Note\*\*
->
-> These logs were previously stored under \*\*ProgramData\*\*, but the locations were changed due to a permission issue on shared devices. Log files created under \*\*ProgramData\*\* could only be written to by the original owner, which caused \*\*Access Denied\*\* log errors when other users installed user-based apps on the same device.
+For user-based apps, the logs mentioned above will reside in the following locations:
+
+* **%LocalAppData%\PatchMyPCIntuneLogs\PatchMyPC-Scriptrunner.log**
+* **%Temp%\PatchMyPC-SoftwareDetectionScript.log**
+* **%Temp%\PatchMyPC-SoftwareUpdateDetectionScript.log**
+{% endhint %}
+
+{% hint style="info" %}
+**Note**
+
+These logs were previously stored under **ProgramData**, but the locations were changed due to a permission issue on shared devices. Log files created under **ProgramData** could only be written to by the original owner, which caused **Access Denied** log errors when other users installed user-based apps on the same device.
+{% endhint %}
 
 ```
 %ProgramData%\Microsoft\IntuneManagementExtension\Logs\AgentExecutor.log
@@ -154,9 +158,11 @@ To troubleshoot issues with Intune apps installing on a client, we need the foll
 %ProgramData%\Microsoft\IntuneManagementExtension\Logs\AppWorkload.log
 ```
 
-> \*\*Note\*\*
->
-> Some Patch My PC log files listed above may be found in \*\*%WinDir%\CCM\*\* folder if that folder exists.
+{% hint style="info" %}
+**Note**
+
+Some Patch My PC log files listed above may be found in **%WinDir%\CCM** folder if that folder exists.
+{% endhint %}
 
 #### **SCCM Applications Failing to Install on Client Devices**
 
@@ -184,25 +190,26 @@ PatchDownloader.log*
 
 ```
 
-> \*\*Important\*\*
->
-> In the example above, we have assumed the main SCCM installation directory is:\\
->
-> \*\*C:\Program Files\Microsoft Configuration Manager\*\*
->
-> Also, the location of the \*\*PatchDownloader.log\*\* can vary, as detailed in the [Log files by functionality](https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/hierarchy/log-files#BKMK_FunctionLogs) section of the [Log file reference](https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/hierarchy/log-files) article. For example, it could be in one of the following locations:
->
-> \* \*\*C:\Program Files\SMS\\\_CCM\Logs\PatchDownloader\\\*.log\*\* (most common location)
->
-> \* \*\*C:\Program Files\Microsoft Configuration Manager\Logs\PatchDownloader\\\*.log\*\*
->
-> \* \*\*%WinDir%\CCM\Logs\*\*
+{% hint style="danger" %}
+**Important**
 
-> \*\*Tip\*\*
->
-> If you are unable to locate the \*\*PatchDownloader.log\*\* check the following Registry key on the Site Server, which will tell you where it is:
->
-> \`HKLM\SOFTWARE\Microsoft\CCM\Logging\\@Global:LogDirectory\`
+In the example above, we have assumed the main SCCM installation directory is:\
+**C:\Program Files\Microsoft Configuration Manager**
+
+Also, the location of the **PatchDownloader.log** can vary, as detailed in the [Log files by functionality](https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/hierarchy/log-files#BKMK_FunctionLogs) section of the [Log file reference](https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/hierarchy/log-files) article. For example, it could be in one of the following locations:
+
+* **C:\Program Files\SMS\_CCM\Logs\PatchDownloader\*.log** (most common location)
+* **C:\Program Files\Microsoft Configuration Manager\Logs\PatchDownloader\*.log**
+* **%WinDir%\CCM\Logs**
+{% endhint %}
+
+{% hint style="success" %}
+**Tip**
+
+If you are unable to locate the **PatchDownloader.log** check the following Registry key on the Site Server, which will tell you where it is:
+
+`HKLM\SOFTWARE\Microsoft\CCM\Logging\@Global:LogDirectory`
+{% endhint %}
 
 #### **Software Updates - Failing to Publish Updates Using SCCM In-Console Publishing**
 
@@ -214,15 +221,15 @@ To troubleshoot SCCM in-console publishing, we need the following log files from
 %SiteServerLogsFolder%\WCM*.log
 ```
 
-> \*\*Note\*\*
->
-> We may require the following log, which should only be sent to us if requested due to its large size:
->
-> \`\`\`
->
-> %ProgramFiles%\Update Services\LogFiles\SoftwareDistribution.log
->
-> \`\`\`
+{% hint style="info" %}
+**Note**
+
+We may require the following log, which should only be sent to us if requested due to its large size:
+
+```
+%ProgramFiles%\Update Services\LogFiles\SoftwareDistribution.log
+```
+{% endhint %}
 
 #### **Software Updates - Failing to Publish Updates to WSUS Using Publisher**
 
@@ -238,15 +245,15 @@ To troubleshoot publish third-party updates to WSUS PMPC Publisher, we need the 
 %SiteServerLogsFolder%\WCM*.log
 ```
 
-> \*\*Note\*\*
->
-> We may require the following log, which should only be sent to us if requested due to its large size:
->
-> \`\`\`
->
-> %ProgramFiles%\Update Services\LogFiles\SoftwareDistribution.log
->
-> \`\`\`
+{% hint style="info" %}
+**Note**
+
+We may require the following log, which should only be sent to us if requested due to its large size:
+
+```
+%ProgramFiles%\Update Services\LogFiles\SoftwareDistribution.log
+```
+{% endhint %}
 
 #### **Third-Party Software Updates Failing to Install on Client Devices**
 
@@ -266,9 +273,11 @@ To troubleshoot update installation errors on a client, we need the following cl
 %WinDir%\WindowsUpdate.log
 ```
 
-> \*\*Note\*\*
->
-> On Windows 8.1 and later you need to run [\*\*Get-WindowsUpdateLog\*\*](https://docs.microsoft.com/en-us/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) in PowerShell.
+{% hint style="info" %}
+**Note**
+
+On Windows 8.1 and later you need to run [**Get-WindowsUpdateLog**](https://docs.microsoft.com/en-us/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) in PowerShell.
+{% endhint %}
 
 #### **Updates Failing to Download to a Deployment Package using SCCM Console**
 
@@ -278,11 +287,13 @@ To troubleshoot updates failing to download into a deployment package from the S
 %temp%\PatchDownloader*.log
 ```
 
-> \*\*Note\*\*
->
-> If you are using an RDP session, the \*\*patchdownloader.log\*\* may be in a numbered sub-folder in your \*\*Users\*\* \*\*%temp%\*\* folder.
+{% hint style="info" %}
+**Note**
 
-### **Enable Debug Logging for Publisher**
+If you are using an RDP session, the **patchdownloader.log** may be in a numbered sub-folder in your **Users** **%temp%** folder.
+{% endhint %}
+
+### **Enable Debug Logging for Publisher**&#x20;
 
 Enabling Debug logging in Publisher is often helpful for troubleshooting publishing-related issues.
 
@@ -291,13 +302,13 @@ To enable Debug logging:
 1. Open Publisher.
 2. On the **General** tab, under the **Logging Options** section, select **Debug**
 
-![Selecting 'Debug' under the 'Logging Options' section](/_images/image-(3831).png)
+<figure><img src="../.gitbook/assets/image (3831).png" alt="Selecting &#x27;Debug&#x27; under the &#x27;Logging Options&#x27; section" width="545"><figcaption></figcaption></figure>
 
 3. Click **Save and Close** to close the Publisher.
 4. Open **Services.msc**
 5. Locate the **PatchMyPCService** service, then click **Restart** to restart the service.
 
-![Locating the 'PatchMyPCService' service and restarting it](/_images/image-(3832).png)
+<figure><img src="../.gitbook/assets/image (3832).png" alt="Locating the &#x27;PatchMyPCService&#x27; service and restarting it" width="563"><figcaption></figcaption></figure>
 
 Debug Logging for Publisher is now enabled.
 

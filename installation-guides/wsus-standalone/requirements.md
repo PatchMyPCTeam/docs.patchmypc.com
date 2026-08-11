@@ -6,16 +6,17 @@ description: Requirements for installing WSUS Standalone mode.
 
 _Applies to: On-premises Publisher_
 
-<blockquote class="wp-block-quote">
-<p>Before you get started, make sure you take advantage of our <a href="https://patchmypc.com/free-trial">free trial</a>!</p>
-</blockquote>
+{% hint style="success" %}
+Before you get started, make sure you take advantage of our [free trial](https://patchmypc.com/free-trial)!
+{% endhint %}
 
 Standalone WSUS mode is **only required when you are not using Configuration Manager** for software updates and are **only using WSUS**. When enabled, published third-party updates will appear directly in the WSUS console.&#x20;
 
-<blockquote class="wp-block-quote">
-<p>**Note:**</p>
-<p>To publish updates with the customization options available in the Publisher, you will need the <a href="https://patchmypc.com/frequently-asked-questions#subscription-comparisons">Enterprise Patch subscription level</a>.  &#x20;</p>
-</blockquote>
+{% hint style="info" %}
+**Note:**
+
+To publish updates with the customization options available in the Publisher, you will need the [Enterprise Patch subscription level](https://patchmypc.com/frequently-asked-questions#subscription-comparisons).  &#x20;
+{% endhint %}
 
 When installing the Publisher for **WSUS Standalone**, please ensure you meet the following requirements:
 
@@ -30,9 +31,9 @@ When installing the Publisher for **WSUS Standalone**, please ensure you meet th
   * Windows Server 2012, Windows Server 2016, Windows Server 2019, Windows Server 2022, Windows Server 2025
   * Windows Server Update Services (WSUS) installed and configured
 
-<blockquote class="wp-block-quote">
-<p>The Patch My PC Publisher will require the user launching the Publisher tool to be a local administrator on the server.</p>
-</blockquote>
+{% hint style="info" %}
+The Patch My PC Publisher will require the user launching the Publisher tool to be a local administrator on the server.
+{% endhint %}
 
 ### Hardware:
 

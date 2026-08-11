@@ -6,10 +6,11 @@ Patch My PC (PMPC) Publisher creates various log files to record its activities,
 
 These logs are used when troubleshooting Publisher behavior or when collecting information for support.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Customize Content Download and Log Save Location](../manage/advanced-tab/customize-content-download-log-save-location.md) for details on how to configure logging-related options in Publisher&#x20;</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [Customize Content Download and Log Save Location](../manage/advanced-tab/customize-content-download-log-save-location.md) for details on how to configure logging-related options in Publisher&#x20;
+{% endhint %}
 
 ## PatchMyPC.log
 

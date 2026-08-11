@@ -1,8 +1,3 @@
----
-hidden: true
-noIndex: true
----
-
 # Entra ID Reference
 
 _Applies to: Patch My PC Cloud_

@@ -7,19 +7,27 @@ If a Patch My PC (PMPC) Cloud deployment has been configured to use [ESP Profile
 1. Sign in to the **Intune admin center**
 2.  Navigate to **Devices**<br>
 
-    ![Navigating to "Devices"](/_images/image-(828 "Navigating to \"Devices\"") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (828).png" alt="Navigating to “Devices”"><figcaption></figcaption></figure>
 3.  Navigate to **Enrollment**<br>
 
-    ![Navigating to "Enrollment"](/_images/image-(978 "Navigating to \"Enrollment\"") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (978).png" alt="Navigating to “Enrollment”"><figcaption></figcaption></figure>
+
+
 4.  Scroll down and select **Enrollment Status Page**<br>
 
-    ![Scrolling down and selecting "Enrollment Status Page"](/_images/image-(979 "Scrolling down and selecting \"Enrollment Status Page\"") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (979).png" alt="Scrolling down and selecting “Enrollment Status Page”"><figcaption></figcaption></figure>
+
+
 5.  On the **Enrollment Status Page** click the relevant profile the PMPC Cloud deployment has been added to.<br>
 
-    ![Clicking the relevant profile the PMPC Cloud deployment has been added to](/_images/image-(980 "Clicking the relevant profile the PMPC Cloud deployment has been added to") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (980).png" alt="Clicking the relevant profile the PMPC Cloud deployment has been added to"><figcaption></figcaption></figure>
+
+
 6.  On the _**\<profile\_name>**_ page, navigate to **Manage | Properties**<br>
 
-    ![Navigating to "Manage | Properties"](/_images/image-(981 "Navigating to \"Manage | Properties\"") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (981).png" alt="Navigating to “Manage | Properties”"><figcaption></figcaption></figure>
+
+
 7.  Scroll down to the **Block device use until required apps are installed if they are assigned to the user/device** field. This shows the apps that must be installed before the user can use the device and will include the PMPC Cloud deployment if it was configured correctly.<br>
 
-    ![Scrolling down to the "Block device use until required apps are installed if they are assigned to the user/device field", which shows the apps that must be installed before a user can use the device](/_images/image-(982).png)
+    <figure><img src="../../../.gitbook/assets/image (982).png" alt="Scrolling down to the “Block device use until required apps are installed if they are assigned to the user/device field”, which shows the apps that must be installed before a user can use the device"><figcaption></figcaption></figure>

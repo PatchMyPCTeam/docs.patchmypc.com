@@ -8,17 +8,19 @@ At a high level, Publisher acts as a publishing engine that prepares and deliver
 
 Publisher does not deploy software directly to devices. Instead, it integrates with management platforms (such as Microsoft Intune, WSUS, and ConfigMgr), which remain responsible for policy assignment, update deployment, and device communication.
 
-![High-Level Data Flow](/_images/image-(4209).png)
+<figure><img src="../../.gitbook/assets/image (4209).png" alt="High-Level Data Flow" width="563"><figcaption></figcaption></figure>
 
-The more detailed data flow diagram below illustrates how Publisher integrates with WSUS, ConfigMgr, Intune, PMPC Cloud, vendor content sources, and client devices.
+The more detailed data flow diagram below illustrates how Publisher integrates with WSUS, ConfigMgr, Intune, PMPC Cloud, vendor content sources, and client devices.&#x20;
 
 It represents logical communication flows between components and does not represent firewall rules, network boundaries, or required directional access paths.
 
-> \*\*Note\*\*
->
-> Arrows in the diagram indicate the communication relationships between services. They are intended to show how data moves through the system during publishing, synchronization, and deployment operations. They should not be interpreted as strict one-way connections or prescriptive firewall requirements.
+{% hint style="info" %}
+**Note**
 
-![More detailed data flow diagram](/_images/image-(4167).png)
+Arrows in the diagram indicate the communication relationships between services. They are intended to show how data moves through the system during publishing, synchronization, and deployment operations. They should not be interpreted as strict one-way connections or prescriptive firewall requirements.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (4167).png" alt="More detailed data flow diagram" width="563"><figcaption></figcaption></figure>
 
 ## Core Publishing Flow
 
@@ -32,7 +34,7 @@ When publishing updates to WSUS, Publisher:
 
 * Downloads the update binaries from the vendor.
 * Packages them into a CAB file.
-* Signs the CAB file with the selected code-signing certificate.
+* Signs the CAB file with the selected code-signing certificate.&#x20;
 * Publishes the update into WSUS.
 
 If WSUS is integrated with ConfigMgr, the update is synchronized from WSUS to ConfigMgr during a Software Update Point (SUP) synchronization. Clients receive the update through the standard WSUS or ConfigMgr software update workflow.

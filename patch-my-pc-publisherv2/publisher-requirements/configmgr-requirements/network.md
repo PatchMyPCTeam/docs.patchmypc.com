@@ -13,7 +13,8 @@ If the Publisher is installed on the Site Server, no additional network requirem
 
 **\*** Default dynamic RPC port range.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The Site Server ultimately determines which SMS Provider is contacted. Consideration should be given for all Site Systems that hold the SMS Provider Site System role.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+The Site Server ultimately determines which SMS Provider is contacted. Consideration should be given for all Site Systems that hold the SMS Provider Site System role.
+{% endhint %}

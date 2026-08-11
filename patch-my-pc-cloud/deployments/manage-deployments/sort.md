@@ -6,14 +6,16 @@ To sort Deployments in Patch My PC (PMPC) Cloud:
 
 On the **Deployments** page, click the relevant column heading to sort the entries by this column.
 
-![Sorting deployments by clicking the relevant column heading.](/_images/image-(1332).png)
+<figure><img src="../../../.gitbook/assets/image (1332).png" alt="Sorting deployments by clicking the relevant column heading."><figcaption></figcaption></figure>
 
 The column heading will be highlighted and a small arrow will show you whether the results are displayed in ascending or descending order.
 
-![Arrow showing the sort order](/_images/image-(1333).png)
+<figure><img src="../../../.gitbook/assets/image (1333).png" alt="Arrow showing the sort order"><figcaption></figcaption></figure>
 
 To sort by a different column, just click the column name.
 
-> \*\*Note\*\*
->
-> In the current release, you can only sort by certain columns.
+{% hint style="info" %}
+**Note**
+
+In the current release, you can only sort by certain columns.
+{% endhint %}

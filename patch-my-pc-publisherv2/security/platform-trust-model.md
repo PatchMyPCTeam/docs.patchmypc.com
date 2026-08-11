@@ -61,10 +61,11 @@ For ConfigMgr applications, the trust model differs from software updates. Appli
 
 The Publisher communicates with ConfigMgr using the ConfigMgr SDK and interacts with the SMS Provider, following standard management practice. All operations occur through supported APIs and respect ConfigMgr’s role-based access control model.&#x20;
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The Publisher does not interact directly with the ConfigMgr site database, except for read-only access when [scanning application inventory](../administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md).</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+The Publisher does not interact directly with the ConfigMgr site database, except for read-only access when [scanning application inventory](../administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md).
+{% endhint %}
 
 When the Publisher service is installed on the ConfigMgr site server, it runs under the Local System account. In this configuration, the service inherently has the necessary permissions to interact with ConfigMgr because the site server’s computer account is already trusted within the ConfigMgr security boundary. No additional role configuration is typically required.
 

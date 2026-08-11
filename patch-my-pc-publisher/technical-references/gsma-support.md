@@ -54,10 +54,11 @@ The gMSA requires read and write access to the ConfigMgr content source folder c
 
 This access must be granted at both the share and NTFS permission levels.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [ConfigMgr Connection and Source Options](../manage/configmgr-apps-tab/base-install-options/connection-source-options.md) for more information.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [ConfigMgr Connection and Source Options](../manage/configmgr-apps-tab/base-install-options/connection-source-options.md) for more information.
+{% endhint %}
 
 ### WSUS and Certificate Access
 
@@ -82,10 +83,11 @@ When Publisher is installed remotely, configure a separate account for the SMS P
 
 This account must be granted the required ConfigMgr security role, security scopes, and collection access for the actions Publisher needs to perform.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [ConfigMgr Permission Requirements](../requirements/configmgr-requirements/permissions.md) for more information.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [ConfigMgr Permission Requirements](../requirements/configmgr-requirements/permissions.md) for more information.
+{% endhint %}
 
 ### SUSDB
 
@@ -105,7 +107,8 @@ If the ConfigMgr database scan wizard is used, grant the gMSA the required SELEC
 
 These permissions allow Publisher to read the ConfigMgr database views needed to identify supported products and related inventory data.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>See [Scan ConfigMgr](../manage/configmgr-apps-tab/scan-configmgr.md) for more information.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+See [Scan ConfigMgr](../manage/configmgr-apps-tab/scan-configmgr.md) for more information.
+{% endhint %}

@@ -8,17 +8,19 @@ I am trying to delete an app from the Patch My PC (PMPC) Cloud App Catalog.
 
 But when I click on the app and open its properties, the **Delete** option is greyed out.
 
-![](/_images/image-(2654).png)
+<figure><img src="../../../.gitbook/assets/image (2654).png" alt=""><figcaption></figcaption></figure>
 
 ### CAUSE
 
 This is because the app has one or more active deployments. You cannot delete an app that has active deployments.
 
-> \*\*Tip\*\*
->
-> If you put your mouse over the \*\*Delete\*\* button, the mouseover text actually tells you:
->
-> \*\*This app has deployments. Please delete those first.\*\*
+{% hint style="success" %}
+**Tip**
+
+If you put your mouse over the **Delete** button, the mouseover text actually tells you:
+
+**This app has deployments. Please delete those first.**
+{% endhint %}
 
 ### RESOLUTION
 

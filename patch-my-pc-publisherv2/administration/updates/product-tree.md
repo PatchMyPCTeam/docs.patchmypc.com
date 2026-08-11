@@ -6,15 +6,17 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The product tree is where you choose which updates the Publisher should publish, and keep up to date, in your environment. It’s a hierarchical view that lets you enable updates at different levels of granularity, from all products down to individual products.
 
-> \*\*Tip\*\*
->
-> For more detail on product naming conventions in the product tree, refer to \[Catalog Information]\(../../publisher-reference/catalog-information.md).
+{% hint style="success" %}
+**Tip**
+
+For more detail on product naming conventions in the product tree, refer to [Catalog Information](../../publisher-reference/catalog-information.md).
+{% endhint %}
 
 ## Product Tree Structure
 
 The product tree can be expanded or collapsed to three main levels:
 
-![Product tree structure](/_images/image-(427 "Product tree structure") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (427).png" alt="Product tree structure" width="544"><figcaption></figcaption></figure>
 
 1. **All Products**
    * The root of the tree.
@@ -52,15 +54,17 @@ In the example below, **8x8 Quality Management (MSI-x86)(Full Content)** demonst
 
 In contrast, "Adobe Systems, Inc." demonstrates a vendor-level selection. The Adobe vendor checkbox shows a full checkmark rather than a dash (indeterminate state). This indicates that all products under the Adobe vendor are selected.
 
-![Product Tree selection granularity](/_images/image-(428 "Product Tree selection granularity") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (428).png" alt="Product Tree selection granularity" width="545"><figcaption></figcaption></figure>
 
 ## Which Products should I Select?
 
 ### All Products Level
 
-> \*\*Important\*\*
->
-> It’s \*\*not recommended\*\* to select All Products for publishing in most environments. The Patch My PC catalog contains far more products than are typically installed in any single organization, and selecting \_everything\_ can lead to unnecessary publishing, storage consumption, and administrative overhead.
+{% hint style="warning" %}
+**Important**
+
+It’s **not recommended** to select All Products for publishing in most environments. The Patch My PC catalog contains far more products than are typically installed in any single organization, and selecting _everything_ can lead to unnecessary publishing, storage consumption, and administrative overhead.
+{% endhint %}
 
 There is only one scenario when selecting All Products might be useful **but only** if you combine it with the [right-click customization option](../../customizations-right-click-options/) to publish metadata-only (not full content).
 
@@ -74,11 +78,13 @@ This allows you to make informed decisions later about which products should be 
 
 ### Vendor Level
 
-Selecting a vendor on the Updates tab is acceptable when you are confident that the vendor has broad coverage in your environment. For example, organizations with widespread Adobe usage may reasonably choose to select the Adobe vendor rather than managing each product individually.
+Selecting a vendor on the Updates tab is acceptable when you are confident that the vendor has broad coverage in your environment. For example, organizations with widespread Adobe usage may reasonably choose to select the Adobe vendor rather than managing each product individually.&#x20;
 
-> \*\*Important\*\*
->
-> Products marked with \*\*Latest\*\* in the update name will always update a client to the \*\*vendor’s latest major version\*\*.
+{% hint style="warning" %}
+**Important**
+
+Products marked with **Latest** in the update name will always update a client to the **vendor’s latest major version**.
+{% endhint %}
 
 #### (Latest) Version Consideration
 
@@ -89,9 +95,9 @@ In the example below, selecting **Cisco Jabber Latest (MSI-x86)(Full Content)** 
   * The upgrade introduces breaking changes
   * Compatibility with other systems is not yet confirmed
 
-![Vendor level selection consideration](/_images/image-(429).png)
+<figure><img src="../../../.gitbook/assets/image (429).png" alt="Vendor level selection consideration" width="545"><figcaption></figcaption></figure>
 
-In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](product-tree.md#product-level-recommended) provides significantly more control over update behavior and helps avoid unintended major version upgrades. If your environment standardizes on Jabber 14.x, selecting a Latest product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.
+In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](product-tree.md#product-level-recommended) provides significantly more control over update behavior and helps avoid unintended major version upgrades. If your environment standardizes on Jabber 14.x, selecting a Latest product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.&#x20;
 
 For this reason, product-level selection is often the safer and more predictable approach, especially for applications where major upgrades introduce functional changes or require additional validation.
 
@@ -117,13 +123,13 @@ In WSUS-only environments, where hardware inventory data is not available, metad
 
 Within the Publisher, the product tree uses visual indicators to highlight when additional attention or configuration is required before an app or update can be published successfully. These icons are designed to make potential blockers obvious at a glance.
 
-### **Manage Conflicting Processes**
+### ![](<../../../.gitbook/assets/image (430).png>) **Manage Conflicting Processes**
 
 A blue cross icon indicates that the application has **conflicting running processes** that must be handled during installation or upgrade. The appliction being upgraded on the client must be **closed** for a successful install, upgrade, or repair.
 
 When a product that contains conflicting processes is selected, the **Manage Conflicting Processes** [customization](../../customizations-right-click-options/) option is automatically enabled. By default, this is set to **Skip installation when conflicting processes are in use**, ensuring that updates do not fail or forcibly interrupt users if the application is currently running. This default provides a safe and predictable upgrade path and can be adjusted if a different behavior is required, like prompting the user to close the open application before the update installation begins.
 
-### **Customer-Provided Installer Required**
+### ![](<../../../.gitbook/assets/image (431).png>) **Customer-Provided Installer Required**
 
 The blue download arrow means that **Publisher cannot automatically download the installer binary** from the vendor and customer action is required.
 
@@ -141,6 +147,8 @@ For step-by-step guidance, refer to:
 
 These pages explains how to store and reference customer-provided binaries so the Publisher can consume them during publishing.
 
-> \*\*Note\*\*
->
-> This feature is also referred to as "Binary free apps" and leverages the "Local Content Repository".
+{% hint style="info" %}
+**Note**
+
+This feature is also referred to as "Binary free apps" and leverages the "Local Content Repository".
+{% endhint %}

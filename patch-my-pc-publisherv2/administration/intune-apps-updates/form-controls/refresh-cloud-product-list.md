@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-## &#x20;Overview
+## ![](<../../../../.gitbook/assets/image (505).png>) Overview
 
 The **Refresh Cloud Product List** form control refreshes the list of custom products displayed in the **All Custom Products** [product tree](../product-tree.md). This list includes applications that were created as [Custom Apps in a Patch My PC Cloud company](https://docs.patchmypc.com/patch-my-pc-cloud/custom-apps) and synchronized to the Publisher.
 

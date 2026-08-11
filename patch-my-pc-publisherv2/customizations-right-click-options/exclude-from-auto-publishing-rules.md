@@ -1,12 +1,12 @@
 # Exclude from Auto-Publishing Rules
 
 _Applies to: Patch My PC Publisher V2.x_\
-_&#x41;vailable at level: Vendor, Product_\
-_&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_Available at level: Vendor, Product_\
+_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Exclude from Auto-Publishing Rules** option allows you to prevent specific vendors or products from being automatically enabled for publishing by the Publishers auto-publishing logic.
 
-![Exclude from Auto-Publishing Rules](/_images/image-(4066).png)
+<figure><img src="../../.gitbook/assets/image (4066).png" alt="Exclude from Auto-Publishing Rules" width="563"><figcaption></figcaption></figure>
 
 This is useful when you want to maintain full manual control over which applications or updates are enabled, even when inventory-based auto-publishing rules are in use.
 
@@ -21,6 +21,8 @@ Auto-publishing can be configured independently on each supported tab using the 
 
 The **Exclude from Auto-Publishing Rules** right-click option acts as an explicit override. When applied, the selected vendor or product will never be automatically enabled, even if auto-publishing is configured and the device threshold is met.
 
-> \*\*Important\*\*
->
-> Vendor level exclusion applies only to products that exist at the time the exclusion is configured. Any new products added to the Patch My PC catalog for that vendor in the future are not excluded automatically and must be reviewed and excluded manually if needed.
+{% hint style="warning" %}
+**Important**
+
+Vendor level exclusion applies only to products that exist at the time the exclusion is configured. Any new products added to the Patch My PC catalog for that vendor in the future are not excluded automatically and must be reviewed and excluded manually if needed.
+{% endhint %}

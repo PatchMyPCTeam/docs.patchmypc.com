@@ -2,17 +2,19 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-## Overview
+## ![](<../../../../.gitbook/assets/image (449).png>) Overview
 
 The **Scan ConfigMgr Database for Supported Products** form control requires access to your ConfigMgr site database to inventory installed applications, via a Hardware Inventory Collection (HINV) and determine which third-party products are present in your environment. The scan results are then compared against the Patch My PC catalog to identify matches, helping you make informed decisions about which products to enable on the **ConfigMgr Apps** tab for deploying newer versions of those applications through Software Center, task sequences, or manual deployments.
 
-![Scan ConfigMgr Database for Supported Products](/_images/image-(4095).png)
+<figure><img src="../../../../.gitbook/assets/image (4095).png" alt="Scan ConfigMgr Database for Supported Products" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> The \*\*Scan ConfigMgr Database for Supported Products\*\* form control is shared with the same form control available on the Updates tab and behaves identically in both locations. As a result, the form control on the ConfigMgr Apps tab can be used to configure and control auto-publishing behavior on the ConfigMgr Apps tab, and vice versa.
->
-> While the form control itself is shared, manually selecting products in the \[query]\(scan-configmgr-database-for-supported-products.md#query) results only enables them on the tab from which the form was launched. For example, launching the scan wizard from the Updates tab enables products for updates, whereas launching it from the ConfigMgr Apps tab enables products as applications.
+{% hint style="info" %}
+**Note**
+
+The **Scan ConfigMgr Database for Supported Products** form control is shared with the same form control available on the Updates tab and behaves identically in both locations. As a result, the form control on the ConfigMgr Apps tab can be used to configure and control auto-publishing behavior on the ConfigMgr Apps tab, and vice versa.
+
+While the form control itself is shared, manually selecting products in the [query](scan-configmgr-database-for-supported-products.md#query) results only enables them on the tab from which the form was launched. For example, launching the scan wizard from the Updates tab enables products for updates, whereas launching it from the ConfigMgr Apps tab enables products as applications.
+{% endhint %}
 
 ## SQL Configuration
 
@@ -22,25 +24,27 @@ To configure the scan, the Publisher needs the site database server name and dat
 
 Administration > Monitoring > System Status > Site Status
 
-![](/_images/image-(451) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (451).png" alt="Administration > Monitoring > System Status > Site Status" width="563"><figcaption></figcaption></figure>
 
 Select the Site Database Server site system role. The details shown here provide the correct values to enter into Publisher.
 
-![SQL Configuration](/_images/image-(4098).png)
+<figure><img src="../../../../.gitbook/assets/image (4098).png" alt="SQL Configuration" width="563"><figcaption></figcaption></figure>
 
 By default, no device collection is specified. When this field is left empty, the scan for supported products runs against **All Systems**.
 
 Optionally, you can limit the scan scope by selecting a specific **device collection** using the browse button.
 
-> \*\*Note\*\*
->
-> When a device collection is selected, only the \*\*hardware inventory (HINV)\*\* data for devices within that collection is evaluated. This can significantly reduce scan time in large environments or when you want to validate a specific subset of devices rather than scanning the entire estate.
+{% hint style="info" %}
+**Note**
+
+When a device collection is selected, only the **hardware inventory (HINV)** data for devices within that collection is evaluated. This can significantly reduce scan time in large environments or when you want to validate a specific subset of devices rather than scanning the entire estate.
+{% endhint %}
 
 ### Database Authentication
 
 The **Scan ConfigMgr Database for Supported Products** form control runs direct SQL queries against your ConfigMgr site database to inventory installed software. This scan _does not_ use the SMS Provider, so the account performing the scan must have the appropriate SQL permissions on the ConfigMgr database.
 
-![SQL Database Authentication](/_images/image-(4099).png)
+<figure><img src="../../../../.gitbook/assets/image (4099).png" alt="SQL Database Authentication" width="563"><figcaption></figcaption></figure>
 
 The Publisher supports multiple ways to authenticate to SQL, allowing flexibility depending on where Publisher is installed and which account has the required permissions.
 
@@ -54,9 +58,11 @@ This option uses the account under which the Publisher service is running. By de
 * Uses Windows authentication.
 * No credentials need to be entered.
 
-> \*\*Note\*\*
->
-> When the Publisher is installed on the ConfigMgr site server, the \*\*SYSTEM\*\* account typically already has the required read permissions on the ConfigMgr database views. In most environments, no additional SQL configuration is required.
+{% hint style="info" %}
+**Note**
+
+When the Publisher is installed on the ConfigMgr site server, the **SYSTEM** account typically already has the required read permissions on the ConfigMgr database views. In most environments, no additional SQL configuration is required.
+{% endhint %}
 
 #### **With these credentials using SQL authentication**
 
@@ -74,9 +80,11 @@ When enabled, the scan runs using the currently logged-in user’s Windows crede
 * Helpful when testing access before granting permissions to the service account
 * Requires the logged-in user to have the necessary SQL SELECT permissions on the required ConfigMgr views.
 
-> \*\*Important\*\*
->
-> This option does not change how scheduled scans run, it only applies to the interactive scan being executed.
+{% hint style="warning" %}
+**Important**
+
+This option does not change how scheduled scans run, it only applies to the interactive scan being executed.
+{% endhint %}
 
 ### SQL Permissions Required
 
@@ -108,9 +116,11 @@ To grant access, add the computer account (for example, DOMAIN\PUBLISHER01$) or 
 
 If the required SQL permissions are not already in place, one option is to provide the following SQL query to your SQL administrator to run against the ConfigMgr site database.
 
-> \*\*Tip\*\*
->
-> Before running this script, update the \*\*database name\*\* specified in the \`USE\` statement and replace the account value assigned to the \`@UserName\` variable with the appropriate computer or user account for your environment.
+{% hint style="success" %}
+**Tip**
+
+Before running this script, update the **database name** specified in the `USE` statement and replace the account value assigned to the `@UserName` variable with the appropriate computer or user account for your environment.
+{% endhint %}
 
 ```sql
 -- Replace CM_LA2 with the database name for your Configuration Manager environment
@@ -150,7 +160,7 @@ Alternatively, you can manually assign the required permissions using SQL Server
 2. Connect to the SQL Server hosting the ConfigMgr site database.
 3. Authenticate using an account with permissions to manage logins and database security.
 
-![Authenticate and Connect to via SSMS](/_images/image-(454 "Authenticate and Connect to via SSMS") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (454).png" alt="Authenticate and Connect to via SSMS" width="373"><figcaption></figcaption></figure>
 
 4. In **Object Explorer**, expand **Security > Logins**.
 5. Check whether the login already exists:
@@ -171,7 +181,7 @@ Alternatively, you can manually assign the required permissions using SQL Server
 14. In the **database role membership** section, leave all roles **unchecked** (no database roles are required).
 15. Click **OK** to save the changes.
 
-![User Mapping](/_images/image-(455 "User Mapping") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (455).png" alt="User Mapping" width="531"><figcaption></figcaption></figure>
 
 16. Expand **Databases > CM\_\<SiteCode> > Views**
 17. For each required view:
@@ -194,17 +204,19 @@ The example below shows how SELECT permission is granted on the v\_Add\_Remove\_
 
 In this case, the account LAB2\Administrator has been added to the view’s Permissions page. With the account selected, the SELECT permission is explicitly granted, allowing the Publisher to read data from this view during the scan.
 
-![SQL Select Permission](/_images/image-(456 "SQL Select Permission") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (456).png" alt="SQL Select Permission" width="531"><figcaption></figcaption></figure>
 
 ## Auto-Publishing Rules
 
 Auto-publishing rules allow the Publisher to automatically enable products for publishing based on what is detected in your ConfigMgr environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party updates current. When these rules are enabled, the Publisher evaluates application inventory data collected by ConfigMgr, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
 
-> \*\*Important\*\*
->
-> These rules rely on the same ConfigMgr database access and SQL permissions described earlier in this document under \[Database Authentication]\(scan-configmgr-database-for-supported-products.md#database-authentication).
+{% hint style="warning" %}
+**Important**
 
-![Auto-Publishing Rules](/_images/image-(4100).png)
+These rules rely on the same ConfigMgr database access and SQL permissions described earlier in this document under [Database Authentication](scan-configmgr-database-for-supported-products.md#database-authentication).
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/image (4100).png" alt="Auto-Publishing Rules" width="563"><figcaption></figcaption></figure>
 
 Auto-publishing rules are evaluated during scheduled [**synchronizations**](../../sync-schedule.md). Each time a sync runs, the Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
 
@@ -244,9 +256,11 @@ This option is typically used in environments that want **application lifecycle 
 
 Patch My PC releases approximately 100 new applications per month, so it’s entirely possible for a scheduled scan to detect multiple new products. When low device thresholds are used, auto-publishing can enable these products very quickly, ensuring new additions don’t go unnoticed. However, this speed should be balanced with operational readiness, as downstream processes such as Automatic Deployment Rules (ADRs), testing, and change control may not be prepared for a sudden influx of updates, particularly when ADRs are broadly scoped and evaluate new content with little or no delay.
 
-> \*\*Caution\*\*
->
-> While it may be tempting to set the device threshold to a very low number, even 1, this is generally not recommended for most environments. This would be especially impactful for new customers who have not yet reviewed and enabled products in the product tree, as a very low threshold can cause newly discovered applications to be enabled simultaneously, potentially resulting in a large number of updates being synchronized at once.
+{% hint style="danger" %}
+**Caution**
+
+While it may be tempting to set the device threshold to a very low number, even 1, this is generally not recommended for most environments. This would be especially impactful for new customers who have not yet reviewed and enabled products in the product tree, as a very low threshold can cause newly discovered applications to be enabled simultaneously, potentially resulting in a large number of updates being synchronized at once.
+{% endhint %}
 
 A common and effective approach is:
 
@@ -271,7 +285,7 @@ The filters section lets you narrow the scan results shown in the list below, ma
 
 These filters do not affect detection or auto-publishing behavior directly, they only control what is displayed, helping you validate and review scan results before taking action.
 
-![Available Filters](/_images/image-(4101).png)
+<figure><img src="../../../../.gitbook/assets/image (4101).png" alt="Available Filters" width="563"><figcaption></figcaption></figure>
 
 ## Query
 
@@ -284,21 +298,23 @@ When clicked, the Publisher queries the ConfigMgr site database and displays the
 
 The Query button does not enable or publish products by itself, it simply retrieves and displays the results based on the current settings, allowing you to review and validate findings before taking further action.
 
-![Query Results](/_images/image-(4102).png)
+<figure><img src="../../../../.gitbook/assets/image (4102).png" alt="Query Results" width="563"><figcaption></figcaption></figure>
 
 Selecting products from this list is equivalent to manually selecting the same products in the [product tree](../product-tree.md) on the [ConfigMgr Apps](../) tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
 
-> \*\*Important\*\*
->
-> Because there is no universal standard for how vendors name applications, inventory results cannot always distinguish between multiple variants of the same product. For example, if 7-Zip (x64) is detected in the ConfigMgr HINV, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.
+{% hint style="warning" %}
+**Important**
+
+Because there is no universal standard for how vendors name applications, inventory results cannot always distinguish between multiple variants of the same product. For example, if 7-Zip (x64) is detected in the ConfigMgr HINV, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.
+{% endhint %}
 
 ### Count
 
 The **Count** value shown for each matched product is clickable. Selecting the count opens a detailed view that lists the devices where the product was detected, along with the reported application version on each device.
 
-![Clicking device count value](/_images/image-(4135).png)
+<figure><img src="../../../../.gitbook/assets/image (4135).png" alt="Clicking device count value" width="450"><figcaption></figcaption></figure>
 
-This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.
+This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.&#x20;
 
 Clicking **Export CSV** will generated CSV file includes the following columns:
 
@@ -315,17 +331,18 @@ Clicking **Export CSV** will generated CSV file includes the following columns:
 
 The **Export to CSV** button allows you to export the results from the Scan ConfigMgr Database for Supported Products window to a CSV file.
 
-![Export CSV](/_images/image-(4132).png)
+<figure><img src="../../../../.gitbook/assets/image (4132).png" alt="Export CSV" width="563"><figcaption></figcaption></figure>
 
 To export the results to a CSV:
 
 1. Run a [query](scan-configmgr-database-for-supported-products.md#query) so that results are displayed in the window and click Export to CSV.
 2. When prompted, click **Yes** to export only products that match the current filter or click **No** to export the full unfiltered results.
 
-![Apply filter to expoerted data prompt](/_images/image-(4133).png)
+<figure><img src="../../../../.gitbook/assets/image (4133).png" alt="Apply filter to expoerted data prompt" width="300"><figcaption></figcaption></figure>
 
-3. Select the save location and enter a different file name if required,
+3. Select the save location and enter a different file name if required,&#x20;
 
-![Select the save location](/_images/image-(4134).png)
+<figure><img src="../../../../.gitbook/assets/image (4134).png" alt="Select the save location" width="563"><figcaption></figcaption></figure>
 
 3. Save to complete the export.
+

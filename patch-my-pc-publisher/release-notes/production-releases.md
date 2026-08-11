@@ -1,21 +1,10 @@
-# Production Releases of Patch My PC Publisher
+# Production Releases  of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V2.x and 3.x_
 
 Details the production release history for Patch My PC (PMPC) Publisher, the most recent release being shown first.
 
 ## 3.0.4.0 - 2026-08-10
-
-<details>
-
-<summary>Fixes</summary>
-
-* Fixes generic settings "File may be locked" error and replaces it with more descriptive error message.
-* Fixes configmgr user-based apps always installing as SYSTEM
-
-</details>
-
-## 3.0.3.0 - 2026-08-03
 
 <details>
 
@@ -182,7 +171,7 @@ User Interface
 
 <summary>Fixes</summary>
 
-* Revert a change causing a notification with message 'Update complete', '\<app name> update complete', or similar to appear.
+* Revert a change causing a notification with message 'Update complete', '\<app name> update complete', or similar to appear.&#x20;
 
 </details>
 
@@ -257,6 +246,8 @@ User Interface
 
 </details>
 
+
+
 ## 2.1.114.0 - 2026-04-03
 
 <details>
@@ -268,6 +259,8 @@ User Interface
 * Fix a bug causing some Intune Dynamic Assignments to fail to parse from settings.xml. An error message in the log containing “Sequence contains no matching elements” indicates if this bug was encountered. This release will automatically restore missing Intune Dynamic Assignments from backup settings.
 
 </details>
+
+
 
 ## 2.1.112.0 - 2026-03-25
 
@@ -507,7 +500,7 @@ User Interface
 
 <summary>Improvements</summary>
 
-* Publisher improved handling of missing v\_Add\_Remove\_Programs ConfigMgr view
+* Publisher improved handling of missing v\_Add\_Remove\_Programs ConfigMgr view&#x20;
 
 </details>
 
@@ -515,8 +508,8 @@ User Interface
 
 <summary>Fixes</summary>
 
-* Fix a bug where some PS scripts can hang
-* Fixed bug affecting Intune apps export
+* Fix a bug where some PS scripts can hang&#x20;
+* Fixed bug affecting Intune apps export&#x20;
 * Fixing UI bug where user couldn't save webhooks without unselecting one of the scope items
 
 </details>
@@ -528,7 +521,7 @@ User Interface
 <summary>Fixes</summary>
 
 * Fixed a bug where the list of selected products was copied between Intune tenants when you have the filter option enabled and you switch tenants.
-* Fixed an issue where WSUS Options could not be opened in Publisher if SmsProvider was not configured in Publisher settings.
+* Fixed an issue where WSUS Options could not be opened in Publisher if SmsProvider was not configured in Publisher settings.&#x20;
 * Fixed a bug where the Publisher may select the incorrect SMS\_Content instance in some cases when searching for a previous ConfigMgr application.
 
 </details>
@@ -601,8 +594,8 @@ User Interface
 
 <summary>Improvements</summary>
 
-* When processing a ConfigMgr app, the Publisher will validate that the PackageId found in a package.xml maps to an application deployment type with a matching content source path.
-* If a ConfigMgr application copy fails, the left-behind content is also removed.
+* When processing a ConfigMgr app, the Publisher will validate that the PackageId found in a package.xml maps to an application deployment type with a matching content source path.&#x20;
+* If a ConfigMgr application copy fails, the left-behind content is also removed.&#x20;
 
 </details>
 
@@ -658,9 +651,9 @@ User Interface
 Support applications in the catalog that download a zip file.
 
 * Idea: [PATCHMYPC-I-1463](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1463)
-* Note: Additional backend and procedural changes are needed before this will be used. The Publisher can consume a catalog with software that downloads a zip file. We will not add any products like this until Q1-Q2 2025.
+* Note: Additional backend and procedural changes are needed before this will be used. The Publisher can consume a catalog with software that downloads a zip file. We will not add any products like this until Q1-Q2 2025.&#x20;
 * Scriptrunner will now expand environment variables provided in custom command line arguments.
-* Add support for Patch My PC to configure the ‘Run installation and uninstall program as 32-bit process on 64-bit clients’ option within ConfigMgr. This will not be a customer exposed option in the Publisher, but something that Patch My PC can set to ensure applications install as expected.
+* Add support for Patch My PC to configure the ‘Run installation and uninstall program as 32-bit process on 64-bit clients’ option within ConfigMgr. This will not be a customer exposed option in the Publisher, but something that Patch My PC can set to ensure applications install as expected.&#x20;
 
 </details>
 
@@ -695,10 +688,10 @@ Support applications in the catalog that download a zip file.
 * The test email for SMTP configuration had a blank subject and body.
 * Fixed a bug causing the Manage Assignments form to hang while resolving Entra group names in some scenarios.
 * Fixed a bug where the Publisher would include non-Windows applications in the scan results for Intune auto publishing.
-* Fixed a bug that caused webhook summary notifications not to respect the tenant filter.
+* Fixed a bug that caused webhook summary notifications not to respect the tenant filter.&#x20;
 * Fixed a bug that caused the Publisher to attempt to code sign Patch My PC defined scripts when the code signing option was disabled in the Publisher.
-* Fixed a bug that caused the install time offset for Intune assignments to be displayed incorrectly in some cultures.
-* Fixed a bug where cloud Product Selections were only displayed in the Publisher if the product was both deployed in the cloud, and selected in the Publisher. Products which are not selected in the Publisher will now properly show as managed by the cloud if a deployment exists.
+* Fixed a bug that caused the install time offset for Intune assignments to be displayed incorrectly in some cultures.&#x20;
+* Fixed a bug where cloud Product Selections were only displayed in the Publisher if the product was both deployed in the cloud, and selected in the Publisher. Products which are not selected in the Publisher will now properly show as managed by the cloud if a deployment exists.&#x20;
 
 </details>
 
@@ -724,7 +717,7 @@ Support applications in the catalog that download a zip file.
 
 * Fixed a bug that caused the synchronization to stop if a tenant failed authentication. This impacted the Publisher with an MSP license and a multi-tenant setup.
 * Fixed a discrepancy between the PowerShell detection scripts and the ScriptRunner detection logic.
-* Fixed a bug with the filtering options for webhook notifications. The notifications should now be correctly filtered when the summary option and scope are set. For example, ‘Send alerts as each product is published…’ is unchecked, and only ‘Include Intune update notifications’ is checked.
+* Fixed a bug with the filtering options for webhook notifications. The notifications should now be correctly filtered when the summary option and scope are set. For example, ‘Send alerts as each product is published…’ is unchecked, and only ‘Include Intune update notifications’ is checked.&#x20;
 
 </details>
 
@@ -762,7 +755,7 @@ Support applications in the catalog that download a zip file.
 <summary>Fixes</summary>
 
 * Fix a bug that caused republishing a custom ConfigMgr application with additional files to fail in some scenarios.
-* Fixed a bug where the return codes in settings could be duplicated if the treeview was refreshed, or you switch tenants in a multi-tenant setup.
+* Fixed a bug where the return codes in settings could be duplicated if the treeview was refreshed, or you switch tenants in a multi-tenant setup.&#x20;
 * Update Intune detection to account for registry detection checking for a nonexistent property. We now allow a NotEquals check for a property that might not exist. Previously, this would cause an unhandled exception.
 
 </details>
@@ -842,7 +835,7 @@ Support applications in the catalog that download a zip file.
 * Improve our regex usage in the detection of applications published by Patch My PC.
   * The regex string is now stored in base64 in the PowerShell script to prevent Intune from clobbering UTF8 characters.
 * Enable the ‘[Manage Installation Logging](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#install-logging)‘ option at the root of Customer Apps if at least one product supports it.
-* Enable the ‘[Manage application update and retention](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#new-application)‘ option for Custom apps on the ConfigMgr tab.
+* Enable the ‘[Manage application update and retention](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#new-application)‘ option for Custom apps on the ConfigMgr tab.&#x20;
 
 </details>
 
@@ -933,10 +926,10 @@ Support applications in the catalog that download a zip file.
 
 * Improve how the list of custom products is queried from the cloud.
 * Improve the cloud connection flow to account for the EU region.
-* Various typo corrections in the UI and in the log.
+* Various typo corrections in the UI and in the log.&#x20;
 * Improve logging for retained ConfigMgr applications.
-* Expand out aggregate exceptions when they are logged.
-* Improved user experience both for a disconnected cloud configuration and an empty custom app list.
+* Expand out aggregate exceptions when they are logged.&#x20;
+* Improved user experience both for a disconnected cloud configuration and an empty custom app list.&#x20;
 * Use less memory when uploading .intunewin files to Intune.
 * Improve the user experience when the ConfigApi is not available
   * The UI can now start without the ConfigApi being available. A popup message will still appear indicating it cannot be reached.
@@ -955,7 +948,7 @@ Support applications in the catalog that download a zip file.
 * Fixed a bug that caused some right-click options to not clear their state as expected for custom apps.
 * Editing Manage Conflicting Process options did not light up the Apply button.
 * Fixed a bug that caused the Publisher to fail to retry when uploading chunks to Azure.
-* Fixed a bug where a custom application download may compare hash against an older version of the custom application’s hash.
+* Fixed a bug where a custom application download may compare hash against an older version of the custom application’s hash.&#x20;
 * Fixed a bug that caused the treeview to have a yellow background, as if no products are selected, even when products were selected.
 
 </details>
@@ -1063,7 +1056,7 @@ Support applications in the catalog that download a zip file.
 
 <summary>Fixes</summary>
 
-* Fixed a bug where the wrong ID property was shown in the ‘[Show Package Info](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#PackageInfo)‘ tool for the update ID.
+* Fixed a bug where the wrong ID property was shown in the ‘[Show Package Info](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#PackageInfo)‘  tool for the update ID.
 * Fixed a bug where Manage Conflicting Processes may be enabled if [‘Add the executable name in the deployment type’s install behavior’](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#install-behavior) is enabled. This is unexpected behavior that will no longer occur.
 * Fixed a bug where multiple threads could access some components of settings at the same time, causing a race condition.
 * Fixed a bug where the ‘Change Visibility’ option for WSUS updates would not work if the WSUS DB is called something other than SUSDB.
@@ -1124,7 +1117,7 @@ Support applications in the catalog that download a zip file.
 
 * The Update ID is now an available column in the [Show package info](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#PackageInfo) tool.
 * Updated some graph calls to use a smaller page size. This reduces the chance of receiving a 429 or 503 response from graph.
-  * The page size is configurable from 20-999 in the Advanced tab of the Publisher.
+  * The page size is configurable from 20-999 in the Advanced tab of the Publisher.&#x20;
 * The product treeviews are now sorted by Vendor and then Product Name automatically.
 
 </details>
@@ -1185,17 +1178,17 @@ Support applications in the catalog that download a zip file.
 
 <summary>Fixes</summary>
 
-* Fixed a bug where PowerShell scripts for Intune were created with an encoding of UTF8 with BOM. They are now encoded as UTF8 without BOM, which is the recommended encoding based on Microsoft documentation.
-* Fixed a bug where a malformed ConfigMgr folder item (SMS\_ObjectContainerItem) would be created the first time the Publisher moved a ConfigMgr application. The result was a folder that could never be deleted.
-* Fixed a bug where having a product marked with exclude from auto-publishing rules and a custom naming convention or pause set would cause invalid XML to be generated.
-* Fixed a bug where the Collect Logs feature would fail if a company name contained characters that are invalid for file names.
-* Fixed a bug where PatchMyPC Scriptrunner logging did not use an invariant datetime format. This could cause CMTrace to fail to parse the logs.
-* Fixed a bug where an exception may occur if deleting a large number of Intune Applications using the Intune Application Manager Utility
-* Fixed a bug where some data exports would result in malformed date time strings. This occurred if a culture used the same character for the number group separator and for time parts.
-* Fixed a bug where ConfigMgr detection script logging did not use an invariant date-time format. This could cause CMTrace to fail to parse the logs.
-* Fixed a bug where Manage Conflicting Process logging did not use an invariant date-time format. This could cause CMTrace to fail to parse the logs.
-* Fixed a bug where the option to abort an uninstall if the prescript failed caused an argument parsing exception.
-* Fixed a bug where the automatic backup of setting changes would fail in certain cultures due to a date-time parsing issue.
+* Fixed a bug where PowerShell scripts for Intune were created with an encoding of UTF8 with BOM. They are now encoded as UTF8 without BOM, which is the recommended encoding based on Microsoft documentation.&#x20;
+* Fixed a bug where a malformed ConfigMgr folder item (SMS\_ObjectContainerItem) would be created the first time the Publisher moved a ConfigMgr application. The result was a folder that could never be deleted.&#x20;
+* Fixed a bug where having a product marked with exclude from auto-publishing rules and a custom naming convention or pause set would cause invalid XML to be generated.&#x20;
+* Fixed a bug where the Collect Logs feature would fail if a company name contained characters that are invalid for file names.&#x20;
+* Fixed a bug where PatchMyPC Scriptrunner logging did not use an invariant datetime format. This could cause CMTrace to fail to parse the logs.&#x20;
+* Fixed a bug where an exception may occur if deleting a large number of Intune Applications using the Intune Application Manager Utility&#x20;
+* Fixed a bug where some data exports would result in malformed date time strings. This occurred if a culture used the same character for the number group separator and for time parts.&#x20;
+* Fixed a bug where ConfigMgr detection script logging did not use an invariant date-time format. This could cause CMTrace to fail to parse the logs.&#x20;
+* Fixed a bug where Manage Conflicting Process logging did not use an invariant date-time format. This could cause CMTrace to fail to parse the logs.&#x20;
+* Fixed a bug where the option to abort an uninstall if the prescript failed caused an argument parsing exception.&#x20;
+* Fixed a bug where the automatic backup of setting changes would fail in certain cultures due to a date-time parsing issue.&#x20;
 * Fixed a bug where custom naming conventions were copied between tabs. We no longer copy naming conventions when copying products between tabs.
 
 </details>
@@ -1219,7 +1212,7 @@ Support applications in the catalog that download a zip file.
 
 <summary>Improvements</summary>
 
-* If a PMPC-defined pre or post-script is missing from the content source for ConfigMgr applications, then the Publisher will redownload it during a sync or republish.
+* If a PMPC-defined pre or post-script is missing from the content source for ConfigMgr applications, then the Publisher will redownload it during a sync or republish.&#x20;
 * The expected and actual hash of files found in the local content repository is now added to the log in debug mode. This has always been the case for files downloaded from the internet.
 
 </details>
@@ -1242,9 +1235,9 @@ Support applications in the catalog that download a zip file.
 <summary>Improvements</summary>
 
 * Improved the content of alerts when additional files or folders are missing when Publishing a product
-* The ‘Configure SMS Provider connection’ button is no longer highlighted if unconfigured in WSUS Standalone Mode.
+* The ‘Configure SMS Provider connection’ button is no longer highlighted if unconfigured in WSUS Standalone Mode.&#x20;
 * Improved the logging for SMTP initialization and error handling.
-* All titles in the email report now link to release notes if available.
+* All titles in the email report now link to release notes if available.&#x20;
 
 </details>
 
@@ -1332,7 +1325,9 @@ Support applications in the catalog that download a zip file.
 
 ## 2.1.7 - 2022-10-06
 
-> \*\*Note:\*\* Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.
+{% hint style="info" %}
+**Note:** Starting with this production build, Patch My PC Publisher now requires a minimum of Microsoft .NET Framework 4.6.2.
+{% endhint %}
 
 <details>
 
@@ -1349,7 +1344,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 * Webhooks can now be granularly scoped based on several criteria listed below. (Requires Enterprise+)
   * Idea: [PATCHMYPC-I-1871](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1871)
   * Webhook Provider:
-    * Slack or Teams is now selectable per webhook allowing the customer to send notifications to both based on their needs.
+    * &#x20;Slack or Teams is now selectable per webhook allowing the customer to send notifications to both based on their needs.
   * Notification Level:
     * All
     * Error
@@ -1375,7 +1370,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 * ConfigMgr security scopes now have the option to enforce the selected scopes. The Publisher will remove all non-selected scopes from the application when Publisher.
   * Idea: [PATCHMYPC-I-2328](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-2328)
 * Allow any product to have Manage Conflicting Processes configured
-  * Idea: [PATCHMYPC-I-1699](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1699)
+  * &#x20;Idea: [PATCHMYPC-I-1699](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1699)
 * Allow the same Azure group to be assigned multiple times for Intune assignments. This allows a group to be used as both an include, and an exclude.
   * Idea: [PATCHMYPC-I-2322](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-2322)
 * Pass variables into pre and post-scripts.
@@ -1478,11 +1473,11 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 
 * Adding German and Dutch translations to [Manage Conflicting Processes](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#manage-conflicting-processes)
 * Intune Filter viewing and configuration is now available in all instances of managing Intune Win32 assignments in the Publisher.
-* All setting backups are now in a .CAB format. The import setting option now allows for .XML or .CAB import to ensure we support importing older setting files.
+* All setting backups are now in a .CAB format. The import setting option now allows for .XML or .CAB import to ensure we support importing older setting files.&#x20;
 * The [Delete desktop shortcut…](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#delete-shortcut) right-click option now removes shortcuts from the user desktop for user-based applications.
 * The SMS provider button is now highlighted in the WSUS options if the SMS provider is not configured.
 * Updated default [Manage Conflicting Processes](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#manage-conflicting-processes) banner.
-* ConfigMgr operating system requirements are now recreated when an application is updated. This ensures new operating systems such as Windows 11 or Server 2022 are added as applications are updated in place.
+* ConfigMgr operating system requirements are now recreated when an application is updated. This ensures new operating systems such as Windows 11 or Server 2022 are added as applications are updated in place.&#x20;
 
 </details>
 
@@ -1490,16 +1485,16 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 
 <summary>Fixes</summary>
 
-* Fixed a bug where scriptrunner may fail to find the uninstall string in the registry for some products.
-* Fixed a bug where scriptrunner may fail to validate an installation after the installer completes causing a 3-minute delay after the installation completes.
+* Fixed a bug where scriptrunner may fail to find the uninstall string in the registry for some products.&#x20;
+* Fixed a bug where scriptrunner may fail to validate an installation after the installer completes causing a 3-minute delay after the installation completes.&#x20;
 * Fixed a bug where [Pause](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#pause-product-updates) does not account for postponed binaries. If there is an existing postponed binary it will publish even if a pause is set.
 * Fixed a bug where some publishing summarization info was miscounted in the PatchMyPC.log file.
-* Fixed a bug where the Publisher would leave behind an empty folder when Publishing a ConfigMgr application and the download fails.
-* Fixed a bug where a version number would be appended to the current ConfigMgr application instead of the retaining application if the download fails. This bug affected customers who had the ‘Do not include version…’ option configured as well as the ‘Retain…’ option.
+* Fixed a bug where the Publisher would leave behind an empty folder when Publishing a ConfigMgr application and the download fails.&#x20;
+* Fixed a bug where a version number would be appended to the current ConfigMgr application instead of the retaining application if the download fails. This bug affected customers who had the ‘Do not include version…’ option configured as well as the ‘Retain…’ option.&#x20;
 * Fixed a bug where an empty Intune tenant is written to settings causing errors when the Publisher attempts to query the invalid tenant.
 * Fixed the layout of the [Add MST transformation file](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#mst-transform) form.
-* Fixed a bug where we may fail to query for Distribution Point groups if the name or description is DBNull instead of an empty string.
-* Fixed a bug where the ConfigMgr SUP sync would not start after a Patch My PC Sync if only updates using local content were published.
+* Fixed a bug where we may fail to query for Distribution Point groups if the name or description is DBNull instead of an empty string.&#x20;
+* Fixed a bug where the ConfigMgr SUP sync would not start after a Patch My PC Sync if only updates using local content were published.&#x20;
 * Fixed a bug where the Intune auto-publishing may fail in some cases when right-click options are configured.
 
 </details>
@@ -1523,7 +1518,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
   * Idea: [PATCHMYPC-I-1568](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1568)
 * Validate the hash of pre/post scripts on sync as well as during a republish.
   * Idea: [PATCHMYPC-I-1946](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1946)
-* Collect Logs button now prepends the file name with the company name from the license.
+* &#x20;Collect Logs button now prepends the file name with the company name from the license.
   * Idea: [PATCHMYPC-I-1904](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1904)
 * The email report now converts size to a readable format such as MB or GB instead of bytes.
   * Idea: [PATCHMYPC-I-1331](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1331)
@@ -1590,7 +1585,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 
 <summary>Improvements</summary>
 
-* When republishing an Intune application or update there is now a prompt asking if assignments should be recreated. The newly recreated assignments would have a deadline and available time relative to the sync when the republish happens.
+* When republishing an Intune application or update there is now a prompt asking if assignments should be recreated. The newly recreated assignments would have a deadline and available time relative to the sync when the republish happens.&#x20;
 
 </details>
 
@@ -1603,11 +1598,11 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 * Fixed a bug where republishing an Intune application or update might remove existing assignments.
 * Fixed a bug where we may fail to put back the version on the name of retained ConfigMgr applications in some scenarios.
 * Fixed a bug where the Manage Conflicting Process UI may fail to identify conflicting processes causing it not to show.
-* Fixed a bug where the Manage Conflicting Process UI may default to a 5-hour timeout for ConfigMgr applications in some scenarios.
-* Fixed a bug where delayed ConfigMgr applications may publish one day early.
+* Fixed a bug where the Manage Conflicting Process UI may default to a 5-hour timeout for ConfigMgr applications in some scenarios.&#x20;
+* Fixed a bug where delayed ConfigMgr applications may publish one day early.&#x20;
 * Fixed a bug where the IsFeatured flag would not be set for a republished Intune application.
-* Fixed a bug where the Publisher would fail to validate a ConfigMgr source path if there were Deployment Packages with an empty source path.
-* Fixed a bug where the Publisher may delete a content folder during republishing if the binary was missing from the local content repository.
+* Fixed a bug where the Publisher would fail to validate a ConfigMgr source path if there were Deployment Packages with an empty source path.&#x20;
+* Fixed a bug where the Publisher may delete a content folder during republishing if the binary was missing from the local content repository.&#x20;
 * Fixed a bug where the Manage Conflicting Process UI notification would fail to display if the user DateTime format and the system DateTime format were conflicting, causing DateTime parsing failures.
 * Fixed a bug where the Manage Conflicting Process notification timeout setting may not be read correctly from settings.xml.
 
@@ -1629,7 +1624,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 <summary>Improvements</summary>
 
 * If the ConfigMgr applications are configured to remove the version from the name, and there is application retention configured we will now append the version to OLD versions of the app. This is to ensure that there is only one application with the same name.
-* Improved the initial configuration process for adding Patch My PC Software Updates to an environment. This involves attempting to restart the WCM component after an initial Patch My PC update is published. This expedites getting the Patch My PC category into ConfigMgr so it can be selected.
+* Improved the initial configuration process for adding Patch My PC Software Updates to an environment. This involves attempting to restart the WCM component after an initial Patch My PC update is published. This expedites getting the Patch My PC category into ConfigMgr so it can be selected.&#x20;
 * The Publisher will send an alert if the catalog failed to download.
 * The Publisher can now process FTP links for downloads.
 * Updated to the latest Patch My PC logo.
@@ -1641,10 +1636,10 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 <summary>Fixes</summary>
 
 * Fixed a bug where the Republish feature may cause multiple republish actions to occur if the customer performs the operation on multiple tabs.
-* Fixed a bug where ‘disabling’ a tab with the checkbox at the top would cause the settings to be lost if the Publisher was closed.
-* Fixed a bug where the alert webhooks may be duplicated during a setting import.
+* Fixed a bug where ‘disabling’ a tab with the checkbox at the top would cause the settings to be lost if the Publisher was closed.&#x20;
+* Fixed a bug where the alert webhooks may be duplicated during a setting import.&#x20;
 * Fixed a bug where some unsupported right-click options might be enabled by the auto-enable product’s rules.
-* Fixed a bug where conflicting process notification timeout setting was not being read properly from settings.xml causing the setting to not apply.
+* Fixed a bug where conflicting process notification timeout setting was not being read properly from settings.xml causing the setting to not apply.&#x20;
 * Fixed a bug where the /SyncNow switch for the Publisher would not work if an instance of the Publisher was already running.
 * Fixed a bug where multiple assignments for the same group may attempt to be created in Intune.
 * Fixed a bug where the Organization Name specified for the Manage Conflicting Process window would not be populated for ConfigMgr applications.
@@ -1736,7 +1731,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 
 <summary>Fixes</summary>
 
-* Fixed a bug where the Publisher would throw an exception if a ConfigMgr scope is deleted, but still associated with a product in the Publisher.
+* Fixed a bug where the Publisher would throw an exception if a ConfigMgr scope is deleted, but still associated with a product in the Publisher. &#x20;
 * Fixed a bug where Intune email reports would not include the warning regarding missing local content for applications
 * Fixed a bug where the ConfigMgr [source folder validation](https://patchmypc.com/smsprovider-connection-and-source-folder-options#Source-Folder-Validation) would perform a partial match, such as \\\server\source\_apps being considered a conflict for \\\server\source. We now append a trailing slash to the comparison.
 * Fixed a bug where the ‘Prevent Start…’ option for [Manage Conflicting Process](https://patchmypc.com/manage-conflicting-processes-when-updating-third-party-applications) would throw an access denied error instead of the desired message box.
@@ -1769,7 +1764,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 
 <summary>Improvements</summary>
 
-* Added tooltips to fields in the scan wizards to improve accessibility.
+* Added tooltips to fields in the scan wizards to improve accessibility.&#x20;
 * The Publisher will not delete the local content for a product if the publishing of the product failed.
 * The Publisher will automatically revise an update if the applicability rules or description is updated in the catalog.
 * The Publisher now supports log rollover of up to 10 log files. Previously we would only retain one rollover log. This is configurable in the General tab of the Publisher above the max log size.
@@ -1916,7 +1911,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
   * Idea: [PATCHMYPC-I-1248](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1248)
 * View and customize Conflicting Processes list
   * Idea: [PATCHMYPC-I-1382](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1382)
-* The UI notification for Conflict Processes now lists all processes which are conflicting in a dropdown. This is to make it more clear what software will be closed.
+* The UI notification for Conflict Processes now lists all processes which are conflicting in a dropdown. This is to make it more clear what software will be closed.&#x20;
 * Send alerts to Slack
   * Idea: [PATCHMYPC-I-684](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-684)
   * Note: Slack notifications are a work in progress.
@@ -2055,7 +2050,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 * Fixed a bug where we may fail to parse a package.xml file that contains special characters such as an ampersand.
 * Fixed a bug where the DownloadUrl and MoreInfoUrl columns were not sortable in the ‘Show Package Info’ UI.
 * Fixed a bug where the UI may crash if there is a large number of Azure AD Groups being retrieved and the UI is closed before the query completes.
-* Fixed a bug where some right-click options such as Manage Categories, Manage ESP profiles and Manage Naming Convention may not propagate from the root, or vendor level to a newly enabled product.
+* Fixed a  bug where some right-click options such as Manage Categories, Manage ESP profiles and Manage Naming Convention may not propagate from the root, or vendor level to a newly enabled product.
 * Fixed a bug where assignments may not be added to an existing Intune Win32 application during Publisher sync.
 * Fixed a bug where the Publisher UI would crash if the ‘Modify Updates Wizard’ was launched on a computer that does not have the WSUS role.
 * Fixed a bug where only the first 1000 Intune applications are returned which can cause Application lookup failures via Microsoft Graph.
@@ -2172,7 +2167,7 @@ ConfigMgr and Intune scan wizard allow drilling into list of devices where the s
 
 *   Fixed a bug where the certificate option would be enabled while in
 
-    ‘Intune Only’ mode.
+    &#x20; ‘Intune Only’ mode.
 * Fixed a bug where the Intune Graph token used by features such as Intune App Category selection would expire if the Publisher UI was open for a long time.
 * Fixed a bug where unnecessary calls were made to renew the Graph API token when performing Graph Batch queries.
 * Fixed a bug where the ConfigMgr ‘Recreate Detection’ option would not set the MSI product code for the newly generated script.

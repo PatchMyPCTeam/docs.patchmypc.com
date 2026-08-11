@@ -42,7 +42,8 @@ The table below provides illustrative estimates based on average third-party upd
 |            1000 |                 2 |              1080.0 GB |    540.0 GB |
 |            1000 |                 3 |              1440.0 GB |    720.0 GB |
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>**UpdateServicesPackages** contains the published third-party updates binaries _plus_ an un-signed copy oif the cab files that ends up in the WSUS Content directory.</p>
-</blockquote>
+{% hint style="success" %}
+**Tip**
+
+**UpdateServicesPackages** contains the published third-party updates binaries _plus_ an un-signed copy oif the cab files that ends up in the WSUS Content directory.
+{% endhint %}

@@ -6,13 +6,15 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Email Alerts** option allows the Publisher to be configured to send notifications when specific publishing events occur. These alerts provide timely visibility into publishing activity, including successes, warnings, and failures, without requiring administrators to actively monitor logs.
 
-![Email Alerts](/_images/image-(4237).png)
+<figure><img src="../../../../.gitbook/assets/image (4237).png" alt="Email Alerts" width="563"><figcaption></figcaption></figure>
 
 Before email alerts can be sent, email settings must be configured. This includes specifying the SMTP server and port or configuring OAuth application details, along with the required authentication settings, sender address, and recipient addresses.
 
-> \*\*Note\*\*
->
-> At the end of a \[publishing sync]\(../../sync-schedule.md), the Publisher sends an email containing details about the sync event.
+{% hint style="info" %}
+**Note**
+
+At the end of a [publishing sync](../../sync-schedule.md), the Publisher sends an email containing details about the sync event.
+{% endhint %}
 
 ## Send Email Reports
 
@@ -24,15 +26,17 @@ When this option is enabled, email notifications are sent only for scheduled syn
 
 ## Provider
 
-Selecting a predefined provider (such as Exchange Online, Gmail, Outlook, or Yahoo) automatically populates the SMTP server address, port, and TLS settings with recommended values for that service.
+Selecting a predefined provider (such as Exchange Online, Gmail, Outlook, or Yahoo) automatically populates the SMTP server address, port, and TLS settings with recommended values for that service.&#x20;
 
 For example, selecting **Exchange Online** sets the server to **smtp.office365.com**, port **587**, and enables **TLS**.
 
 If Custom SMTP Provider is selected, all SMTP settings must be entered manually.
 
-> \*\*Note\*\*
->
-> You can modify any auto-populated values after selecting a provider if your environment requires different settings.
+{% hint style="info" %}
+**Note**
+
+You can modify any auto-populated values after selecting a provider if your environment requires different settings.
+{% endhint %}
 
 ## Test Email
 
@@ -44,17 +48,21 @@ If the test email fails, the issue is most commonly related to the SMTP or authe
 
 The following fields control the email message details and recipients.
 
-### **Sender**
+### **Sender**&#x20;
 
 Enter the email address you want the alerts to come _from_. e.g. `alerts@yourdomain.com`
 
-> This field is Required.
+{% hint style="warning" %}
+This field is Required.
+{% endhint %}
 
 ### **Recipients**
 
 Enter the email address(es) that should _receive_ the alerts. You can enter multiple addresses separated by a semicolon. e.g. `alerts@yourdomain.com; security@yourdomain.com`
 
-> This field is Required.
+{% hint style="warning" %}
+This field is Required.
+{% endhint %}
 
 ### **CC Recipients**
 
@@ -89,9 +97,11 @@ You can choose from the following authentication methods:
 
 Use this option only if your SMTP relay explicitly allows unauthenticated sending. Most cloud providers, including Exchange Online, do not support anonymous SMTP. This option typically works only with on-premises SMTP relays configured to accept unauthenticated traffic from trusted internal IP addresses.
 
-> \*\*Note\*\*
->
-> When Anonymous is selected, the Login and Password fields are disabled, as no credentials are used for authentication.
+{% hint style="info" %}
+**Note**
+
+When Anonymous is selected, the Login and Password fields are disabled, as no credentials are used for authentication.
+{% endhint %}
 
 #### **Server Configuration**
 
@@ -106,11 +116,13 @@ Use this option only if your SMTP relay explicitly allows unauthenticated sendin
 
 Use this option when your SMTP server requires authentication with a dedicated username and password. This is the most common configuration and is recommended for most environments, including Exchange Online, Google Workspace, and authenticated SMTP relays.
 
-> \*\*Important\*\*
->
-> Microsoft Exchange Online has deprecated Basic SMTP authentication and does not support username/password–based SMTP authentication by default. For Exchange Online, OAuth2 (App Authentication) is recommended.
->
-> Some providers, such as Google Workspace, may still allow authenticated SMTP using a username and password, but this typically requires additional configuration and may be restricted by tenant security policies.
+{% hint style="warning" %}
+**Important**
+
+Microsoft Exchange Online has deprecated Basic SMTP authentication and does not support username/password–based SMTP authentication by default. For Exchange Online, OAuth2 (App Authentication) is recommended.
+
+Some providers, such as Google Workspace, may still allow authenticated SMTP using a username and password, but this typically requires additional configuration and may be restricted by tenant security policies.
+{% endhint %}
 
 #### **Specified User**
 
@@ -136,9 +148,11 @@ Choose this option only if your SMTP relay supports integrated Windows authentic
 
 By default, the Publisher service runs under the **local SYSTEM** account.
 
-> \*\*Note\*\*
->
-> When Anonymous is selected, the Login and Password fields are disabled, as no credentials are used for authentication.
+{% hint style="info" %}
+**Note**
+
+When Anonymous is selected, the Login and Password fields are disabled, as no credentials are used for authentication.
+{% endhint %}
 
 * **SMTP Server**\
   Enter the DNS name or IP address of the SMTP server that will relay email messages. This is typically an on-premises Exchange server or an internal SMTP relay configured to allow integrated Windows authentication.
@@ -172,11 +186,12 @@ The email sent at the end of the sync will include the following details for all
 
 In the example below, you can see an email alert where both **WSUS updates and ConfigMgr applications** were published succesfully.
 
-![Email notification for WSUS updates and ConfigMgr applications](/_images/image-(3878).png)
+<figure><img src="../../../../.gitbook/assets/image (3878).png" alt="Email notification for WSUS updates and ConfigMgr applications" width="563"><figcaption></figcaption></figure>
 
 For products published to **Intune**, The email will include the following additional information
 
 * Intune Tenant friendly name
 * Intune assignments set during Publishing.
 
-![Email notification for Intune applications](/_images/image-(3879).png)
+<figure><img src="../../../../.gitbook/assets/image (3879).png" alt="Email notification for Intune applications" width="563"><figcaption></figcaption></figure>
+

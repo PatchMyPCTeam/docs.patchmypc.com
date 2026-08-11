@@ -8,7 +8,7 @@ I am trying to edit a Patch My PC (PMPC) Cloud deployment, but when I view its p
 
 **These settings are locked after deployment to prevent installation issues. Create a new deployment to apply different settings**
 
-!["These settings are locked after deployment to prevent installation issues. Create a new deployment to apply different settings"](/_images/image-(3214).png)
+<figure><img src="../../../.gitbook/assets/image (3214).png" alt="&#x22;These settings are locked after deployment to prevent installation issues. Create a new deployment to apply different settings&#x22;"><figcaption></figcaption></figure>
 
 ### CAUSE
 

@@ -8,11 +8,13 @@ Customers often ask which code-signing certificate option they should use when p
 
 Regardless of the option chosen, the resulting certificate is used by the Publisher to code-sign updates published to WSUS, specifically the CAB files that contain update metadata. The same certificate is also used to sign ConfigMgr detection scripts, even in a ConfigMgr-only environment where there is no WSUS being leveraged by a Software Update Point. Ultimately, whichever method you choose, the certificate that resides in the WSUS certificate store is the certificate the Publisher will use for signing during ConfigMgr and WSUS publishing operations.
 
-![Code-Signing Certificate in WSUS Store](/_images/image-(3912).png)
+<figure><img src="../../../../.gitbook/assets/image (3912).png" alt="Code-Signing Certificate in WSUS Store" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> If multiple code-signing certificates are present in the WSUS store on the SUP, the certificate with the longest validity is always selected.
+{% hint style="info" %}
+**Note**
+
+If multiple code-signing certificates are present in the WSUS store on the SUP, the certificate with the longest validity is always selected.
+{% endhint %}
 
 The Publisher supports multiple approaches to accommodate both ConfigMgr and WSUS environments:
 
@@ -39,11 +41,13 @@ Organizations that want the simplest setup with minimal manual certificate handl
 * The certificate generated is self-signed.
 * May not meet stricter compliance or PKI requirements in some organizations.
 
-> \*\*Important\*\*
->
-> When ConfigMgr is configured to manage the code-signing certificate, an expired certificate is automatically blocked and removed from client devices during a software update scan.
->
-> If you are using a PKI-issued certificate and it expires, ConfigMgr may automatically generate and begin using a self-signed certificate instead. This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before expiration to avoid unintended changes or disruption.
+{% hint style="warning" %}
+**Important**
+
+When ConfigMgr is configured to manage the code-signing certificate, an expired certificate is automatically blocked and removed from client devices during a software update scan.
+
+If you are using a PKI-issued certificate and it expires, ConfigMgr may automatically generate and begin using a self-signed certificate instead. This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before expiration to avoid unintended changes or disruption.
+{% endhint %}
 
 See the following page for more details: [https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#automatically-manage-the-wsus-signing-certificate](https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#automatically-manage-the-wsus-signing-certificate)
 
@@ -69,11 +73,13 @@ WSUS standalone environemnts or ConfigMgr environments where self-signed certifi
 
 See the following page for more details: [Generate a Self-Signed Certificate](generate-a-self-signed-certificate.md)
 
-> \*\*Note\*\*
->
-> By default, in this scneario, the generated certificate’s \*\*private key is marked as exportable\*\*. This is intentional and recommended, as it allows the certificate (including the private key) to be exported and reused if the Publisher is later moved to a new top-level SUP.
->
-> Without an exportable private key, the same signing certificate could not be transferred to another server.
+{% hint style="info" %}
+**Note**
+
+By default, in this scneario, the generated certificate’s **private key is marked as exportable**. This is intentional and recommended, as it allows the certificate (including the private key) to be exported and reused if the Publisher is later moved to a new top-level SUP.&#x20;
+
+Without an exportable private key, the same signing certificate could not be transferred to another server.
+{% endhint %}
 
 ## Customer-Provided PKI (PFX) Certificate
 
@@ -93,6 +99,8 @@ Organizations with strict security, compliance, or audit requirements that manda
 * Requires access to a PKI and coordination with security or PKI teams.
 * Public Certificate Authority certificates may incur additional cost.
 
-> \*\*Important\*\*
->
-> If you are using a PKI-issued certificate and it expires, and ConfigMgr is set to automatically manage the certificate, ConfigMgr may automatically generate and begin using a self-signed certificate instead. This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before expiration to avoid unintended changes or disruption.
+{% hint style="warning" %}
+**Important**
+
+If you are using a PKI-issued certificate and it expires, and ConfigMgr is set to automatically manage the certificate, ConfigMgr may automatically generate and begin using a self-signed certificate instead. This behavior can be unexpected in environments that require PKI-issued certificates, so ensure certificates are renewed before expiration to avoid unintended changes or disruption.
+{% endhint %}

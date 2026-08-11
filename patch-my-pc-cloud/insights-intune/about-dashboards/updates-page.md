@@ -2,9 +2,11 @@
 
 _Applies to: Advanced Insights for Intune_
 
-> \*\*Note\*\*
->
-> The \*\*Updates\*\* page is only available in Advanced Insights for Intune, which requires an Enterprise Premium license.
+{% hint style="info" %}
+**Note**
+
+The **Updates** page is only available in Advanced Insights for Intune, which requires an Enterprise Premium license.
+{% endhint %}
 
 Software Update compliance reporting is a major feature of Advanced Insights for Intune. The Patch My PC (PMPC) Client performs a compliance scan against the full PMPC Catalog and the Microsoft Updates service each day and returns the result to your PMPC Company.
 
@@ -15,13 +17,15 @@ The _Updates_ page consists of the following two tabs which contain a collection
 * [Patch My PC](updates-page.md#patch-my-pc)
 * [Microsoft](updates-page.md#microsoft)
 
-![Updates page](/_images/image-(4268).png)
+<figure><img src="../../../.gitbook/assets/image (4268).png" alt="Updates page" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> See \[About Advanced/Patch Insights for Intune Dashboards]\(./) and \[Working with Advanced/Patch Insights for Intune Dashboards]\(../working-dashboards.md) for more information.
->
-> Also, only devices running the Patch My PC (PMPC) Client will appear on this page. See \[Manage the Patch My PC Client]\(../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
+{% hint style="info" %}
+**Note**
+
+See [About Advanced/Patch Insights for Intune Dashboards](./) and [Working with Advanced/Patch Insights for Intune Dashboards](../working-dashboards.md) for more information.
+
+Also, only devices running the Patch My PC (PMPC) Client will appear on this page. See [Manage the Patch My PC Client](../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
+{% endhint %}
 
 ## Patch My PC
 
@@ -34,11 +38,11 @@ The **Patch My PC** tab is split into the following sections:
 
 The top section of the **Patch My PC** tab is called _Statistics_ and displays information about the PMPC Client and apps within your environment.
 
-!['Statistics' section](/_images/image-(4269).png)
+<figure><img src="../../../.gitbook/assets/image (4269).png" alt="&#x27;Statistics&#x27; section" width="563"><figcaption></figcaption></figure>
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-![Device list modal](/_images/image-(4270).png)
+<figure><img src="../../../.gitbook/assets/image (4270).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
 
 The _Statistics_ section is split into the following reports:
 
@@ -57,11 +61,13 @@ The device modal for this statistic (shown in the example above) lists the versi
 
 Clicking a catalog version displays more detailed information for each Client running this version.
 
-> \*\*Note\*\*
->
-> If devices are running a significantly out-of-date version of the catalog, it potentially puts them at risk of not detecting newer required updates.
->
-> You should therefore investigate any potential issues with the Client if this issue occurs.
+{% hint style="info" %}
+**Note**
+
+If devices are running a significantly out-of-date version of the catalog, it potentially puts them at risk of not detecting newer required updates.
+
+You should therefore investigate any potential issues with the Client if this issue occurs.
+{% endhint %}
 
 #### Average Device Compliance
 
@@ -88,11 +94,13 @@ The **Patch My PC Update Compliance** report lists PMPC update compliance for up
 
 The table lists overall compliance for each update.
 
-!['Patch My PC Update Compliance' report](/_images/image-(4271).png)
+<figure><img src="../../../.gitbook/assets/image (4271).png" alt="&#x27;Patch My PC Update Compliance&#x27; report" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> By default, superseded updates are hidden. Click the \*\*Show Superseded Updates\*\* toggle to display them. This feature can be especially useful for tracking compliance of frequently updated applications, such as Chrome.
+{% hint style="info" %}
+**Note**
+
+By default, superseded updates are hidden. Click the **Show Superseded Updates** toggle to display them. This feature can be especially useful for tracking compliance of frequently updated applications, such as Chrome.
+{% endhint %}
 
 For each update, we show the number of:
 
@@ -107,7 +115,7 @@ Clicking an update shows more detailed information, including detailed metadata 
 
 The **Patch My PC Update Compliance by Device** report shows compliance data for each device against the PMPC catalog, allowing you to evaluate compliance for all updates in our catalog and whether they are deployed.
 
-!['Patch My PC Update Compliance by Device' report](/_images/image-(4272).png)
+<figure><img src="../../../.gitbook/assets/image (4272).png" alt="&#x27;Patch My PC Update Compliance by Device&#x27; report" width="563"><figcaption></figcaption></figure>
 
 The compliance list includes details of the catalog version used by the Client and how up-to-date it is.
 
@@ -128,7 +136,7 @@ The **Microsoft** tab is split into the following sections:
 
 The top section of the **Microsoft** tab is called _Statistics_ and displays information about the PMPC Client and Microsoft updates within your environment.
 
-!['Microsoft' tab](/_images/image-(4274).png)
+<figure><img src="../../../.gitbook/assets/image (4274).png" alt="&#x27;Microsoft&#x27; tab" width="563"><figcaption></figcaption></figure>
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
@@ -171,7 +179,7 @@ The compliance section of the Microsoft tab shows the following compliance repor
 
 The **Microsoft Update Compliance** report lists Microsoft update compliance for updates delivered through the Microsoft Update Catalog. (Excludes driver updates)
 
-!['Microsoft Update Compliance' report](/_images/image-(4364).png)
+<figure><img src="../../../.gitbook/assets/image (4364).png" alt="&#x27;Microsoft Update Compliance&#x27; report"><figcaption></figcaption></figure>
 
 For each update, we show the number of:
 
@@ -185,7 +193,7 @@ Clicking an update shows more detailed information.
 
 The **Microsoft Update Compliance by Device** report shows compliance data for each device against Microsoft Update, allowing you to evaluate compliance for all Microsoft updates in your environment. (Excludes driver updates)
 
-!['Microsoft Update Compliance by Device' report](/_images/image-(4276).png)
+<figure><img src="../../../.gitbook/assets/image (4276).png" alt="&#x27;Microsoft Update Compliance by Device&#x27; report" width="563"><figcaption></figcaption></figure>
 
 Clicking an individual record shows the **Device** view for that Client with the **Microsoft** tab selected, which lists both the updates required and installed on the device.
 
@@ -193,6 +201,6 @@ Clicking an individual record shows the **Device** view for that Client with the
 
 The **Microsoft Update Driver Compliance** report shows compliance data for drivers delivered through the Microsoft Update Catalog.
 
-!['Microsoft Update Compliance by Device' report](/_images/image-(4365).png)
+<figure><img src="../../../.gitbook/assets/image (4365).png" alt="&#x27;Microsoft Update Compliance by Device&#x27; report"><figcaption></figcaption></figure>
 
 Clicking an individual record shows the **Device List** view for that Driver Update. Clicking a device will take you to the **Driver** tab within that clients device modal to give you a detailed breakdown of driver compliance per device.

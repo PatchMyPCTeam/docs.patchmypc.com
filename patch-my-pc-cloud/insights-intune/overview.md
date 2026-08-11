@@ -6,7 +6,7 @@ The _Advanced/Patch Insights for Intune_ feature of Patch My PC (PMPC) Cloud all
 
 Your PMPC Cloud license type determines the name of the node in your portal:
 
-* [Advanced Insights](overview.md#advanced-insights)
+* [Advanced Insights](overview.md#advanced-insights)&#x20;
 * [Patch Insights](overview.md#patch-insights)
 
 ## Advanced Insights
@@ -18,9 +18,9 @@ The **Advanced Insights** node consists of the following sub-nodes, each of whic
 * **Home -** Contains a summary of all of the information from the other tabs.
 * **Updates -** Contains a summary of the most common software update-related information.
 * **Hardware -** Contains a summary of the most common hardware-related information.
-* **Intune -** Contains a summary of the most common information from your Intune tenant.
+* **Intune  -** Contains a summary of the most common information from your Intune tenant.
 
-!['Advanced Insights' node](/_images/image-(574 "'Advanced Insights' node") (1).png>)
+<figure><img src="../../.gitbook/assets/image (574).png" alt="&#x27;Advanced Insights&#x27; node" width="142"><figcaption></figcaption></figure>
 
 ## Patch Insights
 
@@ -28,14 +28,18 @@ If you are using the Enterprise Plus license, the node will be named **Patch Ins
 
 You can only access the **Intune** sub-node, which contains a summary of the most common information from your Intune tenant.
 
-!['Patch Insights' node](/_images/image-(577 "'Patch Insights' node") (1).png>)
+<figure><img src="../../.gitbook/assets/image (577).png" alt="&#x27;Patch Insights&#x27; node" width="196"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> You will see the other sub-nodes available for \*\*Advanced Insights\*\*, but you will be unable to access them unless you upgrade your license to an Enterprise Premium license or \[sign up for an Enterprise Premium Trial]\(../manage/settings/company-settings/sign-up-enterprise-premium-trial.md).
+{% hint style="info" %}
+**Note**
 
-> \*\*Important\*\*
->
-> The data in the \*\*Intune\*\* sub-node is populated using Microsoft Graph calls to your Intune tenant.
->
-> For data to appear and update in the other sub-nodes, you need to install our client on any devices you wish to collect data from. See \[Patch My PC Client]\(../../patch-my-pc-client/) for more information.
+You will see the other sub-nodes available for **Advanced Insights**, but you will be unable to access them unless you upgrade your license to an Enterprise Premium license or [sign up for an Enterprise Premium Trial](../manage/settings/company-settings/sign-up-enterprise-premium-trial.md).
+{% endhint %}
+
+{% hint style="danger" %}
+**Important**
+
+The data in the **Intune** sub-node is populated using Microsoft Graph calls to your Intune tenant.
+
+For data to appear and update in the other sub-nodes, you need to install our client on any devices you wish to collect data from. See [Patch My PC Client](../../patch-my-pc-client/) for more information.
+{% endhint %}

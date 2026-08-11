@@ -10,10 +10,11 @@ Where you install Patch My PC (PMPC) Publisher depends on your environment:
 * [Intune only](where.md#intune-only)
 * [Mixed environments](where.md#mixed-environments)
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>Please review the [Core Requirements for Publisher](../requirements/core-requirements.md) before continuing, as these apply regardless of the platform being used, before beginning installation.</p>
-</blockquote>
+{% hint style="success" %}
+**Tip**
+
+Please review the [Core Requirements for Publisher](../requirements/core-requirements.md) before continuing, as these apply regardless of the platform being used, before beginning installation.
+{% endhint %}
 
 ## ConfigMgr (with WSUS)
 
@@ -39,18 +40,23 @@ If you are using Publisher for Intune publishing only, it does not need to be in
 
 As Publisher can create and manage applications and updates in Intune (through direct communication with Intune via Graph calls), it should be treated as a high-trust system and secured accordingly, with restricted access and appropriate credential protection.
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>Some customers who use only Intune choose to install Publisher on a dedicated Azure virtual machine. A B2-size virtual machine or equivalent is commonly used.&#x20;</p>
-<p>The virtual machine should still meet or exceed the [minimum core requirements](../requirements/core-requirements.md) and [additional requirements needed for Intune publishing](../requirements/intune-requirements/).</p>
-</blockquote>
+{% hint style="success" %}
+**Tip**
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If you intend to publish third-party applications and updates to Intune only, we generally recommend using Patch My PC Cloud, our cloud-based service, as it removes the need to manage on-premises infrastructure and simplifies ongoing operations.&#x20;</p>
-<p>However, some customers are required to use Publisher instead (such as those with restrictions around enterprise application usage, environments that require GCC High, or scenarios where cloud-hosted services are not permitted).</p>
-<p>In these cases, Publisher provides a fully supported alternative that allows publishing to Intune whilst keeping control within your environment.</p>
-</blockquote>
+Some customers who use only Intune choose to install Publisher on a dedicated Azure virtual machine. A B2-size virtual machine or equivalent is commonly used.&#x20;
+
+The virtual machine should still meet or exceed the [minimum core requirements](../requirements/core-requirements.md) and [additional requirements needed for Intune publishing](../requirements/intune-requirements/).
+{% endhint %}
+
+{% hint style="info" %}
+**Note**
+
+If you intend to publish third-party applications and updates to Intune only, we generally recommend using Patch My PC Cloud, our cloud-based service, as it removes the need to manage on-premises infrastructure and simplifies ongoing operations.&#x20;
+
+However, some customers are required to use Publisher instead (such as those with restrictions around enterprise application usage, environments that require GCC High, or scenarios where cloud-hosted services are not permitted).
+
+In these cases, Publisher provides a fully supported alternative that allows publishing to Intune whilst keeping control within your environment.
+{% endhint %}
 
 ## Mixed environments
 

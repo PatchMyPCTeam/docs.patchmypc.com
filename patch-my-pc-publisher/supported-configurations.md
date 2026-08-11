@@ -33,9 +33,11 @@ The key characteristics of this scenario are:
 
 This scenario requires minimal change and allows customers to validate Win32 app deployment from Intune without affecting update behavior.
 
-> \*\*Note\*\*
->
-> When the same applications or updates are deployed from both platforms simultaneously, reporting discrepancies may be observed temporarily. Application detection and compliance evaluation occur on different schedules across ConfigMgr and Intune. Over time, reports should converge as detection cycles complete.
+{% hint style="info" %}
+**Note**
+
+When the same applications or updates are deployed from both platforms simultaneously, reporting discrepancies may be observed temporarily. Application detection and compliance evaluation occur on different schedules across ConfigMgr and Intune. Over time, reports should converge as detection cycles complete.
+{% endhint %}
 
 ### First-Party Updates from Windows Update and Third-Party Updates from ConfigMgr
 
@@ -47,26 +49,30 @@ This is typically achieved using Windows Update client policies or Autopatch. Co
 
 The following conditions must be met for this scenario to function correctly.
 
-* The [Software Update Client Settings](requirements/configmgr-requirements/client-settings.md) in ConfigMgr must remain enabled.
+* The [Software Update Client Settings](requirements/configmgr-requirements/client-settings.md) in ConfigMgr must remain enabled.&#x20;
 * The **Windows Update Policies** workload must be moved to Pilot or fully to Intune.
 
-> \*\*Note\*\*
->
-> If you are using Autopatch, additional workloads must also be moved to Intune or Pilot, including Device Configuration and Office Click-to-Run Apps. This is a Microsoft Autopatch service requirement and not a Publisher requirement. These workload moves are not necessary when managing update policy from Intune using Windows Update client settings without Autopatch.
->
-> See [Configuration Manager co-management requirements](https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements) for more information on other Autopatch requirements.
+{% hint style="info" %}
+**Note**
+
+If you are using Autopatch, additional workloads must also be moved to Intune or Pilot, including Device Configuration and Office Click-to-Run Apps. This is a Microsoft Autopatch service requirement and not a Publisher requirement. These workload moves are not necessary when managing update policy from Intune using Windows Update client settings without Autopatch.
+
+See [Configuration Manager co-management requirements](https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements) for more information on other Autopatch requirements.
+{% endhint %}
 
 ### Scan Source Configuration
 
 Scan source determines whether the client scans Windows Update or WSUS for specific update categories.
 
-> \*\*Important\*\*
->
-> Microsoft released [client hotfix KB36495448 for Microsoft ConfigMgr versions 2503 and 2509](https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2509/36495448). This hotfix changes how the ConfigMgr client interacts with Windows Update scan source policies.
->
-> If this hotfix is installed, the scan source configuration steps below are \*\*not\*\* required when third-party updates should continue to come from WSUS, and first-party updates should come from the Windows Update service.
->
-> If a custom scan source configuration is present, those settings are honored, and scan behavior follows the configured policies.
+{% hint style="danger" %}
+**Important**
+
+Microsoft released [client hotfix KB36495448 for Microsoft ConfigMgr versions 2503 and 2509](https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2509/36495448). This hotfix changes how the ConfigMgr client interacts with Windows Update scan source policies.
+
+If this hotfix is installed, the scan source configuration steps below are **not** required when third-party updates should continue to come from WSUS, and first-party updates should come from the Windows Update service.&#x20;
+
+If a custom scan source configuration is present, those settings are honored, and scan behavior follows the configured policies.
+{% endhint %}
 
 Scan source can be configured using Group Policy or Local Policy.
 
@@ -74,11 +80,11 @@ Scan source can be configured using Group Policy or Local Policy.
 2. Navigate to the following policy path:\
    **Computer Configuration | Policies | Administrative Templates | Windows Components | Windows Update | Manage updates offered from Windows Server Update Service | Specify source service for specific classes of Windows Updates.**
 
-![Specify source service for specific classes of Windows Updates](/_images/image-(163).png)
+<figure><img src="../.gitbook/assets/image (163).png" alt="Specify source service for specific classes of Windows Updates" width="563"><figcaption></figcaption></figure>
 
 3. Set the policy to **Enabled** and under **Options**, set all scan source classes to **Windows Update**.
 
-![Set Source to Windows Update](/_images/image-(165).png)
+<figure><img src="../.gitbook/assets/image (165).png" alt="Set Source to Windows Update" width="515"><figcaption></figcaption></figure>
 
 4. Click **Apply** to save the policy.
 
@@ -106,11 +112,13 @@ Native ConfigMgr software update compliance reporting, including built-in SSRS r
 
 Similarly, Advanced Insights Software Update Compliance reporting only displays compliance data collected from ConfigMgr. Updates and applications that are managed and deployed exclusively from Intune are not included in this report.
 
-As devices transition to Intune-managed updates, you should plan to use Advanced Insights for Intune to report on update and application compliance for those devices. This ensures accurate visibility across both ConfigMgr-managed and Intune-managed workloads during and after the transition.
+As devices transition to Intune-managed updates, you should plan to use Advanced Insights for Intune to report on update and application compliance for those devices. This ensures accurate visibility across both ConfigMgr-managed and Intune-managed workloads during and after the transition.&#x20;
 
-> \*\*Note\*\*
->
-> See [Advanced Insights for Intune and ConfigMgr](https://patchmypc.com/product/advanced-insights/) for more information on Advanced Insights.
+{% hint style="info" %}
+**Note**
+
+See [Advanced Insights for Intune and ConfigMgr](https://patchmypc.com/product/advanced-insights/) for more information  on Advanced Insights.
+{% endhint %}
 
 ### Final Transition Away from ConfigMgr
 

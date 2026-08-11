@@ -2,11 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**PRE-RELEASE DOCUMENTATION**</p>
-<p>This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.</p>
-<p>Once this feature is released, it will be announced, and this banner will be removed.</p>
-</blockquote>
+{% hint style="danger" %}
+**PRE-RELEASE DOCUMENTATION**
+
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
 
 As more than one administrator can open the Patch My PC (PMPC) Publisher Settings console against the same server at once (locally and on the server from remote workstations), Publisher coordinates who is allowed to edit and who is connected as a read-only observer, to prevent people overwriting each other's changes.
 
@@ -18,20 +20,22 @@ As more than one administrator can open the Patch My PC (PMPC) Publisher Setting
   * **Single-editor** (default) **-** One editing session. Everyone else is read-only.
   * **Multi-editor -** Up to five editing sessions at once. Additional connections are read-only.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>You do not choose this mode. The Settings console simply tells you whether your session is editing or read-only when you connect.</p>
-</blockquote>
+{% hint style="danger" %}
+**Important**
+
+You do not choose this mode. The Settings console simply tells you whether your session is editing or read-only when you connect.
+{% endhint %}
 
 ## What read-only administrators see
 
 * A clear indicator that the session is read-only.
 * If you try an action that would change settings, Publisher stops it and explains that the session is read-only. This includes the obvious **Save** and **Apply** buttons as well as less obvious actions such as import wizards, test-and-save buttons, and connection changes.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Read-only mode prevents conflicting saves. It does not reduce what you are _permitted_ to do - your [Access and Permissions](access-permissions-reference.md) still apply on top.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+Read-only mode prevents conflicting saves. It does not reduce what you are _permitted_ to do - your [Access and Permissions](access-permissions-reference.md) still apply on top.
+{% endhint %}
 
 ## Viewing other Connections
 
@@ -51,10 +55,11 @@ To take over an editing session:
 2. Sessions that have been idle long enough are selectable. Sessions still in active use are shown but marked as not yet idle.
 3. Select the idle session you want to take over and confirm. You become the editor, and the other session drops to read-only.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>There is one shortcut to this rule: an administrator working directly on the server can immediately take over a session without waiting for the 5-minute idle period. This lets an on-site operator always reclaim control of their own server.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+There is one shortcut to this rule: an administrator working directly on the server can immediately take over a session without waiting for the 5-minute idle period. This lets an on-site operator always reclaim control of their own server.
+{% endhint %}
 
 ## Sessions that are left open
 

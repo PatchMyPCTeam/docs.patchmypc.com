@@ -1,12 +1,14 @@
 # Set Application Architecture Requirements option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_&#x41;vailable at level: Product_\
-_&#x41;vailable on tab: ConfigMgr Apps, Intune Apps_
+_Available at level: Product_\
+_Available on tab: ConfigMgr Apps, Intune Apps_
 
-> \*\*Important\*\*
->
-> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% hint style="danger" %}
+**Important**
+
+This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% endhint %}
 
 The **Set Application Architecture Requirements** option in Patch My PC (PMPC) Publisher allows you to control which devices are eligible to install an application created by Publisher.
 
@@ -22,11 +24,11 @@ The available requirement options and default behavior depend on the architectur
 
 In ConfigMgr, requirements are applied directly to the deployment type. ConfigMgr evaluates these requirements before downloading content or starting installation. In addition to architecture based requirements, ConfigMgr also supports restricting applications to workstation or server operating systems.
 
-![Requirement set on the Deployment Type](/_images/image-(3992).png)
+<figure><img src="../../../.gitbook/assets/image (3992).png" alt="Requirement set on the Deployment Type" width="563"><figcaption></figcaption></figure>
 
 In Intune, requirements are applied as Win32 app requirement rules. Intune evaluates these rules at install time to determine device eligibility. Architecture requirements are supported, but device type restrictions such as workstation or server are not available.
 
-![Requirement set on the Win32 app](/_images/image-(3998).png)
+<figure><img src="../../../.gitbook/assets/image (3998).png" alt="Requirement set on the Win32 app" width="563"><figcaption></figcaption></figure>
 
 ## ARM64 Applications
 
@@ -36,27 +38,33 @@ By default, ARM64 applications are configured to:
 
 • Install on ARM64 OS.
 
-> \*\*Note\*\*
->
-> In ConfigMgr, ARM64 applications are also restricted to workstation operating systems by default.
+{% hint style="info" %}
+**Note**
 
-These requirements cannot be modified and are applied automatically to the deployment type when the application is created
+In ConfigMgr, ARM64 applications are also restricted to workstation operating systems by default.
+{% endhint %}
 
-![Example ConfigMgr ARM64 Application Requirements](/_images/image-(3993).png)
+These requirements cannot be modified and are applied automatically to the deployment type when the application is created&#x20;
 
-> \*\*Note\*\*
->
-> For more information on how the Publisher handles ARM64 support for apps, see \[ARM Architecture Application Support]\(../../../patch-my-pc-publisherv2/administration/advanced/arm-architecture-application-support.md).
+<figure><img src="../../../.gitbook/assets/image (3993).png" alt="Example ConfigMgr ARM64 Application Requirements" width="375"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+For more information on how the Publisher handles ARM64 support for apps, see [ARM Architecture Application Support](../../../patch-my-pc-publisherv2/administration/advanced/arm-architecture-application-support.md).
+{% endhint %}
 
 ## 64-bit Applications
 
 For 64-bit applications, the deployment type is created with a requirement:
 
-* Install on 64-bit OS.
+* &#x20;Install on 64-bit OS.
 
-> \*\*Note\*\*
->
-> In ConfigMgr, applications can also be restricted to workstation or server operating systems.
+{% hint style="info" %}
+**Note**
+
+In ConfigMgr, applications can also be restricted to workstation or server operating systems.
+{% endhint %}
 
 The example below highlights how ARM64 applicability can differ between 64-bit applications based on catalog testing and support validation.
 
@@ -64,15 +72,17 @@ In the Google Chrome example, the application is configured to install on 64-bit
 
 In contrast, the Notepad++ example shows both Install on 64-bit OS and Install on ARM64 OS selected. This indicates that the 64-bit Notepad++ application has been validated to run correctly on ARM64 devices and is therefore permitted to install on both x64 and ARM64 operating systems.
 
-![64-bit and ARM64 Requirement](/_images/image-(3996).png)
+<figure><img src="../../../.gitbook/assets/image (3996).png" alt="64-bit and ARM64 Requirement" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> These variances across 64-bit applications are intentional and are determined by the Patch My PC catalog team during application testing. ARM64 support is enabled only when it is considered appropriate for the specific application to avoid installation failures on unsupported devices.
+{% hint style="info" %}
+**Note**
+
+These variances across 64-bit applications are intentional and are determined by the Patch My PC catalog team during application testing. ARM64 support is enabled only when it is considered appropriate for the specific application to avoid installation failures on unsupported devices.
+{% endhint %}
 
 For applications where **Install on ARM64 OS** is not enabled by default, you can optionally enable it if the application is known to support ARM64 execution. When you attempt to enable this option, you are prompted for confirmation to ensure the change is intentional.
 
-![Confirm ARM64 OS Requirement](/_images/image-(3995).png)
+<figure><img src="../../../.gitbook/assets/image (3995).png" alt="Confirm ARM64 OS Requirement" width="449"><figcaption></figcaption></figure>
 
 You can also restrict installation to workstation or server operating systems as needed.
 
@@ -80,15 +90,17 @@ You can also restrict installation to workstation or server operating systems as
 
 For standard 32-bit (x86) applications, the deployment type is created with requirements to:
 
-• Install on 32-bit OS\
-• Install on 64-bit OS\
+• Install on 32-bit OS\
+• Install on 64-bit OS\
 • Install on ARM64 OS
 
-> \*\*Note\*\*
->
-> In ConfigMgr, applications can also be restricted to workstation or server operating systems.
+{% hint style="info" %}
+**Note**
 
-![32-bit Application Requirements](/_images/image-(3997).png)
+In ConfigMgr, applications can also be restricted to workstation or server operating systems.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (3997).png" alt="32-bit Application Requirements" width="375"><figcaption></figcaption></figure>
 
 This reflects the Windows compatibility model, where 32-bit applications can generally run on all supported Windows architectures.
 

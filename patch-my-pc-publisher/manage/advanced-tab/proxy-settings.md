@@ -2,13 +2,15 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-> \*\*Important\*\*
->
-> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% hint style="danger" %}
+**Important**
 
-The **Proxy Settings** section in Patch My PC (PMPC) Publisher allows the Publisher to use a proxy server for outbound network connectivity.
+This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% endhint %}
 
-![Proxy Settings](/_images/image-(3931).png)
+The **Proxy Settings** section in Patch My PC (PMPC) Publisher allows the Publisher to use a proxy server for outbound network connectivity.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (3931).png" alt="Proxy Settings" width="545"><figcaption></figcaption></figure>
 
 When configured, most Publisher operations use this proxy to download content and communicate with external services. For exceptions related to WSUS and timestamping behavior, see [WSUS and Timestamping Considerations](proxy-settings.md#wsus-and-timestamping-considerations).
 
@@ -37,9 +39,11 @@ In environments where the proxy does not support computer account authentication
 * **Password**\
   Specifies the password associated with the proxy authentication account.
 
-> \*\*Important\*\*
->
-> Even when proxy authentication is enabled in the Publisher, timestamping operations use the Windows Cryptographic API and rely on the proxy configured at the SYSTEM level, not the Publisher proxy settings. For exceptions and special considerations related to WSUS and timestamping behavior, see \[WSUS and Timestamping Considerations]\(proxy-settings.md#wsus-and-timestamping-considerations).
+{% hint style="danger" %}
+**Important**
+
+Even when proxy authentication is enabled in the Publisher, timestamping operations use the Windows Cryptographic API and rely on the proxy configured at the SYSTEM level, not the Publisher proxy settings. For exceptions and special considerations related to WSUS and timestamping behavior, see [WSUS and Timestamping Considerations](proxy-settings.md#wsus-and-timestamping-considerations).
+{% endhint %}
 
 ## WSUS and Timestamping Considerations
 
@@ -77,6 +81,8 @@ netsh winhttp show proxy
 
 This output shows the proxy configuration that will be used by WSUS and the Windows Cryptographic API during update signing and timestamping.
 
-> \*\*Important\*\*
->
-> Ensure the SYSTEM proxy allows direct or unauthenticated access to the external endpoints used for timestamping. WSUS performs timestamping using the Windows Cryptographic API under the SYSTEM account, and this process does not support interactive or negotiated proxy authentication. If proxy authentication is mandatory, configure bypass rules or allow direct access for timestamping endpoints to prevent publishing failures.
+{% hint style="danger" %}
+**Important**
+
+Ensure the SYSTEM proxy allows direct or unauthenticated access to the external endpoints used for timestamping. WSUS performs timestamping using the Windows Cryptographic API under the SYSTEM account, and this process does not support interactive or negotiated proxy authentication. If proxy authentication is mandatory, configure bypass rules or allow direct access for timestamping endpoints to prevent publishing failures.
+{% endhint %}

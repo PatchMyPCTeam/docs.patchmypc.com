@@ -14,17 +14,17 @@ Here are a few important resources below to get you started.
 
 ### Free 30-day trial
 
-<blockquote class="wp-block-quote">
-<p>Before you get started, make sure you take advantage of our <a href="https://patchmypc.com/free-trial">free trial</a>!</p>
-</blockquote>
+{% hint style="info" %}
+Before you get started, make sure you take advantage of our [free trial](https://patchmypc.com/free-trial)!
+{% endhint %}
 
 ### Free Setup Call with an Engineer
 
-<blockquote class="wp-block-quote">
-<p>**Tip**: Did you know you can schedule a free setup call with an engineer if you prefer to have an engineer from Patch My PC perform a guided install with you in your environment?\</p>
-<p>\</p>
-<p><a href="https://patchmypc.com/setup-call">https://patchmypc.com/setup-call</a></p>
-</blockquote>
+{% hint style="success" %}
+**Tip**: Did you know you can schedule a free setup call with an engineer if you prefer to have an engineer from Patch My PC perform a guided install with you in your environment?\
+\
+[https://patchmypc.com/setup-call](https://patchmypc.com/setup-call)
+{% endhint %}
 
 
 

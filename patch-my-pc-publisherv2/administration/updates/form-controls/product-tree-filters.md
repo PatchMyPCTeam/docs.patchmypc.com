@@ -6,24 +6,26 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The product tree filters are designed to simplify the view of the catalog by controlling what is displayed. They make it easier to see which products are already selected which helps you quickly review and validate your current selections and customizations without scrolling through the entire catalog.
 
-![Product Tree FIlters](/_images/image-(432 "Product Tree FIlters") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (432).png" alt="Product Tree FIlters" width="563"><figcaption></figcaption></figure>
 
-## Expand / Collapse All Vendors
+## ![](<../../../../.gitbook/assets/image (433).png>) Expand / Collapse All Vendors
 
 By default, this form control is set to partially collapsed, meaning the product tree is expanded only to the All Products level, showing a list of all available third-party vendors that can be published. Clicking this form control will expand all vendors to reveal all products in the product tree.
 
-![Product Tree Expanded](/_images/image-(434 "Product Tree Expanded") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (434).png" alt="Product Tree Expanded" width="563"><figcaption></figcaption></figure>
 
 Clicking the form control again will collapse the entire tree, including All Products.
 
-## Show Selected / Show All
+## ![](<../../../../.gitbook/assets/image (435).png>) Show Selected / Show All
 
 By default, this form control is set to **Show All**, meaning the product tree list is not filtered. Clicking this form control will collapse the product tree to reveal only the currently selected vendors.
 
-![Product Tree Filtered by Selection](/_images/image-(436 "Product Tree Filtered by Selection") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (436).png" alt="Product Tree Filtered by Selection" width="563"><figcaption></figcaption></figure>
 
 Clicking the form control again will collapse the entire product tree, but leave the All Products level expanded.
 
-> \*\*Note\*\*
->
-> See \[What selecting a checkbox means]\(../product-tree.md#what-selecting-a-checkbox-means) to understand the different checkbox states.
+{% hint style="info" %}
+**Note**
+
+See [What selecting a checkbox means](../product-tree.md#what-selecting-a-checkbox-means) to understand the different checkbox states.
+{% endhint %}

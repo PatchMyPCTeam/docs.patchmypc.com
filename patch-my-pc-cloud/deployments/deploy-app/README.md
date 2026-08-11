@@ -4,46 +4,57 @@ _Applies to: Patch My PC Cloud_
 
 Patch My PC (PMPC) Cloud can be used to deploy apps using Microsoft Intune.
 
-> \*\*Note\*\*
->
-> You can also:
->
-> \* \[Deploy the same App with multiple configurations]\(../technical-references/deploy-same-app.md)
->
-> \* \[Create a Deployment with No Assignments]\(../technical-references/deployment-without-assignments.md).
+{% hint style="info" %}
+**Note**
+
+You can also:
+
+* [Deploy the same App with multiple configurations](../technical-references/deploy-same-app.md)
+* [Create a Deployment with No Assignments](../technical-references/deployment-without-assignments.md).
+{% endhint %}
 
 To deploy an app using PMPC Cloud:
 
 1. Sign in to the portal at [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
 2. Locate the required application on the **App Catalog** page.
 
-> \*\*Tip\*\*
->
-> Use the \*\*Search\*\* field to help you locate the app.
+{% hint style="success" %}
+**Tip**
 
-!["App Catalog" page](/_images/image-(895 "\"App Catalog\" page") (1).png>)
+Use the **Search** field to help you locate the app.
+{% endhint %}
 
-> \*\*Note\*\*
->
-> If an app (for example, the Windows version of Slack) has multiple versions available for different variants/installer types, the App Catalog shows the total number of available versions. If you hover your mouse over this, you can see the list of variants grouped accordingly. Only that version will be displayed if a single version is available for all variants.
->
-> !\[Total number of available variants]\(/\_images/image-(3173 "Total number of available variants").png>)
+<figure><img src="../../../.gitbook/assets/image (895).png" alt="“App Catalog” page" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+If an app (for example, the Windows version of Slack) has multiple versions available for different variants/installer types, the App Catalog shows the total number of available versions. If you hover your mouse over this, you can see the list of variants grouped accordingly. Only that version will be displayed if a single version is available for all variants.
+
+![Total number of available variants](<../../../.gitbook/assets/image (3173).png>)
+{% endhint %}
 
 3.  Click the app to open its properties.<br>
 
-    ![Application's "Properties" page](/_images/image-(896 "Application's \"Properties\" page") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (896).png" alt="Application’s “Properties” page " width="563"><figcaption></figcaption></figure>
+
+
 4. Click **Deploy** to start the Deployment Wizard.
 
-> \*\*Note\*\*
->
-> If the app you are deploying is also supported for macOS, you will see a separate \*\*Deploy\*\* option for \*\*macOS\*\* and you should follow the \[Deploy a macOS app]\(../../macos-support/deploy-macos-app.md) process.
->
-> Also, if the app you are deploying is already published by our on-premises Publisher, you will see the \*\*This app is already deployed\*\* warning dialog stating that deploying the same app through both Publisher and PMPC Cloud can cause potential issues if there are differences between the deployment configurations. We therefore strongly recommend you only deploy an app through either Publisher PMPC Cloud to avoid such issues.
+{% hint style="info" %}
+**Note**
 
-![Click "Deploy" to start the Deployment Wizard](/_images/image-(897).png)
+If the app you are deploying is also supported for macOS, you will see a separate **Deploy** option for **macOS**  and you should follow the [Deploy a macOS app](../../macos-support/deploy-macos-app.md) process.
+
+Also, if the app you are deploying is already published by our on-premises Publisher, you will see the **This app is already deployed** warning dialog stating that deploying the same app through both Publisher and PMPC Cloud can cause potential issues if there are differences between the deployment configurations. We therefore strongly recommend you only deploy an app through either Publisher PMPC Cloud to avoid such issues.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (897).png" alt="Click &#x22;Deploy&#x22; to start the Deployment Wizard" width="563"><figcaption></figcaption></figure>
 
 The [General Information](general-information-tab.md) tab is displayed, which needs to be completed.
 
-> \*\*Note\*\*
->
-> Once the Deployment Wizard starts, the \*\*Apply Template\*\* button becomes available, which allows you to apply any \[Deployment Templates]\(../use-template.md) you have created that contain preconfigured settings to your deployments.
+{% hint style="info" %}
+**Note**
+
+Once the Deployment Wizard starts, the **Apply Template** button becomes available,  which allows you to apply any [Deployment Templates](../use-template.md) you have created that contain preconfigured settings to your deployments.
+{% endhint %}

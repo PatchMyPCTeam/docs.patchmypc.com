@@ -14,10 +14,11 @@ In this scenario, running the Publisher service as a gMSA allows the Publisher t
 
 ### Important Consideration
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>A gMSA should not be used for the Publisher service when the Publisher is installed on the ConfigMgr site server.</p>
-</blockquote>
+{% hint style="warning" %}
+**Important**
+
+A gMSA should not be used for the Publisher service when the Publisher is installed on the ConfigMgr site server.
+{% endhint %}
 
 This limitation is related to how the SMS Provider connection works.
 
@@ -48,10 +49,11 @@ For ConfigMgr environments, also complete the following requirements.
 
 The gMSA requires read and write access to the Publishers configured ConfigMgr content source folder. This access must be granted at both the share permission level and the NTFS permission level. This allows the Publisher service to create, update, and manage content used for applications and updates.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>For more information, see [ConfigMgr Connection and Source Options](../).</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+For more information, see [ConfigMgr Connection and Source Options](../).
+{% endhint %}
 
 ### WSUS and Certificate Access
 
@@ -76,10 +78,11 @@ When the Publisher is installed remotely, configure a separate account for the S
 
 This account must be granted the required ConfigMgr security role, security scopes, and collection access for the actions the Publisher needs to perform.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>For more information, see [ConfigMgr Permissions](../publisher-requirements/configmgr-requirements/permissions.md).</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+For more information, see [ConfigMgr Permissions](../publisher-requirements/configmgr-requirements/permissions.md).
+{% endhint %}
 
 ### SUSDB
 
@@ -99,7 +102,8 @@ If the ConfigMgr database scan wizard is used, grant the gMSA the required SELEC
 
 These permissions allow the Publisher to read the ConfigMgr database views needed to identify supported products and related inventory data.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>For more information, see: [Scan ConfigMgr Database for Supported Products](../administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md).</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+For more information, see: [Scan ConfigMgr Database for Supported Products](../administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md).
+{% endhint %}

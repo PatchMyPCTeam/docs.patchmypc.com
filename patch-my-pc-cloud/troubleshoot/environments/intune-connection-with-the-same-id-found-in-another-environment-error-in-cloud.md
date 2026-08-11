@@ -10,7 +10,7 @@ When I click **Connect** in the **Environments** node to connect my Patch My PC 
 
 **Intune connection with the same Id found in another environment**
 
-!["Intune connection with the same Id found in another environment"](/_images/image-(2455).png)
+<figure><img src="../../../.gitbook/assets/image (2455).png" alt="&#x22;Intune connection with the same Id found in another environment&#x22;"><figcaption></figcaption></figure>
 
 ### CAUSE
 

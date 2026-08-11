@@ -6,10 +6,11 @@ _Applies to: Patch My PC Publisher V2.x_
 
 As well as the [core network requirements](../core-requirements.md#network), the Publisher requires outbound connectivity to Microsoft Entra ID and Microsoft Graph to authenticate and manage applications in Intune. These endpoints are used for OAuth 2.0 client credential authentication, token acquisition, and for creating, updating, and assigning Win32 applications.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>These URLs can be updated in the Publisher from the Options button in either the Intune Apps or Intune Updates tabs. See [Microsoft Graph API Settings](entra-id-app-registration/) for more details.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+These URLs can be updated in the Publisher from the Options button in either the Intune Apps or Intune Updates tabs. See [Microsoft Graph API Settings](entra-id-app-registration/) for more details.
+{% endhint %}
 
 The exact endpoints depend on the cloud environment your Intune tenant is hosted in, as outlined in the different scenarios below.
 
@@ -40,10 +41,11 @@ These endpoints are required for authentication flows, token issuance, and servi
 
 Use this configuration if your organization operates in the GCC High (U.S. Government) cloud. These tenants use separate authentication and Microsoft Graph endpoints that differ from the commercial cloud and must be configured explicitly.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If your tenant is not explicitly documented as GCC High or 21Vianet, you should use the Public / Commercial Cloud endpoints. GCC and other non-sovereign government tenants (such as GCC non-High) continue to use the commercial cloud endpoints.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+If your tenant is not explicitly documented as GCC High or 21Vianet, you should use the Public / Commercial Cloud endpoints. GCC and other non-sovereign government tenants (such as GCC non-High) continue to use the commercial cloud endpoints.
+{% endhint %}
 
 | Setting                        | Value                              |
 | ------------------------------ | ---------------------------------- |

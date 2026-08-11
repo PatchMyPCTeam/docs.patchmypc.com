@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Cloud_
 
-The **App Info** tool of the Patch My PC (PMPC) Cloud deployment wizard allows you to define default values for items that will be included in the app’s metadata when it is packaged to Intune.
+The **App Info** tool of the Patch My PC (PMPC) Cloud deployment wizard allows you to define default values for items that will be included in the app’s metadata when it is packaged to Intune.&#x20;
 
 Any values set for the following items will appear in the app’s properties when viewed in the Intune admin center:
 
@@ -17,25 +17,29 @@ Any values set for the following items will appear in the app’s properties whe
 
 <mark style="color:red;">**\***</mark> denotes a required field
 
-> \*\*Tip\*\*
->
-> If you make a mistake and want to reset the information in this section, click \*\*Reset to Default\*\* followed by \*\*OK\*\* on the \*\*Are you sure you want to reset to the default values?\*\* dialog box.
->
-> Also, if the \*\*App Info\*\* section has been configured, you can view it as part of the app’s properties in the Microsoft Intune admin center.
+{% hint style="success" %}
+**Tip**
+
+If you make a mistake and want to reset the information in this section, click **Reset to Default** followed by **OK** on the **Are you sure you want to reset to the default values?** dialog box.
+
+Also, if the **App Info** section has been configured, you can view it as part of the app’s properties in the Microsoft Intune admin center.
+{% endhint %}
 
 To manage the App Info for a Deployment:
 
 1. Click the **App Info** tool.
 
-![Clicking the 'App Info' tool](/_images/image-(660 "Clicking the 'App Info' tool") (1).png>)
+<figure><img src="../../../../../.gitbook/assets/image (660).png" alt="Clicking the &#x27;App Info&#x27; tool" width="563"><figcaption></figcaption></figure>
 
 2. Configure the settings as required.
 
-> \*\*Note\*\*
->
-> We pre-populate this screen with the information received from the vendor/added by us.
+{% hint style="info" %}
+**Note**
 
-!['App Info' tool](/_images/image-(661 "'App Info' tool") (1).png>)
+We pre-populate this screen with the information received from the vendor/added by us.
+{% endhint %}
+
+<figure><img src="../../../../../.gitbook/assets/image (661).png" alt="&#x27;App Info&#x27; tool" width="563"><figcaption></figcaption></figure>
 
 ## Next Steps
 
@@ -43,4 +47,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png)
+<figure><img src="../../../../../.gitbook/assets/image (662).png" alt="Clicking &#x27;Next&#x27;" width="563"><figcaption></figcaption></figure>

@@ -8,15 +8,17 @@ For client devices to successfully scan for, trust, and install updates, specifi
 
 When third-party software updates are enabled through client settings too, ConfigMgr also handles the additional requirements needed for third-party updates, such as allowing non-Microsoft–signed updates and distributing the WSUS code-signing certificate to clients, without requiring manual registry changes or manual certificate deployment.
 
-> \*\*Important\*\*
->
-> If you plan to deploy third-party update content through a \*\*Cloud Management Gateway (CMG)\*\*, do \*\*not\*\* enable \*\*Allow clients to download delta content when available\*\* in the corresponding Client Settings for clients that connect to a CMG as their management point (MP) and software update point (SUP).
->
-> When a CMG is used for content storage, third-party update content will fail to download to clients if the Download delta content when available client setting is enabled.
->
-> Read more at [https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/about-client-settings#allow-clients-to-download-delta-content-when-available](https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/about-client-settings#allow-clients-to-download-delta-content-when-available)
+{% hint style="warning" %}
+**Important**
 
-![Software Update Client Settings](/_images/image-(382 "Software Update Client Settings") (1).png>)
+If you plan to deploy third-party update content through a **Cloud Management Gateway (CMG)**, do **not** enable **Allow clients to download delta content when available** in the corresponding Client Settings for clients that connect to a CMG as their management point (MP) and software update point (SUP).
+
+When a CMG is used for content storage, third-party update content will fail to download to clients if the Download delta content when available client setting is enabled.
+
+Read more at [https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/about-client-settings#allow-clients-to-download-delta-content-when-available](https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/about-client-settings#allow-clients-to-download-delta-content-when-available)
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (382).png" alt="Software Update Client Settings" width="563"><figcaption></figcaption></figure>
 
 ## **Enable Third-Party Software Updates**
 
@@ -29,9 +31,11 @@ In the ConfigMgr console:
    * Enable software updates on clients = **Yes**
    * Enable third party software updates = **Yes**
 
-> \*\*Note\*\*
->
-> This client setting must apply to \*\*all devices\*\* that will scan for or install third-party updates.
+{% hint style="info" %}
+**Note**
+
+This client setting must apply to **all devices** that will scan for or install third-party updates.
+{% endhint %}
 
 When **Enable third party software updates** is set to **Yes**, ConfigMgr configures the client to:
 
@@ -41,10 +45,10 @@ When **Enable third party software updates** is set to **Yes**, ConfigMgr config
 
 Without this client setting enabled, client devices will not trust third-party updates, even if they are correctly published and deployed. This client setting configures local policy on the device, including setting the following registry value:
 
-`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`\
+`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`\
 `AcceptTrustedPublisherCerts = 1`
 
-![Accept Trusted Publisher Certificates](/_images/image-(383 "Accept Trusted Publisher Certificates") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (383).png" alt="Accept Trusted Publisher Certificates" width="563"><figcaption></figcaption></figure>
 
 If you are not using ConfigMgr client settings to manage this behavior, the same configuration can be applied using:
 

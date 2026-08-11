@@ -4,16 +4,18 @@ _Applies to: Patch My PC Cloud_
 
 To search for an Event in Patch My PC (PMPC) Cloud, type what you are looking for in the **Search** box on the **Events** page.
 
-> \*\*Note\*\*
->
-> If the portal finds any matching entries as you type, they are displayed. However, if no results are shown when you’ve finished typing your search phrase, either press Enter or click the magnifying glass.
+{% hint style="info" %}
+**Note**
 
-![The "Search" box](/_images/image-(2465).png)
+If the portal finds any matching entries as you type, they are displayed. However, if no results are shown when you’ve finished typing your search phrase, either press Enter or click the magnifying glass.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (2465).png" alt="The “Search” box"><figcaption></figcaption></figure>
 
 The search results of the matching entries is displayed.
 
-![Search results](/_images/image-(2466).png)
+<figure><img src="../../.gitbook/assets/image (2466).png" alt="Search results"><figcaption></figcaption></figure>
 
 To clear the search, either click the red **X** or manually clear the **Search** box.
 
-![Clearing the "Search" box](/_images/image-(2467).png)
+<figure><img src="../../.gitbook/assets/image (2467).png" alt="Clearing the “Search” box"><figcaption></figcaption></figure>

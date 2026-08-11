@@ -6,7 +6,8 @@ Official product documentation for Patch My PC
 
 
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>If you have any feedback or comments on our docs, please email [docs@patchmypc.com](mailto:docs@patchmypc.com).</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+If you have any feedback or comments on our docs, please email [docs@patchmypc.com](mailto:docs@patchmypc.com).
+{% endhint %}

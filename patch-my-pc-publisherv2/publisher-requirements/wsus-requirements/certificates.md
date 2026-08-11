@@ -2,10 +2,11 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-<blockquote class="wp-block-quote">
-<p>**Tip**</p>
-<p>Detailed guidance on certificate creation, selection, trust requirements, and lifecycle management is covered on the [Administration > General > Certificate Management](../../administration/general/certificate-management/) page.</p>
-</blockquote>
+{% hint style="success" %}
+**Tip**
+
+Detailed guidance on certificate creation, selection, trust requirements, and lifecycle management is covered on the [Administration > General > Certificate Management](../../administration/general/certificate-management/) page.
+{% endhint %}
 
 When working with WSUS or ConfigMgr, correct certificate configuration is required to ensure that updates are trusted and considered secure by the platform. Microsoft enforces this by requiring all third-party and custom updates to be code signed before they can be published into WSUS. This applies specifically to the CAB files that contain update metadata and content.
 

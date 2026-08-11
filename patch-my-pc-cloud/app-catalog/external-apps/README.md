@@ -2,19 +2,23 @@
 
 _Applies to: Patch My PC Cloud_
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>This feature is currently only available through an invitation-only Private Preview, as both it and the documentation are under development, incomplete, and subject to change.</p>
-<p>Please do not share links to these docs with others outside of the Private Preview.</p>
-<p>Once this feature is released, it will be announced, and this banner will be removed.</p>
-</blockquote>
+{% hint style="danger" %}
+**Important**
+
+This feature is currently only available through an invitation-only Private Preview, as both it and the documentation are under development, incomplete, and subject to change.
+
+Please do not share links to these docs with others outside of the Private Preview.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
 
 The **External** child node of the **App Catalog** node in the Patch My PC (PMPC) Cloud Portal lets you create a catalog of external apps that can be managed and deployed using PMPC Cloud.
 
-<blockquote class="wp-block-quote">
-<p>**Important**</p>
-<p>Any apps managed by the External catalog are not curated, vetted, and maintained by PMPC. You are responsible for all due diligence of such apps and their ongoing support. We merely provide the mechanism to use them with PMPC Cloud.</p>
-</blockquote>
+{% hint style="danger" %}
+**Important**
+
+Any apps managed by the External catalog are not curated, vetted, and maintained by PMPC. You are responsible for all due diligence of such apps and their ongoing support. We merely provide the mechanism to use them with PMPC Cloud.
+{% endhint %}
 
 ## Current Limitations
 
@@ -42,7 +46,8 @@ To be able to manage an app using the **External** catalog, you need to:
 * [Add the External App](add-external-app.md)
 * [Deploy the External App](deploy-external-app.md)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>You can also [Delete an External App](delete-external-app.md).</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+You can also [Delete an External App](delete-external-app.md).
+{% endhint %}

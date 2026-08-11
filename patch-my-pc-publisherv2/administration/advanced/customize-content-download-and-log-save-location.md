@@ -4,9 +4,9 @@ _Applies to: Patch My PC Publisher V2.x_
 
 ## Overview
 
-By default, the Publisher downloads content and writes logs to locations derived from the system and installation context.
+By default, the Publisher downloads content and writes logs to locations derived from the system and installation context.&#x20;
 
-![Customize Content Download and Log Save Location](/_images/image-(3946).png)
+<figure><img src="../../../.gitbook/assets/image (3946).png" alt="Customize Content Download and Log Save Location" width="557"><figcaption></figcaption></figure>
 
 Because the Publisher runs under the SYSTEM account, default paths may not always align with organizational requirements for disk usage, monitoring, or security tooling.
 
@@ -15,9 +15,11 @@ The Customize Content Download and Log Save Location options allow you to overri
 * Temporary content downloads used during publishing
 * The Publisher log folder
 
-> \*\*Note\*\*
->
-> These settings apply only to the Publisher and do not affect client-side installations.
+{% hint style="info" %}
+**Note**
+
+These settings apply only to the Publisher and do not affect client-side installations.
+{% endhint %}
 
 ## Set a Custom Folder for Temporary Downloads
 
@@ -29,11 +31,13 @@ C:\Windows\Temp
 
 This screenshot shows the Publisher using `C:\Windows\Temp` as a temporary scratch location while preparing packages during a publishing sync.
 
-![Temporary Downloads Folder](/_images/image-(3947).png)
+<figure><img src="../../../.gitbook/assets/image (3947).png" alt="Temporary Downloads Folder" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> Temporary content downloaded to this location is automatically removed once publishing operations complete.
+{% hint style="info" %}
+**Note**
+
+Temporary content downloaded to this location is automatically removed once publishing operations complete.
+{% endhint %}
 
 ## Set a Custom Folder for PatchMyPC.log
 
@@ -52,3 +56,4 @@ By default, Publisher logs are stored within the installation directory of the P
   The primary **PatchMyPC.log** file may still be located directly in the root of the Publishing Service installation directory rather than the `Logs` subfolder.
 
 Because the Publisher runs under the SYSTEM account, the computer account of the server hosting the Publishing Service must have write permissions to the configured log folder. If permissions are insufficient, logging may fail.
+

@@ -8,11 +8,11 @@ However, this default behavior can cause issues for some customers who are not a
 
 To give you better visibility and to allow you to customize the deployment process, for those apps that include our recommended scripts, you will now see the **Customer Scripts | PMPC Scripts** toggle on the **Scripts** tool page of the **Configurations** tab of the PMPC Cloud Deployment Wizard.
 
-!["Customer Scripts | PMPC Scripts" toggle](/_images/image-(3432).png)
+<figure><img src="../../../.gitbook/assets/image (3432).png" alt="“Customer Scripts | PMPC Scripts” toggle" width="563"><figcaption></figcaption></figure>
 
 Contrast this to an app that does not include any recommended scripts.
 
-![App without the "Customer Scripts | PMPC Scripts" toggle](/_images/image-(3433).png)
+<figure><img src="../../../.gitbook/assets/image (3433).png" alt="App without the “Customer Scripts | PMPC Scripts” toggle" width="563"><figcaption></figcaption></figure>
 
 Using this feature allows you to:
 
@@ -24,11 +24,11 @@ Using this feature allows you to:
 
 To view the PMPC scripts, click the PMPC Scripts toggle.
 
-![Clicking "PMPC Scripts"](/_images/image-(3434).png)
+<figure><img src="../../../.gitbook/assets/image (3434).png" alt="Clicking “PMPC Scripts”" width="563"><figcaption></figcaption></figure>
 
 Any recommended scripts included with the app are shown.
 
-![Recommended PMPC Scripts](/_images/image-(3435).png)
+<figure><img src="../../../.gitbook/assets/image (3435).png" alt="Recommended PMPC Scripts" width="563"><figcaption></figcaption></figure>
 
 Once you have clicked PMPC Scripts, you can:
 
@@ -36,11 +36,13 @@ Once you have clicked PMPC Scripts, you can:
 * Click the script, which will open it in a new browser tab so you can see its contents.
 * Click **Edit** to open the script in the relevant script editor window.
 
-![Script editor window](/_images/image-(3436).png)
+<figure><img src="../../../.gitbook/assets/image (3436).png" alt="Script editor window" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> In the current release, you cannot modify the script’s name, format, contents, or arguments. You can disable the script as detailed in \[Disable a PMPC Script]\(use-pmpc-scripts.md#disable-a-pmpc-script).
+{% hint style="info" %}
+**Note**
+
+In the current release, you cannot modify the script’s name, format, contents, or arguments. You can disable the script as detailed in [Disable a PMPC Script](use-pmpc-scripts.md#disable-a-pmpc-script).
+{% endhint %}
 
 ## Disable a PMPC Script
 
@@ -51,31 +53,31 @@ To disable a PMPC script:
 1. Either [deploy ](../deploy-app/)or [edit an existing deployment](../manage-deployments/edit.md) for the relevant app.
 2. Navigate to the **Configurations** tab.
 
-![Navigating to the "Configurations" tab](/_images/image-(3437).png)
+<figure><img src="../../../.gitbook/assets/image (3437).png" alt="Navigating to the “Configurations” tab" width="563"><figcaption></figcaption></figure>
 
 3. Click the **Scripts** tool if it is not already selected.
 
-![Clicking the "Scripts" tool](/_images/image-(3438).png)
+<figure><img src="../../../.gitbook/assets/image (3438).png" alt="Clicking the “Scripts” tool" width="563"><figcaption></figcaption></figure>
 
 4. Click **PMPC Scripts**
 
-![Clicking "PMPC Scripts"](/_images/image-(3439).png)
+<figure><img src="../../../.gitbook/assets/image (3439).png" alt="Clicking “PMPC Scripts”" width="563"><figcaption></figcaption></figure>
 
 5. Click **Edit** beside the relevant script.
 
-![Clicking "Edit" beside the relevant script](/_images/image-(3440).png)
+<figure><img src="../../../.gitbook/assets/image (3440).png" alt="Clicking “Edit” beside the relevant script" width="563"><figcaption></figcaption></figure>
 
 6. If the app includes a recommended Post-Install script, go to Step 9.
 7. If the app includes a recommended Pre-Install script, you have the option of checking either or both of the following checkboxes:
    1. **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**
    2. **Disable the Patch My PC Recommended Pre-Install scripts for this product**
 
-![Checking the required "Pre-install checkboxes.](/_images/image-(3441).png)
+<figure><img src="../../../.gitbook/assets/image (3441).png" alt="Checking the required “Pre-install checkboxes." width="563"><figcaption></figcaption></figure>
 
 8. Go to Step 10.
 9. If the app includes a recommended Post-Install script, check the **Disable the Patch My PC Recommended Post-Install scripts for this product** checkbox.
 
-![Checking the "Disable the Patch My PC Recommended Post-Install for this product" checkbox](/_images/image-(3442).png)
+<figure><img src="../../../.gitbook/assets/image (3442).png" alt="Checking the “Disable the Patch My PC Recommended Post-Install for this product” checkbox" width="563"><figcaption></figcaption></figure>
 
 10. Click **Save**
 
@@ -83,11 +85,13 @@ The **Configurations** tab is displayed.
 
 If either a Pre or Post-Install script has been disabled, a red circle is shown beside the script to indicate this and that it will not be included as part of the deployment.
 
-![Red circle is shown beside the script to indicate this and that it will not be included as part of the deployment.](/_images/image-(3443).png)
+<figure><img src="../../../.gitbook/assets/image (3443).png" alt="Red circle is shown beside the script to indicate this and that it will not be included as part of the deployment." width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> Checking the \*\*Don’t attempt software update if the pre script returns an exit code other than 0 or 3010\*\* checkbox for a Pre-Install script does not cause the red circle to be displayed.
+{% hint style="info" %}
+**Note**
+
+Checking the **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010** checkbox for a Pre-Install script does not cause the red circle to be displayed.
+{% endhint %}
 
 ## Enable a PMPC Script
 

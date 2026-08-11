@@ -2,11 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**PRE-RELEASE DOCUMENTATION**</p>
-<p>This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.</p>
-<p>Once this feature is released, it will be announced, and this banner will be removed.</p>
-</blockquote>
+{% hint style="danger" %}
+**PRE-RELEASE DOCUMENTATION**
+
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
 
 When the Patch My PC (PMPC) Publisher Settings console and **PatchMyPCService** run on the same computer, they communicate over a local-only connection that never touches the network, so no certificate is involved.
 

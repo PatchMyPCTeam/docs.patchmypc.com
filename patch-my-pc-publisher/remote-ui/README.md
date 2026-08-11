@@ -7,11 +7,13 @@ noIndex: true
 
 _Applies to: Patch My PC Publisher V3.x_
 
-<blockquote class="wp-block-quote">
-<p>**PRE-RELEASE DOCUMENTATION**</p>
-<p>This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.</p>
-<p>Once this feature is released, it will be announced, and this banner will be removed.</p>
-</blockquote>
+{% hint style="danger" %}
+**PRE-RELEASE DOCUMENTATION**
+
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
 
 The _Remote User Interface_ (Remote UI) feature of Patch My PC (PMPC) Publisher allows you to run the Settings console from a computer other than the server that runs the Publisher service.
 
@@ -24,3 +26,4 @@ The _Remote User Interface_ (Remote UI) feature of Patch My PC (PMPC) Publisher 
 
 
 &#x20;
+

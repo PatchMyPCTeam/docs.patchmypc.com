@@ -1,12 +1,14 @@
 # Manage Enrollment Status Page option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
-_&#x41;vailable on tab: Intune Apps_
+_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available on tab: Intune Apps_
 
-> \*\*Important\*\*
->
-> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% hint style="danger" %}
+**Important**
+
+This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% endhint %}
 
 The **Manage Enrollment Status Page** right-click option in Patch My PC (PMPC) Publisher allows you to associate Intune applications created by the Publisher with one or more Enrollment Status Page (ESP) profiles.
 
@@ -16,7 +18,7 @@ Only classic Enrollment Status Page (ESP) profiles are supported by this feature
 
 The example below highlights the difference in the Intune admin center between classic **Enrollment Status Page** profiles, which are supported, and **Device preparation policies**, which are not supported for ESP association by the Publisher.
 
-![Classic Enrollment Status Page versus Autopilot device preparation policies](/_images/image-(4050).png)
+<figure><img src="../../../.gitbook/assets/image (4050).png" alt="Classic Enrollment Status Page versus Autopilot device preparation policies" width="563"><figcaption></figcaption></figure>
 
 ## Configuration
 
@@ -24,17 +26,19 @@ The ESP profile association is applied during the next Publisher synchronization
 
 If a new version of the application is published, the Publisher automatically removes the previous version it created from the ESP profile(s) and adds the newly published version instead. This ensures Autopilot always tracks the most recent version of an application published.
 
-> \*\*Important\*\*
->
-> Associating an app with an ESP profile does not install the app by itself. The application must also have a Required Intune assignment targeting the device or user for it to be installed during Autopilot.
+{% hint style="danger" %}
+**Important**
+
+Associating an app with an ESP profile does not install the app by itself. The application must also have a Required Intune assignment targeting the device or user for it to be installed during Autopilot.
+{% endhint %}
 
 The available ESP profiles are retrieved from your Intune tenant. To appear in the list, an ESP profile must have **Show app and profile configuration progress** set to **Yes**.
 
-![Show app and profile configuration progress](/_images/image-(4052).png)
+<figure><img src="../../../.gitbook/assets/image (4052).png" alt="Show app and profile configuration progress" width="563"><figcaption></figcaption></figure>
 
 Use the Select ESPs window to associate an Intune application with one or more classic Enrollment Status Page profiles.
 
-![Select ESP Profiles](/_images/image-(4054).png)
+<figure><img src="../../../.gitbook/assets/image (4054).png" alt="Select ESP Profiles" width="465"><figcaption></figcaption></figure>
 
 To configure ESP profiles for an application:
 
@@ -46,4 +50,5 @@ To configure ESP profiles for an application:
 
 Products selected will added to the ESP profile as a Blocking app when the Intune application is published.
 
-![Block device use until required apps are installed if they are assigned to the user/device](/_images/image-(4053).png)
+<figure><img src="../../../.gitbook/assets/image (4053).png" alt="Block device use until required apps are installed if they are assigned to the user/device" width="563"><figcaption></figcaption></figure>
+

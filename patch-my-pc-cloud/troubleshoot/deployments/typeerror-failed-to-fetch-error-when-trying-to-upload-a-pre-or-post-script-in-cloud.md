@@ -1,4 +1,4 @@
-# "TypeError: Failed to fetch" error when trying to upload a Pre or Post Script in Cloud
+# "TypeError: Failed to fetch" error when trying to upload  a Pre or Post Script in Cloud
 
 _Applies to: Patch My PC Cloud_
 
@@ -8,7 +8,9 @@ I am trying to upload a Pre (or Post) script, but I get the following error:
 
 **Error - TypeError: Failed to fetch**
 
-![Error - TypeError: Failed to fetch](/_images/image-(934 "Error - TypeError: Failed to fetch") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (934).png" alt="Error - TypeError: Failed to fetch" width="350"><figcaption></figcaption></figure>
+
+
 
 ### CAUSE
 

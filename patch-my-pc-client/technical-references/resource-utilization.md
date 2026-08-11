@@ -8,7 +8,8 @@ The Patch My PC (PMPC) Client has the following expected resource utilization ch
 * **Memory usage -** Memory usage for the Client will generally be around 70 MB during normal background operations. However, this will increase temporarily during active operations.
 * **Resource usage -**  Resources consumed by the Client tend to be burst-oriented rather than sustained, given its defined schedule intervals. See [Inventory Data](../../patch-my-pc-cloud/insights-intune/technical-references/client-data-collection/#inventory-data) for more information on intervals.
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>This article will be updated as additional features are added to the PMPC Client.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+This article will be updated as additional features are added to the PMPC Client.
+{% endhint %}

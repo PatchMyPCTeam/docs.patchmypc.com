@@ -6,11 +6,13 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Timestamp Options** control how the Publisher applies digital timestamps when signing scripts and CAB files. Timestamping ensures that signatures remain valid after the signing certificate expires and is a recommended best practice for both applications and updates.
 
-![Timestamp Options](/_images/image-(175).png)
+<figure><img src="../../../.gitbook/assets/image (175).png" alt="Timestamp Options" width="545"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> For a detailed technical explanation of how timestamping works, including certificate trust, CAB signing, and troubleshooting scenarios, see the following blog post at [https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab](https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab)
+{% hint style="info" %}
+**Note**
+
+For a detailed technical explanation of how timestamping works, including certificate trust, CAB signing, and troubleshooting scenarios, see the following blog post at [https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab](https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab)&#x20;
+{% endhint %}
 
 ## Timestamp Server URL
 

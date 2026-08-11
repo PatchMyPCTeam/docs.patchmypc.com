@@ -7,19 +7,25 @@ If a Patch My PC (PMPC) Cloud deployment has been configured to use [Return Code
 1. Sign in to the **Intune admin center**.
 2.  Navigate to **Apps**.<br>
 
-    ![Navigating to "Apps"](/_images/image-(983 "Navigating to \"Apps\"") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (983).png" alt="Navigating to “Apps”"><figcaption></figcaption></figure>
+
+
 3.  Navigate to **All Apps**.<br>
 
-    ![Navigating to "All Apps"](/_images/image-(984 "Navigating to \"All Apps\"") (1).png>)
+    <figure><img src="../../../.gitbook/assets/image (984).png" alt="Navigating to “All Apps”"><figcaption></figcaption></figure>
+
+
 4.  Click the app if it’s shown in the results or search for it.\
     <br>
 
-    ![Clicking the app if it's shown in the results or searching for it](/_images/image-(3244).png)
+    <figure><img src="../../../.gitbook/assets/image (3244).png" alt="Clicking the app if it’s shown in the results or searching for it"><figcaption></figcaption></figure>
 5.  Navigate to **Manage | Properties**\
     <br>
 
-    ![Navigating to "Manage | Properties"](/_images/image-(3245).png)
+    <figure><img src="../../../.gitbook/assets/image (3245).png" alt="Navigating to “Manage | Properties”"><figcaption></figcaption></figure>
+
+
 6.  Scroll down to the **Program** section, under which you will find the **Return codes**.\
     <br>
 
-    ![Scrolling down to the "Program" section to locate the "Return codes"](/_images/image-(3246).png)
+    <figure><img src="../../../.gitbook/assets/image (3246).png" alt="Scrolling down to the “Program” section to locate the “Return codes” "><figcaption></figcaption></figure>

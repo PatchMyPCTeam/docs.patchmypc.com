@@ -14,9 +14,11 @@ This indicates a FileMaker Pro update delivered as an MSP installer for 64-bit s
 
 If no architecture is specified in the product name, this typically means the vendor only provides a single supported architecture for that product.
 
-> \*\*Note\*\*
->
-> If no architecture is shown in the product name, you can confirm the exact installer file and architecture by right-clicking the product and selecting \[Show Package Info]\(../customizations/list-customizations/show-package-info.md), which displays the precise installer being used.
+{% hint style="info" %}
+**Note**
+
+If no architecture is shown in the product name, you can confirm the exact installer file and architecture by right-clicking the product and selecting [Show Package Info](../customizations/list-customizations/show-package-info.md), which displays the precise installer being used.
+{% endhint %}
 
 ## Full Content vs Metadata (WSUS Updates tab only)
 
@@ -26,11 +28,13 @@ By default, updates are configured to publish with **Full Content**, meaning the
 
 If an update has been configured to publish with **Metadata Only**, then **(Metadata)** is appended to the end of the product name, and only the metadata will be published to WSUS.
 
-!['(Metadata)' appended to the end of the product name showing 'Switch to Metadata Only' option is selected for](/_images/image-(4791).png)
+<figure><img src="../../.gitbook/assets/image (4791).png" alt="&#x27;(Metadata)&#x27; appended to the end of the product name showing &#x27;Switch to Metadata Only&#x27; option is selected for" width="283"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> See \[Switch to Full Content/Metadata Only]\(../customizations/list-customizations/switch-full-content-metadata-only.md) for more details on this right-click option.
+{% hint style="info" %}
+**Note**&#x20;
+
+See [Switch to Full Content/Metadata Only](../customizations/list-customizations/switch-full-content-metadata-only.md) for more details on this right-click option.
+{% endhint %}
 
 ### Latest
 
@@ -45,10 +49,12 @@ Example:
 
 * Citrix Workspace LTSR (Latest)
 
-![Naming Convention - Latest](/_images/image-(4793).png)
+<figure><img src="../../.gitbook/assets/image (4793).png" alt="Naming Convention - Latest" width="281"><figcaption></figcaption></figure>
 
 If strict version control is required, select a product entry that includes an explicit major version number instead of **Latest**.
 
-> \*\*Note\*\*
->
-> When a product entry does not include (Installer Type-Architecture) in the name, it can be assumed that the vendor only offers a single variant for that product.
+{% hint style="info" %}
+**Note**
+
+When a product entry does not include (Installer Type-Architecture) in the name, it can be assumed that the vendor only offers a single variant for that product.
+{% endhint %}

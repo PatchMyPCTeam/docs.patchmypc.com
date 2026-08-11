@@ -1,16 +1,18 @@
 # Management Options section of Manage Conflicting Processes in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
-_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_Available at level: All Custom Products, All Products, Vendor, Product_\
+_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-> \*\*Important\*\*
->
-> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% hint style="danger" %}
+**Important**
+
+This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% endhint %}
 
 The **Management Options** section allows you to control which running processes are evaluated for conflicting process management and configure the notification branding.
 
-![Management Options](/_images/image-(3981).png)
+<figure><img src="../../../../.gitbook/assets/image (3981).png" alt="Management Options" width="525"><figcaption></figcaption></figure>
 
 ## Manage process list
 
@@ -20,7 +22,7 @@ The default process list is populated automatically based on the processes defin
 
 You can add additional process names if your environment uses processes that should also be considered conflicting. You can also remove processes if required, although this is generally not recommended unless you are certain the process does not interfere with updates.
 
-![Manage process list](/_images/image-(3982).png)
+<figure><img src="../../../../.gitbook/assets/image (3982).png" alt="Manage process list" width="375"><figcaption></figcaption></figure>
 
 Use the process list to define which running executables are treated as conflicting during update installation.
 

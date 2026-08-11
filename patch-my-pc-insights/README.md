@@ -6,7 +6,8 @@ Advanced Insights and Patch Insights share a base install, the functionality pro
 
 All setup and configuration instructions are valid for both Advanced Insights and Patch Insights unless stated.
 
-<blockquote class="wp-block-quote">
-<p>Note&#x20;</p>
-<p>These documents are for the On-premises version of our reporting products, Advanced Insights and Patch Insights. See [Advanced/Patch Insights for Intune](../patch-my-pc-cloud/insights-intune/) if you are using the Intune versions of these products.</p>
-</blockquote>
+{% hint style="info" %}
+Note&#x20;
+
+These documents are for the On-premises version of our reporting products, Advanced Insights and Patch Insights. See [Advanced/Patch Insights for Intune](../patch-my-pc-cloud/insights-intune/) if you are using the Intune versions of these products.
+{% endhint %}

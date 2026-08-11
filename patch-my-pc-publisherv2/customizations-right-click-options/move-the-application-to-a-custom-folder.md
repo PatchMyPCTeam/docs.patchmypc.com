@@ -1,18 +1,18 @@
 # Move the Application to a Custom Folder
 
 _Applies to: Patch My PC Publisher V2.x_\
-_&#x41;vailable at level: Vendor, Product_\
-_&#x41;vailable on tab: ConfigMgr Apps_
+_Available at level: Vendor, Product_\
+_Available on tab: ConfigMgr Apps_
 
 ## Overview
 
 The **Move the Application to a Custom Folder** option allows you to control where ConfigMgr applications created by the Publisher are stored within the ConfigMgr console.
 
-![Move the Application to a Custom Folder](/_images/image-(102).png)
+<figure><img src="../../.gitbook/assets/image (102).png" alt="Move the Application to a Custom Folder" width="495"><figcaption></figcaption></figure>
 
 Instead of leaving newly created applications in the default Applications root node, this setting automatically moves them into a folder structure that better aligns with how you organize and manage software.
 
-![ConfigMgr Application Folders](/_images/image-(104).png)
+<figure><img src="../../.gitbook/assets/image (104).png" alt="ConfigMgr Application Folders" width="563"><figcaption></figcaption></figure>
 
 ## Override Behavior
 
@@ -22,7 +22,7 @@ This option will override the global [Move applications to a specific console fo
 
 When using this right-click option, the **Select Console Folder** dialog allows you to choose where newly created ConfigMgr applications should be placed after publishing.
 
-![Select a console folder](/_images/image-(103).png)
+<figure><img src="../../.gitbook/assets/image (103).png" alt="Select a console folder" width="450"><figcaption></figcaption></figure>
 
 1. Right-click the **Vendor** or **Product** you want to configure.
 2. Select **Move the application to a custom folder**.

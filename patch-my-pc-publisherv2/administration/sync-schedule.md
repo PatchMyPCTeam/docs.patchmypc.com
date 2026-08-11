@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Sync Schedule** tab controls when the Publisher runs an automated publishing sync. A sync evaluates third party apps and updates and publishes content based on the configured selections in the product trees, customizations, and global options across the tabs.
 
-![Publisher scheduling options](/_images/image-(252).png)
+<figure><img src="../../.gitbook/assets/image (252).png" alt="Publisher scheduling options" width="545"><figcaption></figcaption></figure>
 
 ## How a Publishing Sync Works
 
@@ -33,9 +33,11 @@ The Publisher supports multiple scheduling options to control how often the publ
 * **Disable Sync Schedule**\
   Use this option to prevent the publishing service from running automatically. When selected, all publishing actions require a manual sync. This is useful for testing or tightly controlled publishing environments.
 
-> \*\*Important\*\*
->
-> The Publisher uses a single, global sync schedule that applies across all tabs and products. You cannot configure different sync schedules per platform or product.
+{% hint style="warning" %}
+**Important**
+
+The Publisher uses a single, global sync schedule that applies across all tabs and products. You cannot configure different sync schedules per platform or product.
+{% endhint %}
 
 ## Trigger ConfigMgr SUP Sync after publishing
 
@@ -49,13 +51,15 @@ Clicking **Run Publishing Service Sync** starts an immediate publishing sync. Th
 
 This action is referred to as a **manual sync** and is commonly used for testing, validation, or ad hoc publishing scenarios.
 
-> \*\*Note\*\*
->
-> A manual sync is frequently used in conjunction with the \[right-click customization option]\(../customizations-right-click-options/) \[\*\*Publish this product during the next manual sync (selective sync)\*\*]\(../customizations-right-click-options/publish-this-product-during-the-next-manual-sync-selective-sync.md). When this option is selected on one or more products in the product tree across any publishing tab, the next manual sync prompts whether to run a selective sync.
->
-> When a selective sync is chosen, the Publisher evaluates and processes only the products that were explicitly selected using that right-click option. This allows administrators to quickly test individual apps or updates, including checking for newly released versions, without processing the entire catalog and all selected products.
->
-> Selective sync provides a faster and more targeted publishing workflow compared to a full catalog evaluation.
+{% hint style="info" %}
+**Note**
+
+A manual sync is frequently used in conjunction with the [right-click customization option](../customizations-right-click-options/) [**Publish this product during the next manual sync (selective sync)**](../customizations-right-click-options/publish-this-product-during-the-next-manual-sync-selective-sync.md). When this option is selected on one or more products in the product tree across any publishing tab, the next manual sync prompts whether to run a selective sync.
+
+When a selective sync is chosen, the Publisher evaluates and processes only the products that were explicitly selected using that right-click option. This allows administrators to quickly test individual apps or updates, including checking for newly released versions, without processing the entire catalog and all selected products.
+
+Selective sync provides a faster and more targeted publishing workflow compared to a full catalog evaluation.
+{% endhint %}
 
 ## Sync Schedule Recommendations
 
@@ -81,6 +85,9 @@ For updates synced to ConfigMgr from WSUS after they are published, deployment c
 
 For ConfigMgr apps, the Publisher is responsible only for creating the applications. Deployment targeting and timing are fully controlled by administrators using standard ConfigMgr deployment practices.
 
-> \*\*Note\*\*
->
-> If the \[global option to update an application in place]\(configmgr-apps/options/application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) is enabled, newly published app versions will inherit existing deployments. For required deployments, this inheritance may directly influence how quickly devices receive the updated application.
+{% hint style="info" %}
+**Note**
+
+If the [global option to update an application in place](configmgr-apps/options/application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) is enabled, newly published app versions will inherit existing deployments. For required deployments, this inheritance may directly influence how quickly devices receive the updated application.
+{% endhint %}
+

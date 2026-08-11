@@ -10,7 +10,7 @@ When I deploy software using Intune Apps for Cloud (Intune Apps), why am I seein
 
 **A deployment with the same name <**_**deployment\_name**_**> already exists.**
 
-![](/_images/image-(2157).png)
+<figure><img src="../../../.gitbook/assets/image (2157).png" alt="“Error - A deployment with the same name <deployment_name> already exists."><figcaption></figcaption></figure>
 
 ### CAUSE
 
@@ -18,6 +18,6 @@ This message is telling you that you already have a deployment with the same nam
 
 ### RESOLUTION
 
-Ensure the **Display Name** for your deployment is unique.
+Ensure the **Display Name** for your deployment is unique.&#x20;
 
 If you want to deploy the same software with the same configuration but to different Entra ID groups, follow the [Deploying the same App with multiple configurations](../../deployments/technical-references/deploy-same-app.md) process.

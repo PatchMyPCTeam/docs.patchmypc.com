@@ -7,9 +7,11 @@ There are times when we need to remove a product from the Patch My PC (PMPC) App
 * Goes End-Of-Life (EOL) and is no longer supported or maintained by the vendor.
 * Other compatibility issues related to silent install or versioning.
 
-> \*\*Note\*\*
->
-> See [How Products are Handled at End-Of-Life (EOL) or Become Incompatible](https://patchmypc.com/kb/how-products-are-handled-end/) for more information about how we handle EOL apps in general, other reasons for removing apps from our App Catalog, and a searchable [List of Products Removed due to End-of-Life or Compatibility Issues](https://patchmypc.com/kb/how-products-are-handled-end/#h-list-of-products-removed-due-to-end-of-life-or-compatability-issues).
+{% hint style="info" %}
+**Note**
+
+See [How Products are Handled at End-Of-Life (EOL) or Become Incompatible](https://patchmypc.com/kb/how-products-are-handled-end/) for more information about how we handle EOL apps in general, other reasons for removing apps from our App Catalog, and a searchable [List of Products Removed due to End-of-Life or Compatibility Issues](https://patchmypc.com/kb/how-products-are-handled-end/#h-list-of-products-removed-due-to-end-of-life-or-compatability-issues).
+{% endhint %}
 
 In PMPC Cloud, when an app goes EOL:
 
@@ -21,13 +23,13 @@ If an app that is part of an MSP App Set is marked as EOL:
 
 * Any existing deployments of the app will be flagged with the **EOL** indicator in the App Set.
 
-> \*\*Important\*\*
->
-> \* If an app includes multiple variants and only certain variants are marked as EOL, the other non-EOL variants continue to function normally and are not marked as EOL.
->
-> \* Any existing deployments of EOL apps can still be edited, recreated, etc., but you will be unable to create a new deployment of the EOL app. This also applies to EOL apps that are part of an existing App Set. EOL apps will not appear in the \*\*Select Application\*\* dropdown when creating a new App Set.
->
-> \* If an existing App Set contains a deployment for an EOL app, new assignments can be added to the deployment for new Child Companies managed by the MSP Parent Company.
+{% hint style="danger" %}
+**Important**
+
+* If an app includes multiple variants and only certain variants are marked as EOL, the other non-EOL variants continue to function normally and are not marked as EOL.
+* Any existing deployments of EOL apps can still be edited, recreated, etc., but you will be unable to create a new deployment of the EOL app. This also applies to EOL apps that are part of an existing App Set. EOL apps will not appear in the **Select Application** dropdown when creating a new App Set.
+* If an existing App Set contains a deployment for an EOL app, new assignments can be added to the deployment for new Child Companies managed by the MSP Parent Company.
+{% endhint %}
 
 ## Examples of EOL Apps
 
@@ -41,16 +43,16 @@ The following examples show how EOL will appear in the Cloud Portal:
 
 An existing deployment of an EOL app will be shown as follows.
 
-![EOL deployment](/_images/image-(4262).png)
+<figure><img src="../../.gitbook/assets/image (4262).png" alt="EOL deployment" width="563"><figcaption></figcaption></figure>
 
 ### Discovery
 
 A managed app in **Discovery** that is EOL will be shown as follows.
 
-![EOL app in Discovery](/_images/image-(4263).png)
+<figure><img src="../../.gitbook/assets/image (4263).png" alt="EOL app in Discovery" width="563"><figcaption></figcaption></figure>
 
 ### App Set
 
 An EOL app deployment that is part of an existing App Set will be shown as follows.
 
-![EOL app in an App Set](/_images/image-(4264).png)
+<figure><img src="../../.gitbook/assets/image (4264).png" alt="EOL app in an App Set" width="563"><figcaption></figcaption></figure>

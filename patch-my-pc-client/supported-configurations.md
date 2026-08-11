@@ -18,11 +18,13 @@ The Patch My PC (PMPC) Client is supported on the following versions of Microsof
 | Windows 10                     | Enterprise, Pro, and Education  |
 | Windows 10 LTSC 2019 and 2021  | Enterprise                      |
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>The PMPC Client can be installed on supported 64-bit versions of Windows, including ARM64 via emulation.</p>
-<p>Windows versions that have reached End of Servicing or End of Support are not officially supported by the PMPC Client, but may continue to function.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+The PMPC Client can be installed on supported 64-bit versions of Windows, including ARM64 via emulation.
+
+Windows versions that have reached End of Servicing or End of Support are not officially supported by the PMPC Client, but may continue to function.
+{% endhint %}
 
 ## Transport Layer Security (TLS)
 

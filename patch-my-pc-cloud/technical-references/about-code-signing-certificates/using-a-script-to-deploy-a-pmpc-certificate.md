@@ -17,15 +17,19 @@ Download the required script from the Patch My PC Community Scripts repository:
 
 Use the script from the relevant `Current` folder for newly signed Patch My PC content.
 
-> \*\*Important\*\*
->
-> If you are implementing AllSigned, WDAC, AppLocker, or similar controls after applications have already been deployed, some existing deployed content may have been signed with a previous Patch My PC certificate. In that instance, you may also need to deploy the relevant archived certificate from the corresponding \`Archived\` folder.
->
-> Archived folders include the matching import and detection scripts for that certificate. When deploying an archived certificate using the script method, use the scripts from the archived folder rather than the scripts from the \`Current\` folder.
+{% hint style="warning" %}
+**Important**
 
-> \*\*Note\*\*
->
-> You can find out more details about these scripts and what they do by reviewing the [ReadMe.md](https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Other/Code%20Signing#readme) file included with the scripts.
+If you are implementing AllSigned, WDAC, AppLocker, or similar controls after applications have already been deployed, some existing deployed content may have been signed with a previous Patch My PC certificate. In that instance, you may also need to deploy the relevant archived certificate from the corresponding `Archived` folder.
+
+Archived folders include the matching import and detection scripts for that certificate. When deploying an archived certificate using the script method, use the scripts from the archived folder rather than the scripts from the `Current` folder.
+{% endhint %}
+
+{% hint style="info" %}
+**Note**
+
+You can find out more details about these scripts and what they do by reviewing the [ReadMe.md](https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Other/Code%20Signing#readme) file included with the scripts.
+{% endhint %}
 
 ## Deploy the Certificate with a Platform Script
 
@@ -117,7 +121,7 @@ Double-check everything before clicking **Add**.
 
 Use this section to deploy one of the Patch My PC certificate import scripts as an Intune remediation script.
 
-Select the tab that matches the certificate you want to deploy, then use the corresponding detection script, remediation script, and settings below when following the the [Remediations](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations) article.
+Select the tab that matches the certificate you want to deploy, then use the corresponding detection script, remediation script, and settings below when following the the [Remediations](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations) article.&#x20;
 
 The Remediation scripts can be found in the following repoistory on GitHub [https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Other/Code%20Signing](https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Other/Code%20Signing)
 
@@ -199,16 +203,16 @@ You can see the script being processed by the Intune Management Extension by loo
 
 Observe the **Proactive Remediation Device Status** blade.
 
-![Observing the "Proactive Remediation Device Status" blade.](/_images/image-(1351).png)
+<figure><img src="../../../.gitbook/assets/image (1351).png" alt="Observing the “Proactive Remediation Device Status” blade." width="563"><figcaption></figcaption></figure>
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script found the certificate already installed in the local computer’s Trusted Publishers store.
 
-!\["HealthScripts.log" snippet showing if the pre-remediation (detection) script has found the certificate already installed in the local machine's Trusted Publishers store.]\(/\_images/image-(1352.log" snippet showing if the pre-remediation (detection ""HealthScripts.log" snippet showing if the pre-remediation (detection) script has found the certificate already installed in the local machine's Trusted Publishers store.") script has found the certificate already installed in the local machine's Trusted Publishers store.").png)
+<figure><img src="../../../.gitbook/assets/image (1352).png" alt="“HealthScripts.log” snippet showing if the pre-remediation (detection) script has found the certificate already installed in the local machine’s Trusted Publishers store." width="563"><figcaption></figcaption></figure>
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script did not find the certificate already installed in the local machine’s Trusted Publishers store (the Exit code of the script is **1**).
 
-!\["HealthScripts.log" snippet showing if the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store (the Exit code of the script is 1).]\(/\_images/image-(1353.log" snippet showing if the pre-remediation (detection ""HealthScripts.log" snippet showing if the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store (the Exit code of the script is 1).") script did not find the certificate already installed in the local machine's Trusted Publishers store (the Exit code of the script is 1).").png)
+<figure><img src="../../../.gitbook/assets/image (1353).png" alt="“HealthScripts.log” snippet showing if the pre-remediation (detection) script did not find the certificate already installed in the local machine’s Trusted Publishers store (the Exit code of the script is 1)." width="563"><figcaption></figcaption></figure>
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script did not find the certificate already installed in the local machine’s Trusted Publishers store and the remediation script was run successfully (Exit code of the script is **0**).
 
-!\["HealthScripts.log" snippet showing the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0).]\(/\_images/image-(1354.log" snippet showing the pre-remediation (detection ""HealthScripts.log" snippet showing the pre-remediation (detection) script did not find the certificate already installed in the local machine's Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0).") script did not find the certificate already installed in the local machine's Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0).").png)
+<figure><img src="../../../.gitbook/assets/image (1354).png" alt="“HealthScripts.log” snippet showing the pre-remediation (detection) script did not find the certificate already installed in the local machine’s Trusted Publishers store and the remediation script was run successfully (Exit code of the script is 0)." width="563"><figcaption></figcaption></figure>

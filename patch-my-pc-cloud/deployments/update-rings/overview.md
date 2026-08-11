@@ -8,14 +8,16 @@ For example, you may want to deploy software to a pilot group of users/devices t
 
 Although this approach increases the amount of time it takes to deploy software, it can reduce the impact of deploying software with unforeseen issues that impacts your business in undesirable ways.
 
-<blockquote class="wp-block-quote">
-<p>**Notes**</p>
-<p>* Update Rings do not use Intune's built-in capability to create delayed assignments using Availability and Deadlines.</p>
-<p>* The use of Update Rings is optional and is controlled at the individual deployment level.</p>
-<p>* See our <a href="https://www.youtube.com/watch?v=RelJPqWIGno">Update Ring Forecaster</a> YouTube video for an explanation of Update Rings, plus how to use our free <a href="https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Other/Reports/Get-UpdateRingForecast.ps1">Get-UpdateRingForecast</a> script on GitHub which creates an interactive HTML visualization of app update deployment rings for staged rollouts. It calculates and displays a schedule based on specified parameters and helps you understand your version rollout cadence across different environments.</p>
-</blockquote>
+{% hint style="info" %}
+**Notes**
 
-<blockquote class="wp-block-quote">
-<p>**Learning Hub**</p>
-<p>See the <a href="https://patchmypc.com/learning-hub/how-update-rings-work-in-patch-my-pc-cloud/">How Update Rings Work in Patch My PC Cloud</a> video on our Learning Hub for a practical walkthrough of how Update Rings work, including how to enable them and how overlapping updates are handled.</p>
-</blockquote>
+* Update Rings do not use Intune's built-in capability to create delayed assignments using Availability and Deadlines.
+* The use of Update Rings is optional and is controlled at the individual deployment level.
+* See our [Update Ring Forecaster](https://www.youtube.com/watch?v=RelJPqWIGno) YouTube video for an explanation of Update Rings, plus how to use our free [Get-UpdateRingForecast](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Other/Reports/Get-UpdateRingForecast.ps1) script on GitHub which creates an interactive HTML visualization of app update deployment rings for staged rollouts. It calculates and displays a schedule based on specified parameters and helps you understand your version rollout cadence across different environments.
+{% endhint %}
+
+{% hint style="success" icon="user-check" %}
+**Learning Hub**
+
+See the [How Update Rings Work in Patch My PC Cloud](https://patchmypc.com/learning-hub/how-update-rings-work-in-patch-my-pc-cloud/) video on our Learning Hub for a practical walkthrough of how Update Rings work, including how to enable them and how overlapping updates are handled.
+{% endhint %}

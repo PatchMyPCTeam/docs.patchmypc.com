@@ -1,8 +1,8 @@
 # Add Pre/Post Scripts option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_&#x41;vailable at level: Product_\
-_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_Available at level: Product_\
+_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Add Pre/Post Scripts** option in Patch My PC (PMPC) Publisher lets you run your own scripts before or after an installation or an uninstallation. This includes the following scenarios:
 
@@ -19,7 +19,7 @@ The feature also allows additional files and folders to be bundled with the appl
 
 Selecting this option opens the configuration dialog where scripts, arguments, and additional content can be defined.
 
-![Add Pre/Post Scripts dialog](/_images/image-(4764).png)
+<figure><img src="../../../.gitbook/assets/image (4764).png" alt="Add Pre/Post Scripts dialog" width="563"><figcaption></figcaption></figure>
 
 The Add Pre/Post Scripts form defines how scripts and additional content are associated with an application or update. The options are available separately for Install and Uninstall.
 
@@ -51,7 +51,7 @@ The **Argument** field allows parameters to be passed to the selected script at 
 
 The **Insert Variable** links allow supported variables to be inserted directly into the **Argument** field. These variables resolve at runtime and can be used to pass values such as vendor name, product name, version, package ID, and installer return code to the script.
 
-#### **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**
+#### **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**&#x20;
 
 The **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010** checkbox can be checked if the deployment must stop when the pre script fails.
 
@@ -62,21 +62,26 @@ There are two exit codes you may see when a pre-script does not run successfully
 * **32768 -** This exit code is returned when a PMPC recommended pre-install script fails (see [Recommended Scripts](add-pre-post-scripts.md#recommended-scripts)). If the recommended script cannot run or does not exit cleanly, ScriptRunner stops the installation immediately and returns **32768**. This behavior is always enforced for recommended scripts.
 * **32767 -** This exit code is returned when a custom pre script, supplied by you, fails and the checkbox for **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010** is selected. If that option is not selected, ScriptRunner continues even if your supplied script returns a non-zero exit code.
 
-> \*\*Note\*\*
->
-> See [PatchMyPC-ScriptRunner – Known Exit Codes](https://patchmypc.com/kb/script-runner-exit-codes/) for more information on ScriptRunner exit codes.
+{% hint style="info" %}
+**Note**
+
+See [PatchMyPC-ScriptRunner – Known Exit Codes](https://patchmypc.com/kb/script-runner-exit-codes/) for more information on ScriptRunner exit codes.
+
+
+{% endhint %}
 
 #### **Run the pre-update script before performing any auto-close or skip process checks**
 
 The **Run the pre-update script before performing any auto-close or skip process checks** checkbox can be checked if the pre-script must run before conflicting process handling. If you are using the [Manage Conflicting Processes](manage-conflicting-processes/) option and this box is enabled, the pre-script runs before the process check.
 
-> \*\*Important\*\*
->
-> These two checkboxes only apply to Pre-scripts and have no effect on Post-scripts:
->
-> \* \*\*Don’t attempt software update if the pre script returns an exit code other than 0 or 3010\*\*
->
-> \* \*\*Run the pre-update script before performing any auto-close or skip process checks\*\*
+{% hint style="danger" %}
+**Important**
+
+These two checkboxes only apply to Pre-scripts and have no effect on Post-scripts:
+
+* **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**&#x20;
+* **Run the pre-update script before performing any auto-close or skip process checks**&#x20;
+{% endhint %}
 
 ### Additional Files and Folders
 
@@ -88,7 +93,7 @@ Any files and folders added here are packaged together with the application or u
 
 #### **Additional files**
 
-Use **Additional files** to include individual files that must be present during installation or uninstallation. For example, configuration files, license files, or other supporting resources.
+Use **Additional files** to include individual files that must be present during installation or uninstallation. For example, configuration files, license files, or other supporting resources.&#x20;
 
 To add files:
 
@@ -96,9 +101,11 @@ To add files:
 2. Browse to the required location and select the required file(s).
 3. Click **Open** to add the file(s) to the list.
 
-> \*\*Note\*\*
->
-> If you need to bundle an MST file with an MSI application, use the \[Manage MST File]\(manage-mst-file.md) customization option.
+{% hint style="info" %}
+**Note**
+
+If you need to bundle an MST file with an MSI application, use the [Manage MST File](manage-mst-file.md) customization option.
+{% endhint %}
 
 #### **Additional folders**
 
@@ -131,7 +138,7 @@ This allows scripts to source configuration files or other supporting content di
 
 The **Recommended Scripts** tab contains scripts provided by Patch My PC for certain products that, for example, cannot remove older versions on their own, such as Oracle Java. If the recommended script cannot run or does not exit cleanly, ScriptRunner stops the installation immediately and returns exit code **32768**.
 
-!['Recommended Scripts' tab](/_images/image-(4765).png)
+<figure><img src="../../../.gitbook/assets/image (4765).png" alt="&#x27;Recommended Scripts&#x27; tab" width="563"><figcaption></figcaption></figure>
 
 ### Disable the Patch My PC recommended post-update script for this product
 
@@ -149,34 +156,34 @@ To configure a pre- or post-script:
 6. Place the cursor where a variable is required.
 7. Select the appropriate option under **Insert Variable** to add it to the **Argument** field.
 
-> \*\*Note\*\*
->
-> Variables are expanded at runtime and provide application-specific values to the script.
+{% hint style="info" %}
+**Note**
 
-> \*\*Tip\*\*
->
-> If you need to include quotes in the \*\*Argument\*\* field, escape the quotes with a backslash. For example:
->
-> \`\`\`
->
-> -String \\"Hello world\\"
->
-> \`\`\`
->
-> Also, when passing multiple values to a PowerShell script, do not use traditional PowerShell array syntax in the \*\*Argument\*\* field, because as PowerShell is launched from \*\*cmd.exe\*\*, syntax like \`"Item1","Item2"\` is not interpreted as a single array value.
->
-> Instead, pass a single delimited string and split it inside the script. For example:
->
-> \`\`\`
->
-> -MyParameter "Item1,Item2,Item3"
->
-> \`\`\`
->
-> !\[]\(/\_images/image-(4001).png)
+Variables are expanded at runtime and provide application-specific values to the script.
+{% endhint %}
+
+{% hint style="success" %}
+**Tip**
+
+If you need to include quotes in the **Argument** field, escape the quotes with a backslash. For example:
+
+```
+-String \"Hello world\"
+```
+
+Also, when passing multiple values to a PowerShell script, do not use traditional PowerShell array syntax in the **Argument** field, because as PowerShell is launched from **cmd.exe**, syntax like `"Item1","Item2"` is not interpreted as a single array value.
+
+Instead, pass a single delimited string and split it inside the script. For example:
+
+```
+-MyParameter "Item1,Item2,Item3"
+```
+
+<img src="../../../.gitbook/assets/image (4001).png" alt="" data-size="original">
+{% endhint %}
 
 8. Configure any required [Additional Files and Folders](add-pre-post-scripts.md#additional-files-and-folders).
-9. Click **OK.**
+9. Click **OK.**&#x20;
 
 ## Using Uninstall-Software.ps1
 
@@ -201,9 +208,11 @@ The Uninstall Software community script supports parameters such as **DisplayNam
 
 When configuring this script in Publisher, the **Uninstall-Software.ps1** script file itself is selected in the **Pre Script** field. The **Arguments** field must contain only the parameters.
 
-> \*\*Note\*\*
->
-> Any quotation marks in the arguments must be escaped with a backslash.
+{% hint style="info" %}
+**Note**
+
+Any quotation marks in the arguments must be escaped with a backslash.
+{% endhint %}
 
 The following example is shown in the script [README](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Uninstall/Pre-Uninstall/Uninstall-Software/readme.md) and represents native PowerShell usage.
 
@@ -213,14 +222,15 @@ Uninstall-Software.ps1 -DisplayName "Greenshot"
 
 In Publisher, configure the script as follows.
 
-* **Pre Script**\
-  `Uninstall-Software.ps1`
+* **Pre Script**  \
+  &#x20;`Uninstall-Software.ps1`
 * **Argument**\
   `-DisplayName \"Greenshot\"`
 
 In this example, the script attempts to uninstall any installed application with a display name matching **Greenshot** before the main installation or uninstallation proceeds. Other parameters documented in the script [README](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Uninstall/Pre-Uninstall/Uninstall-Software/readme.md) can also be used to perform more targeted uninstall
 
 Advanced Configurations and Examples
+
 
 The following knowledge base articles provide practical examples of how to leverage pre and post-scripts or additional files when configuring applications and updates in the Publisher:
 

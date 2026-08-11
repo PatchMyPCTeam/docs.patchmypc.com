@@ -16,48 +16,56 @@ Download Patch My PC Publisher
 
 ## Run the Installation
 
-Start the installation by double-clicking the downloaded MSI.
+Start the installation by double-clicking the downloaded MSI.&#x20;
 
-> Depending on user account control settings, you may need to run an elevated command prompt and launch the MSI from the command prompt.
+{% hint style="info" %}
+Depending on user account control settings, you may need to run an elevated command prompt and launch the MSI from the command prompt.
+{% endhint %}
 
 ### Welcome Screen
 
 Once the installation starts you'll be greeted by the welcome screen in our installer wizard, click **Next**.
 
-!\[Select next to continue past the welcome screen]\(/\_images/image-(1779 "Select next to continue past the welcome screen").png>)
+![Select next to continue past the welcome screen](<../../.gitbook/assets/image (1779).png>)
 
 ### End-User License Agreement
 
 Read the End-User License Agreement. After that, select **I accept the terms in the License Agreement** and click **Next**.
 
-!\[End-User License Agreement]\(/\_images/image-(1955 "End-User License Agreement").png>)
+![End-User License Agreement](<../../.gitbook/assets/image (1955).png>)
 
 ### Disable Microsoft Intune Standalone Mode
 
 Ensure the option **Enable Microsoft Intune standalone mode** is **not selected**. Enabling this will disable any prerequisite checks for integration with WSUS/ConfigMgr and also hide options for publishing to WSUS/ConfigMgr after installation.
 
-This option is for customers who intend to publish only to Microsoft Intune.
+This option is for customers who intend to publish only to Microsoft Intune.&#x20;
 
 Click **Next**.
 
-!\[Option for Microsoft Intune standalone mode]\(/\_images/image-(1918 "Option for Microsoft Intune standalone mode").png>)
+![Option for Microsoft Intune standalone mode](<../../.gitbook/assets/image (1918).png>)
 
 ### Select Installation Folder
 
 By default the Publisher is installed in **C:\Program Files\Patch My PC\Patch My PC Publishing Service**.\
 \
-This location is where we store all of the product's configuration information.
+This location is where we store all of the product's configuration information.&#x20;
 
-!\[Select the folder where the service should be installed]\(/\_images/image-(1768 "Select the folder where the service should be installed").png>)
+![Select the folder where the service should be installed](<../../.gitbook/assets/image (1768).png>)
 
 ### Ready To Install
 
 Click **Install**.
 
-!\[Select install to start the installation.]\(/\_images/image-(1876 "Select install to start the installation.").png>)
+![Select install to start the installation.](<../../.gitbook/assets/image (1876).png>)
+
+![](<../../.gitbook/assets/image (1919).png>)
 
 ### Completed
 
-Once the Publisher has finished installing, click **Finish** to close the installation wizard.
+Once the Publisher has finished installing, click **Finish** to close the installation wizard.&#x20;
 
-> By default, the "\*\*Launch Patch My PC Publishing Service\*\*" is enabled - this will launch the Publisher when you click \*\*Finish\*\*.
+{% hint style="info" %}
+By default, the "**Launch Patch My PC Publishing Service**" is enabled - this will launch the Publisher when you click **Finish**.
+{% endhint %}
+
+![](<../../.gitbook/assets/image (1900).png>)

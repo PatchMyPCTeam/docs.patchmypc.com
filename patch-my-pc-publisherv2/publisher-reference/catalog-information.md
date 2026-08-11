@@ -12,19 +12,23 @@ Some products include **Latest** in the name to indicate dynamic version trackin
 
 If no architecture is specified in the product name, this typically means the vendor only provides a single supported architecture for that product.
 
-> \*\*Tip\*\*
->
-> The \*\*(Full Content)\*\* or \*\*(Metadata)\*\* additional naming suffix only appears in the product tree on the \[Updates tab]\(../administration/updates/overview.md).
+{% hint style="success" %}
+**Tip**
 
-> \*\*Note\*\*
->
-> If no architecture is shown in the product name, you can confirm the exact installer file and architecture by using \*\*right-click > Show package info\*\*, which displays the precise installer being used.
+The **(Full Content)** or **(Metadata)** additional naming suffix only appears in the product tree on the [Updates tab](../administration/updates/overview.md).
+{% endhint %}
+
+{% hint style="info" %}
+**Note**
+
+If no architecture is shown in the product name, you can confirm the exact installer file and architecture by using **right-click > Show package info**, which displays the precise installer being used.
+{% endhint %}
 
 ### Full Content vs Metadata (Updates Tab Only)
 
 The product name suffix for (Full Content) or (Metradata) shown in the product tree, on the updates tab, reflects how the update is configured via right-click customization. When an update is set to publish with **Full Content**, the product name includes (Full Content) to indicate that the installer binaries will be published to WSUS. If the update is configured as Metadata only, the name is updated to reflect **Metadata** instead. This naming helps you quickly see how each update will be published at a glance.
 
-![Naming Convention - Full Content / Metadata](/_images/image-(525 "Naming Convention - Full Content / Metadata") (1).png>)
+<figure><img src="../../.gitbook/assets/image (525).png" alt="Naming Convention - Full Content / Metadata" width="563"><figcaption></figcaption></figure>
 
 For more details on changing the default (Full Content) to (Metadata), see [Publishing with Full-content or Metadata Only](../customizations-right-click-options/publish-with-full-content-or-metadata-only.md).
 
@@ -39,12 +43,14 @@ Example:
 
 * Citrix Workspace LTSR (Latest)
 
-![Naming Convention - Latest](/_images/image-(526 "Naming Convention - Latest") (1).png>)
+<figure><img src="../../.gitbook/assets/image (526).png" alt="Naming Convention - Latest" width="563"><figcaption></figcaption></figure>
 
 In these cases, Latest means the product will always align to the most recent major version published within that product line (such as the newest LTSR build). As newer versions are added to the catalog, the Latest entry automatically advances without requiring changes to product selection.
 
 If strict version control is required, select a product entry that includes an explicit major version number instead of Latest.
 
-> \*\*Note\*\*
->
-> When a product entry does not include (Installer Type-Architecture) in the name, it can be assumed that the vendor only offers a single variant for that product.
+{% hint style="info" %}
+**Note**
+
+When a product entry does not include (Installer Type-Architecture) in the name, it can  be assumed that the vendor only offers a single variant for that product.
+{% endhint %}

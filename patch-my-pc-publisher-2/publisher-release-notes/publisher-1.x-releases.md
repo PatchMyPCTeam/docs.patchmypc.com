@@ -95,7 +95,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
 #### Features
 
-* The first release of our CVE import/matching features based on UserVoice [**Feature Request for CVE Import automation**](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-916)
+* The first  release of our CVE import/matching features based on UserVoice [**Feature Request for CVE Import automation**](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-916)
   * You can launch the CVE import feature in the Updates tab by clicking the new document lock icon
   * If you have any feedback on the first release, leave a comment at [https://ideas.patchmypc.com/ideas/PATCHMYPC-I-916](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-916)
 * Updates published via the CVE Import Wizard will have a Teams and Email alert if enabled.
@@ -136,9 +136,9 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Update the PatchMyPC-ScriptRunner.exe to use the CCM client log directory defined in the registry by default
   *   Check
 
-      “HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\CCM\Logging\\@Global”
+      &#x20; “HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\CCM\Logging\\@Global”
 
-      \> LogDirectory, and fallback to “%windir%\ccm\logs”
+      &#x20; \> LogDirectory, and fallback to “%windir%\ccm\logs”
   * Idea: [PATCHMYPC-I-911](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-911)
 
 #### Improvements
@@ -184,7 +184,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * SMTP port default to 25 instead of 587 when the feature is in a non-configured state.
 *   The Publisher will retry several times when the rename of a folder during an SCCM application upgrade fails. This should help prevent
 
-    'Access Denied' errors that are caused by file locks.
+    &#x20; 'Access Denied' errors that are caused by file locks.
 
 #### Fixes
 
@@ -199,9 +199,9 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
   * This would cause the following error in appenforce.log:
     *   \*\*fails to install error code Looking for exit code
 
-        -2147467259 in exit codes table\*\*
-    * **Unmatched exit code (2147500037) is considered an execution failure.**
-      *
+        &#x20; -2147467259 in exit codes table\*\*
+    * **Unmatched exit code (2147500037) is considered an execution failure.**&#x20;
+      * ![Bug with Percentage Sign in Application File Name](https://patchmypc.com/wp-content/uploads/2018/05/Bug-with-Percentage-Sign-in-Application-File-Name.jpg)
 
 ### 1.8.9 - 2020-09-10
 
@@ -237,20 +237,20 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
 * Fixed an issue where the Publisher would falsely report that it was not installed on a Software Update Point in some scenarios.
 * Fixed an issue where the Intune Updates product list was not reloaded during publisher sync in some scenarios.
-* Fixed an issue where Intune Applications would not detect appropriately for certain applications. OneDrive was a known affected product, but others may have been included.
+* Fixed an issue where Intune Applications would not detect appropriately for certain applications. OneDrive was a known affected product, but others may have been included.&#x20;
 * Fixed an issue where the Intune Connection Options would log out an error state 'Invalid Uri.'
 *   Fixed an issue where ConfigMgr Base Applications were created with a detection script that did not specify a version to search for. All base applications created with \*\*Publisher Version 1.8.4 or newer
 
-    (released 2020-07-22)\*\* would always show as detected if any version was installed on the endpoint. The version was not being validated.
+    &#x20; (released 2020-07-22)\*\* would always show as detected if any version was installed on the endpoint. The version was not being validated.
 
-    * The affected detection method would show version 2.2 in the logs, and in the script itself.
-    * Applications created after 2020-07-22 by the Publisher should be deleted and recreated to ensure the proper detection method script is used.
+    * The affected detection method would show version 2.2 in the logs, and in the script itself.&#x20;
+    * Applications created after 2020-07-22 by the Publisher should be deleted and recreated to ensure the proper detection method script is used.&#x20;
 
 ### 1.8.7 - 2020-08-21
 
 #### Fixes
 
-* Fixed a bug where the publisher would report ‘Cannot get available disk space’ when validating there is enough free disk space for deferred application publishing.
+* Fixed a bug where the publisher would report ‘Cannot get available disk space’ when validating there is enough free disk space for deferred application publishing.&#x20;
 * Fixed a bug where the publisher would fail to parse the Proxy URL, reporting the following error.
   * An error occurred while converting the provided Proxy URL to a URI for use by the Web Client…
   * See [this KB article](https://patchmypc.com/error-converting-proxy-url-to-uri) for remediation steps if you are affected.
@@ -312,14 +312,14 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Available date and deadline date for Intune assignments are not properly displayed in the assignment setting wizard
 *   The Publisher may crash when trying to check for a new release on Intune only installation where only RSAT:Windows Service Update Services is being used. If you are affected by this issue, please perform an in-place upgrade of the publisher using
 
-    [**version 1.8.4 available for download now**](https://app.gitbook.com/publishing-service-setup-documentation).
+    &#x20; [**version 1.8.4 available for download now**](https://app.gitbook.com/publishing-service-setup-documentation).
 
 ### 1.8.3 - 2020-07-08
 
 #### Features
 
 * Add an Intune Scan Wizard allowing you to auto-enroll applications based on Intune App scanning.
-  * [https://patchmypc.com/scan-intune-for-supported-products](https://patchmypc.com/scan-intune-for-supported-products)
+  * [https://patchmypc.com/scan-intune-for-supported-products ](https://patchmypc.com/scan-intune-for-supported-products)
 * Add all options available in the 'User Experience' for Applications to a new context menu option for base installs.
   * [https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#app-user-experience](https://patchmypc.com/custom-options-available-for-third-party-updates-and-applications#app-user-experience)
   * User voice [idea](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-803)
@@ -350,7 +350,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Fixed an issue where the checkbox in the MSI installer to enable Intune only mode may not be applied after the installation
 *   Fixed an issue where the republish option no longer showed for
 
-    "All Products" and Vendor nodes
+    &#x20; "All Products" and Vendor nodes
 * Fixed an issue where incorrect workstation counts were shown on certain SSRS reports
 
 ### 1.8.2 - 2020-06-09
@@ -419,28 +419,28 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
 *   Intune assignments created during an application creation or update are now reported in Teams notifications and email alerts
 
-    (Idea:
+    &#x20; (Idea:
 
-    [PATCHMYPC-I-700](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-700))
+    &#x20; [PATCHMYPC-I-700](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-700))
 *   Adds a line in the log to specify Intune AppIDs (old and new release) during an application updating (Idea:
 
-    [PATCHMYPC-I-723](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-723))
+    &#x20; [PATCHMYPC-I-723](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-723))
 *   Improves how Azure AD groups are retrieved (Set page limit to 999). We will also now display O365 groups. Adds the ability to search a group based on the group name starts with (Idea:
 
-    [PATCHMYPC-I-718](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-718))
+    &#x20; [PATCHMYPC-I-718](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-718))
 *   Adds a new column, UpdateEnabled, to the resulting CSV from the SCCM Scan Database Wizard -
 
-    (Idea: [PATCHMYPC-I-645](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-645))
+    &#x20; (Idea: [PATCHMYPC-I-645](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-645))
 * UI improvements to the Base Install options
 *   Generates a CSV file (PatchMyPC-DownloadHistory.csv) that includes the vendor name, protocol, web domains, and download status for downloaded binaries. (Idea:
 
-    [PATCHMYPC-I-740](https://patchmypc.aha.io/ideas/PATCHMYPC-I-740))
+    &#x20; [PATCHMYPC-I-740](https://patchmypc.aha.io/ideas/PATCHMYPC-I-740))
 
     **Fixes**
 * Fixed an issue where the WSUS Maintenance for unreferenced updates would not return folders when the name is longer than 80 characters
 * Fixed an issue where file coping during publishing would fail when a file is referenced more than once (e.g., in additional files and pre-command script)
 * Fixed an issue where adding multiple Intune assignments with customer deployment deadlines may cause the publisher UI to crash
-*   Fixed an issue where double quotes in the command line argument for software updates would not be retained.
+*   Fixed an issue where double quotes in the command line argument for software updates would not be retained.&#x20;
 
     **Improvements**
 * Adds logging for a new known error when access is denied to the application source.
@@ -453,7 +453,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * An error message is logged out if a device collection attribute is not configured in the SCCM application scan feature
 *   Intune assignments referring to another a customer Azure AD group may be lost from the settings. Previous Intune assignments could be restored by importing a settings backup from the
 
-    \\\backup folder in the advanced tab.
+    &#x20; \\\backup folder in the advanced tab.
 * Mistakenly notify a success when a hash validation failed during an SCCM application in-place upgrade
 
 ### 1.7.5 - 2020-04-15
@@ -488,12 +488,12 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Snooze duration in Intune assignments can be set to an invalid value when the restart grace period and restart countdown are also enabled
 *   SCCM Applications may fail to be created on older SCCM builds with error "An error occurred while creating an application in SCCM: Could not load type
 
-    'Microsoft.ConfigurationManagement.ApplicationManagement.ProcessDisplayName' from assembly
+    &#x20; 'Microsoft.ConfigurationManagement.ApplicationManagement.ProcessDisplayName' from assembly
 
-    'Microsoft.ConfigurationManagement.ApplicationManagement, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'."
+    &#x20; 'Microsoft.ConfigurationManagement.ApplicationManagement, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'."
 *   Microsoft Intune application may fail to be created with error
 
-    "An error occurred while processing an Intune application: Unrecognized Guid format."
+    &#x20; "An error occurred while processing an Intune application: Unrecognized Guid format."
 * Log the ApplicationID of the Intune app that is updated instead of the Intune App ID (reported by Jan Ketil Skanke)
 
 ### 1.7.2 - 2020-03-23
@@ -521,7 +521,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Fix an issue where if there's a WIn32 application larger than 1.95gb, you would receive the following error:
   *   An error occurred while connecting to Intune: JSON integer 2242219440 is too large or small for an Int32. Path
 
-      'value\[75].size', line 1, position 118932.
+      &#x20; 'value\[75].size', line 1, position 118932.
 
 ### 1.7.0 - 2020-03-08
 
@@ -677,7 +677,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Add support to auto-popular the uninstall command line for 50+ applications in SCCM
 *   Allow searching backward for products and vendors when clicking
 
-    (Shift+F3)
+    &#x20; (Shift+F3)
 * Preserve User Categories when updating Apps in SCCM
 * Preserve Admin Categories when updating an SCCM application
 * You can now configure a custom application name, localized application name, localized application description, and icon
@@ -715,7 +715,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
     **Improvements**
 *   Add several log entries when sync fails
 
-    ([EventID=3001-3005](https://patchmypc.com/windows-event-logging-details-for-patch-my-pc-publishing-service))
+    &#x20; ([EventID=3001-3005](https://patchmypc.com/windows-event-logging-details-for-patch-my-pc-publishing-service))
 * Add new[ advanced options to improve SQL queries](https://patchmypc.com/advanced-configurations-available-using-the-registry-for-patch-my-pcs-publishing-service) for large organizations.
 *   Improve the version comparison in the PowerShell detection method script
 
@@ -787,7 +787,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Logging improvements
 *   Any application created by Patch My PC will now contain and administrative comment of "Created by Patch My PC Version
 
-    \\"
+    &#x20; \\"
 
     **Fixes**
 * Fixed a bug in version 1.4.7 and 1.4.8 where the application detection script may fail to evaluate when the application is deployed to a user collection as available, and a non-admin user initiates the installation. Note: this was a regression bug from version 1.4.1.
@@ -798,7 +798,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
 *   PowerShell detection scripts can now be saved in an additional folder using a registry value. Based on UserVoice item:
 
-    [Detection Method Scripts Location](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-317)
+    &#x20; [Detection Method Scripts Location](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-317)
 * Settings file can now be saved in an additional folder from the advanced tab. Based on UserVoice item: [Publishing Service configure backup path](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-313)
 * Add an option to always check the local content repository to update content prior to downloading from the internet. Based on UserVoice item: [Check Local Content Repository for All Products](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-266)
 *   Dependencies are retained when updating SCCM App
@@ -812,7 +812,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
 *   Powershell detection method scripts are now saved in the
 
-    \\\Detection Method Scripts folder.
+    &#x20; \\\Detection Method Scripts folder.
 *   Set requirements to prevent the installation of Flash Player ActiveX on Windows 10 and Windows Server 2016 and 2019 and higher.
 
     **Fixes**
@@ -870,7 +870,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
     **Fixes**
 *   Updated the detection method script for applications to resolve the following error (Access to the path
 
-    'C:\Windows\CCM\Logs\PatchMyPC-SoftwareDetectionScript.log' is denied.) that would occur in AppDiscovery.log in certain builds of Configuration Manager.
+    &#x20; 'C:\Windows\CCM\Logs\PatchMyPC-SoftwareDetectionScript.log' is denied.) that would occur in AppDiscovery.log in certain builds of Configuration Manager.
 
 ### 1.4.1 - 2019-07-15
 
@@ -900,7 +900,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
 *   Fixed an issue where if you switch from the general tab to the update rules tab very quickly the products enabled may reset and the Settings.xml would need to be restored from the
 
-    \\\Backup folder.
+    &#x20; \\\Backup folder.
 
     **Improvements**
 * Added an option to prefix the computer name to the installation log file name to allow you to use a shared path and receive unique log file names for each device.
@@ -1088,7 +1088,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Added "**About**" tab that shows version information, release notes, support options, and how to request new products.
 *   Added "**Local Content Repository**" option in the
 
-    "**Advanced**" tab. This feature is used if there are licensed products that don't allow for public download in the future. For more details, please see [licensed products that require a manual download](https://patchmypc.com/local-content-repository-for-licensed-applications-that-require-manual-download)
+    &#x20; "**Advanced**" tab. This feature is used if there are licensed products that don't allow for public download in the future. For more details, please see [licensed products that require a manual download](https://patchmypc.com/local-content-repository-for-licensed-applications-that-require-manual-download)
 
 ### 1.1.7 - 2018-12-13
 
@@ -1102,7 +1102,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 
 *   Fixed an issue where updates may fail to publish on WSUS 3.0 SP2
 
-    (Windows Server 2008 and Windows Server 2008 R2)
+    &#x20; (Windows Server 2008 and Windows Server 2008 R2)
 
 ### 1.1.5 - 2018-11-19
 
@@ -1161,7 +1161,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 * Added a column to show declined updates in the modify updates wizard
 *   Auto-refresh display in the modification updates wizard when
 
-    «Declined» or «Delete» button is pressed
+    &#x20; «Declined» or «Delete» button is pressed
 * Added a checkbox in the scheduling tab to synchronization the Software Update Point after the publishing services completes and any updates are published or modified
 * Added the size of the downloaded file in the log file
 * Improved performance when reading the settings file
@@ -1206,7 +1206,8 @@ Details the production release history for Patch My PC (PMPC) Publisher, for ver
 #### Improvements
 
 * We added a right-click context menu for vendors and products in the Product Rules tab.
-  * We added two new options that allow you to kill an applications process before performing an update or skipping the update install if conflicting processes are running. \*
+  * We added two new options that allow you to kill an applications process before performing an update or skipping the update install if conflicting processes are running.
+    *
 
 ### 1.0.2 - 2018-05-20
 

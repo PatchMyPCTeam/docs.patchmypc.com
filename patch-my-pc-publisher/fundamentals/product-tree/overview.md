@@ -6,19 +6,23 @@ The _Product Tree_ in Patch My PC (PMPC) Publisher is where you choose which pro
 
 It is a hierarchical view that lets you enable updates at different levels of granularity, from all products for a vendor down to individual products.
 
-> \*\*Tip\*\*
->
-> For more details on product naming conventions in the product tree, refer to \[Catalog Information]\(../../technical-references/catalog-information.md).
+{% hint style="success" %}
+**Tip**
 
-> \*\*Note\*\*
->
-> The majority of user interface elements are the same across all supported management platforms. However, there are some specifics which are documented in the relevant section.
+For more details on product naming conventions in the product tree, refer to [Catalog Information](../../technical-references/catalog-information.md).
+{% endhint %}
+
+{% hint style="info" %}
+**Note**
+
+The majority of user interface elements are the same across all supported management platforms. However, there are some specifics which are documented in the relevant section.
+{% endhint %}
 
 ## Product Tree Structure
 
 The Product Tree can be expanded or collapsed to three main levels:
 
-![Product Tree Structure](/_images/image-(4516).png)
+<figure><img src="../../../.gitbook/assets/image (4516).png" alt="Product Tree Structure" width="563"><figcaption></figcaption></figure>
 
 1. **All Vendors**
    * The root of the tree.
@@ -47,7 +51,7 @@ However:
 The checkbox states behave as follows:
 
 * Checked (✔) – All products under that node are selected.
-* Colored square (!\[Colored square]\(/\_images/image-(4515 "Colored square").png>)) – A partial selection exists (some child products selected, others not).
+* Colored square (![Colored square](<../../../.gitbook/assets/image (4515).png>)) – A partial selection exists (some child products selected, others not).
 * Unchecked (☐) – No products under that node are selected.
 
 This visual feedback allows you to quickly understand whether you are managing a single product, a subset of products, or an entire vendor, and gives you precise control over how broadly or narrowly updates are published.
@@ -56,19 +60,21 @@ This visual feedback allows you to quickly understand whether you are managing a
 
 In the example below, only the **3CXPhone for Windows (MSI-x86)** checkbox is checked, showing a single product selection. The **3CX Ltd** checkbox shows a colored square (indeterminate state) rather than a full checkmark. This indicates that Publisher will manage updates for that specific product only, and no other products from the **3CX Ltd** vendor will be published at the next Publisher sync.
 
-![Product level selection](/_images/image-(4747).png)
+<figure><img src="../../../.gitbook/assets/image (4747).png" alt="Product level selection" width="251"><figcaption></figcaption></figure>
 
 In contrast, **8x8, Inc.** demonstrates a vendor-level selection. The **8x8, Inc.** checkbox shows a full checkmark rather than a colored square (indeterminate state). This indicates that all products under the **8x8, Inc.** vendor are selected.
 
-![Vendor level example](/_images/image-(4748).png)
+<figure><img src="../../../.gitbook/assets/image (4748).png" alt="Vendor level example" width="245"><figcaption></figcaption></figure>
 
 ## Which Products should I select?
 
 ### All Vendors Level
 
-> \*\*Important\*\*
->
-> We do not recommend selecting \*\*All Vendors\*\* for publishing in most environments. The Patch My PC catalog contains far more products than are typically installed in any single organization, and selecting \_everything\_ can lead to unnecessary publishing, storage consumption, and administrative overhead.
+{% hint style="danger" %}
+**Important**
+
+We do not recommend selecting **All Vendors** for publishing in most environments. The Patch My PC catalog contains far more products than are typically installed in any single organization, and selecting _everything_ can lead to unnecessary publishing, storage consumption, and administrative overhead.
+{% endhint %}
 
 The only scenario for selecting **All Vendors** is if you combine it with the [right-click customization option](../../customizations/) to publish metadata-only (not full content).
 
@@ -82,11 +88,13 @@ This allows you to make informed decisions later about which products to switch 
 
 ### Vendor Level
 
-Selecting a vendor is acceptable when you are confident that the vendor has broad coverage in your environment. For example, organizations with widespread Adobe usage may reasonably choose to select the Adobe vendor rather than managing each product individually.
+Selecting a vendor is acceptable when you are confident that the vendor has broad coverage in your environment. For example, organizations with widespread Adobe usage may reasonably choose to select the Adobe vendor rather than managing each product individually.&#x20;
 
-> \*\*Important\*\*
->
-> Products marked with \*\*Latest\*\* in the update name will always update a computer to the vendor’s latest major version.
+{% hint style="danger" %}
+**Important**
+
+Products marked with **Latest** in the update name will always update a computer to the vendor’s latest major version.
+{% endhint %}
 
 #### (Latest) Version Consideration
 
@@ -98,11 +106,11 @@ This may be undesirable if:
 * The upgrade introduces breaking changes
 * Compatibility with other systems is not yet confirmed.
 
-![(Latest) Version Consideration](/_images/image-(4519).png)
+<figure><img src="../../../.gitbook/assets/image (4519).png" alt="(Latest) Version Consideration" width="314"><figcaption></figcaption></figure>
 
-In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](overview.md#product-level-recommended) provides significantly more control over update behavior and helps prevent unintended major-version upgrades.
+In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](overview.md#product-level-recommended) provides significantly more control over update behavior and helps prevent unintended major-version upgrades.&#x20;
 
-If your environment standardizes on Jabber 14.x, selecting a **Latest** product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.
+If your environment standardizes on Jabber 14.x, selecting a **Latest** product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.&#x20;
 
 For this reason, product-level selection is often the safer and more predictable approach, especially for applications where major upgrades introduce functional changes or require additional validation.
 
@@ -120,23 +128,27 @@ This phased approach reduces risk, improves predictability, and helps ensure tha
 
 If you’re unsure which products exist in your environment, which makes manual product selection difficult, the _Scan ConfigMgr_ feature is often the best starting point.
 
-In ConfigMgr environments, the Scan ConfigMgr feature leverages hardware inventory data from ConfigMgr clients, which provides accurate visibility into installed third-party software.
+In ConfigMgr environments, the Scan ConfigMgr feature leverages hardware inventory data from ConfigMgr clients, which provides accurate visibility into installed third-party software.&#x20;
 
-> \*\*Note\*\*
->
-> See \[Scan ConfigMgr]\(../../manage/configmgr-apps-tab/scan-configmgr.md) for information on the Scan ConfigMgr feature.
+{% hint style="info" %}
+**Note**
 
-In WSUS-only environments, where hardware inventory data is not available, metadata-only publishing remains the recommended method for identifying applicable updates.
+See [Scan ConfigMgr](../../manage/configmgr-apps-tab/scan-configmgr.md) for information on the Scan ConfigMgr feature.
+{% endhint %}
 
-> \*\*Note\*\*
->
-> See \[Customizations (Right-Click Options)]\(../../customizations/) and \[Catalog]\(../../technical-references/catalog-information.md#full-content-vs-metadata-updates-tab-only) for more details on metadata-only publishing.
+In WSUS-only environments, where hardware inventory data is not available, metadata-only publishing remains the recommended method for identifying applicable updates.&#x20;
+
+{% hint style="info" %}
+**Note**
+
+See [Customizations (Right-Click Options)](../../customizations/) and [Catalog](../../technical-references/catalog-information.md#full-content-vs-metadata-updates-tab-only) for more details on metadata-only publishing.
+{% endhint %}
 
 ## Iconography
 
 Publisher's Product Tree uses visual indicators to highlight when additional attention or configuration is required before an app or update can be published successfully. These icons are designed to make potential blockers obvious at a glance.
 
-### !\[Manage Conflicting Processes]\(/\_images/image-(4520 "Manage Conflicting Processes").png>) **Manage Conflicting Processes**
+### ![Manage Conflicting Processes](<../../../.gitbook/assets/image (4520).png>) **Manage Conflicting Processes**
 
 A blue cross icon indicates that the application has processes running that conflict with the installation, upgrade, or repair of the application.
 
@@ -144,13 +156,13 @@ To handle these processes, the application in question must be closed.
 
 When a product containing conflicting processes is selected, the [Manage Conflicting Processes](../../customizations/list-customizations/manage-conflicting-processes/overview-guidance.md) customization option is automatically enabled. By default, this is set to **Skip installation when conflicting processes are in use**, which ensures updates do not fail or forcibly interrupt users if the application is currently running. This default also provides a safe and predictable upgrade path and can be adjusted if different behavior is required, such as prompting the user to close the open application before the update installation begins.
 
-### Dependencies
+### ![](<../../../.gitbook/assets/image (4524).png>) Dependencies
 
 The blue _chain_ icon indicates that the product has one or more dependencies. Right-clicking on the product and selecting **Show Dependencies** opens a window showing the relevant product(s).
 
-![Show dependencies](/_images/image-(4525).png)
+<figure><img src="../../../.gitbook/assets/image (4525).png" alt="Show dependencies" width="530"><figcaption></figcaption></figure>
 
-### !\[Customer-Provided Installer Required]\(/\_images/image-(4522 "Customer-Provided Installer Required").png>) **Customer-Provided Installer Required**
+### ![Customer-Provided Installer Required](<../../../.gitbook/assets/image (4522).png>) **Customer-Provided Installer Required**
 
 The blue download arrow means Publisher cannot automatically download the installer binary from the vendor and customer intervention is required.
 
@@ -168,10 +180,14 @@ For step-by-step guidance, refer to:
 
 These pages explain how to store and reference customer-provided binaries so Publisher can consume them during publishing.
 
-> \*\*Note\*\*
->
-> This feature is also referred to as \*\*Binary Free apps\*\* and leverages the \[Staged Content Repository]\(../../manage/advanced-tab/staged-content-repository.md).
+{% hint style="info" %}
+**Note**
 
-> \*\*Tip\*\*
->
-> Once you have selected an item in the Product Tree, you can further customize it by using the right-click options available. See \[Overview of Customizations]\(../../customizations/overview.md) for more details.
+This feature is also referred to as **Binary Free apps** and leverages the [Staged Content Repository](../../manage/advanced-tab/staged-content-repository.md).
+{% endhint %}
+
+{% hint style="success" %}
+**Tip**
+
+Once you have selected an item in the Product Tree, you can further customize it by using the right-click options available. See [Overview of Customizations](../../customizations/overview.md) for more details.
+{% endhint %}

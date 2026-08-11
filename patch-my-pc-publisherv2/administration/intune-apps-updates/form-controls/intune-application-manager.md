@@ -2,15 +2,15 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-## Overview
+## ![](<../../../../.gitbook/assets/image (353).png>) Overview
 
 The **Intune Application Manager** form control is used to view and manage Win32 apps (applications and updates) in Intune. It provides a centralized interface to review application properties, assignments and installation status before performing application modifications.
 
-![Intune Application Manager](/_images/image-(4087).png)
+<figure><img src="../../../../.gitbook/assets/image (4087).png" alt="Intune Application Manager" width="563"><figcaption></figcaption></figure>
 
 The form queries Intune, through Microsoft Graph, and displays all Win32 apps in the Intune tenant.
 
-The primary use case for this form is application modification and cleanup. It allows administrators to identify unused applications, remove assignments, extract content, or delete applications in a controlled and supported manner.
+The primary use case for this form is application modification and cleanup. It allows administrators to identify unused applications, remove assignments, extract content, or delete applications in a controlled and supported manner.&#x20;
 
 The table below outlines the available columns in this form:
 
@@ -27,9 +27,11 @@ The table below outlines the available columns in this form:
 | Modified               | Displays the date and time the application was last modified in Intune.                                           |
 | Assigned               | Indicates whether the application has one or more assignments configured in Intune.                               |
 
-> \*\*Tip\*\*
->
-> Highlighting a row in the application results table and pressing \*\*Ctrl + C\*\* will copy the entire row to the clipboard. This is useful for application management and troubleshooting scenarios.
+{% hint style="success" %}
+**Tip**
+
+Highlighting a row in the application results table and pressing **Ctrl + C** will copy the entire row to the clipboard. This is useful for application management and troubleshooting scenarios.
+{% endhint %}
 
 ## Search
 
@@ -45,7 +47,7 @@ Clearing the search field restores the full list of results.
 
 The **Show** dropdown filters the applications displayed in the Intune Application Manager based on application type and origin. It allows you to quickly narrow the list to Win32 applications created or managed by the Publisher, or to view all applications regardless of source.
 
-![Show](/_images/image-(4228).png)
+<figure><img src="../../../../.gitbook/assets/image (4228).png" alt="Show" width="180"><figcaption></figcaption></figure>
 
 It primarily controls whether the grid shows Publisher managed Win32 apps, non Publisher apps, or both.
 
@@ -76,7 +78,7 @@ The **Select None** button clears any current selection.
 
 ## Delete Application(s)
 
-The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
+The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.&#x20;
 
 To delete one or more applications:
 
@@ -97,11 +99,13 @@ The **Export** button is used to export the currently displayed Intune Win32 app
 
 The CSV file is created immediately and can be opened in tools such as Microsoft Excel or Power BI.
 
-![PatchMyPC-IntuneAppManager.csv](/_images/image-(361 "PatchMyPC-IntuneAppManager.csv") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (361).png" alt="PatchMyPC-IntuneAppManager.csv" width="563"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> The exported CSV can be used with the Patch My PC Power BI dashboard to monitor the compliance and deployment of applications and updates in Intune. For more information, see: [https://patchmypc.com/kb/power-bi-reports-microsoft-intune/](https://patchmypc.com/kb/power-bi-reports-microsoft-intune/)
+{% hint style="info" %}
+**Note**
+
+The exported CSV can be used with the Patch My PC Power BI dashboard to monitor the compliance and deployment of applications and updates in Intune. For more information, see: [https://patchmypc.com/kb/power-bi-reports-microsoft-intune/](https://patchmypc.com/kb/power-bi-reports-microsoft-intune/)
+{% endhint %}
 
 ## Right-Click Options
 
@@ -113,9 +117,11 @@ This option allows you to configure Delivery Optimization (DO) priority for the 
 
 DO priority controls how quickly the content for an application is downloaded once the Intune Management Extension (IME) evaluates the policy. **Foreground** prioritises the download and processes the content immediately, while **Background** allows Windows to download the content with normal priority and defer based on network conditions and activity.
 
-> \*\*Note\*\*
->
-> For most Intune Updates, \*\*Background\*\* is an appropriate choice because the installation is typically not time-critical. When deploying Patch My PC applications during Autopilot, it is recommended to set DO to \*\*Foreground\*\*. This ensures faster content download and helps prevent delays to a user’s onboarding experience.
+{% hint style="info" %}
+**Note**
+
+For most Intune Updates, **Background** is an appropriate choice because the installation is typically not time-critical. When deploying Patch My PC applications during Autopilot, it is recommended to set DO to **Foreground**. This ensures faster content download and helps prevent delays to a user’s onboarding experience.
+{% endhint %}
 
 For more information about the various configuration options for assignments, see [Manage Assignments](../../../customizations-right-click-options/manage-assignments/).
 
@@ -125,30 +131,34 @@ This option allows you to view and manage Enrollment Status Page associations fo
 
 When you click this option, select the ESP profile you want the selected app(s) to be associated with.
 
-![Manage ESP Associations](/_images/image-(4088).png)
+<figure><img src="../../../../.gitbook/assets/image (4088).png" alt="Manage ESP Associations" width="465"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> Only classic ESP profiles are supported. This feature \_does not\_ apply to the newer Autopilot device preperation policies found in the Windows Autopilot configuration experience.
+{% hint style="info" %}
+**Note**
+
+Only classic ESP profiles are supported. This feature _does not_ apply to the newer Autopilot device preperation policies found in the Windows Autopilot configuration experience.
+{% endhint %}
 
 Once you have selected the profile(s), the **Select ESP Association** window displays a summary of the selected application and the ESP changes that will be applied.
 
-![Select ESP Association](/_images/image-(4136).png)
+<figure><img src="../../../../.gitbook/assets/image (4136).png" alt="Select ESP Association" width="383"><figcaption></figcaption></figure>
 
 The grid includes the following columns:
 
-* **AppName**\
+* **AppName**  \
   The name of the selected application.
-* **ESP to add**\
+* **ESP to add**  \
   The number of ESP profiles that the application will be added to.
-* **ESP to remove (If enforced)**\
+* **ESP to remove (If enforced)**  \
   The number of ESP profiles that will be removed if enforcement is enabled.
 
-> \*\*Note\*\*
->
-> If the \*\*Enforce selected ESP Association\*\* checkbox is enabled, the Publisher will remove the application from any existing ESP profiles that are not part of the current selection.
->
-> If this option is not enabled, the application will only be added to the selected ESP profile and existing associations will remain unchanged.
+{% hint style="info" %}
+**Note**
+
+If the **Enforce selected ESP Association** checkbox is enabled, the Publisher will remove the application from any existing ESP profiles that are not part of the current selection.
+
+If this option is not enabled, the application will only be added to the selected ESP profile and existing associations will remain unchanged.
+{% endhint %}
 
 For more information about the various configuration options for ESP associations, see [Manage ESP Profiles](../../../customizations-right-click-options/manage-esp-profiles.md).
 
@@ -158,7 +168,7 @@ This option is available only when a single Win32 application is selected. Selec
 
 This window provides a live view of all assignments currently configured for that application in Intune. The assignments shown reflect the current state in Intune, and any changes made are applied immediately when saved.
 
-![Manage Application Assignments Form](/_images/image-(4089).png)
+<figure><img src="../../../../.gitbook/assets/image (4089).png" alt="Manage Application Assignments Form" width="563"><figcaption></figcaption></figure>
 
 For more information about the various configuration options for assignments, see [Manage Assignments](../../../customizations-right-click-options/manage-assignments/).
 
@@ -174,7 +184,7 @@ This action is read only and does not modify the application or its assignments.
 
 Selecting this option opens a read-only window and display any categories that are associated with the selected Win32 app(s).
 
-![Show Categories](/_images/image-(4090).png)
+<figure><img src="../../../../.gitbook/assets/image (4090).png" alt="Show Categories" width="413"><figcaption></figcaption></figure>
 
 For more information about the various configuration options for Categories, see [Manage Categories](../../../customizations-right-click-options/manage-categories.md).
 
@@ -186,15 +196,19 @@ With the keys stored, you can use the Intune Application Manager to download and
 
 Click **Extract Package** and specify an **Output Folder** where the package content will be extracted. You can enter a path directly or use **Browse** to select a location.
 
-> \*\*Note\*\*
->
-> The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
+{% hint style="info" %}
+**Note**
 
-![Extract Package](/_images/image-(4091).png)
+The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
+{% endhint %}
 
-> \*\*Note\*\*
->
-> If the \*\*Extract Package\*\* option is greyed out, it means that the encryption keys were not gathered when the Win32 app was published, likely due to the feature being enabled after the application or update had been published, or you have selected a Win32 app that was not created by the Publisher.
+<figure><img src="../../../../.gitbook/assets/image (4091).png" alt="Extract Package" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+If the **Extract Package** option is greyed out, it means that the encryption keys were not gathered when the Win32 app was published, likely due to the feature being enabled after the application or update had been published, or you have selected a Win32 app that was not created by the Publisher.
+{% endhint %}
 
 ### Delete Assignment(s)
 
@@ -206,6 +220,6 @@ This option supports multi select and is applied immediately after confirmation.
 
 This option deletes the selected Win32 application(s) from the Intune tenant. This action also removes any associated assignments and cannot be undone.
 
-![Delete Application](/_images/image-(4229).png)
+<figure><img src="../../../../.gitbook/assets/image (4229).png" alt="Delete Application" width="563"><figcaption></figcaption></figure>
 
 This option supports multi select and permanently removes the applications from Intune. It is intended for cleanup scenarios where applications are no longer required in the tenant.

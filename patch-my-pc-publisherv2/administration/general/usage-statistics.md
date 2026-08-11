@@ -4,6 +4,8 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Usage Statistics** section provides a real-time summary of publishing activity within the Publisher. These values help you understand how many applications, updates, and CVEs have been published, as well as the overall synchronization activity. This information is useful for validating that publishing is working as expected and for gaining insight into ongoing usage over time.
 
+
+
 * **Published applications**\
   The total number of third-party applications that have been published.
 * **Published updates**\
@@ -17,6 +19,6 @@ The **Usage Statistics** section provides a real-time summary of publishing acti
 * **Total syncs**\
   The total number of synchronization operations performed by Publisher.
 
-![Usage statistics for the Publisher](/_images/image-(415 "Usage statistics for the Publisher") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (415).png" alt="Usage statistics for the Publisher" width="545"><figcaption></figcaption></figure>
 
 For more information on the telemetry information we collect through the Publisher, see: [Telemetry Data collected by the Publisher](../../publisher-reference/telemetry-data-collected-by-the-publisher.md).

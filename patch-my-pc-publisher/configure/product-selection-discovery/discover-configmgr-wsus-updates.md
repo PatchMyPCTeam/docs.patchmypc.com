@@ -2,9 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-> \*\*Important\*\*
->
-> This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% hint style="danger" %}
+**Important**
+
+This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% endhint %}
 
 This page provides guidance on how to discover third-party applications in your environment or manually select products for publishing using the Patch My PC (PMPC) Publisher.
 
@@ -31,7 +33,7 @@ You can enable applications for publishing in one of two ways:
 
 The [Scan Wizard](../../../patch-my-pc-publisherv2/administration/updates/form-controls/scan-configmgr-database-for-supported-products.md) is generally a recommended starting point. It leverages ConfigMgr hardware inventory data to identify supported third-party products currently present in your environment and compares those results against the Patch My PC catalog. This allows you to review what is installed _today_ before enabling publishing.
 
-![ConfigMgr Apps Scan Wizard](/_images/image-(4158).png)
+<figure><img src="../../../.gitbook/assets/image (4158).png" alt="ConfigMgr Apps Scan Wizard" width="563"><figcaption></figcaption></figure>
 
 After running a scan, review the results carefully. The device count and version information help validate inventory accuracy and determine publishing priority. Exporting the results to CSV can assist with internal review, change control discussions, or phased rollout planning.
 
@@ -43,7 +45,7 @@ Once you are comfortable with how updates are created and maintained, you can ex
 
 Updates can also be enabled manually by selecting products directly from the [product tree](../../../patch-my-pc-publisherv2/administration/updates/product-tree.md) on the [Updates](../../../patch-my-pc-publisherv2/administration/updates/) tab.
 
-![Manual Product Selection](/_images/image-(4160).png)
+<figure><img src="../../../.gitbook/assets/image (4160).png" alt="Manual Product Selection" width="545"><figcaption></figcaption></figure>
 
 You can expand vendors to browse available products or use the [Search](../../../patch-my-pc-publisherv2/administration/updates/form-controls/search-products.md) form control to quickly locate a specific update by name.
 
@@ -69,12 +71,12 @@ For example, inventory data may indicate that 7-Zip (x64) is installed, but it m
 
 To account for this ambiguity, consider one of the following approaches:
 
-* **Enable all variants as Metadata Only first.**\
+* **Enable all variants as Metadata Only first.**  \
   This allows the Windows Update Agent on the device to evaluate applicability and report compliance back to ConfigMgr without downloading full update content. After reviewing compliance results, you can determine which specific variant(s) should be enabled with full content.
-* **Enable all update variants as Full Content.**\
+* **Enable all update variants as Full Content.**  \
   In environments where multiple variants may exist and immediate patch coverage is the priority, enabling all update variants ensures that no installed instance remains unpatched when deployments are targeted.
 
-![Enable multiple variants as full content or metadata only](/_images/image-(4159).png)
+<figure><img src="../../../.gitbook/assets/image (4159).png" alt="Enable multiple variants as full content or metadata only" width="563"><figcaption></figcaption></figure>
 
 Using Metadata Only as an initial step is often the most controlled approach, particularly in WSUS standalone environments. It provides visibility into what is truly installed before introducing update binaries into WSUS.
 

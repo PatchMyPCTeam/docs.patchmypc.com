@@ -4,9 +4,9 @@ _Applies to: Patch My PC Publisher V2.x_
 
 ## Overview
 
-When the Publisher is launched for the first time, you will be prompted to enter a license key.
+When the Publisher is launched for the first time, you will be prompted to enter a license key.&#x20;
 
-![](/_images/image-(410) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (410).png" alt="" width="545"><figcaption></figcaption></figure>
 
 If you have purchased a license, or if you have requested a free 30-day trial, you will receive an email containing your 20-character license key, which can be entered into the **License Key** field on the **General** tab in the Publisher, to activate the appropriate functionality.
 
@@ -17,23 +17,25 @@ If you do not currently have a license key, you have 2 options:
 
 Once a valid license or trial key is entered, Publisher will unlock the corresponding features and allow you to proceed with configuration, customization and publishing.
 
-![Subscription validation succeeded](/_images/image-(70 "Subscription validation succeeded") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (70).png" alt="Subscription validation succeeded" width="300"><figcaption></figcaption></figure>
 
 If validation fails, the dialog indicates that the key could not be verified and typically suggests checking either the license value or [network connectivity](../../publisher-requirements/core-requirements.md#network).
 
-![License Validation Failed](/_images/image-(69 "License Validation Failed") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (69).png" alt="License Validation Failed" width="425"><figcaption></figcaption></figure>
 
-> \*\*Note\*\*
->
-> If you started your trial through Patch My PC Cloud, your license key can also be retrieved directly from the Cloud portal by navigating to \*\*Settings > Subscription\*\*, and clicking on the obfiscated license key.
+{% hint style="info" %}
+**Note**
 
-![](/_images/image-(411) (1).png>)
+If you started your trial through Patch My PC Cloud, your license key can also be retrieved directly from the Cloud portal by navigating to **Settings > Subscription**, and clicking on the obfiscated license key.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (411).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Limited Trial Mode
 
 If you do not yet have a license or trial key, the Publisher can be used in Limited Trial Mode. This allows you to evaluate Publisher functionality using a predefined set of products.
 
-![Limited Trial Mode](/_images/image-(71 "Limited Trial Mode") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (71).png" alt="Limited Trial Mode" width="545"><figcaption></figcaption></figure>
 
 ### How to enable Limited Trial Mode
 
@@ -42,9 +44,11 @@ If you do not yet have a license or trial key, the Publisher can be used in Limi
 3. Select **Enable limited trial mode**.
 4. When prompted, confirm that you want to switch to **Trial Catalog Mode**.
 
-> \*\*Important\*\*
->
-> Enabling Trial Mode will overwrite any product selections previously made in non-trial mode.
+{% hint style="warning" %}
+**Important**
+
+Enabling Trial Mode will overwrite any product selections previously made in non-trial mode.
+{% endhint %}
 
 Once enabled, the Publisher will automatically populate the product catalog with a limited set of applications that are available for evaluation.
 
@@ -73,13 +77,13 @@ The following products are available in Limited Trial Mode:
   * Zoom Workplace (MSI-x64)
   * Zoom Workplace (MSI-x86)
 
-![Limited Trial Mode available products](/_images/image-(413 "Limited Trial Mode available products") (1).png>)
+<figure><img src="../../../.gitbook/assets/image (413).png" alt="Limited Trial Mode available products" width="545"><figcaption></figcaption></figure>
 
 ## Subscription Information
 
 This section displays details about your current Patch My PC license, including the subscription tier, license validity period, and the number of devices covered. This information helps confirm that Publisher is correctly licensed for your environment and that your device count aligns with your deployment scope.
 
-![](/_images/image-(414) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (414).png" alt="" width="545"><figcaption></figcaption></figure>
 
 * **Subscription level**\
   Indicates the Patch My PC license tier currently applied (for example, _Enterprise Premium_). The subscription level determines the features, products, and capabilities available within Publisher. The [available subscription](https://patchmypc.com/pricing/) levels are:

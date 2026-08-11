@@ -6,21 +6,23 @@ Access to the Patch My PC (PMPC) Cloud portal is controlled through either an in
 
 This section details how to manage Invitations.
 
-> \*\*Note\*\*
->
-> See \[Managing Access Requests]\(../access-requests/) for more information on access requests.
+{% hint style="info" %}
+**Note**
+
+See [Managing Access Requests](../access-requests/) for more information on access requests.
+{% endhint %}
 
 To manage the user invitations to join your PMPC Cloud portal:
 
 1. Navigate to **Settings | Users**.
 2.  Click the **Invitations** tab.<br>
 
-    ![Clicking the "Invitations" tab on the "Users" screen](/_images/image-(2092).png)
+    <figure><img src="../../../../../.gitbook/assets/image (2092).png" alt="Clicking the “Invitations” tab on the “Users” screen" width="563"><figcaption></figcaption></figure>
 
     \
     The list of outstanding invitations which are still valid is displayed.<br>
 
-    ![List of outstanding, valid invitations](/_images/image-(2093).png)
+    <figure><img src="../../../../../.gitbook/assets/image (2093).png" alt="List of outstanding, valid invitations" width="563"><figcaption></figcaption></figure>
 
 You can now:
 
@@ -28,6 +30,8 @@ You can now:
 * [Resend an invitation](resend-invitation.md)
 * [Delete an invitation](delete-invitation.md)
 
-> \*\*Note\*\*
->
-> As users decide whether to accept an invitation, this process is covered in the \[Accepting an Invitation]\(accept-invitation.md) process.
+{% hint style="info" %}
+**Note**
+
+As users decide whether to accept an invitation, this process is covered in the [Accepting an Invitation](accept-invitation.md) process.
+{% endhint %}

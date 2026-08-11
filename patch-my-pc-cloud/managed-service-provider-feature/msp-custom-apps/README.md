@@ -11,7 +11,8 @@ The _Custom Apps for Managed Service Providers (MSPs)_ feature of Patch My PC (P
 * [Update an MSP Custom App](update-an-msp-custom-app.md)
 * [Delete an MSP Custom App](delete-an-msp-custom-app.md)
 
-<blockquote class="wp-block-quote">
-<p>**Note**</p>
-<p>Using this feature does not require the parent’s PMPC Cloud company to be connected to Intune. However, without an Intune connection, the parent company cannot deploy the Custom App to itself or any of its child companies.</p>
-</blockquote>
+{% hint style="info" %}
+**Note**
+
+Using this feature does not require the parent’s PMPC Cloud company to be connected to Intune. However, without an Intune connection, the parent company cannot deploy the Custom App to itself or any of its child companies.
+{% endhint %}

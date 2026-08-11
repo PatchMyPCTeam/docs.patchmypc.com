@@ -1,4 +1,4 @@
-# ConfigMgr Remote Software Update Requirements for Patch My PC Publisher
+# ConfigMgr Remote Software Update Requirements for  Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
@@ -10,19 +10,23 @@ When Publisher is installed on a remote SUP, there are additional network requir
 
 ## Software
 
-When Publisher is installed on a remote SUP, it is important that the ConfigMgr Console is also installed on the remote SUP to facilitate interactions from Publisher to ConfigMgr, through the ConfigMgr SDK, via the SMS Provider.
+When Publisher is installed on a remote SUP, it is important that the ConfigMgr Console is also installed on the remote SUP to facilitate interactions from Publisher to ConfigMgr, through the ConfigMgr SDK, via the SMS Provider.&#x20;
 
-> \*\*Note\*\*
->
-> See \[ConfigMgr Software Requirements]\(../software.md) for more information.
+{% hint style="info" %}
+**Note**
+
+See [ConfigMgr Software Requirements](../software.md) for more information.&#x20;
+{% endhint %}
 
 ## ConfigMgr Security Role
 
 When Publisher is installed on the Site Server, it already has the required permissions to interact with ConfigMgr because the service runs under the **SYSTEM** account. When Publisher is installed on a remote SUP, these permissions may not be present by default. In that case, Publisher requires specific ConfigMgr permissions to create, modify, and distribute applications and updates. These permissions can be granted through a Security Role which can be created automatically by Publisher or configured manually by an administrator.
 
-> \*\*Important\*\*
->
-> Whilst Publisher can create the necessary Security Role automatically, an administrator still needs to add the computer account of the remote SUP to that Security Role in the ConfigMgr console.
+{% hint style="danger" %}
+**Important**
+
+Whilst Publisher can create the necessary Security Role automatically, an administrator still needs to add the computer account of the remote SUP to that Security Role in the ConfigMgr console.
+{% endhint %}
 
 There are two options to ensure that when Publisher is installed on a remote SUP, it has the correct permissions:
 
@@ -54,15 +58,15 @@ Publisher requires the following ConfigMgr permissions:
 * **Software Updates**\
   Read, Modify
 
-![Security Role permissions required for the Publisher](/_images/image-(378 "Security Role permissions required for the Publisher") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (378).png" alt="Security Role permissions required for the Publisher" width="563"><figcaption></figcaption></figure>
 
 It is important that you also assign this role to the **computer$** account of the remote SUP.
 
-![Assign the role to the computer account of the remote SUP](/_images/image-(379 "Assign the role to the computer account of the remote SUP") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (379).png" alt="Assign the role to the computer account of the remote SUP" width="563"><figcaption></figcaption></figure>
 
 The Security Scopes should be assigned to **All instances of the objects that are related to the assigned security roles**.
 
-![All instances of the objects that are related to the assigned security roles](/_images/image-(380 "All instances of the objects that are related to the assigned security roles") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (380).png" alt="All instances of the objects that are related to the assigned security roles" width="392"><figcaption></figcaption></figure>
 
 ## WSUS SSL Requirements
 
@@ -72,16 +76,18 @@ If WSUS on a remote SUP is **not** configured for SSL, **wsyncmgr.log** will log
 
 > `Remote WSUS connection is not HTTPS. This prevents software update point from getting the signing certificate for third-party updates`
 
-![Remote WSUS connection is not HTTPS](/_images/image-(381 "Remote WSUS connection is not HTTPS") (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (381).png" alt="Remote WSUS connection is not HTTPS" width="563"><figcaption></figcaption></figure>
 
-This warning indicates that ConfigMgr is unable to retrieve the WSUS signing certificate from the remote SUP. As a result, ConfigMgr cannot store the certificate in the Site Database or distribute it to client devices during a software update scan.
+This warning indicates that ConfigMgr is unable to retrieve the WSUS signing certificate from the remote SUP. As a result, ConfigMgr cannot store the certificate in the Site Database or distribute it to client devices during a software update scan.&#x20;
 
 To resolve this, WSUS on the remote SUP must be configured to use HTTPS (SSL) when ConfigMgr is set to manage the signing certificate.
 
 For more information on enabling SSL for WSUS, see [Tutorial: Configure a software update point to use TLS/SSL with a PKI certificate](https://learn.microsoft.com/en-us/intune/configmgr/sum/get-started/software-update-point-ssl).
 
-> \*\*Note\*\*
->
-> SSL is not a strict requirement in this scenario. However, when SSL is not enabled on a remote SUP, the code-signing certificate must be manually distributed to the Site Server, any other SUPs, and all client devices.
->
-> The certificate must be placed in the \*\*Trusted Publishers\*\* (and the \*\*Trusted Root Certification Authorities\*\* store if it's a self-signed certificate) using Group Policy or another certificate deployment method.
+{% hint style="info" %}
+**Note**
+
+SSL is not a strict requirement in this scenario. However, when SSL is not enabled on a remote SUP, the code-signing certificate must be manually distributed to the Site Server, any other SUPs, and all client devices.&#x20;
+
+The certificate must be placed in the **Trusted Publishers** (and the **Trusted Root Certification Authorities** store if it's a self-signed certificate) using Group Policy or another certificate deployment method.&#x20;
+{% endhint %}
