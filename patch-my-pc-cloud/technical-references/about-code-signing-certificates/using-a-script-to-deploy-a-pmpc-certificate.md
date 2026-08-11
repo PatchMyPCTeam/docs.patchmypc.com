@@ -199,7 +199,7 @@ You can see the script being processed by the Intune Management Extension by loo
 
 Observe the **Proactive Remediation Device Status** blade.
 
-![Observing the "Proactive Remediation Device Status" blade.](../../../.gitbook/assets/image-\(1351\).png)
+![Observing the "Proactive Remediation Device Status" blade.](/_images/image-(1351).png)
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script found the certificate already installed in the local computer’s Trusted Publishers store.
 

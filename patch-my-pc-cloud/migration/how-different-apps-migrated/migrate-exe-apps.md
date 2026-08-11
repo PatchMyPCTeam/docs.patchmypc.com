@@ -8,7 +8,7 @@ When applications are inventoried from Microsoft Configuration Manager (ConfigMg
 
 ConfigMgr does not explicitly label an application as EXE-based. In most cases, the easiest way to confirm an application is EXE-based is to select the application from the Migration dashboard and review the **Installation Program** field.
 
-![EXE-based app identified from the installation program](<../../../.gitbook/assets/image-(317) (1).png>)
+![EXE-based app identified from the installation program](/_images/image-(317 "EXE-based app identified from the installation program") (1).png>)
 
 If the **Installation Program** references an **.exe** file, the application can be considered EXE-based.
 
@@ -18,7 +18,7 @@ If the **Installation Program** references an **.exe** file, the application can
 
 During the migration deployment flow, the **Installer Type** field also indicates when an application is being treated as EXE-based.
 
-![EXE-based app shown in the deployment flow](<../../../.gitbook/assets/image-(318) (1).png>)
+![EXE-based app shown in the deployment flow](/_images/image-(318 "EXE-based app shown in the deployment flow") (1).png>)
 
 If the application is identified as EXE-based, as much of the existing metadata as possible is captured to support migration. This includes analyzing the install command line, the main installer file, and any supporting content to ensure the application behaves the same way after migration to Intune.
 
@@ -34,7 +34,7 @@ When the application is migrated, **PatchMyPC-ScriptRunner.exe** becomes the new
 
 In the following, an older version of Notepad++ has been matched to a PMPC Catalog App. The original ConfigMgr application included an additional command-line argument, **/noupdater**, which has been preserved and carried through into the migration flow to ensure the application is deployed with the same installation behavior.
 
-![](<../../../.gitbook/assets/image-(319) (1).png>)
+![](/_images/image-(319) (1).png>)
 
 ## Preserved Properties of EXE-based Apps
 

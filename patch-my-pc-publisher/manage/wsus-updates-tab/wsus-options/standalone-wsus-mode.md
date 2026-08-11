@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 **Standalone WSUS Mode** is used when the Patch My PC (PMPC) Publisher is integrated directly with WSUS without ConfigMgr.
 
-![Standalone WSUS Mode](<../../../../.gitbook/assets/image-(93) (1).png>)
+![Standalone WSUS Mode](/_images/image-(93 "Standalone WSUS Mode") (1).png>)
 
 This mode is intended only for environments that manage updates using WSUS standalone. It is not required and should not be enabled when ConfigMgr is used to manage software updates.
 

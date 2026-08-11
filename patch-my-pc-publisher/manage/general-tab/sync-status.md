@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Sync Status** section on the **General** tab of the Patch My PC (PMPC) Publisher displays the current state of Publisher synchronization.
 
-!['Sync Status' section](../../../.gitbook/assets/image-\(4848\).png)
+!['Sync Status' section](/_images/image-(4848).png)
 
 This status updates in real time as products are evaluated and processed.
 

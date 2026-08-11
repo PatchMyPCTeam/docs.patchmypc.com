@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The sync status area displays the current state of the Publisher during a publishing synchronization. This status updates in real time as products are evaluated and processed.
 
-![Sync Status](../../../.gitbook/assets/image-\(3919\).png)
+![Sync Status](/_images/image-(3919).png)
 
 ## No Sync in Progress
 
@@ -18,6 +18,6 @@ During a publishing sync, the status bar displays the current operation being pe
 
 As the sync runs, the status updates for each product processed. This provides visibility into which updates or applications are being evaluated at that moment and confirms that the publishing service is actively working through the configured selections.
 
-![Sync in progress](../../../.gitbook/assets/image-\(3920\).png)
+![Sync in progress](/_images/image-(3920).png)
 
 This status is particularly useful during large publishing synchronizations, as it confirms ongoing progress and helps identify where the Publisher is in the evaluation or publishing process.

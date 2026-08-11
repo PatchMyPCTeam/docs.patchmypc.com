@@ -7,23 +7,23 @@ To sign up for a free trial to PMPC Cloud:
 1. Navigate to [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
 2. Click **Sign Up**.
 
-![Click 'Sign Up' on the Patch My PC Portal page](../.gitbook/assets/image-\(2065\).png)
+![Click 'Sign Up' on the Patch My PC Portal page](/_images/image-(2065).png)
 
 3. On the **Sign in** screen, enter the Entra ID you want to use to onboard to PMPC Cloud or click to select the relevant account from the list of already signed-in accounts. Then click **Next**.
 
-![Microsoft 'Sign in' screen](../.gitbook/assets/image-\(2066\).png)
+![Microsoft 'Sign in' screen](/_images/image-(2066).png)
 
 4. Enter the password and click **Sign in**.
 
-![Microsoft 'Enter password' screen](../.gitbook/assets/image-\(2067\).png)
+![Microsoft 'Enter password' screen](/_images/image-(2067).png)
 
 5. If the **Permission requested** screen is not displayed, go to Step 7.
 
-!['Permissions Requested' screen](../.gitbook/assets/image-\(2208\).png)
+!['Permissions Requested' screen](/_images/image-(2208).png)
 
 6. Review the **Permission requested** screen, clicking **Accept** if you are happy to continue.
 
-!['Permissions requested' dialog box](../.gitbook/assets/image-\(2068\).png)
+!['Permissions requested' dialog box](/_images/image-(2068).png)
 
 > \*\*Note\*\*
 >
@@ -45,30 +45,30 @@ To sign up for a free trial to PMPC Cloud:
 
 7. If do have previously created a Cloud Company and do not see the **Select the Company You Want to Sign-In To** screen, go to Step 9.
 
-!['Select the Company You Want to Sign-In To' screen](../.gitbook/assets/image-\(1237\).png)
+!['Select the Company You Want to Sign-In To' screen](/_images/image-(1237).png)
 
 8.  On the **Select the Company You Want to Sign-In To** screen, select the relevant option:
 
     1.  If you are setting up a new company, click **Create Company** and continue to Step 9.<br>
 
-        ![Clicking 'Create Company' to create a new company](../.gitbook/assets/image-\(1238\).png)
+        ![Clicking 'Create Company' to create a new company](/_images/image-(1238).png)
     2.  If your email address has already been used to create a user in a PMPC Cloud company, you will see **Select** beside the relevant companies that you can sign in to.<br>
 
-        ![Clicking 'Select' beside the company you want to sign in to.](<../.gitbook/assets/image-(722) (1).png>)
+        ![Clicking 'Select' beside the company you want to sign in to.](/_images/image-(722 "Clicking 'Select' beside the company you want to sign in to.") (1).png>)
     3. If your email address is not associated with a user in a PMPC Cloud company, you can click **Request Access** beside the company you want to join.
 
-    ![Clicking 'Request Access' beside the company you want to join](../.gitbook/assets/image-\(1240\).png)
+    ![Clicking 'Request Access' beside the company you want to join](/_images/image-(1240).png)
 
     \
     The **Request Access to join&#x20;**_**\<company\_name>**_ popup appears.
 
-!['Request Access to join' popup](../.gitbook/assets/image-\(1328\).png)
+!['Request Access to join' popup](/_images/image-(1328).png)
 
 8. Enter an optional **Reason for Request** then click **Submit**.\
    \
    The **Request Access** text changes to **Renotify** and the **Success - Access request sent** notification is shown.
 
-![The 'Success – Access request sent' notification is displayed](../.gitbook/assets/image-\(2334\).png)
+![The 'Success – Access request sent' notification is displayed](/_images/image-(2334).png)
 
 You now need to wait for a user with the **Full Admin with Access Management** role to review and approve your request.
 
@@ -82,11 +82,11 @@ You now need to wait for a user with the **Full Admin with Access Management** r
 
 9. On the **Company Info** screen, click **Select** for the location where your company’s data will be stored.
 
-![Click 'Select' to select the relevant location to store your company data](../.gitbook/assets/image-\(1311\).png)
+![Click 'Select' to select the relevant location to store your company data](/_images/image-(1311).png)
 
 10. In the **Company Name** field, type your company’s name.
 
-![Type your company's name in the 'Company Name' field](../.gitbook/assets/image-\(1312\).png)
+![Type your company's name in the 'Company Name' field](/_images/image-(1312).png)
 
 > \*\*Important\*\*
 >
@@ -94,31 +94,31 @@ You now need to wait for a user with the **Full Admin with Access Management** r
 
 11. Select your company’s country from the **Country** dropdown.
 
-![Select your company's country from the dropdown](../.gitbook/assets/image-\(1508\).png)
+![Select your company's country from the dropdown](/_images/image-(1508).png)
 
 12. Click **Continue**.
 
-![Clicking 'Continue' on the 'Company Info' screen](../.gitbook/assets/image-\(1510\).png)
+![Clicking 'Continue' on the 'Company Info' screen](/_images/image-(1510).png)
 
 13. On the **User Info** screen, verify your **First Name** and **Last Name** are correct, amending as required.
 
-![Verifying your name is correct](<../.gitbook/assets/image-(683) (1).png>)
+![Verifying your name is correct](/_images/image-(683 "Verifying your name is correct") (1).png>)
 
 14. Enter a valid email address in the **Contact Email** field.
 
-![Entering a valid email address](<../.gitbook/assets/image-(684) (1).png>)
+![Entering a valid email address](/_images/image-(684 "Entering a valid email address") (1).png>)
 
 15. Click the **Terms and Conditions** link to see these for using PMPC software and services.
 
-![Clicking the 'Terms and Conditions' link](<../.gitbook/assets/image-(685) (1).png>)
+![Clicking the 'Terms and Conditions' link](/_images/image-(685 "Clicking the 'Terms and Conditions' link") (1).png>)
 
 The **Terms and Conditions** page is displayed. Once you’ve reviewed them, click the **X** in the top right-hand corner to close this window.
 
-!['Terms and Conditions' for you using PMPC software and services](../.gitbook/assets/image-\(1513\).png)
+!['Terms and Conditions' for you using PMPC software and services](/_images/image-(1513).png)
 
 16. If you agree with our terms and conditions, check the **Accept all Terms and conditions** checkbox.
 
-![Click to check the 'Accept Terms and Conditions' checkbox](<../.gitbook/assets/image-(686) (1).png>)
+![Click to check the 'Accept Terms and Conditions' checkbox](/_images/image-(686 "Click to check the 'Accept Terms and Conditions' checkbox") (1).png>)
 
 > \*\*Note\*\*
 >
@@ -126,11 +126,11 @@ The **Terms and Conditions** page is displayed. Once you’ve reviewed them, cli
 
 17. Click **Continue**.
 
-![Clicking 'Continue'](<../.gitbook/assets/image-(687) (1).png>)
+![Clicking 'Continue'](/_images/image-(687 "Clicking 'Continue'") (1).png>)
 
 The PMPC Portal loads, showing the **App Catalog** page.
 
-!['App Catalog' page of the PMPC portal](<../.gitbook/assets/image-(632) (1).png>)
+!['App Catalog' page of the PMPC portal](/_images/image-(632 "'App Catalog' page of the PMPC portal") (1).png>)
 
 > \*\*Note\*\*
 >

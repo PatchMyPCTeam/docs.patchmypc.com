@@ -8,13 +8,13 @@ _&#x41;vailable on tab: ConfigMgr Apps_
 
 The **Manage Security Scopes** option allows you to control which ConfigMgr security scopes are applied to applications created by the Publisher.
 
-![Manage Security Scopes](../../.gitbook/assets/image-\(114\).png)
+![Manage Security Scopes](/_images/image-(114).png)
 
 During each synchronization, the Publisher applies the selected security scopes to any applications it creates in ConfigMgr. This ensures applications are visible and manageable only by administrators who have access to the assigned scopes.
 
 The list of available security scopes is pulled directly from your ConfigMgr environment. You can refresh the list using the refresh button in the top right corner.
 
-![Selecting a Security Scope](../../.gitbook/assets/image-\(115\).png)
+![Selecting a Security Scope](/_images/image-(115).png)
 
 The list supports filtering using the **Filter items** field, and the visible columns can be customized by right-clicking the column headers.
 

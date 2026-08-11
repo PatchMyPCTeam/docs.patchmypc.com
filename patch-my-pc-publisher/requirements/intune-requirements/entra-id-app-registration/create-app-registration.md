@@ -21,7 +21,7 @@ To create a new Entra ID App registration for use with Publisher:
 3.  **Navigate to App registrations**\
     Under **Microsoft Entra ID** | **App registrations**, select **New registration**.<br>
 
-    ![New app registration](<../../../../.gitbook/assets/image-(392) (1).png>)
+    ![New app registration](/_images/image-(392 "New app registration") (1).png>)
 4.  **Enter registration details**
 
     1. Choose a friendly **Name** for the app (e.g., _Patch My PC Publisher – Intune Connector_).
@@ -30,6 +30,6 @@ To create a new Entra ID App registration for use with Publisher:
     4. **Register the application**\
        Click **Register** to create the app. Once complete, the **Overview** page will show the newly assigned **Application (client) ID** and **Directory (tenant) ID** — record both for later use.<br>
 
-    ![App registration details](<../../../../.gitbook/assets/image-(393) (1).png>)
+    ![App registration details](/_images/image-(393 "App registration details") (1).png>)
 
 Once the application has been created, the next step is to configure the correct [API Permissions](application-permissions.md).

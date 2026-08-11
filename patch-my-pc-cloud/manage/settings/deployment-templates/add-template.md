@@ -6,15 +6,15 @@ To add a new Deployment Template in Patch My PC (PMPC) Cloud:
 
 1. Navigate to **Settings | Templates**
 
-![Navigating to 'Settings | Templates'](../../../../.gitbook/assets/image-\(3621\).png)
+![Navigating to 'Settings | Templates'](/_images/image-(3621).png)
 
 2. Click **Add Template** in the header and select the relevant OS for which this template will apply.
 
-![Clicking 'Add Template' in the header and selecting the relevant OS this template will apply to](<../../../../.gitbook/assets/image-(570) (1).png>)
+![Clicking 'Add Template' in the header and selecting the relevant OS this template will apply to](/_images/image-(570 "Clicking 'Add Template' in the header and selecting the relevant OS this template will apply to") (1).png>)
 
 3. On the **Add Template** screen, enter a unique name for the template in the **Template Name** field.
 
-![Entering a unique name for the template in the 'Template Name' field](../../../../.gitbook/assets/image-\(3649\).png)
+![Entering a unique name for the template in the 'Template Name' field](/_images/image-(3649).png)
 
 4. On the **Configurations** page, configure the various Tools and configuration settings for how you want apps that use this template to be deployed.
 
@@ -26,11 +26,11 @@ To add a new Deployment Template in Patch My PC (PMPC) Cloud:
 
 5. Click **Next** to move to the **Assignments** tab.
 
-![Click 'Next' to move to the 'Assignments' tab](../../../../.gitbook/assets/image-\(3650\).png)
+![Click 'Next' to move to the 'Assignments' tab](/_images/image-(3650).png)
 
 6. On the **Assignments** tab, click **Add Assignment** and select the relevant assignment type from the dropdown.
 
-![Clicking 'Add Assignment' and select the relevant assignment type](../../../../.gitbook/assets/image-\(3314\).png)
+![Clicking 'Add Assignment' and select the relevant assignment type](/_images/image-(3314).png)
 
 7. Configure the assignments to be used when deploying an app using this template.
 
@@ -40,11 +40,11 @@ To add a new Deployment Template in Patch My PC (PMPC) Cloud:
 
 8. Click **Save** to save the Template.
 
-![Clicking 'Save' to save the Template](../../../../.gitbook/assets/image-\(3315\).png)
+![Clicking 'Save' to save the Template](/_images/image-(3315).png)
 
 The **Templates** page is redisplayed along with the **Success - Template “<**_**template\_name**_**>" has been created** notification.
 
-!['Templates' redisplayed along with 'Success' notification](<../../../../.gitbook/assets/image-(571) (1).png>)
+!['Templates' redisplayed along with 'Success' notification](/_images/image-(571 "'Templates' redisplayed along with 'Success' notification") (1).png>)
 
 > \*\*Note\*\*
 >

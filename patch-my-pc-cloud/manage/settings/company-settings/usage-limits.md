@@ -18,11 +18,11 @@ To see the usage information for your PMPC Cloud Company:
 
 1. Navigate to **Settings | Company**
 
-![Navigating to "Settings | Company"](../../../../.gitbook/assets/image-\(3399\).png)
+![Navigating to "Settings | Company"](/_images/image-(3399).png)
 
 2. On the **Company** page, click the **Usage** tab.
 
-![Clicking the "Usage" tab](../../../../.gitbook/assets/image-\(3400\).png)
+![Clicking the "Usage" tab](/_images/image-(3400).png)
 
 The **Usage Info** for this company is shown, which is explained below.
 
@@ -34,7 +34,7 @@ The **Usage Info** for this company is shown, which is explained below.
 >
 > Also, any devices managed by Microsoft Defender for Endpoint (MDE) are not included in device counts.
 
-!["Usage" information](../../../../.gitbook/assets/image-\(3414\).png)
+!["Usage" information](/_images/image-(3414).png)
 
 <table><thead><tr><th width="211" valign="top">Field</th><th valign="top">Shows the...</th></tr></thead><tbody><tr><td valign="top">License Type</td><td valign="top">Type of PMPC License this company is running, which determines the limits.</td></tr><tr><td valign="top">Number of Devices</td><td valign="top">Total number of active devices for the last year.</td></tr><tr><td valign="top">Windows Deployments</td><td valign="top">The number of Windows deployments that have been created out of the total allowed.</td></tr><tr><td valign="top">macOS Deployments</td><td valign="top"><p>The number of macOS deployments that have been created out of the total allowed.</p><p><mark style="color:blue;"><strong>NOTE:</strong></mark></p><p>If you do not have the macOS license feature enabled, the usage will show as <strong>N/A</strong>.</p><p>You can click <strong>Request a Quote</strong> if you would like a quote for managing your macOS devices using PMPC Cloud.</p></td></tr><tr><td valign="top">Number of Custom Apps</td><td valign="top">The number of Custom Apps you have created out of the total allowed.</td></tr><tr><td valign="top">Max Storage Size (GB)</td><td valign="top">Total upload size of all files.</td></tr><tr><td valign="top">Deployments with Files</td><td valign="top">Total number of deployments you have created with extra files out of the total allowed.</td></tr></tbody></table>
 

@@ -17,7 +17,7 @@ To deploy the same app with a different configuration:
 >
 > Use the \*\*Search\*\* field to help you locate the app.
 
-!["App Catalog" page](../../../.gitbook/assets/image-\(1443\).png)
+!["App Catalog" page](/_images/image-(1443).png)
 
 > \*\*Note\*\*
 >
@@ -29,23 +29,23 @@ To deploy the same app with a different configuration:
 >
 > See the \[Deploy an App]\(../deploy-app/) for more details. You can also apply a deployment template to this deployment by clicking \*\*Apply Template\*\* and following the \[Use a Template in Deployments]\(../use-template.md) process.
 
-![Clicking "Deploy" on the App's properties page](../../../.gitbook/assets/image-\(1189\).png)
+![Clicking "Deploy" on the App's properties page](/_images/image-(1189).png)
 
 4. On the G**eneral Information** tab, in the **Display Name** field, enter a unique name for this deployment, then click **Next**.
 
-!["General Information" page](../../../.gitbook/assets/image-\(3317\).png)
+!["General Information" page](/_images/image-(3317).png)
 
 5. On the **Configurations** tab, configure the settings to add any required scripts or additional installation parameters, then click **Next**.
 
-!["Configurations" tab](../../../.gitbook/assets/image-\(3318\).png)
+!["Configurations" tab](/_images/image-(3318).png)
 
 6. On the **Assignments** tab, click **Add Assignment**, then select the assignment type you want to add for this deployment.
 
-![Clicking "Add Assignment", then selecting the assignment type you want to add for this deployment](../../../.gitbook/assets/image-\(3319\).png)
+![Clicking "Add Assignment", then selecting the assignment type you want to add for this deployment](/_images/image-(3319).png)
 
 7. On the **Add <**_**assignment\_type**_**> Assignment** page, select the relevant options, then click **Save**.
 
-![](../../../.gitbook/assets/image-\(3320\).png)
+![](/_images/image-(3320).png)
 
 > \*\*Note\*\*
 >
@@ -53,11 +53,11 @@ To deploy the same app with a different configuration:
 
 The **Assignments** page updates to show the newly created deployment.
 
-![New assignment shown on the "Assignments" page](../../../.gitbook/assets/image-\(3321\).png)
+![New assignment shown on the "Assignments" page](/_images/image-(3321).png)
 
 8. Configure the settings for deployment, if required.
 
-![Configure any required settings](../../../.gitbook/assets/image-\(3322\).png)
+![Configure any required settings](/_images/image-(3322).png)
 
 > \*\*Note\*\*
 >
@@ -69,19 +69,19 @@ The **Assignments** page updates to show the newly created deployment.
 
 9. Add any additional assignments for this deployment by clicking **Add Assignment** and repeating Steps 6 to 8, then click **Next**.
 
-![Adding  any additional assignments for this deployment by clicking "Add Assignment"](../../../.gitbook/assets/image-\(3323\).png)
+![Adding  any additional assignments for this deployment by clicking "Add Assignment"](/_images/image-(3323).png)
 
 10. Review the deployment summary shown on the **Summary** page.\
     \
     If you are happy, click **Deploy**.
 
-![Clicking "Deploy"](../../../.gitbook/assets/image-\(3324\).png)
+![Clicking "Deploy"](/_images/image-(3324).png)
 
 If you need to change something, click **< Prev** to backtrack through the Deployment Wizard to the relevant setting. Make the change, then step back through the wizard to this page. If everything is now correct, click **Deploy**.
 
 The **Deployments** page is displayed along with the **Success - Created&#x20;**_**\<deployment\_name>**_ notification.
 
-![](../../../.gitbook/assets/image-\(3326\).png)
+![](/_images/image-(3326).png)
 
 > \*\*Note\*\*
 >

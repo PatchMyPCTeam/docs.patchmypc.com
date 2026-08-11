@@ -8,11 +8,11 @@ _&#x41;vailable on tab: ConfigMgr Apps_
 
 Manage Application Updates and Retention allows you to override the global ConfigMgr application behavior for a specific vendor or individual product.
 
-![Manage Application Updates and Retention](../../.gitbook/assets/image-\(4055\).png)
+![Manage Application Updates and Retention](/_images/image-(4055).png)
 
 Global behavior for application updates and retention is configured on the [ConfigMgr Apps](../administration/configmgr-apps/) tab by clicking [Options](../administration/configmgr-apps/options/). These settings define how new application versions are handled, whether applications are updated in place or created as new applications, and how many previous versions are retained.
 
-![ConfigMgr Apps Options](../../.gitbook/assets/image-\(4056\).png)
+![ConfigMgr Apps Options](/_images/image-(4056).png)
 
 In some cases, a one size fits all approach is not ideal. This option allows you to customize update and retention behavior at the vendor or product level without changing your global defaults.
 
@@ -28,7 +28,7 @@ By configuring a product level override, you can retain more versions for specif
 
 Overrides configured here take precedence over the global options defined on the ConfigMgr Apps tab and are applied only to the selected vendor or product during publishing.
 
-![ConfigMgr Application Retention Options Override](../../.gitbook/assets/image-\(4057\).png)
+![ConfigMgr Application Retention Options Override](/_images/image-(4057).png)
 
 To Configure Application Update Mode:
 

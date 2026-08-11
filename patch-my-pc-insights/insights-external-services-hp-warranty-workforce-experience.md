@@ -28,15 +28,15 @@ First, you will need to create an account if you do not have one already. If you
 
 Please visit the link above to open the credentials generation page. You will be show the following options below. Click Get Credentials in the HP Proactive Insights Analytics section.
 
-![](../.gitbook/assets/image-\(2639\).png)
+![](/_images/image-(2639).png)
 
 > If the page has an error screen like shown below, HP have not enrolled your developer account in the HP Proactive Insights APIs tech group. Please contact HP again to have your account enrolled in the HP Proactive Insights API tech group.
 
-![This image showcases the Hp Proactive Insights API web page, with the error You do not have appropriate permissions (role) to access any of this Tech Groups published Apis](../.gitbook/assets/hp-no-api-\(1\).png)
+![This image showcases the Hp Proactive Insights API web page, with the error You do not have appropriate permissions (role) to access any of this Tech Groups published Apis](/_images/hp-no-api-(1).png)
 
 #### Credentials creation flow
 
-![](../.gitbook/assets/image-\(2640\).png)
+![](/_images/image-(2640).png)
 
 You will need to provide the following information:
 
@@ -46,21 +46,21 @@ You will need to provide the following information:
 4. Client ID: Leave blank
 5. Tick Read Checkbox
 
-![](../.gitbook/assets/image-\(2642\).png)
+![](/_images/image-(2642).png)
 
 Click create and you will be redirected back to the previous page.
 
 #### Viewing app
 
-![](../.gitbook/assets/image-\(2643\).png)
+![](/_images/image-(2643).png)
 
 Once you have been redirected, there will be a green success banner on top of the page. Please now click the "My API Credentials" link in the banner.
 
-![](../.gitbook/assets/image-\(2644\).png)
+![](/_images/image-(2644).png)
 
 Now click on the newly created app by click the app name, this will load the app details page.
 
-![](../.gitbook/assets/image-\(2646\).png)
+![](/_images/image-(2646).png)
 
 Here you will see information about the newly created app.
 
@@ -81,7 +81,7 @@ We now need to copy API ClientId and API Secret to Advanced Insights.
 4. Copy and paste the API Client Secret into the Client Secret input
 5. Save settings.
 
-![Settings page in Advanced Insights](../.gitbook/assets/3-\(1\).jpg)
+![Settings page in Advanced Insights](/_images/3-(1).jpg)
 
 > The app client secret has an expiration date of one year from the date of creation. Please make a note of when this key will need to be rotated.
 
@@ -99,42 +99,42 @@ We now need to copy API ClientId and API Secret to Advanced Insights.
 >
 > EU portal: [https://eu.admin.hp.com/](https://eu.admin.hp.com/)
 
-![](../.gitbook/assets/image-\(2578\).png)
+![](/_images/image-(2578).png)
 
-![](../.gitbook/assets/image-\(2579\).png)
+![](/_images/image-(2579).png)
 
-![](../.gitbook/assets/image-\(2581\).png)
+![](/_images/image-(2581).png)
 
-![](../.gitbook/assets/image-\(2582\).png)
+![](/_images/image-(2582).png)
 
-![](../.gitbook/assets/image-\(2584\).png)
+![](/_images/image-(2584).png)
 
 ## Using HP Workforce Experience
 
 When you have registered and logged in, you will be greeted by the home experience of HP Workforce Experience.\
 On the left hand side, you will need to click "Assets" to begin importing your HP devices into HP Workforce Experience.
 
-![](../.gitbook/assets/image-\(2540\).png)
+![](/_images/image-(2540).png)
 
 ### Importing devices
 
 HP Workforce Experience allows you to import your device using four different mechanisms. Currently **only Intune Import and Asset enrolment allow for warranty data collection**, manual and csv upload do not trigger warranty collection by design. To begin importing devices, please click the "Add" button in the top left of the page.
 
-![](../.gitbook/assets/image-\(2542\).png)
+![](/_images/image-(2542).png)
 
-![](../.gitbook/assets/image-\(2543\).png)
+![](/_images/image-(2543).png)
 
 ### Intune import
 
 To begin importing from Intune, please click the Intune Import button then click next.
 
-![](../.gitbook/assets/image-\(2545\).png)
+![](/_images/image-(2545).png)
 
 You will be now asked to provide your Intune Domain Name, this can be found by going to the Intune portal, clicking Tenant Administration on the left hand menu and copying the Tenant name from the Tenant Status page.
 
-![](../.gitbook/assets/image-\(2546\).png)
+![](/_images/image-(2546).png)
 
-![](../.gitbook/assets/image-\(2547\).png)
+![](/_images/image-(2547).png)
 
 You will now be greeted by the Microsoft Login flow, please log in using your microsoft credenitals as normal. You will be then presented the list of permission HP requests to perform the Intune import.
 
@@ -150,11 +150,11 @@ We shall continue using Group import only.
 
 When you click on Import assets only from Intune groups, you will be presented with a full list of all your groups in Intune. You can filter out the groups you want to import and you can import multiple groups. Select the groups you want to import and click Import.
 
-![](../.gitbook/assets/image-\(2549\).png)
+![](/_images/image-(2549).png)
 
 Intune will now begin importing your selected devices. You will receive a notification on begin and completion of the import.
 
-![](../.gitbook/assets/image-\(2552\).png)
+![](/_images/image-(2552).png)
 
 You can also check progress by navigating to the logs link on the left hand side.
 
@@ -186,4 +186,4 @@ You will be asked to log in to HP, click yes and Advanced Insights will go to HP
 
 > Once you have logged in, HP will redirect you back to Advanced Insights and warranty will begin caching warranty data.
 
-![](../.gitbook/assets/image-\(2538\).png)
+![](/_images/image-(2538).png)

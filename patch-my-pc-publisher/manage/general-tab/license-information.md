@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The first time you load Patch My PC (PMPC) Publisher, the **General tab** is selected. The **License Information** section is empty and the **No license key entered, unable to show subscription information** message is shown.
 
-![](../../../.gitbook/assets/image-\(4839\).png)
+![](/_images/image-(4839).png)
 
 You have three options at this point:
 
@@ -22,15 +22,15 @@ To activate your license:
 
 Enter your license key in the **License Key** field and click **Validate**
 
-![](../../../.gitbook/assets/image-\(4840\).png)
+![](/_images/image-(4840).png)
 
 If validation is successful, you will see the **License validated successfully** message.
 
-![License validation successful dialog](../../../.gitbook/assets/image-\(4841\).png)
+![License validation successful dialog](/_images/image-(4841).png)
 
 The **License Information** section updates to show the details of your license, and Publisher unlocks the corresponding features so you can proceed with configuration, customization, and publishing.
 
-![Updated 'License Information' section](../../../.gitbook/assets/image-\(4846\).png)
+![Updated 'License Information' section](/_images/image-(4846).png)
 
 > \*\*Note\*\*
 >
@@ -42,7 +42,7 @@ If validation fails, the dialog indicates that the key could not be verified and
 >
 > If you started your trial through Patch My PC Cloud, your license key can also be retrieved directly from the Cloud portal by navigating to \*\*Settings | Subscription\*\* and clicking on the obfuscated license key.
 
-![](<../../../.gitbook/assets/image-(411) (1).png>)
+![](/_images/image-(411) (1).png>)
 
 ## Request a free 30-day trial
 
@@ -62,11 +62,11 @@ To enable **limited trial mode**:
 2. Click the **General** tab.
 3. Under the **License Information** section, check the **Enable limited trial mode** checkbox.
 
-!['Enable limited trial mode' checkbox](../../../.gitbook/assets/image-\(4844\).png)
+!['Enable limited trial mode' checkbox](/_images/image-(4844).png)
 
 4. On the **Switch To Trial Catalog Mode** dialog, click **Yes** to continue.
 
-!['Switch To Trial Catalog Mode' dialog](../../../.gitbook/assets/image-\(4845\).png)
+!['Switch To Trial Catalog Mode' dialog](/_images/image-(4845).png)
 
 > \*\*Important\*\*
 >

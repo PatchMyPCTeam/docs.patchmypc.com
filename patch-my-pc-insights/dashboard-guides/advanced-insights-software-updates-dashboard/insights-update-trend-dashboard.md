@@ -8,12 +8,12 @@ The Update Installation Trend dashboard shows the deployment trend of installati
 
 The top row of shows how many days it took for the first device to install the update, 50%, 90% and 100% Installation targeted.
 
-![](../../../.gitbook/assets/image-\(1014\).png)
+![](/_images/image-(1014).png)
 
 You can filter the chart by collection, select which update and the number of days you want to see the trend for.
 
 > Some devices may become compliant without having installed this update via this deployment and these will not show in the installation data here.
 
-![](../../../.gitbook/assets/image-\(1015\).png)
+![](/_images/image-(1015).png)
 
 This portlet shows enforcement activity for managed client devices for this update.

@@ -31,7 +31,7 @@ You can enable applications for publishing in one of two ways:
 
 The [Scan Wizard](../../../patch-my-pc-publisherv2/administration/updates/form-controls/scan-configmgr-database-for-supported-products.md) is generally a recommended starting point. It leverages ConfigMgr hardware inventory data to identify supported third-party products currently present in your environment and compares those results against the Patch My PC catalog. This allows you to review what is installed _today_ before enabling publishing.
 
-![ConfigMgr Apps Scan Wizard](../../../.gitbook/assets/image-\(4158\).png)
+![ConfigMgr Apps Scan Wizard](/_images/image-(4158).png)
 
 After running a scan, review the results carefully. The device count and version information help validate inventory accuracy and determine publishing priority. Exporting the results to CSV can assist with internal review, change control discussions, or phased rollout planning.
 
@@ -43,7 +43,7 @@ Once you are comfortable with how updates are created and maintained, you can ex
 
 Updates can also be enabled manually by selecting products directly from the [product tree](../../../patch-my-pc-publisherv2/administration/updates/product-tree.md) on the [Updates](../../../patch-my-pc-publisherv2/administration/updates/) tab.
 
-![Manual Product Selection](../../../.gitbook/assets/image-\(4160\).png)
+![Manual Product Selection](/_images/image-(4160).png)
 
 You can expand vendors to browse available products or use the [Search](../../../patch-my-pc-publisherv2/administration/updates/form-controls/search-products.md) form control to quickly locate a specific update by name.
 
@@ -74,7 +74,7 @@ To account for this ambiguity, consider one of the following approaches:
 * **Enable all update variants as Full Content.**\
   In environments where multiple variants may exist and immediate patch coverage is the priority, enabling all update variants ensures that no installed instance remains unpatched when deployments are targeted.
 
-![Enable multiple variants as full content or metadata only](../../../.gitbook/assets/image-\(4159\).png)
+![Enable multiple variants as full content or metadata only](/_images/image-(4159).png)
 
 Using Metadata Only as an initial step is often the most controlled approach, particularly in WSUS standalone environments. It provides visibility into what is truly installed before introducing update binaries into WSUS.
 

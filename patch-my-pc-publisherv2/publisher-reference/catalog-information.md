@@ -24,7 +24,7 @@ If no architecture is specified in the product name, this typically means the ve
 
 The product name suffix for (Full Content) or (Metradata) shown in the product tree, on the updates tab, reflects how the update is configured via right-click customization. When an update is set to publish with **Full Content**, the product name includes (Full Content) to indicate that the installer binaries will be published to WSUS. If the update is configured as Metadata only, the name is updated to reflect **Metadata** instead. This naming helps you quickly see how each update will be published at a glance.
 
-![Naming Convention - Full Content / Metadata](<../../.gitbook/assets/image-(525) (1).png>)
+![Naming Convention - Full Content / Metadata](/_images/image-(525 "Naming Convention - Full Content / Metadata") (1).png>)
 
 For more details on changing the default (Full Content) to (Metadata), see [Publishing with Full-content or Metadata Only](../customizations-right-click-options/publish-with-full-content-or-metadata-only.md).
 
@@ -39,7 +39,7 @@ Example:
 
 * Citrix Workspace LTSR (Latest)
 
-![Naming Convention - Latest](<../../.gitbook/assets/image-(526) (1).png>)
+![Naming Convention - Latest](/_images/image-(526 "Naming Convention - Latest") (1).png>)
 
 In these cases, Latest means the product will always align to the most recent major version published within that product line (such as the newest LTSR build). As newer versions are added to the catalog, the Latest entry automatically advances without requiring changes to product selection.
 

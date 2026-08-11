@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Show package info** option displays detailed update information for the currently synchronized catalog in the Publisher. This information is read only and reflects the latest metadata available from the Patch My PC catalog.
 
-![Show Package Info](../../.gitbook/assets/image-\(157\).png)
+![Show Package Info](/_images/image-(157).png)
 
 When selected for a single product, the option displays the specific package information for that product as defined in the Patch My PC catalog.
 
@@ -18,7 +18,7 @@ When selected at the All Products or Vendor level, the option shows package info
 
 The Package Details window displays the package metadata for the selected scope in the Publisher. This view is opened when the Show package info option is selected.
 
-![Package Details](../../.gitbook/assets/image-\(159\).png)
+![Package Details](/_images/image-(159).png)
 
 The grid shows one row per available package based on the current product tree selection. The information shown reflects what is in the latest Patch My PC catalog.
 

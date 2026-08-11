@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 Manage Role Scope Tags allows you to control which Intune role scope tags are applied to Win32 applications created by the Publisher.
 
-![Manage Role Scope Tags](../../.gitbook/assets/image-\(112\).png)
+![Manage Role Scope Tags](/_images/image-(112).png)
 
 Role scope tags are part of Intune RBAC and are used to limit which administrators can view or manage specific resources. By assigning scope tags, you ensure that only admins with matching role assignments and scope permissions can see or modify the applications created by the Publisher.
 
@@ -16,7 +16,7 @@ Role scope tags are part of Intune RBAC and are used to limit which administrato
 
 The list of available role scope tags is retrieved directly from your Intune tenant. You can select one or more tags to associate with an application.
 
-![Select Scope Tags](../../.gitbook/assets/image-\(113\).png)
+![Select Scope Tags](/_images/image-(113).png)
 
 When a Win32 application is created by the Publisher, the selected role scope tags are applied automatically during publishing.
 

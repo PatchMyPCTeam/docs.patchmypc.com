@@ -20,7 +20,7 @@ The **Default Command Line** section displays the silent installation command li
 >
 > Use this section to understand which parameters are already included before adding any custom arguments.
 
-!['Default Command Line'](../../../.gitbook/assets/image-\(4424\).png)
+!['Default Command Line'](/_images/image-(4424).png)
 
 ## Your Additional Arguments
 
@@ -30,7 +30,7 @@ The **Your Additional Arguments** section is where you can enter custom command-
 >
 > Include only parameters specific to your customization. Do not re-add standard silent-install switches, such as \*\*quiet\*\* or \*\*norestart\*\*, unless explicitly required.
 
-!['Your Additional Arguments' section](../../../.gitbook/assets/image-\(4425\).png)
+!['Your Additional Arguments' section](/_images/image-(4425).png)
 
 You can insert supported variables such as `%CurrentDir%` by using the **Insert Variable** option. Variables are expanded at runtime and will still appear as variables in the preview.
 
@@ -56,7 +56,7 @@ The **Examples and Special Variables** section helps you build custom command li
 >
 > This section is for information only and cannot be edited.
 
-!['Examples and Special Variables' section](../../../.gitbook/assets/image-\(4426\).png)
+!['Examples and Special Variables' section](/_images/image-(4426).png)
 
 The **Examples** area shows sample installer parameters that can be appended to the default silent command line. Examples include:
 
@@ -76,4 +76,4 @@ These variables are resolved dynamically based on the selected product and updat
 
 The **Final Command Line Preview** section shows how the complete command line will look once your additional arguments are appended. Variables are not expanded in this view and are displayed as variables.
 
-!['Final Command Line Preview' section](../../../.gitbook/assets/image-\(4427\).png)
+!['Final Command Line Preview' section](/_images/image-(4427).png)

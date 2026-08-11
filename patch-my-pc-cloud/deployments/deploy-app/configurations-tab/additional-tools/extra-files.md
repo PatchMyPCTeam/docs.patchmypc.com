@@ -13,13 +13,13 @@ To add extra folders and/or files:
 1. Add the [**Extra Files** tool](../#adding-additional-tools).
 2. Click the **Extra Files** tool.
 
-![Clicking the 'Extra Files' tool](../../../../../.gitbook/assets/image-\(3635\).png)
+![Clicking the 'Extra Files' tool](/_images/image-(3635).png)
 
 3. Either:
    1. Drag and drop the relevant folders or files to the relevant area.
    2. Click the relevant button to browse to and select the relevant folders or files.
 
-!['Extra Files' section](../../../../../.gitbook/assets/image-\(3639\).png)
+!['Extra Files' section](/_images/image-(3639).png)
 
 > \*\*Note\*\*
 >
@@ -32,12 +32,12 @@ To add extra folders and/or files:
 4.  Click **Upload** when your browser prompts you to upload the content.\
     <br>
 
-    ![Clicking "Upload" when prompted to upload the content](<../../../../../.gitbook/assets/image-(848) (1).png>)
+    ![Clicking "Upload" when prompted to upload the content](/_images/image-(848 "Clicking \"Upload\" when prompted to upload the content") (1).png>)
 
     \
     The hash will be calculated for any folders/files you upload, which will appear at the bottom of the **Extra Files** section.
 
-![Additional folders/files to be uploaded appearing at the bottom of the 'Extra Files' section](../../../../../.gitbook/assets/image-\(3640\).png)
+![Additional folders/files to be uploaded appearing at the bottom of the 'Extra Files' section](/_images/image-(3640).png)
 
 > \*\*Note\*\*
 >

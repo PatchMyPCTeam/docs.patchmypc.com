@@ -35,7 +35,7 @@ To configure Notifications:
 1. Sign in to the portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings | Notifications**
 
-![Navigating to 'Settings | Notifications'](<../../../../.gitbook/assets/image-(298) (1).png>)
+![Navigating to 'Settings | Notifications'](/_images/image-(298 "Navigating to 'Settings | Notifications'") (1).png>)
 
 The **Notifications** page is then displayed, showing any existing Notifications and allowing you to:
 
@@ -43,4 +43,4 @@ The **Notifications** page is then displayed, showing any existing Notifications
 * [Modify a Notification](modify-notification.md)
 * [Delete a Notification](delete-notification.md)
 
-!['Notifications' page](../../../../.gitbook/assets/image-\(299\).png)
+!['Notifications' page](/_images/image-(299).png)

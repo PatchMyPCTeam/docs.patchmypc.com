@@ -16,7 +16,7 @@ Role scope tags are part of Intune RBAC and are used to limit which administrato
 
 The list of available role scope tags is retrieved directly from your Intune tenant. You can select one or more tags to associate with an application.
 
-![Select Scope Tags](../../../.gitbook/assets/image-\(113\).png)
+![Select Scope Tags](/_images/image-(113).png)
 
 When a Win32 application is created by the Publisher, the selected role scope tags are applied automatically during publishing.
 

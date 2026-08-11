@@ -7,4 +7,4 @@ The **Technical Support** section of the **About** tab of Patch My PC (PMPC) Pub
 * [Technical Support Page](https://patchmypc.com/technical-support/) - Where you can open a Support Case
 * [Support Forum Page](https://forum.patchmypc.com/index.php/board,23.0.html) - Where you can search for common issues or start a new thread.
 
-!['Technical Support' section](../../../.gitbook/assets/image-\(4834\).png)
+!['Technical Support' section](/_images/image-(4834).png)

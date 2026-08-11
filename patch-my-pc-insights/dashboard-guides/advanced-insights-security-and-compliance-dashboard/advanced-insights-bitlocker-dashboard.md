@@ -24,7 +24,7 @@ This will ensure the BitLocker Unmanaged and Recovery at Risk statistics are pop
 
 The top row of statistics help to identify where configuration errors may be causing compliance issues.
 
-![](../../../.gitbook/assets/image-\(2692\).png)
+![](/_images/image-(2692).png)
 
 The first statistic, "BitLocker Unmanaged" shows Computers which have a BitLocker Encrypted Operating System Drive but are not under the control of a Configuration Manager or integrated MBAM Agent Management Policy. These devices may not conform to the required standard and will not report compliance.
 
@@ -34,6 +34,6 @@ Inactive TPM portable devices lists laptops machines which do not show an activa
 
 Non-Compliant Computers shows BitLocker Encrypted computers which do not conform to the BitLocker policies set in your environment. Clicking through will show the compliance conflicts:
 
-![](../../../.gitbook/assets/image-\(2693\).png)
+![](/_images/image-(2693).png)
 
 The row of donut charts show the BitLocker status for all workstation clients (off, on, suspended or unknown). We show the BitLocker Cipher in use by the clients (this requires the MBAM integration listed above). We show the TPM version of the clients and the TPM Status (Activated, Enabled, Unknown). TPM "Enabled" is ready for activation by the OS, but is not currently in use.

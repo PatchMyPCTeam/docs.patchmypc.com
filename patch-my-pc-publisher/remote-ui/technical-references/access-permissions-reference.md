@@ -55,4 +55,4 @@ To delegate access to a user:
 
 Clicking the _Show Granted Permissions Shield_ (!\[Show Granted Permissions Shield]\(/\_images/image-(4585 "Show Granted Permissions Shield").png>)) at the bottom of the Publisher opens the read-only **Permissions** screen showing a list of every Publisher permission and whether the signed-in user has been granted it, evaluated against the server the user is connected to. This feature works the same for local and remote Settings consoles.
 
-![](../../../.gitbook/assets/image-\(4586\).png)
+![](/_images/image-(4586).png)

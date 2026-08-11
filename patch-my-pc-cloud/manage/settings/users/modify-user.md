@@ -16,12 +16,12 @@ To modify the role assigned to a user:
     \
     For example, to change the user’s current role from **Full Admin** to **Custom App Admin**, click the down arrow beside the current role, then choose **Custom App Admin**.<br>
 
-    ![Selecting the required user role from the list of roles dropdown](../../../../.gitbook/assets/image-\(2820\).png)
+    ![Selecting the required user role from the list of roles dropdown](/_images/image-(2820).png)
 
     \
     The role for the user will be updated and the **Success - Role changed** notification is displayed.<br>
 
-    !["Success - Role changed" notification](../../../../.gitbook/assets/image-\(2350\).png)
+    !["Success - Role changed" notification](/_images/image-(2350).png)
 
 > \*\*Note\*\*
 >
@@ -34,11 +34,11 @@ To manage whether a user is granted the **Access Management** privilege:
 1. Navigate to the **Users** area.
 2. In the **Roles** column, slide the **Access Management** slider to the right for the user you want to grant this permission.
 
-![Using the slider to grant "Access Management" privileges](../../../../.gitbook/assets/image-\(2351\).png)
+![Using the slider to grant "Access Management" privileges](/_images/image-(2351).png)
 
 The **Success - Role changed** notification is displayed.
 
-![The "Success - Role changed" notification](../../../../.gitbook/assets/image-\(2352\).png)
+![The "Success - Role changed" notification](/_images/image-(2352).png)
 
 > \*\*Note\*\*
 >

@@ -22,11 +22,11 @@ The IIS Application Pool identity used for both the Advanced Insights Frontend a
 
 In this example, the installer automatically determined that the best available port was 444. IIS Application Pool left as default 'LocalSystem'.
 
-![Example](../../.gitbook/assets/image-\(4336\).png)
+![Example](/_images/image-(4336).png)
 
 In this example a custom IIS application pool identity has been set:
 
-![IIS app pool set](../../.gitbook/assets/image-\(4337\).png)
+![IIS app pool set](/_images/image-(4337).png)
 
 Confirm the required Dashboard Port and if required, IIS application pool identity and click **Next**.
 

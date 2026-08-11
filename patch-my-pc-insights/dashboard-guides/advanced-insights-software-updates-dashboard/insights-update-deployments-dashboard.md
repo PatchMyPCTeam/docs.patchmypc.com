@@ -6,7 +6,7 @@ The Software Update Deployments dashboard shows high-level compliance for each S
 
 Clicking through the Software Updates deployments you can see the general information about the deployment.
 
-![](../../../.gitbook/assets/image-\(1008\).png)
+![](/_images/image-(1008).png)
 
 You can toggle the DeploymentStatus to show you the following fields:
 

@@ -17,13 +17,13 @@ To add a Category to a deployment:
 1. Add the [**Categories** tool](../#adding-additional-tools).
 2. Click the **Categories** tool.
 
-![Clicking the 'Categories' tool](<../../../../../.gitbook/assets/image-(639) (1).png>)
+![Clicking the 'Categories' tool](/_images/image-(639 "Clicking the 'Categories' tool") (1).png>)
 
 3. Go to Step 6. to add a new category or in the **Add Category** field, either:
    1. Start typing the name of the relevant Category, then click the checkbox beside it to select it.
    2. Click the dropdown to see a list of existing Categories and click the relevant checkbox(es) to select it.
 
-![Selecting the checkbox beside the relevant categories](<../../../../../.gitbook/assets/image-(641) (1).png>)
+![Selecting the checkbox beside the relevant categories](/_images/image-(641 "Selecting the checkbox beside the relevant categories") (1).png>)
 
 > \*\*Tip\*\*
 >
@@ -45,15 +45,15 @@ To add a Category to a deployment:
 >
 > \* Not be the name of a script.
 
-![Typing the name of the new Category in the 'Add Category' field](../../../../../.gitbook/assets/image-\(642\).png)
+![Typing the name of the new Category in the 'Add Category' field](/_images/image-(642).png)
 
 7. Press `ENTER` and the **Success – The category “<**_**category\_name>**_**” has been created** notification is shown, confirming the new category has been added to both Intune and this deployment.
 
-![](<../../../../../.gitbook/assets/image-(643) (1).png>)
+![](/_images/image-(643) (1).png>)
 
 The number of categories selected is shown beside the **Categories** tool.
 
-![The number of categories selected is shown beside the 'Categories' tool](../../../../../.gitbook/assets/image-\(644\).png)
+![The number of categories selected is shown beside the 'Categories' tool](/_images/image-(644).png)
 
 > \*\*Note\*\*
 >

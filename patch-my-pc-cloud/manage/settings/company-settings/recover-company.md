@@ -43,7 +43,7 @@ To recover a PMPC Company:
 1. If the user attempting the recovery is an existing user and is already logged in, they must sign out of any portal sessions for that company.
 2. Navigate to [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
 
-![Navigating the sign in page](../../../../.gitbook/assets/image-\(1190\).png)
+![Navigating the sign in page](/_images/image-(1190).png)
 
 3. Click **Sign In** if the user attempting the recovery can sign in to multiple companies in PMPC Cloud.
 4. Click **Sign Up** if any of the following applies to the user attempting recovery:
@@ -51,19 +51,19 @@ To recover a PMPC Company:
    2. The user has not signed into the portal before and is not associated with an existing PMPC Cloud company.
 5. On the **Select the Company You Want to Sign In To** screen, click **Recover Company**.
 
-![Clicking 'Recover Company'](../../../../.gitbook/assets/image-\(2657\).png)
+![Clicking 'Recover Company'](/_images/image-(2657).png)
 
 The **Claim Ownership** wizard starts.
 
-!['Claim Ownership' wizard](../../../../.gitbook/assets/image-\(3476\).png)
+!['Claim Ownership' wizard](/_images/image-(3476).png)
 
 6. From the **Company to Claim** dropdown, select the company you want to recover.
 
-!['Company to Claim' dropdown](../../../../.gitbook/assets/image-\(3477\).png)
+!['Company to Claim' dropdown](/_images/image-(3477).png)
 
 The last five characters of the **Entra ID** to which your PMPC Company belongs are shown.
 
-![Last five characters of the Entra ID to which your PMPC Company belongs are shown.](../../../../.gitbook/assets/image-\(3479\).png)
+![Last five characters of the Entra ID to which your PMPC Company belongs are shown.](/_images/image-(3479).png)
 
 7. Using the [Creating an App Registration in Entra ID](../../../technical-references/entra-id-reference/create-an-app-registration-in-entra-id.md) process, verify that the last five characters of the Entra ID match the last five characters of the **Directory (tenant) ID**.\
    \
@@ -91,28 +91,28 @@ The last five characters of the **Entra ID** to which your PMPC Company belongs 
 | Application (client) ID for the PMPC Recovery App Registration | Client ID             |
 | PMPC Recovery client secret.                                   | Secret                |
 
-![Entering values into the 'Claim Ownership' screen](../../../../.gitbook/assets/image-\(3480\).png)
+![Entering values into the 'Claim Ownership' screen](/_images/image-(3480).png)
 
 10. Click **Continue**.
 
-![Clicking 'Continue'](../../../../.gitbook/assets/image-\(3481\).png)
+![Clicking 'Continue'](/_images/image-(3481).png)
 
 11. If the user performing the recovery is an existing user within the PMPC Company, go to Step 15.
 12. If the user performing the recovery is not an existing user within the PMPC Company, they will see the **User Info** page.
 
-!['User Info' page](../../../../.gitbook/assets/image-\(2664\).png)
+!['User Info' page](/_images/image-(2664).png)
 
 13. Complete the **First Name** and **Last Name** fields, which will be used to create the new account and assign them the **Full Admin with Access Management** role if the recovery is successful.
 14. Review the **Terms and conditions** and if you are happy, click to check the **Accept all Terms and conditions** checkbox, then click **Continue**.<br>
 
-    ![Checking the 'Accept all Terms and conditions' checkbox, then clicking 'Continue'.](../../../../.gitbook/assets/image-\(2665\).png)
+    ![Checking the 'Accept all Terms and conditions' checkbox, then clicking 'Continue'.](/_images/image-(2665).png)
 15. The supplied information is checked.\
     \
     If the recovery process fails, see the **Resolution** section of the [Error – Claim Ownership Failed](../../../troubleshoot/company/error-claim-ownership-failed-when-trying-to-recover-a-cloud-company.md) article for troubleshooting help.\
     \
     If the recovery process is successful, the **Ownership Granted** popup is displayed.<br>
 
-    !['Ownership Granted' popup](../../../../.gitbook/assets/image-\(2667\).png)
+    !['Ownership Granted' popup](/_images/image-(2667).png)
 
 > \*\*Important\*\*
 >
@@ -120,17 +120,17 @@ The last five characters of the **Entra ID** to which your PMPC Company belongs 
 
 16. Click **Close** to complete the recovery process and display the **App Catalog** page of the recovered company.<br>
 
-    !['App Catalog' page of the recovered company](../../../../.gitbook/assets/image-\(2668\).png)
+    !['App Catalog' page of the recovered company](/_images/image-(2668).png)
 
     \
     If you navigate to the **Users** node, you will see that the account used to perform the recovery process has been created (if applicable) and assigned the **Full Admin with Access Management** role.<br>
 
-    !['Users' node showing the user account used to perform the recovery process has been created (if applicable) and assigned the 'Full Admin with Access Management role'.](../../../../.gitbook/assets/image-\(2669\).png)
+    !['Users' node showing the user account used to perform the recovery process has been created (if applicable) and assigned the 'Full Admin with Access Management role'.](/_images/image-(2669).png)
 
     \
     If you navigate to the **Events** node, you will see that the **Company Ownership Approved for <**_**user\_name**_**>** event confirming the name of the user who performed the recovery process.<br>
 
-    ![](../../../../.gitbook/assets/image-\(2670\).png)
+    ![](/_images/image-(2670).png)
 
     \
     The previous owner will also receive an email with the subject **Access Recovered to “PMPC\_<**_**company\_name**_**>”**, containing details of who performed the recovery and when.

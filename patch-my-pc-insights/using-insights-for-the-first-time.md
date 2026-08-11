@@ -16,13 +16,13 @@ On first logon, you will see the welcome page. You can access this page any time
 
 The welcome screen needs your Patch My PC license key and your ConfigMgr site server details.
 
-![Advanced Insights welcome screen](../.gitbook/assets/1-\(2\).png)
+![Advanced Insights welcome screen](/_images/1-(2).png)
 
 ### License Key
 
 If Advanced Insights is installed on the same server as the Patch My PC Publisher we will read the license key automatically. Alternatively, please add your license key and click to verify.
 
-![](../.gitbook/assets/image-\(1811\).png)
+![](/_images/image-(1811).png)
 
 ### Configuration Manager Database Details
 
@@ -32,8 +32,8 @@ As long as the IIS application pool identity running the Advanced Insights Contr
 
 If you have a problem at this stage, please see [this document ](insights-sql-permission-requirements.md)for details on granting SQL permissions.
 
-![](../.gitbook/assets/image-\(1808\).png)
+![](/_images/image-(1808).png)
 
 Once the license key and SQL sections are successfully completed, click **Go to Dashboard** in the final step to complete setup.
 
-![](../.gitbook/assets/image-\(1840\).png)
+![](/_images/image-(1840).png)

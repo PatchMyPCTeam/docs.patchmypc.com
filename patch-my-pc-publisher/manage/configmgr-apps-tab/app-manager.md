@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **ConfigMgr Application Manager** form control in Patch My PC (PMPC) Publisher is used to view and manage applications in ConfigMgr that were created using the Publisher. It provides a centralized interface to review application properties, deployments, task sequence usage and dependency relationships before performing application cleanup.
 
-![ConfigMgr Application Manager](<../../../.gitbook/assets/image-(94) (1).png>)
+![ConfigMgr Application Manager](/_images/image-(94 "ConfigMgr Application Manager") (1).png>)
 
 The form queries the ConfigMgr SMS Provider and displays only applications that were published by the Publisher.
 
@@ -65,7 +65,7 @@ To extract the content for one or more published applications:
 1. Locate the application or applications you want to extract the content for using the available filters. Select the checkbox next to each update you want to process.
 2. Select **Extract Content** at the bottom of the wizard.
 
-![Extact Content](<../../../.gitbook/assets/image-(95) (1).png>)
+![Extact Content](/_images/image-(95 "Extact Content") (1).png>)
 
 3. An output folder selection dialog is displayed. Review your selection choice and click **Browse** to choose a destination path for the extracted content.
 
@@ -73,7 +73,7 @@ To extract the content for one or more published applications:
 >
 > The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
 
-![Content Extraction Summary](<../../../.gitbook/assets/image-(96) (1).png>)
+![Content Extraction Summary](/_images/image-(96 "Content Extraction Summary") (1).png>)
 
 4. Click **OK**.
 

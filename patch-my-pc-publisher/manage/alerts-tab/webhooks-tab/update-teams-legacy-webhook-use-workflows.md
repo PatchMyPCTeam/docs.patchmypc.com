@@ -12,7 +12,7 @@ Microsoft Teams Workflows use the Adaptive Message Card format. Legacy Microsoft
 
 It is recommended that any webhook configured in the Patch My PC (PMPC) Publisher using the **MSTeams** message system be updated to use **MSTeamsWorkflow**.
 
-![MSTeamsWorkflow vs MSTeams Message System](../../../../.gitbook/assets/image-\(212\).png)
+![MSTeamsWorkflow vs MSTeams Message System](/_images/image-(212).png)
 
 ## Update an Existing Webhook
 
@@ -21,7 +21,7 @@ It is recommended that any webhook configured in the Patch My PC (PMPC) Publishe
 3. Select the existing webhook that uses the Microsoft Teams legacy provider and click Edit.
 4. Change the Webhook Provider from **Microsoft Teams (Legacy Webhook)** to **Microsoft Teams Workflow**.
 
-![Change the Webhook Provider](../../../../.gitbook/assets/image-\(213\).png)
+![Change the Webhook Provider](/_images/image-(213).png)
 
 1. Replace the existing Webhook URL with the new workflow webhook URL.
 2. Click **OK**, then click **Apply** to save the changes.

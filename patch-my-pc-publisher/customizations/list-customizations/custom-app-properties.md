@@ -57,7 +57,7 @@ DEV - Brave 144.1.86.148 (EXE-x64)
 
 ## **Configure** Custom Application Properties
 
-![Configure Custom Application Properties](../../../.gitbook/assets/image-\(111\).png)
+![Configure Custom Application Properties](/_images/image-(111).png)
 
 To configure Custom Application Properties:
 
@@ -70,6 +70,6 @@ To configure Custom Application Properties:
 
 \*Click **Show default description** to display the original catalog description. Copy the text to the clipboard, paste it into the **Custom Description** field, and edit it to create your custom description.
 
-![Show default description](<../../../.gitbook/assets/image-(77) (1).png>)
+![Show default description](/_images/image-(77 "Show default description") (1).png>)
 
 The custom properties are applied during the next Publisher [synchronization](../../../patch-my-pc-publisherv2/administration/sync-schedule.md) and affect newly created and updated applications for that product.

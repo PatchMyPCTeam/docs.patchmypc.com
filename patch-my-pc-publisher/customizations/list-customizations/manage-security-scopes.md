@@ -14,7 +14,7 @@ During each synchronization, the Publisher applies the selected security scopes 
 
 The list of available security scopes is pulled directly from your ConfigMgr environment. You can refresh the list using the refresh button in the top right corner.
 
-![Selecting a Security Scope](../../../.gitbook/assets/image-\(115\).png)
+![Selecting a Security Scope](/_images/image-(115).png)
 
 The list supports filtering using the **Filter items** field, and the visible columns can be customized by right-clicking the column headers.
 

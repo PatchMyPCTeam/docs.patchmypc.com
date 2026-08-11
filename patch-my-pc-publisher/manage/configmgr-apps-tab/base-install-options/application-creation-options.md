@@ -24,7 +24,7 @@ When the **Allow applications to be installed from the Install Application task 
 
 Specifically, Publisher enables **Allow this application to be installed from the Install Application task sequence action without being deployed** on each application it creates or updates.
 
-![Allow applications to be installed from the Install Application task sequence action](<../../../../.gitbook/assets/image-(509) (1).png>)
+![Allow applications to be installed from the Install Application task sequence action](/_images/image-(509 "Allow applications to be installed from the Install Application task sequence action") (1).png>)
 
 > \*\*Tip\*\*
 >
@@ -57,7 +57,7 @@ Enabling the **Allow clients to use distribution points from the site’s defaul
 
 When enabled by Publisher, this setting is applied directly to the application deployment type in ConfigMgr. It helps prevent installation failures in scenarios where boundary group coverage is incomplete or where content has not yet been distributed to all required DPs.
 
-![Allow clients to use distribution points from the site's default boundary group](<../../../../.gitbook/assets/image-(510) (1).png>)
+![Allow clients to use distribution points from the site's default boundary group](/_images/image-(510 "Allow clients to use distribution points from the site's default boundary group") (1).png>)
 
 > \*\*Note\*\*
 >
@@ -71,7 +71,7 @@ This ensures the detection scripts are trusted and can run successfully on clien
 
 This setting is applied directly to the detection method of each application deployment type created or updated by Publisher.
 
-![Code sign the PowerShell detection method script using the WSUS signing certificate](<../../../../.gitbook/assets/image-(512) (1).png>)
+![Code sign the PowerShell detection method script using the WSUS signing certificate](/_images/image-(512 "Code sign the PowerShell detection method script using the WSUS signing certificate") (1).png>)
 
 > \*\*Important\*\*
 >
@@ -93,7 +93,7 @@ As shown in the example below, **Notepad++ (x86)** was published with this optio
 
 In both cases, the exact application version is still visible in the **Software Version** column in the ConfigMgr console.
 
-![](../../../../.gitbook/assets/image-\(513\).png)
+![](/_images/image-(513).png)
 
 > \*\*Note\*\*
 >
@@ -122,7 +122,7 @@ To choose where applications are placed in the ConfigMgr console:
 
 All applications created or updated by Publisher will now be moved to the selected console folder.
 
-![Move applications to the following folder in the applications node of the console](../../../../.gitbook/assets/image-\(220\).png)
+![Move applications to the following folder in the applications node of the console](/_images/image-(220).png)
 
 > \*\*Note\*\*
 >
@@ -132,7 +132,7 @@ All applications created or updated by Publisher will now be moved to the select
 
 The following settings control how the Publisher handles new versions of applications that were previously created by the Publisher. The behavior you choose determines whether existing applications are updated in place, new applications are created, and how older versions are retained or removed.
 
-![Application Lifecycle Settings](../../../../.gitbook/assets/image-\(221\).png)
+![Application Lifecycle Settings](/_images/image-(221).png)
 
 ### Update existing application’s metadata, deployment type, detection method, and content files (Default)
 

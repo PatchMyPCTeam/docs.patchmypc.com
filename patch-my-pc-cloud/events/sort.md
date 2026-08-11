@@ -6,11 +6,11 @@ To sort Events in Patch My PC (PMPC) Cloud:
 
 On the **Events** page, click the relevant column heading to sort the entries by this column.
 
-![Clicking the relevant column heading to sort the entries by this column.](../../.gitbook/assets/image-\(1329\).png)
+![Clicking the relevant column heading to sort the entries by this column.](/_images/image-(1329).png)
 
 The column heading will be highlighted and an arrow will show you whether the results are displayed in ascending or descending order.
 
-![Arrow showing the sort order](../../.gitbook/assets/image-\(2476\).png)
+![Arrow showing the sort order](/_images/image-(2476).png)
 
 To sort by a different column, just click the column name.
 

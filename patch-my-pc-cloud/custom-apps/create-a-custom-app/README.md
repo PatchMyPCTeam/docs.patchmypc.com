@@ -19,7 +19,7 @@ To create a PMPC Custom App, you first need to add it to our App Catalog as foll
 1. Sign in to the PMPC Cloud Portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
 2. Click **Add App** on the **App Catalog** page.
 
-![Clicking ‘Add App'](../../../.gitbook/assets/image-\(4299\).png)
+![Clicking ‘Add App'](/_images/image-(4299).png)
 
 The Custom Apps Deployment Wizard starts.
 

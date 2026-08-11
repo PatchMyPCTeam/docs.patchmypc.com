@@ -43,7 +43,7 @@ To add a script:
 1. Add the [**Scripts** tool](../../#adding-additional-tools).
 2. Click the **Scripts** tool.
 
-![Clicking the 'Scripts' tool](../../../../../../.gitbook/assets/image-\(3637\).png)
+![Clicking the 'Scripts' tool](/_images/image-(3637).png)
 
 > \*\*Note\*\*
 >
@@ -58,7 +58,7 @@ To add a script:
 * [Pre-Uninstall Script](pre-uninstall-scripts.md) - a script that can be run before the uninstaller runs.
 * [Post-Uninstall Script](post-uninstall-scripts.md) - a script that can be run after the uninstaller runs.
 
-!['Scripts' tool settings](../../../../../../.gitbook/assets/image-\(4222\).png)
+!['Scripts' tool settings](/_images/image-(4222).png)
 
 > \*\*Note\*\*
 >
@@ -94,7 +94,7 @@ As previously mentioned, if you deploy a Custom App where the **Installer Type**
 
 The **Scripts** tool will also show the **Install File** and **Uninstall Command** fields. Clicking **View** next to these fields opens the Script Editor, which displays the associated script (this is read-only, so you cannot make any changes).
 
-![Script tool showing the install and uninstall scripts](../../../../../../.gitbook/assets/image-\(4367\).png)
+![Script tool showing the install and uninstall scripts](/_images/image-(4367).png)
 
 ## Next Steps
 

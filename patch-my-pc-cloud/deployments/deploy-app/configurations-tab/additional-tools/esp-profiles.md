@@ -23,13 +23,13 @@ To configure a PMPC Cloud deployment to use an ESP Profile:
 
 3. Click the **ESP Profiles** tool.
 
-![Clicking the 'ESP Profiles' tool](<../../../../../.gitbook/assets/image-(634) (1).png>)
+![Clicking the 'ESP Profiles' tool](/_images/image-(634 "Clicking the 'ESP Profiles' tool") (1).png>)
 
 4. In the **Add Profile** field, either:
    1. Start typing the name of the relevant ESP Profile, then click the checkbox beside it to select it.
    2. Click the dropdown to see a list of existing ESP Profiles and click the checkboxes beside the relevant profiles to select them.
 
-![Adding ESP Profiles](<../../../../../.gitbook/assets/image-(635) (1).png>)
+![Adding ESP Profiles](/_images/image-(635 "Adding ESP Profiles") (1).png>)
 
 > \*\*Note\*\*
 >
@@ -39,7 +39,7 @@ To configure a PMPC Cloud deployment to use an ESP Profile:
 
 The selected ESP Profile(s) are added to the **Add Profile** field.
 
-![Selected ESP Profile(s) added to the 'Add Profile' field](<../../../../../.gitbook/assets/image-(637) (1).png>)
+![Selected ESP Profile(s) added to the 'Add Profile' field](/_images/image-(637 "Selected ESP Profile(s) added to the 'Add Profile' field") (1).png>)
 
 > \*\*Tip\*\*
 >
@@ -55,7 +55,7 @@ The selected ESP Profile(s) are added to the **Add Profile** field.
 
 The number of ESP Profiles selected is shown beside the **ESP Profiles** tool.
 
-![Number of ESP Profiles selected shown beside the 'ESP Profiles' tool](<../../../../../.gitbook/assets/image-(638) (1).png>)
+![Number of ESP Profiles selected shown beside the 'ESP Profiles' tool](/_images/image-(638 "Number of ESP Profiles selected shown beside the 'ESP Profiles' tool") (1).png>)
 
 > \*\*Note\*\*
 >

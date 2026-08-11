@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 **Override Win32 Application Options** allows you to override the global Win32 application options for a specific vendor or product. It is used when certain Intune applications or updates require different behavior than what is defined globally.
 
-![Override Win32 Application Options](../../.gitbook/assets/image-\(4058\).png)
+![Override Win32 Application Options](/_images/image-(4058).png)
 
 Global Win32 app options are configured on the [Intune Apps and Intune Updates](../administration/intune-apps-updates/) tab by selecting [Options](../administration/intune-apps-updates/options/). These settings control behaviors such as assignment copying, retention of previous versions, dependency handling, runtime limits, and cleanup of older apps or updates.
 
@@ -50,7 +50,7 @@ Configuring Overrides
 
 Overrides configured here take precedence over the global options defined on the Intune Apps and Intune Updates tab and are applied only to the selected vendor or product during publishing.
 
-![Override Win32 Application Options](../../.gitbook/assets/image-\(4059\).png)
+![Override Win32 Application Options](/_images/image-(4059).png)
 
 To Configure a Win32 Application Option Override:
 

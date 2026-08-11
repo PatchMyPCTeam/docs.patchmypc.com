@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Copy Selected Products from the Intune Updates/Apps Tab** form control in Patch My PC (PMPC) Publisher synchronizes product selections and/or customizations from the **Updates** tab to the **Intune Apps** tab and/or the **Intune Apps** tab to the **Intune Updates** tab. This option is intended to provide a quick and consistent way to align application management behavior with update publishing selections while preserving the standard inheritance behavior of the product tree.
 
-![](<../../../../.gitbook/assets/image-(498) (1).png>)
+![](/_images/image-(498) (1).png>)
 
 ## **Form Control behavior on the Intune Apps tab**
 
@@ -45,7 +45,7 @@ To copy selected products and customizations from the Updates tab to the Intune 
 1. Select the **Enable the selected products from the Updates tab that support installation packages** button.
 2. When prompted with the confirmation dialog, choose one of the following options.
 
-![Confirm Customizations & Selections Copy](../../../../.gitbook/assets/image-\(4083\).png)
+![Confirm Customizations & Selections Copy](/_images/image-(4083).png)
 
 * Select **Yes** to copy custom actions, as well as products, from the Updates tab, including pre and post scripts, disabling updates, and removing shortcuts.
 * Select **No** to copy only the product selections without copying custom actions.

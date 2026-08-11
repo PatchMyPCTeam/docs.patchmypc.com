@@ -46,7 +46,7 @@ description: >-
 
     2\. When clicking ‘Next’, the new Advanced Insights install (.exe) is downloaded and the upgrade dialog is automatically started:
 
-![Advanced Insights Upgrade](../../.gitbook/assets/image-\(4346\).png)
+![Advanced Insights Upgrade](/_images/image-(4346).png)
 
 The reminder of the Advanced Insights upgrade is manual. Continue with the upgrade routine by following the onscreen dialog prompt.
 
@@ -54,22 +54,22 @@ The reminder of the Advanced Insights upgrade is manual. Continue with the upgra
 
 1.  When logged onto the Windows Server OS where Advanced Insights is installed, to check for Advanced Insights update manually, double click the ‘Advanced Insights Update Check’ shortcut to run the update check.
 
-    ![](../../.gitbook/assets/image-\(3455\).png)
+    ![](/_images/image-(3455).png)
 2.  If an update is available for Advanced Insights, the following prompt is displayed:
 
-    ![](<../../.gitbook/assets/image-(613) (1).png>)
+    ![](/_images/image-(613) (1).png>)
 
     1. As described in the automated check section, after clicking ‘Next’ the remainder of the upgrade routine is manual.
     2.  If no update is available, the following prompt is displayed:
 
-        ![](../../.gitbook/assets/image-\(3457\).png)
+        ![](/_images/image-(3457).png)
 
 ## Updater components
 
 The Advanced Insights update check components are stored under the program install directory e.g. _C:\Program Files (x86)\Advanced Insights\Api\Updater_
 
-![](../../.gitbook/assets/image-\(3458\).png)
+![](/_images/image-(3458).png)
 
 For the automated silent check during logon to the Advanced Insights Windows Server OS, the _'AdvInsightsUpdateCheck.exe_' is called using a registry run key. This key is created during the install of Advanced Insights.
 
-![](../../.gitbook/assets/image-\(3459\).png)
+![](/_images/image-(3459).png)

@@ -10,7 +10,7 @@ The **Trigger a Software Update Point Sync** section in Patch My PC (PMPC) Publi
 
 This section also allows you to manually initiate a SUP sync. A SUP sync is the process by which ConfigMgr retrieves update metadata from WSUS (and ultimately Microsoft Update), making newly published first and third-party updates visible and actionable in the ConfigMgr console.
 
-![Trigger a SUP sync](../../../../.gitbook/assets/image-\(4105\).png)
+![Trigger a SUP sync](/_images/image-(4105).png)
 
 ## Perform Delta Synchronization
 

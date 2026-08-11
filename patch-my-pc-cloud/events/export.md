@@ -8,7 +8,7 @@ _Applies to: Patch My PC Cloud_
 
 To export today's events from Patch My PC (PMPC) Cloud, plus the past 29 days of events, click **Export** in the header of the **Events** page.
 
-![Clicking "Export" in the header of the "Events" page](../../.gitbook/assets/image-\(2474\).png)
+![Clicking "Export" in the header of the "Events" page](/_images/image-(2474).png)
 
 > \*\*Note\*\*
 >
@@ -31,7 +31,7 @@ We export the following:
 
 Here is an example:
 
-![Example of the "events\_log\_entries.csv" file](<../../.gitbook/assets/image-(799) (1).png>)
+![Example of the "events\_log\_entries.csv" file](/_images/image-(799 "Example of the \"events\_log\_entries.csv\" file") (1).png>)
 
 > \*\*Tip\*\*
 >

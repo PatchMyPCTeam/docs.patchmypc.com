@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Advanced Reporting and Analytics** section provides access to Patch My PC Advanced Insights, which extends ConfigMgr reporting with enhanced analytics, visualizations, and compliance insights.
 
-![Advanced Reporting and Analytics](../../../.gitbook/assets/image-\(178\).png)
+![Advanced Reporting and Analytics](/_images/image-(178).png)
 
 Click **Download Advanced Insights** to access the latest version at:
 

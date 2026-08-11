@@ -8,7 +8,7 @@ The **Connection and Source Options** section defines how the Publisher connects
 
 These settings control communication with the SMS Provider and establish the root location used for all Publisher created ConfigMgr application content. Incorrect configuration can prevent applications from being created, updated, or managed successfully.
 
-![Connection and Source Options](../../../../.gitbook/assets/image-\(4010\).png)
+![Connection and Source Options](/_images/image-(4010).png)
 
 ## Configure SMS Provider Connection
 
@@ -18,7 +18,7 @@ The SMS Provider configuration is shared across the Publisher. When you configur
 
 To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../../../publisher-requirements/configmgr-requirements/software.md) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is _not_ installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
 
-![Missing ConfigMgr Remote Console](<../../../../.gitbook/assets/image-(76) (1).png>)
+![Missing ConfigMgr Remote Console](/_images/image-(76 "Missing ConfigMgr Remote Console") (1).png>)
 
 The PatchMyPC.log will also indicate when the ConfigMgr Remote Console is not installed:
 
@@ -32,7 +32,7 @@ The **Source Folder** is required because every ConfigMgr application relies on 
 
 The image below correlates a source folder configured in Publisher with the Deployemnt Type Content Location in ConfigMgr.
 
-![Deployment Type Content Location Reference](../../../../.gitbook/assets/image-\(216\).png)
+![Deployment Type Content Location Reference](/_images/image-(216).png)
 
 > \*\*Note\*\*
 >

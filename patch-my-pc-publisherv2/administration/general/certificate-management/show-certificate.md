@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The Show Certificate option displays detailed information about the code-signing certificate currently configured for use by the Publisher. This view allows you to verify that a valid certificate is selected, confirm its trust status, and ensure it meets WSUS and ConfigMgr signing requirements.
 
-![Show the Certificate being used by the Publisher](../../../../.gitbook/assets/image-\(3913\).png)
+![Show the Certificate being used by the Publisher](/_images/image-(3913).png)
 
 When you select **Show Certificate**, the following information is displayed:
 
@@ -33,7 +33,7 @@ When you select **Show Certificate**, the following information is displayed:
 
 Selecting **Validate Trust Chain** checks whether the certificate and its issuing chain are trusted by the local system. This is a useful troubleshooting step if update publishing fails due to certificate or trust-related errors.
 
-![Validate the certificate trust chain](../../../../.gitbook/assets/image-\(3914\).png)
+![Validate the certificate trust chain](/_images/image-(3914).png)
 
 ## Troubleshooting
 
@@ -41,7 +41,7 @@ If you receive an error when you click **Show Certificate**, use the troubleshoo
 
 ### No Certificate foundin the WSUS Store on this Server
 
-![No Certificate foundin the WSUS Store on this Server](../../../../.gitbook/assets/image-\(4266\).png)
+![No Certificate foundin the WSUS Store on this Server](/_images/image-(4266).png)
 
 If clicking **Show Certificate** displays **No certificate found in the WSUS store on this server**, review **PatchMyPC.log** for related certificate extraction errors. An entry such as
 
@@ -50,4 +50,4 @@ If clicking **Show Certificate** displays **No certificate found in the WSUS sto
 
 Verify that the WSUS Application Pool is started in IIS, then retry the action.
 
-![Verify that the WSUS Application Pool is started in IIS, then retry the action.](../../../../.gitbook/assets/image-\(4267\).png)
+![Verify that the WSUS Application Pool is started in IIS, then retry the action.](/_images/image-(4267).png)

@@ -10,7 +10,7 @@ _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Update
 
 The **Conflicting Process UI Settings** window in Patch My PC (PMPC) Publisher is used to customize the end-user notification experience shown when an application must be closed to complete an update.
 
-![Conflicting Process UI Settings](../../../../.gitbook/assets/image-\(3983\).png)
+![Conflicting Process UI Settings](/_images/image-(3983).png)
 
 These settings allow you to control branding, organization identity, language, and the notification text displayed to users during conflicting process scenarios.
 
@@ -36,7 +36,7 @@ During installation, Patch My PC ScriptRunner, which manages the installation on
 
 In the example below, the highlighted files show the components involved in displaying the end user notification. These files are downloaded to the local cache folder alongside the application or update package and are used at runtime to render the notification experience.
 
-![Manage Conflicting Processes Files](../../../../.gitbook/assets/image-\(133\).png)
+![Manage Conflicting Processes Files](/_images/image-(133).png)
 
 > \*\*Important\*\*
 >
@@ -58,7 +58,7 @@ You can manage the company logo using the following options.
 • **Use Default** to revert to the default banner image.\
 • **Preview** to see how the logo will appear to end users before saving the configuration.
 
-![Notification Preview](../../../../.gitbook/assets/image-\(132\).png)
+![Notification Preview](/_images/image-(132).png)
 
 > \*\*Note\*\*
 >
@@ -68,13 +68,13 @@ You can manage the company logo using the following options.
 
 The **Organization Name** field allows you to specify the organization name displayed in notification text. This value can be referenced dynamically within notification messages using the supported variables.
 
-![The Organization Name replaces this text in the notification window](../../../../.gitbook/assets/image-\(136\).png)
+![The Organization Name replaces this text in the notification window](/_images/image-(136).png)
 
 ## Localization
 
 The **Localization** section controls the language and user facing text displayed in conflicting process notifications.
 
-![Localization Options](../../../../.gitbook/assets/image-\(3984\).png)
+![Localization Options](/_images/image-(3984).png)
 
 ### Selected Language
 
@@ -82,7 +82,7 @@ The **Localization** section controls the language and user facing text displaye
 
 To add or manage languages, click **Add/Remove**. This opens the language selection window where you can choose languages from the available list, add them to the selected languages list, and define which language is the default.
 
-![Select Language for Conflicting Process UI Translation](../../../../.gitbook/assets/image-\(3989\).png)
+![Select Language for Conflicting Process UI Translation](/_images/image-(3989).png)
 
 At runtime, Patch My PC ScriptRunner detects the locale of the device and displays notifications in the matching language if that language has been configured. If the device locale does not match any configured language in the **Selected Languages** list, the default language is used to display the notification.
 

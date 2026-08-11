@@ -55,10 +55,10 @@ You have two deployment options:
 
 Specifically for Intune detection and requirement scripts, **AgentExecutor.exe** (the Intune client process responsible for calling Win32 app detection or requirement scripts) runs in session 0; it is not visible by the logged on user and PowerShell is awaiting input by the user to accept the code-signing certificate.
 
-![](../../../.gitbook/assets/image-\(2534\).png)
+![](/_images/image-(2534).png)
 
 The Intune Management Extension enforces a hardcoded 60-minute timeout for PowerShell script execution. This timeout is not configurable.
 
 If the script is still running after 60 minutes, the Intune Management Extension service terminates the powershell.exe process and records entries similar to the following in IntuneManagementExtension.log.
 
-![](../../../.gitbook/assets/image-\(2535\).png)
+![](/_images/image-(2535).png)

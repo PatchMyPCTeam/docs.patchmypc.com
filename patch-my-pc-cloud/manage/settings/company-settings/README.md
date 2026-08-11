@@ -9,11 +9,11 @@ All user company-related tasks are performed from the **Company** node of the po
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings | Company**
 
-![Navigating to "Settings | Company"](../../../../.gitbook/assets/image-\(1380\).png)
+![Navigating to "Settings | Company"](/_images/image-(1380).png)
 
 The **Company** screen is then displayed.
 
-!["Company" screen](../../../../.gitbook/assets/image-\(3390\).png)
+!["Company" screen](/_images/image-(3390).png)
 
 > \*\*Note\*\*
 >
@@ -21,8 +21,8 @@ The **Company** screen is then displayed.
 
 3. Make any required changes, then click **Save**.
 
-![Clicking "Save" to save changes](../../../../.gitbook/assets/image-\(3389\).png)
+![Clicking "Save" to save changes](/_images/image-(3389).png)
 
 The **Success - Company information updated** notification is shown.
 
-!["Success - Company information updated" notification](../../../../.gitbook/assets/image-\(3391\).png)
+!["Success - Company information updated" notification](/_images/image-(3391).png)

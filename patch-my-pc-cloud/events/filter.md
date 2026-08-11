@@ -8,20 +8,20 @@ To filter Events:
 
 1.  Click the funnel button in the header of the **Events** page.<br>
 
-    ![Clicking the funnel button](../../.gitbook/assets/image-\(2468\).png)
+    ![Clicking the funnel button](/_images/image-(2468).png)
 
     \
     The filter sidebar opens.<br>
 
-    ![Filter sidebar opens](../../.gitbook/assets/image-\(2469\).png)
+    ![Filter sidebar opens](/_images/image-(2469).png)
 2.  Configure your required filters, then click **Apply All Filters**.<br>
 
-    ![Clicking "Apply All Filters"](../../.gitbook/assets/image-\(2470\).png)
+    ![Clicking "Apply All Filters"](/_images/image-(2470).png)
 
     \
     Only the Events matching the filter criteria are displayed.<br>
 
-    ![Only events matching the filtered criteria are shown](../../.gitbook/assets/image-\(2471\).png)
+    ![Only events matching the filtered criteria are shown](/_images/image-(2471).png)
 
 > \*\*Note\*\*
 >
@@ -41,7 +41,7 @@ To clear a Filter:
 
 1.  Click **Clear All** at the bottom of the filter box or navigate to a different page of the portal.<br>
 
-    ![Using "Clear All" to remove a filter](../../.gitbook/assets/image-\(2473\).png)
+    ![Using "Clear All" to remove a filter](/_images/image-(2473).png)
 2.  Verify the green dot beside the **Filter** button has gone.<br>
 
-    ![Verifying the green dot has gone](../../.gitbook/assets/image-\(2202\).png)
+    ![Verifying the green dot has gone](/_images/image-(2202).png)

@@ -14,7 +14,7 @@ At a high level, the workflow for Patch My PC (PMPC) Publisher is:
    * Publishes to Microsoft WSUS, ConfigMgr, and/or Intune.
 4. The management platform then distributes the update or application to client devices using its native mechanisms.
 
-![How the Publisher Works](../../.gitbook/assets/image-\(4187\).png)
+![How the Publisher Works](/_images/image-(4187).png)
 
 > \*\*Tip\*\*
 >

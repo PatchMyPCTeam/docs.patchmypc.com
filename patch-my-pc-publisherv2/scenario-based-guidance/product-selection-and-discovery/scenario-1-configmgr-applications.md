@@ -21,7 +21,7 @@ You can enable applications for publishing in one of two ways:
 
 The [Scan Wizard](../../administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md) is generally a recommended starting point. It leverages ConfigMgr hardware inventory data to identify supported third-party products currently present in your environment and compares those results against the Patch My PC catalog. This allows you to review what is installed _today_ before enabling publishing.
 
-![ConfigMgr Apps Scan Wizard](../../../.gitbook/assets/image-\(4156\).png)
+![ConfigMgr Apps Scan Wizard](/_images/image-(4156).png)
 
 After running a scan, review the results carefully. The device count and version information help validate inventory accuracy and determine publishing priority. Exporting the results to CSV can assist with internal review, change control discussions, or phased rollout planning.
 
@@ -35,7 +35,7 @@ Applications can also be enabled manually by selecting products directly from th
 
 Manual selection remains a valid and flexible option, especially when you want to proactively publish applications that may not yet appear in the inventory returned by the scan results.
 
-![Manual Product Selection](../../../.gitbook/assets/image-\(4157\).png)
+![Manual Product Selection](/_images/image-(4157).png)
 
 You can expand vendors to browse available products or use the [Search](../../administration/configmgr-apps/form-controls/search-products.md) form control to quickly locate a specific application by name.
 

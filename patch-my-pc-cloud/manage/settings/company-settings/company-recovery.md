@@ -15,12 +15,12 @@ To enable Company Recovery:
 1. Navigate to **Settings | Company**
 2. Scroll down to the **Company Recovery** section.
 
-![Scrolling to the 'Company Recovery' section](../../../../.gitbook/assets/image-\(4376\).png)
+![Scrolling to the 'Company Recovery' section](/_images/image-(4376).png)
 
 3. Click the **Enable Company Recovery** setting to enable it, then click **Save**
 
-![Clicking to 'Enable Company Recovery' then clicking 'Save'](../../../../.gitbook/assets/image-\(4377\).png)
+![Clicking to 'Enable Company Recovery' then clicking 'Save'](/_images/image-(4377).png)
 
 The **Success - Company information updated** notification is shown.
 
-![](../../../../.gitbook/assets/image-\(4378\).png)
+![](/_images/image-(4378).png)

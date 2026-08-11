@@ -9,6 +9,6 @@ All user company-related tasks are performed from the **Company** node of the po
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings**
 
-![Navigating to 'Company | Settings'](../../../.gitbook/assets/image-\(26\).png)
+![Navigating to 'Company | Settings'](/_images/image-(26).png)
 
 Follow the relevant section of our documentation for the settings you wish to change.

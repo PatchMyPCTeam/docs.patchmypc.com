@@ -4,12 +4,12 @@ _Applies to: Patch My PC Cloud_
 
 Once you have signed into the Patch My PC (PMPC) Cloud Portal, you can modify your user profile by clicking your name in the top right-hand corner and selecting Profile from the dropdown.
 
-![Clicking "Profile"](<../../../.gitbook/assets/image-(667) (1).png>)
+![Clicking "Profile"](/_images/image-(667 "Clicking \"Profile\"") (1).png>)
 
 The User **Profile** screen is shown, allowing you to make any required changes and save them by clicking **Save**.
 
-![Clicking "Save" to save changes](<../../../.gitbook/assets/image-(668) (1).png>)
+![Clicking "Save" to save changes](/_images/image-(668 "Clicking \"Save\" to save changes") (1).png>)
 
 The **Success – User Profile updated** notification is shown.
 
-!["Success – User Profile updated" notification](<../../../.gitbook/assets/image-(669) (1).png>)
+!["Success – User Profile updated" notification](/_images/image-(669 "\"Success – User Profile updated\" notification") (1).png>)

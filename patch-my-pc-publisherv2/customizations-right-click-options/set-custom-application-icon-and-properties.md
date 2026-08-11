@@ -8,7 +8,7 @@ _&#x41;vailable on tab: ConfigMgr Apps, Intune Apps_
 
 **Set Custom Application Icon and Properties** allows you to override the default name, description, and icon used for applications created by the Publisher.
 
-![Set Custom Application Icon and Properties](../../.gitbook/assets/image-\(110\).png)
+![Set Custom Application Icon and Properties](/_images/image-(110).png)
 
 This option is used when you want application metadata to remain consistent across ConfigMgr and Intune apps, rather than changing automatically with each new version. The Publisher applies the configured properties when the application is first created and reapplies them whenever the application is updated.
 
@@ -57,7 +57,7 @@ DEV - Brave 144.1.86.148 (EXE-x64)
 
 ## **Configure** Custom Application Properties
 
-![Configure Custom Application Properties](../../.gitbook/assets/image-\(111\).png)
+![Configure Custom Application Properties](/_images/image-(111).png)
 
 To configure Custom Application Properties:
 
@@ -70,6 +70,6 @@ To configure Custom Application Properties:
 
 \*Click **Show default description** to display the original catalog description. Copy the text to the clipboard, paste it into the **Custom Description** field, and edit it to create your custom description.
 
-![Show default description](<../../.gitbook/assets/image-(77) (1).png>)
+![Show default description](/_images/image-(77 "Show default description") (1).png>)
 
 The custom properties are applied during the next Publisher [synchronization](../administration/sync-schedule.md) and affect newly created and updated applications for that product.

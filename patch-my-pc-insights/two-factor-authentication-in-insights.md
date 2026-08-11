@@ -24,7 +24,7 @@ Go to Administration -> Users -> and click on the Actions button for the user yo
 
 On the user properties modal, click Two factor authentication enabled and then Save.
 
-![](../.gitbook/assets/image-\(1030\).png)
+![](/_images/image-(1030).png)
 
 ### 2FA - User Settings
 
@@ -32,11 +32,11 @@ On the user properties modal, click Two factor authentication enabled and then S
 
 When logged in, click on your user profile in the top right of the webpage, then click My Settings from the dropdown.
 
-![](../.gitbook/assets/image-\(1023\).png)
+![](/_images/image-(1023).png)
 
 You will now be presented with your users settings. You will see a banner at the bottom to enabled 2FA
 
-![](../.gitbook/assets/image-\(1024\).png)
+![](/_images/image-(1024).png)
 
 Click Enable, then the modal will load with the steps to enable 2FA.
 
@@ -45,7 +45,7 @@ Click Enable, then the modal will load with the steps to enable 2FA.
 3. Click Download on the security code, the continue button will now enable.
 4. Your account will now have 2FA enabled, click done.
 
-![](../.gitbook/assets/image-\(1034\).png)
+![](/_images/image-(1034).png)
 
 Once you have enabled 2FA, you will be greeted on login for a code.
 
@@ -53,4 +53,4 @@ Once you have enabled 2FA, you will be greeted on login for a code.
 
 To disable 2FA, go back into My Settings, on the bottom you will see two new buttons called Recovery codes and disable. Click disable and then enter the code generated in your 2FA app.
 
-![](../.gitbook/assets/image-\(1031\).png)
+![](/_images/image-(1031).png)

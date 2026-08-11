@@ -14,10 +14,10 @@ For ConfigMgr apps, this option automatically enables the following checkbox on 
 
 **Display this as a featured app and highlight it in the Company Portal and Software Center**
 
-!['Display this as a featured app and highlight it in the Company Portal and Software Center' checkbox](../../../.gitbook/assets/image-\(100\).png)
+!['Display this as a featured app and highlight it in the Company Portal and Software Center' checkbox](/_images/image-(100).png)
 
 For Intune apps, this option automatically sets the **Show this as a featured app setting** to **Yes** for the Win32 application.
 
-!['Show this as a featured app' setting](../../../.gitbook/assets/image-\(101\).png)
+!['Show this as a featured app' setting](/_images/image-(101).png)
 
 The setting is applied during the next Publisher sync for newly created or updated applications.

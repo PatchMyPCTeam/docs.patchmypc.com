@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Alerts** tab in the Publisher provides visibility into publishing activity and operational events. Alerts are generated during [publishing syncs](../sync-schedule.md) to inform administrators about successful actions, warnings, and failures.
 
-![Alerts](../../../.gitbook/assets/image-\(4236\).png)
+![Alerts](/_images/image-(4236).png)
 
 Alerts are intended to help administrators quickly understand the state of the publishing process without needing to review detailed logs.
 

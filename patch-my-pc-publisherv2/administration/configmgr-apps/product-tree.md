@@ -14,7 +14,7 @@ The product tree is where you choose which applications the Publisher should pub
 
 The product tree can be expanded or collapsed to three main levels:
 
-![Product tree structure](<../../../.gitbook/assets/image-(491) (1).png>)
+![Product tree structure](/_images/image-(491 "Product tree structure") (1).png>)
 
 1. **All Products**
    * The root of the tree.
@@ -60,7 +60,7 @@ In the example below, **8x8 Quality Management (MSI-x86)** demonstrates a single
 
 In contrast, "Adobe Systems, Inc." demonstrates a vendor-level selection. The Adobe vendor checkbox shows a full checkmark rather than a dash (indeterminate state). This indicates that all products under the Adobe vendor are selected.
 
-![Product tree selection granularity](<../../../.gitbook/assets/image-(492) (1).png>)
+![Product tree selection granularity](/_images/image-(492 "Product tree selection granularity") (1).png>)
 
 ## Which Products should I Select?
 
@@ -85,7 +85,7 @@ In the example below, selecting **Cisco Jabber Latest (MSI-x86)** means devices 
   * The upgrade introduces breaking changes
   * Compatibility with other systems is not yet confirmed
 
-![Vendor level selection consideration](<../../../.gitbook/assets/image-(493) (1).png>)
+![Vendor level selection consideration](/_images/image-(493 "Vendor level selection consideration") (1).png>)
 
 In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](product-tree.md#product-level-recommended) provides significantly more control over version behavior and helps avoid unintended major version upgrades. If your environment standardizes on Jabber 14.x, selecting a Latest product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.
 

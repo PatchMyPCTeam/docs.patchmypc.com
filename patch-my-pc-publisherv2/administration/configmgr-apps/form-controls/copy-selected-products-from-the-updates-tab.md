@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 This form control synchronizes product selections and/or customizations from the **Updates** tab to the **ConfigMgr Apps** tab. This option is intended to provide a quick and consistent way to align application management behavior with update publishing selections while preserving the standard inheritance behavior of the product tree.
 
-![](<../../../../.gitbook/assets/image-(498) (1).png>)
+![](/_images/image-(498) (1).png>)
 
 When this form control is used, the Publisher can copy product selections only or product selections together with customizations from the Updates tab to the ConfigMgr Apps tab.
 
@@ -25,7 +25,7 @@ To copy selected products and customizations from the Updates tab for ConfigMgr 
 1. Select the **Enable the selected products from the Updates tab that support installation packages** button.
 2. When prompted with the confirmation dialog, choose one of the following options.
 
-![Confirm Customizations & Selections Copy](<../../../../.gitbook/assets/image-(85) (1).png>)
+![Confirm Customizations & Selections Copy](/_images/image-(85 "Confirm Customizations & Selections Copy") (1).png>)
 
 * Select **Yes** to copy custom actions, as well as products, from the Updates tab, including pre and post scripts, disabling updates, and removing shortcuts.
 * Select **No** to copy only the product selections without copying custom actions.

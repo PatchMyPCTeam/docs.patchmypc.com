@@ -10,11 +10,11 @@ Clients with the Inventory Extensions MSI installed will support the use of our 
 
 If you see this message when using any of the custom client actions:
 
-![](../../.gitbook/assets/image-\(1670\).png)
+![](/_images/image-(1670).png)
 
 This means you have the "Additional Script Approver" setting enabled in ConfigMgr. To approve our script, please follow these steps:
 
-![](../../.gitbook/assets/script-approval.png)
+![](/_images/script-approval.png)
 
 1. Open your ConfigMgr Console
 2. Go to Software Library > Scripts

@@ -18,7 +18,7 @@ You also need to ensure that the **Enable application migration** checkbox on th
 >
 > This is expected behavior as we do not control the authentication token, and once it expires, it must be renewed by re-authenticating.
 
-!['Enable Application Migration' checkbox is checked on the 'Cloud' tab](../../.gitbook/assets/image-\(4859\).png)
+!['Enable Application Migration' checkbox is checked on the 'Cloud' tab](/_images/image-(4859).png)
 
 By default, Publisher polls the ConfigMgr Site Database every 60 minutes for application changes.
 
@@ -28,7 +28,7 @@ By default, Publisher polls the ConfigMgr Site Database every 60 minutes for app
 
 Next, sign in to your PMPC Cloud company and verify that the **Migration** node is visible in the Cloud Portal.
 
-!['Migration' node](../../.gitbook/assets/image-\(131\).png)
+!['Migration' node](/_images/image-(131).png)
 
 > \*\*Tip\*\*
 >

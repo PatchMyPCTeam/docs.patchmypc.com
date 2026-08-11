@@ -12,13 +12,13 @@ The **Notification Policy** options become available when the policy [Notify the
 
 These settings control how end user notifications behave when a conflicting process is detected and the application is running.
 
-![Notification Policy](../../../../.gitbook/assets/image-\(3979\).png)
+![Notification Policy](/_images/image-(3979).png)
 
 ### Notification behavior
 
 If the application to be updated is running, this setting controls how notifications are handled when Windows Focus Assist is active.
 
-![Notification behavior](../../../../.gitbook/assets/image-\(3980\).png)
+![Notification behavior](/_images/image-(3980).png)
 
 **Discard the notification**\
 When selected, the notification is suppressed while Focus Assist is enabled. No visible notification is shown to the user during this time.

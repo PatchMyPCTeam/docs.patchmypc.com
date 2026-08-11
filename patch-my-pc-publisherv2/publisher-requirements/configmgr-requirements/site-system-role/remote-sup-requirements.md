@@ -49,15 +49,15 @@ The Publisher requires the following ConfigMgr permissions:
 * **Software Updates**\
   Read, Modify
 
-![Security Role permissions required for the Publisher](<../../../../.gitbook/assets/image-(378) (1).png>)
+![Security Role permissions required for the Publisher](/_images/image-(378 "Security Role permissions required for the Publisher") (1).png>)
 
 It is important that you also assign this role to the computer$ account of the remote SUP.
 
-![Assign the role to the computer account of the remote SUP](<../../../../.gitbook/assets/image-(379) (1).png>)
+![Assign the role to the computer account of the remote SUP](/_images/image-(379 "Assign the role to the computer account of the remote SUP") (1).png>)
 
 The Security Scopes should be assigned to **All instances of the objects that are related to the assigned security roles**.
 
-![All instances of the objects that are related to the assigned security roles](<../../../../.gitbook/assets/image-(380) (1).png>)
+![All instances of the objects that are related to the assigned security roles](/_images/image-(380 "All instances of the objects that are related to the assigned security roles") (1).png>)
 
 ## WSUS SSL Requirements
 
@@ -67,7 +67,7 @@ If WSUS on a remote SUP _is not_ configured for SSL, `wsyncmgr.log` will log the
 
 > `Remote WSUS connection is not HTTPS. This prevents software update point from getting the signing certificate for third-party updates`
 
-![Remote WSUS connection is not HTTPS](<../../../../.gitbook/assets/image-(381) (1).png>)
+![Remote WSUS connection is not HTTPS](/_images/image-(381 "Remote WSUS connection is not HTTPS") (1).png>)
 
 This warning indicates that ConfigMgr is unable to retrieve the WSUS signing certificate from the remote SUP. As a result, ConfigMgr cannot store the certificate in the site database or distribute it to client devices during a software update scan. To resolve this, WSUS on the remote SUP must be configured to use HTTPS (SSL) when Configuration Manager is set to manage the signing certificate.
 

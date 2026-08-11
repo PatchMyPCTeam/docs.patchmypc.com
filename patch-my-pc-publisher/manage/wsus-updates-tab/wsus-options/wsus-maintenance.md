@@ -10,7 +10,7 @@ The **WSUS Maintenance** section in Patch My PC (PMPC) Publisher provides option
 
 These actions cannot be triggered manually, if enabled, they are performed at the end of a publishing sync cycle.
 
-![WSUS Maintenance Options](<../../../../.gitbook/assets/image-(92) (1).png>)
+![WSUS Maintenance Options](/_images/image-(92 "WSUS Maintenance Options") (1).png>)
 
 ## Show unreferenced WSUS folders
 
@@ -26,7 +26,7 @@ The results displayed are identifiable by the following fields:
 
 In the example below, a single, unreferenced folder, was found in the UpdateServicesPackages folder. This is the folder where third-party updates are initially staged before being compressed to a CAB file, signed, and then finally copied to the WSUS Content folder.
 
-![Unreferenced WSUS Folders](<../../../../.gitbook/assets/image-(73) (1).png>)
+![Unreferenced WSUS Folders](/_images/image-(73 "Unreferenced WSUS Folders") (1).png>)
 
 The **Delete selected** action permanently removes the selected unreferenced folders from the WSUS content directory.
 

@@ -42,7 +42,7 @@ The **`ContentDir`** value defines the root WSUS content path. This directory co
 * **WSUSContent**
 * **UpdateServicesPackages**
 
-![WSUS ContentDir Value](<../../../.gitbook/assets/image-(385) (1).png>)
+![WSUS ContentDir Value](/_images/image-(385 "WSUS ContentDir Value") (1).png>)
 
 ### Option 2: IIS (Content Virtual Directory)
 
@@ -55,7 +55,7 @@ You can also verify the content location in **IIS Manager**:
 
 The **Physical path** shown here maps directly to the WSUSContent directory on disk.
 
-![WSUS Content reference via IIS](<../../../.gitbook/assets/image-(386) (1).png>)
+![WSUS Content reference via IIS](/_images/image-(386 "WSUS Content reference via IIS") (1).png>)
 
 ## Scenario 1: WSUS Content Stored Locally
 
@@ -81,7 +81,7 @@ In this scenario:
 * The WSUS application pool identity (typically Network Service) has **Full control** to these folders.
 * Default NTFS permissions when the WSUS role is installed are usually sufficient.
 
-![Security permissions for local wsus content directory](../../../.gitbook/assets/image-\(387\).png)
+![Security permissions for local wsus content directory](/_images/image-(387).png)
 
 > \*\*Important\*\*
 >
@@ -108,7 +108,7 @@ In the following example, a shared WSUS database is used, with WSUS content phys
 
 In addition, the computer account of the remote WSUS server (BB-APP1$) must be granted permissions, as it accesses the same content over SMB when serving clients. Granting permissions to the appropriate identities ensures that WSUS operations and content delivery function correctly across all WSUS servers participating in the shared database scenario.
 
-![SMB and NTFS Permission Considerations](../../../.gitbook/assets/image-\(388\).png)
+![SMB and NTFS Permission Considerations](/_images/image-(388).png)
 
 > \*\*Note\*\*
 >
@@ -128,6 +128,6 @@ In this scenario, WSUS correctly stores the content location in the registry, fo
 
 This mismatch can prevent clients and downstream systems from accessing WSUS content correctly, even though the registry configuration appears valid.
 
-![UNC Path Incomplete](<../../../.gitbook/assets/image-(97) (1).png>)
+![UNC Path Incomplete](/_images/image-(97 "UNC Path Incomplete") (1).png>)
 
 When the WSUS Content virtual directory in IIS is misconfigured like this, third-party updates can still be published successfully, but clients will be unable to download the update content. In the example below a 404 is shown while attempting to download a third-party update (CAB file).

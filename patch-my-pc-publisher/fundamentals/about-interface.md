@@ -30,7 +30,7 @@ This works the same regardless of the Settings console being accessed locally or
 >
 > See the \[Access and Permissions Reference]\(../remote-ui/technical-references/access-permissions-reference.md) for more information about these permissions.
 
-![](../../.gitbook/assets/image-\(4586\).png)
+![](/_images/image-(4586).png)
 
 ## Version Number
 

@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Advanced Insights_
 
-![](../.gitbook/assets/image-\(1993\).png)
+![](/_images/image-(1993).png)
 
 Advanced Insights (this is not relevant for Patch Insights) will display the warranty status of Lenovo devices in the device modal display. We need to provide a warranty API token to be able to get this data.
 

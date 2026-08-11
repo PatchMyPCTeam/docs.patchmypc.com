@@ -20,7 +20,7 @@ The _Hardware_ page of Advanced Insights for Intune shows key statistics from yo
 >
 > Also, only devices running the Patch My PC (PMPC) Client will appear on this page. See \[Manage the Patch My PC Client]\(../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
 
-!['Hardware' page](../../../.gitbook/assets/image-\(4282\).png)
+!['Hardware' page](/_images/image-(4282).png)
 
 ## Tabs
 
@@ -28,13 +28,13 @@ The _Tabs_ control lets you switch between different views of hardware data.
 
 By default, the **General** tab is selected.
 
-!['General' tab](../../../.gitbook/assets/image-\(4283\).png)
+!['General' tab](/_images/image-(4283).png)
 
 The layout of the views differs depending on the tab you select.
 
 For example, clicking the **Network** tab shows a mix of Statistics, Charts, and data tables.
 
-!['Network' tab](../../../.gitbook/assets/image-\(4284\).png)
+!['Network' tab](/_images/image-(4284).png)
 
 As is standard, clicking an item displays more data that you can drill down into or show in a different view.
 
@@ -44,7 +44,7 @@ The top row of the Hardware page is called _Statistics_ and displays the followi
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Clients deployed</td><td valign="top">PMPC Clients deployed in your PMPC Cloud Company.</td></tr><tr><td valign="top">Total external displays</td><td valign="top">External monitors detected.</td></tr><tr><td valign="top">Total batteries</td><td valign="top">Batteries detected.</td></tr><tr><td valign="top">Total logical drives</td><td valign="top">Logical drives detected, highlighting the total capacity and usage of each drive.</td></tr></tbody></table>
 
-!['Hardware' page](../../../.gitbook/assets/image-\(4285\).png)
+!['Hardware' page](/_images/image-(4285).png)
 
 Clicking any of these statistics opens the device list modal, which contains the following additional information:
 
@@ -60,7 +60,7 @@ The _Charts_ section of the Hardware page contains the following charts:
 
 <table><thead><tr><th width="153.77777099609375" valign="top">Chart</th><th valign="top">Shows a breakdown by…</th></tr></thead><tbody><tr><td valign="top">Device Specs</td><td valign="top">Manufacturer of the different devices detected in your environment.</td></tr><tr><td valign="top">External Displays</td><td valign="top">Manufacturer of the different external monitors detected in your environment.</td></tr><tr><td valign="top">Battery Specs</td><td valign="top">Health of the different batteries detected in your environment.</td></tr><tr><td valign="top">Logical Drive Space Usage</td><td valign="top">The percentage of disk space used for the logical drives detected in your environment.</td></tr></tbody></table>
 
-![Charts](../../../.gitbook/assets/image-\(4286\).png)
+![Charts](/_images/image-(4286).png)
 
 Clicking the action menu () for a chart allows you to switch between the following views:
 

@@ -9,7 +9,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Add MST Transform File** option allows you to apply an MST transform to products that use an MSI based installer.
 
-![Add MST Transformation File](../../.gitbook/assets/image-\(4020\).png)
+![Add MST Transformation File](/_images/image-(4020).png)
 
 An MST transform modifies data stored in the MSI installer database and is commonly used to customize installation behavior, set properties, or adjust default settings. This functionality also applies to MSP based installers because MSP files are patch packages built on top of an MSI database. In both cases, the transform is applied during installation in the same manner.
 
@@ -17,7 +17,7 @@ An MST transform modifies data stored in the MSI installer database and is commo
 
 In the MST Transform Files dialog, select the MST file you want to apply during installation. If the transform requires additional files, you can also select an optional supporting CAB file.
 
-![MST Transform Files Dialog](../../.gitbook/assets/image-\(4021\).png)
+![MST Transform Files Dialog](/_images/image-(4021).png)
 
 The selected MST and CAB files are automatically included when the application or update is published. You do not need to add these files separately as additional content.
 

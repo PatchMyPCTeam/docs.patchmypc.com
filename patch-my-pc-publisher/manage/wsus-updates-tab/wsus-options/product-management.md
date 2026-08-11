@@ -8,11 +8,11 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Product Management** section of Patch My PC (PMPC) Publisher is used to manage the PMPC update category within ConfigMgr. This category must be enabled for third-party updates published by Patch My PC to be synchronized by the Software Update Point (SUP).
 
-![ConfigMgr/WSUS Product Management](<../../../../.gitbook/assets/image-(88) (1).png>)
+![ConfigMgr/WSUS Product Management](/_images/image-(88 "ConfigMgr/WSUS Product Management") (1).png>)
 
 Selecting the **Selected in ConfigMgr** checkbox (or leaving it selected if it is already enabled) ensures that the corresponding Patch My PC product category is also selected in the **ConfigMgr Console > Administration > Site Configuration > Sites > {site} > Settings > Configure Site Components > Software Update Point > Products**. This guarantees that Patch My PC third-party updates are evaluated during a SUP sync.
 
-![](<../../../../.gitbook/assets/image-(464) (1).png>)
+![](/_images/image-(464) (1).png>)
 
 > \*\*Important\*\*
 >
@@ -22,7 +22,7 @@ Selecting the **Selected in ConfigMgr** checkbox (or leaving it selected if it i
 
 Selecting the **Selected in WSUS** checkbox (or leaving it selected if it is already enabled) ensures that the corresponding Patch My PC product category is also selected in the **WSUS Console > Products and Classifications**.
 
-![WSUS Products and Classifications](<../../../../.gitbook/assets/image-(89) (1).png>)
+![WSUS Products and Classifications](/_images/image-(89 "WSUS Products and Classifications") (1).png>)
 
 ## When does the Patch My PC category become visible?
 
@@ -50,4 +50,4 @@ This functionality is documented in the [ConfigMgr Component Management](../../.
 
 Patch My PC product information obtained from the SUP component properties in ConfigMgr, and the result of toggling the checkbox, are recorded in the _%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log_
 
-![%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log](<../../../../.gitbook/assets/image-(465) (1).png>)
+![%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log](/_images/image-(465 "%ProgramFiles%\Patch My PC\Patch My PC Publishing Service\Logs\PatchMyPC-SmsProviderConfigMgrRepository.log") (1).png>)

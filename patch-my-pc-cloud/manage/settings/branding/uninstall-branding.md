@@ -22,32 +22,32 @@ To uninstall a branding app:
 
 1. Navigate to **Settings | Branding**
 
-![Navigating to 'Settings | Branding'](../../../../.gitbook/assets/image-\(3713\).png)
+![Navigating to 'Settings | Branding'](/_images/image-(3713).png)
 
 2.  On the **Branding** screen, make a note of the assignments for the branding app you want to uninstall.<br>
 
     For example, if you plan to uninstall the **Branding – Corel Users** branding app, make a note of which resources it is assigned to by hovering over **Assignments** and noting the assignments (**Corel All Users** in this example).
 
-![Making a note of the assignments for the Branding App to be uninstalled.](../../../../.gitbook/assets/image-\(3754\).png)
+![Making a note of the assignments for the Branding App to be uninstalled.](/_images/image-(3754).png)
 
 3.  Follow [Delete Cloud Branding](delete-branding.md) to delete the branding app that is to be uninstalled.<br>
 
     This not only deletes the branding app from Intune, but also avoids a potential loop of the branding being installed by the branding app and then uninstalled by the branding uninstall app.
 4. On the **Branding** screen, click **Uninstall Brandings**
 
-![Clicking 'Uninstall Brandings'](../../../../.gitbook/assets/image-\(3755\).png)
+![Clicking 'Uninstall Brandings'](/_images/image-(3755).png)
 
 5. In the **Uninstall Branding App Name** field, type a unique name for the Intune Win32 app that will be used to uninstall the branding app.
 
-![Entering a unique name in the "Uninstall Branding App Name" field](../../../../.gitbook/assets/image-\(3355\).png)
+![Entering a unique name in the "Uninstall Branding App Name" field](/_images/image-(3355).png)
 
 6. Click **Add Assignment**
 
-![Clicking "Add Assignment](../../../../.gitbook/assets/image-\(3356\).png)
+![Clicking "Add Assignment](/_images/image-(3356).png)
 
 7. On the **Add Uninstall Assignment** page, select the relevant resources noted in step 2 that this uninstall should be targeted to and click **Save**.
 
-![Select the relevant resources this uninstall should be targeted at and clicking "Save"](../../../../.gitbook/assets/image-\(3357\).png)
+![Select the relevant resources this uninstall should be targeted at and clicking "Save"](/_images/image-(3357).png)
 
 The list of assignments is updated to show that the **Uninstall** assignment has been added for the selected resources.
 
@@ -55,7 +55,7 @@ The list of assignments is updated to show that the **Uninstall** assignment has
 >
 > Assigning the Uninstall Branding App to a resource will remove all PMPC Cloud-related brandings, associated files, and localizations.
 
-![List of assignments updated to show the "Uninstall" assignment has been added for the selected resources.](<../../../../.gitbook/assets/image-(719) (1).png>)
+![List of assignments updated to show the "Uninstall" assignment has been added for the selected resources.](/_images/image-(719 "List of assignments updated to show the \"Uninstall\" assignment has been added for the selected resources.") (1).png>)
 
 8. If the list of assignments is correct, proceed to step 9; otherwise, repeat steps 6 and 7 to add any additional assignments.
 
@@ -65,7 +65,7 @@ The list of assignments is updated to show that the **Uninstall** assignment has
 
 9. Click **Save** to continue.
 
-![Clicking "Save" to continue](../../../../.gitbook/assets/image-\(3359\).png)
+![Clicking "Save" to continue](/_images/image-(3359).png)
 
 The **Branding** page is redisplayed, showing the new **Uninstall App** at the top, along with the **Success – Uninstall Branding app created** notification.
 
@@ -73,7 +73,7 @@ The **Branding** page is redisplayed, showing the new **Uninstall App** at the t
 >
 > You can tell which Branding App is the uninstall as it has \*\*UNINSTALL BRANDING\*\* for its company logo.
 
-!['Branding' page redisplayed showing the new uninstall app along with the 'Success – Branding created' notification.](../../../../.gitbook/assets/image-\(3756\).png)
+!['Branding' page redisplayed showing the new uninstall app along with the 'Success – Branding created' notification.](/_images/image-(3756).png)
 
 > \*\*Note\*\*
 >

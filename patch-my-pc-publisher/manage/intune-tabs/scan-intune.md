@@ -10,7 +10,7 @@ The **Scan Intune for Supported Products** form control in Patch My PC (PMPC) Pu
 
 The scan results are compared against the Publisher catalog to identify supported products. This information helps you decide which products to enable on the Intune Apps or Intune Updates tab for deploying newer versions of applications and updates through Intune as Win32 apps.
 
-![Scan Intune for Supported Products](../../../.gitbook/assets/image-\(4103\).png)
+![Scan Intune for Supported Products](/_images/image-(4103).png)
 
 > \*\*Note\*\*
 >
@@ -28,7 +28,7 @@ Auto-publishing rules allow the Publisher to automatically enable products for p
 
 When these rules are enabled, the Publisher evaluates discovered application inventory data collected by the Intune Management Extension on managed devices, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
 
-![Auto-Publishing Rules](../../../.gitbook/assets/image-\(4084\).png)
+![Auto-Publishing Rules](/_images/image-(4084).png)
 
 Auto-publishing rules are evaluated during scheduled [**synchronizations**](../../../patch-my-pc-publisherv2/administration/sync-schedule.md). Each time a sync runs, the Publisher scans application inventory data from the AppInvRawData report, obtained from the Intune Reporting Endpoint, through the Microsoft Graph, and automatically enables any newly detected products that meet the configured thresholds.
 
@@ -111,7 +111,7 @@ The filters section lets you narrow the scan results shown in the list below, ma
 
 These filters do not affect detection or auto-publishing behavior directly, they only control what is displayed, helping you validate and review scan results before taking action.
 
-![Available Filters](../../../.gitbook/assets/image-\(4085\).png)
+![Available Filters](/_images/image-(4085).png)
 
 ## Query
 
@@ -128,7 +128,7 @@ When clicked, the Publisher queries the obtained Intune report and displays the 
 
 The Query button does not enable or publish products by itself, it simply retrieves and displays the results based on the current settings, allowing you to review and validate findings before taking further action.
 
-![Query Results](../../../.gitbook/assets/image-\(4086\).png)
+![Query Results](/_images/image-(4086).png)
 
 Selecting products from this list is equivalent to manually selecting the same products in the [product tree](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) either on the Intune Apps tab or Intune Updates tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
 
@@ -140,7 +140,7 @@ Selecting products from this list is equivalent to manually selecting the same p
 
 The Count value shown for each matched product is clickable. Selecting the count opens a detailed view that lists the devices where the product was detected, along with the reported application version on each device.
 
-![Clicking device count value](../../../.gitbook/assets/image-\(4151\).png)
+![Clicking device count value](/_images/image-(4151).png)
 
 This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.
 
@@ -157,7 +157,7 @@ Clicking Export CSV will generated CSV file includes the following columns:
 
 The **Export to CSV** form control is used to export the results displayed in the query window to a comma separated values file for offline review or reporting.
 
-![Export to CSV](../../../.gitbook/assets/image-\(4152\).png)
+![Export to CSV](/_images/image-(4152).png)
 
 This control is disabled when no query results are present in the window. After a query is selected and results are displayed, the control becomes available.
 
@@ -166,10 +166,10 @@ To export the results to a CSV:
 1. Run a query so that results are displayed in the window and click **Export to CSV**.
 2. When prompted, choose **Yes** to export only products that match the current filter or choose **No** to export the full unfiltered results.
 
-![Filter Export Option](../../../.gitbook/assets/image-\(4153\).png)
+![Filter Export Option](/_images/image-(4153).png)
 
 3. Select the save location, enter a file name if required.
 
-![Choose a save location](../../../.gitbook/assets/image-\(4154\).png)
+![Choose a save location](/_images/image-(4154).png)
 
 4. Click **Save** to complete the export.

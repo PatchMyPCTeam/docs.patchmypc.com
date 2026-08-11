@@ -24,15 +24,15 @@ To add apps to an App Set:
 1. Sign in to the parent MSP Company at [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
 2. Navigate to **App Sets**
 
-![Navigating to "App Sets"](../../../.gitbook/assets/image-\(3248\).png)
+![Navigating to "App Sets"](/_images/image-(3248).png)
 
 The **App Sets** page shows any existing App Sets.
 
-!["App Sets" page showing an existing App Sets](../../../.gitbook/assets/image-\(3250\).png)
+!["App Sets" page showing an existing App Sets](/_images/image-(3250).png)
 
 3. Click **Add App Set**
 
-![Clicking "Add App Set"](../../../.gitbook/assets/image-\(3251\).png)
+![Clicking "Add App Set"](/_images/image-(3251).png)
 
 4. On the **Add App Set** screen, enter a unique name for the new App Set in the **App Set Name** field and click **Add**
 
@@ -44,7 +44,7 @@ The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<ap
 >
 > You can click \*\*Edit Name\*\* beside the App Set name if you want to rename it.
 
-![App Set name screen](../../../.gitbook/assets/image-\(3254\).png)
+![App Set name screen](/_images/image-(3254).png)
 
 5. To add an application to this App Set, click **Add Application**
 
@@ -54,7 +54,7 @@ The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<ap
 >
 > You can also add an \[MSP Custom App]\(../msp-custom-apps/) to an App Set, provided that app has been created and assigned to all customers.
 
-![Clicking "Add Application" to add an application to this App Set](../../../.gitbook/assets/image-\(3255\).png)
+![Clicking "Add Application" to add an application to this App Set](/_images/image-(3255).png)
 
 6. On the **General Information** page, select the relevant app you want to add from the **Select Application** dropdown or start typing its name.
 
@@ -66,7 +66,7 @@ The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<ap
 >
 > Also, if an app has multiple variants with different version numbers, you will see a yellow triangle with an exclamation mark next to the \*\*Version\*\* number. This is a warning to you to double-check that you are deploying the correct version.
 
-![Selecting the relevant app you want to add from the "Select Application" dropdown](../../../.gitbook/assets/image-\(3256\).png)
+![Selecting the relevant app you want to add from the "Select Application" dropdown](/_images/image-(3256).png)
 
 7.  In the **Display Name** field, we suggest you add the name of the App Set as a suffix.<br>
 
@@ -82,7 +82,7 @@ The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<ap
 >
 > This is potentially confusing as you won’t know which deployment belongs to which App Set. We are working on improving this.
 
-![Modifying the "Display Name" to include the App Set's suffix](../../../.gitbook/assets/image-\(3257\).png)
+![Modifying the "Display Name" to include the App Set's suffix](/_images/image-(3257).png)
 
 8. Modify any other settings on the **General Information** page as required, then click **Next**
 
@@ -90,7 +90,7 @@ The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<ap
 >
 > In the current release, this page contains a subset of the options for creating a regular PMPC Cloud Deployment. See \[General Information (Deployments)]\(../../deployments/deploy-app/general-information-tab.md) for more details on each option.
 
-![Clicking "Next" on the "General information" page.](../../../.gitbook/assets/image-\(3258\).png)
+![Clicking "Next" on the "General information" page.](/_images/image-(3258).png)
 
 9. On the **Configurations** page, configure the required options, then click **Next**.
 
@@ -98,7 +98,7 @@ The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<ap
 >
 > In the current release, this page contains a subset of the options for creating a regular PMPC Cloud Deployment. See \[Configurations (Deployments)]\(../../deployments/deploy-app/configurations-tab/) for more details on each option.
 
-![Configuring any required options on the "Configurations" page](../../../.gitbook/assets/image-\(3259\).png)
+![Configuring any required options on the "Configurations" page](/_images/image-(3259).png)
 
 10. On the **Assignment Type** page, select which assignment type(s) you want to apply to this App Set, then click **Save** to save your changes.
 
@@ -108,7 +108,7 @@ The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<ap
 >
 > Selecting the \*\*Update Only\*\* type (if available) will create an Update Only app in Intune alongside the Available or Required type selected.
 
-![Selecting the assignment type for this app and clicking "Save"](../../../.gitbook/assets/image-\(3260\).png)
+![Selecting the assignment type for this app and clicking "Save"](/_images/image-(3260).png)
 
 11. Repeat steps 5 to 10 to add any additional apps to the App Set.
 
@@ -120,7 +120,7 @@ To define where to deploy an App Set:
 
 1.  Click the **Assignments** tab.<br>
 
-    ![Clicking the "Assignments" tab](<../../../.gitbook/assets/image-(816) (1).png>)
+    ![Clicking the "Assignments" tab](/_images/image-(816 "Clicking the \"Assignments\" tab") (1).png>)
 2. If you don’t want to use Update Rings, go to step 4.
 3. Click **Enable Update Rings** and [configure them](../../deployments/update-rings/create.md) as required.
 
@@ -132,23 +132,23 @@ To define where to deploy an App Set:
 >
 > A child customer also doesn’t need to be present in all rings. For example, if you create four Update Rings for an App Set, but a child customer only requires two rings, you only need to add that child customer to the two relevant rings. On the child customer side, only the rings they are part of will be created in the child company, not all four rings defined in the App Set.
 
-![Clicking "Enable Update Rings"](<../../../.gitbook/assets/image-(817) (1).png>)
+![Clicking "Enable Update Rings"](/_images/image-(817 "Clicking \"Enable Update Rings\"") (1).png>)
 
 4.  Click **Add Assignment**\
     <br>
 
-    ![Clicking "Add Assignment"](<../../../.gitbook/assets/image-(818) (1).png>)
+    ![Clicking "Add Assignment"](/_images/image-(818 "Clicking \"Add Assignment\"") (1).png>)
 5. Select the relevant company that has an Intune connection that you want to assign this deployment to and click **Next**
 
 > \*\*Note\*\*
 >
 > You can only select a single company at a time (up to a maximum of 100), as every company’s Entra ID setup in terms of resources will be different.
 
-![Selecting the relevant company to assign this deployment to.](<../../../.gitbook/assets/image-(820) (1).png>)
+![Selecting the relevant company to assign this deployment to.](/_images/image-(820 "Selecting the relevant company to assign this deployment to.") (1).png>)
 
 6. On the **Assignments** tab, select the relevant resources you want to deploy this app to and click **Save**.
 
-![Selecting the relevant resources for this assignment](<../../../.gitbook/assets/image-(821) (1).png>)
+![Selecting the relevant resources for this assignment](/_images/image-(821 "Selecting the relevant resources for this assignment") (1).png>)
 
 7. Repeat steps 4 to 6 to add any additional companies you want to deploy this App Set to.
 8. On the **App Set** page, configure any required settings for the assignments.
@@ -157,11 +157,11 @@ To define where to deploy an App Set:
 >
 > If you are using Update Rings for this App Set, we recommend you create all of the assignments first, which adds all of them to the first Update Ring. Then drag and drop the assignments to the relevant rings.
 
-![Configuring any required settings for the assignments](<../../../.gitbook/assets/image-(822) (1).png>)
+![Configuring any required settings for the assignments](/_images/image-(822 "Configuring any required settings for the assignments") (1).png>)
 
 9.  Click **Deploy** to deploy this App Set.<br>
 
-    ![Clicking "Deploy" to deploy this App Set](<../../../.gitbook/assets/image-(824) (1).png>)
+    ![Clicking "Deploy" to deploy this App Set](/_images/image-(824 "Clicking \"Deploy\" to deploy this App Set") (1).png>)
 
 The **App Sets** page is redisplayed along with the **Success – App Set created** notification. The newly created App Set will show a Status of **In Progress**, followed by **Success** once all the deployments within the App Set have been completed successfully.
 
@@ -169,7 +169,7 @@ The **App Sets** page is redisplayed along with the **Success – App Set create
 >
 > The \*\*Status\*\* will show as \*\*Failed\*\* if one or more of the deployments fails.
 
-!["App Sets" showing the newly created deployment](<../../../.gitbook/assets/image-(825) (1).png>)
+!["App Sets" showing the newly created deployment](/_images/image-(825 "\"App Sets\" showing the newly created deployment") (1).png>)
 
 > \*\*Tip\*\*
 >
@@ -183,7 +183,7 @@ The **App Sets** page is redisplayed along with the **Success – App Set create
 
 Once the App Set has been deployed successfully, it will show a **Status** of **Success** on the **App Sets** page.
 
-![App Set showing with a status of "Success"](<../../../.gitbook/assets/image-(827) (1).png>)
+![App Set showing with a status of "Success"](/_images/image-(827 "App Set showing with a status of \"Success\"") (1).png>)
 
 > \*\*Note\*\*
 >

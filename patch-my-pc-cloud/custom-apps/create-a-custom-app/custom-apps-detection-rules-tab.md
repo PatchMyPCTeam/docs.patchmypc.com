@@ -24,16 +24,16 @@ If you want to configure Native Detection Rules:
 >
 > \* Cannot mix our default detection method with custom detection methods for the same Custom App.
 
-![Clicking 'Use Custom' to use a custom detection rule and choosing the relevant type of rule from the 'Rule Type' dropdown](../../../.gitbook/assets/image-\(3543\).png)
+![Clicking 'Use Custom' to use a custom detection rule and choosing the relevant type of rule from the 'Rule Type' dropdown](/_images/image-(3543).png)
 
 2. Go to Step 8 if you chose the **Use Custom Script** option.
 3. If you choose the **Configure Manually** option, click **Add Rule**.
 
-![Clicking 'Add Rule'](../../../.gitbook/assets/image-\(3544\).png)
+![Clicking 'Add Rule'](/_images/image-(3544).png)
 
 4. On the **Add Detection Rule** screen, select the relevant type of rule from the **Rule Type** dropdown, then configure the required options as required.
 
-![Selecting the relevant type of rule to configure from the 'Rule Type' dropdown](<../../../.gitbook/assets/image-(901) (1).png>)
+![Selecting the relevant type of rule to configure from the 'Rule Type' dropdown](/_images/image-(901 "Selecting the relevant type of rule to configure from the 'Rule Type' dropdown") (1).png>)
 
 <table><thead><tr><th width="99.111083984375">Rule Type</th><th>Available Options</th></tr></thead><tbody><tr><td>File</td><td><p><strong>Path –</strong> The path to the folder you are checking for</p><p><strong>File or Folder –</strong> The folder containing the file you are checking for</p><p><strong>Detection Method –</strong> Choose from the list of available checks.</p></td></tr><tr><td>MSI</td><td><p><strong>MSI Product Code –</strong> This is the MSI product code extracted from the file you imported.</p><p><strong>MSI Product Version Check (optional)</strong> – Click this slider to enable this check for a specific version number that matches the options you configure in the <strong>Operator</strong> and <strong>Value</strong> fields.</p></td></tr><tr><td>Registry</td><td><p><strong>Key Path –</strong> The path to the Registry key</p><p><strong>Value name (optional) –</strong> The name of a value contained within the specified <strong>Key Path</strong> that you want to check for</p><p><strong>Detection Method –</strong> Choose from the list of available checks.</p></td></tr></tbody></table>
 
@@ -53,15 +53,15 @@ If you want to configure Native Detection Rules:
 
 5.  If you have created either a **File** or **Registry** detection rule, click the **Associated with a 32-bit app on 64-bit clients** slider to enable it to expand any path environment variables in the 32-bit context on 64-bit endpoints.<br>
 
-    ![Enabling the 'Associated with a 32-bit app on 64-bit clients' slider](<../../../.gitbook/assets/image-(902) (1).png>)
+    ![Enabling the 'Associated with a 32-bit app on 64-bit clients' slider](/_images/image-(902 "Enabling the 'Associated with a 32-bit app on 64-bit clients' slider") (1).png>)
 6.  Click **Add Rule** to add the rule.<br>
 
-    ![Clicking 'Add Rule' to add a rule](<../../../.gitbook/assets/image-(903) (1).png>)
+    ![Clicking 'Add Rule' to add a rule](/_images/image-(903 "Clicking 'Add Rule' to add a rule") (1).png>)
 
     \
     The rule is added to the list of detection rules.
 
-![Rule is added to the list of rules](../../../.gitbook/assets/image-\(3545\).png)
+![Rule is added to the list of rules](/_images/image-(3545).png)
 
 > \*\*Note\*\*
 >
@@ -84,7 +84,7 @@ If you want to configure Native Detection Rules:
 >
 > \* We do not sign your scripts if we use them in one of our deployments. If this is a requirement, you will need to sign the scripts yourself.
 
-![Clicking 'Import Script'](../../../.gitbook/assets/image-\(3546\).png)
+![Clicking 'Import Script'](/_images/image-(3546).png)
 
 A preview of the script is shown in the **Script Preview** window.
 
@@ -92,11 +92,11 @@ A preview of the script is shown in the **Script Preview** window.
 >
 > You cannot edit the script in the \*\*Script Preview\*\* window.
 
-![Preview of the script shown in the 'Script Preview' window.](../../../.gitbook/assets/image-\(3547\).png)
+![Preview of the script shown in the 'Script Preview' window.](/_images/image-(3547).png)
 
 9. Click the **Associated with a 32-bit app on 64-bit clients** slider to enable it to expand any path environment variables in the 32-bit context on 64-bit endpoints.
 
-![Enabling the 'Associated with a 32-bit app on 64-bit clients' slider](../../../.gitbook/assets/image-\(3548\).png)
+![Enabling the 'Associated with a 32-bit app on 64-bit clients' slider](/_images/image-(3548).png)
 
 10. Repeat the steps in this section to add any additional detection rules.
 11. If you are happy you have entered all of the details for the app correctly, click **Create** to complete the creation of the Custom App.\

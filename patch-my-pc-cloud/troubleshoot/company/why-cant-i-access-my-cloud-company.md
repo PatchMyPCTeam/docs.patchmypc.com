@@ -8,7 +8,7 @@ I am trying to onboard to the Patch My PC Cloud (PMPC) portal. My company is lis
 
 However, no one remembers who registered the company, so I cannot gain access.
 
-!["Select the Company You Want to Sign-In To" screen](../../../.gitbook/assets/image-\(2682\).png)
+!["Select the Company You Want to Sign-In To" screen](/_images/image-(2682).png)
 
 ### CAUSE
 

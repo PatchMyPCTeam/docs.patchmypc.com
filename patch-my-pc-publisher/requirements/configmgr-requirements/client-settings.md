@@ -16,7 +16,7 @@ When third-party software updates are also enabled through Client Settings, Conf
 >
 > For more information, see the [Allow clients to download delta content when available](https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/about-client-settings#allow-clients-to-download-delta-content-when-available) section of [About client settings in Configuration Manager](https://learn.microsoft.com/intune/configmgr/core/clients/deploy/about-client-settings).
 
-![Software Update Client Settings](<../../../.gitbook/assets/image-(382) (1).png>)
+![Software Update Client Settings](/_images/image-(382 "Software Update Client Settings") (1).png>)
 
 ## **Enable Third-Party Software Updates**
 
@@ -44,7 +44,7 @@ Without this Client Setting enabled, client devices will not trust third-party u
 `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`\
 `AcceptTrustedPublisherCerts = 1`
 
-![Accept Trusted Publisher Certificates](<../../../.gitbook/assets/image-(383) (1).png>)
+![Accept Trusted Publisher Certificates](/_images/image-(383 "Accept Trusted Publisher Certificates") (1).png>)
 
 If you are not using ConfigMgr Client Settings to manage this behavior, the same configuration can be applied using:
 

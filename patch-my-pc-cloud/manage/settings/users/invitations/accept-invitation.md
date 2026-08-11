@@ -18,18 +18,18 @@ To accept your invitation to join your company on PMPC Cloud:
 
 2.  On the **User info** screen of the onboarding wizard, verify your name.<br>
 
-    ![Verify their name on the "User info" screen](../../../../../.gitbook/assets/image-\(2085\).png)
+    ![Verify their name on the "User info" screen](/_images/image-(2085).png)
 3.  Click the **Terms and Conditions** link to see these for using PMPC software and services.<br>
 
-    ![Click "Terms and Conditions" to view the T\&Cs for you using PMPC software and services](../../../../../.gitbook/assets/image-\(2086\).png)
+    ![Click "Terms and Conditions" to view the T\&Cs for you using PMPC software and services](/_images/image-(2086).png)
 
     \
     The **Terms and Conditions** page is displayed. Once you’ve reviewed them, click the **X** in the top right-hand corner to close this window.<br>
 
-    !["Terms and Conditions" for you using PMPC software and services](../../../../../.gitbook/assets/image-\(2087\).png)
+    !["Terms and Conditions" for you using PMPC software and services](/_images/image-(2087).png)
 4.  If you agree with our terms and conditions, check the **Accept all Terms and Conditions** checkbox.<br>
 
-    ![Click to check the "Accept Terms and Conditions" checkbox](../../../../../.gitbook/assets/image-\(2088\).png)
+    ![Click to check the "Accept Terms and Conditions" checkbox](/_images/image-(2088).png)
 
 > \*\*Note\*\*
 >
@@ -37,9 +37,9 @@ To accept your invitation to join your company on PMPC Cloud:
 
 5.  Click **Continue**<br>
 
-    ![Clicking "Continue" on the User Info page](../../../../../.gitbook/assets/image-\(2090\).png)
+    ![Clicking "Continue" on the User Info page](/_images/image-(2090).png)
 
     \
     The PMPC Cloud portal loads, showing the **App Catalog** page.<br>
 
-    ![App Catalog page of the PMPC Portal page](../../../../../.gitbook/assets/image-\(1338\).png)
+    ![App Catalog page of the PMPC Portal page](/_images/image-(1338).png)

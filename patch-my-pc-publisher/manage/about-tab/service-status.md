@@ -11,7 +11,7 @@ The **Service Status** tab of Patch My PC (PMPC) Publisher consists of the follo
 
 The **Sync Status** section displays the current state of Publisher during a publishing synchronization. This status updates in real time as products are evaluated and processed.
 
-!['Sync Status' section](../../../.gitbook/assets/image-\(4836\).png)
+!['Sync Status' section](/_images/image-(4836).png)
 
 When the **Status** shows as **Idle**, no publishing synchronization is running, and Publisher is not actively evaluating or publishing content.
 
@@ -25,7 +25,7 @@ Other statuses are **Syncing**, **Completed**, and **Error**.
 
 The **Publisher Statistics** section provides a real-time summary of publishing activity within Publisher.
 
-!['Publisher Statistics' section](../../../.gitbook/assets/image-\(4837\).png)
+!['Publisher Statistics' section](/_images/image-(4837).png)
 
 These statistics help you understand how many applications, updates, and CVEs have been published, as well as the overall synchronization activity. This information is useful for validating that publishing is working as expected and for gaining insight into ongoing usage over time.
 

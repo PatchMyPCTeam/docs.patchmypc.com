@@ -14,7 +14,7 @@ This section describes the steps required to change the IIS Application pool ide
 
 In the configuration modification page, select the checkbox for **'IIS Application Pool Identity'** then click **'Change Identity'**:
 
-![Clicking 'Change identity'](../../.gitbook/assets/image-\(4355\).png)
+![Clicking 'Change identity'](/_images/image-(4355).png)
 
 Select 'Local System' or to set a custom identity using an Active Directory account, select 'Specific User':
 

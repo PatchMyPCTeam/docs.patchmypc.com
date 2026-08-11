@@ -8,7 +8,7 @@ The **General Information** tab of the Patch My PC (PMPC) Cloud deployment wizar
 >
 > If an app has multiple variants with different version numbers, you will see a yellow triangle with an exclamation mark next to the \*\*Version\*\* number. This is a warning to you to double-check that you are deploying the correct version.
 
-!['General Information' tab](../../../.gitbook/assets/image-\(3528\).png)
+!['General Information' tab](/_images/image-(3528).png)
 
 Once you have finished configuring the relevant options, go to [Next Steps](general-information-tab.md#next-steps).
 
@@ -91,4 +91,4 @@ We currently support the following macOS installer types:
 
 Once you have finished configuring the relevant options, click **Next** to move to the [Configurations ](configurations-tab/)tab.
 
-![Clicking 'Next' to move to the 'Configurations' page](../../../.gitbook/assets/image-\(3529\).png)
+![Clicking 'Next' to move to the 'Configurations' page](/_images/image-(3529).png)
