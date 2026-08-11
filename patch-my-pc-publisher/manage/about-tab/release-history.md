@@ -8,4 +8,4 @@ The **Release History** section of the **About** tab of Patch My PC (PMPC) Publi
 * [Contact Us Page](https://patchmypc.com/contact-us/) - On our website in case you need to contact us
 * [View License Agreement](https://patchmypc.com/legal/terms-of-service/) button - Opens our **Terms of Service**, which you agree to by using Publisher.
 
-!['Release History' section](/_images/image-(4833).png)
+!['Release History' section](../../../.gitbook/assets/image-\(4833\).png)

@@ -32,7 +32,7 @@ Whichever approach you choose, avoid mixing assignment strategies across multipl
 
 A common and effective approach is to deploy updates in phases. Otherwise known as **Phased Deployments** or **Update Rings**, where availability is consistent but enforcement is staggered using different deadlines.
 
-![Example of a phased deployment](/_images/image-(4035).png)
+![Example of a phased deployment](../../../.gitbook/assets/image-\(4035\).png)
 
 In the example shown, 3 **Required for enrolled devices** assignments are configured at the Vendor level for all Google products on the **Intune Updates** tab. The same approach outlined here can also be applied at the All Products or individual Product level.
 
@@ -118,7 +118,7 @@ This approach is strongly recommended for **major version upgrades**, where appl
 
 Some vendors support and maintain **multiple major versions in parallel** due to breaking changes between versions. In these cases, the Publisher catalog may contain several major versions of the same product side by side, such as multiple FortiClient VPN releases alongside a **Latest** entry.
 
-![Major Version Testing](/_images/image-(4034).png)
+![Major Version Testing](../../../.gitbook/assets/image-\(4034\).png)
 
 For products like VPN clients, major version upgrades can affect drivers, connectivity, or security posture. Treating these upgrades as a new deployment scenario allows administrators and pilot users to verify that the new version installs correctly, functions as expected, and properly upgrades or replaces the previous version.
 

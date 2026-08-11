@@ -17,7 +17,7 @@ At the end of a [sync](../manage/sync-schedule-tab/), if a new version of Publis
 Starting self-update, the command line is: MsiExec.exe /i C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service.msi /qn /log C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service_Upgrade.log
 ```
 
-![PatchMyPC.log](/_images/image-(4232).png)
+![PatchMyPC.log](../../.gitbook/assets/image-\(4232\).png)
 
 > \*\*Note\*\*
 >
@@ -25,9 +25,9 @@ Starting self-update, the command line is: MsiExec.exe /i C:\WINDOWS\TEMP\PatchM
 
 If a failure occurs during the self-update process and [Alerts](../manage/alerts-tab/) are configured, a notification is generated. The notification will appear similar to the screenshots shown below
 
-![Example alert](/_images/image-(4233).png)
+![Example alert](../../.gitbook/assets/image-\(4233\).png)
 
-![Example alert detail](/_images/image-(4234).png)
+![Example alert detail](../../.gitbook/assets/image-\(4234\).png)
 
 To understand the root cause of the upgrade failure, inspect the log file indicated in **PatchMyPC.log** produced by the MSI installer:
 
@@ -50,7 +50,7 @@ Error 1714. The older version of Patch My PC Publishing Service cannot be remove
 
 When you attempt to manually install the update by downloading and running the [latest .msi](https://patchmypc.com/msi), you receive a dialogue similar to the one below:
 
-!['The feature you are trying to use is on a network resource that is unavailable' dialog](/_images/image-(4235).png)
+!['The feature you are trying to use is on a network resource that is unavailable' dialog](../../.gitbook/assets/image-\(4235\).png)
 
 The 1612 error code is usually thrown when the original installation media for the currently installed application is no longer available on the system - something has deleted it.
 

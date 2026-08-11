@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Notification Webhook Configuration** dialog is shown in Patch My PC (PMPC) Publisher when creating a new webhook, editing an existing webhook, or copying a webhook.
 
-![Webhook Configuration](/_images/image-(3906).png)
+![Webhook Configuration](../../../../.gitbook/assets/image-\(3906\).png)
 
 ## Name
 
@@ -63,11 +63,11 @@ This option is enabled by default and is the recommended configuration.
 
 When enabled, webhook notifications are sent after each product is processed during a publishing synchronization. Each notification represents an individual product that has been successfully processed or failed, making it easier to track progress during large publishing runs.
 
-![Send alerts as each product is published is enabled](/_images/image-(3907).png)
+![Send alerts as each product is published is enabled](../../../../.gitbook/assets/image-\(3907\).png)
 
 When this option is disabled, a single webhook notification is sent only after all products have finished processing at the end of the publishing synchronization.
 
-![Send alerts as each product is published is disabled](/_images/image-(3908).png)
+![Send alerts as each product is published is disabled](../../../../.gitbook/assets/image-\(3908\).png)
 
 The end of synchronization notification provides a consolidated summary of all processed products but does not provide visibility into progress while the synchronization is running.
 
@@ -84,7 +84,7 @@ Each tab maps directly to a corresponding Publisher tab:
 
 This alignment ensures that webhook product scoping follows the same structure and product groupings used for publishing configuration.
 
-![Product Selection](/_images/image-(230).png)
+![Product Selection](../../../../.gitbook/assets/image-\(230\).png)
 
 You can expand vendors and select individual products to include in webhook notifications. Only the selected products generate notifications for the corresponding content type.
 
@@ -98,6 +98,6 @@ Use the filter field to quickly locate vendors or products by name.
 
 If you are using an MSP or MSP Plus license with multiple tenants configured, webhook notifications support tenant-level scoping.
 
-![Tenant Selection](/_images/image-(4129).png)
+![Tenant Selection](../../../../.gitbook/assets/image-\(4129\).png)
 
 When creating or editing a webhook, you can select which tenant or tenants the notification applies to. If no tenants are selected, the webhook applies to all tenants. If specific tenants are selected, the webhook applies only to those tenants.

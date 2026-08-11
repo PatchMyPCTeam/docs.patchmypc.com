@@ -17,15 +17,15 @@ To deploy an app from the **External** catalog:
 1. From the PMPC Cloud Portal, navigate to **App Catalog | External**
 2. On the **External** catalog page, locate the required app and click it to open its properties.
 
-![App properties](/_images/image-(4537).png)
+![App properties](../../../.gitbook/assets/image-\(4537\).png)
 
 3. Click **Deploy** to start the Deployment Wizard.
 
-![Clicking ‘Deploy' to start the Deployment Wizard](/_images/image-(4538).png)
+![Clicking ‘Deploy' to start the Deployment Wizard](../../../.gitbook/assets/image-\(4538\).png)
 
 4. On the **Risk of External App** dialog box, read the warning about deploying an external app, and if you accept the risks, click **Confirm**
 
-![Clicking ‘Confirm' on the ‘Risk of External App' warning](/_images/image-(4539).png)
+![Clicking ‘Confirm' on the ‘Risk of External App' warning](../../../.gitbook/assets/image-\(4539\).png)
 
 5. Follow the [Deploy an App using Patch My PC Cloud](../../deployments/deploy-app/) process to complete the deployment.
 

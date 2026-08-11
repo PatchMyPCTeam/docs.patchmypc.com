@@ -35,6 +35,6 @@ For example:
 
 When you right-click at a supported level in the Product Tree and select **Publish Now**, the **Selective Sync** dialog appears.
 
-!['Selective Sync' dialog box](/_images/image-(2).png)
+!['Selective Sync' dialog box](<../../../.gitbook/assets/image-(2) (1).png>)
 
 If you click **Yes**, the selected items are added to the queue for the next Selective Sync, which can be triggered by [Running a Selective Sync](../../manage/sync-schedule-tab/sync-status.md#running-a-selective-sync).

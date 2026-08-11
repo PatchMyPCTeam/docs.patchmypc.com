@@ -16,7 +16,7 @@ _Applies to: Patch My PC Advanced Insights_
 >
 > Access to this site is required from the Advanced Insights server to accurately render this dashboard.
 
-![](/_images/image-(2858).png)
+![](../../../.gitbook/assets/image-\(2858\).png)
 
 On this dashboard we show you data with regards to the Microsoft 365 Apps. The information shown in the donut charts are:
 
@@ -30,10 +30,10 @@ The table shows the latest support data from Microsoft.
 
 When you click on the cog on any of these donuts you will be able to view the whole chart data.
 
-![](/_images/image-(2860).png)
+![](../../../.gitbook/assets/image-\(2860\).png)
 
 ### Chart Data
 
 In this data you filter on any of the headings and also export the data too.
 
-![](/_images/image-(2861).png)
+![](../../../.gitbook/assets/image-\(2861\).png)

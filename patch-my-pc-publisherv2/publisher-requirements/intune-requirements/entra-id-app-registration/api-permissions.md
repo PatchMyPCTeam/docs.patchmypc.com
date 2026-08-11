@@ -48,7 +48,7 @@ Follow the steps below to add the required Microsoft Graph **Application permiss
 4. In the left-hand menu, select **API permissions**.
 5. Select **Add a permission**.
 
-![Add an API Permission](/_images/image-(394).png)
+![Add an API Permission](<../../../../.gitbook/assets/image-(394) (1).png>)
 
 5. In the **Request API permissions** pane, choose **Microsoft Graph**.
 6. Select **Application permissions** (not Delegated permissions).
@@ -66,11 +66,11 @@ Follow the steps below to add the required Microsoft Graph **Application permiss
 8. Select **Add permissions** to apply the selected permissions.
 9.  Select **Grant admin consent** and confirm the prompt to approve the permissions.<br>
 
-    ![Grant admin consent](/_images/image-(395).png)
+    ![Grant admin consent](<../../../../.gitbook/assets/image-(395) (1).png>)
 
 The image below reflects the required, granted, permissions.
 
-![Granted API Permissions](/_images/image-(396).png)
+![Granted API Permissions](<../../../../.gitbook/assets/image-(396) (1).png>)
 
 > \*\*Note\*\*
 >

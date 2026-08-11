@@ -8,29 +8,29 @@ To add a Post-Uninstall script:
 
 1. Click **Add** beside the **Post-Uninstall** option.
 
-![Clicking "Add" beside the "Post-Uninstall" option](/_images/image-(3310).png)
+![Clicking "Add" beside the "Post-Uninstall" option](../../../../../../.gitbook/assets/image-\(3310\).png)
 
 The **Add Pre-Install Script** page is shown, highlighting that the default **Script Format** is **.ps1**, with built-in support for PSADT functions.
 
 2. To import an existing script, click **Import,** then browse to the location containing the script and select it.
 
-![Clicking "Import" to import an existing script](/_images/image-(53).png)
+![Clicking "Import" to import an existing script](<../../../../../../.gitbook/assets/image-(53) (1).png>)
 
 The **Script Name** field is populated with the filename of the script selected, and the **Add Post-Uninstall Scripts** page is populated with the imported script.
 
-!['Add Post-Uninstall Script' page is populated with the imported script.](/_images/image-(54).png)
+!['Add Post-Uninstall Script' page is populated with the imported script.](<../../../../../../.gitbook/assets/image-(54) (1).png>)
 
 3. To manually add a script, enter a unique name for the script in the **Script Name** field.
 
-![Entering a unique name for the script in the 'Script Name' field](/_images/image-(55).png)
+![Entering a unique name for the script in the 'Script Name' field](<../../../../../../.gitbook/assets/image-(55) (1).png>)
 
 4. Select the type of script from the **Script Format** dropdown.
 
-![Selecting the type of script from the 'Script Format' dropdown.](/_images/image-(56).png)
+![Selecting the type of script from the 'Script Format' dropdown.](<../../../../../../.gitbook/assets/image-(56) (1).png>)
 
 5. In the script editor, type your script.
 
-![Typing your script in the Script Editor](/_images/image-(57).png)
+![Typing your script in the Script Editor](<../../../../../../.gitbook/assets/image-(57) (1).png>)
 
 > \*\*Note\*\*
 >
@@ -46,7 +46,7 @@ The **Script Name** field is populated with the filename of the script selected,
 
 6. In the **Arguments** field, enter any arguments you want to provide to the script.
 
-![Entering any arguments you want to provide to the script by specifying them in the 'Arguments' field](/_images/image-(58).png)
+![Entering any arguments you want to provide to the script by specifying them in the 'Arguments' field](<../../../../../../.gitbook/assets/image-(58) (1).png>)
 
 > \*\*Tip\*\*
 >
@@ -62,11 +62,11 @@ The **Script Name** field is populated with the filename of the script selected,
 
 7. Click **Save** to save your script.
 
-![Clicking 'Save' to save your script](/_images/image-(59).png)
+![Clicking 'Save' to save your script](<../../../../../../.gitbook/assets/image-(59) (1).png>)
 
 The **Configurations** tab is re-displayed with the name of the configured script beside it.
 
-!["Configurations" tab re-displayed with the name of the configured script beside it](/_images/image-(798).png)
+!["Configurations" tab re-displayed with the name of the configured script beside it](<../../../../../../.gitbook/assets/image-(798) (1).png>)
 
 > \*\*Tip\*\*
 >

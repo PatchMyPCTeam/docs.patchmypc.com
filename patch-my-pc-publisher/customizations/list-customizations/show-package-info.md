@@ -14,7 +14,7 @@ When selected at the **All Products** or **Vendor** level, the package informati
 
 When you right-click a supported object in the Product Tree and select **Show Package Info**, the **Package Details** dialog displays the package metadata for the selected items.
 
-!['Package Details' dialog](/_images/image-(4787).png)
+!['Package Details' dialog](../../../.gitbook/assets/image-\(4787\).png)
 
 The grid shows one row per available package based on the current Product Tree selection. The information shown reflects what is in the latest PMPC catalog.
 

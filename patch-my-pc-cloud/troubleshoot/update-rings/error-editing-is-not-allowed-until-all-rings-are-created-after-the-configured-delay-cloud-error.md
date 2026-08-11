@@ -8,7 +8,7 @@ I am trying to edit a Patch My PC (PMPC) Cloud deployment, but when I click on t
 
 **Error - Editing is not allowed until all rings are created after the configured delay.**
 
-!["Error - Editing is not allowed until all rings are created after the configured delay." when trying to edit a deployment](/_images/image-(1160).png)
+!["Error - Editing is not allowed until all rings are created after the configured delay." when trying to edit a deployment](../../../.gitbook/assets/image-\(1160\).png)
 
 ### CAUSE
 

@@ -8,11 +8,11 @@ The **Modify Published Updates** wizard is used to manage third party updates th
 
 This wizard is commonly used during troubleshooting, republishing workflows, and ongoing maintenance to ensure WSUS and ConfigMgr only evaluate and display the correct updates.
 
-![Modify Published Updates](/_images/image-(91).png)
+![Modify Published Updates](<../../../../.gitbook/assets/image-(91) (1).png>)
 
 Clicking **Run Wizard** opens the **Modify Updates Wizard**.
 
-![Modify Updates Wizard](/_images/image-(195).png)
+![Modify Updates Wizard](../../../../.gitbook/assets/image-\(195\).png)
 
 The **Modify Updates Wizard** is divided into two main areas that make it easy to locate and manage published, third-party, updates. The upper portion of the window contains filtering controls, while the main pane displays the list of matching updates and their current state.
 
@@ -28,11 +28,11 @@ This typically indicates that publishing did not complete successfully or that u
 
 The yellow highlight is an attention indicator. Click [**More Details**](modify-published-updates.md#more-details) so see the update status.
 
-![Conditional Formatting](/_images/image-(196).png)
+![Conditional Formatting](../../../../.gitbook/assets/image-\(196\).png)
 
 If you select an update that is highlighted in yellow and choose [**Show in WSUS**](modify-published-updates.md#show-in-wsus), the WSUS console provides more detailed state information. This additional detail can help identify why the update is flagged, such as missing content.
 
-![Update Missing Content](/_images/image-(472).png)
+![Update Missing Content](<../../../../.gitbook/assets/image-(472) (1).png>)
 
 ## Filtering
 
@@ -61,7 +61,7 @@ To decline one or more published updates:
 1. Locate and select the update or updates you want to decline using the available filters.
 2. Select **Decline** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Decline Update(s)](/_images/image-(197).png)
+![Decline Update(s)](../../../../.gitbook/assets/image-\(197\).png)
 
 > \*\*Note\*\*
 >
@@ -88,7 +88,7 @@ To un-decline one or more published updates:
 1. Locate and select the update or updates you want to decline using the available filters.
 2. Select **Un-decline** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Un-decline Update(s)](/_images/image-(198).png)
+![Un-decline Update(s)](../../../../.gitbook/assets/image-\(198\).png)
 
 ## Delete Updates
 
@@ -102,7 +102,7 @@ Deleting updates is intended only for exceptional scenarios, such as updates tha
 >
 > This mismatch can cause hash validation failures during deployment and prevent updates from installing successfully on clients.
 
-![Delete option disabled by default](/_images/image-(199).png)
+![Delete option disabled by default](../../../../.gitbook/assets/image-\(199\).png)
 
 To delete one or more published updates:
 
@@ -111,7 +111,7 @@ To delete one or more published updates:
 3. Select **Delete** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 4. Click **Yes** to delete the update(s) or click **No** to abort the deletion.
 
-![Confirm deletion](/_images/image-(201).png)
+![Confirm deletion](../../../../.gitbook/assets/image-\(201\).png)
 
 5. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
@@ -144,7 +144,7 @@ To show one or more published updates in the WSUS console:
 2. Select **Show in WSUS** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 3. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
-![Show Update(s) in WSUS](/_images/image-(202).png)
+![Show Update(s) in WSUS](../../../../.gitbook/assets/image-\(202\).png)
 
 ## Hide in WSUS
 
@@ -163,7 +163,7 @@ To hide one or more published updates in the WSUS console:
 1. Locate and select the update or updates you want to hide in WSUS using the available filters.
 2. Select **Hide in WSUS** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Hide Update(s) in WSUS](/_images/image-(203).png)
+![Hide Update(s) in WSUS](../../../../.gitbook/assets/image-\(203\).png)
 
 ## Show Applicability Rules
 
@@ -177,9 +177,9 @@ To view applicability rules for an update:
 * Select **Show Applicability Rules** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 * Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
-![Show Applicability Rules](/_images/image-(204).png)
+![Show Applicability Rules](../../../../.gitbook/assets/image-\(204\).png)
 
-![Applicability Rules Example](/_images/image-(205).png)
+![Applicability Rules Example](../../../../.gitbook/assets/image-\(205\).png)
 
 > \*\*Note\*\*
 >
@@ -191,7 +191,7 @@ To view applicability rules for an update:
 
 The **More Details** option opens an **Update Details** window for a selected update. This view exposes the underlying WSUS metadata for the update and is intended for validation and troubleshooting. The information shown here is read only and reflects exactly what was published to WSUS.
 
-![More Details](/_images/image-(207).png)
+![More Details](../../../../.gitbook/assets/image-\(207\).png)
 
 This view is useful when confirming update identity, revision state, and metadata values that affect installation behavior.
 
@@ -230,7 +230,7 @@ To view more details about an update:
 1. Locate and select the update you want to view more details for for by using the available filters.
 2. Select **More Details** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-![Update Details](/_images/image-(206).png)
+![Update Details](../../../../.gitbook/assets/image-\(206\).png)
 
 ## Extract Content
 
@@ -243,7 +243,7 @@ To extract content for an update:
 3. In the Browse For Folder window, select an existing folder or create a new folder.
 4. Select **OK** to begin extraction.
 
-![Extract Content](/_images/image-(208).png)
+![Extract Content](../../../../.gitbook/assets/image-\(208\).png)
 
 > \*\*Tip\*\*
 >
@@ -265,7 +265,7 @@ The **Re-Sign Update** option allows you to re-sign an already published update 
 >
 > After updates are re signed, you must remove the old content and allow ConfigMgr to download the newly signed content.
 
-![Re-sign Update](/_images/image-(209).png)
+![Re-sign Update](../../../../.gitbook/assets/image-\(209\).png)
 
 To re-sign an update
 

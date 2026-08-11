@@ -14,20 +14,14 @@ This section describes the steps required to change the IIS Application pool ide
 
 In the configuration modification page, select the checkbox for **'IIS Application Pool Identity'** then click **'Change Identity'**:
 
-![Clicking 'Change identity'](/_images/image-(4355).png)
+![Clicking 'Change identity'](../../.gitbook/assets/image-\(4355\).png)
 
 Select 'Local System' or to set a custom identity using an Active Directory account, select 'Specific User':
-
-![](/_images/vmconnect_7HZTcmUwwa-(1).png>)
 
 In this example we will set a custom identity using an Active Directory account. After entering the account username and password, (The domain value should already be pre-populated by the installer) the 'Check Credentials' button can be used to validate the account credentials entered.
 
 Click OK
 
-![](/_images/vmconnect_a2UjNEmSYX-(1).png>)
-
 The confirmation page is then displayed. Click close to exit the installer.
-
-![](/_images/vmconnect_chQDGol3Od-(1).png>)
 
 This completes the steps required to modify the IIS Application Pool identity.

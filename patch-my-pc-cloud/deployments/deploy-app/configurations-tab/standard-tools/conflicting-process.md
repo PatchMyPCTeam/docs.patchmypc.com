@@ -13,7 +13,7 @@ To manage the conflicting process for a Deployment:
 
 1. Click the **Conflicting Process** tool.
 
-![Clicking the 'Conflicting Process' tool](/_images/image-(4203).png)
+![Clicking the 'Conflicting Process' tool](../../../../../.gitbook/assets/image-\(4203\).png)
 
 2. Configure the required settings as detailed below.
 
@@ -128,4 +128,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png)
+![Clicking 'Next'](../../../../../.gitbook/assets/image-\(662\).png)

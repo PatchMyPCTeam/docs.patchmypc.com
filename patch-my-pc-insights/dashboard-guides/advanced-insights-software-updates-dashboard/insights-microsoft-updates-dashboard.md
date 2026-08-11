@@ -6,8 +6,6 @@ _Applies to: Patch My PC Advanced and Patch Insights_
 >
 > Dashboard will only return data on devices managed by Windows Update for Business (WuFB)
 
-![](/_images/24-(1).png>)
-
 At the top of this dashboard you can see how many devices have reported Microsoft Update Inventory Data, count of Critical and Security updates required by one or more devices, Drivers required by one of more devices and Classifications and/or Products for required updates that you are not currently synchronising into Configuration Manager.
 
 On the Windows Update Scanning Sources Donut chart you have 2 sources:

@@ -10,11 +10,11 @@ To configure this setting:
 
 1. Click the **Available Uninstall** tool.
 
-![Clicking the 'Available Uninstall' tool](/_images/image-(665).png)
+![Clicking the 'Available Uninstall' tool](<../../../../../.gitbook/assets/image-(665) (1).png>)
 
 2. Configure the settings as required.
 
-!['Available Uninstall' settings](/_images/image-(666).png)
+!['Available Uninstall' settings](<../../../../../.gitbook/assets/image-(666) (1).png>)
 
 ## Next Steps
 
@@ -22,4 +22,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png)
+![Clicking 'Next'](../../../../../.gitbook/assets/image-\(662\).png)

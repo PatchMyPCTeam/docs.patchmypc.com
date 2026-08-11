@@ -12,7 +12,7 @@ Multiple Intune tenants can be supported from a single instance of the Patch My 
 >
 > The multi-tenant form controls are only visible if Publisher is licensed with an MSP or MSP Plus license.
 
-![Multi-tenancy in the Publisher](/_images/image-(4107).png)
+![Multi-tenancy in the Publisher](../../../.gitbook/assets/image-\(4107\).png)
 
 > \*\*Important\*\*
 >

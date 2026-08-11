@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V2.x_
 
-## &#x20;Overview
+## Overview
 
 The **Search Products** dialog allows you to quickly locate vendors or products within the product tree without manually scrolling through the entire catalog.
 
@@ -13,7 +13,7 @@ You can open the search dialog in either of the following ways:
 * Press **CTRL + F** anywhere in the product tree.
 * Click the S**earch Product (magnifying glass)** form control.
 
-![Search Products](/_images/image-(3961).png)
+![Search Products](../../../../.gitbook/assets/image-\(3961\).png)
 
 ## Using the Search
 

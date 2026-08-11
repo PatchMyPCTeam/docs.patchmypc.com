@@ -15,11 +15,11 @@ Either option will start the sign-up wizard detailed below.
 
 On the **Start Trial** screen, click **Start Trial**
 
-![Clicking ‘Start Trial' on the ‘Start Trial' screen](/_images/image-(3555).png)
+![Clicking ‘Start Trial' on the ‘Start Trial' screen](../../../../.gitbook/assets/image-\(3555\).png)
 
 On the **Your 30-day trial has started** screen, click **Close**
 
-![Clicking ‘Close' on the ‘Your 30-day trial has started' screen](/_images/image-(3556).png)
+![Clicking ‘Close' on the ‘Your 30-day trial has started' screen](../../../../.gitbook/assets/image-\(3556\).png)
 
 > \*\*Note\*\*
 >

@@ -9,10 +9,10 @@ To update an individual Update Ring to a later version:
 1. Navigate to the **Deployments** node.
 2.  Click the relevant deployment to open its properties then click **More Info**.<br>
 
-    ![Clicking "More Info"](/_images/image-(2845).png)
+    ![Clicking "More Info"](../../../.gitbook/assets/image-\(2845\).png)
 3.  If you can update a ring to a newer version the **Update Now** button is available.<br>
 
-    !["Update Now" button available](/_images/image-(2846).png)
+    !["Update Now" button available](../../../.gitbook/assets/image-\(2846\).png)
 
 > \*\*Important\*\*
 >
@@ -28,17 +28,17 @@ To update an individual Update Ring to a later version:
 
 4.  Click **Update Now** and select the relevant version you want to upgrade this ring to.<br>
 
-    ![Selecting which version to update this ring to](/_images/image-(2847).png)
+    ![Selecting which version to update this ring to](../../../.gitbook/assets/image-\(2847\).png)
 5.  On the **Update “<**_**deployment\_name**_**>” ring to version <**_**version\_number**_**>** dialog box, click **Confirm**.<br>
 
-    ![Clicking "Confirm"](/_images/image-(2849).png)
+    ![Clicking "Confirm"](../../../.gitbook/assets/image-\(2849\).png)
 
     \
     The portal refreshes showing that the deployment is **In Progress** and the **Success – Ring <**_**ring\_name**_**>** updated notification is shown.<br>
 
-    ![](/_images/image-(2850).png)
+    ![](../../../.gitbook/assets/image-\(2850\).png)
 
     \
     Once the deployment has completed successfully, if you navigate back to the ring, you will see the version number has changed and the **Update Now** button is unavailable.<br>
 
-    ![Version number has changed and "Update Now" button is unavailable.](/_images/image-(2851).png)
+    ![Version number has changed and "Update Now" button is unavailable.](../../../.gitbook/assets/image-\(2851\).png)

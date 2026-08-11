@@ -31,7 +31,7 @@ You can enable applications and updates for publishing in one of two ways:
 
 The [Scan Wizard](../../administration/intune-apps-updates/form-controls/scan-intune-for-supported-products.md) is generally a recommended starting point. It leverages Intune Discovered Apps data to identify supported third-party products currently present in your environment and compares those results against the Patch My PC catalog. This allows you to review what is installed today before enabling publishing.
 
-![Scan Intune for SUpported Products](/_images/image-(4161).png)
+![Scan Intune for SUpported Products](../../../.gitbook/assets/image-\(4161\).png)
 
 After running a scan, review the results carefully. The device count and version information help validate inventory accuracy and determine publishing priority. Exporting the results to CSV can assist with internal review, change control discussions, or phased rollout planning.
 
@@ -45,7 +45,7 @@ Applications and updates can also be enabled manually by selecting products dire
 
 Manual selection remains a valid and flexible option, especially when you want to proactively publish applications that may not yet appear in the inventory returned by the scan results.
 
-![Manual Product Selection](/_images/image-(4162).png)
+![Manual Product Selection](../../../.gitbook/assets/image-\(4162\).png)
 
 You can expand vendors to browse available products or use the [Search](../../administration/intune-apps-updates/form-controls/search-products.md) form control to quickly locate a specific application by name.
 

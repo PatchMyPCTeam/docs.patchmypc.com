@@ -12,7 +12,7 @@ The _Software_ page consists of the following tabs, which contain a collection o
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="software-page.md#system-apps">System Apps</a></td><td valign="top"><a href="software-page.md#user-apps">User Apps</a></td><td valign="top"><a href="software-page.md#browser-extensions">Browser Extensions</a></td><td valign="top"><a href="software-page.md#msi-source-health">MSI Source Health</a></td></tr></tbody></table>
 
-!['Software' page](/_images/image-(4393).png)
+!['Software' page](../../../.gitbook/assets/image-\(4393\).png)
 
 > \*\*Note\*\*
 >
@@ -35,11 +35,11 @@ The top row of the **Systems App** page is called _Statistics_ and displays the 
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Total system applications</td><td valign="top">Applications installed in the SYSTEM context in your environment, including the app title, publisher, and number of instances found.</td></tr></tbody></table>
 
-!['Software' page](/_images/image-(4395).png)
+!['Software' page](../../../.gitbook/assets/image-\(4395\).png)
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-![Device list modal](/_images/image-(4396).png)
+![Device list modal](../../../.gitbook/assets/image-\(4396\).png)
 
 ### Total System Applications
 
@@ -68,11 +68,11 @@ The top row of the **User Apps** page is called _Statistics_ and displays the fo
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Total user applications</td><td valign="top">Applications installed in any user profiles, including the app title, publisher, and number of instances found.</td></tr></tbody></table>
 
-!['User Apps' page](/_images/image-(4397).png)
+!['User Apps' page](../../../.gitbook/assets/image-\(4397\).png)
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-![Device list modal](/_images/image-(4398).png)
+![Device list modal](../../../.gitbook/assets/image-\(4398\).png)
 
 ### Total User Applications
 
@@ -101,11 +101,11 @@ The top row of the **Browser Extensions** page is called _Statistics_ and displa
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Total browser extensions</td><td valign="top">Firefox, Chrome, and Edge browser extensions installed in your environment, including the title of the extension and the number of instances found.</td></tr></tbody></table>
 
-!['Total browser extensions'](/_images/image-(4399).png)
+!['Total browser extensions'](../../../.gitbook/assets/image-\(4399\).png)
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-![Device list modal](/_images/image-(4400).png)
+![Device list modal](../../../.gitbook/assets/image-\(4400\).png)
 
 ### Total Browser Extensions
 
@@ -135,7 +135,7 @@ The top row of the **MSI Source Health** page is called _Statistics_ and display
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Count of devices where MSI sources are missing</td><td valign="top">Devices where MSI source health issues have been detected.</td></tr><tr><td valign="top">Missing MSI sources detected across all devices</td><td valign="top">Devices where MSI source health issues have been detected.</td></tr></tbody></table>
 
-!['Software' page](/_images/image-(4401).png)
+!['Software' page](../../../.gitbook/assets/image-\(4401\).png)
 
 ### Missing MSI Sources
 

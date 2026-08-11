@@ -15,7 +15,7 @@ When a product is paused, Publisher skips any new versions released before the s
 
 In the example scenario, **Google Chrome (EXE x64)** is paused until **24th June 2026**. If one or more new versions are released during the pause period, they are not published by Publisher.
 
-!['Pause Product Updates' dialog](/_images/image-(4413).png)
+!['Pause Product Updates' dialog](../../../.gitbook/assets/image-\(4413\).png)
 
 Once the pause period expires, Publisher resumes normal behavior. The next version available after the pause ends will be published. If no new version is available when the pause expires, and the current version is already published, no action is taken.
 
@@ -29,9 +29,9 @@ The notification includes the product name, resume date, update classification, 
 
 Email reports show the paused product under **Paused ConfigMgr Applications** or the equivalent paused product section for the publishing target. Webhook notifications show the same pause information in a card format.
 
-![Email alert for paused products](/_images/image-(4362).png)
+![Email alert for paused products](../../../.gitbook/assets/image-\(4362\).png)
 
-![Webhook alert for paused products](/_images/image-(4363).png)
+![Webhook alert for paused products](../../../.gitbook/assets/image-\(4363\).png)
 
 ## Limitations and guidance
 

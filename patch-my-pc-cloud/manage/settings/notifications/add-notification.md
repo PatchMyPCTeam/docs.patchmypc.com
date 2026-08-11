@@ -7,11 +7,11 @@ To add a notification in Patch My PC (PMPC) Cloud:
 1. Navigate to **Settings | Notifications**
 2. On the **Notifications** page, click **Add Notification**.
 
-![Clicking 'Add Notification'](/_images/image-(291).png)
+![Clicking 'Add Notification'](../../../../.gitbook/assets/image-\(291\).png)
 
 3. On the **Add Notifications** screen, enter a unique name for this notification in the **Name** field.
 
-![Entering a unique name](/_images/image-(292).png)
+![Entering a unique name](../../../../.gitbook/assets/image-\(292\).png)
 
 4. Follow the relevant process for the type of notification you are creating:
 

@@ -8,7 +8,7 @@ Available on tab: Intune Apps, Intune Updates
 
 When you select **Add Assignment**, a window opens that displays the Entra ID groups in your tenant. You can filter the list to quickly locate the groups you want to target and select one or more groups at the same time.
 
-![Add Assignment](/_images/image-(4024).png)
+![Add Assignment](../../../.gitbook/assets/image-\(4024\).png)
 
 After an assignment is added, it appears in the assignment list. Each column value such as Name, Mode, Notification, Delivery Optimization priority, Availability, Deadline, or Restart grace period can be selected to open the Assignment editor. The Assignment editor allows you to configure detailed behavior for that specific assignment.
 
@@ -18,7 +18,7 @@ The Add Assignment form is used to select Entra groups that will be targeted for
 
 The form displays a searchable list of Entra groups available in your tenant. You can select one or more groups and add them to the assignment in a single action.
 
-![Select Entra Groups](/_images/image-(4025).png)
+![Select Entra Groups](../../../.gitbook/assets/image-\(4025\).png)
 
 > \*\*Note\*\*
 >
@@ -89,7 +89,7 @@ The removed assignments are deleted from the Publisher configuration and will no
 
 By default, assignment settings such as Mode, Notification, and Restart grace period are configured when a new Win32 app is first published. During future syncs, the Publisher does not overwrite manual changes made directly in Intune for existing assignments.
 
-![Override Manual Assignment Changes](/_images/image-(72).png)
+![Override Manual Assignment Changes](<../../../.gitbook/assets/image-(72) (1).png>)
 
 Enabling **Override manual assignment changes made in Intune during the synchronization of the Publisher** instructs the Publisher to reapply the configured assignment settings on each sync.
 

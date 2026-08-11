@@ -9,7 +9,7 @@ The Cloud Portal is split into two key areas:
 1. **Navigation pane -** Allows you to navigate through the different nodes
 2. **Details pane -** Changes based on the selected node and available actions.
 
-![Cloud Portal](/_images/image-(4002).png)
+![Cloud Portal](../.gitbook/assets/image-\(4002\).png)
 
 The Navigation pane consists of the following nodes:
 

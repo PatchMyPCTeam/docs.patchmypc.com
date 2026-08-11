@@ -25,7 +25,7 @@ To enable Preview Features:
 1. Navigate to the **Company** node.
 2. Scroll down to the **Preview Features** section.
 
-![Scrolling down to the "Preview Features" section](/_images/image-(2951).png)
+![Scrolling down to the "Preview Features" section](../../../../.gitbook/assets/image-\(2951\).png)
 
 > \*\*Note\*\*
 >
@@ -35,12 +35,12 @@ To enable Preview Features:
 
 3.  Click to check the **Enable Preview features** checkbox.<br>
 
-    ![Checking the "Enable Preview features" checkbox.](/_images/image-(2953).png)
+    ![Checking the "Enable Preview features" checkbox.](../../../../.gitbook/assets/image-\(2953\).png)
 4.  Click **Save** to save your changes.<br>
 
-    ![Clicking "Save" to save your changes](/_images/image-(2954).png)
+    ![Clicking "Save" to save your changes](../../../../.gitbook/assets/image-\(2954\).png)
 
     \
     The **Success - Company information updated** notification is shown.
 
-!["Success - Company information updated" notification](/_images/image-(2955).png)
+!["Success - Company information updated" notification](../../../../.gitbook/assets/image-\(2955\).png)

@@ -19,13 +19,13 @@ To add Role Scope tag&#x73;**:**
 1. Add the [**Role Scope Tags** tool](../#adding-additional-tools).
 2. Click the **Role Scope Tags** tool.
 
-![Clicking the 'Role Scope Tags' tool](/_images/image-(3645).png)
+![Clicking the 'Role Scope Tags' tool](../../../../../.gitbook/assets/image-\(3645\).png)
 
 3. In the **Profile Name** field, either:
    1. Start typing the name of the relevant Scope Tag, then click the checkbox beside it to select it.
    2. Click the dropdown to see a list of existing Scope Tags and click the relevant checkbox(es) to select it.
 
-![Selecting the check boxes beside the relevant Scope Tags](/_images/image-(3646).png)
+![Selecting the check boxes beside the relevant Scope Tags](../../../../../.gitbook/assets/image-\(3646\).png)
 
 > \*\*Tip\*\*
 >
@@ -37,7 +37,7 @@ To add Role Scope tag&#x73;**:**
 
 The number of profiles selected is shown beside the **Role Scope Tags** tool.
 
-![The number of profiles selected is shown beside the 'Role Scope Tags' tool](/_images/image-(645).png)
+![The number of profiles selected is shown beside the 'Role Scope Tags' tool](../../../../../.gitbook/assets/image-\(645\).png)
 
 ## Next Steps
 

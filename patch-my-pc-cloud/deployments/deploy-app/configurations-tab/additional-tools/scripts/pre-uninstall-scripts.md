@@ -8,29 +8,29 @@ To add a Pre-Uninstall script:
 
 1. Click **Add** beside the **Pre-Uninstall** option.
 
-![Clicking "Add" beside the "Pre-Uninstall" option](/_images/image-(3309).png)
+![Clicking "Add" beside the "Pre-Uninstall" option](../../../../../../.gitbook/assets/image-\(3309\).png)
 
 The **Add Pre-Install Script** page is shown, highlighting that the default **Script Format** is **.ps1**, with built-in support for PSADT functions.
 
 2. To import an existing script, click **Import** then browse to the location containing the script and select it.
 
-![Clicking 'Import' to import an existing script](/_images/image-(44).png)
+![Clicking 'Import' to import an existing script](<../../../../../../.gitbook/assets/image-(44) (1).png>)
 
 The **Script Name** field is populated with the filename of the script selected, and the **Add Pre-Uninstall Script** page is populated with the imported script.
 
-!['Add Pre-Uninstall Script' page is populated with the imported script.](/_images/image-(45).png)
+!['Add Pre-Uninstall Script' page is populated with the imported script.](<../../../../../../.gitbook/assets/image-(45) (1).png>)
 
 3. To manually add a script, enter a unique name for the script in the **Script Name** field.
 
-![Entering a unique name for the script in the 'Script Name' field](/_images/image-(46).png)
+![Entering a unique name for the script in the 'Script Name' field](<../../../../../../.gitbook/assets/image-(46) (1).png>)
 
 4. Select the type of script from the **Script Format** dropdown.
 
-![Selecting the type of script from the 'Script Format' dropdown.](/_images/image-(47).png)
+![Selecting the type of script from the 'Script Format' dropdown.](<../../../../../../.gitbook/assets/image-(47) (1).png>)
 
 5. In the script editor, type your script.
 
-![Typing your script in the script editor](/_images/image-(48).png)
+![Typing your script in the script editor](<../../../../../../.gitbook/assets/image-(48) (1).png>)
 
 > \*\*Note\*\*
 >
@@ -46,7 +46,7 @@ The **Script Name** field is populated with the filename of the script selected,
 
 6. In the **Arguments** field, enter any arguments you want to provide to the script.
 
-![Entering any arguments you want to provide to the script by specifying them in the 'Arguments' field](/_images/image-(49).png)
+![Entering any arguments you want to provide to the script by specifying them in the 'Arguments' field](<../../../../../../.gitbook/assets/image-(49) (1).png>)
 
 > \*\*Tip\*\*
 >
@@ -62,21 +62,21 @@ The **Script Name** field is populated with the filename of the script selected,
    \
    If you do not check this checkbox, we will attempt to uninstall the app regardless of the exit code returned by the pre-install script.
 
-![Checking the 'Don't attempt software uninstall if the pre script returns an exit code other than 0 or 3010' checkbox](/_images/image-(50).png)
+![Checking the 'Don't attempt software uninstall if the pre script returns an exit code other than 0 or 3010' checkbox](<../../../../../../.gitbook/assets/image-(50) (1).png>)
 
 8. Check the **Run the pre-uninstall script before performing any auto-close or skip process checks** checkbox if you want to run the pre-uninstall script before the conflicting process notification is displayed (if relevant).\
    \
    If you do not check this checkbox, we will run the pre-uninstall script after the conflicting process notification.
 
-![Checking the 'Run the pre-uninstall script before performing any auto-close or skip process checks' checkbox](/_images/image-(51).png)
+![Checking the 'Run the pre-uninstall script before performing any auto-close or skip process checks' checkbox](<../../../../../../.gitbook/assets/image-(51) (1).png>)
 
 9. Click **Save** to save your script.
 
-![Clicking 'Save' to save your script](/_images/image-(52).png)
+![Clicking 'Save' to save your script](<../../../../../../.gitbook/assets/image-(52) (1).png>)
 
 The **Configurations** tab is re-displayed with the name of the configured script beside it.
 
-![](/_images/image-(797).png)
+![](<../../../../../../.gitbook/assets/image-(797) (1).png>)
 
 > \*\*Tip\*\*
 >

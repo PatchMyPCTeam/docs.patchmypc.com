@@ -29,7 +29,7 @@ The top row of the Secure Boot page is called _Statistics_ and displays the foll
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Secure Boot Enabled</td><td valign="top">Reported devices with Secure Boot enabled</td></tr><tr><td valign="top">Completed 2023 Certificate Rollout</td><td valign="top">Devices with secure boot enabled that have completed the 2023 certificate process</td></tr><tr><td valign="top">Devices blocked by pending reboot</td><td valign="top">Devices that require a reboot to proceed with the 2023 certificate rollout</td></tr><tr><td valign="top">Devices blocked by firmware</td><td valign="top">Devices that require firmware updates to complete the 2023 certificate rollout</td></tr></tbody></table>
 
-!['Hardware' page](/_images/image-(4357).png)
+!['Hardware' page](../../../.gitbook/assets/image-\(4357\).png)
 
 Clicking any statistic opens the device list modal, which contains the following additional information:
 
@@ -41,7 +41,7 @@ The _Table_ section of the Secure Boot page lists devices and their current Secu
 
 Use this table to view detailed 2023 Certficate rollout data across all devices with Secure Boot enabled.
 
-![Charts](/_images/image-(4361).png)
+![Charts](../../../.gitbook/assets/image-\(4361\).png)
 
 ## Donut charts
 
@@ -51,9 +51,9 @@ Clicking the action menu () for a chart allows you to switch between the followi
 
 <table><thead><tr><th width="153.77777099609375" valign="top">Chart</th><th valign="top">Shows a breakdown by…</th></tr></thead><tbody><tr><td valign="top">Rollout Progress</td><td valign="top">High-level 2023 certificate rollout progress across all devices where Secure Boot is enabled.</td></tr><tr><td valign="top">Rollout Progress (Detailed Statuses)</td><td valign="top">Detailed 2023 certificate rollout progress across all devices where Secure Boot is enabled.</td></tr></tbody></table>
 
-![Charts](/_images/image-(4358).png)
+![Charts](../../../.gitbook/assets/image-\(4358\).png)
 
-![Charts](/_images/image-(4359).png)
+![Charts](../../../.gitbook/assets/image-\(4359\).png)
 
 > \*\*Note\*\*
 >
@@ -65,7 +65,7 @@ Clicking a device in any Secure Boot list opens that device’s modal.
 
 The **Secure Boot** tab shows detailed Secure Boot status and 2023 certificate rollout details for the selected device.
 
-![Charts](/_images/image-(4360).png)
+![Charts](../../../.gitbook/assets/image-\(4360\).png)
 
 ***
 

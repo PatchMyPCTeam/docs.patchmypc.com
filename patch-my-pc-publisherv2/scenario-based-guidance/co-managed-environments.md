@@ -61,11 +61,11 @@ Scan source can be configured using Group Policy or Local Policy.
 2. Navigate to the following policy path:\
    Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Server Update Service > Specify source service for specific classes of Windows Updates.
 
-![Specify source service for specific classes of Windows Updates](/_images/image-(163).png)
+![Specify source service for specific classes of Windows Updates](../../.gitbook/assets/image-\(163\).png)
 
 3. Set the policy to **Enabled** and under Options, set all scan source classes to **Windows Update**.
 
-![Set Source to Windows Update](/_images/image-(165).png)
+![Set Source to Windows Update](../../.gitbook/assets/image-\(165\).png)
 
 6. Click **Apply** to save the policy.
 

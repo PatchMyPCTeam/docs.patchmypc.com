@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Email Notification Configuration** section of the **Email Alerts** tab in Patch My PC (PMPC) Publisher allows you to configure Publisher to send notifications when specific publishing events occur. These alerts provide timely visibility into publishing activity, including successes, warnings, and failures, without requiring administrators to actively monitor logs.
 
-![Email Alerts](/_images/image-(4237).png)
+![Email Alerts](../../../../../.gitbook/assets/image-\(4237\).png)
 
 Before email alerts can be sent, email settings must be configured. This includes specifying the SMTP server and port or configuring OAuth application details, along with the required authentication settings, sender address, and recipient addresses.
 

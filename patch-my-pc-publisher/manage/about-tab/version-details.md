@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Version Details** section of the **About** tab of Patch My PC (PMPC) Publisher key version information for Publisher.
 
-!['Version Details' section](/_images/image-(4832).png)
+!['Version Details' section](../../../.gitbook/assets/image-\(4832\).png)
 
 This section consists of the following areas:
 

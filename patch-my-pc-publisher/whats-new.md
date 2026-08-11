@@ -8,7 +8,7 @@ Version 3.0 of the Patch My PC (PMPC) Publisher includes a new user interface, w
 >
 > This article was created on a pre-release version of Publisher so the screenshots are for information only and may not accurately reflect the released product.
 
-![New Patch My PC Publisher user interface](/_images/image-(9).png)
+![New Patch My PC Publisher user interface](<../.gitbook/assets/image-(9) (1).png>)
 
 Other new features and improvements include:
 
@@ -20,7 +20,7 @@ See the relevant section below for more details.
 
 Clicking the **Theme** control at the bottom of the screen lets you switch between modes (such as light and dark) to find the one that suits you best.
 
-![‘Theme' control to switch modes](/_images/image-(10).png)
+![‘Theme' control to switch modes](<../.gitbook/assets/image-(10) (1).png>)
 
 ## New Stats View
 
@@ -30,13 +30,13 @@ The green stats are installers and the others are groups of our right-click opti
 
 Clicking any of these stats filters the catalog to display only items that match the selected stats.
 
-![Stats View](/_images/image-(4388).png)
+![Stats View](../.gitbook/assets/image-\(4388\).png)
 
 ## New Advanced Filtering
 
 When you access an app view, you can now use advanced _Filtering_ to make it easier to search for apps and their settings.
 
-![Advanced filtering](/_images/image-(12).png)
+![Advanced filtering](../.gitbook/assets/image-\(12\).png)
 
 Available filters include:
 
@@ -48,19 +48,19 @@ Available filters include:
 
 The new grid view not only lets you choose how you view the apps, but also shows useful app-specific information on each app’s card (including optional grouping to group all variants of an app into a single card).
 
-![Grid view](/_images/image-(13).png)
+![Grid view](<../.gitbook/assets/image-(13) (1).png>)
 
 ## New Copy Products
 
 Now, when you click **Copy Products**, you are prompted which tab you want to copy the selection to. Previously, the copy destination depended on which tab the copy form control was clicked from.
 
-![New Copy Products](/_images/image-(4391).png)
+![New Copy Products](../.gitbook/assets/image-\(4391\).png)
 
 ## New Text Filter
 
 This text box filters the grid or product tree based on the text entered.
 
-![New Text Filter](/_images/image-(4392).png)
+![New Text Filter](../.gitbook/assets/image-\(4392\).png)
 
 ## Integrated Popups
 
@@ -70,11 +70,11 @@ In the majority of cases, the functionality has not changed; the change is purel
 
 For example, in the current release of Publisher, **Intune Options** are shown as follows.
 
-!['Intune Options' in the current Publisher release](/_images/image-(15).png)
+!['Intune Options' in the current Publisher release](<../.gitbook/assets/image-(15) (1).png>)
 
 This is how **Intune Options** appears in V3 of the Publisher.
 
-![Intune options in Publisher v3](/_images/image-(16).png)
+![Intune options in Publisher v3](<../.gitbook/assets/image-(16) (1).png>)
 
 > \*\*Note\*\*
 >
@@ -84,32 +84,32 @@ This is how **Intune Options** appears in V3 of the Publisher.
 
 In Publisher V3, our **Catalog Products** and **Custom Products** have been split out into separate tabs, even in the tree view. This makes it easier to find and work with the product relevant to your environment.
 
-![Separate Product Tabs](/_images/image-(17).png)
+![Separate Product Tabs](<../.gitbook/assets/image-(17) (1).png>)
 
 ## Separate Alerts Pages
 
 Alerts have now been split into two separate pages to make them easier to work with and to eliminate the scroll bar.
 
-![Separate 'Alerts' Pages](/_images/image-(18).png)
+![Separate 'Alerts' Pages](<../.gitbook/assets/image-(18) (1).png>)
 
 ## Show Dependencies
 
 You can now view (via a new icon) any dependencies the app may have, based on our metadata for each supported product.
 
-![Show Dependencies](/_images/image-(20).png)
+![Show Dependencies](<../.gitbook/assets/image-(20) (1).png>)
 
 This is also available in the Tree View:
 
-!['Show Dependencies' in Tree View](/_images/image-(4390).png)
+!['Show Dependencies' in Tree View](../.gitbook/assets/image-\(4390\).png)
 
 ## Service Status
 
 **Sync Progress** has now been moved into the new **Service Status** tab, which will also include several useful statistics for the Publisher.
 
-![Service Status](/_images/image-(21).png)
+![Service Status](<../.gitbook/assets/image-(21) (1).png>)
 
 ## Feedback Function
 
 The new function allows you to provide feedback to us on your experience of using the Publisher. Optionally, you can also include screenshots and logs which will help us resolve any issues you may be having faster.
 
-![Feedback function](/_images/image-(4385).png)
+![Feedback function](../.gitbook/assets/image-\(4385\).png)

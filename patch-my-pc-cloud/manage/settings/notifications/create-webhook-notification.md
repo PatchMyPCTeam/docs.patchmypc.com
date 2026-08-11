@@ -17,4 +17,4 @@ To create a webhook notification:
    1. [Microsoft Teams](create-teams-webhook-notification.md)
    2. [Slack](create-slack-webhook-notification.md)
 
-![Selecting the type of webhook you want to create](/_images/image-(293).png)
+![Selecting the type of webhook you want to create](../../../../.gitbook/assets/image-\(293\).png)

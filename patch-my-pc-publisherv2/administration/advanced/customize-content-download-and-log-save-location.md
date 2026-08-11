@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 By default, the Publisher downloads content and writes logs to locations derived from the system and installation context.
 
-![Customize Content Download and Log Save Location](/_images/image-(3946).png)
+![Customize Content Download and Log Save Location](../../../.gitbook/assets/image-\(3946\).png)
 
 Because the Publisher runs under the SYSTEM account, default paths may not always align with organizational requirements for disk usage, monitoring, or security tooling.
 
@@ -29,7 +29,7 @@ C:\Windows\Temp
 
 This screenshot shows the Publisher using `C:\Windows\Temp` as a temporary scratch location while preparing packages during a publishing sync.
 
-![Temporary Downloads Folder](/_images/image-(3947).png)
+![Temporary Downloads Folder](../../../.gitbook/assets/image-\(3947\).png)
 
 > \*\*Note\*\*
 >

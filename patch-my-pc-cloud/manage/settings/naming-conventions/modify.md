@@ -17,15 +17,15 @@ To modify Naming Conventions:
 1. Navigate to **Settings | Naming**.
 2.  Click on the relevant tab for the type of apps whose naming convention you want to modify.<br>
 
-    ![Clicking the relevant tab for the type of app to configure](/_images/image-(1364).png)
+    ![Clicking the relevant tab for the type of app to configure](../../../../.gitbook/assets/image-\(1364\).png)
 3. Configure the options as required.
 4.  Click **Save** to save your changes.<br>
 
-    ![Clicking "Save" to save your changes](/_images/image-(1365).png)
+    ![Clicking "Save" to save your changes](../../../../.gitbook/assets/image-\(1365\).png)
 5.  Click **Submit** to save your changes on the **Are you sure** popup.<br>
 
-    ![Clicking "Submit" on the "Are you sure?" popup](/_images/image-(1366).png)
+    ![Clicking "Submit" on the "Are you sure?" popup](../../../../.gitbook/assets/image-\(1366\).png)
 
     The **Success – Naming Conventions saved** notification is displayed.<br>
 
-    !["Success – Naming Conventions saved" notification](/_images/image-(2479).png)
+    !["Success – Naming Conventions saved" notification](../../../../.gitbook/assets/image-\(2479\).png)

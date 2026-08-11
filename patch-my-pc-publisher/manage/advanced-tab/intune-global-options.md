@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Intune Global Options** section of Patch My PC (PMPC) Publisher controls how the Publisher interacts with Microsoft Intune at a global level. They are primarily used to support advanced scenarios such as content extraction from Intune packages and tuning Microsoft Graph query behavior for large tenants.
 
-![Intune Global Options](/_images/image-(161).png)
+![Intune Global Options](../../../.gitbook/assets/image-\(161\).png)
 
 ## Store encryption information locally to allow extraction of Win32 .intunewin files
 
@@ -38,12 +38,12 @@ To extract the content for eligible Win32 apps:
 3. Right click an application or update.
 4. Select **Extract Package**.
 
-![Extract Package](/_images/image-(3954).png)
+![Extract Package](../../../.gitbook/assets/image-\(3954\).png)
 
 5. Specify an output path or browse to a folder.
 6. Click Extract.
 
-![Extraction Complete](/_images/image-(3955).png)
+![Extraction Complete](../../../.gitbook/assets/image-\(3955\).png)
 
 After extraction completes, File Explorer opens to the selected directory and displays the extracted content.
 

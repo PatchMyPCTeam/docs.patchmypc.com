@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 Why do I see a yellow triangle beside the Intune connection for my Patch My PC (PMPC) Cloud Company in the **Settings | Connections** page in the Cloud Portal?
 
-![Yellow triangle beside the Intune connection for my Patch My PC (PMPC) Cloud Company in the Cloud Portal](/_images/image-(4513).png)
+![Yellow triangle beside the Intune connection for my Patch My PC (PMPC) Cloud Company in the Cloud Portal](../../../.gitbook/assets/image-\(4513\).png)
 
 ### CAUSE
 

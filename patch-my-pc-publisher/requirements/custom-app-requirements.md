@@ -56,6 +56,6 @@ Once connected, Publisher can securely communicate with PMPC Cloud for supported
 
 If the account used to sign in is associated with multiple PMPC Cloud companies, a selection window will appear.
 
-![Select a Cloud Company](/_images/image-(4140).png)
+![Select a Cloud Company](../../.gitbook/assets/image-\(4140\).png)
 
 Select the appropriate company from the list and click **OK** to complete the connection process.

@@ -32,14 +32,14 @@ To edit an existing deployment from the **Deployments** node:
 1. Navigate to the **Deployments** node.
 2.  Click the relevant deployment you want to edit.<br>
 
-    ![Clicking the relevant deployment you want to edit.](/_images/image-(2589).png)
+    ![Clicking the relevant deployment you want to edit.](../../../.gitbook/assets/image-\(2589\).png)
 3.  On the deployment's property page click **Edit**.
 
-    ![Clicking "Edit" on the deployment's property page.](/_images/image-(2712).png)
+    ![Clicking "Edit" on the deployment's property page.](../../../.gitbook/assets/image-\(2712\).png)
 
     The Deployment Wizard starts.<br>
 
-    ![Deployment Wizard starting.](/_images/image-(2591).png)
+    ![Deployment Wizard starting.](../../../.gitbook/assets/image-\(2591\).png)
 4. Follow the [Deploy an App](../deploy-app/) process.
 
 > \*\*Note\*\*
@@ -58,7 +58,7 @@ To edit a deployment from the App Catalog:
 
 1.  Navigate to the **App Catalog** and click on the app whose deployment you wish to edit.<br>
 
-    ![Navigating to the App Catalog and locating the app whose deployment you wish to edit.](/_images/image-(2586).png)
+    ![Navigating to the App Catalog and locating the app whose deployment you wish to edit.](../../../.gitbook/assets/image-\(2586\).png)
 
 > \*\*Tip\*\*
 >
@@ -66,7 +66,7 @@ To edit a deployment from the App Catalog:
 
 2.  Click **Edit Deployment** on the deployment's property page.<br>
 
-    ![Clicking "Edit Deployment" on the deployment's property page.](/_images/image-(2713).png)
+    ![Clicking "Edit Deployment" on the deployment's property page.](../../../.gitbook/assets/image-\(2713\).png)
 
 The behavior of the **Edit Deployment** button depends on whether there is at least one existing, successful deployment:
 
@@ -79,7 +79,7 @@ The behavior of the **Edit Deployment** button depends on whether there is at le
 
 The Deployment Wizard starts.
 
-![Deployment Wizard starting.](/_images/image-(2591).png)
+![Deployment Wizard starting.](../../../.gitbook/assets/image-\(2591\).png)
 
 3. Follow the [Deploy an App](../deploy-app/) process.
 

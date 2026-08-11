@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Connect Publisher to Patch My PC Cloud** section of the **Cloud** tab in Patch My PC (PMPC) Publisher is used to connect Publisher to your PMPC Cloud Company.
 
-!['Connect Publisher to Patch My PC Cloud' section](/_images/image-(4857).png)
+!['Connect Publisher to Patch My PC Cloud' section](../../../.gitbook/assets/image-\(4857\).png)
 
 > \*\*Important\*\*
 >
@@ -12,7 +12,7 @@ The **Connect Publisher to Patch My PC Cloud** section of the **Cloud** tab in P
 
 Once Publisher has been successfully connected to your PMPC Cloud Company, its connection will be shown under **Settings | Connections** in the PMPC Cloud Portal, with the connection **Type** shown as **Publisher**.
 
-![Successful Publisher connection under 'Settings | Connections' in the Cloud Portal](/_images/image-(4855).png)
+![Successful Publisher connection under 'Settings | Connections' in the Cloud Portal](../../../.gitbook/assets/image-\(4855\).png)
 
 ## Disconnect button
 
@@ -26,4 +26,4 @@ Clicking the **Test Connection** button verifies connectivity and authentication
 
 The results of the test are shown in the **Cloud Connection Test** dialog box.
 
-!['Cloud Connection Test' dialog](/_images/image-(4856).png)
+!['Cloud Connection Test' dialog](../../../.gitbook/assets/image-\(4856\).png)

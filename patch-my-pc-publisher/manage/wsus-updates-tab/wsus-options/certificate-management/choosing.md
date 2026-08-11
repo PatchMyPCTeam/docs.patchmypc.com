@@ -18,7 +18,7 @@ The same certificate is also used to sign ConfigMgr detection scripts, even in a
 
 Ultimately, whichever method you choose, the certificate residing in the WSUS certificate store is the certificate Publisher will use for signing during ConfigMgr and WSUS publishing operations.
 
-![Code-Signing Certificate in WSUS Store](/_images/image-(3912).png)
+![Code-Signing Certificate in WSUS Store](../../../../../.gitbook/assets/image-\(3912\).png)
 
 > \*\*Note\*\*
 >

@@ -13,11 +13,11 @@ When you select the **Manage Assignments** right-click option, the **Manage&#x20
 
 For example, right-clicking the **Google Chrome (MSI-x64)** Intune App opens the **Manage Application Assignments for Google Chrome (MSI-x64)** dialog.
 
-!['Manage Application Assignments for Google Chrome (MSI-x64)' dialog](/_images/image-(4807).png)
+!['Manage Application Assignments for Google Chrome (MSI-x64)' dialog](../../../../.gitbook/assets/image-\(4807\).png)
 
 Whereas right-clicking **Google, Inc.** in the **Intune Updates** node opens the **Manage Update Assignments for Google, Inc.** dialog.
 
-!['Manage Update Assignments for Google, Inc.' dialog](/_images/image-(4808).png)
+!['Manage Update Assignments for Google, Inc.' dialog](../../../../.gitbook/assets/image-\(4808\).png)
 
 From the **Manage&#x20;**_**\<intune\_type>**_**&#x20;Assignments for&#x20;**_**\<scope>**_ dialog you can:
 
@@ -29,7 +29,7 @@ From the **Manage&#x20;**_**\<intune\_type>**_**&#x20;Assignments for&#x20;**_**
 
 When you click **Add Assignment**, the **Select Entra ID Groups** dialog appears, displaying all of the Entra ID groups in your Intune tenant.
 
-!['Select Entra ID Groups' dialog](/_images/image-(4809).png)
+!['Select Entra ID Groups' dialog](../../../../.gitbook/assets/image-\(4809\).png)
 
 Using the capabilities on this dialog, you can use the:
 
@@ -52,7 +52,7 @@ The **Selected&#x20;**_**x**_**&#x20;groups** counter shows the number of groups
 
 Once you have selected the required groups and clicked **OK** on the **Select Entra ID Groups** dialog, the assignment is added to the **Manage Assignments** dialog.
 
-![Added assignment](/_images/image-(4810).png)
+![Added assignment](../../../../.gitbook/assets/image-\(4810\).png)
 
 At this point, you can either click **OK** to close the **Manage Assignments** dialog or modify the settings for a field (where supported) by either clicking the:
 
@@ -63,7 +63,7 @@ At this point, you can either click **OK** to close the **Manage Assignments** d
 >
 > See \[Assignment Options]\(assignment-options.md) for more details on the available options.
 
-![Edit dialog](/_images/image-(4812).png)
+![Edit dialog](../../../../.gitbook/assets/image-\(4812\).png)
 
 ### Steps to Add an Assignment
 
@@ -124,7 +124,7 @@ By default, assignment settings such as Mode, Notification, and Restart grace pe
 
 However, enabling the **Override manual assignment changes made in Intune during the synchronization of the Publisher** option instructs Publisher to reapply the configured assignment settings on each sync.
 
-!['Override manual assignment changes made in Intune during the synchronization of the Publisher' option](/_images/image-(4811).png)
+!['Override manual assignment changes made in Intune during the synchronization of the Publisher' option](../../../../.gitbook/assets/image-\(4811\).png)
 
 When the **Override manual assignment changes made in Intune during the synchronization of the Publisher** option is enabled:
 

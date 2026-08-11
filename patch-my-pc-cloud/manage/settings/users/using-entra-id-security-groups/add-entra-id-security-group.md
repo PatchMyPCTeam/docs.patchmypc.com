@@ -12,15 +12,15 @@ To add an Entra ID Security Group to Patch My PC (PMPC) Cloud:
 
 2. In the PMPC Cloud portal, navigate to **Settings | Users**
 
-![Navigating to 'Settings | Users'](/_images/image-(3687).png)
+![Navigating to 'Settings | Users'](../../../../../.gitbook/assets/image-\(3687\).png)
 
 3. Click **Add Group**
 
-![Clicking 'Add Group'](/_images/image-(3688).png)
+![Clicking 'Add Group'](../../../../../.gitbook/assets/image-\(3688\).png)
 
 4. On the **Available Groups** screen, click the checkbox beside the relevant Entra ID Security Group you want to add, then select the PMPC Cloud role you want to assign to this group from the **Role** dropdown.
 
-![Selecting the relevant Entra ID group to add and which role it will be assigned in PMPC Cloud](/_images/image-(3689).png)
+![Selecting the relevant Entra ID group to add and which role it will be assigned in PMPC Cloud](../../../../../.gitbook/assets/image-\(3689\).png)
 
 > \*\*Note\*\*
 >
@@ -28,7 +28,7 @@ To add an Entra ID Security Group to Patch My PC (PMPC) Cloud:
 
 The selected Entra ID Security Group and the role you’ve assigned it appear in your portal
 
-![The selected Entra ID Security Group and the role you've assigned it appear in your portal](/_images/image-(3690).png)
+![The selected Entra ID Security Group and the role you've assigned it appear in your portal](../../../../../.gitbook/assets/image-\(3690\).png)
 
 5. Repeat Step 4 to add any additional groups/roles.
 
@@ -38,11 +38,11 @@ The selected Entra ID Security Group and the role you’ve assigned it appear in
 
 6. Click **Add**
 
-![Clicking 'Add'](/_images/image-(3692).png)
+![Clicking 'Add'](../../../../../.gitbook/assets/image-\(3692\).png)
 
 The portal auto-refreshes, showing that the selected groups have been added, and the **Success – Group created** notification is shown.
 
-![Portal auto-refreshes, showing the selected groups have been added and the 'Success – Group created' notification is shown](/_images/image-(3695).png)
+![Portal auto-refreshes, showing the selected groups have been added and the 'Success – Group created' notification is shown](../../../../../.gitbook/assets/image-\(3695\).png)
 
 When you add an Entra ID Security Group, the **Group role with id <**_**entra\_id\_security\_group\_id**_**> was created with role <**_**user\_role**_**>** event is written to the **Events** node.
 

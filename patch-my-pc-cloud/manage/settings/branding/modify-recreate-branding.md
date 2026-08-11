@@ -12,7 +12,7 @@ To modify a branding app:
 
 1. Navigate to **Settings | Branding**
 
-![Navigating to ‘Settings | Branding'](/_images/image-(536).png)
+![Navigating to ‘Settings | Branding'](<../../../../.gitbook/assets/image-(536) (1).png>)
 
 2. Click the ellipsis (`⋮`) button beside the relevant branding app and select the action you want to perform:
    1. [Edit](modify-recreate-branding.md#edit-branding)
@@ -38,19 +38,19 @@ If you want to reset the logo used by a branding app:
 
 1. Click **Edit** on the ellipsis (`⋮`) menu.
 
-![Clicking the ellipsis (⋮) button beside the relevant branding app and selecting the action you want to perform:](/_images/image-(3743).png)
+![Clicking the ellipsis (⋮) button beside the relevant branding app and selecting the action you want to perform:](../../../../.gitbook/assets/image-\(3743\).png)
 
 2. In the **Company Logo** area, click **Use Default**.
 
-![Clicking 'Use Default' in the 'Company Logo' area](/_images/image-(538).png)
+![Clicking 'Use Default' in the 'Company Logo' area](<../../../../.gitbook/assets/image-(538) (1).png>)
 
 The **Branding** page resets just the logo to the default for this branding app.
 
-![Branding logo reset](/_images/image-(539).png)
+![Branding logo reset](<../../../../.gitbook/assets/image-(539) (1).png>)
 
 3. If you want to switch branding types, select the relevant option under **Branding Types**
 
-![Select the relevant option under 'Branding Types' if you want to change the type](/_images/image-(540).png)
+![Select the relevant option under 'Branding Types' if you want to change the type](<../../../../.gitbook/assets/image-(540) (1).png>)
 
 > \*\*Important\*\*
 >
@@ -63,15 +63,15 @@ The **Branding** page resets just the logo to the default for this branding app.
 4. Make any other required changes.
 5. Click **Save** to save your changes to Intune, which will deploy the modified version to all of the resources this branding app is assigned to.
 
-![Clicking 'Save' to save your changes](/_images/image-(542).png)
+![Clicking 'Save' to save your changes](<../../../../.gitbook/assets/image-(542) (1).png>)
 
 The **Success - Branding updated** notification is shown.
 
-!['Success - Branding updated' notification](/_images/image-(3744).png)
+!['Success - Branding updated' notification](../../../../.gitbook/assets/image-\(3744\).png)
 
 Once your branding app has been updated with the default PMPC logo, the **Status** and **Last Updated** fields will be updated to show when this branding app was last updated.
 
-!['Status' and 'Last Updated' fields updated to show when this branding app was last updated](/_images/image-(3745).png)
+!['Status' and 'Last Updated' fields updated to show when this branding app was last updated](../../../../.gitbook/assets/image-\(3745\).png)
 
 > \*\*Tip\*\*
 >
@@ -95,19 +95,19 @@ To recreate branding:
 
 1. Click **Recreate** on the ellipsis (`⋮`) menu.
 
-![Clicking 'Recreate' on the ellipsis (⋮) menu](/_images/image-(3746).png)
+![Clicking 'Recreate' on the ellipsis (⋮) menu](../../../../.gitbook/assets/image-\(3746\).png)
 
 2. On the **Are you sure you want to recreate <**_**branding\_app\_name**_**>** dialog box click **Yes**.
 
-![Clicking "Yes"](/_images/image-(3205).png)
+![Clicking "Yes"](../../../../.gitbook/assets/image-\(3205\).png)
 
 The **Success - Recreating the branding <**_**branding\_app\_name**_**>** notification is shown.
 
-![](/_images/image-(3747).png)
+![](../../../../.gitbook/assets/image-\(3747\).png)
 
 Once the branding app has been recreated, the **Status** and **Last Updated** fields update to show when this branding app was last modified.
 
-!['Status' and 'Last updated' fields updated to show when this branding app was last modified](/_images/image-(3748).png)
+!['Status' and 'Last updated' fields updated to show when this branding app was last modified](../../../../.gitbook/assets/image-\(3748\).png)
 
 > \*\*Tip\*\*
 >

@@ -13,7 +13,7 @@ Patch My PC (PMPC) Cloud deployments include the following standard tools :
 * [Available Uninstall](available-uninstall.md)
 * [Requirements](requirement-rules.md)
 
-![Clicking the relevant section heading](/_images/image-(633).png)
+![Clicking the relevant section heading](../../../../../.gitbook/assets/image-\(633\).png)
 
 You can configure settings by either scrolling down the page until you find the relevant section or by clicking the relevant tool heading.
 
@@ -33,4 +33,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png)
+![Clicking 'Next'](../../../../../.gitbook/assets/image-\(662\).png)

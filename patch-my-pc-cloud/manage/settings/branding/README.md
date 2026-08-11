@@ -30,7 +30,7 @@ All branding-related tasks are performed from the **Branding** node of the porta
 1. Sign in to the PMPC Portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings | Branding**.
 
-![Navigating to ‘Settings | Branding'](/_images/image-(3718).png)
+![Navigating to ‘Settings | Branding'](../../../../.gitbook/assets/image-\(3718\).png)
 
 The **Branding** screen is then displayed, allowing you to:
 
@@ -40,4 +40,4 @@ The **Branding** screen is then displayed, allowing you to:
 * [Delete Branding](delete-branding.md)
 * [Uninstall Branding](uninstall-branding.md)
 
-![‘Branding' screen](/_images/image-(3719).png)
+![‘Branding' screen](../../../../.gitbook/assets/image-\(3719\).png)

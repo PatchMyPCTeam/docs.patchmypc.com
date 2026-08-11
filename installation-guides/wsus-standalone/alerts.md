@@ -14,7 +14,7 @@ To keep you informed when new updates have been published, we provide three diff
 * [Teams Webhook](alerts.md#teams-webhook)
 * [Slack Webhook](alerts.md#slack-webhook)
 
-![](/_images/image-(3706).png)
+![](../../.gitbook/assets/image-\(3706\).png)
 
 ## Email Report
 
@@ -26,7 +26,7 @@ To keep you informed when new updates have been published, we provide three diff
 
 You can configure the Publisher to send email notifications whenever new updates or applications are published. Follow the steps below to set up SMTP correctly.
 
-![](/_images/image-(3705).png)
+![](../../.gitbook/assets/image-\(3705\).png)
 
 **1. Sender** (Required)\
 Enter the email address you want the alerts to come _from_. e.g. `alerts@yourdomain.com`
@@ -65,14 +65,14 @@ When choosing an authentication method, select the option that aligns with how y
 **7. Change Subject** (Optional)\
 The default email subject is `Report from Patch My PC Publishing Service`. If you wish to change this, click **Change subject**, enter your preferred **Subject of the email**, and click **Ok**.
 
-![](/_images/image-(3708).png)
+![](../../.gitbook/assets/image-\(3708\).png)
 
 Once the settings are complete, you can click the **Test button** to see if the recipient received the test email. If you have any issues sending emails, it’s likely an SMTP configuration error, and you can review our article [**Troubleshooting SMTP Email Report Sending When Using Patch My PC**](https://patchmypc.com/troubleshooting-smtp-email-sending).
 
 **8. Add text to body** (Optional)\
 Enter any additional text you want included at the top of the email report, such as notes or context for your recipients.
 
-![](/_images/image-(3709).png)
+![](../../.gitbook/assets/image-\(3709\).png)
 
 **9.** Click **Apply** to save your changes.
 
@@ -90,7 +90,7 @@ SMTP email troubleshooting
 
 The Microsoft Teams webhook is a simple way to get a notification for each application as it is published in yourenvironment. Simply create a new workflow in the Teams channel where you wish to receive notifications, and use that Webhook URL when configuring webhook alerts in the Publisher.
 
-![](/_images/image-(3711).png)
+![](../../.gitbook/assets/image-\(3711\).png)
 
 Need help creating the webhook in teams? No problem, check out our complete guide to creating a Teams webhook.
 
@@ -100,7 +100,7 @@ Need help creating the webhook in teams? No problem, check out our complete guid
 
 The Slack webhook is another simple way to get a notification for each application as it is published in your environment. Simply create a new webhook in Slack and use that Webhook URL when configuring webhook alerts in the Publisher.
 
-![](/_images/image-(1809).png)
+![](../../.gitbook/assets/image-\(1809\).png)
 
 Need help creating the webhook for Slack? No problem, check out our complete guide to creating a Slack webhook.
 

@@ -12,19 +12,19 @@ To delete an MSP App Set in Patch My PC (PMPC) Cloud:
 
 1.  Navigate to **App Sets**<br>
 
-    ![Navigating to "App Sets"](/_images/image-(3261).png)
+    ![Navigating to "App Sets"](../../../.gitbook/assets/image-\(3261\).png)
 2.  Click the ellipsis (**⋮**) beside the App Set you want to delete and select **Delete**\
     <br>
 
-    ![Clicking the ellipsis beside the App Set you want to delete and selecting "Delete"](/_images/image-(3262).png)
+    ![Clicking the ellipsis beside the App Set you want to delete and selecting "Delete"](../../../.gitbook/assets/image-\(3262\).png)
 3.  On the **Are you sure you want to delete <**_**app\_set\_name>**_ dialog box, click **Yes**<br>
 
-    ![Clicking "Yes" on the "Are you sure you want to delete" dialog box](/_images/image-(3263).png)
+    ![Clicking "Yes" on the "Are you sure you want to delete" dialog box](../../../.gitbook/assets/image-\(3263\).png)
 
     \
     The **Success – Deletion the App Set <**_**appset\_name**_**> has begun** notification is shown and the App Set has a **Status** of **Deleting** whilst the App Set and it’s associated deployments are removed from the relevant companies.
 
-![Notification the App Set is being deleted](/_images/image-(3460).png)
+![Notification the App Set is being deleted](../../../.gitbook/assets/image-\(3460\).png)
 
 > \*\*Note\*\*
 >
@@ -32,4 +32,4 @@ To delete an MSP App Set in Patch My PC (PMPC) Cloud:
 
 Once the App Set has been successfully deleted (which can take an extended period of time depending on its contents and where it’s been deployed), the App Set will disappear from the **App Set** page.
 
-!["App Set" page showing the App Set has been deleted](/_images/image-(3265).png)
+!["App Set" page showing the App Set has been deleted](../../../.gitbook/assets/image-\(3265\).png)

@@ -6,7 +6,7 @@ description: Software Applications provided by Configuration Manager
 
 _Applies to: Patch My PC Advanced Insights_
 
-![](/_images/image-(2242).png)
+![](../../../.gitbook/assets/image-\(2242\).png)
 
 This dashboard shows details for all Applications defined in the Configuration Manager console.
 
@@ -18,24 +18,24 @@ Click through to any individual application shows additional detail, including i
 
 ### General Information
 
-![](/_images/image-(2244).png)
+![](../../../.gitbook/assets/image-\(2244\).png)
 
 The General Information tab lists the metadata for the application and details of the distribution point status for the application.
 
 ### Deployment Types
 
-![](/_images/image-(2245).png)
+![](../../../.gitbook/assets/image-\(2245\).png)
 
 The Deployment Types tab lists all deployment types defined for the application, the relevant technology and content size with the source path.
 
 ### Deployments
 
-![](/_images/image-(2246).png)
+![](../../../.gitbook/assets/image-\(2246\).png)
 
 The deployments tab lists each deployment and its related compliance.
 
 ### Compliance
 
-![](/_images/image-(2247).png)
+![](../../../.gitbook/assets/image-\(2247\).png)
 
 The compliance tab lists each targeted client and its overall application deployment compliance. Clicking any individual machine will take you to the device view focused on the software - applications tab.

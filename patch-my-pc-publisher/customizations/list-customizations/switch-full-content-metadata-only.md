@@ -6,7 +6,7 @@ _&#x41;vailable on tab: WSUS Updates_
 
 The [Switch to Full Content](switch-full-content-metadata-only.md#switch-to-full-content) and [Switch to Metadata Only](switch-full-content-metadata-only.md#switch-to-metadata-only) options in Patch My PC (PMPC) Publisher can be used to configure how you want software updates to be published to Microsoft WSUS.
 
-!['Switch to Full Content' and 'Switch to Metadata Only' options](/_images/image-(4732).png)
+!['Switch to Full Content' and 'Switch to Metadata Only' options](../../../.gitbook/assets/image-\(4732\).png)
 
 ## Switch to Full Content
 
@@ -20,7 +20,7 @@ Selecting the **Switch to Metadata Only** option publishes the update metadata t
 
 When the **Switch to Metadata Only** option is selected, **(Metadata)** is appended to the end of the product name.
 
-!['(Metadata)' appended to the end of the product name showing 'Switch to Metadata Only' option is selected for](/_images/image-(4791).png)
+!['(Metadata)' appended to the end of the product name showing 'Switch to Metadata Only' option is selected for](../../../.gitbook/assets/image-\(4791\).png)
 
 Devices can scan against the metadata, which means update compliance and applicability information is still visible in ConfigMgr. However, because the update binaries are not published, WSUS cannot deploy the update to devices.
 

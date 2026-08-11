@@ -16,7 +16,7 @@ The **Predefined Scripts** right-click option automatically downloads and bundle
 
 **Recommended Scripts** are optional. Although they are included with the application or update, they can be disabled if you prefer not to use them.
 
-![Recommended Scripts](/_images/image-(4418).png)
+![Recommended Scripts](../../../.gitbook/assets/image-\(4418\).png)
 
 ### Review the Recommended Script
 

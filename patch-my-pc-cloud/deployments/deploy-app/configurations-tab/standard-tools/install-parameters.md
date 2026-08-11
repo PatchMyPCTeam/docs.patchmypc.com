@@ -15,4 +15,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png)
+![Clicking 'Next'](../../../../../.gitbook/assets/image-\(662\).png)

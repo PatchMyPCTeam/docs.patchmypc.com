@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Cloud** tab connects the Publisher to Patch My PC Cloud. This connection enables Cloud based features such as Custom Apps and application migration from Configuration Manager to Intune.
 
-![Cloud Settings](/_images/image-(174).png)
+![Cloud Settings](../../.gitbook/assets/image-\(174\).png)
 
 > \*\*Important\*\*
 >
@@ -20,7 +20,7 @@ The Cloud connection links the on premises Publisher to Patch My PC Cloud. Once 
 
 The Connection Name configured in the Publisher is displayed in Patch My PC Cloud and is used to identify the associated Publisher instance. Using a descriptive name is recommended.
 
-![Connection Name](/_images/image-(169).png)
+![Connection Name](../../.gitbook/assets/image-\(169\).png)
 
 ### Connect
 
@@ -38,7 +38,7 @@ See [**Add a Connection**](../../patch-my-pc-cloud/manage/settings/connections/a
 
 If the account used to sign in is associated with multiple Patch My PC Cloud companies, a selection window will appear.
 
-![Select a Cloud Company](/_images/image-(4140).png)
+![Select a Cloud Company](../../.gitbook/assets/image-\(4140\).png)
 
 Select the appropriate company from the list and click OK to complete the connection process.
 
@@ -63,7 +63,7 @@ See [Setting up Migration](../../patch-my-pc-cloud/migration/setting-migration.m
 
 When an app migration inventory runs, the Publisher saves the inventoried ConfigMgr results in the Publishing Service installation folder under the **Database** subfolder.
 
-![Migration Database](/_images/image-(168).png)
+![Migration Database](../../.gitbook/assets/image-\(168\).png)
 
 This folder contains two files. **AppMigration.db** stores the app migration inventory data and processing state. **existingApps.json** contains a JSON copy of the discovery data.
 

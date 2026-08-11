@@ -15,12 +15,12 @@ To add an app to the **External** catalog in Patch My PC (PMPC) Cloud:
 1. From the PMPC Cloud Portal, navigate to **App Catalog | External**
 2.  On the External catalog page, click **Add App**<br>
 
-    ![Clicking ‘Add App'](/_images/image-(4530).png)
+    ![Clicking ‘Add App'](../../../.gitbook/assets/image-\(4530\).png)
 
     \
     The list of apps in the public WinGet repository is displayed.<br>
 
-    ![List of apps in the public WinGet repository](/_images/image-(4531).png)
+    ![List of apps in the public WinGet repository](../../../.gitbook/assets/image-\(4531\).png)
 
 > \*\*Tip\*\*
 >
@@ -36,20 +36,20 @@ To add an app to the **External** catalog in Patch My PC (PMPC) Cloud:
 
 3. Click **Add** beside the required app.
 
-![Clicking ‘Add' beside the required app.](/_images/image-(4533).png)
+![Clicking ‘Add' beside the required app.](../../../.gitbook/assets/image-\(4533\).png)
 
 **ADDED** appears next to the app, along with the **Success – External app added** notification.
 
-![‘ADDED' appears next to the app, along with the ‘Success – External app added' notification.](/_images/image-(4534).png)
+![‘ADDED' appears next to the app, along with the ‘Success – External app added' notification.](../../../.gitbook/assets/image-\(4534\).png)
 
 4. Keep clicking **Add** beside any other apps you want to add.
 5. Once you have finished adding all the required apps, click the **X** in the top-right corner.
 
-![Clicking ‘X' in the top right-hand corner.](/_images/image-(4535).png)
+![Clicking ‘X' in the top right-hand corner.](../../../.gitbook/assets/image-\(4535\).png)
 
 The External catalog is redisplayed with the added app(s).
 
-![External catalog redisplayed with the added app(s).](/_images/image-(4536).png)
+![External catalog redisplayed with the added app(s).](../../../.gitbook/assets/image-\(4536\).png)
 
 ## Next Steps
 

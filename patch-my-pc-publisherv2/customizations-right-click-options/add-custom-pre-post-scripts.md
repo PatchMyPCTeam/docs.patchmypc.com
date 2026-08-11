@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Add Custom Pre/Post Scripts** option in the Publisher allows you to run your own scripts before or after an installation or an uninstallation. This includes pre install, post install, pre uninstall, and post uninstall scenarios.
 
-![Add Custom Pre/Post Scripts](/_images/image-(3999).png)
+![Add Custom Pre/Post Scripts](../../.gitbook/assets/image-\(3999\).png)
 
 This feature provides flexibility for handling scenarios that are not supported by the installer alone. It allows you to perform preparation steps before an install or update, as well as cleanup or validation steps after completion.
 
@@ -18,7 +18,7 @@ The feature also allows additional files and folders to be bundled with the appl
 
 Selecting this option opens the configuration dialog where scripts, arguments, and additional content can be defined.
 
-![Custom Pre/Post Scripts and Files UI](/_images/image-(4000).png)
+![Custom Pre/Post Scripts and Files UI](../../.gitbook/assets/image-\(4000\).png)
 
 The Add Custom Pre Post Scripts form defines how scripts and additional content are associated with an application or update. The options are available separately for Install and Uninstall.
 
@@ -89,7 +89,7 @@ Example:
 -MyParameter "Item1,Item2,Item3"
 ```
 
-![Parse a PowerShell array as a parameter](/_images/image-(4001).png)
+![Parse a PowerShell array as a parameter](../../.gitbook/assets/image-\(4001\).png)
 
 ### Configure Pre Script Behavior
 

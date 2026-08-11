@@ -28,7 +28,7 @@ To configure **Application Update Mode**:
    \
    The **ConfigMgr Application Retention Options** dialog appears.
 
-!['ConfigMgr Application Retention Options' dialog appears.](/_images/image-(4794).png)
+!['ConfigMgr Application Retention Options' dialog appears.](../../../.gitbook/assets/image-\(4794\).png)
 
 2. Under **Application Update Mode**, choose one of the following:
    1. **Create a new application** to publish each new version as a separate ConfigMgr application.

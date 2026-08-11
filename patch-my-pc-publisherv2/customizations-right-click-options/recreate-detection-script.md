@@ -6,7 +6,7 @@ _&#x41;vailable on tab: ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Recreate Detection Script** option forces the Publisher to regenerate the PowerShell detection script for the selected application or applications.
 
-![Recreate Detection Script](/_images/image-(98).png)
+![Recreate Detection Script](<../../.gitbook/assets/image-(98) (1).png>)
 
 This option is primarily used when a code-signing certificate has changed. Existing detection scripts remain signed with the previous certificate, which can cause validation or trust issues. Recreating the detection script ensures a new script is generated and signed using the current certificate.
 

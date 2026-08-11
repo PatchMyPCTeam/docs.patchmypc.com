@@ -6,6 +6,6 @@ description: Operating system last boot time data
 
 _Applies to: Patch My PC Advanced Insights_
 
-![](/_images/image-(2871).png)
+![](../../../.gitbook/assets/image-\(2871\).png)
 
 This dashboard displays the Windows OS Uptime data and when the last hardware inventory occured from the device clients.

@@ -14,7 +14,7 @@ Products shown in the Product Tree with a blue cross icon (!\[Blue cross icon]\(
 
 PMPC has identified that these applications cannot be reliably updated whilst running.
 
-![Product Tree icon indicating the Manage Conflicting Processes feature should be configured](/_images/image-(4415).png)
+![Product Tree icon indicating the Manage Conflicting Processes feature should be configured](../../../../.gitbook/assets/image-\(4415\).png)
 
 For these products, Publisher's default behavior is to configure conflicting processes to [Skip installation when conflicting processes are in use](policy-section.md#skip-installation-when-conflicting-processes-are-in-use).
 
@@ -26,7 +26,7 @@ This approach balances application compliance with a positive end-user experienc
 
 When the notification is presented to the end user, the available actions control how the update proceeds.
 
-![User options for Manage Conflicting Processes](/_images/image-(135).png)
+![User options for Manage Conflicting Processes](../../../../.gitbook/assets/image-\(135\).png)
 
 Selecting **Close All and Install** immediately closes the defined [conflicting processes](management-options.md#manage-process-list) and starts the update installation.
 

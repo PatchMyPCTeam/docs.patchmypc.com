@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Generate a Self-Signed Certificate** option allows Publisher to create a code-signing certificate. This option is commonly used when allowing ConfigMgr to manage the certificate is not desired, or in standalone WSUS environments where self-signed certificates are permitted and a Certificate Authority is not available.
 
-![Generate a self-signed certificate](/_images/image-(3916).png)
+![Generate a self-signed certificate](../../../../.gitbook/assets/image-\(3916\).png)
 
 > \*\*Note\*\*
 >

@@ -42,17 +42,17 @@ To add a dependency:
 
 2. Click the **Dependencies** tool.
 
-![Clicking the 'Dependencies' tool](/_images/image-(3642).png)
+![Clicking the 'Dependencies' tool](../../../../../.gitbook/assets/image-\(3642\).png)
 
 3. From the **Add Dependencies** field, either:
    1. Start typing the name of the relevant app that this app depends on already being successfully installed on the target device.
    2. Click the dropdown and select the relevant app that this app depends on already being successfully installed on the target device.
 
-![Selecting the relevant app that this app depends on already being successfully installed on the target device](/_images/image-(3643).png)
+![Selecting the relevant app that this app depends on already being successfully installed on the target device](../../../../../.gitbook/assets/image-\(3643\).png)
 
 The selected app appears under the **Parent Deployment** section.
 
-![Selected app appearing under the 'Parent Deployment' section](/_images/image-(3644).png)
+![Selected app appearing under the 'Parent Deployment' section](../../../../../.gitbook/assets/image-\(3644\).png)
 
 > \*\*Note\*\*
 >

@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 Logging options control the level of detail written to Publisher log files and provide tools to assist with troubleshooting and support.
 
-![Logging Options](/_images/image-(3918).png)
+![Logging Options](../../../.gitbook/assets/image-\(3918\).png)
 
 ## Logging Level
 

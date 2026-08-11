@@ -6,7 +6,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Exclude from Auto-Publishing Rules** option allows you to prevent specific vendors or products from being automatically enabled for publishing by the Publishers auto-publishing logic.
 
-![Exclude from Auto-Publishing Rules](/_images/image-(4066).png)
+![Exclude from Auto-Publishing Rules](../../.gitbook/assets/image-\(4066\).png)
 
 This is useful when you want to maintain full manual control over which applications or updates are enabled, even when inventory-based auto-publishing rules are in use.
 

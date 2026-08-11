@@ -10,7 +10,7 @@ Each version of the software must complete the full Update Ring lifecycle indepe
 
 The diagram below illustrates how each version progresses through the rings independently.
 
-![Example scenario for Patch My PC Cloud Update Rings](/_images/image-(60).png)
+![Example scenario for Patch My PC Cloud Update Rings](<../../../.gitbook/assets/image-(60) (1).png>)
 
 > \*\*Note\*\*
 >

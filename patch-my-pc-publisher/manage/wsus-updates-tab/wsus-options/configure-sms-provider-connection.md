@@ -10,7 +10,7 @@ The SMS Provider is the interface that enables all interactions with Microsoft C
 
 Patch My PC (PMPC) Publisher also relies on the SMS Provider to perform operations such as triggering SUP synchronizations, creating and modifying applications, and distributing content.
 
-![Configure SMS Provider Connection](/_images/image-(4104).png)
+![Configure SMS Provider Connection](../../../../.gitbook/assets/image-\(4104\).png)
 
 The SMS Provider configuration is shared across the Publisher. When you configure the SMS Provider from **Updates > Options**, the same settings are automatically used in other areas of the product, including **ConfigMgr Apps > Options** and the **Sync Schedule** tab.
 

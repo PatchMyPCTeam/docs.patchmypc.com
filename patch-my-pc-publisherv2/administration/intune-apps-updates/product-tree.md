@@ -18,7 +18,7 @@ The product tree is where you choose which applications and updates the Publishe
 
 The product tree can be expanded or collapsed to three main levels:
 
-![Product tree structure](/_images/image-(3761).png)
+![Product tree structure](../../../.gitbook/assets/image-\(3761\).png)
 
 1. **All Products**
    * The root of the tree.
@@ -62,7 +62,7 @@ In the example below, **8x8 Quality Management (MSI-x86)** demonstrates a single
 
 In contrast, "Adobe Systems, Inc." demonstrates a vendor-level selection. The Adobe vendor checkbox shows a full checkmark rather than a dash (indeterminate state). This indicates that all products under the Adobe vendor are selected.
 
-![Product tree selection granularity](/_images/image-(3762).png)
+![Product tree selection granularity](../../../.gitbook/assets/image-\(3762\).png)
 
 ## Which Products should I Select?
 
@@ -87,7 +87,7 @@ In the example below, selecting **Cisco Jabber Latest (MSI-x86)** means devices 
   * The upgrade introduces breaking changes
   * Compatibility with other systems is not yet confirmed
 
-![Vendor level selection consideration](/_images/image-(3763).png)
+![Vendor level selection consideration](../../../.gitbook/assets/image-\(3763\).png)
 
 In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](product-tree.md#product-level-recommended) provides significantly more control over version behavior and helps avoid unintended major version upgrades. If your environment standardizes on Jabber 14.x, selecting a Latest product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.
 
@@ -113,13 +113,13 @@ The Scan Wizard leverages inventory data collected by the Intune Management Exte
 
 Within the Publisher, the product tree uses visual indicators to highlight when additional attention or configuration is required before an app or update can be published successfully. These icons are designed to make potential blockers obvious at a glance.
 
-### &#x20;**Manage Conflicting Processes**
+### **Manage Conflicting Processes**
 
 A blue cross icon indicates that the application has **conflicting running processes** that must be handled during installation or upgrade. In the scenario where the appliction is being upgraded on the client through a required deployment, it must be **closed** for a successful installation..
 
 When a product that contains conflicting processes is selected, the **Manage Conflicting Processes** [right-click customization option](../../customizations-right-click-options/) is automatically enabled. By default, this is set to **Skip installation when conflicting processes are in use**, ensuring that application upgrades do not fail or forcibly interrupt users if the application is currently running. This default provides a safe and predictable upgrade path and can be adjusted if a different behavior is required, like prompting the user to close the open application before the update installation begins.
 
-### &#x20;**Customer-Provided Installer Required**
+### **Customer-Provided Installer Required**
 
 The blue download arrow means that **Publisher cannot automatically download the installer binary** from the vendor and customer action is required.
 
@@ -141,13 +141,13 @@ These pages explains how to store and reference customer-provided binaries so th
 >
 > This feature is also referred to as "Binary free apps" and leverages the "Local Content Repository".
 
-### &#x20;Published by Patch My PC Cloud
+### Published by Patch My PC Cloud
 
 The cloud download icon indicates that the application or update is already published by Patch My PC Cloud in your Intune tenant.
 
 If you attempt to enable a product in the Publisher that is already enabled in Patch My PC Cloud, the Publisher displays a warning to help prevent duplicate application creation and configuration conflicts.
 
-![Published in Cloud](/_images/image-(62).png)
+![Published in Cloud](<../../../.gitbook/assets/image-(62) (1).png>)
 
 This status is available only when the Publisher is connected to Patch My PC Cloud. When connected, the Publisher retrieves cloud publishing metadata and identifies products that are already managed by the SaaS service. See the [Cloud](../cloud.md) documentation for more infomration on how to connect the Publisher to a Patch My PC Cloud Company.
 

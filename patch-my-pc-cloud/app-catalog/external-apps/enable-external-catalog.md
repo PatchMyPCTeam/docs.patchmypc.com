@@ -14,18 +14,18 @@ To enable the **External** catalog in Patch My PC (PMPC) Cloud:
 
 1.  From the PMPC Cloud Portal, navigate to **App Catalog | External**<br>
 
-    ![Navigating to ‘App Catalog | External'](/_images/image-(4527).png)
+    ![Navigating to ‘App Catalog | External'](../../../.gitbook/assets/image-\(4527\).png)
 
     \
     The **External** catalog page is displayed.
 2.  On the **External** page, read the warning displayed about using apps from external sources. If you accept the risk, check the **I understand and accept the risks of using external catalogs** checkbox, followed by **Confirm**.<br>
 
-    ![Accepting the risks of using external catalogs checkbox](/_images/image-(4528).png)
+    ![Accepting the risks of using external catalogs checkbox](../../../.gitbook/assets/image-\(4528\).png)
 
     \
     The **External** catalog page refreshes.<br>
 
-    ![External catalog page](/_images/image-(4529).png)
+    ![External catalog page](../../../.gitbook/assets/image-\(4529\).png)
 
 > \*\*Note\*\*
 >

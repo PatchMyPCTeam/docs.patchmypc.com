@@ -65,23 +65,23 @@ To configure Dynamic Assignments, follow the steps below.
 2. Right-click All Products or All Custom Products and select Manage Dynamic Assignments.
 3. Select **Add** to create a new Dynamic Assignment rule.
 
-![New Dynamic Assignment Rule](/_images/image-(4039).png)
+![New Dynamic Assignment Rule](../../../.gitbook/assets/image-\(4039\).png)
 
 4. Enter a Name and optional Description for the rule.
 5. Select one or more Property Filters to define the evaluation criteria.
 6. Configure the search criteria values for each selected filter.
 
-![New Dynamic Assignment Rule Settings](/_images/image-(4042).png)
+![New Dynamic Assignment Rule Settings](../../../.gitbook/assets/image-\(4042\).png)
 
 7. Click **Preview** to see which updates currently match the rule.
 
-![Preview Updates](/_images/image-(4041).png)
+![Preview Updates](../../../.gitbook/assets/image-\(4041\).png)
 
 8. Click **Manage** to configure assignments for the rule.
 9. Add the required Intune assignments using the standard Manage Assignments window.
 
-![Manage Assignments](/_images/image-(4043).png)
+![Manage Assignments](../../../.gitbook/assets/image-\(4043\).png)
 
 10. Click **OK** to save the rule.
 
-![Rule Configuration Complete](/_images/image-(4044).png)
+![Rule Configuration Complete](../../../.gitbook/assets/image-\(4044\).png)

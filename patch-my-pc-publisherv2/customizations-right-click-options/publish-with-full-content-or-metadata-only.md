@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates_
 
 The **Publish with Full-content or Metadata Only** option can be used to configure how you want software updates to be published to WSUS.
 
-![Publishing with Full-content or Metadata Only](/_images/image-(160).png)
+![Publishing with Full-content or Metadata Only](../../.gitbook/assets/image-\(160\).png)
 
 ## Full Content
 

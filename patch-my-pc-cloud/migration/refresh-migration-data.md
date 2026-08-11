@@ -15,7 +15,7 @@ The Patch My PC (PMPC) Cloud Migration dashboard includes the following options:
 
 The **Refresh** option is available directly from the dashboard toolbar.
 
-![Refresh migration data](/_images/image-(25).png)
+![Refresh migration data](<../../.gitbook/assets/image-(25) (1).png>)
 
 Clicking **Refresh** triggers an immediate delta sync from Publisher to PMPC Cloud, bypassing the normal scheduled sync interval configured in Publisher (60 minutes by default). This is useful when new applications or recent changes are available in Publisher, and you want them reflected in Cloud as soon as possible.
 
@@ -25,7 +25,7 @@ A refresh only processes incremental changes and does not rebuild existing migra
 
 The **Full Resync** option is accessed by clicking the ellipsis beside the **Refresh** option.
 
-![Full resync of migration data](/_images/image-(322).png)
+![Full resync of migration data](<../../.gitbook/assets/image-(322) (1).png>)
 
 Clicking **Full Resync** clears all migration metadata in both Cloud and the Publisher, then rebuilds it from scratch using the latest migration logic in PMPC Cloud. Non-migrated applications are removed and reimported, while migrated applications remain unchanged.
 
@@ -37,8 +37,8 @@ Because a full resync re-evaluates all applications, the process may take some t
 
 If the **Refresh** or **Full Resync** options are unavailable, it means PMPC Cloud has lost connectivity to the Publisher.
 
-![Lost connection to the Publisher](/_images/image-(314).png)
+![Lost connection to the Publisher](<../../.gitbook/assets/image-(314) (1).png>)
 
 To restore the connection, open the Publisher console, go to the **About** tab, and select **Restart Service**, which will re-establish communication with your PMPC Cloud company.
 
-![Restart the Publisher service to restore the connection](/_images/image-(315).png)
+![Restart the Publisher service to restore the connection](<../../.gitbook/assets/image-(315) (1).png>)

@@ -1390,7 +1390,7 @@ As an alternative to using your standard WSUS certificate, you can now supply a 
   * If needed, the embedded web browser can still be used with a [registry flag](https://patchmypc.com/advanced-configurations-available-using-the-registry-for-patch-my-pcs-publishing-service#MsalUseEmbeddedWebView).
 * The ‘[Collect Logs](https://patchmypc.com/logging-options#collectlogs)‘ button now collects all PowerShell detection scripts modified within the last 7 days. The scripts are renamed to have a .txt extension before being added to the zip file.
 * Icons in the product treeview now indicate if the product requires local content, or is configured to skip the install if running by default.
-  * ![image (2).png](/_images/image-(2).png)
+  * ![image (2).png](<../../.gitbook/assets/image-(2) (1).png>)
 
 </details>
 
@@ -2671,7 +2671,7 @@ As an alternative to using your standard WSUS certificate, you can now supply a 
 * Added support to add a future Home Lab subscription
   * Idea: [PATCHMYPC-I-1213](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1213)
 * Added a new context menu in the Intune Application Manager
-  * ![](/_images/image-(1907).png)
+  * ![](../../.gitbook/assets/image-\(1907\).png)
 
 ### Improvements
 
@@ -2684,7 +2684,7 @@ As an alternative to using your standard WSUS certificate, you can now supply a 
 * Added support to add a future Home Lab subscription
   * Idea: [PATCHMYPC-I-1213](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1213)
 * Added a new context menu in the Intune Application Manager
-  * ![](/_images/image-(1907).png)
+  * ![](../../.gitbook/assets/image-\(1907\).png)
 
 ### Improvements
 
@@ -2697,7 +2697,7 @@ As an alternative to using your standard WSUS certificate, you can now supply a 
 * Added support to add a future Home Lab subscription
   * Idea: [PATCHMYPC-I-1213](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1213)
 * Added a new context menu in the Intune Application Manager
-  * ![](/_images/image-(1907).png)
+  * ![](../../.gitbook/assets/image-\(1907\).png)
 
 ### Improvements
 

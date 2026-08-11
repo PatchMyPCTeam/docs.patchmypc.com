@@ -43,13 +43,13 @@ Get-WindowsFeature UpdateServices-API
 
 The feature should show as **Installed**.
 
-![Get-WindowsFeature UpdateServices-API](/_images/image-(389).png)
+![Get-WindowsFeature UpdateServices-API](../../../.gitbook/assets/image-\(389\).png)
 
 ## Windows Client Operating System
 
 When installing the Publisher on a Windows 11 device, which is typical for Intune-only publishing scnearios, the WSUS RSAT tools must be installed. A full WSUS role installation is _not_ required. If the RSAT tools are not installed, you will see the following messaage when [installing the Publisher](../../download-and-install.md).
 
-![WSUS RSAT tools missing](/_images/image-(390).png)
+![WSUS RSAT tools missing](../../../.gitbook/assets/image-\(390\).png)
 
 The steps below explain how to install the required components for this scenario.
 
@@ -70,7 +70,7 @@ Get-WindowsCapability -Online -Name Rsat.WSUS.Tools~~~~0.0.1.0
 
 The output should show the capability state as **Installed**.
 
-![Get-WindowsCapability -Online -Name Rsat.WSUS.Tools\~\~\~\~0.0.1.0](/_images/image-(391).png)
+![Get-WindowsCapability -Online -Name Rsat.WSUS.Tools\~\~\~\~0.0.1.0](../../../.gitbook/assets/image-\(391\).png)
 
 > \*\*Note\*\*
 >

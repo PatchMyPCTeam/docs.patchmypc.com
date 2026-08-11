@@ -10,7 +10,7 @@ The **Manage Installation Logging** option enables _additional_ client side logg
 
 When enabled, the Publisher configures the installer to generate a Patch My PC installation log and, when supported, the vendor’s native installation log. These logs are created during product installation on the client device and can be collected for diagnostic purposes.
 
-![Manage Installation Logging](/_images/image-(128).png)
+![Manage Installation Logging](../../.gitbook/assets/image-\(128\).png)
 
 > \*\*Note\*\*
 >
@@ -22,7 +22,7 @@ When enabled, the Publisher configures the installer to generate a Patch My PC i
 
 The Manage Installation Logging window provides the following settings.
 
-![Logging Options](/_images/image-(129).png)
+![Logging Options](../../.gitbook/assets/image-\(129\).png)
 
 ## **Folder path**
 

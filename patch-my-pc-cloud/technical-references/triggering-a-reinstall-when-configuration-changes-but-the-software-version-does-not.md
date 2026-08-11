@@ -78,21 +78,21 @@ Set-ADTRegistryKey -LiteralPath 'HKEY_LOCAL_MACHINE\SOFTWARE\Contoso\ChromeConfi
 
 3. For assignments, we recommend choosing the **Install App** under [App Without Assignment](https://docs.patchmypc.com/patch-my-pc-cloud/cloud-deployments/create-a-cloud-deployment-without-assignments) - we will manage the assignments in Intune for this roll out.
 
-![](/_images/Pasted-image-20260128131019.png)
+![](../../.gitbook/assets/Pasted-image-20260128131019.png)
 
 4. Uncheck the box to "**Copy-Forward**" - this prevents assignments being immediately copied forward to the next version if you decide not to pause the deployments (this is the next step)
 
-![](/_images/Pasted-image-20260128130844.png)
+![](../../.gitbook/assets/Pasted-image-20260128130844.png)
 
 > \*\*Do not delete or modify the original deployment yet.\*\* You may need the original application/package later when configuring supersedence.
 
 At this point, you should have both the original deployment and the new deployment with your new configuration:
 
-![](/_images/Pasted-image-20260129105445.png)
+![](../../.gitbook/assets/Pasted-image-20260129105445.png)
 
 Both packages should also be visible in Intune, too:
 
-![](/_images/Pasted-image-20260129113934.png)
+![](../../.gitbook/assets/Pasted-image-20260129113934.png)
 
 ### Step 2: Pause both deployments
 
@@ -100,7 +100,7 @@ Before continuing, it is recommended to [pause](https://docs.patchmypc.com/patch
 
 You will un-pause one deployment and delete the other when you have completed your roll-out of your new configuration changes.
 
-![](/_images/Pasted-image-20260129105154.png)
+![](../../.gitbook/assets/Pasted-image-20260129105154.png)
 
 ### Step 3: Update detection logic to reflect the new configuration
 
@@ -132,7 +132,7 @@ On the **new package only**, remove the Patch My PC–generated detection script
 * Operator: `Greater than or equal to`
 * Value: `2`
 
-![](/_images/Pasted-image-20260129110609.png)
+![](../../.gitbook/assets/Pasted-image-20260129110609.png)
 
 In this particular case where I'm using Google Chrome 144.0.7559.110 as an example, I added a secondary detection rule - adapt yours accordingly.
 
@@ -143,7 +143,7 @@ In this particular case where I'm using Google Chrome 144.0.7559.110 as an examp
 * Operator: `Greater than or equal to`
 * Value: `144.0.7559.110`
 
-![](/_images/Pasted-image-20260129110511.png)
+![](../../.gitbook/assets/Pasted-image-20260129110511.png)
 
 Only when _both_ conditions are met, Intune will evaluate the new app as installed.
 
@@ -177,7 +177,7 @@ In Intune:
 4. Toggle the **Uninstall previous version** to **Yes**
 5. Click **Review + save**
 
-![](/_images/Pasted-image-20260129182844.png)
+![](../../.gitbook/assets/Pasted-image-20260129182844.png)
 
 > When using supersedence, ensure you select the \*\*Install and Update App\*\* package type.\\
 >

@@ -14,7 +14,7 @@ Once the Entra ID Security Groups feature has been enabled for your PMPC Cloud C
 >
 > For access via Entra ID groups to work, you need to have \[enabled the relevant domains]\(../../company-settings/multiple-domain-support/enable-domain.md) in your PMPC Cloud Company.
 
-!["Entra ID Groups" tab on the "Users" node](/_images/image-(2957).png)
+!["Entra ID Groups" tab on the "Users" node](../../../../../.gitbook/assets/image-\(2957\).png)
 
 Using Entra ID Security Groups feature of PMPC Cloud allows you to:
 

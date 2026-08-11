@@ -16,7 +16,7 @@ At the end of a [sync](../administration/sync-schedule.md), if a new version of 
 Starting self-update, the command line is: MsiExec.exe /i C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service.msi /qn /log C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service_Upgrade.log
 ```
 
-![](/_images/image-(4232).png)
+![](../../.gitbook/assets/image-\(4232\).png)
 
 > \*\*Note\*\*
 >
@@ -24,9 +24,9 @@ Starting self-update, the command line is: MsiExec.exe /i C:\WINDOWS\TEMP\PatchM
 
 If a failure occurs during the self update process and [Alerts](../administration/alerts/) are configured, a notification is generated. The notification will appear similar to the screenshots shown below
 
-![](/_images/image-(4233).png)
+![](../../.gitbook/assets/image-\(4233\).png)
 
-![](/_images/image-(4234).png)
+![](../../.gitbook/assets/image-\(4234\).png)
 
 To understand the root cause of the upgrade failure, it is recommended to inspect the log file indicated in PatchMyPC.log produced by the .msi installer:
 
@@ -47,7 +47,7 @@ Error 1714. The older version of Patch My PC Publishing Service cannot be remove
 
 When you attempt to manually install the update by downloading and running the [latest .msi](https://patchmypc.com/msi), you receive a dialogue similar to the below:
 
-![](/_images/image-(4235).png)
+![](../../.gitbook/assets/image-\(4235\).png)
 
 The 1612 error code is usually thrown when the original installation media for the currently installed application is no longer available on the system - something has deleted it. Typically, .msi software caches itself to **C:\Windows\installer** and the original .msi file is critical for any application update, repair, or uninstall.
 

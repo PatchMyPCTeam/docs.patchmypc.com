@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Modify Command Line** dialog allows you to customize the silent installation command line for a specific product in the Publisher. The dialog shows the default command line, lets you append additional arguments, and provides a preview of the final command line that will be executed.
 
-![Modify Command Line](/_images/image-(4016).png)
+![Modify Command Line](../../.gitbook/assets/image-\(4016\).png)
 
 ## Default Command Line
 
@@ -18,7 +18,7 @@ The **Default Command Line** section displays the silent installation command li
 >
 > Use this section to understand which parameters are already included before adding any custom arguments.
 
-![Modify Command Line Settings](/_images/image-(4015).png)
+![Modify Command Line Settings](../../.gitbook/assets/image-\(4015\).png)
 
 ## Your Additional Arguments
 
@@ -50,7 +50,7 @@ The **Examples and Special Variables** section helps you build custom command li
 >
 > This section is informational and cannot be edited.
 
-![Examples and Special Values](/_images/image-(4130).png)
+![Examples and Special Values](../../.gitbook/assets/image-\(4130\).png)
 
 The Examples area shows sample installer parameters that can be appended to the default silent command line. Examples include:
 

@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 Patch My PC supports managing multiple Intune tenants from a single instance of the Publisher. This capability is designed for managed service providers who require centralized control while maintaining tenant-level separation.
 
-![Multi-tenancy in the Publisher](/_images/image-(4107).png)
+![Multi-tenancy in the Publisher](../../../../.gitbook/assets/image-\(4107\).png)
 
 > \*\*Note\*\*
 >

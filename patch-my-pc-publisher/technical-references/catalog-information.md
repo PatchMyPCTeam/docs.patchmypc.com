@@ -26,7 +26,7 @@ By default, updates are configured to publish with **Full Content**, meaning the
 
 If an update has been configured to publish with **Metadata Only**, then **(Metadata)** is appended to the end of the product name, and only the metadata will be published to WSUS.
 
-!['(Metadata)' appended to the end of the product name showing 'Switch to Metadata Only' option is selected for](/_images/image-(4791).png)
+!['(Metadata)' appended to the end of the product name showing 'Switch to Metadata Only' option is selected for](../../.gitbook/assets/image-\(4791\).png)
 
 > \*\*Note\*\*
 >
@@ -45,7 +45,7 @@ Example:
 
 * Citrix Workspace LTSR (Latest)
 
-![Naming Convention - Latest](/_images/image-(4793).png)
+![Naming Convention - Latest](../../.gitbook/assets/image-\(4793\).png)
 
 If strict version control is required, select a product entry that includes an explicit major version number instead of **Latest**.
 

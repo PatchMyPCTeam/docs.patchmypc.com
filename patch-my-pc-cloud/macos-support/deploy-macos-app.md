@@ -14,7 +14,7 @@ To deploy a macOS app using Patch My PC (PMPC) Cloud:
 
 1.  Locate the required app on the App Catalog page.<br>
 
-    ![Locating the app to be deployed](/_images/image-(2987).png)
+    ![Locating the app to be deployed](../../.gitbook/assets/image-\(2987\).png)
 
 > \*\*Tip\*\*
 >
@@ -22,15 +22,15 @@ To deploy a macOS app using Patch My PC (PMPC) Cloud:
 
 2.  Click the relevant app.<br>
 
-    ![Clicking the relevant app](/_images/image-(2988).png)
+    ![Clicking the relevant app](../../.gitbook/assets/image-\(2988\).png)
 3.  On the app’s properties page, click **Deploy** under the **macOS** section to start the Deployment Wizard.<br>
 
-    ![Clicking "Deploy" under the "macOS" section](/_images/image-(993).png)
+    ![Clicking "Deploy" under the "macOS" section](<../../.gitbook/assets/image-(993) (1).png>)
 4. Continue from [General Information](../deployments/deploy-app/general-information-tab.md) to configure the deployment as required, whilst referring to the [macOS Deployment Specifics](deploy-macos-app.md#macos-deployment-specifics) section below.\
    \
    The first time you deploy a macOS app in your PMPC Cloud company, at the end of the Deployment Wizard, you will see the **This is your first macOS deployment** dialog box, which asks you to confirm that you understand each macOS device you deploy apps to requires its own PMPC Cloud license.
 
-!["This is your first macOS deployment" dialog box](/_images/image-(700).png)
+!["This is your first macOS deployment" dialog box](<../../.gitbook/assets/image-(700) (1).png>)
 
 > \*\*Note\*\*
 >

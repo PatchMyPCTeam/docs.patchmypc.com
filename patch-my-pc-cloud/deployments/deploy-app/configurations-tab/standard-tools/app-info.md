@@ -27,7 +27,7 @@ To manage the App Info for a Deployment:
 
 1. Click the **App Info** tool.
 
-![Clicking the 'App Info' tool](/_images/image-(660).png)
+![Clicking the 'App Info' tool](<../../../../../.gitbook/assets/image-(660) (1).png>)
 
 2. Configure the settings as required.
 
@@ -35,7 +35,7 @@ To manage the App Info for a Deployment:
 >
 > We pre-populate this screen with the information received from the vendor/added by us.
 
-!['App Info' tool](/_images/image-(661).png)
+!['App Info' tool](<../../../../../.gitbook/assets/image-(661) (1).png>)
 
 ## Next Steps
 
@@ -43,4 +43,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png)
+![Clicking 'Next'](../../../../../.gitbook/assets/image-\(662\).png)

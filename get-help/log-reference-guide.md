@@ -291,13 +291,13 @@ To enable Debug logging:
 1. Open Publisher.
 2. On the **General** tab, under the **Logging Options** section, select **Debug**
 
-![Selecting 'Debug' under the 'Logging Options' section](/_images/image-(3831).png)
+![Selecting 'Debug' under the 'Logging Options' section](../.gitbook/assets/image-\(3831\).png)
 
 3. Click **Save and Close** to close the Publisher.
 4. Open **Services.msc**
 5. Locate the **PatchMyPCService** service, then click **Restart** to restart the service.
 
-![Locating the 'PatchMyPCService' service and restarting it](/_images/image-(3832).png)
+![Locating the 'PatchMyPCService' service and restarting it](../.gitbook/assets/image-\(3832\).png)
 
 Debug Logging for Publisher is now enabled.
 

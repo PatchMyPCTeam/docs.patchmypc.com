@@ -13,7 +13,7 @@ Using the Dashboards for Advanced/Patch Insights for Intune, you can:
 
 Whenever you click a Statistic or Chart, the device list modal opens, showing more detailed information.
 
-![More detailed information table](/_images/image-(3795).png)
+![More detailed information table](../../.gitbook/assets/image-\(3795\).png)
 
 > \*\*Note\*\*
 >
@@ -35,7 +35,7 @@ To export data from a Statistic:
 1. Click the relevant Statistic to open it.
 2. Click the ellipsis ()in the top right-hand corner of the device list portal and select **Export <**_**device\_list\_modal\_name**_**>**
 
-![Clicking the ellipsis and selecting Export](/_images/image-(3796).png)
+![Clicking the ellipsis and selecting Export](../../.gitbook/assets/image-\(3796\).png)
 
 A **.csv** containing the export is downloaded and named **<**_**device\_list\_modal\_name**_**>.csv**
 
@@ -53,11 +53,11 @@ Some Charts (such as **Device Specs**) include an action menu () that lets you s
 
 To change the view of a Chart, click the action menu and select the desired view from the dropdown.
 
-![Changing views](/_images/image-(3797).png)
+![Changing views](../../.gitbook/assets/image-\(3797\).png)
 
 The Chart’s subheading updates to the selected view name, and the Chart itself updates to show the data in the requested view.
 
-![Changed view](/_images/image-(3798).png)
+![Changed view](../../.gitbook/assets/image-\(3798\).png)
 
 Also, when you click a Chart segment, the device list modal only displays the data for that segment. Likewise, if you switch to a different view and click a Chart segment, the device list modal displays only the data for the selected view and clicked segment.
 
@@ -70,10 +70,10 @@ To apply a filter:
 1. Navigate to the relevant Compliance view.
 2. Click the relevant toggle to show the filtered items.
 
-![Clicking a toggle to show the filtered items](/_images/image-(3799).png)
+![Clicking a toggle to show the filtered items](../../.gitbook/assets/image-\(3799\).png)
 
 The view updates to display the previously filtered items.
 
-![View updating to show the filtered items.](/_images/image-(3800).png)
+![View updating to show the filtered items.](../../.gitbook/assets/image-\(3800\).png)
 
 Click the toggle again to re-apply the filter.

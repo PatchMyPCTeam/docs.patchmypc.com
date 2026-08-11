@@ -9,15 +9,15 @@ To create a Slack webhook notification in Patch My PC (PMPC) Cloud:
 3. Follow the [Create a Webhook notification in Cloud](create-webhook-notification.md) and select **Slack** from the **Add Webhook** dropdown.
 4. On the **Add Slack** screen, enter a unique name for the webhook in the **Webhook Name** field. For example, **Patch My PC**
 
-![Entering a unique name for the webhook in the "Webhook Name" field](/_images/image-(1455).png)
+![Entering a unique name for the webhook in the "Webhook Name" field](../../../../.gitbook/assets/image-\(1455\).png)
 
 5. In the **Webhook URL** field, enter the unique URL of your Slack webhook and click **Save**
 
-![Entering the unique URL for your Slack webhook](/_images/image-(1456).png)
+![Entering the unique URL for your Slack webhook](../../../../.gitbook/assets/image-\(1456\).png)
 
 The new webhook notification is shown under the **Webhook Notifications** section.
 
-![New webhook notification](/_images/image-(3833).png)
+![New webhook notification](../../../../.gitbook/assets/image-\(3833\).png)
 
 > \*\*Tip\*\*
 >
@@ -25,12 +25,12 @@ The new webhook notification is shown under the **Webhook Notifications** sectio
 
 6. Click **Save** to save the newly added notification.
 
-![Clicking 'Save'](/_images/image-(3834).png)
+![Clicking 'Save'](../../../../.gitbook/assets/image-\(3834\).png)
 
 The **Success – Notification created** notification is shown.
 
-!['Success' notification](/_images/image-(3835).png)
+!['Success' notification](../../../../.gitbook/assets/image-\(3835\).png)
 
 The Cloud Portal auto-refreshes to show the new notification.
 
-![Cloud Portal auto-refreshing](/_images/image-(3836).png)
+![Cloud Portal auto-refreshing](../../../../.gitbook/assets/image-\(3836\).png)

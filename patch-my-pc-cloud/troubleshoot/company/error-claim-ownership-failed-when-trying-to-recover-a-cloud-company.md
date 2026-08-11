@@ -12,7 +12,7 @@ I have tried running through the [Recover Your Company](../../manage/settings/co
 
 **Claim Ownership Failed**
 
-!["Error - Claim Ownership Failed"](/_images/image-(2661).png)
+!["Error - Claim Ownership Failed"](../../../.gitbook/assets/image-\(2661\).png)
 
 ### CAUSE
 

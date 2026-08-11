@@ -20,7 +20,7 @@ The **Advanced Insights** node consists of the following sub-nodes, each of whic
 * **Hardware -** Contains a summary of the most common hardware-related information.
 * **Intune -** Contains a summary of the most common information from your Intune tenant.
 
-!['Advanced Insights' node](/_images/image-(574).png)
+!['Advanced Insights' node](<../../.gitbook/assets/image-(574) (1).png>)
 
 ## Patch Insights
 
@@ -28,7 +28,7 @@ If you are using the Enterprise Plus license, the node will be named **Patch Ins
 
 You can only access the **Intune** sub-node, which contains a summary of the most common information from your Intune tenant.
 
-!['Patch Insights' node](/_images/image-(577).png)
+!['Patch Insights' node](<../../.gitbook/assets/image-(577) (1).png>)
 
 > \*\*Note\*\*
 >

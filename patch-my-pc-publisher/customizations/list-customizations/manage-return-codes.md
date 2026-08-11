@@ -22,7 +22,7 @@ Each Return Code returned by the installer is associated with a code type. The c
 
 When you select the **Manage Return Codes** right-click option, the **Manage Return Codes** dialog appears, where you can manage Return Codes for the selected product.
 
-![Manage Return Codes dialog](/_images/image-(4769).png)
+![Manage Return Codes dialog](../../../.gitbook/assets/image-\(4769\).png)
 
 The following Return Codes are commonly used by default:
 
@@ -42,16 +42,16 @@ To add a custom Return Code:
 2. Right-click it and select **Manage Return Codes**
 3. On the **Manage Return Codes** dialog, click **Add**
 
-![Clicking 'Add' on the 'Manage Return Codes' dialog](/_images/image-(4770).png)
+![Clicking 'Add' on the 'Manage Return Codes' dialog](../../../.gitbook/assets/image-\(4770\).png)
 
 4. In the **Return Code** field, enter the required Return Code (for example **19**), and if the **Code Type** should be anything other than **Success**, select the relevant value from the **Code Type** dropdown beside the new Return Code.
 
-![Configuring the new Return Code](/_images/image-(4771).png)
+![Configuring the new Return Code](../../../.gitbook/assets/image-\(4771\).png)
 
 5. Click **OK** to save your changes.
 
-![Clicking 'OK' to save your changes](/_images/image-(4773).png)
+![Clicking 'OK' to save your changes](../../../.gitbook/assets/image-\(4773\).png)
 
 The **Manage Return Codes** dialog updates to show the new Return Code.
 
-!['Manage Return Codes' dialog showing the new Return Code](/_images/image-(4774).png)
+!['Manage Return Codes' dialog showing the new Return Code](../../../.gitbook/assets/image-\(4774\).png)

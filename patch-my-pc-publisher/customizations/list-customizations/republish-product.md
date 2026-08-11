@@ -51,11 +51,11 @@ As a result, clients may take significantly longer to detect republished apps Vs
 
 When a WSUS update is marked for republishing, the Publisher displays a confirmation dialog. This dialog reminds you that a Software Update Point sync is required before the republished update becomes available in ConfigMgr.
 
-![Republish WSUS Updates confirmation](/_images/image-(4069).png)
+![Republish WSUS Updates confirmation](../../../.gitbook/assets/image-\(4069\).png)
 
 After confirmation, you are prompted to choose whether the new update should supersede the existing update in WSUS. If you choose to supersede, the older update will be marked as superseded once the new update is created.
 
-![Supersede Previous Published Update(s) confirmation](/_images/image-(4070).png)
+![Supersede Previous Published Update(s) confirmation](../../../.gitbook/assets/image-\(4070\).png)
 
 If you prefer older updates to be expired instead of superseded, this can be done manually using the [Modify Published Updates](../../../patch-my-pc-publisherv2/administration/updates/options/modify-published-updates.md) wizard in the Publisher.
 

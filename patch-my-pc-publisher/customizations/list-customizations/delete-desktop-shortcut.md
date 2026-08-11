@@ -12,11 +12,11 @@ When enabled at the **Product** level, the setting applies only to that specific
 
 When enabled at the **Vendor** level, such as Oracle, the setting applies to all supported products for that vendor.
 
-!['Delete Desktop Shortcut' set at the Vendor level](/_images/image-(4420).png)
+!['Delete Desktop Shortcut' set at the Vendor level](../../../.gitbook/assets/image-\(4420\).png)
 
 When enabled at the **All Vendors** level, the setting applies to all products that support deleting desktop shortcuts.
 
-!['Delete Desktop Shortcut' set at the 'All Vendors' level](/_images/image-(4421).png)
+!['Delete Desktop Shortcut' set at the 'All Vendors' level](../../../.gitbook/assets/image-\(4421\).png)
 
 > \*\*Note\*\*
 >

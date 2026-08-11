@@ -10,7 +10,7 @@ _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Update
 
 The **Process Restart Prevention** option prevents the end user from reopening the application whilst the update is in progress. This helps avoid scenarios where the application is closed for the update but immediately relaunched, which could cause the installation to fail or be delayed.
 
-![Process Start Prevention](/_images/image-(138).png)
+![Process Start Prevention](../../../../.gitbook/assets/image-\(138\).png)
 
 This option is only available at the Product level and should be used for applications where restarting the process during installation is likely to interfere with a successful update.
 
@@ -32,7 +32,7 @@ or
 
 > "The requested operation requires elevation"
 
-![Prevent the end user from opening an application](/_images/image-(3986).png)
+![Prevent the end user from opening an application](../../../../.gitbook/assets/image-\(3986\).png)
 
 ## Potential Risk
 
@@ -48,7 +48,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Imag
 
 Look for subkeys named after the blocked executable, such as `notepad++.exe`.
 
-![Image File Execution Options registry entries](/_images/image-(3987).png)
+![Image File Execution Options registry entries](../../../../.gitbook/assets/image-\(3987\).png)
 
 > \*\*Note\*\*
 >

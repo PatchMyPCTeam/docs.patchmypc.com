@@ -8,7 +8,7 @@ _&#x41;vailable on tab: ConfigMgr Apps_
 
 **Manage Application User Experience** allows you to customize the user experience settings applied to the ConfigMgr application deployment type created by the Publisher.
 
-![Manage Application User Experience](/_images/image-(4062).png)
+![Manage Application User Experience](../../.gitbook/assets/image-\(4062\).png)
 
 These settings control how the application behaves during installation, including installation behavior, logon requirements, and user interaction.
 
@@ -18,7 +18,7 @@ This option can be configured at multiple levels.
 
 When configured at the All Products or Vendor level, you can choose which specific user experience settings should be inherited by products below. This allows you to define consistent defaults across many applications while still allowing exceptions at the product level.
 
-![Application User Experience](/_images/image-(4092).png)
+![Application User Experience](../../.gitbook/assets/image-\(4092\).png)
 
 At the Product level, all settings apply directly to that application and override inherited values.
 
@@ -26,11 +26,11 @@ At the Product level, all settings apply directly to that application and overri
 
 If an application only supports system-wide installation, the Installation behavior option is disabled. The interface prevents selecting user based installation when the application does not support it.
 
-![Installation behavior for system-wide context apps](/_images/image-(4093).png)
+![Installation behavior for system-wide context apps](../../.gitbook/assets/image-\(4093\).png)
 
 For catalog applications that are user based, identified by **User** in the product name, the following behavior applies.
 
-![Installation behavior for user context apps](/_images/image-(4094).png)
+![Installation behavior for user context apps](../../.gitbook/assets/image-\(4094\).png)
 
 * Installation behavior is fixed to user context.
 * Logon requirement is fixed to require a logged on user.

@@ -8,7 +8,7 @@ Customers often ask which code-signing certificate option they should use when p
 
 Regardless of the option chosen, the resulting certificate is used by the Publisher to code-sign updates published to WSUS, specifically the CAB files that contain update metadata. The same certificate is also used to sign ConfigMgr detection scripts, even in a ConfigMgr-only environment where there is no WSUS being leveraged by a Software Update Point. Ultimately, whichever method you choose, the certificate that resides in the WSUS certificate store is the certificate the Publisher will use for signing during ConfigMgr and WSUS publishing operations.
 
-![Code-Signing Certificate in WSUS Store](/_images/image-(3912).png)
+![Code-Signing Certificate in WSUS Store](../../../../.gitbook/assets/image-\(3912\).png)
 
 > \*\*Note\*\*
 >

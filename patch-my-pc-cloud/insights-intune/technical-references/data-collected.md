@@ -10,7 +10,7 @@ On the first time launch of a tab/dashboard view, a data caching process runs to
 
 Whilst report generation/processing is in process the following message is shown.
 
-![Loading of Advanced Insights for Intune using Microsoft graph APIs](/_images/image-(4247).png)
+![Loading of Advanced Insights for Intune using Microsoft graph APIs](../../../.gitbook/assets/image-\(4247\).png)
 
 Once the data export generation has completed for all requested reports, Advanced Insights for Intune processes the data export and stores the results in the database. The dashboard then loads fully.
 

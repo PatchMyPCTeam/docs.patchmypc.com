@@ -31,11 +31,11 @@ The _View_ button lets you switch the view of the Product Tree between _Grid Vie
 
 This is an example of the Product Tree shown in _Grid View_.
 
-![Product Tree in Grid View](/_images/image-(4567).png)
+![Product Tree in Grid View](../../../.gitbook/assets/image-\(4567\).png)
 
 This is an example of the Product Tree shown in _Tree View_.
 
-![Product Tree in Tree View.](/_images/image-(4568).png)
+![Product Tree in Tree View.](../../../.gitbook/assets/image-\(4568\).png)
 
 ### Grid View Versus Tree View
 
@@ -52,7 +52,7 @@ The greatest benefit of viewing the Product Tree in Grid view is that it allows 
 
 The alphabetical slider lets you either go directly to all products in the catalog beginning with a certain letter, or navigate the catalog using the arrow controls.
 
-![Alphabetical slider](/_images/image-(3).png)
+![Alphabetical slider](<../../../.gitbook/assets/image-(3) (1).png>)
 
 ## !\[Settings button]\(/\_images/image-(4579 "Settings button").png>) Settings Button
 
@@ -77,7 +77,7 @@ Having these as separate tabs allows you to easily configure and manage the prod
 
 Using the **Filter** field, you can easily filter the Product Tree to only show matching results.
 
-![using the 'Filter' field](/_images/image-(4).png)
+![using the 'Filter' field](<../../../.gitbook/assets/image-(4) (1).png>)
 
 > \*\*Tip\*\*
 >
@@ -104,15 +104,15 @@ The _Group Product Variants_ button (Grid View only) allows you to group all pro
 
 This is an example of the Grid View without variant grouping. Notice how each product variant is shown on a separate card.
 
-![Grid View without variant grouping](/_images/image-(4569).png)
+![Grid View without variant grouping](../../../.gitbook/assets/image-\(4569\).png)
 
 Contrast this to Grid View with variant grouping enabled, and you'll notice each product only has a single card, but the total number of variants is shown.
 
-![Grid View with variant grouping enabled](/_images/image-(4571).png)
+![Grid View with variant grouping enabled](../../../.gitbook/assets/image-\(4571\).png)
 
 Clicking the down arrow on the product's card shows more details for each variant.
 
-![Displaying variant information](/_images/image-(4572).png)
+![Displaying variant information](../../../.gitbook/assets/image-\(4572\).png)
 
 ## !\[Product Statistics]\(/\_images/image-(4556 "Product Statistics").png>) Product Statistics
 
@@ -122,7 +122,7 @@ The _Product Statistics_ button toggles on the _Stats View_ underneath the Produ
 >
 > See \[List of Product Statistics]\(../../technical-references/list-product-statistics.md) for a list of available statistics and their purpose.
 
-![Product Statistics enabled](/_images/image-(4557).png)
+![Product Statistics enabled](../../../.gitbook/assets/image-\(4557\).png)
 
 Clicking any stat filters the catalog to display only items that match the selected stat.
 
@@ -130,7 +130,7 @@ Clicking any stat filters the catalog to display only items that match the selec
 
 The _Group Product Variants_ button (Grid View only), shows all of the [customization (right-click) options](../../customizations/overview.md) that apply globally to all vendors and products. This is the same as right-clicking the root node of the Product Tree when it is in Tree View.
 
-![All Vendors button](/_images/image-(4583).png)
+![All Vendors button](../../../.gitbook/assets/image-\(4583\).png)
 
 ## Copy Products Button
 
@@ -140,7 +140,7 @@ The _Copy Products_ button synchronizes product selections and/or customizations
 
 The _Expand All Tree Nodes_ button (Tree View only) will either expand or collapse the Product Tree if it is being viewed in Tree View.
 
-!['Expand All Tree Nodes' button](/_images/image-(4584).png)
+!['Expand All Tree Nodes' button](../../../.gitbook/assets/image-\(4584\).png)
 
 ## !\[Filter option]\(/\_images/image-(4558 "Filter option").png>) Filters Button
 
@@ -158,15 +158,15 @@ To apply a filter(s):
 
 1. Click the filter button to enable it.
 
-![Clicking the 'Filter' button to enable it.](/_images/image-(4559).png)
+![Clicking the 'Filter' button to enable it.](../../../.gitbook/assets/image-\(4559\).png)
 
 2. Click the required filter(s) to filter the Product Tree as required.
 
-![Clicking the required filter(s) to filter the Product Tree as required.](/_images/image-(4560).png)
+![Clicking the required filter(s) to filter the Product Tree as required.](../../../.gitbook/assets/image-\(4560\).png)
 
 The Product Tree will update according to the filters selected and shows the **Active** text to indicate filters have been applied to the Product Tree.
 
-![Filters Product Tree](/_images/image-(4561).png)
+![Filters Product Tree](../../../.gitbook/assets/image-\(4561\).png)
 
 ### Saving Filters
 
@@ -177,15 +177,15 @@ To save a set of filters:
 1. Apply the required filters.
 2. Under the **Saved Filters** section, click the save icon.
 
-![Clicking the save icon](/_images/image-(4564).png)
+![Clicking the save icon](../../../.gitbook/assets/image-\(4564\).png)
 
 3. On the **Save Filter Preset** screen, enter a name for this configuration and click **OK**
 
-![Enter name for the filter set](/_images/image-(4565).png)
+![Enter name for the filter set](../../../.gitbook/assets/image-\(4565\).png)
 
 The saved filter set appears in the **Saved Filters** section.
 
-![Saved Filter](/_images/image-(4566).png)
+![Saved Filter](../../../.gitbook/assets/image-\(4566\).png)
 
 > \*\*Tip\*\*
 >

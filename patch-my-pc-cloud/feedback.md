@@ -8,17 +8,17 @@ To help us gather feedback, we have implemented a feedback mechanism into some w
 
 If feedback has been enabled for a workflow, the first time you complete that workflow, the **Rate Your Experience** popup is included as part of the usual notification.
 
-!["Rate Your Experience" notification](/_images/image-(3423).png)
+!["Rate Your Experience" notification](../.gitbook/assets/image-\(3423\).png)
 
 Click on the relevant smiley to indicate your feelings about the workflow. Then provide your comments/feedback, and optionally check the **You can contact me regarding my feedback** checkbox.
 
 Finally, click the green paper airplane icon to send your feedback.
 
-![Providing comments and submitting feedback](/_images/image-(3424).png)
+![Providing comments and submitting feedback](../.gitbook/assets/image-\(3424\).png)
 
 You will then see the **Thank You** notification thanking you for your feedback
 
-!["Thank You" notification](/_images/image-(3425).png)
+!["Thank You" notification](../.gitbook/assets/image-\(3425\).png)
 
 > \*\*Note\*\*
 >

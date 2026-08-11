@@ -22,16 +22,16 @@ If the install executable version that was originally used to deploy Advanced In
 
 Click **'Modify'**
 
-![Clicking 'Modify'](/_images/image-(4347).png)
+![Clicking 'Modify'](../../.gitbook/assets/image-\(4347\).png)
 
 Click **'Yes'**
 
-![UAC](/_images/image-(4348).png)
+![UAC](../../.gitbook/assets/image-\(4348\).png)
 
 Click **'Modify'**
 
-![Clicking 'Modify'](/_images/image-(4349).png)
+![Clicking 'Modify'](../../.gitbook/assets/image-\(4349\).png)
 
 Select the required modification option checkbox to enable the related '**Change**' button
 
-![Selecting the required modification option checkbox](/_images/image-(4350).png)
+![Selecting the required modification option checkbox](../../.gitbook/assets/image-\(4350\).png)

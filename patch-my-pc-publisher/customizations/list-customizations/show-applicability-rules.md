@@ -18,7 +18,7 @@ This view allows you to review the rules used to determine whether a software up
 
 When you select **Show Applicability Rules**, a window opens displaying the following sections for the selected update.
 
-![Applpicability Rules](/_images/image-(79).png)
+![Applpicability Rules](<../../../.gitbook/assets/image-(79) (1).png>)
 
 * **Update Title**\
   Displays the full update name as defined in the catalog.
@@ -65,7 +65,7 @@ These elements are combined to build the full compliance logic.
 
 The example below shows the applicability logic (Is Installable Rule) for Google Earth Pro x64.
 
-![Applicability Rules Explained](/_images/image-(80).png)
+![Applicability Rules Explained](<../../../.gitbook/assets/image-(80) (1).png>)
 
 * The rule uses `bar:RegKeyLoop` to iterate through all subkeys under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall.`
 * The attribute `TrueIf="Any"` means the rule evaluates to true if any single uninstall entry matches the conditions inside the loop.

@@ -10,7 +10,7 @@ hidden: true
 
 If you are unsure which type of call you would like to book, please use this decision tree below.
 
-![](/_images/image-(1297).png)
+![](../.gitbook/assets/image-\(1297\).png)
 
 ## Book a Live Demo
 

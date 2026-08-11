@@ -19,13 +19,13 @@ Once you click **Migrate** to migrate a ConfigMgr application to a PMPC Custom A
 
 When you click **Migrate**, the **Deployment Created, Migration Pending** notification is shown.
 
-![Application migration status](/_images/image-(3678).png)
+![Application migration status](../../../.gitbook/assets/image-\(3678\).png)
 
 The **Status** field also updates to **In Progress** whilst the deployment is created, with any required content zipped (e.g., the primary installer file and any extra files) and sent to Azure Blob Storage.
 
 You can also monitor the deployment progress by clicking the **Deployments** node and watching for the deployment status to change to **Success**.
 
-![Deployment created for migrated application](/_images/image-(3679).png)
+![Deployment created for migrated application](../../../.gitbook/assets/image-\(3679\).png)
 
 > \*\*Tip\*\*
 >
@@ -33,4 +33,4 @@ You can also monitor the deployment progress by clicking the **Deployments** nod
 >
 > \*\*Home | Apps | Windows | Windows | Windows Apps | <\*\*\_\*\*app\\\_name\*\*\_\*\*>\*\*
 
-![Migrated application as seen in the Intune admin center](/_images/image-(3680).png)
+![Migrated application as seen in the Intune admin center](../../../.gitbook/assets/image-\(3680\).png)

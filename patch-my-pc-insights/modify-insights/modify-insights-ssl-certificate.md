@@ -20,6 +20,6 @@ This section describes the steps required to change the SSL certificate used for
 
 In the configuration modification page, select the checkbox for '**SSL Certificate**' then click '**Change Certificate**':
 
-![Clicking 'Change Certificate'](/_images/image-(4351).png)
+![Clicking 'Change Certificate'](../../.gitbook/assets/image-\(4351\).png)
 
 Continue with the [Insights SSL Certificate Configuration](../download-and-install-insights/insights-ssl-certificate-configuration.md) process.

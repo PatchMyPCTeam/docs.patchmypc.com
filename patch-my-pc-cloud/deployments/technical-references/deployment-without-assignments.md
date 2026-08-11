@@ -19,7 +19,7 @@ To create a deployment with no assignments:
 * **Install App -** Allows the Intune admin to add **Required**, **Available**, or **Uninstall** assignments from within the Intune admin center.
 * **Update Only App -** Allows the Intune admin to add only an **Update Only** assignment from within the Intune admin center if the **Installer Type** is **.msp**.
 
-!['App Without Assignment' sub-menu](/_images/image-(1060).png)
+!['App Without Assignment' sub-menu](../../../.gitbook/assets/image-\(1060\).png)
 
 > \*\*Note\*\*
 >
@@ -31,7 +31,7 @@ To create a deployment with no assignments:
 
 2. Select the relevant option.
 
-![Selecting the required option](/_images/image-(3185).png)
+![Selecting the required option](../../../.gitbook/assets/image-\(3185\).png)
 
 3. Uncheck the **Copy-Forward** checkbox if required.\
    \
@@ -47,15 +47,15 @@ To create a deployment with no assignments:
 >
 > \* If the \*\*Copy-Forward\*\* checkbox is unchecked, any existing assignments will be deleted.
 
-!['Copy-Forward' checkbox](/_images/image-(3186).png)
+!['Copy-Forward' checkbox](../../../.gitbook/assets/image-\(3186\).png)
 
 4. Click **Deploy** and wait for the deployment to complete successfully.
 
-![Clicking 'Deploy'](/_images/image-(3187).png)
+![Clicking 'Deploy'](../../../.gitbook/assets/image-\(3187\).png)
 
 Once the deployment has successfully completed, if you look in the Intune admin center you will see that the app has been created without any assignments.
 
-![App created with no assignments](/_images/image-(1064).png)
+![App created with no assignments](../../../.gitbook/assets/image-\(1064\).png)
 
 Your local IT teams can now follow the [Assign apps to groups with Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/apps-deploy) process to add the relevant assignments for this app.
 

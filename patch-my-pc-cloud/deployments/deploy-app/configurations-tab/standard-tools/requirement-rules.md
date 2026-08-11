@@ -10,7 +10,7 @@ This includes:
 * [OS Architecture Requirements](requirement-rules.md#os-architecture-requirements)
 * [Additional Requirements Rules](requirement-rules.md#additional-requirements-rules)
 
-![Requirements section](/_images/image-(4249).png)
+![Requirements section](../../../../../.gitbook/assets/image-\(4249\).png)
 
 Configure these settings as required and detailed below.
 
@@ -76,11 +76,11 @@ To configure an Additional Requirement Rule:
 
 1. Click **Add** in the **Additional Requirements Rules** section.
 
-![Clicking ‘Add' in the ‘Additional Requirements Rules' section](/_images/image-(4250).png)
+![Clicking ‘Add' in the ‘Additional Requirements Rules' section](../../../../../.gitbook/assets/image-\(4250\).png)
 
 2. On the **Add Requirement Rule** screen, select the relevant type of rule from the **Rule Type** dropdown, then configure the required options as required.
 
-![Selecting the required ‘Rule Type'](/_images/image-(4251).png)
+![Selecting the required ‘Rule Type'](../../../../../.gitbook/assets/image-\(4251\).png)
 
 > \*\*Note\*\*
 >
@@ -104,11 +104,11 @@ To configure an Additional Requirement Rule:
 
 4. Click **Add Rule** to add the requirement rule.
 
-![Clicking ‘Add Rule' to add the requirement rule](/_images/image-(4252).png)
+![Clicking ‘Add Rule' to add the requirement rule](../../../../../.gitbook/assets/image-\(4252\).png)
 
 The rule is added to the list of requirement rules.
 
-![Rule added to the list of requirement rules](/_images/image-(4253).png)
+![Rule added to the list of requirement rules](../../../../../.gitbook/assets/image-\(4253\).png)
 
 > \*\*Note\*\*
 >
@@ -142,4 +142,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-![Clicking 'Next'](/_images/image-(662).png)
+![Clicking 'Next'](../../../../../.gitbook/assets/image-\(662\).png)

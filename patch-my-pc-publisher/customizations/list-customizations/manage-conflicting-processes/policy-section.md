@@ -10,7 +10,7 @@ _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Update
 
 The **Policy** section of **Manage Conflicting Processes** defines how the Patch My PC (PMPC) Publisher handles update installation when a conflicting application process is detected on the device. These settings determine whether the update proceeds, how running applications are handled, and whether user interaction is required before installation begins.
 
-![Manage Conflicting Processes Settings](/_images/image-(3965).png)
+![Manage Conflicting Processes Settings](../../../../.gitbook/assets/image-\(3965\).png)
 
 ## Perform the Installation
 
@@ -60,7 +60,7 @@ This option provides the best balance between update reliability and user experi
 
 The **Notify Timeout Configuration** setting controls how long the update waits for user action after a notification is displayed when a conflicting process is detected. It is used in conjunction with the policy setting to [Notify the user to close the application](policy-section.md#notify-the-user-to-close-the-application).
 
-![Notify Timeout Configuration](/_images/image-(137).png)
+![Notify Timeout Configuration](../../../../.gitbook/assets/image-\(137\).png)
 
 The timeout defines the period the user has to close the application before enforcement behavior occurs. If the application is closed within this window, the update proceeds. If no action is taken, the outcome depends on the [configured deferral and enforcement settings](policy-section.md#defer-policy).
 

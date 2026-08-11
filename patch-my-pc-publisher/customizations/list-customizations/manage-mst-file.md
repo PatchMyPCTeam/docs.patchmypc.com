@@ -16,7 +16,7 @@ In both cases, the transform is applied during installation in the same manner.
 
 In the **MST Transform Files** dialog, select the MST file you want to apply during installation. If the transform requires additional files, you can also select an optional supporting CAB file.
 
-!['MST Transform Files' dialog](/_images/image-(4768).png)
+!['MST Transform Files' dialog](../../../.gitbook/assets/image-\(4768\).png)
 
 The selected MST and CAB files are automatically included when the application or update is published. You do not need to add these files separately as additional content.
 

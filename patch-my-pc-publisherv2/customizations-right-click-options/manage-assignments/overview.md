@@ -8,11 +8,11 @@ _&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Manage Assignments** option allows you to control which Intune assignments the Publisher creates and maintains for Intune applications and Intune updates.
 
-![Manage Assignments](/_images/image-(4022).png)
+![Manage Assignments](../../../.gitbook/assets/image-\(4022\).png)
 
 When selected, the **Manage Application Assignments** form opens. From this form, you can add new assignments, remove existing assignments, and control whether the Publisher should override manual assignment changes made directly in Intune.
 
-![Manage Application Assignments Form](/_images/image-(4023).png)
+![Manage Application Assignments Form](../../../.gitbook/assets/image-\(4023\).png)
 
 Assignments are grouped by intent so you can clearly see which Entra ID groups receive the application automatically (Required), which groups can install it from the Company Portal (Available), and which groups are targeted for remova(Uninstall).
 

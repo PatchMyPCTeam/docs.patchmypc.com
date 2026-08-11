@@ -18,11 +18,11 @@ To configure your PMPC Cloud Company for multiple domains:
 3. Sign in to your PMPC Cloud company using a user account that has the **Full Admin with Access Management** role (other roles cannot use this feature).
 4. Navigate to **Settings | Company**
 
-![Navigating to ‘Settings | Company'](/_images/image-(567).png)
+![Navigating to ‘Settings | Company'](<../../../../../.gitbook/assets/image-(567) (1).png>)
 
 5. Click the **Domains** tab.
 
-![Clicking the ‘Domains' tab](/_images/image-(568).png)
+![Clicking the ‘Domains' tab](<../../../../../.gitbook/assets/image-(568) (1).png>)
 
 The list of custom domains configured for your tenant is displayed. If a domain is listed with a **Status** of **Available**, it means any users within that domain can request access to your PMPC Cloud Company.
 
@@ -30,7 +30,7 @@ The list of custom domains configured for your tenant is displayed. If a domain 
 >
 > Whenever a new custom domain is added, it will be automatically enabled within PMPC Cloud.
 
-![List of configured domains](/_images/image-(569).png)
+![List of configured domains](<../../../../../.gitbook/assets/image-(569) (1).png>)
 
 6. Complete the relevant task:
    1. [Enable a domain](enable-domain.md)

@@ -18,7 +18,7 @@ To export a certificate:
    \
    The **Export Complete** dialog is displayed confirming the export.<br>
 
-!['Export Complete' dialog](/_images/image-(4490).png)
+!['Export Complete' dialog](../../../../../../.gitbook/assets/image-\(4490\).png)
 
 > \*\*Note\*\*
 >

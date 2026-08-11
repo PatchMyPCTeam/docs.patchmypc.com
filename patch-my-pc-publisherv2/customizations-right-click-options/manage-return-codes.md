@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Manage Return Codes** option allows you to control how installer exit codes are interpreted for a product in the Publisher. Each return code can be mapped to a specific code type to influence how the installation result is reported and how restart behavior is handled on the client.
 
-![Manage Return Codes](/_images/image-(4017).png)
+![Manage Return Codes](../../.gitbook/assets/image-\(4017\).png)
 
 This feature is commonly used to suppress reboot behavior or to ensure that non standard success codes are correctly treated as successful installations.
 
@@ -20,7 +20,7 @@ This feature is commonly used to suppress reboot behavior or to ensure that non 
 
 Each return code returned by the installer is associated with a code type. The code type determines how the Patch My PC ScriptRunner, which managers the installation, and the management platform interpret the result.
 
-![Return Code Values](/_images/image-(4018).png)
+![Return Code Values](../../.gitbook/assets/image-\(4018\).png)
 
 The following return codes are commonly used by default:
 
@@ -38,4 +38,4 @@ Some installers return non standard exit codes even when the installation succee
 
 For example, Brave Browser always exits with return code 19 on a successful installation. Because 19 is not treated as a success code by default, it is mapped to Success so the deployment is reported correctly.
 
-![Custom Return Codes](/_images/image-(4019).png)
+![Custom Return Codes](../../.gitbook/assets/image-\(4019\).png)

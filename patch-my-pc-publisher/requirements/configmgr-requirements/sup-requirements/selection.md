@@ -36,13 +36,13 @@ Consider the following scenarios to help you select the correct Site System on w
 
 In this example, a single Site System **cm.lab.local** holds the SUP role and is considered the top-level SUP as its synchronization source is Microsoft Update.
 
-![Single SUP top-level SUP](/_images/image-(375).png)
+![Single SUP top-level SUP](<../../../../.gitbook/assets/image-(375) (1).png>)
 
 ### Scenario 2: Multiple SUP's, Microsoft Update is the Synchronization Source
 
 In this example, multiple Site Systems hold the SUP role, but **bb-cm1** is considered the top-level SUP as its synchronization source is Microsoft Update.
 
-![Multiple SUPs top-level SUP](/_images/image-(376).png)
+![Multiple SUPs top-level SUP](<../../../../.gitbook/assets/image-(376) (1).png>)
 
 ### Scenario 3: Multiple SUP's, Microsoft Update is _not_ the Synchronization Source
 
@@ -50,4 +50,4 @@ In this example, the upstream synchronization source is not Microsoft Update, bu
 
 Even in this configuration, **sus01.lab2.local** is still considered the top-level SUP as it is the authoritative source for update metadata within ConfigMgr.
 
-![Multiple SUPs top-level SUP, non-Microsoft source](/_images/image-(377).png)
+![Multiple SUPs top-level SUP, non-Microsoft source](<../../../../.gitbook/assets/image-(377) (1).png>)

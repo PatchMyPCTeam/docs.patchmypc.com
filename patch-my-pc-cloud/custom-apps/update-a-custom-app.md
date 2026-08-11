@@ -13,16 +13,16 @@ To update a Custom App using Patch My PC (PMPC) Cloud:
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. On the **App Catalog** page, search for the relevant app.
 
-![Searching for your Custom App](/_images/image-(1174).png)
+![Searching for your Custom App](../../.gitbook/assets/image-\(1174\).png)
 
 3. Click the app to open it.
 4. On the app’s properties page, click **Add Version**.
 
-![Clicking 'Add Version'](/_images/image-(1175).png)
+![Clicking 'Add Version'](../../.gitbook/assets/image-\(1175\).png)
 
 The Custom Apps Deployment Wizard starts and opens at the **File** page.
 
-![Add Version](/_images/image-(4502).png)
+![Add Version](../../.gitbook/assets/image-\(4502\).png)
 
 > \*\*Note\*\*
 >
@@ -45,11 +45,11 @@ To add a new version of a Custom App based on a new installer file, on the **Add
 * Click **Add Primary Install File** and browse to the location containing the updated version of the app’s installer (EXE or MSI).
 * Drag and drop the installer file onto this page.
 
-![Clicking 'Add Primary Install File' on the 'Add Version' page](/_images/image-(4503).png)
+![Clicking 'Add Primary Install File' on the 'Add Version' page](../../.gitbook/assets/image-\(4503\).png)
 
 The hash for the file is calculated as the file is uploaded to your portal.
 
-![Calculating the hash for the file as its uploaded to your portal.](/_images/image-(4504).png)
+![Calculating the hash for the file as its uploaded to your portal.](../../.gitbook/assets/image-\(4504\).png)
 
 Once completed, goto Step 6.
 
@@ -58,7 +58,7 @@ Once completed, goto Step 6.
    1. Click the relevant **Add** button and browse to the location containing the additional files/folders.
    2.  Drag and drop the files onto this page.<br>
 
-       ![Adding additional files or folders](/_images/image-(4505).png)
+       ![Adding additional files or folders](../../.gitbook/assets/image-\(4505\).png)
 
 > \*\*Note\*\*
 >
@@ -68,7 +68,7 @@ Once completed, goto Step 6.
 
 8. Once the files/folders have been uploaded, click **Next**.
 
-![Clicking 'Next'](/_images/image-(4506).png)
+![Clicking 'Next'](../../.gitbook/assets/image-\(4506\).png)
 
 9. On the **Configuration** page, enter the version number and update any other fields as required.
 
@@ -76,31 +76,31 @@ Once completed, goto Step 6.
 >
 > If a Return Code defined in a Custom App has the same value but a different \*\*Code type\*\* to that defined in the deployment, the settings in the deployment take precedence.
 
-![Entering the version of the "Configuration page"](/_images/image-(3344).png)
+![Entering the version of the "Configuration page"](../../.gitbook/assets/image-\(3344\).png)
 
 10. If you are happy you have entered all of the details for the app correctly, click **Save** otherwise, click **Next**.
 
-![Clicking "Next"](/_images/image-(3345).png)
+![Clicking "Next"](../../.gitbook/assets/image-\(3345\).png)
 
 11. On the **Detection Rules** page, make any required changes.
 
-![Making any required changes on the "Detection Rules" page](/_images/image-(3346).png)
+![Making any required changes on the "Detection Rules" page](../../.gitbook/assets/image-\(3346\).png)
 
 12. If you are happy you have entered all of the details for the app correctly, click **Save** otherwise, click **Next**.
 
-![Clicking "Next"](/_images/image-(3347).png)
+![Clicking "Next"](../../.gitbook/assets/image-\(3347\).png)
 
 13. On the **Summary** page, review you have configured the app correctly.
     1. If you are happy, click **Create**.
     2. If you need to change something, click **< Prev** to backtrack through the Deployment Wizard to the relevant setting. Make the change, then step back through the wizard to this page. If everything is now correct, click **Create**.
 
-![Clicking "Save" on the "Summary" page](/_images/image-(3348).png)
+![Clicking "Save" on the "Summary" page](../../.gitbook/assets/image-\(3348\).png)
 
 11. The App Catalog is displayed showing the version of the app along with the following notification:\
     \
     **Success Version <**_**version\_number**_**> has been successfully added to <**_**app\_name**_**>**.
 
-![](/_images/image-(1185).png)
+![](../../.gitbook/assets/image-\(1185\).png)
 
 If the previous version of the app was deployed successfully, depending on the configured assignments, the new version will be installed the next time the daily sync runs.
 

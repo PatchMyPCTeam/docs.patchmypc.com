@@ -34,19 +34,19 @@ To invite a user to an existing MSP Company:
 1. Sign in to the parent PMPC Cloud MSP Company.
 2. Navigate to **MSP Customers**
 
-![Navigating to 'MSP Customers'](/_images/image-(582).png)
+![Navigating to 'MSP Customers'](<../../../../.gitbook/assets/image-(582) (1).png>)
 
 3. Click **Invite Customer**
 
-![Clicking 'Invite Customer'](/_images/image-(583).png)
+![Clicking 'Invite Customer'](../../../../.gitbook/assets/image-\(583\).png)
 
 4. In the **Invite Customer** dialog box, enter the email address of the user within the child company you want to invite and click **Send**
 
-![Entering the email address of the user within the child company you want to invite in the 'Invite Customer' dialog box and clicking 'Send'](/_images/image-(584).png)
+![Entering the email address of the user within the child company you want to invite in the 'Invite Customer' dialog box and clicking 'Send'](<../../../../.gitbook/assets/image-(584) (1).png>)
 
 The pending invitation appears under the **Invitations** tab of the **MSP Customers** screen, along with the **Success** message that the invitation has been sent.
 
-![Invitation appearing under the ‘Invitations' tab and the ‘Success' message that the invitation has been sent.](/_images/image-(585).png)
+![Invitation appearing under the ‘Invitations' tab and the ‘Success' message that the invitation has been sent.](<../../../../.gitbook/assets/image-(585) (1).png>)
 
 An event stating the invitation has been sent to the user (including their email address) is also written to the **Events** node.
 
@@ -64,18 +64,18 @@ To accept the invitation to allow the MSP Parent company to manage your PMPC Com
 
 1. Click the **Terms and Conditions** link on the **Company Access Request** screen.
 
-![Clicking the ‘Conditions' link](/_images/image-(586).png)
+![Clicking the ‘Conditions' link](<../../../../.gitbook/assets/image-(586) (1).png>)
 
 2. Review the Terms and Conditions, then click the **X** to close them.
 
-![Reviewing the terms and conditions](/_images/image-(587).png)
+![Reviewing the terms and conditions](<../../../../.gitbook/assets/image-(587) (1).png>)
 
 3. On the **Company Access Request** screen:
    1. Check the **Accept all Terms and Conditions** checkbox
    2. Select the relevant company you want to allow the MSP parent company to manage
    3. Click **Accept Invitation**
 
-![Accepting the invitation](/_images/image-(588).png)
+![Accepting the invitation](<../../../../.gitbook/assets/image-(588) (1).png>)
 
 > \*\*Note\*\*
 >
@@ -87,11 +87,11 @@ To accept the invitation to allow the MSP Parent company to manage your PMPC Com
 
 The user is signed into their PMPC Cloud company, which now shows **Managed By&#x20;**_**\<msp\_parent\_company\_name>**_ in the header.
 
-![](/_images/image-(590).png)
+![](<../../../../.gitbook/assets/image-(590) (1).png>)
 
 In the MSP Parent company, the company of the user who accepted the invitation is shown under the **Customers** tab of the **MSP Customers** screen.
 
-![Company of the user who accepted the invitation is shown under the ‘Customers' tab](/_images/image-(591).png)
+![Company of the user who accepted the invitation is shown under the ‘Customers' tab](<../../../../.gitbook/assets/image-(591) (1).png>)
 
 An event indicating that the user has accepted the invitation (including their email address) is also written to the **Events** node.
 
@@ -99,15 +99,15 @@ An event indicating that the user has accepted the invitation (including their e
 
 To decline the invitation to allow the MSP Parent company to manage your PMPC Cloud company, you can either ignore the invitation (which will expire 15 days after it was sent) or click **Decline** on the **Company Access Request** screen.
 
-![Clicking ‘Decline' on the ‘Company Access Request' screen to decline an invitation](/_images/image-(3683).png)
+![Clicking ‘Decline' on the ‘Company Access Request' screen to decline an invitation](../../../../.gitbook/assets/image-\(3683\).png)
 
 The **Select the Company You Want to Sign In To** screen is displayed.
 
-![‘Select the Company You Want to Sign In To' screen is displayed.](/_images/image-(3684).png)
+![‘Select the Company You Want to Sign In To' screen is displayed.](../../../../.gitbook/assets/image-\(3684\).png)
 
 In the MSP Parent company, the **Status** of the invitation changes to **Declined**
 
-![‘Status' of the invitation changing to ‘Declined' in the MSP Parent company](/_images/image-(3685).png)
+![‘Status' of the invitation changing to ‘Declined' in the MSP Parent company](../../../../.gitbook/assets/image-\(3685\).png)
 
 An event indicating that the user has declined the invitation (including their email address) is also written to the **Events** node.
 

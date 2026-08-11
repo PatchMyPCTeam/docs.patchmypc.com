@@ -6,8 +6,8 @@ Clicking the **Theme** control at the bottom of Patch My PC (PMPC) Publisher let
 
 Here is an example of **Light** mode.
 
-![Example of Light mode](/_images/image-(4745).png)
+![Example of Light mode](../../.gitbook/assets/image-\(4745\).png)
 
 Here is an example of **Dark** mode.
 
-![Example of Dark mode](/_images/image-(4746).png)
+![Example of Dark mode](../../.gitbook/assets/image-\(4746\).png)

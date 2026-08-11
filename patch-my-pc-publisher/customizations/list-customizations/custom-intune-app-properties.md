@@ -14,7 +14,7 @@ If no custom naming convention is configured, or if the pattern is left empty, P
 
 When you select the **Custom Intune App Properties** right-click option, the **Custom Intune Application Properties** dialog appears.
 
-!['Custom Intune Application Properties' dialog](/_images/image-(4805).png)
+!['Custom Intune Application Properties' dialog](../../../.gitbook/assets/image-\(4805\).png)
 
 From here, you can configure a custom name format for Win32 applications created by Publisher by using at least one or more of the provided token values (which can be clicked to insert them at the cursor position):
 

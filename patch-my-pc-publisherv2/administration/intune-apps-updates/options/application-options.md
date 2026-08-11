@@ -6,7 +6,7 @@ _Applies to: Patch My PC Publisher V2.x_
 
 The **Application Options** section controls how applications are created, updated, named, organized, and maintained in Intune when using the Publisher. These settings apply globally to all applications created from the Intune Apps and Intune Options tabs and directly influence application lifecycle behavior.
 
-![Application Options](/_images/image-(251).png)
+![Application Options](../../../../.gitbook/assets/image-\(251\).png)
 
 > \*\*Tip\*\*
 >
@@ -18,7 +18,7 @@ When the **Digitally sign the detection method script and enforce signature chec
 
 Specifically, the Publisher sets the **Enforce script signature check and run script silently** property on the Win32 application’s detection and/or requirement rule in Intune. This is an application-level setting and does not modify PowerShell execution policy or device security configuration.
 
-![Enforce script signature check](/_images/image-(3857).png)
+![Enforce script signature check](../../../../.gitbook/assets/image-\(3857\).png)
 
 This option is intended for environments that already enforce signed PowerShell scripts, such as those using an AllSigned execution policy or application control solutions like AppLocker or Windows Defender Application Control (WDAC). By signing the detection and requirement scripts and enabling signature enforcement on the application, the Publisher allows them to run silently and unblocked where unsigned scripts would otherwise be blocked or require user confirmation.
 
@@ -28,7 +28,7 @@ To select a code-signing certificate for signing detection and requirement scrip
 2. Select Browse next to Select code-signing certificate.
 3. In the certificate selection window, choose a valid code-signing certificate from the Local Computer – Personal certificate store.
 
-![Browse the Local Computer Store for a Code-Signing Certificate](/_images/image-(86).png)
+![Browse the Local Computer Store for a Code-Signing Certificate](<../../../../.gitbook/assets/image-(86) (1).png>)
 
 4. Select OK to confirm the certificate selection.
 5. Select OK again to save the Intune Options.
@@ -49,7 +49,7 @@ This ensures that when new devices go through Autopilot, the Enrollment Status P
 
 Applications must be explicitly associated with an Enrollment Status Page profile using the [product tree](../product-tree.md). This is done by right-clicking a product and selecting [Manage ESP profiles](../../../customizations-right-click-options/manage-esp-profiles.md), where you choose which ESP configuration the application should be included in. For more information on all of the available right-click customization options, see [Customizations (Right-Click Options)](../../../customizations-right-click-options/).
 
-![Manage ESP Profiles in the Product Tree](/_images/image-(258).png)
+![Manage ESP Profiles in the Product Tree](../../../../.gitbook/assets/image-\(258\).png)
 
 > \*\*Note\*\*
 >
@@ -142,10 +142,10 @@ If an installation exceeds the configured runtime, Intune marks the install as f
 
 This setting is visible on the Program tab of the Win32 application properties in the Intune admin center.
 
-![Installation time required](/_images/image-(241).png)
+![Installation time required](../../../../.gitbook/assets/image-\(241\).png)
 
 ## Allow available uninstall
 
 When **Enable "Allow available uninstall"** is enabled, the Publisher configures Win32 applications in Intune to allow users to uninstall the application from the Company Portal when the app is assigned as Available.
 
-![Allow available uninstall](/_images/image-(3859).png)
+![Allow available uninstall](../../../../.gitbook/assets/image-\(3859\).png)

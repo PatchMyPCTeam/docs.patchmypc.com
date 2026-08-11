@@ -8,7 +8,7 @@ _&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Policy** section defines how the Publisher handles update installation when a conflicting application process is detected on the device. These settings determine whether the update proceeds, how running applications are handled, and whether user interaction is required before installation begins.
 
-![Manage Conflicting Processes Settings](/_images/image-(3965).png)
+![Manage Conflicting Processes Settings](../../../.gitbook/assets/image-\(3965\).png)
 
 ### Perform the Installation
 
@@ -58,7 +58,7 @@ This option provides the best balance between update reliability and user experi
 
 The **Notify Timeout Configuration** setting controls how long the update waits for user action after a notification is displayed when a conflicting process is detected. It is used in conjunction with the policy setting to [Notify the user to close the application](setting-configuration.md#notify-the-user-to-close-the-application).
 
-![Notify Timeout Configuration](/_images/image-(137).png)
+![Notify Timeout Configuration](../../../.gitbook/assets/image-\(137\).png)
 
 The timeout defines the period the user has to close the application before enforcement behavior occurs. If the application is closed within this window, the update proceeds. If no action is taken, the outcome depends on the [configured deferral and enforcement settings](setting-configuration.md#defer-policy).
 
@@ -76,7 +76,7 @@ Patch My PC recommends configuring a timeout of one 105 minutes, which aligns wi
 
 The **Process Restart Prevention** option prevents the end user from reopening the application while the update is in progress. This helps avoid scenarios where the application is closed for the update but immediately relaunched, which could cause the installation to fail or be delayed.
 
-![Process Start Prevention](/_images/image-(138).png)
+![Process Start Prevention](../../../.gitbook/assets/image-\(138\).png)
 
 This option is only available at the Product level and should be used for applications where restarting the process during installation is likely to interfere with a successful update.
 
@@ -98,7 +98,7 @@ or
 
 > "The requested operation requires elevation"
 
-![Prevent the end user from opening an application](/_images/image-(3986).png)
+![Prevent the end user from opening an application](../../../.gitbook/assets/image-\(3986\).png)
 
 ### Potential Risk
 
@@ -114,7 +114,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Imag
 
 Look for subkeys named after the blocked executable, such as `notepad++.exe`.
 
-![Image File Execution Options registry entries](/_images/image-(3987).png)
+![Image File Execution Options registry entries](../../../.gitbook/assets/image-\(3987\).png)
 
 > \*\*Note\*\*
 >
@@ -151,13 +151,13 @@ The **Notification Policy** options become available when the policy [Notify the
 
 These settings control how end user notifications behave when a conflicting process is detected and the application is running.
 
-![Notification Policy](/_images/image-(3979).png)
+![Notification Policy](../../../.gitbook/assets/image-\(3979\).png)
 
 ### Notification behavior
 
 If the application to be updated is running, this setting controls how notifications are handled when Windows Focus Assist is active.
 
-![Notification behavior](/_images/image-(3980).png)
+![Notification behavior](../../../.gitbook/assets/image-\(3980\).png)
 
 **Discard the notification**\
 When selected, the notification is suppressed while Focus Assist is enabled. No visible notification is shown to the user during this time.
@@ -236,7 +236,7 @@ If the application is still running when the notification timeout expires and no
 
 The **Management Options** section allows you to control which running processes are evaluated for conflicting process management and configure the notification branding.
 
-![Management Options](/_images/image-(3981).png)
+![Management Options](../../../.gitbook/assets/image-\(3981\).png)
 
 ### Manage process list
 
@@ -246,7 +246,7 @@ The default process list is populated automatically based on the processes defin
 
 You can add additional process names if your environment uses processes that should also be considered conflicting. You can also remove processes if required, although this is generally not recommended unless you are certain the process does not interfere with updates.
 
-![Manage process list](/_images/image-(3982).png)
+![Manage process list](../../../.gitbook/assets/image-\(3982\).png)
 
 Use the process list to define which running executables are treated as conflicting during update installation.
 

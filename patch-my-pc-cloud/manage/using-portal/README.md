@@ -6,6 +6,6 @@ All management-related tasks are performed from the Patch My PC (PMPC) Cloud Por
 
 When you sign in to the PMPC portal ([https://portal.patchmypc.com/](https://portal.patchmypc.com/)), the **App Catalog** node is selected by default.
 
-!["App Catalog" node selected by default when signing in to the PMPC Cloud portal](/_images/image-(3517).png)
+!["App Catalog" node selected by default when signing in to the PMPC Cloud portal](../../../.gitbook/assets/image-\(3517\).png)
 
 The majority of management-related tasks are performed from the **Settings** node, as detailed in [Manage Settings for your Patch My PC Cloud Company](../settings/), though others are performed from other areas of the Portal as detailed in their respective articles.

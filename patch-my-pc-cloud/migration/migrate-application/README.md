@@ -22,7 +22,7 @@ To perform a Migration:
     !\[Begin an application Migration from the Migration tab]\(/\_images/image-(3666).png "Begin an application Migration from the Migration tab")
 3. Find the application you want to migrate.
 
-![Select the application to migrate](/_images/image-(3670).png)
+![Select the application to migrate](../../../.gitbook/assets/image-\(3670\).png)
 
 > \*\*Tip\*\*
 >
@@ -33,16 +33,16 @@ To perform a Migration:
 4. If a warning triangle is not present in the **Info** column for the application, go to step 11.
 5.  If a warning triangle is shown in the **Info** column, click it to open the application's properties.<br>
 
-    ![Understand if the migration will not include some properties](/_images/image-(3672).png)
+    ![Understand if the migration will not include some properties](../../../.gitbook/assets/image-\(3672\).png)
 6.  In the application's properties, locate the tab(s) with a warning triangle beside them.<br>
 
-    ![Read and understand any warnings about the application to be migrated](/_images/image-(3673).png)
+    ![Read and understand any warnings about the application to be migrated](../../../.gitbook/assets/image-\(3673\).png)
 7. Click the relevant tab and look for the items with the warning triangle beside them.
 8. Review the warning and determine your course of action.
 9. If you are happy to proceed with the migration, go to step 11.
 10. If you cannot proceed with the migration, close the application's properties and click **Cancel** to close the **Migration Wizard**. You now need to assess how to address the warnings to determine your next course of action for this application.
 
-![Click the Migrate button](/_images/image-(3675).png)
+![Click the Migrate button](../../../.gitbook/assets/image-\(3675\).png)
 
 11. The behavior of the **Migrate** button depends on both the application **Match Type** and the **Migrate button** state shown in the UI. The image below highlights two possible Migrate button states:
 
@@ -51,7 +51,7 @@ To perform a Migration:
     * **Button State 2 – Migrate button with dropdown**\
       Clicking **Migrate** displays additional options, allowing you to choose how the application should be migrated.
 
-    ![Migrate Button State](/_images/image-(3788).png)
+    ![Migrate Button State](../../../.gitbook/assets/image-\(3788\).png)
 
     Use the following sections to determine which action to take based on the application’s **Match Type** and the **Migrate** button state shown:
 
@@ -71,7 +71,7 @@ If the application is identified as a PMPC Custom App and no alternative catalog
 
 If the application is identified as a **Custom App**, but a potential catalog match was identified based on application metadata instead of the file hash, the drop-down menu will present two options:
 
-![two options in the dropdown if a potential catalog match was identified based on application metadata instead of the file hash, the drop-down menu](/_images/image-(3790).png)
+![two options in the dropdown if a potential catalog match was identified based on application metadata instead of the file hash, the drop-down menu](../../../.gitbook/assets/image-\(3790\).png)
 
 * **Match to Catalog App -** Select this to migrate the application using the suggested catalog match and follow the [Publish the App in Intune as a Suggested PMPC Catalog App](publish-migrated-app-suggested-app.md) process.
 * **Create a Custom App -** Select this to migrate the application as a PMPC Custom App and follow the [Publish the App in Intune as a PMPC Custom App](publish-migrated-app-catalog-app-1.md) process.

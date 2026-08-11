@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Application Migration** section of the Patch My PC (PMPC) Publisher **Cloud** tab is used to help you migrate applications from Microsoft Configuration Manager to Intune using the _Migration_ feature of PMPC Cloud.
 
-!['Application Migration' section](/_images/image-(4858).png)
+!['Application Migration' section](../../../.gitbook/assets/image-\(4858\).png)
 
 > \*\*Important\*\*
 >
@@ -22,7 +22,7 @@ Discovery runs automatically every 60 minutes. Migration status and the number o
 
 When an app migration inventory runs, Publisher saves the inventoried ConfigMgr results in the Publishing Service's installation folder under the **Database** subfolder.
 
-![Migration Database](/_images/image-(168).png)
+![Migration Database](../../../.gitbook/assets/image-\(168\).png)
 
 This folder contains two files:
 
