@@ -15,7 +15,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, the mos
 
 </details>
 
-## 3.0.3.0 - 2026-08-10
+## 3.0.3.0 - 2026-08-03
 
 <details>
 
