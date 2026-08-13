@@ -247,7 +247,7 @@
     * [Feature Comparison with Publisher](patch-my-pc-cloud/intune-apps/feature-comparison-with-publisher.md)
   * [ARM support in Patch My PC Cloud](patch-my-pc-cloud/arm-support.md "ARM support")
   * [macOS support in Patch My PC Cloud](patch-my-pc-cloud/macos-support/README.md "macOS support")
-    * [macOS Support Overview](patch-my-pc-cloud/macos-support/macos-support-overview.md)
+    * [Overview of macOS support in Patch My PC Cloud](patch-my-pc-cloud/macos-support/macos-support-overview.md)
     * [Filter by OS in Cloud](patch-my-pc-cloud/macos-support/filter-by-os-in-cloud.md)
     * [Deploy a macOS app using Patch My PC Cloud](patch-my-pc-cloud/macos-support/deploy-macos-app.md "Deploy a macOS app")
   * [Managed Service Provider feature of Patch My PC Cloud](patch-my-pc-cloud/managed-service-provider-feature/README.md "Managed Service Provider")
