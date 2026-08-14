@@ -133,7 +133,9 @@ As is standard, clicking a record in a device list modal allows you to drill dow
 
 ## MSI Source Health
 
-The **MSI Source Health** tab is split into the following sections:
+The **MSI Source Health** tab provides visibility into devices that may experience MSI repair, update, uninstall, or patching failures because the original MSI installation source is missing. It helps administrators proactively identify and troubleshoot affected devices before software management issues occur.
+
+It is split into the following sections:
 
 * [Statistics](software-page.md#statistics-3)
 * [Missing MSI Sources](software-page.md#missing-msi-sources)
