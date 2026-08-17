@@ -16,7 +16,7 @@ Any existing assignments for the deployment are shown.
 
 2. Click **Enable Update Rings**.
 
-<figure><img src="../../../.gitbook/assets/image (1153).png" alt="Clicking “Enable Update Rings”" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(451).png" alt="Clicking “Enable Update Rings”" width="563"><figcaption></figcaption></figure>
 
 3. On the **Move Assignments or Delete** dialog box, click **Move** to create the Update Rings and move any existing assignments to the first Update Ring.
 
@@ -35,7 +35,7 @@ Any existing assignments are moved into the first Update Ring.
 4. Continue from Step 3 of the [Create Update Rings](create.md) process to configure your Update Rings. For example, adding additional assignments, moving assignments between rings, etc.
 5. Once you have completed reconfiguring the deployment, click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (1156).png" alt="Clicking “Save” to save changes" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(454).png" alt="Clicking “Save” to save changes" width="563"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Warning**

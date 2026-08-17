@@ -12,7 +12,7 @@ See [Using Templates in Deployments](../../../deployments/use-template.md) for d
 
 All deployment template-related tasks are performed from the **Templates** node of the portal, accessed by navigating to **Settings | Templates**.
 
-<figure><img src="../../../../.gitbook/assets/image (975).png" alt="Navigating to &#x27;Settings | Templates&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (959).png" alt="Navigating to &#x27;Settings | Templates&#x27;" width="563"><figcaption></figcaption></figure>
 
 The **Templates** page is then displayed, showing any existing templates and allowing you to:
 

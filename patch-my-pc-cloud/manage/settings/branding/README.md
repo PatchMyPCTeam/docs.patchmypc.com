@@ -31,7 +31,7 @@ All branding-related tasks are performed from the **Branding** node of the porta
 1. Sign in to the PMPC Portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. Navigate to **Settings | Branding**.
 
-<figure><img src="../../../../.gitbook/assets/image (3718).png" alt="Navigating to ‘Settings | Branding’" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (536).png" alt="Navigating to ‘Settings | Branding’" width="563"><figcaption></figcaption></figure>
 
 The **Branding** screen is then displayed, allowing you to:
 

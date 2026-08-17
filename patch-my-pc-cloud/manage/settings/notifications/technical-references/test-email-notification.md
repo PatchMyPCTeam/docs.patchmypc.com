@@ -20,7 +20,7 @@ If the email address is valid, the user will receive an email with the following
 **Sender:** Patch My PC\<noreply@patchmypc.com>\
 **Subject:** Test notification from Patch My PC Cloud
 
-<figure><img src="../../../../../.gitbook/assets/image (2595).png" alt="Test email showing email notifications are working" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2594).png" alt="Test email showing email notifications are working" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**
@@ -44,7 +44,7 @@ If the email address is valid, the user will receive an email with the following
 **Sender:** Patch My PC\<noreply@patchmypc.com>\
 **Subject:** Test notification from Patch My PC Cloud
 
-<figure><img src="../../../../../.gitbook/assets/image (2595).png" alt="Test email showing email notifications are working" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2594).png" alt="Test email showing email notifications are working" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**

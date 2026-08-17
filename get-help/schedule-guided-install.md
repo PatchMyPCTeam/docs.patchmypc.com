@@ -7,14 +7,12 @@ hidden: true
 {% hint style="warning" %}
 For general product advice or support, please visit our [Technical Support](https://patchmypc.com/technical-support) page. Submitting your request there ensures immediate notification to our engineers, who will assign a qualified expert to your case.
 
-
-
 Booking a call using the links on this page for other support needs may result in the assigned engineer redirecting you to our [Technical Support](https://patchmypc.com/technical-support) page to ensure proper handling of your support case by a qualified support expert.
 {% endhint %}
 
 If you are unsure which type of call you would like to book, please use this decision tree below.
 
-<figure><img src="../.gitbook/assets/image (1297).png" alt=""><figcaption><p>Book a call - decision tree</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-(595).png" alt=""><figcaption><p>Book a call - decision tree</p></figcaption></figure>
 
 ## Book a Live Demo
 
@@ -31,7 +29,7 @@ During a live demo, an [engineer](https://patchmypc.com/about-us#meet-the-team) 
 * Answer all your questions
 
 {% hint style="success" %}
-[Book a Live Demo](https://patchmypc.com/schedule-live-demo)[ ](https://patchmypc.com/schedule-live-demo?utm_source=github\&utm_medium=referral\&utm_content=docs-article)
+[Book a Live Demo](https://patchmypc.com/schedule-live-demo)
 {% endhint %}
 
 ### Book a Guided Setup Call

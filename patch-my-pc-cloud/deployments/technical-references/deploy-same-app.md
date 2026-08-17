@@ -37,7 +37,7 @@ The green cloud icon beside the version number tells you this software has alrea
 See the [Deploy an App](../deploy-app/) for more details. You can also apply a deployment template to this deployment by clicking **Apply Template** and following the [Use a Template in Deployments](../use-template.md) process.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1189).png" alt="Clicking &#x22;Deploy&#x22; on the App&#x27;s properties page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1188).png" alt="Clicking &#x22;Deploy&#x22; on the App&#x27;s properties page" width="563"><figcaption></figcaption></figure>
 
 4. On the G**eneral Information** tab, in the **Display Name** field, enter a unique name for this deployment, then click **Next**.
 

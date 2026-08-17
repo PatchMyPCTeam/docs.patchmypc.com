@@ -9,11 +9,11 @@ The Cloud Portal is split into two key areas:
 1. **Navigation pane -** Allows you to navigate through the different nodes
 2. **Details pane -** Changes based on the selected node and available actions.
 
-<figure><img src="../.gitbook/assets/image (4002).png" alt="Cloud Portal" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4002).png" alt="Cloud Portal" width="563"><figcaption></figcaption></figure>
 
 The Navigation pane consists of the following nodes:
 
-<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="about-portal.md#app-catalog">App Catalog</a></td><td valign="top"><a href="about-portal.md#deployments">Deployments</a></td><td valign="top"><a href="about-portal.md#events">Events</a></td><td valign="top"><a href="about-portal.md#migration">Migration</a></td></tr><tr><td valign="top"><a href="about-portal.md#discovery">Discovery</a></td><td valign="top"><a href="about-portal.md#advanced-patch-insights">Advanced/Patch Insights</a></td><td valign="top"><a href="about-portal.md#settings">Settings</a></td><td valign="top"></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="./#app-catalog">App Catalog</a></td><td valign="top"><a href="./#deployments">Deployments</a></td><td valign="top"><a href="./#events">Events</a></td><td valign="top"><a href="./#migration">Migration</a></td></tr><tr><td valign="top"><a href="./#discovery">Discovery</a></td><td valign="top"><a href="./#advanced-patch-insights">Advanced/Patch Insights</a></td><td valign="top"><a href="./#settings">Settings</a></td><td valign="top"></td></tr></tbody></table>
 
 ## App Catalog
 
@@ -22,16 +22,16 @@ The _App Catalog_ node (selected by default) contains links to the various catal
 From the **App Catalog** you can:
 
 * Search for a specific app.
-* Create a new [Custom App](custom-apps/create-a-custom-app/) by clicking **Add App**.
+* Create a new [Custom App](../custom-apps/create-a-custom-app/) by clicking **Add App**.
 * Modify your view of the App Catalog and whether you see it as a grid view (the default view) or a list view.
 * Sort the App Catalog by App Name (both forward and reverse sort) and the date apps were Last Updated (both forward and reverse sort).
 * Apply Filters to help you refine the results you see.
-* [Deploy an App](deployments/deploy-app/).
+* [Deploy an App](../deployments/deploy-app/).
 
 {% hint style="info" %}
 **Note**
 
-See the [App Catalog](app-catalog/) section for more details.
+See the [App Catalog](../app-catalog/) section for more details.
 {% endhint %}
 
 ## Deployments
@@ -41,7 +41,7 @@ Clicking the _Deployments_ node lets you view all your current deployments and t
 {% hint style="info" %}
 **Note**
 
-See [Deployments](deployments/overview.md) for more information.
+See [Deployments](../deployments/overview.md) for more information.
 {% endhint %}
 
 ## Events
@@ -51,7 +51,7 @@ Clicking the _Events_ node lets you view and manage all of the Cloud-related Eve
 {% hint style="info" %}
 **Note**
 
-See [Events](events/overview.md) for more information.
+See [Events](../events/overview.md) for more information.
 {% endhint %}
 
 ## Migration
@@ -61,7 +61,7 @@ Clicking the _Migration_ node allows you to migrate items from a Microsoft Confi
 {% hint style="info" %}
 **Note**
 
-See [Migration](migration/overview.md) for more information.
+See [Migration](../migration/overview.md) for more information.
 {% endhint %}
 
 ## Discovery
@@ -71,7 +71,7 @@ Clicking the _Discovery_ node lets you see which apps in our App Catalog are ins
 {% hint style="info" %}
 **Note**
 
-See [Discovery](discovery/overview.md) for more information.
+See [Discovery](../discovery/overview.md) for more information.
 {% endhint %}
 
 ## Advanced/Patch Insights
@@ -81,7 +81,7 @@ Clicking the _Advanced/Patch Insights_ node lets you view a wealth of informatio
 {% hint style="info" %}
 **Note**
 
-See [Advanced/Patch Insights](insights-intune/overview.md) for more information.
+See [Advanced/Patch Insights](../insights-intune/overview.md) for more information.
 {% endhint %}
 
 ## Settings
@@ -91,5 +91,5 @@ Clicking the _Settings_ node lets you perform various administrative tasks relat
 {% hint style="info" %}
 **Note**
 
-See [Administration](manage/) for more information.
+See [Administration](../manage/) for more information.
 {% endhint %}

@@ -28,7 +28,7 @@ To add apps to an App Set:
 1. Sign in to the parent MSP Company at [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
 2. Navigate to **App Sets**
 
-<figure><img src="../../../.gitbook/assets/image (3248).png" alt="Navigating to “App Sets”" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3247).png" alt="Navigating to “App Sets”" width="563"><figcaption></figcaption></figure>
 
 The **App Sets** page shows any existing App Sets.
 
@@ -40,7 +40,7 @@ The **App Sets** page shows any existing App Sets.
 
 4. On the **Add App Set** screen, enter a unique name for the new App Set in the **App Set Name** field and click **Add**
 
-![Specifying the name for the new App Set](<../../../.gitbook/assets/image (3253).png>)
+![Specifying the name for the new App Set](<../../../.gitbook/assets/image (3252).png>)
 
 The App Set is created and the _**\<appset\_name>**_ screen opens (where _**\<appset\_name>**_ is the name of the App Set).
 
@@ -185,7 +185,7 @@ If you are using Update Rings for this App Set, we recommend you create all of t
 
 9.  Click **Deploy** to deploy this App Set.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (824).png" alt="Clicking “Deploy” to deploy this App Set" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (823).png" alt="Clicking “Deploy” to deploy this App Set" width="563"><figcaption></figcaption></figure>
 
 The **App Sets** page is redisplayed along with the **Success – App Set created** notification. The newly created App Set will show a Status of **In Progress**, followed by **Success** once all the deployments within the App Set have been completed successfully.
 
@@ -202,7 +202,7 @@ The **Status** will show as **Failed** if one or more of the deployments fails.
 
 You and the admins at the child company can monitor the status of each individual deployment from the **Deployments** node of the targeted company.
 
-![App Set deployment when viewed from the child company](<../../../.gitbook/assets/image (826).png>)
+<img src="../../../.gitbook/assets/image (826).png" alt="App Set deployment when viewed from the child company" data-size="original">
 {% endhint %}
 
 {% hint style="danger" %}

@@ -60,7 +60,7 @@ When choosing an authentication method, select the option that aligns with how y
 {% hint style="success" %}
 **Note:** At the top of the **SMTP Setttings** section, you can choose from the **Common Email Providers** dropdown (Office 365, Outlook.com, Gmail, etc.).
 
-![](<../../.gitbook/assets/image (3707).png>)
+<img src="../../.gitbook/assets/image (3707).png" alt="" data-size="original">
 
 Selecting one will auto-populate the server name, port, and TLS settings for that provider. You can still change any field manually afterwards.
 {% endhint %}
@@ -95,7 +95,7 @@ The Microsoft Teams webhook is a simple way to get a notification for each appli
 
 <figure><img src="../../.gitbook/assets/image (3711).png" alt=""><figcaption></figcaption></figure>
 
-Need help creating the webhook in teams? No problem, check out our complete guide to creating a Teams webhook.&#x20;
+Need help creating the webhook in teams? No problem, check out our complete guide to creating a Teams webhook.
 
 {% embed url="https://patchmypc.com/kb/how-publishing-alerts-work-patch/#h-how-to-create-a-microsoft-teams-webhook-url" %}
 
@@ -103,8 +103,8 @@ Need help creating the webhook in teams? No problem, check out our complete guid
 
 The Slack webhook is another simple way to get a notification for each application as it is published in your environment. Simply create a new webhook in Slack and use that Webhook URL when configuring webhook alerts in the Publisher.
 
-<figure><img src="../../.gitbook/assets/image (1809).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1783).png" alt=""><figcaption></figcaption></figure>
 
-Need help creating the webhook for Slack? No problem, check out our complete guide to creating a Slack webhook.&#x20;
+Need help creating the webhook for Slack? No problem, check out our complete guide to creating a Slack webhook.
 
 {% embed url="https://patchmypc.com/kb/how-publishing-alerts-work-patch/#h-how-to-create-a-slack-webhook-url" %}

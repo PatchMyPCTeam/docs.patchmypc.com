@@ -8,7 +8,7 @@ Please review the [core Publisher requirements](publisher-requirements/core-requ
 
 ## Where should I install the Publisher?
 
-When using the Publisher to publish both applications and updates to ConfigMgr, it should be installed on the top-level Software Update Point (SUP). In a ConfigMgr hierarchy, this would typically be the CAS which holds the Software Update Point role. This allows Publisher to publish updates directly into WSUS using the local WSUS API, ensuring that update metadata is created locally and then inherited naturally by any downstream WSUS servers.&#x20;
+When using the Publisher to publish both applications and updates to ConfigMgr, it should be installed on the top-level Software Update Point (SUP). In a ConfigMgr hierarchy, this would typically be the CAS which holds the Software Update Point role. This allows Publisher to publish updates directly into WSUS using the local WSUS API, ensuring that update metadata is created locally and then inherited naturally by any downstream WSUS servers.
 
 In some environments, the Software Update Point role is hosted on a remote site system rather than the site server itself. In these cases, the Publisher should be installed on that remote server, provided it is the top-level SUP. The key requirement is not the site server, but the server hosting the top-level WSUS instance, as the Publisher must be co-located with WSUS to successfully publish update metadata.
 
@@ -29,7 +29,7 @@ Use the table below to understand where the Publisher should be installed in you
 {% hint style="success" %}
 **Tip**
 
-Some customers who use Intune only choose to install the Publisher on a dedicated Azure virtual machine. A B2 size virtual machine or equivalent is commonly used.&#x20;
+Some customers who use Intune only choose to install the Publisher on a dedicated Azure virtual machine. A B2 size virtual machine or equivalent is commonly used.
 
 The virtual machine should still meet or exceed the [minimum core requirements](publisher-requirements/core-requirements.md) and [additional requirements needed for Intune publishing](publisher-requirements/intune-requirements/).
 {% endhint %}
@@ -37,7 +37,7 @@ The virtual machine should still meet or exceed the [minimum core requirements](
 {% hint style="info" %}
 **Note**
 
-If you intend to publish third-party applications and updates to Intune only, we generally recommend using Patch My PC Cloud, our cloud-based service, as it removes the need to manage on-premises infrastructure and simplifies ongoing operations.&#x20;
+If you intend to publish third-party applications and updates to Intune only, we generally recommend using Patch My PC Cloud, our cloud-based service, as it removes the need to manage on-premises infrastructure and simplifies ongoing operations.
 
 However, some customers are required to use the Publisher instead, such as those with restrictions around enterprise application usage, environments that require GCC High, or scenarios where cloud-hosted services are not permitted. In these cases, the Publisher provides a fully supported alternative that allows publishing to Intune while keeping control within your environment.
 {% endhint %}
@@ -72,7 +72,7 @@ After carefully observing and understanding the [requirements](publisher-require
     <figure><img src="../.gitbook/assets/image (405).png" alt="Install Publisher and accept the end-user license agreement" width="563"><figcaption></figcaption></figure>
 3.  If you are only using the Publisher to publish applications and updates in Intune, you can check the **Enable Microsoft Intune standalone mode\*** box. Click **Next**.<br>
 
-    <figure><img src="../.gitbook/assets/image (406).png" alt="Optionally select Intune standalone mode" width="371"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (177).png" alt="Optionally select Intune standalone mode" width="371"><figcaption></figcaption></figure>
 
     \*Intune standalone mode simply removes some tabs in the Publisher that are specifically used for publishing applications and updates to ConfigMgr and WSUS. These tabs can be re-enabled retrospectively after installation from the Advanced tab in Publisher.
 4.  Select a folder to install the Publisher, and click **Next**. The default folder is `C:\Program Files\Patch My PC\Patch My PC Publishing Service\`.<br>
@@ -81,8 +81,6 @@ After carefully observing and understanding the [requirements](publisher-require
 5.  When you are ready to being, click **Install**.<br>
 
     <figure><img src="../.gitbook/assets/image (408).png" alt="Begin Publisher installation" width="371"><figcaption></figcaption></figure>
-
-
 6.  Click **Yes** if you receive a UAC prompt. When installation has completed, you can choose to not immediately launch the Publisher by un-checking **Launch Patch My PC Publishing Service**. Click **Finish**.<br>
 
     <figure><img src="../.gitbook/assets/image (409).png" alt="Authorize and Complete Installation" width="563"><figcaption></figcaption></figure>

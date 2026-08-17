@@ -13,11 +13,11 @@ If a Custom domain is deleted from your tenant, it will show with a **Status** o
 1. Sign in to your PMPC Cloud company using a user account that has the **Full Admin with Access Management** role.
 2. Navigate to **Settings | Company**
 
-<figure><img src="../../../../../.gitbook/assets/image (563).png" alt="Navigating to ‘Settings | Company’" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (559).png" alt="Navigating to ‘Settings | Company’" width="563"><figcaption></figcaption></figure>
 
 3. Click the **Domains** tab.
 
-<figure><img src="../../../../../.gitbook/assets/image (564).png" alt="Clicking the ‘Domains’ tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (560).png" alt="Clicking the ‘Domains’ tab" width="563"><figcaption></figcaption></figure>
 
 4. Uncheck the checkbox beside the relevant domain(s) you want to disable and click **Save**
 
@@ -25,7 +25,7 @@ If a Custom domain is deleted from your tenant, it will show with a **Status** o
 
 The **Success – Domains updated** notification is shown.
 
-<figure><img src="../../../../../.gitbook/assets/image (566).png" alt="‘Success – Domains updated’ notification" width="250"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (562).png" alt="‘Success – Domains updated’ notification" width="250"><figcaption></figcaption></figure>
 
 Once the domain has been disabled, your PMPC Cloud Company will no longer appear on the **Sign In** page for any users in that domain.
 

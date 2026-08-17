@@ -22,7 +22,7 @@ Please note the following:
   * Without first removing the Intune connection. If you attempt to do this, you will see the [Intune connection with the same Id found in another environment!](../../../troubleshoot/environments/intune-connection-with-the-same-id-found-in-another-environment-error-in-cloud.md) error.
 * An MSP admin cannot delete a child company from the Company node using the [Delete your Company](../../../manage/settings/company-settings/delete-company.md) process, as the option is unavailable.\
   \
-  ![Delete options unavailable on a child company](<../../../../.gitbook/assets/image (2798).png>)<br>
+  ![Delete options unavailable on a child company](<../../../../.gitbook/assets/image (2797).png>)<br>
 * Any Custom Apps for MSPs have been shared with and deployed from a child company, either unlinking or deleting a child company (either from the parent or child company), will:
   * Delete the Custom App from the App Catalog of the child company.
   * Delete any active deployments of the relevant Custom Apps.
@@ -35,7 +35,7 @@ Please note the following:
 {% hint style="danger" %}
 **Important**
 
-If you remove the Intune connection for a Child Company that has App Sets deployed to it from the Parent Company, any deployments for apps that belong to those  App Sets will be automatically deleted as part of the connection removal.
+If you remove the Intune connection for a Child Company that has App Sets deployed to it from the Parent Company, any deployments for apps that belong to those App Sets will be automatically deleted as part of the connection removal.
 
 If an App Set is deployed to multiple companies, when the last Intune connection is deleted from the last company an App Set is deployed to, the App Set itself will be automatically deleted.
 {% endhint %}
@@ -67,7 +67,7 @@ The portal refreshes to show the child company has been selected as the **Manage
 
 7. Click **Delete** beside Intune.
 
-<figure><img src="../../../../.gitbook/assets/image (1073).png" alt="Clicking &#x27;Delete&#x27; beside &#x27;Intune&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-(371).png" alt="Clicking &#x27;Delete&#x27; beside &#x27;Intune&#x27;" width="563"><figcaption></figcaption></figure>
 
 8. On the **Are you sure you want to disconnect Intune** popup, click **OK**.
 
@@ -116,15 +116,13 @@ To unlink a child company from a parent MSP company:
 3.  Navigate to **Settings | Company**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2804).png" alt="Navigating to &#x27;Settings | Company&#x27;" width="563"><figcaption></figcaption></figure>
-
-
 4. Scroll down to the **Your company is managed by an MSP (Managed Service Provider)** section, then click **Unlink MSP**
 
 <figure><img src="../../../../.gitbook/assets/image (2805).png" alt="Clicking &#x27;Unlink MSP&#x27;" width="563"><figcaption></figcaption></figure>
 
 5. On the **Are you sure you want to Disconnect MSP** dialog box, click **Yes**.
 
-<figure><img src="../../../../.gitbook/assets/image (2806).png" alt="Clicking &#x27;Yes&#x27; on the &#x27;Are you sure you want to Disconnect MSP&#x27; dialog box " width="454"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2806).png" alt="Clicking &#x27;Yes&#x27; on the &#x27;Are you sure you want to Disconnect MSP&#x27; dialog box" width="454"><figcaption></figcaption></figure>
 
 6. The **Customer <**_**parent\_company\_name**_**>** notification is displayed and you will prompted to enter a non-MSP+ license for the child company as it has been disconnected from the parent MSP company.
 

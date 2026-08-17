@@ -14,14 +14,10 @@ To change the role assigned to an Entra ID Security Group:
 
 1.  In the PMPC Cloud portal, navigate to **Settings | Users**.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2947).png" alt="Navigating to “Settings | Users”"><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../../../.gitbook/assets/image (1052).png" alt="Navigating to “Settings | Users”"><figcaption></figcaption></figure>
 2.  Click **Entra ID Groups**.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2948).png" alt="Clicking “Entra ID Groups”"><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../../../.gitbook/assets/image (1053).png" alt="Clicking “Entra ID Groups”"><figcaption></figcaption></figure>
 3. Click the dropdown arrow in the **Group Role** column beside the group whose role you want to modify and select the new role.
 
 {% hint style="warning" %}
@@ -36,4 +32,4 @@ The portal auto-refreshes to show the new role assigned to the group and the **S
 
 <figure><img src="../../../../../.gitbook/assets/image (2950).png" alt="Portal auto-refreshing to show the new role assigned to the group and the “Success – Role changed” notification is shown"><figcaption></figcaption></figure>
 
-When you change the role of an Entra ID Security Group, the **Group role with name <**_**group\_name**_**> and id <**_**entra\_id\_security\_group\_id**_**> was changed to role <**_**new\_user\_role**_**>** event is written to the **Events** node.&#x20;
+When you change the role of an Entra ID Security Group, the **Group role with name <**_**group\_name**_**> and id <**_**entra\_id\_security\_group\_id**_**> was changed to role <**_**new\_user\_role**_**>** event is written to the **Events** node.

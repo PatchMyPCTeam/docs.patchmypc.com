@@ -9,7 +9,7 @@ To deploy an app listed on the **Unmanaged** tab of the **Discovery** node of Pa
 1. Navigate to the **Discovery** node.
 2.  Click **Deploy** beside the relevant app.<br>
 
-    <figure><img src="../../.gitbook/assets/image (1119).png" alt="Clicking “Deploy” beside the relevant the app" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1118).png" alt="Clicking “Deploy” beside the relevant the app" width="563"><figcaption></figcaption></figure>
 
     \
     The Deployment Wizard starts.<br>

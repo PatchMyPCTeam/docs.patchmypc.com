@@ -10,13 +10,9 @@ To update an individual Update Ring to a later version:
 2.  Click the relevant deployment to open its properties then click **More Info**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2845).png" alt="Clicking “More Info”"><figcaption></figcaption></figure>
-
-
 3.  If you can update a ring to a newer version the **Update Now** button is available.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2846).png" alt="“Update Now” button available"><figcaption></figcaption></figure>
-
-
 
 {% hint style="danger" %}
 **Important**
@@ -32,11 +28,9 @@ Some important points to note:
 4.  Click **Update Now** and select the relevant version you want to upgrade this ring to.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2847).png" alt="Selecting which version to update this ring to"><figcaption></figcaption></figure>
-
-
 5.  On the **Update “<**_**deployment\_name**_**>” ring to version <**_**version\_number**_**>** dialog box, click **Confirm**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2849).png" alt="Clicking “Confirm”" width="455"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2848).png" alt="Clicking “Confirm”" width="455"><figcaption></figcaption></figure>
 
     \
     The portal refreshes showing that the deployment is **In Progress** and the **Success – Ring <**_**ring\_name**_**>** updated notification is shown.<br>

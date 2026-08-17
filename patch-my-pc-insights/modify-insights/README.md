@@ -28,7 +28,7 @@ Click **'Modify'**
 
 Click **'Yes'**
 
-<figure><img src="../../.gitbook/assets/image (4348).png" alt="UAC" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4319).png" alt="UAC" width="563"><figcaption></figcaption></figure>
 
 Click **'Modify'**
 

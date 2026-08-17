@@ -22,7 +22,7 @@ To invite a new user to the PMPC Cloud portal:
 1. Navigate to **Settings | Users**.
 2.  Click **Invite User** in the header.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1424).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image-(722).png" alt=""><figcaption></figcaption></figure>
 3.  On the **Invite User** screen, enter the user’s details.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2821).png" alt="Complete the details of the user you are inviting" width="262"><figcaption></figcaption></figure>
@@ -52,7 +52,7 @@ Use the tooltips beside each role to gain a quick overview of the role and it's 
 5.  Click **Invite**.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2824).png" alt="Clicking &#x22;Invite&#x22; to send the invitation" width="268"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2823).png" alt="Clicking &#x22;Invite&#x22; to send the invitation" width="268"><figcaption></figcaption></figure>
 
 The **Success - Invitation sent** notification is displayed.
 
@@ -68,7 +68,7 @@ See [Example Invitation email](../../../technical-references/cloud-email-referen
 
 The invitation and its details are shown on the **Invitations** tab, which includes any previously created outstanding invitations that are still valid.
 
-<figure><img src="../../../../.gitbook/assets/image (1430).png" alt="“Invitations” tab showing valid, outstanding user invitations "><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1429).png" alt="“Invitations” tab showing valid, outstanding user invitations"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -90,13 +90,13 @@ To join your company, they should click **Request Access** beside your company.
 
 The **Request Access to join&#x20;**_**\<company\_name>**_ popup appears.
 
-<figure><img src="../../../../.gitbook/assets/image (1318).png" alt="&#x22;Request Access to join <company_name>&#x22; popup"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-(616).png" alt="&#x22;Request Access to join <company_name>&#x22; popup"><figcaption></figcaption></figure>
 
-The user should enter an optional **Reason for Request** then click **Submit**.&#x20;
+The user should enter an optional **Reason for Request** then click **Submit**.
 
 The **Request Access** text changes to **Renotify** and the **Success - Access request sent** notification is shown.
 
-<figure><img src="../../../../.gitbook/assets/image (1319).png" alt="The “Success – Request sent” notification is displayed"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-(617).png" alt="The “Success – Request sent” notification is displayed"><figcaption></figcaption></figure>
 
 Any users with the **Full Admin** role in your PMPC Cloud portal will receive an email containing the user’s details and which company they have requested access to. The email is sent from the [noreply@patchmypc.com](mailto:noreply@patchmypc.com) mailbox with the subject **Access Request&#x20;**_**\<your\_company\_name>**_.
 

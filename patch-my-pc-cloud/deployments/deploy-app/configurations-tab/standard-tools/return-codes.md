@@ -51,7 +51,7 @@ The new Return Code is added to the list.
 5. If you do not want to edit a Return Code, go to Step 9.
 6. To edit a Return Code, click the pencil icon beside it.
 
-<figure><img src="../../../../../.gitbook/assets/image (768).png" alt="Clicking the pencil icon beside a Return Code to edit it." width="419"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-(66).png" alt="Clicking the pencil icon beside a Return Code to edit it." width="419"><figcaption></figcaption></figure>
 
 7. Make any required changes.
 8. Click the green tick to save your changes.
@@ -78,11 +78,11 @@ If you add a Return Code to a deployment, you will be able to edit or delete it 
 If the Return Codes you define in a deployment differ/conflict with those defined for a Custom App, the Return Codes defined on the deployment take precedence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (771).png" alt="Deleting a Return Code" width="420"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-(69).png" alt="Deleting a Return Code" width="420"><figcaption></figcaption></figure>
 
 The code is deleted from the list.
 
-<figure><img src="../../../../../.gitbook/assets/image (772).png" alt="Code deleted from the list" width="425"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-(70).png" alt="Code deleted from the list" width="425"><figcaption></figcaption></figure>
 
 ## Next Steps
 

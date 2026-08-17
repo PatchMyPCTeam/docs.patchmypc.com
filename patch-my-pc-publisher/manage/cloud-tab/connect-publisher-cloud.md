@@ -14,13 +14,13 @@ The process for connecting Publisher to your PMPC Cloud Company is detailed in t
 
 Once Publisher has been successfully connected to your PMPC Cloud Company, its connection will be shown under **Settings | Connections** in the PMPC Cloud Portal, with the connection **Type** shown as **Publisher**.
 
-<figure><img src="../../../.gitbook/assets/image (4855).png" alt="Successful Publisher connection under &#x27;Settings | Connections&#x27; in the Cloud Portal " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4854).png" alt="Successful Publisher connection under &#x27;Settings | Connections&#x27; in the Cloud Portal" width="563"><figcaption></figcaption></figure>
 
 ## Disconnect button
 
 Clicking the **Disconnect** button removes the active connection between Publisher and the PMPC Cloud Company.
 
-After disconnecting, Cloud-based features such as Custom Apps and Application Migration are no longer available until Publisher is reconnected.&#x20;
+After disconnecting, Cloud-based features such as Custom Apps and Application Migration are no longer available until Publisher is reconnected.
 
 ## Test Connection button
 

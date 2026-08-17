@@ -14,7 +14,7 @@ To add a new branding app to your Patch My PC (PMPC) Cloud company:
 
 1. Navigate to **Settings | Branding**
 
-<figure><img src="../../../../.gitbook/assets/image (545).png" alt="Navigating to ‘Settings | Branding’" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (536).png" alt="Navigating to ‘Settings | Branding’" width="563"><figcaption></figcaption></figure>
 
 2. Click **Add Branding**
 
@@ -30,13 +30,13 @@ To add a new branding app to your Patch My PC (PMPC) Cloud company:
 
 When you select **Modern (PSADT)**, you will see the **Are you sure you want to switch branding types** prompt.
 
-![‘Are you sure you want to switch branding type’ prompt](../../../../.gitbook/assets/unknown.png)
+<img src="../../../../.gitbook/assets/unknown.png" alt="‘Are you sure you want to switch branding type’ prompt" data-size="original">
 
 Click **Confirm** to continue.
 
 You will also see the warning message that .NET Framework 4.7.2 or later is required on any devices on which a Modern branding app is targeted to.
 
-![](<../../../../.gitbook/assets/unknown (1).png>)&#x20;
+<img src="../../../../.gitbook/assets/unknown (1).png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="info" %}

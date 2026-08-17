@@ -25,7 +25,7 @@ Note
 
 If you have configured this deployment to use [Update Rings](../update-rings/), you will see the **Deployment Summary** screen, containing details on how you have configured the rings.
 
-!["Deployment Summary" shown if this deloyment is using Update Rings](<../../../.gitbook/assets/image (2993).png>)
+<img src="../../../.gitbook/assets/image (2992).png" alt="&#x22;Deployment Summary&#x22; shown if this deloyment is using Update Rings" data-size="original">
 
 See [Update Rings](../update-rings/) for more information.
 {% endhint %}

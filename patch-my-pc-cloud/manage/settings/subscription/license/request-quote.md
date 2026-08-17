@@ -41,6 +41,6 @@ To request a quote for an Enterprise Premium subscription:
 
 4. On the **Request Sent** screen, click **Close**
 
-<figure><img src="../../../../../.gitbook/assets/image (3598).png" alt="Clicking ‘Close’ on the ‘Request Sent’ screen" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3595).png" alt="Clicking ‘Close’ on the ‘Request Sent’ screen" width="521"><figcaption></figcaption></figure>
 
 A member of our Sales Team will review your request and email the quote to you at the email address you have provided.

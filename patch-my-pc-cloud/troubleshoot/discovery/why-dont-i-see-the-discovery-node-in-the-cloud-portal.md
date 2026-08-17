@@ -6,7 +6,7 @@ _Applies to: Patch My PC Cloud_
 
 I have signed into the Patch My PC (PMPC) Cloud portal, but I don’t see the **Discovery** node.
 
-<figure><img src="../../../.gitbook/assets/image (1228).png" alt="No “Discovery” node" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(526).png" alt="No “Discovery” node" width="305"><figcaption></figcaption></figure>
 
 ### CAUSE
 
@@ -24,4 +24,4 @@ To resolve this issue, follow the [Connecting to an Intune tenant](/broken/pages
 
 Once your portal has been connected to an Intune tenant you will see the **Discovery** node.
 
-<figure><img src="../../../.gitbook/assets/image (1229).png" alt="“Discovery” node now visible" width="271"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(527).png" alt="“Discovery” node now visible" width="271"><figcaption></figcaption></figure>

@@ -27,7 +27,7 @@ Clicking **Review Request** in the email takes you to the **Pending Approval** p
 
 Any pending approvals are shown.
 
-<figure><img src="../../../../../.gitbook/assets/image (1320).png" alt="List of Pending Approvals" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-(618).png" alt="List of Pending Approvals" width="563"><figcaption></figcaption></figure>
 
 From this screen, you can:
 

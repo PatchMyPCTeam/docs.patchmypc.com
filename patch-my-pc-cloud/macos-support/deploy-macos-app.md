@@ -27,8 +27,6 @@ Use the Search field and filters to help you locate the app.
 2.  Click the relevant app.<br>
 
     <figure><img src="../../.gitbook/assets/image (2988).png" alt="Clicking the relevant app"><figcaption></figcaption></figure>
-
-
 3.  On the app’s properties page, click **Deploy** under the **macOS** section to start the Deployment Wizard.<br>
 
     <figure><img src="../../.gitbook/assets/image (993).png" alt="Clicking “Deploy” under the “macOS” section"><figcaption></figcaption></figure>
@@ -49,7 +47,7 @@ If you do not want macOS devices to count towards your license count, simply do 
 
 Once a macOS deployment has been completed successfully, you’ll can see it under **Apps | Monitor | macOS | macOS apps** in the Microsoft Intune admin center.
 
-![Successful deployment visible in the Microsoft Intune admin center](<../../.gitbook/assets/image (2991).png>)
+<img src="../../.gitbook/assets/image (2990).png" alt="Successful deployment visible in the Microsoft Intune admin center" data-size="original">
 {% endhint %}
 
 ## macOS Deployment Specifics

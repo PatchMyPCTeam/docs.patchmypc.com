@@ -12,7 +12,7 @@ Slack webhooks allow the Patch My PC (PMPC) Publisher to send publishing notific
 
 To configure a Slack webhook URL:
 
-1. Navigate to [https://api.slack.com/apps](https://api.slack.com/apps) and and sign in to your Slack account.&#x20;
+1. Navigate to [https://api.slack.com/apps](https://api.slack.com/apps) and and sign in to your Slack account.
 2. Select **Create an App** or **Create New App** if you have already created apps previously. Depending on your Slack configuration, you may need to be a workspace owner or have permission to create apps.
 
 <figure><img src="../../../../.gitbook/assets/image (180).png" alt="Create an App" width="563"><figcaption></figcaption></figure>
@@ -21,7 +21,7 @@ To configure a Slack webhook URL:
 
 3. Select From scratch.
 
-<figure><img src="../../../../.gitbook/assets/image (183).png" alt="From Scratch" width="403"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (182).png" alt="From Scratch" width="403"><figcaption></figcaption></figure>
 
 4. Enter an app name, select the workspace where the app will be created, then select **Create App**.
 
@@ -29,7 +29,7 @@ To configure a Slack webhook URL:
 
 5. In the app configuration, toggle On **Activate Incoming Webhooks**.
 
-<figure><img src="../../../../.gitbook/assets/image (186).png" alt="Activate Incoming Webhooks" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (185).png" alt="Activate Incoming Webhooks" width="563"><figcaption></figcaption></figure>
 
 6. Select Add New Webhook to Workspace.
 

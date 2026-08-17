@@ -9,7 +9,7 @@ description: >-
 
 _Applies to: On-premises Publisher_
 
-## Feature Enablement&#x20;
+## Feature Enablement
 
 To activate any of the tabs in Patch My PC Publisher, the corresponding checkbox must be checked. If you do not check this option the product selection tree for the corresponding tab cannot be used.
 
@@ -27,9 +27,9 @@ Let's get started to begin, click the **Options button** next to the enablement 
 
 <figure><img src="../../.gitbook/assets/image (2047).png" alt=""><figcaption><p>Click Options</p></figcaption></figure>
 
-This will load the options panel in the Publisher.&#x20;
+This will load the options panel in the Publisher.
 
-<figure><img src="../../.gitbook/assets/image (2046).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2045).png" alt=""><figcaption></figcaption></figure>
 
 First Select the Configure[ **SMS Provider connection**](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/plan-for-the-sms-provider#BKMK_PlanSMSProv). This is how you will ensure that the system where the Publisher is installed has access to the configuration manager site.
 
@@ -39,7 +39,7 @@ Defining the SMS Provider is required, and it lets the Publisher know how to tal
 **Note**: When running the Publisher, the ConfigMgr connection will be under the context of the user running the Publisher.
 {% endhint %}
 
-After clicking the **Configure** option, the below pop-up will appear.&#x20;
+After clicking the **Configure** option, the below pop-up will appear.
 
 <figure><img src="../../.gitbook/assets/image (2048).png" alt=""><figcaption><p>Enter the server name where the provider service is installed.</p></figcaption></figure>
 
@@ -69,7 +69,7 @@ Automatically create a role in ConfigMgr for Patch My PC
 
 Once you have completed a successful connection to the SMS provider select **OK** to finalize the configuration.
 
-Next, you'll want to provide a **UNC share to store the application content**. This path needs to be accessible by the computer account of the machine running the publisher as well as the ConfigMgr site server, or a dedicated service account&#x20;
+Next, you'll want to provide a **UNC share to store the application content**. This path needs to be accessible by the computer account of the machine running the publisher as well as the ConfigMgr site server, or a dedicated service account
 
 {% hint style="warning" %}
 **Important**: As the Patch My PC Publisher will run in the SYSTEM context, therefore computer account the Publisher is installed on will need WRITE permissions to the share configured for source content of ConfigMgr Apps.

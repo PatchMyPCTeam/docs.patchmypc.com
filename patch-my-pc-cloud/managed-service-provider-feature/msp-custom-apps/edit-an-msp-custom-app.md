@@ -28,7 +28,7 @@ For example:
 
 If an app has been shared with and deployed from that company, changing either of the above settings may generate the "**Are you sure?**" popup warning you of the impact and asking you to confirm the deletion of the deployment of this app at the child company.
 
-![“Are you sure” popup](<../../../.gitbook/assets/image (1046).png>)
+<img src="../../../.gitbook/assets/image (1045).png" alt="“Are you sure” popup" data-size="original">
 {% endhint %}
 
 {% hint style="info" %}

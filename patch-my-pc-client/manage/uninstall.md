@@ -39,7 +39,7 @@ If a group is greyed out, it means the current Client deployment is targeted to 
 4. Add any additional Groups as required.
 5. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (704).png" alt="Clicking “Save” " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-(2).png" alt="Clicking “Save”" width="563"><figcaption></figcaption></figure>
 
 The **Deploy Client** page is displayed along with the **Success – Updated** notification.
 
@@ -49,13 +49,13 @@ The Client will then be uninstalled from all the devices within the selected Ent
 
 ## Create an Uninstall Deployment from the Intune admin center
 
-You can create an uninstall deployment in the Intune admin center that has the command for uninstalling the PMPC Client configured in the **Uninstall Command** field:&#x20;
+You can create an uninstall deployment in the Intune admin center that has the command for uninstalling the PMPC Client configured in the **Uninstall Command** field:
 
 ```
 MSIExec.exe /x PatchMyPC.ClientInstaller.msi /qn
 ```
 
-<figure><img src="../../.gitbook/assets/image (4188).png" alt="Configuring the uninstall command line for the PMPC Client" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (558).png" alt="Configuring the uninstall command line for the PMPC Client" width="563"><figcaption></figcaption></figure>
 
 ## If Your Trial License has Expired
 

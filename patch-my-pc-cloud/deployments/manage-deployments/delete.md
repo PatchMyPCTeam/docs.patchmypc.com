@@ -7,20 +7,16 @@ To delete a deployment in Patch My PC (PMPC) Cloud:
 1.  From the **Deployments** page, click the ellipsis (**⋮**) beside the relevant deployment you want to delete and click **Delete**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2386).png" alt="Clicking the ellipsis beside a deployment and selecting “Delete”" width="563"><figcaption></figcaption></figure>
-
-
 2.  On the **Are you sure you want to delete <**_**deployment\_name**_**>** dialog box, click **Yes**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1571).png" alt="Click “Yes” on the “Are you sure you want to delete <deployment_name>” dialog box" width="323"><figcaption></figcaption></figure>
-
-
 
 {% hint style="info" %}
 **Note**
 
 If the deployment you are deleting is for an app that another app is dependent on, the **Are you sure** dialog box will state which app has a dependency on this deployment and warn you that proceeding will delete this dependency, which could break the app dependent on this one.
 
-![“Are you sure” prompt if other deployments have dependencies on this one](<../../../.gitbook/assets/image (2978).png>)
+<img src="../../../.gitbook/assets/image (2977).png" alt="“Are you sure” prompt if other deployments have dependencies on this one" data-size="original">
 {% endhint %}
 
 The deployment is deleted and the **Success - Deployment&#x20;**_**\<deployment\_name>**_**&#x20;deleted** notification is displayed.
@@ -34,7 +30,7 @@ Deleting a deployment will also delete the:
 * packaged win32 app from Intune.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2387).png" alt="&#x22;Success - Deployment <deployment_name> deleted&#x22; notification " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2387).png" alt="&#x22;Success - Deployment <deployment_name> deleted&#x22; notification" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**

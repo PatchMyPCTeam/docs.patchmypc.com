@@ -18,7 +18,7 @@ Follow the relevant section for the error message you are seeing.
 
 #### Failed to add application with version ‘_\<version\_number>_’ to app limit reached’ ESP Profile.
 
-<figure><img src="../../../.gitbook/assets/image (3050).png" alt="“Failed to add application with version ‘<version_number>’ to app limit reached’ ESP Profile” error"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3049).png" alt="“Failed to add application with version ‘<version_number>’ to app limit reached’ ESP Profile” error"><figcaption></figcaption></figure>
 
 This message is telling you that when the Sync Schedule ran, a new version of an app was detected, which we successfully deployed.
 

@@ -1,8 +1,8 @@
 # Overview and Guidance
 
 _Applies to: Patch My PC Publisher V2.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 ## Overview
 
@@ -24,7 +24,7 @@ For many organizations, a better compromise for these applications is to configu
 
 When the notification is presented to the end user, the available actions control how the update proceeds.
 
-<figure><img src="../../../.gitbook/assets/image (135).png" alt="User options for Manage Conflicting Processes" width="282"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (132).png" alt="User options for Manage Conflicting Processes" width="282"><figcaption></figcaption></figure>
 
 Selecting **Close All and Install** immediately closes the defined [conflicting processes](setting-configuration.md#manage-process-list) and starts the update installation.
 

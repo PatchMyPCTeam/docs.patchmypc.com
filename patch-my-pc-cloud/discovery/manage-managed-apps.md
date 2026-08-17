@@ -9,7 +9,7 @@ To administer a Managed app:
 1. Navigate to the **Discovery** node.
 2.  Click the **Managed** tab.<br>
 
-    <figure><img src="../../.gitbook/assets/image (1099).png" alt="Clicking the “Managed” tab." width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image-(397).png" alt="Clicking the “Managed” tab." width="563"><figcaption></figcaption></figure>
 
     \
     The list of discovered managed apps is shown.<br>
@@ -39,8 +39,8 @@ Hovering over either the value in the **Assigned To All** column or **Edit** but
 
 3. Click the **Edit** button beside the app you want to edit:
 
-* If the app only has one deployment, the **Edit** button includes a pencil (<img src="../../.gitbook/assets/image (1230).png" alt="" data-size="line">).
-* If the app has more than one deployment, the **Edit** button includes a down arrow (<img src="../../.gitbook/assets/image (1231).png" alt="" data-size="original">) beside it, which, when clicked, provides a dropdown list of all of the deployments for the app, from which you can choose the deployment you want to edit.
+* If the app only has one deployment, the **Edit** button includes a pencil (<img src="../../.gitbook/assets/image-(528).png" alt="" data-size="line">).
+* If the app has more than one deployment, the **Edit** button includes a down arrow (<img src="../../.gitbook/assets/image-(529).png" alt="" data-size="original">) beside it, which, when clicked, provides a dropdown list of all of the deployments for the app, from which you can choose the deployment you want to edit.
 
 {% hint style="info" %}
 **Note**
@@ -58,7 +58,7 @@ We do not recommend deploying the same app through the Publisher and PMPC Cloud 
 
 The Deployment Wizard starts, allowing you to make any required changes.
 
-<figure><img src="../../.gitbook/assets/image (1233).png" alt="Deployment Wizard starting" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-(531).png" alt="Deployment Wizard starting" width="563"><figcaption></figcaption></figure>
 
 4. Make any required changes, then click **Save** to save them.
 

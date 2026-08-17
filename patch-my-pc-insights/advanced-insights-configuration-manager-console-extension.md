@@ -15,14 +15,14 @@ Download and unzip the Console Extension using the link below.
 {% file src="../.gitbook/assets/AdvancedInsightsConsoleExtension.zip" %}
 
 {% hint style="warning" %}
-Warning: The console extension will not work if you are using a **self-signed certificate.**&#x20;
+Warning: The console extension will not work if you are using a **self-signed certificate.**
 {% endhint %}
 
 ## Installing the Console Extension
 
 To import the Extension, navigate to the Administration node of the Configuration Manager console and expand the Updates and Servicing node. Right click Console Extensions and select "Import Console Extension".
 
-<figure><img src="../.gitbook/assets/image (2510).png" alt=""><figcaption><p>Import Console  Extension</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2510).png" alt=""><figcaption><p>Import Console Extension</p></figcaption></figure>
 
 Browse to the location of the unzipped Console Extension download.
 
@@ -36,9 +36,9 @@ The newly imported Console Extension will be listed alongside any other extensio
 
 Once approved the Extension can be Installed:
 
-<figure><img src="../.gitbook/assets/image (2514).png" alt=""><figcaption><p>Installing the Extension</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2513).png" alt=""><figcaption><p>Installing the Extension</p></figcaption></figure>
 
-&#x20;You will be prompted to restart the ConfigMgr Console. When it reloads the Advanced Insights node will have been added to the Assets and Compliance view:
+You will be prompted to restart the ConfigMgr Console. When it reloads the Advanced Insights node will have been added to the Assets and Compliance view:
 
 <figure><img src="../.gitbook/assets/image (2515).png" alt=""><figcaption></figcaption></figure>
 
@@ -52,7 +52,7 @@ When you click the Advanced Insights node, a dialog is displayed in the detail p
 
 <figure><img src="../.gitbook/assets/2024-07-25_16-46-39.PNG" alt=""><figcaption><p>Configuring the Extension</p></figcaption></figure>
 
-Provide the relevant URL, including https:// prefix and any required port, for example https://server.contoso.com:444 and click OK. If the address is correct, the Advanced Insights login page will be displayed. You can re-run the configuration step any time by right clicking the Advanced Insights node and selecting "Configuration".&#x20;
+Provide the relevant URL, including https:// prefix and any required port, for example https://server.contoso.com:444 and click OK. If the address is correct, the Advanced Insights login page will be displayed. You can re-run the configuration step any time by right clicking the Advanced Insights node and selecting "Configuration".
 
 <figure><img src="../.gitbook/assets/image (2517).png" alt=""><figcaption><p>Reconfigure the Extension</p></figcaption></figure>
 

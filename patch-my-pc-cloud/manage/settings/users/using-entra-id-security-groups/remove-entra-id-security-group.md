@@ -12,14 +12,10 @@ To remove an Entra ID Security Group from PMPC Cloud:
 
 1.  In the PMPC Cloud portal, navigate to **Settings | Users**.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2936).png" alt="Navigating to “Settings | Users”"><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../../../.gitbook/assets/image (1052).png" alt="Navigating to “Settings | Users”"><figcaption></figcaption></figure>
 2.  Click the **Entra ID Groups** tab.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2937).png" alt="Clicking the “Entra ID Groups” tab"><figcaption></figcaption></figure>
-
-
 3. Click the trashcan beside the relevant Entra ID Security Group you want to remove.
 
 {% hint style="warning" %}

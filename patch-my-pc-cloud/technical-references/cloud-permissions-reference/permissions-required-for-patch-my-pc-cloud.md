@@ -19,7 +19,7 @@ You will be prompted to grant these during the onboarding process by clicking **
 
 Whether or not you see the **Permissions Required** dialog box and what you see on it depends on the account you use to sign into Entra and how the **User consent for applications** settings are configured in your environment.
 
-![](<../../../.gitbook/assets/image (3682).png>)
+<img src="../../../.gitbook/assets/image (3681).png" alt="" data-size="original">
 
 You will only see the C**onsent on behalf of your organization** checkbox if the user account you are signed in with is a Global Administrator or has the Privileged Role Administrator role.
 

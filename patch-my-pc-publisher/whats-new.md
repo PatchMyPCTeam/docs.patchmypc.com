@@ -72,7 +72,7 @@ In the majority of cases, the functionality has not changed; the change is purel
 
 For example, in the current release of Publisher, **Intune Options** are shown as follows.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt="&#x27;Intune Options&#x27; in the current Publisher release" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt="&#x27;Intune Options&#x27; in the current Publisher release" width="563"><figcaption></figcaption></figure>
 
 This is how **Intune Options** appears in V3 of the Publisher.
 
@@ -116,4 +116,4 @@ This is also available in the Tree View:
 
 The new function allows you to provide feedback to us on your experience of using the Publisher. Optionally, you can also include screenshots and logs which will help us resolve any issues you may be having faster.
 
-<figure><img src="../.gitbook/assets/image (4385).png" alt="Feedback function" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4384).png" alt="Feedback function" width="563"><figcaption></figcaption></figure>

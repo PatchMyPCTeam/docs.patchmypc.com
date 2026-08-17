@@ -117,4 +117,4 @@ The language is removed.
 
 The **Success – Branding updated** notification is displayed.
 
-<figure><img src="../../../../.gitbook/assets/image (3750).png" alt="&#x27;Success – Branding updated&#x27; notification" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3749).png" alt="&#x27;Success – Branding updated&#x27; notification" width="563"><figcaption></figcaption></figure>

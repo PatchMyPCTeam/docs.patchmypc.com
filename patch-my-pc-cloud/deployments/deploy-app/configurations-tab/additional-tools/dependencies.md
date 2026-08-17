@@ -44,7 +44,7 @@ To add a dependency:
 
 If we are aware that an app requires a dependency, we automatically add the **Dependencies** tool with a yellow dot after the tool name. If you click the **Dependencies** tool, we show you the name of the app we recommend you add as a dependency for this deployment.
 
-![Auto adding the 'Dependencies' tool if we know an app has a dependency, including the name of the app](<../../../../../.gitbook/assets/image (3652).png>)
+<img src="../../../../../.gitbook/assets/image (3652).png" alt="Auto adding the &#x27;Dependencies&#x27; tool if we know an app has a dependency, including the name of the app" data-size="original">
 {% endhint %}
 
 2. Click the **Dependencies** tool.
@@ -61,8 +61,6 @@ The selected app appears under the **Parent Deployment** section.
 
 <figure><img src="../../../../../.gitbook/assets/image (3644).png" alt="Selected app appearing under the &#x27;Parent Deployment&#x27; section" width="392"><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
 **Note**
 
@@ -76,7 +74,7 @@ Click the trashcan beside the relevant app under the **Parent Deployment** secti
 
 Once a dependency has been configured, you can view it as part of the app’s properties in the Microsoft Intune admin center.
 
-![Viewing dependencies for an app in the Microsoft Intune admin center](<../../../../../.gitbook/assets/image (1041).png>)
+<img src="../../../../../.gitbook/assets/image (1040).png" alt="Viewing dependencies for an app in the Microsoft Intune admin center" data-size="original">
 
 For more information, see [Step 5: Dependencies](https://learn.microsoft.com/en-us/mem/intune/apps/apps-win32-add#step-5-dependencies) of [Add, assign, and monitor a Win32 app in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/apps-win32-add).
 {% endhint %}

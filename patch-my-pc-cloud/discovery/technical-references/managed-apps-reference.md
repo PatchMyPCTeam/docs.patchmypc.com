@@ -17,12 +17,12 @@ Hovering over either the value in the **Assigned To All** column or **Edit** but
 If the app has only been deployed using PMPC Cloud, the app:
 
 * Has the PMPC Cloud (![](<../../../.gitbook/assets/image (2826).png>)) icon beside its name.
-* Has either a red X (<img src="../../../.gitbook/assets/image (1081).png" alt="" data-size="line">) or green tick (<img src="../../../.gitbook/assets/image (1082).png" alt="" data-size="line">) in the **Assigned To All** column, depending on whether there is at least one deployment with a **Required** or **Update Only** assignment type to the Intune pre-defined **All Users** or **All Devices** assignments:
+* Has either a red X (<img src="../../../.gitbook/assets/image-(379).png" alt="" data-size="line">) or green tick (<img src="../../../.gitbook/assets/image-(380).png" alt="" data-size="line">) in the **Assigned To All** column, depending on whether there is at least one deployment with a **Required** or **Update Only** assignment type to the Intune pre-defined **All Users** or **All Devices** assignments:
   * A red X indicates there isn’t.
   * A green tick indicates there is.
 * The **Edit** button is either:
-  * A pencil (<img src="../../../.gitbook/assets/image (1083).png" alt="" data-size="line">) if the app only has one deployment.
-  * A down arrow (<img src="../../../.gitbook/assets/image (1084).png" alt="" data-size="original">) if the app has multiple deployments. When you click the arrow, a dropdown list opens containing all of the deployments for the app from which you can choose the deployment you want to edit.
+  * A pencil (<img src="../../../.gitbook/assets/image-(381).png" alt="" data-size="line">) if the app only has one deployment.
+  * A down arrow (<img src="../../../.gitbook/assets/image-(382).png" alt="" data-size="original">) if the app has multiple deployments. When you click the arrow, a dropdown list opens containing all of the deployments for the app from which you can choose the deployment you want to edit.
 
 In the following screenshot:
 
@@ -30,11 +30,11 @@ In the following screenshot:
 * **Notepad++** has a single deployment with a **Required** assignment type to **All Users**.
 * **Zoom Workplace** has multiple deployments, but none have a **Required** assignment type to **All Users** or **All Devices**.
 
-<figure><img src="../../../.gitbook/assets/image (2829).png" alt="How an app only deployed through PMPC Cloud appears in the “Managed” tab " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2829).png" alt="How an app only deployed through PMPC Cloud appears in the “Managed” tab" width="563"><figcaption></figcaption></figure>
 
 This can be confirmed by searching for the app in the App Catalog.
 
-<figure><img src="../../../.gitbook/assets/image (1086).png" alt="How an app only deployed through PMPC Cloud appears in the App Catalog" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(384).png" alt="How an app only deployed through PMPC Cloud appears in the App Catalog" width="563"><figcaption></figcaption></figure>
 
 ## Publisher Only Deployment
 
@@ -46,7 +46,7 @@ If the app has only been deployed using Publisher, as PMPC Cloud did not create 
 
 In the following screenshot, the **Google Chrome** app has only been deployed using Publisher.
 
-<figure><img src="../../../.gitbook/assets/image (2830).png" alt="How an app only deployed through Publisher appears in the “Managed” tab " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2830).png" alt="How an app only deployed through Publisher appears in the “Managed” tab" width="563"><figcaption></figcaption></figure>
 
 This can be confirmed by searching for the app in the App Catalog.
 
@@ -63,12 +63,12 @@ We do not recommend deploying the same app through the Publisher and PMPC Cloud 
 If the app has been deployed using PMPC Cloud and Publisher, the app:
 
 * Has both the PMPC Cloud (![](<../../../.gitbook/assets/image (2826).png>)) and On-Prem Publisher (![](<../../../.gitbook/assets/image (2827).png>)) icons beside its name.
-* Has either a red X (<img src="../../../.gitbook/assets/image (1089).png" alt="" data-size="line">) or green tick (<img src="../../../.gitbook/assets/image (1091).png" alt="" data-size="line">) in the **Assigned To All** column, depending on whether there is at least one PMPC Cloud deployment with a **Required** or **Update Only** assignment type to the Intune pre-defined **All Users** or **All Devices** assignments:
+* Has either a red X (<img src="../../../.gitbook/assets/image-(379).png" alt="" data-size="line">) or green tick (<img src="../../../.gitbook/assets/image-(380).png" alt="" data-size="line">) in the **Assigned To All** column, depending on whether there is at least one PMPC Cloud deployment with a **Required** or **Update Only** assignment type to the Intune pre-defined **All Users** or **All Devices** assignments:
   * A red X indicates there isn’t.
   * A green tick indicates there is.
 * The **Edit** button is only available to edit the PMPC Cloud deployment and will either be:
-  * &#x20;A pencil (<img src="../../../.gitbook/assets/image (1092).png" alt="" data-size="line">) if the app only has one deployment.
-  * A down arrow (<img src="../../../.gitbook/assets/image (1093).png" alt="" data-size="original">) if the app has multiple deployments. When you click the arrow, a dropdown list opens containing all of the deployments for the app from which you can choose the deployment you want to edit.
+  * A pencil (<img src="../../../.gitbook/assets/image-(381).png" alt="" data-size="line">) if the app only has one deployment.
+  * A down arrow (<img src="../../../.gitbook/assets/image-(382).png" alt="" data-size="original">) if the app has multiple deployments. When you click the arrow, a dropdown list opens containing all of the deployments for the app from which you can choose the deployment you want to edit.
 
 In the following screenshot, **Notepad++** has been deployed through Publisher and PMPC Cloud, with the PMPC Cloud deployment having a **Required** or **Update Only** assignment type to the Intune pre-defined **All Users** or **All Devices** assignments.
 

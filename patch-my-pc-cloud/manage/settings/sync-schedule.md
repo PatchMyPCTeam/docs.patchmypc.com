@@ -11,16 +11,14 @@ To set a different time or frequency for the sync job:
 1.  Navigate to **Settings | Sync Schedule**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2419).png" alt="Navigating to “Settings | Sync Schedule”"><figcaption></figcaption></figure>
-
-
 2.  On the **Sync Schedule** page, make the required changes, then click **Save**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1166).png" alt="Clicking “Save” to save your changes"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image-(464).png" alt="Clicking “Save” to save your changes"><figcaption></figcaption></figure>
 
     \
     The **Success – Sync Scheduler updated** notification is displayed.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1167).png" alt="“Success – Sync Scheduler saved” notification"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image-(465).png" alt="“Success – Sync Scheduler saved” notification"><figcaption></figcaption></figure>
 
 ## Other Frequencies
 

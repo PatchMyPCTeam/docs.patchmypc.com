@@ -9,14 +9,14 @@ The **Intune** dashboard page consists of the following five tabs, each containi
 {% hint style="danger" %}
 **Important**
 
-We store your Intune data in a secure database for a total of three (3) hours, after which it is automatically deleted from our systems.&#x20;
+We store your Intune data in a secure database for a total of three (3) hours, after which it is automatically deleted from our systems.
 
 For a detailed explanation on how we collect and process your Intune data, see [Intune Data Collection](../technical-references/data-collected.md).
 {% endhint %}
 
 <table data-header-hidden><thead><tr><th width="122" align="center" valign="top"></th><th width="143.99993896484375" align="center" valign="top"></th><th width="128.77783203125" align="center" valign="top"></th><th width="145.77783203125" align="center" valign="top"></th><th width="172.6961669921875" align="center" valign="top"></th></tr></thead><tbody><tr><td align="center" valign="top"><a href="intune-page.md#devices-tab">Devices tab</a></td><td align="center" valign="top"><a href="intune-page.md#applications-tab">Applications tab</a></td><td align="center" valign="top"><a href="intune-page.md#compliance-tab">Compliance tab</a></td><td align="center" valign="top"><a href="intune-page.md#configuration-tab">Configuration tab</a></td><td align="center" valign="top"><a href="intune-page.md#operating-systems-tab">Operating Systems tab</a></td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (269).png" alt="Intune tabs" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (268).png" alt="Intune tabs" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -34,7 +34,7 @@ All dashboard items in this view are populated using properties from managed dev
 
 Provides a total count of all Windows and macOS devices. The footer item uses the **complianceState** property to show a count of non-compliant devices.
 
-<figure><img src="../../../.gitbook/assets/image (273).png" alt="Managed Devices (Dash-stat)" width="442"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (140).png" alt="Managed Devices (Dash-stat)" width="442"><figcaption></figcaption></figure>
 
 Clicking this item loads a table list view of the full dataset. Each device listed in the table can also be clicked to launch the specific device modal.
 
@@ -233,7 +233,7 @@ All dashboard items in this view are populated using properties from a collectio
 
 Provides a total count of all Windows and macOS devices. The footer item uses the **complianceState** property to show a count of non-compliant devices.
 
-<figure><img src="../../../.gitbook/assets/image (3881).png" alt="Managed Devices (Dash-stat)" width="442"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (140).png" alt="Managed Devices (Dash-stat)" width="442"><figcaption></figcaption></figure>
 
 Clicking this item loads a table list view of the full dataset. Each device listed in the table can also be clicked to launch the specific device modal.
 
@@ -311,7 +311,7 @@ All dashboard items in this view are populated from properties of a collection o
 
 Provides a total count of all Windows and macOS devices. The footer item uses the **complianceState** property to show a count of non-compliant devices.
 
-<figure><img src="../../../.gitbook/assets/image (3892).png" alt="Managed Devices (Dash-stat)" width="442"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (140).png" alt="Managed Devices (Dash-stat)" width="442"><figcaption></figcaption></figure>
 
 Clicking this item loads a table list view of the full dataset. Each device listed in the table can also be clicked to launch the specific device modal.
 

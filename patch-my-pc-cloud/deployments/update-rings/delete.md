@@ -23,19 +23,17 @@ To delete all Update Rings for a deployment:
     To delete all Update Rings for this deployment, click **Remove all Rings**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2763).png" alt="Clicking “Remove all Rings”"><figcaption></figcaption></figure>
-
-
 3.  On the **Move Assignments or Delete** dialog box, click **Move** to remove the Update Rings but keep all the existing assignments.\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/image (2764).png" alt="Clicking “Move” to remove the Update Rings but keep all the existing assignments" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1154).png" alt="Clicking “Move” to remove the Update Rings but keep all the existing assignments" width="300"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
 
 Clicking **Delete** will delete any existing assignments but not the deployment itself.
 
-![Clicking “Delete” will delete any existing assignments, not the deployment itself.](<../../../.gitbook/assets/image (2766).png>)<br>
+![Clicking “Delete” will delete any existing assignments, not the deployment itself.](<../../../.gitbook/assets/image (2765).png>)<br>
 {% endhint %}
 
 The Update Rings are removed and any existing assignments are kept.
@@ -54,7 +52,7 @@ As removing all Update Rings disables Update Ring functionality for this deploym
 \
 For example, this version of the app will be deployed immediately to all of the following assignments without any of the delays enforced by using Update Rings.
 
-![“Deployment Summary” showing the impact of deleting all Update Rings ](<../../../.gitbook/assets/image (2769).png>)
+<img src="../../../.gitbook/assets/image (2769).png" alt="“Deployment Summary” showing the impact of deleting all Update Rings" data-size="original">
 {% endhint %}
 
 {% hint style="info" %}
@@ -88,7 +86,7 @@ To delete a Single Update Ring:
 Deleting an Update Ring also deletes any assignments controlled by that ring. If you want to keep the assignment, drag and drop it to another ring before you delete the ring.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2771).png" alt="Clicking the read “X” to delete a specific Update Ring "><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2771).png" alt="Clicking the read “X” to delete a specific Update Ring"><figcaption></figcaption></figure>
 
 The ring and any assignments it contains are deleted.
 

@@ -14,7 +14,7 @@ To perform any of these tasks:
 1. Sign in to the Cloud Portal.
 2. Navigate to **Settings | Subscription**
 
-<figure><img src="../../../../../.gitbook/assets/image (4217).png" alt="Navigating to &#x27;Settings | Subscription&#x27;" width="155"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (27).png" alt="Navigating to &#x27;Settings | Subscription&#x27;" width="155"><figcaption></figcaption></figure>
 
 ## View your License Key
 
@@ -61,8 +61,6 @@ To activate a license key for a new company:
 The **You have successfully activated your license** screen is displayed, which you can click **Close** on to dismiss.
 
 <figure><img src="../../../../../.gitbook/assets/image (4225).png" alt="&#x27;You have successfully activated your license&#x27; screen" width="263"><figcaption></figcaption></figure>
-
-
 
 The **License Key** field updates to show the newly activated license.
 

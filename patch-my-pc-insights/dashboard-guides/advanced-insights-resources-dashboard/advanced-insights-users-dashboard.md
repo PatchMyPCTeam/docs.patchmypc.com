@@ -6,7 +6,7 @@ description: Description of the layout of the Users page
 
 _Applies to: Patch My PC Advanced Insights_
 
-<figure><img src="../../../.gitbook/assets/image (1192).png" alt=""><figcaption><p>Users Home Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(490).png" alt=""><figcaption><p>Users Home Page</p></figcaption></figure>
 
 This dashboard shows User details that have been imported through discoveries into Configuration Manager.
 
@@ -14,7 +14,7 @@ The top row of the data gives you a quick overview of the number of Active Direc
 
 Click through any of these dash stats to be able to load a table with all the information you have selected
 
-<figure><img src="../../../.gitbook/assets/image (1200).png" alt=""><figcaption><p>All Users</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(498).png" alt=""><figcaption><p>All Users</p></figcaption></figure>
 
 ### Users
 

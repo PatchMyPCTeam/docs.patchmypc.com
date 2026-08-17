@@ -10,7 +10,7 @@ To add a **Post-Install** script:
 
 <figure><img src="../../../../../../.gitbook/assets/image (3308).png" alt="Clicking “Add” beside the “Post-Install” option" width="419"><figcaption></figcaption></figure>
 
-The **Add Pre-Install Script** page is shown, highlighting that the default **Script Format** is **.ps1**, with built-in support for PSADT functions.&#x20;
+The **Add Pre-Install Script** page is shown, highlighting that the default **Script Format** is **.ps1**, with built-in support for PSADT functions.
 
 2. To import an existing script, click **Import**, browse to the location containing the script, and select it.
 
@@ -39,13 +39,13 @@ We currently have a limit of 50,000 characters per script. Use the **Number of c
 
 If PSADT commands are detected in the Script Editor, the **Script Format** field is updated to show **.ps1 +** the PSADT logo.
 
-![](<../../../../../../.gitbook/assets/image (4369).png>)
+<img src="../../../../../../.gitbook/assets/image (4368).png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="success" %}
 **Tip**
 
-Under the script editor, we include example syntax to help you understand the required syntax for referencing any additional files you've uploaded, which updates depending on the **Script Format** selected.&#x20;
+Under the script editor, we include example syntax to help you understand the required syntax for referencing any additional files you've uploaded, which updates depending on the **Script Format** selected.
 {% endhint %}
 
 6. In the **Arguments** field, enter any arguments you want to provide to the script.
@@ -57,7 +57,7 @@ Under the script editor, we include example syntax to help you understand the re
 
 You can use variable names as arguments, provided they are enclosed by percentage signs (`%`). We provide common variables under this field, which you can add by clicking the plus (`+`) symbol or relevant variable name.
 
-&#x20;`%ReturnCode%` is currently only supported on post-scripts.
+`%ReturnCode%` is currently only supported on post-scripts.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -74,7 +74,7 @@ Also, if you add any PSADT scripts to your deployments, you need to ensure .NET 
 
 The **Configurations** tab is re-displayed with the name of the configured script beside it.
 
-<figure><img src="../../../../../../.gitbook/assets/image (796).png" alt="“Configurations” tab re-displayed with the name of the configured script beside it" width="418"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image-(94).png" alt="“Configurations” tab re-displayed with the name of the configured script beside it" width="418"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**

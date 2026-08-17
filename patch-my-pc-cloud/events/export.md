@@ -25,7 +25,7 @@ We export the following:
 * Date
 * Title
 * Architecture
-* &#x20;Installer Type
+* Installer Type
 * User
 * Category
 * Operation
@@ -35,7 +35,7 @@ We export the following:
 
 Here is an example:
 
-<figure><img src="../../.gitbook/assets/image (799).png" alt="Example of the “events_log_entries.csv” file" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-(97).png" alt="Example of the “events_log_entries.csv” file" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**

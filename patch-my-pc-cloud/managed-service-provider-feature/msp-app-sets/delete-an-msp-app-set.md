@@ -14,7 +14,7 @@ You cannot delete an App Set with a **Status** of **In progress** and once the d
 
 1.  Navigate to **App Sets**<br>
 
-    <figure><img src="../../../.gitbook/assets/image (3261).png" alt="Navigating to “App Sets”" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (813).png" alt="Navigating to “App Sets”" width="563"><figcaption></figcaption></figure>
 2.  Click the ellipsis (**⋮**) beside the App Set you want to delete and select **Delete**\
     <br>
 

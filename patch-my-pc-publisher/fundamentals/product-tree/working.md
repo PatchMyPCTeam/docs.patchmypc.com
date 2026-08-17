@@ -19,7 +19,7 @@ It works fundamentally the same regardless of the tab you are working with and i
 Any platform-specific differences are detailed in the _Product Tree_ article for that platform.
 {% endhint %}
 
-## ![Power button ](<../../../.gitbook/assets/image (4574).png>) Power Button
+## ![Power button](<../../../.gitbook/assets/image (4574).png>) Power Button
 
 The _Power_ button controls whether products and updates are enabled for the selected management platform, with <mark style="color:red;">Red</mark> indicating the management platform is disabled and <mark style="color:$success;">Green</mark> indicating it is enabled.
 
@@ -31,7 +31,7 @@ By default, the publishing of all apps and updates is disabled.
 
 ## View Button
 
-The _View_ button lets you switch the view of the Product Tree between _Grid View_ (![Grid view](<../../../.gitbook/assets/image (4581).png>)) and _Tree View_ (![Tree View](<../../../.gitbook/assets/image (4580).png>)).
+The _View_ button lets you switch the view of the Product Tree between _Grid View_ (![Grid view](<../../../.gitbook/assets/image (4581).png>)) and _Tree View_ (![Tree View](<../../../.gitbook/assets/image (4577).png>)).
 
 This is an example of the Product Tree shown in _Grid View_.
 
@@ -57,8 +57,6 @@ The greatest benefit of viewing the Product Tree in Grid view is that it allows 
 The alphabetical slider lets you either go directly to all products in the catalog beginning with a certain letter, or navigate the catalog using the arrow controls.
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
-
-
 
 ## ![Settings button](<../../../.gitbook/assets/image (4579).png>) Settings Button
 
@@ -108,7 +106,7 @@ The Product Tree does not auto-refresh in Publisher until you either click the R
 The _Product Counts_ indicator shows:
 
 * **Selected -** The number of products you have selected in the Product Tree.
-* **Filter -** The number of products selected, based on any filters you have applied. The initial number shown is the number of products filtered by the management platform you have selected (e.g., WSUS Updates, ConfigMgr apps, etc.). Then, as you apply additional [Filters](working.md#filters-button), this number updates accordingly.&#x20;
+* **Filter -** The number of products selected, based on any filters you have applied. The initial number shown is the number of products filtered by the management platform you have selected (e.g., WSUS Updates, ConfigMgr apps, etc.). Then, as you apply additional [Filters](working.md#filters-button), this number updates accordingly.
 
 ## Group Product Variants Button
 
@@ -145,8 +143,6 @@ Clicking any stat filters the catalog to display only items that match the selec
 The _Group Product Variants_ button (Grid View only), shows all of the [customization (right-click) options](../../customizations/overview.md) that apply globally to all vendors and products. This is the same as right-clicking the root node of the Product Tree when it is in Tree View.
 
 <figure><img src="../../../.gitbook/assets/image (4583).png" alt="All Vendors button" width="563"><figcaption></figcaption></figure>
-
-
 
 ## Copy Products Button
 

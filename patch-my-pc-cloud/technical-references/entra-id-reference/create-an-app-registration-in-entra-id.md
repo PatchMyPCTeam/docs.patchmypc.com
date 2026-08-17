@@ -22,7 +22,7 @@ To create an App Registration:
 You must use an account in the same Microsoft 365 subscription (tenant) as your PMPC Company.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1244).png" alt="Navigating to the &#x27;App registrations&#x27; blade" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(542).png" alt="Navigating to the &#x27;App registrations&#x27; blade" width="563"><figcaption></figcaption></figure>
 
 2. Click **New registration**.
 
@@ -37,45 +37,43 @@ You must use an account in the same Microsoft 365 subscription (tenant) as your 
    2. **Object ID**
    3. **Directory (tenant) ID**
 
-<figure><img src="../../../.gitbook/assets/image (1247).png" alt="Noting the required values" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(545).png" alt="Noting the required values" width="563"><figcaption></figcaption></figure>
 
 5. Navigate to **Manage | API Permissions**.
 
-<figure><img src="../../../.gitbook/assets/image (1248).png" alt="Navigating to &#x27;Manage | API Permissions&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(546).png" alt="Navigating to &#x27;Manage | API Permissions&#x27;" width="563"><figcaption></figcaption></figure>
 
 6. Under the **Configured permissions** section, click **Add a permission**.
 
-<figure><img src="../../../.gitbook/assets/image (1249).png" alt="Clicking &#x27;Add a permission&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(547).png" alt="Clicking &#x27;Add a permission&#x27;" width="563"><figcaption></figcaption></figure>
 
 7. In the **Request API permissions** blade, click **Microsoft Graph**.
 
-<figure><img src="../../../.gitbook/assets/image (1250).png" alt="Clicking &#x27;Microsoft Graph&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(548).png" alt="Clicking &#x27;Microsoft Graph&#x27;" width="563"><figcaption></figcaption></figure>
 
 8. In the **Request API permissions** blade, click **Application permissions**.
 
-<figure><img src="../../../.gitbook/assets/image (1251).png" alt="Clicking “Application permissions”" width="563"><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image-(549).png" alt="Clicking “Application permissions”" width="563"><figcaption></figcaption></figure>
 
 9. In the **Select permissions** field, type **AuditLog**, then expand this section and check the **AuditLog.Read.All** permission checkbox.
 
-<figure><img src="../../../.gitbook/assets/image (1252).png" alt="Checking the &#x27;AuditLog.Read.All&#x27; permission checkbox" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(550).png" alt="Checking the &#x27;AuditLog.Read.All&#x27; permission checkbox" width="563"><figcaption></figcaption></figure>
 
 10. Click **Add permissions**.
 
-<figure><img src="../../../.gitbook/assets/image (1253).png" alt="Clicking &#x27;Add permissions&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(551).png" alt="Clicking &#x27;Add permissions&#x27;" width="563"><figcaption></figcaption></figure>
 
 11. On the **API permissions** screen, under the **Configured permissions** section, click **Grant admin consent for <**_**your\_tenant\_name**_**>**.
 
-<figure><img src="../../../.gitbook/assets/image (1254).png" alt="Clicking &#x27;Grant admin consent for <your_tenant_name>&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(552).png" alt="Clicking &#x27;Grant admin consent for <your_tenant_name>&#x27;" width="563"><figcaption></figcaption></figure>
 
 12. On the **Grant admin consent confirmation** popup, click **Yes**.
 
-<figure><img src="../../../.gitbook/assets/image (1255).png" alt="Clicking &#x27;Yes&#x27; on the &#x27;Grant admin consent confirmation&#x27; popup" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(553).png" alt="Clicking &#x27;Yes&#x27; on the &#x27;Grant admin consent confirmation&#x27; popup" width="563"><figcaption></figcaption></figure>
 
 The **Grant consent - Grant consent successful** notification is shown and the **Status** for the **AuditLog.Read.All** permission changes to a green tick.
 
-<figure><img src="../../../.gitbook/assets/image (1256).png" alt="&#x27;Grant consent - Grant consent successful notification&#x27; shown and the &#x27;Status&#x27; for the &#x27;AuditLog.Read.All&#x27; permission changes to a green tick." width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(554).png" alt="&#x27;Grant consent - Grant consent successful notification&#x27; shown and the &#x27;Status&#x27; for the &#x27;AuditLog.Read.All&#x27; permission changes to a green tick." width="563"><figcaption></figcaption></figure>
 
 13. Navigate to **Certificates and secrets**.
 

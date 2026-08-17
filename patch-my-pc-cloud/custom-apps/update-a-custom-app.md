@@ -15,7 +15,7 @@ To update a Custom App using Patch My PC (PMPC) Cloud:
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2. On the **App Catalog** page, search for the relevant app.
 
-<figure><img src="../../.gitbook/assets/image (1174).png" alt="Searching for your Custom App" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-(472).png" alt="Searching for your Custom App" width="563"><figcaption></figcaption></figure>
 
 3. Click the app to open it.
 4. On the app’s properties page, click **Add Version**.
@@ -49,7 +49,7 @@ To add a new version of a Custom App based on a new installer file, on the **Add
 * Click **Add Primary Install File** and browse to the location containing the updated version of the app’s installer (EXE or MSI).
 * Drag and drop the installer file onto this page.
 
-<figure><img src="../../.gitbook/assets/image (4503).png" alt="Clicking &#x27;Add Primary Install File&#x27; on the &#x27;Add Version&#x27; page " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4503).png" alt="Clicking &#x27;Add Primary Install File&#x27; on the &#x27;Add Version&#x27; page" width="563"><figcaption></figcaption></figure>
 
 The hash for the file is calculated as the file is uploaded to your portal.
 
@@ -69,7 +69,7 @@ Once completed, goto Step 6.
 
 If you choose to upload additional folders, you will be prompted to confirm you trust this site:
 
-![Trust prompt](<../../.gitbook/assets/image (3342).png>)
+<img src="../../.gitbook/assets/image (3342).png" alt="Trust prompt" data-size="original">
 {% endhint %}
 
 8. Once the files/folders have been uploaded, click **Next**.

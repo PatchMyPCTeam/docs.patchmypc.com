@@ -116,27 +116,23 @@ After creating a new App Registration, we recommend waiting up to 30 minutes bef
 14. Review the **Terms and conditions** and if you are happy, click to check the **Accept all Terms and conditions** checkbox, then click **Continue**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2665).png" alt="Checking the &#x27;Accept all Terms and conditions&#x27; checkbox, then clicking &#x27;Continue&#x27;." width="563"><figcaption></figcaption></figure>
-
-
 15. The supplied information is checked.\
     \
     If the recovery process fails, see the **Resolution** section of the [Error – Claim Ownership Failed](../../../troubleshoot/company/error-claim-ownership-failed-when-trying-to-recover-a-cloud-company.md) article for troubleshooting help.\
     \
     If the recovery process is successful, the **Ownership Granted** popup is displayed.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2667).png" alt="&#x27;Ownership Granted&#x27; popup" width="503"><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../../.gitbook/assets/image (2666).png" alt="&#x27;Ownership Granted&#x27; popup" width="503"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-**Important**&#x20;
+**Important**
 
 You have three attempts to recover a company. If recovery fails after the third attempt, you will need to wait 12 hours before you can attempt recovery again.
 {% endhint %}
 
 16. Click **Close** to complete the recovery process and display the **App Catalog** page of the recovered company.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2668).png" alt="&#x27;App Catalog&#x27; page of the recovered company " width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2668).png" alt="&#x27;App Catalog&#x27; page of the recovered company" width="563"><figcaption></figcaption></figure>
 
     \
     If you navigate to the **Users** node, you will see that the account used to perform the recovery process has been created (if applicable) and assigned the **Full Admin with Access Management** role.<br>
@@ -146,7 +142,7 @@ You have three attempts to recover a company. If recovery fails after the third 
     \
     If you navigate to the **Events** node, you will see that the **Company Ownership Approved for <**_**user\_name**_**>** event confirming the name of the user who performed the recovery process.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2670).png" alt="&#x27;Events&#x27; node showing the &#x27;Company Ownership Approved for <user_name>&#x27; event confirming the name of the user who performed the recovery process. " width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2670).png" alt="&#x27;Events&#x27; node showing the &#x27;Company Ownership Approved for <user_name>&#x27; event confirming the name of the user who performed the recovery process." width="563"><figcaption></figcaption></figure>
 
     \
     The previous owner will also receive an email with the subject **Access Recovered to “PMPC\_<**_**company\_name**_**>”**, containing details of who performed the recovery and when.

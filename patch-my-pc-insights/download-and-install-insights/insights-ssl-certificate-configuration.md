@@ -28,8 +28,6 @@ Ensure the SSL certificate requirements are reviewed here: [insights-certificate
 * **Scenario 4 - Self-signed certificate.**
   * For Advanced Insights URL deployment using a **Self-signed** certificate follow steps described in section: [#self-signed-certificate](insights-ssl-certificate-configuration.md#self-signed-certificate "mention")
 
-
-
 ## Standard Server host name certificate
 
 Select the certificate which represents the server host name (FQDN).
@@ -67,7 +65,7 @@ Click Next to proceed to the [insights-sqlite-database.md](insights-sqlite-datab
 {% hint style="warning" %}
 When using a wildcard certificate, if no CNAME / Alias is set using the CNAME / Alias configuration page, the installer will automatically default to setting the Advanced Insights URL to the server host name FQDN.\
 \
-Example:&#x20;
+Example:
 
 _https://server01.corp.contoso.local_
 {% endhint %}
@@ -88,7 +86,7 @@ In this example, the selected certificate has one SAN entry which has been autom
 
 Confirm the CNAME / Alias configuration by clicking the **'Set CNAME / Alias'** button.
 
-<figure><img src="../../.gitbook/assets/image (4334).png" alt="Confirming the CNAME / Alias configuration" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4330).png" alt="Confirming the CNAME / Alias configuration" width="563"><figcaption></figcaption></figure>
 
 Click Next to proceed to the [insights-sqlite-database.md](insights-sqlite-database.md "mention") page.
 

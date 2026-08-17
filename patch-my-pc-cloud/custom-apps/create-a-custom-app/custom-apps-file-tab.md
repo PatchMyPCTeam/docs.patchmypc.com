@@ -36,7 +36,7 @@ Also, we currently support the following script types:
 
 Currently, Pre and Post scripts containing "`${env:ProgramFiles(x86)}`" or "${env:ProgramFiles}" cannot be uploaded as Cloudflare is falsely identifying them as a false positive related to Log4j exploits. We are actively working with them to resolve this, but as this is outside our control, we cannot provide an estimated resolution time.
 
-To work around this issue, see the [Resolution](../../troubleshoot/deployments/typeerror-failed-to-fetch-error-when-trying-to-upload-a-pre-or-post-script-in-cloud.md#resolution) section of ["TypeError: Failed to fetch" error when trying to upload a Pre or Post Script](../../troubleshoot/deployments/typeerror-failed-to-fetch-error-when-trying-to-upload-a-pre-or-post-script-in-cloud.md).&#x20;
+To work around this issue, see the [Resolution](../../troubleshoot/deployments/typeerror-failed-to-fetch-error-when-trying-to-upload-a-pre-or-post-script-in-cloud.md#resolution) section of ["TypeError: Failed to fetch" error when trying to upload a Pre or Post Script](../../troubleshoot/deployments/typeerror-failed-to-fetch-error-when-trying-to-upload-a-pre-or-post-script-in-cloud.md).
 {% endhint %}
 
 ## Add the Primary Install File
@@ -65,7 +65,7 @@ The hash for the file is calculated as it is uploaded to your Cloud Portal and w
 
 <figure><img src="../../../.gitbook/assets/image (4494).png" alt="Uploading the installer" width="563"><figcaption></figcaption></figure>
 
-2. If the installer does not require any additional folders or files, click **Next** to go to the [General Information](custom-apps-general-information-tab.md) tab. \
+2. If the installer does not require any additional folders or files, click **Next** to go to the [General Information](custom-apps-general-information-tab.md) tab.\
    \
    If the installer does require additional folders or files, go to [Add Extra Folders and Files](custom-apps-file-tab.md#add-extra-folders-and-files) .
 
@@ -124,11 +124,11 @@ As the warning states, you should ensure that .NET Framework 4.7.2 (or later) is
 You can edit the script by clicking the pencil icon or delete it by clicking the trash can.
 {% endhint %}
 
-3. If the installer does not require any additional folders or files, click **Next** to go to the [General Information](custom-apps-general-information-tab.md) tab. \
+3. If the installer does not require any additional folders or files, click **Next** to go to the [General Information](custom-apps-general-information-tab.md) tab.\
    \
    If the installer does require additional folders or files, go to [Add Extra Folders and Files](custom-apps-file-tab.md#add-extra-folders-and-files).
 
-### Add a Script Manually&#x20;
+### Add a Script Manually
 
 To manually add a script:
 
@@ -172,7 +172,7 @@ You can also click **Export** to export this script to an external file.
 
 The **File** tab is redisplayed, showing details of the script under the **Script** section.
 
-<figure><img src="../../../.gitbook/assets/image (4498).png" alt="Script details" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4496).png" alt="Script details" width="563"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**
@@ -190,7 +190,7 @@ As the warning states, you should ensure that .NET Framework 4.7.2 (or later) is
 You can edit the script by clicking the pencil icon or delete it by clicking the trash can.
 {% endhint %}
 
-4. If the installer does not require any additional folders or files, click **Next** to go to the [General Information](custom-apps-general-information-tab.md) tab. \
+4. If the installer does not require any additional folders or files, click **Next** to go to the [General Information](custom-apps-general-information-tab.md) tab.\
    \
    If the installer does require additional folders or files, go to [Add Extra Folders and Files](custom-apps-file-tab.md#add-extra-folders-and-files).
 

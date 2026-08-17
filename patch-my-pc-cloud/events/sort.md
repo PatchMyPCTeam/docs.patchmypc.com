@@ -10,7 +10,7 @@ On the **Events** page, click the relevant column heading to sort the entries by
 
 The column heading will be highlighted and an arrow will show you whether the results are displayed in ascending or descending order.
 
-<figure><img src="../../.gitbook/assets/image (2476).png" alt="Arrow showing the sort order"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2475).png" alt="Arrow showing the sort order"><figcaption></figcaption></figure>
 
 To sort by a different column, just click the column name.
 

@@ -10,9 +10,9 @@ To add a Pre-Install script:
 
 <figure><img src="../../../../../../.gitbook/assets/image (3307).png" alt="Clicking “Add” beside the “Pre-Install” option" width="419"><figcaption></figcaption></figure>
 
-The **Add Pre-Install Script** page is shown, highlighting that the default **Script Format** is **.ps1**, with built-in support for PSADT functions.&#x20;
+The **Add Pre-Install Script** page is shown, highlighting that the default **Script Format** is **.ps1**, with built-in support for PSADT functions.
 
-<figure><img src="../../../../../../.gitbook/assets/image (4248).png" alt="&#x27;Add Pre-Install Script&#x27; page highlighting that the default Script Format is .ps1, with built-in support for PSADT functions. " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4248).png" alt="&#x27;Add Pre-Install Script&#x27; page highlighting that the default Script Format is .ps1, with built-in support for PSADT functions." width="563"><figcaption></figcaption></figure>
 
 2. To import an existing script, click **Import,** then browse to the location containing the script and select it.
 
@@ -32,7 +32,7 @@ The **Script Name** field is populated with the filename of the script selected,
 
 5. In the script editor, type your script.
 
-<figure><img src="../../../../../../.gitbook/assets/image (4193).png" alt="Typing your script in the Script Editor" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4190).png" alt="Typing your script in the Script Editor" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -41,13 +41,13 @@ We currently have a limit of 50,000 characters per script. Use the **Number of c
 
 If PSADT commands are detected in the Script Editor, the **Script Format** field is updated to show **.ps1 +** the PSADT logo.
 
-![Script Format modified to show .ps1 and PSADT logo](<../../../../../../.gitbook/assets/image (4368).png>)
+<img src="../../../../../../.gitbook/assets/image (4368).png" alt="Script Format modified to show .ps1 and PSADT logo" data-size="original">
 {% endhint %}
 
 {% hint style="success" %}
 **Tip**
 
-Under the script editor, we include example syntax to help you understand the required syntax for referencing any additional files you've uploaded, which updates depending on the **Script Format** selected.&#x20;
+Under the script editor, we include example syntax to help you understand the required syntax for referencing any additional files you've uploaded, which updates depending on the **Script Format** selected.
 {% endhint %}
 
 6. In the **Arguments** field, enter any arguments you want to provide to the script.
@@ -86,7 +86,7 @@ Also, if you add any PSADT scripts to your deployments, you need to ensure .NET 
 
 The **Configurations** tab is re-displayed with the name of the configured script beside it.
 
-<figure><img src="../../../../../../.gitbook/assets/image (795).png" alt="“Configurations” tab re-displayed with the name of the configured script beside it" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image-(93).png" alt="“Configurations” tab re-displayed with the name of the configured script beside it" width="416"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**

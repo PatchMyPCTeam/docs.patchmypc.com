@@ -10,7 +10,7 @@ To setup the Inventory Extensions, there are **two** actions to complete:
 
 ## ⚙ Extend ConfigMgr's Hardware Inventory Schema
 
-1. Navigate to the **Administration** > **Settings** page&#x20;
+1. Navigate to the **Administration** > **Settings** page
 2. Select the **Advanced Insights Inventory Extensions** tab
 3. Select whether to collect **Microsoft Update** Compliance Data [see here for more information](../advanced-insights-and-microsoft-updates-inventory.md)
 4. Click <mark style="color:green;">**Update Hardware Inventory via Advanced Insights**</mark>
@@ -25,7 +25,7 @@ To setup the Inventory Extensions, there are **two** actions to complete:
 Seeing this message suggests you need to configure [Configuration Manager Permissions](../insights-configuration-manager-permission-requirements.md). We recommend configuring permissions instead of proceeding with a manual install.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image002 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image002 (1).png" alt=""><figcaption></figcaption></figure>
 
 {% file src="../../.gitbook/assets/AdvancedInsights_SMS_DEF (4).mof" %}
 For manual import of Inventory Extension Classes into Hardware Inventory
@@ -75,7 +75,7 @@ You can deploy the **Inventory Extensions** product via <mark style="color:green
 
 4\. Verify the **Inventory Extensions x.x.x.x (MSI-x64)** application was created and deploy it to your desired collection(s).
 
-<figure><img src="../../.gitbook/assets/image (2031).png" alt=""><figcaption><p>Inventory Extensions app created successfully</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2030).png" alt=""><figcaption><p>Inventory Extensions app created successfully</p></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -88,11 +88,11 @@ We also recommend that you enable the Advanced Insights Inventory Extensions (MS
 {% hint style="info" %}
 **Note**
 
-The Advanced Insights Inventory Extensions will add approximately 0.5 MB per-client to the Configuration Manager database. We recommend increasing the acceptable inventory file size from the default of 5MB to a minimum of 10MB.&#x20;
+The Advanced Insights Inventory Extensions will add approximately 0.5 MB per-client to the Configuration Manager database. We recommend increasing the acceptable inventory file size from the default of 5MB to a minimum of 10MB.
 
 To do so, edit the below registry value on the ConfigMgr site server:
 
 * **Registry key:** HKLM\Software\Microsoft\SMS\Components\SMS\_INVENTORY\_DATA\_LOADER
-* **Registry value:** Max MIF Size&#x20;
-* **Data:** 10485760 (decimal) / a00000 (hexadecimal)&#x20;
+* **Registry value:** Max MIF Size
+* **Data:** 10485760 (decimal) / a00000 (hexadecimal)
 {% endhint %}

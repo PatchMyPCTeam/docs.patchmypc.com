@@ -35,7 +35,7 @@ In the copied content folder:
 {% hint style="info" %}
 **NOTES**
 
-* Do not zip the primary installer.&#x20;
+* Do not zip the primary installer.
 * If using PSADT, do not zip:
   * The PSADT modules
   * The primary installer referenced in the toolkit
@@ -45,7 +45,7 @@ This ensures the installer can still be scanned and hashed, which is required fo
 
 Example:
 
-<figure><img src="../../../.gitbook/assets/image (4296).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4295).png" alt=""><figcaption></figcaption></figure>
 
 4. **Update the Deployment Type's content**
 
@@ -69,7 +69,7 @@ When migrating the application, add [this](https://github.com/PatchMyPCTeam/Comm
 {% hint style="info" %}
 If you already have a pre-script configured, update it to include both:
 
-* The extraction logic for the zipped files (should be first)&#x20;
+* The extraction logic for the zipped files (should be first)
 * Your existing script logic (after the extraction logic)
 
 Make sure both sets of actions are combined into a single script so they run together during deployment.

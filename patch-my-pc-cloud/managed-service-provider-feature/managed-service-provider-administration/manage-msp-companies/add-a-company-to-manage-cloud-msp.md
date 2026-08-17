@@ -4,10 +4,10 @@ _Applies to: Patch My PC Cloud_
 
 Once the parent MSP company has been configured in Patch My PC (PMPC) Cloud with an MSP Plus license, you can add the relevant child companies to be managed.
 
-You have two options for setting up child companies:&#x20;
+You have two options for setting up child companies:
 
-* If the company you want to add is already using PMPC Cloud, then you should follow the [Inviting a User to an MSP Company](../manage-msp-users/#inviting-a-user-to-an-msp-company) process.&#x20;
-* If the company you want to add is not already using PMPC Cloud, then you should follow the [Adding a Company to be Managed](add-a-company-to-manage-cloud-msp.md#adding-a-company-to-be-managed) process.&#x20;
+* If the company you want to add is already using PMPC Cloud, then you should follow the [Inviting a User to an MSP Company](../manage-msp-users/#inviting-a-user-to-an-msp-company) process.
+* If the company you want to add is not already using PMPC Cloud, then you should follow the [Adding a Company to be Managed](add-a-company-to-manage-cloud-msp.md#adding-a-company-to-be-managed) process.
 
 {% hint style="warning" %}
 **Important**
@@ -23,19 +23,17 @@ To add a new PMPC Cloud company to be managed using the MSP Feature:
 2.  Click the **MSP Customers** node.
 
     <figure><img src="../../../../.gitbook/assets/image (2776).png" alt="Clicking the &#x27;MSP Customers&#x27; node" width="563"><figcaption></figcaption></figure>
-
-
 3. On the **MSP Customers** page, click **Add Customer**.
 
 <figure><img src="../../../../.gitbook/assets/image (617).png" alt="Clicking &#x27;Add Customer&#x27;" width="563"><figcaption></figcaption></figure>
 
 4. Click **Connect** under the **Intune Connection** section.
 
-<figure><img src="../../../../.gitbook/assets/image (618).png" alt="Clicking &#x27;Connect&#x27; under the &#x27;Intune Connection&#x27; section " width="213"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (618).png" alt="Clicking &#x27;Connect&#x27; under the &#x27;Intune Connection&#x27; section" width="213"><figcaption></figcaption></figure>
 
 5. On the **Sign in** screen, enter the Entra ID that is a Global Admin in the child company or click to select the relevant account from the list of already signed-in accounts. Then click **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (2780).png" alt="&#x27;Sign in&#x27; screen" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2779).png" alt="&#x27;Sign in&#x27; screen" width="510"><figcaption></figcaption></figure>
 
 6. Enter the password and click **Sign in**.
 

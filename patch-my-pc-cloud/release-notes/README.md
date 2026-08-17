@@ -13,11 +13,11 @@ _Production Release_ means we have released that item to our Production environm
 
 * Private Preview, which is invitation-only.
 * Public Preview for which you will need to have [Preview Features enabled](../manage/settings/company-settings/preview-features.md) in your company to access it.
-* General Availability (GA) which is available to everyone.&#x20;
+* General Availability (GA) which is available to everyone.
 
 Please see the relevant docs for a feature for more information which will indicate the state of the feature, plus you can see a list of [Cloud Preview Features](../preview-features.md) for more information.
 
-You can also access this page from within the Cloud Portal by clicking the support button (!["support" button](<../../.gitbook/assets/image (1289).png>)) in the header area and selecting **Release Notes**.
+You can also access this page from within the Cloud Portal by clicking the support button (!["support" button](../../.gitbook/assets/image-\(587\).png)) in the header area and selecting **Release Notes**.
 
 Release Notes for previous years can be accessed using the following links:
 
@@ -370,7 +370,7 @@ Release Notes for previous years can be accessed using the following links:
 
 #### Binary Free Apps
 
-* Resolved an issue where if an app has both binary and binary-free variants, the binary-free logic did not work.      &#x20;
+* Resolved an issue where if an app has both binary and binary-free variants, the binary-free logic did not work.
 
 #### Intune Apps
 
@@ -378,7 +378,7 @@ Release Notes for previous years can be accessed using the following links:
 * Resolved an issue that when trying to edit an existing deployment, the following error was shown **Validation error on "getProductInfoByProductIdForDeployments", Expected object, received undefined.**
 * Resolved an issue where an app fails to install if the Registry path contains custom requirements such as **HKLM:** or **Registry::**
 * Resolved an issue where changing variants in a deployment did not update the list of **Tools** on the **Configuration** tab.
-* Resolved an issue where after deleting an assignment for a deployment containing ESP Profiles, the ESP Profiles themselves were not reevaluated, potentially highlighting errors in their configuration.         &#x20;
+* Resolved an issue where after deleting an assignment for a deployment containing ESP Profiles, the ESP Profiles themselves were not reevaluated, potentially highlighting errors in their configuration.
 
 #### Migration
 
@@ -651,7 +651,7 @@ Release Notes for previous years can be accessed using the following links:
 #### **Portal**
 
 * Resolved an issue where, for some Enterprise Premium customers, trial limits were being incorrectly enforced.
-* Resolved an issue where editing a deployment with no assignments and changing the architecture resulted in older versions being removed from Intune. We now no longer support changing the architecture for a deployment with no assignments.         &#x20;
+* Resolved an issue where editing a deployment with no assignments and changing the architecture resulted in older versions being removed from Intune. We now no longer support changing the architecture for a deployment with no assignments.
 
 #### **Custom Apps**
 

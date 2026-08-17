@@ -12,7 +12,7 @@ Prior to version 2.5.1, upgrading Advanced Insights was an entirely manual proce
 
 ### Manual update
 
-To manually upgrade Advanced Insights, we need to re-run the installer using the latest version downloaded from [here](../download-and-install-insights/).&#x20;
+To manually upgrade Advanced Insights, we need to re-run the installer using the latest version downloaded from [here](../download-and-install-insights/).
 
 {% hint style="info" %}
 To upgrade silently please run AdvancedInsights.exe /q /l\*v %temp%\AdvInsights.log
@@ -20,7 +20,7 @@ To upgrade silently please run AdvancedInsights.exe /q /l\*v %temp%\AdvInsights.
 
 When you run the installer, it will prompt for you to accept the license terms.
 
-<figure><img src="../../.gitbook/assets/image (4341).png" alt="License T&#x26;Cs" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4324).png" alt="License T&#x26;Cs" width="563"><figcaption></figcaption></figure>
 
 You will be presented with the upgrade summary page. There is also the option to change the certificate, network port or IIS application pool identity if required.
 

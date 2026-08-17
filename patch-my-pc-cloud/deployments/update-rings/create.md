@@ -12,7 +12,7 @@ To create Update Rings for a new Deployment in Patch My PC (PMPC) Cloud:
    • [Delayed](update-ring-types.md#delayed)\
    • [Immediate](update-ring-types.md#immediate)
 
-<figure><img src="../../../.gitbook/assets/image (3284).png" alt="Choosing the Update Ring start time " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3284).png" alt="Choosing the Update Ring start time" width="563"><figcaption></figcaption></figure>
 
 By default, two Update Rings are created with a two-day delay between them.
 
@@ -26,7 +26,7 @@ By default, two Update Rings are created with a two-day delay between them.
 
 5. On the **Add Update Ring** dialog box, enter the name for the new ring in the **Name** field and click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (2889).png" alt="“Add Update Ring” dialog box" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2882).png" alt="“Add Update Ring” dialog box" width="336"><figcaption></figcaption></figure>
 
 A new ring is added.
 
@@ -100,9 +100,9 @@ The **“<**_**deployment\_name**_**>” Deployment Summary** dialog box appears
 {% hint style="info" %}
 **Note**
 
-If your [Sync Schedule](../../manage/settings/sync-schedule.md) is set to anything other than **Daily**, the UI will warn you that some rings may not be evaluated as expected.&#x20;
+If your [Sync Schedule](../../manage/settings/sync-schedule.md) is set to anything other than **Daily**, the UI will warn you that some rings may not be evaluated as expected.
 
-![](<../../../.gitbook/assets/image (2840).png>)
+<img src="../../../.gitbook/assets/image (2840).png" alt="" data-size="original">
 
 This is why we recommend you set your [Sync Schedule](../../manage/settings/sync-schedule.md) to **Daily** if you plan to use Update Rings.
 {% endhint %}
@@ -113,8 +113,8 @@ This is why we recommend you set your [Sync Schedule](../../manage/settings/sync
     \
     b. Click **Confirm** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (2842).png" alt="Clicking &#x22;Confirm&#x22;"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2841).png" alt="Clicking &#x22;Confirm&#x22;"><figcaption></figcaption></figure>
 
 When you click **Confirm**, the **Deployments** node appears showing the deployment as **In Progress** and the **Success – Created <**_**deployment\_name**_**>** notification.
 
-<figure><img src="../../../.gitbook/assets/image (2844).png" alt="“Deployments” node appearing showing the deployment as “In Progress” and the “Success – Created <deployment_name>” notification. "><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2844).png" alt="“Deployments” node appearing showing the deployment as “In Progress” and the “Success – Created <deployment_name>” notification."><figcaption></figcaption></figure>

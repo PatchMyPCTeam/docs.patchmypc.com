@@ -43,7 +43,7 @@ You can read more about Entra ID roles at [Microsoft Entra built-in roles](https
 
 This permission is required to manage blocking apps in the Enrollment Status Page (ESP) profile directly from the PMPC Cloud Portal. This is the only feature in our solution that relies on this permission.
 
-We understand this permission may seem broad, but Microsoft does not offer a more granular alternative for updating the blocking apps feature in ESP profiles.&#x20;
+We understand this permission may seem broad, but Microsoft does not offer a more granular alternative for updating the blocking apps feature in ESP profiles.
 
 If you have concerns and choose to revoke this permission from the **Patch My PC Cloud** Enterprise App in your Entra ID tenant, please be aware that this will impair our ability to update deployments.
 
@@ -76,4 +76,4 @@ _Does this app look suspicious?_ [_Report it here_](https://login.microsoftonlin
 
 You will be prompted to grant these during whenever you connect an Intune Tenant to your PMPC Cloud Portal by clicking **Accept** on the **Permissions requested** dialog box.
 
-<figure><img src="../../../.gitbook/assets/image (1044).png" alt="&#x22;Permissions requested&#x22; dialog box showing which permissions we require to connect to your Intune Tenant to connect "><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(341).png" alt="&#x22;Permissions requested&#x22; dialog box showing which permissions we require to connect to your Intune Tenant to connect"><figcaption></figcaption></figure>

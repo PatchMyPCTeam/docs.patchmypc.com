@@ -16,7 +16,7 @@ We do not match ConfigMgr assignments to Entra ID groups. You need to manually c
 
 Once you have added your assignments, click **Migrate** and the **Deployment Created, Migration Pending** notification is shown.
 
-<figure><img src="../../../.gitbook/assets/image (606).png" alt="Application migration status" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (605).png" alt="Application migration status" width="563"><figcaption></figcaption></figure>
 
 The **Status** field also updates to **In Progress** whilst the deployment is created, with any required content (such as extra files) being zipped and sent to Azure Blob Storage.
 

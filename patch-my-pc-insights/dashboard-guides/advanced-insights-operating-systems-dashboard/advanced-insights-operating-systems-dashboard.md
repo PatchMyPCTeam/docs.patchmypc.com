@@ -21,8 +21,6 @@ When you select Pending Restarts for one of the 4 options at the top you get a t
 
 <figure><img src="../../../.gitbook/assets/image (2865).png" alt=""><figcaption><p>Pending Restart</p></figcaption></figure>
 
-
-
 ### Windows OS Servicing
 
 In this donut chart you can pivot the information using the properties button to show either the following information:
@@ -41,4 +39,4 @@ From selecting a property you can then go and select for example build version a
 
 Or by clicking on the cog and then selecting View all Chart data you can get a table with all the devices in that property selected.<br>
 
-<figure><img src="../../../.gitbook/assets/image (2869).png" alt=""><figcaption><p>Windows OS Servicing Data - Build Version</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2868).png" alt=""><figcaption><p>Windows OS Servicing Data - Build Version</p></figcaption></figure>

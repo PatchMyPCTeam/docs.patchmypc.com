@@ -6,7 +6,7 @@ The _Advanced/Patch Insights for Intune_ feature of Patch My PC (PMPC) Cloud all
 
 Your PMPC Cloud license type determines the name of the node in your portal:
 
-* [Advanced Insights](overview.md#advanced-insights)&#x20;
+* [Advanced Insights](overview.md#advanced-insights)
 * [Patch Insights](overview.md#patch-insights)
 
 ## Advanced Insights
@@ -18,7 +18,7 @@ The **Advanced Insights** node consists of the following sub-nodes, each of whic
 * **Home -** Contains a summary of all of the information from the other tabs.
 * **Updates -** Contains a summary of the most common software update-related information.
 * **Hardware -** Contains a summary of the most common hardware-related information.
-* **Intune  -** Contains a summary of the most common information from your Intune tenant.
+* **Intune -** Contains a summary of the most common information from your Intune tenant.
 
 <figure><img src="../../.gitbook/assets/image (574).png" alt="&#x27;Advanced Insights&#x27; node" width="142"><figcaption></figcaption></figure>
 
@@ -28,7 +28,7 @@ If you are using the Enterprise Plus license, the node will be named **Patch Ins
 
 You can only access the **Intune** sub-node, which contains a summary of the most common information from your Intune tenant.
 
-<figure><img src="../../.gitbook/assets/image (577).png" alt="&#x27;Patch Insights&#x27; node" width="196"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (575).png" alt="&#x27;Patch Insights&#x27; node" width="196"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**

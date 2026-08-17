@@ -18,7 +18,7 @@ To edit an existing Deployment Template in Patch My PC (PMPC) Cloud:
 
 The **Templates** page is redisplayed along with the **Success - Template “<**_**template\_name**_**>" has been updated** notification.
 
-<figure><img src="../../../../.gitbook/assets/image (757).png" alt="Clicking “Save” to save changes" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-(55).png" alt="Clicking “Save” to save changes" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**

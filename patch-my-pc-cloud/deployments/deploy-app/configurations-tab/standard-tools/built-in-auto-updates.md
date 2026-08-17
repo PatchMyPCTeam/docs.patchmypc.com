@@ -14,13 +14,11 @@ To manage the settings for the **Built-in Auto Updates** tool:
 
 1. Click the **Built-in Auto Updates** tool.
 
-<figure><img src="../../../../../.gitbook/assets/image (648).png" alt="Clicking the &#x27;Built-in Auto Updates&#x27; tool" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (647).png" alt="Clicking the &#x27;Built-in Auto Updates&#x27; tool" width="563"><figcaption></figcaption></figure>
 
 2. Configure the required settings.
 
 <figure><img src="../../../../../.gitbook/assets/image (649).png" alt="Configuring settings" width="563"><figcaption></figcaption></figure>
-
-
 
 ## Next Steps
 

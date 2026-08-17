@@ -8,9 +8,9 @@ The Software Update Deployments dashboard shows high-level compliance for each S
 
 Clicking through the Software Updates deployments you can see the general information about the deployment.
 
-<figure><img src="../../../.gitbook/assets/image (1008).png" alt=""><figcaption><p>Software Update Deployment details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(306).png" alt=""><figcaption><p>Software Update Deployment details</p></figcaption></figure>
 
-&#x20;You can toggle the DeploymentStatus to show you the following fields:
+You can toggle the DeploymentStatus to show you the following fields:
 
 * Compliant
 * Enforcement State Unknown

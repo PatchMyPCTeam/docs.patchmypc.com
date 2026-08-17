@@ -31,7 +31,7 @@ When using a **CNAME / Alias** or **Wilcard** certificate for custom Advanced In
 
 _Example:_
 
-![](<../../.gitbook/assets/image (1726).png>)
+<img src="../../.gitbook/assets/image (1725).png" alt="" data-size="original">
 {% endhint %}
 
 Certificate SAN values can be also verified within the certificate properties.

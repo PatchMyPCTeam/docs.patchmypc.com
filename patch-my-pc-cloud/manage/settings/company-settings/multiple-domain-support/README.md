@@ -6,7 +6,7 @@ The _Multiple domains_ feature of Patch My PC (PMPC) Cloud allows you to configu
 
 To configure your PMPC Cloud Company for multiple domains:
 
-1\.      Add the relevant custom domain to your tenant.
+1\. Add the relevant custom domain to your tenant.
 
 {% hint style="info" %}
 **Note**
@@ -20,11 +20,11 @@ Also, you cannot add a domain to Entra ID using the portal.
 3. Sign in to your PMPC Cloud company using a user account that has the **Full Admin with Access Management** role (other roles cannot use this feature).
 4. Navigate to **Settings | Company**
 
-<figure><img src="../../../../../.gitbook/assets/image (567).png" alt="Navigating to ‘Settings | Company’" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (559).png" alt="Navigating to ‘Settings | Company’" width="563"><figcaption></figcaption></figure>
 
 5. Click the **Domains** tab.
 
-<figure><img src="../../../../../.gitbook/assets/image (568).png" alt="Clicking the ‘Domains’ tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (560).png" alt="Clicking the ‘Domains’ tab" width="563"><figcaption></figcaption></figure>
 
 The list of custom domains configured for your tenant is displayed. If a domain is listed with a **Status** of **Available**, it means any users within that domain can request access to your PMPC Cloud Company.
 

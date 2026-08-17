@@ -121,7 +121,7 @@ Double-check everything before clicking **Add**.
 
 Use this section to deploy one of the Patch My PC certificate import scripts as an Intune remediation script.
 
-Select the tab that matches the certificate you want to deploy, then use the corresponding detection script, remediation script, and settings below when following the the [Remediations](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations) article.&#x20;
+Select the tab that matches the certificate you want to deploy, then use the corresponding detection script, remediation script, and settings below when following the the [Remediations](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations) article.
 
 The Remediation scripts can be found in the following repoistory on GitHub [https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Other/Code%20Signing](https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Other/Code%20Signing)
 
@@ -203,7 +203,7 @@ You can see the script being processed by the Intune Management Extension by loo
 
 Observe the **Proactive Remediation Device Status** blade.
 
-<figure><img src="../../../.gitbook/assets/image (1351).png" alt="Observing the “Proactive Remediation Device Status” blade." width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(649).png" alt="Observing the “Proactive Remediation Device Status” blade." width="563"><figcaption></figcaption></figure>
 
 The following log snippet shows the **HealthScripts.log** entry if the pre-remediation (detection) script found the certificate already installed in the local computer’s Trusted Publishers store.
 

@@ -30,11 +30,7 @@ To edit an existing deployment from the **Deployments** node:
 2.  Click the relevant deployment you want to edit.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2589).png" alt="Clicking the relevant deployment you want to edit."><figcaption></figcaption></figure>
-
-
 3.  On the deployment's property page click **Edit**.
-
-
 
     <figure><img src="../../../.gitbook/assets/image (2712).png" alt="Clicking &#x22;Edit&#x22; on the deployment&#x27;s property page."><figcaption></figcaption></figure>
 
@@ -54,7 +50,7 @@ Be mindful of any changes you make, as you are editing the existing deployment, 
 
 You can also edit a deployment from the **Deployments** node by clicking the ellipsis (**⋮**) beside the relevant deployment you want to edit, then click **Edit**.
 
-![Clicking the ellipsis beside the relevant deployment you want to edit, then clicking Edit.](<../../../.gitbook/assets/image (2593).png>)
+<img src="../../../.gitbook/assets/image (2592).png" alt="Clicking the ellipsis beside the relevant deployment you want to edit, then clicking Edit." data-size="original">
 {% endhint %}
 
 ## Editing a deployment from the App Catalog

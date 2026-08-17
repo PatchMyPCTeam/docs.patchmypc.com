@@ -23,7 +23,7 @@ Without AI assistance, reliably separating PSADT scripts into pre-install and po
 {% hint style="info" %}
 **Note**
 
-**AI usage is optional** and can be **disabled at any time** from the Cloud Portal settings. See  [Manage Cloud AI Usage](../../manage/settings/company-settings/ai-usage.md) for more information.
+**AI usage is optional** and can be **disabled at any time** from the Cloud Portal settings. See [Manage Cloud AI Usage](../../manage/settings/company-settings/ai-usage.md) for more information.
 {% endhint %}
 
 ## Migration Behavior of PSADT-based Apps
@@ -36,7 +36,7 @@ In the example below, the Rainbow application has been identified as PSADT-based
 
 In the original PSADT script for Rainbow, both the **MARK: Pre-Install** and **MARK: Install** sections contain executable actions.
 
-<figure><img src="../../../.gitbook/assets/image (3830).png" alt="Original PSADT script" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3829).png" alt="Original PSADT script" width="563"><figcaption></figcaption></figure>
 
 The pre-install section runs a prerequisite installer (**vstor\_redist.exe**), whilst the install section performs the primary application installation (**Rainbow\_Installer\_Machine\_Offline.msi**). During migration, these sections are analyzed and separated so that prerequisite logic is mapped to the **Pre-install** script, and the primary installer is executed as the main install action, preserving the original execution order.
 
@@ -73,7 +73,7 @@ See [How Migration Type is Determined](../how-migration-type-determined.md) to u
 * Description
 * Information URL
 * Privacy URL
-* PSADT Script&#x20;
+* PSADT Script
   * "MARK: Pre-Install" mapped to Pre-install Script
   * "MARK: Post-Install" mapped to Post-Install Script
 

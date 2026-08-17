@@ -15,7 +15,7 @@ To modify a Custom App:
 1. Sign in to the PMPC portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2.  On the **App Catalog** page, search for the relevant app.<br>
 
-    <figure><img src="../../.gitbook/assets/image (2717).png" alt="Searching for your Custom App" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1170).png" alt="Searching for your Custom App" width="563"><figcaption></figcaption></figure>
 3. Click the app to open it.
 4.  On the app’s properties page, click **Edit Info**.<br>
 

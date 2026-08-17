@@ -20,13 +20,13 @@ Along the top bar in the this dashboard you get shown the Synchronisation status
 
 <figure><img src="../../../.gitbook/assets/image (995).png" alt=""><figcaption><p>Software Updates Synchronisation</p></figcaption></figure>
 
-In this dashboard we show all the Software Updates Point site and their synchronisation status.  If you have multiple downstream Software Update Points you will see their status here too.
+In this dashboard we show all the Software Updates Point site and their synchronisation status. If you have multiple downstream Software Update Points you will see their status here too.
 
 ### Updates Requiring Deployment
 
 <figure><img src="../../../.gitbook/assets/image (996).png" alt=""><figcaption><p>Updates Requiring Deployment</p></figcaption></figure>
 
-When you click through on this dashboard statistic you get a dashboard with the number of Critical and Security Updates that are not in any active deployments and are required my at least one computer in your environment.  This excludes superseded and expired updates.
+When you click through on this dashboard statistic you get a dashboard with the number of Critical and Security Updates that are not in any active deployments and are required my at least one computer in your environment. This excludes superseded and expired updates.
 
 ### Last and Current Months Update Compliance
 
@@ -44,14 +44,14 @@ In this chart it will show us the status of the software updates scan cycle in y
 
 ### Computer Compliance
 
-The computer compliance, sorted by default by your least compliant computers from a software update perspective.&#x20;
+The computer compliance, sorted by default by your least compliant computers from a software update perspective.
 
-<figure><img src="../../../.gitbook/assets/image (1000).png" alt=""><figcaption><p>Computer Compliance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(298).png" alt=""><figcaption><p>Computer Compliance</p></figcaption></figure>
 
 We have several machines that have not sent in any software update compliance data for a while and so their compliance status is unknown against more recent updates. We can scroll through this list and can expand out the number of records that are being shown to show you a longer list.
 
 ### Update Compliance
 
-<figure><img src="../../../.gitbook/assets/image (1003).png" alt=""><figcaption><p>Update Compliance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(301).png" alt=""><figcaption><p>Update Compliance</p></figcaption></figure>
 
-The final view on the Software Update dashboard is of deployed updates compliance.  This is sorted by the least compliant update.
+The final view on the Software Update dashboard is of deployed updates compliance. This is sorted by the least compliant update.

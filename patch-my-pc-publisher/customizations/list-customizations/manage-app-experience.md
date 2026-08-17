@@ -1,8 +1,8 @@
 # Manage App Experience option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: ConfigMgr Apps_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: ConfigMgr Apps_
 
 The **Manage App Experience** right-click option in Patch My PC (PMPC) Publisher allows you to customize the user experience settings applied to the Microsoft ConfigMgr application deployment type created by Publisher.
 
@@ -10,7 +10,7 @@ These settings control how the application behaves during installation, includin
 
 When you right-click at a supported level and select **Manage App Experience**, the **Application User Experience** dialog is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (4795).png" alt="&#x27;Application User Experience&#x27; dialog " width="506"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4795).png" alt="&#x27;Application User Experience&#x27; dialog" width="506"><figcaption></figcaption></figure>
 
 ## Specify user experience settings for application to inherit
 
@@ -22,7 +22,7 @@ When configured at the **All Products** or Vendor level, you can choose which sp
 
 At the Product level, all settings apply directly to that application and override inherited values.
 
-<figure><img src="../../../.gitbook/assets/image (4799).png" alt="Application User Experience settings when configured at a Product level" width="506"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4795).png" alt="Application User Experience settings when configured at a Product level" width="506"><figcaption></figcaption></figure>
 
 ## Installation behavior Constraints
 
@@ -64,6 +64,3 @@ If required, select the relevant option from the **Restart Behavior** dropdown.
 The **Reset** button restores all user experience settings to PMPC recommended defaults. This is useful if custom values were applied previously and you want to return to a known good configuration.
 
 <figure><img src="../../../.gitbook/assets/image (4802).png" alt="&#x27;Reset&#x27; buton" width="506"><figcaption></figcaption></figure>
-
-
-

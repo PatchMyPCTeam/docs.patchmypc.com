@@ -18,19 +18,13 @@ To onboard to the Intune Apps for Cloud (Intune Apps):
     <figure><img src="../../../.gitbook/assets/image (2447).png" alt="Clicking “Connect” under Intune on the App Catalog page"><figcaption></figcaption></figure>
 3.  Enter the Entra ID you used to onboard to PMPC Cloud or click to select the relevant account from the list of already signed-in accounts. Then click **Next**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1628).png" alt="“Microsoft Sign in” screen"><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../.gitbook/assets/image (1627).png" alt="“Microsoft Sign in” screen"><figcaption></figcaption></figure>
 4.  Enter the password and click **Sign in**.
 
-
-
     <figure><img src="../../../.gitbook/assets/image (1629).png" alt="“Microsoft Enter password” screen"><figcaption></figcaption></figure>
-
-
 5.  On the **Permission requested** screen, click **Accept**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1631).png" alt="“Permissions requested” screen"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image-(929).png" alt="“Permissions requested” screen"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -50,9 +44,7 @@ You can click the down arrow beside each permission to get more information.
     \
     If you do not see this screen, it is probably because you already have a suitable, valid PMPC license. Continue to Step 8.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1632).png" alt="“Intune connected successfully” screen"><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../.gitbook/assets/image-(930).png" alt="“Intune connected successfully” screen"><figcaption></figcaption></figure>
 7.  On the **Intune connected successfully** screen, either:\
     \
     Start an Enterprise Plus trial by entering a maximum of two devices in the **Enter total number of managed devices in production box** and clicking **Start Now**.\
@@ -61,7 +53,7 @@ You can click the down arrow beside each permission to get more information.
 
     Enter your current PMPC license key in the **Enter License Key** field and click **Activate Now**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1633).png" alt="“Intune connected successfully” screen"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image-(930).png" alt="“Intune connected successfully” screen"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**

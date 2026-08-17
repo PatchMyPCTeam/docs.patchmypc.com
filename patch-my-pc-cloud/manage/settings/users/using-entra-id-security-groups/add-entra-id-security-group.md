@@ -48,7 +48,7 @@ In the current release, you can add up to ten Entra ID Security Groups.
 
 The portal auto-refreshes, showing that the selected groups have been added, and the **Success – Group created** notification is shown.
 
-<figure><img src="../../../../../.gitbook/assets/image (3695).png" alt="Portal auto-refreshes, showing the selected groups have been added and the &#x27;Success – Group created&#x27; notification is shown" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3694).png" alt="Portal auto-refreshes, showing the selected groups have been added and the &#x27;Success – Group created&#x27; notification is shown" width="563"><figcaption></figcaption></figure>
 
 When you add an Entra ID Security Group, the **Group role with id <**_**entra\_id\_security\_group\_id**_**> was created with role <**_**user\_role**_**>** event is written to the **Events** node.
 

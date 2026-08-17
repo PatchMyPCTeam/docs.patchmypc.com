@@ -24,7 +24,7 @@ To uninstall a branding app:
 
 1. Navigate to **Settings | Branding**
 
-<figure><img src="../../../../.gitbook/assets/image (3713).png" alt="Navigating to &#x27;Settings | Branding&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (536).png" alt="Navigating to &#x27;Settings | Branding&#x27;" width="563"><figcaption></figcaption></figure>
 
 2.  On the **Branding** screen, make a note of the assignments for the branding app you want to uninstall.<br>
 
@@ -56,10 +56,10 @@ The list of assignments is updated to show that the **Uninstall** assignment has
 {% hint style="danger" %}
 **Important**
 
-Assigning the Uninstall Branding App to a resource will remove all PMPC Cloud-related brandings, associated files, and localizations.&#x20;
+Assigning the Uninstall Branding App to a resource will remove all PMPC Cloud-related brandings, associated files, and localizations.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (719).png" alt="List of assignments updated to show the “Uninstall” assignment has been added for the selected resources." width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-(17).png" alt="List of assignments updated to show the “Uninstall” assignment has been added for the selected resources." width="563"><figcaption></figcaption></figure>
 
 8. If the list of assignments is correct, proceed to step 9; otherwise, repeat steps 6 and 7 to add any additional assignments.
 

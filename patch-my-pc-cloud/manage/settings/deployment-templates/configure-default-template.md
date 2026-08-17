@@ -20,7 +20,7 @@ To configure the default template for all deployments to a specific OS platform:
 
 1. Navigate to **Settings | Templates**
 
-<figure><img src="../../../../.gitbook/assets/image (963).png" alt="Navigating to “Settings | Templates”" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (959).png" alt="Navigating to “Settings | Templates”" width="563"><figcaption></figcaption></figure>
 
 2. On the **Templates** page, click the relevant slider under the **Default** column beside the template you want to configure as the default for all deployments created for that OS platform going forward.
 

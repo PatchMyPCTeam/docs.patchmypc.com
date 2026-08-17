@@ -29,7 +29,7 @@ To install Patch My PC (PMPC) Publisher:
 Intune standalone mode removes some Publisher tabs used specifically for publishing applications and updates to ConfigMgr and WSUS. These tabs can be re-enabled retrospectively after installation from the **Advanced** tab in Publisher.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4759).png" alt="&#x27;Enable Intune Standalone Mode&#x27; screen" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4758).png" alt="&#x27;Enable Intune Standalone Mode&#x27; screen" width="371"><figcaption></figcaption></figure>
 
 5. On the **Select Installation Folder** screen, choose where to install Publisher, then click **Next**.
 

@@ -15,7 +15,7 @@ To create an email notification:
 1. Navigate to **Settings | Notifications**
 2. On the **Add Notifications** screen, enter a unique name for this notification in the **Name** field.
 
-<figure><img src="../../../../.gitbook/assets/image (3837).png" alt="&#x27;Add Notifications&#x27; screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (292).png" alt="&#x27;Add Notifications&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 3. In the **User Email** field, select the relevant administrator’s email address from the dropdown or type their email address.
 

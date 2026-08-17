@@ -15,15 +15,15 @@ To sign up for a free trial to PMPC Cloud:
 
 4. Enter the password and click **Sign in**.
 
-<figure><img src="../.gitbook/assets/image (2067).png" alt="Microsoft &#x27;Enter password&#x27; screen " width="329"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2067).png" alt="Microsoft &#x27;Enter password&#x27; screen" width="329"><figcaption></figcaption></figure>
 
 5. If the **Permission requested** screen is not displayed, go to Step 7.
 
-<figure><img src="../.gitbook/assets/image (2208).png" alt="&#x27;Permissions Requested&#x27; screen" width="323"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-(795).png" alt="&#x27;Permissions Requested&#x27; screen" width="323"><figcaption></figcaption></figure>
 
 6. Review the **Permission requested** screen, clicking **Accept** if you are happy to continue.
 
-<figure><img src="../.gitbook/assets/image (2068).png" alt="&#x27;Permissions requested&#x27; dialog box" width="325"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2053).png" alt="&#x27;Permissions requested&#x27; dialog box" width="325"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -55,26 +55,22 @@ You can click the down arrow beside each permission to get more information.
 
     1.  If you are setting up a new company, click **Create Company** and continue to Step 9.<br>
 
-        <figure><img src="../.gitbook/assets/image (1238).png" alt="Clicking &#x27;Create Company&#x27; to create a new company" width="563"><figcaption></figcaption></figure>
-
-
+        <figure><img src="../.gitbook/assets/image-(536).png" alt="Clicking &#x27;Create Company&#x27; to create a new company" width="563"><figcaption></figcaption></figure>
     2.  If your email address has already been used to create a user in a PMPC Cloud company, you will see **Select** beside the relevant companies that you can sign in to.<br>
 
-        <figure><img src="../.gitbook/assets/image (722).png" alt="Clicking &#x27;Select&#x27; beside the company you want to sign in to." width="563"><figcaption></figcaption></figure>
-
-
+        <figure><img src="../.gitbook/assets/image-(20).png" alt="Clicking &#x27;Select&#x27; beside the company you want to sign in to." width="563"><figcaption></figcaption></figure>
     3. If your email address is not associated with a user in a PMPC Cloud company, you can click **Request Access** beside the company you want to join.
 
-    <figure><img src="../.gitbook/assets/image (1240).png" alt="Clicking &#x27;Request Access&#x27; beside the company you want to join" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image-(538).png" alt="Clicking &#x27;Request Access&#x27; beside the company you want to join" width="563"><figcaption></figcaption></figure>
 
     \
     The **Request Access to join&#x20;**_**\<company\_name>**_ popup appears.
 
-<figure><img src="../.gitbook/assets/image (1328).png" alt="&#x27;Request Access to join&#x27; popup" width="242"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-(616).png" alt="&#x27;Request Access to join&#x27; popup" width="242"><figcaption></figcaption></figure>
 
 8. Enter an optional **Reason for Request** then click **Submit**.\
    \
-   The **Request Access** text changes to **Renotify** and the **Success - Access request sent** notification is shown.&#x20;
+   The **Request Access** text changes to **Renotify** and the **Success - Access request sent** notification is shown.
 
 <figure><img src="../.gitbook/assets/image (2334).png" alt="The &#x27;Success – Access request sent&#x27; notification is displayed" width="563"><figcaption></figcaption></figure>
 
@@ -108,11 +104,11 @@ You cannot use the AT symbol (**@**), forward slash (**/**) or plus (**+**) symb
 
 11. Select your company’s country from the **Country** dropdown.
 
-<figure><img src="../.gitbook/assets/image (1508).png" alt="Select your company’s country from the dropdown " width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-(806).png" alt="Select your company’s country from the dropdown" width="563"><figcaption></figcaption></figure>
 
 12. Click **Continue**.
 
-<figure><img src="../.gitbook/assets/image (1510).png" alt="Clicking &#x27;Continue&#x27; on the &#x27;Company Info&#x27; screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-(808).png" alt="Clicking &#x27;Continue&#x27; on the &#x27;Company Info&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 13. On the **User Info** screen, verify your **First Name** and **Last Name** are correct, amending as required.
 
@@ -128,7 +124,7 @@ You cannot use the AT symbol (**@**), forward slash (**/**) or plus (**+**) symb
 
 The **Terms and Conditions** page is displayed. Once you’ve reviewed them, click the **X** in the top right-hand corner to close this window.
 
-<figure><img src="../.gitbook/assets/image (1513).png" alt="&#x27;Terms and Conditions&#x27; for you using PMPC software and services" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-(811).png" alt="&#x27;Terms and Conditions&#x27; for you using PMPC software and services" width="563"><figcaption></figcaption></figure>
 
 16. If you agree with our terms and conditions, check the **Accept all Terms and conditions** checkbox.
 

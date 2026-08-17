@@ -2,21 +2,21 @@
 
 _Applies to: Patch My PC Advanced Insights_
 
-Sometimes we need you to provide log files, including information about your Advanced Insights instance. We have two ways for you to collect logs, either that the Advanced Insights Application or by manually running the logs collector on the server.&#x20;
+Sometimes we need you to provide log files, including information about your Advanced Insights instance. We have two ways for you to collect logs, either that the Advanced Insights Application or by manually running the logs collector on the server.
 
 ### Via Advanced Insights
 
 {% hint style="info" %}
-This functionality was introduced in version 2.6.3. If you do not see it, please upgrade to a later version of the application.&#x20;
+This functionality was introduced in version 2.6.3. If you do not see it, please upgrade to a later version of the application.
 {% endhint %}
 
 {% hint style="warning" %}
-If you run Advanced Insights with a different user other than the default Local System, you may encounter issues with generating logs based on the privileges the account has.&#x20;
+If you run Advanced Insights with a different user other than the default Local System, you may encounter issues with generating logs based on the privileges the account has.
 {% endhint %}
 
-To collect logs via Advanced Insights, as the Admin or a user with Admin privileges, navigate to Administration -> Settings.&#x20;
+To collect logs via Advanced Insights, as the Admin or a user with Admin privileges, navigate to Administration -> Settings.
 
-You will see on the first tab, at the bottom there is a button to "Export Debug File". Click the button, there will a wait whilst logs are collected. Once the logs are collected, a download will be initiated with a zip containing all the logs required. If for any reason this fails or you receive no download, please try the server approach outlined below.&#x20;
+You will see on the first tab, at the bottom there is a button to "Export Debug File". Click the button, there will a wait whilst logs are collected. Once the logs are collected, a download will be initiated with a zip containing all the logs required. If for any reason this fails or you receive no download, please try the server approach outlined below.
 
 <figure><img src="../.gitbook/assets/image (4526).png" alt=""><figcaption></figcaption></figure>
 
@@ -31,16 +31,14 @@ _`%Advanced Insights Install Directory%`_`\Api\LogCollector\AdvancedInsightsLogD
 
 For example:
 
-`C:\Program Files (x86)\Advanced Insights\Api\LogCollector\AdvancedInsightsLogDiag.exe` <br>
+`C:\Program Files (x86)\Advanced Insights\Api\LogCollector\AdvancedInsightsLogDiag.exe`<br>
 
 You can also specify the output directory as well, using the -o parameter
 
 For example:
 
-`C:\Program Files (x86)\Advanced Insights\Api\LogCollector\AdvancedInsightsLogDiag.exe -o "C:\Temp"`&#x20;
+`C:\Program Files (x86)\Advanced Insights\Api\LogCollector\AdvancedInsightsLogDiag.exe -o "C:\Temp"`
 {% endhint %}
-
-
 
 {% hint style="info" %}
 The Log Collector can be executed manually and is also used within the Advanced Insights installer. Once the log collection process is completed, a zip file is created on the desktop (or location specified with the -o parameter) called:
@@ -52,7 +50,7 @@ This ZIP should be shared with Patch My PC technical support.
 _Example output:_
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (2628).png" alt=""><figcaption><p>Advanced Insights log collection output.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2627).png" alt=""><figcaption><p>Advanced Insights log collection output.</p></figcaption></figure>
 
 **This page provides details about what information the AdvancedInsightsLogDiag.exe collects.**
 
@@ -68,9 +66,9 @@ C:\ProgramData\AdvancedInsights\Logs
 
 The Windows Application Event log data is collected and output into 'Application\_EventLog.log' with a filter applied for the following event sources:
 
-* ".NET Runtime"&#x20;
+* ".NET Runtime"
 * "Advanced Insights"
-* "MsiInstaller" - if required to diagnose install problems, the filter will include&#x20;
+* "MsiInstaller" - if required to diagnose install problems, the filter will include
 
 ### Advanced Insights SQLite db
 
@@ -85,7 +83,7 @@ The following information is queried from the SQL Server instance where the Conf
 **SQL Master db:**
 
 * Configuration Manager database name
-* &#x20;Configuration Manager databaste state (ONLINE/OFFLINE)
+* Configuration Manager databaste state (ONLINE/OFFLINE)
 * Configuration Manager database compatibility level
 * Configuration Manager database .mdf file path
 * Configuration Manager database file size
@@ -108,7 +106,7 @@ The following information is queried from the SQL Server instance where the Conf
 **Configuration Manager SQL database:**
 
 * Advanced Insights Inventory Extensions class names and data counts.
-* Advanced Insights Inventory Extensions Configuration Manager application information. For    example 'Name', 'created date', 'version', 'number of deployments'.
+* Advanced Insights Inventory Extensions Configuration Manager application information. For example 'Name', 'created date', 'version', 'number of deployments'.
 * Configuration Manager database level SQL configured properties:
   * MAXDOP
   * LEGACY\_CARDINALITY\_ESTIMATION

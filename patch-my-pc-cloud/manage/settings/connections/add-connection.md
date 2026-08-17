@@ -84,11 +84,11 @@ The name you enter here determines how this connection shows on the **Connection
 
 4. In your browser, enter the Entra ID you used to onboard to PMPC Cloud or click to select the relevant account from the list of already signed-in accounts. Then click **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (2122).png" alt="&#x27;Microsoft Sign in&#x27; screen" width="329"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1627).png" alt="&#x27;Microsoft Sign in&#x27; screen" width="329"><figcaption></figcaption></figure>
 
 5. Enter the password and click **Sign in**.
 
-<figure><img src="../../../../.gitbook/assets/image (2123).png" alt="&#x27;Enter password&#x27; screen" width="329"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1629).png" alt="&#x27;Enter password&#x27; screen" width="329"><figcaption></figcaption></figure>
 
 If the connection is successful, a new browser tab opens with the following message:
 

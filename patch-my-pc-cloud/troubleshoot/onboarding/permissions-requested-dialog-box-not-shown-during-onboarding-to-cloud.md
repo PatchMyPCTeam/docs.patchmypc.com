@@ -8,7 +8,7 @@ I am trying to onboard an Intune tenant to Patch My PC (PMPC) Cloud.
 
 However, after entering the credentials associated with the account used for my PMPC subscription, I don’t see the **Permissions requested** dialog box.<br>
 
-<figure><img src="../../../.gitbook/assets/image (1660).png" alt="“Permissions requested” dialog box"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-(959).png" alt="“Permissions requested” dialog box"><figcaption></figcaption></figure>
 
 Instead, I’m just taken to the home page of the PMPC portal.<br>
 
