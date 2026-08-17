@@ -15,15 +15,15 @@ The Navigation pane consists of the following nodes:
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="./#app-catalog">App Catalog</a></td><td valign="top"><a href="./#deployments">Deployments</a></td><td valign="top"><a href="./#events">Events</a></td><td valign="top"><a href="./#migration">Migration</a></td></tr><tr><td valign="top"><a href="./#discovery">Discovery</a></td><td valign="top"><a href="./#advanced-patch-insights">Advanced/Patch Insights</a></td><td valign="top"><a href="./#settings">Settings</a></td><td valign="top"></td></tr></tbody></table>
 
+## App Catalog
+
+The _App Catalog_ node (selected by default) contains links to the various catalogs of apps supported by PMPC Cloud.
+
 {% hint style="info" %}
 **Note**
 
 The **App Catalog** home page also supports [Filters](filters.md), which can help you find only the relevant information you need.
 {% endhint %}
-
-## App Catalog
-
-The _App Catalog_ node (selected by default) contains links to the various catalogs of apps supported by PMPC Cloud.
 
 From the **App Catalog** you can:
 
@@ -48,6 +48,8 @@ Clicking the _Deployments_ node lets you view all your current deployments and t
 **Note**
 
 See [Deployments](../deployments/overview.md) for more information.
+
+Also, the **Deployments** home page also supports [Filters](filters.md), which can help you find only the relevant information you need.
 {% endhint %}
 
 ## Events
@@ -58,6 +60,8 @@ Clicking the _Events_ node lets you view and manage all of the Cloud-related Eve
 **Note**
 
 See [Events](../events/overview.md) for more information.
+
+Also, the **Events** home page also supports [Filters](filters.md), which can help you find only the relevant information you need.
 {% endhint %}
 
 ## Migration
