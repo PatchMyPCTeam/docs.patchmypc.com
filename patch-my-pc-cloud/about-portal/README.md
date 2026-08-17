@@ -18,10 +18,8 @@ The Navigation pane consists of the following nodes:
 {% hint style="info" %}
 **Note**
 
-The **App Catalog** page also supports [Filters](filters.md), which can help you find only the relevant information you need.
+The **App Catalog** home page also supports [Filters](filters.md), which can help you find only the relevant information you need.
 {% endhint %}
-
-
 
 ## App Catalog
 

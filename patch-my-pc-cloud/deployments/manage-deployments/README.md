@@ -4,6 +4,12 @@ _Applies to: Patch My PC Cloud_
 
 All deployment-related tasks for Patch My PC (PMPC) Cloud are performed from the **Deployments** node of the portal.
 
+{% hint style="info" %}
+**Note**
+
+The **Deployments** home page also supports [Filters](../../about-portal/filters.md), which can help you find only the relevant information you need.
+{% endhint %}
+
 To manage deployments:
 
 1. Sign in to the Portal at [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
