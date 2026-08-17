@@ -11,6 +11,7 @@
   * [Prerequisites for Patch My PC Cloud](patch-my-pc-cloud/prerequisites.md "Prerequisites")
   * [Onboard to Patch My PC Cloud](patch-my-pc-cloud/onboard-cloud.md "Onboard")
   * [About the Patch My PC Cloud Portal](patch-my-pc-cloud/about-portal/README.md "About the Portal")
+    * [Home page of the Patch My PC Cloud Portal](patch-my-pc-cloud/about-portal/home-page.md "Home page")
     * [Filters in Patch My PC Cloud](patch-my-pc-cloud/about-portal/filters.md "Filters")
   * [App Catalog in Patch My PC Cloud](patch-my-pc-cloud/app-catalog/README.md "App Catalog")
     * [Managing External Apps in Patch My PC Cloud](patch-my-pc-cloud/app-catalog/external-apps/README.md "External Apps")
