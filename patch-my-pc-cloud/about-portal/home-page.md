@@ -107,6 +107,4 @@ The **License Information** section of the **Home** page shows useful licensing 
 
 If you are an Enterprise Plus customer, the **License Information** section shows you which Enterprise Premium features you are missing, which you can try out by clicking the **Free Trial** button.
 
-If you already have an Enterprise Premium license, you can click the **Upgrade Now** button to upgrade your current PMPC Cloud Company to Enterprise Premium.
-
 <figure><img src="../../.gitbook/assets/image (269).png" alt="‘License Information’ section" width="563"><figcaption></figcaption></figure>
