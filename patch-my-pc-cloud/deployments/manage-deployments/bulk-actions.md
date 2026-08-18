@@ -146,15 +146,15 @@ When you click the Recreate button (![Recreate button](<../../../.gitbook/assets
 
 Click **Confirm** to continue.
 
-<figure><img src="/broken/files/XxerGRBXrqSx7lbacow3" alt="‘Recreate Deployments’" width="415"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/ukDUk6N4W4hfwJNgZpyt" alt="‘Recreate Deployments’" width="415"><figcaption></figcaption></figure>
 
 The **Recreate in Progress** dialog is shown for each deployment as it is recreated.
 
-<figure><img src="/broken/files/yr0rISIBbEYp0KOrctT9" alt="‘Recreate in Progress’ dialog" width="440"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/KIlITpydDPSCwIXS9cre" alt="‘Recreate in Progress’ dialog" width="440"><figcaption></figcaption></figure>
 
 Once all of the deployments have been recreated, the **Recreate Completed** dialog is shown, which you can close by clicking **Close**.
 
-<figure><img src="/broken/files/aA1GZWPI35woP8ARqBMQ" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/W92e0XzsOGBqSSkXuyNs" alt="‘Recreate Completed’ dialog" width="413"><figcaption></figcaption></figure>
 
 The **Deployments** home page updates to show first the deployment with an **In Progress** status whilst it is being recreated,followed by a **Success** status once it has been recreated successfully.
 
