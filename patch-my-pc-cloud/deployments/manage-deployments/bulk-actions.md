@@ -131,6 +131,22 @@ See [Pause Updates](updates/pause.md) for more information on pausing updates to
 
 ## Recreate selected deployments
 
+Recreating a deployment in PMPC Cloud deletes the software from Intune and recreates it, which retriggers the deployment on the targeted resources.
+
+When you click the Recreate button (!['Recreate Deployments' button](/broken/files/ziohPPQgSRPpCeavhp1C)), the **Recreate Deployments** dialog appears, warning you that you are about to recreate the selected deployments using their selected configuration, which will replace the existing deployments whilst maintaining their settings and assignments.
+
+Click **Confirm** to continue.
+
+<figure><img src="/broken/files/XxerGRBXrqSx7lbacow3" alt="‘Recreate Deployments’" width="415"><figcaption></figcaption></figure>
+
+The **Recreate in Progress** dialog is shown for each deployment as it is recreated.
+
+<figure><img src="/broken/files/yr0rISIBbEYp0KOrctT9" alt="‘Recreate in Progress’ dialog" width="440"><figcaption></figcaption></figure>
+
+Once all of the deployments have been recreated, the **Recreate Completed** dialog is shown, which you can close by clicking **Close**.
+
+<figure><img src="/broken/files/aA1GZWPI35woP8ARqBMQ" alt=""><figcaption></figcaption></figure>
+
 
 
 
