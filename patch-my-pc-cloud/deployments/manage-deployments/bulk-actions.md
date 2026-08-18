@@ -26,7 +26,7 @@ Navigate to the **Deployments** node of the Cloud Portal.
 
 Either select all or [select a subset](bulk-actions.md#select-a-subset)
 
-1. Click the select all checkbox in the top-left corner to select all of the deployments on the current page.
+Click the select all checkbox in the top-left corner to select all of the deployments on the current page.
 
 <figure><img src="../../../.gitbook/assets/image (364).png" alt="Clicking the select all checkbox" width="563"><figcaption></figcaption></figure>
 
