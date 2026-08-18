@@ -1,8 +1,3 @@
----
-hidden: true
-noIndex: true
----
-
 # Bulk Actions for Patch My PC Cloud Deployments
 
 _Applies to: Patch My PC (PMPC) Cloud_
@@ -74,60 +69,6 @@ At this point, you can perform the following actions on all of the selected depl
 * [Delete the selected deployments](bulk-actions.md#delete-selected-deployments)
 {% endstep %}
 {% endstepper %}
-
-
-
-\*\*\*\*
-
-
-
-
-
-
-
-To select more than one deployment:
-
-1. Navigate to the **Deployments** node of the Cloud Portal.
-2. On the **Deployments** home page, either:
-   1. Click the select all checkbox in the top-left corner to select all of the deployments on the current page.
-
-<figure><img src="../../../.gitbook/assets/image (364).png" alt="Clicking the select all checkbox" width="563"><figcaption></figcaption></figure>
-
-_<mark style="color:$danger;">**@GitBook Support - I want the following text aligned with the "Click the select" text in point a.**</mark>_
-
-All deployments on the current page are now selected (unchecking the select all checkbox unchecks all deployments on the current page).
-
-_<mark style="color:$danger;">**@GitBook Support - I want the "Tip" aligned with the "Click the select" text in point a.**</mark>_
-
-{% hint style="success" %}
-**Tip**
-
-If your list of deployments spans multiple pages, you can navigate to the next page and click the select all checkbox to select all deployments on that page as well. You can repeat this process to select all of your deployments.
-{% endhint %}
-
-_<mark style="color:$danger;">**@GitBook Support - I want the following to carry on the numbering (i.e. "b." and to be aligned correctly with point a. - no other comments for you from this point onwards**</mark>_
-
-b. Click the checkbox beside all of the deployments you wish to perform an action on.
-
-<figure><img src="../../../.gitbook/assets/image (406).png" alt="Clicking the checkbox beside the required deployments" width="563"><figcaption></figcaption></figure>
-
-{% hint style="danger" %}
-**Important**
-
-The select all option does not work with deployments with a Status of In Progress. You also cannot manually select a deployment that is In Progress.
-{% endhint %}
-
-Notice that regardless of which option you use, the number of selected deployments appears beside the **Search** box, along with the bulk actions toolbar of actions you can perform on the selected deployments.
-
-<figure><img src="../../../.gitbook/assets/image (545).png" alt="Number of selected deployments and bulk actions toolbar" width="563"><figcaption></figcaption></figure>
-
-At this point, you can perform the following actions on all of the selected deployments:
-
-* [Resume paused deployments](bulk-actions.md#resume-paused-deployments)
-* [Pause deployments from updating](bulk-actions.md#pause-deployments-from-updating)
-* [Recreate selected deployments](bulk-actions.md#recreate-selected-deployments)
-* [Sync selected deployments now](bulk-actions.md#sync-selected-deployments-now)
-* [Delete the selected deployments](bulk-actions.md#delete-selected-deployments)
 
 ## Resume paused deployments
 
