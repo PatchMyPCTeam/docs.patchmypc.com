@@ -56,10 +56,10 @@ Notice that regardless of which option you use, the number of selected deploymen
 At this point, you can perform the following actions on all of the selected deployments:
 
 * [Resume paused deployments](bulk-actions.md#resume-paused-deployments)
-* [Pause the deployments from updating](bulk-actions.md#pause-the-deployments-from-updating)
-* [Recreate the selected deployments](bulk-actions.md#recreate-the-selected-deployments)
-* [Sync the selected deployments now](bulk-actions.md#recreate-the-selected-deployments)
-* [Delete the selected deployments](bulk-actions.md#delete-the-selected-deployments)
+* [Pause deployments from updating](bulk-actions.md#pause-deployments-from-updating)
+* [Recreate selected deployments](bulk-actions.md#recreate-selected-deployments)
+* [Sync selected deployments now](bulk-actions.md#sync-selected-deployments-now)
+* [Delete the selected deployments](bulk-actions.md#delete-selected-deployments)
 
 ## Resume paused deployments
 
@@ -101,19 +101,55 @@ The **Deployments** home page updates to show that the deployment(s) is no longe
 See [Resume Updates](updates/resume-updates.md) for more information on resuming updates to a paused deployment.
 {% endhint %}
 
-## Pause the deployments from updating
+## Pause deployments from updating
+
+The _Pause Updates_ feature (disabled by default) of PMPC Cloud allows you to prevent an app that’s previously been successfully deployed from being updated whenever a new version is released.
+
+When you click the Pause Updates button (!['Pause Updates' button](<../../../.gitbook/assets/image (568).png>)), the Pause Deployments dialog appears, warning you that you are pausing updates for the number of deployments you selected, and that the apps deployed using these deployments will no longer receive automatic updates.
+
+Click **Confirm** to continue.
+
+<figure><img src="../../../.gitbook/assets/image (576).png" alt="‘Pause Deployments’" width="408"><figcaption></figcaption></figure>
+
+The **Pause in Progress** dialog is shown for each deployment as it is paused.
+
+<figure><img src="../../../.gitbook/assets/image (577).png" alt="‘Pause in Progress’ dialog" width="413"><figcaption></figcaption></figure>
+
+Once all of the deployments have been paused, the **Pause Completed** dialog is shown, which you can close by clicking **Close**.
+
+<figure><img src="../../../.gitbook/assets/image (579).png" alt="‘Pause Completed’ dialog" width="413"><figcaption></figcaption></figure>
+
+The **Deployments** home page updates to show **UPDATES PAUSED** for the selected deployments.
+
+<figure><img src="../../../.gitbook/assets/image (606).png" alt="‘UPDATES PAUSED’ status" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+See [Pause Updates](updates/pause.md) for more information on pausing updates to a deployment.
+{% endhint %}
+
+## Recreate selected deployments
 
 
 
-## Recreate the selected deployments
 
 
 
-## Sync the selected deployments now
+
+## Sync selected deployments now
 
 
 
-## Delete the selected deployments
+
+
+
+
+## Delete selected deployments
+
+
+
+
 
 
 
