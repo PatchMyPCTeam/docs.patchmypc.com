@@ -65,6 +65,7 @@
       * [Delete an Update Ring in Patch My PC Cloud](patch-my-pc-cloud/deployments/update-rings/delete.md "Delete an Update Ring")
     * [Monitor a Deployment in Patch My PC Cloud](patch-my-pc-cloud/deployments/monitor.md "Monitor a Deployment")
     * [Manage Deployments in Patch My PC Cloud](patch-my-pc-cloud/deployments/manage-deployments/README.md "Manage Deployments")
+      * [Bulk Actions for Patch My PC Cloud Deployments](patch-my-pc-cloud/deployments/manage-deployments/bulk-actions.md "Bulk Actions")
       * [View the Properties of Patch My PC Cloud Deployment](patch-my-pc-cloud/deployments/manage-deployments/view-properties.md "View Properties")
       * [Edit a Patch My PC Cloud Deployment](patch-my-pc-cloud/deployments/manage-deployments/edit.md "Edit a Deployment")
       * [Recreate a Patch My PC Cloud Deployment](patch-my-pc-cloud/deployments/manage-deployments/recreate.md "Recreate a Deployment")
