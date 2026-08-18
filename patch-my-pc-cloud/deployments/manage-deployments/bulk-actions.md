@@ -12,7 +12,7 @@ Once this feature is released, it will be announced, and this banner will be rem
 
 The _Bulk Actions_ functionality of Patch My PC (PMPC) Cloud allows you to select multiple deployments to perform a management action on, versus having to repeat the same action on each deployment individually.
 
-
+To use _Bulk Actions_:
 
 {% stepper %}
 {% step %}
