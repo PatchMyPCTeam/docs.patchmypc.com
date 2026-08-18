@@ -39,9 +39,85 @@ If your list of deployments spans multiple pages, you can navigate to the next p
 
 _<mark style="color:$danger;">**@GitBook Support - I want the following to carry on the numbering (i.e. "b." and to be aligned correctly with point a. - no other comments for you from this point onwards**</mark>_
 
-b. Click the select all checkbox in the top-left corner to select all of the deployments on the current page.
+b. Click the checkbox beside all of the deployments you wish to perform an action on.
 
 <figure><img src="../../../.gitbook/assets/image (406).png" alt="Clicking the checkbox beside the required deployments" width="563"><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+**Important**
+
+The select all option does not work with deployments with a Status of In Progress. You also cannot manually select a deployment that is In Progress.
+{% endhint %}
+
+Notice that regardless of which option you use, the number of selected deployments appears beside the **Search** box, along with the bulk actions toolbar of actions you can perform on the selected deployments.
+
+<figure><img src="../../../.gitbook/assets/image (545).png" alt="Number of selected deployments and bulk actions toolbar" width="563"><figcaption></figcaption></figure>
+
+At this point, you can perform the following actions on all of the selected deployments:
+
+* [Resume paused deployments](bulk-actions.md#resume-paused-deployments)
+* [Pause the deployments from updating](bulk-actions.md#pause-the-deployments-from-updating)
+* [Recreate the selected deployments](bulk-actions.md#recreate-the-selected-deployments)
+* [Sync the selected deployments now](bulk-actions.md#recreate-the-selected-deployments)
+* [Delete the selected deployments](bulk-actions.md#delete-the-selected-deployments)
+
+## Resume paused deployments
+
+If the _Pause Updates_ feature of PMPC Cloud has been configured for an app that has since been updated, and you want to bring the app up to date to the latest version, you need to disable pause updates by resuming updates to the deployment.
+
+{% hint style="info" %}
+**Note**
+
+You can only resume updates for deployments that have already been paused.
+{% endhint %}
+
+When you click the Resume Updates button (![Resume Updates button](<../../../.gitbook/assets/image (554).png>)), the **Resume Updates Deployments** dialog appears, warning you that you are about to resume updates for the number of deployments you selected, and that new versions of the apps within these deployments will be deployed according to the configuration of each individual deployment.
+
+{% hint style="info" %}
+**Note**
+
+If you select a deployment that has not already been paused along with a deployment(s) that has, only the paused deployment is resumed.
+{% endhint %}
+
+Click **Confirm** to continue.
+
+<figure><img src="../../../.gitbook/assets/image (563).png" alt="‘Resume Updates’" width="410"><figcaption></figcaption></figure>
+
+&#x20;The **Resume Updates in Progress** dialog is shown for each deployment as it is resumed.
+
+<figure><img src="../../../.gitbook/assets/image (564).png" alt="‘Resume Updates in Progress’ dialog" width="440"><figcaption></figcaption></figure>
+
+Once all of the deployments have been resumed, the **Resume Updates Completed** dialog is shown, which you can close by clicking **Close**.
+
+<figure><img src="../../../.gitbook/assets/image (566).png" alt="‘Resume Updates Completed’ dialog" width="411"><figcaption></figcaption></figure>
+
+The **Deployments** home page updates to show that the deployment(s) is no longer paused (the **UPDATES PAUSED** text has been removed for the selected deployments).
+
+<figure><img src="../../../.gitbook/assets/image (567).png" alt="Resumed deployment" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+See [Resume Updates](updates/resume-updates.md) for more information on resuming updates to a paused deployment.
+{% endhint %}
+
+## Pause the deployments from updating
+
+
+
+## Recreate the selected deployments
+
+
+
+## Sync the selected deployments now
+
+
+
+## Delete the selected deployments
+
+
+
+
 
 
 
