@@ -147,19 +147,49 @@ Once all of the deployments have been recreated, the **Recreate Completed** dial
 
 <figure><img src="/broken/files/aA1GZWPI35woP8ARqBMQ" alt=""><figcaption></figcaption></figure>
 
+The **Deployments** home page updates to show first the deployment with an **In Progress** status whilst it is being recreated,followed by a **Success** status once it has been recreated successfully.
 
+<figure><img src="../../../.gitbook/assets/image (609).png" alt="Deployment recreated successfully" width="563"><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note**
 
+See [Recreate a Deployment](recreate.md) for more information on recreating a deployment.
+{% endhint %}
 
+{% hint style="danger" %}
+**Important**
 
+Since you can only recreate 20 deployments at a time, selecting more than 20 makes the **Recreate** button unavailable, as the tooltip explains.
+{% endhint %}
 
 ## Sync selected deployments now
 
+The _Sync Now_ feature of PMPC Cloud forces an immediate update of an app rather than waiting for the next occurrence of your Sync Schedule (this is typically used after updates to a deployment have been resumed).
 
+When you click the Sync Now button (!['Sync Now' button](<../../../.gitbook/assets/image (612).png>)), the **Update Deployments** dialog appears, warning you that you are about to update the version for the selected deployments, which will be updated to the latest version.
 
+Click **Confirm** to continue.
 
+<figure><img src="../../../.gitbook/assets/image (613).png" alt="‘Update Deployments’" width="402"><figcaption></figcaption></figure>
 
+The **Update in Progress** dialog is shown for each deployment as it is updated.
 
+<figure><img src="../../../.gitbook/assets/image (648).png" alt="‘Update in Progress’ dialog" width="440"><figcaption></figcaption></figure>
+
+Once all of the deployments have been updated, the **Update Completed** dialog is shown, which you can close by clicking **Close**.
+
+<figure><img src="../../../.gitbook/assets/image (672).png" alt="‘Update Completed’ dialog" width="410"><figcaption></figcaption></figure>
+
+The **Deployments** home page is redisplayed.
+
+<figure><img src="../../../.gitbook/assets/image (673).png" alt="Deployments home page" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+See [Sync Now](updates/sync-now.md) for more information on syncing deployments.
+{% endhint %}
 
 ## Delete selected deployments
 
