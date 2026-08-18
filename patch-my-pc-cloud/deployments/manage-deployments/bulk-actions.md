@@ -17,6 +17,74 @@ Once this feature is released, it will be announced, and this banner will be rem
 
 The _Bulk Actions_ functionality of Patch My PC (PMPC) Cloud allows you to select multiple deployments to perform a management action on, versus having to repeat the same action on each deployment individually.
 
+
+
+{% stepper %}
+{% step %}
+### **Navigate to Deployments**
+
+Navigate to the **Deployments** node of the Cloud Portal.
+{% endstep %}
+
+{% step %}
+### Either select all or a subset
+
+Either select all or [select a subset](bulk-actions.md#select-a-subset)
+
+1. Click the select all checkbox in the top-left corner to select all of the deployments on the current page.
+
+<figure><img src="../../../.gitbook/assets/image (364).png" alt="Clicking the select all checkbox" width="563"><figcaption></figcaption></figure>
+
+All deployments on the current page are now selected (unchecking the select all checkbox unchecks all deployments on the current page).
+
+{% hint style="danger" %}
+**Important**
+
+The select all option does not work with deployments with a Status of In Progress. You also cannot manually select a deployment that is In Progress.
+{% endhint %}
+
+{% hint style="success" %}
+**Tip**
+
+If your list of deployments spans multiple pages, you can navigate to the next page and click the select all checkbox to select all deployments on that page as well. You can repeat this process to select all of your deployments.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Select a subset
+
+To select a subset of deployments, click the checkbox beside all of the deployments you wish to perform an action on.
+
+<figure><img src="../../../.gitbook/assets/image (406).png" alt="Clicking the checkbox beside the required deployments" width="563"><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Perform the required bulk action
+
+Notice that regardless of which option you use, the number of selected deployments appears beside the **Search** box, along with the bulk actions toolbar of actions you can perform on the selected deployments.
+
+<figure><img src="../../../.gitbook/assets/image (545).png" alt="Number of selected deployments and bulk actions toolbar" width="563"><figcaption></figcaption></figure>
+
+At this point, you can perform the following actions on all of the selected deployments:
+
+* [Resume paused deployments](bulk-actions.md#resume-paused-deployments)
+* [Pause deployments from updating](bulk-actions.md#pause-deployments-from-updating)
+* [Recreate selected deployments](bulk-actions.md#recreate-selected-deployments)
+* [Sync selected deployments now](bulk-actions.md#sync-selected-deployments-now)
+* [Delete the selected deployments](bulk-actions.md#delete-selected-deployments)
+{% endstep %}
+{% endstepper %}
+
+
+
+\*\*\*\*
+
+
+
+
+
+
+
 To select more than one deployment:
 
 1. Navigate to the **Deployments** node of the Cloud Portal.
