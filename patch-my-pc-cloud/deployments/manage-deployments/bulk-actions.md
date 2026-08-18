@@ -160,7 +160,7 @@ See [Recreate a Deployment](recreate.md) for more information on recreating a de
 {% hint style="danger" %}
 **Important**
 
-Since you can only recreate 20 deployments at a time, selecting more than 20 makes the **Recreate** button unavailable, as the tooltip explains.
+Since you can only recreate 20 deployments at a time, selecting more than 20 causes the **Recreate** button to become unavailable, as the tooltip explains.
 {% endhint %}
 
 ## Sync selected deployments now
@@ -193,21 +193,40 @@ See [Sync Now](updates/sync-now.md) for more information on syncing deployments.
 
 ## Delete selected deployments
 
+Deleting a deployment from PMPC Cloud deletes the packaged win32 app from Intune.
 
+{% hint style="danger" %}
+**Important**
 
+Deleting a deployment does not trigger the uninstall of the software on the targeted resources. If you want to uninstall the software that the deleted deployment deployed, you will need to create a new deployment with the relevant uninstall assignments to do this.
 
+Also, since you can only delete 20 deployments at a time, selecting more than 20 causes the **Delete** button to be unavailable, as the tooltip explains.
+{% endhint %}
 
+Select the deployment(s) you want to delete and click the **Delete** button.
 
+<figure><img src="../../../.gitbook/assets/image (674).png" alt="Selecting the deployment(s) you want to delete and clicking the &#x27;Delete&#x27; button" width="563"><figcaption></figcaption></figure>
 
+The **Delete Deployments** dialog appears, warning you that you are going to permanently delete the selected deployments.
 
+Click **Confirm** to continue.
 
+<figure><img src="../../../.gitbook/assets/image (703).png" alt="‘Delete Deployments’" width="408"><figcaption></figcaption></figure>
 
+The **Delete in Progress** dialog is shown for each deployment as it is deleted.
 
+<figure><img src="../../../.gitbook/assets/image (704).png" alt="‘Delete in Progress’ dialog" width="440"><figcaption></figcaption></figure>
 
+Once all of the deployments have been deleted, the **Delete Completed** dialog is shown, which you can close by clicking **Close**.
 
+<figure><img src="../../../.gitbook/assets/image (705).png" alt="‘Delete Completed’ dialog" width="440"><figcaption></figcaption></figure>
 
+The **Deployments** home page updates to show the deployments have been deleted
 
+<figure><img src="../../../.gitbook/assets/image (706).png" alt="‘Deployments’ home page showing deployments have been deleted" width="563"><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note**
 
-
-
+See [Delete a Deployment](delete.md) for more information on deleting a deployment.
+{% endhint %}
