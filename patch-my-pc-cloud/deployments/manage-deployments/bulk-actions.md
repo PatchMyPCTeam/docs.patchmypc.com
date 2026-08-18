@@ -114,7 +114,7 @@ See [Resume Updates](updates/resume-updates.md) for more information on resuming
 
 The _Pause Updates_ feature (disabled by default) of PMPC Cloud allows you to prevent an app that’s previously been successfully deployed from being updated whenever a new version is released.
 
-When you click the Pause Updates button (!['Pause Updates' button](<../../../.gitbook/assets/image (568).png>)), the Pause Deployments dialog appears, warning you that you are pausing updates for the number of deployments you selected, and that the apps deployed using these deployments will no longer receive automatic updates.
+When you click the Pause Updates button (!['Pause Updates' button](<../../../.gitbook/assets/image (568).png>)), the **Pause Deployments** dialog appears, warning you that you are pausing updates for the number of deployments you selected, and that the apps deployed using these deployments will no longer receive automatic updates.
 
 Click **Confirm** to continue.
 
