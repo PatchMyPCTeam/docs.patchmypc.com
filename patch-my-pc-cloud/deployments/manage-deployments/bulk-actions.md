@@ -35,7 +35,7 @@ All deployments on the current page are now selected (unchecking the select all 
 {% hint style="danger" %}
 **Important**
 
-The select all option does not work with deployments with a Status of In Progress. You also cannot manually select a deployment that is In Progress.
+The select all option does not work with deployments with a **Status** of **In Progress.** You also cannot manually select a deployment that is **In Progress**.
 {% endhint %}
 
 {% hint style="success" %}
