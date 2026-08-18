@@ -107,4 +107,15 @@ The **License Information** section of the **Home** page shows useful licensing 
 
 If you are an Enterprise Plus customer, the **License Information** section shows you which Enterprise Premium features you are missing, which you can try out by clicking the **Free Trial** button.
 
+{% hint style="info" %}
+**Note**
+
+The number of devices shown for **License Usage** reflects the number of Windows devices in scope for PMPC in your environment, which is calculated based on your Intune assignments:
+
+* If you deploy to the **All Users** and **All Devices** virtual groups, the count comes directly from the Windows device total reported by Intune.
+* If you do not use those assignments, the count instead reflects the number of devices the PMPC Client has reported on.
+
+In either case, if the PMPC Client has never been deployed and you have no universal assignments in Intune, no device data will be available and this value will not populate.
+{% endhint %}
+
 <figure><img src="../../.gitbook/assets/image (269).png" alt="‘License Information’ section" width="563"><figcaption></figcaption></figure>
