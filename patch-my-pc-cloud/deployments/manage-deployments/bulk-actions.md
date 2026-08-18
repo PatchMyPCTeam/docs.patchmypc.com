@@ -146,7 +146,7 @@ When you click the Recreate button (![Recreate button](<../../../.gitbook/assets
 
 Click **Confirm** to continue.
 
-<figure><img src="/broken/files/ukDUk6N4W4hfwJNgZpyt" alt="‘Recreate Deployments’" width="415"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (711).png" alt="‘Recreate Deployments’" width="415"><figcaption></figcaption></figure>
 
 The **Recreate in Progress** dialog is shown for each deployment as it is recreated.
 
