@@ -209,7 +209,7 @@ Deleting a deployment from PMPC Cloud deletes the packaged win32 app from Intune
 
 Deleting a deployment does not trigger the uninstall of the software on the targeted resources. If you want to uninstall the software that the deleted deployment deployed, you will need to create a new deployment with the relevant uninstall assignments to do this.
 
-Also, since you can only delete 20 deployments at a time, selecting more than 20 causes the **Delete** button to be unavailable, as the tooltip explains.
+Also, since you can only delete 20 deployments at a time, selecting more than 20 causes the **Delete** button to become unavailable, as the tooltip explains.
 {% endhint %}
 
 Select the deployment(s) you want to delete and click the **Delete** button.
