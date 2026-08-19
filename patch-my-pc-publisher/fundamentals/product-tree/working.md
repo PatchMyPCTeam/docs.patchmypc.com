@@ -56,7 +56,7 @@ The greatest benefit of viewing the Product Tree in Grid view is that it allows 
 
 The alphabetical slider lets you either go directly to all products in the catalog beginning with a certain letter, or navigate the catalog using the arrow controls.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
 
 ## ![Settings button](<../../../.gitbook/assets/image (4579).png>) Settings Button
 
