@@ -15,12 +15,12 @@ To manage deployments:
 1. Sign in to the Portal at [https://portal.patchmypc.com/](https://portal.patchmypc.com/).
 2.  Navigate to the **Deployments** node.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2159).png" alt="Navigating to the “Deployments” page"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2159).png" alt="Navigating to the &#x27;Deployments&#x27; node" width="563"><figcaption></figcaption></figure>
 
     \
-    The **Deployments** page is displayed.<br>
+    The **Deployments** home page is displayed.
 
-    <figure><img src="../../../.gitbook/assets/image (2160).png" alt="The “Deployments” page"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="&#x27;Deployments&#x27; home page" width="563"><figcaption></figcaption></figure>
 
 Clicking the ellipsis (**⋮**) beside a deployment opens the management menu, allowing you to:
 

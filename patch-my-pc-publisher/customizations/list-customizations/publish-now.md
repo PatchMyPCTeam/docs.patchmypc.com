@@ -1,8 +1,8 @@
 # Publish Now option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Publish Now** right-click option in Patch My PC (PMPC) Publisher allows you to selectively publish one or more specific products during the next manual publishing service sync.
 
@@ -37,6 +37,6 @@ For example:
 
 When you right-click at a supported level in the Product Tree and select **Publish Now**, the **Selective Sync** dialog appears.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="&#x27;Selective Sync&#x27; dialog box" width="461"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt="&#x27;Selective Sync&#x27; dialog box" width="461"><figcaption></figcaption></figure>
 
 If you click **Yes**, the selected items are added to the queue for the next Selective Sync, which can be triggered by [Running a Selective Sync](../../manage/sync-schedule-tab/sync-status.md#running-a-selective-sync).

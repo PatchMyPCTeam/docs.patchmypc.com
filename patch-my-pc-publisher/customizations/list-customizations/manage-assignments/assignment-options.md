@@ -1,8 +1,8 @@
 # Assignment Options in Patch My PC Publisher
 
-_Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Intune Apps, Intune Updates_
+_Applies to: Patch My PC Publisher V3.x_\
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 _Assignment Options_ in Patch My PC (PMPC) Publisher allow you to configure how an Intune assignment behaves for applications and updates managed by Publisher.
 
@@ -10,7 +10,7 @@ After using the [Manage Assignments](add-remove-assignment.md) right-click optio
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="assignment-options.md#mode">Mode</a></td><td valign="top"><a href="assignment-options.md#notification">Notification</a></td><td valign="top"><a href="assignment-options.md#do-priority">DO Priority</a></td></tr><tr><td valign="top"><a href="assignment-options.md#filter-mode-and-filter-name">Filter Mode and Filter (Name)</a></td><td valign="top"><a href="assignment-options.md#available-time">Available Time</a></td><td valign="top"><a href="assignment-options.md#deadline">Deadline</a></td></tr><tr><td valign="top"><a href="assignment-options.md#grace-period">Grace Period</a></td><td valign="top"></td><td valign="top"></td></tr></tbody></table>
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt="Application Assignments" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="Application Assignments" width="563"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**
@@ -30,7 +30,7 @@ Exclusions always take precedence over inclusions. This allows precise targeting
 
 ### Mode Example
 
-The example below shows how Include and Exclude modes work together within the same assignment intent. In the **Available for enrolled devices** section, the **All Users** group is set to **Include**. This makes the application available in the Company Portal for all targeted users.&#x20;
+The example below shows how Include and Exclude modes work together within the same assignment intent. In the **Available for enrolled devices** section, the **All Users** group is set to **Include**. This makes the application available in the Company Portal for all targeted users.
 
 A second assignment targets the **Corel Pilot Users** Entra ID group and is set to **Exclude**. This explicitly prevents members of that group from seeing or installing the application, even though they are part of the broader **All Users** group.
 
@@ -50,7 +50,7 @@ The value defined in the **Notification** field controls whether toast notificat
 
 ### Notification Example
 
-The following example demonstrates how different Notification settings can be applied per assignment to control user-facing toast notifications during application installation or uninstallation.&#x20;
+The following example demonstrates how different Notification settings can be applied per assignment to control user-facing toast notifications during application installation or uninstallation.
 
 <figure><img src="../../../../.gitbook/assets/image (4815).png" alt="Notification Example" width="563"><figcaption></figcaption></figure>
 
@@ -78,7 +78,7 @@ The value defined in the **DO Priority** field controls how quickly Delivery Opt
 
 The example below shows two available assignments that use different Delivery Optimization priorities:
 
-* **Foreground** is configured for the **Corel Pilot Users** group. This prioritizes the download and processes the application content immediately.&#x20;
+* **Foreground** is configured for the **Corel Pilot Users** group. This prioritizes the download and processes the application content immediately.
 * **Background** is configured for the **Corel All Users** group. This allows Windows to download the content with normal priority based on network conditions and device activity.
 
 <figure><img src="../../../../.gitbook/assets/image (4816).png" alt="DO Priority Example" width="563"><figcaption></figcaption></figure>
@@ -97,7 +97,7 @@ This enables advanced targeting scenarios such as excluding virtual machines, ta
 
 The value defined in the **Filter Mode** field selects the Intune device filter (selected in the **Filter** field) to apply to the assignment. Only one filter can be selected per assignment.
 
-<table><thead><tr><th width="104.44439697265625" valign="top">Setting</th><th valign="top">When set to this...</th></tr></thead><tbody><tr><td valign="top">None</td><td valign="top">No filter is applied and the Filter selection option is disabled (set to <strong>n/a</strong>).</td></tr><tr><td valign="top">Include</td><td valign="top">The assignment applies only to devices that match the <a href="assignment-options.md#select-filter">selected filter</a> in the  <strong>Filter</strong> field.</td></tr><tr><td valign="top">Exclude</td><td valign="top">The assignment applies to all targeted devices except those that match the <a href="assignment-options.md#select-filter">selected filter</a> in the  <strong>Filter</strong> field.</td></tr></tbody></table>
+<table><thead><tr><th width="104.44439697265625" valign="top">Setting</th><th valign="top">When set to this...</th></tr></thead><tbody><tr><td valign="top">None</td><td valign="top">No filter is applied and the Filter selection option is disabled (set to <strong>n/a</strong>).</td></tr><tr><td valign="top">Include</td><td valign="top">The assignment applies only to devices that match the <a href="assignment-options.md#select-filter">selected filter</a> in the <strong>Filter</strong> field.</td></tr><tr><td valign="top">Exclude</td><td valign="top">The assignment applies to all targeted devices except those that match the <a href="assignment-options.md#select-filter">selected filter</a> in the <strong>Filter</strong> field.</td></tr></tbody></table>
 
 ### Filter Name Example
 
@@ -113,7 +113,7 @@ The following example shows how **Filter Mode** and **Filter** (Name) can be use
 
 Whenever [Filter Mode](assignment-options.md#filter-mode-and-filter-name) is set to either **Include** or **Exclude**, the default **n/a** entry becomes a hyperlink. When you click this link, the **Select Filter** dialog opens, showing all of the Intune device filters available in your tenant (which you can search and filter) and select the appropriate filter. Only one filter can be selected per assignment.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt="&#x27;Select Filter&#x27; dialog" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt="&#x27;Select Filter&#x27; dialog" width="563"><figcaption></figcaption></figure>
 
 ### Steps to Select a Filter
 
@@ -132,7 +132,7 @@ If **Filter Mode** is set to **Include** or **Exclude** and the **Filter** colum
 
 In the example below:
 
-1. **Filter Mode** has been set to **Exclude** for the **dBase All Users** assignment, but no filter has been configured in the **Filter** field.&#x20;
+1. **Filter Mode** has been set to **Exclude** for the **dBase All Users** assignment, but no filter has been configured in the **Filter** field.
 2. The **Validation errors detected** message is displayed.
 3. Hovering over this displays the error message giving the details.
 
