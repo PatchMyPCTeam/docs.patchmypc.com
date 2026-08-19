@@ -14,8 +14,8 @@ To edit the Update Rings configuration for a deployment:
 
 1.  Navigate to the **Deployments** node.<br>
 
-    <figure><img src="../../../.gitbook/assets/image-(434).png" alt="Navigating to the “Deployments” node"><figcaption></figcaption></figure>
-2. Click the relevant deployment whose Update Ring configuration you want to edit.
+    <figure><img src="../../../.gitbook/assets/image-(434).png" alt="Navigating to the “Deployments” node" width="563"><figcaption></figcaption></figure>
+2. Click the relevant deployment you want to edit.
 
 {% hint style="success" %}
 **Tip**
@@ -23,32 +23,40 @@ To edit the Update Rings configuration for a deployment:
 Click the filter button (![](<../../../.gitbook/assets/image (3215).png>)) and select the **Enabled** option under the **Update Rings** section, followed by **Apply Filters** to see just those deployments that have update Rings configured.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2762).png" alt="Clicking the relevant deployment you want to edit"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2762).png" alt="Clicking the relevant deployment you want to edit" width="563"><figcaption></figcaption></figure>
 
 3.  Click **Edit**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image-(436).png" alt="Clicking “More Info”"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image-(436).png" alt="Clicking “More Info”" width="563"><figcaption></figcaption></figure>
 4.  Click the **Assignments** tab.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1139).png" alt="Clicking the “Assignments” tab"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1139).png" alt="Clicking the “Assignments” tab" width="563"><figcaption></figcaption></figure>
 5. Make any required changes, for example:
    1. Move Assignments between rings using drag and drop
    2. Rename rings by clicking the pencil icon beside the relevant ring
    3. Modify the delay for a ring by clicking the minus (**-**) or plus (**+**)
    4. Add a ring by clicking **Add Update Rings**
    5. Delete a ring by clicking the red x after the delay.
-6.  Click **Save** to save your changes.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1140).png" alt="Clicking “Save”"><figcaption></figcaption></figure>
+{% hint style="danger" %}
+**Important**
 
-    \
-    If you make any changes that affect how the Update Rings will work, you will see the **“<**_**app\_name**_**>” Deployment Summary** asking you to either confirm or cancel your changes.\
-    \
-    For example, reducing the delay for **Corel All Users** ring from **3** days to **2** results in the following.<br>
+If you edit a deployment that uses Update Rings and add additional Rings, the assignments from the newly created Rings will be created immediately. The configured Days Delay will be created on future iterations.
+{% endhint %}
 
-    <figure><img src="../../../.gitbook/assets/image (1141).png" alt="Example “Deployment Summary” showing the effects of the edit"><figcaption></figcaption></figure>
-7.  Either click **Cancel** to return to the **Assignments** tab and make any required changes or click **Confirm** to save your changes.\
+6. Click **Save** to save your changes.
+
+<figure><img src="../../../.gitbook/assets/image (1140).png" alt="Clicking “Save”" width="563"><figcaption></figcaption></figure>
+
+\
+If you make any changes that affect how the Update Rings will work, you will see the **“<**_**app\_name**_**>” Deployment Summary** asking you to either confirm or cancel your changes.\
+\
+For example, reducing the delay for **Corel All Users** ring from **3** days to **2** results in the following.
+
+<figure><img src="../../../.gitbook/assets/image (1141).png" alt="Example “Deployment Summary” showing the effects of the edit" width="563"><figcaption></figcaption></figure>
+
+3.  Either click **Cancel** to return to the **Assignments** tab and make any required changes or click **Confirm** to save your changes.\
     \
     The **Deployments** node is redisplayed along with the **Success – Edited <**_**deployment\_name**_**>** notification.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1142).png" alt="“Deployments” node is redisplayed along with the “Success – Edited <deployment_name>”"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1142).png" alt="“Deployments” node is redisplayed along with the “Success – Edited <deployment_name>”" width="563"><figcaption></figcaption></figure>
