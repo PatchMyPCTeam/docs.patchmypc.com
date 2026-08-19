@@ -4,6 +4,16 @@ _Applies to: Patch My PC Publisher V2.x and 3.x_
 
 Details the production release history for Patch My PC (PMPC) Publisher, the most recent release being shown first.
 
+## 3.0.10.0 - 2026-08-18
+
+### Fixes
+
+* Ensure the failure reason is logged and shown when a settings save or settings import fails.
+* Fix a bug causing some right-click options not to persist when saved.
+* Properly update the right-click state for architecture requirements. The option would remain checked even after it was reset to its default state and should have been unchecked.
+* Display the install counts in the Intune app manager instead of display n/a.
+* Fixes scan wizards that could fail with a MissingMethodException.
+
 ## 3.0.4.0 - 2026-08-10
 
 <details>
