@@ -2,7 +2,10 @@
 
 _Applies to: Patch My PC Cloud_
 
-The **Install Parameters** tool of the Patch My PC (PMPC) Cloud deployment wizard allows you to configure various installation parameters and arguments.
+The **Install Parameters** tool of the Patch My PC (PMPC) Cloud deployment wizard allows you to configure the following installation parameters and arguments:
+
+* [Install Command Line](install-parameters.md#install-command-line)
+* [Additional Argument](install-parameters.md#additional-argument)
 
 ## Install Command Line
 
