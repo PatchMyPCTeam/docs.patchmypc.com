@@ -9,7 +9,7 @@ The **Install Parameters** tool of the Patch My PC (PMPC) Cloud deployment wizar
 
 ## Install Command Line
 
-This field shows any default installation parameters.
+This field shows any default installation parameters that are detected in the metadata for the app in our App Catalog.
 
 {% hint style="info" %}
 **Note**
@@ -23,6 +23,10 @@ This field allows you to provide additional arguments to be appended to the inst
 
 {% hint style="info" %}
 **Note**
+
+If you specify a parameter that is already included in the **Install Command Line** field, you will see a warning that this has already been detected, and you should remove it.
+
+<img src="../../../../../.gitbook/assets/image (719).png" alt="Already detected parameter" data-size="original">
 
 This field is limited to a maximum of 2,048 characters. See [Supported Variables in Publisher and PMPC Cloud](../../../../../patch-my-pc-product-reference/supported-variables.md) for a list of the variables we support in this field.
 {% endhint %}
