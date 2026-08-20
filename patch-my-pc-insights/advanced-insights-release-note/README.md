@@ -1,4 +1,4 @@
-# Advanced Insights Release Note
+# Release notes for Patch My PC Advanced Insights
 
 _Applies to: Patch My PC Advanced Insights_
 

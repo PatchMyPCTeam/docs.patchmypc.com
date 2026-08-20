@@ -1,4 +1,4 @@
-# Insights Inventory Extension Release Notes
+# Release notes for Patch My PC Insights Inventory Extension
 
 _Applies to: Patch My PC Advanced Insights Inventory Extension_
 
@@ -50,7 +50,7 @@ Details the production release history for Patch My PC's Advanced Insights **Inv
 
 ### 1.6.2- 2025-01-13
 
-* Various bug fixes to PMPC\_BrowserExtension.&#x20;
+* Various bug fixes to PMPC\_BrowserExtension.
 * ESR versions of firefox now supported.
 * Latest versions of Opera now supported.
 * Chromium based policies that make use of "Secure Preferences" now supported.
@@ -62,7 +62,7 @@ Details the production release history for Patch My PC's Advanced Insights **Inv
 ### 1.5.5- 2024-11-06
 
 * Updated dependencies.
-* PMPC\_BrowserExtension data now more accurate. Chromium based browsers with multiple profiles configured now have all extensions inventoried across all profiles.&#x20;
+* PMPC\_BrowserExtension data now more accurate. Chromium based browsers with multiple profiles configured now have all extensions inventoried across all profiles.
 * Fixed bug causing Brave Browser extensions to be missed.
 
 ### 1.5.3- 2024-08-29
@@ -74,7 +74,7 @@ Details the production release history for Patch My PC's Advanced Insights **Inv
 
 * Fixed PMPC\_UserProfile bug for file paths exceeding 260 characters
 * Fixed PMPC\_BrowserExtension bug for invalid extension JSON files.
-* Now targeting .NET 4.6.2 for better Windows Server support&#x20;
+* Now targeting .NET 4.6.2 for better Windows Server support
 
 ### 1.5.0 - 2024-04-29
 
@@ -102,7 +102,7 @@ Details the production release history for Patch My PC's Advanced Insights **Inv
 
 ### 1.3.2 - 2024-02-22
 
-* Improved User-Installed App Inventory&#x20;
+* Improved User-Installed App Inventory
 * ODBC Inventory now excludes the default "Visio Database Samples" connection.
 * All PowerShell scripts removed from Installer
 
