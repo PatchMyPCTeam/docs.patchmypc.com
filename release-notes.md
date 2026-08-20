@@ -7,7 +7,7 @@ To help you easily locate the Release notes for each Patch My PC (PMPC) product,
 * [Publisher](patch-my-pc-publisher/release-notes/production-releases.md)
 * [Cloud (includes Advanced/Patch Insights for Intune)](patch-my-pc-cloud/release-notes/)
 * [CVE Insights](patch-my-pc-cve-insights/release-notes.md)
-* [Insights (Advanced and Patch Insights for Configuration Manager)](patch-my-pc-insights/advanced-insights-release-note/)
+* [Insights (Advanced and Patch Insights for Configuration Manager)](patch-my-pc-insights/release-notes/advanced-insights.md)
 * [Return on Investment (ROI) Tool](patch-my-pc-roi-tool/release-notes.md)
 
 {% hint style="info" %}
