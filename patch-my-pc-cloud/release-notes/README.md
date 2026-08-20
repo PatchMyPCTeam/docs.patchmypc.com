@@ -24,6 +24,32 @@ Release Notes for previous years can be accessed using the following links:
 [2025](2025.md) | [2024](2024.md)
 {% endhint %}
 
+## Week of August 12th, 2026
+
+<details>
+
+<summary>New Features/Improvements</summary>
+
+#### Portal
+
+* **Improved error messages when file uploads fail –** Now, when an upload fails, we include details rather than a generic error.
+
+</details>
+
+<details>
+
+<summary>Fixes</summary>
+
+#### Portal
+
+* Resolved an issue where scripts (Pre-install, Pre-uninstall, Post-install, Post-uninstall) were saved as UTF8 without BOM, causing PowerShell to interpret them as ISO-1252.
+
+#### Intune Apps
+
+* Resolved an issue where it was possible to select an Exchange distribution group when configuring assignments for a deployment. Given that these are unsupported by Intune for deployments, they no longer appear in the group picker when configuring an assignment.
+
+</details>
+
 ## Week of August 5th, 2026
 
 <details>
