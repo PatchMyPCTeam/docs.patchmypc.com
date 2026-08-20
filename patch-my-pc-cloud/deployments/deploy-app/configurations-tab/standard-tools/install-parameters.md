@@ -9,12 +9,12 @@ The **Install Parameters** tool of the Patch My PC (PMPC) Cloud deployment wizar
 
 ## Install Command Line
 
-This field shows any default installation parameters that are detected in the metadata for the app in our App Catalog.
+This field shows any default installation parameters detected in the app's metadata in our App Catalog.
 
 {% hint style="info" %}
 **Note**
 
-These cannot be modified or removed.
+This field cannot be modified.
 {% endhint %}
 
 ## Additional Argument
