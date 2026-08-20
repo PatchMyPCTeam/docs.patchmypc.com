@@ -24,15 +24,45 @@ Release Notes for previous years can be accessed using the following links:
 [2025](2025.md) | [2024](2024.md)
 {% endhint %}
 
+## Week of August 5th, 2026
+
+<details>
+
+<summary>New Features/Improvements</summary>
+
+#### Intune Apps
+
+* **Improved “Install Parameters” tool –** We now highlight any additional arguments that have been entered that were already detected from the app’s metadata in our App Catalog.
+
+</details>
+
+<details>
+
+<summary>Fixes</summary>
+
+#### Portal
+
+* Resolved an issue where adding an additional language to an existing Branding App caused an error that required fields were missing, when in fact they weren’t.
+
+#### Custom Apps
+
+* Resolved an issue where, if a Custom App is published using Publisher, the **Additional Uninstall Parameters** field in Cloud is not updated.
+
+</details>
+
 ## Week of July 22nd, 2026
 
 <mark style="color:red;">**NOTE:**</mark> No release Week of July 15th
 
-### Fixes
+<details>
+
+<summary>Fixes</summary>
 
 #### Custom Apps
 
 * Resolved an issue where, after updating an existing script-based Custom App that uses a folder of files by using **Add Version**, the upload became stuck.
+
+</details>
 
 ## Week of July 8th, 2026
 
@@ -83,10 +113,6 @@ Release Notes for previous years can be accessed using the following links:
 * Resolved an issue when migrating script-based and PSADT apps, where the system automatically interpreted scripts without clearly informing users, which could lead to mismatches with the original logic.
 
 </details>
-
-###
-
-####
 
 ## Week of June 17th, 2026
 
