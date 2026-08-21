@@ -2,19 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+Clicking the **App Manager** tab under the **ConfigMgr Apps** section in Patch My PC (PMPC) Publisher launches the **App Manager**, which is used to view and manage applications in ConfigMgr that were created using Publisher. It provides a centralized interface to review application properties, deployments, task sequence usage and dependency relationships before performing application cleanup.
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image (728).png" alt="&#x27;App Manager&#x27;" width="563"><figcaption></figcaption></figure>
 
-The **ConfigMgr Application Manager** form control in Patch My PC (PMPC) Publisher is used to view and manage applications in ConfigMgr that were created using the Publisher. It provides a centralized interface to review application properties, deployments, task sequence usage and dependency relationships before performing application cleanup.
+App Manager queries the ConfigMgr SMS Provider and displays only applications that were published by the Publisher.
 
-<figure><img src="../../../.gitbook/assets/image (94).png" alt="ConfigMgr Application Manager" width="563"><figcaption></figcaption></figure>
-
-The form queries the ConfigMgr SMS Provider and displays only applications that were published by the Publisher.
-
-The primary use case for this form is application cleanup. It allows administrators to identify unused applications, remove deployments, extract content, or delete applications in a controlled and supported manner.&#x20;
+The primary use case for this form is application cleanup. It allows administrators to identify unused applications, remove deployments, extract content, or delete applications in a controlled and supported manner.
 
 {% hint style="info" %}
 **Note**
@@ -75,7 +69,7 @@ To extract the content for one or more published applications:
 
 <figure><img src="../../../.gitbook/assets/image (95).png" alt="Extact Content" width="563"><figcaption></figcaption></figure>
 
-3. An output folder selection dialog is displayed. Review your selection choice and click **Browse** to choose a destination path for the extracted content.&#x20;
+3. An output folder selection dialog is displayed. Review your selection choice and click **Browse** to choose a destination path for the extracted content.
 
 {% hint style="info" %}
 **Note**
@@ -96,7 +90,7 @@ Clicking OK on the summary dialog automatically opens Windows Explorer to the sp
 
 Each application is written to its own subfolder within the selected destination, making it easier to inspect version specific files and determine whether the content should be retained or safely removed.
 
-Only applications with available source content can be extracted.&#x20;
+Only applications with available source content can be extracted.
 
 If the destination folder does not already exist, it is created automatically during the extraction process.
 {% endhint %}
@@ -119,7 +113,7 @@ After confirmation, the Publisher removes the deployments from ConfigMgr. The ap
 
 ## Delete Application(s)
 
-The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.&#x20;
+The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
 
 To delete one or more applications:
 

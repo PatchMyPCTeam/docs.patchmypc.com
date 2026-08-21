@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **ConfigMgr Apps** tab in Patch My PC (PMPC) Publisher is where you select which third-party applications should be published to ConfigMgr. Products enabled here determine which third-party applications the Publisher will publish and maintain within your environment.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="&#x27;ConfigMgr Apps&#x27; tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="&#x27;ConfigMgr Apps&#x27; tab" width="563"><figcaption></figcaption></figure>
 
 Third-party applications appear in the **Software Library > Application Management > Applications** node in the ConfigMgr console.
 
