@@ -2,15 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+Configuring the **Staged Content Repository** section allows Patch My PC (PMPC) Publisher to store update and application content locally instead of downloading it directly from the internet during publishing. This is primarily used for binary free and licensed applications, where customers must obtain the installer or update binaries themselves because the content is behind a paywall, login, or other restricted access and is not publicly available.
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
-The **Staged Content Repository** allows Patch My PC (PMPC) Publisher to store update and application content locally instead of downloading it directly from the internet during publishing. This is primarily used for binary free and licensed applications, where customers must obtain the installer or update binaries themselves because the content is behind a paywall, login, or other restricted access and is not publicly available.
-
-<figure><img src="../../../.gitbook/assets/image (3932).png" alt="Local Content Repository" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (738).png" alt="&#x27;Staged Content Repository&#x27; section" width="563"><figcaption></figcaption></figure>
 
 The **Staged Content Repository** can also be used as a fallback mechanism to improve reliability during publishing, such as recovering from download failures or preventing hash mismatches. In environments where outbound access to specific vendor websites or CDNs is restricted, customers can download the required binaries from another machine with internet access and place them into the Local Content Repository for the Publisher to consume during publishing.
 
@@ -40,16 +34,14 @@ This approach ensures publishing can continue reliably while remaining compliant
 
 ## How the Staged Content Repository Works
 
-Products that require manual downloads, often referred to as _binary free_, are identified in the product tree by a manual download icon on the following tabs:
+Products that require manual downloads, often referred to as _binary free_, are identified in the product tree by a manual download icon (![Manual download icon](<../../../.gitbook/assets/image (740).png>)) on the following tabs:
 
-* Updates
+* WSUS Updates
 * ConfigMgr Apps
 * Intune Apps
 * Intune Updates
 
-<figure><img src="../../../.gitbook/assets/image (3933).png" alt="Product requires a manual download of the installer binary" width="545"><figcaption></figcaption></figure>
-
-When this icon is present, the Publisher will search the configured Local Content Repository path for the required installer during publishing.
+When this icon is present, Publisher will search the configured Local Content Repository path for the required installer during publishing.
 
 ## How to Configure the Staged Content Repository
 
@@ -70,9 +62,9 @@ To configure the Local Content Repository, you must specify a folder that the Pu
 If you use a UNC path, ensure the computer account of the server running the Publishing Service has read and modify permissions to the share.
 {% endhint %}
 
-If the folder configured in Step 3 does not exist, a warning is displayed in the form.
+If the folder configured in Step 3 does not exist, the following warning is displayed:
 
-<figure><img src="../../../.gitbook/assets/image (3945).png" alt="The folder does not exist" width="545"><figcaption></figcaption></figure>
+**The folder does not exist. Continuing will create it when the settings are saved.**
 
 ### Folder Structure in the Staged Content Repository
 
@@ -109,9 +101,6 @@ To identify the correct installer file name and version, use the Product Tree:
 1. Locate the product in the relevant tab (WSUS Updates, ConfigMgr Apps, or Intune Apps/Updates).
 2. Right-click the product.
 3. Select **Show Package Info**
-
-<figure><img src="../../../.gitbook/assets/image (3935).png" alt="Show package info: title, command-line, download URL, etc." width="563"><figcaption></figcaption></figure>
-
 4. On the **Package Details** screen, review the **Title** and **File** columns to confirm the expected installer file name and version.
 
 <figure><img src="../../../.gitbook/assets/image (3934).png" alt="Review the Title and File column in the Package Details window" width="563"><figcaption></figcaption></figure>
@@ -157,12 +146,6 @@ Click the **Upload Files** button to upload files to the Staged Content Reposito
 This feature is available in both the local and Remote UI.
 {% endhint %}
 
-
-
-
-
-
-
 ### Delete the update file in the local repository after publishing
 
 Removes the installer file from the repository after it has been successfully published. This helps reduce disk usage but requires re-downloading the file if the update is republished.
@@ -199,8 +182,9 @@ A webhook notification is sent with the same details if webhook alerts are enabl
 
 If the installer file is present, but the file hash does not match the value defined in the Patch My PC catalog, the Publisher does not consume the file and publishing fails for that product. This failure is recorded in the PatchMyPC.log, indicating that the installer file could not be located. For example:
 
-> The digest of the local content file does not match the expected one. Please ensure the latest version of Cisco Jabber 12 12.9.7.57303 is present in the configured local content repository. FileRetriever 2/1/2026 1:12:22 PM 128 (0x0080)\
->> \
+> The digest of the local content file does not match the expected one. Please ensure the latest version of Cisco Jabber 12 12.9.7.57303 is present in the configured local content repository. FileRetriever 2/1/2026 1:12:22 PM 128 (0x0080)\\
+>
+> \
 > Actual digest: \[zIwSblbgxSYSAMzQg2jGmmV6cOc=], expected digest: \[iV2Xx6Ap9T2LMoQZMrfM4slExNw=] FileRetriever 2/1/2026 1:12:22 PM 128 (0x0080)
 
 When notifications are configured on the [Alerts tab](../../../patch-my-pc-publisherv2/administration/alerts/), additional notifications are generated to highlight the issue.
