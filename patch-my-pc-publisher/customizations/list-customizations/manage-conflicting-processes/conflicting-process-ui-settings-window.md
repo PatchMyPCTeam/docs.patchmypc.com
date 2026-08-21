@@ -1,14 +1,8 @@
 # Conflicting Process UI Settings window in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Conflicting Process UI Settings** window in Patch My PC (PMPC) Publisher is used to customize the end-user notification experience shown when an application must be closed to complete an update.
 
@@ -56,7 +50,7 @@ The **Company logo** setting allows you to display a custom banner image in conf
 
 The configured logo appears at the top of the notification experience in the bottom right of the screen. This helps users clearly identify that the notification is coming from your organization.
 
-Supported image formats include BMP, GIF, JPG, and PNG.&#x20;
+Supported image formats include BMP, GIF, JPG, and PNG.
 
 The recommended image size is **370 x 100 pixels** to ensure proper scaling and alignment within the notification UI.
 
@@ -115,7 +109,7 @@ When you change the intent, the text fields below update to reflect the messagin
 
 You can customize all notification text fields, including the header, main message, deferral messaging, and default actions. These fields support variables that are replaced dynamically at runtime.
 
-Available variables include organization name, product name, deferral count, and deferral date.&#x20;
+Available variables include organization name, product name, deferral count, and deferral date.
 
 To insert a variable into any text field, select the field where you want the variable to appear, then select the variable from the list at the bottom of the form. The variable is inserted at the current cursor position and is expanded automatically at runtime.
 

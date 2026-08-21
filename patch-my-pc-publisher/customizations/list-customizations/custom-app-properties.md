@@ -1,14 +1,8 @@
 # Custom App Properties option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
-_Available on tab: ConfigMgr Apps_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: Product_\
+_&#x41;vailable on tab: ConfigMgr Apps_
 
 The **Custom App Properties** right-click option in Patch My PC (PMPC) Publisher allows you to override the default name, description, and icon used for applications created by the Publisher.
 
@@ -24,21 +18,21 @@ If no custom values are specified, the Publisher uses the default Patch My PC ge
 This option is especially useful for task sequence scenarios or long running deployments where a static application name or icon is required and changes between versions could cause confusion or unexpected behavior.
 {% endhint %}
 
-### Token Values&#xD;
+### Token Values
 
-Naming conventions are built using token values. At least one token must be included.\
+Naming conventions are built using token values. At least one token must be included.\
 The available tokens are shown at the top of the dialog and can be clicked to insert them at the cursor position.
 
-* **%VendorName%**  \
+* **%VendorName%**\
   Resolves to the software vendor name.
-* **%ProductName%**  \
+* **%ProductName%**\
   Resolves to the product name and architecture.
-* **%Version%**  \
+* **%Version%**\
   Resolves to the application version.
-* **%OriginalName%**  \
+* **%OriginalName%**\
   Resolves to the default Patch My PC application name.
 
-**Example**\
+**Example**\
 Custom ConfigMgr App name configured as:
 
 ```

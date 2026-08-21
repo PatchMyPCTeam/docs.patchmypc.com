@@ -1,18 +1,12 @@
 # Policy section of Manage Conflicting Processes in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Policy** section of **Manage Conflicting Processes** defines how the Patch My PC (PMPC) Publisher handles update installation when a conflicting application process is detected on the device. These settings determine whether the update proceeds, how running applications are handled, and whether user interaction is required before installation begins.
 
-<figure><img src="../../../../.gitbook/assets/image (3965).png" alt="Manage Conflicting Processes Settings" width="527"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (748).png" alt="&#x27;Policy&#x27; section" width="504"><figcaption></figcaption></figure>
 
 ## Perform the Installation
 
@@ -70,7 +64,7 @@ This option provides the best balance between update reliability and user experi
 
 The **Notify Timeout Configuration** setting controls how long the update waits for user action after a notification is displayed when a conflicting process is detected. It is used in conjunction with the policy setting to [Notify the user to close the application](policy-section.md#notify-the-user-to-close-the-application).
 
-<figure><img src="../../../../.gitbook/assets/image (137).png" alt="Notify Timeout Configuration" width="482"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (749).png" alt="Notify Timeout Configuration" width="479"><figcaption></figcaption></figure>
 
 The timeout defines the period the user has to close the application before enforcement behavior occurs. If the application is closed within this window, the update proceeds. If no action is taken, the outcome depends on the [configured deferral and enforcement settings](policy-section.md#defer-policy).
 

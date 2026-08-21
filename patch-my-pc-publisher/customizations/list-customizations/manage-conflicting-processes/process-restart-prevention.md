@@ -1,8 +1,8 @@
 # Process Restart Prevention section of Manage Conflicting Processes in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 {% hint style="danger" %}
 **Important**
@@ -12,7 +12,7 @@ This article has not been updated for Version 3.x. Once it has, this banner will
 
 The **Process Restart Prevention** option prevents the end user from reopening the application whilst the update is in progress. This helps avoid scenarios where the application is closed for the update but immediately relaunched, which could cause the installation to fail or be delayed.
 
-<figure><img src="../../../../.gitbook/assets/image (138).png" alt="Process Start Prevention" width="527"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (750).png" alt="&#x27;Process Restart Prevention&#x27; setting" width="501"><figcaption></figcaption></figure>
 
 This option is only available at the Product level and should be used for applications where restarting the process during installation is likely to interfere with a successful update.
 
@@ -40,7 +40,7 @@ or
 
 ## Potential Risk
 
-If the ScriptRunner process is forcefully terminated or exits unexpectedly, the Image File Execution Options registry entries may not be cleaned up correctly. When this occurs, users may continue to see the blocking message even though no installation or update is actively running.\
+If the ScriptRunner process is forcefully terminated or exits unexpectedly, the Image File Execution Options registry entries may not be cleaned up correctly. When this occurs, users may continue to see the blocking message even though no installation or update is actively running.\
 If this happens, the registry entry for the affected process must be removed manually.
 
 Depending on the operating system architecture and the application being blocked, you may need to check one or both of the following registry paths:

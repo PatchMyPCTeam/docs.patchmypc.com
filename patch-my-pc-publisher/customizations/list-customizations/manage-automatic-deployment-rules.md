@@ -1,14 +1,8 @@
 # Manage Automatic Deployment Rules option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products_\
-_Available on tab: Intune Updates_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products_\
+_&#x41;vailable on tab: Intune Updates_
 
 The **Manage Automatic Deployment Rules** right-click option in Patch My PC (PMPC) Publisher allows you to automatically create Intune assignments for newly published updates based on predefined catalog criteria.
 

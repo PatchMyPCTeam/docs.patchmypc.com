@@ -1,20 +1,14 @@
 # Notification Policy section of Manage Conflicting Processes in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Notification Policy** options become available when the policy [Notify the user to close the application](notification-policy.md#notify-the-user-to-close-the-application) is selected.
 
-These settings control how end user notifications behave when a conflicting process is detected and the application is running.
+<figure><img src="../../../../.gitbook/assets/image (751).png" alt="&#x27;Notification Policy&#x27; section" width="501"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3979).png" alt="Notification Policy" width="525"><figcaption></figcaption></figure>
+These settings control how end user notifications behave when a conflicting process is detected and the application is running.
 
 ### Notification behavior
 
@@ -86,7 +80,7 @@ After the configured number of days has elapsed, the notification is shown witho
 {% hint style="success" %}
 **Tip**
 
-This option is particularly useful when updates must be installed within a defined compliance window after being targeted, such as environments with Cyber Essentials Plus requirements where patches must be installed within 14 days.&#x20;
+This option is particularly useful when updates must be installed within a defined compliance window after being targeted, such as environments with Cyber Essentials Plus requirements where patches must be installed within 14 days.
 
 It allows organizations to use user notifications and deferrals early in the deployment while still enforcing installation once the allowed deferral period is reached.
 {% endhint %}
