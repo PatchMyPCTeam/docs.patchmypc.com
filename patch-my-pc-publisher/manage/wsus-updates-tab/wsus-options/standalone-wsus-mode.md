@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 **Standalone WSUS Mode** is used when the Patch My PC (PMPC) Publisher is integrated directly with WSUS without ConfigMgr.
 
 <figure><img src="../../../../.gitbook/assets/image (93).png" alt="Standalone WSUS Mode" width="563"><figcaption></figcaption></figure>

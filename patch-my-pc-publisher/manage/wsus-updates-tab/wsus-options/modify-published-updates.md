@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Modify Published Updates** wizard in Patch My PC (PMPC) Publisher is used to manage third party updates that have already been published to WSUS. It provides a centralized view of published updates and allows administrators to safely maintain, clean up, and correct updates without needing to manually interacting with the WSUS console.
 
 This wizard is commonly used during troubleshooting, republishing workflows, and ongoing maintenance to ensure WSUS and ConfigMgr only evaluate and display the correct updates.
@@ -42,7 +36,7 @@ If you select an update that is highlighted in yellow and choose [**Show in WSUS
 
 The filtering options at the top of are used to quickly narrow down the list of published updates. This is especially important in environments with a large number of third party updates, where manually scrolling through the list would be inefficient.
 
-<table><thead><tr><th width="168" valign="top">Filter name</th><th valign="top">Description</th><th valign="top">Values</th></tr></thead><tbody><tr><td valign="top">Vendor</td><td valign="top">Filters updates by the publishing vendor. This is commonly used to isolate Patch My PC updates or updates from a specific third-party vendor.</td><td valign="top">Default = All Vendors<br>&#x3C;Patch My PC><br>&#x3C;vendor 2></td></tr><tr><td valign="top">Declined Status</td><td valign="top">Filters updates based on whether they are currently declined in WSUS. This is useful when identifying updates that are still active versus those already retired.</td><td valign="top"><p></p><p>Default - All Declined Status</p><p>Yes = Declined<br>No = Not Declined</p></td></tr><tr><td valign="top">Expired Status</td><td valign="top">Filters updates based on whether they are marked as expired. Expired updates are no longer evaluated by ConfigMgr clients.</td><td valign="top"><p>Default - All Expired Status</p><p>Yes = Expired</p><p>No = Not Expired</p></td></tr><tr><td valign="top">Superseded Status</td><td valign="top">Filters updates based on whether they are superseded by another update.</td><td valign="top"><p>Default = All Superseded Status<br>Yes = Superseded</p><p>No = Not Superseded</p></td></tr><tr><td valign="top">Metadata Status</td><td valign="top">Filters updates based on whether the update is published with Full Content or Metadata only.</td><td valign="top"><p>Default = All Metadata Status<br>Yes = Metadata Only</p><p>No = Full Content</p></td></tr><tr><td valign="top">Enabled Status</td><td valign="top">Filters updates based on if they are selected (Enabled) in the Publisher</td><td valign="top">Default = All Enabled Status<br>Yes = Enabled<br>No = Not Enabled</td></tr><tr><td valign="top">Title Filter</td><td valign="top">Allows searching by update name. This is useful for locating specific products or versions, including republished updates that include a timestamp in the name.</td><td valign="top">&#x3C;string></td></tr></tbody></table>
+<table><thead><tr><th width="168" valign="top">Filter name</th><th valign="top">Description</th><th valign="top">Values</th></tr></thead><tbody><tr><td valign="top">Vendor</td><td valign="top">Filters updates by the publishing vendor. This is commonly used to isolate Patch My PC updates or updates from a specific third-party vendor.</td><td valign="top">Default = All Vendors<br>&#x3C;Patch My PC><br>&#x3C;vendor 2></td></tr><tr><td valign="top">Declined Status</td><td valign="top">Filters updates based on whether they are currently declined in WSUS. This is useful when identifying updates that are still active versus those already retired.</td><td valign="top"><p>Default - All Declined Status</p><p>Yes = Declined<br>No = Not Declined</p></td></tr><tr><td valign="top">Expired Status</td><td valign="top">Filters updates based on whether they are marked as expired. Expired updates are no longer evaluated by ConfigMgr clients.</td><td valign="top"><p>Default - All Expired Status</p><p>Yes = Expired</p><p>No = Not Expired</p></td></tr><tr><td valign="top">Superseded Status</td><td valign="top">Filters updates based on whether they are superseded by another update.</td><td valign="top"><p>Default = All Superseded Status<br>Yes = Superseded</p><p>No = Not Superseded</p></td></tr><tr><td valign="top">Metadata Status</td><td valign="top">Filters updates based on whether the update is published with Full Content or Metadata only.</td><td valign="top"><p>Default = All Metadata Status<br>Yes = Metadata Only</p><p>No = Full Content</p></td></tr><tr><td valign="top">Enabled Status</td><td valign="top">Filters updates based on if they are selected (Enabled) in the Publisher</td><td valign="top">Default = All Enabled Status<br>Yes = Enabled<br>No = Not Enabled</td></tr><tr><td valign="top">Title Filter</td><td valign="top">Allows searching by update name. This is useful for locating specific products or versions, including republished updates that include a timestamp in the name.</td><td valign="top">&#x3C;string></td></tr></tbody></table>
 
 ## Decline (Updates)
 
@@ -62,7 +56,7 @@ To decline one or more published updates:
 {% hint style="info" %}
 **Note**
 
-Declining updates is also important for managing WSUS product category limits. Some patch management solutions create a separate WSUS product category for each product or vendor. Over time, this can cause the total number of enabled categories to exceed the Microsoft supported limit of 100, which can lead to publishing and synchronization failures.&#x20;
+Declining updates is also important for managing WSUS product category limits. Some patch management solutions create a separate WSUS product category for each product or vendor. Over time, this can cause the total number of enabled categories to exceed the Microsoft supported limit of 100, which can lead to publishing and synchronization failures.
 
 Declining updates from unused catalogs helps reduce the effective category footprint in WSUS and prevents hitting this limit.
 
@@ -266,5 +260,5 @@ To re-sign an update
 1. Locate and select the update you want to re-sign by using the available filtering options.
 2. Select **Re-Sign Update** at the bottom of the wizard.
 3. Review the warning message indicating that deployment package content must be deleted and redistributed. Select **OK** to continue, or **Cancel** to abort.
-4. After re-signing completes, delete the affected updates from the ConfigMgr deployment package.&#x20;
+4. After re-signing completes, delete the affected updates from the ConfigMgr deployment package.
 5. After a Software Update Point synchronization refreshes the update metadata, re-download the content to the deployment package. This can be done manually from the ConfigMgr console or automatically through an Automatic Deployment Rule, depending on how updates are managed in your environment.

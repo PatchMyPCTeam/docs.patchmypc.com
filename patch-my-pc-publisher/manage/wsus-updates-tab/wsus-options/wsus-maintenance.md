@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **WSUS Maintenance** section in Patch My PC (PMPC) Publisher provides options to help manage and clean up third party update content stored in WSUS. These options are designed to reduce disk usage, remove unused content, and prevent long term WSUS performance and stability issues caused by accumulated third party updates.
 
 These actions cannot be triggered manually, if enabled, they are performed at the end of a publishing sync cycle.
@@ -39,7 +33,7 @@ Use this option to safely reclaim disk space after reviewing the list of unrefer
 {% hint style="success" %}
 **Tip**
 
-By default, **Enable automatic deletion and cleanup of the UpdateServicesPackages folder** is enabled.&#x20;
+By default, **Enable automatic deletion and cleanup of the UpdateServicesPackages folder** is enabled.
 {% endhint %}
 
 When enabled, the Publisher automatically removes WSUS content associated with declined or deleted third party updates.

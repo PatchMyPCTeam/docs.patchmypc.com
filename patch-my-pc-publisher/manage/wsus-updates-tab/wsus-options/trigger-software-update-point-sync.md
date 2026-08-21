@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Trigger a Software Update Point Sync** section in Patch My PC (PMPC) Publisher is where you configure the SMS Provider connection, which the Publisher uses to communicate with ConfigMgr. This connection enables the Publisher to trigger SUP synchronizations and ultimately serves as the foundation for all the Publisher interactions with ConfigMgr.
 
 This section also allows you to manually initiate a SUP sync. A SUP sync is the process by which ConfigMgr retrieves update metadata from WSUS (and ultimately Microsoft Update), making newly published first and third-party updates visible and actionable in the ConfigMgr console.

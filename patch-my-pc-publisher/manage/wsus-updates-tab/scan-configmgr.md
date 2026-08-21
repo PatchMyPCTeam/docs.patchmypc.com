@@ -2,15 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Scan ConfigMgr** feature of Patch My PC (PMPC) Publisher requires access to your ConfigMgr site database to inventory installed applications, via a Hardware Inventory Collection (HINV) and determine which third-party products are present in your environment. The scan results are then compared against the Patch My PC catalog to identify matches, helping you make informed decisions about which products to enable on the **Updates** tab to ensure the applications detected receive the patches they require.
-
-<figure><img src="../../../.gitbook/assets/image (3923).png" alt="Scan ConfigMgr Database for Supported Products" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
