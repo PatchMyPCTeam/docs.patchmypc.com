@@ -2,13 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
-The **Create Self-Signed** certificate option allows Patch My PC (PMPC) Publisher to create a code-signing certificate.&#x20;
+The **Create Self-Signed** certificate option allows Patch My PC (PMPC) Publisher to create a code-signing certificate.
 
 This option is commonly used when you do not want Microsoft ConfigMgr to manage the certificate, or in standalone WSUS environments where self-signed certificates are permitted and a Certificate Authority is not available.
 
@@ -51,11 +45,11 @@ After generation, the self-signed certificate is automatically placed in the fol
 {% hint style="danger" %}
 **Important**
 
-As self-signed certificates do not have a parent Certificate Authority, they must be explicitly trusted to establish a valid trust chain. For environments using ConfigMgr or WSUS, this means the certificate must be trusted not only on the WSUS server, but also on **all devices that will install updates signed with the certificate**.&#x20;
+As self-signed certificates do not have a parent Certificate Authority, they must be explicitly trusted to establish a valid trust chain. For environments using ConfigMgr or WSUS, this means the certificate must be trusted not only on the WSUS server, but also on **all devices that will install updates signed with the certificate**.
 
 As a result, the self-signed certificate must be placed in the **Trusted Publishers** store (to allow installation of signed updates) and the **Trusted Root Certification Authorities** store (to establish trust for the signing certificate) on those devices.
 
-When third-party updates are enabled for the SUP and in Client Settings, ConfigMgr can automatically distribute the signing certificate to managed devices, place it into the required certificate stores, and configure the necessary local Windows Update policies so the Windows Update Agent trusts that signing certificate.&#x20;
+When third-party updates are enabled for the SUP and in Client Settings, ConfigMgr can automatically distribute the signing certificate to managed devices, place it into the required certificate stores, and configure the necessary local Windows Update policies so the Windows Update Agent trusts that signing certificate.
 
 This ensures client devices trust updates signed by a third-party code-signing certificate, rather than only updates signed by Microsoft, without requiring manual certificate deployment. See [Client Settings](../../../../../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/client-settings.md) for more information.
 {% endhint %}

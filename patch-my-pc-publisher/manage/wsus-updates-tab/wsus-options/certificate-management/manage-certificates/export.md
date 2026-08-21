@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Export** option in Patch My PC (PMPC) Publisher allows you to export the currently configured code-signing certificate to a file. This is typically used when the certificate needs to be distributed to client systems or manually trusted in additional certificate stores.
 
 ## Export a Certificate

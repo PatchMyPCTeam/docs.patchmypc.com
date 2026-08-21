@@ -2,16 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+The **Certificate Management** section of the **WSUS Updates** tab of Patch My PC (PMPC) Publisher provides the following options
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><a href="import.md"><strong>Import</strong></a><br>Import an existing code-signing certificate issued by an internal or third-party Certificate Authority</td></tr><tr><td><a href="show.md"><strong>Show Certificate</strong></a><br>View details of the currently configured code-signing certificate, including validity and trust status</td></tr><tr><td><a href="export.md"><strong>Export</strong></a> <br>Export the code-signing certificate public key</td></tr><tr><td><a href="create-self-signed.md"><strong>Create Self-Signed</strong></a><br>Create and use a self-signed code-signing certificate</td></tr></tbody></table>
 
-The **Certificate Management** section of the **General** tab of Patch My PC (PMPC) Publisher provides the following options
 
-* [Import](import.md)
-* [Show Certificate](show.md)
-* [Export](export.md)
-* [Create Self-Signed](create-self-signed.md)
+
+
 

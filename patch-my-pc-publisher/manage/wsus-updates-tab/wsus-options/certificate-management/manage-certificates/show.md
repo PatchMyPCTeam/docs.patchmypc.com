@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Show Certificate** option in Patch My PC (PMPC) Publisher displays detailed information about the code-signing certificate currently configured for use by Publisher.
 
 This view allows you to verify that a valid certificate is selected, confirm its trust status, and ensure it meets the signing requirements of Microsoft WSUS and ConfigMgr.
@@ -27,7 +21,7 @@ To show a certificate:
 
 ## Validate Trust Chain
 
-Clicking **Validate Trust Chain** checks whether the certificate and its chain of trust are trusted by the local system.&#x20;
+Clicking **Validate Trust Chain** checks whether the certificate and its chain of trust are trusted by the local system.
 
 <figure><img src="../../../../../../.gitbook/assets/image (4488).png" alt="Clicking &#x27;Validate Trust Chain&#x27;" width="404"><figcaption></figcaption></figure>
 
@@ -45,7 +39,7 @@ If you receive an error when you click **Show Certificate**, use the steps in th
 
 If clicking **Show Certificate** displays **No certificate found in the WSUS store on this server**, review **PatchMyPC.log** for related certificate extraction errors. An entry such as
 
-`An error occurred while extracting the certificate from WSUS: C:\WINDOWS\SystemTemp\PMP-1d2xluld\jwpcs1ov.tmp : The request failed with HTTP status 503: Service Unavailable. CertManager 18/04/2026 12:12:54 34 (0x0022)`\
+`An error occurred while extracting the certificate from WSUS: C:\WINDOWS\SystemTemp\PMP-1d2xluld\jwpcs1ov.tmp : The request failed with HTTP status 503: Service Unavailable. CertManager 18/04/2026 12:12:54 34 (0x0022)`\
 `Failed to extract the certificate from WSUS CertManager 18/04/2026 12:12:54 34 (0x0022)`
 
 Verify that the WSUS Application Pool is started in IIS, then retry the action.
