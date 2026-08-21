@@ -1,20 +1,14 @@
 # Manage Security Scopes option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: ConfigMgr Apps_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: ConfigMgr Apps_
 
 The **Manage security scopes** right-click option in Patch My PC (PMPC) Publisher allows you to control which ConfigMgr security scopes are applied to applications created by the Publisher.
 
 During each synchronization, the Publisher applies the selected security scopes to any applications it creates in ConfigMgr. This ensures that applications are visible and manageable only by administrators with access to the assigned scopes.
 
-The list of available security scopes is pulled directly from your ConfigMgr environment. You can refresh the list using the refresh button in the top right corner.&#x20;
+The list of available security scopes is pulled directly from your ConfigMgr environment. You can refresh the list using the refresh button in the top right corner.
 
 <figure><img src="../../../.gitbook/assets/image (115).png" alt="Selecting a Security Scope" width="450"><figcaption></figcaption></figure>
 

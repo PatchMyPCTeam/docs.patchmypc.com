@@ -1,14 +1,8 @@
 # Set Application Architecture Requirements option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
-_Available on tab: ConfigMgr Apps, Intune Apps_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: Product_\
+_&#x41;vailable on tab: ConfigMgr Apps, Intune Apps_
 
 The **Set Application Architecture Requirements** option in Patch My PC (PMPC) Publisher allows you to control which devices are eligible to install an application created by Publisher.
 
@@ -44,7 +38,7 @@ By default, ARM64 applications are configured to:
 In ConfigMgr, ARM64 applications are also restricted to workstation operating systems by default.
 {% endhint %}
 
-These requirements cannot be modified and are applied automatically to the deployment type when the application is created&#x20;
+These requirements cannot be modified and are applied automatically to the deployment type when the application is created
 
 <figure><img src="../../../.gitbook/assets/image (3993).png" alt="Example ConfigMgr ARM64 Application Requirements" width="375"><figcaption></figcaption></figure>
 
@@ -58,7 +52,7 @@ For more information on how the Publisher handles ARM64 support for apps, see [A
 
 For 64-bit applications, the deployment type is created with a requirement:
 
-* &#x20;Install on 64-bit OS.
+* Install on 64-bit OS.
 
 {% hint style="info" %}
 **Note**
@@ -90,8 +84,8 @@ You can also restrict installation to workstation or server operating systems as
 
 For standard 32-bit (x86) applications, the deployment type is created with requirements to:
 
-• Install on 32-bit OS\
-• Install on 64-bit OS\
+• Install on 32-bit OS\
+• Install on 64-bit OS\
 • Install on ARM64 OS
 
 {% hint style="info" %}

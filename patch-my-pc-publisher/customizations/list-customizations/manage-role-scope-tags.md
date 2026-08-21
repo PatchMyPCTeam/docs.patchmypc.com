@@ -1,14 +1,8 @@
 # Manage Role Scope Tags option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Intune Apps, Intune Updates_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Manage role scope tags** right-click option in Patch My PC (PMPC) Publisher allows you to control which Intune role scope tags are applied to Win32 applications created by the Publisher.
 

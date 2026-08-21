@@ -1,14 +1,8 @@
 # Move Application option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Vendor, Product_\
-_Available on tab: ConfigMgr Apps_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: Vendor, Product_\
+_&#x41;vailable on tab: ConfigMgr Apps_
 
 The **Move Application** right-click option in Patch My PC (PMPC) Publisher allows you to control where ConfigMgr applications created by the Publisher are stored within the ConfigMgr console.
 

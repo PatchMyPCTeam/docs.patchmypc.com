@@ -1,14 +1,8 @@
 # Manage Enrollment Status Page option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Intune Apps_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps_
 
 The **Manage Enrollment Status Page** right-click option in Patch My PC (PMPC) Publisher allows you to associate Intune applications created by the Publisher with one or more Enrollment Status Page (ESP) profiles.
 
@@ -51,4 +45,3 @@ To configure ESP profiles for an application:
 Products selected will added to the ESP profile as a Blocking app when the Intune application is published.
 
 <figure><img src="../../../.gitbook/assets/image (4053).png" alt="Block device use until required apps are installed if they are assigned to the user/device" width="563"><figcaption></figcaption></figure>
-

@@ -1,14 +1,8 @@
 # Republish Product option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Republish Product** right-click option in Patch My PC (PMPC) Publisher instructs the Publisher to rebuild and republish an update or application during the next publishing service sync.
 
@@ -47,7 +41,7 @@ In many environments, deleting an existing Intune Win32 app and allowing Publish
 
 When an app is recreated, it receives a new application ID, and the Intune Management Extension evaluates it almost immediately during the next policy sync.
 
-Republished apps keep the same application ID and are subject to the Global Re-evaluation Schedule. This schedule typically rechecks previously evaluated apps about once every 24 hours.&#x20;
+Republished apps keep the same application ID and are subject to the Global Re-evaluation Schedule. This schedule typically rechecks previously evaluated apps about once every 24 hours.
 
 As a result, clients may take significantly longer to detect republished apps Vs newly created apps.
 
