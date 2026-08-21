@@ -2,17 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
-The **Connection and Source Options** section in Patch My PC (PMPC) Publisher defines how the Publisher connects to ConfigMgr and where application source content is stored on disk. This section must be correctly configured before the Publisher can create ConfigMgr applications or the [ConfigMgr Appliction Manager](../../../../patch-my-pc-publisherv2/administration/configmgr-apps/form-controls/configmgr-application-manager.md) utility can be used.
+The **Connection and Source Options** section in Patch My PC (PMPC) Publisher defines how the Publisher connects to ConfigMgr and where application source content is stored on disk. This section must be correctly configured before the Publisher can create ConfigMgr applications or the [ConfigMgr Application Manager](../app-manager.md) utility can be used.
 
 These settings control communication with the SMS Provider and establish the root location used for all Publisher created ConfigMgr application content. Incorrect configuration can prevent applications from being created, updated, or managed successfully.
 
-<figure><img src="../../../../.gitbook/assets/image (4010).png" alt="Connection and Source Options" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (724).png" alt="Connection and Source Options" width="563"><figcaption></figcaption></figure>
 
 ## Configure SMS Provider Connection
 
@@ -22,7 +16,7 @@ The SMS Provider configuration is shared across the Publisher. When you configur
 
 To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../../../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/software.md) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is _not_ installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
 
-<figure><img src="../../../../.gitbook/assets/image (76).png" alt="Missing ConfigMgr Remote Console" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (725).png" alt="Missing ConfigMgr Remote Console" width="563"><figcaption></figcaption></figure>
 
 The PatchMyPC.log will also indicate when the ConfigMgr Remote Console is not installed:
 
@@ -34,7 +28,7 @@ For information on how to configure the SMS Provider connection, please see: [Co
 
 The **Source Folder** is required because every ConfigMgr application relies on a defined content source location for each deployment type. This source path is the authoritative location where application files are stored and managed before they are distributed to the Content Library and used by clients.
 
-The image below correlates a source folder configured in Publisher with the Deployemnt Type Content Location in ConfigMgr.
+The image below correlates a source folder configured in Publisher with the Deployment Type Content Location in ConfigMgr.
 
 <figure><img src="../../../../.gitbook/assets/image (216).png" alt="Deployment Type Content Location Reference" width="563"><figcaption></figcaption></figure>
 
@@ -59,9 +53,9 @@ When application retention is enabled, retained application content UniqueID fol
 {% hint style="danger" %}
 **Important**
 
-The source folder structure is critical to the Publisher operations. The Publisher evaluates both the ConfigMgr database object and the corresponding content directories when making decisions about application retention, upgrades, and lifecycle management.&#x20;
+The source folder structure is critical to the Publisher operations. The Publisher evaluates both the ConfigMgr database object and the corresponding content directories when making decisions about application retention, upgrades, and lifecycle management.
 
 Manually modifying, moving, or deleting folders within this structure can cause inconsistencies between ConfigMgr and the content source, which may lead to unexpected behavior or management issues later.
 {% endhint %}
 
-For more information on the requirements, see: [Permissions](../../../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/permissions.md#content-source-folder).
+For more information on the requirements, see: [Permissions](../../../requirements/configmgr-requirements/permissions.md#content-source-folder).
