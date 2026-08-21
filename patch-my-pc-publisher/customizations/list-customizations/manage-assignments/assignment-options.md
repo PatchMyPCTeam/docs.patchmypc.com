@@ -10,7 +10,7 @@ After using the [Manage Assignments](add-remove-assignment.md) right-click optio
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="assignment-options.md#mode">Mode</a></td><td valign="top"><a href="assignment-options.md#notification">Notification</a></td><td valign="top"><a href="assignment-options.md#do-priority">DO Priority</a></td></tr><tr><td valign="top"><a href="assignment-options.md#filter-mode-and-filter-name">Filter Mode and Filter (Name)</a></td><td valign="top"><a href="assignment-options.md#available-time">Available Time</a></td><td valign="top"><a href="assignment-options.md#deadline">Deadline</a></td></tr><tr><td valign="top"><a href="assignment-options.md#grace-period">Grace Period</a></td><td valign="top"></td><td valign="top"></td></tr></tbody></table>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt="Application Assignments" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="Application Assignments" width="563"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**

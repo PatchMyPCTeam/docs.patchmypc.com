@@ -37,4 +37,4 @@ If you do not want to configure any additional settings, click **Next** to move 
 
 Otherwise, navigate to the relevant tool to configure the required settings, which are explained in the relevant section.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt="Clicking &#x27;Next&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt="Clicking &#x27;Next&#x27;" width="563"><figcaption></figcaption></figure>
