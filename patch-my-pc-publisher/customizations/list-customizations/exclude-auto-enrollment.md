@@ -1,8 +1,8 @@
 # Exclude From Auto-Enrollment option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Vendor, Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: Vendor, Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Exclude From Auto-Enrollment** right-click option in Patch My PC (PMPC) Publisher allows you to prevent specific vendors or products from being automatically enabled for publishing by Publisher's auto-publishing logic.
 
@@ -14,7 +14,7 @@ Auto-publishing can be configured independently on each supported tab using the 
 
 * [WSUS Updates](../../manage/wsus-updates-tab/scan-configmgr.md)
 * [ConfigMgr Apps](../../manage/wsus-updates-tab/scan-configmgr.md)
-* [Intune Apps/ Updates](../../manage/intune-tabs/scan-intune.md)
+* [Intune Apps/ Updates](../../manage/intune-tabs/scan-intune/)
 
 The **Exclude From Auto-Enrollment** right-click option acts as an explicit override. When applied, the selected vendor or product will never be automatically enabled, even if auto-publishing is configured and the device threshold is met.
 
