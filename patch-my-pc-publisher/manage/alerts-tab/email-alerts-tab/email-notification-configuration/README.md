@@ -2,15 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Email Notification Configuration** section of the **Email Alerts** tab in Patch My PC (PMPC) Publisher allows you to configure Publisher to send notifications when specific publishing events occur. These alerts provide timely visibility into publishing activity, including successes, warnings, and failures, without requiring administrators to actively monitor logs.
 
-<figure><img src="../../../../../.gitbook/assets/image (4237).png" alt="Email Alerts" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (735).png" alt="&#x27;Email Notification Configuration&#x27; section" width="563"><figcaption></figcaption></figure>
 
 Before email alerts can be sent, email settings must be configured. This includes specifying the SMTP server and port or configuring OAuth application details, along with the required authentication settings, sender address, and recipient addresses.
 
@@ -26,7 +20,7 @@ When the **Send email reports** option is enabled, Publisher sends email alerts 
 
 ## Disable email for manual sync
 
-When **Disable email for manual sync** is enabled, email notifications are sent only for scheduled syncs.&#x20;
+When **Disable email for manual sync** is enabled, email notifications are sent only for scheduled syncs.
 
 {% hint style="danger" %}
 **Important**
@@ -36,7 +30,7 @@ Email notifications are not sent when a sync is initiated manually from the [Syn
 
 ## Provider
 
-The **Provider** dropdown lets you select from a list of predefined providers (such as Gmail, Outlook, Yahoo, or Exchange Online) to automatically populate the relevant fields on this tab with recommended values for the selected service.&#x20;
+The **Provider** dropdown lets you select from a list of predefined providers (such as Gmail, Outlook, Yahoo, or Exchange Online) to automatically populate the relevant fields on this tab with recommended values for the selected service.
 
 For example, selecting **Exchange Online** from the **Provider** dropdown sets the **Server** to **smtp.office365.com**, **port** to **587**, and enables **Use TLS**.
 
@@ -52,7 +46,7 @@ You can modify any auto-populated values as required to meet the needs of your e
 
 After configuring the required email notification settings, click **Test Email** to verify that the message is successfully sent and received by the configured recipient(s).
 
-If the test email fails, the issue is most commonly related to the SMTP or authentication configuration.&#x20;
+If the test email fails, the issue is most commonly related to the SMTP or authentication configuration.
 
 {% hint style="info" %}
 **Note**
@@ -97,7 +91,7 @@ Ultimately, the appropriate option depends on the authentication methods support
 You can choose from the following authentication methods:
 
 * [Anonymous](./#id-1.-anonymous)
-* [System account](./#id-3.-system)&#x20;
+* [System account](./#id-3.-system)
 * [Specific user](./#specified-user)
 * [OAuth2 (App Auth)](./#id-4.-oauth2-app-auth)
 

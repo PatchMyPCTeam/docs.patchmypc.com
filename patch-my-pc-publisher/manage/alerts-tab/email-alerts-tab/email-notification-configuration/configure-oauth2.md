@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 _OAuth2_ allows Patch My PC (PMPC) Publisher to send emails without using a mailbox username and password. Instead, email is sent using a Microsoft Entra ID app registration, which is the recommended approach for modern cloud email services such as Microsoft 365 (Exchange Online) and Google Workspace.
 
 This authentication method is intended for environments where SMTP basic authentication is restricted or deprecated and where secure, non-interactive service authentication is required.
@@ -19,7 +13,7 @@ OAuth2 email authentication requires a **Microsoft Entra ID app registration** w
 {% hint style="danger" %}
 **Important**
 
-This guidance applies to customers who choose to use OAuth with Microsoft Graph instead of SMTP-based mail delivery. When using this approach, Publisher sends emails through Microsoft Graph as an unattended background service.&#x20;
+This guidance applies to customers who choose to use OAuth with Microsoft Graph instead of SMTP-based mail delivery. When using this approach, Publisher sends emails through Microsoft Graph as an unattended background service.
 
 As no signed-in user is present, OAuth 2.0 application permissions must be used along with the `/users/{user}/sendMail` endpoint, which requires the `Mail.Send` application permission. When granted, this permission allows the application to send mail as **any** mailbox in the tenant.
 
@@ -170,7 +164,7 @@ Enter the Application **Client ID** from the Entra ID app registration, which yo
 
 Enter the tenant authority URL for your Microsoft Entra ID tenant in the **Tenant ID** field, which is typically in the format:
 
-`https://login.microsoftonline.com/{tenant-id}`&#x20;
+`https://login.microsoftonline.com/{tenant-id}`
 
 The tenant ID can be found on the **Overview** page of the Entra ID app registration or on the Entra ID tenant properties page. Publisher uses this value to authenticate against the correct Entra ID tenant.
 
