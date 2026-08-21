@@ -2,21 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+The **Application Creation Options** section in Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in ConfigMgr when using Publisher.
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
-The **Application Creation Options** section in Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in ConfigMgr when using the Publisher.&#x20;
+<figure><img src="../../../../.gitbook/assets/image (727).png" alt="&#x27;Application Creation Options&#x27;" width="563"><figcaption></figcaption></figure>
 
 These settings apply globally to all applications created from the ConfigMgr Apps tab and directly influence application lifecycle behavior.
-
-{% hint style="info" %}
-**Note**
-
-See [Application Creation Options](application-creation-options.md) for more information.
-{% endhint %}
 
 {% hint style="success" %}
 **Tip**
@@ -30,8 +20,6 @@ When the **Allow applications to be installed from the Install Application task 
 
 Specifically, Publisher enables **Allow this application to be installed from the Install Application task sequence action without being deployed** on each application it creates or updates.
 
-<figure><img src="../../../../.gitbook/assets/image (509).png" alt="Allow applications to be installed from the Install Application task sequence action" width="543"><figcaption></figcaption></figure>
-
 {% hint style="success" %}
 **Tip**
 
@@ -41,7 +29,7 @@ This setting does not have to be enabled when applications are explicitly refere
 {% hint style="danger" %}
 **Important**
 
-When enabled, this setting is applied _only_ when the deployment type setting, **installation behavior,** is set to **Install for system**. User-based applications that install in the user context do not meet the requirements for this setting.&#x20;
+When enabled, this setting is applied _only_ when the deployment type setting, **installation behavior,** is set to **Install for system**. User-based applications that install in the user context do not meet the requirements for this setting.
 
 See [Product Naming in the Patch My PC Catalog](../../../technical-references/catalog-information.md#product-naming-in-the-patch-my-pc-catalog) for more details on how to identify a user-based app.
 {% endhint %}
@@ -103,7 +91,7 @@ When this option is disabled (the default setting), each new application version
 
 When this option is enabled, the application name remains the same across versions, while the underlying content, detection logic, and deployment type are updated to reflect the latest release.
 
-As shown in the example below, **Notepad++ (x86)** was published with this option enabled, while **Notepad++ 8.8.9 (x64)** was published with the option disabled.&#x20;
+As shown in the example below, **Notepad++ (x86)** was published with this option enabled, while **Notepad++ 8.8.9 (x64)** was published with the option disabled.
 
 In both cases, the exact application version is still visible in the **Software Version** column in the ConfigMgr console.
 
@@ -185,7 +173,7 @@ When an in-place update occurs, the Publisher:
 {% hint style="success" %}
 **Tip**
 
-Removing and recreating the deployment type results in **2 new revisions** on the application object for each update. Over time, this causes the total number of application revisions to increase.&#x20;
+Removing and recreating the deployment type results in **2 new revisions** on the application object for each update. Over time, this causes the total number of application revisions to increase.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -244,7 +232,7 @@ For example, setting this value to **1** ensures that the environment always con
 {% hint style="success" %}
 **Tip**
 
-Application retention can be adjusted at the vendor and product levels in the [product tree](../../../../patch-my-pc-publisherv2/administration/configmgr-apps/product-tree.md), allowing more granular control and will override the global setting configured.&#x20;
+Application retention can be adjusted at the vendor and product levels in the [product tree](../../../../patch-my-pc-publisherv2/administration/configmgr-apps/product-tree.md), allowing more granular control and will override the global setting configured.
 
 This option is especially useful for third-party applications with a rapid release cadence, such as web browsers. Retaining additional versions makes it easier to roll back if needed using supersedence. For more information about using supersedence in ConfigMgr, see: [https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/revise-and-supersede-applications#supersedence](https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/revise-and-supersede-applications#supersedence)
 {% endhint %}
@@ -294,4 +282,3 @@ This option is available only when [Retain up to X previously created applicatio
 When the **Delete applications even if they have a deployment** is enabled, the Publisher can delete retained application versions even if they have existing deployments. When disabled, applications with active deployments are preserved and are not removed during retention cleanup.
 
 This option provides flexibility for environments where older application deployments are no longer required but may still exist, allowing retention cleanup to proceed without the need for manual intervention top remove a deployment(s).
-
