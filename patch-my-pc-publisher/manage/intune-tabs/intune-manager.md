@@ -2,23 +2,15 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Intune Manager** is available under both the **Intune Apps** tab and **Intune Updates** tab. The only difference is the name:
 
 <table><thead><tr><th valign="top">Tab</th><th valign="top">Intune Manager name</th></tr></thead><tbody><tr><td valign="top">Intune Apps</td><td valign="top">App Manager</td></tr><tr><td valign="top">Intune Updates</td><td valign="top">Update Manager</td></tr></tbody></table>
 
-This form control in Patch My PC (PMPC) Publisher is used to view and manage Win32 apps (applications and updates) in Intune. It provides a centralized interface to review application properties, assignments and installation status before performing application modifications.
-
-<figure><img src="../../../.gitbook/assets/image (4087).png" alt="Intune Application Manager" width="563"><figcaption></figcaption></figure>
+Clicking the relevant Intune Manager tab in Patch My PC (PMPC) Publisher loads the relevant manager which is used to view and manage Win32 apps (applications and updates) in Intune. It provides a centralized interface to review application properties, assignments and installation status before performing application modifications.
 
 The form queries Intune, through Microsoft Graph, and displays all Win32 apps in the Intune tenant.
 
-The primary use case for this form is application modification and cleanup. It allows administrators to identify unused applications, remove assignments, extract content, or delete applications in a controlled and supported manner.&#x20;
+The primary use case for this form is application modification and cleanup. It allows administrators to identify unused applications, remove assignments, extract content, or delete applications in a controlled and supported manner.
 
 The table below outlines the available columns in this form:
 
@@ -75,7 +67,7 @@ The **Select None** button clears any current selection.
 
 ## Delete Application(s)
 
-The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.&#x20;
+The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
 
 To delete one or more applications:
 
@@ -142,11 +134,11 @@ Once you have selected the profile(s), the **Select ESP Association** window dis
 
 The grid includes the following columns:
 
-* **AppName**  \
+* **AppName**\
   The name of the selected application.
-* **ESP to add**  \
+* **ESP to add**\
   The number of ESP profiles that the application will be added to.
-* **ESP to remove (If enforced)**  \
+* **ESP to remove (If enforced)**\
   The number of ESP profiles that will be removed if enforcement is enabled.
 
 {% hint style="info" %}
