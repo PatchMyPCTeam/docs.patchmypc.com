@@ -2,15 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Product Export** section of Patch My PC (PMPC) Publisher allows you to export a list of enabled products and their configuration from the Publisher into a CSV file. The export includes product-level settings and right-click options, which makes it useful for documentation, audits, change reviews, and comparing configurations.
 
-<figure><img src="../../../.gitbook/assets/image (3949).png" alt="Product Export" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt="&#x27;Product Export&#x27; section" width="563"><figcaption></figcaption></figure>
 
 Some exported properties may appear populated even if they are not actively in use. This occurs when a property has a default value defined by the Publisher. For example, Intune apps and Intune updates may show a maximum run time value that is only applicable when the same product is published to ConfigMgr.
 
@@ -23,8 +17,6 @@ To export a list of products:
 3. Select the checkbox for each product type you want to export.
 4. Select **Export**.
 5. Choose a location to save the CSV file.
-
-<figure><img src="../../../.gitbook/assets/image (3950).png" alt="Chhose an export location" width="563"><figcaption></figcaption></figure>
 
 The available export options align with the main product categories in the Publisher. These include WSUS updates, ConfigMgr apps, Intune apps, and Intune updates. Only product types that are currently available and enabled in the Publisher can be selected
 

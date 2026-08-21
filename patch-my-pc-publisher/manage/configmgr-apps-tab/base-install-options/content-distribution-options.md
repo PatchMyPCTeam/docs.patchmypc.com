@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Content Distribution Options** section in Patch My PC (PMPC) Publisher controls how application content created by the Publisher is distributed to ConfigMgr Distribution Points (DPs) when apps are published.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt="&#x27;Content Distribution Options&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt="&#x27;Content Distribution Options&#x27;" width="563"><figcaption></figcaption></figure>
 
 By default, Publisher automatically distributes application content as soon as a new application is created. This ensures content is available on Distribution Points as soon as possible, preventing deployment failures caused by missing or undistributed content.
 

@@ -2,25 +2,23 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **ARM Architecture Application Support** section of Patch My PC (PMPC) Publisher controls whether Publisher evaluates and publishes ARM64 applications.
 
-<figure><img src="../../../.gitbook/assets/image (170).png" alt="ARM Architecture Application Support" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (744).png" alt="&#x27;ARM Architecture Application Support&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Enable support for ARM Architecture applications
 
-When this option is enabled, the Publisher begins supporting ARM64 applications. ARM64 products are evaluated during Publisher syncs using existing auto publishing rules.
+When this option is enabled, Publisher prompts you to confirm.
+
+<figure><img src="../../../.gitbook/assets/image (745).png" alt="Confirmation you want to enable ARM support" width="461"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**
 
 Once enabled, this setting cannot be disabled.
 {% endhint %}
+
+Once enabled, Publisher begins supporting ARM64 applications. ARM64 products are evaluated during Publisher syncs using existing auto-publishing rules.
 
 Enabling this option causes ARM64 applications to be included in evaluation and publishing logic. Existing auto publishing rules are applied without modification, which may result in new ARM64 applications being published automatically.
 
@@ -35,9 +33,9 @@ When ARM Architecture Application Support is enabled, ARM based applications are
 * Intune Apps
 * Intune Updates
 
-ARM applications are identified by ARM64 appended to the application name. This naming clearly distinguishes ARM64 installers from x64 and x86 variants.
+ARM applications are identified by **ARM64** appended to the application name. This naming clearly distinguishes ARM64 installers from x64 and x86 variants.
 
-<figure><img src="../../../.gitbook/assets/image (171).png" alt="ARM64 Products in the product tree" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (746).png" alt="ARM64 Products in the Product Tree" width="259"><figcaption></figcaption></figure>
 
 ## Automatic Requirement Handling
 

@@ -2,15 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Intune Global Options** section of Patch My PC (PMPC) Publisher controls how the Publisher interacts with Microsoft Intune at a global level. They are primarily used to support advanced scenarios such as content extraction from Intune packages and tuning Microsoft Graph query behavior for large tenants.
 
-<figure><img src="../../../.gitbook/assets/image (161).png" alt="Intune Global Options" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (742).png" alt="&#x27;Intune Global Options&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Store encryption information locally to allow extraction of Win32 .intunewin files
 

@@ -29,7 +29,7 @@ To edit an existing deployment from the **Deployments** node:
 1. Navigate to the **Deployments** node.
 2. Click the relevant deployment you want to edit.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="Clicking the relevant deployment to edit" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="Clicking the relevant deployment to edit" width="563"><figcaption></figcaption></figure>
 
 2. On the deployment's drawer, click **Edit**.
 

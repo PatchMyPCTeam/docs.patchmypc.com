@@ -56,7 +56,7 @@ The greatest benefit of viewing the Product Tree in Grid view is that it allows 
 
 The alphabetical slider lets you either go directly to all products in the catalog beginning with a certain letter, or navigate the catalog using the arrow controls.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
 
 ## ![Settings button](<../../../.gitbook/assets/image (4579).png>) Settings Button
 
@@ -83,7 +83,7 @@ Having these as separate tabs allows you to easily configure and manage the prod
 
 Using the **Filter** field, you can easily filter the Product Tree to only show matching results.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="using the &#x27;Filter&#x27; field" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="using the &#x27;Filter&#x27; field" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**
