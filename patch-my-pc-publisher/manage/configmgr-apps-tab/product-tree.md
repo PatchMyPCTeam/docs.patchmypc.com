@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The _Product Tree_ in Patch My PC (PMPC) Publisher is where you choose which updates the Publisher should publish in your environment and keep up to date. The tree is a hierarchical view that lets you enable updates at different levels of granularity, from all products for a vendor down to individual products.
 
 {% hint style="info" %}

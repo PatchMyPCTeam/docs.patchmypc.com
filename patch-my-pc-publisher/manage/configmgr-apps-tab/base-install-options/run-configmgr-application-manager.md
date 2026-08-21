@@ -1,4 +1,9 @@
-# Run ConfigMgr Application Manager in  Patch My PC Publisher
+---
+hidden: true
+noIndex: true
+---
+
+# Run ConfigMgr Application Manager in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
