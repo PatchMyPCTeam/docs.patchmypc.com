@@ -1,18 +1,12 @@
-# Authentication Settings section of  Patch My PC Publisher
+# Authentication Settings section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
-
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
 
 The **Authentication Settings** section of Patch My PC (PMPC) Publisher defines how the Publisher authenticates with Entra ID and communicates to Microsoft Intune using a Microsoft Entra ID application registration. These settings are required before the Publisher can create, update, or manage Win32 applications and updates in Intune.
 
 This section establishes the trust relationship between the Publisher and your Intune tenant by configuring the tenant authority, application identifier, and authentication method. Authentication can be performed by using either a client secret or a certificate, depending on your organization security requirements.
 
-<figure><img src="../../../../.gitbook/assets/image (248).png" alt="Authentication Settings" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (730).png" alt="&#x27;Authentication Settings&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Tenant Friendly name
 
@@ -106,4 +100,3 @@ For more information about the API permissions required for the Publisher, see: 
 
 If the test fails, review the authority value, application (client) ID, and client credential method used before proceeding.
 {% endhint %}
-

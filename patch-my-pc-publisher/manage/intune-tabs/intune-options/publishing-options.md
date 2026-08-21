@@ -2,15 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+The **Publishing Options** section in Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in Intune when using Publisher. These settings apply globally to all applications created from the Intune Apps and Intune Options tabs and directly influence application lifecycle behavior.
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
-The **Publishing Options** section in Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in Intune when using the Publisher. These settings apply globally to all applications created from the Intune Apps and Intune Options tabs and directly influence application lifecycle behavior.
-
-<figure><img src="../../../../.gitbook/assets/image (251).png" alt="Application Options" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (733).png" alt="&#x27;Publishing Options&#x27; section" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**
@@ -83,9 +77,7 @@ If a new version of an application is published and that application is already 
 
 This ensures that when new devices go through Autopilot, the Enrollment Status Page waits for and installs the most recent version of the application, without requiring manual updates to ESP configurations after each application update.
 
-Applications must be explicitly associated with an Enrollment Status Page profile using the [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md). This is done by right-clicking a product and selecting [Manage ESP profiles](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-esp-profiles.md), where you choose which ESP configuration the application should be included in. For more information on all of the available right-click customization options, see [Customizations (Right-Click Options)](../../../../patch-my-pc-publisherv2/customizations-right-click-options/).
-
-<figure><img src="../../../../.gitbook/assets/image (258).png" alt="Manage ESP Profiles in the Product Tree" width="549"><figcaption></figcaption></figure>
+Applications must be explicitly associated with an Enrollment Status Page (ESP) profile using the [Product Tree](../../../fundamentals/product-tree/overview.md). This is done by right-clicking a product and selecting [Manage Enrollment Status Page](../../../customizations/list-customizations/manage-enrollment-status-page.md), where you choose which ESP configuration the application should be included in.
 
 {% hint style="info" %}
 **Note**
@@ -126,7 +118,7 @@ Rather than being a simple on/off delete, this option works in conjunction with 
 * Setting the value to 0 ensures that only the latest version of the application exists in Intune.
 * Setting the value to 1 or higher retains that number of previous versions alongside the latest release.
 
-Retention settings can be overideden at the vendor and product level in the [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md), allowing more granular control. For example:
+Retention settings can be overridden at the vendor and product level in the [Product Tree](../../../fundamentals/product-tree/working.md), allowing more granular control. For example:
 
 * A global default may be set to retain **1** or **2** previous versions.
 * Applications with a faster release cadence, such as web browsers, may retain **3** to **5** versions.
