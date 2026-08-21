@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 Older Office 365 connectors previously used for Microsoft Teams webhooks are deprecated. Microsoft announced the retirement of these connectors. For more information, see [Retirement of Office 365 connectors within Microsoft Teams on the Microsoft Developer](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) blog.
 
 Microsoft Teams Workflows use the Adaptive Message Card format. Legacy Microsoft Teams webhooks created in earlier versions of the Publisher use the older Message Card format.

@@ -2,13 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
-Slack webhooks allow the Patch My PC (PMPC) Publisher to send publishing notifications to a specific Slack channel. Notifications can be sent after each product is processed or as a single summary message at the end of a publishing synchronization, depending on the webhook configuration.
+Slack webhooks allow Patch My PC (PMPC) Publisher to send publishing notifications to a specific Slack channel. Notifications can be sent after each product is processed or as a single summary message at the end of a publishing synchronization, depending on the webhook configuration.
 
 To configure a Slack webhook URL:
 

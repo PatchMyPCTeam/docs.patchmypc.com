@@ -2,17 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+The **Webhook Notification Configuration** section of the **Webhooks** tab in Patch My PC (PMPC) Publisher allows Publisher to send publishing alerts and reports to external messaging systems such as Microsoft Teams workflows and Slack. Webhooks provide near real-time visibility into publishing activity without relying on email notifications.
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
-**Webhook notifications** allow the Patch My PC (PMPC) Publisher to send publishing alerts and reports to external messaging systems such as Microsoft Teams workflows and Slack. Webhooks provide near real time visibility into publishing activity without relying on email notifications.
+<figure><img src="../../../../.gitbook/assets/image (736).png" alt="&#x27;Webhook Notification Configuration&#x27; section " width="563"><figcaption></figcaption></figure>
 
 Webhook notifications are commonly used to notify operations, security, or platform teams when publishing events occur.
-
-<figure><img src="../../../../.gitbook/assets/image (4208).png" alt="Webhook Notifications" width="563"><figcaption></figcaption></figure>
 
 When webhook notifications are enabled, the Publisher sends HTTP POST messages to the configured webhook endpoints based on publishing events and the selected notification level. Each configured webhook represents a single destination, such as a Teams channel or Slack workspace.
 
@@ -92,4 +86,3 @@ If the test is successful, a confirmation message is displayed indicating that t
 If the test fails, an error message is displayed. The error typically indicates connectivity issues, an invalid webhook URL, or a response error from the destination service. The webhook must be corrected before notifications will work.
 
 <figure><img src="../../../../.gitbook/assets/image (3899).png" alt="Failed Webhook Test" width="427"><figcaption></figcaption></figure>
-

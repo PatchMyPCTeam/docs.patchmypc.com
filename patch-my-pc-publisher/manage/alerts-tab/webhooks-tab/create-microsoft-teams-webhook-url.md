@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 ## Create a Workflow
 
 Microsoft Teams webhooks used by the Patch My PC (PMPC) Publisher are created using Teams Workflows. This workflow generates a webhook URL that can be used to send notifications to a specific Teams channel.
@@ -15,7 +9,7 @@ Microsoft Teams webhooks used by the Patch My PC (PMPC) Publisher are created us
 To create a webhook URL:
 
 1. Open Microsoft Teams and navigate to the Channel where you want to receive Webhook Notifications.
-2. Click the More Options button **…** and select **Workflows**.&#x20;
+2. Click the More Options button **…** and select **Workflows**.
 
 <figure><img src="../../../../.gitbook/assets/image (225).png" alt="Teams Workflows" width="524"><figcaption></figcaption></figure>
 
@@ -39,7 +33,7 @@ The copied URL can be used when [adding ](../../../../patch-my-pc-publisherv2/ad
 
 ## Consideration for Teams Private Channels
 
-Microsoft Teams private channels have stricter permission boundaries than standard channels. Workflows created using Power Automate run as bots by default, and bots are not permitted to post messages to private channels unless explicitly configured.&#x20;
+Microsoft Teams private channels have stricter permission boundaries than standard channels. Workflows created using Power Automate run as bots by default, and bots are not permitted to post messages to private channels unless explicitly configured.
 
 To allow webhook notifications to be delivered to a private channel, the workflow must be updated to post messages as a user instead of as a bot.
 
