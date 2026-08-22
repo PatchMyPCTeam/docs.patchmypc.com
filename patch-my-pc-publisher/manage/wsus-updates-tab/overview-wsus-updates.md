@@ -12,4 +12,4 @@ Third-party updates synchronized from WSUS to ConfigMgr during a SUP sync will a
 
 <figure><img src="../../../.gitbook/assets/image (722).png" alt="Updates appear in the All Software Updates view" width="563"><figcaption></figcaption></figure>
 
-Additional behavior related to update publishing can be configured using the [**Options**](../../../patch-my-pc-publisherv2/administration/updates/options/) button on the Updates tab.
+Additional behavior related to update publishing can be configured using the [**WSUS Options**](https://docs.patchmypc.com/patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options) tab.

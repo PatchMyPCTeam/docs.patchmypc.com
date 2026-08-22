@@ -13,5 +13,5 @@ As the Product Tree is used in several places, to avoid duplicating content, see
 {% hint style="success" %}
 **Tip**
 
-For more details on product naming conventions in the product tree, refer to [Catalog Information](../../../patch-my-pc-publisherv2/publisher-reference/catalog-information.md).
+For more details on product naming conventions in the product tree, refer to [Catalog Information](../../technical-references/catalog-information.md).
 {% endhint %}
