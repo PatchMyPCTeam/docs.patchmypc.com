@@ -45,7 +45,7 @@ These requirements cannot be modified and are applied automatically to the deplo
 {% hint style="info" %}
 **Note**
 
-For more information on how the Publisher handles ARM64 support for apps, see [ARM Architecture Application Support](../../../patch-my-pc-publisherv2/administration/advanced/arm-architecture-application-support.md).
+For more information on how the Publisher handles ARM64 support for apps, see [ARM Architecture Application Support](../../manage/advanced-tab/arm-architecture-application-support.md).
 {% endhint %}
 
 ## 64-bit Applications
