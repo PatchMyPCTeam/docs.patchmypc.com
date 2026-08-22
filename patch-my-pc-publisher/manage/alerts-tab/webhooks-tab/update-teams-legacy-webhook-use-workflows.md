@@ -12,8 +12,8 @@ It is recommended that any webhook configured in the Patch My PC (PMPC) Publishe
 
 ## Update an Existing Webhook
 
-1. Create a new Microsoft Teams workflow webhook URL by following the steps in [Create a Microsoft Teams Webhook URL](../../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/create-a-microsoft-teams-webhook-url.md).
-2. In the Publisher, navigate to Alerts and expand Webhook Notifications.
+1. Create a new Microsoft Teams workflow webhook URL by following the steps in [Create a Microsoft Teams Webhook URL](create-microsoft-teams-webhook-url.md).
+2. In Publisher, navigate to Alerts and expand Webhook Notifications.
 3. Select the existing webhook that uses the Microsoft Teams legacy provider and click Edit.
 4. Change the Webhook Provider from **Microsoft Teams (Legacy Webhook)** to **Microsoft Teams Workflow**.
 

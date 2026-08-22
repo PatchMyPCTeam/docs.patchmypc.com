@@ -43,7 +43,7 @@ The **Edit** option opens the webhook configuration dialog. This dialog is used 
 
 <figure><img src="../../../../.gitbook/assets/image (33).png" alt="Edit a Webhook" width="545"><figcaption></figcaption></figure>
 
-In both cases, the same configuration screen is used to define or modify the [webhook configuration](../../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/webhook-configuration.md).
+In both cases, the same configuration screen is used to define or modify the [webhook configuration](configure.md).
 
 ## Copy a Webhook
 
@@ -51,7 +51,7 @@ Use this option to create a new webhook configuration based on an existing webho
 
 <figure><img src="../../../../.gitbook/assets/image (34).png" alt="Copy a Webhook" width="545"><figcaption></figcaption></figure>
 
-When you select a webhook and click Copy, the [webhook configuration](../../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/webhook-configuration.md) dialog opens with settings pre populated from the selected webhook. You must provide a new **Name** and **Webhook URL** before the webhook can be saved.
+When you select a webhook and click Copy, the [webhook configuration](configure.md) dialog opens with settings pre populated from the selected webhook. You must provide a new **Name** and **Webhook URL** before the webhook can be saved.
 
 All other settings are copied from the original webhook, including the message system and notification level. Webhook scope and product selection are also copied, allowing the new webhook to inherit the same filtering and targeting configuration.
 
