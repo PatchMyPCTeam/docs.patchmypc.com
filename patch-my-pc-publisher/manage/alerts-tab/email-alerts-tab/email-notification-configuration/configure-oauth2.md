@@ -71,7 +71,7 @@ To add the required Microsoft Graph **Mail.Send (Application)** permission to th
 
 ### Configure Publisher
 
-After selecting OAuth2 as the email authentication type, select **Use existing app registration** to reuse the same Microsoft Entra ID app registration configured under [Intune Apps/Updates | Options](../../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/options/). The available fields are automatically updated to reflect the existing app registration details and authentication method.
+After selecting OAuth2 as the email authentication type, select **Use existing app registration** to reuse the same Microsoft Entra ID app registration configured under [Intune Apps/Updates | Options](../../../intune-tabs/intune-options/). The available fields are automatically updated to reflect the existing app registration details and authentication method.
 
 <figure><img src="../../../../../.gitbook/assets/image (4206).png" alt="Use existing app registration" width="446"><figcaption></figcaption></figure>
 
@@ -115,7 +115,7 @@ To add the required Microsoft Graph **Mail.Send (Application)** permission to th
 2. Decide which approach best fits your environment.
    1.  **Create a new app registration**
 
-       i. Follow the guidance in [Register an Application](../../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/register-an-application.md) to register an application in Entra ID.\
+       i. Follow the guidance in [Register an Application](../../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) to register an application in Entra ID.\
        ii. After the app registration is created, continue to step 3.
    2.  **Use an existing app registration**
 
@@ -142,7 +142,7 @@ To add the required Microsoft Graph **Mail.Send (Application)** permission to th
 {% hint style="info" %}
 **Note**
 
-For additional guidance on choosing and configuring app registration credentials, refer to [Client Credentials](../../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/client-credentials.md), which explains credential types, requirements, and best practices in more detail.
+For additional guidance on choosing and configuring app registration credentials, refer to [Client Credentials](../../../../requirements/intune-requirements/entra-id-app-registration/client-credentials.md), which explains credential types, requirements, and best practices in more detail.
 {% endhint %}
 
 ### Configure Publisher

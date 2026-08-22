@@ -11,7 +11,7 @@ Before email alerts can be sent, email settings must be configured. This include
 {% hint style="info" %}
 **Note**
 
-At the end of a [publishing sync](../../../../../patch-my-pc-publisherv2/administration/sync-schedule.md), the Publisher sends an email containing details about the sync event.
+At the end of a [publishing sync](../../../sync-schedule-tab/), the Publisher sends an email containing details about the sync event.
 {% endhint %}
 
 ## Send email reports
@@ -25,7 +25,7 @@ When **Disable email for manual sync** is enabled, email notifications are sent 
 {% hint style="danger" %}
 **Important**
 
-Email notifications are not sent when a sync is initiated manually from the [Sync Schedule](../../../../../patch-my-pc-publisherv2/administration/sync-schedule.md#run-publishing-service-sync) tab.
+Email notifications are not sent when a sync is initiated manually from the [Sync Schedule](../../../sync-schedule-tab/) tab.
 {% endhint %}
 
 ## Provider
@@ -82,9 +82,9 @@ Enter any additional text you want included at the top of the email report, such
 
 When choosing an authentication method, select the option that aligns with how your mail system accepts SMTP connections.
 
-For internal or on-premises mail servers, [Specified user](./#id-2.-specified-user) is commonly used when the relay supports authenticated SMTP connections.
+For internal or on-premises mail servers, [Specified user](./#specific-user) is commonly used when the relay supports authenticated SMTP connections.
 
-For cloud-based email services such as Microsoft 365 (Exchange Online) and Google Workspace, [OAuth2 (App Auth)](./#id-4.-oauth2-app-auth) is recommended, as modern cloud providers increasingly restrict or deprecate username and password–based SMTP authentication.
+For cloud-based email services such as Microsoft 365 (Exchange Online) and Google Workspace, [OAuth2 (App Auth)](./#oauth2-app-auth) is recommended, as modern cloud providers increasingly restrict or deprecate username and password–based SMTP authentication.
 
 Ultimately, the appropriate option depends on the authentication methods supported by your SMTP server.
 
@@ -162,7 +162,7 @@ Use the **OAuth2 (App Auth)** option to send email using OAuth 2.0 instead of a 
 {% hint style="info" %}
 **Note**
 
-See [OAuth2 (App Auth) Configuration](../../../../../patch-my-pc-publisherv2/administration/alerts/email-alerts/oauth2-app-auth-configuration.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.
+See [OAuth2 (App Auth) Configuration](configure-oauth2.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.
 {% endhint %}
 
 ## Save Email Notification Settings
