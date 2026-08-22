@@ -44,7 +44,7 @@ Defines the Microsoft Graph endpoint used for authentication and token acquisiti
 These values may need to be changed only when your Intune tenant is hosted in a government or sovereign cloud, such as GCC High or Microsoft 21Vianet (China), which use different authentication and Microsoft Graph endpoints than the public commercial cloud.
 
 \
-If your tenant is hosted in the standard commercial Microsoft 365 cloud, you should continue using the default values. For details on the specific endpoints required for each cloud environment, refer to the [Intune speciifc Network requirements](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/network.md).
+If your tenant is hosted in the standard commercial Microsoft 365 cloud, you should continue using the default values. For details on the specific endpoints required for each cloud environment, refer to the [Intune-specific network requirements](../../../requirements/intune-requirements/network.md).
 {% endhint %}
 
 ## Graph Base URL
@@ -63,17 +63,17 @@ To obtain this value, select **App registrations** in the [Microsoft Entra admin
 
 <figure><img src="../../../../.gitbook/assets/image (3778).png" alt="Application (Client) ID" width="563"><figcaption></figcaption></figure>
 
-For more details on how to create an Entra ID App Registration for use with the Publisher, see: [Entra ID App Registration](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/).
+For more details on how to create an Entra ID App Registration for use with the Publisher, see: [Entra ID App Registration](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md).
 
 ## Application Certificate or Application Secret
 
-The authentication method is determined by the [credentials configured on the app registration](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/client-credentials.md).
+The authentication method is determined by the [credentials configured on the app registration](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md).
 
-If [certificate based authentication](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/client-credentials.md#use-a-certificate-for-authentication) is used, select the **Certificate** option and browse the Local Machine certificate Personal store to select the appropriate certificate.
+If [certificate-based authentication](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) is used, select the **Certificate** option and browse the Local Machine certificate Personal store to select the appropriate certificate.
 
-If [client secret authentication](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/client-credentials.md#use-a-client-secret-for-authentication) is used, select the **Application Secret** option and enter the client secret value that was generated during app registration setup.
+If [client secret authentication](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) is used, select the **Application Secret** option and enter the client secret value that was generated during app registration setup.
 
-For more information, and to help decide which client credential method to use if you have not already chosen one, see: [Client Credentials](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/client-credentials.md).
+For more information, and to help decide which client credential method to use if you have not already chosen one, see: [Client Credentials](../../../requirements/intune-requirements/entra-id-app-registration/client-credentials.md).
 
 Whichever client credential method is used, the Intune Options form displays the credential expiration date below the credential field.
 
@@ -93,7 +93,7 @@ The test confirms that the Publisher can successfully connect to the Intune tena
 
 <figure><img src="../../../../.gitbook/assets/image (250).png" alt="App Registration Connection Status" width="563"><figcaption></figcaption></figure>
 
-For more information about the API permissions required for the Publisher, see: [API Permissions](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/api-permissions.md).
+For more information about the API permissions required for the Publisher, see: [API Permissions](../../../requirements/intune-requirements/entra-id-app-registration/application-permissions.md).
 
 {% hint style="danger" %}
 **Important**

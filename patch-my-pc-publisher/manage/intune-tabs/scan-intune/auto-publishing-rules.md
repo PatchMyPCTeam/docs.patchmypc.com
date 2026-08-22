@@ -38,11 +38,11 @@ This option is typically used in environments that want **application lifecycle 
 
 ### Auto-enabled Products and Assignment Inheritance
 
-When products are automatically enabled by auto-publishing rules based on the configured device threshold, any Intune assignments configured at the [All Products Level](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md#all-products-level) or [Vendor Level](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md#vendor-level) in the [product tree ](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md)are not inherited by newly enabled products. Newly detected products are enabled for publishing only and do not automatically receive existing assignment configurations.
+When products are automatically enabled by auto-publishing rules based on the configured device threshold, any Intune assignments configured at the **All Products Level** or **Vendor** level in the [Product Tree](../../../fundamentals/product-tree/working.md) are not inherited by newly enabled products. Newly detected products are enabled for publishing only and do not automatically receive existing assignment configurations.
 
 Customers should review the publishing reports after each synchronization to identify products that were automatically enabled. After reviewing the report, configure the desired assignments directly on those products in the Publisher.
 
-Alternatively, customers can use the [Manage Dynamic Assignments](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-dynamic-assignments.md) right-click customization option to automatically apply assignments to autopublished Intune updates. For more information, see [Auto-Enabled Products and Dynamic Assignments](auto-publishing-rules.md#auto-enabled-products-and-dynamic-assignments).
+Alternatively, customers can use the [Manage Assignments](../../../customizations/list-customizations/manage-assignments/) right-click customization option to automatically apply assignments to auto-published Intune updates. For more information, see [Auto-Enabled Products and Dynamic Assignments](auto-publishing-rules.md#auto-enabled-products-and-dynamic-assignments).
 
 {% hint style="danger" %}
 **Important**
@@ -52,7 +52,7 @@ Reapplying assignments at a higher level in the product tree to force inheritanc
 
 ### Auto-Enabled Products and Dynamic Assignments
 
-Customers can use the [Manage Dynamic Assignments](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-dynamic-assignments.md) right-click customization option, at the All Products level, for **Intune Updates** to automatically apply assignments to auto published updates. This provides a way to automate assignment behavior for newly enabled products.
+Customers can use the [Manage Assignments](../../../customizations/list-customizations/manage-assignments/) right-click customization option, at the All Products level, for **Intune Updates** to automatically apply assignments to auto published updates. This provides a way to automate assignment behavior for newly enabled products.
 
 Dynamic Assignments are evaluated only for products that are currently enabled in the Publisher product tree on the **Intune Updates** tab and only for the current version of a product at the time it is published. When Dynamic Assignments are used together with auto publishing rules, there is a timing consideration. During the first synchronization, auto publishing rules enable the product and publish the update. Because the product was not enabled at the start of the synchronization, Dynamic Assignment evaluation does not occur at that time.
 
@@ -77,7 +77,7 @@ While it may be tempting to set the device threshold to a very low number, even 
 A common and effective approach is:
 
 1. Use the Scan Wizard to identify products currently installed in your environment
-2. Enable the products from the scan wizard [query ](auto-publishing-rules.md#query)window or [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) and [customize](../../../../patch-my-pc-publisherv2/customizations-right-click-options/) those products from the product tree (conflicting processes, content options, etc.)
+2. Enable the products from the scan wizard [query](query-button.md) window or [Product Tree](../../../fundamentals/product-tree/working.md) and [customize](../../../customizations/) those products from the product tree (conflicting processes, content options, etc.)
 3. Enable auto-publishing rules to catch newly introduced applications over time
 
 This allows you to remain in control initially, while still benefiting from automation going forward.

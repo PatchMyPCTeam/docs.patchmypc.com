@@ -9,7 +9,7 @@ The **Publishing Options** section in Patch My PC (PMPC) Publisher controls how 
 {% hint style="success" %}
 **Tip**
 
-Some options in the **Intune Win32 Application Options** section are global defaults. These settings can be overridden at the **vendor** or **product** level within the [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md). When a more specific customization exists at a lower level, it takes precedence over the global setting, following standard product tree inheritance behavior.
+Some options in the **Intune Win32 Application Options** section are global defaults. These settings can be overridden at the **vendor** or **product** level within the [Product Tree](../../../fundamentals/product-tree/working.md). When a more specific customization exists at a lower level, it takes precedence over the global setting, following standard product tree inheritance behavior.
 {% endhint %}
 
 ## Digitally sign the detection method script and enforce signature checking on the application in Intune
@@ -131,7 +131,7 @@ The Publisher tracks application retention based on catalog metadata, which incl
 
 If older Win32 applications exist in Intune that fall outside of the last 10 tracked versions, the Publisher can no longer associate them with the product lifecycle. Even if retention is enabled, those older applications are not automatically managed or removed.
 
-In these cases, any applications that fall outside the tracked window must be reviewed and cleaned up manually using the [Intune Application Manager](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/form-controls/intune-application-manager.md).
+In these cases, any applications that fall outside the tracked window must be reviewed and cleaned up manually using the [Intune Manager](../intune-manager.md).
 {% endhint %}
 
 ### Retention Best Practice

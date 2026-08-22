@@ -17,7 +17,7 @@ While the form control itself is shared, manually selecting products in the quer
 {% hint style="success" %}
 **Tip**
 
-This form control will use the Entra ID App Registration, configured from the [Options](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/options/) button, to connect to Microsoft Graph to retrieve data from the Intune Reporting Endpoint. For more details about the required API permissions and authentication options, see [Entra ID App Registration](../../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/entra-id-app-registration/).
+This form control will use the Entra ID App Registration, configured from the [Intune Options](../intune-options/) tab, to connect to Microsoft Graph to retrieve data from the Intune Reporting Endpoint. For more details about the required API permissions and authentication options, see [Entra ID App Registration](../../../requirements/intune-requirements/entra-id-app-registration/).
 {% endhint %}
 
 The following actions can be configured from the **Scan Intune** tab:
