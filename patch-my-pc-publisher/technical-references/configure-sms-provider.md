@@ -40,7 +40,7 @@ Restricting firewall access to only a specific site system with the SMS Provider
 
 ## Required Software
 
-To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/software.md) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is not installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
+To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../requirements/configmgr-requirements/software.md#configmgr-remote-console) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is not installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
 
 <figure><img src="../../.gitbook/assets/image (74).png" alt="ConfigMgr Remote Console Missing" width="450"><figcaption></figcaption></figure>
 

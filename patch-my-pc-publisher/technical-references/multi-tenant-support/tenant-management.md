@@ -22,7 +22,7 @@ To add a new Tenant:
 
 <figure><img src="../../../.gitbook/assets/image (4110).png" alt="Intune Options form opened when adding a new tenant" width="563"><figcaption></figcaption></figure>
 
-2. Complete the configuration by following [Scenario 4: Intune Applications and Updates](../../../patch-my-pc-publisherv2/scenario-based-guidance/installation-and-configuration/scenario-4-intune-applications-and-updates.md)   . Specifically **Steps 7 through 14**.
+2. Complete the configuration by following [Scenario 4: Intune Applications and Updates](../../../patch-my-pc-publisherv2/scenario-based-guidance/installation-and-configuration/scenario-4-intune-applications-and-updates.md) . Specifically **Steps 7 through 14**.
 
 {% hint style="info" %}
 **Note**
@@ -30,8 +30,6 @@ To add a new Tenant:
 Steps 7 through 14 cover configuring authentication and core application settings for the new tenant, validating the connection, and enabling required publishing options.
 
 This includes entering the Tenant Friendly Name, configuring the Entra ID application details and credential, reviewing and adjusting Application Options, and testing the connection.
-
-
 {% endhint %}
 
 3. Once the Intune Options have been configured, click **OK** to close the form and return to the main Publisher window.
@@ -41,12 +39,12 @@ This includes entering the Tenant Friendly Name, configuring the Entra ID applic
 {% hint style="danger" %}
 **Important**
 
-During the save process, the main product tree refreshes and the first tenant in the tenant drop down list is automatically reselected.
+During the save process, the main product tree refreshes, and the first tenant in the tenant dropdown list is automatically reselected.
 
-After the refresh completes, ensure you manually select the newly created tenant from the drop down list before continuing with product selections and customizations.
+After the refresh completes, ensure you manually select the newly created tenant from the dropdown list before continuing with product selections and customizations.
 {% endhint %}
 
-4. Select the required products in the [product tree](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) for the newly added tenant.
+4. Select the required products in the [Product Tree](../../fundamentals/product-tree/working.md) for the newly added tenant.
 
 {% hint style="info" %}
 **Note**
@@ -54,7 +52,7 @@ After the refresh completes, ensure you manually select the newly created tenant
 Product selections apply only to the currently selected tenant.
 {% endhint %}
 
-5. Configure any required right-click customizations. For detailed guidance, see [Customizations (Right-Click Options)](../../../patch-my-pc-publisherv2/customizations-right-click-options/).
+5. Configure any required right-click customizations. For detailed guidance, see [Customizations (Right-Click Options)](../../customizations/).
 
 ## Delete a Tenant
 
@@ -112,9 +110,9 @@ Exports from a multi-tenant Publisher instance cannot be imported into another m
 
 To import a tenant configuration from another Publisher instance:
 
-1. Export the Publisher configuration from the source Publisher instance. See Export Settings in [Backup and Restore Settings](../../../patch-my-pc-publisherv2/administration/advanced/backup-and-restore-settings.md) for more details.
+1. Export the Publisher configuration from the source Publisher instance. See Export Settings in [Backup and Restore Settings](../../manage/advanced-tab/backup-restore-settings.md) for more details.
 2. Click the **Import Intune Tenants** button.
-3. Browse to the exported file from the source Publisher instance. If the file was exported from another Publisher instance as a .cab file, change the file type filter to .cab.&#x20;
+3. Browse to the exported file from the source Publisher instance. If the file was exported from another Publisher instance as a .cab file, change the file type filter to .cab.
 
 <figure><img src="../../../.gitbook/assets/image (4114).png" alt="Select the correct file type filter" width="563"><figcaption></figcaption></figure>
 
@@ -135,8 +133,6 @@ To import a tenant configuration from another Publisher instance:
 Client Secrets are securely salted on the source Publisher instance and cannot be restored to a different Publisher instance. Certificates are also not transferred during export and import.
 
 After importing a tenant, review the selected client authentication method and reconfigure the App Secret or App Certificate as required before testing the connection or enabling publishing.
-
-
 {% endhint %}
 
 8. Once the Intune Options have been configured, click **OK** to close the form and return to the main Publisher window.
@@ -151,13 +147,13 @@ During the save process, the main product tree refreshes and the first tenant in
 After the refresh completes, ensure you manually select the newly created tenant from the drop down list before continuing with product selections and customizations.
 {% endhint %}
 
-9. Review the selected products in the [product tree](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) for the imported tenant.
-10. Review and configure any required right-click customizations. For detailed guidance, see [Customizations (Right-Click Options)](../../../patch-my-pc-publisherv2/customizations-right-click-options/).
+9. Review the selected products in the [Product Tree](../../fundamentals/product-tree/working.md) for the imported tenant.
+10. Review and configure any required right-click customizations. For detailed guidance, see [Customizations (Right-Click Options)](../../customizations/).
 
 {% hint style="info" %}
 **Note**
 
-For full consideration of items that are not included in an export or backup, see [Backup and Restore](../../../patch-my-pc-publisherv2/administration/advanced/backup-and-restore-settings.md).
+For full consideration of items that are not included in an export or backup, see [Backup and Restore](../../manage/advanced-tab/backup-restore-settings.md).
 
 Certain items are not contained within the exported configuration file. This includes external or supplemental content such as additional files and custom images, for example branding images used for the Managed Client Processes feature.
 
@@ -174,7 +170,7 @@ To Import Multiple Tenants:
 
 1. Ensure each tenant configuration was exported from a supported single tenant Publisher instance (typically licensed with the Enterprise Plus or Enterprise Premium SKU).
 2. On the target multi-tenant Publisher instance, click the **Import Intune Tenant** button.
-3.   Browse to the exported files from the source Publisher instance. If the files were exported from another Publisher instance as a .cab file, change the file type filter to .cab.
+3. Browse to the exported files from the source Publisher instance. If the files were exported from another Publisher instance as a .cab file, change the file type filter to .cab.
 
 <figure><img src="../../../.gitbook/assets/image (4117).png" alt="Import multiple tenants" width="563"><figcaption></figcaption></figure>
 
@@ -193,7 +189,7 @@ In a multi-tenant Publisher configuration, the Intune Apps and Intune Updates ta
 
 Use the tenant drop down box at the top of the Intune Apps or Intune Updates tab to select the tenant you want to manage. All product selections, customizations, and publishing options apply only to the currently selected tenant.
 
-The Options button also corresponds to the selected tenant. When you open [Intune Options](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/options/), you are viewing and modifying authentication settings and application options for that specific tenant only.
+The Options button also corresponds to the selected tenant. When you open [Intune Options](../../manage/intune-tabs/intune-options/), you are viewing and modifying authentication settings and application options for that specific tenant only.
 
 There are no global Intune configuration settings that can be applied across all tenants simultaneously. Product selections, right click customizations, and publishing behavior must be configured individually for each tenant.
 
@@ -206,5 +202,5 @@ If you are an MSP interested in centralized application sets or shared configura
 {% hint style="info" %}
 **Note**
 
-For tenant specific email and webhook configuration, see [Notifications](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/multi-tenant/notifications.md).
+For tenant specific email and webhook configuration, see [Notifications](notification-support.md).
 {% endhint %}

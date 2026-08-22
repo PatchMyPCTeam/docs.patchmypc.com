@@ -10,7 +10,7 @@ This article has not been updated for Version 3.x. Once it has, this banner will
 
 The **Cloud** tab of Patch My PC (PMPC) Publisher allows you to connect the Publisher to your Patch My PC Cloud company. This connection enables the use of custom applications created in Patch My PC Cloud within the Publisher.
 
-<figure><img src="../../../.gitbook/assets/image (4120).png" alt="Cloud Tab" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (753).png" alt="&#x27;Cloud&#x27; tab" width="563"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**
@@ -42,7 +42,7 @@ To use custom apps in Patch My PC Cloud, an **MSP Plus**, **Enterprise Plus**, o
 
 **MSP Plus** customers will typically use Patch My PC Cloud to deliver applications and updates directly to their customers. However, there may be scenarios where an MSP Plus customer still requires the Publisher instance for a specific customer or use case. In this scenario, the recommended approach is:
 
-* Create and manage custom applications in the MSP parent Patch My PC Cloud company. See the Publisher [Cloud page](../../../patch-my-pc-publisherv2/administration/cloud.md) for more details on hot to connect the Publisher to a Patch My PC Cloud Company.
+* Create and manage custom applications in the MSP parent Patch My PC Cloud company. See the Publisher [Cloud page](../../manage/cloud-tab/) for more details on how to connect the Publisher to a Patch My PC Cloud Company.
 * Once connected, the Publisher can access and publish the custom applications created in the MSP Cloud company.
 * This model ensures that custom apps are centrally managed in Patch My PC Cloud while still allowing publication through the Publisher when required.
 
