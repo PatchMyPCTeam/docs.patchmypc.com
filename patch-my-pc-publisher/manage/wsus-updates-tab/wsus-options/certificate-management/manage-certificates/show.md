@@ -6,8 +6,6 @@ The **Show Certificate** option in Patch My PC (PMPC) Publisher displays detaile
 
 This view allows you to verify that a valid certificate is selected, confirm its trust status, and ensure it meets the signing requirements of Microsoft WSUS and ConfigMgr.
 
-## Show a Certificate
-
 To show a certificate:
 
 1. Load Publisher.

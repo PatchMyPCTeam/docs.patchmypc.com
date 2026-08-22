@@ -42,7 +42,7 @@ To achieve this:
 * This forces ConfigMgr to immediately re-evaluate WSUS categories
 * The Patch My PC category becomes visible straight away
 
-This functionality is documented in the [ConfigMgr Component Management](../../../../patch-my-pc-publisherv2/administration/updates/options/configmgr-component-management.md) section and is useful during initial setup to speed up onboarding.
+This functionality is documented in the [ConfigMgr Component Management](configmgr-component-management.md) section and is useful during initial setup to speed up onboarding.
 
 ## Logging
 

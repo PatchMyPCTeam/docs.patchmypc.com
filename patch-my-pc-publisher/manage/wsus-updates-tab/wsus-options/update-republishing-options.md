@@ -11,7 +11,7 @@ Common scenarios that require republishing include updates where customizations 
 {% hint style="success" %}
 **Tip**
 
-For more information on Republishing, see [Customizations](../../../../patch-my-pc-publisherv2/customizations-right-click-options/).
+For more information on Republishing, see [Customizations](../../../customizations/).
 {% endhint %}
 
 By default, when an update is republished, the Publisher appends a timestamp to the update name indicating when the republish occurred. This makes it clear in the ConfigMgr console that the update is a republished revision and shows the exact date and time of the republish. The example shown in the image above demonstrates how a republished Google Chrome update would appear with this appended information.

@@ -10,4 +10,4 @@ Patch My PC (PMPC) Publisher also relies on the SMS Provider to perform operatio
 
 The SMS Provider configuration is shared across the Publisher. When you configure the SMS Provider from **Updates > Options**, the same settings are automatically used in other areas of the product, including **ConfigMgr Apps > Options** and the **Sync Schedule** tab.
 
-For information on how to configure the SMS Provider connection, please see: [Configure the SMS Provider Connection](../../../../patch-my-pc-publisherv2/publisher-reference/configure-the-sms-provider-connection.md).
+For information on how to configure the SMS Provider connection, please see: [Configure the SMS Provider Connection](../../../technical-references/configure-sms-provider.md).

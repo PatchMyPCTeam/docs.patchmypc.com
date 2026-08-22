@@ -82,7 +82,7 @@ WSUS standalone environments or ConfigMgr environments where self-signed certifi
 {% hint style="info" %}
 **Note**
 
-See [Generate a Self-Signed Certificate](../../../../../patch-my-pc-publisherv2/administration/general/certificate-management/generate-a-self-signed-certificate.md) for more details.
+See [Create a Self-Signed Certificate](manage-certificates/create-self-signed.md) for more details.
 {% endhint %}
 
 By default, in this scenario, the generated certificate’s private key is marked as exportable. This is intentional and recommended, as it allows the certificate (including the private key) to be exported and reused if Publisher is later moved to a new top-level SUP.
