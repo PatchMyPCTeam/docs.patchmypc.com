@@ -19,7 +19,7 @@ The Query button does not enable or publish products by itself, it simply retrie
 
 <figure><img src="../../../../.gitbook/assets/image (4086).png" alt="Query Results" width="563"><figcaption></figcaption></figure>
 
-Selecting products from this list is equivalent to manually selecting the same products in the [product tree](../../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) either on the Intune Apps tab or Intune Updates tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
+Selecting products from this list is equivalent to manually selecting the same products in the [Product Tree](../../../fundamentals/product-tree/working.md) either on the Intune Apps tab or Intune Updates tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
 
 {% hint style="danger" %}
 **Important**

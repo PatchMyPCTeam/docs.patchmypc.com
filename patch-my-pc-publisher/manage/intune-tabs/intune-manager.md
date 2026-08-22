@@ -112,7 +112,7 @@ DO priority controls how quickly the content for an application is downloaded on
 For most Intune Updates, **Background** is an appropriate choice because the installation is typically not time-critical. When deploying Patch My PC applications during Autopilot, it is recommended to set DO to **Foreground**. This ensures faster content download and helps prevent delays to a user’s onboarding experience.
 {% endhint %}
 
-For more information about the various configuration options for assignments, see [Manage Assignments](../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-assignments/).
+For more information about the various configuration options for assignments, see [Manage Assignments](../../customizations/list-customizations/manage-assignments/).
 
 ### Manage ESP Associations
 
@@ -125,7 +125,7 @@ When you click this option, select the ESP profile you want the selected app(s) 
 {% hint style="info" %}
 **Note**
 
-Only classic ESP profiles are supported. This feature _does not_ apply to the newer Autopilot device preperation policies found in the Windows Autopilot configuration experience.
+Only classic ESP profiles are supported. This feature _does not_ apply to the newer Autopilot device preparation policies found in the Windows Autopilot configuration experience.
 {% endhint %}
 
 Once you have selected the profile(s), the **Select ESP Association** window displays a summary of the selected application and the ESP changes that will be applied.
@@ -149,7 +149,7 @@ If the **Enforce selected ESP Association** checkbox is enabled, the Publisher w
 If this option is not enabled, the application will only be added to the selected ESP profile and existing associations will remain unchanged.
 {% endhint %}
 
-For more information about the various configuration options for ESP associations, see [Manage ESP Profiles](../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-esp-profiles.md).
+For more information about the various configuration options for ESP associations, see [Manage Enrollment Status Page](../../customizations/list-customizations/manage-enrollment-status-page.md).
 
 ### View Assignments
 
@@ -159,7 +159,7 @@ This window provides a live view of all assignments currently configured for tha
 
 <figure><img src="../../../.gitbook/assets/image (4089).png" alt="Manage Application Assignments Form" width="563"><figcaption></figcaption></figure>
 
-For more information about the various configuration options for assignments, see [Manage Assignments](../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-assignments/).
+For more information about the various configuration options for assignments, see [Manage Assignments](../../customizations/list-customizations/manage-assignments/).
 
 #### View Installation Status
 
@@ -175,11 +175,11 @@ Selecting this option opens a read-only window and display any categories that a
 
 <figure><img src="../../../.gitbook/assets/image (4090).png" alt="Show Categories" width="413"><figcaption></figcaption></figure>
 
-For more information about the various configuration options for Categories, see [Manage Categories](../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-categories.md).
+For more information about the various configuration options for Categories, see [Manage Categories](../../customizations/list-customizations/manage-categories.md).
 
 ### Extract Package
 
-There is a configurable option in the Publisher, on the [Advanced ](../../../patch-my-pc-publisherv2/administration/advanced/)tab, to store the encryption keys used to create the Intune package files (.intunewin).
+There is a configurable option in the Publisher, on the [Advanced](../advanced-tab/) tab, to store the encryption keys used to create the Intune package files (.intunewin).
 
 With the keys stored, you can use the Intune Application Manager to download and extract the content of the Patch My PC published Intune applications and updates.
 
