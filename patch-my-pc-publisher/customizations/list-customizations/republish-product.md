@@ -17,7 +17,7 @@ Republishing recreates the underlying content rather than issuing a simple metad
 {% hint style="info" %}
 **Note**
 
-See the [Update Republishing Options](../../../patch-my-pc-publisherv2/administration/updates/options/update-republishing-options.md) for more information on how to configure republished update behavior for WSUS updates.
+See the [Update Republishing Options](../../manage/wsus-updates-tab/wsus-options/update-republishing-options.md) for more information on how to configure republished update behavior for WSUS updates.
 {% endhint %}
 
 ## When to Use Republish
@@ -55,7 +55,7 @@ After confirmation, you are prompted to choose whether the new update should sup
 
 <figure><img src="../../../.gitbook/assets/image (4070).png" alt="Supersede Previous Published Update(s) confirmation" width="446"><figcaption></figcaption></figure>
 
-If you prefer older updates to be expired instead of superseded, this can be done manually using the [Modify Published Updates](../../../patch-my-pc-publisherv2/administration/updates/options/modify-published-updates.md) wizard in the Publisher.
+If you prefer older updates to be expired instead of superseded, this can be done manually using the [Modify Published Updates](../../manage/wsus-updates-tab/wsus-options/modify-published-updates.md) wizard in the Publisher.
 
 {% hint style="danger" %}
 **Important**

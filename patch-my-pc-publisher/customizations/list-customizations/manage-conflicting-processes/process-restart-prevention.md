@@ -4,12 +4,6 @@ _Applies to: Patch My PC Publisher V3.x_\
 _&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
 _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Process Restart Prevention** option prevents the end user from reopening the application whilst the update is in progress. This helps avoid scenarios where the application is closed for the update but immediately relaunched, which could cause the installation to fail or be delayed.
 
 <figure><img src="../../../../.gitbook/assets/image (750).png" alt="&#x27;Process Restart Prevention&#x27; setting" width="501"><figcaption></figcaption></figure>

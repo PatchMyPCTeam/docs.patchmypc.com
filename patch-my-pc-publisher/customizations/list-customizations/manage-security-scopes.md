@@ -34,5 +34,5 @@ If you are using a custom ConfigMgr security role for the Publisher in a remote 
 * Application > Set Security Scope
 * Security Scopes > Read
 
-If you are using the Patch My PC security role that is created when [configuring the SMS Provider](../../../patch-my-pc-publisherv2/publisher-reference/configure-the-sms-provider-connection.md#option-2-import-security-roles) integration, these permissions are already included.
+If you are using the Patch My PC security role that is created when [configuring the SMS Provider](../../technical-references/configure-sms-provider.md) integration, these permissions are already included.
 {% endhint %}

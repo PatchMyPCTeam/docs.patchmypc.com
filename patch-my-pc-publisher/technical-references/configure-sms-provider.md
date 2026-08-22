@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**IMPORTANT**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **SMS Provider** is the interface that enables all interactions with Microsoft ConfigMgr, including actions performed in the ConfigMgr console and through supported APIs. The Patch My PC (PMPC) Publisher also relies on the SMS Provider to perform operations such as triggering SUP synchronizations, creating and modifying applications, and distributing content.
 
 Configuring the SMS Provider connection is therefore a foundational step for enabling the Publisher to interact with ConfigMgr.
@@ -32,7 +26,7 @@ You can identify which site systems host the SMS Provider site system role by na
 {% hint style="info" %}
 **Note**
 
-When connecting to ConfigMgr, either using the Publisher or the ConfigMgr remote console, the SMS Provider you connect to isn’t always the one you specified. The site server ultimately decides which SMS Provider instance is used.&#x20;
+When connecting to ConfigMgr, either using the Publisher or the ConfigMgr remote console, the SMS Provider you connect to isn’t always the one you specified. The site server ultimately decides which SMS Provider instance is used.
 
 Even if multiple SMS Providers exist, the ConfigMgr site server’s boundaries and role placement determine the connection endpoint. This is the same behavior the ConfigMgr console uses when it discovers and connects to an SMS Provider.
 
@@ -60,7 +54,7 @@ Access to the SMS Provider is controlled entirely by ConfigMgr security roles an
 
 ### **When no action is required (most common scenario)**
 
-If the Publisher is installed on the ConfigMgr site server, and that server is also hosting the **SMS Provider role** (the most common deployment), no additional permission configuration is required. The Publisher runs under the local SYSTEM account and connects to the SMS Provider locally, using the same path as the ConfigMgr console would.&#x20;
+If the Publisher is installed on the ConfigMgr site server, and that server is also hosting the **SMS Provider role** (the most common deployment), no additional permission configuration is required. The Publisher runs under the local SYSTEM account and connects to the SMS Provider locally, using the same path as the ConfigMgr console would.
 
 ### **When additional configuration is required**
 

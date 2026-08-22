@@ -12,7 +12,7 @@ Instead of leaving newly created applications in the default Applications root n
 
 ## Override Behavior
 
-This option will override the global [Move applications to a specific console folder](../../../patch-my-pc-publisherv2/administration/configmgr-apps/options/application-creation-options.md#move-applications-to-a-specific-console-folder) ConfigMgr setting. This lets you group apps in a way that makes sense for your environment, for example, placing all Google products in a **Google** folder, or isolating test applications in a separate folder structure.
+This option will override the global [Move applications to a specific console folder](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md#move-applications-to-a-specific-console-folder) ConfigMgr setting. This lets you group apps in a way that makes sense for your environment, for example, placing all Google products in a **Google** folder, or isolating test applications in a separate folder structure.
 
 ### Configure a Custom Folder
 

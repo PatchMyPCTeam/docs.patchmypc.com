@@ -15,7 +15,7 @@ Some vendor installers can generate their own installation logs, most commonly M
 
 This option only affects vendor logging behavior. The Patch My PC ScriptRunner logs are created regardless of whether this option is enabled.
 
-More information on log files and locations can be found [https://docs.patchmypc.com/get-help/log-reference-guide](https://docs.patchmypc.com/get-help/log-reference-guide).
+More information on log files and locations can be found [Log Reference Guide for Patch My PC Products](https://docs.patchmypc.com/get-help/log-reference-guide).
 {% endhint %}
 
 The **Logging Options** dialog provides the following options.
@@ -32,7 +32,7 @@ Specifies the location where client side installation logs are written. The defa
 {% hint style="danger" %}
 **Important**
 
-User-based installations write logs to folders within the user profile. More information on log files and locations can be found [https://docs.patchmypc.com/get-help/log-reference-guide](https://docs.patchmypc.com/get-help/log-reference-guidehttps://docs.patchmypc.com/get-help/log-reference-guide).
+User-based installations write logs to folders within the user profile. More information on log files and locations can be found [Log Reference Guide for Patch My PC Products](https://docs.patchmypc.com/get-help/log-reference-guide).
 {% endhint %}
 
 ## **Enable verbose logging for MSI installation**

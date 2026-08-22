@@ -2,8 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-## Overview
-
 Patch My PC (PMPC) Publisher can run under a group Managed Service Account (gMSA), which can be useful when the Publisher service must access network resources that do not work well with the local SYSTEM or computer account identity.
 
 The most common example is an authenticated proxy used for downloads. By default, the Publisher service runs as local SYSTEM. When running as local SYSTEM, outbound network access uses the computer account identity. Some proxy solutions do not support or do not allow authentication from computer identities such as `DOMAIN\SERVER$`, but do allow authentication from domain service accounts.

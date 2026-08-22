@@ -54,7 +54,7 @@ Token values are populated from the Publisher catalog definition. These values a
 {% hint style="warning" %}
 **Important**
 
-If the ConfigMgr apps global option to [Do not include the version in the application name](../../../patch-my-pc-publisherv2/administration/configmgr-apps/options/application-creation-options.md#do-not-include-the-version-in-the-application-name) is enabled, the **%OriginalName%** token will also omit the version number. In this scenario, the original name resolves to the product name and variant/architecture only, without the version suffix.
+If the ConfigMgr apps global option to [Do not include the version in the application name](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md#do-not-include-the-version-in-the-application-name) is enabled, the **%OriginalName%** token will also omit the version number. In this scenario, the original name resolves to the product name and variant/architecture only, without the version suffix.
 {% endhint %}
 
 ## **Configure** Custom Application Properties
@@ -74,4 +74,4 @@ To configure Custom Application Properties:
 
 <figure><img src="../../../.gitbook/assets/image (77).png" alt="Show default description" width="557"><figcaption></figcaption></figure>
 
-The custom properties are applied during the next Publisher [synchronization](../../../patch-my-pc-publisherv2/administration/sync-schedule.md) and affect newly created and updated applications for that product.
+The custom properties are applied during the next Publisher [synchronization](../../manage/sync-schedule-tab/) and affect newly created and updated applications for that product.

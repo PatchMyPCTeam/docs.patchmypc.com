@@ -31,4 +31,4 @@ Use the process list to define which running executables are treated as conflict
 
 Click this button to open the **Conflicting Process UI Settings** window to customize the end user notification experience shown when an application must be closed to complete an update.
 
-For detailed configuration steps and examples, see [Branding Configuration](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-conflicting-processes/branding-configuration.md).
+For detailed configuration steps and examples, see [Conflicting Process UI Settings](conflicting-process-ui-settings-window.md).

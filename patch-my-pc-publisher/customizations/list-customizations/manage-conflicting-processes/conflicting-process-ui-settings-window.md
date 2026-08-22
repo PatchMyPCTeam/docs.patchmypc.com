@@ -13,7 +13,7 @@ These settings allow you to control branding, organization identity, language, a
 {% hint style="info" %}
 **Note**
 
-The **Conflicting Process UI Settings** window is leveraged when the [Notify the user to close the application](../../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-conflicting-processes/setting-configuration.md#notify-the-user-to-close-the-application) policy is selected.
+The **Conflicting Process UI Settings** window is leveraged when the [Notify the user to close the application](policy-section.md#notify-the-user-to-close-the-application) policy is selected.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -24,7 +24,7 @@ Branding and localization settings are global. You cannot configure different br
 For customers using an **MSP** or **MSP Plus** license with multiple Intune tenants configured, branding and localization settings are global **per tenant**. Each configured tenant maintains its own branding configuration, but all applications and updates within that tenant share the same branding and localization settings.
 {% endhint %}
 
-## Is a seperate Client or Agent required to show the Notification?
+## Is a separate Client or Agent required to show the Notification?
 
 No. A separate client or agent is not required to display conflicting process notifications.
 
@@ -41,7 +41,7 @@ In the example below, the highlighted files show the components involved in disp
 {% hint style="danger" %}
 **Important**
 
-Any changes made to branding or notification content apply to newly published applications and updates. Existing deployments must be [republished](../../../../patch-my-pc-publisherv2/customizations-right-click-options/republish-during-next-sync-schedule.md) for updated branding settings to be included.
+Any changes made to branding or notification content apply to newly published applications and updates. Existing deployments must be [republished](../republish-product.md) for updated branding settings to be included.
 {% endhint %}
 
 ## Company Logo

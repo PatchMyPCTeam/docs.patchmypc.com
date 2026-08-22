@@ -6,7 +6,7 @@ _&#x41;vailable on tab: Intune Updates_
 
 The **Manage Automatic Deployment Rules** right-click option in Patch My PC (PMPC) Publisher allows you to automatically create Intune assignments for newly published updates based on predefined catalog criteria.
 
-Instead of assigning every update to the same Entra groups, Dynamic Assignments evaluates each update during a Publisher [synchronization](../../../patch-my-pc-publisherv2/administration/sync-schedule.md) and applies assignments only when the update matches your configured rules. This enables targeted deployment based on update attributes rather than static grouping.
+Instead of assigning every update to the same Entra groups, Dynamic Assignments evaluates each update during a Publisher [synchronization](../../manage/sync-schedule-tab/) and applies assignments only when the update matches your configured rules. This enables targeted deployment based on update attributes rather than static grouping.
 
 {% hint style="info" %}
 **Note**
@@ -25,7 +25,7 @@ This approach allows different updates to follow different deployment paths base
 {% hint style="danger" %}
 **Important**
 
-Intune only allows a single assignment per app per group. If the same group is targeted by both a static assignment, through the [Manage Assignments right-click option](../../../patch-my-pc-publisherv2/customizations-right-click-options/manage-assignments/), and a dynamic assignment, the dynamic assignment will take precedence.
+Intune only allows a single assignment per app per group. If the same group is targeted by both a static assignment, through the [Manage Assignments right-click option](manage-assignments/), and a dynamic assignment, the dynamic assignment will take precedence.
 {% endhint %}
 
 ## Evaluation Criteria
@@ -54,7 +54,7 @@ In practical terms, this means an update must meet all selected criteria types, 
 
 Dynamic Assignments are evaluated **only for products that are currently enabled** in Publisher Product Tree and **only for the current version of a product** at the time it is published.
 
-When Dynamic Assignments are used together with [**auto publishing rules**](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/form-controls/scan-intune-for-supported-products.md#auto-publishing-rules), there is an important timing consideration. During the first Publisher synchronization, auto publishing rules enable the product and publish the update. Because the product was not enabled at the start of the sync, Dynamic Assignment evaluation does not occur at that time.
+When Dynamic Assignments are used together with [auto publishing rules](../../manage/intune-tabs/scan-intune/auto-publishing-rules.md), there is an important timing consideration. During the first Publisher synchronization, auto publishing rules enable the product and publish the update. Because the product was not enabled at the start of the sync, Dynamic Assignment evaluation does not occur at that time.
 
 A **second Publisher synchronization** is required for Dynamic Assignments to evaluate the newly enabled product and determine whether the update meets the configured criteria for assignment.
 
