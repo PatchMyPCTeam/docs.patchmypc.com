@@ -13,9 +13,9 @@ The **Scan ConfigMgr Database for Supported Products** form control is only appl
 {% hint style="danger" %}
 **Important**
 
-The **Scan ConfigMgr Database for Supported Products** form control is shared with the same form control available on the [ConfigMgr Apps tab](../../../patch-my-pc-publisherv2/administration/configmgr-apps/) and behaves identically in both locations. As a result, the form control on the Updates tab can be used to configure and control auto-publishing behavior on the ConfigMgr Apps tab, and vice versa.
+The **Scan ConfigMgr Database for Supported Products** form control is shared with the same form control available on the [ConfigMgr Apps tab](../configmgr-apps-tab/) and behaves identically in both locations. As a result, the form control on the Updates tab can be used to configure and control auto-publishing behavior on the ConfigMgr Apps tab, and vice versa.
 
 While the form control itself is shared, manually selecting products in the [query](scan-configmgr.md#query) results only enables them on the tab from which the form was launched. For example, launching the scan wizard from the Updates tab enables products for updates, whereas launching it from the ConfigMgr Apps tab enables products as applications.
 {% endhint %}
 
-For more detailed instructions on using this form control, see [Scan ConfigMgr Database for Supported Products](../../../patch-my-pc-publisherv2/administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md) under the [ConfigMgr Apps tab](../../../patch-my-pc-publisherv2/administration/configmgr-apps/) documentation.
+For more detailed instructions on using this form control, see [Scan ConfigMgr Database for Supported Products](../configmgr-apps-tab/scan-configmgr.md) under the [ConfigMgr Apps tab](../configmgr-apps-tab/) documentation.
