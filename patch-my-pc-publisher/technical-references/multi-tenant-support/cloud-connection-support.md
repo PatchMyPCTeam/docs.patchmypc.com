@@ -48,7 +48,7 @@ To use custom apps in Patch My PC Cloud, an **MSP Plus**, **Enterprise Plus**, o
 
 ## Custom App Availability
 
-All custom applications created in the MSP parent Patch My PC Cloud company are made available in the Publisher under the [All Custom Products](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) node. These custom applications are visible in both the Intune Apps and Intune Updates tabs.
+All custom applications created in the MSP parent Patch My PC Cloud company are made available in the Publisher under the [All Custom Products](../../fundamentals/product-tree/working.md) node. These custom applications are visible in both the Intune Apps and Intune Updates tabs.
 
 Because the Cloud connection is established at the Publisher instance level and not per tenant, the same set of custom applications is visible across all tenants configured in the Publisher.
 

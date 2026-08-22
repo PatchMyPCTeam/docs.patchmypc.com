@@ -12,7 +12,7 @@ In a multi-tenant configuration, Patch My PC )PMPC) Publisher notification behav
 
 ## Email Notifications
 
-Only a single email configuration, on the [Alerts tab](../../../patch-my-pc-publisherv2/administration/alerts/), can be defined for the entire Publisher instance. This configuration applies to all tenants.
+Only a single email configuration, on the [Alerts](../../manage/alerts-tab/) tab, can be defined for the entire Publisher instance. This configuration applies to all tenants.
 
 If an MSP enables email notifications, the configured email address will receive a single notification after each synchronization cycle. That email will contain publishing details for all tenants processed during that sync.
 
@@ -49,4 +49,4 @@ Within the webhook configuration window, use the **Tenant Selection** section to
 
 This provides granular control over how and where notifications are delivered in a multi-tenant Publisher scenario.
 
-For detailed guidance on how to create and configure a webhook in the Publisher, see [Webhook Notifications](../../../patch-my-pc-publisherv2/administration/alerts/webhook-notifications/).
+For detailed guidance on how to create and configure a webhook in the Publisher, see [Webhook Notifications](../../manage/alerts-tab/webhooks-tab/).
