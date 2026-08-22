@@ -12,9 +12,9 @@ These settings control communication with the SMS Provider and establish the roo
 
 The **SMS Provider** is the interface that enables all interactions with ConfigMgr, including actions performed in the ConfigMgr console and through supported APIs. The Publisher also relies on the SMS Provider to perform operations such as triggering SUP synchronizations, creating and modifying applications, and distributing content.
 
-The SMS Provider configuration is shared across the Publisher. When you configure the SMS Provider from [ConfigMgr Apps > Options](../../../../patch-my-pc-publisherv2/administration/configmgr-apps/options/), the same settings are automatically used in other areas of the product, including [Updates > Options](../../../../patch-my-pc-publisherv2/administration/updates/options/) and the [Sync Schedule](../../../../patch-my-pc-publisherv2/administration/sync-schedule.md) tab.
+The SMS Provider configuration is shared across the Publisher. When you configure the SMS Provider from [ConfigMgr Apps > Options](../), the same settings are automatically used in other areas of the product, including [WSUS Updates > Options](../../wsus-updates-tab/wsus-options/) and the [Sync Schedule](../../sync-schedule-tab/) tab.
 
-To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../../../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/software.md) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is _not_ installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
+To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../../../requirements/configmgr-requirements/software.md#configmgr-remote-console) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is _not_ installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
 
 <figure><img src="../../../../.gitbook/assets/image (725).png" alt="Missing ConfigMgr Remote Console" width="563"><figcaption></figcaption></figure>
 
@@ -22,7 +22,7 @@ The PatchMyPC.log will also indicate when the ConfigMgr Remote Console is not in
 
 `An error occurred Error checking ConfigMgr connection: Unable to find the Assembly: AdminUI.WqlQueryEngine, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 [PatchMyPC_Core.Exceptions.ConfigApiException] HResult: -2146233088`
 
-For information on how to configure the SMS Provider connection, please see: [Configure the SMS Provider Connection](../../../../patch-my-pc-publisherv2/publisher-reference/configure-the-sms-provider-connection.md).
+For information on how to configure the SMS Provider connection, please see: [Configure the SMS Provider Connection](../../../technical-references/configure-sms-provider.md).
 
 ## Source Folder
 
@@ -58,4 +58,4 @@ The source folder structure is critical to the Publisher operations. The Publish
 Manually modifying, moving, or deleting folders within this structure can cause inconsistencies between ConfigMgr and the content source, which may lead to unexpected behavior or management issues later.
 {% endhint %}
 
-For more information on the requirements, see: [Permissions](../../../requirements/configmgr-requirements/permissions.md#content-source-folder).
+For more information on the requirements, see: [Permissions](../../../requirements/configmgr-requirements/permissions.md).

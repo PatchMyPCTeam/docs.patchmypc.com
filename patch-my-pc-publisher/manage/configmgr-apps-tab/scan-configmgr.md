@@ -2,15 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
-
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
-
 The **Scan ConfigMgr** form control of Patch My PC (PMPC) Publisher requires access to your ConfigMgr site database to inventory installed applications, via a Hardware Inventory Collection (HINV) and determine which third-party products are present in your environment. The scan results are then compared against the Patch My PC catalog to identify matches, helping you make informed decisions about which products to enable on the **ConfigMgr Apps** tab for deploying newer versions of those applications through Software Center, task sequences, or manual deployments.
-
-<figure><img src="../../../.gitbook/assets/image (4095).png" alt="Scan ConfigMgr Database for Supported Products" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -222,7 +214,7 @@ These rules rely on the same ConfigMgr database access and SQL permissions descr
 
 <figure><img src="../../../.gitbook/assets/image (4100).png" alt="Auto-Publishing Rules" width="563"><figcaption></figcaption></figure>
 
-Auto-publishing rules are evaluated during scheduled [**synchronizations**](../../../patch-my-pc-publisherv2/administration/sync-schedule.md). Each time a sync runs, the Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
+Auto-publishing rules are evaluated during scheduled [synchronizations](../sync-schedule-tab/). Each time a sync runs, the Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
 
 This automation can be extremely powerful, but it’s important to configure it thoughtfully.
 
@@ -249,7 +241,7 @@ This is particularly useful for **early visibility** of newly discovered or low-
 
 ### Auto-enable products to be published as an application
 
-When enabled, products detected in ConfigMgr inventory are automatically enabled on the [ConfigMgr Apps](../../../patch-my-pc-publisherv2/administration/configmgr-apps/) tab once they are found on at least the specified number of devices.
+When enabled, products detected in ConfigMgr inventory are automatically enabled on the [ConfigMgr Apps](./) tab once they are found on at least the specified number of devices.
 
 * This allows Patch My PC to automatically manage application creation for newly detected software
 * The same device threshold concept applies to avoid enabling applications prematurely
@@ -269,7 +261,7 @@ While it may be tempting to set the device threshold to a very low number, even 
 A common and effective approach is:
 
 1. Use the Scan Wizard to identify products currently installed in your environment
-2. Enable thes producs from the [scan wizard query window](scan-configmgr.md#query) or [product tree](../../../patch-my-pc-publisherv2/administration/configmgr-apps/product-tree.md) and [customize](../../../patch-my-pc-publisherv2/customizations-right-click-options/) those products from the product tree (conflicting processes, content options, etc.)
+2. Enable these producs from the [scan wizard query window](scan-configmgr.md#query) or [Product Tree](../../fundamentals/product-tree/working.md) and [customize](../../customizations/) those products from the product tree (conflicting processes, content options, etc.)
 3. Enable auto-publishing rules to catch newly introduced applications over time
 
 This allows you to remain in control initially, while still benefiting from automation going forward.
@@ -304,7 +296,7 @@ The Query button does not enable or publish products by itself, it simply retrie
 
 <figure><img src="../../../.gitbook/assets/image (4102).png" alt="Query Results" width="563"><figcaption></figcaption></figure>
 
-Selecting products from this list is equivalent to manually selecting the same products in the [product tree](../../../patch-my-pc-publisherv2/administration/configmgr-apps/product-tree.md) on the [ConfigMgr Apps](../../../patch-my-pc-publisherv2/administration/configmgr-apps/) tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
+Selecting products from this list is equivalent to manually selecting the same products in the [Product Tree](../../fundamentals/product-tree/working.md) on the **ConfigMgr Apps** tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
 
 {% hint style="danger" %}
 **Important**
@@ -318,7 +310,7 @@ The **Count** value shown for each matched product is clickable. Selecting the c
 
 <figure><img src="../../../.gitbook/assets/image (4135).png" alt="Clicking device count value" width="450"><figcaption></figcaption></figure>
 
-This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.&#x20;
+This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.
 
 Clicking **Export CSV** will generated CSV file includes the following columns:
 
@@ -344,7 +336,7 @@ To export the results to a CSV:
 
 <figure><img src="../../../.gitbook/assets/image (4133).png" alt="Apply filter to expoerted data prompt" width="300"><figcaption></figcaption></figure>
 
-3. Select the save location and enter a different file name if required,&#x20;
+3. Select the save location and enter a different file name if required,
 
 <figure><img src="../../../.gitbook/assets/image (4134).png" alt="Select the save location" width="563"><figcaption></figcaption></figure>
 

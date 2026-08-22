@@ -10,4 +10,5 @@ Third-party applications appear in the **Software Library > Application Manageme
 
 <figure><img src="../../../.gitbook/assets/image (723).png" alt="Applications appear in the Application Management view" width="563"><figcaption></figcaption></figure>
 
-Additional behavior related to application publishing can be configured using the [**Base Install Options**](base-install-options/) button on the ConfigMgr Apps tab.
+Additional behavior related to application publishing can be configured using the [Base Install Options](base-install-options/) button on the ConfigMgr Apps tab.
+

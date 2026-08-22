@@ -133,7 +133,7 @@ All applications created or updated by Publisher will now be moved to the select
 {% hint style="info" %}
 **Note**
 
-The selected console folder can be overridden at the vendor or product level using the [product tree](../../../../patch-my-pc-publisherv2/administration/configmgr-apps/product-tree.md) on the ConfigMgr Apps tab. If a folder is defined at a lower level in the tree, that more specific setting takes precedence over this global. For more information, see [Customizations (Right-Click Options)](../../../../patch-my-pc-publisherv2/customizations-right-click-options/).
+The selected console folder can be overridden at the vendor or product level using the [Product Tree](../../../technical-references/catalog-information.md) on the ConfigMgr Apps tab. If a folder is defined at a lower level in the tree, that more specific setting takes precedence over this global. For more information, see [Customizations (Right-Click Options)](../../../customizations/).
 {% endhint %}
 
 ## When a new application update is available
@@ -232,7 +232,7 @@ For example, setting this value to **1** ensures that the environment always con
 {% hint style="success" %}
 **Tip**
 
-Application retention can be adjusted at the vendor and product levels in the [product tree](../../../../patch-my-pc-publisherv2/administration/configmgr-apps/product-tree.md), allowing more granular control and will override the global setting configured.
+Application retention can be adjusted at the vendor and product levels in the [Product Tree](../../../fundamentals/product-tree/working.md), allowing more granular control and will override the global setting configured.
 
 This option is especially useful for third-party applications with a rapid release cadence, such as web browsers. Retaining additional versions makes it easier to roll back if needed using supersedence. For more information about using supersedence in ConfigMgr, see: [https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/revise-and-supersede-applications#supersedence](https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/revise-and-supersede-applications#supersedence)
 {% endhint %}
@@ -240,7 +240,7 @@ This option is especially useful for third-party applications with a rapid relea
 {% hint style="info" %}
 **Note**
 
-The Publisher tracks only the **10 most recent application versions** during synchronization. If older application versions fall outside this tracked window, the Publisher cannot automatically clean them up through application retention. These older versions must be reviewed and removed manually if cleanup is required. The recommended approach for cleanup is to use the [ConfigMgr Application Manager](../../../../patch-my-pc-publisherv2/administration/configmgr-apps/form-controls/configmgr-application-manager.md).
+The Publisher tracks only the **10 most recent application versions** during synchronization. If older application versions fall outside this tracked window, the Publisher cannot automatically clean them up through application retention. These older versions must be reviewed and removed manually if cleanup is required. The recommended approach for cleanup is to use the [App Manager](../app-manager.md).
 {% endhint %}
 
 {% hint style="danger" %}
@@ -273,7 +273,7 @@ By default, all administrative categories assigned to a ConfigMgr application ar
 
 When this option is enabled, administrative categories are removed from retained (older) application versions. Only the latest published application keeps the assigned administrative categories.
 
-For more information about assigning categories to ConfigMgr apps, see [Customizations (Right-Click Options)](../../../../patch-my-pc-publisherv2/customizations-right-click-options/).
+For more information about assigning categories to ConfigMgr apps, see [Customizations (Right-Click Options)](../../../customizations/).
 
 ### **Delete applications even if they have a deployment**
 
