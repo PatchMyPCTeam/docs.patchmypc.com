@@ -4,15 +4,46 @@ _Applies to: Patch My PC Publisher V2.x and 3.x_
 
 Details the production release history for Patch My PC (PMPC) Publisher, the most recent release being shown first.
 
+## 3.0.14.0 - 2026-08-26
+
+<details>
+
+<summary>Improvements</summary>
+
+* Lets you republish metadata-only WSUS products.
+* Updates release notes links to the maintained documentation short links.
+
+</details>
+
+<details>
+
+<summary>Fixes</summary>
+
+* Keeps products visible when they require ARM64 only.
+* Prevents icon caching from locking out the configured proxy service account.
+
+
+
+* Keeps the WSUS Full Content setting at its own scope.
+* Keeps weekly sync schedules from skipping a week after a service restart or upgrade.
+* Uses your explicit “Perform the installation” choice instead of the MCP default.
+* Fixes a bug preventing the user from browsing for a custom ConfigMgr code-signing certificate.
+
+</details>
+
 ## 3.0.10.0 - 2026-08-18
 
-### Fixes
+<details>
+
+<summary>Fixes</summary>
 
 * Ensure the failure reason is logged and shown when a settings save or settings import fails.
 * Fix a bug causing some right-click options not to persist when saved.
 * Properly update the right-click state for architecture requirements. The option would remain checked even after it was reset to its default state and should have been unchecked.
 * Display the install counts in the Intune app manager instead of display n/a.
 * Fixes scan wizards that could fail with a MissingMethodException.
+
+</details>
 
 ## 3.0.4.0 - 2026-08-10
 
