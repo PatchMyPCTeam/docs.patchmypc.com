@@ -24,13 +24,29 @@ Release Notes for previous years can be accessed using the following links:
 [2025](2025.md) | [2024](2024.md)
 {% endhint %}
 
+## Week of August 26th, 2026
+
+### Fixes
+
+#### Binary Free Apps
+
+* Resolved an issue where an Update Ring for a Binary Free app remains stuck as showing **In Progress** after a scheduled sync.
+
+#### Intune Apps
+
+* Resolved an issue where a digitally signed PowerShell **Additional Requirement Rule** script loses its Authenticode signature after PMPC processing.
+
 ## Week of August 19th, 2026
 
-### New Features/Improvements
+<details>
+
+<summary>New Features/Improvements</summary>
 
 #### Intune Apps
 
 * **Improved “Install Command Line” –** The **Install Command Line** field now shows the actual installer parameters Vs before, when the ScriptRunner parameters were shown.&#x20;
+
+</details>
 
 ## Week of August 12th, 2026
 
