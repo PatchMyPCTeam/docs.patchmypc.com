@@ -94,7 +94,7 @@ The **Patch My PC Update Compliance** report lists PMPC update compliance for up
 
 The table lists overall compliance for each update.
 
-<figure><img src="../../../.gitbook/assets/image (4271).png" alt="&#x27;Patch My PC Update Compliance&#x27; report" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (757).png" alt="&#x27;Patch My PC Update Compliance&#x27; report" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
