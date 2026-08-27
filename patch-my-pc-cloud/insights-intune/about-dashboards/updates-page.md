@@ -12,12 +12,12 @@ Software Update compliance reporting is a major feature of Advanced Insights for
 
 Compliance data is shown for all updates, whether deployed or not.
 
-The _Updates_ page consists of the following two tabs which contain a collection of dashboard items:
+The _Updates_ page consists of the following two tabs, which contain a collection of dashboard items:
 
 * [Patch My PC](updates-page.md#patch-my-pc)
 * [Microsoft](updates-page.md#microsoft)
 
-<figure><img src="../../../.gitbook/assets/image (4268).png" alt="Updates page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (754).png" alt="&#x27;Software Updates&#x27; page" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -38,18 +38,18 @@ The **Patch My PC** tab is split into the following sections:
 
 The top section of the **Patch My PC** tab is called _Statistics_ and displays information about the PMPC Client and apps within your environment.
 
-<figure><img src="../../../.gitbook/assets/image (4269).png" alt="&#x27;Statistics&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (755).png" alt="&#x27;Statistics&#x27; section" width="563"><figcaption></figcaption></figure>
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-<figure><img src="../../../.gitbook/assets/image (4270).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (756).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
 
 The _Statistics_ section is split into the following reports:
 
 * [Patch My PC Catalog](updates-page.md#patch-my-pc-catalog)
 * [Average Device Compliance](updates-page.md#average-device-compliance)
 * [Devices that require Patch My PC updates](updates-page.md#devices-that-require-patch-my-pc-updates)
-* [Devices with 100% compliance](updates-page.md#devices-with-100-compliance)
+* [Devices with 100% Patch my PC Update compliance](updates-page.md#devices-with-100-patch-my-pc-update-compliance)
 
 #### Patch My PC Catalog
 
@@ -77,9 +77,9 @@ The **Average Device Compliance** statistic shows the average PMPC update 
 
 The **Devices that require Patch My PC updates** statistic shows a count of any devices that require at least one update.
 
-#### Devices with 100% compliance
+#### Devices with 100% Patch My PC Update compliance
 
-The **Device with 100% compliance** statistic shows a  count of devices that have zero missing PMPC updates.
+The **Device with 100% Patch My PC Update compliance** statistic shows a  count of devices that have zero missing PMPC updates.
 
 ### Compliance
 
