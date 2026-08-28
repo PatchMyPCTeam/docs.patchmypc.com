@@ -6,6 +6,16 @@ The **SMS Provider** is the interface that enables all interactions with Microso
 
 Configuring the SMS Provider connection is therefore a foundational step for enabling the Publisher to interact with ConfigMgr.
 
+{% hint style="info" %}
+**Note**
+
+The SMS Provider configuration is shared across Publisher. When you configure the SMS Provider from any of the following locations, the same settings are automatically used in other areas of Publisher:
+
+* **WSUS Updates | WSUS Options**
+* **ConfigMgr Apps | Base Install Options**
+* The **Sync Schedule** tab.
+{% endhint %}
+
 <figure><img src="../../.gitbook/assets/image (3956).png" alt="SMS Provider Connection" width="450"><figcaption></figcaption></figure>
 
 ## Connection Settings
