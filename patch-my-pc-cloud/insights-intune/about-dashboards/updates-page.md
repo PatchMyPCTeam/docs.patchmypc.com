@@ -104,15 +104,16 @@ By default, superseded updates are hidden. Click the **Show Superseded Updates**
 
 For each update, we show the number of:
 
-* The overall compliance as a percentage.
+* The **Applicable Compliance** percentage for this update, which is calculated as follows:\
+  Applicable Compliance (%) = Installed / (Installed+Required) \* 100
 * Compliant devices (devices where the update is either **Installed** or **Not Applicable** to the device).
 * Devices still needing this update (**Required**).
 * Devices that have not yet submitted scan data for the catalog, which includes this update (**Unknown**).
 
 We also show an icon allowing you to easily see if an update is either:
 
-* **Managed** (![Managed](<../../../.gitbook/assets/image (760).png>)) - A PMPC Cloud  Deployment already exists for this update
-* **Unmanaged** (![Unmanaged](<../../../.gitbook/assets/image (761).png>)) - A PMPC Cloud  Deployment does not already exist for this update and you may want to consider [creating a new deployment](../../deployments/deploy-app/) for this update.
+* **Managed** (![Managed](<../../../.gitbook/assets/image (760).png>)) - A PMPC Cloud  Deployment already exists for this update.
+* **Unmanaged** (![Unmanaged](<../../../.gitbook/assets/image (761).png>)) - A PMPC Cloud  Deployment does not already exist for this update, and you may want to consider [creating a new deployment](../../deployments/deploy-app/) for this update.
 
 Clicking an update shows more detailed information, including detailed metadata for the update.
 
