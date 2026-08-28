@@ -6,24 +6,40 @@ The **Create Self-Signed** certificate option allows Patch My PC (PMPC) Publishe
 
 This option is commonly used when you do not want Microsoft ConfigMgr to manage the certificate, or in standalone WSUS environments where self-signed certificates are permitted and a Certificate Authority is not available.
 
+## Create a Self-Signed Certificate
+
 To create a self-signed code-signing certificate:
 
-1. Open Publisher.
-2. On the **General** tab, under the **Certificate Management** section, click the **Create Self-Signed** button.
-3. On the **WSUS Code Signing Certificate** screen, review and adjust as required the certificate options:
+1. Load Publisher.
+2. Navigate to **WSUS Updates | WSUS Options**.&#x20;
+3. Under the **Certificate Management** section, click the **Create Self-Signed** button.
+
+<figure><img src="../../../../../../.gitbook/assets/image (778).png" alt="Clicking the &#x27;Create-Self-Sgined&#x27; button under the &#x27;Certificate Management&#x27; section"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+If Publisher detects an existing valid certificate, the **Overwrite Current Certificate** dialog is displayed, warning you and prompting you to click **Yes** to overwrite the existing certificate with the new one. This helps prevent you from accidentally replacing an active and trusted signing certificate.
+
+![Overwrite Current Certificate](<../../../../../../.gitbook/assets/image (777).png>)
+{% endhint %}
+
+4. On the **WSUS Code Signing Certificate** screen, review and adjust the certificate options as required:
    1. **Subject** (Default: **PatchMyPC Service**)
    2. **Valid for** (Default: **5 years**)
    3. **Key length** (Default: 2048 **bits**)
 
-<figure><img src="../../../../../../.gitbook/assets/image (4482).png" alt="&#x27;WSUS Code Signing Certificate&#x27; screen" width="300"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (779).png" alt="&#x27;WSUS Code Signing Certificate&#x27; screen" width="298"><figcaption></figcaption></figure>
 
-4. Optionally, leave the **Disable Private Key Export** checkbox unchecked if you may need to move Publisher to another top-level Software Update Point (SUP) in the future and want to take the same code-signing certificate to the new server.
-5. Click the **Generate** button.
-6.  If a code-signing certificate is already configured, Publisher prompts you to confirm before overwriting it, even if the existing certificate is still valid. This helps prevent accidental replacement of an active signing certificate.\
-    \
-    The **Certificate Management** section updates to show the certificate is valid and it's expiry date.<br>
+5. Optionally, leave the **Disable Private Key Export** checkbox unchecked if you may need to move Publisher to another top-level Software Update Point (SUP) in the future and want to take the same code-signing certificate to the new server.
+6. Click the **Generate** button.
+7. If the certificate is created successfully, the **Certificate Created Successfully** dialog is shown, which you can close by clicking **OK.**
 
-    <figure><img src="../../../../../../.gitbook/assets/image (4484).png" alt="Valid certificate" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (780).png" alt="&#x27;Certificate Created Successfully&#x27; dialog" width="464"><figcaption></figcaption></figure>
+
+The **Certificate Management** section updates to show the certificate is valid and its expiry date.
+
+<figure><img src="../../../../../../.gitbook/assets/image (781).png" alt="&#x27;Certificate Management&#x27; section updating" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -49,5 +65,5 @@ As a result, the self-signed certificate must be placed in the **Trusted Publish
 
 When third-party updates are enabled for the SUP and in Client Settings, ConfigMgr can automatically distribute the signing certificate to managed devices, place it into the required certificate stores, and configure the necessary local Windows Update policies so the Windows Update Agent trusts that signing certificate.
 
-This ensures client devices trust updates signed by a third-party code-signing certificate, rather than only updates signed by Microsoft, without requiring manual certificate deployment. See [Client Settings](../../../../../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/client-settings.md) for more information.
+This ensures client devices trust updates signed by a third-party code-signing certificate, rather than only updates signed by Microsoft, without requiring manual certificate deployment. See [ConfigMgr Client Setting Requirements](../../../../../requirements/configmgr-requirements/client-settings.md) for more information.
 {% endhint %}
