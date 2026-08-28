@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Backup and Restore Settings** section in Patch My PC (PMPC) Publisher allows you to export, import, and automatically back up the Publisher configuration settings. This is useful for disaster recovery, migrating the Publisher to a new server, or maintaining historical configuration snapshots.
+The **Backup and Restore Settings** section on the **Advanced** tab of Patch My PC (PMPC) Publisher allows you to export, import, and automatically back up the Publisher configuration settings. This is useful for disaster recovery, migrating the Publisher to a new server, or maintaining historical configuration snapshots.
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt="&#x27;Backup and Restore Settings&#x27; section" width="563"><figcaption></figcaption></figure>
 

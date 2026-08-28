@@ -2,9 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Application Migration** section of the Patch My PC (PMPC) Publisher **Cloud** tab is used to help you migrate applications from Microsoft Configuration Manager to Intune using the _Migration_ feature of PMPC Cloud.
+The **Application Migration** section on the **Cloud** tab of Patch My PC (PMPC) Publisher helps you migrate applications from Microsoft Configuration Manager to Intune using the _Migration_ feature of PMPC Cloud.
 
-<figure><img src="../../../.gitbook/assets/image (4858).png" alt="&#x27;Application Migration&#x27; section " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4858).png" alt="&#x27;Application Migration&#x27; section" width="563"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**

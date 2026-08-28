@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **ConfigMgr SUP Sync Options** section of the **Sync Schedule** tab in Patch My PC (PMPC) Publisher contains the **Trigger ConfigMgr SUP Sync after publishing** option.
+The **ConfigMgr SUP Sync Options** section on the **Sync Schedule** tab in Patch My PC (PMPC) Publisher contains the **Trigger ConfigMgr SUP Sync after publishing** option.
 
 <figure><img src="../../../.gitbook/assets/image (4863).png" alt="&#x27;ConfigMgr SUP Sync Options&#x27; section" width="563"><figcaption></figcaption></figure>
 

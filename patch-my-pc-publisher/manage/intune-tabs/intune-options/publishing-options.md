@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Publishing Options** section in Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in Intune when using Publisher. These settings apply globally to all applications created from the Intune Apps and Intune Options tabs and directly influence application lifecycle behavior.
+The **Publishing Options** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in Intune when using Publisher. These settings apply globally to all applications created from the Intune Apps and Intune Options tabs and directly influence application lifecycle behavior.
 
 <figure><img src="../../../../.gitbook/assets/image (733).png" alt="&#x27;Publishing Options&#x27; section" width="563"><figcaption></figcaption></figure>
 

@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Trigger a Software Update Point Sync** section of the **WSUS Options** tab in Patch My PC (PMPC) Publisher is where you configure the SMS Provider connection, which the Publisher uses to communicate with ConfigMgr. This connection enables Publisher to trigger Software Update Point (SUP) synchronizations and ultimately serves as the foundation for all Publisher interactions with ConfigMgr.
+The **Trigger a Software Update Point Sync** section on the **WSUS Options** tab in Patch My PC (PMPC) Publisher is where you configure the SMS Provider connection, which the Publisher uses to communicate with ConfigMgr. This connection enables Publisher to trigger Software Update Point (SUP) synchronizations and ultimately serves as the foundation for all Publisher interactions with ConfigMgr.
 
 <figure><img src="../../../../.gitbook/assets/image (783).png" alt="&#x27;Trigger a Software Update Point Sync&#x27; section" width="563"><figcaption></figcaption></figure>
 

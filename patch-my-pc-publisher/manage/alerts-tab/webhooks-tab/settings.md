@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Webhook Notification Configuration** section of the **Webhooks** tab in Patch My PC (PMPC) Publisher allows Publisher to send publishing alerts and reports to external messaging systems such as Microsoft Teams workflows and Slack. Webhooks provide near real-time visibility into publishing activity without relying on email notifications.
+The **Webhook Notification Configuration** section on the **Webhooks** tab of Patch My PC (PMPC) Publisher allows Publisher to send publishing alerts and reports to external messaging systems such as Microsoft Teams workflows and Slack. Webhooks provide near real-time visibility into publishing activity without relying on email notifications.
 
 <figure><img src="../../../../.gitbook/assets/image (736).png" alt="&#x27;Webhook Notification Configuration&#x27; section " width="563"><figcaption></figcaption></figure>
 

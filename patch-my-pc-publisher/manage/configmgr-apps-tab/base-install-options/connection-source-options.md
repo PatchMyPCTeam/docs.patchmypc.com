@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Connection and Source Options** section in Patch My PC (PMPC) Publisher defines how the Publisher connects to ConfigMgr and where application source content is stored on disk. This section must be correctly configured before the Publisher can create ConfigMgr applications or the [ConfigMgr Application Manager](../app-manager.md) utility can be used.
+The **Connection and Source Options** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher defines how the Publisher connects to ConfigMgr and where application source content is stored on disk. This section must be correctly configured before the Publisher can create ConfigMgr applications or the [ConfigMgr Application Manager](../app-manager.md) utility can be used.
 
 These settings control communication with the SMS Provider and establish the root location used for all Publisher created ConfigMgr application content. Incorrect configuration can prevent applications from being created, updated, or managed successfully.
 

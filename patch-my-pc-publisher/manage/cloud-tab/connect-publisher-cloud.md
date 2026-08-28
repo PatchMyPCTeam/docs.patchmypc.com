@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Connect Publisher to Patch My PC Cloud** section of the **Cloud** tab in Patch My PC (PMPC) Publisher is used to connect Publisher to your PMPC Cloud Company.
+The **Connect Publisher to Patch My PC Cloud** section on the **Cloud** tab of Patch My PC (PMPC) Publisher connects Publisher to your PMPC Cloud Company.
 
 <figure><img src="../../../.gitbook/assets/image (4857).png" alt="&#x27;Connect Publisher to Patch My PC Cloud&#x27; section" width="563"><figcaption></figcaption></figure>
 

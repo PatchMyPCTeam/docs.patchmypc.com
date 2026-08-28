@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **WSUS Maintenance** section in Patch My PC (PMPC) Publisher provides options to help manage and clean up third party update content stored in WSUS. These options are designed to reduce disk usage, remove unused content, and prevent long term WSUS performance and stability issues caused by accumulated third party updates.
+The **WSUS Maintenance** section on the **WSUS Options** tab of  Patch My PC (PMPC) Publisher provides options to help manage and clean up third party update content stored in WSUS. These options are designed to reduce disk usage, remove unused content, and prevent long term WSUS performance and stability issues caused by accumulated third party updates.
 
 These actions cannot be triggered manually, if enabled, they are performed at the end of a publishing sync cycle.
 

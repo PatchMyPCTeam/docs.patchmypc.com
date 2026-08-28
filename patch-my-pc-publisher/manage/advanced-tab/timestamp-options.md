@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Timestamp Options** section of Patch My PC (PMPC) Publisher controls how the Publisher applies digital timestamps when signing scripts and CAB files. Timestamping ensures that signatures remain valid after the signing certificate expires and is a recommended best practice for both applications and updates.
+The **Timestamp Options** section on the **Advanced** tab of Patch My PC (PMPC) Publisher controls how the Publisher applies digital timestamps when signing scripts and CAB files. Timestamping ensures that signatures remain valid after the signing certificate expires and is a recommended best practice for both applications and updates.
 
 <figure><img src="../../../.gitbook/assets/image (743).png" alt="&#x27;Timestamp Options&#x27; section" width="563"><figcaption></figcaption></figure>
 

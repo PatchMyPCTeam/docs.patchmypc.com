@@ -6,7 +6,7 @@ The _SMS Provider_ is the interface that enables all interactions with Microsoft
 
 Patch My PC (PMPC) Publisher also relies on the SMS Provider to perform operations such as triggering Software Update Point (SUP) synchronizations, creating and modifying applications, and distributing content.
 
-The **Configure SMS Provider Connection** section of the **WSUS Options** tab lets you configure the SMS Provider Connection.
+The **Configure SMS Provider Connection** section on the **WSUS Options** tab lets you configure the SMS Provider Connection.
 
 <figure><img src="../../../../.gitbook/assets/image (782).png" alt="Configure SMS Provider Connection" width="563"><figcaption></figcaption></figure>
 

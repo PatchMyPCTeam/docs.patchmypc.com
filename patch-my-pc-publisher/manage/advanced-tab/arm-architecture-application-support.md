@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **ARM Architecture Application Support** section of Patch My PC (PMPC) Publisher controls whether Publisher evaluates and publishes ARM64 applications.
+The **ARM Architecture Application Support** section on the **Advanced** tab of Patch My PC (PMPC) Publisher controls whether Publisher evaluates and publishes ARM64 applications.
 
 <figure><img src="../../../.gitbook/assets/image (744).png" alt="&#x27;ARM Architecture Application Support&#x27; section" width="563"><figcaption></figcaption></figure>
 

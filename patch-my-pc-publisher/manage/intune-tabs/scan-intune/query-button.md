@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Query** button in Patch My PC (PMPC) Publisher performs an interactive scan using the current configuration defined in the form and any filters that have been applied.
+The **Query** button on the **Scan Intune** tab of Patch My PC (PMPC) Publisher performs an interactive scan using the current configuration defined in the form and any filters that have been applied.
 
 When clicked, the Publisher queries the obtained Intune report and displays the results in the list below. The products shown reflect:
 

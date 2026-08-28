@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-Configuring the **Staged Content Repository** section allows Patch My PC (PMPC) Publisher to store update and application content locally instead of downloading it directly from the internet during publishing. This is primarily used for binary free and licensed applications, where customers must obtain the installer or update binaries themselves because the content is behind a paywall, login, or other restricted access and is not publicly available.
+The **Staged Content Repository** section on the **Advanced** tab of Patch My PC (PMPC) Publisher, allows Publisher to store update and application content locally instead of downloading it directly from the internet during publishing. This is primarily used for binary-free and licensed applications, where customers must obtain the installer or update binaries themselves because the content is behind a paywall, login, or other restricted access and is not publicly available.
 
 <figure><img src="../../../.gitbook/assets/image (738).png" alt="&#x27;Staged Content Repository&#x27; section" width="563"><figcaption></figcaption></figure>
 

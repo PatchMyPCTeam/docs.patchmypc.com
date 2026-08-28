@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Modify Published Updates** wizard in Patch My PC (PMPC) Publisher is used to manage third party updates that have already been published to WSUS. It provides a centralized view of published updates and allows administrators to safely maintain, clean up, and correct updates without needing to manually interacting with the WSUS console.
+The **Modify Published Updates** wizard on the **WSUS Options** tab of Patch My PC (PMPC) Publisher is used to manage third party updates that have already been published to WSUS. It provides a centralized view of published updates and allows administrators to safely maintain, clean up, and correct updates without needing to manually interacting with the WSUS console.
 
 This wizard is commonly used during troubleshooting, republishing workflows, and ongoing maintenance to ensure WSUS and ConfigMgr only evaluate and display the correct updates.
 

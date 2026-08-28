@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **ScriptRunner Customization** section in Patch My PC (PMPC) Publisher provides controls that influence how ScriptRunner handles long-running installer executions during client-side installation, as well as how client-side installation logs are cleaned up.
+The **ScriptRunner Customization** section on the **Advanced** tab of Patch My PC (PMPC) Publisher provides controls that influence how ScriptRunner handles long-running installer executions during client-side installation, as well as how client-side installation logs are cleaned up.
 
 <figure><img src="/broken/files/ntUUunsndka7eTmzNJig" alt="&#x27;ScriptRunner Customization&#x27; section" width="563"><figcaption></figcaption></figure>
 

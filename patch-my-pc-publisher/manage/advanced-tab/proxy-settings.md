@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Proxy Settings** section in Patch My PC (PMPC) Publisher allows the Publisher to use a proxy server for outbound network connectivity.
+The **Proxy Settings** section on the **Advanced** tab of Patch My PC (PMPC) Publisher allows the Publisher to use a proxy server for outbound network connectivity.
 
 <figure><img src="../../../.gitbook/assets/image (737).png" alt="&#x27;Proxy Settings&#x27; section" width="563"><figcaption></figcaption></figure>
 

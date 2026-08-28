@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Export to CSV** button in Patch My PC (PMPC) Publisher is used to export the results displayed in the query window to a comma-separated values file for offline review or reporting.
+The **Export to CSV** button on the **Scan Intune** tab of Patch My PC (PMPC) Publisher is used to export the results displayed in the query window to a comma-separated values file for offline review or reporting.
 
 <figure><img src="../../../../.gitbook/assets/image (4152).png" alt="Export to CSV" width="563"><figcaption></figcaption></figure>
 

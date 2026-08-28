@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Scheduling** section of the **Sync Schedule** tab of the Patch My PC (PMPC) Publisher allows you to configure multiple scheduling options to control how often the publishing service runs.
+The **Scheduling** section on the **Sync Schedule** tab of Patch My PC (PMPC) Publisher allows you to configure multiple scheduling options to control how often the publishing service runs.
 
 <figure><img src="../../../.gitbook/assets/image (4861).png" alt="&#x27;Scheduling&#x27; section" width="563"><figcaption></figcaption></figure>
 

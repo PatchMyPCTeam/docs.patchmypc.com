@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Product Export** section of Patch My PC (PMPC) Publisher allows you to export a list of enabled products and their configuration from the Publisher into a CSV file. The export includes product-level settings and right-click options, which makes it useful for documentation, audits, change reviews, and comparing configurations.
+The **Product Export** section on the **Advanced** tab of Patch My PC (PMPC) Publisher allows you to export a list of enabled products and their configuration from the Publisher into a CSV file. The export includes product-level settings and right-click options, which makes it useful for documentation, audits, change reviews, and comparing configurations.
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt="&#x27;Product Export&#x27; section" width="563"><figcaption></figcaption></figure>
 

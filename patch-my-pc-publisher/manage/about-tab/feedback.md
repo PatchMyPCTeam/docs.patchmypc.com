@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-When you click the **Feedback** tab of Patch My PC (PMPC) Publisher, the **Share a suggestion or idea** pop-up appears.&#x20;
+When you click the **Feedback** tab under the **About** tab of Patch My PC (PMPC) Publisher, the **Share a suggestion or idea** pop-up appears.
 
 <figure><img src="../../../.gitbook/assets/image (4471).png" alt="&#x27;Share a suggestion or idea&#x27; pop-up" width="413"><figcaption></figcaption></figure>
 

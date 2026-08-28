@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Authentication Settings** section of Patch My PC (PMPC) Publisher allows Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.
+The **Authentication Settings** section on the **Scan Intune** tab of Patch My PC (PMPC) Publisher allows Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.
 
 When these rules are enabled, the Publisher evaluates discovered application inventory data collected by the Intune Management Extension on managed devices, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
 

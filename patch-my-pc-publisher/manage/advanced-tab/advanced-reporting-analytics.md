@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Advanced Reporting and Analytics** section in Patch My PC (PMPC) Publisher provides access to Patch My PC Advanced Insights, which extends ConfigMgr reporting with enhanced analytics, visualizations, and compliance insights.
+The **Advanced Reporting and Analytics** section on the **Advanced** tab of Patch My PC (PMPC) Publisher provides access to Patch My PC Advanced Insights, which extends ConfigMgr reporting with enhanced analytics, visualizations, and compliance insights.
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt="&#x27;Advanced Reporting and Analytics&#x27; section" width="563"><figcaption></figcaption></figure>
 

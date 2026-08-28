@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Filters** section of Patch My PC (PMPC) Publisher lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.
+The **Filters** section on the **Scan Intune** tab of Patch My PC (PMPC) Publisher lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.
 
 <figure><img src="../../../../.gitbook/assets/image (734).png" alt="&#x27;Filters&#x27; section" width="563"><figcaption></figcaption></figure>
 

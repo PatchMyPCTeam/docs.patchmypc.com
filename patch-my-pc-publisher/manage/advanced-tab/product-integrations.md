@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Product Integrations** section of the Patch My PC (PMPC) Publisher is used to limit the Publisher to Intune-only functionality. These settings hide the ConfigMgr and WSUS-related publishing features from the user interface.
+The **Product Integrations** section on the **Advanced** tab of Patch My PC (PMPC) Publisher is used to limit the Publisher to Intune-only functionality. These settings hide the ConfigMgr and WSUS-related publishing features from the user interface.
 
 <figure><img src="../../../.gitbook/assets/image (741).png" alt="&#x27;Product Integrations&#x27; section" width="563"><figcaption></figcaption></figure>
 

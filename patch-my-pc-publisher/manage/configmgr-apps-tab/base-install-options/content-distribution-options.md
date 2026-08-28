@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Content Distribution Options** section in Patch My PC (PMPC) Publisher controls how application content created by the Publisher is distributed to ConfigMgr Distribution Points (DPs) when apps are published.
+The **Content Distribution Options** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher controls how application content created by the Publisher is distributed to ConfigMgr Distribution Points (DPs) when apps are published.
 
 <figure><img src="../../../../.gitbook/assets/image (5).png" alt="&#x27;Content Distribution Options&#x27;" width="563"><figcaption></figcaption></figure>
 
