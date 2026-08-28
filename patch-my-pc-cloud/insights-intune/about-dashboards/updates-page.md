@@ -104,10 +104,10 @@ By default, superseded updates are hidden. Click the **Show Superseded Updates**
 
 For each update, we show the number of:
 
+* The overall compliance as a percentage.
 * Compliant devices (devices where the update is either **Installed** or **Not Applicable** to the device).
 * Devices still needing this update (**Required**).
 * Devices that have not yet submitted scan data for the catalog, which includes this update (**Unknown**).
-* The overall compliance as a percentage.
 
 Clicking an update shows more detailed information, including detailed metadata for the update.
 
@@ -115,7 +115,7 @@ Clicking an update shows more detailed information, including detailed metadata 
 
 The **Patch My PC Update Compliance by Device** report shows compliance data for each device against the PMPC catalog, allowing you to evaluate compliance for all updates in our catalog and whether they are deployed.
 
-<figure><img src="../../../.gitbook/assets/image (4272).png" alt="&#x27;Patch My PC Update Compliance by Device&#x27; report" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (758).png" alt="&#x27;Patch My PC Update Compliance by Device&#x27; report" width="563"><figcaption></figcaption></figure>
 
 The compliance list includes details of the catalog version used by the Client and how up-to-date it is.
 
@@ -123,7 +123,7 @@ Clicking an individual record shows the **Device** view for that Client with the
 
 The other tabs on the **Device** view are listed below.
 
-<table><thead><tr><th width="98.33331298828125" valign="top">Tab</th><th valign="top">Shows...</th></tr></thead><tbody><tr><td valign="top">General</td><td valign="top">General information about the device, such as the Client version number, domain, the last time both hardware and software inventory ran, model, serial number, and others.</td></tr><tr><td valign="top">Hardware</td><td valign="top">Various hardware-related information for the selected device.</td></tr><tr><td valign="top">Microsoft</td><td valign="top">A list of the required Microsoft Updates and which have been installed on this device.</td></tr></tbody></table>
+<table><thead><tr><th width="98.33331298828125" valign="top">Tab</th><th valign="top">Shows...</th></tr></thead><tbody><tr><td valign="top">General</td><td valign="top">General information about the device, such as the Client version number, domain, the last time both hardware and software inventory ran, model, serial number, and others.</td></tr><tr><td valign="top">Hardware</td><td valign="top">Various hardware-related information for the selected device.</td></tr><tr><td valign="top">Software</td><td valign="top"></td></tr><tr><td valign="top">Patch My PC</td><td valign="top"></td></tr><tr><td valign="top">Microsoft</td><td valign="top">A list of the required Microsoft Updates and which have been installed on this device.</td></tr><tr><td valign="top">Drivers</td><td valign="top"></td></tr></tbody></table>
 
 ## Microsoft
 
