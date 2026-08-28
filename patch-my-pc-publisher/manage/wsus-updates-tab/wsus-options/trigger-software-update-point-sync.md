@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Trigger a Software Update Point Sync** section in Patch My PC (PMPC) Publisher is where you configure the SMS Provider connection, which the Publisher uses to communicate with ConfigMgr. This connection enables the Publisher to trigger Software Update Point (SUP) synchronizations and ultimately serves as the foundation for all Publisher interactions with ConfigMgr.
+The **Trigger a Software Update Point Sync** section of the **WSUS Options** tab in Patch My PC (PMPC) Publisher is where you configure the SMS Provider connection, which the Publisher uses to communicate with ConfigMgr. This connection enables the Publisher to trigger Software Update Point (SUP) synchronizations and ultimately serves as the foundation for all Publisher interactions with ConfigMgr.
 
 <figure><img src="../../../../.gitbook/assets/image (783).png" alt="&#x27;Trigger a Software Update Point Sync&#x27; section" width="563"><figcaption></figcaption></figure>
 
@@ -58,16 +58,4 @@ Examples include:
 In addition, ConfigMgr periodically performs a full sync at a fixed interval (every 7 days by default).&#x20;
 
 See [About Synchronizing the Software Update Point](https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/about-synchronizing-the-software-update-point) for more information on SUP synchronization.
-{% endhint %}
-
-## Configure SMS Provider Connection
-
-The _SMS Provider_ is the interface that enables all interactions with ConfigMgr, including actions performed in the ConfigMgr console and through supported APIs.&#x20;
-
-Publisher also relies on the SMS Provider to perform operations such as triggering SUP synchronizations, creating and modifying applications, and distributing content.
-
-{% hint style="info" %}
-**Note**
-
-See [Configure the SMS Provider Connection](../../../technical-references/configure-sms-provider.md) for information on how to configure the SMS Provider connection.
 {% endhint %}
