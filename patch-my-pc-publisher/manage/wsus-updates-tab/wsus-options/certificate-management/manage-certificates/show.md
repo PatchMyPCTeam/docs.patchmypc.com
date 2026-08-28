@@ -30,17 +30,19 @@ Clicking **Validate Trust Chain** checks whether the certificate and its chain o
 
 This is a useful troubleshooting step if the publishing of updates fails due to certificate or trust-related errors.
 
+If the validation is successful, the **Certificate chain validated successfully** message is displayed.
+
 <figure><img src="../../../../../../.gitbook/assets/image (3914).png" alt="Validate the certificate trust chain" width="300"><figcaption></figcaption></figure>
 
 ## Troubleshooting Certificates
 
 If you receive an error when you click **Show Certificate**, use the steps in this section to identify the cause.
 
-### No Certificate found in the WSUS Store on this Server
+### No certificate found in the WSUS certificate store on this server
 
 <figure><img src="../../../../../../.gitbook/assets/image (4266).png" alt="No Certificate foundin the WSUS Store on this Server" width="358"><figcaption></figcaption></figure>
 
-If clicking **Show Certificate** displays **No certificate found in the WSUS store on this server**, review **PatchMyPC.log** for related certificate extraction errors.&#x20;
+If clicking **Show Certificate** displays **No certificate found in the WSUS certificate store on this server** error, review the **PatchMyPC.log** for related certificate extraction errors.&#x20;
 
 For example:
 
