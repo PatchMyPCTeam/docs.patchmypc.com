@@ -109,6 +109,11 @@ For each update, we show the number of:
 * Devices still needing this update (**Required**).
 * Devices that have not yet submitted scan data for the catalog, which includes this update (**Unknown**).
 
+We also show an icon allowing you to easily see if an update is either:
+
+* **Managed** (![Managed](<../../../.gitbook/assets/image (760).png>)) - A PMPC Cloud  Deployment already exists for this update
+* **Unmanaged** (![Unmanaged](<../../../.gitbook/assets/image (761).png>)) - A PMPC Cloud  Deployment does not already exist for this update and you may want to consider [creating a new deployment](../../deployments/deploy-app/) for this update.
+
 Clicking an update shows more detailed information, including detailed metadata for the update.
 
 #### Patch My PC Update Compliance by Device
