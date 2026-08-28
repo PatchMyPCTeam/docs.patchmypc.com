@@ -44,7 +44,7 @@ The **Certificate Management** section updates to show the certificate is valid 
 {% hint style="info" %}
 **Note**
 
-By default, the generated certificate’s **private key is marked as exportable**. This is intentional and recommended, as it allows the certificate (including the private key) to be exported and reused if the Publisher is later moved to a new top-level Software Update Point (SUP). Without an exportable private key, the same signing certificate could not be transferred to another server.
+By default, the generated certificate’s **private key is marked as exportable**. This is intentional and recommended, as it allows the certificate (including the private key) to be exported and reused if the Publisher is later moved to a new top-level SUP. Without an exportable private key, the same signing certificate could not be transferred to another server.
 {% endhint %}
 
 After generation, the self-signed certificate is automatically placed in the following **Local Machine** certificate stores on the server:
