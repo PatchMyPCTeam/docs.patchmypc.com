@@ -22,13 +22,13 @@ If multiple code-signing certificates are present in the WSUS store on the SUP, 
 
 Publisher supports multiple approaches to accommodate both ConfigMgr and WSUS environments:
 
-* [Letting ConfigMgr create and manage the certificate](choosing.md#configmgr-managed-certificate-recommended)
-* [Generating a self-signed certificate directly in Publisher](choosing.md#publisher-generated-self-signed-certificate)
-* [Importing a customer-provided PFX certificate issued by an internal or public Certificate Authority](choosing.md#customer-provided-pki-pfx-certificate)
+* [Let ConfigMgr create and manage the certificate (recommended)](choosing.md#let-configmgr-create-and-manage-the-certificate-recommended)
+* [Let Publisher create and use its own self-signed certificate](choosing.md#let-publisher-create-and-use-its-own-self-signed-certificate)
+* [Import a customer-provided PFX certificate issued by an internal or public Certificate Authority](choosing.md#import-a-customer-provided-pfx-certificate-issued-by-an-internal-or-public-certificate-authority)
 
-## ConfigMgr–Managed Certificate (Recommended)
+## Let ConfigMgr create and manage the certificate (recommended)
 
-No action is needed from Publisher. If ConfigMgr is already set to automatically manage the certificate, this will be the certificate that Publisher selects by default, if there is no other certificate in the WSUS store with a longer validity period.
+If you decide to use this option, no action is needed from a Publisher perspective. If ConfigMgr is already set to automatically manage the certificate, this will be the certificate that Publisher selects by default, if there is no other certificate in the WSUS store with a longer validity period.
 
 **Best suited for:**\
 Organizations that want the simplest setup with minimal manual certificate handling.
@@ -59,9 +59,9 @@ This behavior can be unexpected in environments that require PKI-issued certific
 See [Automatically manage the WSUS signing certificate](https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#automatically-manage-the-wsus-signing-certificate) for more information.
 {% endhint %}
 
-## Publisher-Generated Self-Signed Certificate
+## Let Publisher create and use its own self-signed certificate
 
-Regardless of whether ConfigMgr is configured to automatically manage the certificate or the environment is WSUS-only, customers can choose to have Publisher generate and use its own self-signed certificate.
+Regardless of whether ConfigMgr is configured to automatically manage the certificate or the environment is WSUS-only, you can choose to have Publisher generate and use its own self-signed certificate.
 
 **Best suited for:**\
 WSUS standalone environments or ConfigMgr environments where self-signed certificates are allowed, but where administrators want more control over certificate creation and lifecycle.
@@ -89,9 +89,9 @@ By default, in this scenario, the generated certificate’s private key is marke
 
 Without an exportable private key, the same signing certificate could not be transferred to another server.
 
-## Customer-Provided PKI (PFX) Certificate
+## Import a customer-provided PFX certificate issued by an internal or public Certificate Authority
 
-Regardless of whether ConfigMgr is already configured to automatically manage the certificate, customers can opt to use a PKI-issued certificate for Publisher.
+Regardless of whether ConfigMgr is already configured to automatically manage the certificate, you can opt to use a PKI-issued certificate for Publisher.
 
 **Best suited for:**\
 Organizations with strict security, compliance, or audit requirements that mandate PKI-issued certificates.
