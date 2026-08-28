@@ -30,15 +30,17 @@ Publisher supports multiple approaches to accommodate both ConfigMgr and WSUS en
 
 If you decide to use this option, no action is needed from a Publisher perspective. If ConfigMgr is already set to automatically manage the certificate, this will be the certificate that Publisher selects by default, if there is no other certificate in the WSUS store with a longer validity period.
 
-**Best suited for:**\
+### **Best suited for**
+
+\
 Organizations that want the simplest setup with minimal manual certificate handling.
 
-**Why choose this option**
+### **Why choose this option**
 
 * Creates a self-signed WSUS code-signing certificate if one does not exist.
 * Manages certificate lifecycle and renewal process.
 
-**Considerations**
+### **Considerations**
 
 * The certificate generated is self-signed.
 * May not meet stricter compliance or PKI requirements in some organizations.
@@ -63,17 +65,18 @@ See [Automatically manage the WSUS signing certificate](https://learn.microsoft.
 
 Regardless of whether ConfigMgr is configured to automatically manage the certificate or the environment is WSUS-only, you can choose to have Publisher generate and use its own self-signed certificate.
 
-**Best suited for:**\
+## **Best suited for**
+
 WSUS standalone environments or ConfigMgr environments where self-signed certificates are allowed, but where administrators want more control over certificate creation and lifecycle.
 
-**Pros**
+### **Pros**
 
 * Free and immediate to create.
 * Does not require a PKI.
 * Allows control over key length, validity period, and exportability.
 * Can still be automatically distributed to clients by ConfigMgr.
 
-**Cons**
+### **Cons**
 
 * Self-signed certificates cannot be revoked using a Certificate Revocation List (CRL).
 * If the private key is compromised, the certificate must be manually removed from client trust stores using ConfigMgr or another method.
@@ -93,16 +96,17 @@ Without an exportable private key, the same signing certificate could not be tra
 
 Regardless of whether ConfigMgr is already configured to automatically manage the certificate, you can opt to use a PKI-issued certificate for Publisher.
 
-**Best suited for:**\
+### **Best suited for**
+
 Organizations with strict security, compliance, or audit requirements that mandate PKI-issued certificates.
 
-**Pros**
+### **Pros**
 
 * Certificates can be revoked if compromised.
 * Can be issued from an internal PKI (such as Active Directory Certificate Services) at no additional cost.
 * Supported by ConfigMgr for automatic distribution to clients.
 
-**Cons**
+### **Cons**
 
 * Requires access to a PKI and coordination with security or PKI teams.
 * Public Certificate Authority certificates may incur additional cost.
