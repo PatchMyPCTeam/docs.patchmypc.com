@@ -65,7 +65,7 @@ You can manage the company logo using the following options:
 {% hint style="info" %}
 **Note**
 
-Clicking **Close All and Install** or **Snooze Install** in the preview window only closes the preview. These buttons do not trigger any installation or enforcement actions and are provided for visualization purposes only.
+Clicking **Close All and Install** or **Snooze Install** in the Preview window only closes the preview. These buttons do not trigger any installation or enforcement actions and are provided for visualization purposes only.
 {% endhint %}
 
 ## Organization Name Configuration
@@ -111,7 +111,7 @@ When you change the intent, the text fields update to reflect the messaging for 
 
 ### Custom Notification Text and Variables
 
-You can customize all notification text fields, including the header, main message, deferral messaging, and default actions. These fields support variables that are replaced dynamically at runtime.
+You can customize all notification text fields (including the header, main message, deferral messaging, and default actions). These fields support variables that are replaced dynamically at runtime.
 
 Available variables include organization name, product name, deferral count, and deferral date.
 
