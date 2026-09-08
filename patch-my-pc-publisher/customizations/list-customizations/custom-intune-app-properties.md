@@ -1,8 +1,8 @@
 # Custom Intune App Properties option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
-_Available on tab: Intune Apps, Intune Updates_
+_&#x41;vailable at level: Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Custom Intune App Properties** right-click option in Patch My PC (PMPC) Publisher allows you to define a custom naming standard for the Win32 applications and updates created by Publisher at the product level. This helps ensure application names in Intune are consistent, descriptive, and aligned with your organizational standards.
 
@@ -27,7 +27,7 @@ From here, you can configure a custom name format for Win32 applications created
 * **%Version%**\
   Resolves to the application version.
 * **%OriginalName%**\
-  Resolves to the default Patch My PC application or update name, which can be reused or extended in your custom pattern.
+  Resolves to the default PMPC application or update name, which can be reused or extended in your custom pattern.
 
 ### **Example**
 
@@ -48,10 +48,10 @@ Resulting Intune application name:
 
 When creating naming conventions for **Intune Updates**, remember that **%OriginalName%** already includes the **Update** **for** prefix.
 
-Avoid adding additional wording like **Update** to prevent duplicated names.
+Avoid adding additional wording like **Update** to prevent duplicate names.
 {% endhint %}
 
-This approach allows you to clearly identify Publisher-created applications whilst retaining the original product and version details.
+This approach lets you clearly identify Publisher-created applications whilst retaining the original product and version details.
 
 ## Configure a Naming Convention
 
