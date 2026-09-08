@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_\
 _&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
 _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-The **Notification Policy** section of **Manage Conflicting Processes** defines which Patch My PC (PMPC) Publisher options become available when the policy [Notify the user to close the application](notification-policy.md#notify-the-user-to-close-the-application) is selected.
+The **Notification Policy** section of **Manage Conflicting Processes** defines which Patch My PC (PMPC) Publisher options become available when the policy [Notify the user to close the application](policy-section.md#notify-the-user-to-close-the-application) is selected.
 
 <figure><img src="../../../../.gitbook/assets/image (751).png" alt="&#x27;Notification Policy&#x27; section" width="501"><figcaption></figcaption></figure>
 
