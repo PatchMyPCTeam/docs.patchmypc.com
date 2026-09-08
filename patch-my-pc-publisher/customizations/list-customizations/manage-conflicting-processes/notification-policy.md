@@ -14,8 +14,6 @@ These settings control how end-user notifications behave when a conflicting proc
 
 If the application to be updated is running, the **Notification behavior if the application running and focus assist is enabled** setting controls how notifications are handled when Windows Focus Assist is active.
 
-<figure><img src="../../../../.gitbook/assets/image (3980).png" alt="Notification behavior" width="488"><figcaption></figcaption></figure>
-
 The available options are:
 
 * [Discard the notification](notification-policy.md#discard-the-notification)
