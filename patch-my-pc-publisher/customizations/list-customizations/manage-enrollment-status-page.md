@@ -27,7 +27,7 @@ If you publish a new version of the application, Publisher automatically removes
 {% hint style="danger" %}
 **Important**
 
-Associating an app with an ESP profile does not install the app. The application must also have a Required Intune assignment targeting the device or user for it to be installed during Autopilot.
+Associating an app with an ESP profile does not install the app. The application must also have a **Required** Intune assignment targeting the device or user for it to be installed during Autopilot.
 {% endhint %}
 
 The available ESP profiles are retrieved from your Intune tenant. To appear in the list, an ESP profile must have **Show app and profile configuration progress** set to **Yes**.

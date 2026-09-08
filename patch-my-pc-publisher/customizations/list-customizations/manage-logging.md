@@ -4,27 +4,33 @@ _Applies to: Patch My PC Publisher V3.x_\
 _&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
 _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-The **Manage Logging** right-click option in Patch My PC (PMPC) Publisher enables _additional_ client-side logging during product installation to assist with troubleshooting failures or unexpected behavior.
+The **Manage Logging** right-click option in Patch My PC (PMPC) Publisher enables _additional_ client-side logging during product installation to help troubleshoot failures or unexpected behavior.
 
 When enabled, Publisher configures the installer to generate a Patch My PC installation log and, when supported, the vendor’s native installation log. These logs are created during product installation on the client device and can be collected for diagnostic purposes.
 
 {% hint style="info" %}
 **Note**
 
-Some vendor installers can generate their own installation logs, most commonly MSI based installers. The **Manage Installation Logging** option facilitates Patch My PC ScriptRunner, which manages the installation, to pass the appropriate logging parameters to the installer so that additional vendor specific logs are created. These logs are useful for client side troubleshooting when an installation fails.
+Some vendor installers can generate their own installation logs, most commonly MSI-based installers. The **Manage Logging** option allows Patch My PC ScriptRunner (which manages the installation) to pass the appropriate logging parameters to the installer so that additional vendor-specific logs are created. These logs are useful for client-side troubleshooting when an installation fails.
 
 This option only affects vendor logging behavior. The Patch My PC ScriptRunner logs are created regardless of whether this option is enabled.
 
-More information on log files and locations can be found [Log Reference Guide for Patch My PC Products](https://docs.patchmypc.com/get-help/log-reference-guide).
+More information on log files and locations can be found in the [Log File Reference](../../technical-references/log-file-reference.md).
 {% endhint %}
+
+## Logging Options
 
 The **Logging Options** dialog provides the following options.
 
 <figure><img src="../../../.gitbook/assets/image (129).png" alt="Logging Options" width="450"><figcaption></figcaption></figure>
 
-## **Folder path**
+### **Enable logging**
 
-Specifies the location where client side installation logs are written. The default log location depends on the product installation scenario:
+Controls whether logging is enabled.
+
+### **Log folder path**
+
+Specifies where client-side installation logs are written. The default location depends on the product installation scenario:
 
 * Products installed from **ConfigMgr and WSUS** store logs in `C:\Windows\CCM\Logs\PatchMyPCInstallLogs`
 * Products installed from **Intune** store logs in `%ProgramData%\PatchMyPCInstallLogs`
@@ -32,17 +38,17 @@ Specifies the location where client side installation logs are written. The defa
 {% hint style="danger" %}
 **Important**
 
-User-based installations write logs to folders within the user profile. More information on log files and locations can be found [Log Reference Guide for Patch My PC Products](https://docs.patchmypc.com/get-help/log-reference-guide).
+User-based installations write logs to folders within the user profile. See the [Log File Reference](../../technical-references/log-file-reference.md) for more information on log files and their locations.
 {% endhint %}
 
-## **Enable verbose logging for MSI installation**
+### **Enable verbose logging for MSI installation**
 
-Enables verbose logging for MSI based installers that support this mode to capture additional detail.
+Enables verbose logging for MSI-based installers that support this mode to capture additional detail.
 
-## **Prefix the log with the computer name**
+### **Prefix the log with the computer name**
 
 Adds the device name to the beginning of the log file name to simplify identification when collecting logs from multiple devices.
 
-## **In case of installation failure, copy the log file to this secondary folder**
+### **In case of installation failure, copy the log file to this secondary folder**
 
 Creates a second copy of the installation log when the product fails to install and writes it to the specified path. The device must be able to access this location at install time and have permission to write to it. If the path is an SMB share, the installation context must have write access.
