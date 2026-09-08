@@ -88,7 +88,7 @@ It lets organizations use user notifications and deferrals early in deployment w
   * **Defer the installation on behalf of the user** (default)\
     If selected, the notification closes after [the timeout expires](policy-section.md#notify-timeout-configuration) and the deferral is automatically applied on behalf of the user. This counts toward either the configured deferral count or deferral time window.\
     \
-    If a deferral limit is reached, such as 5 missed notifications when the deferral count is set to 5, the application will be closed, and the update will proceed automatically.
+    If a deferral limit is reached (such as 5 missed notifications when the deferral count is set to 5), the application will be closed, and the update proceeds automatically.
   * **Close the application and perform the update**\
     If selected, the notification closes after the timeout expires, the application is force-closed, and the update begins immediately.\
     \
@@ -98,4 +98,4 @@ It lets organizations use user notifications and deferrals early in deployment w
 
 If the **Do not allow user deferral. The application will close and update if no action is taken before the timeout expires** option is selected, the user is not allowed to defer the installation.
 
-If the application is still running when the notification timeout expires and no action is taken, the system automatically closes the application and proceeds with the updateimmediately. No additional prompts or deferral options are presented to the user.
+If the application is still running when the notification timeout expires and no action is taken, the system automatically closes the application and proceeds with the update immediately. No additional prompts or deferral options are presented to the user.
