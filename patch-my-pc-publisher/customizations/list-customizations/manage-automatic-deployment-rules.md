@@ -73,11 +73,11 @@ To configure Dynamic Assignments:
 
 <figure><img src="../../../.gitbook/assets/image (794).png" alt="New Dynamic Assignment Rule Settings" width="448"><figcaption></figcaption></figure>
 
-7. Click **Preview** to see which updates currently match the rule.
+7. Click **Preview** to open the **Preview Updates** screen that shows which updates currently match the rule.
 
 <figure><img src="../../../.gitbook/assets/image (795).png" alt="Preview Updates" width="524"><figcaption></figcaption></figure>
 
-8. Click **Close** to close the **Preview Updates** dialog.
+8. Click **Close**.
 9. Click **Manage** on the **New Dynamic Assignment Rule** screen to configure assignments for the rule.
 
 <figure><img src="../../../.gitbook/assets/image (796).png" alt="Clicking &#x27;Manage&#x27;" width="448"><figcaption></figcaption></figure>
