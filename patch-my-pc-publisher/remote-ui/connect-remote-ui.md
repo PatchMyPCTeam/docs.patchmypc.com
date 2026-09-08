@@ -10,11 +10,11 @@ This documentation is for a pre-release feature still under development and, the
 Once this feature is released, it will be announced, and this banner will be removed.
 {% endhint %}
 
-Once you have [set up](setup.md) Patch My PC (PMPC) Publisher _Remote User Interface (UI)_, simply launch the Settings console.&#x20;
+Once you have [set up](setup.md) Patch My PC (PMPC) Publisher _Remote User Interface (UI)_, simply launch the Settings console.
 
 No username or password is required, as when the Settings console connects, Windows authenticates you to the server using your current sign-in (Kerberos, or NTLM as a fallback). The server then checks which Publisher groups you belong to and grants access accordingly.
 
-If your account has not been added to any Publisher groups on the server, the connection still authenticates, but you will not be able to see or change much.
+If your account has not been added to any Publisher groups on the server, or is not in the Local Administrators group, the connection still authenticates, but you will not be able to see or change much.
 
 {% hint style="info" %}
 **Note**

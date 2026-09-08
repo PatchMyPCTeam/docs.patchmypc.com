@@ -46,17 +46,21 @@ Issue the certificate from your domain or enterprise certificate authority (for 
 
 This is the cleanest option for a domain. Issue one Server Authentication certificate to the Publisher server with a SAN matching the FQDN, install it into the server's Local Machine/Personal store with its private key, and bind it (see [Binding the Certificate on the Server](using-different-computer.md#binding-the-certificate-on-the-server)).
 
-### Self-signed (test or non-domain)
+### Self-signed (not recommended)
 
 A self-signed certificate must still meet **all** of the requirements detailed above - the Server Authentication purpose and a matching DNS SAN are the two most commonly missed.
 
 As no CA vouches for it, each workstation has to trust it individually. When an administrator clicks **Apply** in the **Remote Service Connection** wizard, the console adds the certificate to that user's Trusted Root store so future connections are trusted. We prefer a CA-issued certificate wherever a domain CA is available.
 
+{% hint style="info" %}
+**Why self-signed isn't recommended:** A self-signed certificate has no CA vouching for it, so every workstation must trust it individually - repeated for each user and machine. It doesn't scale, is error-prone, and forces you to re-establish trust everywhere on renewal. There's also no revocation path - if the certificate or its key is compromised, you can't revoke it easily. In a domain with an enterprise CA, a CA-issued cert is trusted automatically, renewed centrally, and can be revoked when needed, so reach for self-signed only when no CA is available.
+{% endhint %}
+
 ## Binding the Certificate on the Server
 
 To bind the certificate on the server:
 
-1. In the Settings console on the server, navigate to **Settings | Advanced | Config API External Access**.
+1. In the Settings console on the server, navigate to **Settings | Advanced | Integration & Platform | Configure External Access**.
 2. Select the certificate from the Local Machine store.
 3. Click **Apply**. As binding needs elevation, you may see a User Account Control prompt.
 

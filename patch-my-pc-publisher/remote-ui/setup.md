@@ -23,16 +23,15 @@ Setting up the Patch My PC (PMPC) Publisher _Remote User Interface (UI)_ feature
 This process only needs to be completed once.
 {% endhint %}
 
-On the computer running the Publisher **PatchMyPCService**:
-
-1. Sign in as an administrator.
+1. Sign in to the device running the Patch My PC Service.
 2. Open Publisher's Settings console on the server.
-3. Navigate to **Settings | Advanced | Config API External Access**.
-4. Choose the **hostname** clients will use to reach this server. Use the fully qualified domain name (for example **publisher.contoso.com**), as the name has to match the server certificate.
-5. Choose the **port** the service listens on for remote connections.
-6. Ensure the chosen port in open on the server's firewall.
-7. Make a note of both the chosen hostname and port, as each administrator needs the same hostname and port.
-8. Select the **server certificate** to secure the connection, then click **Apply**.
+3. Navigate to **Settings | Advanced | Integrations & Platform | Configure External Access.**
+4. Enable External HTTPS Access.
+5. Choose the port that the service should listen on for remote connections.
+   1. Ensure that external devices can reach your server on this port.
+6. Select a certificate to bind to that port.
+7. Make a note of both the hostname shown and port configured, as each administrator needs the same hostname and port.
+8. click **Apply** and **Restart** the service .
 
 {% hint style="info" %}
 **Note**
@@ -47,7 +46,7 @@ If you do not yet have a suitable certificate, see [Using a Different Computer](
 On each administrator's workstation:
 
 1. Install or open Publisher's Settings console on the workstation.
-2. Navigate to **Settings | Advanced | Remote Service Connection**.
+2. Navigate to **Settings | Advanced | Integraions & Platform | Configure UI Only Access**.
 3. Enter the **server FQDN** and **port** noted in [Enabling external access on the server](setup.md#enabling-external-access-on-the-server).
 4. Click **Test Connection**. This confirms the workstation can reach the service and that the certificate is valid.
    * For a certificate issued by your domain certificate authority, the test succeeds on its own, and the Settings console adopts the server's certificate automatically - you do not have to browse for a file.
@@ -56,4 +55,10 @@ On each administrator's workstation:
    * For a self-signed certificate, clicking **Apply** adds the certificate to your Trusted Root store so future connections are trusted automatically. The confirmation tells you this happened.
    * For a certificate that your domain already trusts, nothing is installed.
 
-The connection is saved to your Windows profile on that workstation. The next time you launch the console, it connects to the server automatically.
+The connection is saved to the following HKCU path on that workstation.&#x20;
+
+{% hint style="info" %}
+HKCU\Software\Patch My PC Publishing Service\RemoteConnection
+{% endhint %}
+
+The next time you launch the console, it connects to the server automatically.
