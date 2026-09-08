@@ -6,7 +6,7 @@ _&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Manage Role Scope Tags** right-click option in Patch My PC (PMPC) Publisher allows you to control which Intune role scope tags are applied to Win32 applications created by Publisher.
 
-Role scope tags are part of Intune RBAC and limit which administrators can view or manage specific resources. By assigning scope tags, you ensure that only admins with matching role assignments and scope permissions can see or modify the applications created by the Publisher.
+Role scope tags are part of Intune RBAC and limit which administrators can view or manage specific resources. By assigning scope tags, you ensure that only admins with matching role assignments and scope permissions can see or modify the applications created by Publisher.
 
 ## To configure role scope tags:
 
