@@ -10,9 +10,9 @@ The **Notification Policy** options become available when the policy [Notify the
 
 These settings control how end user notifications behave when a conflicting process is detected and the application is running.
 
-### Notification behavior
+### Notification behavior if the application running and focus assist is enabled
 
-If the application to be updated is running, this setting controls how notifications are handled when Windows Focus Assist is active.
+If the application to be updated is running, the **Notification behavior if the application running and focus assist is enabled** setting controls how notifications are handled when Windows Focus Assist is active.
 
 <figure><img src="../../../../.gitbook/assets/image (3980).png" alt="Notification behavior" width="488"><figcaption></figcaption></figure>
 
@@ -37,16 +37,17 @@ When selected, notifications are suppressed while Focus Assist is enabled until 
 
 Once the user has exhausted the allowed deferrals or the deferral time window has expired, the notification is shown regardless of Focus Assist. This provides a balance between respecting Focus Assist and ensuring the user is notified when enforcement is imminent.
 
-#### Defer (Snooze) Policy
+## **Allow the user to defer the installation**
 
-**Allow the user to defer the installation**\
-This setting allows the end user to postpone the installation when a conflicting process is detected and a notification is displayed.
+The **Allow the user to defer the installation** setting allows the end user to postpone the installation when a conflicting process is detected and a notification is displayed.
 
 {% hint style="info" %}
 **Note**
 
 When a user chooses to defer, the installation is recorded as a failed attempt for that evaluation cycle. The update or application will retry during the next evaluation cycle, which depends on the deployment platform being used, such as ConfigMgr software updates, ConfigMgr applications, or Intune Win32 applications.
 {% endhint %}
+
+### Defer Policy
 
 When this option is enabled, the following deferral policies are available.
 
