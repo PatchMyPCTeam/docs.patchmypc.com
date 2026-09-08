@@ -48,7 +48,7 @@ Any changes made to branding or notification content apply to newly published ap
 
 The **Company Logo** setting allows you to display a custom banner image in conflicting process notifications shown to end users.
 
-The configured logo appears at the top of the notification experience in the bottom right of the screen. This helps users clearly identify that the notification is coming from your organization.
+The configured logo appears at the top of the notification experience in the bottom right of the user's screen. This helps users clearly identify that the notification is coming from your organization.
 
 Supported image formats include BMP, GIF, JPG, and PNG.
 
