@@ -11,40 +11,36 @@ Instead of assigning every update to the same Entra groups, Dynamic Assignments 
 {% hint style="info" %}
 **Note**
 
-Dynamic Assignments are conceptually similar to Automatic Deployment Rules in ConfigMgr, but they apply to Intune Updates managed by the Publisher.
+Dynamic Assignments are conceptually similar to Automatic Deployment Rules in ConfigMgr, but they apply to Intune Updates managed by Publisher.
 {% endhint %}
 
 ## How Dynamic Assignments Work
 
-During each sync, the Publisher evaluates newly published Intune Updates against your configured criteria. Criteria can include attributes such as the presence of a CVE, CVE severity, keywords in the update title, or the update classification.
+During each sync, Publisher evaluates newly published Intune Updates against your configured criteria. Criteria can include attributes such as the presence of a Common Vulnerabilities and Exposures (CVE), CVE severity, keywords in the update title, or the update classification.
 
-If an update meets the defined conditions, the Publisher automatically creates assignments for the Entra groups you specify. If an update does not meet the criteria, no assignment is created.
+If an update meets the defined conditions, Publisher automatically creates assignments for the Entra groups you specify. If an update does not meet the criteria, then no assignment is created.
 
 This approach allows different updates to follow different deployment paths based on risk, urgency, or relevance, without requiring manual assignment for each update.
 
 {% hint style="danger" %}
 **Important**
 
-Intune only allows a single assignment per app per group. If the same group is targeted by both a static assignment, through the [Manage Assignments right-click option](manage-assignments/), and a dynamic assignment, the dynamic assignment will take precedence.
+Intune allows only a single assignment per app per group. If the same group is targeted by both a static assignment (through the [Manage Assignments](manage-assignments/) right-click option) and a dynamic assignment, the dynamic assignment will take precedence.
 {% endhint %}
 
 ## Evaluation Criteria
 
 Dynamic Assignments evaluate newly published updates using one or more of the following criteria.
 
-* **Has CVE**\
-  A Boolean value that evaluates whether the update has one or more CVE IDs associated with it.
-* **Severity**\
-  A multi select list that includes Critical, Important, Moderate, and Low.\
-  **Title**\
-  Plain text or regular expression strings used to match update titles. Exclusions can be defined by prefixing a value with a minus sign.
-* **Update Classification**\
-  A multi select list that includes Updates, Critical Updates, and Security Updates.
+* **Has CVE -** A Boolean value that evaluates whether the update has one or more CVE IDs associated with it.
+* **Severity -** A multi-select list that includes Critical, Important, Moderate, and Low.
+* **Title -** Plain text or regular expression strings used to match update titles. Exclusions can be defined by prefixing a value with a minus sign.
+* **Update Classification -** A multi-select list that includes Updates, Critical Updates, and Security Updates.
 
 {% hint style="info" %}
 **Note**
 
-Criteria options that allow multiple values use an **OR** operator. All different criteria types are joined together using an AND operator.
+Criteria options that allow multiple values use an **OR** operator. All different criteria types are joined together using an **AND** operator.
 
 In practical terms, this means an update must meet all selected criteria types, but only one value within each type.
 {% endhint %}
@@ -52,24 +48,26 @@ In practical terms, this means an update must meet all selected criteria types, 
 {% hint style="danger" %}
 **Important**
 
-Dynamic Assignments are evaluated **only for products that are currently enabled** in Publisher Product Tree and **only for the current version of a product** at the time it is published.
+Dynamic Assignments are evaluated **only for products that are currently enabled** in Publisher's Product Tree and **only for the current version of a product** at the time it is published.
 
 When Dynamic Assignments are used together with [auto publishing rules](../../manage/intune-tabs/scan-intune/auto-publishing-rules.md), there is an important timing consideration. During the first Publisher synchronization, auto publishing rules enable the product and publish the update. Because the product was not enabled at the start of the sync, Dynamic Assignment evaluation does not occur at that time.
 
-A **second Publisher synchronization** is required for Dynamic Assignments to evaluate the newly enabled product and determine whether the update meets the configured criteria for assignment.
+A second Publisher synchronization is required for Dynamic Assignments to evaluate the newly enabled product and determine whether the update meets the configured criteria for assignment.
 
 This behavior is expected and should be accounted for when designing automation workflows that combine auto publishing rules with Dynamic Assignments.
 {% endhint %}
 
 ## Configure Dynamic Assignments
 
-To configure Dynamic Assignments, follow the steps below.
+To configure Dynamic Assignments:
 
-1. Open the **Intune Updates** tab in Publisher.
-2. Right-click All Products or All Custom Products and select Manage Dynamic Assignments.
-3. Select **Add** to create a new Dynamic Assignment rule.
+1. Load Publisher and click the **Intune Updates** tab.
+2. Right-click **All Vendors** on either the **Catalog Products** or **Custom Products** tabs, and select **Manage Automatic Deployment Rules**.
+3. On the **Manage Dynamic Assignments** screen, click **Add** to create a new Dynamic Assignment rule.
 
-<figure><img src="../../../.gitbook/assets/image (4039).png" alt="New Dynamic Assignment Rule" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (792).png" alt="Clicking &#x27;Add&#x27; on the &#x27;Manage Dynamic Assignments&#x27; screen" width="563"><figcaption></figcaption></figure>
+
+
 
 4. Enter a Name and optional Description for the rule.
 5. Select one or more Property Filters to define the evaluation criteria.
