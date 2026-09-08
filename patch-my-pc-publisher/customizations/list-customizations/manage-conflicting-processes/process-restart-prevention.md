@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_\
 _&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
 _&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-If the **Prevent the end-user from opening an application while the application is updating** checkbox is checked (under the **Process Restart Prevention** section of **Manage Conflicting Processes** section of Patch My PC (PMPC), the end user is prevented from reopening the application whilst it is updated.
+If the **Prevent the end-user from opening an application while the application is updating** checkbox is checked (under the **Process Restart Prevention** section of the **Manage Conflicting Processes** section of Patch My PC (PMPC) Publisher), the end user is prevented from reopening the application whilst it is updated.
 
 This helps avoid scenarios where the application is closed for the update but immediately relaunched, which could cause the installation to fail or be delayed.
 
