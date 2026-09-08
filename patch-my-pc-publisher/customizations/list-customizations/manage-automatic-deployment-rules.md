@@ -67,23 +67,29 @@ To configure Dynamic Assignments:
 
 <figure><img src="../../../.gitbook/assets/image (793).png" alt="Clicking &#x27;Add&#x27; on the &#x27;Manage Dynamic Assignments&#x27; screen" width="563"><figcaption></figcaption></figure>
 
+4. Enter a **Name** and optional **Description** for the rule.
+5. Select one or more **Property Filters** to define the evaluation criteria.
+6. Configure the **Search Criteria** values for each selected filter.
 
-
-4. Enter a Name and optional Description for the rule.
-5. Select one or more Property Filters to define the evaluation criteria.
-6. Configure the search criteria values for each selected filter.
-
-<figure><img src="../../../.gitbook/assets/image (4042).png" alt="New Dynamic Assignment Rule Settings" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (794).png" alt="New Dynamic Assignment Rule Settings" width="448"><figcaption></figcaption></figure>
 
 7. Click **Preview** to see which updates currently match the rule.
 
-<figure><img src="../../../.gitbook/assets/image (4041).png" alt="Preview Updates" width="525"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (795).png" alt="Preview Updates" width="524"><figcaption></figcaption></figure>
 
-8. Click **Manage** to configure assignments for the rule.
-9. Add the required Intune assignments using the standard Manage Assignments window.
+8. Click **Close** to close the **Preview Updates** dialog.
+9. Click **Manage** on the **New Dynamic Assignment Rule** screen to configure assignments for the rule.
 
-<figure><img src="../../../.gitbook/assets/image (4043).png" alt="Manage Assignments" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (796).png" alt="Clicking &#x27;Manage&#x27;" width="448"><figcaption></figcaption></figure>
 
-10. Click **OK** to save the rule.
+10. &#x20;Add the required Intune assignments using the standard Manage Assignments window.
+11. Click **OK** to save the rule.
 
-<figure><img src="../../../.gitbook/assets/image (4044).png" alt="Rule Configuration Complete" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (797).png" alt="Clicking &#x27;OK&#x27; to save the rule" width="447"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+You can also edit an existing Dynamic Assignment Rule by selecting it and clicking **Edit** or delete an existing Dynamic Assignment Rule by selecting it and clicking **Remove**.
+{% endhint %}
+
