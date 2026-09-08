@@ -68,7 +68,7 @@ The **Notify Timeout Configuration** setting controls how long the update waits 
 
 <figure><img src="../../../../.gitbook/assets/image (749).png" alt="Notify Timeout Configuration" width="479"><figcaption></figcaption></figure>
 
-The timeout defines the period the user has to close the application before enforcement behavior occurs. If the application is closed within this window, the update proceeds. If no action is taken, the outcome depends on the [configured deferral and enforcement settings](policy-section.md#defer-policy).
+The timeout defines the period the user has to close the application before enforcement behavior occurs. If the application is closed within this window, the update proceeds. If no action is taken, the outcome depends on the [configured deferral and enforcement settings](notification-policy.md#allow-the-user-to-defer-the-installation).
 
 {% hint style="danger" %}
 **Important**
