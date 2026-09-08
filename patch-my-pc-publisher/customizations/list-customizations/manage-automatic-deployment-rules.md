@@ -65,7 +65,7 @@ To configure Dynamic Assignments:
 2. Right-click **All Vendors** on either the **Catalog Products** or **Custom Products** tabs, and select **Manage Automatic Deployment Rules**.
 3. On the **Manage Dynamic Assignments** screen, click **Add** to create a new Dynamic Assignment rule.
 
-<figure><img src="../../../.gitbook/assets/image (792).png" alt="Clicking &#x27;Add&#x27; on the &#x27;Manage Dynamic Assignments&#x27; screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (793).png" alt="Clicking &#x27;Add&#x27; on the &#x27;Manage Dynamic Assignments&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 
 
