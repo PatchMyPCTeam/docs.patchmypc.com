@@ -1,8 +1,8 @@
 # Predefined Scripts option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 Patch My PC (PMPC) defined pre- and post-scripts are provided for specific products that cannot fully manage certain scenarios on their own. A common example is software that is unable to remove older versions during an upgrade, such as Oracle Java.
 
@@ -18,9 +18,7 @@ The **Predefined Scripts** right-click option automatically downloads and bundle
 
 <figure><img src="../../../.gitbook/assets/image (4418).png" alt="Recommended Scripts" width="563"><figcaption></figcaption></figure>
 
-### Review the Recommended Script
-
-To view the PMPC recommended script:
+### To view the PMPC Recommended Script
 
 1. Click the **Predefined Scripts** right-click customization option for the product in the Product Tree.
 2. Click **View** to open the script in a browser and review its contents.
@@ -36,7 +34,7 @@ Recommended scripts are hosted by PMPC and are referenced by URL. They are not e
 
 The following options control how the recommended script behaves:
 
-* **Don’t attempt software update if the pre-script returns an exit code other than 0 or 3010**  \
+* **Don’t attempt software update if the pre-script returns an exit code other than 0 or 3010**\
   When enabled, the installation or update stops if the recommended script fails. This option is enabled by default and prevents the deployment from continuing if required cleanup actions cannot be completed.
-* **Disable the Patch My PC recommended pre-update script for this product**  \
+* **Disable the Patch My PC recommended pre-update script for this product**\
   When enabled, the recommended script is skipped for this product. This option is available only for recommended scripts and does not apply to required scripts.

@@ -1,8 +1,8 @@
 # Manage Naming Convention option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Vendors, Vendor_\
-_Available on tab: Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Vendors, Vendor_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Manage Naming Convention** right-click option in Patch My PC (PMPC) Publisher allows you to define a custom naming standard for the Win32 applications and updates created by Publisher at the levels detailed above.
 
@@ -55,9 +55,7 @@ Avoid adding additional wording like **Update** to prevent duplicated names.
 
 This approach allows you to clearly identify Publisher-created applications whilst retaining the original product and version details.
 
-## Configure a Naming Convention
-
-To configure a naming convention:
+## To configure a Naming Convention
 
 1. Right-click the relevant object in the Product Tree and select **Manage Naming Convention**.
 2. On the **Custom Intune Application Properties** dialog, click one or more token values to build your required naming pattern.

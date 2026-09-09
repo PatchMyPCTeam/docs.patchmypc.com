@@ -1,8 +1,8 @@
 # Add/Remove an Assignment in Patch My PC Publisher
 
-_Applies to: Patch My PC Publisher V3.x_\
-_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Intune Apps, Intune Updates_
+_Applies to: Patch My PC Publisher V3.x_\
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Manage Assignments** right-click option in Patch My PC (PMPC) Publisher allows you to manage the assignments for an Intune App/Update.
 
@@ -33,7 +33,7 @@ When you click **Add Assignment**, the **Select Entra ID Groups** dialog appears
 
 Using the capabilities on this dialog, you can use the:
 
-* **Search** field to enter a search query to search for Entra ID groups by name or description. Use the filter dropdown and select **Contains** (default) or **Starts With** to help narrow your search even further, then click **Search**.&#x20;
+* **Search** field to enter a search query to search for Entra ID groups by name or description. Use the filter dropdown and select **Contains** (default) or **Starts With** to help narrow your search even further, then click **Search**.
 * **Name like** field to filter the group list by matching text in the group name from the results returned by the Search.
 * **Description like** field to filter the group list by matching text in the group description from the results returned by the Search.
 
@@ -69,15 +69,13 @@ See [Assignment Options](assignment-options.md) for more details on the availabl
 
 <figure><img src="../../../../.gitbook/assets/image (4812).png" alt="Edit dialog" width="446"><figcaption></figcaption></figure>
 
-### Steps to Add an Assignment
-
-To add an assignment:
+### To add an Assignment
 
 1. Right-click the relevant object in the Product Tree and select **Manage Assignments**
 2. On the **Manage Assignments** dialog, click the relevant tab for the type of assignment you want to add.
 3. Click **Add Assignment**
 4. On the **Select Entra ID Groups** dialog, select the relevant Entra ID groups/built-in groups, then click **OK**.
-5. Configure [any required settings ](assignment-options.md)on the **Manage Assignments** dialog (such as notifications,  availability deadlines, the restart grace period, etc), then click **OK**.
+5. Configure [any required settings ](assignment-options.md)on the **Manage Assignments** dialog (such as notifications, availability deadlines, the restart grace period, etc), then click **OK**.
 
 {% hint style="danger" %}
 **Important**
@@ -87,14 +85,14 @@ All changes made in this window are applied during the next Publisher [Synchroni
 If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Manager](../../../manage/intune-tabs/intune-manager.md) instead.
 {% endhint %}
 
-## Edit an Assignment
+## To edit an Assignment
 
 Once an assignment has been [added](add-remove-assignment.md#add-an-assignment), it can be edited by:
 
 1. Right-click the relevant object in the Product Tree and select **Manage Assignments**
 2. On the **Manage Assignments** dialog, click the relevant tab for the type of assignment you want to edit.
 3. Click **Add Assignment** to [add an additional assignment](add-remove-assignment.md#steps-to-add-an-assignment) or **Remove Assignment** to [remove an existing assignment](add-remove-assignment.md#steps-to-remove-an-assignment).
-4. Modify [the settings](assignment-options.md) for an existing assignment (where supported) by either clicking the down arrow (and selecting the required option from the dropdown) or clicking the link under the field value to open an edit dialog where you can configure the required settings.&#x20;
+4. Modify [the settings](assignment-options.md) for an existing assignment (where supported) by either clicking the down arrow (and selecting the required option from the dropdown) or clicking the link under the field value to open an edit dialog where you can configure the required settings.
 5. Click **OK** on the **Manage Assignments** dialog to save your settings.
 
 ## Remove an Assignment
@@ -103,9 +101,7 @@ Clicking **Remove Assignment** removes the selected assignment from Publisher. Y
 
 The removal takes effect during the next Publisher synchronization. Removing an assignment here does not delete the Entra ID group and does not immediately delete the assignment from Intune.
 
-### Steps to Remove an Assignment
-
-To remove an assignment:
+### To remove an Assignment
 
 1. Right-click the relevant object in the Product Tree and select **Manage Assignments**
 2. On the **Manage Assignments** dialog, click the relevant tab for the type of assignment you want to remove.

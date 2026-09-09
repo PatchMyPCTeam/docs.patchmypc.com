@@ -1,8 +1,8 @@
 # App Update Mode & Retention option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Vendor, Product_\
-_Available on tab: ConfigMgr Apps_
+_&#x41;vailable at level: Vendor, Product_\
+_&#x41;vailable on tab: ConfigMgr Apps_
 
 The **App Update Mode & Retention** right-click option in Patch My PC (PMPC) Publisher allows you to override the global Microsoft ConfigMgr application behavior for a specific vendor or individual product.
 
@@ -24,7 +24,7 @@ By configuring a product-level override, you can retain more versions for specif
 
 Overrides configured using the **App Update Mode & Retention** right-click option take precedence over the global options (defined on the under the [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) section of the [Base Install Options](../../manage/configmgr-apps-tab/base-install-options/) tab), and are applied only to the selected vendor or product during publishing.
 
-To configure **Application Update Mode**:
+### To configure **Application Update Mode**
 
 1. Right-click the Vendor or Product you want to configure and select **App Update Mode & Retention**.\
    \

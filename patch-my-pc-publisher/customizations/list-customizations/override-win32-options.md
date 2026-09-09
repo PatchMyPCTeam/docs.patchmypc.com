@@ -1,8 +1,8 @@
 # Override Win32 Options in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Vendor, Product_\
-_Available on tab: Intune Apps, Intune Updates_
+_&#x41;vailable at level: Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Override Win32 Options** right-click option in Patch My PC (PMPC) Publisher allows you to override the global Win32 application options for a specific vendor or product when certain Microsoft Intune applications or updates require different behavior than what is defined globally.
 
@@ -14,7 +14,7 @@ In some scenarios, applying the same behavior across all applications is not ide
 
 Overrides are especially useful for applications that update frequently, such as web browsers.
 
-Products like Google Chrome, Microsoft Edge, and Mozilla Firefox release updates often. Issues introduced by these updates may not be identified immediately.&#x20;
+Products like Google Chrome, Microsoft Edge, and Mozilla Firefox release updates often. Issues introduced by these updates may not be identified immediately.
 
 If your global retention setting keeps only a small number of previous versions, the version you want to roll back to may no longer be available when a problem is discovered.
 
@@ -54,7 +54,6 @@ The following **Publishing Options** apply to only Intune Updates:
 
 Configure Overrides
 
-
 Overrides can be configured both globally under the [Publishing Options](../../manage/intune-tabs/intune-options/publishing-options.md) section of the [Intune tabs](../../manage/intune-tabs/), or by using the **Override Win32 Options** right-click option.
 
 {% hint style="danger" %}
@@ -63,7 +62,7 @@ Overrides can be configured both globally under the [Publishing Options](../../m
 Any overrides configured at the Vendor/Product level take precedence over the global options and are applied only to the selected vendor or product during publishing.
 {% endhint %}
 
-To configure **Override Win32 Options:**
+## To configure **Override Win32 Options**
 
 1. Right-click the Vendor/Product you want to customize and select **Override Win32 Options**.
 2. Review the available options based on whether you are configuring an app or an update.

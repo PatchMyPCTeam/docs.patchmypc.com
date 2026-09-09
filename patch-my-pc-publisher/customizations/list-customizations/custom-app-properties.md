@@ -57,18 +57,16 @@ Token values are populated from the Publisher catalog definition. These values a
 If the ConfigMgr apps global option to [Do not include the version in the application name](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md#do-not-include-the-version-in-the-application-name) is enabled, the **%OriginalName%** token will also omit the version number. In this scenario, the original name resolves to the product name and variant/architecture only, without the version suffix.
 {% endhint %}
 
-## **Configure** Custom Application Properties
+## **To configure** Custom Application Properties
+
+1. Right-click the Product you want to customize and select **Set custom application icon and properties**.
 
 <figure><img src="../../../.gitbook/assets/image (111).png" alt="Configure Custom Application Properties" width="375"><figcaption></figcaption></figure>
 
-To configure Custom Application Properties:
-
-1. Right-click the Product you want to customize.
-2. Select **Set custom application icon and properties**.
-3. Enter a custom Application name if required. For ConfigMgr, optionally configure a Localized application name.
-4. Enter a Custom Description\*.
-5. Select **Browse** to upload a custom icon if required.
-6. Click **OK** to save the configuration.
+2. On the **Custom Application Properties** screen, enter a custom Application name if required. For ConfigMgr, optionally configure a Localized application name.
+3. Enter a Custom Description\*.
+4. Select **Browse** to upload a custom icon if required.
+5. Click **OK** to save the configuration.
 
 \*Click **Show default description** to display the original catalog description. Copy the text to the clipboard, paste it into the **Custom Description** field, and edit it to create your custom description.
 

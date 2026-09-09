@@ -1,10 +1,10 @@
 # Manage Return Codes option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
-The **Manage Return Codes** right-click option in Patch My PC (PMPC) Publisher lets you control how installer exit codes are interpreted for a product in Publisher.&#x20;
+The **Manage Return Codes** right-click option in Patch My PC (PMPC) Publisher lets you control how installer exit codes are interpreted for a product in Publisher.
 
 Each Return Code can be mapped to a specific code type to influence how the installation result is reported and how restart behavior is handled on the client.
 
@@ -13,7 +13,7 @@ This feature is commonly used to suppress reboot behavior or to ensure that non-
 {% hint style="danger" %}
 **Important**
 
-The management platform can also influence how devices respond to Return Codes, particularly regarding restart behavior.&#x20;
+The management platform can also influence how devices respond to Return Codes, particularly regarding restart behavior.
 
 Review the relevant Microsoft documentation for [Intune](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-win32-app-management#set-win32-app-availability-and-notifications), [ConfigMgr](https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/device-restart-notifications), or [WSUS](https://learn.microsoft.com/en-us/windows/deployment/update/waas-restart) to ensure Return Codes and restart actions behave as expected in your environment.
 {% endhint %}
@@ -34,19 +34,17 @@ The following Return Codes are commonly used by default:
 
 Some installers return non-standard exit codes, even when the installation succeeds. In these cases, you can add a custom Return Code and map it to **Success**.
 
-For example, **Brave Browser** always exits with Return Code **19** on a successful installation.&#x20;
+For example, **Brave Browser** always exits with Return Code **19** on a successful installation.
 
 As **19** is not treated as a success code by default, it can be mapped to **Success** so that the successful deployment is reported correctly.
 
-To add a custom Return Code:
+### To add a custom Return Code
 
 1. Locate the relevant product in the Product Tree.
 2. Right-click it and select **Manage Return Codes**
 3. On the **Manage Return Codes** dialog, click **Add**
 
 <figure><img src="../../../.gitbook/assets/image (4770).png" alt="Clicking &#x27;Add&#x27; on the &#x27;Manage Return Codes&#x27; dialog" width="446"><figcaption></figcaption></figure>
-
-
 
 4. In the **Return Code** field, enter the required Return Code (for example **19**), and if the **Code Type** should be anything other than **Success**, select the relevant value from the **Code Type** dropdown beside the new Return Code.
 

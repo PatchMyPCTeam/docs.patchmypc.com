@@ -57,9 +57,7 @@ A second Publisher synchronization is required for Dynamic Assignments to evalua
 This behavior is expected and should be accounted for when designing automation workflows that combine auto publishing rules with Dynamic Assignments.
 {% endhint %}
 
-## Configure Dynamic Assignments
-
-To configure Dynamic Assignments:
+## To configure Dynamic Assignments
 
 1. Load Publisher and click the **Intune Updates** tab.
 2. Right-click **All Vendors** on either the **Catalog Products** or **Custom Products** tabs, and select **Manage Automatic Deployment Rules**.
@@ -92,4 +90,3 @@ To configure Dynamic Assignments:
 
 You can also edit an existing Dynamic Assignment Rule by selecting it and clicking **Edit** or delete an existing Dynamic Assignment Rule by selecting it and clicking **Remove**.
 {% endhint %}
-

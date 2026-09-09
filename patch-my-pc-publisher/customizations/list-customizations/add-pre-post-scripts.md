@@ -1,8 +1,8 @@
 # Add Pre/Post Scripts option in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: Product_\
-_Available on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
+_&#x41;vailable at level: Product_\
+_&#x41;vailable on tab: WSUS Updates, ConfigMgr Apps, Intune Apps, Intune Updates_
 
 The **Add Pre/Post Scripts** option in Patch My PC (PMPC) Publisher lets you run your own scripts before or after an installation or an uninstallation. This includes the following scenarios:
 
@@ -51,7 +51,7 @@ The **Argument** field allows parameters to be passed to the selected script at 
 
 The **Insert Variable** links allow supported variables to be inserted directly into the **Argument** field. These variables resolve at runtime and can be used to pass values such as vendor name, product name, version, package ID, and installer return code to the script.
 
-#### **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**&#x20;
+#### **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**
 
 The **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010** checkbox can be checked if the deployment must stop when the pre script fails.
 
@@ -66,8 +66,6 @@ There are two exit codes you may see when a pre-script does not run successfully
 **Note**
 
 See [PatchMyPC-ScriptRunner – Known Exit Codes](https://patchmypc.com/kb/script-runner-exit-codes/) for more information on ScriptRunner exit codes.
-
-
 {% endhint %}
 
 #### **Run the pre-update script before performing any auto-close or skip process checks**
@@ -79,8 +77,8 @@ The **Run the pre-update script before performing any auto-close or skip process
 
 These two checkboxes only apply to Pre-scripts and have no effect on Post-scripts:
 
-* **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**&#x20;
-* **Run the pre-update script before performing any auto-close or skip process checks**&#x20;
+* **Don’t attempt software update if the pre script returns an exit code other than 0 or 3010**
+* **Run the pre-update script before performing any auto-close or skip process checks**
 {% endhint %}
 
 ### Additional Files and Folders
@@ -93,7 +91,7 @@ Any files and folders added here are packaged together with the application or u
 
 #### **Additional files**
 
-Use **Additional files** to include individual files that must be present during installation or uninstallation. For example, configuration files, license files, or other supporting resources.&#x20;
+Use **Additional files** to include individual files that must be present during installation or uninstallation. For example, configuration files, license files, or other supporting resources.
 
 To add files:
 
@@ -144,9 +142,7 @@ The **Recommended Scripts** tab contains scripts provided by Patch My PC for cer
 
 If required, check the **Disable the Patch My PC recommended post-update script for this product** in the event of any issues.
 
-## Configuring a Pre- or Post-script
-
-To configure a pre- or post-script:
+## To configure a Pre- or Post-script
 
 1. Click the relevant tab.
 2. If you want to add a script, continue; otherwise, go to Step 5.
@@ -183,7 +179,7 @@ Instead, pass a single delimited string and split it inside the script. For exam
 {% endhint %}
 
 8. Configure any required [Additional Files and Folders](add-pre-post-scripts.md#additional-files-and-folders).
-9. Click **OK.**&#x20;
+9. Click **OK.**
 
 ## Using Uninstall-Software.ps1
 
@@ -193,9 +189,7 @@ The script is available from the Patch My PC Community Scripts repository:
 
 [https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Uninstall/Pre-Uninstall/Uninstall-Software](https://github.com/PatchMyPCTeam/Community-Scripts/tree/main/Uninstall/Pre-Uninstall/Uninstall-Software)
 
-### How to Configure the Script as a Pre-Script
-
-To configure **Uninstall-Software.ps1** as a pre-script:
+### To configure the Script as a Pre-Script
 
 1. Download **Uninstall-Software.ps1** from the community repository.
 2. In the **Add Pre/Post Scripts** form, select the **Install** or **Uninstall** tab as required.
@@ -222,15 +216,14 @@ Uninstall-Software.ps1 -DisplayName "Greenshot"
 
 In Publisher, configure the script as follows.
 
-* **Pre Script**  \
-  &#x20;`Uninstall-Software.ps1`
+* **Pre Script**\
+  `Uninstall-Software.ps1`
 * **Argument**\
   `-DisplayName \"Greenshot\"`
 
 In this example, the script attempts to uninstall any installed application with a display name matching **Greenshot** before the main installation or uninstallation proceeds. Other parameters documented in the script [README](https://github.com/PatchMyPCTeam/Community-Scripts/blob/main/Uninstall/Pre-Uninstall/Uninstall-Software/readme.md) can also be used to perform more targeted uninstall
 
 Advanced Configurations and Examples
-
 
 The following knowledge base articles provide practical examples of how to leverage pre and post-scripts or additional files when configuring applications and updates in the Publisher:
 

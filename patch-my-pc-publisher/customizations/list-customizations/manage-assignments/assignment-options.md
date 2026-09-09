@@ -115,9 +115,7 @@ Whenever [Filter Mode](assignment-options.md#filter-mode-and-filter-name) is set
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt="&#x27;Select Filter&#x27; dialog" width="563"><figcaption></figcaption></figure>
 
-### Steps to Select a Filter
-
-To select a Filter:
+### To select a Filter
 
 1. Set **Filter Mode** to **Include** or **Exclude** on the assignment.
 2. Click the **n/a** value in the **Filter** column to open the **Select Filter** dialog.
@@ -159,9 +157,7 @@ This behavior is documented in a Patch My PC blog at [https://patchmypc.com/blog
 A recommended workaround is to configure availability as **Publishing date plus 0 days**. This sets the availability to the application publish time, which is already in the past when the device evaluates the assignment. As a result, Intune processes the assignment immediately and avoids delays caused by mixed availability configurations.
 {% endhint %}
 
-### Steps to Configure an Available Time
-
-To configure an **Available Time**:
+### To configure an Available Time
 
 1. [Add](add-remove-assignment.md#add-an-assignment) or [Edit](add-remove-assignment.md#edit-an-assignment) an assignment.
 2. On the **Manage Assignments** dialog, click the relevant tab for the type of assignment you want to configure the **Available Time** for.
@@ -227,9 +223,7 @@ This behavior is an Intune platform limitation and is documented in the Patch My
 To ensure predictable deadline enforcement, avoid mixing **As soon as possible** with future availability times. A recommended approach is to configure availability as **Publishing date plus 0 days**, which sets availability to the publish time and allows both availability processing and deadline enforcement to occur as expected.
 {% endhint %}
 
-### Steps to Configure a Deadline
-
-To configure a **Deadline**:
+### To configure a Deadline
 
 1. [Add](add-remove-assignment.md#add-an-assignment) or [Edit](add-remove-assignment.md#edit-an-assignment) an assignment.
 2. On the **Manage Assignments** dialog, click the relevant tab for the type of assignment you want to configure the **Deadline** for.
@@ -274,9 +268,7 @@ The value defined in the **Grace Period** field controls how long a device can d
 
 During a configured grace period, the user can continue working before the Win32 app indicates that a reboot becomes mandatory.
 
-### Steps to Configure a Grace Period
-
-To configure a **Grace Period**:
+### To configure a Grace Period
 
 1. [Add](add-remove-assignment.md#add-an-assignment) or [Edit](add-remove-assignment.md#edit-an-assignment) an assignment.
 2. On the **Manage Assignments** dialog, click the relevant tab for the type of assignment you want to configure the **Grace Period** for.

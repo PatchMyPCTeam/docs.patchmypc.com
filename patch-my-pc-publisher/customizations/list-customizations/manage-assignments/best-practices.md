@@ -1,8 +1,8 @@
 # Best Practices for Assignments in Patch My PC Publisher
 
-_Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Intune Apps, Intune Updates_
+_Applies to: Patch My PC Publisher V3.x_\
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 Assignment strategy varies by organization and is often driven by internal policy, regulatory requirements, or security frameworks. The guidance in this section is illustrative, not prescriptive. It provides a practical example of how assignments configured in Patch My PC (PMPC) Publisher can be used to deliver updates in a staged and controlled manner.
 
@@ -28,11 +28,11 @@ An alternative approach is to avoid configuring assignments at higher levels and
 
 Whichever approach you choose, avoid mixing assignment strategies across multiple levels unless you fully understand how inheritance and overrides behave. A consistent assignment model helps prevent unintended changes and makes ongoing management more predictable.
 
-## Phased Deployments / Update Rings
+## Phased Deployments/Update Rings
 
 A common and effective approach is to deploy updates in phases. Otherwise known as _Phased Deployments_ or _Update Rings_, where availability is consistent but enforcement is staggered using different deadlines.
 
-<figure><img src="../../../../.gitbook/assets/image (4829).png" alt="Example of a phased deployment " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4829).png" alt="Example of a phased deployment" width="563"><figcaption></figcaption></figure>
 
 In the example above, three **Required for enrolled devices** assignments are configured at the Vendor level for all Google products on the **Intune Updates** tab. The same approach outlined here can also be applied at the All Products or individual Product level.
 

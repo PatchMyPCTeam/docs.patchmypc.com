@@ -34,7 +34,7 @@ The available ESP profiles are retrieved from your Intune tenant. To appear in t
 
 <figure><img src="../../../.gitbook/assets/image (4052).png" alt="Show app and profile configuration progress" width="563"><figcaption></figcaption></figure>
 
-### To configure ESP profiles for an application:
+### To configure ESP profiles for an application
 
 1. Right-click the relevant product, vendor, or product group and select **Manage Enrollment Status Page**.
 2. The **Select ESPs** window opens and displays all eligible classic ESP profiles from your Intune tenant.

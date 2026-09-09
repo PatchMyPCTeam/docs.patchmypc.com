@@ -53,9 +53,7 @@ Avoid adding additional wording like **Update** to prevent duplicate names.
 
 This approach lets you clearly identify Publisher-created applications whilst retaining the original product and version details.
 
-## Configure a Naming Convention
-
-To configure a naming convention:
+## To configure a Naming Convention
 
 1. Right-click the relevant product in the Product Tree and select **Custom Intune App Properties**
 2. On the **Custom Intune Application Properties** dialog, click one or more token values to build your required naming pattern for this application.

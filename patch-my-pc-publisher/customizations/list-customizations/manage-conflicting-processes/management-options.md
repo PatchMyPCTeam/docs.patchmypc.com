@@ -22,7 +22,7 @@ You can:
 * Add additional process names if your environment uses processes that should also be considered conflicting.
 * Remove processes if required, although this is generally not recommended unless you are certain the process does not interfere with updates.
 
-### To manage the process list:
+### To manage the process list
 
 1. Right-click the relevant product in the Product Tree and select **Manage Conflicting Processes**.
 2. On the **Manage Conflicting Processes** screen, click **Manage Process List**.
