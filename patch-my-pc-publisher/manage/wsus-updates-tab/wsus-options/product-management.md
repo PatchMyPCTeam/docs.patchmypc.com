@@ -2,13 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Product Management** section on the **WSUS Options** tab in Patch My PC (PMPC) Publisher manages the PMPC update category in Microsoft Configuration Manager (ConfigMgr). This category must be enabled for third-party updates published by Patch My PC to be synchronized by the Software Update Point (SUP).
+The **Product Management** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher manages the **Patch My PC** update category in Microsoft Configuration Manager (ConfigMgr). This category must be enabled for third-party updates published by PMPC to be synchronized by the Software Update Point (SUP).
 
 <figure><img src="../../../../.gitbook/assets/image (1008).png" alt="&#x27;Product Management&#x27; section" width="563"><figcaption></figcaption></figure>
 
-Checking the **Selected in ConfigMgr** checkbox (or leaving it selected if it is already checked) ensures that the corresponding PMPC product category is also selected in the **ConfigMgr Console** under:
+Checking the **Selected in ConfigMgr** checkbox (or leaving it selected if it is already checked) ensures that the corresponding **Patch My PC** product category is also selected in the **ConfigMgr Console** under:
 
-**Administration | Site Configuration | Sites | {site} | Settings | Configure Site Components | Software Update Point | Products**.&#x20;
+**Administration | Site Configuration | Sites |&#x20;**_**\<site>**_**&#x20;| Settings | Configure Site Components | Software Update Point | Products**.&#x20;
 
 This guarantees that PMPC third-party updates are evaluated during a SUP sync.
 
@@ -21,18 +21,16 @@ In some environments, you may see two **Patch My PC** product categories. This m
 
 When this happens, the existing Patch My PC category is effectively re-hashed, causing ConfigMgr to detect it as a new category. As a result, both categories may appear with the same display name.
 
-In this scenario, enable both Patch My PC categories in Publisher and under **Software Update Point Component Properties | Products**. This ensures that all PMPC updates continue to synchronize correctly, regardless of which category ID they are associated with.
+In this scenario, enable both **Patch My PC** categories in Publisher and under **Software Update Point Component Properties | Products**. This ensures that all PMPC updates continue to synchronize correctly, regardless of which category ID they are associated with.
 {% endhint %}
 
-Checking the **Selected in WSUS** checkbox (or leaving it selected if it is already checked) ensures that the corresponding Patch My PC product category is also selected in the **WSUS Console | Products and Classifications**.
+Checking the **Selected in WSUS** checkbox (or leaving it selected if it is already checked) ensures that the corresponding **Patch My PC** product category is also selected in the **WSUS Console** under **Products and Classifications**.
 
 <figure><img src="../../../../.gitbook/assets/image (89).png" alt="WSUS Products and Classifications" width="347"><figcaption></figcaption></figure>
 
 ## When does the Patch My PC category become visible?
 
-Once Publisher is installed, the **Patch My PC** product category is not visible in ConfigMgr immediately.
-
-Typically, the category becomes available only after:
+Once Publisher is installed, the **Patch My PC** product category is not visible in ConfigMgr immediately. It typically becomes available only after:
 
 1. The first PMPC update is published to WSUS.
 2. A SUP synchronization occurs.
@@ -45,18 +43,19 @@ If Publisher is installed on the ConfigMgr Site Server, you can evaluate the SUP
 To achieve this:
 
 * Restart the WCM (WSUS Configuration Manager) component from Publisher.
-* This forces ConfigMgr to immediately re-evaluate WSUS categories.
-* The **Patch My PC** category becomes visible straight away
 
 {% hint style="info" %}
 **Note**
 
-This functionality is documented in the [ConfigMgr Component Management](configmgr-component-management.md) section and is useful during initial setup to speed up onboarding.
+See [ConfigMgr Component Management](configmgr-component-management.md) section for more information.
 {% endhint %}
+
+* This forces ConfigMgr to immediately re-evaluate WSUS categories.
+* The **Patch My PC** category becomes visible straight away
 
 ## Logging
 
-Patch My PC product information obtained from the SUP component properties in ConfigMgr, and the result of toggling the checkbox, are recorded in the **PatchMyPC-SmsProviderConfigMgrRepository.log** located at:
+PMPC product information obtained from the SUP component properties in ConfigMgr, and the result of toggling the checkbox, are recorded in the **PatchMyPC-SmsProviderConfigMgrRepository.log** located at:
 
 _**%ProgramFiles%**_**\Patch My PC\Patch My PC Publishing Service\Logs**
 
