@@ -8,7 +8,7 @@ The **Manage Security Scopes** right-click option in Patch My PC (PMPC) Publishe
 
 During each synchronization, Publisher applies the selected security scopes to any applications it creates in ConfigMgr. This ensures that applications are visible and manageable only by administrators with access to the assigned scopes.
 
-## To configure security scope tags:
+## To configure security scope tags
 
 1. Right-click the relevant item and select **Manage Security Scopes**. The list of available security scopes is retrieved directly from your ConfigMgr environment.
 
