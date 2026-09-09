@@ -25,13 +25,13 @@ You can also refresh the list using the refresh button in the top right corner.
 {% endhint %}
 
 3. You can optionally enable **Enforce selected Security Scopes** (see [Enforcing Security Scopes](manage-security-scopes.md#enforcing-security-scopes) for more information).
-4. Click **OK**
+4. Click **OK**.
 
 ## Enforcing Security Scopes
 
-When enforcement is enabled, Publisher ensures that only the selected security scopes remain assigned to the application. If you manually add additional scopes in the ConfigMgr console, Publisher will remove them during the next synchronization.
+When the **Enforce selected Security Scopes** checkbox is checked, Publisher ensures that only the selected security scopes remain assigned to the application. If you manually add additional scopes in the ConfigMgr console, Publisher will remove them during the next synchronization.
 
-This option is useful when you want strict control over application visibility and want toprevent scope drift caused by manual changes.
+This option is useful when you want strict control over application visibility and want to prevent scope drift caused by manual changes.
 
 {% hint style="danger" %}
 **Important**
