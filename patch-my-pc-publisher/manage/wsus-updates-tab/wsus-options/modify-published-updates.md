@@ -275,7 +275,7 @@ The MSI patch metadata defined in the catalog can be extensive and evaluates con
 
 ### More Details button
 
-The _More Details_ option opens an **Update Details** window for a selected update. This view exposes the update's underlying WSUS metadata and is intended for validation and troubleshooting. The information shown here is read-only and reflects exactly what was published to WSUS.
+The _More Details_ option opens an **Update Details** screen for a selected update. This view exposes the update's underlying WSUS metadata and is intended for validation and troubleshooting. The information shown here is read-only and reflects exactly what was published to WSUS.
 
 #### To view more details for an update
 
