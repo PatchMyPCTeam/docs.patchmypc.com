@@ -33,9 +33,9 @@ The **UpdateID** column is highlighted in yellow when the update is in a WSUS st
 
 This typically indicates that publishing did not complete successfully or that update content is missing or not yet available. Common causes include incomplete content upload or metadata processing issues.
 
-The yellow highlight is an attention indicator. Click [**More Details**](modify-published-updates.md#more-details) to see the update status.
+The yellow highlight is an attention indicator. Click [**More Details**](modify-published-updates.md#more-details-button) to see the update status.
 
-If you select an update that is highlighted in yellow and click [**Show in WSUS**](modify-published-updates.md#show-in-wsus), the WSUS console provides more detailed state information. This additional detail can help identify why the update is flagged, such as missing content.
+If you select an update that is highlighted in yellow and click [**Show in WSUS**](modify-published-updates.md#show-in-wsus-button), the WSUS console provides more detailed state information. This additional detail can help identify why the update is flagged, such as missing content.
 
 <figure><img src="../../../../.gitbook/assets/image (472).png" alt="Update Missing Content" width="563"><figcaption></figcaption></figure>
 
