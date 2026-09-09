@@ -143,7 +143,7 @@ Deleting updates is intended only for exceptional scenarios, such as updates tha
 
 The **Delete** button is greyed out by default and must be explicitly enabled using a registry key. This safeguard helps prevent accidental update deletion.
 
-**To enable the Delete option**
+**To enable the Delete button**
 
 1. On the system where the Publisher service is installed, open an elevated command prompt.
 2. Run the following command:
