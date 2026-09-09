@@ -12,7 +12,7 @@ This setting is commonly used to prevent applications from installing on unsuppo
 
 ## Platform Behavior
 
-The **Set Architecture Requirements** option controls which devices can install an application based on operating system architecture and, where supported, device type. These requirements are evaluated before installation and ensure applications are only offered to supported devices.
+The **Set Application Architecture Requirements** option controls which devices can install an application based on operating system architecture and, where supported, device type. These requirements are evaluated before installation and ensure applications are only offered to supported devices.
 
 The available requirement options and default behavior depend on the architecture of the published application.
 
@@ -62,9 +62,9 @@ In ConfigMgr, applications can also be restricted to workstation or server opera
 
 The example below highlights how ARM64 applicability can differ between 64-bit applications based on catalog testing and support validation.
 
-In the Google Chrome example, the application is configured to install on 64-bit operating systems only.
+In the Google Chrome example, the application is configured to **Install on 64-bit OS** only.
 
-In contrast, the Notepad++ example shows both Install on 64-bit OS and Install on ARM64 OS selected. This indicates that the 64-bit Notepad++ application has been validated to run correctly on ARM64 devices and is therefore permitted to install on both x64 and ARM64 operating systems.
+In contrast, the Notepad++ example shows both **Install on 64-bit OS** and **Install on ARM64 OS** selected. This indicates that the 64-bit Notepad++ application has been validated to run correctly on ARM64 devices and is therefore permitted to install on both x64 and ARM64 operating systems.
 
 <figure><img src="../../../.gitbook/assets/image (1004).png" alt="64-bit and ARM64 Requirement" width="563"><figcaption></figcaption></figure>
 
