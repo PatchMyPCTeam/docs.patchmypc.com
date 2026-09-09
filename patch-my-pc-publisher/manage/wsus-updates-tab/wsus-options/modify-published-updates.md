@@ -178,7 +178,7 @@ Re-signing changes the update content hash. As a result, existing content alread
 After you re-sign updates, remove the old content and let ConfigMgr download the newly signed content.
 {% endhint %}
 
-#### To Re-sign an update
+#### To re-sign an update
 
 1. Locate and select the update you want to re-sign by using the available filtering options.
 2. Click **Re-Sign Update**.
@@ -232,41 +232,53 @@ For more information on the consequences and remediation of too many WSUS catego
 
 <figure><img src="../../../../.gitbook/assets/image (1021).png" alt="Clicking &#x27;Hide in WSUS&#x27;" width="563"><figcaption></figcaption></figure>
 
-### Applicability Rules
+### Applicability Rules button
 
-The **Applicability Rules** option allows you to view the detection and applicability logic that determines whether an update is required on an endpoint or whether the update is already installed.
+The _Applicability Rules_ option allows you to view the detection and applicability logic that determines whether an update is required on an endpoint or whether the update is already installed.
 
-These rules are defined in the Patch My PC catalog and are published to WSUS as part of the update metadata. In a ConfigMgr environment, ConfigMgr evaluates these rules during software update scan cycles to determine applicability and compliance. In a WSUS standalone environment, WSUS clients evaluate the same rules locally to determine whether the update is applicable or already installed.
+These rules are defined in the PMPC catalog and are published to WSUS as part of the update metadata. In a ConfigMgr environment, ConfigMgr evaluates these rules during software update scan cycles to determine applicability and compliance.&#x20;
 
-To view applicability rules for an update:
+In a WSUS standalone environment, WSUS clients evaluate the same rules locally to determine whether the update is applicable or already installed.
 
-* Locate the update you want to view the applicability rules for by using the available filters. Select the checkbox next to the update you want to process.
-* Select **Show Applicability Rules** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
-* Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
+#### To view applicability rules for an update
 
-<figure><img src="../../../../.gitbook/assets/image (204).png" alt="Show Applicability Rules" width="563"><figcaption></figcaption></figure>
+1. Locate the update you want to view the applicability rules for by using the available filters.
+2. Click **Show Applicability Rules**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-<figure><img src="../../../../.gitbook/assets/image (205).png" alt="Applicability Rules Example" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1022).png" alt="Clicking &#x27;Show Applicability Rules&#x27;" width="563"><figcaption></figcaption></figure>
+
+3. On the **Applicability Rules** screen, review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
+
+<figure><img src="../../../../.gitbook/assets/image (1024).png" alt="&#x27;Applicability Rules&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
 
-Not all third party updates display detailed applicability rules in this view. For MSP based updates, applicability is evaluated using MSI patch metadata rather than standard WSUS file, registry, or WMI detection rules.
+Not all third party updates display detailed applicability rules in this view. For MSP-based updates, applicability is evaluated using MSI patch metadata rather than standard WSUS file, registry, or WMI detection rules.
 
-The MSI patch metadata defined in the catalog can be extensive and evaluates conditions such as target product codes, supported version ranges, and upgrade codes to determine whether the patch is applicable or already installed. Instead of displaying this extensive evaluation logic, the Publisher displays a placeholder labeled **WSUS Generated MSP Rule.**
+The MSI patch metadata defined in the catalog can be extensive and evaluates conditions such as target product codes, supported version ranges, and upgrade codes to determine whether the patch is applicable or already installed. Instead of displaying this extensive evaluation logic, Publisher displays a placeholder labeled **WSUS Generated MSP Rule.**
 {% endhint %}
 
-### More Details
+### More Details button
 
-The **More Details** option opens an **Update Details** window for a selected update. This view exposes the underlying WSUS metadata for the update and is intended for validation and troubleshooting. The information shown here is read only and reflects exactly what was published to WSUS.
+The _More Details_ option opens an **Update Details** window for a selected update. This view exposes the update's underlying WSUS metadata and is intended for validation and troubleshooting. The information shown here is read-only and reflects exactly what was published to WSUS.
 
-<figure><img src="../../../../.gitbook/assets/image (207).png" alt="More Details" width="563"><figcaption></figcaption></figure>
+#### To view more details for an update
+
+1. Locate the update you want to view more details about.
+2. Click **More Details**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+
+<figure><img src="../../../../.gitbook/assets/image (1027).png" alt="Clicking &#x27;More Details&#x27;" width="563"><figcaption></figcaption></figure>
+
+The **Update Details** screen appears. Review it then click **Close** to close it.
+
+<figure><img src="../../../../.gitbook/assets/image (1030).png" alt="&#x27;Update Details&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 This view is useful when confirming update identity, revision state, and metadata values that affect installation behavior.
 
-The table below describes each field displayed in the Update Details window.
+The table below describes each field displayed in the **Update Details** window.
 
-<table><thead><tr><th width="150.00006103515625" valign="top">Field</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Title</td><td valign="top">The full update title as published to WSUS.</td></tr><tr><td valign="top">State</td><td valign="top">The current WSUS processing state of the update. Ready indicates the update is fully processed and usable.</td></tr><tr><td valign="top">Description</td><td valign="top">The update description.</td></tr><tr><td valign="top">Information URL</td><td valign="top">A URL with additional information about the update.</td></tr><tr><td valign="top">Support URL</td><td valign="top">A vendor provided support or documentation link.</td></tr><tr><td valign="top">Creation Date</td><td valign="top">The date and time when this revision of the update's metadata was authored. The date is in Coordinated Universal Time.</td></tr><tr><td valign="top">Arrival Date</td><td valign="top">The date and time when the metadata for this revision of the update finished downloading to the WSUS server</td></tr><tr><td valign="top">Classification</td><td valign="top">The WSUS classification assigned to the update such as Updates or Security Updates.</td></tr><tr><td valign="top">Severity</td><td valign="top">The severity level associated with the update when applicable.</td></tr><tr><td valign="top">UpdateID</td><td valign="top">The unique WSUS update identifier. Note: This value changes for republished updates.</td></tr><tr><td valign="top">Filename</td><td valign="top">The primary file name associated with the update content.</td></tr><tr><td valign="top">Command Line</td><td valign="top">The installation command line that WSUS and clients use to install the update.</td></tr><tr><td valign="top">CVE IDs</td><td valign="top">Any CVE identifiers associated with the update.</td></tr><tr><td valign="top">Revision</td><td valign="top">The WSUS revision number for the update. The revision increments when WSUS detects a change in the update metadata during synchronization.</td></tr><tr><td valign="top">Hash</td><td valign="top">The content hash for the update. This value is shown in Base64 format and is used for content integrity validation.</td></tr><tr><td valign="top">Approved</td><td valign="top">Indicates whether the update is approved in WSUS.</td></tr><tr><td valign="top">Declined</td><td valign="top">Indicates whether the update is declined in WSUS.</td></tr><tr><td valign="top">Expired</td><td valign="top">Indicates whether the update is expired in WSUS.</td></tr><tr><td valign="top">Superseded</td><td valign="top">Indicates whether the update is superseded by another update.</td></tr></tbody></table>
+<table><thead><tr><th width="150.00006103515625" valign="top">Field</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Title</td><td valign="top">The full update title as published to WSUS.</td></tr><tr><td valign="top">State</td><td valign="top">The current WSUS processing state of the update. <strong>Ready</strong> indicates the update is fully processed and usable.</td></tr><tr><td valign="top">Description</td><td valign="top">The update's description.</td></tr><tr><td valign="top">Information URL</td><td valign="top">A URL with additional information about the update.</td></tr><tr><td valign="top">Support URL</td><td valign="top">A vendor provided support or documentation link.</td></tr><tr><td valign="top">Creation date</td><td valign="top">The date and time when this revision of the update's metadata was authored. The date is in Coordinated Universal Time.</td></tr><tr><td valign="top">Arrival date</td><td valign="top">The date and time when the metadata for this revision of the update finished downloading to the WSUS server</td></tr><tr><td valign="top">Classification</td><td valign="top">The WSUS classification assigned to the update, such as <strong>Updates</strong> or <strong>SecurityUpdates</strong></td></tr><tr><td valign="top">Severity</td><td valign="top">The severity level associated with the update when applicable.</td></tr><tr><td valign="top">Status flags</td><td valign="top">Whether the update is <strong>Approved</strong>, <strong>Expired</strong>, <strong>Declined</strong>, or <strong>Superseded</strong></td></tr><tr><td valign="top">Superseded</td><td valign="top">Indicates whether the update is superseded by another update.</td></tr><tr><td valign="top">Supersedes</td><td valign="top">Contains information about any updates this update supersedes.</td></tr><tr><td valign="top">UpdateID</td><td valign="top">The unique WSUS update identifier. Note: This value changes for republished updates.</td></tr><tr><td valign="top">Revision</td><td valign="top">The WSUS revision number for the update. The revision increments when WSUS detects a change in the update metadata during synchronization.</td></tr><tr><td valign="top">Filename</td><td valign="top">The primary file name associated with the update content.</td></tr><tr><td valign="top">Content path</td><td valign="top">The path to the update's content.</td></tr><tr><td valign="top">Hash</td><td valign="top">The content hash for the update. This value is shown in Base64 format and is used for content integrity validation.</td></tr><tr><td valign="top">Command Line</td><td valign="top">The installation command line that WSUS and clients use to install the update.</td></tr><tr><td valign="top">CVE IDs</td><td valign="top">Any CVE identifiers associated with the update.</td></tr></tbody></table>
 
 {% hint style="info" %}
 **Note**
@@ -276,28 +288,29 @@ If the update includes customizations, the **Filename** is always **PatchMyPC-Sc
 If no customizations are applied to the update in the Publisher, the original vendor provided installer filename is shown instead.
 {% endhint %}
 
-To view more details about an update:
+### Extract Content button
 
-1. Locate and select the update you want to view more details for for by using the available filters.
-2. Select **More Details** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+The _Extract Content_ option allows you to export the WSUS content for a selected update to a local folder. This is typically used for troubleshooting, validation, or inspecting the update's files published to WSUS.
 
-<figure><img src="../../../../.gitbook/assets/image (206).png" alt="Update Details" width="563"><figcaption></figcaption></figure>
-
-### Extract Content
-
-The **Extract Content** option allows you to export the WSUS content for a selected update to a local folder. This is typically used for troubleshooting, validation, or inspection of the update files that were published to WSUS.
-
-To extract content for an update:
+#### To extract content for an update
 
 1. Locate and select the update you want extract content for for by using the available filters.
-2. Select **Extract Content** at the bottom of the wizard.
-3. In the Browse For Folder window, select an existing folder or create a new folder.
-4. Select **OK** to begin extraction.
+2. Click **Extract Content**.
 
-<figure><img src="../../../../.gitbook/assets/image (208).png" alt="Extract Content" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1037).png" alt="Clicking &#x27;Extract Content&#x27;" width="563"><figcaption></figcaption></figure>
+
+3. On the **Wsus Update Extraction** screen, enter/browse to an existing folder or create a new one to extract the content, then click **OK** to extract the content.
+
+<figure><img src="../../../../.gitbook/assets/image (1041).png" alt="&#x27;Wsus Update Extraction&#x27; screen" width="563"><figcaption></figcaption></figure>
+
+The **Extract Complete** dialog is shown showing the result of the extraction.
+
+<figure><img src="../../../../.gitbook/assets/image (1042).png" alt="&#x27;Extract Complete&#x27; dialog" width="263"><figcaption></figcaption></figure>
+
+4. Click **OK** to close the **Extract Complete** dialog.
 
 {% hint style="success" %}
 **Tip**
 
-The CAB file from the WSUS Content folder is copied to the folder specified in step 3. Typically, double clicking a CAB file in Windows Explorer displays the vendor installer binary along with any supporting Patch My PC files required to install a customized update.
+The CAB file from the WSUS Content folder is copied to the folder specified in Step 3. Typically, double-clicking a CAB file in Windows Explorer displays the vendor installer binary along with any supporting PMPC files required to install a customized update.
 {% endhint %}
