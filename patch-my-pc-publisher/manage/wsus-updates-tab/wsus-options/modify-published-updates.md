@@ -64,9 +64,11 @@ As a best practice, any update that is no longer required should be declined to 
 #### To decline one or more published updates
 
 1. Locate and select the update(s) you want to decline using the available filters.
-2. Click **Decline**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+2. Click **Decline**.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1010).png" alt="Declining an update" width="563"><figcaption></figcaption></figure>
+
+The **Declined** column changes to **Yes** for the declined updates. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 {% hint style="info" %}
 **Note**
@@ -84,53 +86,64 @@ For more information on category limits and related publishing errors, see [Publ
 Only after a Software Update Point (SUP\_ synchronization are declined updates marked as expired in ConfigMgr.
 {% endhint %}
 
-### Un-decline (Updates)
+### Un-decline button
 
-The **Un-decline** option is used to reverse a previously declined update and make it active again. The exact behavior depends on whether the environment is using ConfigMgr or WSUS in standalone mode.
+The _Un-decline_ option reverses a previously declined update and makes it active again. The exact behavior depends on whether the environment is using ConfigMgr or WSUS in standalone mode.
 
-In a ConfigMgr environment, undeclining is only possible while the update still exists in the ConfigMgr database. After an update is declined and a Software Update Point synchronization runs, the update is marked as expired in ConfigMgr. Expired updates remain available only until ConfigMgr maintenance removes them. ConfigMgr runs a cleanup stored procedure on a regular schedule, typically every seven days, to remove expired updates. Once this cleanup has occurred, the update can no longer be undeclined.
+In a ConfigMgr environment, you can only undecline an update while it still exists in the ConfigMgr database. After you decline an update and a SUP synchronization runs, ConfigMgr marks it as expired. Expired updates remain available only until ConfigMgr maintenance removes them. ConfigMgr runs a cleanup stored procedure on a regular schedule, typically every seven days, to remove expired updates. Once this cleanup has occurred, the update can no longer be undeclined.
 
-In a WSUS standalone environment without ConfigMgr, the undecline behavior is simpler. Declined updates remain in WSUS until they are manually deleted or cleaned up using WSUS maintenance. As long as the update still exists in WSUS, it can be undeclined at any time.
+In a WSUS standalone environment without ConfigMgr, the undecline behavior is simpler. Declined updates remain in WSUS until you manually delete them or clean them up using WSUS maintenance. As long as the update still exists in WSUS, you can undecline it at any time.
 
-To un-decline one or more published updates:
+#### To un-decline one or more published updates
 
-1. Locate and select the update or updates you want to decline using the available filters.
-2. Select **Un-decline** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+1. Locate and select the update(s) you want to undecline using the available filters.
+2. Click **Un-decline**.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (198).png" alt="Un-decline Update(s)" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1012).png" alt="Undeclining an update" width="563"><figcaption></figcaption></figure>
 
-### Delete Updates
+The **Declined** column changes to **No** for the undeclined updates.&#x20;
 
-The **Delete** option permanently removes selected published updates from WSUS. This action deletes the update metadata and content and cannot be reversed. Because of the risk associated with permanent deletion, the Delete button is disabled by default.
+### Delete button
 
-Deleting updates is intended only for exceptional scenarios, such as updates that were published in error, cleaning up unused third party vendors, or reducing WSUS product categories that should no longer exist. It is not recommended for routine maintenance or general cleanup. In most cases, declining updates is the preferred and safer option, as it avoids potential update identity and hash related issues.
+The _Delete_ option permanently removes selected published updates from WSUS. This action deletes the update metadata and content and cannot be reversed.&#x20;
+
+Because of the associated risk with permanent deletion, the **Delete** button is disabled by default.
+
+{% hint style="info" %}
+**Note**
+
+See [Enable the Delete option](modify-published-updates.md#enabling-the-delete-option) for details on how to enable the **Delete** button.
+{% endhint %}
 
 {% hint style="danger" %}
 **Important**
 
-Deleting updates permanently removes them from WSUS. If the associated product remains enabled in the Publisher, the Publisher will publish the same update on the next sync, using the same Update ID. When this happens, ConfigMgr can resynchronize the update and clients may already have cached content that no longer matches the republished update.
+Deleting updates permanently removes them from WSUS. If the associated product remains enabled in Publisher, Publisher will publish the same update on the next sync, using the same Update ID. When this happens, ConfigMgr can resynchronize the update and clients may already have cached content that no longer matches the republished update.
 
 This mismatch can cause hash validation failures during deployment and prevent updates from installing successfully on clients.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (199).png" alt="Delete option disabled by default" width="563"><figcaption></figcaption></figure>
+Deleting updates is intended only for exceptional scenarios, such as updates that were published in error, cleaning up unused third party vendors, or reducing WSUS product categories that should no longer exist. It is not recommended for routine maintenance or general cleanup. In most cases, declining updates is the preferred and safer option, as it avoids potential update identity and hash-related issues.
 
-To delete one or more published updates:
+#### To delete one or more published updates
 
 1. [Enable the Delete option](modify-published-updates.md#enabling-the-delete-option) via a registry value in the **Patch My PC Publishing Service** key.
-2. Locate and select the update or updates you want to delete using the available filters.
-3. Select **Delete** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
-4. Click **Yes** to delete the update(s) or click **No** to abort the deletion.
+2. Locate and select the update(s) you want to delete using the available filters.
+3. Click **Delete**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-<figure><img src="../../../../.gitbook/assets/image (201).png" alt="Confirm deletion" width="422"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1015).png" alt="" width="563"><figcaption></figcaption></figure>
+
+4. On the **Deletion Confirmation** dialog, click **Yes** if you are sure you want to delete the update(s), or click **No** to abort the deletion.
+
+<figure><img src="../../../../.gitbook/assets/image (1016).png" alt="&#x27;Deletion Confirmation&#x27; dialog" width="421"><figcaption></figcaption></figure>
 
 5. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
 #### Enabling the Delete option
 
-The Delete button is hidden by default and must be explicitly enabled using a registry key. This safeguard helps prevent accidental deletion of updates.
+The **Delete** button is greyed out by default and must be explicitly enabled using a registry key. This safeguard helps prevent accidental deletion of updates.
 
-To enable the Delete option:
+**To enable the Delete option**
 
 1. On the system where the Publisher service is installed, open an elevated command prompt.
 2. Run the following command:
@@ -139,74 +152,85 @@ To enable the Delete option:
 REG ADD "HKLM\SOFTWARE\Patch My PC Publishing Service" /v EnableDeleteUpdates /t REG_DWORD /d 1
 ```
 
-3. Close and re-open the Modify Updates Wizard form.
+3. Close and reopen the **Update Manager**.
 
-### Re-Sign Update
+If you select an update, the **Delete** button is now available.
 
-The **Re-Sign Update** option allows you to re-sign an already published update using a new WSUS code signing certificate. This is typically required when the original code signing certificate has expired and timestamping was not enabled at the time the update was published.
+<figure><img src="../../../../.gitbook/assets/image (1013).png" alt="&#x27;Delete&#x27; button is now available" width="563"><figcaption></figcaption></figure>
+
+### Re-Sign Update button
+
+The _Re-Sign Update_ option allows you to re-sign an already published update using a new WSUS code signing certificate. This is typically required when the original code signing certificate has expired, and timestamping was not enabled when the update was published.
 
 {% hint style="danger" %}
 **Important**
 
 Timestamping keeps an update cryptographically valid after a code signing certificate expires. In WSUS standalone environments, re-signing may not be required, even if the certificate has expired, as long as the certificate is still present in the client Trusted Publishers certificate store.
 
-If ConfigMgr is configured to [manage certificates for third-party updates](https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#configure-the-wsus-signing-certificate) it will block expired code signing certificates. During a Software Update Scan Cycle, ConfigMgr removes expired certificates from the Trusted Publishers store on clients. If the certificate is no longer present on the client device, updates signed with that certificate are not trusted, even if timestamping was enabled, and the updates must be re-signed.
+If ConfigMgr is configured to [manage certificates for third-party updates](https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/third-party-software-updates#configure-the-wsus-signing-certificate), it will block expired code signing certificates. During a Software Update Scan Cycle, ConfigMgr removes expired certificates from the Trusted Publishers store on clients. If the certificate is no longer present on the client device, updates signed with that certificate are not trusted, even if timestamping was enabled, and the updates must be re-signed.
 {% endhint %}
 
 {% hint style="danger" %}
 **Important**
 
-Re-signing changes the update content hash. Because of this, existing content already downloaded into ConfigMgr deployment packages is no longer valid.
+Re-signing changes the update content hash. As a result, existing content already downloaded into ConfigMgr deployment packages is no longer valid.
 
-After updates are re signed, you must remove the old content and allow ConfigMgr to download the newly signed content.
+After you re-sign updates, remove the old content and let ConfigMgr download the newly signed content.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (209).png" alt="Re-sign Update" width="563"><figcaption></figcaption></figure>
-
-To re-sign an update
+#### To Re-sign an update
 
 1. Locate and select the update you want to re-sign by using the available filtering options.
-2. Select **Re-Sign Update** at the bottom of the wizard.
-3. Review the warning message indicating that deployment package content must be deleted and redistributed. Select **OK** to continue, or **Cancel** to abort.
+2. Click **Re-Sign Update**.
+
+<figure><img src="../../../../.gitbook/assets/image (1017).png" alt="Clicking &#x27;Re-Sign Update&#x27;" width="563"><figcaption></figcaption></figure>
+
+3. Review the warning message that you will need to delete the deployment package's content and redistribute it. Click **OK** to continue, or **Cancel** to abort.
+
+<figure><img src="../../../../.gitbook/assets/image (1019).png" alt="Warning about deleting the deployment package and redistributing it" width="474"><figcaption></figcaption></figure>
+
 4. After re-signing completes, delete the affected updates from the ConfigMgr deployment package.
-5. After a Software Update Point synchronization refreshes the update metadata, re-download the content to the deployment package. This can be done manually from the ConfigMgr console or automatically through an Automatic Deployment Rule, depending on how updates are managed in your environment.
+5. After a SUP synchronization refreshes the update metadata, re-download the content to the deployment package. This can be done manually from the ConfigMgr console or automatically through an Automatic Deployment Rule, depending on how updates are managed in your environment.
 
-### Show in WSUS
+### Show in WSUS button
 
-The **Show in WSU**S option control whether locally published third party updates are visible in the WSUS console. This option does not affect update applicability, deployment, or compliance in ConfigMgr. They only control WSUS console visibility.
+The _Show in WSUS_ option controls whether locally published third party updates are visible in the WSUS console. This option does not affect update applicability, deployment, or compliance in ConfigMgr. It only controls WSUS console visibility.
 
-This is typically used for troubleshooting scenarios where additional WSUS level detail is required, such as reviewing update state, content status, or category associations directly in WSUS.
+This is typically used for troubleshooting scenarios where additional WSUS-level detail is required, such as reviewing update state, content status, or category associations directly in WSUS.
 
-When this option is selected, the Publisher marks the update so it appears in the WSUS console. This allows administrators to use native WSUS views to investigate publishing or processing issues without changing how the update behaves in WSUS or ConfigMgr.
+When you select this option, Publisher marks the update so it appears in the WSUS console. This allows administrators to use native WSUS views to investigate publishing or processing issues without changing how the update behaves in WSUS or ConfigMgr.
 
-To show one or more published updates in the WSUS console:
+#### To show one or more published updates in the WSUS console
 
-1. Locate and select the update or updates you want to show in WSUS using the available filters.
-2. Select **Show in WSUS** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+1. Locate and select the update(s) you want to show in WSUS using the available filters.
+2. Click **Show in WSUS**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+
+<figure><img src="../../../../.gitbook/assets/image (1020).png" alt="Clicking &#x27;Show in WSUS&#x27;" width="563"><figcaption></figcaption></figure>
+
 3. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
-<figure><img src="../../../../.gitbook/assets/image (202).png" alt="Show Update(s) in WSUS" width="563"><figcaption></figcaption></figure>
+### Hide in WSUS button
 
-### Hide in WSUS
+The _Hide in WSUS_ option controls whether locally published third party updates are visible in the WSUS console. This option does not affect update applicability, deployment, or compliance in ConfigMgr. It only controls WSUS console visibility.
 
-The **Hide in WSU**S option control whether locally published third party updates are visible in the WSUS console. This option does not affect update applicability, deployment, or compliance in ConfigMgr. They only control WSUS console visibility.
-
-When this option is selected, the Publisher marks the update so it is removed from view in the WSUS console.
+When you select this option, Publisher marks the update so that it is removed from view in the WSUS console.
 
 {% hint style="info" %}
 **Note**
 
-Hiding updates in WSUS is one effective way to help control the WSUS product category limit. Some third party vendors create a large number of locally published categories, and over time this can result in tens of categories being visible in the WSUS console. When the total number of locally published categories approaches or exceeds the Microsoft supported limit of 100, publishing and synchronization errors can occur.
+Hiding updates in WSUS is an effective way to help control the WSUS product category limit. Some third party vendors create a large number of locally published categories, which over time can result in tens of categories being visible in the WSUS console. When the total number of locally published categories approaches or exceeds the Microsoft-supported limit of 100, publishing and synchronization errors can occur.
 
-Using Hide in WSUS can reduce the number of locally published categories exposed in the WSUS console while still allowing ConfigMgr to manage the updates normally. This is a recommended mitigation when cleaning up unused vendors or when addressing errors related to too many locally published categories. For more information on the consequence and remediation of too many WSUS categories, see [https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/](https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/)
+Using **Hide in WSUS** can reduce the number of locally published categories exposed in the WSUS console while still allowing ConfigMgr to manage the updates normally. This is a recommended mitigation when cleaning up unused vendors or when addressing errors related to too many locally published categories.&#x20;
+
+For more information on the consequences and remediation of too many WSUS categories, see [Publishing operation failed, too many locally published categories.](https://patchmypc.com/kb/publish-error-too-many-locally-published-categories/)
 {% endhint %}
 
-To hide one or more published updates in the WSUS console:
+#### To hide one or more published updates in the WSUS console
 
-1. Locate and select the update or updates you want to hide in WSUS using the available filters.
-2. Select **Hide in WSUS** at the bottom of the wizard. The Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+1. Locate and select the update(s) you want to hide in WSUS using the available filters.
+2. Click **Hide in WSUS**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
-<figure><img src="../../../../.gitbook/assets/image (203).png" alt="Hide Update(s) in WSUS" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1021).png" alt="Clicking &#x27;Hide in WSUS&#x27;" width="563"><figcaption></figcaption></figure>
 
 ### Applicability Rules
 
