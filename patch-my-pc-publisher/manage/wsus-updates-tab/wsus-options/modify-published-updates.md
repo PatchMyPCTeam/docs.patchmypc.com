@@ -112,7 +112,7 @@ Because of the associated risk with permanent deletion, the **Delete** button is
 {% hint style="info" %}
 **Note**
 
-See [Enable the Delete option](modify-published-updates.md#enabling-the-delete-option) for details on how to enable the **Delete** button.
+See [Enable the Delete button](modify-published-updates.md#enabling-the-delete-button) for details on how to enable the **Delete** button.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -127,7 +127,7 @@ Deleting updates is intended only for exceptional scenarios, such as updates tha
 
 #### To delete one or more published updates
 
-1. [Enable the Delete option](modify-published-updates.md#enabling-the-delete-option) via a registry value in the **Patch My PC Publishing Service** key.
+1. [Enable the Delete button](modify-published-updates.md#enabling-the-delete-button) via a registry value in the **Patch My PC Publishing Service** key.
 2. Locate and select the update(s) you want to delete using the available filters.
 3. Click **Delete**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
@@ -139,9 +139,9 @@ Deleting updates is intended only for exceptional scenarios, such as updates tha
 
 5. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
-#### Enabling the Delete option
+#### Enabling the Delete button
 
-The **Delete** button is greyed out by default and must be explicitly enabled using a registry key. This safeguard helps prevent accidental deletion of updates.
+The **Delete** button is greyed out by default and must be explicitly enabled using a registry key. This safeguard helps prevent accidental update deletion.
 
 **To enable the Delete option**
 
