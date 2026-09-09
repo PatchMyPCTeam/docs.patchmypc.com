@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_\
 _&#x41;vailable at level: Product_\
 _&#x41;vailable on tab: WSUS Updates_
 
-The **Show Applicability Rules** option in Patch My PC (PMPC) Publisher displays the detection and applicability logic defined in the Patch My PC catalog for the selected WSUS update.
+The **Show Applicability Rules** option in Patch My PC (PMPC) Publisher displays the detection and applicability logic defined in the Patch My PC catalog for the selected Microsoft WSUS update.
 
 This allows you to review the rules used to determine whether a software update is applicable, installed, or required on a client device. The rules shown are read directly from the catalog metadata and reflect the same logic published to WSUS.
 
@@ -26,7 +26,7 @@ The following sections are shown for the selected update:
 
 ## Software Distribution Package Rule Structure
 
-The applicability rules displayed in this window are stored in the Software Distribution Package (SDP) metadata published to WSUS. The SDP contains the logical applicability rules that WSUS distributes to clients as part of the update metadata.
+The applicability rules displayed in the **Applicability Rules** window are stored in the Software Distribution Package (SDP) metadata published to WSUS. The SDP contains the logical applicability rules that WSUS distributes to clients as part of the update metadata.
 
 When you publish an update, these rules are embedded in the update definition and synchronized to WSUS. During a scan cycle, the Windows Update Agent evaluates the SDP rule logic locally on each client device. WSUS itself does not execute the detection logic. Instead, it stores and distributes the metadata, while the client performs the actual rule evaluation.
 
@@ -34,7 +34,11 @@ The XML elements shown in the **Applicability Rules** window represent the exact
 
 ### Understanding the Rule Structure
 
-The XML structure defines how the client evaluates conditions. The `lar` prefix represents logical applicability rules:
+The XML structure defines how the client evaluates conditions.
+
+#### lar prefix
+
+&#x20;The `lar` prefix represents logical applicability rules:
 
 * **lar:And**\
   All enclosed conditions must evaluate to true.
@@ -42,6 +46,8 @@ The XML structure defines how the client evaluates conditions. The `lar` prefix 
   At least one enclosed condition must evaluate to true.
 * **lar:Not**\
   The enclosed condition must evaluate to false.
+
+#### bar prefix
 
 The `bar` prefix represents basic applicability rules, such as registry, file, or version checks:
 
@@ -58,7 +64,7 @@ The `bar` prefix represents basic applicability rules, such as registry, file, o
 
 These elements are combined to build the full compliance logic.
 
-### Google Earth Pro Applicability Logic Explained
+### Example: Google Earth Pro Applicability Logic Explained
 
 The example below shows the applicability logic (**Is Installable Rule**) for Google Earth Pro x64.
 
