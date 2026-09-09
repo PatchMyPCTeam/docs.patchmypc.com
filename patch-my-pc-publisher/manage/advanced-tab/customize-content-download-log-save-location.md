@@ -17,7 +17,7 @@ The **Customize Content Download and Log Save Location** options allow you to ov
 These settings apply only to Publisher and do not affect client-side installations.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="&#x27;Customize Content Download and Log Save Location&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="&#x27;Customize Content Download and Log Save Location&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Set a custom folder for temporary downloads of the software update and application content
 
