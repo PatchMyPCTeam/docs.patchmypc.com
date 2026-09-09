@@ -22,6 +22,7 @@ This option will override the global [Move applications to a specific console fo
 <figure><img src="../../../.gitbook/assets/image (963).png" alt="&#x27;Select Console Folder&#x27; screen" width="450"><figcaption></figcaption></figure>
 
 3. Select the target folder where applications should be moved to, ensuring the **Selected Folder** field shows the correct location.
-4. Optionally, to create a new folder, type the name of the new folder in the **Create New Folder** field and click **OK**.
+4. Optionally, to create a new folder, type the name of the new folder in the **Create New Folder** field
+5. Click **OK**.
 
-Use the **Refresh** button to reload the folder list observed in the ConfigMgr console.
+Use the **Refresh** button to reload the folder list displayed in the ConfigMgr console.
