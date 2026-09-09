@@ -18,6 +18,8 @@ We strongly recommend using the [Manage Conflicting Processes](manage-conflictin
 
 ## Deployment Behavior
 
+The behavior of the deployment depends on whether it is an [Available](set-install-behavior.md#available-deployments) or [Required](set-install-behavior.md#required-deployments) deployment.
+
 ### Available Deployments
 
 If any of the specified executables are running when the user initiates the installation from Software Center, the installation will fail.
