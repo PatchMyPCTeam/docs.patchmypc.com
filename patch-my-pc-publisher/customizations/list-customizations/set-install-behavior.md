@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_\
 _&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
 _&#x41;vailable on tab: ConfigMgr Apps_
 
-The **Set Install Behavior** right-click option in Patch My PC (PMPC) Publisher allows the Publisher to define which running processes must be closed for a ConfigMgr application installation to succeed.
+The **Set Install Behavior** right-click option in Patch My PC (PMPC) Publisher lets Publisher define which running processes must close for a ConfigMgr application installation to succeed.
 
 These executables are applied to the deployment type’s **Install Behavior** settings and control how ConfigMgr responds when an application is in use during an install.
 
@@ -13,7 +13,7 @@ These executables are applied to the deployment type’s **Install Behavior** se
 {% hint style="danger" %}
 **Important**
 
-We strongly recommend using the [Manage Conflicting Processes](manage-conflicting-processes/) right-click option to notify users about running applications. This option provides greater configuration flexibility and control, allowing you to deliver a smoother and more predictable user experience during application installations and updates.
+We strongly recommend using the [Manage Conflicting Processes](manage-conflicting-processes/) right-click option to notify users about running applications. This option provides more configuration flexibility and control, helping deliver a smoother, more predictable user experience during application installations and updates.
 {% endhint %}
 
 ## Deployment Behavior
@@ -30,6 +30,6 @@ The user is notified and must close the application before retrying the install.
 
 ### Required Deployments
 
-If the executable remains running, the required installation will fail. If an installation fails due to a running executable, the failure reason can be reviewed in **CIAgent.log** on the client device.
+If the executable remains running, the required installation will fail. If an installation fails because an executable is running, you can review the failure reason in **CIAgent.log** on the client device.
 
 <figure><img src="../../../.gitbook/assets/image (4740).png" alt="&#x27;CIAgent.log&#x27; on the client device" width="563"><figcaption></figcaption></figure>
