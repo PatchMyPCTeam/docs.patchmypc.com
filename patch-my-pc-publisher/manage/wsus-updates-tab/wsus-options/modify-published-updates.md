@@ -68,6 +68,8 @@ As a best practice, any update that is no longer required should be declined to 
 
 <figure><img src="../../../../.gitbook/assets/image (1010).png" alt="Declining an update" width="563"><figcaption></figcaption></figure>
 
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+
 The **Declined** column changes to **Yes** for the declined updates. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 {% hint style="info" %}
@@ -101,6 +103,8 @@ In a WSUS standalone environment without ConfigMgr, the undecline behavior is si
 
 <figure><img src="../../../../.gitbook/assets/image (1012).png" alt="Undeclining an update" width="563"><figcaption></figcaption></figure>
 
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+
 The **Declined** column changes to **No** for the undeclined updates.&#x20;
 
 ### Delete button
@@ -129,9 +133,11 @@ Deleting updates is intended only for exceptional scenarios, such as updates tha
 
 1. [Enable the Delete button](modify-published-updates.md#enabling-the-delete-button) via a registry value in the **Patch My PC Publishing Service** key.
 2. Locate and select the update(s) you want to delete using the available filters.
-3. Click **Delete**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+3. Click **Delete**.
 
 <figure><img src="../../../../.gitbook/assets/image (1015).png" alt="" width="563"><figcaption></figcaption></figure>
+
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 4. On the **Deletion Confirmation** dialog, click **Yes** if you are sure you want to delete the update(s), or click **No** to abort the deletion.
 
@@ -185,6 +191,8 @@ After you re-sign updates, remove the old content and let ConfigMgr download the
 
 <figure><img src="../../../../.gitbook/assets/image (1017).png" alt="Clicking &#x27;Re-Sign Update&#x27;" width="563"><figcaption></figcaption></figure>
 
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+
 3. Review the warning message that you will need to delete the deployment package's content and redistribute it. Click **OK** to continue, or **Cancel** to abort.
 
 <figure><img src="../../../../.gitbook/assets/image (1019).png" alt="Warning about deleting the deployment package and redistributing it" width="474"><figcaption></figcaption></figure>
@@ -203,9 +211,11 @@ When you select this option, Publisher marks the update so it appears in the WSU
 #### To show one or more published updates in the WSUS console
 
 1. Locate and select the update(s) you want to show in WSUS using the available filters.
-2. Click **Show in WSUS**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+2. Click **Show in WSUS**.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1020).png" alt="Clicking &#x27;Show in WSUS&#x27;" width="563"><figcaption></figcaption></figure>
+
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 3. Review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
@@ -228,9 +238,11 @@ For more information on the consequences and remediation of too many WSUS catego
 #### To hide one or more published updates in the WSUS console
 
 1. Locate and select the update(s) you want to hide in WSUS using the available filters.
-2. Click **Hide in WSUS**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+2. Click **Hide in WSUS**.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1021).png" alt="Clicking &#x27;Hide in WSUS&#x27;" width="563"><figcaption></figcaption></figure>
+
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 ### Applicability Rules button
 
@@ -243,9 +255,11 @@ In a WSUS standalone environment, WSUS clients evaluate the same rules locally t
 #### To view applicability rules for an update
 
 1. Locate the update you want to view the applicability rules for by using the available filters.
-2. Click **Show Applicability Rules**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+2. Click **Applicability Rules**.
 
 <figure><img src="../../../../.gitbook/assets/image (1022).png" alt="Clicking &#x27;Show Applicability Rules&#x27;" width="563"><figcaption></figcaption></figure>
+
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 3. On the **Applicability Rules** screen, review the results to confirm the action completed successfully, then select **Close** to exit the confirmation window.
 
@@ -266,9 +280,11 @@ The _More Details_ option opens an **Update Details** window for a selected upda
 #### To view more details for an update
 
 1. Locate the update you want to view more details about.
-2. Click **More Details**. Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
+2. Click **More Details**.
 
 <figure><img src="../../../../.gitbook/assets/image (1027).png" alt="Clicking &#x27;More Details&#x27;" width="563"><figcaption></figcaption></figure>
+
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 The **Update Details** screen appears. Review it then click **Close** to close it.
 
@@ -298,6 +314,8 @@ The _Extract Content_ option allows you to export the WSUS content for a selecte
 2. Click **Extract Content**.
 
 <figure><img src="../../../../.gitbook/assets/image (1037).png" alt="Clicking &#x27;Extract Content&#x27;" width="563"><figcaption></figcaption></figure>
+
+Publisher sends the request to WSUS and displays a progress and confirmation window showing the result for each selected update.
 
 3. On the **Wsus Update Extraction** screen, enter/browse to an existing folder or create a new one to extract the content, then click **OK** to extract the content.
 
