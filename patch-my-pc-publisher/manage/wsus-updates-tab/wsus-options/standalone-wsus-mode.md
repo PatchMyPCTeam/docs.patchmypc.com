@@ -2,33 +2,37 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Standalone WSUS Mode** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher is configure Standalone WSUS Mode when Publisher is integrated directly with WSUS without ConfigMgr.
+The **Standalone WSUS Mode** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher configures Standalone WSUS Mode when Publisher integrates directly with WSUS without Microsoft Configuration Manager (ConfigMgr).
 
-<figure><img src="../../../../.gitbook/assets/image (93).png" alt="Standalone WSUS Mode" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1046).png" alt="&#x27;Standalone WSUS Mode&#x27; section" width="563"><figcaption></figcaption></figure>
 
-This mode is intended only for environments that manage updates using WSUS standalone. It is not required and should not be enabled when ConfigMgr is used to manage software updates.
+This mode is intended only for environments that manage updates using WSUS standalone. It is not required and should not be enabled when ConfigMgr manages software updates.
 
-Standalone WSUS Mode controls whether locally published third party updates are visible in the WSUS console. When this mode is enabled, the Publisher marks updates as locally published so they appear in the WSUS console and can be viewed and managed directly in WSUS.
+## Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager
+
+Checking the **Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager** checkbox (unchecked by default) enables Standalone WSUS Mode, which controls whether locally published third party updates are visible in the WSUS console.&#x20;
+
+When Standalone WSUS Mode is enabled, Publisher marks updates as locally published so they appear in the WSUS console and can be viewed and managed directly in WSUS.
 
 {% hint style="danger" %}
 **Important**
 
-If ConfigMgr is present and managing software updates, WSUS Standalone Mode should remain disabled.
+If ConfigMgr is present and managing software updates, you should not check this checkbox.
 {% endhint %}
 
-## **Use SYSTEM Account**
+## Use SYSTEM account when connecting to the SQL database or define a custom account below
 
-The **Use SYSTEM account** option controls how the Publisher connects with the WSUS SQL database when WSUS Standalone Mode is enabled.
+The **Use SYSTEM account when connecting to the SQL database or define a custom account below** checkbox controls how Publisher connects to the WSUS SQL database when Standalone WSUS Mode is enabled.
 
 {% hint style="success" %}
 **Tip**
 
-If your WSUS database uses the Windows Internal Database (WID), the database connection options are read only. In this scenario, no SQL credentials are required or used.
+If your WSUS database uses the Windows Internal Database (WID), the database connection options are read-only. In this scenario, you don't need or use SQL credentials.
 {% endhint %}
 
-When selected, the Publisher connects to the WSUS database using the local SYSTEM account of the machine where the Publisher is installed. This is the recommended and default option for most WSUS standalone deployments, as the SYSTEM account typically already has the required permissions to access the WSUS database.
+If checked, Publisher connects to the WSUS database using the local SYSTEM account of the machine where Publisher is installed. This is the recommended and default option for most WSUS standalone deployments, as the SYSTEM account typically already has the required permissions to access the WSUS database.
 
-If this option is not selected, you can specify a custom SQL login instead. This may be required in environments where WSUS uses a remote SQL Server or where security policies restrict SYSTEM account access. In that case, the specified SQL account must have sufficient permissions to read and update the WSUS database.
+If you don't check this box, you can specify a custom SQL login instead by entering the credentials in the **SQL Login** and **SQL Password** fields. This may be required in environments where WSUS uses a remote SQL Server or where security policies restrict SYSTEM account access. In that case, the specified SQL account must have sufficient permissions to read and update the WSUS database.
 
 {% hint style="info" %}
 **Note**
@@ -38,11 +42,11 @@ For updates published before WSUS Standalone mode was enabled, use the [Modify U
 
 ## SQL Permissions Required <a href="#h-sql-permissions-required-to-publish-update-information-to-the-database" id="h-sql-permissions-required-to-publish-update-information-to-the-database"></a>
 
-When the Publisher Sync runs, if the SUSDB is remote from the WSUS Standalone server, you would have to grant specific permissions to the computer account where the Publisher is installed for it to be able to update information.
+When Publisher syncs run, if the SUSDB is remote from the Standalone WSUS server, you must grant specific permissions to the computer account where Publisher is installed so that it can update information.
 
-The script below can be used to grant the required permissions. Replace the computer account values with the ones appropriate to your environment.
+Use the script below to grant the required permissions, replacing the computer account values with those appropriate to your environment.
 
-Edit the script as needed and run it as a SQL query using SQL Server Management Studio.
+Edit the script as needed, then run it as a SQL query in SQL Server Management Studio.
 
 ```sql
 USE SUSDB
