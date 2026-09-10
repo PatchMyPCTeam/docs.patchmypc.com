@@ -37,7 +37,7 @@ If you don't check this box, you can specify a custom SQL login instead by enter
 {% hint style="info" %}
 **Note**
 
-For updates published before WSUS Standalone mode was enabled, use the [Modify Updates Wizard](modify-published-updates.md) to make those updates appear in the WSUS console using the **Show in WSUS** option.
+For updates published before WSUS Standalone mode was enabled, use the [Modify Published Updates](modify-published-updates.md) wizard to make those updates appear in the WSUS console using the **Show in WSUS** option.
 {% endhint %}
 
 ## SQL Permissions Required <a href="#h-sql-permissions-required-to-publish-update-information-to-the-database" id="h-sql-permissions-required-to-publish-update-information-to-the-database"></a>
