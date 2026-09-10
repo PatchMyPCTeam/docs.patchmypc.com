@@ -24,9 +24,19 @@ Release Notes for previous years can be accessed using the following links:
 [2025](2025.md) | [2024](2024.md)
 {% endhint %}
 
-## Week of August 26th, 2026
+## Week of September 9th, 2026
 
 ### Fixes
+
+#### Portal
+
+* Resolved numerous issues with the External catalog as we continue to develop this feature.
+
+## Week of August 26th, 2026
+
+<details>
+
+<summary>Fixes</summary>
 
 #### Binary Free Apps
 
@@ -35,6 +45,8 @@ Release Notes for previous years can be accessed using the following links:
 #### Intune Apps
 
 * Resolved an issue where a digitally signed PowerShell **Additional Requirement Rule** script loses its Authenticode signature after PMPC processing.
+
+</details>
 
 ## Week of August 19th, 2026
 
