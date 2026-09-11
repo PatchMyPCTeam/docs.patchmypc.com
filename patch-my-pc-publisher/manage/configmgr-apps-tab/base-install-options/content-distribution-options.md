@@ -22,7 +22,7 @@ When Publisher is configured to use DP Groups (by clicking **Manage Distribution
 
 1. Load Publisher.
 2. Navigate to **ConfigMgr Apps | Base Install Options**.
-3. Scroll down to the **Content Distribution Options** and click **Manage Distribution Point Group(s)**.
+3. Scroll down to the **Content Distribution Options** section and click **Manage Distribution Point Group(s)**.
 
 <figure><img src="../../../../.gitbook/assets/image (1082).png" alt="Clicking &#x27;Manage Distribution Point Group(s)&#x27;." width="563"><figcaption></figcaption></figure>
 
