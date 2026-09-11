@@ -20,6 +20,6 @@ Products on both the **Intune Apps** and **Intune Updates** tabs are published a
 
 _Intune Apps_ are designed for initial installation and lifecycle management. They generally apply to any targeted device unless assignment filters or requirements restrict them.
 
-_Intune Updates_ (while still Win32 apps) include an additional requirement script. This script evaluates whether an older version of the app is already installed on the device. The update Win32 app is considered applicable only if it detects a previous version. This ensures that updates target existing installations rather than installing new apps.
+However, although _Intune Updates_ are still Win32 apps, they include an additional requirement script. This script evaluates whether an older version of the app is already installed on the device. The update Win32 app is considered applicable only if it detects a previous version. This ensures that updates target existing installations rather than installing new apps.
 
 Because Intune does not have a native compliance evaluation model like WSUS, this requirement uses script-based logic to simulate update applicability while remaining fully integrated with the native Intune Win32 application model.
