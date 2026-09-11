@@ -186,30 +186,30 @@ Selecting this option opens the Microsoft Intune admin center and navigates dire
 This action is read-only and does not modify the app or its assignments. It provides quick access to installation status and troubleshooting information for the selected application.
 {% endhint %}
 
-
-
-
-
 ### Show Categories
 
-Selecting this option opens a read-only window and display any categories that are associated with the selected Win32 app(s).
+The **Show Categories** option opens the **Managing Categories** read-only window that displays any categories associated with the selected Win32 app(s).
 
-<figure><img src="../../../.gitbook/assets/image (4090).png" alt="Show Categories" width="413"><figcaption></figcaption></figure>
-
-For more information about the various configuration options for Categories, see [Manage Categories](../../customizations/list-customizations/manage-categories.md).
-
-### Extract Package
-
-There is a configurable option in the Publisher, on the [Advanced](../advanced-tab/) tab, to store the encryption keys used to create the Intune package files (.intunewin).
-
-With the keys stored, you can use the Intune Application Manager to download and extract the content of the Patch My PC published Intune applications and updates.
-
-Click **Extract Package** and specify an **Output Folder** where the package content will be extracted. You can enter a path directly or use **Browse** to select a location.
+<figure><img src="../../../.gitbook/assets/image (1092).png" alt="&#x27;Managing Categories&#x27; read-only window" width="448"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
 
-The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
+See [Manage Categories](../../customizations/list-customizations/manage-categories.md) for more information about the various configuration options for Categories.
+{% endhint %}
+
+### Extract Package
+
+There is a configurable option in Publisher, on the [Advanced](../advanced-tab/) tab to store the encryption keys used to create the Intune package files (**.intunewin**).
+
+With the keys stored, you can use the Intune Manager to download and extract the content of the PMPC-published Intune apps and updates.
+
+Click **Extract Package** and specify an **Output Folder** to extract the package content. You can enter a path directly or use **Browse** to select a location.
+
+{% hint style="info" %}
+**Note**
+
+The destination must be a valid UNC path. If the specified folder does not exist, it will be created automatically.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (4091).png" alt="Extract Package" width="563"><figcaption></figcaption></figure>
@@ -217,19 +217,19 @@ The destination must be a valid UNC path. If the specified folder does not exist
 {% hint style="info" %}
 **Note**
 
-If the **Extract Package** option is greyed out, it means that the encryption keys were not gathered when the Win32 app was published, likely due to the feature being enabled after the application or update had been published, or you have selected a Win32 app that was not created by the Publisher.
+If the **Extract Package** option is greyed out, it means the encryption keys were not gathered when the Win32 app was published, likely because the feature was enabled after the app or update was published, or you selected a Win32 app that was not created by Publisher.
 {% endhint %}
 
 ### Delete Assignments
 
-This option removes all assignments associated with the selected Win32 application(s). This action deletes Required, Available, and Uninstall assignments from Intune but does not delete the application itself.
+The **Delete Assignments** option removes all assignments associated with the selected Win32 apps. This action deletes Required, Available, and Uninstall assignments from Intune but does not delete the app itself.
 
-This option supports multi select and is applied immediately after confirmation. It is useful when you need to quickly unassign applications from multiple groups without navigating through the Intune admin center.
+This option supports multi-select and is applied immediately after confirmation. It is useful when you need to quickly unassign applications from multiple groups without navigating through the Intune admin center.
 
 ### Delete Application(s)
 
-This option deletes the selected Win32 application(s) from the Intune tenant. This action also removes any associated assignments and cannot be undone.
+The **Delete Application(s)** option deletes the selected Win32 apps from the Intune tenant. This action also removes any associated assignments and cannot be undone.
 
-<figure><img src="../../../.gitbook/assets/image (4229).png" alt="Delete Application" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1093).png" alt="Delete Applications" width="323"><figcaption></figcaption></figure>
 
-This option supports multi-select and permanently removes the applications from Intune. It is intended for cleanup scenarios where applications are no longer required in the tenant.
+This option supports multi-select and permanently removes the apps from Intune. It is intended for cleanup scenarios where apps are no longer required in the tenant.
