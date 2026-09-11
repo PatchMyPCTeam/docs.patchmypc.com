@@ -21,7 +21,7 @@ The _SMS Provider_ is the interface that enables all interactions with ConfigMgr
 {% hint style="info" %}
 **Note**
 
-The SMS Provider configuration is shared across Publisher. When you configure the SMS Provider from [Base Install Options](connection-source-options.md), the same settings are automatically used in other areas of Publisher, including [WSUS Options](../../wsus-updates-tab/wsus-options/) and the [Sync Schedule](../../sync-schedule-tab/) tab.
+The SMS Provider configuration is shared across Publisher. When you configure the SMS Provider from **Connection and Source Options** section, the same settings are automatically used in other areas of Publisher, including [WSUS Options](../../wsus-updates-tab/wsus-options/) and the [Sync Schedule](../../sync-schedule-tab/) tab.
 
 See [Configure the SMS Provider Connection](../../../technical-references/configure-sms-provider.md) for details on how to configure the SMS Provider connection.
 {% endhint %}
