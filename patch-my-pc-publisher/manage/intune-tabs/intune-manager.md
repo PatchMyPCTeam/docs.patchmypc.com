@@ -12,7 +12,7 @@ The **Intune Manager** component of Patch My PC (PMPC) Publisher is available un
 This document uses the term **Intune Manager** throughout to refer to both the **App Manager** and **Update Manager**, depending on which Intune tab you are working with.
 {% endhint %}
 
-Clicking the relevant **Intune Manager** tab in Publisher loads the relevant manager, which is used to view and manage Win32 apps (apps and updates) in Intune. It provides a centralized interface to review app properties, assignments, and installation status before performing application modifications.
+Clicking the relevant **Intune Manager** tab in Publisher loads the relevant manager, which is used to view and manage Win32 apps (apps and updates) in Intune. It provides a centralized interface to review app properties, assignments, and installation status before performing app modifications.
 
 Intune **App Manager**.
 
@@ -24,16 +24,16 @@ Intune **Update Manager**.
 
 Intune Manager queries Intune through Microsoft Graph and displays all Win32 apps in the Intune tenant.
 
-The primary use case for this is app modification and cleanup. It lets administrators identify unused applications, remove assignments, extract content, or delete apps in a controlled, supported way.
+The primary use case for this is app modification and cleanup. It lets administrators identify unused apps, remove assignments, extract content, or delete apps in a controlled, supported way.
 
 The table below outlines the available columns in this form:
 
-<table><thead><tr><th width="198" valign="top">Column name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Name</td><td valign="top">Displays the app's name as it appears in the Intune Admin Center.</td></tr><tr><td valign="top">Description</td><td valign="top">Shows the app's description defined in Intune for the Win32 apps</td></tr><tr><td valign="top">Publisher</td><td valign="top">Displays the software vendor associated with the app as defined in Intune for the Win32 app.</td></tr><tr><td valign="top">Device Installs</td><td valign="top">Shows the number of devices where the app is successfully installed.</td></tr><tr><td valign="top">Device Install Pending</td><td valign="top">Shows the number of devices where installation is in progress or pending.</td></tr><tr><td valign="top">Device N/A</td><td valign="top">Shows the number of devices where the app is not applicable based on requirements or applicability rules.</td></tr><tr><td valign="top">User Installs</td><td valign="top">Shows the number of user-based installations associated with the app.</td></tr><tr><td valign="top">Classification</td><td valign="top">Displays whether the item is classified as an app or update in Intune.</td></tr><tr><td valign="top">Modified</td><td valign="top">Displays the date and time the app was last modified in Intune.</td></tr><tr><td valign="top">Assigned</td><td valign="top">Indicates whether the app has one or more assignments configured in Intune.</td></tr></tbody></table>
+<table><thead><tr><th width="198" valign="top">Column name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Name</td><td valign="top">Displays the app's name as it appears in the Intune Admin Center.</td></tr><tr><td valign="top">Description</td><td valign="top">Shows the app's description defined in Intune for the Win32 apps.</td></tr><tr><td valign="top">Publisher</td><td valign="top">Displays the software vendor associated with the app as defined in Intune for the Win32 app.</td></tr><tr><td valign="top">Device Installs</td><td valign="top">Shows the number of devices where the app is successfully installed.</td></tr><tr><td valign="top">Device Install Pending</td><td valign="top">Shows the number of devices where installation is in progress or pending.</td></tr><tr><td valign="top">Device N/A</td><td valign="top">Shows the number of devices where the app is not applicable based on requirements or applicability rules.</td></tr><tr><td valign="top">User Installs</td><td valign="top">Shows the number of user-based installations associated with the app.</td></tr><tr><td valign="top">Classification</td><td valign="top">Displays whether the item is classified as an app or update in Intune.</td></tr><tr><td valign="top">Modified</td><td valign="top">Displays the date and time the app was last modified in Intune.</td></tr><tr><td valign="top">Assigned</td><td valign="top">Indicates whether the app has one or more assignments configured in Intune.</td></tr></tbody></table>
 
 {% hint style="success" %}
 **Tip**
 
-Highlighting a row in the application results table and pressing **Ctrl + C** copies the entire row to the Clipboard. This is useful for app management and troubleshooting scenarios.
+Highlighting a row in the app results table and pressing **Ctrl + C** copies the entire row to the Clipboard. This is useful for app management and troubleshooting scenarios.
 {% endhint %}
 
 ## Search
@@ -117,7 +117,7 @@ If you are sure you want to do this, click **Yes** on the **Delete Assignments**
 
 The **Delete Applications(s)** button deletes all the selected apps. Multiple apps can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
 
-### To delete one or more app
+### To delete apps
 
 1. Locate the app(s) you want to delete.
 2. Click **Delete Application(s)**.
@@ -133,9 +133,9 @@ Intune Manager provides several right-click options that let you view informatio
 
 ### Manage DO Priority
 
-The **Manage DO Priority** option allows you to configure Delivery Optimization (DO) priority for the selected app.
+The **Manage DO Priority** option allows you to configure the Delivery Optimization (DO) priority for the selected app.
 
-DO priority controls how quickly an application's content downloads once the Intune Management Extension (IME) evaluates the policy:
+DO priority controls how quickly an app's content downloads once the Intune Management Extension (IME) evaluates the policy:
 
 * **Foreground** prioritizes the download and processes the content immediately.
 * **Background** allows Windows to download the content with normal priority and defer based on network conditions and activity.
@@ -166,7 +166,7 @@ See [Manage Enrollment Status Page](../../customizations/list-customizations/man
 
 ### View Assignments
 
-The **View Assignments** option is only available when a single Win32 app is selected. Selecting this option opens the **Manage Assignments** window for the selected application.
+The **View Assignments** option is only available when a single Win32 app is selected. Selecting this option opens the **Manage Assignments** window for the selected app.
 
 {% hint style="info" %}
 **Note**
@@ -178,7 +178,7 @@ See [Manage Assignments](../../customizations/list-customizations/manage-assignm
 
 The **View Installation Status** option is only available when a single Win32 app is selected.
 
-Selecting this option opens the Microsoft Intune admin center and navigates directly to the **Overview** page of the selected app. This provides access to device and user installation status, deploymentakes you directly to the Overview page foron.
+Selecting this option opens the Microsoft Intune admin center and navigates directly to the **Overview** page of the selected app. This provides access to device and user installation status, deployment health, and related monitoring information.
 
 {% hint style="info" %}
 **Note**
