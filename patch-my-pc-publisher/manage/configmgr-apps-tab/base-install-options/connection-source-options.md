@@ -2,60 +2,68 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Connection and Source Options** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher defines how the Publisher connects to ConfigMgr and where application source content is stored on disk. This section must be correctly configured before the Publisher can create ConfigMgr applications or the [ConfigMgr Application Manager](../app-manager.md) utility can be used.
+The **Connection and Source Options** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
 
-These settings control communication with the SMS Provider and establish the root location used for all Publisher created ConfigMgr application content. Incorrect configuration can prevent applications from being created, updated, or managed successfully.
+{% hint style="danger" %}
+**Important**
+
+This section must be correctly configured before the Publisher can create ConfigMgr applications or the [App Manager](../app-manager.md) can be used.
+{% endhint %}
+
+These settings control communication with the SMS Provider and establish the root location used for all Publisher-created ConfigMgr application content. Incorrect configuration can prevent applications from being created, updated, or managed successfully.
 
 <figure><img src="../../../../.gitbook/assets/image (724).png" alt="Connection and Source Options" width="563"><figcaption></figcaption></figure>
 
 ## Configure SMS Provider Connection
 
-The **SMS Provider** is the interface that enables all interactions with ConfigMgr, including actions performed in the ConfigMgr console and through supported APIs. The Publisher also relies on the SMS Provider to perform operations such as triggering SUP synchronizations, creating and modifying applications, and distributing content.
-
-The SMS Provider configuration is shared across the Publisher. When you configure the SMS Provider from [ConfigMgr Apps > Options](../), the same settings are automatically used in other areas of the product, including [WSUS Updates > Options](../../wsus-updates-tab/wsus-options/) and the [Sync Schedule](../../sync-schedule-tab/) tab.
-
-To connect to the SMS Provider, the [ConfigMgr Remote Console is required](../../../requirements/configmgr-requirements/software.md#configmgr-remote-console) to be installed on the same device as the Publisher. If the ConfigMgr Remote Console is _not_ installed, the following message is also indicated in the Publisher when attempting to Configure the SMS Provider.
-
-<figure><img src="../../../../.gitbook/assets/image (725).png" alt="Missing ConfigMgr Remote Console" width="563"><figcaption></figcaption></figure>
-
-The PatchMyPC.log will also indicate when the ConfigMgr Remote Console is not installed:
-
-`An error occurred Error checking ConfigMgr connection: Unable to find the Assembly: AdminUI.WqlQueryEngine, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 [PatchMyPC_Core.Exceptions.ConfigApiException] HResult: -2146233088`
-
-For information on how to configure the SMS Provider connection, please see: [Configure the SMS Provider Connection](../../../technical-references/configure-sms-provider.md).
-
-## Source Folder
-
-The **Source Folder** is required because every ConfigMgr application relies on a defined content source location for each deployment type. This source path is the authoritative location where application files are stored and managed before they are distributed to the Content Library and used by clients.
-
-The image below correlates a source folder configured in Publisher with the Deployment Type Content Location in ConfigMgr.
-
-<figure><img src="../../../../.gitbook/assets/image (216).png" alt="Deployment Type Content Location Reference" width="563"><figcaption></figcaption></figure>
+The _SMS Provider_ is the interface that enables all interactions with ConfigMgr, including actions performed in the ConfigMgr console and through supported APIs. Publisher also relies on the SMS Provider to perform operations such as triggering Software Update Point (SUP) synchronizations, creating and modifying applications, and distributing content.
 
 {% hint style="info" %}
 **Note**
 
-The Publisher automatically creates a root **Applications** folder in the configured UNC source path. The name of this folder is not configurable.
+The SMS Provider configuration is shared across Publisher. When you configure the SMS Provider from [Base Install Options](connection-source-options.md), the same settings are automatically used in other areas of Publisher, including [WSUS Options](../../wsus-updates-tab/wsus-options/) and the [Sync Schedule](../../sync-schedule-tab/) tab.
+
+See [Configure the SMS Provider Connection](../../../technical-references/configure-sms-provider.md) for details on how to configure the SMS Provider connection.
 {% endhint %}
 
-All application content generated by the Publisher is stored beneath this folder, with vendor and product specific subdirectories created automatically as applications are published.
+## Source Folder
+
+The **Source Folder** field needs to be configured, as every ConfigMgr application relies on a defined content source location for each deployment type. The path specified is the authoritative location where application files are stored and managed before they are distributed to the Content Library and used by clients.
+
+The image below correlates a source folder configured in Publisher with the Deployment Type Content Location in ConfigMgr.
+
+<figure><img src="../../../../.gitbook/assets/image (1080).png" alt="Source Folder" width="462"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+Publisher automatically creates a root **Applications** folder in the configured UNC source path, and you can't configure it.
+{% endhint %}
+
+All application content generated by Publisher is stored beneath this folder, with vendor and product-specific subdirectories created automatically as applications are published.
 
 {% hint style="success" %}
 **Tip**
 
-Each application version is stored in its own UniqueID folder. This results in multiple UniqueID folders under a single application folder, allowing the Publisher to track individual application versions and manage application lifecycles correctly.
+Each application version is stored in its own UniqueID folder. This results in multiple UniqueID folders under a single application folder, allowing Publisher to track individual application versions and manage application lifecycles correctly.
 
-Application content is stored using the following structure: SourceFolder\Applications\Vendor\Application\UniqueID
+Application content is stored using the following structure:&#x20;
 
-When application retention is enabled, retained application content UniqueID folders are moved into a **Retained Apps** folder under SourceFolder\Applications\Vendor\Application.
+**SourceFolder\Applications\Vendor\Application\UniqueID**
+
+When application retention is enabled, retained application content UniqueID folders are moved into a **Retained Apps** folder under **SourceFolder\Applications\Vendor\Application**.
 {% endhint %}
 
 {% hint style="danger" %}
 **Important**
 
-The source folder structure is critical to the Publisher operations. The Publisher evaluates both the ConfigMgr database object and the corresponding content directories when making decisions about application retention, upgrades, and lifecycle management.
+The source folder structure is critical to Publisher operations. Publisher evaluates both the ConfigMgr database object and the corresponding content directories when deciding on application retention, upgrades, and lifecycle management.
 
 Manually modifying, moving, or deleting folders within this structure can cause inconsistencies between ConfigMgr and the content source, which may lead to unexpected behavior or management issues later.
 {% endhint %}
 
-For more information on the requirements, see: [Permissions](../../../requirements/configmgr-requirements/permissions.md).
+{% hint style="info" %}
+**Note**
+
+See [Permissions](../../../requirements/configmgr-requirements/permissions.md) for more information on requirements.
+{% endhint %}
