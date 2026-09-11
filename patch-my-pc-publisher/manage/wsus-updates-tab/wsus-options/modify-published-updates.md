@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Modify Published Updates** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher is used to manage third party updates that have already been published to WSUS.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt="&#x27;Modify Published Updates&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="&#x27;Modify Published Updates&#x27; section" width="563"><figcaption></figcaption></figure>
 
 It provides a centralized view of published updates and lets administrators safely maintain, clean up, and correct updates without manually interacting with the WSUS console.
 
@@ -12,7 +12,7 @@ It provides a centralized view of published updates and lets administrators safe
 
 Clicking **Run Wizard** opens the **Update Manager**, which is commonly used for troubleshooting, republishing workflows, and ongoing maintenance to ensure WSUS and ConfigMgr evaluate and display only the correct updates.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt="Update Manager" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="Update Manager" width="563"><figcaption></figcaption></figure>
 
 ## About the Update Manager
 
