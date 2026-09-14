@@ -6,7 +6,7 @@ The **Application Creation Options** section on the **Base Install Options** tab
 
 <figure><img src="../../../../.gitbook/assets/image (727).png" alt="&#x27;Application Creation Options&#x27;" width="563"><figcaption></figcaption></figure>
 
-These settings apply globally to all applications created from the ConfigMgr Apps tab and directly influence application lifecycle behavior.
+These settings apply globally to all applications created from the **ConfigMgr Apps** tab and directly influence application lifecycle behavior.
 
 {% hint style="success" %}
 **Tip**
@@ -256,11 +256,11 @@ To delete applications referenced by task sequences, remove them from the task s
 
 #### **Behavior with update in place**
 
-When the [Update existing application’s metadata, deployment type, detection method, and content files](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) option is selected, application retention is handled by first preserving the current version before applying the update.
+When you select the [Update existing application’s metadata, deployment type, detection method, and content files](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) option, application retention works by first preserving the current version before applying the update.
 
 Before updating the application to the new version, Publisher duplicates the existing application and moves its content into a **Retained Apps** folder. Publisher then updates the application in place by removing the existing deployment type and creating a new deployment type for the latest version. This ensures the previous version is retained according to the configured retention count while the application ID remains unchanged.
 
-If the number of applications exceeds the configured retention value, the Publisher removes the oldest application versions, starting with those that fall outside the retention window.
+If the number of applications exceeds the configured retention value, Publisher removes the oldest application versions, starting with those that fall outside the retention window.
 
 #### **Behavior with create new application**
 
@@ -283,7 +283,7 @@ When checked, this option removes administrative categories from retained (older
 {% hint style="info" %}
 **Note**
 
-See [Customizations (Right-Click Options)](../../../customizations/) for more information about assigning categories to ConfigMgr apps.
+See [Manage Categories](../../../customizations/list-customizations/manage-categories.md) for more information about assigning categories to ConfigMgr apps.
 {% endhint %}
 
 ### **Delete applications even if they have a deployment**
