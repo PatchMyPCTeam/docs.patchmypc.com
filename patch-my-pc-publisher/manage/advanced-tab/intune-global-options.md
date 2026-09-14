@@ -2,63 +2,40 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Intune Global Options** section on the **Advanced** tab of Patch My PC (PMPC) Publisher controls how the Publisher interacts with Microsoft Intune at a global level. They are primarily used to support advanced scenarios such as content extraction from Intune packages and tuning Microsoft Graph query behavior for large tenants.
+The **Intune Global Options** section on the **Advanced** tab of Patch My PC (PMPC) Publisher controls how the Publisher interacts with Microsoft Intune at a global level. These settings are primarily used to support advanced scenarios such as content extraction from Intune packages and tuning Microsoft Graph query behavior for large tenants.
 
 <figure><img src="../../../.gitbook/assets/image (742).png" alt="&#x27;Intune Global Options&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Store encryption information locally to allow extraction of Win32 .intunewin files
 
-The Publisher can store the encryption information used when creating Intune Win32 package files with the .intunewin extension. When this option is enabled, the encryption keys are retained locally and can later be used to download and extract the contents of Intune applications and updates.
+Publisher can store the encryption information used when creating Intune Win32 package files with the **.intunewin** extension. When the **Store encryption information locally to allow extraction of Win32 .intunewin files** checkbox is checked, the encryption keys are retained locally and can later be used to download and extract the contents of Intune applications and updates.
 
-This capability is required if you want to use the [Intune Application Manager](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/form-controls/intune-application-manager.md) to extract content from applications or updates that were published by the Publisher.
+This capability is required if you want to use the [Intune Manager](../intune-tabs/intune-manager.md) to extract content from apps or updates published by Publisher.
 
-To enable encryption key storage, follow these steps.
+### To enable encryption key storage
 
-1. Open the Publisher.
-2. Navigate to the Advanced tab.
-3. Under Intune Global Options, enable the setting labeled **Store encryption information locally to allow extraction of Win32 .intunewin files**.
-4. Click Apply or Save and Close.
+1. Open Publisher.
+2. Navigate to the **Advanced** tab.
+3. Under **Intune Global Options**, check the **Store encryption information locally to allow extraction of Win32 .intunewin files** checkbox.
+4. Click **Apply** or **Save and Close**.
 
 {% hint style="danger" %}
 **Important**
 
-Encryption information is only available for apps created after this option is enabled. You cannot extract content from Intune apps or updates that were created before the option was turned on.
+Encryption information is only available for apps created after you enable this option. You cannot extract content from Intune apps or updates created before you turned on the option.
 {% endhint %}
 
-### Extract Content
+Once **Store encryption information locally to allow extraction of Win32 .intunewin files** setting is enabled, you can extract content for apps and updates created _after_ the setting was turned on by using the [**Extract Package**](../intune-tabs/intune-manager.md#extract-package) feature of Intune Application Manager.
 
-Once **Store encryption information locally to allow extraction of Win32 .intunewin files** is enabled, you can extract content for apps and updates created _after_ the setting was turned on by using the [Intune Application Manager](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/form-controls/intune-application-manager.md).
+## Number of items to be returned when the Graph API returns paged results
 
-To extract the content for eligible Win32 apps:
+The **Number of items to be returned when the Graph API returns paged results** setting controls how many Intune objects Publisher returns per page when it queries Microsoft Graph.
 
-1. Open the Intune Apps or Intune Updates tab.
-2. Launch the Intune Application Manager.
-3. Right click an application or update.
-4. Select **Extract Package**.
+This is useful in environments with a large number of apps, updates, or assignments:
 
-<figure><img src="../../../.gitbook/assets/image (3954).png" alt="Extract Package" width="563"><figcaption></figcaption></figure>
+* Lower values reduce the size of each response, which can help in slow or constrained network conditions.
+* Higher values reduce the number of requests required to retrieve all data, which can improve performance in well-connected environments.
 
-5. Specify an output path or browse to a folder.
-6. Click Extract.
+The default is **100,** with values of **1** to **999** being supported
 
-<figure><img src="../../../.gitbook/assets/image (3955).png" alt="Extraction Complete" width="409"><figcaption></figcaption></figure>
-
-After extraction completes, File Explorer opens to the selected directory and displays the extracted content.
-
-{% hint style="info" %}
-**Note**
-
-If the Extract Content option is unavailable or greyed out, the encryption information was not collected at publish time. This typically occurs when the setting was enabled after the application or update was originally published.
-{% endhint %}
-
-## Number of items returned from Microsoft Graph
-
-The Number of items to be returned when the Graph API returns paged results setting controls how many Intune objects are returned per page when the Publisher queries Microsoft Graph.
-
-This option is useful in environments with a large number of applications, updates, or assignments. Lower values reduce the size of each response, which can help in slow or constrained network conditions. Higher values reduce the number of requests required to retrieve all data, which can improve performance in well connected environments.
-
-* Default value: 20 items
-* Minimum value: 1 item
-* Maximum value: 999 items
-
-In most scenarios, the default value of **20** is recommended. Adjust this setting only if you are troubleshooting performance or scalability issues related to Graph queries.
+In most scenarios, the default value of **100** is recommended. Adjust this setting only if you are troubleshooting performance or scalability issues related to Graph queries.
