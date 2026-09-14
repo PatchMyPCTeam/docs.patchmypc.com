@@ -117,55 +117,56 @@ When the **Move applications to the following folder in the applications node of
 ### To choose where applications are placed in the ConfigMgr console
 
 1. Load Publisher.
-2. Enable **Move applications to the following folder in the applications node of the console**.
-3. Select **Browse Folders**.
-4. In the **Select Console Folder** window:
-   * Expand the **Applications** node.
-   * Select an existing folder (for example, **Applications\3rd Party Apps**), **or**
-   * Enter a name in **Create New Folder** and select **Create Folder**.
-5. Select **OK** to confirm the folder selection.
-6. Select **OK** again to save the ConfigMgr Apps Options.
+2. Navigate to the **ConfigMgr Apps | Base Install Options** tab.
+3. Scroll down to the **Application Creation Options** section.
+4. Check the **Move applications to the following folder in the applications node of the console** checkbox.
+5. Click **Browse Folders**.
+
+<figure><img src="../../../../.gitbook/assets/image (1094).png" alt="Clicking &#x27;Browse Folders&#x27;." width="563"><figcaption></figcaption></figure>
+
+6. In the **Select Console Folder** screen, window expand the **Applications** node.
+7. Select an existing folder (for example, **Applications\3rd Party Apps**), or in the **Create New Folder** field, type the name of a new folder and click **Create Folder**.
+8. Click **OK** to confirm the folder selection.
+9. Click **OK** again to save the ConfigMgr Apps Options.
 
 All applications created or updated by Publisher will now be moved to the selected console folder.
-
-<figure><img src="../../../../.gitbook/assets/image (220).png" alt="Move applications to the following folder in the applications node of the console" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
 
-The selected console folder can be overridden at the vendor or product level using the [Product Tree](../../../technical-references/catalog-information.md) on the ConfigMgr Apps tab. If a folder is defined at a lower level in the tree, that more specific setting takes precedence over this global. For more information, see [Customizations (Right-Click Options)](../../../customizations/).
+The selected console folder can be overridden at the vendor or product level using the Product Tree on the **ConfigMgr Apps** tab. If a folder is defined at a lower level in the tree, that more specific setting takes precedence over this global.
 {% endhint %}
 
-## When a new application update is available
+## When a New Application Update is Available
 
-The following settings control how the Publisher handles new versions of applications that were previously created by the Publisher. The behavior you choose determines whether existing applications are updated in place, new applications are created, and how older versions are retained or removed.
+The settings under **When a New Application Update is Available** section control how Publisher handles new versions of applications that were previously created by Publisher. The behavior you choose determines whether existing applications are updated in place, new applications are created, and how older versions are retained or removed.
 
-<figure><img src="../../../../.gitbook/assets/image (221).png" alt="Application Lifecycle Settings" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1095).png" alt="&#x27;When a New Application Update is Available&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ### Update existing application’s metadata, deployment type, detection method, and content files (Default)
 
-When **Update existing application’s metadata, deployment type, detection method, and content files** is selected, the Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications).
+When the **Update existing application’s metadata, deployment type, detection method, and content files** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications).
 
-This option is the default and is commonly used because the application ID does not change in ConfigMgr when we update it to the new version. By keeping the same application ID:
+This is the default option and is commonly used because the application ID does not change in ConfigMgr when we update it to the new version. By keeping the same application ID:
 
 * Task sequences that reference the application continue to work without modification.
 * Existing required and available deployments remain intact, ensuring that the latest version of the application is automatically deployed or made available in Software Center to the same device collections that targeted the previous version.
 
 This is especially valuable for operating system deployment scenarios, where administrators want task sequences to always install the most recent version without updating references every time a new release is published.
 
-Before performing an in-place update, the Publisher validates that the application is in a healthy state. This includes confirming that:
+Before performing an in-place update, Publisher validates that the application is in a healthy state. This includes confirming that:
 
-* The application was originally created and is managed by the Publisher.
+* Publisher originally created and manages the application.
 * The corresponding application content exists on disk in the content source folder.
 
 These checks are required to safely support additional behaviors such as application retention and cleanup.
 
-When an in-place update occurs, the Publisher:
+When an in-place update occurs, Publisher:
 
 * Preserves the existing application object and application ID.
 * Updates application metadata such as:
-  * Software version.
-  * Application Name.
+  * Software version
+  * Application Name
   * Description and related metadata.
 * Removes the existing Deployment Type.
 * Creates a new Deployment Type and corresponding content source folder.
@@ -173,7 +174,7 @@ When an in-place update occurs, the Publisher:
 {% hint style="success" %}
 **Tip**
 
-Removing and recreating the deployment type results in **2 new revisions** on the application object for each update. Over time, this causes the total number of application revisions to increase.
+Removing and recreating the deployment type results in two new revisions on the application object for each update. Over time, this causes the total number of application revisions to increase.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -185,16 +186,16 @@ A common symptom of this behavior is an error similar to the following in **CIDo
 
 `Evaluation Failed, 0x87D00289 (-2016410999), Unknown Error`
 
-These issues have most commonly been observed with applications that have multiple revisions, which can occur over time when an application is repeatedly updated in place.
+These issues most commonly occur with applications that have multiple revisions, which can happen over time when an application is repeatedly updated in place.
 
 If you encounter these symptoms in a CMG-enabled environment, the recommended workaround is to use **Create a new application without modifying any previous applications** instead of updating applications in place.
 {% endhint %}
 
 #### Delay the in-place application upgrade by _X_ days
 
-When enabled, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
+When the **Delay the in-place application upgrade by&#x20;**_**X**_**&#x20;days** checkbox is checked, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
 
-* The delay is calculated from the date the new version is first detected by the Publisher.
+* The delay is calculated from the date Publisher first detects the new version.
 * This allows time for validation or testing before updating production applications.
 
 **Example:**\
@@ -202,9 +203,9 @@ If a new version is synchronized on February 3 and the delay is set to 3 days, t
 
 ### Create a new application without modifying any previous applications
 
-When **Create a new application without modifying any previous applications** is selected, the Publisher creates a brand-new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), a new application ID is created for every version.
+When the **Create a new application without modifying any previous applications** option is selected, Publisher creates a brand-new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
 
-This option is commonly used in environments where administrators want to preserve each application version independently or avoid modifying existing application objects. It is also best suited for environments where strict version control is required and task sequences are updated intentionally.
+This option is commonly used when administrators want to preserve each application version independently or avoid modifying existing application objects. It is also best suited for environments where strict version control is required, and task sequences are updated intentionally.
 
 Because a new application is created each time:
 
@@ -219,41 +220,43 @@ The option to **Create a new application without modifying any previous applicat
 
 ### Retain up to x previously created applications
 
-The **Retain up to x previously created applications** option controls how many older application versions are retained in ConfigMgr when new versions are published by the Publisher. It applies regardless of whether you choose to [**update applications in place**](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) or [**create a new application for each version**](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications).
+When checked, the **Retain up to x previously created applications** checkbox controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [**update applications in place**](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) or [**create a new application for each version**](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications).
 
-Valid values range from **0 to 10**.
+Valid values range from **0** (the default) to **10**.
 
 When this value is set to **0**, only the latest version of an application is kept in ConfigMgr. Any older versions are removed.
 
-When this value is set greater than **0**, the Publisher retains that number of older application versions alongside the latest version.
+When this value is set to a value greater than **0**, Publisher retains that number of older application versions alongside the latest version.
 
 For example, setting this value to **1** ensures that the environment always contains the latest application version and one previous version. This allows for quick rollback to a last known good version if needed, while preventing excessive growth in the number of applications.
 
 {% hint style="success" %}
 **Tip**
 
-Application retention can be adjusted at the vendor and product levels in the [Product Tree](../../../fundamentals/product-tree/working.md), allowing more granular control and will override the global setting configured.
+You can adjust application retention at the vendor and product levels in the [Product Tree](../../../fundamentals/product-tree/working.md), giving you more granular control and allowing you to override the configured global setting.
 
-This option is especially useful for third-party applications with a rapid release cadence, such as web browsers. Retaining additional versions makes it easier to roll back if needed using supersedence. For more information about using supersedence in ConfigMgr, see: [https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/revise-and-supersede-applications#supersedence](https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/revise-and-supersede-applications#supersedence)
+This option is especially useful for third-party applications with a rapid release cadence, such as web browsers. Retaining additional versions makes it easier to roll back if needed using supersedence.&#x20;
+
+See [Supersedence](https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/revise-and-supersede-applications#supersedence) for more information about using supersedence in ConfigMgr.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
 **Note**
 
-The Publisher tracks only the **10 most recent application versions** during synchronization. If older application versions fall outside this tracked window, the Publisher cannot automatically clean them up through application retention. These older versions must be reviewed and removed manually if cleanup is required. The recommended approach for cleanup is to use the [App Manager](../app-manager.md).
+Publisher only tracks the ten most recent application versions during synchronization. Publisher cannot automatically clean up older application versions outside of this window through application retention. You need to review and manually remove these older versions if cleanup is required. The recommended cleanup approach is to use the [App Manager](../app-manager.md).
 {% endhint %}
 
 {% hint style="danger" %}
 **Important**
 
-The Publisher will not delete an application that is referenced by a task sequence, even if it exceeds the retention limit and the option to delete applications with deployments is enabled.
+Publisher will not delete an application referenced by a task sequence, even if it exceeds the retention limit and the option to delete applications with deployments is enabled.
 
-Applications referenced by task sequences must be manually removed from the task sequence before they become eligible for deletion by the Publisher.
+Applications referenced by task sequences must be removed from the task sequence before Publisher can delete them.
 {% endhint %}
 
 #### **Behavior with update in place**
 
-When [Update existing application’s metadata, deployment type, detection method, and content files](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) is selected, application retention is handled by first preserving the current version before applying the update.
+When the [Update existing application’s metadata, deployment type, detection method, and content files](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) option is selected, application retention is handled by first preserving the current version before applying the update.
 
 Before the application is updated to the new version, the Publisher duplicates the existing application and moves it's content into a **Retained Apps** folder. The application is then updated in place by removing the existing deployment type and creating a new deployment type for the latest version. This ensures the previous version is retained according to the configured retention count while the application ID remains unchanged.
 
