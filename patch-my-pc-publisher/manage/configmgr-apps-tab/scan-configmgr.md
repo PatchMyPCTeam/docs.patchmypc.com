@@ -44,39 +44,39 @@ The **Scan ConfigMgr** tab runs direct SQL queries against your ConfigMgr site d
 
 <figure><img src="../../../.gitbook/assets/image (1099).png" alt="Connect to ConfigMgr SQL Database As" width="563"><figcaption></figcaption></figure>
 
-The Publisher supports multiple ways to authenticate to SQL, allowing flexibility depending on where Publisher is installed and which account has the required permissions.
+Publisher supports multiple ways to authenticate to SQL, allowing flexibility depending on where Publisher is installed and which account has the required permissions.
 
-### Connect to ConfigMgr SQL Database As
+### **As Windows service account**
 
-#### **As Windows service account (Default)**
+The **As Windows service account** option (the default) uses the account under which the Publisher service is running. By default, the Publisher service runs as SYSTEM. This option is recommended:
 
-This option uses the account under which the Publisher service is running. By default, the Publisher service runs as SYSTEM.
-
-* Recommended when the Publisher is installed on the site server.
-* Uses Windows authentication.
+* When Publisher is installed on the site server.
+* Windows authentication is used.
 * No credentials need to be entered.
 
 {% hint style="info" %}
 **Note**
 
-When the Publisher is installed on the ConfigMgr site server, the **SYSTEM** account typically already has the required read permissions on the ConfigMgr database views. In most environments, no additional SQL configuration is required.
+When Publisher is installed on the ConfigMgr site server, the **SYSTEM** account typically already has the required read permissions on the ConfigMgr database views. In most environments, you don't need additional SQL configuration.
 {% endhint %}
 
-#### **With these credentials using SQL authentication**
+### **With these credentials using SQL authentication**
 
-This option allows you to specify a **SQL login and password**.
+The **With these credentials using SQL authentication** option allows you to specify a SQL login and password. This option is recommended:
 
-* Uses SQL authentication instead of Windows authentication.
-* Requires a SQL login with read access to the required ConfigMgr database views.
-* Less common and generally not recommended unless Windows authentication cannot be used.
+* You use SQL authentication instead of Windows authentication.
+* If you want to use a SQL login (which needs read access to the required ConfigMgr database views).
 
-#### **Run interactive scan as logged in user**
+This option is less common and generally not recommended unless Windows authentication cannot be used.
 
-When enabled, the scan runs using the currently logged-in user’s Windows credentials instead of the Publisher service account.
+### **Run interactive scan as logged in user**
 
-* Useful for troubleshooting permission issues
-* Helpful when testing access before granting permissions to the service account
-* Requires the logged-in user to have the necessary SQL SELECT permissions on the required ConfigMgr views.
+When the **Run interactive scan as logged in user** checkbox is checked, the scan runs using the currently logged-in user’s Windows credentials instead of Publisher's service account. This option is recommended:
+
+* For troubleshooting permission issues
+* Can be helpful when testing access before granting permissions to the service account
+
+This option requires the logged-in user to have the necessary SQL SELECT permissions on the required ConfigMgr views.
 
 {% hint style="danger" %}
 **Important**
@@ -84,9 +84,9 @@ When enabled, the scan runs using the currently logged-in user’s Windows crede
 This option does not change how scheduled scans run, it only applies to the interactive scan being executed.
 {% endhint %}
 
-### Required SQL Permissions
+## Required SQL Permissions
 
-When the Publisher is installed on the ConfigMgr site server, the Publisher service runs as SYSTEM and the site server’s computer account typically already has the required read permissions on the ConfigMgr site database. In this configuration, no additional SQL permissions are usually required.
+When Publisher is installed on the ConfigMgr site server, the Publisher service runs as SYSTEM and the site server’s computer account typically already has the required read permissions on the ConfigMgr site database. In this configuration, no additional SQL permissions are usually required.
 
 If Publisher is installed on a different server, or if you choose to run the scan using a specific SQL or user account, the account used for the scan must be granted read access to the ConfigMgr database views used for application inventory.
 
@@ -110,9 +110,9 @@ These views contain the hardware inventory and collection membership data that t
 
 ### Manually Add SQL Permissions
 
-To grant access, add the computer account (for example, DOMAIN\PUBLISHER01$) or the user/SQL account as a login in SQL Server, map it to the ConfigMgr site database, and grant SELECT permissions on the required inventory and collection views. This ensures the Publisher can successfully query installed application data during the scan.
+To grant access, add the computer account (for example, DOMAIN\PUBLISHER01$) or the user/SQL account as a login in SQL Server, map it to the ConfigMgr site database, and grant SELECT permissions on the required inventory and collection views. This ensures Publisher can successfully query installed application data during the scan.
 
-If the required SQL permissions are not already in place, one option is to provide the following SQL query to your SQL administrator to run against the ConfigMgr site database.
+If the required SQL permissions are not already in place, you can provide the following SQL query to your SQL administrator to run against the ConfigMgr site database.
 
 {% hint style="success" %}
 **Tip**
