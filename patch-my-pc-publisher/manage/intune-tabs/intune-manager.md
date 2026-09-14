@@ -26,7 +26,15 @@ Intune Manager queries Intune through Microsoft Graph and displays all Win32 app
 
 The primary use case for this is app modification and cleanup. It lets administrators identify unused apps, remove assignments, extract content, or delete apps in a controlled, supported way.
 
-The table below outlines the available columns in this form:
+The table below outlines the default columns in the Intune Manager.
+
+{% hint style="success" %}
+**Tip**
+
+You can right-click any column heading to see a list of the available columns. To add a column, click it, and it will be added to the current window. Likewise, to remove a column, select it from the right-click list.
+
+You can also reorder the columns using drag and drop.
+{% endhint %}
 
 <table><thead><tr><th width="198" valign="top">Column name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Name</td><td valign="top">Displays the app's name as it appears in the Intune Admin Center.</td></tr><tr><td valign="top">Description</td><td valign="top">Shows the app's description defined in Intune for the Win32 apps.</td></tr><tr><td valign="top">Publisher</td><td valign="top">Displays the software vendor associated with the app as defined in Intune for the Win32 app.</td></tr><tr><td valign="top">Device Installs</td><td valign="top">Shows the number of devices where the app is successfully installed.</td></tr><tr><td valign="top">Device Install Pending</td><td valign="top">Shows the number of devices where installation is in progress or pending.</td></tr><tr><td valign="top">Device N/A</td><td valign="top">Shows the number of devices where the app is not applicable based on requirements or applicability rules.</td></tr><tr><td valign="top">User Installs</td><td valign="top">Shows the number of user-based installations associated with the app.</td></tr><tr><td valign="top">Classification</td><td valign="top">Displays whether the item is classified as an app or update in Intune.</td></tr><tr><td valign="top">Modified</td><td valign="top">Displays the date and time the app was last modified in Intune.</td></tr><tr><td valign="top">Assigned</td><td valign="top">Indicates whether the app has one or more assignments configured in Intune.</td></tr></tbody></table>
 
