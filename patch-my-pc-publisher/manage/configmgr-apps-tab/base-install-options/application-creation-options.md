@@ -251,37 +251,49 @@ Publisher only tracks the ten most recent application versions during synchroniz
 
 Publisher will not delete an application referenced by a task sequence, even if it exceeds the retention limit and the option to delete applications with deployments is enabled.
 
-Applications referenced by task sequences must be removed from the task sequence before Publisher can delete them.
+To delete applications referenced by task sequences, remove them from the task sequence first.
 {% endhint %}
 
 #### **Behavior with update in place**
 
 When the [Update existing application’s metadata, deployment type, detection method, and content files](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) option is selected, application retention is handled by first preserving the current version before applying the update.
 
-Before the application is updated to the new version, the Publisher duplicates the existing application and moves it's content into a **Retained Apps** folder. The application is then updated in place by removing the existing deployment type and creating a new deployment type for the latest version. This ensures the previous version is retained according to the configured retention count while the application ID remains unchanged.
+Before updating the application to the new version, Publisher duplicates the existing application and moves its content into a **Retained Apps** folder. Publisher then updates the application in place by removing the existing deployment type and creating a new deployment type for the latest version. This ensures the previous version is retained according to the configured retention count while the application ID remains unchanged.
 
 If the number of applications exceeds the configured retention value, the Publisher removes the oldest application versions, starting with those that fall outside the retention window.
 
-**Behavior with create new application**
+#### **Behavior with create new application**
 
-When [Create a new application without modifying any previous applications](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications) is selected, application retention is applied across the chain of independently created application objects.
+When the [Create a new application without modifying any previous applications](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications) option is selected, application retention is applied across the chain of independently created application objects.
 
-Each new version is created as a separate application. If the number of applications exceeds the configured retention value, the Publisher removes the oldest application versions, starting with those that fall outside the retention window.
+Each new version is created as a separate application. If the number of applications exceeds the configured retention value, Publisher removes the oldest application versions, starting with those that fall outside the retention window.
 
 ### **Remove administrative categories from retained applications**
 
-This option is available only when [Retain up to X previously created applications](application-creation-options.md#retain-up-to-x-previously-created-applications) is configured.
+By default, all administrative categories assigned to a ConfigMgr application are preserved when you retain older application versions. This is useful in scenarios such as operating system deployment frontends, where administrative categories are used to populate application selection lists. The option to **Remove administrative categories from retained applications** ensures that only the current version appears in those lists, preventing outdated versions from being presented.
 
-By default, all administrative categories assigned to a ConfigMgr application are preserved when older application versions are retained. This is useful in scenarios such as operating system deployment frontends, where administrative categories are used to populate application selection lists. The option to **Remove administrative categories from retained applications is** ensures that only the current version appears in those lists, preventing outdated versions from being presented.
+{% hint style="danger" %}
+**Important**
 
-When this option is enabled, administrative categories are removed from retained (older) application versions. Only the latest published application keeps the assigned administrative categories.
+The **Remove administrative categories from retained applications** checkbox is only available when the [Retain up to X previously created applications](application-creation-options.md#retain-up-to-x-previously-created-applications) setting is configured.
+{% endhint %}
 
-For more information about assigning categories to ConfigMgr apps, see [Customizations (Right-Click Options)](../../../customizations/).
+When checked, this option removes administrative categories from retained (older) application versions. Only the latest published application keeps the assigned administrative categories.
+
+{% hint style="info" %}
+**Note**
+
+See [Customizations (Right-Click Options)](../../../customizations/) for more information about assigning categories to ConfigMgr apps.
+{% endhint %}
 
 ### **Delete applications even if they have a deployment**
 
-This option is available only when [Retain up to X previously created applications](application-creation-options.md#retain-up-to-x-previously-created-applications) is configured.
+When the **Delete applications even if they have a deployment** checkbox is checked, Publisher can delete retained application versions even if they have existing deployments. When disabled, applications with active deployments are preserved and are not removed during retention cleanup.
 
-When the **Delete applications even if they have a deployment** is enabled, the Publisher can delete retained application versions even if they have existing deployments. When disabled, applications with active deployments are preserved and are not removed during retention cleanup.
+{% hint style="danger" %}
+**Important**
 
-This option provides flexibility for environments where older application deployments are no longer required but may still exist, allowing retention cleanup to proceed without the need for manual intervention top remove a deployment(s).
+The **Delete applications even if they have a deployment** checkbox is only available when the [Retain up to X previously created applications](application-creation-options.md#retain-up-to-x-previously-created-applications) setting is configured.
+{% endhint %}
+
+This option provides flexibility for environments where older application deployments are no longer required but may still exist, allowing retention cleanup to proceed without the need for manual intervention to remove a deployment(s).
