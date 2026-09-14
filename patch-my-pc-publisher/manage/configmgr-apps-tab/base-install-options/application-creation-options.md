@@ -11,30 +11,30 @@ These settings apply globally to all applications created from the ConfigMgr App
 {% hint style="success" %}
 **Tip**
 
-Some options in the **Application Creation Options** section are global defaults. These settings can be overridden at the **vendor** or **product** level within the Product Tree. When a more specific customization exists at a lower level, it takes precedence over the global setting, following standard product tree inheritance behavior.
+Some options in the **Application Creation Options** section are global defaults. You can override these settings at the **vendor** or **product** level within the Product Tree. When a more specific customization exists at a lower level, it takes precedence over the global setting, following standard Product Tree inheritance behavior.
 {% endhint %}
 
 ## Allow applications to be installed from the Install Application task sequence action
 
-When the **Allow applications to be installed from the Install Application task sequence action** setting is enabled, Publisher explicitly sets this flag on the application object in ConfigMgr.
+When the **Allow applications to be installed from the Install Application task sequence action** checkbox is checked, Publisher explicitly sets this flag on the application object in ConfigMgr.
 
 Specifically, Publisher enables **Allow this application to be installed from the Install Application task sequence action without being deployed** on each application it creates or updates.
 
 {% hint style="success" %}
 **Tip**
 
-This setting does not have to be enabled when applications are explicitly referenced in a task sequence using a fixed application selection in the **Install Application** step.
+You do not need to enable this setting when applications are explicitly referenced in a task sequence using a fixed application selection in the **Install Application** step.
 {% endhint %}
 
 {% hint style="danger" %}
 **Important**
 
-When enabled, this setting is applied _only_ when the deployment type setting, **installation behavior,** is set to **Install for system**. User-based applications that install in the user context do not meet the requirements for this setting.
+When enabled, this setting is applied _only_ when the deployment type setting, installation behavior, is set to **Install for system**. User-based applications that install in the user context do not meet the requirements for this setting.
 
 See [Product Naming in the Patch My PC Catalog](../../../technical-references/catalog-information.md#product-naming-in-the-patch-my-pc-catalog) for more details on how to identify a user-based app.
 {% endhint %}
 
-This option should be left set to **Enabled** _only_ in the following scenarios:
+This option should be checked &#x6F;_&#x6E;ly_ in the following scenarios:
 
 * Applications installed using dynamic application selection in a task sequence.
 * Applications are evaluated and selected at runtime, rather than being hard-coded in the task sequence.
@@ -43,59 +43,57 @@ This option should be left set to **Enabled** _only_ in the following scenarios:
 
 Enabling the **Allow applications to be installed from the Install Application task sequence action without being deployed** setting causes ConfigMgr to generate additional application policy. This policy is distributed to clients even if the application is never used in a task sequence.
 
-If your environment does not use variable-driven or dynamically selected application lists in task sequences, this option is typically not required and can be disabled to reduce unnecessary policy processing.
+If your environment does not use variable-driven or dynamically selected application lists in task sequences, you typically don't need this option and can disable it to reduce unnecessary policy processing.
 
-If your environment uses task sequences that install applications dynamically, such as using an Application List variable or runtime logic, this option should be left enabled (which it is by default) to prevent task sequence failures.
+If your environment uses task sequences that install applications dynamically, such as using an Application List variable or runtime logic, leave this option enabled (it is by default) to prevent task sequence failures.
 
-As a general guideline, enable this option only when task sequences rely on dynamic application selection. If applications are always explicitly referenced in task sequences or deployed normally, disabling this option helps minimize policy overhead.
+As a general guideline, enable this option only when task sequences rely on dynamic application selection. If task sequences always explicitly reference applications or deploy them normally, disabling this option helps minimize policy overhead.
 
 ## Allow clients to use distribution points from the site’s default boundary group
 
-Enabling the **Allow clients to use distribution points from the site’s default boundary group** setting enables a fallback behavior during application installation. If the requested application content is not available on any Distribution Point (DP) in the client’s current or neighboring boundary groups, the client is allowed to download the content from DPs belonging to the site’s **default boundary group**.
+Checking the **Allow clients to use distribution points from the site’s default boundary group** checkbox enables a fallback behavior during application installation. If the requested application content is not available on any Distribution Point (DP) in the client’s current or neighboring boundary groups, the client is allowed to download the content from DPs belonging to the site’s default boundary group.
 
-When enabled by Publisher, this setting is applied directly to the application deployment type in ConfigMgr. It helps prevent installation failures in scenarios where boundary group coverage is incomplete or where content has not yet been distributed to all required DPs.
+When enabled by Publisher, this setting applies directly to the application deployment type in ConfigMgr. It helps prevent installation failures in scenarios where boundary group coverage is incomplete or where content has not yet been distributed to all required DPs.
 
 <figure><img src="../../../../.gitbook/assets/image (510).png" alt="Allow clients to use distribution points from the site’s default boundary group" width="476"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
 
-Whilst this option improves resiliency, it can result in clients downloading content from less optimal DPs, such as across slower network links, if the default boundary group contains DPs that are remote to the client's location.
+While this option improves resiliency, it can result in clients downloading content from less optimal DPs, such as over slower network links, if the default boundary group contains DPs that are remote from the client's location.
 {% endhint %}
 
-## **Code sign the PowerShell detection method script using the WSUS signing certificate**
+## **Detection Script Code-Signing**
 
-When enabling **Code sign the PowerShell detection method script using the WSUS signing certificate** setting, Publisher digitally signs PowerShell-based detection method scripts using the [WSUS code signing certificate](../../wsus-updates-tab/wsus-options/certificate-management/).
+This section controls whether Publisher digitally signs PowerShell-based detection method scripts using the [WSUS code signing certificate](../../wsus-updates-tab/wsus-options/certificate-management/) and has three possible settings:
+
+* **Do not code-sign detection scripts**
+* **Code-sign using the WSUS Signing Certificate**
+* **Code-sign using a custom certificate**
+
+If the  **Code sign using the WSUS Signing Certificate** setting is selected (which it is by default), Publisher digitally signs PowerShell-based detection method scripts using the WSUS code signing certificate.
 
 This ensures the detection scripts are trusted and can run successfully on clients that enforce PowerShell execution policy or script signature requirements.
 
 This setting is applied directly to the detection method of each application deployment type created or updated by Publisher.
 
-<figure><img src="../../../../.gitbook/assets/image (512).png" alt="Code sign the PowerShell detection method script using the WSUS signing certificate" width="563"><figcaption></figcaption></figure>
+If you want to select a different certificate for signing detection scripts, select the **Code-sign using a custom certificate** option and configure the relevant certificate in the **Certificate** field.
 
-{% hint style="danger" %}
-**Important**
+## Do not include the version in the application name, so the application name doesn’t change after updates
 
-You cannot select a different certificate for signing detection scripts. Publisher always uses the WSUS code signing certificate configured on the [WSUS Options](../../wsus-updates-tab/wsus-options/) tab.
+If the **Do not include the version in the application name, so the application name doesn’t change after updates** checkbox is checked (which it is not by default), newly created applications will no longer include the version number in the application name.
 
-Even in ConfigMgr-only environments where the WSUS Updates tab might be hidden, the [WSUS Role ](../../../requirements/wsus-requirements/software.md#wsus-role)must still be installed on the Publisher server. Publisher retrieves the code signing certificate from the local WSUS certificate store, and this same certificate is used for both third party updates and ConfigMgr application detection script signing.
-{% endhint %}
+This is useful when external tooling or processes reference applications by name, such as MDT UDI, UI++, or other solutions that rely on a static application name.
 
-## Do not include the version in the application name...
-
-When the **Do not include the version in the application name, so the application name doesn’t change after updates** setting is enabled, newly created applications will no longer include the version number in the application name.
-
-This behavior is useful in scenarios where external tooling or processes reference applications by name, such as MDT UDI, UI++, or other solutions that rely on a static application name.
-
-When this option is disabled (the default setting), each new application version includes the version number in the name. As a result, the application name changes every time a new version is published.
+When this setting is disabled (the default setting), each new application version includes the version number in the name. As a result, the application name changes every time a new version is published.
 
 When this option is enabled, the application name remains the same across versions, while the underlying content, detection logic, and deployment type are updated to reflect the latest release.
 
-As shown in the example below, **Notepad++ (x86)** was published with this option enabled, while **Notepad++ 8.8.9 (x64)** was published with the option disabled.
+In the example below, **Notepad++ (x86)** was published with this option enabled, while **Notepad++ 8.8.9 (x64)** was published with the option disabled.
 
-In both cases, the exact application version is still visible in the **Software Version** column in the ConfigMgr console.
+In both cases, the ConfigMgr console still shows the exact application version in the **Software Version** column.
 
-<figure><img src="../../../../.gitbook/assets/image (513).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (513).png" alt="ConfigMgr console shows the exact application version in the Software Version column" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -106,25 +104,27 @@ If you want to control application naming on a per-product basis, additional nam
 {% hint style="danger" %}
 **Important**
 
-If this feature is enabled and application retention is also enabled, any retained applications will have the version number appended to their names to distinguish them from the current version.
+If this setting is enabled and application retention is also enabled, any retained applications will have the version number appended to their names to distinguish them from the current version.
 {% endhint %}
 
-## Move applications to a specific console folder
+## **Move applications to the following folder in the applications node of the console**
 
-This option controls _where_ applications created or updated by Publisher are placed within the **Application Management | Applications** node of the ConfigMgr console.
+The **Move applications to the following folder in the applications node of the console** setting \
+controls _where_ applications created or updated by Publisher are placed within the **Application Management | Applications** node of the ConfigMgr console.
 
-When the **Move applications to the following folder in the applications node of the console** setting is enabled and configured, Publisher automatically moves each application it creates or updates into the selected console folder. This helps keep third-party applications organized and separate from manually created or first-party applications.
+When the **Move applications to the following folder in the applications node of the console** checkbox is checked and configured, Publisher automatically moves each application it creates or updates into the selected console folder. This helps keep third-party applications organized and separate from manually created or first-party applications.
 
-To choose where applications are placed in the ConfigMgr console:
+### To choose where applications are placed in the ConfigMgr console
 
-1. Enable **Move applications to the following folder in the applications node of the console**.
-2. Select **Browse Folders**.
-3. In the **Select Console Folder** window:
+1. Load Publisher.
+2. Enable **Move applications to the following folder in the applications node of the console**.
+3. Select **Browse Folders**.
+4. In the **Select Console Folder** window:
    * Expand the **Applications** node.
    * Select an existing folder (for example, **Applications\3rd Party Apps**), **or**
    * Enter a name in **Create New Folder** and select **Create Folder**.
-4. Select **OK** to confirm the folder selection.
-5. Select **OK** again to save the ConfigMgr Apps Options.
+5. Select **OK** to confirm the folder selection.
+6. Select **OK** again to save the ConfigMgr Apps Options.
 
 All applications created or updated by Publisher will now be moved to the selected console folder.
 
