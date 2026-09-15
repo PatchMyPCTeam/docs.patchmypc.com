@@ -178,63 +178,64 @@ The available filters are:
 These filters do not affect detection or auto-publishing behavior directly; they only control what is displayed, helping you validate and review scan results before taking action.
 {% endhint %}
 
-## Query
+## Query button
 
-.
+The **Query** button performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
 
-The query button performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping and any filters that have been applied.
+<figure><img src="../../../.gitbook/assets/image (1122).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
 
-When clicked, the Publisher queries the ConfigMgr site database and displays the results in the list below. The products shown reflect:
+When you click the **Query** button, Publisher queries the ConfigMgr site database and displays the results in the list below. The products shown reflect:
 
-* What applications detected in the ConfigMgr HINV matches products in the Patch My PC catalog.
-* The device count for each product
+* What applications detected in the ConfigMgr HINV match products in the Patch My PC catalog.
+* The device count for each product.
 
-The Query button does not enable or publish products by itself, it simply retrieves and displays the results based on the current settings, allowing you to review and validate findings before taking further action.
+<figure><img src="../../../.gitbook/assets/image (1127).png" alt="Query results" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4102).png" alt="Query Results" width="563"><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Note**
 
-Selecting products from this list is equivalent to manually selecting the same products in the [Product Tree](../../fundamentals/product-tree/working.md) on the **ConfigMgr Apps** tab. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the product tree.
+The **Query** button does not enable or publish products by itself; it simply retrieves and displays the results based on the current settings, allowing you to review and validate findings before taking further action.
+{% endhint %}
+
+Checking the checkbox beside products in this list to select them is equivalent to manually selecting the same products in the [Product Tree](../../fundamentals/product-tree/working.md) on the **ConfigMgr Apps** tab. Selecting a product here enables it for publishing in the same way as selecting it directly in the Product Tree.
 
 {% hint style="danger" %}
 **Important**
 
-Because there is no universal standard for how vendors name applications, inventory results cannot always distinguish between multiple variants of the same product. For example, if 7-Zip (x64) is detected in the ConfigMgr HINV, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.
+As there is no universal standard for how vendors name applications, inventory results cannot always distinguish between multiple variants of the same product. For example, if 7-Zip (x64) is detected in the ConfigMgr HINV, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.
 {% endhint %}
 
-### Count
+### Count column
 
-The **Count** value shown for each matched product is clickable. Selecting the count opens a detailed view that lists the devices where the product was detected, along with the reported application version on each device.
+Clicking the **Count** value beside a product opens the **Devices with Application** window, which shows a detailed view that lists the devices where the product was detected, along with the reported application version on each device.
 
-<figure><img src="../../../.gitbook/assets/image (4135).png" alt="Clicking device count value" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1128).png" alt="&#x27;Devices with Application&#x27; window" width="450"><figcaption></figcaption></figure>
 
 This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.
 
-Clicking **Export CSV** will generated CSV file includes the following columns:
+Clicking **Export CSV** on the **Devices with Application** window generates a CSV file that includes the following columns:
 
-* **Device Name**\
-  The name of the device where the product was detected.
-* **Product Name**\
-  The application name as reported in inventory.
-* **Product Version**\
-  The version of the application detected on the device.
-* **Discovery Source**\
-  The ConfigMgr inventory view used to detect the application. For example, `v_GS_ADD_REMOVE_PROGRAMS_64`.
+* **Device Name -** The name of the device where the product was detected.
+* **Product Name -** The application name as reported in inventory.
+* **Product Version -** The version of the application detected on the device.
+* **Discovery Source -** The ConfigMgr inventory view used to detect the application. For example, `v_GS_ADD_REMOVE_PROGRAMS_64`.
 
-## Export CSV
+## Export to CSV button&#x20;
 
-The **Export to CSV** button allows you to export the results from the Scan ConfigMgr Database for Supported Products window to a CSV file.
+Clicking the **Export to CSV** button allows you to export the results from the **Scan ConfigMgr** window to a CSV file.
 
-<figure><img src="../../../.gitbook/assets/image (4132).png" alt="Export CSV" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1129).png" alt="&#x27;Export to CSV&#x27; button" width="563"><figcaption></figcaption></figure>
 
-To export the results to a CSV:
+### To export the results to a CSV
 
-1. Run a [query](scan-configmgr.md#query) so that results are displayed in the window and click Export to CSV.
-2. When prompted, click **Yes** to export only products that match the current filter or click **No** to export the full unfiltered results.
+1. Load Publisher.
+2. Navigate to the **ConfigMgr Apps | Scan ConfigMgr** tab.
+3. Run a [query](scan-configmgr.md#query) so that results are displayed in the window.
+4. Click **Export to CSV...**
+5. On the **Export** dialog, click the relevant option for the products you want to export.
 
-<figure><img src="../../../.gitbook/assets/image (4133).png" alt="Apply filter to expoerted data prompt" width="300"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1130).png" alt="&#x27;Export&#x27; dialog" width="306"><figcaption></figcaption></figure>
 
-3. Select the save location and enter a different file name if required,
+6. Browse to the relevant location where you want to save the export file, and if required, change the filename,then click **Save**.
 
 <figure><img src="../../../.gitbook/assets/image (4134).png" alt="Select the save location" width="563"><figcaption></figcaption></figure>
-
-3. Save to complete the export.
