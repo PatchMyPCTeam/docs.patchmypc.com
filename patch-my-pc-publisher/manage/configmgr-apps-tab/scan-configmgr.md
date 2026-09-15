@@ -175,7 +175,7 @@ The available filters are:
 * **Product-** Filter results by product name to focus on specific applications.
 * **Vendor -** Filter results by software vendor.
 * **Count -** Filter products based on how many devices they are detected on. This is useful when reviewing products that meet (or fall below) your auto-publishing device threshold.
-* **Include / Exclude already enabled products -** Controls whether products already enabled in the Product Tree are shown in the results. Excluding already enabled products helps you focus on newly discovered applications.
+* **Include/Exclude already enabled products -** Controls whether products already enabled in the Product Tree are shown in the results. Excluding already enabled products helps you focus on newly discovered applications.
 * **Languages -** Filters results by the application's language.
 
 {% hint style="info" %}
@@ -236,7 +236,7 @@ Clicking the **Export to CSV** button allows you to export the results from the 
 
 1. Load Publisher.
 2. Navigate to the **ConfigMgr Apps | Scan ConfigMgr** tab.
-3. Run a [query](scan-configmgr.md#query) so that results are displayed in the window.
+3. Run a [query](scan-configmgr.md#query-button) so that results are displayed in the window.
 4. Click **Export to CSV...**
 5. On the **Export** dialog, click the relevant option for the products you want to export.
 
