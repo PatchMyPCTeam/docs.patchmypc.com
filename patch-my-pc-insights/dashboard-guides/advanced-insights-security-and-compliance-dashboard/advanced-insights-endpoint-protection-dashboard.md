@@ -1,8 +1,6 @@
----
-description: 'Applies to: Patch My PC Advanced Insights for Configuration Manager'
----
-
 # Advanced Insights Endpoint Protection Dashboard
+
+_Applies to: Patch My PC Advanced Insights for Configuration Manager_
 
 {% hint style="info" %}
 The Endpoint Protection dashboard reflects the antimalware health data that Configuration Manager already collects for its **Endpoint Protection Status** node. Advanced Insights reads this data directly from the ConfigMgr site database view v\_EndpointProtectionStatus and the EP\_Malware table - it does not recalculate or re-evaluate device health itself.
