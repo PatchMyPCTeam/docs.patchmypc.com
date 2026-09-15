@@ -60,7 +60,7 @@ You can manage the company logo using the following options:
 * **Use Default** to revert to the default banner image.
 * **Preview** to see how the logo will appear to end users before saving the configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (132).png" alt="Notification Preview" width="282"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1119).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -76,7 +76,7 @@ The **Organization Name** field allows you to specify the organization name disp
 
 You can reference this value dynamically within notification messages using the supported variables.
 
-<figure><img src="../../../../.gitbook/assets/image (136).png" alt="The Organization Name replaces this text in the notification window" width="282"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1121).png" alt=""><figcaption></figcaption></figure>
 
 ## Localization
 
