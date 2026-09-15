@@ -160,13 +160,13 @@ A common and effective approach is:
 
 1. Use **Scan ConfigMgr** to identify products currently installed in your environment.
 2. Enable these products from the [scan wizard query window](scan-configmgr.md#query-button) or [Product Tree](../../fundamentals/product-tree/working.md), and [customize](../../customizations/) those products from the Product Tree (conflicting processes, content options, etc.).
-3. Enable auto-publishing rules to catch newly introduced applications over time
+3. Enable auto-publishing rules to catch newly introduced applications over time.
 
 This lets you stay in control initially while still benefiting from automation going forward.
 
 ## Filters
 
-The filters section lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.
+The _Filters_ section lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.
 
 <figure><img src="../../../.gitbook/assets/image (1115).png" alt="Filters" width="563"><figcaption></figcaption></figure>
 
@@ -186,7 +186,7 @@ These filters do not affect detection or auto-publishing behavior directly; they
 
 ## Query button
 
-The **Query** button performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
+The _Query_ button performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
 
 <figure><img src="../../../.gitbook/assets/image (1122).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
 
