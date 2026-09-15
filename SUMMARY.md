@@ -745,6 +745,7 @@
       * [Insights "Update Trend" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-software-updates-dashboard/insights-update-trend-dashboard.md)
     * [Advanced Insights "OS Deployment" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-os-deployment-dashboard.md)
     * [Advanced Insights "Security and Compliance" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-security-and-compliance-dashboard/README.md)
+      * [Advanced Insights Endpoint Protection Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-security-and-compliance-dashboard/advanced-insights-endpoint-protection-dashboard.md)
       * [Advanced Insights "BitLocker" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-security-and-compliance-dashboard/advanced-insights-bitlocker-dashboard.md)
       * [Advanced Insights Secure Boot Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-security-and-compliance-dashboard/advanced-insights-secure-boot-dashboard.md)
   * [Advanced Insights Log Collector](patch-my-pc-insights/advanced-insights-log-collector.md)
