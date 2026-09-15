@@ -123,7 +123,7 @@ This option is commonly used to keep patching coverage up to date as new applica
 
 #### Auto-enable products as "**Metadata Only"** if found, but threshold is not met
 
-Checking the **Auto-enable products as "Metadata Only" if found, but threshold is not met** checkbox works with [Auto-enable products to be published as an update](scan-configmgr.md#auto-enable-products-to-be-published-as-an-update).
+Checking the **Auto-enable products as "Metadata Only" if found, but threshold is not met** checkbox works with [Auto-enable products to be published as an update](scan-configmgr.md#auto-enable-products-to-be-published-as-an-update-if-installed-on-at-least-x-devices).
 
 When checked:
 
