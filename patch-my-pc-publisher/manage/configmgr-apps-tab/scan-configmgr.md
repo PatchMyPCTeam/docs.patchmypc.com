@@ -242,6 +242,6 @@ Clicking the **Export to CSV** button allows you to export the results from the 
 
 <figure><img src="../../../.gitbook/assets/image (1130).png" alt="&#x27;Export&#x27; dialog" width="306"><figcaption></figcaption></figure>
 
-6. Browse to the relevant location where you want to save the export file, and if required, change the filename,then click **Save**.
+6. Browse to the relevant location where you want to save the export file, change the filename if required, then click **Save**.
 
 <figure><img src="../../../.gitbook/assets/image (4134).png" alt="Select the save location" width="563"><figcaption></figcaption></figure>
