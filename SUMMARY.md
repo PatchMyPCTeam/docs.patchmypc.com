@@ -722,6 +722,7 @@
       * [Advanced Insights "Graphics Adapters" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-hardware-dashboard/advanced-insights-graphics-adapters-dashboard.md)
       * [Advanced Insights "Wireless Adapters" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-hardware-dashboard/advanced-insights-wireless-adapters-dashboard.md)
     * [Advanced Insights "Software" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-software-dashboard/README.md)
+      * [Page 1](patch-my-pc-insights/dashboard-guides/advanced-insights-software-dashboard/page-1.md)
       * [Advanced Insights "Applications" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-software-dashboard/advanced-insights-applications-dashboard.md)
       * [Advanced Insights "Client Inventory" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-software-dashboard/advanced-insights-client-inventory-dashboard.md)
       * [Advanced Insights "Software Usage" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-software-dashboard/advanced-insights-software-usage-dashboard.md)
