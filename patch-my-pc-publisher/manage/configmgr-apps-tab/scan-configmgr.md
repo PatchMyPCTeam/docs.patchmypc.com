@@ -146,7 +146,7 @@ This option is typically used in environments that want application lifecycle ma
 
 ### Device Threshold Best Practice
 
-Patch My PC releases about 100 new applications per month, so it’s entirely possible for a scheduled scan to detect multiple new products. When low device thresholds are used, auto-publishing can enable these products very quickly, ensuring new additions don’t go unnoticed. However, this speed should be balanced with operational readiness, as downstream processes such as Automatic Deployment Rules (ADRs), testing, and change control may not be prepared for a sudden influx of updates, particularly when ADRs are broadly scoped and evaluate new content with little or no delay.
+Patch My PC releases several hundred new applications per month, so it’s entirely possible for a scheduled scan to detect multiple new products. When low device thresholds are used, auto-publishing can enable these products very quickly, ensuring new additions don’t go unnoticed. However, this speed should be balanced with operational readiness, as downstream processes such as Automatic Deployment Rules (ADRs), testing, and change control may not be prepared for a sudden influx of updates, particularly when ADRs are broadly scoped and evaluate new content with little or no delay.
 
 {% hint style="danger" %}
 **Important**
