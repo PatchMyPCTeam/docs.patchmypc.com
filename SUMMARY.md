@@ -716,6 +716,7 @@
       * [Advanced Insights "Devices" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-resources-dashboard/advanced-insights-devices-dashboard.md)
       * [Advanced Insights "Users" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-resources-dashboard/advanced-insights-users-dashboard.md)
     * [Advanced Insights "Hardware" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-hardware-dashboard/README.md)
+      * [Advanced Insights "Printers" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-hardware-dashboard/advanced-insights-printers-dashboard.md)
       * [Advanced Insights "Displays" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-hardware-dashboard/advanced-insights-displays-dashboard.md)
       * [Advanced Insights "Batteries" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-hardware-dashboard/advanced-insights-batteries-dashboard.md)
       * [Advanced Insights "Storage" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-hardware-dashboard/advanced-insights-storage-dashboard.md)
