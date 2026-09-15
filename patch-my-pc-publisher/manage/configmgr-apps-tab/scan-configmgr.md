@@ -42,9 +42,13 @@ When you select a device collection, only the hardware inventory (HINV) data for
 
 The **Scan ConfigMgr** tab runs direct SQL queries against your ConfigMgr site database to inventory installed software. This scan _does not_ use the SMS Provider, so the account performing the scan must have the appropriate SQL permissions on the ConfigMgr database.
 
-<figure><img src="../../../.gitbook/assets/image (1099).png" alt="Connect to ConfigMgr SQL Database As" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1134).png" alt="Connect to ConfigMgr SQL Database As" width="563"><figcaption></figcaption></figure>
 
 Publisher supports multiple ways to authenticate to SQL, allowing flexibility depending on where Publisher is installed and which account has the required permissions.
+
+* [As Windows service account](scan-configmgr.md#as-windows-service-account)
+* [With these credentials using SQL authentication](scan-configmgr.md#with-these-credentials-using-sql-authentication)
+* [Run interactive scan as logged in user](scan-configmgr.md#run-interactive-scan-as-logged-in-user)
 
 ### **As Windows service account**
 
