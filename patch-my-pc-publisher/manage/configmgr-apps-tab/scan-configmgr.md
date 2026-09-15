@@ -81,7 +81,13 @@ This option requires the logged-in user to have the necessary SQL SELECT permiss
 {% hint style="danger" %}
 **Important**
 
-This option does not change how scheduled scans run, it only applies to the interactive scan being executed.
+This option does not change how scheduled scans run; it only applies to the interactive scan being executed.
+{% endhint %}
+
+{% hint style="info" %}
+**Note**
+
+See [Microsoft SQL Permission Requirements](../../requirements/configmgr-requirements/permissions.md#microsoft-sql-permission-requirements) for more information.
 {% endhint %}
 
 ## Auto-Publishing Rules
