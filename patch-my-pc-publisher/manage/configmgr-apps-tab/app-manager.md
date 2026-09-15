@@ -2,27 +2,35 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-Clicking the **App Manager** tab under the **ConfigMgr Apps** section in Patch My PC (PMPC) Publisher launches the **App Manager**, which is used to view and manage applications in ConfigMgr that were created using Publisher. It provides a centralized interface to review application properties, deployments, task sequence usage and dependency relationships before performing application cleanup.
+Clicking the **App Manager** tab under the **ConfigMgr Apps** section in Patch My PC (PMPC) Publisher opens **App Manager**, which lets you view and manage applications in ConfigMgr that were created using Publisher. It provides a centralized interface to review application properties, deployments, task sequence usage, and dependency relationships before performing application cleanup.
 
 <figure><img src="../../../.gitbook/assets/image (728).png" alt="&#x27;App Manager&#x27;" width="563"><figcaption></figcaption></figure>
 
-App Manager queries the ConfigMgr SMS Provider and displays only applications that were published by the Publisher.
+App Manager queries the ConfigMgr SMS Provider and displays only applications published by Publisher.
 
-The primary use case for this form is application cleanup. It allows administrators to identify unused applications, remove deployments, extract content, or delete applications in a controlled and supported manner.
+App Manager's primary use case is application cleanup. It lets administrators identify unused applications, remove deployments, extract content, or delete applications in a controlled and supported manner.
 
 {% hint style="info" %}
 **Note**
 
-The Publisher relies on both the application XML representation stored in the ConfigMgr database and the associated content source folders to validate previous update versions and retained application chains. These components are evaluated together by the Publisher to ensure application retention and lifecycles are managed correctly.
+Publisher relies on both the application XML representation stored in the ConfigMgr database and the associated content source folders to validate previous update versions and retained application chains. These components are evaluated together by Publisher to ensure application retention and lifecycles are managed correctly.
 
-Removing an application directly from the ConfigMgr console deletes the console object but does not remove the corresponding content source folder from disk. This results in orphaned content remaining on disk. While the Publisher is designed to tolerate this condition, it is not the recommended cleanup approach.
+Removing an application directly from the ConfigMgr console deletes the console object but does not remove the corresponding content source folder from disk. This leaves orphaned content remaining on disk. Whilst Publisher is designed to tolerate this condition, it is not the recommended cleanup approach.
 
-The ConfigMgr Application Manager is the preferred tool when performing application cleanup for Publisher created applications. It ensures that the ConfigMgr application object and the related content source paths are removed together, maintaining consistency between the console and the file system.
+App Manager is the preferred tool when performing application cleanup for Publisher-created applications. It ensures that the ConfigMgr application object and the related content source paths are removed together, maintaining consistency between the console and the file system.
 {% endhint %}
 
 The table below outlines the available columns in this form:
 
-<table><thead><tr><th width="145.111083984375" valign="top">Column name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Publisher</td><td valign="top">Displays the software vendor associated with the application as identified by the Publisher metadata.</td></tr><tr><td valign="top">Title</td><td valign="top">Shows the application name as it appears in the ConfigMgr console.</td></tr><tr><td valign="top">Version</td><td valign="top">Indicates the application version defined during publishing. This value is used by the Publisher to evaluate update ordering and supersedence.</td></tr><tr><td valign="top">Release Date</td><td valign="top">Displays the date the application was published (created) in ConfigMgr.</td></tr><tr><td valign="top">Deployments</td><td valign="top">Shows the number of active ConfigMgr deployments associated with the application.</td></tr><tr><td valign="top">Dependencies</td><td valign="top">Displays the number of dependency relationships where this application depends on another application.</td></tr><tr><td valign="top">Dependent DTs</td><td valign="top">Shows how many deployment types depend on this application. This indicates downstream usage that can block deletion.</td></tr><tr><td valign="top">Dependent TS</td><td valign="top">Displays the number of task sequences that reference this application.</td></tr><tr><td valign="top">Model Name</td><td valign="top">Displays the internal ConfigMgr CI Unique ID for the application. This value is primarily used for backend identification and troubleshooting.</td></tr></tbody></table>
+<table><thead><tr><th width="145.111083984375" valign="top">Column name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Publisher</td><td valign="top">Displays the software vendor associated with the application as identified by Publisher's metadata.</td></tr><tr><td valign="top">Title</td><td valign="top">Shows the application name as it appears in the ConfigMgr console.</td></tr><tr><td valign="top">Version</td><td valign="top">Indicates the application version defined during publishing. This value is used by Publisher to evaluate update ordering and supersedence.</td></tr><tr><td valign="top">Release Date</td><td valign="top">Displays the date the application was published (created) in ConfigMgr.</td></tr><tr><td valign="top">Deployments</td><td valign="top">Shows the number of active ConfigMgr deployments associated with the application.</td></tr><tr><td valign="top">Dependencies</td><td valign="top">Displays the number of dependency relationships where this application depends on another application.</td></tr><tr><td valign="top">Dependent DTs</td><td valign="top">Shows how many deployment types depend on this application. This indicates downstream usage that can block deletion.</td></tr><tr><td valign="top">Dependent TS</td><td valign="top">Displays the number of task sequences that reference this application.</td></tr><tr><td valign="top">Model Name</td><td valign="top">Displays the internal ConfigMgr CI Unique ID for the application. This value is primarily used for backend identification and troubleshooting. This column is not displayed by default.</td></tr></tbody></table>
+
+{% hint style="success" %}
+**Tip**
+
+Right-clicking any column heading allows you to choose which columns are displayed and also to use drag-and-drop to put them in a custom order. Clicking a column heading also changes it's sort order.
+
+Highlighting a row in the application results table and pressing **Ctrl + C** will copy the entire row to the clipboard. This is useful for application management and troubleshooting scenarios.
+{% endhint %}
 
 {% hint style="info" %}
 **Note**
@@ -30,15 +38,9 @@ The table below outlines the available columns in this form:
 Applications referenced by task sequences cannot be deleted until those references are removed.
 {% endhint %}
 
-{% hint style="success" %}
-**Tip**
-
-Highlighting a row in the application results table and pressing **Ctrl + C** will copy the entire row to the clipboard. This is useful for application management and troubleshooting scenarios.
-{% endhint %}
-
 ## Search
 
-The **Search** field is used to quickly filter results in the ConfigMgr Application Manager.
+The **Search** field is used to quickly filter results in App Manager.
 
 When application results are already displayed, the list is filtered automatically as you type. No additional action is required to apply the search.
 
@@ -46,79 +48,84 @@ The search evaluates all visible columns in the results grid. Matching results a
 
 Clearing the search field restores the full list of results.
 
-## Refresh
+## Refresh button
 
-The **Refresh** button refreshes the data from ConfigMgr to ensure the application information displayed is up-to-date.
+Clicking the **Refresh** button refreshes the data from ConfigMgr to ensure the application information displayed is up-to-date.
 
-## Select All / Select None
+## Select All/Select None buttons
 
 The **Select All** button selects every application currently visible in the list. This is commonly used when performing bulk actions such as deleting multiple applications.
 
 The **Select None** button clears any current selection.
 
-## Extract Content
+## Extract Content button
 
-The Extract Content button copies the source content of the selected applications to a folder. This action is commonly used to review, validate, or back up application files before making cleanup decisions in ConfigMgr.
+The **Extract Content** button copies the source content of the selected applications to a folder. This action is commonly used to review, validate, or back up application files before making cleanup decisions in ConfigMgr.
 
-Multiple applications can be selected at the same time using Ctrl plus click or Shift plus click. When multiple applications are selected, the Extract Content action processes each application in a single operation and stages the content together.
+Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**. When multiple applications are selected, the **Extract Content** action processes each application in a single operation and stages the content together.
 
-To extract the content for one or more published applications:
+### To extract the content for one or more published applications
 
-1. Locate the application or applications you want to extract the content for using the available filters. Select the checkbox next to each update you want to process.
-2. Select **Extract Content** at the bottom of the wizard.
+1. Load Publisher.
+2. Navigate to the **ConfigMgr Apps** tab and click **App Manager** to launch it.
+3. Locate the application or applications you want to extract the content for using the available filters.
+4. Click the relevant applications.
+5. Click **Extract Content**.
 
-<figure><img src="../../../.gitbook/assets/image (95).png" alt="Extact Content" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1136).png" alt="Clicking &#x27;Extract Content&#x27;." width="563"><figcaption></figcaption></figure>
 
-3. An output folder selection dialog is displayed. Review your selection choice and click **Browse** to choose a destination path for the extracted content.
+6. On the **ConfigMgr App Extraction** screen, enter the name of the folder you want to extract the content to, then click **OK**.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1138).png" alt="&#x27;ConfigMgr App Extraction&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
 
-The destination must be a valid UNC path. If the specified folder does not exist, it will be automatically created.
+The destination can either be a local path or a valid UNC path. If the specified folder does not exist, it will be created automatically.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (96).png" alt="Content Extraction Summary" width="563"><figcaption></figcaption></figure>
+The content is then extracted, and once the extraction is complete, the **Bulk Export Complete** dialog is displayed showing the results of the export.
 
-4. Click **OK**.
+<figure><img src="../../../.gitbook/assets/image (1145).png" alt="&#x27;Bulk Export Complete&#x27; dialog " width="260"><figcaption></figcaption></figure>
 
-After clicking OK, a summary dialog is displayed showing the results of the extraction operation. The dialog includes the total number of applications processed along with counts for successful, failed, and skipped items.
-
-Clicking OK on the summary dialog automatically opens Windows Explorer to the specified output directory. This allows you to immediately review the extracted application content and confirm the files were copied as expected.
+After you click **OK**, Windows Explorer opens the folder selected for the extraction so that you can review the results.
 
 {% hint style="info" %}
 **Note**
 
-Each application is written to its own subfolder within the selected destination, making it easier to inspect version specific files and determine whether the content should be retained or safely removed.
+Each application is written to its own subfolder within the selected destination, making it easier to inspect version-specific files and decide whether to retain the content or safely remove it.
 
 Only applications with available source content can be extracted.
 
 If the destination folder does not already exist, it is created automatically during the extraction process.
 {% endhint %}
 
-## Delete Deployment(s)
+## Delete Deployment(s) button&#x20;
 
 The **Delete Deployment(s)** button removes all ConfigMgr deployments associated with the selected applications. This action does not delete the applications themselves.
 
-The total number of deployments for each application is shown in the **Deployments** column. Reviewing this column before proceeding helps confirm the scope of the action.
+The **Deployments** column shows the total number of deployments for each application. Reviewing this column before proceeding helps confirm the scope of the action.
 
 Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**. When multiple applications are selected, deployments for all selected applications are removed in a single operation.
 
-To delete deployments for one or more applications:
+### To delete deployments for one or more applications
 
-1. Locate the application or applications whose deployments you want to remove by using the available filters. Select the checkbox next to each application.
-2. Select **Delete Deployment(s)** at the bottom of the wizard.
-3. When prompted, review the confirmation dialog and confirm that you want to remove all deployments for the selected applications.
+1. Locate the applications whose deployments you want to remove by using the available filters.
+2. Click to select the required applications.
+3. Click **Delete Deployment(s)**
+4. When prompted, review the confirmation dialog and confirm that you want to remove all deployments for the selected applications.
 
-After confirmation, the Publisher removes the deployments from ConfigMgr. The application objects and their content remain unchanged.
+After confirmation, Publisher removes the deployments from ConfigMgr. The application objects and their content remain unchanged.
 
-## Delete Application(s)
+## Delete Application(s) button
 
-The **Delete Applications(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
+The **Delete Application(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
 
-To delete one or more applications:
+### To delete one or more applications
 
-1. Locate the application or applications you want to remove by using the available filters. Select the application(s) you want to delete.
-2. Select **Delete Application(s)** at the bottom of the wizard.
-3. When prompted, review the confirmation dialog and confirm that you want to remove all the selected applications.
+1. Locate the applications you want to delete by using the available filters.
+2. Click to select the required applications.
+3. Click **Delete Application(s)**
+4. When prompted, review the confirmation dialog and confirm that you want to delete the selected applications.
 
-After confirmation, the Publisher removes the selected applications from ConfigMgr and also the related content from disk.
+After confirmation, Publisher removes the selected applications from ConfigMgr and also the related content from disk.
