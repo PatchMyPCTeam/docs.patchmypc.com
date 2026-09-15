@@ -44,7 +44,7 @@ The **Scan ConfigMgr** tab runs direct SQL queries against your ConfigMgr site d
 
 <figure><img src="../../../.gitbook/assets/image (1134).png" alt="Connect to ConfigMgr SQL Database As" width="563"><figcaption></figcaption></figure>
 
-Publisher supports multiple ways to authenticate to SQL, allowing flexibility depending on where Publisher is installed and which account has the required permissions.
+Publisher supports multiple ways to authenticate to SQL, allowing flexibility depending on where Publisher is installed and which account has the required permissions:
 
 * [As Windows service account](scan-configmgr.md#as-windows-service-account)
 * [With these credentials using SQL authentication](scan-configmgr.md#with-these-credentials-using-sql-authentication)
@@ -68,7 +68,7 @@ When Publisher is installed on the ConfigMgr site server, the **SYSTEM** account
 
 The **With these credentials using SQL authentication** option allows you to specify a SQL login and password. This option is recommended:
 
-* You use SQL authentication instead of Windows authentication.
+* You want to use SQL authentication instead of Windows authentication.
 * If you want to use a SQL login (which needs read access to the required ConfigMgr database views).
 
 This option is less common and generally not recommended unless Windows authentication cannot be used.
@@ -77,8 +77,8 @@ This option is less common and generally not recommended unless Windows authenti
 
 When the **Run interactive scan as logged in user** checkbox is checked, the scan runs using the currently logged-in user’s Windows credentials instead of Publisher's service account. This option is recommended:
 
-* For troubleshooting permission issues
-* Can be helpful when testing access before granting permissions to the service account
+* For troubleshooting permission issues.
+* Can be helpful when testing access before granting permissions to the service account.
 
 This option requires the logged-in user to have the necessary SQL SELECT permissions on the required ConfigMgr views.
 
