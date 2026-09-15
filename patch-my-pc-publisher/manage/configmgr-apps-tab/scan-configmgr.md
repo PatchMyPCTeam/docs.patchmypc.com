@@ -26,7 +26,7 @@ To configure the scan, Publisher needs the site database server name and databas
 
 Select the **Site database server** site system role. The details shown here provide the correct values to enter into Publisher.
 
-<figure><img src="../../../.gitbook/assets/image (1100).png" alt="Site Database Server" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1131).png" alt="Site Database Server" width="563"><figcaption></figcaption></figure>
 
 By default, no **Limiting Collection** is specified. When you leave this field empty, the scan for supported products runs against **All Systems**.
 
