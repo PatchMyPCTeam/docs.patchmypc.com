@@ -8,8 +8,6 @@ Clicking the **App Manager** tab under the **ConfigMgr Apps** section in Patch M
 
 App Manager queries the ConfigMgr SMS Provider and displays only applications published by Publisher.
 
-App Manager's primary use case is application cleanup. It lets administrators identify unused applications, remove deployments, extract content, or delete applications in a controlled and supported manner.
-
 {% hint style="info" %}
 **Note**
 
@@ -106,13 +104,17 @@ The **Delete Deployment(s)** button removes all ConfigMgr deployments associated
 
 The **Deployments** column shows the total number of deployments for each application. Reviewing this column before proceeding helps confirm the scope of the action.
 
+{% hint style="success" %}
+**Tip**
+
 Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**. When multiple applications are selected, deployments for all selected applications are removed in a single operation.
+{% endhint %}
 
 ### To delete deployments for one or more applications
 
 1. Locate the applications whose deployments you want to remove by using the available filters.
 2. Click to select the required applications.
-3. Click **Delete Deployment(s)**
+3. Click **Delete Deployment(s)**.
 4. When prompted, review the confirmation dialog and confirm that you want to remove all deployments for the selected applications.
 
 After confirmation, Publisher removes the deployments from ConfigMgr. The application objects and their content remain unchanged.
@@ -125,7 +127,7 @@ The **Delete Application(s)** button deletes all the selected applications. Mult
 
 1. Locate the applications you want to delete by using the available filters.
 2. Click to select the required applications.
-3. Click **Delete Application(s)**
+3. Click **Delete Application(s)**.
 4. When prompted, review the confirmation dialog and confirm that you want to delete the selected applications.
 
 After confirmation, Publisher removes the selected applications from ConfigMgr and also the related content from disk.
