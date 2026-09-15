@@ -750,6 +750,7 @@
       * [Advanced Insights Endpoint Protection Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-security-and-compliance-dashboard/advanced-insights-endpoint-protection-dashboard.md)
       * [Advanced Insights "BitLocker" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-security-and-compliance-dashboard/advanced-insights-bitlocker-dashboard.md)
       * [Advanced Insights Secure Boot Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-security-and-compliance-dashboard/advanced-insights-secure-boot-dashboard.md)
+    * [Advanced Insights "Warranty" Dashboard](patch-my-pc-insights/dashboard-guides/advanced-insights-warranty-dashboard.md)
   * [Advanced Insights Log Collector](patch-my-pc-insights/advanced-insights-log-collector.md)
   * [Advanced Insights IIS Application Pool Identity](patch-my-pc-insights/advanced-insights-iis-application-pool-identity.md)
   * [Two Factor Authentication in Insights](patch-my-pc-insights/two-factor-authentication-in-insights.md)
