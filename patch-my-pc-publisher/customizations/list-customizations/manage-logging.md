@@ -22,7 +22,7 @@ More information on log files and locations can be found in the [Log File Refere
 
 The **Logging Options** dialog provides the following options.
 
-<figure><img src="../../../.gitbook/assets/image (129).png" alt="Logging Options" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1157).png" alt="&#x27;Logging Options&#x27; dialog" width="450"><figcaption></figcaption></figure>
 
 ### **Enable logging**
 
@@ -52,3 +52,15 @@ Adds the device name to the beginning of the log file name to simplify identific
 ### **In case of installation failure, copy the log file to this secondary folder**
 
 Creates a second copy of the installation log when the product fails to install and writes it to the specified path. The device must be able to access this location at install time and have permission to write to it. If the path is an SMB share, the installation context must have write access.
+
+{% hint style="info" %}
+**Note**
+
+Separate log files are created for installations and uninstalls, named after the software title and version. If a log file with the same name already exists, the newer version will be appended with  **\_01**, **\_02**, **\_03**, etc. at the end of the file name.
+
+For example:
+
+**7z2601-x64.msi.log**
+
+**7z2601-x64.msi\_01.log**
+{% endhint %}
