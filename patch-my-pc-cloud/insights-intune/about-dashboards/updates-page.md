@@ -17,7 +17,7 @@ The _Updates_ page consists of the following two tabs, which contain a collectio
 * [Patch My PC](updates-page.md#patch-my-pc)
 * [Microsoft](updates-page.md#microsoft)
 
-<figure><img src="../../../.gitbook/assets/image (754).png" alt="&#x27;Software Updates&#x27; page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1150).png" alt="&#x27;Software Updates&#x27; page" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -38,7 +38,13 @@ The **Patch My PC** tab is split into the following sections:
 
 The top section of the **Patch My PC** tab is called _Statistics_ and displays information about the PMPC Client and apps within your environment.
 
-<figure><img src="../../../.gitbook/assets/image (755).png" alt="&#x27;Statistics&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1153).png" alt="&#x27;Statistics&#x27; section" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+**Recent Catalog** means the latest ten versions of our catalog.
+{% endhint %}
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
@@ -142,7 +148,7 @@ The **Microsoft** tab is split into the following sections:
 
 The top section of the **Microsoft** tab is called _Statistics_ and displays information about the PMPC Client and Microsoft updates within your environment.
 
-<figure><img src="../../../.gitbook/assets/image (4274).png" alt="&#x27;Microsoft&#x27; tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1156).png" alt="&#x27;Microsoft&#x27; tab" width="563"><figcaption></figcaption></figure>
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
