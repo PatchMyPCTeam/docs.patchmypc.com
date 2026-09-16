@@ -56,11 +56,10 @@ Creates a second copy of the installation log when the product fails to install 
 {% hint style="info" %}
 **Note**
 
-Separate log files are created for installations and uninstalls, named after the software title and version. If a log file with the same name already exists, the newer version will be appended with  **\_01**, **\_02**, **\_03**, etc. at the end of the file name.
+Separate log files are created for installs and uninstalls, named after the software title and version. If a log file with the same name already exists, the newer version will be appended with  **\_01**, **\_02**, **\_03**, etc. at the end of the file name.
 
 For example:
 
-**7z2601-x64.msi.log**
-
-**7z2601-x64.msi\_01.log**
+* **7z2601-x64.msi.log**
+* **7z2601-x64.msi\_01.log**
 {% endhint %}
