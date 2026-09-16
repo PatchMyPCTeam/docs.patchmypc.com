@@ -10,6 +10,55 @@ Details the production release history for preview versions of Patch My PC (PMPC
 You can find the Preview release notes below, and you can also learn more about the Preview channel here: [Publisher Preview Channel](https://patchmypc.com/preview-channel).
 {% endhint %}
 
+## 3.1.0.286 - 2026-09-16
+
+<details>
+
+<summary>Improvements</summary>
+
+* Publisher UI updates. Cloud, WSUS Options, Sync Schedule, About & Service Status, Notifications (SMTP/Webhooks), Advanced, ConfigMgr Base Install Options, and the Scan wizards have all been redesigned with a consistent, card-based layout.
+* Restored quick type-to-jump search on the product tree views.
+* Context menus no longer overflow the screen - they scroll instead.
+* Clearer validation errors now appear when saving or applying webhook settings.
+* Webhook settings can be copied inline instead of opening a separate editor.
+* Tenant icon uploads are now validated by actual file content, not just file extension.
+* Advanced settings tab layout fixed: correct rail width/height, no redundant page title, proper spacing.
+* Redesigned the "Conflicting Processes" preview notification to render in-process.
+* Enter key now activates NumberSelector and SpinTimePicker controls inside dialogs.
+* Add support for naming conventions on WSUS products
+
+</details>
+
+<details>
+
+<summary>Fixes</summary>
+
+* Ensure code-signing enforces timestamping and provide a clearer error when a certificate uses an unsupported legacy SHA-1 key.
+* Fixed "Exclude From Auto-Enrollment" not respecting product-level and vendor-override changes.
+* Fixed email reports listing products in reverse (Z-A) order.
+* Fixed oversized dialogs and truncated hostnames in heartbeat/message dialogs.
+* Fixed cursor stuck in a spinner state after disconnecting or closing the cloud sign-in browser.
+* Fixed misplaced dependency badges on grouped grid cards.
+* Fixed an extra empty column appearing in smart-resize and Intune/CVE import grids.
+* Fixed Copy Products ignoring an "All Vendors" install-override setting.
+* Added a warning and read-only mode when required WSUS admin tools are missing.
+* Blocked publishing or redeploying custom apps that are missing their cloud source files.
+* Fixed multiple Intune tenant management issues: stale names/results after rename, new tenants showing old data, deleting/favoriting unconfigured tenants, duplicate import messaging, and certificate-auth save validation.
+* Fixed Publisher freezing when refreshing after selecting many Catalog products.
+* Fixed a WSUS update re-signing failure.
+* Fixed a permissions issue causing the settings window to fail to open across user accounts.
+* Fixed duplicate "Cloud Connection Cleared" dialogs causing Publisher to hang.
+* Restored TreeView selection, scroll position, and expansion state after applying filters.
+* Fixed remote UI incorrectly showing service status as "Unknown" instead of "Running".
+* Fixed the SMS Provider connection badge staying green after saving an invalid server name.
+* Fixed publishing alerts showing an internal title instead of the catalog name.
+* Fixed a crash in WSUS Options when the WSUS service and IIS were both offline.
+* Fixed recurring, unexplained "republish needed" warnings for WSUS updates.
+* Fixed a missing cloud-deployment indicator for custom apps coexisting with cloud-managed apps.
+* Fixed slow ConfigMgr cold sync caused by a per-app install-context check.
+
+</details>
+
 ## 3.1.0.112 - 2026-09-04
 
 <details>
