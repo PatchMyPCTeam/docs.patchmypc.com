@@ -157,6 +157,12 @@ The _Statistics_ section is split into the following reports:
 
 The **Microsoft Update** statistic shows the number of devices that have submitted Microsoft update inventory today.
 
+{% hint style="info" %}
+**Note**
+
+For a PMPC Client to appear in this modal, it needs to be opted into Microsoft Updates.
+{% endhint %}
+
 The device modal for this statistic lists the Windows Update Agent (WUA) version for each device along with other useful information such as last scanned date, status message and code, computer name, and user ID.
 
 Clicking a row provides more detailed information for a given device.
