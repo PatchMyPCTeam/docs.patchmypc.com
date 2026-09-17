@@ -38,16 +38,6 @@ Release Notes for previous years can be accessed using the following links:
 {% endupdate %}
 {% endupdates %}
 
-\*\*
-
-## Week of September 9th, 2026
-
-### Fixes
-
-#### Portal
-
-* Resolved numerous issues with the External catalog as we continue to develop this feature.
-
 ## Week of August 26th, 2026
 
 <details>
