@@ -24,6 +24,22 @@ Release Notes for previous years can be accessed using the following links:
 [2025](2025.md) | [2024](2024.md)
 {% endhint %}
 
+
+
+{% updates format="full" %}
+{% update date="2026-09-09" tags="fixes" %}
+## Week of September 9th, 2026
+
+### Fixes
+
+#### Portal
+
+* Resolved numerous issues with the External catalog as we continue to develop this feature.
+{% endupdate %}
+{% endupdates %}
+
+\*\*
+
 ## Week of September 9th, 2026
 
 ### Fixes
