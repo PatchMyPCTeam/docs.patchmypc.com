@@ -27,6 +27,16 @@ Release Notes for previous years can be accessed using the following links:
 
 
 {% updates format="full" %}
+{% update date="2026-09-18" tags="new-features-improvements" %}
+## Week of September 18th, 2026
+
+### New Features/Improvements
+
+#### Migration
+
+* **Increased character limit –** Previously, if the **Description** field for a ConfigMgr application was greater than 250 characters, it could not be migrated. The Migration feature now supports a description field of up to 10,000 characters, inline with Intune.
+{% endupdate %}
+
 {% update date="2026-09-09" tags="fixes" %}
 ## Week of September 9th, 2026
 
