@@ -977,7 +977,7 @@ Version 2.0.1 is a major release of Advanced Insights with breaking changes whic
 #### Product Improvements
 
 * Fixed bug for device view title not loading correctly in certain scenarios
-* Remote control helper download and functionality fixed (see [this document](../requirements-for-advanced-insights-remote-control.md) for details)
+* Remote control helper download and functionality fixed (see [this document](../advanced-insights-device-actions/requirements-for-advanced-insights-remote-control.md) for details)
 * Bug where AD user accounts have roles reassigned at each login is resolved
 * Removed unneeded role entries
 * Added SMTP configuration settings for email notification to users on account creation and password reset
