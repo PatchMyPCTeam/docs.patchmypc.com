@@ -35,9 +35,9 @@ Use the **Search** box and filters to help you more easily find the app you want
 
 If an app is already in the PMPC catalog, it will be shown with **PUBLIC APP** beside it, and you will be unable to re-add it. This is because it is better for you to use the curated version we maintain in the **Patch My PC** catalog Vs a non-curated version. Just hover over **PUBLIC APP** and click **Go to App** to open the app in our catalog.
 
-![‘PUBLIC APP’ in the External catalog](<../../../.gitbook/assets/image (4532).png>)
+<img src="../../../.gitbook/assets/image (4532).png" alt="‘PUBLIC APP’ in the External catalog" data-size="original">
 
-Also, if an app is shown as **N/A**, it means this app is currently unsupported by the **External** catalog.
+Also, if an app is shown as **UNSUPPORTED**, it means this app is currently unsupported by the **External** catalog.
 {% endhint %}
 
 3. Click **Add** beside the required app.
