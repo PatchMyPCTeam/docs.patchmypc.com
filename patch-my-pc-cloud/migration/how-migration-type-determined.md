@@ -52,5 +52,5 @@ You will be able to modify and manage the app from within the PMPC Cloud Portal 
 {% hint style="info" %}
 **Note**
 
-See [Publish the App in Intune as a PMPC Custom App](migrate-application/publish-migrated-app-catalog-app-1.md) for more information.
+See [Publish the App in Intune as a PMPC Custom App](migrate-application/publish-migrated-app-as-custom-app.md) for more information.
 {% endhint %}

@@ -6,7 +6,7 @@ There are three different types of application migrations we currently support i
 
 * [Publish the App in Intune as a Suggested PMPC Catalog App](publish-migrated-app-suggested-app.md)
 * [Publish the App in Intune as a PMPC Catalog App](publish-migrated-app-catalog-app.md)
-* [Publish the App in Intune as a PMPC Custom App](publish-migrated-app-catalog-app-1.md)
+* [Publish the App in Intune as a PMPC Custom App](publish-migrated-app-as-custom-app.md)
 
 {% hint style="danger" %}
 **Important**
@@ -69,7 +69,7 @@ If the application is identified as a **Catalog App**, click **Migrate** and fol
 
 ### **Match Type: Custom App, Button State = 1**
 
-If the application is identified as a PMPC Custom App and no alternative catalog match is available, the migration will proceed directly as a custom app. Click **Migrate** and follow the [Publish the App in Intune as a PMPC Custom App](publish-migrated-app-catalog-app-1.md) process.
+If the application is identified as a PMPC Custom App and no alternative catalog match is available, the migration will proceed directly as a custom app. Click **Migrate** and follow the [Publish the App in Intune as a PMPC Custom App](publish-migrated-app-as-custom-app.md) process.
 
 ### **Match Type: Custom App, Button State = 2**
 
@@ -78,4 +78,4 @@ If the application is identified as a **Custom App**, but a potential catalog ma
 <figure><img src="../../../.gitbook/assets/image (3785).png" alt="two options in the dropdown if a potential catalog match was identified based on application metadata instead of the file hash, the drop-down menu" width="170"><figcaption></figcaption></figure>
 
 * **Match to Catalog App -** Select this to migrate the application using the suggested catalog match and follow the [Publish the App in Intune as a Suggested PMPC Catalog App](publish-migrated-app-suggested-app.md) process.
-* **Create a Custom App -** Select this to migrate the application as a PMPC Custom App and follow the [Publish the App in Intune as a PMPC Custom App](publish-migrated-app-catalog-app-1.md) process.
+* **Create a Custom App -** Select this to migrate the application as a PMPC Custom App and follow the [Publish the App in Intune as a PMPC Custom App](publish-migrated-app-as-custom-app.md) process.

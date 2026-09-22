@@ -107,7 +107,7 @@
     * [Migrate an Application from ConfigMgr to Intune using Patch My PC Cloud App Migration](patch-my-pc-cloud/migration/migrate-application/README.md "Migrate an Application")
       * [Publish the Migrated App in Intune as a Suggested Patch My PC Catalog App](patch-my-pc-cloud/migration/migrate-application/publish-migrated-app-suggested-app.md "Publish the Migrated App as a Suggested PMPC Catalog App")
       * [Publish the App Migrated from ConfigMgr in Intune as a Patch My PC Catalog App](patch-my-pc-cloud/migration/migrate-application/publish-migrated-app-catalog-app.md "Publish the Migrated App as a PMPC Catalog App")
-      * [Publish the App Migrated from ConfigMgr in Intune as a Patch My PC Custom App](patch-my-pc-cloud/migration/migrate-application/publish-migrated-app-catalog-app-1.md "Publish the Migrated App as a PMPC Catalog App")
+      * [Publish the App Migrated from ConfigMgr in Intune as a Patch My PC Custom App](patch-my-pc-cloud/migration/migrate-application/publish-migrated-app-as-custom-app.md "Publish the Migrated App as a PMPC Custom App")
     * [Refresh ConfigMgr to Intune App Migration Data in Patch My PC Cloud](patch-my-pc-cloud/migration/refresh-migration-data.md "Refresh Migration Data")
     * [Post the Migration of an App from ConfigMgr to Intune using Patch My PC Cloud](patch-my-pc-cloud/migration/post-migration.md "Post Migration")
     * [Technical references for ConfigMgr to Intune App Migration using Patch My PC Cloud](patch-my-pc-cloud/migration/technical-references/README.md "Technical references")

@@ -2,12 +2,6 @@
 
 _Applies to: Patch My PC Cloud_
 
-{% hint style="info" %}
-**Note**
-
-Support for Script-based apps is still in development and is expected to be available soon.
-{% endhint %}
-
 When applications are inventoried from Microsoft Configuration Manager (ConfigMgr), Patch My PC (PMPC) Cloud analyzes the application metadata to determine how the application is installed and should be migrated. As part of this process, the installation command line is evaluated, and the primary installer file is identified from the application’s content source folder.
 
 ## Identifying a Script-based App
@@ -22,7 +16,7 @@ During the migration deployment flow, the **File** tab also indicates when an ap
 
 <figure><img src="../../../.gitbook/assets/image (3822).png" alt="Script-based app shown in the deployment flow" width="563"><figcaption></figcaption></figure>
 
-If the application is identified as Script-based, as much of the existing metadata as possible is captured to support migration. This includes any supporting content to ensure the application behaves the same way after migration to Intune.&#x20;
+If the application is identified as Script-based, as much of the existing metadata as possible is captured to support migration. This includes any supporting content to ensure the application behaves the same way after migration to Intune.
 
 ## Migration Behavior of Script-based Apps
 
