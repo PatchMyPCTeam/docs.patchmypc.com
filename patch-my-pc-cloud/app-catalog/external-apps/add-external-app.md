@@ -37,7 +37,7 @@ If an app is already in the PMPC catalog, it will be shown with **PUBLIC APP** b
 
 <img src="../../../.gitbook/assets/image (4532).png" alt="‘PUBLIC APP’ in the External catalog" data-size="original">
 
-Also, if an app is shown as **UNSUPPORTED**, it means this app is currently unsupported by the **External** catalog.
+Also, if an app is shown as **UNSUPPORTED**, it means this app is currently unsupported by the **External** catalog, which could be for many [reasons](add-external-app.md#reasons-apps-appear-as-unsupported) .
 {% endhint %}
 
 3. Click **Add** beside the required app.
@@ -56,6 +56,14 @@ Also, if an app is shown as **UNSUPPORTED**, it means this app is currently unsu
 The External catalog is redisplayed with the added app(s).
 
 <figure><img src="../../../.gitbook/assets/image (4536).png" alt="External catalog redisplayed with the added app(s)." width="563"><figcaption></figcaption></figure>
+
+## Reasons apps appear as UNSUPPORTED
+
+Apps can appear as **UNSUPPORTED** in the **External** catalog for many reasons, but primarily because their manifests do not contain sufficient metadata (such as a product code or display name), which is required to build detection rules correctly.&#x20;
+
+If this information is missing, it can lead to installation and detection issues on end-user devices which is why we mark the app as **UNSUPPORTED**.
+
+
 
 ## Next Steps
 
