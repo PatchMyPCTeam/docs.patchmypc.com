@@ -24,7 +24,17 @@ Release Notes for previous years can be accessed using the following links:
 [2025](2025.md) | [2024](2024.md)
 {% endhint %}
 
+{% updates format="full" %}
+{% update date="2026-09-23" tags="fixes" %}
+## Week of September 23rd, 2026
 
+### Fixes
+
+#### Managed Service Provider
+
+* Resolved an issue where if Multi Admin Approval (MAA) was enabled for a tenant, branding-related buttons were clickable, but the actions then failed silently.
+{% endupdate %}
+{% endupdates %}
 
 {% updates format="full" %}
 {% update date="2026-09-18" tags="new-features-improvements" %}
