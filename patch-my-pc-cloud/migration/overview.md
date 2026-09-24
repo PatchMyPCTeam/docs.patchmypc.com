@@ -20,7 +20,7 @@ Migrating ConfigMgr Packages to Intune is unsupported.
 
 All migrated applications benefit from additional customization and management capabilities to ensure they remain secure, maintainable, and aligned with modern desktop management practices.
 
-## Video Overview
+## Video Walkthrough
 
 {% embed url="https://www.youtube.com/watch?v=p9gf70vzm2k" %}
 
