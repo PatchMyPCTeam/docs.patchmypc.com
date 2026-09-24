@@ -20,6 +20,10 @@ Migrating ConfigMgr Packages to Intune is unsupported.
 
 All migrated applications benefit from additional customization and management capabilities to ensure they remain secure, maintainable, and aligned with modern desktop management practices.
 
+## Video Overview
+
+{% embed url="https://www.youtube.com/watch?v=p9gf70vzm2k" %}
+
 ## Application Migration Options
 
 PMPC Cloud supports two methods for migrating applications from ConfigMgr to Intune.
@@ -27,7 +31,7 @@ PMPC Cloud supports two methods for migrating applications from ConfigMgr to Int
 * [PMPC Catalog App](overview.md#pmpc-catalog-app)
 * [PMPC Custom App](overview.md#pmpc-custom-app)
 
-The migration path is determined through ongoing application evaluation, not when the migration is initiated.&#x20;
+The migration path is determined through ongoing application evaluation, not when the migration is initiated.
 
 {% hint style="info" %}
 **Note**
@@ -37,7 +41,7 @@ See [How Migration Type Is Determined](how-migration-type-determined.md) for mor
 
 ### PMPC Catalog App
 
-Where possible, PMPC Cloud attempts to match a ConfigMgr application to an existing app in the PMPC catalog. A confident match is typically made using the hash of the main installer binary.&#x20;
+Where possible, PMPC Cloud attempts to match a ConfigMgr application to an existing app in the PMPC catalog. A confident match is typically made using the hash of the main installer binary.
 
 When the hash isn't recognized, PMPC Cloud evaluates application metadata, such as the application title and publisher, to suggest a potential catalog match.
 
