@@ -59,9 +59,11 @@ The External catalog is redisplayed with the added app(s).
 
 ## Reasons apps appear as UNSUPPORTED
 
-Apps can appear as **UNSUPPORTED** in the **External** catalog for many reasons, but primarily if their manifest does not contain sufficient metadata (such as a product code or display name), which is required to build detection rules correctly.&#x20;
+Apps can appear as **UNSUPPORTED** in the **External** catalog for many reasons:
 
-If this information is missing, it can lead to installation and detection issues on end-user devices, which is why we mark the app as **UNSUPPORTED**.
+* The app's manifest does not contain sufficient metadata (such as a product code or display name), which is required to build detection rules correctly. If this information is missing, it can lead to installation and detection issues on end-user devices, which is why we mark the app as **UNSUPPORTED**.
+* The app has no supported installer types (all variants are PORTABLE or MSIX).
+* The app uses a version format that is unsupported.
 
 ## Next Steps
 
