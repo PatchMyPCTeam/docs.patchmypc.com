@@ -10,6 +10,44 @@ Details the production release history for preview versions of Patch My PC (PMPC
 You can find the Preview release notes below, and you can also learn more about the Preview channel here: [Publisher Preview Channel](https://patchmypc.com/preview-channel).
 {% endhint %}
 
+## 31.0.462 - 2026-09-25
+
+<details>
+
+<summary>Features</summary>
+
+* Allow content distribution overrides by vendor and product.
+  * Idea: [PATCHMYPC-I-1467](https://ideas.patchmypc.com/ideas/PATCHMYPC-I-1467)
+
+</details>
+
+<details>
+
+<summary>Improvements</summary>
+
+* Ongoing improvements to accessibility.
+* Warn administrators when All Vendors assignment changes will overwrite product-level assignments
+* Custom applications now update their name and appropriate metadata when the name is changed in the cloud portal.
+* Add version column to package info view.
+* Add filter in the publisher to show apps that have dependencies.
+* Prevent deployment and redeployment of Custom Apps with missing files in Publisher.
+
+</details>
+
+<details>
+
+<summary>Fixes</summary>
+
+* WSUS Options page throwing false negative errors after auto upgrade.
+* Fixed a bug causing Publisher to fail to sign updates after new certificate added in Publisher UI.
+* The Slack logo did not display clearly in Webhook tab in dark theme.
+* All Vendors checkbox incorrectly displays indeterminate state in Publisher when no apps are selected.
+* Vendor checkbox did not reflect selected child product after enabling dependencies that apply a filter.
+* Test Email fails with "Sequence contains no matching element" when Use existing app registration is checked.
+* Cloud deployment indicator for coexistence were not displayed for public apps on Publisher.
+
+</details>
+
 ## 3.1.0.286 - 2026-09-16
 
 <details>
