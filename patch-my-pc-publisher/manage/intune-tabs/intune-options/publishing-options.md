@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Publishing Options** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher controls how Publisher creates, updates, names, organizes, and maintains applications and updates in Intune. These settings apply globally to all applications created from the **Intune Options** tab and directly influence application lifecycle behavior.
+The **Publishing Options** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher controls how Publisher creates, updates, names, organizes, and maintains apps and updates in Intune. These settings apply globally to all apps created from the **Intune Options** tab and directly influence application lifecycle behavior.
 
 <figure><img src="../../../../.gitbook/assets/image (1169).png" alt="Publishing Options" width="563"><figcaption></figcaption></figure>
 
@@ -14,17 +14,17 @@ Some options in the **Intune Win32 Application Options** section are global defa
 
 ## Digitally sign the detection method script and enforce signature checking on the application in Intune
 
-When the **Digitally sign the detection method script and enforce signature checking on the application in Intune** checkbox is checked, Publisher digitally signs PowerShell-based detection and requirement scripts used by Win32 applications and configures the Win32 application to require signed scripts.
+When the **Digitally sign the detection method script and enforce signature checking on the application in Intune** checkbox is checked, Publisher digitally signs PowerShell-based detection and requirement scripts used by Win32 apps and configures the Win32 app to require signed scripts.
 
 Specifically, Publisher sets the **Enforce script signature check and run script silently** property on the Win32 app’s detection and/or requirement rule in Intune. This is an application-level setting and does not modify PowerShell execution policy or device security configuration.
 
 <figure><img src="../../../../.gitbook/assets/image (3857).png" alt="Enforce script signature check" width="524"><figcaption></figcaption></figure>
 
-This option is intended for environments that already enforce signed PowerShell scripts, such as those using an AllSigned execution policy or application control solutions like AppLocker or Windows Defender Application Control (WDAC). By signing the detection and requirement scripts and enabling signature enforcement on the application, Publisher allows them to run silently and unblocked where unsigned scripts would otherwise be blocked or require user confirmation.
+This option is intended for environments that already enforce signed PowerShell scripts, such as those using an AllSigned execution policy or application control solutions like AppLocker or Windows Defender Application Control (WDAC). By signing the detection and requirement scripts and enabling signature enforcement on the app, Publisher allows them to run silently and unblocked where unsigned scripts would otherwise be blocked or require user confirmation.
 
 ### To select a code-signing certificate for signing detection and requirement scripts:
 
-1. Enable Digitally sign the detection method script and enforce signature checking on the application in Intune.
+1. Enable Digitally sign the detection method script and enforce signature checking on the app in Intune.
 2. Click **Browse** next to **Select code-signing certificate**.
 3. In the certificate selection window, choose a valid code-signing certificate from the **Local Computer – Personal** certificate store.
 
@@ -41,7 +41,7 @@ If Publisher is also being used for WSUS or ConfigMgr publishing, it is acceptab
 
 ## Copy assignments from the previous release when a new application or update is published
 
-When creating applications, Publisher applies any assignments that are configured within the Publisher itself. Administrators may sometimes also add or adjust assignments directly in Intune after an app has been created.
+When creating apps, Publisher applies any assignments that are configured within the Publisher itself. Administrators may sometimes also add or adjust assignments directly in Intune after an app has been created.
 
 When the **Copy assignments from the previous release when a new application or update is published** checkbox is checked, Publisher carries forward all existing assignments from the previous app version when creating a newer version. This includes assignments configured in Publisher and assignments that were manually added in Intune.
 
@@ -50,14 +50,14 @@ By enabling the option, the assumption is that any assignments present on the pr
 {% hint style="info" %}
 **Note**
 
-Assignments are copied only at application creation time. Enabling this option after a newer version already exists in Intune does not apply assignments from an older version of the application, retroactively.
+Assignments are copied only at app creation time. Enabling this option after a newer version already exists in Intune does not apply assignments from an older version of the app, retroactively.
 {% endhint %}
 
 ## Delete assignments from the previous release when a new application or update is published
 
-When the **Delete assignments from the previous release when a new application or update is published** checkbox is checked, Publisher removes assignments from older application versions when a new version is created.
+When the **Delete assignments from the previous release when a new application or update is published** checkbox is checked, Publisher removes assignments from older app versions when a new version is created.
 
-If application retention is enabled, older Win32 applications may still exist in the Intune admin center and would otherwise remain assigned. Removing assignments from the previous version ensures that only the latest version of the app is targeted to Microsoft Entra ID groups, avoiding multiple versions being deployed unnecessarily to the same devices or users.
+If app retention is enabled, older Win32 apps may still exist in the Intune admin center and would otherwise remain assigned. Removing assignments from the previous version ensures that only the latest version of the app is targeted to Microsoft Entra ID groups, avoiding multiple versions being deployed unnecessarily to the same devices or users.
 
 {% hint style="info" %}
 **Note**
@@ -67,7 +67,7 @@ Assignments are removed only when you create a new app. If this option is enable
 
 ## Copy dependencies from the previous release when a new application or update is published
 
-When the **Copy dependencies from the previous release when a new application or update is published** checkbox is checked, Publisher keeps application dependencies in Intune aligned as new versions of Patch My PC apps are published.
+When the **Copy dependencies from the previous release when a new application or update is published** checkbox is checked, Publisher keeps app dependencies in Intune aligned as new versions of Patch My PC apps are published.
 
 If a Win32 app has dependencies that reference other Win32 apps created by Publisher, Publisher updates those dependency references to point to the latest published versions when a new app version is created. This ensures dependency chains remain valid and up to date without requiring administrators to manually maintain dependencies after each update.
 
