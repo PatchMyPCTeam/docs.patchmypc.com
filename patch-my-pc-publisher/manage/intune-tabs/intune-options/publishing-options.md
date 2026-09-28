@@ -154,6 +154,17 @@ The appropriate retention value ultimately depends on your organization’s upda
 
 ### Delay in-place updates of previously created applications by x days
 
+When the **Delay in-place updates of previously created applications by x days** checkbox is checked, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
+
+* The delay is calculated from the date Publisher first detects the new version.
+* This allows time for validation or testing before updating production applications.
+
+**Example:**&#x49;f a new version is synchronized on February 3 and the delay is set to 3 days, the application will not be updated until a Publisher sync on or after February 6.
+
+This allows time for validation or testing before updating production applications.
+
+The delay is calculated from the date Publisher first detects the new version.
+
 ### Enable 'Allow available uninstall'
 
 When the **Enable 'Allow available uninstall'** checkbox is checked, Publisher configures Win32 apps in Intune to allow users to uninstall the application from the Company Portal when the app is assigned as Available.
@@ -167,3 +178,5 @@ When the **Enable 'Allow available uninstall'** checkbox is checked, Publisher c
 When the **Delete any previously created updates when a new update is published** checkbox is checked, Publisher applies the same retention behavior [described above for applications](publishing-options.md#delete-any-previously-created-applications-when-an-updated-application-is-published) to Intune Updates.
 
 ### Delay in-place updates of previously created updates by x days
+
+When the **Delay in-place updates of previously created updates by x days** checkbox is checked,  Publisher applies the same delay behavior [described above for applications](publishing-options.md#delay-in-place-updates-of-previously-created-applications-by-x-days) to Intune Updates.
