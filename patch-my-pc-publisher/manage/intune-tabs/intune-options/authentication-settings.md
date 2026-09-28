@@ -93,7 +93,7 @@ Whichever client credential method you use, its expiry date is shown below the c
 
 Clicking the **Test Connection** button validates authentication, connectivity, and the required API permissions.
 
-The results are shown on the **App Registration Connection Status**, confirming if Publisher can successfully connect to the Intune tenant via Microsoft Graph and that all required Microsoft Graph permissions are available. When the test completes successfully and all permissions show as enabled, Publisher is ready to publish applications and updates to Intune.
+The results are shown on the **App Registration Connection Status** screen, confirming if Publisher can successfully connect to the Intune tenant via Microsoft Graph and that all required Microsoft Graph permissions are available. When the test completes successfully and all permissions show as enabled, Publisher is ready to publish applications and updates to Intune.
 
 <figure><img src="../../../../.gitbook/assets/image (1166).png" alt="App Registration Connection Status" width="563"><figcaption></figcaption></figure>
 
