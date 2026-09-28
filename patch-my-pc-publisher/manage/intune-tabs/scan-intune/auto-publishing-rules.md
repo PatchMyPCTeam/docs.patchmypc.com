@@ -2,13 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Authentication Settings** section on the **Scan Intune** tab of Patch My PC (PMPC) Publisher allows Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.
+The **Auto-Publishing Rules** section on the **Scan Intune** tab of Patch My PC (PMPC) Publisher allows Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.
 
-When these rules are enabled, the Publisher evaluates discovered application inventory data collected by the Intune Management Extension on managed devices, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
+<figure><img src="../../../../.gitbook/assets/image (1167).png" alt="&#x27;Auto-Publishing Rules&#x27; section" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="/broken/files/hg8cJozICd5Zvh6QvTL3" alt="&#x27;Auto-Publishing Rules&#x27;" width="563"><figcaption></figcaption></figure>
+When these rules are enabled, Publisher evaluates discovered application inventory data collected by the Intune Management Extension on managed devices, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
 
-Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-schedule-tab/). Each time a sync runs, the Publisher scans application inventory data from the AppInvRawData report, obtained from the Intune Reporting Endpoint, through the Microsoft Graph, and automatically enables any newly detected products that meet the configured thresholds.
+Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-schedule-tab/). Each time a sync runs, Publisher scans application inventory data from the AppInvRawData report, obtained from the Intune Reporting Endpoint, through the Microsoft Graph, and automatically enables any newly detected products that meet the configured thresholds.
 
 This automation can be extremely powerful, but it’s important to configure it thoughtfully.
 
@@ -18,66 +18,76 @@ This automation can be extremely powerful, but it’s important to configure it 
 Automatic enablement of products is based solely on configured device thresholds. Filters in this form only control what is displayed in the query results and do not influence which applications or updates are automatically enabled.
 {% endhint %}
 
-### Auto-enable products to be published as an update
+## Auto-enable products to be published as an update if installed on at least _x_ devices
 
-When enabled, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the Intune Updates tab once they are found on at least the specified number of devices.
+When the **Auto-enable products to be published as an update if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox is checked, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the **Intune Updates** tab once they are found on at least the specified number of devices.
 
 * The device count acts as a threshold to prevent enabling products seen only on a small number of machines
-* Once enabled, updates for the product are published according to your existing sync and deployment processes
+* Once enabled, updates for the product are published according to your existing sync and deployment processes.
 
 This option is commonly used to keep patching coverage up to date as new applications appear in the environment.
 
-### Auto-enable products to be published as an application
+## Auto-enable products to be published as an application if installed on at least _x_ devices
 
-When enabled, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the Intune Apps tab once they are found on at least the specified number of devices.
+When the **Auto-enable products to be published as an application if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox is checked, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the **Intune Apps** tab once they are found on at least the specified number of devices.
 
-* This allows Patch My PC to automatically manage application creation for newly detected software
-* The same device threshold concept applies to avoid enabling applications prematurely
+* This allows Patch My PC to automatically manage application creation for newly detected software.
+* The same device threshold concept applies to avoid enabling applications prematurely.
 
-This option is typically used in environments that want **application lifecycle management** to be driven directly from inventory data.
+This option is typically used in environments that want application lifecycle management to be driven directly from inventory data.
 
-### Auto-enabled Products and Assignment Inheritance
+## Auto-enabled Products and Assignment Inheritance
 
 When products are automatically enabled by auto-publishing rules based on the configured device threshold, any Intune assignments configured at the **All Products Level** or **Vendor** level in the [Product Tree](../../../fundamentals/product-tree/working.md) are not inherited by newly enabled products. Newly detected products are enabled for publishing only and do not automatically receive existing assignment configurations.
 
-Customers should review the publishing reports after each synchronization to identify products that were automatically enabled. After reviewing the report, configure the desired assignments directly on those products in the Publisher.
+Customers should review the publishing reports after each synchronization to identify products that were automatically enabled. After reviewing the report, configure the desired assignments directly on those products in Publisher.
 
-Alternatively, customers can use the [Manage Assignments](../../../customizations/list-customizations/manage-assignments/) right-click customization option to automatically apply assignments to auto-published Intune updates. For more information, see [Auto-Enabled Products and Dynamic Assignments](auto-publishing-rules.md#auto-enabled-products-and-dynamic-assignments).
+Alternatively, customers can use the [Manage Assignments](../../../customizations/list-customizations/manage-assignments/) right-click customization option to automatically apply assignments to auto-published Intune updates.&#x20;
+
+{% hint style="info" %}
+**Note**
+
+See [Auto-Enabled Products and Dynamic Assignments](auto-publishing-rules.md#auto-enabled-products-and-dynamic-assignments) for more information.
+{% endhint %}
 
 {% hint style="danger" %}
 **Important**
 
-Reapplying assignments at a higher level in the product tree to force inheritance on products enabled through auto-publishing rules is supported but should be used with caution. Reapplying assignments at the product or vendor level overwrites any assignments already configured on child products. This action can unintentionally replace specific assignment configurations that were intentionally set on individual products.
+Reapplying assignments at a higher level in the Product Tree to force inheritance on products enabled through auto-publishing rules is supported but should be used with caution. Reapplying assignments at the product or vendor level overwrites any assignments already configured on child products. This action can unintentionally replace specific assignment configurations that were intentionally set on individual products.
 {% endhint %}
 
-### Auto-Enabled Products and Dynamic Assignments
+## Auto-Enabled Products and Dynamic Assignments
 
-Customers can use the [Manage Assignments](../../../customizations/list-customizations/manage-assignments/) right-click customization option, at the All Products level, for **Intune Updates** to automatically apply assignments to auto published updates. This provides a way to automate assignment behavior for newly enabled products.
+Customers can use the [Manage Assignments](../../../customizations/list-customizations/manage-assignments/) right-click customization option, at the **All Products** level, for **Intune Updates** to automatically apply assignments to auto-published updates. This automates assignment behavior for newly enabled products.
 
-Dynamic Assignments are evaluated only for products that are currently enabled in the Publisher product tree on the **Intune Updates** tab and only for the current version of a product at the time it is published. When Dynamic Assignments are used together with auto publishing rules, there is a timing consideration. During the first synchronization, auto publishing rules enable the product and publish the update. Because the product was not enabled at the start of the synchronization, Dynamic Assignment evaluation does not occur at that time.
+Dynamic Assignments are evaluated only for products that are currently enabled in Publisher's Product Tree on the **Intune Updates** tab and only for the current version of a product at the time it is published.&#x20;
+
+When Dynamic Assignments are used together with auto publishing rules, there is a timing consideration. During the first synchronization, auto publishing rules enable the product and publish the update. Because the product was not enabled at the start of the synchronization, Dynamic Assignment evaluation does not occur then.
 
 A second synchronization is required for Dynamic Assignments to evaluate the newly enabled product and determine whether the update meets the configured criteria for assignment. This behavior is expected and should be considered when designing automation workflows that combine auto publishing rules with Dynamic Assignments.
 
 {% hint style="info" %}
 **Note**
 
-Assignments added using the Manage Dynamic Assignments feature do not persist indefinitely in the Publisher configuration. Dynamic Assignments are evaluated during each synchronization and applied only to updates that meet the configured criteria at that time.
+Assignments added using the Manage Dynamic Assignments feature do not persist indefinitely in Publisher's configuration. Dynamic Assignments are evaluated during each synchronization and applied only to updates that meet the configured criteria at that time.
 {% endhint %}
 
 ## Device Threshold Best Practice
 
-Patch My PC releases approximately 100 new applications per month, so it’s entirely possible for a scheduled scan to detect multiple new products. When low device thresholds are used, auto-publishing can enable these products very quickly, ensuring new additions don’t go unnoticed. However, this speed should be balanced with operational readiness, as downstream processes such as phased deployments and change control may not be prepared for a sudden influx of new applications and updates, particularly when assignments are broadly scoped.
+Patch My PC releases about 100 new applications per month, so a scheduled scan can easily detect multiple new products. When low device thresholds are used, auto-publishing can enable these products very quickly, ensuring new additions don’t go unnoticed.&#x20;
+
+However, this speed should be balanced with operational readiness, as downstream processes such as phased deployments and change control may not be prepared for a sudden influx of new applications and updates, particularly when assignments are broadly scoped.
 
 {% hint style="danger" %}
 **Important**
 
-While it may be tempting to set the device threshold to a very low number, even 1, this is generally not recommended for most environments. This would be especially impactful for new customers who have not yet reviewed and enabled products in the product tree, as a very low threshold can cause newly discovered applications to be enabled simultaneously, potentially resulting in a large number of updates being synchronized at once.
+While it may be tempting to set the device threshold to a very low number, even **1**, this is generally not recommended for most environments. This would be especially impactful for new customers who have not yet reviewed and enabled products in the Product Tree, as a very low threshold can cause newly discovered applications to be enabled simultaneously, potentially resulting in a large number of updates being synchronized at once.
 {% endhint %}
 
 A common and effective approach is:
 
-1. Use the Scan Wizard to identify products currently installed in your environment
-2. Enable the products from the scan wizard [query](query-button.md) window or [Product Tree](../../../fundamentals/product-tree/working.md) and [customize](../../../customizations/) those products from the product tree (conflicting processes, content options, etc.)
-3. Enable auto-publishing rules to catch newly introduced applications over time
+1. Use the Scan Wizard to identify products currently installed in your environment.
+2. Enable the products from the Scan Wizard [query](query-button.md) window or [Product Tree](../../../fundamentals/product-tree/working.md), and [customize](../../../customizations/) them in the Product Tree (conflicting processes, content options, etc.).
+3. Enable auto-publishing rules to catch newly introduced applications over time.
 
-This allows you to remain in control initially, while still benefiting from automation going forward.
+This lets you stay in control initially, while still benefiting from automation going forward.
