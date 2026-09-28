@@ -38,7 +38,7 @@ The tenant name used in the authority value does not have to be the onmicrosoft.
 
 The **Authentication URL** defines the Microsoft Graph endpoint used for authentication and token acquisition. The default URL is:
 
-`https://graph.microsoft.com`.
+`https://graph.microsoft.com`
 
 {% hint style="info" %}
 **Note**
@@ -52,7 +52,7 @@ If your tenant is hosted in the standard commercial Microsoft 365 cloud, you sho
 
 The **Graph Base URL** defines the Microsoft Graph endpoint used for Intune and application management operations. The default Graph base URL is:
 
-`https://graph.microsoft.com/beta`.
+`https://graph.microsoft.com/beta`
 
 ## Restore button
 
