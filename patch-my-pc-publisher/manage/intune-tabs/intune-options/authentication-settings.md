@@ -2,19 +2,19 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Authentication Settings** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher defines how the Publisher authenticates with Entra ID and communicates to Microsoft Intune using a Microsoft Entra ID application registration. These settings are required before the Publisher can create, update, or manage Win32 applications and updates in Intune.
+The **Authentication Settings** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher defines how Publisher authenticates with Entra ID and communicates with Microsoft Intune using a Microsoft Entra ID application registration. These settings are required before Publisher can create, update, or manage Win32 applications and updates in Intune.
 
-This section establishes the trust relationship between the Publisher and your Intune tenant by configuring the tenant authority, application identifier, and authentication method. Authentication can be performed by using either a client secret or a certificate, depending on your organization security requirements.
+This section establishes the trust relationship between Publisher and your Intune tenant by configuring the tenant authority, application identifier, and authentication method. Authentication can be performed using either a client secret or a certificate, depending on your organization's security requirements.
 
 <figure><img src="../../../../.gitbook/assets/image (730).png" alt="&#x27;Authentication Settings&#x27; section" width="563"><figcaption></figcaption></figure>
 
-## Tenant Friendly name
+## Tenant Friendly Name
 
-The friendly name is a descriptive label for the app registration configuration. This value is shown only in the Publisher and is used to help identify the tenant connection when reviewing settings.
+The **Tenant Friendly Name** is a descriptive label for the app registration configuration. This value is shown only in Publisher and is used to help identify the tenant connection when reviewing settings.
 
 ## Authority
 
-The **Authority** URL is constructed by using the Microsoft sign in endpoint and your tenant name. The supported endpoint is:
+The **Authority** URL is constructed by using the Microsoft sign-in endpoint and your tenant name. The supported endpoint is:
 
 [`https://login.microsoftonline.com`](https://login.microsoftonline.com)
 
@@ -36,64 +36,72 @@ The tenant name used in the authority value does not have to be the onmicrosoft.
 
 ## Authentication URL
 
-Defines the Microsoft Graph endpoint used for authentication and token acquisition. The default URL is `https://graph.microsoft.com`.
+The **Authentication URL** defines the Microsoft Graph endpoint used for authentication and token acquisition. The default URL is:
+
+`https://graph.microsoft.com`.
 
 {% hint style="info" %}
 **Note**
 
 These values may need to be changed only when your Intune tenant is hosted in a government or sovereign cloud, such as GCC High or Microsoft 21Vianet (China), which use different authentication and Microsoft Graph endpoints than the public commercial cloud.
 
-\
 If your tenant is hosted in the standard commercial Microsoft 365 cloud, you should continue using the default values. For details on the specific endpoints required for each cloud environment, refer to the [Intune-specific network requirements](../../../requirements/intune-requirements/network.md).
 {% endhint %}
 
 ## Graph Base URL
 
-Defines the Microsoft Graph endpoint used for Intune and application management operations. The default Graph base URL is `https://graph.microsoft.com/beta`.
+The **Graph Base URL** defines the Microsoft Graph endpoint used for Intune and application management operations. The default Graph base URL is:
 
-## Restore
+`https://graph.microsoft.com/beta`.
 
-The **Restore** button resets the Authentication URL or the Graph base URL to the recommended default values.
+## Restore button
+
+Clicking the **Restore** button beside either the **Authentication URL** or the **Graph Base URL** fields, resets them to the recommended default values.
 
 ## Application (Client) ID
 
-The **Application ID** field must contain the Application client ID from your Entra ID app registration.
+The **Application (Client) ID** field must contain the Application client ID from your Entra ID app registration.
 
 To obtain this value, select **App registrations** in the [Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/quickStartType~/null/sourceType/Microsoft_AAD_IAM), and copy the **Application (client) ID** value.
 
 <figure><img src="../../../../.gitbook/assets/image (3778).png" alt="Application (Client) ID" width="563"><figcaption></figcaption></figure>
 
-For more details on how to create an Entra ID App Registration for use with the Publisher, see: [Entra ID App Registration](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md).
+{% hint style="info" %}
+**Note**
 
-## Application Certificate or Application Secret
+See [Entra ID App Registration](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) for more details on how to create an Entra ID App Registration for use with Publisher.
+{% endhint %}
 
-The authentication method is determined by the [credentials configured on the app registration](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md).
+## App Secret or App Certificate
 
-If [certificate-based authentication](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) is used, select the **Certificate** option and browse the Local Machine certificate Personal store to select the appropriate certificate.
+The authentication method depends on the [credentials configured on the app registration](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md).
 
-If [client secret authentication](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) is used, select the **Application Secret** option and enter the client secret value that was generated during app registration setup.
+* If [client secret authentication](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) is used, select the **App Secret** option and enter the client secret value generated during app registration setup.
+* If [certificate-based authentication](../../../requirements/intune-requirements/entra-id-app-registration/create-app-registration.md) is used, select the **App Certificate** option and browse the Local Machine certificate Personal store to select the appropriate certificate.
 
-For more information, and to help decide which client credential method to use if you have not already chosen one, see: [Client Credentials](../../../requirements/intune-requirements/entra-id-app-registration/client-credentials.md).
+{% hint style="info" %}
+**Note**
 
-Whichever client credential method is used, the Intune Options form displays the credential expiration date below the credential field.
+Certificate-based authentication is the recommended client credential to use for an app registration. See [Client Credentials](../../../requirements/intune-requirements/entra-id-app-registration/client-credentials.md) for more information and to help decide which client credential method to use if you have not already chosen one.
+{% endhint %}
+
+Whichever client credential method you use, its expiry date is shown below the credential field.
 
 <figure><img src="../../../../.gitbook/assets/image (249).png" alt="Credential expiration date" width="563"><figcaption></figcaption></figure>
 
-{% hint style="success" %}
-**Tip**
+## Test Connection button
 
-Certificate-based authentication is the recommended client credential to use for an app registration.
+Clicking the **Test Connection** button validates authentication, connectivity, and the required API permissions.
+
+The results are shown on the **App Registration Connection Status**, confirming if Publisher can successfully connect to the Intune tenant via Microsoft Graph and that all required Microsoft Graph permissions are available. When the test completes successfully and all permissions show as enabled, Publisher is ready to publish applications and updates to Intune.
+
+<figure><img src="../../../../.gitbook/assets/image (1166).png" alt="App Registration Connection Status" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+See [API Permissions](../../../requirements/intune-requirements/entra-id-app-registration/application-permissions.md) for more information about the API permissions required for Publisher.
 {% endhint %}
-
-## Test Connection
-
-Press the **Test Connection** button to validate authentication, connectivity, and the required API permissions.
-
-The test confirms that the Publisher can successfully connect to the Intune tenant via Microsoft Graph and that all required Microsoft Graph permissions are available. When the test completes successfully and all permissions show as enabled, the Publisher is ready to publish applications and updates to Intune.
-
-<figure><img src="../../../../.gitbook/assets/image (250).png" alt="App Registration Connection Status" width="563"><figcaption></figcaption></figure>
-
-For more information about the API permissions required for the Publisher, see: [API Permissions](../../../requirements/intune-requirements/entra-id-app-registration/application-permissions.md).
 
 {% hint style="danger" %}
 **Important**
