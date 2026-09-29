@@ -75,10 +75,10 @@ The **Secure Boot** tab shows detailed Secure Boot status and 2023 certificate r
 
 ***
 
-## Data Explainations
+## Data Explanations
 
 {% hint style="info" icon="circle-question" %}
-### Data Explaination - Minimum Firmware Detection
+### Data Explanation - Minimum Firmware Detection
 
 Any firmware requirements are calculated using data provided by OEMs. As such, firmware requirements can only be detected on supported models where data has been provided from HP, Dell, and Lenovo
 
@@ -90,7 +90,7 @@ Please use the following external vendor documentation to validate model support
 {% endhint %}
 
 {% hint style="info" icon="circle-question" %}
-### Data Explaination - "Status"
+### Data Explanation - "Status"
 
 We compute a single **Secure Boot Status** for each device by evaluating all available Secure Boot–related properties and events. The goal is to reduce a complex and highly fragmented dataset into a single status that clearly communicates the device’s current state in the Secure Boot certificate rollout.
 
