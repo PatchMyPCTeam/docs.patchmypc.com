@@ -16,7 +16,7 @@ Regardless of the tab selected, the following items are always visible:
 
 The _Version_ number of Publisher you are currently running is shown in the header.
 
-For example **3.x.x.x**
+For example **v3.x.x.x**
 
 ## Theme Control
 
