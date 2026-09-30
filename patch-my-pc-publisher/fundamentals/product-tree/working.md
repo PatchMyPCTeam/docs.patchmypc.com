@@ -32,7 +32,7 @@ The **Enabled** slider controls whether products and updates are enabled for the
 By default, the publishing of all apps and updates is disabled.
 {% endhint %}
 
-## View Button
+## View button
 
 The _View_ button lets you switch the view of the Product Tree between _Grid View_ (![Grid view](<../../../.gitbook/assets/image (4581).png>)) and _Tree View_ (![Tree View](<../../../.gitbook/assets/image (4577).png>)).
 
@@ -61,7 +61,7 @@ The alphabetical slider lets you either go directly to all products in the catal
 
 <figure><img src="../../../.gitbook/assets/image (1200).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
 
-## ![Settings button](<../../../.gitbook/assets/image (4579).png>) Settings Button
+## ![Settings button](<../../../.gitbook/assets/image (4579).png>) Settings button
 
 Clicking the _Settings_ button takes you to the corresponding tab where you can configure additional options.
 
@@ -94,7 +94,7 @@ Using the **Filter** field, you can easily filter the Product Tree to only show 
 Using the **Filter** field in conjunction with the [Filters Button](working.md#filters-button) allows you to easily locate the products you wish to manage with Publisher.
 {% endhint %}
 
-## ![Refresh button](<../../../.gitbook/assets/image (4582).png>) Refresh Button
+## ![Refresh button](<../../../.gitbook/assets/image (4582).png>) Refresh button
 
 The _Refresh_ button manually refreshes the Product Tree to pick up any changes such as a new product being added to our public catalog or if you add a custom product.
 
@@ -111,7 +111,7 @@ The _Product Counts_ indicator shows:
 * **Selected -** The number of products you have selected in the Product Tree.
 * **Filter -** The number of products selected, based on any filters you have applied. The initial number shown is the number of products filtered by the management platform you have selected (e.g., WSUS Updates, ConfigMgr apps, etc.). Then, as you apply additional [Filters](working.md#filters-button), this number updates accordingly.
 
-## Group Product Variants Button
+## Group Product Variants button
 
 The _Group Product Variants_ button (Grid View only) allows you to group all product variants into a single card.
 
@@ -141,23 +141,23 @@ See [List of Product Statistics](../../technical-references/list-product-statist
 
 Clicking any stat filters the catalog to display only items that match the selected stat.
 
-## All Vendors Button
+## All Vendors button
 
 The _Group Product Variants_ button (Grid View only) shows all of the [customization (right-click) options](../../customizations/overview.md) that apply globally to all vendors and products. This is the same as right-clicking the root node of the Product Tree when it is in Tree View.
 
 <figure><img src="../../../.gitbook/assets/image (1218).png" alt="&#x27;All Vendors&#x27; button" width="563"><figcaption></figcaption></figure>
 
-## Copy Products Button
+## Copy Products button
 
 The _Copy Products_ button synchronizes product selections and/or customizations to other tabs. This option is intended to provide a quick and consistent way to align application management behavior with update publishing selections while preserving the standard inheritance behavior of the product tree.
 
-## Expand All Tree Nodes Button
+## Expand All Tree Nodes button
 
 The _Expand All Tree Nodes_ button (Tree View only) will either expand or collapse the Product Tree if it is being viewed in Tree View.
 
 <figure><img src="../../../.gitbook/assets/image (1219).png" alt="&#x27;Expand All Tree Nodes&#x27; button" width="563"><figcaption></figcaption></figure>
 
-## ![Filter option](<../../../.gitbook/assets/image (4558).png>) Filters Button
+## ![Filter option](<../../../.gitbook/assets/image (4558).png>) Filters button
 
 The Product Tree includes optional filters to make it easier to sort and work with products and their settings.
 
@@ -209,7 +209,7 @@ The saved filter set appears in the **Saved Filters** section.
 {% hint style="success" %}
 **Tip**
 
-To apply a previously saved filter set, simply select it from the **Saved Filters** dropdown, and it will be automatically loaded and applied.
+To apply a previously saved filter set, select it from the **Saved Filters** dropdown; it will be loaded and applied automatically.
 {% endhint %}
 
 ### Clear All Filters
