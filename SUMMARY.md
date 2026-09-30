@@ -558,6 +558,7 @@
       * [Service Status tab of Patch My PC Publisher](patch-my-pc-publisher/manage/about-tab/service-status.md "Service Status")
       * [Feedback tab of Patch My PC Publisher](patch-my-pc-publisher/manage/about-tab/feedback.md "Feedback")
     * [Manage Log Files in Patch My PC Publisher](patch-my-pc-publisher/manage/manage-logs.md "Manage Logs")
+    * [Upgrade Patch My PC Publisher](patch-my-pc-publisher/manage/upgrade.md "Upgrade")
   * [Customizations (Right-Click Options) in Patch My PC Publisher](patch-my-pc-publisher/customizations/README.md "Customizations (Right-Click Options)")
     * [Overview of Customizations in Patch My PC Publisher](patch-my-pc-publisher/customizations/overview.md "Overview")
     * [List of Customizations in Patch My PC Publisher](patch-my-pc-publisher/customizations/list-customizations/README.md "List of  Customizations")
