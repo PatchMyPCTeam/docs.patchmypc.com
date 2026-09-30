@@ -4,6 +4,41 @@ _Applies to: Patch My PC Publisher V2.x and 3.x_
 
 Details the production release history for Patch My PC (PMPC) Publisher, the most recent release being shown first.
 
+## 3.1.1.0 - 2026-09-30
+
+<details>
+
+<summary>Features</summary>
+
+* Add support for content distribution overrides at the Product, Vendor, and All Vendors level.
+* Adds full customization of the default command line.
+
+</details>
+
+<details>
+
+<summary>Improvements</summary>
+
+* Adds republishing support for metadata-only WSUS products.
+* Adds Version and Release Date columns in Show Package Info.
+* Improves accessibility across Publisher with better screen reader support, keyboard navigation, tab order, visible focus, High Contrast support, and zoom/reflow behavior.
+* Performance improvements throughout the service and UI.
+* Accessibility improvements throughout the UI.
+
+</details>
+
+<details>
+
+<summary>Fixes</summary>
+
+* Fixes various bugs with settings save, backup, and restore.
+* Restores coexistence indicator for public catalog apps.
+* Fixes sync and publish issues, including missed catch-up syncs, double syncs, stalled saves, weekly syncs skipping after restart or upgrade, and republish problems.
+* Fixes product tree, selection, filter, and right-click behavior, including filter resets, refreshes after auto-enrollment, expander handling, and vendor checkbox updates.
+* Fixes service, startup, and logging issues, including invalid SMS Provider crashes, restart-service crashes, redundant connection warnings, and incorrect log file locations.
+
+</details>
+
 ## 3.0.14.0 - 2026-08-26
 
 <details>
