@@ -59,9 +59,14 @@ The minimum required permission is **Modify**. This allows Publisher to create f
 
 In this example, Publisher is installed on **BB-CM1**, and the application source folder is hosted on **BB-APP1**. As Publisher accesses the content over SMB, all file operations authenticate as **BB-CM1$**.
 
-To ensure application creation and management works correctly, **BB-CM1$** must be granted **Modify** permissions on the SMB share and the underlying NTFS folder on **BB-APP1**. Without these permissions, application creation, updates, or cleanup operations will fail.
+To ensure application creation and management works correctly:
 
-<figure><img src="../../../.gitbook/assets/image (4750).png" alt="NTFS and SMB Permissions" width="524"><figcaption></figcaption></figure>
+* **\\\bb-app 1 \Packages\PMPC** needs to be entered in **Source folder** field of the **CONNECTION AND SOURCE** section.
+* **BB-CM1$** must be granted **Modify** permissions on the SMB share and the underlying NTFS folder on **BB-APP1**.
+
+Without these permissions, application creation, updates, or cleanup operations will fail.
+
+<figure><img src="../../../.gitbook/assets/image (1220).png" alt="NTFS and SMB Permissions" width="524"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
