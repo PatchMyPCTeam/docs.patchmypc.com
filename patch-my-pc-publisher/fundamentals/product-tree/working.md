@@ -11,7 +11,7 @@ The _Product Tree_ in Patch My PC (PMPC) Publisher can be found on the following
 
 It works fundamentally the same regardless of the tab you are working with and includes the following:
 
-<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="working.md#power-button">Power Button</a></td><td valign="top"><a href="working.md#view-button">View Button</a></td><td valign="top"><a href="working.md#settings-button">Settings Button</a></td></tr><tr><td valign="top"><a href="working.md#product-tabs">Product Tabs</a></td><td valign="top"><a href="working.md#filter-field">Filter Field</a></td><td valign="top"><a href="working.md#refresh-button">Refresh Button</a></td></tr><tr><td valign="top"><a href="working.md#product-counts">Product Counts</a></td><td valign="top"><a href="working.md#group-product-variants-button">Group Product Variants Button</a></td><td valign="top"><a href="working.md#product-statistics">Product Statistics</a></td></tr><tr><td valign="top"><a href="working.md#all-vendors-button">All Vendors Button</a></td><td valign="top"><a href="working.md#copy-products-button">Copy Products Button</a></td><td valign="top"><a href="working.md#expand-all-tree-nodes-button">Expand All Tree Nodes Button</a></td></tr><tr><td valign="top"><a href="working.md#filters-button">Filters Button</a></td><td valign="top"></td><td valign="top"></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="working.md#enabled-slider">Enabled slider</a></td><td valign="top"><a href="working.md#view-button">View button</a></td><td valign="top"><a href="working.md#settings-button">Settings button</a></td></tr><tr><td valign="top"><a href="working.md#product-tabs">Product Tabs</a></td><td valign="top"><a href="working.md#filter-field">Filter Field</a></td><td valign="top"><a href="working.md#refresh-button">Refresh button</a></td></tr><tr><td valign="top"><a href="working.md#product-counts">Product Counts</a></td><td valign="top"><a href="working.md#group-product-variants-button">Group Product Variants button</a></td><td valign="top"><a href="working.md#product-statistics">Product Statistics</a></td></tr><tr><td valign="top"><a href="working.md#all-vendors-button">All Vendors button</a></td><td valign="top"><a href="working.md#copy-products-button">Copy Products Button</a></td><td valign="top"><a href="working.md#expand-all-tree-nodes-button">Expand All Tree Nodes button</a></td></tr><tr><td valign="top"><a href="working.md#filters-button">Filters button</a></td><td valign="top"></td><td valign="top"></td></tr></tbody></table>
 
 {% hint style="info" %}
 **Note**
@@ -19,9 +19,12 @@ It works fundamentally the same regardless of the tab you are working with and i
 Any platform-specific differences are detailed in the _Product Tree_ article for that platform.
 {% endhint %}
 
-## ![Power button](<../../../.gitbook/assets/image (4574).png>) Power Button
+## Enabled slider
 
-The _Power_ button controls whether products and updates are enabled for the selected management platform, with <mark style="color:red;">Red</mark> indicating the management platform is disabled and <mark style="color:$success;">Green</mark> indicating it is enabled.
+The **Enabled** slider controls whether products and updates are enabled for the selected management platform:
+
+* **Disabled** indicates the management platform is disabled
+* **Enabled** indicates that it is enabled.
 
 {% hint style="info" %}
 **Note**
@@ -35,11 +38,11 @@ The _View_ button lets you switch the view of the Product Tree between _Grid Vie
 
 This is an example of the Product Tree shown in _Grid View_.
 
-<figure><img src="../../../.gitbook/assets/image (4567).png" alt="Product Tree in Grid View" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1197).png" alt="Product Tree in Grid View" width="563"><figcaption></figcaption></figure>
 
 This is an example of the Product Tree shown in _Tree View_.
 
-<figure><img src="../../../.gitbook/assets/image (4568).png" alt="Product Tree in Tree View." width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1198).png" alt="Product Tree in Tree View" width="563"><figcaption></figcaption></figure>
 
 ### Grid View Versus Tree View
 
@@ -56,13 +59,13 @@ The greatest benefit of viewing the Product Tree in Grid view is that it allows 
 
 The alphabetical slider lets you either go directly to all products in the catalog beginning with a certain letter, or navigate the catalog using the arrow controls.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1200).png" alt="Alphabetical slider" width="563"><figcaption></figcaption></figure>
 
 ## ![Settings button](<../../../.gitbook/assets/image (4579).png>) Settings Button
 
 Clicking the _Settings_ button takes you to the corresponding tab where you can configure additional options.
 
-<table><thead><tr><th width="374" valign="top">Clicking Settings for...</th><th valign="top">Takes you to...</th></tr></thead><tbody><tr><td valign="top">WSUS Updates</td><td valign="top">WSUS Options</td></tr><tr><td valign="top">ConfigMgr Apps</td><td valign="top">Base Install Options</td></tr><tr><td valign="top">intune Apps</td><td valign="top">Intune Options</td></tr><tr><td valign="top">Intune Updates</td><td valign="top">Intune Options</td></tr></tbody></table>
+<table><thead><tr><th width="205.111083984375" valign="top">Clicking Settings for...</th><th valign="top">Takes you to...</th></tr></thead><tbody><tr><td valign="top">WSUS Updates</td><td valign="top">WSUS Options</td></tr><tr><td valign="top">ConfigMgr Apps</td><td valign="top">Base Install Options</td></tr><tr><td valign="top">Intune Apps</td><td valign="top">Intune Options</td></tr><tr><td valign="top">Intune Updates</td><td valign="top">Intune Options</td></tr></tbody></table>
 
 ## Product Tabs
 
@@ -77,13 +80,13 @@ Above the Product Tree, you will see the following two tab&#x73;**\***:
 **\*** The **Custom Products** tab is unavailable on the **WSUS Updates** tab.
 {% endhint %}
 
-Having these as separate tabs allows you to easily configure and manage the products you want to manage in your environment.
+Having these as separate tabs lets you easily configure and manage the products you want to manage in your environment.
 
 ## Filter Field
 
 Using the **Filter** field, you can easily filter the Product Tree to only show matching results.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="using the &#x27;Filter&#x27; field" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1211).png" alt="Using the &#x27;Filter&#x27; field" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**
@@ -114,15 +117,15 @@ The _Group Product Variants_ button (Grid View only) allows you to group all pro
 
 This is an example of the Grid View without variant grouping. Notice how each product variant is shown on a separate card.
 
-<figure><img src="../../../.gitbook/assets/image (4569).png" alt="Grid View without variant grouping" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1212).png" alt="Grid View without variant grouping" width="563"><figcaption></figcaption></figure>
 
 Contrast this to Grid View with variant grouping enabled, and you'll notice each product only has a single card, but the total number of variants is shown.
 
-<figure><img src="../../../.gitbook/assets/image (4571).png" alt="Grid View with variant grouping enabled" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1214).png" alt="Grid View with variant grouping enabled" width="563"><figcaption></figcaption></figure>
 
 Clicking the down arrow on the product's card shows more details for each variant.
 
-<figure><img src="../../../.gitbook/assets/image (4572).png" alt="Displaying variant information" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1215).png" alt="Displaying variant information" width="563"><figcaption></figcaption></figure>
 
 ## ![Product Statistics](<../../../.gitbook/assets/image (4556).png>) Product Statistics
 
@@ -140,9 +143,9 @@ Clicking any stat filters the catalog to display only items that match the selec
 
 ## All Vendors Button
 
-The _Group Product Variants_ button (Grid View only), shows all of the [customization (right-click) options](../../customizations/overview.md) that apply globally to all vendors and products. This is the same as right-clicking the root node of the Product Tree when it is in Tree View.
+The _Group Product Variants_ button (Grid View only) shows all of the [customization (right-click) options](../../customizations/overview.md) that apply globally to all vendors and products. This is the same as right-clicking the root node of the Product Tree when it is in Tree View.
 
-<figure><img src="../../../.gitbook/assets/image (4583).png" alt="All Vendors button" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1218).png" alt="&#x27;All Vendors&#x27; button" width="563"><figcaption></figcaption></figure>
 
 ## Copy Products Button
 
@@ -152,7 +155,7 @@ The _Copy Products_ button synchronizes product selections and/or customizations
 
 The _Expand All Tree Nodes_ button (Tree View only) will either expand or collapse the Product Tree if it is being viewed in Tree View.
 
-<figure><img src="../../../.gitbook/assets/image (4584).png" alt="&#x27;Expand All Tree Nodes&#x27; button" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1219).png" alt="&#x27;Expand All Tree Nodes&#x27; button" width="563"><figcaption></figcaption></figure>
 
 ## ![Filter option](<../../../.gitbook/assets/image (4558).png>) Filters Button
 
