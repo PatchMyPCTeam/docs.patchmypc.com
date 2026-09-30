@@ -72,19 +72,19 @@ A reboot is normally required after installing the ConfigMgr remote console; oth
 _`An error occurred while connecting to Sms provider as System: Unable to find the Assembly: AdminUI.WqlQueryEngine, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 [PatchMyPC_Sccm.AssemblyResolver+AssemblyNotFoundException] HResult: -2146233088`_
 {% endhint %}
 
-If the ConfigMgr Remote Console is _not_ installed, the following message is also indicated in the Publisher when attempting to [Configure the SMS Provider](../../manage/configmgr-apps-tab/base-install-options/connection-source-options.md#configure-sms-provider-connection).
+If the ConfigMgr Remote Console is _not_ installed, the following message is displayed in Publisher under the **CONNECTION AND SOURCE** section of the **Bast Install Options** tab of the **ConfigMgr Apps** tab:
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt="Configure the SMS Provider - Missing SDK" width="563"><figcaption></figcaption></figure>
+`SMS Provider: Failed to connect to SMS Provider: Unable to find the Assembly: AdminUl.WqlQueryEngine, Version=5.0.0.0, Culture- neutral, PublicKeyToken=31bf3856ad364e35`
 
 ## WSUS Role
 
 For Publisher to code-sign PowerShell detection scripts for ConfigMgr applications, the WSUS role must be installed on the Publisher system.
 
-While [limited WSUS API access](../intune-requirements/software.md#install-the-wsus-updateservices-api) may be sufficient for some operations (such as deserializing the Patch My PC Catalog), Publisher can _only_ use code-signing certificates to sign ConfigMgr detection scripts from the WSUS local certificate store.&#x20;
+While [limited WSUS API access](../intune-requirements/software.md#install-the-wsus-updateservices-api) may be sufficient for some operations (such as deserializing the Patch My PC Catalog), Publisher can _only_ use code-signing certificates to sign ConfigMgr detection scripts from the WSUS local certificate store.
 
 Certificates located in other Windows certificate stores are not supported for signing ConfigMgr application detection scripts.
 
-Additionally, the WSUS role is required to publish updates, selected on the [WSUS Updates ](../../manage/wsus-updates-tab/)tab, which are synchronized from WSUS into ConfigMgr during a SUP sync.&#x20;
+Additionally, the WSUS role is required to publish updates, selected on the [WSUS Updates ](../../manage/wsus-updates-tab/)tab, which are synchronized from WSUS into ConfigMgr during a SUP sync.
 
 {% hint style="info" %}
 **Note**
