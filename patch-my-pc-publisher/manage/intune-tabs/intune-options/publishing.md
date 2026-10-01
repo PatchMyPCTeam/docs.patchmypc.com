@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **PUBLISHING** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher controls how Publisher creates, updates, names, organizes, and maintains apps and updates in Intune. These settings apply globally to all apps created from the **Intune Options** tab and directly influence application lifecycle behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (1169).png" alt="Publishing Options" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1276).png" alt="&#x27;PUBLISHING&#x27; section" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Tip**
@@ -14,7 +14,7 @@ Some options in the **Intune Win32 Application Options** section are global defa
 
 ## Digitally sign the detection method script and enforce signature checking on the application in Intune
 
-When the **Digitally sign the detection method script and enforce signature checking on the application in Intune** checkbox is checked, Publisher digitally signs PowerShell-based detection and requirement scripts used by Win32 apps and configures the Win32 app to require signed scripts.
+When the **Digitally sign the detection method script and enforce signature checking on the application in Intune** option is enabled, Publisher digitally signs PowerShell-based detection and requirement scripts used by Win32 apps and configures the Win32 app to require signed scripts.
 
 Specifically, Publisher sets the **Enforce script signature check and run script silently** property on the Win32 app’s detection and/or requirement rule in Intune. This is an application-level setting and does not modify PowerShell execution policy or device security configuration.
 
@@ -22,7 +22,7 @@ Specifically, Publisher sets the **Enforce script signature check and run script
 
 This option is intended for environments that already enforce signed PowerShell scripts, such as those using an AllSigned execution policy or app control solutions like AppLocker or Windows Defender Application Control (WDAC). By signing the detection and requirement scripts and enabling signature enforcement on the app, Publisher allows them to run silently and unblocked where unsigned scripts would otherwise be blocked or require user confirmation.
 
-### To select a code-signing certificate for signing detection and requirement scripts:
+### To select a code-signing certificate for signing detection and requirement scripts
 
 1. Enable Digitally sign the detection method script and enforce signature checking on the app in Intune.
 2. Click **Browse** next to **Select code-signing certificate**.
@@ -39,11 +39,18 @@ This option is intended for environments that already enforce signed PowerShell 
 If Publisher is also being used for WSUS or ConfigMgr publishing, it is acceptable to select the existing WSUS code-signing certificate, if present. This lets you reuse the same trusted certificate for both third-party update publishing and Intune Win32 detection and requirement script signing.
 {% endhint %}
 
-## Copy assignments from the previous release when a new application or update is published
+The rest of this section is split into the following two sections:
+
+* [Application-Specific Options](publishing.md#application-specific-options)
+* [Update-Specific Options](publishing.md#update-specific-options)
+
+## Application-Specific Options
+
+### Copy assignments from the previous release when a new application is published
 
 When creating apps, Publisher applies any assignments that are configured within the Publisher itself. Administrators may sometimes also add or adjust assignments directly in Intune after an app has been created.
 
-When the **Copy assignments from the previous release when a new application or update is published** checkbox is checked, Publisher carries forward all existing assignments from the previous app version when creating a newer version. This includes assignments configured in Publisher and assignments that were manually added in Intune.
+When the **Copy assignments from the previous release when a new application or update is published** option is enabled, Publisher carries forward all existing assignments from the previous app version when creating a newer version. This includes assignments configured in Publisher and assignments that were manually added in Intune.
 
 By enabling the option, the assumption is that any assignments present on the previous app represent the administrator’s intended targeting and should continue to apply to the updated version. This ensures assignment targeting remains consistent across app updates without requiring manual reassignment.
 
@@ -53,9 +60,9 @@ By enabling the option, the assumption is that any assignments present on the pr
 Assignments are copied only at app creation time. Enabling this option after a newer version already exists in Intune does not apply assignments from an older version of the app, retroactively.
 {% endhint %}
 
-## Delete assignments from the previous release when a new application or update is published
+### Delete assignments from the previous release when a new application is published
 
-When the **Delete assignments from the previous release when a new application or update is published** checkbox is checked, Publisher removes assignments from older app versions when a new version is created.
+When the **Delete assignments from the previous release when a new application is published** checkbox is checked, Publisher removes assignments from older app versions when a new version is created.
 
 If app retention is enabled, older Win32 apps may still exist in the Intune admin center and would otherwise remain assigned. Removing assignments from the previous version ensures that only the latest version of the app is targeted to Microsoft Entra ID groups, avoiding multiple versions being deployed unnecessarily to the same devices or users.
 
@@ -65,9 +72,9 @@ If app retention is enabled, older Win32 apps may still exist in the Intune admi
 Assignments are removed only when you create a new app. If this option is enabled after a newer version already exists in Intune, assignments are not removed retroactively.
 {% endhint %}
 
-## Copy dependencies from the previous release when a new application or update is published
+### Copy dependencies from the previous release when a new application is published
 
-When the **Copy dependencies from the previous release when a new application or update is published** checkbox is checked, Publisher keeps app dependencies in Intune aligned as new versions of Patch My PC apps are published.
+When the **Copy dependencies from the previous release when a new application is published** option is enabled, Publisher keeps app dependencies in Intune aligned as new versions of Patch My PC apps are published.
 
 If a Win32 app has dependencies that reference other Win32 apps created by Publisher, Publisher updates those dependency references to point to the latest published versions when a new app version is created. This ensures dependency chains remain valid and up to date without requiring administrators to manually maintain dependencies after each update.
 
@@ -77,29 +84,15 @@ If a Win32 app has dependencies that reference other Win32 apps created by Publi
 Apps that are part of an active dependency chain remain protected from deletion. However, once dependencies are replaced with newer versions, older apps created by Publisher that are no longer referenced may become eligible for deletion based on the app retention policy configured in Publisher.
 {% endhint %}
 
-## Copy requirements from the previous release when a new application or update is published
+### Copy requirements from the previous release when a new application is published
 
-When the **Copy requirements from the previous release when a new application or update is published** checkbox is checked, any customer-defined Win32 requirement rules added to the previous app after it was initially published are copied forward and applied to future Win32 apps created by Publisher.
+When the **Copy requirements from the previous release when a new application is published** option is enabled, any customer-defined Win32 requirement rules added to the previous app after it was initially published are copied forward and applied to future Win32 apps created by Publisher.
 
 {% hint style="info" %}
 **Note**
 
 Requirement rules are copied forward only when you create a new app. If this option is enabled after a newer version already exists in Intune, requirements are not copied retroactively.
 {% endhint %}
-
-### Configure maximum runtime of Win32 applications to _x_ minutes
-
-The **Configure maximum runtime of Win32 applications to&#x20;**_**x**_**&#x20;minutes** option sets the maximum amount of time, in minutes, that a Win32 app is allowed to run during installation in Intune.
-
-The default value is **120** minutes. You can change this value by using the up and down arrows or by entering a custom value directly in the field. The maximum supported value is **1440** minutes.
-
-If an installation exceeds the configured runtime, Intune marks the install as failed. The configured value is automatically applied to all Win32 apps created or updated by Publisher.
-
-This setting is visible on the **Program** tab of the Win32 app's properties in the Intune admin center.
-
-<figure><img src="../../../../.gitbook/assets/image (241).png" alt="Installation time required" width="518"><figcaption></figcaption></figure>
-
-## Application-Specific Options
 
 ### Update Enrollment Status Page associations when an updated application is published
 
@@ -116,6 +109,12 @@ Apps must be explicitly associated with an ESP profile using the [Product Tree](
 
 Updating the ESP association ensures the correct app is referenced during Autopilot, but it does not create or modify app assignments. The newly published app must still be targeted with a **Required** assignment to the devices or groups used during Autopilot.
 {% endhint %}
+
+### Enable 'Allow available uninstall'
+
+When the **Enable 'Allow available uninstall'** option is enabled, Publisher configures Win32 apps in Intune to allow users to uninstall the app from the Company Portal when the app is assigned as **Available**.
+
+<figure><img src="../../../../.gitbook/assets/image (3859).png" alt="Allow available uninstall" width="533"><figcaption></figcaption></figure>
 
 ### Delete any previously created applications when an updated application is published
 
@@ -144,7 +143,7 @@ If older Win32 apps exist in Intune outside of the last 10 tracked versions, Pub
 In these cases, any apps falling outside of the tracked window must be reviewed and cleaned up manually using the [Intune Manager](../intune-manager.md).
 {% endhint %}
 
-### Retention Best Practice
+#### Retention Best Practice
 
 As a general best practice, it is recommended to retain at least one previous version of an app.
 
@@ -165,13 +164,25 @@ This allows time for validation or testing before updating production applicatio
 
 The delay is calculated from the date Publisher first detects the new version.
 
-### Enable 'Allow available uninstall'
+## Update-Specific Options
 
-When the **Enable 'Allow available uninstall'** checkbox is checked, Publisher configures Win32 apps in Intune to allow users to uninstall the app from the Company Portal when the app is assigned as **Available**.
+### Copy assignments from the previous release when a new update is published
 
-<figure><img src="../../../../.gitbook/assets/image (3859).png" alt="Allow available uninstall" width="533"><figcaption></figcaption></figure>
+This option works the same as the [Copy assignments from the previous release when a new update is published](publishing.md#copy-assignments-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
 
-## Update-specific Options
+### Delete assignments from the previous release when a new update is published
+
+This option works the same as the [Delete assignments from the previous release when a new update is published](publishing.md#delete-assignments-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
+
+
+
+
+
+
+
+###
+
+###
 
 ### Delete any previously created updates when a new update is published
 
