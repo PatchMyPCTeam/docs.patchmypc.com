@@ -97,7 +97,7 @@ Publisher communicates with ConfigMgr via the ConfigMgr SDK and interacts with t
 {% hint style="info" %}
 **Note**
 
-Publisher does not interact directly with the ConfigMgr site database, except for read-only access when [scanning application inventory](../manage/configmgr-apps-tab/scan-configmgr.md).
+Publisher does not interact directly with the ConfigMgr site database, except for read-only access when [scanning application inventory](../manage/configmgr-apps-tab/scan-configmgr/).
 {% endhint %}
 
 When the Publisher service is installed on the ConfigMgr Site Server, it runs under the Local System account. In this configuration, the service inherently has the necessary permissions to interact with ConfigMgr as the Site Server’s computer account is already trusted within the ConfigMgr security boundary. No additional role configuration is typically required.

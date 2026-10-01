@@ -108,5 +108,5 @@ These permissions allow Publisher to read the ConfigMgr database views needed to
 {% hint style="info" %}
 **Note**
 
-See [Scan ConfigMgr](../manage/configmgr-apps-tab/scan-configmgr.md) for more information.
+See [Scan ConfigMgr](../manage/configmgr-apps-tab/scan-configmgr/) for more information.
 {% endhint %}

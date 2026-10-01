@@ -88,7 +88,7 @@ This allows you to make informed decisions later about which products to switch 
 
 ### Vendor Level
 
-Selecting a vendor is acceptable when you are confident that the vendor has broad coverage in your environment. For example, organizations with widespread Adobe usage may reasonably choose to select the Adobe vendor rather than managing each product individually.&#x20;
+Selecting a vendor is acceptable when you are confident that the vendor has broad coverage in your environment. For example, organizations with widespread Adobe usage may reasonably choose to select the Adobe vendor rather than managing each product individually.
 
 {% hint style="danger" %}
 **Important**
@@ -108,9 +108,9 @@ This may be undesirable if:
 
 <figure><img src="../../../.gitbook/assets/image (4519).png" alt="(Latest) Version Consideration" width="314"><figcaption></figcaption></figure>
 
-In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](overview.md#product-level-recommended) provides significantly more control over update behavior and helps prevent unintended major-version upgrades.&#x20;
+In this scenario, selecting individual major versions (for example, Cisco Jabber 14) at the [product level](overview.md#product-level-recommended) provides significantly more control over update behavior and helps prevent unintended major-version upgrades.
 
-If your environment standardizes on Jabber 14.x, selecting a **Latest** product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.&#x20;
+If your environment standardizes on Jabber 14.x, selecting a **Latest** product would eventually move devices to Jabber 15.x once it becomes the vendor’s current release, which may not be desirable due to compatibility, change control, or user impact considerations.
 
 For this reason, product-level selection is often the safer and more predictable approach, especially for applications where major upgrades introduce functional changes or require additional validation.
 
@@ -128,15 +128,15 @@ This phased approach reduces risk, improves predictability, and helps ensure tha
 
 If you’re unsure which products exist in your environment, which makes manual product selection difficult, the _Scan ConfigMgr_ feature is often the best starting point.
 
-In ConfigMgr environments, the Scan ConfigMgr feature leverages hardware inventory data from ConfigMgr clients, which provides accurate visibility into installed third-party software.&#x20;
+In ConfigMgr environments, the Scan ConfigMgr feature leverages hardware inventory data from ConfigMgr clients, which provides accurate visibility into installed third-party software.
 
 {% hint style="info" %}
 **Note**
 
-See [Scan ConfigMgr](../../manage/configmgr-apps-tab/scan-configmgr.md) for information on the Scan ConfigMgr feature.
+See [Scan ConfigMgr](../../manage/configmgr-apps-tab/scan-configmgr/) for information on the Scan ConfigMgr feature.
 {% endhint %}
 
-In WSUS-only environments, where hardware inventory data is not available, metadata-only publishing remains the recommended method for identifying applicable updates.&#x20;
+In WSUS-only environments, where hardware inventory data is not available, metadata-only publishing remains the recommended method for identifying applicable updates.
 
 {% hint style="info" %}
 **Note**

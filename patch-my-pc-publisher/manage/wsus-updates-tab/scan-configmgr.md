@@ -17,7 +17,7 @@ The **Scan ConfigMgr** option applies only to ConfigMgr environments. WSUS does 
 
 The **Scan ConfigMgr** option is shared with the same option available under the [ConfigMgr Apps tab](../configmgr-apps-tab/) and behaves identically in both locations. As a result, this option under the **WSUS Updates** tab can be used to configure the same option under the **ConfigMgr Apps** tab, and vice versa.
 
-Whilst the option itself is shared, manually selecting products in the [query](../configmgr-apps-tab/scan-configmgr.md#query) results only enables them on the tab from which the **Scan ConfigMgr** option was launched.
+Whilst the option itself is shared, manually selecting products in the [query](../configmgr-apps-tab/scan-configmgr/#query) results only enables them on the tab from which the **Scan ConfigMgr** option was launched.
 
 For example, launching **Scan ConfigMgr** from the **WSUS Updates** tab enables products for WSUS updates, whereas launching it from the **ConfigMgr Apps** tab enables products as applications.
 {% endhint %}
@@ -25,5 +25,5 @@ For example, launching **Scan ConfigMgr** from the **WSUS Updates** tab enables 
 {% hint style="info" %}
 **Note**
 
-See [Scan ConfigMgr](../configmgr-apps-tab/scan-configmgr.md) for more detailed information.
+See [Scan ConfigMgr](../configmgr-apps-tab/scan-configmgr/) for more detailed information.
 {% endhint %}

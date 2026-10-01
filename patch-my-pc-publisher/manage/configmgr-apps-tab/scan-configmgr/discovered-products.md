@@ -1,4 +1,4 @@
-# Scan ConfigMgr in Patch My PC Publisher
+# Discovered Products section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
@@ -11,7 +11,7 @@ The scan results are then compared against the PMPC catalog to identify matches,
 
 The **Scan ConfigMgr** tab is shared with the tab of the same name under the **WSUS Updates** tab and behaves identically in both locations. As a result, you can use the **Scan ConfigMgr** tab under the **ConfigMgr Apps** tab to configure and control auto-publishing behavior on the **WSUS Updates** tab, and vice versa.
 
-Although the tab is shared, manually selecting products in the [query](scan-configmgr.md#query-button) results enables them only on the tab from which **Scan ConfigMgr** was launched. For example, launching the scan wizard from the **WSUS Updates** tab enables products for updates, whereas launching it from the **ConfigMgr Apps** tab enables products as applications.
+Although the tab is shared, manually selecting products in the [query](discovered-products.md#query-button) results enables them only on the tab from which **Scan ConfigMgr** was launched. For example, launching the scan wizard from the **WSUS Updates** tab enables products for updates, whereas launching it from the **ConfigMgr Apps** tab enables products as applications.
 {% endhint %}
 
 ## SQL Configuration
@@ -22,11 +22,19 @@ To configure the scan, Publisher needs the site database server name and databas
 
 **Monitoring | System Status | Site Status**
 
-<figure><img src="../../../.gitbook/assets/image (1096).png" alt="Monitoring | System Status | Site Status" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1096).png" alt="Monitoring | System Status | Site Status" width="563"><figcaption></figcaption></figure>
 
 Select the **Site database server** site system role. The details shown here provide the correct values to enter into Publisher.
 
-<figure><img src="../../../.gitbook/assets/image (1131).png" alt="Site Database Server" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1256).png" alt="Site Database Server" width="563"><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (1131).png" alt="Site Database Server" width="563"><figcaption></figcaption></figure>
 
 By default, no **Limiting Collection** is specified. When you leave this field empty, the scan for supported products runs against **All Systems**.
 
@@ -42,13 +50,13 @@ When you select a device collection, only the hardware inventory (HINV) data for
 
 The **Scan ConfigMgr** tab runs direct SQL queries against your ConfigMgr site database to inventory installed software. This scan _does not_ use the SMS Provider, so the account performing the scan must have the appropriate SQL permissions on the ConfigMgr database.
 
-<figure><img src="../../../.gitbook/assets/image (1134).png" alt="Connect to ConfigMgr SQL Database As" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1134).png" alt="Connect to ConfigMgr SQL Database As" width="563"><figcaption></figcaption></figure>
 
 Publisher supports multiple ways to authenticate to SQL, allowing flexibility depending on where Publisher is installed and which account has the required permissions:
 
-* [As Windows service account](scan-configmgr.md#as-windows-service-account)
-* [With these credentials using SQL authentication](scan-configmgr.md#with-these-credentials-using-sql-authentication)
-* [Run interactive scan as logged in user](scan-configmgr.md#run-interactive-scan-as-logged-in-user)
+* [As Windows service account](discovered-products.md#as-windows-service-account)
+* [With these credentials using SQL authentication](discovered-products.md#with-these-credentials-using-sql-authentication)
+* [Run interactive scan as logged in user](discovered-products.md#run-interactive-scan-as-logged-in-user)
 
 ### **As Windows service account**
 
@@ -91,24 +99,24 @@ This option does not change how scheduled scans run; it only applies to the inte
 {% hint style="info" %}
 **Note**
 
-See [Microsoft SQL Permission Requirements](../../requirements/configmgr-requirements/permissions.md#microsoft-sql-permission-requirements) for more information.
+See [Microsoft SQL Permission Requirements](../../../requirements/configmgr-requirements/permissions.md#microsoft-sql-permission-requirements) for more information.
 {% endhint %}
 
 ## Auto-Publishing Rules
 
 _Auto-publishing rules_ allow Publisher to automatically enable products for publishing based on what is detected in your ConfigMgr environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party updates current.
 
-<figure><img src="../../../.gitbook/assets/image (1113).png" alt="Auto-Publishing Rules" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1113).png" alt="Auto-Publishing Rules" width="563"><figcaption></figcaption></figure>
 
 When these rules are enabled, Publisher evaluates application inventory data collected by ConfigMgr, compares detected applications against the PMPC catalog, and automatically enables supported products that meet the configured device threshold.
 
 {% hint style="danger" %}
 **Important**
 
-These rules rely on the same ConfigMgr database access and SQL permissions described in the [Connect to ConfigMgr SQL Database As](scan-configmgr.md#connect-to-configmgr-sql-database-as) section.
+These rules rely on the same ConfigMgr database access and SQL permissions described in the [Connect to ConfigMgr SQL Database As](discovered-products.md#connect-to-configmgr-sql-database-as) section.
 {% endhint %}
 
-Auto-publishing rules are evaluated during scheduled [synchronizations](../sync-schedule-tab/). Each time a sync runs, Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
+Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-schedule-tab/). Each time a sync runs, Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
 
 This automation can be extremely powerful, but it’s important to configure it thoughtfully.
 
@@ -123,7 +131,7 @@ This option is commonly used to keep patching coverage up to date as new applica
 
 #### Auto-enable products as "**Metadata Only"** if found, but threshold is not met
 
-Checking the **Auto-enable products as "Metadata Only" if found, but threshold is not met** checkbox works with [Auto-enable products to be published as an update](scan-configmgr.md#auto-enable-products-to-be-published-as-an-update-if-installed-on-at-least-x-devices).
+Checking the **Auto-enable products as "Metadata Only" if found, but threshold is not met** checkbox works with [Auto-enable products to be published as an update](discovered-products.md#auto-enable-products-to-be-published-as-an-update-if-installed-on-at-least-x-devices).
 
 When checked:
 
@@ -135,7 +143,7 @@ This is particularly useful for **early visibility** of newly discovered or low-
 
 ### Auto-enable products to be published as an application if installed on at least _x_ devices
 
-Checking the **Auto-enable products to be published as an application if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox automatically enables products detected in ConfigMgr inventory on the [ConfigMgr Apps](./) tab once they are found on at least the specified number of devices.
+Checking the **Auto-enable products to be published as an application if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox automatically enables products detected in ConfigMgr inventory on the [ConfigMgr Apps](../) tab once they are found on at least the specified number of devices.
 
 When checked:
 
@@ -159,7 +167,7 @@ Whilst it may be tempting to set the device threshold to a very low number (even
 A common and effective approach is:
 
 1. Use **Scan ConfigMgr** to identify products currently installed in your environment.
-2. Enable these products from the [scan wizard query window](scan-configmgr.md#query-button) or [Product Tree](../../fundamentals/product-tree/working.md), and [customize](../../customizations/) those products from the Product Tree (conflicting processes, content options, etc.).
+2. Enable these products from the [scan wizard query window](discovered-products.md#query-button) or [Product Tree](../../../fundamentals/product-tree/working.md), and [customize](../../../customizations/) those products from the Product Tree (conflicting processes, content options, etc.).
 3. Enable auto-publishing rules to catch newly introduced applications over time.
 
 This lets you stay in control initially while still benefiting from automation going forward.
@@ -168,7 +176,7 @@ This lets you stay in control initially while still benefiting from automation g
 
 The _Filters_ section lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.
 
-<figure><img src="../../../.gitbook/assets/image (1115).png" alt="Filters" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1115).png" alt="Filters" width="563"><figcaption></figcaption></figure>
 
 The available filters are:
 
@@ -188,14 +196,14 @@ These filters do not affect detection or auto-publishing behavior directly; they
 
 The _Query_ button performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
 
-<figure><img src="../../../.gitbook/assets/image (1122).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1122).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
 
 When you click the **Query** button, Publisher queries the ConfigMgr site database and displays the results in the list below. The products shown reflect:
 
 * What applications detected in the ConfigMgr HINV match products in the Patch My PC catalog.
 * The device count for each product.
 
-<figure><img src="../../../.gitbook/assets/image (1127).png" alt="Query results" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1127).png" alt="Query results" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -203,7 +211,7 @@ When you click the **Query** button, Publisher queries the ConfigMgr site databa
 The **Query** button does not enable or publish products by itself; it simply retrieves and displays the results based on the current settings, allowing you to review and validate findings before taking further action.
 {% endhint %}
 
-Checking the checkbox beside products in this list to select them is equivalent to manually selecting the same products in the [Product Tree](../../fundamentals/product-tree/working.md) on the **ConfigMgr Apps** tab. Selecting a product here enables it for publishing in the same way as selecting it directly in the Product Tree.
+Checking the checkbox beside products in this list to select them is equivalent to manually selecting the same products in the [Product Tree](../../../fundamentals/product-tree/working.md) on the **ConfigMgr Apps** tab. Selecting a product here enables it for publishing in the same way as selecting it directly in the Product Tree.
 
 {% hint style="danger" %}
 **Important**
@@ -215,7 +223,7 @@ As there is no universal standard for how vendors name applications, inventory r
 
 Clicking the **Count** value beside a product opens the **Devices with Application** window, which shows a detailed view that lists the devices where the product was detected, along with the reported application version on each device.
 
-<figure><img src="../../../.gitbook/assets/image (1128).png" alt="&#x27;Devices with Application&#x27; window" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1128).png" alt="&#x27;Devices with Application&#x27; window" width="450"><figcaption></figcaption></figure>
 
 This detailed view allows you to review inventory results and verify product presence and version distribution before enabling or publishing the product.
 
@@ -230,18 +238,18 @@ Clicking **Export CSV** on the **Devices with Application** window generates a C
 
 Clicking the **Export to CSV** button allows you to export the results from the **Scan ConfigMgr** window to a CSV file.
 
-<figure><img src="../../../.gitbook/assets/image (1129).png" alt="&#x27;Export to CSV&#x27; button" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1129).png" alt="&#x27;Export to CSV&#x27; button" width="563"><figcaption></figcaption></figure>
 
 ### To export the results to a CSV
 
 1. Load Publisher.
 2. Navigate to the **ConfigMgr Apps | Scan ConfigMgr** tab.
-3. Run a [query](scan-configmgr.md#query-button) so that results are displayed in the window.
+3. Run a [query](discovered-products.md#query-button) so that results are displayed in the window.
 4. Click **Export to CSV...**
 5. On the **Export** dialog, click the relevant option for the products you want to export.
 
-<figure><img src="../../../.gitbook/assets/image (1130).png" alt="&#x27;Export&#x27; dialog" width="306"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1130).png" alt="&#x27;Export&#x27; dialog" width="306"><figcaption></figcaption></figure>
 
 6. Browse to the relevant location where you want to save the export file, change the filename if required, then click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (4134).png" alt="Select the save location" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4134).png" alt="Select the save location" width="563"><figcaption></figcaption></figure>
