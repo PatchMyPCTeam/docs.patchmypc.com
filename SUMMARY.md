@@ -471,7 +471,7 @@
             * [Show Certificate in Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/certificate-management/manage-certificates/show.md "Show Certificate")
             * [Export Certificate in Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/certificate-management/manage-certificates/export.md "Export Certificate")
             * [Create a Self-Signed Certificate in Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/certificate-management/manage-certificates/create-self-signed.md "Create Self-Signed")
-        * [Configure SMS Provider Connection section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/configure-sms-provider-connection.md "Configure SMS Provider Connection")
+        * [ConfigMgr Connection section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/configmgr-connection.md "ConfigMgr Connection")
         * [Trigger a Software Update Point Sync section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/trigger-software-update-point-sync.md "Trigger a SUP Sync")
         * [ConfigMgr Component Management section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/configmgr-component-management.md "ConfigMgr Component Management")
         * [Product Management section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/product-management.md "Product Management")
