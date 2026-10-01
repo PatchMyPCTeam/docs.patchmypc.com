@@ -184,20 +184,8 @@ This option works the same as the [Copy requirements from the previous release w
 
 ### Delete any previously created updates when a new update is published
 
-This option works the same as the Delete any previously created applications when an updated application is published option, except for updates.
-
-??&#x20;
-
-
-
-
-
-
-
-
-
-When the **Delete any previously created updates when a new update is published** checkbox is checked, Publisher applies the same retention behavior [described above for applications](publishing.md#delete-any-previously-created-applications-when-an-updated-application-is-published) to Intune Updates.
+This option works the same as the [Delete any previously created applications when an updated application is published](publishing.md#delete-any-previously-created-applications-when-an-updated-application-is-published) option, except for updates.
 
 ### Delay in-place updates of previously created updates by x days
 
-When the **Delay in-place updates of previously created updates by x days** checkbox is checked,  Publisher applies the same delay behavior [described above for applications](publishing.md#delay-in-place-updates-of-previously-created-applications-by-x-days) to Intune Updates.
+This option works the same as the [Delay in-place updates of previously created applications by x days](publishing.md#delay-in-place-updates-of-previously-created-applications-by-x-days) option, except for updates.
