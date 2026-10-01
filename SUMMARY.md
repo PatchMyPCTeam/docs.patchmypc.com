@@ -491,6 +491,7 @@
       * [Base Install Options in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/base-install-options/README.md "Base Install Options")
         * [Connection and Source Options section in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/base-install-options/connection-source-options.md "Connection and Source Options")
         * [Application Creation Options section in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/base-install-options/application-creation-options.md "Application Creation Options")
+        * [When a New Update is Available section in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/base-install-options/when-new-update-available.md "When a New Update is Available")
         * [Content Distribution Options section in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/base-install-options/content-distribution-options.md "Content Distribution Options")
         * [Run ConfigMgr Application Manager in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/base-install-options/run-configmgr-application-manager.md "Run ConfigMgr Application Manager")
       * [Scan ConfigMgr in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/scan-configmgr.md "Scan ConfigMgr")
