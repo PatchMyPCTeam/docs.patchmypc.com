@@ -152,7 +152,7 @@ To delete applications referenced by task sequences, remove them from the task s
 
 #### **Behavior with update in place**
 
-When you select the [Update existing application’s metadata, deployment type, detection method, and content files](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) option, application retention works by first preserving the current version before applying the update.
+When you select the [Update existing application (Default)](when-new-update-available.md#update-existing-application-default) option, application retention works by first preserving the current version before applying the update.
 
 Before updating the application to the new version, Publisher duplicates the existing application and moves its content into a **Retained Apps** folder. Publisher then updates the application in place by removing the existing deployment type and creating a new deployment type for the latest version. This ensures the previous version is retained according to the configured retention count while the application ID remains unchanged.
 
@@ -160,7 +160,7 @@ If the number of applications exceeds the configured retention value, Publisher 
 
 #### **Behavior with create new application**
 
-When the [Create a new application without modifying any previous applications](when-new-update-available.md#create-a-new-application-without-modifying-any-previous-applications) option is selected, application retention is applied across the chain of independently created application objects.
+When you select the [Create a new application](when-new-update-available.md#create-a-new-application) option, application retention is applied across the chain of independently created application objects.
 
 Each new version is created as a separate application. If the number of applications exceeds the configured retention value, Publisher removes the oldest application versions, starting with those that fall outside the retention window.
 
