@@ -85,8 +85,6 @@ If a new version is synchronized on February 3 and the delay is set to 3 days, t
 See [Common Settings](when-new-update-available.md#common-settings) for more information about the other available settings when this option is selected.
 {% endhint %}
 
-
-
 ## Create a new application
 
 When the **Create a new application** option is selected, Publisher creates a new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-application-default), it creates a new application ID for every version.
@@ -118,7 +116,7 @@ The following settings can be enabled and configured regardless of whether **Upd
 
 ### Retain up to _x_ previously created applications
 
-When checked, the **Retain up to x previously created applications** checkbox controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [**update applications in place**](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) or [**create a new application for each version**](when-new-update-available.md#create-a-new-application-without-modifying-any-previous-applications).
+When checked, the **Retain up to x previously created applications** checkbox controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [update applications in place](when-new-update-available.md#update-existing-application-default) or [create a new application for each version.](when-new-update-available.md#create-a-new-application)
 
 Valid values range from **0** (the default) to **10**.
 
