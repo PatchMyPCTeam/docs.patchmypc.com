@@ -21,18 +21,18 @@ The _SMS Provider_ is the interface that enables all interactions with ConfigMgr
 {% hint style="info" %}
 **Note**
 
-The SMS Provider configuration is shared across Publisher. When you configure the SMS Provider from **Connection and Source Options** section, the same settings are automatically used in other areas of Publisher, including [WSUS Options](../../wsus-updates-tab/wsus-options/) and the [Sync Schedule](../../sync-schedule-tab/) tab.
+The SMS Provider configuration is shared across Publisher. When you configure the SMS Provider from the **CONNECTION AND SOURCE** section, the same settings are automatically used in other areas of Publisher, including [WSUS Options](../../wsus-updates-tab/wsus-options/) and the [Sync Schedule](../../sync-schedule-tab/) tab.
 
 See [Configure the SMS Provider Connection](../../../technical-references/configure-sms-provider.md) for details on how to configure the SMS Provider connection.
 {% endhint %}
 
-## Source Folder
+## Source folder
 
-The **Source Folder** field needs to be configured, as every ConfigMgr application relies on a defined content source location for each deployment type. The path specified is the authoritative location where application files are stored and managed before they are distributed to the Content Library and used by clients.
+The **Source folder** field needs to be configured as every ConfigMgr application relies on a defined content source location for each deployment type. The path specified is the authoritative location where application files are stored and managed before they are distributed to the Content Library and used by clients.
 
 The image below correlates a source folder configured in Publisher with the Deployment Type Content Location in ConfigMgr.
 
-<figure><img src="../../../../.gitbook/assets/image (1080).png" alt="Source Folder" width="462"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1250).png" alt="Source folder" width="462"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
