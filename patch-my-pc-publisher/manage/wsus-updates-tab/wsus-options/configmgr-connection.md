@@ -8,21 +8,7 @@ Patch My PC (PMPC) Publisher also relies on the SMS Provider to perform operatio
 
 The **CONFIGMGR CONNECTION** section on the **WSUS Options** tab lets you configure the SMS Provider Connection.
 
-<figure><img src="../../../../.gitbook/assets/image (1232).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
-<figure><img src="/broken/files/99VIHkZfyl7oGpQN3CET" alt="&#x27;CONFIGMGR CONNECTION&#x27; section" width="563"><figcaption></figcaption></figure>
-
-
-
-
-
-
-
-<figure><img src="../../../../.gitbook/assets/image (782).png" alt="Configure SMS Provider Connection" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1232).png" alt="&#x27;CONFIGMGR CONNECTION&#x27; section" width="563"><figcaption></figcaption></figure>
 
 As the SMS Provider configuration is shared across Publisher, when you configure the SMS Provider from any of the following locations, the same settings are automatically used in other areas of Publisher:
 
