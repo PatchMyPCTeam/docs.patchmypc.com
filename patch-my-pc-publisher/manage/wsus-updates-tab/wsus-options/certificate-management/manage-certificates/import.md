@@ -10,9 +10,9 @@ To import a PFX certificate:
 
 1. Load Publisher.
 2. Navigate to **WSUS Updates | WSUS Options**.&#x20;
-3. Under the **Certificate Management** section, click the **Import** button.
+3. Under the **Manage certificate** section, click **Import**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (763).png" alt="Clicking the &#x27;Import&#x27; button under the &#x27;Certificate Management&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1227).png" alt="Clicking &#x27;Import&#x27; under the &#x27;Manage certificate&#x27; section" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**

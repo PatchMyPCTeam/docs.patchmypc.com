@@ -12,9 +12,9 @@ To create a self-signed code-signing certificate:
 
 1. Load Publisher.
 2. Navigate to **WSUS Updates | WSUS Options**.&#x20;
-3. Under the **Certificate Management** section, click the **Create Self-Signed** button.
+3. Under the **Manage certificate** section, click **Create Self-Signed**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (778).png" alt="Clicking the &#x27;Create-Self-Sgined&#x27; button under the &#x27;Certificate Management&#x27; section"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1230).png" alt="Clicking &#x27;Create-Self-Signed&#x27; under the &#x27;Maange certificate&#x27; section" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -37,9 +37,9 @@ If Publisher detects an existing valid certificate, the **Overwrite Current Cert
 
 <figure><img src="../../../../../../.gitbook/assets/image (780).png" alt="&#x27;Certificate Created Successfully&#x27; dialog" width="464"><figcaption></figcaption></figure>
 
-The **Certificate Management** section updates to show the certificate is valid and its expiry date.
+The **SIGNING CERTIFICATE** section updates to show the certificate is valid and its expiry date.
 
-<figure><img src="../../../../../../.gitbook/assets/image (781).png" alt="&#x27;Certificate Management&#x27; section updating" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1231).png" alt="&#x27;SIGNING CERTIFICATE&#x27; section updating to show the certificate is valid and its expiry date" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**

@@ -10,9 +10,9 @@ To export a certificate:
 
 1. Load Publisher.
 2. Navigate to **WSUS Updates | WSUS Options**.&#x20;
-3. Under the **Certificate Management** section, click the **Export** button.
+3. Under the **Manage certificate** section, click **Export**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (773).png" alt="Clicking the &#x27;Export&#x27; button under the &#x27;Certificate Management&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1229).png" alt="Clicking &#x27;Export&#x27; under the &#x27;Manage certificate&#x27; section" width="563"><figcaption></figcaption></figure>
 
 4. Choose a name and location for the exported certificate and click **Save**.\
    \
