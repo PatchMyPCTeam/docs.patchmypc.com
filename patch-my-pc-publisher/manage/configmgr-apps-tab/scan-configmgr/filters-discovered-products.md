@@ -2,21 +2,23 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **FILTERS** and **DISCOVERED APPS** sections on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
+The **FILTERS** and **DISCOVERED APPS** sections on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher help you filter and display the results of the scan
 
 ## Filters
 
-The _Filters_ section lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.
+The **FILTERS** section lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.
 
-<figure><img src="../../../../.gitbook/assets/image (1115).png" alt="Filters" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1264).png" alt="&#x27;FILTERS&#x27; section" width="563"><figcaption></figcaption></figure>
 
 The available filters are:
 
 * **Product-** Filter results by product name to focus on specific applications.
 * **Vendor -** Filter results by software vendor.
-* **Count -** Filter products based on how many devices they are detected on. This is useful when reviewing products that meet (or fall below) your auto-publishing device threshold.
-* **Include/Exclude already enabled products -** Controls whether products already enabled in the Product Tree are shown in the results. Excluding already enabled products helps you focus on newly discovered applications.
 * **Languages -** Filters results by the application's language.
+* **Count -** Filter products based on how many devices they are detected on. This is useful when reviewing products that meet (or fall below) your auto-publishing device threshold.
+* **Already enabled products -** Controls whether products already enabled in the Product Tree are shown in the results. Excluding already enabled products helps you focus on newly discovered applications.
+
+Clicking **Clear Filter** clears all filters.
 
 {% hint style="info" %}
 **Note**
@@ -24,18 +26,24 @@ The available filters are:
 These filters do not affect detection or auto-publishing behavior directly; they only control what is displayed, helping you validate and review scan results before taking action.
 {% endhint %}
 
+## Discovered Products
+
+The **DISCOVERED PRODUCTS** section shows the results of the [query](filters-discovered-products.md#query-button).
+
+<figure><img src="../../../../.gitbook/assets/image (1265).png" alt="&#x27;DISCOVERED PRODUCTS&#x27; section" width="563"><figcaption></figcaption></figure>
+
 ## Query button
 
 The _Query_ button performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
 
-<figure><img src="../../../../.gitbook/assets/image (1122).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1266).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
 
-When you click the **Query** button, Publisher queries the ConfigMgr site database and displays the results in the list below. The products shown reflect:
+When you click **Query**, Publisher queries the ConfigMgr site database and displays the results in the **DISCOVERED PRODUCTS**  section. The products shown reflect:
 
 * What applications detected in the ConfigMgr HINV match products in the Patch My PC catalog.
 * The device count for each product.
 
-<figure><img src="../../../../.gitbook/assets/image (1127).png" alt="Query results" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1267).png" alt="Query results" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -68,15 +76,15 @@ Clicking **Export CSV** on the **Devices with Application** window generates a C
 
 ## Export to CSV button&#x20;
 
-Clicking the **Export to CSV** button allows you to export the results from the **Scan ConfigMgr** window to a CSV file.
+Clicking **Export to CSV** allows you to export the results from the **Scan ConfigMgr** window to a CSV file.
 
-<figure><img src="../../../../.gitbook/assets/image (1129).png" alt="&#x27;Export to CSV&#x27; button" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1268).png" alt="Export to CSV " width="563"><figcaption></figcaption></figure>
 
 ### To export the results to a CSV
 
 1. Load Publisher.
 2. Navigate to the **ConfigMgr Apps | Scan ConfigMgr** tab.
-3. Run a [query](filters-discovered-products.md#query-button) so that results are displayed in the window.
+3. Run a [query](filters-discovered-products.md#query-button) to display results in the window.
 4. Click **Export to CSV...**
 5. On the **Export** dialog, click the relevant option for the products you want to export.
 
