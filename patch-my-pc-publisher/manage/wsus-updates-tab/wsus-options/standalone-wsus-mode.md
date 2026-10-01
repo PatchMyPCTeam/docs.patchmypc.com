@@ -10,7 +10,7 @@ This mode is intended only for environments that manage updates using WSUS stand
 
 ## Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager
 
-Checking the **Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager** checkbox (unchecked by default) enables Standalone WSUS Mode, which controls whether locally published third party updates are visible in the WSUS console.&#x20;
+Enabling the **Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager** option (which isn't by default) enables Standalone WSUS Mode, which controls whether locally published third party updates are visible in the WSUS console.&#x20;
 
 When Standalone WSUS Mode is enabled, Publisher marks updates as locally published so they appear in the WSUS console and can be viewed and managed directly in WSUS.
 
@@ -22,7 +22,7 @@ If ConfigMgr is present and managing software updates, you should not check this
 
 ## Use SYSTEM account when connecting to the SQL database or define a custom account below
 
-The **Use SYSTEM account when connecting to the SQL database or define a custom account below** checkbox controls how Publisher connects to the WSUS SQL database when Standalone WSUS Mode is enabled.
+When enabled, the **Use SYSTEM account when connecting to the SQL database or define a custom account below** option controls how Publisher connects to the WSUS SQL database when Standalone WSUS Mode.
 
 {% hint style="success" %}
 **Tip**
@@ -30,9 +30,9 @@ The **Use SYSTEM account when connecting to the SQL database or define a custom 
 If your WSUS database uses the Windows Internal Database (WID), the database connection options are read-only. In this scenario, you don't need or use SQL credentials.
 {% endhint %}
 
-If checked, Publisher connects to the WSUS database using the local SYSTEM account of the machine where Publisher is installed. This is the recommended and default option for most WSUS standalone deployments, as the SYSTEM account typically already has the required permissions to access the WSUS database.
+If enabled, Publisher connects to the WSUS database using the local SYSTEM account of the machine where Publisher is installed. This is the recommended and default option for most WSUS standalone deployments, as the SYSTEM account typically already has the required permissions to access the WSUS database.
 
-If you don't check this box, you can specify a custom SQL login instead by entering the credentials in the **SQL Login** and **SQL Password** fields. This may be required in environments where WSUS uses a remote SQL Server or where security policies restrict SYSTEM account access. In that case, the specified SQL account must have sufficient permissions to read and update the WSUS database.
+If you don't enable this option, you can specify a custom SQL login instead by entering the credentials in the **SQL Login** and **SQL Password** fields. This may be required in environments where WSUS uses a remote SQL Server or where security policies restrict SYSTEM account access. In that case, the specified SQL account must have sufficient permissions to read and update the WSUS database.
 
 {% hint style="info" %}
 **Note**
