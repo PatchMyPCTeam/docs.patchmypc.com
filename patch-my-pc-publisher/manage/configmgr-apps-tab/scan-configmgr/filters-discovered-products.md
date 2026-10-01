@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **FILTERS** and **DISCOVERED APPS** sections on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher help you filter and display the results of the scan
+The **FILTERS** and **DISCOVERED APPS** sections on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher help you filter and display the results of the scan.
 
 ## Filters
 
@@ -34,7 +34,7 @@ The **DISCOVERED PRODUCTS** section shows the results of the [query](filters-dis
 
 ## Query button
 
-The _Query_ button performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
+Clicking **Query** performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
 
 <figure><img src="../../../../.gitbook/assets/image (1266).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
 
