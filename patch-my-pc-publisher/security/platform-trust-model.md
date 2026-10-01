@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 A _trust model_ defines how a management platform determines whether software may be installed on managed devices. It establishes the security boundary between published content and endpoint installation.
 
-Whilst Patch My PC (PMPC) Publisher validates vendor binaries before publishing, validation alone does not grant permission to install software.&#x20;
+Whilst Patch My PC (PMPC) Publisher validates vendor binaries before publishing, validation alone does not grant permission to install software.
 
 Each management platform must independently trust the content before it can be deployed to client devices. This separation ensures customers retain full control over installation and enforcement decisions.
 
@@ -24,14 +24,14 @@ After Publisher validates the vendor binary and confirms its hash matches the ca
 
 For a client device to install a third-party update from WSUS, two trust conditions must be met:
 
-1. The Group Policy setting **Allow signed updates from an intranet Microsoft update service location** must be enabled. \
+1. The Group Policy setting **Allow signed updates from an intranet Microsoft update service location** must be enabled.\
    \
    This policy allows Windows to trust updates that are not signed directly by Microsoft but are signed by a locally trusted publisher.
 2. The WSUS code-signing certificate must be trusted on the client device. The certificate must be present in the **Trusted Publishers** store of the Local Computer certificate store. Without this trust, the update will be rejected during installation.
 
-If the WSUS signing certificate is issued by a public or enterprise certification authority that is already trusted by the device, no additional configuration is required.&#x20;
+If the WSUS signing certificate is issued by a public or enterprise certification authority that is already trusted by the device, no additional configuration is required.
 
-However, if a self-signed certificate is used, that certificate must also be present in the **Trusted Root Certification Authorities** store on the Local Computer.&#x20;
+However, if a self-signed certificate is used, that certificate must also be present in the **Trusted Root Certification Authorities** store on the Local Computer.
 
 Without placement in both the Trusted Publishers and Trusted Root stores, signature validation will fail, and the update will not install.
 
@@ -52,7 +52,7 @@ See [Certificate Requirements](../requirements/certificate-requirements.md) for 
 
 ## ConfigMgr Trust Model
 
-In both [Updates](platform-trust-model.md#configmgr-updates) and [Applications](platform-trust-model.md#configmgr-applications) scenarios, publishing actions are authenticated and authorized within the customer’s ConfigMgr security boundary.&#x20;
+In both [Updates](platform-trust-model.md#configmgr-updates) and [Applications](platform-trust-model.md#configmgr-applications) scenarios, publishing actions are authenticated and authorized within the customer’s ConfigMgr security boundary.
 
 Client devices never communicate directly with Publisher. They communicate only with ConfigMgr Site Systems (such as Management Points (MPs) and Distribution Points (DPs)), which enforce policy, content validation, and deployment controls.
 
@@ -74,7 +74,7 @@ This is done through ConfigMgr security roles and administrative user configurat
 See [Remote SUP Requirements](../requirements/configmgr-requirements/sup-requirements/remote-sup.md) for more information.
 {% endhint %}
 
-ConfigMgr clients receive policy from the MP, which includes software update configuration, intranet update service location settings, and certificate trust requirements.&#x20;
+ConfigMgr clients receive policy from the MP, which includes software update configuration, intranet update service location settings, and certificate trust requirements.
 
 When properly configured, ConfigMgr can automatically enable the required Group Policy-equivalent settings that allow signed updates from an intranet Microsoft Update service location.
 
@@ -88,11 +88,11 @@ See [Choosing a Certificate](../manage/wsus-updates-tab/wsus-options/certificate
 
 ### ConfigMgr Applications
 
-For ConfigMgr applications, the trust model differs from software updates. Applications are created directly in ConfigMgr and distributed to DPs within the customer’s infrastructure.&#x20;
+For ConfigMgr applications, the trust model differs from software updates. Applications are created directly in ConfigMgr and distributed to DPs within the customer’s infrastructure.
 
 Installation trust is enforced through ConfigMgr’s content distribution system, client policy evaluation, and internal infrastructure security controls.
 
-Publisher communicates with ConfigMgr via the ConfigMgr SDK and interacts with the SMS Provider, following standard management practices. All operations are performed through supported APIs and adhere to ConfigMgr’s role-based access control model.&#x20;
+Publisher communicates with ConfigMgr via the ConfigMgr SDK and interacts with the SMS Provider, following standard management practices. All operations are performed through supported APIs and adhere to ConfigMgr’s role-based access control model.
 
 {% hint style="info" %}
 **Note**
@@ -102,17 +102,17 @@ Publisher does not interact directly with the ConfigMgr site database, except fo
 
 When the Publisher service is installed on the ConfigMgr Site Server, it runs under the Local System account. In this configuration, the service inherently has the necessary permissions to interact with ConfigMgr as the Site Server’s computer account is already trusted within the ConfigMgr security boundary. No additional role configuration is typically required.
 
-If Publisher is installed on a remote server, the server's computer account (for example, **SERVERNAME$**) must be granted the appropriate permissions within ConfigMgr.&#x20;
+If Publisher is installed on a remote server, the server's computer account (for example, **SERVERNAME$**) must be granted the appropriate permissions within ConfigMgr.
 
 This is accomplished through ConfigMgr security roles and the configuration of administrative users. The remote computer account is added as an administrative user and assigned a role that grants the required permissions for application creation and management.
 
-In all scenarios, publishing actions are authenticated and authorized through ConfigMgr’s native security framework.&#x20;
+In all scenarios, publishing actions are authenticated and authorized through ConfigMgr’s native security framework.
 
 Client devices never communicate directly with Publisher. They communicate only with ConfigMgr components such as MPs and DPs, which enforce policy, content validation, and deployment controls.
 
-#### PowerShell Script Signing Option&#xD;
+#### PowerShell Script Signing Option
 
-For environments enforcing an **AllSigned** PowerShell execution policy, Publisher provides the option to [sign generated scripts using a customer-supplied code-signing certificate](../manage/configmgr-apps-tab/base-install-options/application-creation-options.md#code-sign-the-powershell-detection-method-script-using-the-wsus-signing-certificate).
+For environments enforcing an **AllSigned** PowerShell execution policy, Publisher provides the option to [sign generated scripts using a customer-supplied code-signing certificate](../manage/configmgr-apps-tab/base-install-options/application-creation.md#code-sign-the-powershell-detection-method-script-using-the-wsus-signing-certificate).
 
 This allows organizations with strict PowerShell execution controls to maintain compliance with internal security standards whilst still leveraging automated application and update deployment.
 
@@ -162,7 +162,7 @@ This ensures that installation occurs only on authorized, managed, and policy-co
 
 #### PowerShell Script Signing Option
 
-For environments enforcing an **AllSigned** PowerShell execution policy, Publisher provides the option to [sign generated scripts using a customer-supplied code-signing certificate](../manage/configmgr-apps-tab/base-install-options/application-creation-options.md#code-sign-the-powershell-detection-method-script-using-the-wsus-signing-certificate).
+For environments enforcing an **AllSigned** PowerShell execution policy, Publisher provides the option to [sign generated scripts using a customer-supplied code-signing certificate](../manage/configmgr-apps-tab/base-install-options/application-creation.md#code-sign-the-powershell-detection-method-script-using-the-wsus-signing-certificate).
 
 This allows organizations with strict PowerShell execution controls to maintain compliance with internal security standards while still leveraging automated application and update deployment.
 

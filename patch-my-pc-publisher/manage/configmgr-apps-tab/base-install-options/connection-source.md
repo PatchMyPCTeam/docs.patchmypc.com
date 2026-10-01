@@ -1,8 +1,8 @@
-# Connection and Source Options section in Patch My PC Publisher
+# Connection and Source section in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Connection and Source Options** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
+The **CONNECTION AND SOURCE** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
 
 {% hint style="danger" %}
 **Important**

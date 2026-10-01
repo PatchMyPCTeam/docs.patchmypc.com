@@ -103,7 +103,7 @@ Manually modifying, moving, or deleting folders within this structure can cause 
 {% hint style="info" %}
 **Note**
 
-See [Connection and Source Options](../../manage/configmgr-apps-tab/base-install-options/connection-source-options.md) for more information.
+See [Connection and Source Options](../../manage/configmgr-apps-tab/base-install-options/connection-source.md) for more information.
 {% endhint %}
 
 ## Microsoft SQL Permission Requirements

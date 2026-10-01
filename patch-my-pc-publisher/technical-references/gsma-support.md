@@ -55,7 +55,7 @@ This access must be granted at both the share and NTFS permission levels.
 {% hint style="info" %}
 **Note**
 
-See [ConfigMgr Connection and Source Options](../manage/configmgr-apps-tab/base-install-options/connection-source-options.md) for more information.
+See [ConfigMgr Connection and Source Options](../manage/configmgr-apps-tab/base-install-options/connection-source.md) for more information.
 {% endhint %}
 
 ### WSUS and Certificate Access

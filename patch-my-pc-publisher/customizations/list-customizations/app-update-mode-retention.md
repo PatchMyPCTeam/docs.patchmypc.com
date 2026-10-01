@@ -9,7 +9,7 @@ The **App Update Mode & Retention** right-click option in Patch My PC (PMPC) Pub
 {% hint style="info" %}
 **Note**
 
-Global behavior for application updates and retention is configured under the [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) section of the [Base Install Options](../../manage/configmgr-apps-tab/base-install-options/) tab.
+Global behavior for application updates and retention is configured under the [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation.md) section of the [Base Install Options](../../manage/configmgr-apps-tab/base-install-options/) tab.
 {% endhint %}
 
 ## When Overrides Are Useful
@@ -22,7 +22,7 @@ By configuring a product-level override, you can retain more versions for specif
 
 ## Configuring Overrides
 
-Overrides configured using the **App Update Mode & Retention** right-click option take precedence over the global options (defined on the under the [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) section of the [Base Install Options](../../manage/configmgr-apps-tab/base-install-options/) tab), and are applied only to the selected vendor or product during publishing.
+Overrides configured using the **App Update Mode & Retention** right-click option take precedence over the global options (defined on the under the [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation.md) section of the [Base Install Options](../../manage/configmgr-apps-tab/base-install-options/) tab), and are applied only to the selected vendor or product during publishing.
 
 ### To configure **Application Update Mode**
 
@@ -48,5 +48,5 @@ The override is evaluated and applied during the next Publisher [synchronization
 {% hint style="info" %}
 **Note**
 
-See [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md) for more details about Application and Retention Settings.
+See [Application Creation Options](../../manage/configmgr-apps-tab/base-install-options/application-creation.md) for more details about Application and Retention Settings.
 {% endhint %}

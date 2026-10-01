@@ -54,7 +54,7 @@ Token values are populated from the Publisher catalog definition. These values a
 {% hint style="warning" %}
 **Important**
 
-If the ConfigMgr apps global option to [Do not include the version in the application name](../../manage/configmgr-apps-tab/base-install-options/application-creation-options.md#do-not-include-the-version-in-the-application-name) is enabled, the **%OriginalName%** token will also omit the version number. In this scenario, the original name resolves to the product name and variant/architecture only, without the version suffix.
+If the ConfigMgr apps global option to [Do not include the version in the application name](../../manage/configmgr-apps-tab/base-install-options/application-creation.md#do-not-include-the-version-in-the-application-name) is enabled, the **%OriginalName%** token will also omit the version number. In this scenario, the original name resolves to the product name and variant/architecture only, without the version suffix.
 {% endhint %}
 
 ## **To configure** Custom Application Properties

@@ -1,4 +1,4 @@
-# Application Creation Options section in Patch My PC Publisher
+# Application Creation section in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
@@ -145,7 +145,7 @@ The settings under **When a New Application Update is Available** section contro
 
 ### Update existing application’s metadata, deployment type, detection method, and content files (Default)
 
-When the **Update existing application’s metadata, deployment type, detection method, and content files** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications).
+When the **Update existing application’s metadata, deployment type, detection method, and content files** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](application-creation.md#create-a-new-application-without-modifying-any-previous-applications).
 
 This is the default option and is commonly used because the application ID does not change in ConfigMgr when we update it to the new version. By keeping the same application ID:
 
@@ -203,7 +203,7 @@ If a new version is synchronized on February 3 and the delay is set to 3 days, t
 
 ### Create a new application without modifying any previous applications
 
-When the **Create a new application without modifying any previous applications** option is selected, Publisher creates a brand-new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
+When the **Create a new application without modifying any previous applications** option is selected, Publisher creates a brand-new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](application-creation.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
 
 This option is commonly used when administrators want to preserve each application version independently or avoid modifying existing application objects. It is also best suited for environments where strict version control is required, and task sequences are updated intentionally.
 
@@ -215,12 +215,12 @@ Because a new application is created each time:
 {% hint style="info" %}
 **Note**
 
-The option to **Create a new application without modifying any previous applications** can result in application sprawl over time if older versions are not cleaned up. For this reason, it is commonly used together with [application retention settings](application-creation-options.md#retain-up-to-x-previously-created-applications) to limit the number of older application versions kept in the environment.
+The option to **Create a new application without modifying any previous applications** can result in application sprawl over time if older versions are not cleaned up. For this reason, it is commonly used together with [application retention settings](application-creation.md#retain-up-to-x-previously-created-applications) to limit the number of older application versions kept in the environment.
 {% endhint %}
 
 ### Retain up to x previously created applications
 
-When checked, the **Retain up to x previously created applications** checkbox controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [**update applications in place**](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) or [**create a new application for each version**](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications).
+When checked, the **Retain up to x previously created applications** checkbox controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [**update applications in place**](application-creation.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) or [**create a new application for each version**](application-creation.md#create-a-new-application-without-modifying-any-previous-applications).
 
 Valid values range from **0** (the default) to **10**.
 
@@ -256,7 +256,7 @@ To delete applications referenced by task sequences, remove them from the task s
 
 #### **Behavior with update in place**
 
-When you select the [Update existing application’s metadata, deployment type, detection method, and content files](application-creation-options.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) option, application retention works by first preserving the current version before applying the update.
+When you select the [Update existing application’s metadata, deployment type, detection method, and content files](application-creation.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) option, application retention works by first preserving the current version before applying the update.
 
 Before updating the application to the new version, Publisher duplicates the existing application and moves its content into a **Retained Apps** folder. Publisher then updates the application in place by removing the existing deployment type and creating a new deployment type for the latest version. This ensures the previous version is retained according to the configured retention count while the application ID remains unchanged.
 
@@ -264,7 +264,7 @@ If the number of applications exceeds the configured retention value, Publisher 
 
 #### **Behavior with create new application**
 
-When the [Create a new application without modifying any previous applications](application-creation-options.md#create-a-new-application-without-modifying-any-previous-applications) option is selected, application retention is applied across the chain of independently created application objects.
+When the [Create a new application without modifying any previous applications](application-creation.md#create-a-new-application-without-modifying-any-previous-applications) option is selected, application retention is applied across the chain of independently created application objects.
 
 Each new version is created as a separate application. If the number of applications exceeds the configured retention value, Publisher removes the oldest application versions, starting with those that fall outside the retention window.
 
@@ -275,7 +275,7 @@ By default, all administrative categories assigned to a ConfigMgr application ar
 {% hint style="danger" %}
 **Important**
 
-The **Remove administrative categories from retained applications** checkbox is only available when the [Retain up to X previously created applications](application-creation-options.md#retain-up-to-x-previously-created-applications) setting is configured.
+The **Remove administrative categories from retained applications** checkbox is only available when the [Retain up to X previously created applications](application-creation.md#retain-up-to-x-previously-created-applications) setting is configured.
 {% endhint %}
 
 When checked, this option removes administrative categories from retained (older) application versions. Only the latest published application keeps the assigned administrative categories.
@@ -293,7 +293,7 @@ When the **Delete applications even if they have a deployment** checkbox is chec
 {% hint style="danger" %}
 **Important**
 
-The **Delete applications even if they have a deployment** checkbox is only available when the [Retain up to X previously created applications](application-creation-options.md#retain-up-to-x-previously-created-applications) setting is configured.
+The **Delete applications even if they have a deployment** checkbox is only available when the [Retain up to X previously created applications](application-creation.md#retain-up-to-x-previously-created-applications) setting is configured.
 {% endhint %}
 
 This option provides flexibility for environments where older application deployments are no longer required but may still exist, allowing retention cleanup to proceed without the need for manual intervention to remove a deployment(s).

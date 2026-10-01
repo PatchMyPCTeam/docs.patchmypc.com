@@ -11,5 +11,5 @@ When enabled, Publisher triggers a ConfigMgr Software Update Point (SUP) sync af
 {% hint style="danger" %}
 **Important**
 
-Before you can use enable this option, you need to [configure the SMS Provider connection](../configmgr-apps-tab/base-install-options/connection-source-options.md#configure-sms-provider-connection).
+Before you can use enable this option, you need to [configure the SMS Provider connection](../configmgr-apps-tab/base-install-options/connection-source.md#configure-sms-provider-connection).
 {% endhint %}
