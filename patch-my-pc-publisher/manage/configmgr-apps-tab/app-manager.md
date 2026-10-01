@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 Clicking the **App Manager** tab under the **ConfigMgr Apps** section in Patch My PC (PMPC) Publisher opens **App Manager**, which lets you view and manage applications in ConfigMgr that were created using Publisher. It provides a centralized interface to review application properties, deployments, task sequence usage, and dependency relationships before performing application cleanup.
 
-<figure><img src="../../../.gitbook/assets/image (728).png" alt="&#x27;App Manager&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1270).png" alt="App Manager" width="563"><figcaption></figcaption></figure>
 
 App Manager queries the ConfigMgr SMS Provider and displays only applications published by Publisher.
 
@@ -48,17 +48,17 @@ Clearing the search field restores the full list of results.
 
 ## Refresh button
 
-Clicking the **Refresh** button refreshes the data from ConfigMgr to ensure the application information displayed is up-to-date.
+Clicking **Refresh** refreshes the data from ConfigMgr to ensure the application information displayed is up-to-date.
 
 ## Select All/Select None buttons
 
-The **Select All** button selects every application currently visible in the list. This is commonly used when performing bulk actions such as deleting multiple applications.
+Clicking **Select All** selects every application currently visible in the list. This is commonly used when performing bulk actions such as deleting multiple applications.
 
-The **Select None** button clears any current selection.
+Clicking **Select None** clears any current selection.
 
 ## Extract Content button
 
-The **Extract Content** button copies the source content of the selected applications to a folder. This action is commonly used to review, validate, or back up application files before making cleanup decisions in ConfigMgr.
+Clicking **Extract Content** copies the source content of the selected applications to a folder. This action is commonly used to review, validate, or back up application files before making cleanup decisions in ConfigMgr.
 
 Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**. When multiple applications are selected, the **Extract Content** action processes each application in a single operation and stages the content together.
 
@@ -100,7 +100,7 @@ If the destination folder does not already exist, it is created automatically du
 
 ## Delete Deployment(s) button&#x20;
 
-The **Delete Deployment(s)** button removes all ConfigMgr deployments associated with the selected applications. This action does not delete the applications themselves.
+Clicking **Delete Deployment(s)** removes all ConfigMgr deployments associated with the selected applications. This action does not delete the applications themselves.
 
 The **Deployments** column shows the total number of deployments for each application. Reviewing this column before proceeding helps confirm the scope of the action.
 
@@ -121,7 +121,7 @@ After confirmation, Publisher removes the deployments from ConfigMgr. The applic
 
 ## Delete Application(s) button
 
-The **Delete Application(s)** button deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
+Clicking **Delete Application(s)** deletes all the selected applications. Multiple applications can be selected at the same time using **Ctrl + Click** or **Shift + Click**.
 
 ### To delete one or more applications
 
