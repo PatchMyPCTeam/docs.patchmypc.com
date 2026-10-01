@@ -174,17 +174,27 @@ This option works the same as the [Copy assignments from the previous release wh
 
 This option works the same as the [Delete assignments from the previous release when a new update is published](publishing.md#delete-assignments-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
 
+### Copy dependencies from the previous release when a new update is published
 
+This option works the same as the [Copy dependencies from the previous release when a new application is published](publishing.md#copy-dependencies-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
 
+### Copy requirements from the previous release when a new update is published
 
-
-
-
-###
-
-###
+This option works the same as the [Copy requirements from the previous release when a new application is published](publishing.md#copy-requirements-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
 
 ### Delete any previously created updates when a new update is published
+
+This option works the same as the Delete any previously created applications when an updated application is published option, except for updates.
+
+??&#x20;
+
+
+
+
+
+
+
+
 
 When the **Delete any previously created updates when a new update is published** checkbox is checked, Publisher applies the same retention behavior [described above for applications](publishing.md#delete-any-previously-created-applications-when-an-updated-application-is-published) to Intune Updates.
 
