@@ -166,26 +166,12 @@ The delay is calculated from the date Publisher first detects the new version.
 
 ## Update-Specific Options
 
-### Copy assignments from the previous release when a new update is published
+The following options in this section behave the same regardless of whether they apply to applications or updates. Clicking a link takes you to the relevant section:
 
-This option works the same as the [Copy assignments from the previous release when a new update is published](publishing.md#copy-assignments-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
+* [Copy assignments from the previous release when a new update is published](publishing.md#copy-assignments-from-the-previous-release-when-a-new-application-is-published)
+* [Delete assignments from the previous release when a new update is published](publishing.md#delete-assignments-from-the-previous-release-when-a-new-application-is-published)
+* [Copy dependencies from the previous release when a new update is published](publishing.md#copy-dependencies-from-the-previous-release-when-a-new-application-is-published)
+* [Copy requirements from the previous release when a new update is published](publishing.md#copy-requirements-from-the-previous-release-when-a-new-application-is-published)
+* [Delete any previously created applications when an updated update is published](publishing.md#delete-any-previously-created-applications-when-an-updated-application-is-published)
+* [Delay in-place updates of previously created updates by x days](publishing.md#delay-in-place-updates-of-previously-created-applications-by-x-days).
 
-### Delete assignments from the previous release when a new update is published
-
-This option works the same as the [Delete assignments from the previous release when a new update is published](publishing.md#delete-assignments-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
-
-### Copy dependencies from the previous release when a new update is published
-
-This option works the same as the [Copy dependencies from the previous release when a new application is published](publishing.md#copy-dependencies-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
-
-### Copy requirements from the previous release when a new update is published
-
-This option works the same as the [Copy requirements from the previous release when a new application is published](publishing.md#copy-requirements-from-the-previous-release-when-a-new-application-is-published) option, except for updates.
-
-### Delete any previously created updates when a new update is published
-
-This option works the same as the [Delete any previously created applications when an updated application is published](publishing.md#delete-any-previously-created-applications-when-an-updated-application-is-published) option, except for updates.
-
-### Delay in-place updates of previously created updates by x days
-
-This option works the same as the [Delay in-place updates of previously created applications by x days](publishing.md#delay-in-place-updates-of-previously-created-applications-by-x-days) option, except for updates.
