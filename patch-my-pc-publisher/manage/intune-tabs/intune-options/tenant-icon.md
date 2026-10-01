@@ -7,9 +7,9 @@ The **TENANT ICON** section on the **Intune Options** tab of Patch My PC (PMPC) 
 ## To configure an icon
 
 1. Click **Upload Icon**
-2. Browse to the location containing the required icon (the supported file types are shown in the **TENANT ICON** section) and select.
-
-The icon appears.
+2. Browse to the location containing the required icon (the supported file types are shown in the **TENANT ICON** section) and select it.\
+   \
+   The icon appears.
 
 <figure><img src="../../../../.gitbook/assets/image (1279).png" alt="Configured icon" width="563"><figcaption></figcaption></figure>
 
