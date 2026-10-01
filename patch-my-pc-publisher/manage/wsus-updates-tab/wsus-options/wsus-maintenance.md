@@ -2,9 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **WSUS Maintenance** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher provides options to help manage and clean up third party update content stored in WSUS.&#x20;
+The **WSUS MAINTENANCE** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher provides options to help manage and clean up third party update content stored in WSUS.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1043).png" alt="&#x27;WSUS Maintenance&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1244).png" alt="&#x27;WSUS MAINTENANCE&#x27; section" width="563"><figcaption></figcaption></figure>
 
 These options are designed to reduce disk usage, remove unused content, and prevent long-term WSUS performance and stability issues caused by accumulated third party updates.
 
@@ -14,7 +14,7 @@ These actions cannot be triggered manually. If enabled, they run at the end of a
 
 Unreferenced folders typically occur when updates are declined, expire, or are deleted, but the associated content is not removed. Reviewing these folders helps identify orphaned content you can safely clean up.
 
-Clicking the **Show Unreferenced WSUS Folders** button triggers the scanning of the WSUS content directory and identifies folders that are no longer referenced by any updates in the WSUS database, with the results being shown on the **Unreferenced WSUS Folders** screen.
+Clicking **Show Unreferenced WSUS Folders** triggers the scanning of the WSUS content directory and identifies folders that are no longer referenced by any updates in the WSUS database, with the results being shown on the **Unreferenced WSUS Folders** screen.
 
 <figure><img src="../../../../.gitbook/assets/image (1044).png" alt="&#x27;Unreferenced WSUS Folders&#x27; screen" width="563"><figcaption></figcaption></figure>
 
@@ -32,7 +32,7 @@ Use this option to safely reclaim disk space after reviewing the list of unrefer
 
 ## Enable the automatic deletion and cleanup of the UpdateServicesPackages folder for declined third-party-updates
 
-When the **Enable the automatic deletion and cleanup of the UpdateServicesPackages folder for declined third-party-updates** checkbox is checked (which it is by default), Publisher automatically removes WSUS content associated with declined or deleted third party updates.
+When the **Enable the automatic deletion and cleanup of the UpdateServicesPackages folder for declined third-party-updates** option is enabled (which it is by default), Publisher automatically removes WSUS content associated with declined or deleted third party updates.
 
 This cleanup runs after a successful Publisher synchronization. The process performs two actions:
 
@@ -43,13 +43,13 @@ This option helps prevent long-term WSUS content growth and reduces disk usage w
 
 ### Only delete declined Patch My PC third-party updates
 
-When the **Only delete declined Patch My PC third-party updates** checkbox is checked (which it is by default), automatic cleanup is limited to updates published by Patch My PC. Content from other third party catalogs such as Ivanti, Dell, HP, or Lenovo is not removed, even if those updates are declined.
+When the **Only delete declined Patch My PC third-party updates** option is enabled (which it is by default), automatic cleanup is limited to updates published by Patch My PC. Content from other third party catalogs such as Ivanti, Dell, HP, or Lenovo is not removed, even if those updates are declined.
 
 If this option is unchecked, the cleanup process also applies to declined third party updates from other vendors. This can be useful in environments where multiple catalogs have been used historically, and broad cleanup is required.
 
 ## Automatically run the Unneeded updates files cleanup action in the WSUS Cleanup Wizard
 
-Checking the **Automatically run the Unneeded updates files cleanup action in the WSUS Cleanup Wizard** checkbox (which isn't checked by default) causes Publisher to automatically run the WSUS Server Cleanup Wizard action that removes unneeded update files.
+When the **Automatically run the Unneeded updates files cleanup action in the WSUS Cleanup Wizard** option is enabled (which isn't checked by default), Publisher will automatically run the WSUS Server Cleanup Wizard action that removes unneeded update files.
 
 This action helps clean up unused content in the WSUS content directory and complements the UpdateServicesPackages cleanup by removing additional unused files managed by WSUS.
 

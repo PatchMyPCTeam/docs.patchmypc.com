@@ -18,7 +18,7 @@ By default, when an update is republished, Publisher appends a timestamp to the 
 
 ## Do not append republished updates with a republished datetime
 
-If the **Do not append republished updates with a republished datetime** checkbox is checked, the republished update keeps the original update name, and no timestamp is added.&#x20;
+If the **Do not append republished updates with a republished datetime** option is enabled, the republished update keeps the original update name, and no timestamp is added.&#x20;
 
 The update is still republished and supersedes the previous revision (if that option was selected during republishing), but the name shows no visible indication that a republish occurred.
 
