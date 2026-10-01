@@ -62,7 +62,7 @@ Assignments are copied only at app creation time. Enabling this option after a n
 
 ### Delete assignments from the previous release when a new application is published
 
-When the **Delete assignments from the previous release when a new application is published** checkbox is checked, Publisher removes assignments from older app versions when a new version is created.
+When the **Delete assignments from the previous release when a new application is published** option is enabled, Publisher removes assignments from older app versions when a new version is created.
 
 If app retention is enabled, older Win32 apps may still exist in the Intune admin center and would otherwise remain assigned. Removing assignments from the previous version ensures that only the latest version of the app is targeted to Microsoft Entra ID groups, avoiding multiple versions being deployed unnecessarily to the same devices or users.
 
@@ -96,7 +96,7 @@ Requirement rules are copied forward only when you create a new app. If this opt
 
 ### Update Enrollment Status Page associations when an updated application is published
 
-When the **Update Enrollment Status Page associations when an updated application is published** checkbox is checked, Publisher automatically updates Enrollment Status Page (ESP) app associations to reference the latest version of a Win32 app created by Publisher.
+When the **Update Enrollment Status Page associations when an updated application is published** option is enabled, Publisher automatically updates Enrollment Status Page (ESP) app associations to reference the latest version of a Win32 app created by Publisher.
 
 If a new version of an app is published and that app is already referenced by an ESP profile, Publisher replaces the older application version in the ESP association.
 
@@ -118,7 +118,7 @@ When the **Enable 'Allow available uninstall'** option is enabled, Publisher con
 
 ### Delete any previously created applications when an updated application is published
 
-When the **Delete any previously created applications when an updated application is published** checkbox is checked, Publisher controls how many older Win32 app versions are retained in Intune when a new version is published.
+When the **Delete any previously created applications when an updated application is published** option is enabled, Publisher controls how many older Win32 app versions are retained in Intune when a new version is published.
 
 If this option is _not_ enabled, previously created app versions are never automatically removed and will continue to exist in the Intune tenant indefinitely.
 
@@ -153,7 +153,7 @@ The appropriate retention value ultimately depends on your organization’s upda
 
 ### Delay in-place updates of previously created applications by x days
 
-When the **Delay in-place updates of previously created applications by x days** checkbox is checked, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
+When the **Delay in-place updates of previously created applications by x days** option is enabled, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
 
 * The delay is calculated from the date Publisher first detects the new version.
 * This allows time for validation or testing before updating production apps.
