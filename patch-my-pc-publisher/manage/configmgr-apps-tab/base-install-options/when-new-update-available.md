@@ -1,6 +1,5 @@
 ---
 hidden: true
-noIndex: true
 ---
 
 # When a New Update is Available section in Patch My PC Publisher
@@ -11,13 +10,16 @@ The **WHEN A NEW UPDATE IS AVAILABLE** section on the **Base Install Options** t
 
 <figure><img src="../../../../.gitbook/assets/image (1253).png" alt="&#x27;WHEN A NEW UPDATE IS AVAILABLE&#x27; section" width="563"><figcaption></figcaption></figure>
 
+In this section, you can choose either:
 
+* [Update existing application (Default)](when-new-update-available.md#update-existing-application-default)
+* [Create a new application](when-new-update-available.md#create-a-new-application)
 
+{% hint style="info" %}
+**Note**
 
-
-
-
-
+Some settings apply to both options as detailed in [Common Settings](when-new-update-available.md#common-settings).
+{% endhint %}
 
 ## Update existing application (Default)
 
@@ -87,16 +89,23 @@ See [Common Settings](when-new-update-available.md#common-settings) for more inf
 
 ## Create a new application
 
-
+When the **Create a new application** option is selected, Publisher creates a new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
 
 <figure><img src="../../../../.gitbook/assets/image (1254).png" alt="Create a new application" width="563"><figcaption></figcaption></figure>
 
+This option is commonly used when administrators want to preserve each application version independently or avoid modifying existing application objects. It is also best suited for environments where strict version control is required, and task sequences are updated intentionally.
 
+Because a new application is created each time:
+
+* Task sequences that reference older application versions will continue to install those versions until they are manually updated to reference the new application.
+* Existing required and available deployments remain associated only with the original application and do not automatically apply to the newly created application.
 
 {% hint style="info" %}
 **Note**
 
-See [Common Settings](when-new-update-available.md#common-settings) for more information about the other available settings when this option is selected.
+The option to **Create a new application** can result in application sprawl over time if older versions are not cleaned up. For this reason, it is commonly used together with [application retention settings](when-new-update-available.md#retain-up-to-x-previously-created-applications) to limit the number of older application versions kept in the environment.
+
+Also, see [Common Settings](when-new-update-available.md#common-settings) for more information about the other available settings when this option is selected.
 {% endhint %}
 
 ## Common Settings
@@ -186,28 +195,3 @@ The **Delete applications even if they have a deployment** checkbox is only avai
 {% endhint %}
 
 This option provides flexibility for environments where older application deployments are no longer required but may still exist, allowing retention cleanup to proceed without the need for manual intervention to remove a deployment(s).
-
-
-
-
-
-
-
-\*\*\*\*\*
-
-### Create a new application without modifying any previous applications
-
-When the **Create a new application without modifying any previous applications** option is selected, Publisher creates a brand-new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
-
-This option is commonly used when administrators want to preserve each application version independently or avoid modifying existing application objects. It is also best suited for environments where strict version control is required, and task sequences are updated intentionally.
-
-Because a new application is created each time:
-
-* Task sequences that reference older application versions will continue to install those versions until they are manually updated to reference the new application.
-* Existing required and available deployments remain associated only with the original application and do not automatically apply to the newly created application.
-
-{% hint style="info" %}
-**Note**
-
-The option to **Create a new application without modifying any previous applications** can result in application sprawl over time if older versions are not cleaned up. For this reason, it is commonly used together with [application retention settings](when-new-update-available.md#retain-up-to-x-previously-created-applications) to limit the number of older application versions kept in the environment.
-{% endhint %}
