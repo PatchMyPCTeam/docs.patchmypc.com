@@ -2,6 +2,8 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
+The **FILTERS** and **DISCOVERED APPS** sections on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
+
 ## Filters
 
 The _Filters_ section lets you narrow the scan results shown in the list below, making it easier to review and manage products that may be later auto-enabled for publishing as updates.

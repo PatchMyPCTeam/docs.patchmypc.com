@@ -2,6 +2,10 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
+The **AUTOPUBLISHING RULES** section on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
+
+
+
 ## Auto-Publishing Rules
 
 _Auto-publishing rules_ allow Publisher to automatically enable products for publishing based on what is detected in your ConfigMgr environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party updates current.
