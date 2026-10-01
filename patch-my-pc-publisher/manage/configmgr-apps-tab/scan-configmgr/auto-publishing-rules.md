@@ -2,42 +2,38 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **AUTOPUBLISHING RULES** section on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
+The **AUTO-PUBLISHING RULES** section on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher defines how Publisher connects to Microsoft Configuration Manager (ConfigMgr) and where it stores application source content.
 
-
-
-## Auto-Publishing Rules
+<figure><img src="/broken/files/kDYOhUFKAhNgrRgROs2f" alt="&#x27;AUTO-PUBLISHING RULES&#x27; section" width="563"><figcaption></figcaption></figure>
 
 _Auto-publishing rules_ allow Publisher to automatically enable products for publishing based on what is detected in your ConfigMgr environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party updates current.
-
-<figure><img src="../../../../.gitbook/assets/image (1113).png" alt="Auto-Publishing Rules" width="563"><figcaption></figcaption></figure>
 
 When these rules are enabled, Publisher evaluates application inventory data collected by ConfigMgr, compares detected applications against the PMPC catalog, and automatically enables supported products that meet the configured device threshold.
 
 {% hint style="danger" %}
 **Important**
 
-These rules rely on the same ConfigMgr database access and SQL permissions described in the [Connect to ConfigMgr SQL Database As](auto-publishing-rules.md#connect-to-configmgr-sql-database-as) section.
+These rules rely on the same ConfigMgr database access and SQL permissions described in the [Connect to ConfigMgr SQL Database As](sql-configuration.md#connect-to-configmgr-sql-database-as) section.
 {% endhint %}
 
 Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-schedule-tab/). Each time a sync runs, Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
 
 This automation can be extremely powerful, but it’s important to configure it thoughtfully.
 
-### Auto-enable products to be published as an update if installed on at least _x_ devices
+## Auto-enable products to be published as an update
 
-When the **Auto-enable products to be published as an update if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox is checked, products detected in ConfigMgr inventory are automatically enabled on the **WSUS Updates** tab once they are found on at least the specified number of devices.
+When the **Auto-enable products to be published as an update** option is enabled, products detected in ConfigMgr inventory are automatically enabled on the **WSUS Updates** tab once they are found on at least the specified number of devices.
 
 * The device count acts as a threshold to prevent enabling products seen only on a small number of devices.
 * Once enabled, updates for the product are published according to your existing sync and deployment processes.
 
 This option is commonly used to keep patching coverage up to date as new applications appear in the environment.
 
-#### Auto-enable products as "**Metadata Only"** if found, but threshold is not met
+### Also publish as **Metadata Only when** found but the threshold is not met
 
-Checking the **Auto-enable products as "Metadata Only" if found, but threshold is not met** checkbox works with [Auto-enable products to be published as an update](auto-publishing-rules.md#auto-enable-products-to-be-published-as-an-update-if-installed-on-at-least-x-devices).
+The **Also publish as Metadata Only when found but the threshold is not met** option works with [Auto-enable products to be published as an update.](auto-publishing-rules.md#auto-enable-products-to-be-published-as-an-update)
 
-When checked:
+When enabled:
 
 * Products detected below the configured device threshold are enabled as Metadata Only.
 * No update content is downloaded or stored in WSUS.
@@ -45,9 +41,9 @@ When checked:
 
 This is particularly useful for **early visibility** of newly discovered or low-prevalence applications without immediately introducing update content into the environment.
 
-### Auto-enable products to be published as an application if installed on at least _x_ devices
+## Auto-enable products to be published as an application
 
-Checking the **Auto-enable products to be published as an application if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox automatically enables products detected in ConfigMgr inventory on the [ConfigMgr Apps](../) tab once they are found on at least the specified number of devices.
+Enabling the **Auto-enable products to be published as an application** option automatically enables products detected in ConfigMgr inventory on the [ConfigMgr Apps](../) tab once they are found on at least the specified number of devices.
 
 When checked:
 
@@ -56,7 +52,7 @@ When checked:
 
 This option is typically used in environments that want application lifecycle management to be driven directly from inventory data.
 
-### Device Threshold Best Practice
+## Device Threshold Best Practice
 
 Patch My PC releases several hundred new applications per month, so it’s entirely possible for a scheduled scan to detect multiple new products. When low device thresholds are used, auto-publishing can enable these products very quickly, ensuring new additions don’t go unnoticed.&#x20;
 
