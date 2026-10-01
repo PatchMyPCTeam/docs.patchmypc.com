@@ -2,7 +2,15 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Modify Published Updates** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher is used to manage third party updates that have already been published to WSUS.&#x20;
+The **MODIFY PUBLISHED UPDATES** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher is used to manage third party updates that have already been published to WSUS.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1242).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt="&#x27;Modify Published Updates&#x27; section" width="563"><figcaption></figcaption></figure>
 
