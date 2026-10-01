@@ -2,7 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Update Republishing Options** section on the **WSUS Options** tab in Patch My PC (PMPC) Publisher controls how republished third party updates are named. Republishing is required when an existing update needs to be replaced due to changes in content or metadata.
+The **UPDATE REPUBLISHING** section on the **WSUS Options** tab in Patch My PC (PMPC) Publisher controls how republished third party updates are named. Republishing is required when an existing update needs to be replaced due to changes in content or metadata.
+
+<figure><img src="../../../../.gitbook/assets/image (1241).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (1009).png" alt="&#x27;Update Republishing Options&#x27; section" width="563"><figcaption></figcaption></figure>
 
