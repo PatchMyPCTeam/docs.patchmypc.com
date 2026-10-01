@@ -2,9 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **ConfigMgr Component Management** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher shows the **WSUS Configuration Manager (WCM)** component status. This section is primarily used during initial onboarding and troubleshooting scenarios where Microsoft Configuration Manager (ConfigMgr) needs to immediately re-evaluate WSUS configuration data.
+The **CONFIGMGR COMPONENT MANAGEMENT** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher shows the status of the **WSUS Configuration Manager (WCM)** **component**. This section is primarily used during initial onboarding and troubleshooting scenarios where Microsoft Configuration Manager (ConfigMgr) needs to immediately re-evaluate WSUS configuration data.
 
-<figure><img src="../../../../.gitbook/assets/image (1007).png" alt="&#x27;ConfigMgr Component Management&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1238).png" alt="&#x27;CONFIGMGR COMPONENT MANAGEMENT&#x27; section" width="563"><figcaption></figcaption></figure>
 
 When you publish your first Patch My PC update, the update is written to WSUS, but ConfigMgr does not become aware of the new PMPC product category until it reprocesses WSUS configuration data. Normally, this happens during a Software Update Point (SUP) synchronization.
 
