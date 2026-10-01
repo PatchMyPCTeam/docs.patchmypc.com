@@ -6,7 +6,7 @@ The **Intune Apps** and **Intune Updates** tabs in Patch My PC (PMPC) Publisher 
 
 Third-party applications _and_ updates appear in the **All Apps** node in the Intune Admin Center.
 
-<figure><img src="../../../.gitbook/assets/image (729).png" alt="Applications and Updates appear in the All Apps view in the Intune Admin Center" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1271).png" alt="Applications and Updates appear in the All Apps view in the Intune Admin Center" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
