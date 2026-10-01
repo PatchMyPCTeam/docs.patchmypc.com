@@ -4,17 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **PRODUCTS** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher manages the **Patch My PC** update category in Microsoft Configuration Manager (ConfigMgr). This category must be enabled for third-party updates published by PMPC to be synchronized by the Software Update Point (SUP).
 
-<figure><img src="../../../../.gitbook/assets/image (1240).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
-
-
-
-
-<figure><img src="../../../../.gitbook/assets/image (1008).png" alt="&#x27;Product Management&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1240).png" alt="&#x27;PRODUCTS&#x27; section" width="563"><figcaption></figcaption></figure>
 
 Checking the **Selected in ConfigMgr** checkbox (or leaving it selected if it is already checked) ensures that the corresponding **Patch My PC** product category is also selected in the **ConfigMgr Console** under:
 
@@ -65,7 +55,7 @@ See [ConfigMgr Component Management](configmgr-component-management.md) section 
 
 ## Logging
 
-PMPC product information obtained from the SUP component properties in ConfigMgr, and the result of toggling the checkbox, are recorded in the **PatchMyPC-SmsProviderConfigMgrRepository.log** located at:
+PMPC product information is obtained from the SUP component properties in ConfigMgr, and the result of toggling the checkbox is recorded in the **PatchMyPC-SmsProviderConfigMgrRepository.log** located at:
 
 _**%ProgramFiles%**_**\Patch My PC\Patch My PC Publishing Service\Logs**
 
