@@ -34,9 +34,15 @@ or
 `HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall`
 {% endhint %}
 
-## Version&#x20;
+## Version
 
 In the **Version** field, enter the version number for this app.
+
+{% hint style="danger" %}
+**Important**
+
+The format used in the **Version** field needs to match a .NET **System.Version**. See [Version Format Requirements for Custom Apps](../custom-apps-reference/version-format-requirements.md) for more information.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (4212).png" alt="&#x27;Version&#x27; setting" width="563"><figcaption></figcaption></figure>
 
@@ -50,7 +56,7 @@ Detection uses this field to determine if the app is installed by looking for a 
 `HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall`
 {% endhint %}
 
-## Language&#x20;
+## Language
 
 In the **Language** field, either type the language for this app or select it from the dropdown list.
 
@@ -148,7 +154,7 @@ The **Use Custom** can only be used if the **Installer Type** for this app is co
 
 During uninstall, **PatchMyPC-Scriptrunner** scans the _Uninstall_ registry key and looks for a subkey that matches the application name.
 
-* Once found, it uses the `QuietUninstallString` command from that subkey to perform the uninstall. If this String Value doesn't exist, then the information from `UninstallString` will be used.&#x20;
+* Once found, it uses the `QuietUninstallString` command from that subkey to perform the uninstall. If this String Value doesn't exist, then the information from `UninstallString` will be used.
 * If no match is found, the process will exit with return code 65535 (see `PatchMyPC-ScriptRunner.log` for details).
 
 If you specify **Additional Silent Uninstall Parameters**, these will be appended to the `UninstallString` - not to the main installation file.
