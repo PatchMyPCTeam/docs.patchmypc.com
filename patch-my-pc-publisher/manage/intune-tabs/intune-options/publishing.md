@@ -1,8 +1,8 @@
-# Publishing Options section of Patch My PC Publisher
+# Publishing section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Publishing Options** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher controls how Publisher creates, updates, names, organizes, and maintains apps and updates in Intune. These settings apply globally to all apps created from the **Intune Options** tab and directly influence application lifecycle behavior.
+The **PUBLISHING** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher controls how Publisher creates, updates, names, organizes, and maintains apps and updates in Intune. These settings apply globally to all apps created from the **Intune Options** tab and directly influence application lifecycle behavior.
 
 <figure><img src="../../../../.gitbook/assets/image (1169).png" alt="Publishing Options" width="563"><figcaption></figcaption></figure>
 
@@ -175,8 +175,8 @@ When the **Enable 'Allow available uninstall'** checkbox is checked, Publisher c
 
 ### Delete any previously created updates when a new update is published
 
-When the **Delete any previously created updates when a new update is published** checkbox is checked, Publisher applies the same retention behavior [described above for applications](publishing-options.md#delete-any-previously-created-applications-when-an-updated-application-is-published) to Intune Updates.
+When the **Delete any previously created updates when a new update is published** checkbox is checked, Publisher applies the same retention behavior [described above for applications](publishing.md#delete-any-previously-created-applications-when-an-updated-application-is-published) to Intune Updates.
 
 ### Delay in-place updates of previously created updates by x days
 
-When the **Delay in-place updates of previously created updates by x days** checkbox is checked,  Publisher applies the same delay behavior [described above for applications](publishing-options.md#delay-in-place-updates-of-previously-created-applications-by-x-days) to Intune Updates.
+When the **Delay in-place updates of previously created updates by x days** checkbox is checked,  Publisher applies the same delay behavior [described above for applications](publishing.md#delay-in-place-updates-of-previously-created-applications-by-x-days) to Intune Updates.

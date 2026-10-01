@@ -1,4 +1,4 @@
-# Client Credentials for Patch My PC  Publisher
+# Client Credentials for Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
@@ -14,7 +14,7 @@ Although Publisher supports both methods, [certificate-based authentication](cli
 {% hint style="success" %}
 **Tip**
 
-Certificate-based authentication is recommended because it uses a _"something you have"_ security model rather than a _"something you know"_ model. The private key is stored securely on the device where Publisher is installed and is never transmitted or shared.&#x20;
+Certificate-based authentication is recommended because it uses a _"something you have"_ security model rather than a _"something you know"_ model. The private key is stored securely on the device where Publisher is installed and is never transmitted or shared.
 
 Authentication succeeds only if the calling service can prove possession of the private key, making it significantly harder to compromise than a client secret, which is simply a string value that can be copied, leaked, or reused from elsewhere.
 
@@ -24,7 +24,7 @@ This approach aligns with Microsoft’s security best practices for service-to-s
 {% hint style="info" %}
 **Note**
 
-See the [Credentials (including certificates and secrets)](https://learn.microsoft.com/entra/identity-platform/security-best-practices-for-app-registration#credentials-including-certificates-and-secrets) section of [Security best practices for application properties in Microsoft Entra ID](https://learn.microsoft.com/entra/identity-platform/security-best-practices-for-app-registration) for more guidance on why a certificate should be used instead of a client secret.&#x20;
+See the [Credentials (including certificates and secrets)](https://learn.microsoft.com/entra/identity-platform/security-best-practices-for-app-registration#credentials-including-certificates-and-secrets) section of [Security best practices for application properties in Microsoft Entra ID](https://learn.microsoft.com/entra/identity-platform/security-best-practices-for-app-registration) for more guidance on why a certificate should be used instead of a client secret.
 {% endhint %}
 
 ## Use a Certificate for Authentication
@@ -47,7 +47,7 @@ To use a Certificate for Authentication:
 {% hint style="info" %}
 **Note**
 
-The steps below detail how to create a self-signed certificate for client authentication. However, this is not the only supported option. If your organization has an established PKI and your PKI administrators provide a client authentication certificate, you may use that certificate instead.&#x20;
+The steps below detail how to create a self-signed certificate for client authentication. However, this is not the only supported option. If your organization has an established PKI and your PKI administrators provide a client authentication certificate, you may use that certificate instead.
 
 As long as the certificate meets Entra ID requirements and the private key is installed in the Local Machine certificate store on the server where Publisher is installed, Publisher can use it for authentication in the same way as a self-signed certificate.
 
@@ -116,7 +116,7 @@ Finally, you need to configure Publisher to use the Certificate.
 {% hint style="info" %}
 **Note**
 
-See [Authentication Settings](../../../manage/intune-tabs/intune-options/authentication-settings.md) for more details on using the certificate for authentication.
+See [Authentication Settings](../../../manage/intune-tabs/intune-options/authentication.md) for more details on using the certificate for authentication.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (4754).png" alt="Intune &#x27;Authentication Settings&#x27;" width="563"><figcaption></figcaption></figure>
@@ -174,7 +174,7 @@ Finally, you need to configure Publisher to use the Client Secret.
 {% hint style="info" %}
 **Note**
 
-See [Authentication Settings](../../../manage/intune-tabs/intune-options/authentication-settings.md) for more details on using the Client Secret for authentication.
+See [Authentication Settings](../../../manage/intune-tabs/intune-options/authentication.md) for more details on using the Client Secret for authentication.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (4755).png" alt="Intune &#x27;Authentication Settings&#x27;" width="563"><figcaption></figcaption></figure>

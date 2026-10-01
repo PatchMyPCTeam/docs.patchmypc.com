@@ -54,7 +54,7 @@ The following **Publishing Options** apply to only Intune Updates:
 
 Configure Overrides
 
-Overrides can be configured both globally under the [Publishing Options](../../manage/intune-tabs/intune-options/publishing-options.md) section of the [Intune tabs](../../manage/intune-tabs/), or by using the **Override Win32 Options** right-click option.
+Overrides can be configured both globally under the [Publishing Options](../../manage/intune-tabs/intune-options/publishing.md) section of the [Intune tabs](../../manage/intune-tabs/), or by using the **Override Win32 Options** right-click option.
 
 {% hint style="danger" %}
 **Important**
@@ -70,7 +70,7 @@ Any overrides configured at the Vendor/Product level take precedence over the gl
 {% hint style="info" %}
 **Note**
 
-See [Publishing Options](../../manage/intune-tabs/intune-options/publishing-options.md) for more information about each option.
+See [Publishing Options](../../manage/intune-tabs/intune-options/publishing.md) for more information about each option.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (4778).png" alt="Override Win32 Options" width="563"><figcaption></figcaption></figure>

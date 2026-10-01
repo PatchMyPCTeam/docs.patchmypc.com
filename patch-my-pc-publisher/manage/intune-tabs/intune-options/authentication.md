@@ -1,12 +1,12 @@
-# Authentication Settings section of Patch My PC Publisher
+# Authentication section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Authentication Settings** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher defines how Publisher authenticates with Entra ID and communicates with Microsoft Intune using a Microsoft Entra ID application registration. These settings are required before Publisher can create, update, or manage Win32 applications and updates in Intune.
+The **AUTHENTICATION** section on the **Intune Options** tab of Patch My PC (PMPC) Publisher defines how Publisher authenticates with Entra ID and communicates with Microsoft Intune using a Microsoft Entra ID application registration. These settings are required before Publisher can create, update, or manage Win32 applications and updates in Intune.
 
 This section establishes the trust relationship between Publisher and your Intune tenant by configuring the tenant authority, application identifier, and authentication method. Authentication can be performed using either a client secret or a certificate, depending on your organization's security requirements.
 
-<figure><img src="../../../../.gitbook/assets/image (730).png" alt="&#x27;Authentication Settings&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1273).png" alt="&#x27;AUTHENTICATION&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Tenant Friendly Name
 
@@ -56,7 +56,7 @@ The **Graph Base URL** defines the Microsoft Graph endpoint used for Intune and 
 
 ## Restore button
 
-Clicking the **Restore** button beside either the **Authentication URL** or the **Graph Base URL** fields, resets them to the recommended default values.
+Clicking **Restore** beside either the **Authentication URL** or the **Graph Base URL** fields resets them to the recommended default values.
 
 ## Application (Client) ID
 
@@ -87,11 +87,11 @@ Certificate-based authentication is the recommended client credential to use for
 
 Whichever client credential method you use, its expiry date is shown below the credential field.
 
-<figure><img src="../../../../.gitbook/assets/image (249).png" alt="Credential expiration date" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1275).png" alt="Credential expiration date" width="563"><figcaption></figcaption></figure>
 
 ## Test Connection button
 
-Clicking the **Test Connection** button validates authentication, connectivity, and the required API permissions.
+Clicking **Test Connection** validates authentication, connectivity, and the required API permissions.
 
 The results are shown on the **App Registration Connection Status** screen, confirming if Publisher can successfully connect to the Intune tenant via Microsoft Graph and that all required Microsoft Graph permissions are available. When the test completes successfully and all permissions show as enabled, Publisher is ready to publish applications and updates to Intune.
 

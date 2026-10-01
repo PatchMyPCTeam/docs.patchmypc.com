@@ -145,13 +145,13 @@ Use this option when you want assignment configuration to be centrally managed a
 
 ## Copy Assignments from Previous Versions Consideration
 
-When the [Copy assignments from the previous release when a new application or update is published](../../../manage/intune-tabs/intune-options/publishing-options.md#copy-assignments-from-the-previous-release-when-a-new-application-or-update-is-published) option is enabled under the [Publishing Options](../../../manage/intune-tabs/intune-options/publishing-options.md) section of the [Intune Options](../../../manage/intune-tabs/intune-options/) tab, Intune assignments from the previous application or update version are automatically copied forward when a new version is published.
+When the [Copy assignments from the previous release when a new application or update is published](../../../manage/intune-tabs/intune-options/publishing.md#copy-assignments-from-the-previous-release-when-a-new-application-or-update-is-published) option is enabled under the [Publishing Options](../../../manage/intune-tabs/intune-options/publishing.md) section of the [Intune Options](../../../manage/intune-tabs/intune-options/) tab, Intune assignments from the previous application or update version are automatically copied forward when a new version is published.
 
 This behavior applies even if assignments were removed using the **Manage Assignments** option. In this scenario, Publisher does not recreate the removed assignments, but copies them forward from the previous version as part of the Win32 app creation process.
 
 If you do not want assignments to be copied forward, remove the unwanted assignments from the existing version in Intune by using [Intune Manager](../../../manage/intune-tabs/intune-manager.md). This ensures the previous version no longer contains those assignments, preventing them from being inherited by newer versions.
 
-Alternatively, you can disable the copy forward behavior entirely by disabling the [Copy requirements from previous release when a new application or update is published](../../../manage/intune-tabs/intune-options/publishing-options.md#copy-requirements-from-previous-release-when-a-new-application-or-update-is-published) option under the [Publishing Options](../../../manage/intune-tabs/intune-options/publishing-options.md) section of the [Intune Options](../../../manage/intune-tabs/intune-options/) tab.
+Alternatively, you can disable the copy forward behavior entirely by disabling the [Copy requirements from previous release when a new application or update is published](../../../manage/intune-tabs/intune-options/publishing.md#copy-requirements-from-previous-release-when-a-new-application-or-update-is-published) option under the [Publishing Options](../../../manage/intune-tabs/intune-options/publishing.md) section of the [Intune Options](../../../manage/intune-tabs/intune-options/) tab.
 
 {% hint style="success" %}
 **Tip**
