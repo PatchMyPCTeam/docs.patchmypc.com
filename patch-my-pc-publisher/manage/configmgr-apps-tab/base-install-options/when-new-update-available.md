@@ -23,7 +23,7 @@ Some settings apply to both options as detailed in [Common Settings](when-new-up
 
 ## Update existing application (Default)
 
-When the **Update existing application (Default)** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](when-new-update-available.md#create-a-new-application-without-modifying-any-previous-applications).
+When the **Update existing application (Default)** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](when-new-update-available.md#create-a-new-application).
 
 This is the default option and is commonly used because the application ID does not change in ConfigMgr when we update it to the new version. By keeping the same application ID:
 
