@@ -242,6 +242,7 @@
     * [Delete a Custom App](patch-my-pc-cloud/custom-apps/delete-a-custom-app.md)
     * [Custom Apps Reference](patch-my-pc-cloud/custom-apps/custom-apps-reference/README.md)
       * [Find properties for EXE-Based Installers](patch-my-pc-cloud/custom-apps/custom-apps-reference/find-properties-for-exe-based-installers.md)
+      * [Version Format Requirements for Patch My PC Cloud Custom Apps](patch-my-pc-cloud/custom-apps/custom-apps-reference/version-format-requirements.md "Version Format Requirements")
   * [Patch My PC Intune Apps](patch-my-pc-cloud/intune-apps/README.md "Intune Apps")
     * [Intune Apps Overview](patch-my-pc-cloud/intune-apps/intune-apps-overview.md)
     * [Intune Apps Requirements](patch-my-pc-cloud/intune-apps/intune-apps-requirements.md)

@@ -18,7 +18,9 @@ If you are using our on-premises Publisher, you should follow the [Publish a Cus
 Likewise, if you are a Managed Service Provider (MSP) wanting to deploy a Custom App to one or more managed companies, see [MSP Custom Apps](../../managed-service-provider-feature/msp-custom-apps/) for more details.
 {% endhint %}
 
-To create a PMPC Custom App, you first need to add it to our App Catalog as follows:
+## To create a PMPC Custom App
+
+You first need to add it to our App Catalog as follows:
 
 1. Sign in to the PMPC Cloud Portal [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
 2. Click **Add App** on the **App Catalog** page.
