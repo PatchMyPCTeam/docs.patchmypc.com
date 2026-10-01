@@ -73,21 +73,21 @@ Using a compatible version lets you create the Custom App whilst  still providin
 {% hint style="danger" %}
 **Important**
 
-Ensure you configure Detection Rules correctly, as relying on version-based detection to evaluate the full application version when the application's actual version does not conform to the **System.Version** format, is not recommended.
+Ensure you configure Detection Rules correctly, as relying on version-based detection to evaluate the full app version when the app's actual version does not conform to the **System.Version** format is not recommended.
 {% endhint %}
 
 After creating the Custom App:
 
 1. Configure the Custom App using a System.Version-compatible value, such as **8.0.0.14**
 2. Switch the application's detection method to [Custom Detection Rules.](../create-a-custom-app/custom-apps-detection-rules-tab.md)
-3. Configure the Custom Detection Rules to accurately detect the application's actual installed state.
-4. If the full application version must be evaluated, use an appropriate string-based comparison rather than a version comparison.
+3. Configure the Custom Detection Rules to accurately detect the app's actual installed state.
+4. If the full app version must be evaluated, use an appropriate string-based comparison rather than a version comparison.
 
 ## Summary
 
 The **Version** field in a Custom App must contain a System.Version-compatible value:
 
-**x.x → x.x.x → x.x.x.x**
+&#x20;        **x.x → x.x.x → x.x.x.x**
 
 If the app's actual version contains more than four segments or does not conform to this format:
 
