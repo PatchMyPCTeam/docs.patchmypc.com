@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Cloud Custom Apps_
 
-When creating a Patch My PC (PMPC) Custom App, the **Version** field must use a version format compatible with the .NET System.Version format.
+When creating a Patch My PC (PMPC) Custom App, the **Version** field must use a version format compatible with the .NET **System.Version** format.
 
 Failing to follow this format will result in the following error:
 
@@ -22,7 +22,10 @@ For example:
 * 8.0.0
 * 8.0.0.14
 
-Versions that do not follow this format cannot be used when creating the Custom App.
+{% hint style="danger" %}
+**Important**
+
+Versions that do not follow this format cannot be used when creating a Custom App.
 
 For example, the following formats are incompatible:
 
@@ -30,8 +33,9 @@ For example, the following formats are incompatible:
 * 8.0.0-beta
 * 8.0.0-build14
 * 2026.09.01.123.456
+{% endhint %}
 
-## Why does the Version field have this requirement?
+## Why does the Version field require this?
 
 The **Version** field of a Custom App is used by the Cloud Portal and its automatically generated PowerShell Script detection logic as a version value. The value must therefore be compatible with the version format supported by .NET's **System.Version**.
 
