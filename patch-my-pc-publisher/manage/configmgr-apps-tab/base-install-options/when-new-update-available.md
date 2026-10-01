@@ -7,15 +7,19 @@ noIndex: true
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **WHEN A NEW UPDATE IS AVAILABLE** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher....
+The **WHEN A NEW UPDATE IS AVAILABLE** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher controls how Publisher handles new versions of applications that were previously created by Publisher. The behavior you choose determines whether existing applications are updated in place, new applications are created, and how older versions are retained or removed.
 
-The **APPLICATION CREATION** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher controls how applications are created, named, organized, and maintained in ConfigMgr when using Publisher. + OTHERS
+<figure><img src="../../../../.gitbook/assets/image (1253).png" alt="&#x27;WHEN A NEW UPDATE IS AVAILABLE&#x27; section" width="563"><figcaption></figcaption></figure>
 
 
 
-## When a New Application Update is Available
 
-The settings under **When a New Application Update is Available** section control how Publisher handles new versions of applications that were previously created by Publisher. The behavior you choose determines whether existing applications are updated in place, new applications are created, and how older versions are retained or removed.
+
+
+
+
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (1095).png" alt="&#x27;When a New Application Update is Available&#x27; section" width="563"><figcaption></figcaption></figure>
 
