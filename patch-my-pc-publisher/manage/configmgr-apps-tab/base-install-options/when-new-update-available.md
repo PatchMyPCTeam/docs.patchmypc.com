@@ -89,7 +89,7 @@ See [Common Settings](when-new-update-available.md#common-settings) for more inf
 
 ## Create a new application
 
-When the **Create a new application** option is selected, Publisher creates a new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
+When the **Create a new application** option is selected, Publisher creates a new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-application-default), it creates a new application ID for every version.
 
 <figure><img src="../../../../.gitbook/assets/image (1254).png" alt="Create a new application" width="563"><figcaption></figcaption></figure>
 
