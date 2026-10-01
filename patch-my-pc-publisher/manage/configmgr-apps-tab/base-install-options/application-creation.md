@@ -2,7 +2,13 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Application Creation Options** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in ConfigMgr when using Publisher.
+The **APPLICATION CREATION** section on the **Base Install Options** tab of Patch My PC (PMPC) Publisher controls how applications are created, updated, named, organized, and maintained in ConfigMgr when using Publisher.
+
+<figure><img src="../../../../.gitbook/assets/image (1251).png" alt="&#x27;APPLICATION CREATION&#x27; section" width="563"><figcaption></figcaption></figure>
+
+
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (727).png" alt="&#x27;Application Creation Options&#x27;" width="563"><figcaption></figcaption></figure>
 
