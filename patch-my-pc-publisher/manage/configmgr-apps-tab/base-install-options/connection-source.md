@@ -12,7 +12,7 @@ This section must be correctly configured before the Publisher can create Config
 
 These settings control communication with the SMS Provider and establish the root location used for all Publisher-created ConfigMgr application content. Incorrect configuration can prevent applications from being created, updated, or managed successfully.
 
-<figure><img src="../../../../.gitbook/assets/image (724).png" alt="Connection and Source Options" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1249).png" alt="&#x27;CONNECTION AND SOURCE&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Configure SMS Provider Connection
 
