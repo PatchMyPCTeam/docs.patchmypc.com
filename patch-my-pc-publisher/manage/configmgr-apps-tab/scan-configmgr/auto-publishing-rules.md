@@ -67,7 +67,7 @@ Whilst it may be tempting to set the device threshold to a very low number (even
 A common and effective approach is:
 
 1. Use **Scan ConfigMgr** to identify products currently installed in your environment.
-2. Enable these products from the [scan wizard query window](auto-publishing-rules.md#query-button) or [Product Tree](../../../fundamentals/product-tree/working.md), and [customize](../../../customizations/) those products from the Product Tree (conflicting processes, content options, etc.).
+2. Enable these products from the [scan wizard query window](filters-discovered-products.md#query-button) or [Product Tree](../../../fundamentals/product-tree/working.md), and [customize](../../../customizations/) those products from the Product Tree (conflicting processes, content options, etc.).
 3. Enable auto-publishing rules to catch newly introduced applications over time.
 
 This lets you stay in control initially while still benefiting from automation going forward.
