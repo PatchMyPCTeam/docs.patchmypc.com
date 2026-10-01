@@ -4,9 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Import** certificate option in Patch My PC (PMPC) Publisher allows you to import a code-signing certificate using a PFX file that includes the certificate's private key, which Publisher uses to sign content it publishes.
 
-## Import a Certificate
-
-To import a PFX certificate:
+## To import a PFX certificate
 
 1. Load Publisher.
 2. Navigate to **WSUS Updates | WSUS Options**.&#x20;

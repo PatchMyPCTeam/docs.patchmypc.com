@@ -6,9 +6,7 @@ The **Create Self-Signed** certificate option allows Patch My PC (PMPC) Publishe
 
 This option is commonly used when you do not want Microsoft ConfigMgr to manage the certificate, or in standalone WSUS environments where self-signed certificates are permitted and a Certificate Authority is not available.
 
-## Create a Self-Signed Certificate
-
-To create a self-signed code-signing certificate:
+## To create a self-signed code-signing certificate
 
 1. Load Publisher.
 2. Navigate to **WSUS Updates | WSUS Options**.&#x20;
