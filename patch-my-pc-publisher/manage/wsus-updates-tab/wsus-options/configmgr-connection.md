@@ -1,4 +1,4 @@
-# Configure SMS Provider Connection section of Patch My PC Publisher
+# ConfigMgr Connection section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
@@ -6,7 +6,21 @@ The _SMS Provider_ is the interface that enables all interactions with Microsoft
 
 Patch My PC (PMPC) Publisher also relies on the SMS Provider to perform operations such as triggering Software Update Point (SUP) synchronizations, creating and modifying applications, and distributing content.
 
-The **Configure SMS Provider Connection** section on the **WSUS Options** tab lets you configure the SMS Provider Connection.
+The **CONFIGMGR CONNECTION** section on the **WSUS Options** tab lets you configure the SMS Provider Connection.
+
+<figure><img src="../../../../.gitbook/assets/image (1232).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+<figure><img src="/broken/files/99VIHkZfyl7oGpQN3CET" alt="&#x27;CONFIGMGR CONNECTION&#x27; section" width="563"><figcaption></figcaption></figure>
+
+
+
+
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (782).png" alt="Configure SMS Provider Connection" width="563"><figcaption></figcaption></figure>
 
