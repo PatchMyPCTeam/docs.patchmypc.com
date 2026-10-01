@@ -6,19 +6,13 @@ The **CONTENT DISTRIBUTION** section on the **Base Install Options** tab of Patc
 
 <figure><img src="../../../../.gitbook/assets/image (1255).png" alt="&#x27;CONTENT DISTRIBUTION&#x27; section" width="563"><figcaption></figcaption></figure>
 
-
-
-
-
-<figure><img src="../../../../.gitbook/assets/image (1081).png" alt="&#x27;Content Distribution Options&#x27; section" width="563"><figcaption></figcaption></figure>
-
 By default, Publisher automatically distributes application content as soon as you create a new application. This ensures content is available on DPs as soon as possible, preventing deployment failures caused by missing or undistributed content.
 
 ## **Automatically distribute content for any newly created applications**
 
-If the **Automatically distribute content for any newly created applications** checkbox is checked (by default) and no DP Groups are configured, Publisher distributes content to all DPs in the site. This is the most common configuration and ensures applications are broadly available without additional administrative effort.
+If the **Automatically distribute content for any newly created applications** option is enabled (by default) and no DP Groups are configured, Publisher distributes content to all DPs in the site. This is the most common configuration and ensures applications are broadly available without additional administrative effort.
 
-If the **Automatically distribute content for any newly created applications** checkbox is unchecked, Publisher does not distribute any content. In this scenario, administrators must manually distribute content using the ConfigMgr console after creating or updating applications. This approach is generally not recommended, as it increases operational overhead and can lead to deployment failures if content distribution is missed or delayed.
+If the **Automatically distribute content for any newly created applications** option is disabled, Publisher does not distribute any content. In this scenario, administrators must manually distribute content using the ConfigMgr console after creating or updating applications. This approach is generally not recommended, as it increases operational overhead and can lead to deployment failures if content distribution is missed or delayed.
 
 ## Manage Distribution Point Group(s)
 
@@ -30,7 +24,7 @@ When Publisher is configured to use DP Groups (by clicking **Manage Distribution
 2. Navigate to **ConfigMgr Apps | Base Install Options**.
 3. Scroll down to the **Content Distribution Options** section and click **Manage Distribution Point Group(s)**.
 
-<figure><img src="../../../../.gitbook/assets/image (1082).png" alt="Clicking &#x27;Manage Distribution Point Group(s)&#x27;." width="563"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/V4Oxwy5yDggs5mJFGhQP" alt="Clicking &#x27;Manage Distribution Point Group(s)&#x27;" width="563"><figcaption></figcaption></figure>
 
 4. On the **Select DP Groups for Content Distribution** screen, check the relevant checkboxes then click **OK**.
 
