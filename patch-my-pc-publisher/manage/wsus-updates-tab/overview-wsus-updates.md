@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **WSUS Updates** tab of Patch My PC (PMPC) Publisher is where you select which third-party updates to publish to Microsoft Windows Server Update Services (WSUS). Products enabled here determine which third-party updates Publisher will publish and maintain within your environment.
 
-<figure><img src="../../../.gitbook/assets/image (720).png" alt="&#x27;WSUS Updates&#x27; tab " width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1223).png" alt="&#x27;WSUS Updates&#x27; tab" width="563"><figcaption></figcaption></figure>
 
 For ConfigMgr customers, updates selected on this tab are published to WSUS and can then be synchronized into ConfigMgr when Publisher is installed on the Software Update Point (SUP). This allows third-party updates to be deployed and reported on in the same way as Microsoft updates.
 
