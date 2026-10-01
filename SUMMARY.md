@@ -498,7 +498,6 @@
         * [SQL Configuration section of Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/scan-configmgr/sql-configuration.md "SQL Configuration")
         * [Auto-Publishing Rules section of Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/scan-configmgr/auto-publishing-rules.md "Auto-Publishing Rules						 											")
         * [Filters and Discovered Products sections of Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/scan-configmgr/filters-discovered-products.md "Filters and Discovered Products")
-        * [Discovered Products section of Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/scan-configmgr/discovered-products.md "Discovered Products")
       * [App Manager in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/app-manager.md "App Manager")
       * [Form Controls in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/form-controls/README.md "Form Controls")
         * [Product Tree Filters in Patch My PC Publisher](patch-my-pc-publisher/manage/configmgr-apps-tab/form-controls/product-tree-filters.md "Product Tree Filters")
