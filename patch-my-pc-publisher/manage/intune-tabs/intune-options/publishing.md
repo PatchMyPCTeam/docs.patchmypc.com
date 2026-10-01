@@ -24,7 +24,7 @@ This option is intended for environments that already enforce signed PowerShell 
 
 ### To select a code-signing certificate for signing detection and requirement scripts
 
-1. Enable Digitally sign the detection method script and enforce signature checking on the app in Intune.
+1. Enable the **Digitally sign the detection method script and enforce signature checking on the app in Intune** option.
 2. Click **Browse** next to **Select code-signing certificate**.
 3. In the certificate selection window, choose a valid code-signing certificate from the **Local Computer – Personal** certificate store.
 
