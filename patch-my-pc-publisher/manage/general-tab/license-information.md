@@ -4,13 +4,13 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The first time you load Patch My PC (PMPC) Publisher, the **General tab** is selected. The **License Information** section is empty and the **No license key entered, unable to show subscription information** message is shown.
 
-<figure><img src="../../../.gitbook/assets/image (4839).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1221).png" alt="License Information" width="563"><figcaption></figcaption></figure>
 
 You have three options at this point:
 
 * [Activate a License](license-information.md#activate-a-license)
 * [Request a free 30-day trial](license-information.md#request-a-free-30-day-trial)
-* [Enable limited trial mode](license-information.md#enable-limited-trial-mode)&#x20;
+* [Enable limited trial mode](license-information.md#enable-limited-trial-mode)
 
 Until you do one of these, you will be unable to continue using Publisher.
 
@@ -24,7 +24,7 @@ Enter your license key in the **License Key** field and click **Validate**
 
 <figure><img src="../../../.gitbook/assets/image (4840).png" alt="" width="563"><figcaption></figcaption></figure>
 
-If validation is successful, you will see the **License validated successfully** message.&#x20;
+If validation is successful, you will see the **License validated successfully** message.
 
 <figure><img src="../../../.gitbook/assets/image (4841).png" alt="License validation successful dialog" width="263"><figcaption></figcaption></figure>
 
@@ -47,8 +47,6 @@ If you started your trial through Patch My PC Cloud, your license key can also b
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (411).png" alt="" width="563"><figcaption></figcaption></figure>
-
-
 
 ## Request a free 30-day trial
 
@@ -92,8 +90,8 @@ See [Products Available in Limited Trial Mode](../../technical-references/produc
 
 ## Subscription Information
 
-This section displays details about your current Patch My PC license, including the subscription tier, license validity period, and the number of devices covered.&#x20;
+This section displays details about your current Patch My PC license, including the subscription tier, license validity period, and the number of devices covered.
 
 This information helps confirm Publisher is correctly licensed for your environment, and your device count aligns with your deployment scope.
 
-<table><thead><tr><th width="125" valign="top">Field</th><th valign="top">Shows the...</th></tr></thead><tbody><tr><td valign="top">Subscription</td><td valign="top"><p>Patch My PC license tier currently applied (for example, <em>Enterprise Premium</em>), which determines the features, products, and capabilities available within Publisher.</p><p></p><p><mark style="color:$primary;"><strong>Note:</strong></mark></p><p>See <a href="https://patchmypc.com/pricing/">Patch My PC Pricing</a> for more details of the various subscriptions we offer.</p></td></tr><tr><td valign="top">Expires</td><td valign="top"><p>Expiration date of the current license/trial. Publisher will continue to function normally until this date.</p><p></p><p>Once the license expires, new applications and updates will no longer be published. </p><p></p><p>Any applications and updates that were published prior to expiration will remain available and unaffected. </p><p></p><p>To avoid interruptions, renewal or trial extension should be planned ahead of the expiration date.</p></td></tr><tr><td valign="top">Devices</td><td valign="top">Maximum number of devices the license covers. This should align with the number of managed devices that will <em>receive</em> applications or updates published by Publisher, which may differ from the total number of managed devices in your environment.</td></tr></tbody></table>
+<table><thead><tr><th width="125" valign="top">Field</th><th valign="top">Shows the...</th></tr></thead><tbody><tr><td valign="top">Subscription</td><td valign="top"><p>Patch My PC license tier currently applied (for example, <em>Enterprise Premium</em>), which determines the features, products, and capabilities available within Publisher.</p><p><mark style="color:$primary;"><strong>Note:</strong></mark></p><p>See <a href="https://patchmypc.com/pricing/">Patch My PC Pricing</a> for more details of the various subscriptions we offer.</p></td></tr><tr><td valign="top">Expires</td><td valign="top"><p>Expiration date of the current license/trial. Publisher will continue to function normally until this date.</p><p>Once the license expires, new applications and updates will no longer be published.</p><p>Any applications and updates that were published prior to expiration will remain available and unaffected.</p><p>To avoid interruptions, renewal or trial extension should be planned ahead of the expiration date.</p></td></tr><tr><td valign="top">Devices</td><td valign="top">Maximum number of devices the license covers. This should align with the number of managed devices that will <em>receive</em> applications or updates published by Publisher, which may differ from the total number of managed devices in your environment.</td></tr></tbody></table>
