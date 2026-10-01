@@ -474,7 +474,7 @@
         * [ConfigMgr Connection section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/configmgr-connection.md "ConfigMgr Connection")
         * [Software Update Point Sync section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/software-update-point-sync.md "Software Update Point Sync")
         * [ConfigMgr Component Management section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/configmgr-component-management.md "ConfigMgr Component Management")
-        * [Product Management section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/product-management.md "Product Management")
+        * [Products section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/products.md "Products")
         * [Update Republishing Options section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/update-republishing-options.md "Update Republishing Options")
         * [Modify Published Updates section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/modify-published-updates.md "Modify Published Updates")
         * [WSUS Maintenance section of Patch My PC Publisher](patch-my-pc-publisher/manage/wsus-updates-tab/wsus-options/wsus-maintenance.md "WSUS Maintenance")
