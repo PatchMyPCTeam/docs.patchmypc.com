@@ -11,94 +11,25 @@ The **WHEN A NEW UPDATE IS AVAILABLE** section on the **Base Install Options** t
 
 <figure><img src="../../../../.gitbook/assets/image (1253).png" alt="&#x27;WHEN A NEW UPDATE IS AVAILABLE&#x27; section" width="563"><figcaption></figcaption></figure>
 
+## Update existing application (Default)
 
 
 
 
 
+## Create a new application
 
 
 
+## Common Settings
 
+The following settings can be enabled and configured regardless of whether **Update existing application** or **Create a new application** are selected:
 
-<figure><img src="../../../../.gitbook/assets/image (1095).png" alt="&#x27;When a New Application Update is Available&#x27; section" width="563"><figcaption></figcaption></figure>
+* [Retain up to _x_ previously created applications](when-new-update-available.md#retain-up-to-x-previously-created-applications)
+* [Remove administrative categories from retained applications](when-new-update-available.md#remove-administrative-categories-from-retained-applications)
+* [Delete applications even if they have a deployment](when-new-update-available.md#delete-applications-even-if-they-have-a-deployment)
 
-### Update existing application’s metadata, deployment type, detection method, and content files (Default)
-
-When the **Update existing application’s metadata, deployment type, detection method, and content files** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](when-new-update-available.md#create-a-new-application-without-modifying-any-previous-applications).
-
-This is the default option and is commonly used because the application ID does not change in ConfigMgr when we update it to the new version. By keeping the same application ID:
-
-* Task sequences that reference the application continue to work without modification.
-* Existing required and available deployments remain intact, ensuring that the latest version of the application is automatically deployed or made available in Software Center to the same device collections that targeted the previous version.
-
-This is especially valuable for operating system deployment scenarios, where administrators want task sequences to always install the most recent version without updating references every time a new release is published.
-
-Before performing an in-place update, Publisher validates that the application is in a healthy state. This includes confirming that:
-
-* Publisher originally created and manages the application.
-* The corresponding application content exists on disk in the content source folder.
-
-These checks are required to safely support additional behaviors such as application retention and cleanup.
-
-When an in-place update occurs, Publisher:
-
-* Preserves the existing application object and application ID.
-* Updates application metadata such as:
-  * Software version
-  * Application Name
-  * Description and related metadata.
-* Removes the existing Deployment Type.
-* Creates a new Deployment Type and corresponding content source folder.
-
-{% hint style="success" %}
-**Tip**
-
-Removing and recreating the deployment type results in two new revisions on the application object for each update. Over time, this causes the total number of application revisions to increase.
-{% endhint %}
-
-{% hint style="danger" %}
-**Important**
-
-In some environments using a Cloud Management Gateway (CMG), a small number of customers have historically observed issues when updating applications in place. In these cases, clients may encounter content or policy hash mismatches, where updated application policy does not consistently replicate through the CMG.
-
-A common symptom of this behavior is an error similar to the following in **CIDownloader.log** on affected clients:
-
-`Evaluation Failed, 0x87D00289 (-2016410999), Unknown Error`
-
-These issues most commonly occur with applications that have multiple revisions, which can happen over time when an application is repeatedly updated in place.
-
-If you encounter these symptoms in a CMG-enabled environment, the recommended workaround is to use **Create a new application without modifying any previous applications** instead of updating applications in place.
-{% endhint %}
-
-#### Delay the in-place application upgrade by _X_ days
-
-When the **Delay the in-place application upgrade by&#x20;**_**X**_**&#x20;days** checkbox is checked, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
-
-* The delay is calculated from the date Publisher first detects the new version.
-* This allows time for validation or testing before updating production applications.
-
-**Example:**\
-If a new version is synchronized on February 3 and the delay is set to 3 days, the application will not be updated until a Publisher sync on or after February 6.
-
-### Create a new application without modifying any previous applications
-
-When the **Create a new application without modifying any previous applications** option is selected, Publisher creates a brand-new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
-
-This option is commonly used when administrators want to preserve each application version independently or avoid modifying existing application objects. It is also best suited for environments where strict version control is required, and task sequences are updated intentionally.
-
-Because a new application is created each time:
-
-* Task sequences that reference older application versions will continue to install those versions until they are manually updated to reference the new application.
-* Existing required and available deployments remain associated only with the original application and do not automatically apply to the newly created application.
-
-{% hint style="info" %}
-**Note**
-
-The option to **Create a new application without modifying any previous applications** can result in application sprawl over time if older versions are not cleaned up. For this reason, it is commonly used together with [application retention settings](when-new-update-available.md#retain-up-to-x-previously-created-applications) to limit the number of older application versions kept in the environment.
-{% endhint %}
-
-### Retain up to x previously created applications
+### Retain up to _x_ previously created applications
 
 When checked, the **Retain up to x previously created applications** checkbox controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [**update applications in place**](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default) or [**create a new application for each version**](when-new-update-available.md#create-a-new-application-without-modifying-any-previous-applications).
 
@@ -182,3 +113,81 @@ This option provides flexibility for environments where older application deploy
 
 
 
+
+
+\*\*\*\*\*
+
+### Update existing application’s metadata, deployment type, detection method, and content files (Default)
+
+When the **Update existing application’s metadata, deployment type, detection method, and content files** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](when-new-update-available.md#create-a-new-application-without-modifying-any-previous-applications).
+
+This is the default option and is commonly used because the application ID does not change in ConfigMgr when we update it to the new version. By keeping the same application ID:
+
+* Task sequences that reference the application continue to work without modification.
+* Existing required and available deployments remain intact, ensuring that the latest version of the application is automatically deployed or made available in Software Center to the same device collections that targeted the previous version.
+
+This is especially valuable for operating system deployment scenarios, where administrators want task sequences to always install the most recent version without updating references every time a new release is published.
+
+Before performing an in-place update, Publisher validates that the application is in a healthy state. This includes confirming that:
+
+* Publisher originally created and manages the application.
+* The corresponding application content exists on disk in the content source folder.
+
+These checks are required to safely support additional behaviors such as application retention and cleanup.
+
+When an in-place update occurs, Publisher:
+
+* Preserves the existing application object and application ID.
+* Updates application metadata such as:
+  * Software version
+  * Application Name
+  * Description and related metadata.
+* Removes the existing Deployment Type.
+* Creates a new Deployment Type and corresponding content source folder.
+
+{% hint style="success" %}
+**Tip**
+
+Removing and recreating the deployment type results in two new revisions on the application object for each update. Over time, this causes the total number of application revisions to increase.
+{% endhint %}
+
+{% hint style="danger" %}
+**Important**
+
+In some environments using a Cloud Management Gateway (CMG), a small number of customers have historically observed issues when updating applications in place. In these cases, clients may encounter content or policy hash mismatches, where updated application policy does not consistently replicate through the CMG.
+
+A common symptom of this behavior is an error similar to the following in **CIDownloader.log** on affected clients:
+
+`Evaluation Failed, 0x87D00289 (-2016410999), Unknown Error`
+
+These issues most commonly occur with applications that have multiple revisions, which can happen over time when an application is repeatedly updated in place.
+
+If you encounter these symptoms in a CMG-enabled environment, the recommended workaround is to use **Create a new application without modifying any previous applications** instead of updating applications in place.
+{% endhint %}
+
+#### Delay the in-place application upgrade by _X_ days
+
+When the **Delay the in-place application upgrade by&#x20;**_**X**_**&#x20;days** checkbox is checked, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
+
+* The delay is calculated from the date Publisher first detects the new version.
+* This allows time for validation or testing before updating production applications.
+
+**Example:**\
+If a new version is synchronized on February 3 and the delay is set to 3 days, the application will not be updated until a Publisher sync on or after February 6.
+
+### Create a new application without modifying any previous applications
+
+When the **Create a new application without modifying any previous applications** option is selected, Publisher creates a brand-new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-applications-metadata-deployment-type-detection-method-and-content-files-default), it creates a new application ID for every version.
+
+This option is commonly used when administrators want to preserve each application version independently or avoid modifying existing application objects. It is also best suited for environments where strict version control is required, and task sequences are updated intentionally.
+
+Because a new application is created each time:
+
+* Task sequences that reference older application versions will continue to install those versions until they are manually updated to reference the new application.
+* Existing required and available deployments remain associated only with the original application and do not automatically apply to the newly created application.
+
+{% hint style="info" %}
+**Note**
+
+The option to **Create a new application without modifying any previous applications** can result in application sprawl over time if older versions are not cleaned up. For this reason, it is commonly used together with [application retention settings](when-new-update-available.md#retain-up-to-x-previously-created-applications) to limit the number of older application versions kept in the environment.
+{% endhint %}
