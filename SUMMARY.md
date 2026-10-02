@@ -554,7 +554,7 @@
       * [Intune Tenant Mismatch Checker section of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/intune-tenant-mismatch-checker.md "Intune Tenant Mismatch Checker")
     * [Cloud tab of Patch My PC Publisher](patch-my-pc-publisher/manage/cloud-tab/README.md "Cloud tab")
       * [Overview of Cloud Settings in Patch My PC Publisher](patch-my-pc-publisher/manage/cloud-tab/overview.md "Overview")
-      * [Connect Publisher to Patch My PC Cloud section of Patch My PC Publisher](patch-my-pc-publisher/manage/cloud-tab/connect-publisher-cloud.md "Connect Publisher to Patch My PC Cloud")
+      * [Cloud Connection section of Patch My PC Publisher](patch-my-pc-publisher/manage/cloud-tab/cloud-connection.md "Cloud Connection")
       * [Application Migration section of Patch My PC Publisher](patch-my-pc-publisher/manage/cloud-tab/application-migration.md "Application Migration")
     * [About tab of Patch My PC Publisher](patch-my-pc-publisher/manage/about-tab/README.md "About tab")
       * [Version Details section of Patch My PC Publisher](patch-my-pc-publisher/manage/about-tab/version-details.md "Version Details")

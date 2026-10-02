@@ -9,7 +9,7 @@ The **Application Migration** section on the **Cloud** tab of Patch My PC (PMPC)
 {% hint style="danger" %}
 **Important**
 
-You will be unable to enable the **Application Migration** feature until you have connected Publisher to your PMPC Cloud company as detailed in [Connect Publisher to Patch My PC Cloud](connect-publisher-cloud.md)
+You will be unable to enable the **Application Migration** feature until you have connected Publisher to your PMPC Cloud company as detailed in [Connect Publisher to Patch My PC Cloud](cloud-connection.md)
 {% endhint %}
 
 When **Application Migration** is enabled, Publisher inventories ConfigMgr applications and makes them available for migration to Intune through PMPC Cloud.
