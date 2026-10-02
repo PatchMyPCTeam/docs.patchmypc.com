@@ -23,6 +23,6 @@ The **Scan Intune** tab uses the Entra ID App Registration, configured from the 
 The following actions can be configured from the **Scan Intune** tab:
 
 * [Configure Auto-Publishing Rules](auto-publishing-rules.md)
-* [Configure Filters](filters.md)
-* [Perform a Query](query-button.md)
-* [Export to a CSV file](export-csv-button.md)
+* [Configure Filters](filters-discovered-products.md)
+* [Perform a Query](filters-discovered-products.md#query-button)
+* [Export to a CSV file](filters-discovered-products.md#export-to-csv-button)

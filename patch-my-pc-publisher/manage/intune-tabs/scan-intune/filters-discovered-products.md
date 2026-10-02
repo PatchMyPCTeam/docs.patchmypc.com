@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **FILTERS** and **DISCOVERED APPS** sections on the **Scan ConfigMgr** tab of Patch My PC (PMPC) Publisher help you filter and display the results of the scan.
+The **FILTERS** and **DISCOVERED APPS** sections on the **Scan Intune** tab of Patch My PC (PMPC) Publisher help you filter and display the results of the scan.
 
 ## Filters
 
@@ -34,13 +34,15 @@ The **DISCOVERED PRODUCTS** section shows the results of the [query](filters-dis
 
 ## Query button
 
-Clicking **Query** performs an interactive scan using the current configuration defined in the form, including SQL connection settings, collection scoping, and any filters that have been applied.
+Clicking **Query** on the **Scan Intune** tab performs an interactive scan using the current configuration defined on the screen and any applied filters.
 
 <figure><img src="../../../../.gitbook/assets/image (1266).png" alt="&#x27;Query&#x27; button" width="563"><figcaption></figcaption></figure>
 
-When you click **Query**, Publisher queries the ConfigMgr site database and displays the results in the **DISCOVERED PRODUCTS** section. The products shown reflect:
+When you click **Query**, Publisher queries the obtained Intune report and displays the results in the **DISCOVERED PRODUCTS** section.
 
-* What applications detected in the ConfigMgr HINV match products in the Patch My PC catalog.
+The products shown reflect:
+
+* What applications detected in the Intune report match products in the PMPC catalog.
 * The device count for each product.
 
 <figure><img src="../../../../.gitbook/assets/image (1267).png" alt="Query results" width="563"><figcaption></figcaption></figure>
@@ -49,14 +51,16 @@ When you click **Query**, Publisher queries the ConfigMgr site database and disp
 **Note**
 
 The **Query** button does not enable or publish products by itself; it simply retrieves and displays the results based on the current settings, allowing you to review and validate findings before taking further action.
+
+Also, the device count value shown for each product match is clickable. Selecting it displays a detailed view of the devices and application versions where the product was detected, allowing you to validate inventory results before enabling or publishing the product.
 {% endhint %}
 
-Checking the checkbox beside products in this list to select them is equivalent to manually selecting the same products in the [Product Tree](../../../fundamentals/product-tree/working.md) on the **ConfigMgr Apps** tab. Selecting a product here enables it for publishing in the same way as selecting it directly in the Product Tree.
+Checking the checkbox beside products in this list to select them is equivalent to manually selecting the same products in the [Product Tree](../../../fundamentals/product-tree/working.md) on the **Intune Apps** or **Intune Updates** tabs. When you check a product here, it enables that product for publishing in the same way as selecting it directly in the Product Tree.
 
 {% hint style="danger" %}
 **Important**
 
-As there is no universal standard for how vendors name applications, inventory results cannot always distinguish between multiple variants of the same product. For example, if 7-Zip (x64) is detected in the ConfigMgr HINV, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.
+Because there is no universal standard for how vendors name apps, inventory results cannot always distinguish between multiple variants of the same product. For example, if **7-Zip (x64)** is detected in the Intune report, Publisher cannot reliably determine whether the MSI or EXE installer was originally used, so both variants may be shown as matches. This ensures coverage while acknowledging the limitations of vendor-provided inventory data.
 {% endhint %}
 
 ### Count column
@@ -76,7 +80,7 @@ Clicking **Export CSV** on the **Devices with Application** window generates a C
 
 ## Export to CSV button&#x20;
 
-Clicking **Export to CSV** allows you to export the results from the **Scan ConfigMgr** window to a CSV file.
+Clicking the **Export to CSV** button on the **Scan Intune** tab exports the results displayed in the query window to a comma-separated values (CSV) file for offline review or reporting.
 
 {% hint style="info" %}
 **Note**
@@ -84,15 +88,18 @@ Clicking **Export to CSV** allows you to export the results from the **Scan Conf
 This button is disabled when the window contains no query results. After you run a query with valid results, the **Export to CSV** button becomes available.
 {% endhint %}
 
+Clicking **Export to CSV** allows you to export the results from the **Scan Intune** window to a CSV file.
+
 <figure><img src="../../../../.gitbook/assets/image (1268).png" alt="Export to CSV " width="563"><figcaption></figcaption></figure>
 
 ### To export the results to a CSV
 
 1. Load Publisher.
-2. Navigate to the **ConfigMgr Apps | Scan ConfigMgr** tab.
-3. Run a [query](filters-discovered-products.md#query-button) to display results in the window.
-4. Click **Export to CSV...**
-5. On the **Export** dialog, click the relevant option for the products you want to export.
+2. Navigate to the relevant **Intune** tab.
+3. Click **Scan Intune**
+4. Run a [query](filters-discovered-products.md#query-button) to display results in the window.
+5. Click **Export to CSV...**
+6. On the **Export** dialog, click the relevant option for the products you want to export.
 
 <figure><img src="../../../../.gitbook/assets/image (1130).png" alt="&#x27;Export&#x27; dialog" width="306"><figcaption></figcaption></figure>
 
@@ -100,3 +107,8 @@ This button is disabled when the window contains no query results. After you run
 
 <figure><img src="../../../../.gitbook/assets/image (4134).png" alt="Select the save location" width="563"><figcaption></figcaption></figure>
 
+The generated CSV file includes the following columns:
+
+* **Device Name -** The name of the device where the product was detected.
+* **Product Name -** The application name as reported in inventory.
+* **Product Version -** The version of the application detected on the device.
