@@ -2,9 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Auto-Publishing Rules** section on the **Scan Intune** tab of Patch My PC (PMPC) Publisher allows Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.
+The **AUTO-PUBLISHING RULES** section on the **Scan Intune** tab of Patch My PC (PMPC) Publisher allows Publisher to automatically enable products for publishing based on what is detected in your Intune environment, removing the need to manually review scan results and enabling a more hands-off approach to keeping third-party applications and updates current.
 
-<figure><img src="../../../../.gitbook/assets/image (1167).png" alt="&#x27;Auto-Publishing Rules&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1281).png" alt="&#x27;AUTO-PUBLISHING RULES&#x27; section" width="563"><figcaption></figcaption></figure>
 
 When these rules are enabled, Publisher evaluates discovered application inventory data collected by the Intune Management Extension on managed devices, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
 
