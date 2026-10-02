@@ -5,7 +5,7 @@ _Applies to: Patch My PC Publisher V3.x_
 The **Cloud** tab of Patch My PC (PMPC) Publisher is used to:
 
 * [Connect Publisher to PMPC Cloud](cloud-connection.md) to enable cloud-based features such as Custom Apps.
-* Enable the [Application Migration](application-migration.md) feature that allows Microsoft ConfigMgr applications to be migrated to Intune.
+* Enable the [Application Migration](application-migration.md) feature which allows you to migrate Microsoft ConfigMgr applications to Intune.
 
 {% hint style="info" %}
 **Note**
