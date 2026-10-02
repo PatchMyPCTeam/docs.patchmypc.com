@@ -12,7 +12,7 @@ The **FILTERS** section lets you narrow the scan results shown in the list below
 
 The available filters are:
 
-* **Product-** Filter results by product name to focus on specific applications.
+* **Product -** Filter results by product name to focus on specific applications.
 * **Vendor -** Filter results by software vendor.
 * **Languages -** Filters results by the application's language.
 * **Count -** Filter products based on how many devices they are detected on. This is useful when reviewing products that meet (or fall below) your auto-publishing device threshold.

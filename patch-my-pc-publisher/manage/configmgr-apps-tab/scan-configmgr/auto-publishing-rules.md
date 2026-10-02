@@ -22,7 +22,7 @@ This automation can be extremely powerful, but it’s important to configure it 
 
 ## Auto-enable products to be published as an update
 
-When the **Auto-enable products to be published as an update** option is enabled, products detected in ConfigMgr inventory are automatically enabled on the **WSUS Updates** tab once they are found on at least the specified number of devices.
+When you enable the **Auto-enable products to be published as an update** option, products detected in ConfigMgr inventory are automatically enabled on the **WSUS Updates** tab once they are found on at least the specified number of devices.
 
 * The device count acts as a threshold to prevent enabling products seen only on a small number of devices.
 * Once enabled, updates for the product are published according to your existing sync and deployment processes.
