@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Schedule** section on the **Schedule** tab of Patch My PC (PMPC) Publisher allows you to configure when a Publisher sync occurs.
+The **Schedule** section on the **Schedule** tab in Patch My PC (PMPC) Publisher allows you to configure when a Publisher sync occurs.
 
 <figure><img src="../../../../.gitbook/assets/image (1285).png" alt="&#x27;Schedule&#x27; section" width="563"><figcaption></figcaption></figure>
 
@@ -45,6 +45,6 @@ When you enable the **Run a missed scheduled sync on startup** option, Publisher
 Manual syncs do not affect this option.
 {% endhint %}
 
-When you enable this option, the **Next scheduled sync** section updates to show the **Next sync if saved** entry, showing when the next sync schedule will run if you  click **Apply** or **Save and Close**.&#x20;
+When you enable this option, the **Next scheduled sync** section updates to show the **Next sync if saved** entry, showing when the next Sync Schedule will run if you click **Apply** or **Save and Close**.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1289).png" alt=""><figcaption></figcaption></figure>

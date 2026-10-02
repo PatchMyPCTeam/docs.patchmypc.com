@@ -2,11 +2,11 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **ConfigMgr SUP Sync Options** section on the **Sync Schedule** tab in Patch My PC (PMPC) Publisher contains the **Trigger ConfigMgr SUP Sync after publishing** option.
+The **ConfigMgr SUP Sync Options** section on the **Schedule** tab in Patch My PC (PMPC) Publisher contains the **Trigger ConfigMgr SUP Sync after publishing** option.
 
-<figure><img src="../../../../.gitbook/assets/image (4863).png" alt="&#x27;ConfigMgr SUP Sync Options&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1290).png" alt="&#x27;ConfigMgr SUP Sync Options&#x27; section" width="563"><figcaption></figcaption></figure>
 
-When enabled, Publisher triggers a ConfigMgr Software Update Point (SUP) sync after new third-party updates are published. This ensures that newly published updates become available in ConfigMgr as soon as possible, without waiting for the next scheduled SUP sync.
+When this option is enabled, Publisher triggers a ConfigMgr Software Update Point (SUP) sync after new third-party updates are published. This ensures that newly published updates become available in ConfigMgr as soon as possible, without waiting for the next scheduled SUP sync.
 
 {% hint style="danger" %}
 **Important**
