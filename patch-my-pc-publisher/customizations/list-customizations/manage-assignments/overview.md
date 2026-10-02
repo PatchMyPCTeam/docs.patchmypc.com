@@ -1,8 +1,8 @@
 # Overview of Manage Assignments in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_\
-_Available at level: All Custom Products, All Products, Vendor, Product_\
-_Available on tab: Intune Apps, Intune Updates_
+_&#x41;vailable at level: All Custom Products, All Products, Vendor, Product_\
+_&#x41;vailable on tab: Intune Apps, Intune Updates_
 
 The **Manage Assignments** right-click option in Patch My PC (PMPC) Publisher allows you to control which Intune assignments the Publisher creates and maintains for Intune applications and Intune updates.
 
@@ -17,7 +17,7 @@ Assignments are grouped by tab so you can clearly see which Entra ID groups rece
 {% hint style="danger" %}
 **Important**
 
-All changes made in this window are applied during the next Publisher [synchronization](../../../manage/sync-schedule-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
+All changes made in this window are applied during the next Publisher [synchronization](../../../manage/sync-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
 
 If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Manager](../../../manage/intune-tabs/intune-manager.md) instead.
 {% endhint %}

@@ -11,7 +11,7 @@ Before email alerts can be sent, email settings must be configured. This include
 {% hint style="info" %}
 **Note**
 
-At the end of a [publishing sync](../../../sync-schedule-tab/), the Publisher sends an email containing details about the sync event.
+At the end of a [publishing sync](../../../sync-tab/), the Publisher sends an email containing details about the sync event.
 {% endhint %}
 
 ## Send email reports
@@ -25,7 +25,7 @@ When **Disable email for manual sync** is enabled, email notifications are sent 
 {% hint style="danger" %}
 **Important**
 
-Email notifications are not sent when a sync is initiated manually from the [Sync Schedule](../../../sync-schedule-tab/) tab.
+Email notifications are not sent when a sync is initiated manually from the [Sync Schedule](../../../sync-tab/) tab.
 {% endhint %}
 
 ## Provider

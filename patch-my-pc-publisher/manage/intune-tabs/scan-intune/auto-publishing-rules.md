@@ -8,7 +8,7 @@ The **AUTO-PUBLISHING RULES** section on the **Scan Intune** tab of Patch My PC 
 
 When these rules are enabled, Publisher evaluates discovered application inventory data collected by the Intune Management Extension on managed devices, compares detected applications against the Patch My PC catalog, and automatically enables supported products that meet the configured device threshold.
 
-Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-schedule-tab/). Each time a sync runs, Publisher scans application inventory data from the AppInvRawData report, obtained from the Intune Reporting Endpoint, through Microsoft Graph, and automatically enables any newly detected products that meet the configured thresholds.
+Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-tab/). Each time a sync runs, Publisher scans application inventory data from the AppInvRawData report, obtained from the Intune Reporting Endpoint, through Microsoft Graph, and automatically enables any newly detected products that meet the configured thresholds.
 
 This automation can be extremely powerful, but it’s important to configure it thoughtfully.
 

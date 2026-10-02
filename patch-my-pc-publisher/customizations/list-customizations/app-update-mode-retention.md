@@ -43,7 +43,7 @@ Overrides configured using the **App Update Mode & Retention** right-click optio
 7. Optionally enable **Delete applications even if they have a deployment** if retained applications should be removed regardless of active deployments.
 8. Click **OK** to save the configuration.
 
-The override is evaluated and applied during the next Publisher [synchronization](../../manage/sync-schedule-tab/) and affects only the selected vendor or product.
+The override is evaluated and applied during the next Publisher [synchronization](../../manage/sync-tab/) and affects only the selected vendor or product.
 
 {% hint style="info" %}
 **Note**

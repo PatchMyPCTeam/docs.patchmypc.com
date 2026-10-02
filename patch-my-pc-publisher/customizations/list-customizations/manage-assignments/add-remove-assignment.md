@@ -80,7 +80,7 @@ See [Assignment Options](assignment-options.md) for more details on the availabl
 {% hint style="danger" %}
 **Important**
 
-All changes made in this window are applied during the next Publisher [Synchronization](../../../manage/sync-schedule-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
+All changes made in this window are applied during the next Publisher [Synchronization](../../../manage/sync-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
 
 If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Manager](../../../manage/intune-tabs/intune-manager.md) instead.
 {% endhint %}
@@ -117,7 +117,7 @@ Any assignments removed are deleted from Publisher's configuration and will no l
 
 When an assignment is removed in Publisher, it will not be recreated for future application or update versions. However, the assignment that already exists in Intune remains unless it is manually removed.
 
-All changes made in this window are applied during the next Publisher [Synchronization](../../../manage/sync-schedule-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
+All changes made in this window are applied during the next Publisher [Synchronization](../../../manage/sync-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
 
 If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Manager](../../../manage/intune-tabs/intune-manager.md) instead.
 {% endhint %}

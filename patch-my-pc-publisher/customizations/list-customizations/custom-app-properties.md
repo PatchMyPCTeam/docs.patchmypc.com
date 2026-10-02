@@ -72,4 +72,4 @@ If the ConfigMgr apps global option to [Do not include the version in the applic
 
 <figure><img src="../../../.gitbook/assets/image (77).png" alt="Show default description" width="557"><figcaption></figcaption></figure>
 
-The custom properties are applied during the next Publisher [synchronization](../../manage/sync-schedule-tab/) and affect newly created and updated applications for that product.
+The custom properties are applied during the next Publisher [synchronization](../../manage/sync-tab/) and affect newly created and updated applications for that product.

@@ -12,31 +12,31 @@ The **Status** field updates in real time as products are evaluated and processe
 
 ## Run Publishing Service Sync
 
-What happens when you click **Run Publishing Service Sync** depends on whether one or more products have been marked for a Selective Sync using the [Publish Now](../../customizations/list-customizations/publish-now.md) right-click option:
+What happens when you click **Run Publishing Service Sync** depends on whether one or more products have been marked for a Selective Sync using the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option:
 
 * If a product(s) has been marked for a Selective Sync, then a [Selective Sync](sync-status.md#selective-sync) is run.
 * If no product(s) has been marked for a Selective Sync, then a [Full Sync](sync-status.md#full-sync) is run.
 
 ### Selective Sync
 
-If you have used the [Publish Now](../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher displays the **Products for Selective Sync** dialog box listing of all products currently marked for Selective Sync.
+If you have used the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher displays the **Products for Selective Sync** dialog box listing of all products currently marked for Selective Sync.
 
-<figure><img src="../../../.gitbook/assets/image (4780).png" alt="&#x27;Products for Selective Sync&#x27; dialog box" width="522"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4780).png" alt="&#x27;Products for Selective Sync&#x27; dialog box" width="522"><figcaption></figcaption></figure>
 
 If you click **OK**, the **Selective Sync Successful** dialog box is displayed stating that the sync command has been sent to the Publisher service to run the sync.
 
-<figure><img src="../../../.gitbook/assets/image (4781).png" alt="&#x27;Selective Sync Successful&#x27; dialog box" width="330"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4781).png" alt="&#x27;Selective Sync Successful&#x27; dialog box" width="330"><figcaption></figcaption></figure>
 
 If you click **Cancel**, the **Selective Sync canceled** dialog box is displayed asking you how you want to proceed:
 
 * Clicking **Yes** clears all Selective Sync flags and immediately runs a normal full publishing service sync. All enabled products across all platforms will be evaluated and processed.
 * Clicking **No** keeps the existing Selective Sync flags in place and returns you to the main Publisher window without running a sync. This allows you to modify the current Selective Sync selections or run a manual sync later using the same selected products.
 
-<figure><img src="../../../.gitbook/assets/image (4445).png" alt="&#x27;Selective Sync cancelled&#x27; dialog" width="383"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4445).png" alt="&#x27;Selective Sync cancelled&#x27; dialog" width="383"><figcaption></figcaption></figure>
 
 ### Full Sync
 
-If you have not used the [Publish Now](../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher will run a Full Sync, which performs the same evaluation as a scheduled sync.
+If you have not used the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher will run a Full Sync, which performs the same evaluation as a scheduled sync.
 
 Publisher will download the latest version of the Patch My PC catalog and evaluate all configured product selections, customizations, and global options to determine which apps and updates should be published.
 
@@ -44,18 +44,18 @@ To run a Full Sync:
 
 1. Navigate to the **Sync Schedule** tab and click **Run Publishing Service Sync**
 
-<figure><img src="../../../.gitbook/assets/image (4779).png" alt="Navigating to the &#x27;Sync Schedule&#x27; tab and clicking &#x27;Run Publishing Service Sync&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4779).png" alt="Navigating to the &#x27;Sync Schedule&#x27; tab and clicking &#x27;Run Publishing Service Sync&#x27;" width="563"><figcaption></figcaption></figure>
 
 2. On the **Run Publishing Service Sync** dialog box, read the message and click **Yes** if you want to proceed or **No** to cancel.
 
-<figure><img src="../../../.gitbook/assets/image (4782).png" alt="&#x27;Run Publishing Service Sync&#x27; dialog box" width="453"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4782).png" alt="&#x27;Run Publishing Service Sync&#x27; dialog box" width="453"><figcaption></figcaption></figure>
 
 The **Run Now Successful** dialog box is displayed stating that the sync command has been sent to the Publisher service to run the sync.
 
-<figure><img src="../../../.gitbook/assets/image (4784).png" alt="&#x27;Run Now Successful&#x27; dialog box" width="290"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4784).png" alt="&#x27;Run Now Successful&#x27; dialog box" width="290"><figcaption></figcaption></figure>
 
 After a period of time, the **Status** field under the **Sync Status** section will change to **Syncing** to show the sync is in progress.
 
-<figure><img src="../../../.gitbook/assets/image (4785).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4785).png" alt=""><figcaption></figcaption></figure>
 
 Once the sync has completed, the **Status** field changes to **Completed** as detailed at the top of this article.

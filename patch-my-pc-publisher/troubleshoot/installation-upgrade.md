@@ -11,7 +11,7 @@ These troubleshooting steps help ensure a successful installation or upgrade of 
 
 ## Publisher Fails to Upgrade
 
-At the end of a [sync](../manage/sync-schedule-tab/), if a new version of Publisher is available, Publisher attempts to install the update by default. When this occurs, the following entry appears in the **PatchMyPC.log** file at the end of the sync.
+At the end of a [sync](../manage/sync-tab/), if a new version of Publisher is available, Publisher attempts to install the update by default. When this occurs, the following entry appears in the **PatchMyPC.log** file at the end of the sync.
 
 ```
 Starting self-update, the command line is: MsiExec.exe /i C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service.msi /qn /log C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service_Upgrade.log
@@ -31,7 +31,7 @@ If a failure occurs during the self-update process and [Alerts](../manage/alerts
 
 <figure><img src="../../.gitbook/assets/image (4234).png" alt="Example alert detail" width="500"><figcaption></figcaption></figure>
 
-To understand the root cause of the upgrade failure, inspect the log file indicated in **PatchMyPC.log** produced by the MSI installer:&#x20;
+To understand the root cause of the upgrade failure, inspect the log file indicated in **PatchMyPC.log** produced by the MSI installer:
 
 * **C:\WINDOWS\TEMP\PatchMyPC-Publishing-Service\_Upgrade.log**
 
@@ -56,7 +56,7 @@ When you attempt to manually install the update by downloading and running the [
 
 <figure><img src="../../.gitbook/assets/image (4235).png" alt="&#x27;The feature you are trying to use is on a network resource that is unavailable&#x27; dialog" width="371"><figcaption></figcaption></figure>
 
-The 1612 error code is usually thrown when the original installation media for the currently installed application is no longer available on the system - something has deleted it.&#x20;
+The 1612 error code is usually thrown when the original installation media for the currently installed application is no longer available on the system - something has deleted it.
 
 Typically, .msi files cache themselves in the **C:\Windows\installer** folder, and the original .msi file is critical for any application update, repair, or uninstall.
 

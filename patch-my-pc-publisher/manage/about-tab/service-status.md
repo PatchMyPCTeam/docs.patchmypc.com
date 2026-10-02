@@ -20,7 +20,7 @@ Other statuses are **Syncing**, **Completed**, and **Error**.
 {% hint style="info" %}
 **Note**
 
-See the [Status](../sync-schedule-tab/sync-status.md#status) section of [Sync Status](../sync-schedule-tab/sync-status.md) for more details on the values of the **Status** field.
+See the [Status](../sync-tab/schedule/sync-status.md#status) section of [Sync Status](../sync-tab/schedule/sync-status.md) for more details on the values of the **Status** field.
 {% endhint %}
 
 ## Publisher Statistics

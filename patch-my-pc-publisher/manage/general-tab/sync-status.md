@@ -11,5 +11,5 @@ This status updates in real time as products are evaluated and processed.
 {% hint style="info" %}
 **Note**
 
-See the [Status](../sync-schedule-tab/sync-status.md#status) section of [Sync Status](../sync-schedule-tab/sync-status.md) for more details on the values of the **Status** field and [Run Publishing Service Sync](../sync-schedule-tab/sync-status.md#run-publishing-service-sync) for details on how to manually run a Publishing sync.
+See the [Status](../sync-tab/schedule/sync-status.md#status) section of [Sync Status](../sync-tab/schedule/sync-status.md) for more details on the values of the **Status** field and [Run Publishing Service Sync](../sync-tab/schedule/sync-status.md#run-publishing-service-sync) for details on how to manually run a Publishing sync.
 {% endhint %}

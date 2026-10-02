@@ -69,6 +69,6 @@ Once the Publisher is installed, configure it based on how you plan to use it. C
   * [Scenario 2: ConfigMgr/WSUS Updates](configure/product-selection-discovery/discover-configmgr-wsus-updates.md)
   * [Scenario 3: Intune Applications and Updates](configure/product-selection-discovery/discover-intune-apps-updates.md)
 * [Customize products in the Publisher with Right-Click Options](customizations/)
-* [Publish applications and updates](manage/sync-schedule-tab/)
+* [Publish applications and updates](manage/sync-tab/)
 {% endstep %}
 {% endstepper %}

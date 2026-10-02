@@ -78,4 +78,4 @@ See [Publishing Options](../../manage/intune-tabs/intune-options/publishing.md) 
 3. Configure the required settings to override the global behavior.
 4. Click **OK** to save the configuration.
 
-The override is evaluated and applied during the next Publisher [synchronization](../../manage/sync-schedule-tab/) and affects only the selected vendor or product.
+The override is evaluated and applied during the next Publisher [synchronization](../../manage/sync-tab/) and affects only the selected vendor or product.

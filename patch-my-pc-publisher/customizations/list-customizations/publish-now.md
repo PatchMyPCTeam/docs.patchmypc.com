@@ -12,7 +12,7 @@ Selective Sync is designed to reduce processing time and scope when a full evalu
 
 ## How Selective Sync Works
 
-By default, running a [manual publishing service sync](../../manage/sync-schedule-tab/sync-status.md#run-publishing-service-sync) causes Publisher to evaluate every enabled product across all platform tabs. In environments with a large number of products, this can take a significant amount of time.
+By default, running a [manual publishing service sync](../../manage/sync-tab/schedule/sync-status.md#run-publishing-service-sync) causes Publisher to evaluate every enabled product across all platform tabs. In environments with a large number of products, this can take a significant amount of time.
 
 When Selective Sync is enabled for a product, Publisher flags it for inclusion in the next manual sync. During that sync, only products marked for Selective Sync are processed.
 
@@ -39,4 +39,4 @@ When you right-click at a supported level in the Product Tree and select **Publi
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="&#x27;Selective Sync&#x27; dialog box" width="461"><figcaption></figcaption></figure>
 
-If you click **Yes**, the selected items are added to the queue for the next Selective Sync, which can be triggered by [Running a Selective Sync](../../manage/sync-schedule-tab/sync-status.md#running-a-selective-sync).
+If you click **Yes**, the selected items are added to the queue for the next Selective Sync, which can be triggered by [Running a Selective Sync](../../manage/sync-tab/schedule/sync-status.md#running-a-selective-sync).

@@ -16,7 +16,7 @@ When these rules are enabled, Publisher evaluates application inventory data col
 These rules rely on the same ConfigMgr database access and SQL permissions described in the [Connect to ConfigMgr SQL Database As](sql-configuration.md#connect-to-configmgr-sql-database-as) section.
 {% endhint %}
 
-Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-schedule-tab/). Each time a sync runs, Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
+Auto-publishing rules are evaluated during scheduled [synchronizations](../../sync-tab/). Each time a sync runs, Publisher scans application inventory data from ConfigMgr and automatically enables any newly detected products that meet the configured thresholds.
 
 This automation can be extremely powerful, but it’s important to configure it thoughtfully.
 

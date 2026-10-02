@@ -1,10 +1,18 @@
-# Scheduling section of Patch My PC Publisher
+# Schedule section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Scheduling** section on the **Sync Schedule** tab of Patch My PC (PMPC) Publisher allows you to configure multiple scheduling options to control how often the publishing service runs.
+The **Schedule** section on the **Schedule** tab of Patch My PC (PMPC) Publisher allows you to configure when the&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4861).png" alt="&#x27;Scheduling&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1284).png" alt="&#x27;Schedule&#x27; section" width="563"><figcaption></figcaption></figure>
+
+
+
+\*\*\*\*
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (4861).png" alt="&#x27;Scheduling&#x27; section" width="563"><figcaption></figcaption></figure>
 
 The available options are:
 
@@ -28,3 +36,6 @@ Publisher uses a single, global Sync Schedule that applies across all tabs and p
 {% endhint %}
 
 The **Next scheduled sync** field shows the date and time the next scheduled Sync Schedule will run so you can check your understanding of how you think you've configured the Sync Schedule with how Publisher will actually run it.
+
+
+

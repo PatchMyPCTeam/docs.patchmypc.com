@@ -6,7 +6,7 @@ _&#x41;vailable on tab: Intune Updates_
 
 The **Manage Automatic Deployment Rules** right-click option in Patch My PC (PMPC) Publisher allows you to automatically create Intune assignments for newly published updates based on predefined catalog criteria.
 
-Instead of assigning every update to the same Entra groups, Dynamic Assignments evaluates each update during a Publisher [synchronization](../../manage/sync-schedule-tab/) and applies assignments only when the update matches your configured rules. This enables targeted deployment based on update attributes rather than static grouping.
+Instead of assigning every update to the same Entra groups, Dynamic Assignments evaluates each update during a Publisher [synchronization](../../manage/sync-tab/) and applies assignments only when the update matches your configured rules. This enables targeted deployment based on update attributes rather than static grouping.
 
 {% hint style="info" %}
 **Note**

@@ -61,7 +61,7 @@ This approach allows you to clearly identify Publisher-created applications whil
 2. On the **Custom Intune Application Properties** dialog, click one or more token values to build your required naming pattern.
 3. Click **OK** to save the configuration.
 
-The naming convention is applied during the next Publisher [Synchronization](../../manage/sync-schedule-tab/) and affects newly created applications and updates only.
+The naming convention is applied during the next Publisher [Synchronization](../../manage/sync-tab/) and affects newly created applications and updates only.
 
 {% hint style="danger" %}
 **Important**

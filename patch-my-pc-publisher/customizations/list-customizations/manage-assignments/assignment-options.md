@@ -15,7 +15,7 @@ After using the [Manage Assignments](add-remove-assignment.md) right-click optio
 {% hint style="danger" %}
 **Important**
 
-All changes made in this window are applied during the next Publisher [Synchronization](../../../manage/sync-schedule-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
+All changes made in this window are applied during the next Publisher [Synchronization](../../../manage/sync-tab/). Changes are not applied immediately to Win32 apps that already exist in Intune.
 
 If you want to make changes to assignments for applications and updates that have already been published to Intune, use the [Intune Manager](../../../manage/intune-tabs/intune-manager.md) instead.
 {% endhint %}
@@ -182,7 +182,7 @@ The **Application availability** and **Installation deadline** settings can appe
 5. Choose **UTC** or **Device time** **zone** as required.
 6. Click **OK** to save the configuration.
 
-The updated availability setting is shown in the **Available Time** column and is applied during the next Publisher [Synchronization](../../../manage/sync-schedule-tab/).
+The updated availability setting is shown in the **Available Time** column and is applied during the next Publisher [Synchronization](../../../manage/sync-tab/).
 
 ### Availability Time Processing Behavior
 
@@ -248,7 +248,7 @@ The **Application availability** and **Installation deadline** settings can appe
 5. Choose **UTC** or **Device time** **zone** as required.
 6. Click **OK** to save the configuration.
 
-The updated availability setting is shown in the **Deadline** column and is applied during the next Publisher [Synchronization](../../../manage/sync-schedule-tab/).
+The updated availability setting is shown in the **Deadline** column and is applied during the next Publisher [Synchronization](../../../manage/sync-tab/).
 
 ### Deadline Processing Behavior
 
@@ -284,7 +284,7 @@ During a configured grace period, the user can continue working before the Win32
 6. Choose **UTC** or **Device time** **zone** as required.
 7. Click **OK** to save the configuration.
 
-The updated availability setting is shown in the **Grace Period** column and is applied during the next Publisher [Synchronization](../../../manage/sync-schedule-tab/).
+The updated availability setting is shown in the **Grace Period** column and is applied during the next Publisher [Synchronization](../../../manage/sync-tab/).
 
 {% hint style="info" %}
 **Note**

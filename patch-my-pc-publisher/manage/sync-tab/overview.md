@@ -2,9 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Sync Schedule** tab in Patch My PC (PMPC) Publisher controls when Publisher runs an automated _publishing sync_.
-
-<figure><img src="../../../.gitbook/assets/image (4860).png" alt="&#x27;Sync Schedule&#x27; tab" width="563"><figcaption></figcaption></figure>
+The **Sync** tab in Patch My PC (PMPC) Publisher controls when Publisher runs an automated _publishing sync_.
 
 A _publishing sync_ evaluates third party apps and updates, and publishes content based on the configured selections in the Product Trees, customizations, and global options across the tabs.
 
