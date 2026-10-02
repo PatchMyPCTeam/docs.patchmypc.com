@@ -2,7 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Sync Status** section on the **Sync Schedule** tab of Patch My PC (PMPC) Publisher displays the current state of a Publisher synchronization and also allows you to manually [run a Publishing sync.](sync-status.md#run-publishing-service-sync)
+The _Sync Status_ section on the **Schedule** tab of Patch My PC (PMPC) Publisher displays the current state of a Publisher synchronization and also allows you to manually [run a Publishing sync.](sync-status.md#run-publishing-service-sync)
+
+<figure><img src="../../../../.gitbook/assets/image (1292).png" alt="Sync Status section" width="563"><figcaption></figcaption></figure>
 
 ## Status
 
@@ -19,7 +21,7 @@ What happens when you click **Run Publishing Service Sync** depends on whether o
 
 ### Selective Sync
 
-If you have used the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher displays the **Products for Selective Sync** dialog box listing of all products currently marked for Selective Sync.
+If you have used the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher displays the **Products for Selective Sync** dialog box listing all products currently marked for Selective Sync.
 
 <figure><img src="../../../../.gitbook/assets/image (4780).png" alt="&#x27;Products for Selective Sync&#x27; dialog box" width="522"><figcaption></figcaption></figure>
 
@@ -42,11 +44,12 @@ Publisher will download the latest version of the Patch My PC catalog and evalua
 
 To run a Full Sync:
 
-1. Navigate to the **Sync Schedule** tab and click **Run Publishing Service Sync**
+1. Navigate to **Sync | Schedule**
+2. Click **Run Publishing Service Sync**
 
-<figure><img src="../../../../.gitbook/assets/image (4779).png" alt="Navigating to the &#x27;Sync Schedule&#x27; tab and clicking &#x27;Run Publishing Service Sync&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1293).png" alt="Clicking &#x27;Run Publishing Service Sync&#x27;" width="563"><figcaption></figcaption></figure>
 
-2. On the **Run Publishing Service Sync** dialog box, read the message and click **Yes** if you want to proceed or **No** to cancel.
+3. On the **Run Publishing Service Sync** dialog box, read the message and click **Yes** if you want to proceed or **No** to cancel.
 
 <figure><img src="../../../../.gitbook/assets/image (4782).png" alt="&#x27;Run Publishing Service Sync&#x27; dialog box" width="453"><figcaption></figcaption></figure>
 
@@ -54,8 +57,8 @@ The **Run Now Successful** dialog box is displayed stating that the sync command
 
 <figure><img src="../../../../.gitbook/assets/image (4784).png" alt="&#x27;Run Now Successful&#x27; dialog box" width="290"><figcaption></figcaption></figure>
 
-After a period of time, the **Status** field under the **Sync Status** section will change to **Syncing** to show the sync is in progress.
+After a period of time, the Sync Status changes to **Syncing** to show that the sync is in progress.
 
-<figure><img src="../../../../.gitbook/assets/image (4785).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1294).png" alt="Sync status syncing" width="563"><figcaption></figcaption></figure>
 
-Once the sync has completed, the **Status** field changes to **Completed** as detailed at the top of this article.
+Once the sync has completed, the Sync Status changes to **Completed** as detailed at the top of this article.
