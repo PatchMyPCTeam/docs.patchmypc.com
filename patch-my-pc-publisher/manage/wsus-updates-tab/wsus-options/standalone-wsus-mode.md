@@ -10,7 +10,7 @@ This mode is intended only for environments that manage updates using WSUS stand
 
 ## Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager
 
-Enabling the **Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager** option (which isn't by default) enables Standalone WSUS Mode, which controls whether locally published third party updates are visible in the WSUS console.&#x20;
+When you enable the **Make updates appear in the WSUS console. This option isn’t needed if using Configuration Manager** option (which isn't enabled by default) it enables Standalone WSUS Mode, which controls whether locally published third party updates are visible in the WSUS console.&#x20;
 
 When Standalone WSUS Mode is enabled, Publisher marks updates as locally published so they appear in the WSUS console and can be viewed and managed directly in WSUS.
 
@@ -22,7 +22,7 @@ If ConfigMgr is present and managing software updates, you should not check this
 
 ## Use SYSTEM account when connecting to the SQL database or define a custom account below
 
-When enabled, the **Use SYSTEM account when connecting to the SQL database or define a custom account below** option controls how Publisher connects to the WSUS SQL database when Standalone WSUS Mode.
+Enabling the **Use SYSTEM account when connecting to the SQL database or define a custom account below** option controls how Publisher connects to the WSUS SQL database when Standalone WSUS Mode.
 
 {% hint style="success" %}
 **Tip**

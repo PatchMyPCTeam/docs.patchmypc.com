@@ -16,7 +16,7 @@ Some options in the **APPLICATION CREATION** section are global defaults. You ca
 
 ## Allow applications to be installed from the Install Application task sequence action
 
-When the **Allow applications to be installed from the Install Application task sequence action** option is enabled, Publisher explicitly sets this flag on the application object in ConfigMgr.
+When you enable the **Allow applications to be installed from the Install Application task sequence action** option, Publisher explicitly sets this flag on the application object in ConfigMgr.
 
 Specifically, Publisher enables **Allow this application to be installed from the Install Application task sequence action without being deployed** on each application it creates or updates.
 
@@ -109,17 +109,16 @@ If this setting is enabled and application retention is also enabled, any retain
 
 ## **Move applications to a folder in the applications node of the console**
 
-The **Move applications to the following folder in the applications node of the console** setting \
-controls _where_ applications created or updated by Publisher are placed within the **Application Management | Applications** node of the ConfigMgr console.
+The **Move applications to the following folder in the applications node of the console** setting controls _where_ applications created or updated by Publisher are placed within the **Application Management | Applications** node of the ConfigMgr console.
 
-When the **Move applications to the following folder in the applications node of the console** option is enabled and configured, Publisher automatically moves each application it creates or updates into the selected console folder. This helps keep third-party applications organized and separate from manually created or first-party applications.
+When you enable and configure this option, Publisher automatically moves each application it creates or updates into the selected console folder. This helps keep third-party applications organized and separate from manually created or first-party applications.
 
 ### To choose where applications are placed in the ConfigMgr console
 
 1. Load Publisher.
 2. Navigate to the **ConfigMgr Apps | Base Install Options** tab.
 3. Scroll down to the **APPLICATION CREATION** section.
-4. Check that the **Move applications to a folder in the applications node of the console** option is enabled.
+4. Verify that the **Move applications to a folder in the applications node of the console** option is enabled.
 5. Click **Browse Folders**.
 
 <figure><img src="../../../../.gitbook/assets/image (1252).png" alt="Clicking &#x27;Browse Folders&#x27;" width="563"><figcaption></figcaption></figure>

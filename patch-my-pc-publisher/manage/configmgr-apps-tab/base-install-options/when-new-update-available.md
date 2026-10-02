@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # When a New Update is Available section in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
@@ -23,7 +19,7 @@ Some settings apply to both options as detailed in [Common Settings](when-new-up
 
 ## Update existing application (Default)
 
-When the **Update existing application (Default)** option is selected, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](when-new-update-available.md#create-a-new-application).
+When you enable the **Update existing application (Default)** option, Publisher updates an existing ConfigMgr application _in place_ rather than [creating a brand new application](when-new-update-available.md#create-a-new-application).
 
 This is the default option and is commonly used because the application ID does not change in ConfigMgr when we update it to the new version. By keeping the same application ID:
 
@@ -71,7 +67,7 @@ If you encounter these symptoms in a CMG-enabled environment, the recommended wo
 
 ### Delay the in-place application upgrade by _x_ days
 
-When the **Delay the in-place application upgrade by&#x20;**_**x**_**&#x20;days** option is enabled, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
+When you enable the **Delay the in-place application upgrade by&#x20;**_**x**_**&#x20;days** option, application updates are delayed for the specified number of days after the new version is synchronized from the catalog.
 
 * The delay is calculated from the date Publisher first detects the new version.
 * This allows time for validation or testing before updating production applications.
@@ -87,7 +83,7 @@ See [Common Settings](when-new-update-available.md#common-settings) for more inf
 
 ## Create a new application
 
-When the **Create a new application** option is selected, Publisher creates a new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-application-default), it creates a new application ID for every version.
+When you select the **Create a new application** option, Publisher creates a new ConfigMgr application for each new version instead of updating an existing application in place. Unlike the [in-place update option](when-new-update-available.md#update-existing-application-default), it creates a new application ID for every version.
 
 <figure><img src="../../../../.gitbook/assets/image (1254).png" alt="Create a new application" width="563"><figcaption></figcaption></figure>
 
@@ -116,7 +112,7 @@ The following settings can be enabled and configured regardless of whether **Upd
 
 ### Retain up to _x_ previously created applications
 
-When checked, the **Retain up to x previously created applications** checkbox controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [update applications in place](when-new-update-available.md#update-existing-application-default) or [create a new application for each version.](when-new-update-available.md#create-a-new-application)
+When you enable and configure the **Retain up to x previously created applications** option, it controls how many older application versions ConfigMgr retains when Publisher publishes new versions. It applies regardless of whether you choose to [update applications in place](when-new-update-available.md#update-existing-application-default) or [create a new application for each version.](when-new-update-available.md#create-a-new-application)
 
 Valid values range from **0** (the default) to **10**.
 
@@ -152,7 +148,7 @@ To delete applications referenced by task sequences, remove them from the task s
 
 #### **Behavior with update in place**
 
-When you select the [Update existing application (Default)](when-new-update-available.md#update-existing-application-default) option, application retention works by first preserving the current version before applying the update.
+When you enable the [Update existing application (Default)](when-new-update-available.md#update-existing-application-default) option, application retention works by first preserving the current version before applying the update.
 
 Before updating the application to the new version, Publisher duplicates the existing application and moves its content into a **Retained Apps** folder. Publisher then updates the application in place by removing the existing deployment type and creating a new deployment type for the latest version. This ensures the previous version is retained according to the configured retention count while the application ID remains unchanged.
 
@@ -160,7 +156,7 @@ If the number of applications exceeds the configured retention value, Publisher 
 
 #### **Behavior with create new application**
 
-When you select the [Create a new application](when-new-update-available.md#create-a-new-application) option, application retention is applied across the chain of independently created application objects.
+When you enable the [Create a new application](when-new-update-available.md#create-a-new-application) option, application retention is applied across the chain of independently created application objects.
 
 Each new version is created as a separate application. If the number of applications exceeds the configured retention value, Publisher removes the oldest application versions, starting with those that fall outside the retention window.
 
@@ -184,7 +180,7 @@ See [Manage Categories](../../../customizations/list-customizations/manage-categ
 
 ### **Delete applications even if they have a deployment**
 
-When the **Delete applications even if they have a deployment** checkbox is checked, Publisher can delete retained application versions even if they have existing deployments. When disabled, applications with active deployments are preserved and are not removed during retention cleanup.
+When you enable the **Delete applications even if they have a deployment** option, Publisher can delete retained application versions even if they have existing deployments. When disabled, applications with active deployments are preserved and are not removed during retention cleanup.
 
 {% hint style="danger" %}
 **Important**
