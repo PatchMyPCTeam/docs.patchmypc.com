@@ -33,3 +33,18 @@ The **Next scheduled sync** field shows the date and time the next scheduled Syn
 
 <figure><img src="../../../../.gitbook/assets/image (1286).png" alt="&#x27;Next scheduled sync&#x27;" width="563"><figcaption></figcaption></figure>
 
+## Run a missed scheduled sync on startup
+
+When you enable the **Run a missed scheduled sync on startup** option, Publisher will perform a sync as soon as possible. Enable this option if the Publisher service was offline at the time the Sync schedule was due to run.
+
+<figure><img src="../../../../.gitbook/assets/image (1287).png" alt="Run a missed scheduled sync on startup" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+Manual syncs do not affect this option.
+{% endhint %}
+
+When you enable this option, the **Next scheduled sync** section updates to show the **Next sync if saved** entry, showing when the next sync schedule will run if you  click **Apply** or **Save and Close**.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1289).png" alt=""><figcaption></figcaption></figure>
