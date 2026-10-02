@@ -1,15 +1,19 @@
-# Connect Publisher to Patch My PC Cloud section of Patch My PC Publisher
+# Cloud Connection section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Connect Publisher to Patch My PC Cloud** section on the **Cloud** tab of Patch My PC (PMPC) Publisher connects Publisher to your PMPC Cloud Company.
+The **CLOUD CONNECTION** section on the **Cloud** tab of Patch My PC (PMPC) Publisher connects Publisher to your PMPC Cloud Company.
 
-<figure><img src="../../../.gitbook/assets/image (4857).png" alt="&#x27;Connect Publisher to Patch My PC Cloud&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1298).png" alt="&#x27;CLOUD CONNECTION&#x27; section" width="563"><figcaption></figcaption></figure>
 
-{% hint style="danger" %}
-**Important**
+## Connect Publisher to Patch My PC Cloud
 
-The process for connecting Publisher to your PMPC Cloud Company is detailed in the [Add a Publisher Connection](../../../patch-my-pc-cloud/manage/settings/connections/add-connection.md#add-a-publisher-connection) section of [Add a Connection in Patch My PC Cloud](../../../patch-my-pc-cloud/manage/settings/connections/add-connection.md)
+Enabling the **Connect Publisher to Patch My PC Cloud** option allows you to connect Publisher to your PMPC Cloud Company.
+
+{% hint style="info" %}
+**Note**&#x20;
+
+See the [Add a Publisher Connection](../../../patch-my-pc-cloud/manage/settings/connections/add-connection.md#add-a-publisher-connection) section of [Add a Connection in Patch My PC Cloud](../../../patch-my-pc-cloud/manage/settings/connections/add-connection.md) for more information.
 {% endhint %}
 
 Once Publisher has been successfully connected to your PMPC Cloud Company, its connection will be shown under **Settings | Connections** in the PMPC Cloud Portal, with the connection **Type** shown as **Publisher**.
