@@ -18,18 +18,18 @@ This automation can be extremely powerful, but it’s important to configure it 
 Automatic enablement of products is based solely on configured device thresholds. Filters in this form only control what is displayed in the query results and do not influence which applications or updates are automatically enabled.
 {% endhint %}
 
-## Auto-enable products to be published as an update if installed on at least _x_ devices
+## Auto-enable products to be published as an update
 
-When the **Auto-enable products to be published as an update if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox is checked, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the **Intune Updates** tab once they are found on at least the specified number of devices.
+When you enable the **Auto-enable products to be published as an update** option, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the **Intune Updates** tab once they are found on at least the specified number of devices.
 
 * The device count acts as a threshold to prevent enabling products seen only on a small number of machines
 * Once enabled, updates for the product are published according to your existing sync and deployment processes.
 
 This option is commonly used to keep patching coverage up to date as new applications appear in the environment.
 
-## Auto-enable products to be published as an application if installed on at least _x_ devices
+## Auto-enable products to be published as an application
 
-When the **Auto-enable products to be published as an application if installed on at least&#x20;**_**x**_**&#x20;devices** checkbox is checked, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the **Intune Apps** tab once they are found on at least the specified number of devices.
+When you enable the **Auto-enable products to be published as an application** option, products detected in the inventory report obtained through Microsoft Graph are automatically enabled on the **Intune Apps** tab once they are found on at least the specified number of devices.
 
 * This allows Patch My PC to automatically manage application creation for newly detected software.
 * The same device threshold concept applies to avoid enabling applications prematurely.
