@@ -2,5 +2,5 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-Contains various notification-related articles for Patch My PC (PMPC) Publisher Alerts.
+Contains various alert-related articles for Patch My PC (PMPC) Publisher Alerts.
 
