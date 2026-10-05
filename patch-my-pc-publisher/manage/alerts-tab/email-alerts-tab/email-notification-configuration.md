@@ -1,12 +1,8 @@
----
-hidden: true
----
-
-# Authentication section of Patch My PC Publisher
+# Email Notification Configuration section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Authentication** section on the **Email Alerts** tab of Patch My PC (PMPC) Publisher allows you to configure Publisher to send notifications when specific publishing events occur. These alerts provide timely visibility into publishing activity, including successes, warnings, and failures, without requiring administrators to actively monitor logs.
+The **Email Notification Configuration** section on the **Email Alerts** tab of Patch My PC (PMPC) Publisher allows you to configure Publisher to send notifications when specific publishing events occur. These alerts provide timely visibility into publishing activity, including successes, warnings, and failures, without requiring administrators to actively monitor logs.
 
 <figure><img src="../../../../.gitbook/assets/image (735).png" alt="&#x27;Email Notification Configuration&#x27; section" width="563"><figcaption></figcaption></figure>
 
@@ -86,18 +82,18 @@ Enter any additional text you want included at the top of the email report, such
 
 When choosing an authentication method, select the option that aligns with how your mail system accepts SMTP connections.
 
-For internal or on-premises mail servers, [Specified user](authentication.md#specific-user) is commonly used when the relay supports authenticated SMTP connections.
+For internal or on-premises mail servers, [Specified user](email-notification-configuration.md#specific-user) is commonly used when the relay supports authenticated SMTP connections.
 
-For cloud-based email services such as Microsoft 365 (Exchange Online) and Google Workspace, [OAuth2 (App Auth)](authentication.md#oauth2-app-auth) is recommended, as modern cloud providers increasingly restrict or deprecate username and password–based SMTP authentication.
+For cloud-based email services such as Microsoft 365 (Exchange Online) and Google Workspace, [OAuth2 (App Auth)](email-notification-configuration.md#oauth2-app-auth) is recommended, as modern cloud providers increasingly restrict or deprecate username and password–based SMTP authentication.
 
 Ultimately, the appropriate option depends on the authentication methods supported by your SMTP server.
 
 You can choose from the following authentication methods:
 
-* [Anonymous](authentication.md#id-1.-anonymous)
-* [System account](authentication.md#id-3.-system)
-* [Specific user](authentication.md#specified-user)
-* [OAuth2 (App Auth)](authentication.md#id-4.-oauth2-app-auth)
+* [Anonymous](email-notification-configuration.md#id-1.-anonymous)
+* [System account](email-notification-configuration.md#id-3.-system)
+* [Specific user](email-notification-configuration.md#specified-user)
+* [OAuth2 (App Auth)](email-notification-configuration.md#id-4.-oauth2-app-auth)
 
 ### **Anonymous**
 
@@ -166,7 +162,7 @@ Use the **OAuth2 (App Auth)** option to send email using OAuth 2.0 instead of a 
 {% hint style="info" %}
 **Note**
 
-See [OAuth2 (App Auth) Configuration](email-notification-configuration/configure-oauth2.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.
+See [OAuth2 (App Auth) Configuration](authentication/configure-oauth2.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.
 {% endhint %}
 
 ## Save Email Notification Settings

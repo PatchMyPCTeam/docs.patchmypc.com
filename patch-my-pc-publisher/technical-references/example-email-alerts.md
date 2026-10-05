@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-If [email notifications](../manage/alerts-tab/email-alerts-tab/email-notification-configuration/) have configured for Patch My PC (PMPC) Publisher, the email sent at the end of the sync will include the following details for all Published products:
+If [email notifications](../manage/alerts-tab/email-alerts-tab/email-notification-configuration.md) have configured for Patch My PC (PMPC) Publisher, the email sent at the end of the sync will include the following details for all Published products:
 
 * Update/Application **Title** (Links to release notes)
 * **Time** of Publishing
