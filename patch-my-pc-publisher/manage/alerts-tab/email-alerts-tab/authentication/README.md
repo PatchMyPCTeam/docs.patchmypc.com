@@ -37,7 +37,7 @@ Use the **System account** option to authenticate to the SMTP server using the W
 
 Choose this option only if your SMTP relay supports integrated Windows authentication using NTLM or Kerberos. This is typically limited to on-premises Microsoft Exchange servers or internal SMTP relays within the same Active Directory domain.
 
-By default, the Publisher service runs under the **local SYSTEM** account.
+By default, the Publisher service runs under the local **SYSTEM** account.
 
 {% hint style="info" %}
 **Note**
