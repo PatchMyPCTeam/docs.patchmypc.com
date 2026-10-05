@@ -28,7 +28,7 @@ Use the **Anonymous** option only if your SMTP relay explicitly allows unauthent
 {% hint style="info" %}
 **Note**
 
-When you select **Anonymous**, the **Login** and **Password** fields do not appear, as no credentials are required for authentication. See "Server Configuration for Anonymous" for details on how you should configure the settings in the **Server** section.
+When you select **Anonymous**, the **Login** and **Password** fields do not appear, as no credentials are required for authentication. See [Server Configuration for Anonymous](../server.md#server-configuration-for-anonymous) for details on how you should configure the settings in the **Server** section.
 {% endhint %}
 
 ## **System account**
@@ -42,7 +42,7 @@ By default, the Publisher service runs under the **local SYSTEM** account.
 {% hint style="info" %}
 **Note**
 
-When you select **System account**, the **Login** and **Password** fields do not appear, as no credentials are required for authentication. See "Server Configuration for System account" for details on how you should configure the settings in the **Server** section.
+When you select **System account**, the **Login** and **Password** fields do not appear, as no credentials are required for authentication. See [Server Configuration for System account](../server.md#server-configuration-for-system-account) for details on how you should configure the settings in the **Server** section.
 {% endhint %}
 
 ## **Specific user**
@@ -64,7 +64,7 @@ If you choose to use the **Specific user** option, configure the settings in the
 {% hint style="info" %}
 **Note**
 
-See "Server Configuration for Specific user" for details on how you should configure the settings in the **Server** section.
+See [Server Configuration for Specific user](../server.md#server-configuration-for-specific-user) for details on how you should configure the settings in the **Server** section.
 {% endhint %}
 
 ### OAuth2 (App Auth)
@@ -76,4 +76,3 @@ Use the **OAuth2 (App Auth)** option to send email using OAuth 2.0 instead of a 
 
 See [OAuth2 (App Auth) Configuration](configure-oauth2.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.
 {% endhint %}
-
