@@ -1,12 +1,8 @@
----
-hidden: true
----
-
 # Authentication section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Authentication** section on the **Email Alerts** tab of Patch My PC (PMPC) Publisher configures how Publisher signs into to the mail server to be able to send email alerts.
+The **Authentication** section on the **Email Alerts** tab of Patch My PC (PMPC) Publisher configures how Publisher signs in to the mail server to be able to send email alerts.
 
 <figure><img src="../../../../../.gitbook/assets/image (1322).png" alt="&#x27;Authentication&#x27; section" width="563"><figcaption></figcaption></figure>
 

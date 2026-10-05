@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Email Notification Configuration section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_

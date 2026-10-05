@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Disable email for manual sync in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
