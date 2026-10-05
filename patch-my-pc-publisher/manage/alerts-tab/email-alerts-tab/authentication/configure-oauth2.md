@@ -137,7 +137,7 @@ To add the required Microsoft Graph **Mail.Send (Application)** permission to th
 
 <figure><img src="../../../../../.gitbook/assets/image (239).png" alt="Confirm the Mail.Send permissions has been added and granted" width="563"><figcaption></figcaption></figure>
 
-11. Navigate to **Certificates & secrets** in the Entra ID app registration. Create or identify the client credential Publisher will use for email notifications (this can be either a certificate or a client secret, depending on the selected authentication method). Make a note of the required values, such as the Application Client ID, Tenant ID, and certificate or secret details so you can [Configure Publisher](configure-oauth2.md#configure-the-publisher-1).
+11. Navigate to **Certificates & secrets** in the Entra ID app registration. Create or identify the client credential Publisher will use for email notifications (this can be either a certificate or a client secret, depending on the selected authentication method). Make a note of the required values, such as the Application Client ID, Tenant ID, and certificate or secret details so you can [Configure Publisher](configure-oauth2.md#configure-publisher-1).
 
 {% hint style="info" %}
 **Note**
