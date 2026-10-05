@@ -31,7 +31,7 @@ This approach aligns with Microsoft’s recommended model for service authentica
 When deciding which Microsoft Entra ID app registration to use for OAuth2 email authentication, you have two options:
 
 * [Option 1: Use existing App Registration (Recommended)](configure-oauth2.md#option-1-use-existing-app-registration-recommended)
-* [Option 2: Create a new (or use a different) App Registration](configure-oauth2.md#option2-create-a-new-or-use-a-different-app-registration)
+* [Option 2: Create a new (or use a different) App Registration](configure-oauth2.md#option-2-create-a-new-or-use-a-different-app-registration)
 
 ## Option 1: Use existing App Registration (Recommended)
 
