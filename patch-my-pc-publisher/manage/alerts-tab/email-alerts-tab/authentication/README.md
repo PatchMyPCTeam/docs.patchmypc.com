@@ -57,7 +57,7 @@ Microsoft Exchange Online has deprecated Basic SMTP authentication and does not 
 Some providers, such as Google Workspace, may still allow authenticated SMTP using a username and password, but this typically requires additional configuration and may be restricted by tenant security policies.
 {% endhint %}
 
-If you choose to use the **Specific user** option, configure the settings in the **Specified User** section as follows:
+If you choose to use the **Specific user** option, configure the following settings:
 
 <table><thead><tr><th width="101.77777099609375" valign="top">Field</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Login</td><td valign="top">Enter the username used to authenticate to the SMTP server. This is often a full email address but may vary depending on your mail provider or relay configuration.</td></tr><tr><td valign="top">Password</td><td valign="top">Enter the password associated with the specified SMTP account.</td></tr></tbody></table>
 
