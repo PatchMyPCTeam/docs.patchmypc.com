@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-If [email notifications](https://app.gitbook.com/s/-MX7dvS0r_4fc0AikgJS/patch-my-pc-publisher/manage/alerts-tab/email-alerts-tab/email-notification-configuration) have configured for Patch My PC (PMPC) Publisher, the email sent at the end of the sync will include the following details for all Published products:
+If [email notifications](/broken/pages/m41roRDpfy5O3wGKwr7B) have configured for Patch My PC (PMPC) Publisher, the email sent at the end of the sync will include the following details for all Published products:
 
 * Update/Application **Title** (Links to release notes)
 * **Time** of Publishing

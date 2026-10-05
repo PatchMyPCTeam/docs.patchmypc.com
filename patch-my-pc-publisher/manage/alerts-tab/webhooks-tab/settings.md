@@ -6,22 +6,6 @@ The **Webhook Notification Configuration** section on the **Webhooks** tab of Pa
 
 <figure><img src="../../../../.gitbook/assets/image (736).png" alt="&#x27;Webhook Notification Configuration&#x27; section " width="563"><figcaption></figcaption></figure>
 
-Webhook notifications are commonly used to notify operations, security, or platform teams when publishing events occur.
-
-When webhook notifications are enabled, the Publisher sends HTTP POST messages to the configured webhook endpoints based on publishing events and the selected notification level. Each configured webhook represents a single destination, such as a Teams channel or Slack workspace.
-
-Multiple webhook destinations can be configured, and each webhook can be independently enabled, disabled, tested, or removed.
-
-## Send Webhook Reports
-
-Webhook notifications must be enabled before individual webhooks can be configured.
-
-1. Open the Publisher console and navigate to **Alerts**.
-2. Expand **Webhook Notifications**.
-3. Select **Send Webhook Reports** to enable webhook notifications.
-
-<figure><img src="../../../../.gitbook/assets/image (31).png" alt="Send Webhook Reports" width="545"><figcaption></figcaption></figure>
-
 ## Add a Webhook
 
 Use this option to create a new webhook notification.

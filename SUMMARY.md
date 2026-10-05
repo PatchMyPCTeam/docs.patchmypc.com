@@ -537,6 +537,7 @@
         * [Server section of Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/email-alerts-tab/server.md "Server")
         * [Disable email for manual sync in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/email-alerts-tab/disable-email-manual-sync.md "Disable email for manual sync")
       * [Webhooks tab of Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/README.md "Webhooks tab")
+        * [Send webhook reports in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/send-webhook-reports.md "Send webhook reports")
         * [Webhook Notification Settings in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/settings.md "Webhook Notification Settings")
         * [Configure a Webhook in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/configure.md "Configure a Webhook")
         * [Create a Microsoft Teams Webhook URL in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/create-microsoft-teams-webhook-url.md "Create a Teams Webhook URL")
