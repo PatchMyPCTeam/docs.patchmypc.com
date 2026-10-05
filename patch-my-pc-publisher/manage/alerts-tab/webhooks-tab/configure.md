@@ -16,7 +16,7 @@ Specifies the target messaging system used for webhook notifications. The select
 
 ### Microsoft Teams Workflow
 
-This is the recommended option for Microsoft Teams. It uses the modern Microsoft Teams workflow based webhook model, which supports Adaptive Cards. See [Create a Microsoft Teams Webhook URL](add-webhook/create-microsoft-teams-webhook-url.md) for more information.
+This is the recommended option for Microsoft Teams. It uses the modern Microsoft Teams workflow based webhook model, which supports Adaptive Cards. See [Create a Microsoft Teams Webhook URL](technical-references-for-patch-my-pc-publisher-alerts/create-microsoft-teams-webhook-url.md) for more information.
 
 ### Microsoft Teams Legacy Webhook
 
@@ -31,12 +31,12 @@ The legacy provider was used by earlier versions of the Publisher that relied on
 {% hint style="info" %}
 **Note**
 
-Customers using the legacy provider should plan to migrate to Microsoft Teams Workflow. See [Update a Microsoft Teams Legacy Webhook to Use Workflows](add-webhook/update-teams-legacy-webhook-use-workflows.md) for more information.
+Customers using the legacy provider should plan to migrate to Microsoft Teams Workflow. See [Update a Microsoft Teams Legacy Webhook to Use Workflows](technical-references-for-patch-my-pc-publisher-alerts/update-teams-legacy-webhook-use-workflows.md) for more information.
 {% endhint %}
 
 ### Slack
 
-This option sends webhook notifications to Slack using the Slack webhook payload format. See [Create a Slack Webhook URL](add-webhook/create-slack-webhook-url.md) for more information.
+This option sends webhook notifications to Slack using the Slack webhook payload format. See [Create a Slack Webhook URL](technical-references-for-patch-my-pc-publisher-alerts/create-slack-webhook-url.md) for more information.
 
 ## Webhook URL
 
