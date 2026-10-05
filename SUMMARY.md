@@ -536,7 +536,6 @@
           * [Configure OAuth2 (App Auth) in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/email-alerts-tab/authentication/configure-oauth2.md "Configure OAuth2")
         * [Server section of Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/email-alerts-tab/server.md "Server")
         * [Disable email for manual sync in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/email-alerts-tab/disable-email-manual-sync.md "Disable email for manual sync")
-        * [Email Notification Configuration section of Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/email-alerts-tab/email-notification-configuration.md "Email Notification Configuration")
       * [Webhooks tab of Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/README.md "Webhooks tab")
         * [Webhook Notification Settings in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/settings.md "Webhook Notification Settings")
         * [Configure a Webhook in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/configure.md "Configure a Webhook")
