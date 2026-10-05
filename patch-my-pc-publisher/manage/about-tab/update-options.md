@@ -16,13 +16,13 @@ When enabled, the **Latest Available Preview Version** line appears under the **
 
 Most environments should remain on production builds. In some cases, support may ask you to install a preview build to resolve a specific issue or to enable a feature under preview.
 
-If a preview build is installed for this purpose, it is recommended to return to the production channel once a new production release becomes available. To do this, uncheck the **Install preview builds** checkbox.
+If a preview build is installed for this purpose, it is recommended to return to the production channel once a new production release becomes available. To do this, disable the **Install preview builds** option.
 
 ## **Disable self-updates (not recommended)**
 
 The **Disable self-updates** option can be used in controlled environments where version changes are managed by internal risk groups or formal change-control processes.
 
-If checked, Publisher will not automatically update to a newer version.
+If enabled, Publisher will not automatically update to a newer version.
 
 {% hint style="danger" %}
 **Important**
