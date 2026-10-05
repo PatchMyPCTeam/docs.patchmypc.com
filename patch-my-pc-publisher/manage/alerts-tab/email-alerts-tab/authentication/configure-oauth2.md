@@ -71,9 +71,9 @@ To add the required Microsoft Graph **Mail.Send (Application)** permission to th
 
 ### Configure Publisher
 
-After selecting OAuth2 as the email authentication type, select **Use existing app registration** to reuse the same Microsoft Entra ID app registration configured under [Intune Apps/Updates | Options](../../../intune-tabs/intune-options/). The available fields are automatically updated to reflect the existing app registration details and authentication method.
+After selecting **OAuth2 (App Auth)** as the **Authentication** type, enable the **Use existing app registration** option to reuse the same Microsoft Entra ID app registration configured under [Intune Apps/Updates | Options](../../../intune-tabs/intune-options/). The available fields are automatically updated to reflect the existing app registration details and authentication method.
 
-<figure><img src="../../../../../.gitbook/assets/image (4206).png" alt="Use existing app registration" width="446"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1324).png" alt="Use existing app registration" width="563"><figcaption></figcaption></figure>
 
 Click [Test Permissions](configure-oauth2.md#test-permissions) to verify the API permissions have been configured correctly.
 
@@ -147,9 +147,9 @@ For additional guidance on choosing and configuring app registration credentials
 
 ### Configure Publisher
 
-After selecting **OAuth2** as the email authentication type, configure the following options to complete the OAuth2 configuration in the Publisher.
+After selecting **OAuth2 (App Auth)** as the **Authentication** type, configure the following options to complete the OAuth2 configuration in Publisher.
 
-#### Auth Type
+#### Credential
 
 Select the authentication type based on the client credential configured for the Entra ID app registration.
 
