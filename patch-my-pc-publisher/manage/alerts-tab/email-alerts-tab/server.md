@@ -15,7 +15,7 @@ See the relevant section for the Authentication method you have chosen:
 {% hint style="info" %}
 **Note**
 
-When you choose the "OAuth2 (App Auth) authentication method", the **Server** section disappears as it is not relevant to this authentication method.
+When you choose the **OAuth2 (App Auth)** authentication method, the **Server** section disappears as it is not relevant to this authentication method.
 {% endhint %}
 
 ## **Server Configuration for Anonymous**
@@ -35,27 +35,3 @@ If you choose the "System account" authentication method", configure the setting
 If you choose the "Specific user" authentication method", configure the settings in the **Server** section as follows:
 
 <table><thead><tr><th width="101.77777099609375" valign="top">Field</th><th valign="top">Configuration</th></tr></thead><tbody><tr><td valign="top">Server</td><td valign="top">Enter the DNS name or IP address of the SMTP server that will relay email messages. This is typically an internal Microsoft Exchange server or an authenticated SMTP relay.</td></tr><tr><td valign="top">Port</td><td valign="top">Specify the port used to connect to the SMTP server. The appropriate port depends on how the relay is configured and typically supports authenticated SMTP connections.</td></tr><tr><td valign="top">Use TLS</td><td valign="top">Enables Transport Layer Security (TLS) for the SMTP connection. This encrypts the connection to the SMTP server and is required by most authenticated SMTP relays and cloud-based mail services.</td></tr></tbody></table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Use the OAuth2 (App Auth) option to send email using OAuth 2.0 instead of a mailbox username and password. OAuth2 authenticates using a Microsoft Entra ID app registration and is the recommended approach for modern cloud email services.
-
-{% hint style="info" %}
-**Note**
-
-See [OAuth2 (App Auth) Configuration](authentication/configure-oauth2.md) for detailed guidance on how to configure OAuth 2.0 authentication for email notifications.
-{% endhint %}
