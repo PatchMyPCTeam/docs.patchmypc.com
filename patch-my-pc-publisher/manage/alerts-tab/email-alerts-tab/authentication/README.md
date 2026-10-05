@@ -16,10 +16,10 @@ Ultimately, the appropriate option depends on the authentication methods support
 
 You can choose from the following authentication methods:
 
-* [Anonymous](./#id-1.-anonymous)
-* [System account](./#id-3.-system)
-* [Specific user](./#specified-user)
-* [OAuth2 (App Auth)](./#id-4.-oauth2-app-auth)
+* [Anonymous](./#anonymous)
+* [System account](./#system-account)
+* [Specific user](./#specific-user)
+* [OAuth2 (App Auth)](./#oauth2-app-auth)
 
 ## **Anonymous**
 
