@@ -42,7 +42,7 @@ The webhook URL must start with `http://` or `https://` to be considered valid.
 
 <figure><img src="../../../../.gitbook/assets/image (1337).png" alt="Webhook URL" width="527"><figcaption></figcaption></figure>
 
-7. Under the **Notification Level** section, select the required value that determines the overall verbosity of webhook messages.
+7. Under the **Notification level** section, select the required value that determines the overall verbosity of webhook messages.
    1. **All -** Sends notifications for all publishing events, including successes and errors.
    2. **Error -** Sends notifications only when a publishing error occurs.
    3. **Success -** Sends notifications only when publishing actions complete successfully.
@@ -59,16 +59,16 @@ When this option is disabled, a single webhook notification is sent only after a
 
 The end-of-synchronization notification provides a consolidated summary of all processed products but does not provide visibility into progress while the synchronization is running.
 
-10. Under the **Scope** section, configure the relevant options:
-    1. **Update notifications**
-    2. **ConfigMgr notifications**
-    3. **Alert notifications**
-    4. **Intune application notifications**
-    5. **Intune update notifications**
+9. Under the **Scope** section, configure the relevant options:
+   1. **Update notifications**
+   2. **ConfigMgr notifications**
+   3. **Alert notifications**
+   4. **Intune application notifications**
+   5. **Intune update notifications**
 
 <figure><img src="../../../../.gitbook/assets/image (1336).png" alt="&#x27;Scope&#x27; section" width="527"><figcaption></figcaption></figure>
 
-11. Click **Apply** to save the new webhook.
+10. Click **Apply** to save the new webhook.
 
 ## MSP Configuration
 
