@@ -2,82 +2,87 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Notification Webhook Configuration** dialog is shown in Patch My PC (PMPC) Publisher when creating a new webhook, editing an existing webhook, or copying a webhook.
+The **All Notifications** section on the **Webhooks** tab of Patch My PC (PMPC) Publisher allows you to perform the following actions on webhooks:
 
-<figure><img src="../../../../.gitbook/assets/image (3906).png" alt="Webhook Configuration" width="450"><figcaption></figcaption></figure>
+* [Test](configure.md#test-button)
+* [Copy](configure.md#copy-button)
+* [Advanced](configure.md#advanced-button)
+* [Remove](configure.md#remove-button)
 
-## Name
+<figure><img src="../../../../.gitbook/assets/image (1338).png" alt="&#x27;All Notifications&#x27; section" width="528"><figcaption></figcaption></figure>
 
-Specifies a friendly label used to identify the webhook in the Publisher.
+## Test button
 
-## Webhook Provider
+Clicking **Test** sends a test notification for the selected webhook to the configured destination, so you know the webhook has been configured correctly and is working.
 
-Specifies the target messaging system used for webhook notifications. The selected provider determines the expected webhook payload format.
+### To test a webhook
 
-### Microsoft Teams Workflow
+1. Load Publisher.
+2. Navigate to **Alerts | Webhooks**.
+3. Click the webhook you want to test, then click **Test**.
 
-This is the recommended option for Microsoft Teams. It uses the modern Microsoft Teams workflow based webhook model, which supports Adaptive Cards. See [Create a Microsoft Teams Webhook URL](technical-references/create-microsoft-teams-webhook-url.md) for more information.
+<figure><img src="../../../../.gitbook/assets/image (1341).png" alt="Clicking the webhook to test, then clicking &#x27;Test&#x27;." width="563"><figcaption></figcaption></figure>
 
-### Microsoft Teams Legacy Webhook
+Publisher sends a test HTTP POST message to the webhook URL configured for the selected webhook.
 
-This option exists only for backward compatibility with older Publisher configurations where Microsoft Teams webhooks were created using the legacy Microsoft Teams incoming webhook model.
+If the test is successful, the **Webhook Test** popup shows:
 
-{% hint style="danger" %}
-**Important**
+**A test webhook notification has been successfully sent**
 
-The legacy provider was used by earlier versions of the Publisher that relied on the older Teams message card format. It is retained to ensure existing customer configurations continue to function without requiring immediate changes.
-{% endhint %}
+<figure><img src="../../../../.gitbook/assets/image (1339).png" alt="A test webhook notification has been successfully sent" width="320"><figcaption></figcaption></figure>
+
+The message should also appear in the target system, such as a Microsoft Teams channel or Slack workspace.
+
+If the test fails, the **Webhook Send Error** is displayed with the resulting error, which can be copied to the Windows Clipboard to allow you to investigate the issue. The error typically indicates connectivity issues, an invalid webhook URL, or a response error from the destination service. The webhook must be configured correctly before notifications will work.
+
+<figure><img src="../../../../.gitbook/assets/image (3899).png" alt="Failed Webhook Test" width="427"><figcaption></figcaption></figure>
+
+## Copy button
+
+Clicking **Copy** creates a new webhook based on the configuration of the selected webhook.
+
+### To copy a webhook
+
+1. Load Publisher.
+2. Navigate to **Alerts | Webhooks**.
+3. Click the existing webhook you want to copy, then click **Copy**.
+
+<figure><img src="../../../../.gitbook/assets/image (1343).png" alt="Clicking the webhook you want to copy, then clicking &#x27;Copy&#x27;." width="563"><figcaption></figcaption></figure>
+
+The existing webhook is copied and selected. The new webhook is appended with **- Copy** at the end of the name so you know you are working on the copy, not the original.
+
+<figure><img src="../../../../.gitbook/assets/image (1345).png" alt="Copy of an existing webhook" width="563"><figcaption></figcaption></figure>
+
+4. Update the **Name** field with a new name.
+5. Update the **Webhook URL** field with the new webhook URL for this webhook.
 
 {% hint style="info" %}
 **Note**
 
-Customers using the legacy provider should plan to migrate to Microsoft Teams Workflow. See [Update a Microsoft Teams Legacy Webhook to Use Workflows](technical-references/update-teams-legacy-webhook-use-workflows.md) for more information.
+If you attempt to save the new webhook without updating the **Webhook URL** field, the **Save Failed** dialog appears, telling you that you must update the **Webhook URL** field.
+
+![Save failed](<../../../../.gitbook/assets/image (1346).png>)
+
+All other settings are copied from the original webhook, including the message system and notification level. Webhook scope and product selection are also copied, allowing the new webhook to inherit the same filtering and targeting configuration.
 {% endhint %}
 
-### Slack
+6. Make any required changes to the configuration of the new webhook, then click **Apply** to save your changes.
 
-This option sends webhook notifications to Slack using the Slack webhook payload format. See [Create a Slack Webhook URL](technical-references/create-slack-webhook-url.md) for more information.
+{% hint style="success" %}
+**Tip**
 
-## Webhook URL
-
-Specifies the destination webhook endpoint URL generated by the target messaging platform. This field is required and must be valid for notifications to be delivered.
-
-{% hint style="info" %}
-**Note**
-
-The webhook URL must start with `http://` or `https://` to be considered valid.
+See [Add a Webhook](add-webhook.md) for more information on the available options.
 {% endhint %}
 
-## Notification Level
+7. Once you have saved the new webhook, click [Test](configure.md#test-button) to ensure it works.
 
-Controls which publishing events generate notifications for this webhook. This setting determines the overall verbosity of webhook messages.
+## Advanced button
 
-* **All**\
-  Sends notifications for all publishing events, including successes and errors.
-* **Error**\
-  Sends notifications only when a publishing error occurs.
-* **Success**\
-  Sends notifications only when publishing actions complete successfully.
+Clicking **Advanced** opens the **Advanced Webhook Scope** screen that allows you to configure advanced settings for the webhook.
 
-## Send alerts as each product is published
+<figure><img src="../../../../.gitbook/assets/image (1361).png" alt="&#x27;Advanced Webhook Scope&#x27; screen" width="449"><figcaption></figcaption></figure>
 
-This option is enabled by default and is the recommended configuration.
-
-When enabled, webhook notifications are sent after each product is processed during a publishing synchronization. Each notification represents an individual product that has been successfully processed or failed, making it easier to track progress during large publishing runs.
-
-<figure><img src="../../../../.gitbook/assets/image (3907).png" alt="Send alerts as each product is published is enabled" width="563"><figcaption></figcaption></figure>
-
-When this option is disabled, a single webhook notification is sent only after all products have finished processing at the end of the publishing synchronization.
-
-<figure><img src="../../../../.gitbook/assets/image (3908).png" alt="Send alerts as each product is published is disabled" width="563"><figcaption></figcaption></figure>
-
-The end of synchronization notification provides a consolidated summary of all processed products but does not provide visibility into progress while the synchronization is running.
-
-## Webhook Scope
-
-The tabs shown in **Product Selection** reflect the same publishing areas available in the Publisher.
-
-Each tab maps directly to a corresponding Publisher tab:
+The tabs under the **Product Selection** section reflect the same publishing areas available in Publisher, with each tab mapping directly to a corresponding Publisher tab:
 
 * **Updates**
 * **ConfigMgr Apps**
@@ -86,8 +91,6 @@ Each tab maps directly to a corresponding Publisher tab:
 
 This alignment ensures that webhook product scoping follows the same structure and product groupings used for publishing configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (230).png" alt="Product Selection" width="450"><figcaption></figcaption></figure>
-
 You can expand vendors and select individual products to include in webhook notifications. Only the selected products generate notifications for the corresponding content type.
 
 Use the filter field to quickly locate vendors or products by name.
@@ -95,8 +98,46 @@ Use the filter field to quickly locate vendors or products by name.
 {% hint style="danger" %}
 **Important**
 
-**E**nd of synchronization alerts cannot be filtered by specific product. If [Send alerts as each product is published](configure.md#send-alerts-as-each-product-is-published) is unchecked, product selection is disabled and all products are included automatically.
+End of synchronization alerts cannot be filtered by specific product. If [Send alerts as each product is published](configure.md#send-alerts-as-each-product-is-published) is unchecked, product selection is disabled and all products are included automatically.
 {% endhint %}
+
+### To configure advanced settings for a webhook
+
+1. Load Publisher.
+2. Navigate to **Alerts | Webhooks**.
+3. Click the webhook you want to configure, then click **Advanced**.
+
+<figure><img src="../../../../.gitbook/assets/image (1362).png" alt="Clicking &#x27;Advanced&#x27;" width="563"><figcaption></figcaption></figure>
+
+4. On the **Advanced Webhook Scope** screen, configure the relevant products on the relevant tabs, then click **OK**.
+
+## Remove button
+
+Clicking **Remove** deletes the selected webhook.
+
+### To remove a webhook
+
+1. Load Publisher.
+2. Navigate to **Alerts | Webhooks**.
+3. Click the webhook you want to remove, then click **Remove**.
+
+<figure><img src="../../../../.gitbook/assets/image (1355).png" alt="Clicking &#x27;Remove&#x27;" width="563"><figcaption></figcaption></figure>
+
+The webhook is deleted from Publisher.
+
+<figure><img src="../../../../.gitbook/assets/image (1359).png" alt="Webhook deleted" width="215"><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+**Important**
+
+Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and reopen Publisher without clicking **Apply**, the removed webhook will still appear.
+{% endhint %}
+
+4. Click **Apply**.
+
+
+
+
 
 ## MSP Configuration
 

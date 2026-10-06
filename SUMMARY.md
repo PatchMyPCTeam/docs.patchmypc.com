@@ -539,7 +539,6 @@
       * [Webhooks tab of Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/README.md "Webhooks tab")
         * [Send webhook reports in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/send-webhook-reports.md "Send webhook reports")
         * [Add a Webhook in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/add-webhook.md "Add a Webhook")
-        * [All Notifications section of Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/all-notifications.md "All Notifications")
         * [Configure a Webhook in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/configure.md "Configure a Webhook")
         * [Technical references for Patch My PC Publisher Alerts](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/technical-references/README.md "Technical references")
           * [Create a Microsoft Teams Webhook URL in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/technical-references/create-microsoft-teams-webhook-url.md "Create a Teams Webhook URL")

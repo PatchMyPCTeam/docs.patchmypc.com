@@ -37,4 +37,4 @@ To configure a Slack webhook URL:
 
 <figure><img src="../../../../../.gitbook/assets/image (189).png" alt="Copy the Webhook URL" width="563"><figcaption></figcaption></figure>
 
-The copied URL can be used when [adding](../all-notifications.md#add-a-webhook) or [editing](../all-notifications.md#edit-a-webhook) a webhook in the Publisher.
+The copied URL can be used when [adding](/broken/pages/3uLaLxJbDSncc1buLQCp#add-a-webhook) or [editing](/broken/pages/3uLaLxJbDSncc1buLQCp#edit-a-webhook) a webhook in the Publisher.
