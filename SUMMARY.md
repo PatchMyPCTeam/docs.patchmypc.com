@@ -540,7 +540,7 @@
         * [Send webhook reports in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/send-webhook-reports.md "Send webhook reports")
         * [Add a Webhook in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/add-webhook.md "Add a Webhook")
         * [Configure a Webhook in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/configure.md "Configure a Webhook")
-        * [Technical references for Patch My PC Publisher Alerts](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/technical-references/README.md "Technical references")
+        * [Technical references for Patch My PC Publisher Webhooks](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/technical-references/README.md "Technical references")
           * [Create a Microsoft Teams Webhook URL in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/technical-references/create-microsoft-teams-webhook-url.md "Create a Teams Webhook URL")
           * [Create a Slack Webhook URL in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/technical-references/create-slack-webhook-url.md "Create a Slack Webhook URL")
           * [Update a Microsoft Teams Legacy Webhook to Use Workflows in Patch My PC Publisher](patch-my-pc-publisher/manage/alerts-tab/webhooks-tab/technical-references/update-teams-legacy-webhook-use-workflows.md "Update a Teams Legacy Webhook to Use Workflows")
