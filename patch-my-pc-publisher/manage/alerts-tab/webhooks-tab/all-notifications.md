@@ -84,12 +84,22 @@ Clicking **Advanced** allows you to configure advanced settings for the webhook.
 
 Clicking **Remove** deletes the selected webhook.
 
-When you select a webhook and click **Remove**, the webhook is removed from the list and will no longer receive notifications.
+### To remove a webhook
 
-<figure><img src="../../../../.gitbook/assets/image (35).png" alt="Remove a Webhook" width="545"><figcaption></figcaption></figure>
+1. Load Publisher.
+2. Navigate to **Alerts | Webhooks**.
+3. Click the webhook you want to remove, then click **Remove**.
+
+<figure><img src="../../../../.gitbook/assets/image (1355).png" alt="Clicking &#x27;Remove&#x27;" width="563"><figcaption></figcaption></figure>
+
+The webhook is deleted from Publisher.
+
+<figure><img src="../../../../.gitbook/assets/image (1359).png" alt="Webhook deleted" width="215"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**
 
-Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and re-open the Publisher without savings the Publisher settings, the deleted webhook is restored.
+Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and reopen Publisher without clicking **Apply**, the removed webhook will still appear.
 {% endhint %}
+
+4. Click **Apply**.
