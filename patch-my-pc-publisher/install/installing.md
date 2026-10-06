@@ -31,7 +31,7 @@ To ease troubleshooting, we recommend accepting the default installation locatio
 
 <figure><img src="../../.gitbook/assets/image (1347).png" alt="&#x27;Install location&#x27; screen" width="490"><figcaption></figcaption></figure>
 
-3. On the **Select your install mode and integration settings** screen, select both the relevant **Install Mode** and Integrations, then click **Install**. &#x20;
+3. On the **Select your install mode and integration settings** screen, select both the relevant **Install Mode** and **Integrations**, then click **Install**. &#x20;
 
 <figure><img src="../../.gitbook/assets/image (1349).png" alt="&#x27;Select your install mode and integration settings&#x27; screen" width="490"><figcaption></figcaption></figure>
 
