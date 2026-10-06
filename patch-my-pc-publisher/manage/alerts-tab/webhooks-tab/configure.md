@@ -93,12 +93,12 @@ This alignment ensures that webhook product scoping follows the same structure a
 
 You can expand vendors and select individual products to include in webhook notifications. Only the selected products generate notifications for the corresponding content type.
 
-Use the filter field to quickly locate vendors or products by name.
+Use the **Filter** field to quickly locate vendors or products by name.
 
 {% hint style="danger" %}
 **Important**
 
-End of synchronization alerts cannot be filtered by specific product. If [Send alerts as each product is published](configure.md#send-alerts-as-each-product-is-published) is unchecked, product selection is disabled and all products are included automatically.
+End-of-synchronization alerts cannot be filtered by specific product. If the **Send alerts as each product is published** option is disabled, product selection is disabled and all products are included automatically.
 {% endhint %}
 
 ### To configure advanced settings for a webhook
@@ -119,7 +119,7 @@ Clicking **Remove** deletes the selected webhook.
 
 1. Load Publisher.
 2. Navigate to **Alerts | Webhooks**.
-3. Click the webhook you want to remove, then click **Remove**.
+3. Select the webhook you want to remove, then click **Remove**.
 
 <figure><img src="../../../../.gitbook/assets/image (1355).png" alt="Clicking &#x27;Remove&#x27;" width="563"><figcaption></figcaption></figure>
 
@@ -130,14 +130,10 @@ The webhook is deleted from Publisher.
 {% hint style="danger" %}
 **Important**
 
-Removing a webhook does not display a confirmation dialog. The webhook is permanently deleted after the Publisher settings are saved. If you close and reopen Publisher without clicking **Apply**, the removed webhook will still appear.
+Removing a webhook does not display a confirmation dialog. The webhook is only permanently deleted after the Publisher settings are saved. If you close and reopen Publisher without clicking **Apply**, the removed webhook will still appear.
 {% endhint %}
 
 4. Click **Apply**.
-
-
-
-
 
 ## MSP Configuration
 
