@@ -29,7 +29,7 @@ To create a webhook URL:
 
 <figure><img src="../../../../../.gitbook/assets/image (229).png" alt="Copy the webhook URL" width="563"><figcaption></figcaption></figure>
 
-The copied URL can be used when [adding](../settings.md#add-a-webhook) or [editing](../settings.md#edit-a-webhook) a webhook in the Publisher.
+The copied URL can be used when [adding](../all-notifications.md#add-a-webhook) or [editing](../all-notifications.md#edit-a-webhook) a webhook in the Publisher.
 
 ## Consideration for Teams Private Channels
 
