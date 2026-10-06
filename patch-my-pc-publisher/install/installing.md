@@ -13,25 +13,13 @@ Please review the [Core Requirements for Publisher](../requirements/core-require
 To install Patch My PC (PMPC) Publisher:
 
 1. Once you have [downloaded Publisher](download.md), double-click the MSI to launch the installer.
-2. On the **Welcome** screen, click **Next**
+2. On the **Install location** screen, check the checkbox beside the **I agree to the license terms and conditions** option, then click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (4756).png" alt="&#x27;Welcome&#x27; screen" width="371"><figcaption></figcaption></figure>
+{% hint style="success" %}
+**Tip**
 
-3. On the **End-User License Agreement** screen, review the **Terms of Service**, and if you agree with them, select the **I accept...** option, then click **Next**.
-
-<figure><img src="../../.gitbook/assets/image (4757).png" alt="&#x27;End-User License Agreement&#x27; screen" width="371"><figcaption></figcaption></figure>
-
-4. On the **Enable Intune Standalone Mode** screen, check the **Enable Microsoft Intune standalone mode** checkbox only if you are going to use Publisher to publish applications and updates in Intune only, then click **Next**.
-
-{% hint style="info" %}
-**Note**
-
-Intune standalone mode removes some Publisher tabs used specifically for publishing applications and updates to ConfigMgr and WSUS. These tabs can be re-enabled retrospectively after installation from the **Advanced** tab in Publisher.
+Clicking the **I agree to the license terms and conditions** text opens our Terms of Service in a browser so you can review them.
 {% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (4758).png" alt="&#x27;Enable Intune Standalone Mode&#x27; screen" width="371"><figcaption></figcaption></figure>
-
-5. On the **Select Installation Folder** screen, choose where to install Publisher, then click **Next**.
 
 {% hint style="info" %}
 **Note**
@@ -41,21 +29,21 @@ To ease troubleshooting, we recommend accepting the default installation locatio
 `C:\Program Files\Patch My PC\Patch My PC Publishing Service\`
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4760).png" alt="&#x27;Select Installation Folder&#x27; screen" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1347).png" alt="&#x27;Install location&#x27; screen" width="490"><figcaption></figcaption></figure>
 
-6. On the **Ready to Install** screen, click **Install.**
+3. On the **Select your install mode and integration settings** screen, select both the relevant **Install Mode** and Integrations, then click **Install**. &#x20;
 
-<figure><img src="../../.gitbook/assets/image (4761).png" alt="&#x27;Ready to Install&#x27; screen" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1349).png" alt="&#x27;Select your install mode and integration settings&#x27; screen" width="490"><figcaption></figcaption></figure>
 
-7. Click **Yes** if you receive a UAC prompt.\
+4. Click **Yes** if you receive a UAC prompt.\
    \
    Publisher is then installed.
 
-<figure><img src="../../.gitbook/assets/image (4762).png" alt="Publisher installation begins" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1350).png" alt="Publisher installing" width="490"><figcaption></figcaption></figure>
 
-8. On the **Completion** screen, uncheck the **Launch Patch My PC Publishing Service** if you don't want to launch Publisher immediately, then click **Finish**.
+5. If the **Launch when ready** checkbox is checked (default), once the installation process completes, Publisher is loaded.
 
-<figure><img src="../../.gitbook/assets/image (4763).png" alt="&#x27;Completion&#x27; screen" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1351).png" alt="Publisher" width="563"><figcaption></figcaption></figure>
 
 ## Next Steps
 
