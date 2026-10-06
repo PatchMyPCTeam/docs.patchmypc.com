@@ -68,7 +68,14 @@ The end-of-synchronization notification provides a consolidated summary of all p
 
 <figure><img src="../../../../.gitbook/assets/image (1336).png" alt="&#x27;Scope&#x27; section" width="527"><figcaption></figcaption></figure>
 
-10. Click **Apply** to save the new webhook.
+10. Click [Test](configure.md#test-button) to test the webhook.
+11. Click **Apply** to save the new webhook.
+
+{% hint style="info" %}
+**Note**
+
+Once you have created a new webhook, you may want to configure [advanced](configure.md#advanced-button) settings for it.
+{% endhint %}
 
 ## MSP Configuration
 
