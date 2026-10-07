@@ -15,97 +15,22 @@ The **Maintenance Tools** category on the **Advanced** tab of Patch My PC (PMPC)
 
 ## ConfigMgr Duplicate Resolution
 
-
+The **CONFIGMGR DUPLICATE RESOLUTION** section
 
 ## Intune Tenant Mismatch Checker
 
-
-
-
-
-* [Product Integrations](maintenance-tools.md#product-integrations)
-* [ARM application support](maintenance-tools.md#arm-architecture-application-support)
-
-<figure><img src="../../../.gitbook/assets/image (1424).png" alt="&#x27;Product Integrations&#x27; category" width="563"><figcaption></figcaption></figure>
-
-## Product Integrations
-
-The **PRODUCT INTEGRATIONS** section is used to control which integrations and tabs are visible in Publisher.
-
-<figure><img src="../../../.gitbook/assets/image (1430).png" alt="&#x27;PRODUCT INTEGRATIONS&#x27; section" width="252"><figcaption></figcaption></figure>
-
-The following options are available:
-
-* **Disable ConfigMgr Apps**\
-  When enabled, the **ConfigMgr Apps** tab is hidden. Publishing applications to ConfigMgr is no longer available from the Publisher interface.
-* **Disable WSUS Updates**\
-  When enabled, the **WSUS Updates** tab is hidden. Publishing software updates to WSUS is no longer available from the Publisher interface.
-* **Disable Intune**\
-  When enabled, the **Intune Apps** and **Intune Updates** tabs are hidden. Publishing apps and updates to Intune is no longer available from the Publisher interface.
-
-## ARM Architecture Application Support
-
-The **ARM ARCHITECTURE APPLICATION SUPPORT** section controls whether Publisher evaluates and publishes ARM64 applications.
-
-<figure><img src="../../../.gitbook/assets/image (1434).png" alt="&#x27;ARM ARCHITECTURE APPLICATION SUPPORT&#x27; section" width="254"><figcaption></figcaption></figure>
-
-### ARM support
-
-When you enable the **ARM support** option (which is disabled by default), Publisher prompts you to confirm.
-
-<figure><img src="../../../.gitbook/assets/image (1439).png" alt="&#x27;Arm Support&#x27; confirmation" width="464"><figcaption></figcaption></figure>
-
 {% hint style="danger" %}
-**Important**
+**PRE-RELEASE DOCUMENTATION**
 
-Once enabled, this setting cannot be disabled.
+This article is for a feature that is currently under development.
+
+This banner will be removed once this article is finalized.
 {% endhint %}
 
-Once enabled, Publisher begins supporting ARM64 applications. ARM64 products are evaluated during Publisher syncs using existing auto-publishing rules.
+The **INTUNE TENANT MISMATCH CHECKER** section contains the **Tenant mismatch checker**, which you can run by clicking **Open Mismatch Checker.**
 
-Enabling this option causes ARM64 applications to be included in evaluation and publishing logic. Existing auto-publishing rules are applied without modification, which may result in new ARM64 applications being published automatically.
+<figure><img src="../../../.gitbook/assets/image (1447).png" alt="&#x27;INTUNE TENANT MISMATCH CHECKER&#x27; section" width="256"><figcaption></figcaption></figure>
 
-As this setting is permanent, you should only enable it after confirming that ARM64 application support is required in your environment.
+The Intune Tenant Mismatch Checker helps you identify apps that may have been published to the wrong Intune tenant by comparing your publishing history with actual tenant data.
 
-### ARM64 Application Naming
-
-When ARM64 support is enabled, ARM-based applications are shown alongside existing products in the Product Tree on the following tabs:
-
-* **WSUS Updates**
-* **ConfigMgr Apps**
-* **Intune Apps**
-* **Intune Updates**
-
-ARM applications are identified by **ARM64** appended to the application name. This naming clearly distinguishes ARM64 installers from x64 and x86 variants.
-
-<figure><img src="../../../.gitbook/assets/image (746).png" alt="ARM64 Products in the Product Tree" width="259"><figcaption></figcaption></figure>
-
-### Automatic Requirement Handling
-
-For third party updates published to WSUS, ARM64 applicability is controlled by a well-known detectoid defined in the Patch My PC catalog software distribution package. This detectoid limits the update to supported architectures only.
-
-```xml
-<sdp:Prerequisites>
-  <sdp:AtLeastOne>
-    <sdp:PackageID>4103af66-247a-4782-b970-8899394c27c3</sdp:PackageID>
-  </sdp:AtLeastOne>
-</sdp:Prerequisites>
-```
-
-For ConfigMgr applications, ARM64 applications automatically include an operating system requirement that limits installation to Windows ARM64. This ensures the application is only offered to supported devices.
-
-<figure><img src="../../../.gitbook/assets/image (172).png" alt="ConfigMgr OS Requirements" width="563"><figcaption></figcaption></figure>
-
-For Intune Win32 applications, the operating system architecture requirements are automatically configured during publishing. ARM64 applications are limited to ARM64 devices, while most x64 applications are allowed to install on both x64 and ARM64 devices.
-
-<figure><img src="../../../.gitbook/assets/image (173).png" alt="Intune OS Requirements" width="563"><figcaption></figcaption></figure>
-
-### Assignments
-
-Architecture-specific apps may report as **Installed** on devices with a different architecture due to a known detection script limitation. This is a reporting issue only and does not result in any software being installed.&#x20;
-
-{% hint style="info" %}
-Note
-
-See [ARM64 update may show as Installed on x64 devices](https://patchmypc.com/kb/arm64-update-may-show-as-installed-on-x64-devices/) for details and a recommended workaround.
-{% endhint %}
+This tool helps you find mismatched, orphaned, or misplaced applications across all configured tenants.
