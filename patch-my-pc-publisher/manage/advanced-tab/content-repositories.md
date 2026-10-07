@@ -124,33 +124,6 @@ Enabling Email Notifications or Webhook Notifications is strongly recommended, a
 
 ## Additional Content Repository
 
-The **ADDITIONAL CONTENT REPOSITORY** section
+The **ADDITIONAL CONTENT REPOSITORY** section allows you to configure a service-side folder for pre/post scripts and extra files a remote Ul attaches to a product.
 
 <figure><img src="../../../.gitbook/assets/image (1369).png" alt="&#x27;ADDITIONAL CONTENT REPOSITORY&#x27; section" width="500"><figcaption></figcaption></figure>
-
-
-
-
-
-ADDITIONAL CONTENT REPOSITORY (More Info)\
-O\
-Additional content path\
-Service-side folder for pre/post scripts and extra files a remote Ul attaches to a product. Keep the path short to stay within the Windows 260-character limit.\
-C:\Program Files\Patch My PC\Patch My PC Publishing Service\AdditionalC Browse...\
-Set to Default\
-Show Additional Content
-
-
-
-
-
-
-
-<figure><img src="/broken/files/SYE1Np4dN0E6yO2E2yMo" alt=""><figcaption></figcaption></figure>
-
-
-
-\*\*\*\*\*\*\*
-
-<figure><img src="../../../.gitbook/assets/image (738).png" alt="&#x27;Staged Content Repository&#x27; section" width="563"><figcaption></figcaption></figure>
-
