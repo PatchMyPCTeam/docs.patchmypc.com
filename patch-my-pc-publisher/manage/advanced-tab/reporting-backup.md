@@ -156,23 +156,24 @@ The **PRODUCT EXPORT** section lets you export a list of enabled products and th
 
 <figure><img src="../../../.gitbook/assets/image (1388).png" alt="&#x27;PRODUCT EXPORT&#x27; section" width="496"><figcaption></figcaption></figure>
 
+Some exported properties may appear populated even if they are not actively in use. This occurs when a property has a default value defined by Publisher. For example, Intune apps and Intune updates may show a maximum run time value that is only applicable when the same product is published to ConfigMgr.
+
+### To export a list of products
+
+1. Load Publisher.
+2. Navigate to **Advanced | Reporting & Backup**.
+3. Scroll down to the **PRODUCT EXPORT** section.
+4. Select the checkboxes for each product type you want to export, then click **Export**.
+
+<figure><img src="../../../.gitbook/assets/image (1389).png" alt="Selecting products to export and clicking &#x27;Export&#x27;" width="498"><figcaption></figcaption></figure>
 
 
 
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="&#x27;Product Export&#x27; section" width="563"><figcaption></figcaption></figure>
 
-Some exported properties may appear populated even if they are not actively in use. This occurs when a property has a default value defined by the Publisher. For example, Intune apps and Intune updates may show a maximum run time value that is only applicable when the same product is published to ConfigMgr.
 
-## Export a List of Products
 
-To export a list of products:
-
-1. Open the Publisher and select the Advanced tab.
-2. Scroll down to the Product Export section.
-3. Select the checkbox for each product type you want to export.
-4. Select **Export**.
-5. Choose a location to save the CSV file.
+1. Choose a location to save the CSV file.
 
 The available export options align with the main product categories in the Publisher. These include WSUS updates, ConfigMgr apps, Intune apps, and Intune updates. Only product types that are currently available and enabled in the Publisher can be selected
 
