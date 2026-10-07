@@ -25,9 +25,7 @@ The **Staged Content Repository** can also be used as a fallback mechanism to im
 2. Navigate to **Advanced | Content Repositories**.
 3. In the **Content path** field, specify/browse to a folder or UNC path where installer files will be stored.
 
-<figure><img src="../../../.gitbook/assets/image (1366).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="/broken/files/Zt1ZRtFGdx3U1JKOEPuY" alt="&#x27;Content path&#x27; field" width="496"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1366).png" alt="&#x27;Content path&#x27; field" width="496"><figcaption></figcaption></figure>
 
 Underneath this field the name of the server where the **PatchMyPCService** is installed is shown.
 
@@ -83,6 +81,14 @@ This feature is available in both the local and Remote UI.
 Clicking **Show Staged Content** opens the **Files in the service Staged Content Repository** screen, which displays all of the files currently in the Staged Content Repository.
 
 <figure><img src="../../../.gitbook/assets/image (1365).png" alt="&#x27;Files in the service Staged Content Repository&#x27; screen" width="563"><figcaption></figcaption></figure>
+
+### Delete after publishing
+
+Enabling the **Delete after publishing** option removes the installer file from the repository after it has been successfully published. This helps reduce disk usage but requires re-downloading the file if the update is republished.
+
+<figure><img src="../../../.gitbook/assets/image (1367).png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
@@ -142,9 +148,7 @@ Enabling Email Notifications or Webhook Notifications is strongly recommended, a
 
 The following options further control repository behavior.
 
-### Delete after publishing
-
-Removes the installer file from the repository after it has been successfully published. This helps reduce disk usage but requires re-downloading the file if the update is republished.
+###
 
 ### Check repository first
 
