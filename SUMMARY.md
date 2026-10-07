@@ -552,6 +552,7 @@
       * [Reporting and Backup category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/reporting-backup.md "Reporting and Backup")
       * [Integrations and Platform category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/integrations-platform.md "Integrations and Platform")
       * [Product Integrations category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/product-integrations.md "Product Integrations")
+      * [Maintenance Tools category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/maintenance-tools.md "Maintenance Tools")
       * [Technical references for Patch My PC Publisher Advanced Settings](patch-my-pc-publisher/manage/advanced-tab/technical-references/README.md "Technical references")
         * [About the Staged Content Repository in Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/technical-references/about-staged-content-repository.md "About the Staged Content Repository")
       * [Proxy Settings section of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/proxy-settings.md "Proxy Settings")
