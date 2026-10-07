@@ -15,9 +15,13 @@ The **Maintenance Tools** category on the **Advanced** tab of Patch My PC (PMPC)
 
 ## ConfigMgr Duplicate Resolution
 
-The **CONFIGMGR DUPLICATE RESOLUTION** section
+The **CONFIGMGR DUPLICATE RESOLUTION** section contains the **Duplicate resolution** tool, which you can run by clicking **Open Resolution Tool**.
 
-## Intune Tenant Mismatch Checker
+<figure><img src="../../../.gitbook/assets/image (1450).png" alt="&#x27;CONFIGMGR DUPLICATE RESOLUTION&#x27; section" width="252"><figcaption></figcaption></figure>
+
+\
+The Duplicate resolution tool help you identify and clean up duplicate ConfigMgr applications created by earlier Publisher versions or manual configuration.\
+Intune Tenant Mismatch Checker
 
 {% hint style="danger" %}
 **PRE-RELEASE DOCUMENTATION**
@@ -27,7 +31,7 @@ This article is for a feature that is currently under development.
 This banner will be removed once this article is finalized.
 {% endhint %}
 
-The **INTUNE TENANT MISMATCH CHECKER** section contains the **Tenant mismatch checker**, which you can run by clicking **Open Mismatch Checker.**
+The **INTUNE TENANT MISMATCH CHECKER** section contains the **Tenant mismatch checker**, which you can run by clicking **Open Mismatch Checker**.
 
 <figure><img src="../../../.gitbook/assets/image (1447).png" alt="&#x27;INTUNE TENANT MISMATCH CHECKER&#x27; section" width="256"><figcaption></figcaption></figure>
 
