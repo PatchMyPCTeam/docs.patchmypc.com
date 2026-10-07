@@ -84,15 +84,19 @@ Clicking **Show Staged Content** opens the **Files in the service Staged Content
 
 ### Delete after publishing
 
-Enabling the **Delete after publishing** option removes the installer file from the repository after it has been successfully published. This helps reduce disk usage but requires re-downloading the file if the update is republished.
+Enabling the **Delete after publishing** option (which is disabled by default) removes the installer file from the repository after it has been successfully published. This helps reduce disk usage but requires re-downloading the file if the update is republished.
 
-<figure><img src="../../../.gitbook/assets/image (1367).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1367).png" alt="&#x27;Delete after publishing&#x27; option" width="502"><figcaption></figcaption></figure>
 
+### Check repository first
 
+When the **Check repository first** option is enabled (which it is by default) Publisher checks the Staged Content Repository first before attempting to download content from the internet.
 
+<figure><img src="../../../.gitbook/assets/image (1368).png" alt="&#x27;Check repository first&#x27; option" width="502"><figcaption></figcaption></figure>
 
+This option is useful in restricted network environments where access to vendor download locations or CDNs is blocked, limited, or requires authentication that cannot be satisfied by Publisher.
 
-
+If a matching installer file is found in the Staged Content Repository, it is used for publishing and no online download is attempted.
 
 ### Populate the Staged Content Repository
 
@@ -118,14 +122,6 @@ If the file is not found or does not match the catalog definition, the product w
 Enabling Email Notifications or Webhook Notifications is strongly recommended, as these alerts include the exact installer name and file hash expected when manual action is required.
 {% endhint %}
 
-
-
-
-
-
-
-
-
 ## Additional Content Repository
 
 
@@ -133,28 +129,4 @@ Enabling Email Notifications or Webhook Notifications is strongly recommended, a
 \*\*\*\*\*\*\*
 
 <figure><img src="../../../.gitbook/assets/image (738).png" alt="&#x27;Staged Content Repository&#x27; section" width="563"><figcaption></figcaption></figure>
-
-
-
-
-
-
-
-
-
-###
-
-## Optional Settings
-
-The following options further control repository behavior.
-
-###
-
-### Check repository first
-
-When enabled, the Publisher checks the Local Content Repository first before attempting to download content from the internet.
-
-This option is useful in restricted network environments where access to vendor download locations or CDNs is blocked, limited, or requires authentication that cannot be satisfied by the Publisher.
-
-If a matching installer file is found in the Local Content Repository, it is used for publishing and no online download is attempted.
 
