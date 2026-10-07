@@ -550,6 +550,7 @@
       * [Content Repositories category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/content-repositories.md "Content Repositories")
       * [File Locations category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/file-locations.md "File Locations")
       * [Reporting and Backup category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/reporting-backup.md "Reporting and Backup")
+      * [Integrations and Platform category of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/integrations-platform.md "Integrations and Platform")
       * [Technical references for Patch My PC Publisher Advanced Settings](patch-my-pc-publisher/manage/advanced-tab/technical-references/README.md "Technical references")
         * [About the Staged Content Repository in Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/technical-references/about-staged-content-repository.md "About the Staged Content Repository")
       * [Proxy Settings section of Patch My PC Publisher](patch-my-pc-publisher/manage/advanced-tab/proxy-settings.md "Proxy Settings")
