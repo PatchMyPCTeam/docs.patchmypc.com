@@ -48,26 +48,26 @@ Once enabled, this setting cannot be disabled.
 
 Once enabled, Publisher begins supporting ARM64 applications. ARM64 products are evaluated during Publisher syncs using existing auto-publishing rules.
 
-Enabling this option causes ARM64 applications to be included in evaluation and publishing logic. Existing auto publishing rules are applied without modification, which may result in new ARM64 applications being published automatically.
+Enabling this option causes ARM64 applications to be included in evaluation and publishing logic. Existing auto-publishing rules are applied without modification, which may result in new ARM64 applications being published automatically.
 
-Because the setting is permanent, it should be enabled only after confirming that ARM64 application support is required in the environment.
+As this setting is permanent, you should only enable it after confirming that ARM64 application support is required in your environment.
 
-## ARM64 Application Naming
+### ARM64 Application Naming
 
-When ARM Architecture Application Support is enabled, ARM based applications are shown alongside existing products in the Publisher product tree(s) on the following tabs:
+When ARM64 support is enabled, ARM-based applications are shown alongside existing products in the Product Tree on the following tabs:
 
-* Updates
-* ConfigMgr Apps
-* Intune Apps
-* Intune Updates
+* **WSUS Updates**
+* **ConfigMgr Apps**
+* **Intune Apps**
+* **Intune Updates**
 
 ARM applications are identified by **ARM64** appended to the application name. This naming clearly distinguishes ARM64 installers from x64 and x86 variants.
 
 <figure><img src="../../../.gitbook/assets/image (746).png" alt="ARM64 Products in the Product Tree" width="259"><figcaption></figcaption></figure>
 
-## Automatic Requirement Handling
+### Automatic Requirement Handling
 
-For third party updates published to WSUS, ARM64 applicability is controlled by a well known detectoid defined in the Patch My PC catalog SDP. This detectoid limits the update so it is only applicable to supported architectures.
+For third party updates published to WSUS, ARM64 applicability is controlled by a well-known detectoid defined in the Patch My PC catalog software distribution package. This detectoid limits the update to supported architectures only.
 
 ```xml
 <sdp:Prerequisites>
@@ -85,12 +85,12 @@ For Intune Win32 applications, the operating system architecture requirements ar
 
 <figure><img src="../../../.gitbook/assets/image (173).png" alt="Intune OS Requirements" width="563"><figcaption></figcaption></figure>
 
-## Assignments
+### Assignments
 
-Architecture-specific apps may report as Installed on devices with a different architecture due to a known detection script limitation. This is a reporting issue only and does not result in any software being installed. See [ARM64 update may show as Installed on x64 devices](https://patchmypc.com/kb/arm64-update-may-show-as-installed-on-x64-devices/) for details and a recommended workaround.
+Architecture-specific apps may report as **Installed** on devices with a different architecture due to a known detection script limitation. This is a reporting issue only and does not result in any software being installed.&#x20;
 
+{% hint style="info" %}
+Note
 
-
-
-
-\*\*\*\*
+See [ARM64 update may show as Installed on x64 devices](https://patchmypc.com/kb/arm64-update-may-show-as-installed-on-x64-devices/) for details and a recommended workaround.
+{% endhint %}
