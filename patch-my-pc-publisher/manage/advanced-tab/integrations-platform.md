@@ -18,15 +18,19 @@ The **Integrations and Platform** category on the **Advanced** tab of Patch My P
 
 ## ScriptRunner Customization
 
+The **SCRIPTRUNNER CUSTOMIZATIONS** section allows you to configure settings for ScriptRunner that influence how it handles long-running installer executions during client-side installation, as well as how client-side installation logs are cleaned up.
+
+<figure><img src="../../../.gitbook/assets/image (1411).png" alt="&#x27;SCRIPTRUNNER CUSTOMIZATIONS&#x27; section" width="502"><figcaption></figcaption></figure>
+
 
 
 ## Intune Global Options
 
-
+The **ADVANCED REPORTING AND ANALYTICS** section allows you to configure Advanced Insights.
 
 ## Timestamp Options
 
-
+The **ADVANCED REPORTING AND ANALYTICS** section allows you to configure Advanced Insights.
 
 
 
