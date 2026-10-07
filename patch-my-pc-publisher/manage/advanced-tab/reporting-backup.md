@@ -167,15 +167,9 @@ Some exported properties may appear populated even if they are not actively in u
 
 <figure><img src="../../../.gitbook/assets/image (1389).png" alt="Selecting products to export and clicking &#x27;Export&#x27;" width="498"><figcaption></figcaption></figure>
 
+5. Choose a location to save the CSV file.
 
-
-
-
-
-
-1. Choose a location to save the CSV file.
-
-The available export options align with the main product categories in the Publisher. These include WSUS updates, ConfigMgr apps, Intune apps, and Intune updates. Only product types that are currently available and enabled in the Publisher can be selected
+The available export options align with the main product categories in Publisher. These include **WSUS updates**, **ConfigMgr Apps**, **Intune Apps**, and **Intune Updates**. Only product types that are currently available and enabled in Publisher can be selected.
 
 Below is an example of an exported CSV.
 
@@ -184,12 +178,11 @@ Below is an example of an exported CSV.
 {% hint style="info" %}
 **Note**
 
-A product type checkbox is only selectable when two conditions are met. The product type must be enabled using the main checkbox at the top of its corresponding tab, and at least one product of that type must exist. If either condition is not met, the checkbox will appear disabled.
+A product type checkbox is only selectable when two conditions are met. The product type must be enabled using the main checkbox at the top of its corresponding tab, and at least one product of that type must exist. If either condition is not met, the checkbox for that product will be disabled.
 {% endhint %}
 
 {% hint style="danger" %}
 **Important**
 
-The Product Export CSV is intended for reference and reporting purposes. It is not designed to be imported back into the Publisher.
+The Product export CSV is intended for reference and reporting purposes. It is not designed to be imported back into Publisher.
 {% endhint %}
-
