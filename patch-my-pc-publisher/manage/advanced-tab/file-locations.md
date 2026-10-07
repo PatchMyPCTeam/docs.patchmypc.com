@@ -10,7 +10,7 @@ The **File Locations** category on the **Advanced** tab of Patch My PC (PMPC) Pu
 
 
 
-
+<figure><img src="../../../.gitbook/assets/image (1372).png" alt="&#x27;File Locations&#x27; category" width="563"><figcaption></figcaption></figure>
 
 
 

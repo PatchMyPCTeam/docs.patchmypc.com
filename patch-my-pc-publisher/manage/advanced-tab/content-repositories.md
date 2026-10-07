@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Content Repositories** category on the **Advanced** tab of Patch My PC (PMPC) Publisher allows you to configure where Publisher stores update and application content instead of downloading it directly from the internet during publishing. This is primarily used for binary-free and licensed applications, where customers must obtain the installer or update binaries themselves because the content is behind a paywall, login, or other restricted access and is not publicly available.
 
-<figure><img src="../../../.gitbook/assets/image (1364).png" alt="&#x27;Content Repositories&#x27; category" width="506"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1373).png" alt="&#x27;Content Repositories&#x27; category" width="563"><figcaption></figcaption></figure>
 
 There are two main sections on this screen:
 
