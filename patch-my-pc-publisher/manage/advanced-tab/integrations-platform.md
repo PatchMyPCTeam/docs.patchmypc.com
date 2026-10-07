@@ -98,38 +98,36 @@ The **TIMESTAMP OPTIONS** section controls how Publisher applies digital timesta
 
 <figure><img src="../../../.gitbook/assets/image (1421).png" alt="&#x27;TIMESTAMP OPTIONS&#x27; section" width="504"><figcaption></figcaption></figure>
 
-
-
-
-
-<figure><img src="../../../.gitbook/assets/image (743).png" alt="&#x27;Timestamp Options&#x27; section" width="563"><figcaption></figcaption></figure>
-
 {% hint style="info" %}
 **Note**
 
-For a detailed technical explanation of how timestamping works, including certificate trust, CAB signing, and troubleshooting scenarios, see the following blog post at [https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab](https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab)
+See the [Demystifying Timestamping: Securing Scripts and CAB Files for WSUS, ConfigMgr, and Intune](https://patchmypc.com/blog/demystifying-timestamping-securing-scripts-cab) blog post for a detailed technical explanation of how timestamping works, including certificate trust, CAB signing, and troubleshooting scenarios.
 {% endhint %}
 
-### Timestamp Server URL
+### Timestamp server
 
-The Timestamp Server URL defines the timestamp authority used during signing. By default, the Publisher uses the DigiCert timestamp service:
+The **Timestamp server** setting defines the timestamp authority used during signing. By default, Publisher uses the DigiCert timestamp service:
 
 ```
 http://timestamp.digicert.com
 ```
 
-The **Use Default** option automatically configures the recommended timestamp server. A custom timestamp server can be specified if required by organizational policy.
+Enabling the **Use Default** option (which is enabled by default), automatically configures the recommended timestamp server. A custom timestamp server can be specified if required by organizational policy.
 
 ### Enforce timestamping
 
-When **Enforce timestamping** is enabled, publishing will fail if timestamping cannot be completed successfully. When this option is not enabled, a timestamping failure is treated as a non terminating error and publishing will continue.
+When the **Enforce timestamping** option is enabled (which it is not by default), publishing will fail if timestamping cannot be completed successfully. When this option is not enabled, a timestamping failure is treated as a non-terminating error, and publishing will continue.
 
 ### WSUS and SYSTEM account behavior
 
 When publishing third party updates to WSUS, update CAB files are timestamped using the Windows Cryptographic API. This process runs under the SYSTEM account on the server.
 
-Because of this behavior, the Cryptographic API uses the proxy configuration defined for the SYSTEM account, not the proxy settings configured in the Publisher.
+Because of this behavior, the Cryptographic API uses the proxy configuration defined for the SYSTEM account, not the proxy settings configured in Publisher.
 
 If the SYSTEM account does not have internet access, timestamping can fail. If the SYSTEM proxy requires authentication, timestamping can also fail because the Cryptographic API does not support interactive proxy authentication.
 
-To validate which proxy settings apply, see [Verifying the SYSTEM Proxy Configuration](../../../patch-my-pc-publisherv2/administration/advanced/proxy-settings.md#verifying-the-system-proxy-configuration).
+{% hint style="info" %}
+**Note**
+
+To validate which proxy settings apply, see [Verifying the SYSTEM Proxy Configuration](network-proxy.md#verifying-the-system-proxy-configuration).
+{% endhint %}
