@@ -58,15 +58,11 @@ This section allows you to save Publisher's current configuration to a file or r
 
 #### Import Settings button
 
-Clicking **Import Settings** allows you to restore Publisher settings from a previously exported backup file.
-
-When you click **Import Settings**, a confirmation dialog appears asking you to confirm you wish to proceed.
+Clicking **Import Settings** allows you to restore Publisher settings from a previously exported backup file. When you click **Import Settings**, a confirmation dialog appears asking you to confirm you wish to proceed.
 
 <figure><img src="../../../.gitbook/assets/image (1386).png" alt="&#x27;Import Settings&#x27; confirmation dialog" width="310"><figcaption></figcaption></figure>
 
-
-
-This action replaces the current Publisher configuration with the settings contained in the selected backup file. After importing settings, it is recommended to review critical configuration areas such as credentials, paths, and authentication settings before running a publishing sync.
+If you proceed, the current Publisher configuration will be replaced with the settings contained in the selected backup file. After importing settings, it is recommended to review critical configuration areas such as credentials, paths, and authentication settings before running a publishing sync.
 
 Common use cases include:
 
@@ -74,19 +70,33 @@ Common use cases include:
 * Migrating the Publisher to a new system
 * Reverting to a known-good configuration
 
-
-
 #### Export Settings button
 
+Clicking **Export Settings** allows you to create a manual backup of the current Publisher configuration.
 
+When you click **Export Settings**, you will be asked to provide a location and filename for the export.
 
+The exported file contains Publisher configuration data such as enabled products, publishing options, schedules, alerts, and **Advanced** tab settings. This file can be stored securely and later imported if needed.
 
+This option is commonly used before:
 
-
+* Making significant configuration changes.
+* Upgrading or reinstalling Publisher.
+* Moving Publisher to a new server.
 
 ### Automatic backup
 
+The **Automatic backup** option allows you to specify a location for Publisher to use to automatically write an updated backup file to whenever settings are saved.
 
+<figure><img src="../../../.gitbook/assets/image (1387).png" alt="&#x27;Automatic backup&#x27; option" width="248"><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+to confgure automatic backups of the Publisher configuration.
 
 
 
@@ -99,17 +109,6 @@ The **PRODUCT EXPORT** section allows you to configure the following settings:
 \*\*\*\*
 
 ##
-
-## Export Settings to a File
-
-Use **Export settings to a file** to create a manual backup of the current Publisher configuration.
-
-The exported file contains Publisher configuration data such as enabled products, publishing options, schedules, alerts, and Advanced tab settings. This file can be stored securely and later imported if needed.
-
-* This option is commonly used before:
-* Making significant configuration changes
-* Upgrading or reinstalling the Publisher
-* Moving the Publisher to a new server
 
 ## Automatically backup the latest settings to
 
