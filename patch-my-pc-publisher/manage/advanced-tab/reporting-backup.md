@@ -86,89 +86,109 @@ This option is commonly used before:
 
 ### Automatic backup
 
-The **Automatic backup** option allows you to specify a location for Publisher to use to automatically write an updated backup file to whenever settings are saved.
+The **Automatic backup** option lets you specify a location for Publisher to use to automatically write an updated backup file to whenever settings are saved.
 
 <figure><img src="../../../.gitbook/assets/image (1387).png" alt="&#x27;Automatic backup&#x27; option" width="248"><figcaption></figcaption></figure>
 
+Only a single backup file exists in this location, and it is overwritten each time a configuration change is made, ensuring the folder always contains the most recent configuration.
 
-
-
-
-
-
-to confgure automatic backups of the Publisher configuration.
-
-
-
-## Product Export
-
-The **PRODUCT EXPORT** section allows you to configure the following settings:
-
-
-
-\*\*\*\*
-
-##
-
-## Automatically backup the latest settings to
-
-This option enables automatic backups of the Publisher configuration.
-
-When configured, the Publisher automatically writes an updated backup file to the specified folder whenever settings are saved. Only a single backup file exists in this location and it is overwritten each time a configuration change is made, ensuring the folder always contains the most recent configuration.
-
-This design makes the custom backup path especially useful for **disaster recovery scenarios**, such as rebuilding a Publisher server or restoring settings quickly after an unexpected failure, without needing to manually export configuration files.
+This design makes the custom backup path especially useful for disaster recovery scenarios, such as rebuilding a Publisher server or restoring settings quickly after an unexpected failure, without needing to manually export configuration files.
 
 {% hint style="danger" %}
 **Important**
 
-Even when a custom automatic backup location is configured, the Publisher continues to maintain backups in its default internal backup location. This internal location retains multiple historical backup versions and supports rollback and recovery scenarios, while the custom location stores only the most recent backup file for quick access.
+Even when a custom automatic backup location is configured, Publisher continues to maintain backups in its default internal backup location. This internal location retains multiple historical backup versions and supports rollback and recovery scenarios, while the custom location stores only the most recent backup file for quick access.
 {% endhint %}
 
-## Backup Pruning and Retention
+#### Backup Pruning and Retention
 
-The Publisher automatically manages the retention of configuration backups using a built-in pruning process. This behavior is not configurable and is designed to balance historical recovery options with controlled disk usage.
+Publisher automatically manages the retention of configuration backups using a built-in pruning process. This behavior is not configurable and is designed to balance historical recovery options with controlled disk usage.
 
 The following retention rules are applied automatically:
 
-* For the current day, the Publisher retains up to 50 backups. These capture frequent configuration changes made throughout the day and allow quick rollback to recent states.
-* For the previous 31 days, the Publisher retains up to 10 backups per day. This provides daily historical coverage while limiting the total number of stored files.
-* For backups older than 31 days, the Publisher retains one backup per week for up to one year. This enables long-term recovery while minimizing storage growth.
+* For the current day, Publisher retains up to 50 backups. These capture frequent configuration changes made throughout the day and allow quick rollback to recent states.
+* For the previous 31 days, Publisher retains up to 10 backups per day. This provides daily historical coverage while limiting the total number of stored files.
+* For backups older than 31 days, Publisher retains one backup per week for up to one year. This enables long-term recovery while minimizing storage growth.
 
-Older backups outside of these thresholds are automatically removed by the Publisher. No manual cleanup or configuration is required. This retention model ensures recent changes are well protected while still maintaining a useful historical record for recovery, auditing, or troubleshooting scenarios.
+Publisher automatically removes older backups outside of these thresholds. No manual cleanup or configuration is required. This retention model ensures recent changes are well protected while still maintaining a useful historical record for recovery, auditing, or troubleshooting scenarios.
 
-## Settings and Files Not Included in Backups
+#### Settings and Files Not Included in Backups
 
-Some settings in the Publisher are protected using encryption that is unique to the device where the Publisher is installed. When settings are restored on a different machine, these values may appear to be restored in the UI and the fields may still be populated with masked values such as \*\*\*\*\*\*\*. However, the underlying values are not valid on the new device and cannot be reused.
+Some Publisher settings are protected using encryption that is unique to the device where Publisher is installed. When settings are restored on a different machine, these values may appear to be restored in the UI, and the fields may still be populated with masked values such as **\*\*\*\*\*\*\***. However, the underlying values are not valid on the new device and cannot be reused.
 
-In addition, certificates and file based dependencies are not included in backups. Because of this, after restoring settings on a different server or device, you must manually re enter the protected values, re import or re configure required certificates, and ensure any referenced files and folders are present and accessible, even if the UI appears populated.
+In addition, certificates and file-based dependencies are not included in backups. Because of this, after restoring settings on a different server or device, you must manually re-enter the protected values, re-import or reconfigure required certificates, and ensure any referenced files and folders are present and accessible, even if the UI appears populated.
 
-### Settings That Must Be Reconfigured
+#### Settings That Must Be Reconfigured
 
 The following settings must be manually reconfigured after restoring settings on a new server:
 
-* Microsoft Entra ID app registration client secret
-* Proxy password
-* SMS Provider connection account credentials
-* SMTP email password
-* SQL connection account credentials
-* Webhook URLs configured for alerts
+* Microsoft Entra ID app registration client secret.
+* Proxy password.
+* SMS Provider connection account credentials.
+* SMTP email password.
+* SQL connection account credentials.
+* Webhook URLs configured for alerts.
 
-### Certificates Not Restored
+#### Certificates Not Restored
 
 Certificates are not included in backups and must be manually re-imported or reconfigured after a restore. This includes certificates used for:
 
-* Code signing
-* Authentication to Cloud services
-* Intune publishing
-* OAuth based email authentication
+* Code signing.
+* Authentication to Cloud services.
+* Intune publishing.
+* OAuth-based email authentication.
 
-### Files and Paths Not Included in Backups
+#### Files and Paths Not Included in Backups
 
 The following items are also not included in backups and will not be restored:
 
-* Local Content Repository files
-* Manage Conflicting Processes custom banner image
-* MST transform files
-* Custom pre-install and post-install scripts and associated files
+* Staged Content Repository files.
+* Additional Content Repository files.
+* Manage Conflicting Processes custom banner images.
+* MST transform files.
+* Custom pre-install and post-install scripts and associated files.
 
-If these files are required, ensure they are either accessible from the new server using the same paths, or manually copied to the new server and placed in the original configured locations.
+If you need these files, ensure they are either accessible from the new server using the same paths, or manually copied to the new server and placed in the original configured locations.
+
+## Product Export
+
+The **PRODUCT EXPORT** section lets you export a list of enabled products and their configuration from Publisher to a CSV file. The export includes product-level settings and right-click options, which makes it useful for documentation, audits, change reviews, and comparing configurations.
+
+<figure><img src="../../../.gitbook/assets/image (1388).png" alt="&#x27;PRODUCT EXPORT&#x27; section" width="496"><figcaption></figcaption></figure>
+
+
+
+
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt="&#x27;Product Export&#x27; section" width="563"><figcaption></figcaption></figure>
+
+Some exported properties may appear populated even if they are not actively in use. This occurs when a property has a default value defined by the Publisher. For example, Intune apps and Intune updates may show a maximum run time value that is only applicable when the same product is published to ConfigMgr.
+
+## Export a List of Products
+
+To export a list of products:
+
+1. Open the Publisher and select the Advanced tab.
+2. Scroll down to the Product Export section.
+3. Select the checkbox for each product type you want to export.
+4. Select **Export**.
+5. Choose a location to save the CSV file.
+
+The available export options align with the main product categories in the Publisher. These include WSUS updates, ConfigMgr apps, Intune apps, and Intune updates. Only product types that are currently available and enabled in the Publisher can be selected
+
+Below is an example of an exported CSV.
+
+<figure><img src="../../../.gitbook/assets/image (3951).png" alt="Exported product CSV example" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+A product type checkbox is only selectable when two conditions are met. The product type must be enabled using the main checkbox at the top of its corresponding tab, and at least one product of that type must exist. If either condition is not met, the checkbox will appear disabled.
+{% endhint %}
+
+{% hint style="danger" %}
+**Important**
+
+The Product Export CSV is intended for reference and reporting purposes. It is not designed to be imported back into the Publisher.
+{% endhint %}
+
