@@ -16,6 +16,13 @@ The **File Locations** category on the **Advanced** tab allows you to customize:
 
 * [Content Download Location](file-locations.md#customize-content-download-location)
 * [Service Log Location](file-locations.md#customize-service-log-location)
+* [Log File Size and Retention](file-locations.md#log-file-size-and-retention-1)
+
+{% hint style="info" %}
+**Note**
+
+These settings apply only to Publisher and do not affect client-side installations.
+{% endhint %}
 
 ## Customize Content Download Location
 
@@ -45,9 +52,11 @@ To configure a different location, enter/browse to the required location, select
 
 ## Customize Service Log Location
 
-The **CUSTOMIZE SERVICE LOG LOCATION** section allows you to configure the following settings:
+The **CUSTOMIZE SERVICE LOG LOCATION** section allows you to configure the **Service log folder** following settings:
 
-*
+<figure><img src="../../../.gitbook/assets/image (1376).png" alt="&#x27;CUSTOMIZE SERVICE LOG LOCATION&#x27; section" width="499"><figcaption></figcaption></figure>
+
+
 
 
 
@@ -92,12 +101,6 @@ The **Customize Content Download and Log Save Location** options allow you to ov
 
 * Temporary content downloads used during publishing
 * The Publisher log folder
-
-{% hint style="info" %}
-**Note**
-
-These settings apply only to Publisher and do not affect client-side installations.
-{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt="&#x27;Customize Content Download and Log Save Location&#x27; section" width="563"><figcaption></figcaption></figure>
 
