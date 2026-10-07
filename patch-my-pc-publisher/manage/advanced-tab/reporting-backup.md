@@ -16,7 +16,11 @@ The **Reporting & Backup** category on the **Advanced** tab of Patch My PC (PMPC
 
 ## Advanced Reporting and Analytics
 
-The **ADVANCED REPORTING AND ANALYTICS** section contains the **Advanced Insights** subsection, which provides access to Patch My PC Advanced Insights, which extends Microsoft Configuration Manager (ConfigMgr) reporting with enhanced analytics, visualizations, and compliance insights.
+The **ADVANCED REPORTING AND ANALYTICS** section allows you to configure Advanced Insights.
+
+### **Advanced Insights**
+
+The **Advanced Insights** section allows you to download PMPC Advanced Insights, which extends Microsoft Configuration Manager (ConfigMgr) reporting with enhanced analytics, visualizations, and compliance insights.
 
 <figure><img src="../../../.gitbook/assets/image (1383).png" alt="&#x27;ADVANCED REPORTING AND ANALYTICS&#x27; section" width="496"><figcaption></figcaption></figure>
 
@@ -34,26 +38,31 @@ The Advanced Reporting and Analytics option provides access to Patch My PC Advan
 * **Enterprise Premium customers**\
   Enterprise Premium includes the full Advanced Insights analytics experience, unlocking advanced dashboards, expanded reporting, and deeper compliance and operational analytics.
 
-Feature availability is controlled by your Patch My PC subscription (SKU), and functionality is automatically enabled based on your licensed tier. For more informations, see [https://patchmypc.com/product/advanced-insights/](https://patchmypc.com/product/advanced-insights/)
+Feature availability is controlled by your Patch My PC subscription (SKU), and functionality is automatically enabled based on your licensed tier. For more information, see [https://patchmypc.com/product/advanced-insights/](https://patchmypc.com/product/advanced-insights/)
 {% endhint %}
 
-
-
-
-
-
-
-
-
-\*\*\*\*
-
 ## Backup and Restore Settings
+
+The **BACKUP AND RESTORE SETTINGS** section allows you to configure the following settings:
+
+* [Import/export settings](reporting-backup.md#import-export-settings)
+* [Automatic backup](reporting-backup.md#product-export)
+
+<figure><img src="../../../.gitbook/assets/image (1385).png" alt="&#x27;BACKUP AND RESTORE SETTINGS&#x27; section" width="494"><figcaption></figcaption></figure>
+
+### Import/export settings
+
+
+
+### Automatic backup
+
+
 
 
 
 ## Product Export
 
-
+The **PRODUCT EXPORT** section allows you to configure the following settings:
 
 
 
