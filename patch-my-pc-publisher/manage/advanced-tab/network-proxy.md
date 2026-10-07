@@ -8,7 +8,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The **Network and Proxy** category on the **Advanced** tab of Patch My PC (PMPC) Publisher allows Publisher to use a proxy server for outbound network connectivity.
 
-<figure><img src="../../../.gitbook/assets/image (1363).png" alt="&#x27;Proxy Settings&#x27;" width="508"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1371).png" alt="&#x27;Network and Proxy&#x27; category" width="563"><figcaption></figcaption></figure>
 
 When configured, most Publisher operations use this proxy to download content and communicate with external services. For exceptions related to WSUS and timestamping behavior, see [WSUS and Timestamping Considerations](network-proxy.md#wsus-and-timestamping-considerations).
 
