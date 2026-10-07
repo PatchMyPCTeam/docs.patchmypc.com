@@ -12,7 +12,7 @@ The **Reporting & Backup** category on the **Advanced** tab of Patch My PC (PMPC
 * [Backup and Restore Settings](reporting-backup.md#backup-and-restore-settings)
 * [Product Export](reporting-backup.md#product-export)
 
-<figure><img src="../../../.gitbook/assets/image (1381).png" alt="&#x27;Reporting &#x26; Backup&#x27; category" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1406).png" alt="&#x27;Reporting &#x26; Backup&#x27; category" width="563"><figcaption></figcaption></figure>
 
 ## Advanced Reporting and Analytics
 
