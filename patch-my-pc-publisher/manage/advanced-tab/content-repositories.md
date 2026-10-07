@@ -25,6 +25,8 @@ The **Staged Content Repository** can also be used as a fallback mechanism to im
 2. Navigate to **Advanced | Content Repositories**.
 3. In the **Content path** field, specify/browse to a folder or UNC path where installer files will be stored.
 
+<figure><img src="../../../.gitbook/assets/image (1366).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="/broken/files/Zt1ZRtFGdx3U1JKOEPuY" alt="&#x27;Content path&#x27; field" width="496"><figcaption></figcaption></figure>
 
 Underneath this field the name of the server where the **PatchMyPCService** is installed is shown.
@@ -40,6 +42,12 @@ If you use a UNC path, ensure the computer account of the server running the Pub
    If the folder configured in Step 3 does not exist, the following warning is displayed:\
    \
    **The folder does not exist. Continuing will create it when the settings are saved.**
+
+{% hint style="info" %}
+**Note**
+
+See [Populate the Staged Content Repository](content-repositories.md#populate-the-staged-content-repository) for more details on populating the Staged Content Repository.
+{% endhint %}
 
 ### Set to Default button&#x20;
 
@@ -74,17 +82,13 @@ This feature is available in both the local and Remote UI.
 
 Clicking **Show Staged Content** opens the **Files in the service Staged Content Repository** screen, which displays all of the files currently in the Staged Content Repository.
 
-<figure><img src="../../../.gitbook/assets/image (1365).png" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="/broken/files/M2ZDTEwkochaFKrwolNf" alt="&#x27;Files in the service Staged Content Repository&#x27; screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1365).png" alt="&#x27;Files in the service Staged Content Repository&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 
 
 
 
-### Populate the Repository
+### Populate the Staged Content Repository
 
 After configuring the Staged Content Repository path, manually download the required installer files for products that require manual downloads.
 
@@ -92,14 +96,13 @@ Place the installer files anywhere within the configured Staged Content Reposito
 
 The installer file name and version must exactly match the values defined in the PMPC catalog. If the file name or version does not match, Publisher _will not_ consume the file and publishing will fail for that product.
 
-To identify the correct installer file name and version, use the Product Tree:
+#### To identify the correct installer file name and version
 
-1. Locate the product in the relevant tab (WSUS Updates, ConfigMgr Apps, or Intune Apps/Updates).
-2. Right-click the product.
-3. Select **Show Package Info**
-4. On the **Package Details** screen, review the **Title** and **File** columns to confirm the expected installer file name and version.
+1. Locate the product in the relevant Product Tree (**WSUS Updates**, **ConfigMgr Apps**, or **Intune Apps/Updates**).
+2. Right-click the product and select **Show Package Info**
+3. On the **Package Details** screen, review the **Title** and **File** columns to confirm the expected installer file name and version.
 
-<figure><img src="../../../.gitbook/assets/image (3934).png" alt="Review the Title and File column in the Package Details window" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3934).png" alt="&#x27;Package Details&#x27; screen" width="563"><figcaption></figcaption></figure>
 
 If the file is not found or does not match the catalog definition, the product will be skipped, and a notification is generated.
 
@@ -108,6 +111,12 @@ If the file is not found or does not match the catalog definition, the product w
 
 Enabling Email Notifications or Webhook Notifications is strongly recommended, as these alerts include the exact installer name and file hash expected when manual action is required.
 {% endhint %}
+
+
+
+
+
+
 
 
 
