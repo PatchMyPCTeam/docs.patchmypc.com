@@ -82,52 +82,22 @@ The **LOG FILE SIZE AND RETENTION** section allows you to configure the followin
 
 <figure><img src="../../../.gitbook/assets/image (1377).png" alt="&#x27;LOG FILE SIZE AND RETENTION&#x27; section" width="495"><figcaption></figcaption></figure>
 
-
-
-
-
 ### Logs to retain
 
+The **Logs to retain** setting specifies how many log files to keep before overwriting older logs.
 
+{% hint style="info" %}
+**Note**
+
+We recommend setting **Logs to retain** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.
+{% endhint %}
 
 ### Max size (MB)
 
-
-
-\*\*\*
-
-
-
-The Customize Content Download **and Log Save Location** options allow you to override these defaults by specifying custom folders for:
-
-
-
-
-
-
-
-
-
-## \*\*\*
-
-## Log file size and retention
-
-### &#x20;**Logs to retain**
-
-The **Logs to retain** setting specifies how many log files to keep before older logs are overwritten.
+The **Max size (MB)** setting specifies the maximum size of each individual log file before a new log is created.
 
 {% hint style="info" %}
 **Note**
 
-It is recommended to set **Logs to Retain** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.
-{% endhint %}
-
-### Max size in MB
-
-The **Max size in MB** setting specifies the maximum size of each individual log file before a new log is created.
-
-{% hint style="info" %}
-**Note**
-
-It is recommended to set **Max size in MB** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.
+We recommend setting **Max size (MB)** to **10**. Publisher log files are relatively small, and retaining additional history is extremely valuable when troubleshooting issues or providing support, as it preserves publishing context that may otherwise be lost.
 {% endhint %}
