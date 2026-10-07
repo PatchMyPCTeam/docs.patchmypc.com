@@ -34,19 +34,11 @@ The **ARM ARCHITECTURE APPLICATION SUPPORT** section controls whether Publisher 
 
 <figure><img src="../../../.gitbook/assets/image (1434).png" alt="&#x27;ARM ARCHITECTURE APPLICATION SUPPORT&#x27; section" width="254"><figcaption></figcaption></figure>
 
+### ARM support
 
+When you enable the **ARM support** option (which is disabled by default), Publisher prompts you to confirm.
 
-
-
-
-
-<figure><img src="../../../.gitbook/assets/image (744).png" alt="&#x27;ARM Architecture Application Support&#x27; section" width="563"><figcaption></figcaption></figure>
-
-## Enable support for ARM Architecture applications
-
-When this option is enabled, Publisher prompts you to confirm.
-
-<figure><img src="../../../.gitbook/assets/image (745).png" alt="Confirmation you want to enable ARM support" width="461"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1439).png" alt="&#x27;Arm Support&#x27; confirmation" width="464"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Important**
