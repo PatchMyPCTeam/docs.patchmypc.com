@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-The **Staged Content Reposito**ry is commonly used for **licensed or restricted applications** where Publisher cannot automatically download installer binaries. In these scenarios, administrators must manually obtain the installer files and place them into the repository so Publisher can consume them during publishing.
+The **Staged Content Reposito**ry is commonly used for licensed or restricted applications where Publisher cannot automatically download installer binaries. In these scenarios, administrators must manually obtain the installer files and place them into the repository so Publisher can consume them during publishing.
 
 Common reasons include:
 
@@ -41,7 +41,7 @@ The folder structure within the Staged Content Repository is flexible and does n
 
 When evaluating files in the repository, Publisher validates only:
 
-* The installer file name
+* The installer file name.
 * The file hash matching the Patch My PC catalog.
 
 The physical folder location of the file is not considered.
