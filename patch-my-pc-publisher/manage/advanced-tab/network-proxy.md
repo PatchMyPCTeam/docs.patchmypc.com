@@ -6,7 +6,13 @@ The **Network and Proxy** category on the **Advanced** tab of Patch My PC (PMPC)
 
 <figure><img src="../../../.gitbook/assets/image (1371).png" alt="&#x27;Network and Proxy&#x27; category" width="563"><figcaption></figcaption></figure>
 
-When configured, most Publisher operations use this proxy to download content and communicate with external services. For exceptions related to WSUS and timestamping behavior, see [WSUS and Timestamping Considerations](network-proxy.md#wsus-and-timestamping-considerations).
+When configured, most Publisher operations use this proxy to download content and communicate with external services.&#x20;
+
+{% hint style="info" %}
+**Note**
+
+For exceptions related to WSUS and timestamping behavior, see [WSUS and Timestamping Considerations](network-proxy.md#wsus-and-timestamping-considerations).
+{% endhint %}
 
 The **PROXY SETTINGS** section allows you to configure the following settings:
 
