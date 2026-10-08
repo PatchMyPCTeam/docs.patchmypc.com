@@ -27,7 +27,7 @@ Click **Download Advanced Insights** to access the latest version at:
 {% hint style="info" %}
 **Note**
 
-The Advanced Reporting and Analytics option provides access to Patch My PC Advanced Insights, with available functionality determined by your subscription level.
+The **Advanced Insights** section provides access to Patch My PC Advanced Insights, with available functionality determined by your subscription level:
 
 * **Enterprise Plus customers**\
   Installing Advanced Insights enables Patch Insights functionality, providing visibility and reporting for Software Updates within ConfigMgr.
@@ -44,7 +44,7 @@ The **BACKUP AND RESTORE SETTINGS** section allows you to export, import, and au
 This section allows you to configure the following settings:
 
 * [Import/export settings](reporting-backup.md#import-export-settings)
-* [Automatic backup](reporting-backup.md#product-export)
+* [Automatic backup](reporting-backup.md#automatic-backup)
 
 <figure><img src="../../../.gitbook/assets/image (1385).png" alt="&#x27;BACKUP AND RESTORE SETTINGS&#x27; section" width="494"><figcaption></figcaption></figure>
 
