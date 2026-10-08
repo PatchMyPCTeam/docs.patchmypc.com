@@ -82,7 +82,7 @@ This is useful in environments with a large number of apps, updates, or assignme
 * Lower values reduce the size of each response, which can help in slow or constrained network conditions.
 * Higher values reduce the number of requests required to retrieve all data, which can improve performance in well-connected environments.
 
-The default is **100,** with values of **1** to **999** being supported
+The default is **100,** with values of **1** to **999** being supported.
 
 In most scenarios, the default value of **100** is recommended. Adjust this setting only if you are troubleshooting performance or scalability issues related to Graph queries.
 

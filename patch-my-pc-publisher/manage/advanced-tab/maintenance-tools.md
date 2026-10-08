@@ -16,8 +16,10 @@ The **CONFIGMGR DUPLICATE RESOLUTION** section contains the **Duplicate resoluti
 <figure><img src="../../../.gitbook/assets/image (1450).png" alt="&#x27;CONFIGMGR DUPLICATE RESOLUTION&#x27; section" width="252"><figcaption></figcaption></figure>
 
 \
-The Duplicate resolution tool help you identify and clean up duplicate ConfigMgr applications created by earlier Publisher versions or manual configuration.\
-Intune Tenant Mismatch Checker
+The Duplicate resolution tool help you identify and clean up duplicate ConfigMgr applications created by earlier Publisher versions or manual configuration.
+
+Intune Tenant Mismatch Checker
+------------------------------
 
 {% hint style="danger" %}
 **PRE-RELEASE DOCUMENTATION**

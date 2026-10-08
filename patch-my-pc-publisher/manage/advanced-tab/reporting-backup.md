@@ -62,9 +62,9 @@ If you proceed, the current Publisher configuration will be replaced with the se
 
 Common use cases include:
 
-* Restoring settings after server recovery
-* Migrating the Publisher to a new system
-* Reverting to a known-good configuration
+* Restoring settings after server recovery.
+* Migrating the Publisher to a new system.
+* Reverting to a known-good configuration.
 
 #### Export Settings button
 
