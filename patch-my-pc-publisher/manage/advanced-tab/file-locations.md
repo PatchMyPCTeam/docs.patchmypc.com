@@ -28,7 +28,7 @@ The **CUSTOMIZE CONTENT DOWNLOAD LOCATION** section allows you to configure sett
 
 ### Downloads folder
 
-By default, content files are downloaded temporarily to `%Temp%` during publishing operations. Since Publisher runs under the **SYSTEM** context, this typically resolves to:
+By default, content files are downloaded temporarily to `%Temp%` during publishing operations. As Publisher runs under the SYSTEM context, this typically resolves to:
 
 ```
 C:\Windows\Temp
@@ -57,7 +57,7 @@ Publisher writes service and operational logs to disk to support troubleshooting
 By default, Publisher logs are stored within the installation folder of the Patch My PC Publishing Service:
 
 *   **Newer Publisher versions:**\
-    Logs, including **PatchMyPC.log**, are stored in a dedicated **`Logs`** subfolder under the Publisher installation folder. For example:<br>
+    Logs, including **PatchMyPC.log**, are stored in a dedicated **`Logs`** subfolder under Publisher's installation folder. For example:<br>
 
     ```
     C:\Program Files\Patch My PC\Patch My PC Publishing Service\Logs
@@ -65,7 +65,7 @@ By default, Publisher logs are stored within the installation folder of the Patc
 * **Older Publisher versions:**\
   The primary **PatchMyPC.log** file may still be located directly in the root of the Publishing Service installation directory rather than the `Logs` subfolder.
 
-As Publisher runs under the **SYSTEM** account, the computer account of the server hosting the Publishing Service must have write permissions to the configured log folder. If permissions are insufficient, logging may fail.
+As Publisher runs under the SYSTEM account, the computer account of the server hosting the Publishing Service must have write permissions to the configured log folder. If permissions are insufficient, logging may fail.
 
 To configure a different location (not recommended, as adopting the default location makes troubleshooting easier), enter/browse to the required location, select it, then click **Apply** to save your changes.
 
@@ -73,7 +73,7 @@ To configure a different location (not recommended, as adopting the default loca
 
 The **LOG FILE SIZE AND RETENTION** section allows you to configure the following settings:
 
-* [Logs to retain](file-locations.md#logs-to-retain-1)
+* [Logs to retain](file-locations.md#logs-to-retain)
 * [Max size (MB)](file-locations.md#max-size-mb)
 
 <figure><img src="../../../.gitbook/assets/image (1377).png" alt="&#x27;LOG FILE SIZE AND RETENTION&#x27; section" width="495"><figcaption></figcaption></figure>
