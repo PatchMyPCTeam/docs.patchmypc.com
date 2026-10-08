@@ -61,7 +61,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Patch My PC Publishing Service
 
 ### Upload Files button
 
-Clicking **Upload Files** allows you yo to upload files to the Staged Content Repository, which is limited to the following file types:
+Clicking **Upload Files** allows you to upload files to the Staged Content Repository, which is limited to the following file types:
 
 * EXE
 * MSI
@@ -117,7 +117,7 @@ If the file is not found or does not match the catalog definition, the product w
 {% hint style="danger" %}
 **Important**
 
-Enabling Email Notifications or Webhook Notifications is strongly recommended, as these alerts include the exact installer name and file hash expected when manual action is required.
+Enabling email or webhook Alerts is strongly recommended, as these alerts include the exact installer name and file hash expected when manual action is required.
 {% endhint %}
 
 ## Additional Content Repository
