@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Network and Proxy category of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_

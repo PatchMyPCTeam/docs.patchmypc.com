@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Integrations and Platform category of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
@@ -13,8 +9,6 @@ The **Integrations and Platform** category on the **Advanced** tab of Patch My P
 * [Timestamp Options](integrations-platform.md#timestamp-options)
 
 <figure><img src="../../../.gitbook/assets/image (1397).png" alt="&#x27;Integrations and Platform&#x27; category" width="563"><figcaption></figcaption></figure>
-
-
 
 ## ScriptRunner Customization
 

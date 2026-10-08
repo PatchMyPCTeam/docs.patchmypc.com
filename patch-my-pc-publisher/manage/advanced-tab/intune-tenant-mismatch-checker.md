@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Intune Tenant Mismatch Checker section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_

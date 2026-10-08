@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Staged Content Repository section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_

@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # About the Staged Content Repository in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
