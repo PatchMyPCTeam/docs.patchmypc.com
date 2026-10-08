@@ -23,7 +23,7 @@ The **PROXY SETTINGS** section allows you to configure the following settings:
 
 ## Proxy mode
 
-This section has the following two options:
+This **Proxy mode** section has the following two options:
 
 * **Don’t use proxy (default)**\
   Publisher connects directly to the internet without using a proxy.
@@ -32,13 +32,13 @@ This section has the following two options:
 
 ## **Use Authentication**
 
-By default, Publisher runs under the **SYSTEM** account. When proxy authentication is not enabled, outbound traffic uses the computer account identity.\
+By default, Publisher runs under the SYSTEM account. When proxy authentication is not enabled, outbound traffic uses the computer account identity.\
 \
 In environments where the proxy does not support computer account authentication, or where explicit identity-based auditing is required, proxy authentication can be configured using a dedicated service account.
 
 ## Proxy server
 
-This section contains the following two fields:
+This **Proxy server** section allows you to configure:
 
 * **URL**\
   Specifies the proxy server address. This can be a hostname or IP address.
@@ -47,7 +47,7 @@ This section contains the following two fields:
 
 ## Proxy credentials
 
-This section contains the following two fields:
+This **Proxy credentials** section contains the following two fields:
 
 * **Login**\
   Specifies the username used for proxy authentication.
@@ -62,12 +62,12 @@ Even when proxy authentication is enabled in Publisher, timestamping operations 
 
 ## WSUS and Timestamping Considerations
 
-When publishing third party updates to WSUS, update CAB files are timestamped using the Windows Cryptographic API. The server performs this process under the **SYSTEM** account.
+When publishing third party updates to WSUS, update CAB files are timestamped using the Windows Cryptographic API. The server performs this process under the SYSTEM account.
 
 Because of this behavior:
 
 * The Cryptographic API uses the proxy configured at the SYSTEM level, not the proxy settings configured in Publisher.
-* If the **SYSTEM** account does not have internet access, timestamping can fail.
+* If the SYSTEM account does not have internet access, timestamping can fail.
 * If the SYSTEM proxy requires authentication, timestamping can also fail, as the Cryptographic API does not support interactive proxy authentication.
 
 To confirm which proxy settings apply to the SYSTEM account, see [Verifying the SYSTEM Proxy Configuration](network-proxy.md#verifying-the-system-proxy-configuration), which explains how to view the effective proxy used during WSUS timestamping.
@@ -99,5 +99,5 @@ This output shows the proxy configuration that WSUS and the Windows Cryptographi
 {% hint style="danger" %}
 **Important**
 
-Ensure the SYSTEM proxy allows direct or unauthenticated access to the external endpoints used for timestamping. WSUS performs timestamping using the Windows Cryptographic API under the **SYSTEM** account, and this process does not support interactive or negotiated proxy authentication. If proxy authentication is mandatory, configure bypass rules or allow direct access for timestamping endpoints to prevent publishing failures.
+Ensure the SYSTEM proxy allows direct or unauthenticated access to the external endpoints used for timestamping. WSUS performs timestamping using the Windows Cryptographic API under the SYSTEM account, and this process does not support interactive or negotiated proxy authentication. If proxy authentication is mandatory, configure bypass rules or allow direct access for timestamping endpoints to prevent publishing failures.
 {% endhint %}
