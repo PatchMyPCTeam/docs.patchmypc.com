@@ -4,6 +4,18 @@ _Applies to: Patch My PC Publisher V2.x and 3.x_
 
 Details the production release history for Patch My PC (PMPC) Publisher, the most recent release being shown first.
 
+## 3.1.4.0 - 2026-10-08
+
+<details>
+
+<summary>Fixes</summary>
+
+* When the detection script signing failed, the Publisher could leave orphaned files or applications behind. A signing failure now terminates processing of the current application prior to any file or application operations.
+* Fixed a bug causing signature validation to fail when downloading the catalog for some customers.
+* Fixed a bug in WSUS RSAT asset detection.
+
+</details>
+
 ## 3.1.1.0 - 2026-09-30
 
 <details>
