@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 By default, Patch My PC (PMPC) Publisher downloads content and writes logs to locations derived from the system and installation context.
 
-As Publisher runs under the **SYSTEM** account, default paths may not always align with organizational requirements for disk usage, monitoring, or security tooling.
+As Publisher runs under the SYSTEM account, default paths may not always align with organizational requirements for disk usage, monitoring, or security tooling.
 
 <figure><img src="../../../.gitbook/assets/image (1404).png" alt="&#x27;File Locations&#x27; category" width="563"><figcaption></figcaption></figure>
 
@@ -12,7 +12,7 @@ The **File Locations** category on the **Advanced** tab allows you to customize:
 
 * [Content Download Location](file-locations.md#customize-content-download-location)
 * [Service Log Location](file-locations.md#customize-service-log-location)
-* [Log File Size and Retention](file-locations.md#log-file-size-and-retention-1)
+* [Log File Size and Retention](file-locations.md#log-file-size-and-retention)
 
 {% hint style="info" %}
 **Note**
