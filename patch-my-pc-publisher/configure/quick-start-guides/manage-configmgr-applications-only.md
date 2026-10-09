@@ -2,31 +2,29 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+Use this quick start when you want to create and manage third-party applications in Microsoft Configuration Manager.
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
+{% hint style="info" %}
+**Note**
+
+This guide is for environments that do not intend to publish third-party updates through Windows Server Update Services (WSUS) or Intune.
 {% endhint %}
-
-Use this scenario when the Patch My PC (PMPC) Publisher is used exclusively to create and manage third-party applications in Microsoft ConfigMgr.&#x20;
-
-This configuration is for environments that do not intend to publish third-party updates through Windows Server Update Services (WSUS) or Intune.
 
 After completing the configuration steps in this section, Publisher will be ready to publish third-party applications to ConfigMgr.
 
-
-
 ## Prerequisites
 
-Before continuing to configure Publisher to manage ConfigMgr Applications only, ensure you have completed the following checklist:
+<table><thead><tr><th width="55.77777099609375" align="right" valign="top">Item</th><th width="406.6666259765625" valign="top">Task</th><th align="center" valign="top">Done?</th></tr></thead><tbody><tr><td align="right" valign="top">1.</td><td valign="top">You have started a trial and/or have a valid <a href="../../../patch-my-pc-publisherv2/administration/general/license-information.md">license key</a>.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top"></td><td valign="top"></td><td align="center" valign="top"></td></tr></tbody></table>
+
+???
+
+<table><thead><tr><th width="55.77777099609375" align="right" valign="top">Item</th><th width="406.6666259765625" valign="top">Task</th><th align="center" valign="top">Done?</th></tr></thead><tbody><tr><td align="right" valign="top">1.</td><td valign="top"></td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top"></td><td valign="top"></td><td align="center" valign="top"></td></tr></tbody></table>
+
+??
 
 
 
-
-
-## Checklist
-
-Before configuring the Publisher, ensure the following information is identified and validated:
+##
 
 **General Items**
 
