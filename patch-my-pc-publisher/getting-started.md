@@ -55,10 +55,10 @@ Platform-specific requirements:
 Once the Publisher is installed, configure it based on how you plan to use it. Choose the scenario that best matches your environment:
 
 * [Scenario 1: ConfigMgr - Applications only](configure/quick-start-guides/manage-configmgr-applications-only.md)
-* Scenario 2: ConfigMgr - Applications and Updates (WSUS)
-* Scenario 3: WSUS (Standalone)
-* Scenario 4: Intune – Applications and Updates
-* Scenario 5: Mixed environment (ConfigMgr, WSUS, and Intune)
+* Scenario 2: ConfigMgr - Applications and Updates (WSUS) **\[COMING SOON]**
+* Scenario 3: WSUS (Standalone) **\[COMING SOON]**
+* Scenario 4: Intune – Applications and Updates **\[COMING SOON]**
+* Scenario 5: Mixed environment (ConfigMgr, WSUS, and Intune) **\[COMING SOON]**
 {% endstep %}
 
 {% step %}
