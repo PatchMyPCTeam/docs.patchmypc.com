@@ -8,10 +8,10 @@ The **Network and Proxy** category on the **Advanced** tab of Patch My PC (PMPC)
 
 When configured, most Publisher operations use this proxy to download content and communicate with external services.&#x20;
 
-{% hint style="info" %}
-**Note**
+{% hint style="danger" %}
+**Important**
 
-For exceptions related to WSUS and timestamping behavior, see [WSUS and Timestamping Considerations](network-proxy.md#wsus-and-timestamping-considerations).
+Configuring a proxy in Publisher does not automatically configure the Windows proxy settings used by WSUS and Windows certificate operations. In a proxy-only environment, downloads may succeed while certificate revocation checks or timestamping fail. See **Windows Proxy Settings for Certificate Operations** below.
 {% endhint %}
 
 The **PROXY SETTINGS** section allows you to configure the following settings:
@@ -19,7 +19,7 @@ The **PROXY SETTINGS** section allows you to configure the following settings:
 * [Proxy Mode](network-proxy.md#proxy-mode)
 * [Use authentication](network-proxy.md#use-authentication)
 * [Proxy server](network-proxy.md#proxy-server)
-* [Proxy credentails](network-proxy.md#proxy-credentials)
+* [Proxy credentials](network-proxy.md#proxy-credentials)
 
 ## Proxy mode
 
@@ -54,27 +54,50 @@ This **Proxy credentials** section contains the following two fields:
 * **Password**\
   Specifies the password associated with the proxy authentication account.
 
-{% hint style="danger" %}
-**Important**
+## **Windows Proxy Settings for Certificate Operations**
 
-Even when proxy authentication is enabled in Publisher, timestamping operations use the Windows Cryptographic API and rely on the proxy configured at the SYSTEM level, not Publisher's proxy settings. For exceptions and special considerations related to WSUS and timestamping behavior, see [WSUS and Timestamping Considerations](network-proxy.md#wsus-and-timestamping-considerations).
+Publisher uses Windows components for certificate validation, signing and timestamping. These operations can use proxy settings separate from those configured in Publisher.
+
+There are two Windows proxy configurations to distinguish:
+
+| Configuration                                                    | Publisher-related operations                                                           |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Windows Internet Options, commonly called WinINET proxy settings | Certificate revocation checks and timestamping ConfigMgr and Intune detection scripts. |
+| WinHTTP proxy settings                                           | WSUS API operations, including update CAB signing and timestamping connectivity.       |
+
+{% hint style="info" %}
+**Note**
+
+These are separate Windows configurations. Changing Publisher’s proxy settings does not automatically update either of them.
+
+Configure Windows proxy settings for the account running the **Patch My PC Publishing Service**, which is **SYSTEM** by default. Settings configured only for the signed-in user will not apply to the Publisher service operations.
 {% endhint %}
 
-## WSUS and Timestamping Considerations
+## Certificate revocation checks and script timestamping
 
-When publishing third party updates to WSUS, update CAB files are timestamped using the Windows Cryptographic API. The server performs this process under the SYSTEM account.
+Certificate revocation checks for the Patch My PC catalog and timestamping operations for ConfigMgr and Intune detection scripts follow the Windows Internet Options proxy settings for the account performing the operation.
 
-Because of this behavior:
+In environments where direct Internet access is blocked, configure these settings for the Publisher service account, which runs as **SYSTEM** by default, and ensure the WinINET proxy permits access to the required certificate and timestamp endpoints.
 
-* The Cryptographic API uses the proxy configured at the SYSTEM level, not the proxy settings configured in Publisher.
-* If the SYSTEM account does not have internet access, timestamping can fail.
-* If the SYSTEM proxy requires authentication, timestamping can also fail, as the Cryptographic API does not support interactive proxy authentication.
+| Endpoint                        | Purpose                               |
+| ------------------------------- | ------------------------------------- |
+| `http://cacerts.digicert.com`   | Intermediate certificate downloads    |
+| `http://crl3.digicert.com`      | Certificate revocation list downloads |
+| `http://crl4.digicert.com`      | Certificate revocation list downloads |
+| `http://ocsp.digicert.com`      | Online certificate status checks      |
+| `http://timestamp.digicert.com` | Default script timestamp server       |
 
-To confirm which proxy settings apply to the SYSTEM account, see [Verifying the SYSTEM Proxy Configuration](network-proxy.md#verifying-the-system-proxy-configuration), which explains how to view the effective proxy used during WSUS timestamping.
+These URLs require HTTP access on port 80. If you configure a different timestamp server, you may also need to allow access to that server and the CRL and OCSP endpoints associated with its certificate chain.
 
-## Verifying the SYSTEM Proxy Configuration
+## **Proxy authentication considerations**
 
-Use PsExec from Sysinternals to open a SYSTEM-level command prompt and view the proxy configuration applied to the SYSTEM account.
+Windows certificate and WSUS operations run under the Publisher service account, SYSTEM by default, and cannot respond to interactive proxy authentication prompts. Credentials configured in Publisher do not automatically apply to these operations.
+
+Ensure your proxy permits the service account to access the required certificate and timestamp endpoints. If authentication prevents access, work with your network team to configure an appropriate authentication policy, allow unauthenticated access to those endpoints through the proxy, or permit approved direct access.
+
+## Configuring the WinINET Proxy for Certificate Revocation Checks and Script Signing
+
+Certificate revocation checks and script timestamping use Windows Internet Options (WinINET) proxy settings. Configure these for the service account for the Patch My PC Publisher Service. The SYSTEM account is used by default.
 
 To do this:
 
@@ -85,19 +108,41 @@ To do this:
 4. From the folder where PsExec was extracted, run the following command to open a SYSTEM-level command prompt.
 
 ```
-.\psexec.exe -s -i cmd.exe
+.\PsExec.exe -s -i cmd.exe
 ```
 
 5. In the **SYSTEM** command prompt, run the following command.
 
 ```
-netsh winhttp show proxy
+rundll32.exe shell32.dll,Control_RunDLL inetcpl.cpl
 ```
 
-This output shows the proxy configuration that WSUS and the Windows Cryptographic API will use during update signing and timestamping.
+6. Select **Connections > LAN settings**.
+7. Enter your organisation’s proxy address and port. Preserve any required bypass settings.
+8. Click **OK** in both windows and close the SYSTEM command prompt.
+9. Restart the Publisher service.
 
-{% hint style="danger" %}
-**Important**
+## Configuring the WinHTTP Proxy for WSUS API Operations
 
-Ensure the SYSTEM proxy allows direct or unauthenticated access to the external endpoints used for timestamping. WSUS performs timestamping using the Windows Cryptographic API under the SYSTEM account, and this process does not support interactive or negotiated proxy authentication. If proxy authentication is mandatory, configure bypass rules or allow direct access for timestamping endpoints to prevent publishing failures.
-{% endhint %}
+WSUS API operations use Windows HTTP Services (WinHTTP) proxy settings. Configure these at the machine level using an elevated Command Prompt. These settings apply to all accounts, including SYSTEM.
+
+To do this:
+
+1. Open **Command Prompt** as an **administrator.**
+2.  Run the following command to view the current proxy configuration:
+
+    ```
+    netsh winhttp show proxy
+    ```
+3.  Configure the proxy using your organisation’s proxy address and port:
+
+    ```
+    netsh winhttp set proxy proxy-server="proxy.example.com:8080"
+    ```
+
+    Replace `proxy.example.com:8080` with your proxy details.
+4.  Verify the updated configuration:
+
+    ```
+    netsh winhttp show proxy
+    ```
