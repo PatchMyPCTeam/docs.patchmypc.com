@@ -17,6 +17,12 @@ There are two main sections on this screen:
 
 The **Staged Content Repository** can also be used as a fallback mechanism to improve reliability during publishing, such as recovering from download failures or preventing hash mismatches. In environments where outbound access to specific vendor websites or CDNs is restricted, customers can download the required binaries from another machine with internet access and place them into the Staged Content Repository for the Publisher to consume during publishing.
 
+{% hint style="info" %}
+**Note**
+
+See [About the Staged Content Repository](technical-references/about-staged-content-repository.md) for more information about the Staged Content Repository and how it works.
+{% endhint %}
+
 ### To configure the Staged Content Repository
 
 1. Load Publisher.
