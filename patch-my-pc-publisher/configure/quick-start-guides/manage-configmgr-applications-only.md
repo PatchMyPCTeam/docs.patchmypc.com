@@ -14,29 +14,23 @@ After completing the configuration steps in this section, Publisher will be read
 
 ## Prerequisites
 
-<table><thead><tr><th width="55.77777099609375" align="right" valign="top">Item</th><th width="406.6666259765625" valign="top">Task</th><th align="center" valign="top">Done?</th></tr></thead><tbody><tr><td align="right" valign="top">1.</td><td valign="top">You have started a trial and/or have a valid <a href="../../../patch-my-pc-publisherv2/administration/general/license-information.md">license key</a>.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top"></td><td valign="top"></td><td align="center" valign="top"></td></tr></tbody></table>
+Before continuing to install and configure Publisher to manage ConfigMgr Applications only, ensure you have completed the following checklist.
+
+<table><thead><tr><th width="55.77777099609375" align="right" valign="top">Item</th><th width="474.4444580078125" valign="top">Task</th><th align="center" valign="top">Done?</th></tr></thead><tbody><tr><td align="right" valign="top">1.</td><td valign="top">You have started a trial and/or have a valid <a href="../../../patch-my-pc-publisherv2/administration/general/license-information.md">license key</a>.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">2.</td><td valign="top">You have decided where to <a href="../../install/where.md">install</a> Publisher.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">3.</td><td valign="top">Publisher's <a href="../../requirements/core-requirements.md">core requirements</a> are met.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">4.</td><td valign="top">Publisher's <a href="../../requirements/configmgr-requirements/">ConfigMgr requirements</a> are met.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">5.</td><td valign="top">You know the <a href="../../manage/configmgr-apps-tab/scan-configmgr/sql-configuration.md#site-database-server">location and name of the ConfigMgr site database</a>.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">6.</td><td valign="top">You know the <a href="../../technical-references/configure-sms-provider.md#connection-settings">SMS Provider's</a> location.</td><td align="center" valign="top"></td></tr></tbody></table>
+
+## Installing Publisher
+
+The following steps are suitable for getting Publisher up and running in most environments and are recommended to be completed before selecting products to enable for publishing and applying product customizations.
+
+<table><thead><tr><th width="55.77777099609375" align="right" valign="top">Item</th><th width="406.6666259765625" valign="top">Task</th><th align="center" valign="top">Done?</th></tr></thead><tbody><tr><td align="right" valign="top">1.</td><td valign="top"></td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top"></td><td valign="top"></td><td align="center" valign="top"></td></tr></tbody></table>
+
+
 
 ???
 
 <table><thead><tr><th width="55.77777099609375" align="right" valign="top">Item</th><th width="406.6666259765625" valign="top">Task</th><th align="center" valign="top">Done?</th></tr></thead><tbody><tr><td align="right" valign="top">1.</td><td valign="top"></td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top"></td><td valign="top"></td><td align="center" valign="top"></td></tr></tbody></table>
 
 ??
-
-
-
-##
-
-**General Items**
-
-* [x] You have started a trial and/or have a valid [license key](../../../patch-my-pc-publisherv2/administration/general/license-information.md).
-* [x] The Publisher [installation location](../../../patch-my-pc-publisherv2/download-and-install.md#where-should-i-install-the-publisher) has been identified.
-* [x] Publisher [core requirements](../../../patch-my-pc-publisherv2/publisher-requirements/core-requirements.md) are met.
-
-**Platform Checklist (ConfigMgr)**
-
-* [x] Publisher [platform requirements](../../../installation-guides/configmgr/requirements.md) are met.
-* [x] The [location and the name of the ConfigMgr site database](../../../patch-my-pc-publisherv2/administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md#site-database-server) has been identified.
-* [x] The [SMS Provider location](../../../patch-my-pc-publisherv2/publisher-reference/configure-the-sms-provider-connection.md#connection-settings) has been identified.
 
 ## Installation and Configuration Steps
 
