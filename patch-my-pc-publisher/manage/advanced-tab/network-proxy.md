@@ -58,6 +58,16 @@ This **Proxy credentials** section contains the following two fields:
 
 Publisher uses Windows components for certificate validation, signing and timestamping. These operations can use proxy settings separate from those configured in Publisher.
 
+{% hint style="info" %}
+**Note**
+
+If your environment requires a proxy for Internet access, configure the relevant Windows proxy settings so these operations can reach their endpoints.
+
+With [**Enforce timestamping**](integrations-platform.md#enforce-timestamping) enabled, access to the timestamp server is required. When disabled, Publisher should continue signing without a timestamp if the server is unavailable.
+
+Revocation connectivity warnings do not prevent publishing when followed by **“validated with warnings.”**
+{% endhint %}
+
 There are two Windows proxy configurations to distinguish:
 
 | Configuration                                                    | Publisher-related operations                                                           |
@@ -65,12 +75,18 @@ There are two Windows proxy configurations to distinguish:
 | Windows Internet Options, commonly called WinINET proxy settings | Certificate revocation checks and timestamping ConfigMgr and Intune detection scripts. |
 | WinHTTP proxy settings                                           | WSUS API operations, including update CAB signing and timestamping connectivity.       |
 
+### **Proxy authentication considerations**
+
+Windows certificate and WSUS operations run under the Publisher service account, SYSTEM by default, and cannot respond to interactive proxy authentication prompts. Credentials configured in Publisher do not automatically apply to these operations.
+
+Ensure your proxy permits the service account to access the required certificate and timestamp endpoints. If authentication prevents access, work with your network team to configure an appropriate authentication policy, allow unauthenticated access to those endpoints through the proxy, or permit approved direct access.
+
 {% hint style="info" %}
 **Note**
 
-These are separate Windows configurations. Changing Publisher’s proxy settings does not automatically update either of them.
+Publisher, WinINET and WinHTTP use separate proxy configurations. Changing Publisher’s proxy settings does not automatically update either Windows configuration.
 
-Configure Windows proxy settings for the account running the **Patch My PC Publishing Service**, which is **SYSTEM** by default. Settings configured only for the signed-in user will not apply to the Publisher service operations.
+Configure WinINET settings for the Publisher service account, which is SYSTEM by default. The basic WinHTTP proxy settings are machine-wide and can be configured from an elevated Command Prompt.
 {% endhint %}
 
 ## Certificate revocation checks and script timestamping
@@ -88,12 +104,6 @@ In environments where direct Internet access is blocked, configure these setting
 | `http://timestamp.digicert.com` | Default script timestamp server       |
 
 These URLs require HTTP access on port 80. If you configure a different timestamp server, you may also need to allow access to that server and the CRL and OCSP endpoints associated with its certificate chain.
-
-## **Proxy authentication considerations**
-
-Windows certificate and WSUS operations run under the Publisher service account, SYSTEM by default, and cannot respond to interactive proxy authentication prompts. Credentials configured in Publisher do not automatically apply to these operations.
-
-Ensure your proxy permits the service account to access the required certificate and timestamp endpoints. If authentication prevents access, work with your network team to configure an appropriate authentication policy, allow unauthenticated access to those endpoints through the proxy, or permit approved direct access.
 
 ## Configuring the WinINET Proxy for Certificate Revocation Checks and Script Signing
 
