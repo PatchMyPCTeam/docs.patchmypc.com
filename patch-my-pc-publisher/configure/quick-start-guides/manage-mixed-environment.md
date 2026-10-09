@@ -1,3 +1,9 @@
+---
+hidden: true
+noIndex: true
+noRobotsIndex: true
+---
+
 # Quick Start Guide for Managing a Mixed Environment using Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
@@ -21,10 +27,6 @@ After completing the configuration steps in this section, the Publisher will be 
 ## Prerequisites
 
 Before continuing to configure Publisher to manage a mixed Environment (ConfigMgr, WSUS, and Intune), ensure you have completed the following checklist:
-
-
-
-
 
 ##
 
@@ -78,7 +80,7 @@ The following steps are suitable for getting the Publisher up and running in mos
     3. Consider enabling [Allow available uninstall](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/options/application-options.md#allow-available-uninstall).
 17. Click [Test Connection](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/options/authentication-settings.md#test-connection) to verify the app registration is configured correctly.
 18. On the Intune Apps tab still, right-click the [All Products](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md#all-products-level) node in the [product tree](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) and enable and configure, the _Manage Installation Logging_ [customization](../../../patch-my-pc-publisherv2/customizations-right-click-options/) option. This ensures detailed installation logs are generated on client devices when third-party applications are installed. This helps with troubleshooting if issues occur during installation.
-19. Go to the Intune Updates tab and check **Enable creation of Win32 updates in Microsoft Intune**.&#x20;
+19. Go to the Intune Updates tab and check **Enable creation of Win32 updates in Microsoft Intune**.
 20. Click OK to close the options form that opens.
 21. On the Intune Updates tab still, right-click the [All Products](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md#all-products-level) node in the [product tree](../../../patch-my-pc-publisherv2/administration/intune-apps-updates/product-tree.md) and enable and configure, the Manage Installation Logging [customization](../../../patch-my-pc-publisherv2/customizations-right-click-options/) option. This ensures detailed installation logs are generated on client devices when third-party applications are installed. This helps with troubleshooting if issues occur during installation.
 22. Go to the [Sync Schedule](../../../patch-my-pc-publisherv2/administration/sync-schedule.md) tab to confirm the schedule aligns with your operational requirements.

@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Quick Start Guide for Managing WSUS (Standalone) using Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
@@ -18,19 +23,9 @@ After completing the configuration steps in this section, the Publisher will be 
 
 <table><thead><tr><th width="83" valign="top">Item</th><th width="323" valign="top">Task</th><th valign="top">Done?</th></tr></thead><tbody><tr><td valign="top"></td><td valign="top"></td><td valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top"></td><td valign="top"></td><td valign="top"></td></tr><tr><td valign="top"></td><td valign="top"></td><td valign="top"></td></tr></tbody></table>
 
-
-
-
-
 Before continuing to configure Publisher to manage WSUS (Standalone), ensure you have completed the following checklist:
 
 <table><thead><tr><th width="83" valign="top">Item</th><th width="444" valign="top">Task</th><th width="99" align="center" valign="top">Done?</th></tr></thead><tbody><tr><td valign="top">1.</td><td valign="top">You have started a trial and/or have a valid <a href="../../../patch-my-pc-publisherv2/administration/general/license-information.md">license key</a>.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top">2.</td><td valign="top">You have identified Publisher's <a href="../../../patch-my-pc-publisherv2/download-and-install.md#where-should-i-install-the-publisher">installation location</a>.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top">3.</td><td valign="top">Publisher's <a href="../../../patch-my-pc-publisherv2/publisher-requirements/core-requirements.md">core requirements</a> are met.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr><tr><td valign="top">4.</td><td valign="top">Publisher's <a href="../../../patch-my-pc-publisherv2/publisher-requirements/wsus-requirements/">requirements for WSUS</a> are met.</td><td align="center" valign="top"><img src="../../../.gitbook/assets/image (4460).png" alt="" data-size="original"></td></tr></tbody></table>
-
-
-
-
-
-
 
 ## Installation and Configuration Steps
 

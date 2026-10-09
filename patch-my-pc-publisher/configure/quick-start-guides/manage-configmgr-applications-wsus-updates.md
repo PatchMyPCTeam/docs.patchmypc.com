@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Quick Start Guide for Managing ConfigMgr Applications and WSUS Updates using Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
@@ -19,10 +24,6 @@ After completing the configuration steps in this section, the Publisher will be 
 ## Prerequisites
 
 Before continuing to configure Publisher to manage ConfigMgr Applications and Updates (WSUS), ensure you have completed the following checklist:
-
-
-
-
 
 Before configuring the Publisher, ensure the following information is identified and validated:
 
