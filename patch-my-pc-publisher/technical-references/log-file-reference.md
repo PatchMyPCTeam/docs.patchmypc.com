@@ -9,12 +9,12 @@ These logs are used when troubleshooting Publisher behavior or when collecting i
 {% hint style="info" %}
 **Note**
 
-See [Customize Content Download and Log Save Location](../manage/advanced-tab/customize-content-download-log-save-location.md) for details on how to configure logging-related options in Publisher&#x20;
+See [Customize Content Download and Log Save Location](/broken/pages/w3u1zJqrovBlFooqodNg) for details on how to configure logging-related options in Publisher
 {% endhint %}
 
 ## PatchMyPC.log
 
-The primary Publisher log is **PatchMyPC.log**.&#x20;
+The primary Publisher log is **PatchMyPC.log**.
 
 In older versions, this log is located in the root of the Publisher installation folder, i.e.
 
@@ -40,9 +40,9 @@ When reviewing an issue, merge the relevant logs and sort entries by timestamp. 
 
 ## Scenario-Based Log Review
 
-When troubleshooting a specific area, review logs that match the related scenario name. For example, when troubleshooting Intune activity, review logs that include `Intune` in the filename.&#x20;
+When troubleshooting a specific area, review logs that match the related scenario name. For example, when troubleshooting Intune activity, review logs that include `Intune` in the filename.
 
-When troubleshooting WSUS activity, review logs that include `Wsus` or `WSUS` in the filename.&#x20;
+When troubleshooting WSUS activity, review logs that include `Wsus` or `WSUS` in the filename.
 
 When troubleshooting ConfigMgr activity, review logs that include `ConfigMgr` in the filename.
 

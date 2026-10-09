@@ -110,7 +110,7 @@ Exports from a multi-tenant Publisher instance cannot be imported into another m
 
 To import a tenant configuration from another Publisher instance:
 
-1. Export the Publisher configuration from the source Publisher instance. See Export Settings in [Backup and Restore Settings](../../manage/advanced-tab/backup-restore-settings.md) for more details.
+1. Export the Publisher configuration from the source Publisher instance. See Export Settings in [Backup and Restore Settings](/broken/pages/Rg0jivSxE1MST3steTAp) for more details.
 2. Click the **Import Intune Tenants** button.
 3. Browse to the exported file from the source Publisher instance. If the file was exported from another Publisher instance as a .cab file, change the file type filter to .cab.
 
@@ -153,7 +153,7 @@ After the refresh completes, ensure you manually select the newly created tenant
 {% hint style="info" %}
 **Note**
 
-For full consideration of items that are not included in an export or backup, see [Backup and Restore](../../manage/advanced-tab/backup-restore-settings.md).
+For full consideration of items that are not included in an export or backup, see [Backup and Restore](/broken/pages/Rg0jivSxE1MST3steTAp).
 
 Certain items are not contained within the exported configuration file. This includes external or supplemental content such as additional files and custom images, for example branding images used for the Managed Client Processes feature.
 

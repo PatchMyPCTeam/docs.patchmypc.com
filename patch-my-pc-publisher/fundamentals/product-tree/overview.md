@@ -176,14 +176,14 @@ In these scenarios, the customer must supply the installer using one of the supp
 For step-by-step guidance, refer to:
 
 * [Customizations](../../customizations/)
-* [Advanced | Staged Content Repository](../../manage/advanced-tab/staged-content-repository.md)
+* [Advanced | Staged Content Repository](/broken/pages/tCv28T7wFfGMxj81HK89)
 
 These pages explain how to store and reference customer-provided binaries so Publisher can consume them during publishing.
 
 {% hint style="info" %}
 **Note**
 
-This feature is also referred to as **Binary Free apps** and leverages the [Staged Content Repository](../../manage/advanced-tab/staged-content-repository.md).
+This feature is also referred to as **Binary Free apps** and leverages the [Staged Content Repository](/broken/pages/tCv28T7wFfGMxj81HK89).
 {% endhint %}
 
 {% hint style="success" %}
