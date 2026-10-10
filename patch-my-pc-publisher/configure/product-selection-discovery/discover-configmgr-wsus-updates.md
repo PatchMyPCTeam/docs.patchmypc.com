@@ -18,7 +18,7 @@ Your approach differs slightly depending on whether WSUS is [integrated with Con
 
 ### ConfigMgr Integrated with WSUS
 
-You can enable applications for publishing in one of two ways:
+You can enable updates for publishing in one of two ways:
 
 * [Automatically discover installed products by querying the ConfigMgr database](discover-configmgr-wsus-updates.md#automatically-discover-installed-products-by-querying-the-configmgr-database)
 * [Manually browse and select products directly from the Product Tree on the WSUS Updates tab](discover-configmgr-wsus-updates.md#manually-browse-and-select-products-directly-from-the-product-tree-on-the-wsus-updates-tab)
@@ -31,7 +31,7 @@ After running a [query](../../manage/intune-tabs/scan-intune/filters-discovered-
 
 A common and effective approach is to begin conservatively. Enable a small number of familiar, low-impact updates to understand how ConfigMgr applications are created by Publisher. Many customers start with widely used utilities such as 7-Zip or Notepad++ to gain confidence in the workflow.
 
-Once you are comfortable with how updates are created and maintained, you can expand your product selection or consider enabling [auto-publishing rules](../../manage/configmgr-apps-tab/scan-configmgr/auto-publishing-rules.md) to automate application lifecycle management over time o publish updates for different products based on discovery thresholds.
+Once you are comfortable with how updates are created and maintained, you can expand your product selection or consider enabling [auto-publishing rules](../../manage/intune-tabs/scan-intune/auto-publishing-rules.md) to automate application lifecycle management over time to publish updates for different products based on discovery thresholds.
 
 ### Manually browse and select products directly from the Product Tree on the WSUS Updates tab
 
@@ -41,7 +41,7 @@ You can expand vendors to browse available products or use the [Filter](../../fu
 
 Unlike the advice for [ConfigMgr application selection](discover-configmgr-applications.md#manually-browse-and-select-products-directly-from-the-product-tree-on-the-configmgr-apps-tab), it is often appropriate to enable multiple update variants if they exist in your estate. For example, if both x86 and x64 variants are detected, publishing updates for both ensures all devices remain compliant while you work toward long-term standardization.
 
-As a best practice, begin by enabling a small number of familiar, low-impact updates to understand how ConfigMgr applications are created by the Publisher. Many customers start with widely used utilities such as 7-Zip or Notepad++ to gain confidence in the workflow.
+As a best practice, begin by enabling a small number of familiar, low-impact updates to understand how ConfigMgr updates are created by the Publisher. Many customers start with widely used utilities such as 7-Zip or Notepad++ to gain confidence in the workflow.
 
 ### Standalone WSUS
 
