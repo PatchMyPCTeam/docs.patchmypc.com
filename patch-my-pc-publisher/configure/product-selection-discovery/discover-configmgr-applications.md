@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-This page provides guidance on how to discover applications in your environment or manually select products for publishing as Microsoft ConfigMgr applications using the Patch My PC (PMPC) Publisher.
+This page provides guidance on how to discover applications in your environment or manually select products for publishing as Microsoft ConfigMgr applications using Patch My PC (PMPC) Publisher.
 
 You can scan the ConfigMgr database to automatically discover supported products installed in your environment, or manually browse and select products directly from the Publisher catalog.
 
@@ -11,7 +11,7 @@ After completing the steps in this section, you will be able to enable and publi
 You can enable applications for publishing in one of two ways:
 
 * [Automatically discover installed products by querying the ConfigMgr database](discover-configmgr-applications.md#automatically-discover-installed-products-by-querying-the-configmgr-database)
-* [Manually browse and select products directly from the product tree on the ConfigMgr Apps tab](discover-configmgr-applications.md#manually-browse-and-select-products-directly-from-the-product-tree-on-the-configmgr-apps-tab)
+* [Manually browse and select products directly from the Product Tree on the ConfigMgr Apps tab](discover-configmgr-applications.md#manually-browse-and-select-products-directly-from-the-product-tree-on-the-configmgr-apps-tab)
 
 ## Automatically discover installed products by querying the ConfigMgr database
 
@@ -23,7 +23,7 @@ A common and effective approach is to begin conservatively. Enable a small numbe
 
 Once you are comfortable with how applications are created and maintained, you can expand your product selection or consider enabling [auto-publishing rules](../../manage/configmgr-apps-tab/scan-configmgr/auto-publishing-rules.md) to automate application lifecycle management over time to create new applications based on discovery thresholds.
 
-## Manually browse and select products directly from the product tree on the ConfigMgr Apps tab
+## Manually browse and select products directly from the Product Tree on the ConfigMgr Apps tab
 
 Applications can also be enabled manually by selecting products directly from the [Product Tree](../../fundamentals/product-tree/working.md) on the [ConfigMgr Apps](../../manage/configmgr-apps-tab/) tab.
 
