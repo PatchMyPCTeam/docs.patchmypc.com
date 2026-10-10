@@ -59,19 +59,21 @@ See [Manually browse and select products directly from the Product Tree on the W
 
 ## Inventory Variants and Update Selection
 
-Scan results obtained by the Publisher from ConfigMgr hardware inventory may not always accurately reflect the exact installer variant deployed on a device. This is due to differences in how vendors name products in Add/Remove Programs and how that data is surfaced through ConfigMgr inventory views.
+Scan results obtained by Publisher from ConfigMgr hardware inventory may not always accurately reflect the exact installer variant deployed on a device. This is due to differences in how vendors name products in Add/Remove Programs and how that data is surfaced through ConfigMgr inventory views.
 
 For example, inventory data may indicate that 7-Zip (x64) is installed, but it may not clearly distinguish whether the MSI or EXE variant was originally used. As a result, multiple update variants may appear as potential matches in the scan results.
 
 To account for this ambiguity, consider one of the following approaches:
 
-* **Enable all variants as Metadata Only first.**\
-  This allows the Windows Update Agent on the device to evaluate applicability and report compliance back to ConfigMgr without downloading full update content. After reviewing compliance results, you can determine which specific variant(s) should be enabled with full content.
-* **Enable all update variants as Full Content.**\
-  In environments where multiple variants may exist and immediate patch coverage is the priority, enabling all update variants ensures that no installed instance remains unpatched when deployments are targeted.
+* **Enable all variants as Metadata Only First**\
+  Enabling [Switch to Metadata Only](../../customizations/list-customizations/switch-full-content-metadata-only.md#switch-to-metadata-only) allows the Windows Update Agent on the device to evaluate applicability and report compliance back to ConfigMgr without downloading full update content. After reviewing compliance results, you can determine which specific variant(s) should be enabled with full content.
+* **Enable all update variants as Full Content**\
+  In environments where multiple variants may exist and immediate patch coverage is the priority, enabling [Switch to Full Content](../../customizations/list-customizations/switch-full-content-metadata-only.md#switch-to-full-content) for all update variants ensures that no installed instance remains unpatched when deployments are targeted.
 
-<figure><img src="../../../.gitbook/assets/image (4159).png" alt="Enable multiple variants as full content or metadata only" width="563"><figcaption></figcaption></figure>
+Using [Switch to Metadata Only](../../customizations/list-customizations/switch-full-content-metadata-only.md#switch-to-metadata-only) as an initial step is often the most controlled approach, particularly in WSUS standalone environments. It provides visibility into what is truly installed before introducing update binaries into WSUS.
 
-Using Metadata Only as an initial step is often the most controlled approach, particularly in WSUS standalone environments. It provides visibility into what is truly installed before introducing update binaries into WSUS.
+{% hint style="info" %}
+**Note**
 
-For more information about the metadata options when publishing updates, see [Publish with Full-content or Metadata Only](../../../patch-my-pc-publisherv2/customizations-right-click-options/publish-with-full-content-or-metadata-only.md).
+See [Switch to Full Content/Metadata Only option](../../customizations/list-customizations/switch-full-content-metadata-only.md) for more information about the metadata options when publishing updates.
+{% endhint %}
