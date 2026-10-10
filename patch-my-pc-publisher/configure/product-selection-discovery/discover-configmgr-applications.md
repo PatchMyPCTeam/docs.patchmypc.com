@@ -35,7 +35,7 @@ When selecting products, we recommend standardizing on a single installer varian
 
 * MSI and EXE variants
 * x86 and x64 architectures
-* ARM64 variants
+* ARM64 variants.
 
 In most environments, it is recommended to standardize on a single architecture and installer type, such as **MSI (x64)**, unless there is a specific requirement for an alternative variant.
 
