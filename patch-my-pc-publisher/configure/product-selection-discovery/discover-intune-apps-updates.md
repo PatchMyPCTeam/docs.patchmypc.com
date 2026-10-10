@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-This page provides guidance on how to discover applications in your environment or manually select products for publishing as Microsoft Intune apps and Intune updates using Patch My PC (PMPC) Publisher.
+This page provides guidance on how to discover apps in your environment or manually select products for publishing as Microsoft Intune apps and Intune updates using Patch My PC (PMPC) Publisher.
 
 When integrated with Intune, you can scan your tenant to identify supported third party apps that are already discovered. You can also manually browse and select products directly from the Publisher catalog.
 
@@ -12,15 +12,15 @@ After completing the steps in this section, you will be able to enable and publi
 
 Products on both the **Intune Apps** and **Intune Updates** tabs are published as Win32 apps and use the same core detection method to determine installation state. The key difference is how applicability is handled.
 
-Intune Apps are designed for initial installation and lifecycle management. They are generally applicable to any targeted device unless restricted by assignment filters or requirements.
+_Intune Apps_ are designed for initial installation and lifecycle management. They are generally applicable to any targeted device unless restricted by assignment filters or requirements.
 
-Intune Updates, while still Win32 apps, include an additional requirement script. This script evaluates whether an older version of the app is already installed on the device. The update Win32 app is only considered applicable if a previous version is detected. This approach ensures that updates target existing installations rather than installing new apps.
+_Intune Updates_, while still Win32 apps, include an additional requirement script that evaluates whether an older version of the app is already installed on the device. The update of a Win32 app is only considered applicable if a previous version is detected. This approach ensures that updates target existing installations rather than installing new apps.
 
-As Intune does not have a native compliance evaluation model like WSUS, this requirement-script-based logic is used to simulate update applicability while remaining fully integrated with the native Intune Win32 application model.
+As Intune does not have a native compliance evaluation model like WSUS, this requirement-script-based logic is used to simulate update applicability while remaining fully integrated with the native Intune Win32 app model.
 
 ### Discovering and Selecting Applications
 
-You can enable applications and updates for publishing in one of two ways:
+You can enable apps and updates for publishing in one of two ways:
 
 * [Automatically discover installed products by querying Intune](discover-intune-apps-updates.md#automatically-discover-installed-products-by-querying-intune)
 * [Manually browse and select products directly from the Product Tree on the Intune tabs](discover-intune-apps-updates.md#manually-browse-and-select-products-directly-from-the-product-tree-on-the-intune-tabs)
@@ -31,9 +31,9 @@ Running a [query](../../manage/intune-tabs/scan-intune/filters-discovered-produc
 
 After running a [query](../../manage/intune-tabs/scan-intune/filters-discovered-products.md#query-button), review the results carefully. The device [count](../../manage/intune-tabs/scan-intune/filters-discovered-products.md#count-column) and version information help validate inventory accuracy and determine publishing priority. [Exporting the results to CSV](../../manage/intune-tabs/scan-intune/filters-discovered-products.md#to-export-the-results-to-a-csv) can support internal review, change-control discussions, or phased rollout planning.
 
-A common and effective approach is to begin conservatively. Enable a small number of familiar, low-impact applications to understand how Intune applications and updates are created by Publisher. Many customers start with widely used utilities such as 7-Zip or Notepad++ to gain confidence in the workflow.
+A common and effective approach is to begin conservatively. Enable a small number of familiar, low-impact apps to understand how Intune apps and updates are created by Publisher. Many customers start with widely used utilities such as 7-Zip or Notepad++ to gain confidence in the workflow.
 
-Once you are comfortable with how applications and updates are created and maintained, you can expand your product selection or consider enabling [auto-publishing rules](../../manage/intune-tabs/scan-intune/auto-publishing-rules.md) to automate application lifecycle management over time to create new applications and updates based on discovery thresholds.
+Once you are comfortable with how apps and updates are created and maintained, you can expand your product selection or consider enabling [auto-publishing rules](../../manage/intune-tabs/scan-intune/auto-publishing-rules.md) to automate app lifecycle management over time to create new apps and updates based on discovery thresholds.
 
 ### Manually browse and select products directly from the Product Tree on the Intune tabs
 
@@ -43,7 +43,7 @@ Manual selection remains a valid and flexible option, especially when you want t
 
 You can expand vendors to browse available products or use the [Filter](../../fundamentals/product-tree/working.md#filter-field) field to quickly locate a specific app or update by name.
 
-When selecting _applications_, we recommend to standardize on a single installer variant whenever multiple options are available. For example, some products may provide:
+When selecting _apps_, we recommend you standardize on a single installer variant whenever multiple options are available. For example, some products may provide:
 
 * MSI and EXE variants
 * x86 and x64 architectures
