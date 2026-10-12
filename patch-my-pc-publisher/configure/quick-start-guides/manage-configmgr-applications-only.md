@@ -2,7 +2,7 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-Use this Quick Start Guide when you want to create and manage third-party applications in Microsoft Configuration Manager (ConfigMgr).
+Use this Quick Start Guide for Patch My PC (PMPC) Publisher when you want to create and manage third-party applications in Microsoft Configuration Manager (ConfigMgr).
 
 {% hint style="info" %}
 **Note**
