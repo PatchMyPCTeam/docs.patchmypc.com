@@ -1,10 +1,12 @@
-# Product Management section of Patch My PC Publisher
+# Products section of Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
 
 The **PRODUCTS** section on the **WSUS Options** tab of Patch My PC (PMPC) Publisher manages the **Patch My PC** update category in Microsoft Configuration Manager (ConfigMgr). This category must be enabled for third-party updates published by PMPC to be synchronized by the Software Update Point (SUP).
 
 <figure><img src="../../../../.gitbook/assets/image (1240).png" alt="&#x27;PRODUCTS&#x27; section" width="563"><figcaption></figcaption></figure>
+
+## Selected in ConfigMgr
 
 Checking the **Selected in ConfigMgr** checkbox (or leaving it selected if it is already checked) ensures that the corresponding **Patch My PC** product category is also selected in the **ConfigMgr Console** under:
 
@@ -23,6 +25,8 @@ When this happens, the existing Patch My PC category is effectively re-hashed, c
 
 In this scenario, enable both **Patch My PC** categories in Publisher and under **Software Update Point Component Properties | Products**. This ensures that all PMPC updates continue to synchronize correctly, regardless of which category ID they are associated with.
 {% endhint %}
+
+## Selected in WSUS
 
 Checking the **Selected in WSUS** checkbox (or leaving it selected if it is already checked) ensures that the corresponding **Patch My PC** product category is also selected in the **WSUS Console** under **Products and Classifications**.
 
