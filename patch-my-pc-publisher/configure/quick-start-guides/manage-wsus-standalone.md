@@ -2,7 +2,9 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-Use this Quick Start Guide for Patch My PC (PMPC) Publisher when you want to create and manage third-party updates using Microsoft Windows Server Update Services (WSUS). This configuration is for environments that intend to manage applications and updates through Microsoft Configuration Manager (ConfigMgr) and do not integrate with Intune.
+Use this Quick Start Guide for Patch My PC (PMPC) Publisher when you want to create and manage third-party updates using Microsoft Windows Server Update Services (WSUS).
+
+This configuration is for environments that do not publish applications through ConfigMgr and do not integrate with Intune.
 
 After completing the configuration steps in this section, the Publisher will be ready to publish third-party updates to WSUS.
 
