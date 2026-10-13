@@ -8,48 +8,29 @@ noRobotsIndex: true
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**Important**
+Use this Quick Start Guide for Patch My PC (PMPC) Publisher when you want to publish third party applications and updates in a mixed environment that includes Microsoft Configuration Manager (ConfigMgr), Windows Server Update Services (WSUS), and Intune. This configuration is typically intended for organizations transitioning between management platforms or managing multiple platforms simultaneously.
 
-This article has not been updated for Version 3.x. Once it has, this banner will be removed.
-{% endhint %}
+In this scenario, a Software Update Point (SUP) site system role that leverages WSUS is used as the update publishing endpoint for Publisher. Publisher publishes third-party update metadata and binaries directly to the WSUS instance associated with the top-level SUP in the ConfigMgr environment.
 
-Use this scenario when the Patch My PC (PMPC) Publisher is used to publish third party applications and updates in a mixed environment that includes ConfigMgr, Windows Server Update Services (WSUS), and Intune. This configuration is typically intended for organizations transitioning between management platforms or managing multiple platforms simultaneously.
-
-In this scenario, a Software Update Point (SUP) site system role that leverages WSUS is used as the update publishing endpoint for the Publisher. The Publisher publishes third-party update metadata and binaries directly to the WSUS instance associated with the top-level SUP in the ConfigMgr environment.
-
-ConfigMgr uses the SUP to synchronize third-party update metadata from WSUS. After synchronization, ConfigMgr orchestrates update approval, deployment and reporting.
+ConfigMgr uses the SUP to synchronize third-party update metadata from WSUS. After synchronization, ConfigMgr orchestrates update approval, deployment, and reporting.
 
 The same Publisher instance can also be used to publish third-party applications and updates to Intune.
 
-After completing the configuration steps in this section, the Publisher will be ready to publish third-party applications to both ConfigMgr and Intune and third-party updates to both WSUS and Intune.
+After completing the configuration steps in this section, Publisher will be ready to publish third-party applications to both ConfigMgr and Intune, and third-party updates to both WSUS and Intune.
 
 ## Prerequisites
 
-Before continuing to configure Publisher to manage a mixed Environment (ConfigMgr, WSUS, and Intune), ensure you have completed the following checklist:
+Before continuing to configure Publisher to manage a mixed Environment (ConfigMgr, WSUS, and Intune), ensure you have completed the following checklist
 
-##
+<table><thead><tr><th width="55" align="right" valign="top">Item</th><th valign="top">Task</th><th width="70.3507080078125" align="center" valign="top">Done?</th></tr></thead><tbody><tr><td align="right" valign="top">1.</td><td valign="top">You have started a trial and/or have a valid <a href="../../manage/general-tab/license-information.md">license key</a>.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">2.</td><td valign="top">You have decided where to <a href="../../install/where.md">install</a> Publisher.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">3.</td><td valign="top">Publisher's <a href="../../requirements/core-requirements.md">core requirements</a> are met.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">4.</td><td valign="top">Publisher's <a href="../../requirements/wsus-requirements/">WSUS requirements</a> are met.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">5.</td><td valign="top">Publisher's <a href="../../requirements/configmgr-requirements/">ConfigMgr requirements</a> are met.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">6.</td><td valign="top">You know which <a href="../../requirements/configmgr-requirements/sup-requirements/">ConfigMgr SUP</a> you are going to use.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">7.</td><td valign="top">You know the <a href="../../manage/configmgr-apps-tab/scan-configmgr/sql-configuration.md#site-database-server">location and name of the ConfigMgr site database</a>.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">8.</td><td valign="top">You know the <a href="../../technical-references/configure-sms-provider.md#connection-settings">SMS Provider's</a> location.</td><td align="center" valign="top"></td></tr><tr><td align="right" valign="top">9.</td><td valign="top">Publisher's <a href="../../requirements/intune-requirements/">Intune requirements</a> are met.</td><td align="center" valign="top"></td></tr></tbody></table>
 
-**General Items**
+## Installing and Configuring Publisher
 
-* [x] You have started a trial and/or have a valid [license key](../../../patch-my-pc-publisherv2/administration/general/license-information.md).
-* [x] The Publisher [installation location](../../../patch-my-pc-publisherv2/download-and-install.md#where-should-i-install-the-publisher) has been identified.
-* [x] Publisher [core requirements](../../../patch-my-pc-publisherv2/publisher-requirements/core-requirements.md) are met.
 
-**Platform Checklist (WSUS)**
 
-* [x] Publisher [platform requirements](../../../patch-my-pc-publisherv2/publisher-requirements/wsus-requirements/) are met.
 
-**Platform Checklist (ConfigMgr)**
 
-* [x] Publisher [platform requirements](../../../installation-guides/configmgr/requirements.md) are met.
-* [x] The [SUP site system role](../../../patch-my-pc-publisherv2/publisher-requirements/configmgr-requirements/site-system-role/) has been considered and is configured.
-* [x] The [location and the name of the ConfigMgr site database](../../../patch-my-pc-publisherv2/administration/configmgr-apps/form-controls/scan-configmgr-database-for-supported-products.md#site-database-server) has been identified.
-* [x] The [SMS Provider location](../../../patch-my-pc-publisherv2/publisher-reference/configure-the-sms-provider-connection.md#connection-settings) has been identified.
-
-**Platform Checklist (Intune)**
-
-* [x] Publisher [platform requirements](../../../patch-my-pc-publisherv2/publisher-requirements/intune-requirements/) are met.
+\*\*\*
 
 ## Installation and Configuration Steps
 
