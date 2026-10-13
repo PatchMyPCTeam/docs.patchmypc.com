@@ -26,4 +26,4 @@ The following steps are suitable for getting Publisher up and running in most en
 
 After completing these steps, Publisher is configured and ready to publish third-party applications to ConfigMgr.
 
-The next step is to [Discover ConfigMgr/WSUS Updates using Patch My PC Publisher](../product-selection-discovery/discover-configmgr-wsus-updates.md).
+The next step is to [Discover ConfigMgr/WSUS Updates using Publisher](../product-selection-discovery/discover-configmgr-wsus-updates.md).
