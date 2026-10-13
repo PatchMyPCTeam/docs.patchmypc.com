@@ -443,7 +443,6 @@
     * [Where to Install Patch My PC Publisher](patch-my-pc-publisher/install/where.md "Where to Install")
     * [Download Patch My PC Publisher](patch-my-pc-publisher/install/download.md "Download")
     * [Installing Patch My PC Publisher](patch-my-pc-publisher/install/installing.md "Installing")
-  * [\*\*\*\*](patch-my-pc-publisher/undefined.md)
   * [Configure Patch My PC Publisher](patch-my-pc-publisher/configure/README.md "Configure")
     * [Quick Start Guides for Patch My PC Publisher](patch-my-pc-publisher/configure/quick-start-guides/README.md "Quick Start Guides")
       * [Quick Start Guide for Managing ConfigMgr Applications only using Patch My PC Publisher](patch-my-pc-publisher/configure/quick-start-guides/manage-configmgr-applications-only.md "Manage ConfigMgr Applications only")

@@ -58,7 +58,7 @@ Once the Publisher is installed, configure it based on how you plan to use it. C
 * [Scenario 2: ConfigMgr - Applications and Updates (WSUS)](configure/quick-start-guides/manage-configmgr-applications-wsus-updates.md)
 * [Scenario 3: WSUS (Standalone)](configure/quick-start-guides/manage-wsus-standalone.md)
 * [Scenario 4: Intune – Applications and Updates](configure/quick-start-guides/manage-intune-apps-updates.md)
-* Scenario 5: Mixed environment (ConfigMgr, WSUS, and Intune) **\[COMING SOON]**
+* [Scenario 5: Mixed environment (ConfigMgr, WSUS, and Intune)](configure/quick-start-guides/manage-mixed-environment.md)
 {% endstep %}
 
 {% step %}

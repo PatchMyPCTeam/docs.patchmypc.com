@@ -22,6 +22,6 @@ The following steps are suitable for getting Publisher up and running in most en
 
 ## Next Steps
 
-After completing these steps, the Publisher is configured and ready to publish third-party applications and Updates to Intune.
+After completing these steps, Publisher is configured and ready to publish third-party applications and Updates to Intune.
 
-The next step is to [Discover Intune Apps and Updates using Publisher.](../product-selection-discovery/discover-intune-apps-updates.md)
+The next step is to [Customize and publish applications and updates](../../getting-started.md#customize-and-publish-applications-and-updates).
