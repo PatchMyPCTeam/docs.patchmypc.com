@@ -10,7 +10,7 @@ Details the production release history for preview versions of Patch My PC (PMPC
 You can find the Preview release notes below, and you can also learn more about the Preview channel here: [Publisher Preview Channel](https://patchmypc.com/preview-channel).
 {% endhint %}
 
-## 31.0.462 - 2026-09-25
+## 3.1.0.462 - 2026-09-25
 
 <details>
 
