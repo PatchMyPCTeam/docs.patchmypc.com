@@ -4,6 +4,23 @@ _Applies to: Patch My PC Advanced Insights_
 
 Details the production release history for Patch My PC's Advanced Insights, the most recent release being shown first.
 
+### 3.0.1 - 2026-10-15
+
+### .NET 10 is here
+
+3.0.1 marks the move to .NET 10 for Advanced Insights, bringing an end to the .NET 8 requirement and building on the latest and greatest from Microsoft. A lot of the base has also been updated to more modern frameworks.&#x20;
+
+**Bug Fixes:**
+
+* Fixed OS Servicing chart
+* Fixed docs link for Secure Boot dashboard
+* Fixed custom connection string not being honoured
+* Typo fixes&#x20;
+
+**Misc:**
+
+* Updated .net runtime to 10.0.12
+
 ### 2.6.5 - 2026-07-27
 
 **New Features:**
