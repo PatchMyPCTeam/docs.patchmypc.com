@@ -19,7 +19,7 @@ To download the Patch My PC (PMPC) Publisher installer:
 {% hint style="info" %}
 **Note**
 
-SHA256: 751B0582EF09DD4FA68ECDAB999F6FCBC5F424B94F4E8FE723B28EFC35E62F87
+SHA256: B45B55A46B31281EC4998535123B3D3640E3D8A4517E45C0651F87443A6CBBC2
 {% endhint %}
 
 2. The download begins automatically.
@@ -28,3 +28,4 @@ SHA256: 751B0582EF09DD4FA68ECDAB999F6FCBC5F424B94F4E8FE723B28EFC35E62F87
 
 3. Once completed, confirm the **PatchMyPC-Publishing-Service.msi** file has been downloaded.
 4. Copy the installer to the target server (if required), then proceed to [Installing Publisher](installing.md).
+
