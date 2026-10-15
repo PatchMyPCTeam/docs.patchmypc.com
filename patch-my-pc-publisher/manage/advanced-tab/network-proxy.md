@@ -107,30 +107,28 @@ These URLs require HTTP access on port 80. If you configure a different timestam
 
 ## Configuring the WinINET Proxy for Certificate Revocation Checks and Script Signing
 
-Certificate revocation checks and script timestamping use Windows Internet Options (WinINET) proxy settings. Configure these for the service account for the Patch My PC Publisher Service. The SYSTEM account is used by default.
+Certificate revocation checks and script timestamping use Windows Internet Options (WinINET) proxy settings. Configure these for the account used by the "PatchMyPCService" service. The SYSTEM account is used by default.
 
 To do this:
 
-1. Download **PsExec** from the Sysinternals website.\
-   [http://technet.microsoft.com/en-us/sysinternals/bb897553](http://technet.microsoft.com/en-us/sysinternals/bb897553)
-2. Extract PsExec to a local folder.
-3. Open **Command Prompt** as an administrator.
-4. From the folder where PsExec was extracted, run the following command to open a SYSTEM-level command prompt.
+1. Open **PowerShell as an administrator**.
+2. Update `$proxyServer` and `$proxyPort` below with your organisation’s proxy address and port.
+3. Run the following commands:
 
 ```
-.\PsExec.exe -s -i cmd.exe
+$enableProxy = $true  # $true to enable; $false to disable
+$proxyServer = 'proxy.contoso.com'
+$proxyPort = 8080
+
+$path = 'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings'
+
+New-ItemProperty -Path $path -Name ProxyServer -Value ('{0}:{1}' -f $proxyServer, $proxyPort) -PropertyType String -Force | Out-Null
+New-ItemProperty -Path $path -Name ProxyEnable -Value ([int]$enableProxy) -PropertyType DWord -Force | Out-Null
 ```
 
-5. In the **SYSTEM** command prompt, run the following command.
+4. Restart the **Patch My PC Publisher Service**.
 
-```
-rundll32.exe shell32.dll,Control_RunDLL inetcpl.cpl
-```
-
-6. Select **Connections > LAN settings**.
-7. Enter your organisation’s proxy address and port. Preserve any required bypass settings.
-8. Click **OK** in both windows and close the SYSTEM command prompt.
-9. Restart the Publisher service.
+To disable the SYSTEM WinINET proxy, set `$enableProxy = $false`, run the commands again, and restart the "PatchMyPCService" service.
 
 ## Configuring the WinHTTP Proxy for WSUS API Operations
 
