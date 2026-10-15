@@ -25,6 +25,18 @@ Release Notes for previous years can be accessed using the following links:
 {% endhint %}
 
 {% updates format="full" %}
+{% update date="2026-10-13" tags="fixes" %}
+## October 7th - 13th, 2026
+
+#### Binary Free Apps
+
+* Resolved an issue that left binary-free apps without the expected installer after a new revision was created.
+
+#### Intune Apps
+
+* Resolved an issue where deployments showing as **No** when the **Up To Date** filter was applied disappeared if the app was recreated.
+{% endupdate %}
+
 {% update date="2026-09-23" tags="fixes" %}
 ## Week of September 23rd, 2026
 
