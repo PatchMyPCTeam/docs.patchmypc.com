@@ -14,5 +14,5 @@ To use the _Remote User Interface (UI)_ feature of Patch My PC (PMPC) Publisher 
 
 * **Network access** from your workstation to the server on the Publisher's management port. The port is chosen by the administrator who enables remote access; ensure any firewall between you and the server allows it.
 * **A Windows account that can reach the server.** As sign-in uses Kerberos or NTLM, your workstation must be able to authenticate to the server. Normally this means both are in the same Active Directory domain (or trusted domains).
-* **Permission on the server.** Your account (or a domain group you belong to) must be added to the appropriate Publisher group on the server (see [Access and Permissions Reference](technical-references/access-permissions-reference.md) for more information).
+* **Permission on the server.** Your account (or a domain group you belong to) must be added to the appropriate Publisher group on the server (see [Access and Permissions Reference](../technical-references/access-permissions-reference.md) for more information).
 * **A trusted server certificate**, for any connection that crosses the network (see [Using a Different Computer](technical-references/using-different-computer.md) for more information). In a domain, a certificate from your internal certificate authority is the easiest option.

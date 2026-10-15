@@ -14,6 +14,5 @@ Welcome to the Technical references section for Patch My PC (PMPC) Publisher Rem
 
 This section contains articles providing technical reference-related information for the Publisher _Remote UI_ feature.
 
-* [Access and Permissions Reference for Patch My PC Publisher](access-permissions-reference.md)
 * [Multiple Administrators and the Patch My PC Publisher Remote User Interface](multiple-administrators.md)
 * [Using a Different Computer to run the Patch My PC Publisher Remote User Interface Console](using-different-computer.md)

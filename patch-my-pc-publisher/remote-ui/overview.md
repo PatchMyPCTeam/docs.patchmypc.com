@@ -30,7 +30,7 @@ Using Remote UI offers the following benefits:
 * The **PatchMyPCService** exposes a small, secure management interface on the server.
 * Your Settings console connects to that interface using Integrated Windows Authentication, i.e., the same sign in your computer already uses for file shares and other domain resources. You are identified by your Windows account; no password is typed or stored by Publisher.
 * Every privileged action still happens on the server, performed by the **PatchMyPCService**. The Settings console simply asks the **PatchMyPCService** to read or change settings on your behalf.
-* Your level of access is decided by the groups your user account belongs to on the server (see [Access and Permissions Reference](technical-references/access-permissions-reference.md) for more information).
+* Your level of access is decided by the groups your user account belongs to on the server (see [Access and Permissions Reference](../technical-references/access-permissions-reference.md) for more information).
 
 ## Running Publisher Locally versus Remotely
 

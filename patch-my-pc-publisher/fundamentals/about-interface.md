@@ -39,7 +39,7 @@ This view also shows the permissions this session currently has and the location
 {% hint style="info" %}
 **Note**
 
-See the [Access and Permissions Reference](../remote-ui/technical-references/access-permissions-reference.md) for more information about these permissions.
+See the [Access and Permissions Reference](../technical-references/access-permissions-reference.md) for more information about these permissions.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (1192).png" alt="Permissions" width="563"><figcaption></figcaption></figure>

@@ -19,5 +19,5 @@ If your account has not been added to any Publisher groups on the server, or is 
 {% hint style="info" %}
 **Note**
 
-See [Access and Permissions](technical-references/access-permissions-reference.md) for more information about granting access, and [Show Granted Permissions Shield](../fundamentals/about-interface.md#show-granted-permissions-shield) to confirm which permissions you currently hold.
+See [Access and Permissions](../technical-references/access-permissions-reference.md) for more information about granting access, and [Show Granted Permissions Shield](../fundamentals/about-interface.md#show-granted-permissions-shield) to confirm which permissions you currently hold.
 {% endhint %}

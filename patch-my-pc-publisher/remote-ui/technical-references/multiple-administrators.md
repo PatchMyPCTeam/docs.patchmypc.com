@@ -34,7 +34,7 @@ You do not choose this mode. The Settings console simply tells you whether your 
 {% hint style="info" %}
 **Note**
 
-Read-only mode prevents conflicting saves. It does not reduce what you are _permitted_ to do - your [Access and Permissions](access-permissions-reference.md) still apply on top.
+Read-only mode prevents conflicting saves. It does not reduce what you are _permitted_ to do - your [Access and Permissions](../../technical-references/access-permissions-reference.md) still apply on top.
 {% endhint %}
 
 ## Viewing other Connections

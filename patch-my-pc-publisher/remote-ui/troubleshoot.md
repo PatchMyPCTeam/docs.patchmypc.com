@@ -37,7 +37,7 @@ Connect using the exact FQDN in the certificate, and verify the requirements and
 
 **Likely cause and fix:**
 
-Your account is not in the right Publisher groups on the server. See [Access and Permissions Reference](technical-references/access-permissions-reference.md) for more information.
+Your account is not in the right Publisher groups on the server. See [Access and Permissions Reference](../technical-references/access-permissions-reference.md) for more information.
 
 ## You can connect, but the console says it is read-only
 

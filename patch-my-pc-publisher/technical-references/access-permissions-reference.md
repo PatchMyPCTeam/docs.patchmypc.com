@@ -2,14 +2,6 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-{% hint style="danger" %}
-**PRE-RELEASE DOCUMENTATION**
-
-This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
-
-Once this feature is released, it will be announced, and this banner will be removed.
-{% endhint %}
-
 Access to Patch My PC (PMPC) Publisher is controlled by both:
 
 * Your Windows account
@@ -61,6 +53,6 @@ To ease maintenance, we recommend using domain groups. In this way, you only nee
 
 ## Confirming access
 
-Clicking the _Show Granted Permissions Shield_ (![Show Granted Permissions Shield](<../../../.gitbook/assets/image (4585).png>)) at the bottom of the Publisher opens the read-only **Permissions** screen showing a list of every Publisher permission and whether the signed-in user has been granted it, evaluated against the server the user is connected to. This feature works the same for local and remote Settings consoles.
+Clicking the _Show Granted Permissions Shield_ (![Show Granted Permissions Shield](<../../.gitbook/assets/image (4585).png>)) at the bottom of the Publisher opens the read-only **Permissions** screen showing a list of every Publisher permission and whether the signed-in user has been granted it, evaluated against the server the user is connected to. This feature works the same for local and remote Settings consoles.
 
-<figure><img src="../../../.gitbook/assets/image (4586).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4586).png" alt=""><figcaption></figcaption></figure>
