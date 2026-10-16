@@ -33,7 +33,7 @@ Windows can automatically retrieve trusted root certificates during chain buildi
 
 <figure><img src="../../.gitbook/assets/image (1471).png" alt="" width="563"><figcaption></figcaption></figure>
 
-This may explain why **DigiCert Trusted Root G4** is missing from the server which is a requirment for revocation checks to complete for the Patch My PC catalog.
+This may explain why **DigiCert Trusted Root G4** is missing from the server which is a requirement for revocation checks to complete for the Patch My PC catalog.
 
 To resolve this issue, install and trust the required root certificate using your organization’s approved certificate management process. For remediation steps, see [**Resolve certificate validation issues**](certificate-validation-and-timestamping.md#resolve-certificate-validation-issues) below.
 
@@ -51,7 +51,7 @@ The message reports a failed revocation check without the additional missing tru
 
 <figure><img src="../../.gitbook/assets/image (1470).png" alt="" width="563"><figcaption></figcaption></figure>
 
-When validating a certificate, a check is perfomed to see whether it has been revoked by its issuer using the **Certificate Revocation List (CRL)** or **Online Certificate Status Protocol (OCSP)** endpoints specified in the certificate chain.
+When validating a certificate, a check is performed to see whether it has been revoked by its issuer using the Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) endpoints specified in the certificate chain.
 
 For example, when Publisher validates the downloaded Patch My PC catalog, an attempt is made to contact the revocation endpoints for its signing certificate chain. If those endpoints cannot be reached, Publisher logs a warning that the revocation check could not be completed. This does **not** mean the certificate has been revoked.
 
@@ -83,4 +83,34 @@ If the root certificate is missing, ask your Windows or security administrator t
 
 ### Issue 2: Unable to complete certificate revocation checks
 
-Include the required endpoints and guidance for direct or proxy access.
+To resolve this issue, ensure the Publisher server can reach the certificate and revocation endpoints for the certificate chain being validated.
+
+#### **Allow access to the required endpoints**
+
+As outlined in the [**core network requirements**](../requirements/core-requirements.md#network)**,** allow outbound access over **HTTP, port 80**, to the following DigiCert endpoints. These support validation of the signing certificate chains for the **Patch My PC catalog** and **Publisher MSI**.
+
+| Endpoint                      | Purpose                               |
+| ----------------------------- | ------------------------------------- |
+| `http://cacerts.digicert.com` | Certificate retrieval                 |
+| `http://crl3.digicert.com`    | Certificate revocation list retrieval |
+| `http://crl4.digicert.com`    | Certificate revocation list retrieval |
+| `http://ocsp.digicert.com`    | Online certificate status checks      |
+
+Ensure your firewall and network filtering rules permit these requests from the Publisher server.
+
+{% hint style="info" %}
+**Note**
+
+A successful connection from your browser, in the logged on user context, does not confirm that the SYSTEM account can reach these endpoints.
+{% endhint %}
+
+#### **If your environment uses a proxy server**
+
+Certificate revocation checks do not use the proxy configured in Publisher. For the default service configuration, Windows uses the SYSTEM account’s WinINet proxy settings.
+
+Either:
+
+* Configure the SYSTEM account’s WinINet proxy and ensure the proxy permits access to the required endpoints.
+* Allow the Publisher server to reach these endpoints directly through your firewall.
+
+See [Configure the WinINet proxy for certificate revocation checks and script signing](../manage/advanced-tab/network-proxy.md#configuring-the-wininet-proxy-for-certificate-revocation-checks-and-script-signing) for more details.
