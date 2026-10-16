@@ -4,8 +4,8 @@ _Applies to: Advanced/Patch Insights for Intune_
 
 The Advanced/Patch Insights for Intune node of the Patch My PC (PMPC) Cloud portal consists of the following Dashboards:
 
-| [Home](home-page.md) | [Updates](updates-page.md) | [Hardware](hardware-page.md) | [Software](software-page.md) | [Secure Boot](secure-boot-page-of-the-patch-my-pc-advanced-patch-insights-for-intune-dashboard.md) | [Intune](intune-page.md) |
-| -------------------- | -------------------------- | ---------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------ |
+| [Home](home-page.md) | [Updates](updates-page.md) | [Hardware](hardware-page/) | [Software](software-page.md) | [Secure Boot](secure-boot-page-of-the-patch-my-pc-advanced-patch-insights-for-intune-dashboard.md) | [Intune](intune-page.md) |
+| -------------------- | -------------------------- | -------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------ |
 
 Clicking any of these nodes opens a _Dashboard_ that displays the relevant information in a consistent format.
 
@@ -20,7 +20,7 @@ The Dashboards are split into the following sections:
 Like other pages in the portal, a Dashboard’s layout can be controlled by adjusting your browser's zoom level.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (4277).png" alt="&#x27;Home&#x27; page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1473).png" alt="&#x27;Home&#x27; page" width="563"><figcaption></figcaption></figure>
 
 ## Statistics
 
