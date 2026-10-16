@@ -10,6 +10,12 @@ Details the production release history for Patch My PC's Advanced Insights, the 
 
 3.0.1 marks the move to .NET 10 for Advanced Insights, bringing an end to the .NET 8 requirement and building on the latest and greatest from Microsoft. A lot of the base has also been updated to more modern frameworks.&#x20;
 
+{% hint style="info" %}
+**Note**
+
+The ASP.NET Core Runtime Hosting Bundle is included with the installer. If you need to download or repair it manually, download it from the [.NET 10 download page](https://dotnet.microsoft.com/en-us/download/dotnet/10.0).
+{% endhint %}
+
 **Bug Fixes:**
 
 * Fixed OS Servicing chart
@@ -19,7 +25,7 @@ Details the production release history for Patch My PC's Advanced Insights, the 
 
 **Misc:**
 
-* Updated .net runtime to 10.0.12
+* Updated .Net Runtime to 10.0.12
 
 ### 2.6.5 - 2026-07-27
 
