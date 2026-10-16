@@ -84,7 +84,7 @@ Any firmware requirements are calculated using data provided by OEMs. As such, f
 
 Please use the following external vendor documentation to validate model support and firmware requirements:
 
-* [DELL](https://www.dell.com/support/kbdoc/en-uk/000347876/microsoft-2011-secure-boot-certificate-expiration)
+* [Dell](https://www.dell.com/support/kbdoc/en-uk/000347876/microsoft-2011-secure-boot-certificate-expiration)
 * [HP](https://support.hp.com/us-en/document/ish_13070353-13070429-16)
 * [Lenovo](https://support.lenovo.com/us/en/solutions/ht518129)
 {% endhint %}
