@@ -12,8 +12,8 @@ Use the examples below to distinguish between a missing or untrusted root certif
 
 | Message details                                                                                                                                                                                                                                                                      | What it means                                                                                                                | What to check                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| <p><a href="certificate-trust-and-revocation-checks.md#issue-1-missing-or-untrusted-root-certificate"><strong>Issue 1: Missing or untrusted root</strong></a><br>Includes <code>Chain build failed: UntrustedRoot</code>.</p>                                                        | Windows cannot build a trusted certificate chain. Revocation validation cannot complete successfully for that chain either.  | Establish trust for the required root certificate first. |
-| <p><a href="certificate-trust-and-revocation-checks.md#issue-2-unable-to-complete-certificate-revocation-checks"><strong>Issue 2: Revocation check unavailable</strong></a><br>Includes <code>Offline Revocation: The revocation function was unable to check revocation</code>.</p> | Windows cannot determine the certificate’s revocation status, for example because the CRL or OCSP endpoints are unreachable. | Check access to the required revocation endpoints.       |
+| <p><a href="certificate-validation-and-timestamping.md#issue-1-missing-or-untrusted-root-certificate"><strong>Issue 1: Missing or untrusted root</strong></a><br>Includes <code>Chain build failed: UntrustedRoot</code>.</p>                                                        | Windows cannot build a trusted certificate chain. Revocation validation cannot complete successfully for that chain either.  | Establish trust for the required root certificate first. |
+| <p><a href="certificate-validation-and-timestamping.md#issue-2-unable-to-complete-certificate-revocation-checks"><strong>Issue 2: Revocation check unavailable</strong></a><br>Includes <code>Offline Revocation: The revocation function was unable to check revocation</code>.</p> | Windows cannot determine the certificate’s revocation status, for example because the CRL or OCSP endpoints are unreachable. | Check access to the required revocation endpoints.       |
 
 The entries in **PatchMyPC.log** and the notification email may look similar, but the **missing trusted root message** is an important distinction because it will appear alongside a revocation error. Resolve the root certificate trust issue first, then check whether revocation warnings remain.
 
@@ -33,7 +33,7 @@ Windows can automatically retrieve trusted root certificates during chain buildi
 
 This may explain why **DigiCert Trusted Root G4** is missing from the server which is a requirement for revocation checks to complete for the Patch My PC catalog.
 
-To resolve this issue, install and trust the required root certificate using your organization’s approved certificate management process. For remediation steps, see [**Resolve certificate validation issues**](certificate-trust-and-revocation-checks.md#resolve-certificate-validation-issues) below.
+To resolve this issue, install and trust the required root certificate using your organization’s approved certificate management process. For remediation steps, see [**Resolve certificate validation issues**](certificate-validation-and-timestamping.md#resolve-certificate-validation-issues) below.
 
 {% hint style="info" %}
 **Note**
@@ -57,7 +57,7 @@ This commonly occurs when outbound access to the required endpoints over **HTTP,
 
 These connectivity-related warnings do not prevent publishing, but we recommend restoring access so certificate revocation checks can be completed succesfully.
 
-For remediation steps, see [**Resolve certificate validation issues**](certificate-trust-and-revocation-checks.md#resolve-certificate-validation-issues) below.
+For remediation steps, see [**Resolve certificate validation issues**](certificate-validation-and-timestamping.md#resolve-certificate-validation-issues) below.
 
 ## Resolve certificate validation issues
 

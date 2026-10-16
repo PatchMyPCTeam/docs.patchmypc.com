@@ -620,7 +620,7 @@
     * [Platform Trust Model in Patch My PC Publisher](patch-my-pc-publisher/security/platform-trust-model.md "Platform Trust Model")
   * [Troubleshoot Patch My PC Publisher](patch-my-pc-publisher/troubleshoot/README.md "Troubleshoot")
     * [Troubleshoot Installation and Upgrade Issues for Patch My PC Publisher](patch-my-pc-publisher/troubleshoot/installation-upgrade.md "Installation and Upgrade")
-    * [Certificate Trust and Revocation Checks](patch-my-pc-publisher/troubleshoot/certificate-trust-and-revocation-checks.md)
+    * [Certificate Trust and Revocation Checks](patch-my-pc-publisher/troubleshoot/certificate-validation-and-timestamping.md)
     * [Troubleshoot Content Repositories in  Patch My PC Publisher](patch-my-pc-publisher/troubleshoot/content-repositories.md "Content Repositories")
   * [Technical references for Patch My PC Publisher](patch-my-pc-publisher/technical-references/README.md "Technical references")
     * [Access and Permissions Reference for Patch My PC Publisher](patch-my-pc-publisher/technical-references/access-permissions-reference.md "Access and Permissions Reference")
