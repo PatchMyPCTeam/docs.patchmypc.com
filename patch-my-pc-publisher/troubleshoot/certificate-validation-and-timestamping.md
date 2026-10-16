@@ -17,7 +17,7 @@ Use the examples below to distinguish between a missing or untrusted root certif
 
 The entries in **PatchMyPC.log** and the notification email may look similar, but the **missing trusted root message** is an important distinction because it will appear alongside a revocation error. Resolve the root certificate trust issue first, then check whether revocation warnings remain.
 
-### Issue 1: Missing or untrusted root certificate
+### Issue 1: Missing or Untrusted Root Certificate
 
 The message explicitly mentions the trusted root certificate. Windows cannot build a trusted certificate chain.
 
@@ -41,7 +41,7 @@ To resolve this issue, install and trust the required root certificate using you
 Installing and trusting the missing root certificate resolves Issue 1. In restricted environments, access to certificate revocation endpoints may also be blocked. After resolving root certificate trust, check for any remaining revocation warnings and follow the guidance for Issue 2.
 {% endhint %}
 
-### Issue 2: Unable to complete certificate revocation checks
+### Issue 2: Unable to Complete Certificate Revocation Checks
 
 The message reports a failed revocation check without the additional missing trusted root message. Windows cannot reach the required revocation endpoints.
 
@@ -59,11 +59,11 @@ These connectivity-related warnings do not prevent publishing, but we recommend 
 
 For remediation steps, see [**Resolve certificate validation issues**](certificate-validation-and-timestamping.md#resolve-certificate-validation-issues) below.
 
-## Resolve certificate validation issues
+## Resolve Certificate Validation Issues
 
 Follow the steps for the issue identified above. If both issues are present, resolve issue 1 first, then check whether revocation warnings remain.
 
-### Issue 1: Missing or untrusted root certificate
+### Issue 1: Trust the Root Certificate
 
 **DigiCert Trusted Root G4** is the root certificate in the signing certificate chains for the Patch My PC catalog CAB and the Publisher MSI downloaded during automatic updates. It must be present and trusted so Publisher can build and validate those certificate chains.
 
@@ -79,7 +79,7 @@ On the Publisher server:
 
 If the root certificate is missing, ask your Windows or security administrator to deploy it using your organization's approved certificate management process and an official certificate source. Retry the affected operation after trust is established.
 
-### Issue 2: Unable to complete certificate revocation checks
+### Issue 2: Remediate Certificate Revocation Checks
 
 To resolve this issue, ensure the Publisher server can reach the certificate and revocation endpoints for the certificate chain being validated.
 
