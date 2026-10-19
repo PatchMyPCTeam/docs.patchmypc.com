@@ -33,10 +33,10 @@ To ease troubleshooting, we recommend accepting the default installation locatio
 
 3.  On the **Select your install mode and integration settings** screen, select:
 
-    * **Install Mode:** Choose **Full (Service and UI)**.
+    * **Install Mode:** Choose **Full (Service and UI)\***.
     * **Integration:** Choose the option for your environment. If you use both **Microsoft Configuration Manager** and **WSUS**, choose **Microsoft Configuration Manager**, then enable **WSUS** from [Integrations and Platform](../manage/advanced-tab/integrations-platform.md) in the Publisher’s **Advanced** tab after installation.
 
-    **Note:** **Service Only** and **UI Only** are currently private preview features.
+    **\*Note:** We recommend selecting **Full** for production installations. **Service Only** and **UI Only** are currently private preview features and are not yet intended for production use.
 
 <figure><img src="../../.gitbook/assets/image (1349).png" alt="&#x27;Select your install mode and integration settings&#x27; screen" width="490"><figcaption></figcaption></figure>
 
