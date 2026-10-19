@@ -10,17 +10,7 @@ Details the production release history for Patch My PC (PMPC) Publisher, the mos
 
 <summary>Fixes</summary>
 
-* Ensure the Publisher respects the ‘Enforce Timestamping’ option when publishing updates to WSUS and signing scripts.
-
-</details>
-
-## 3.1.4.0 - 2026-10-08
-
-<details>
-
-<summary>Fixes</summary>
-
-* Ensure the Publisher respects the 'Enforce Timestamping' option when publishing updates to WSUS.&#x20;
+* Ensure the Publisher respects the "Enforce Timestamping" option when publishing updates to WSUS and signing scripts.
 
 </details>
 
