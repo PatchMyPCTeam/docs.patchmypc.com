@@ -4,6 +4,16 @@ _Applies to: Patch My PC Advanced Insights_
 
 Details the production release history for Patch My PC's Advanced Insights, the most recent release being shown first.
 
+### 3.0.2 - 2026-10-19
+
+**Bug Fixes:**
+
+* Fixed intermittent issue with loading overlay not being dismissed
+
+**Misc:**
+
+* Updated .Net Runtime to 10.0.13
+
 ### 3.0.1 - 2026-10-15
 
 ### .NET 10 is here
