@@ -2,12 +2,6 @@
 
 _Applies to: Publisher and Patch My PC Cloud_
 
-{% hint style="danger" %}
-**Important**
-
-This article is under development. Once it is complete and ready for use, this banner will be removed.
-{% endhint %}
-
 _Microsoft Intune Multi Admin Approval_ (MAA) lets administrators add a layer of governance to sensitive Intune changes, such as creating or modifying apps and scripts, by requiring a second administrator to approve a change before it takes effect. When an MAA access policy protects a resource, Intune holds the change until an approver signs off.
 
 Historically, MAA applied only to delegated authentication flows: changes made interactively in the Intune admin center, or via Microsoft Graph using a signed-in administrator’s credentials. Because Patch My PC (PMPC) Cloud and PMPC Publisher authenticate using the application credential flow (a service principal or app registration rather than a signed-in user), MAA access policies did not affect them.
