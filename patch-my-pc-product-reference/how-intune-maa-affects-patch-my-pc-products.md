@@ -70,9 +70,16 @@ Add the app registration that Publisher uses as an exclusion. Unlike Cloud, this
 
 **\*** This can be either the Intune Apps or Intune Apps tab.
 
+## To add an exclusion
 
+1. In the **Microsoft Intune admin center**, navigate to the **Tenant administration| Multi Admin Approval | Access policies** tab.
 
+<figure><img src="../.gitbook/assets/image (1501).png" alt="Navigating to ‘Tenant administration| Multi Admin Approval | Access policies’ tab." width="563"><figcaption></figcaption></figure>
 
+2. Click the app-scoped access policy you want to edit.
+3. Click **Edit** beside **Exclusions**.
+
+<figure><img src="../.gitbook/assets/image (1503).png" alt="Clicking ‘Edit’ beside ‘Exclusions’." width="563"><figcaption></figcaption></figure>
 
 
 
