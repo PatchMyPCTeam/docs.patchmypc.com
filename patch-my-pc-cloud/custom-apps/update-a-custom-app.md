@@ -32,7 +32,7 @@ The Custom Apps Deployment Wizard starts and opens at the **File** page.
 You cannot modify the **Installer Type** of a Custom App.
 {% endhint %}
 
-5. Follow the respective section for the respective **Installer Type** of this app:
+5. Follow the respective section for the relevant **Installer Type** of this app:
    1. [Add a new version based on a new Installer Script](update-a-custom-app.md#add-a-new-version-based-on-a-new-installer-script)
    2. [Add a new version based on a new Installer File](update-a-custom-app.md#add-a-new-version-based-on-a-new-installer-file)
 
@@ -55,14 +55,23 @@ The hash for the file is calculated as the file is uploaded to your portal.
 
 <figure><img src="../../.gitbook/assets/image (4504).png" alt="Calculating the hash for the file as its uploaded to your portal." width="563"><figcaption></figcaption></figure>
 
-Once completed, goto Step 6.
+Once completed, go to Step 6.
 
 6. If the installer does not require any additional files or folders, go to Step 8.
 7. If the installer does require additional files or folders, either:
    1. Click the relevant **Add** button and browse to the location containing the additional files/folders.
-   2.  Drag and drop the files onto this page.<br>
+   2. Drag and drop the files onto this page.
 
-       <figure><img src="../../.gitbook/assets/image (4505).png" alt="Adding additional files or folders" width="563"><figcaption></figcaption></figure>
+{% hint style="danger" %}
+**Important**
+
+When adding a new version to a Custom App (for example, version 2), if version 1 had some Extra Files uploaded, these Extra Files will need to be reuploaded with Version 2 as extra files added in previous versions are not maintained when a new version of a Custom App is added.
+
+\
+If you want these Extra Files to always be available, then upload when deploying the Custom App by following the [Configure Extra Files in a Patch My PC Cloud Deployment](../deployments/deploy-app/configurations-tab/additional-tools/extra-files.md) process.<br>
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (4505).png" alt="Adding additional files or folders" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -104,12 +113,12 @@ If a Return Code defined in a Custom App has the same value but a different **Co
 
 <figure><img src="../../.gitbook/assets/image (3348).png" alt="Clicking “Save” on the “Summary” page" width="563"><figcaption></figcaption></figure>
 
-11. The App Catalog is displayed showing the version of the app along with the following notification:\
+14. The App Catalog is displayed showing the version of the app along with the following notification:\
     \
     **Success Version <**_**version\_number**_**> has been successfully added to <**_**app\_name**_**>**.
 
 <figure><img src="../../.gitbook/assets/image (1185).png" alt="Success Version <version_number> has been successfully added to <app_name>" width="563"><figcaption></figcaption></figure>
 
-If the previous version of the app was deployed successfully, depending on the configured assignments, the new version will be installed the next time the daily sync runs.
+If the previous app version deployed successfully, the new version will be installed the next time the daily sync runs, depending on the configured assignments.
 
 Alternatively, you can use the [Sync Now](../deployments/manage-deployments/updates/sync-now.md) process to update the app immediately without waiting for the next daily sync to run.
