@@ -786,6 +786,7 @@
   * [Language Support in Patch My PC Publisher and Cloud](patch-my-pc-product-reference/language-support.md "Language Support")
   * [Supported Variables in Patch My PC Publisher and Cloud](patch-my-pc-product-reference/supported-variables.md "Supported Variables")
   * [Patch My PC Trust Center](patch-my-pc-product-reference/trust-center.md "Trust Center")
+  * [How Microsoft Intune Multi-Admin Approval affects Patch My PC products](patch-my-pc-product-reference/how-intune-maa-affects-patch-my-pc-products.md "How Intune MAA affects Patch My PC products")
 * [Home Updater](home-updater/README.md)
   * [Release Notes](home-updater/release-notes.md)
   * [Requirements](home-updater/requirements.md)
