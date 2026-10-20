@@ -95,3 +95,17 @@ Add the app registration that Publisher uses as an exclusion. Unlike Cloud, this
 
 The applications now appear in the **Display name** list on the **Exclusions** step.
 
+<figure><img src="../.gitbook/assets/image (1508).png" alt="Applications appearing in the ‘Display name’ list on the ‘Exclusions’ step" width="563"><figcaption></figcaption></figure>
+
+8. Click **Review + submit for approval**.
+9. On the **Review + submit for approval** step, enter a **Business justification**, then click **Submit for approval**.
+
+{% hint style="info" %}
+**Note**
+
+Editing an MAA access policy is itself a change governed by MAA. Your exclusion request will be placed in **Needs review** status and must be approved by a second administrator (a member of the policy’s approver group) before it takes effect.
+{% endhint %}
+
+Once approved, the excluded applications are listed under the **Apps** section of the policy, and Patch My PC operations using those applications will no longer be held by the MAA workflow.
+
+<figure><img src="../.gitbook/assets/image (1509).png" alt="Approved Access Policy" width="563"><figcaption></figcaption></figure>
