@@ -81,13 +81,17 @@ Add the app registration that Publisher uses as an exclusion. Unlike Cloud, this
 
 <figure><img src="../.gitbook/assets/image (1503).png" alt="Clicking ‘Edit’ beside ‘Exclusions’." width="563"><figcaption></figcaption></figure>
 
+4. On the **Exclusions** step, click the **+** (add) control under **Apps**.
 
+<figure><img src="../.gitbook/assets/image (1504).png" alt="Clicking + (add) control under ‘Apps’ on the ‘Exclusions’ step" width="563"><figcaption></figcaption></figure>
 
+5. In the **Select apps to exclude** pane, use the **Search** box to find the PMPC application you want to exclude :
+   1. For PMPC Cloud, search for **Patch My PC Cloud** and confirm in the Details column that the enterprise application’s ID matches the known Patch My PC Cloud client ID of **d7708ecc-2a0f-4773-a38a-ff197163f5fe**.
+   2. For PMPC Publisher, search for your Publisher app registration using the **Application (Client ID)** noted in the [Patch My PC Publisher customers](how-intune-maa-affects-patch-my-pc-products.md#patch-my-pc-publisher-customers) section of [What do you need to do?](how-intune-maa-affects-patch-my-pc-products.md#what-do-you-need-to-do)
+6. Check the checkbox next to the result. It appears in the **Selected** list on the right.
+7. Repeat the search to add both applications if you use both products, then click **Select** to confirm.
 
+<figure><img src="../.gitbook/assets/image (1507).png" alt="Adding the apps to exclude" width="563"><figcaption></figcaption></figure>
 
-
-
-
-
-
+The applications now appear in the **Display name** list on the **Exclusions** step.
 
