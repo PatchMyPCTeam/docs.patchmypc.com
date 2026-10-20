@@ -68,7 +68,7 @@ Once completed, go to Step 6.
 When adding a new version to a Custom App (for example, version 2), if version 1 had some Extra Files uploaded, these Extra Files will need to be reuploaded with Version 2 as extra files added in previous versions are not maintained when a new version of a Custom App is added.
 
 \
-If you want these Extra Files to always be available, then upload when deploying the Custom App by following the [Configure Extra Files in a Patch My PC Cloud Deployment](../deployments/deploy-app/configurations-tab/additional-tools/extra-files.md) process.<br>
+If you want these Extra Files to always be available, then upload them when deploying the Custom App by following the [Configure Extra Files in a Patch My PC Cloud Deployment](../deployments/deploy-app/configurations-tab/additional-tools/extra-files.md) process.<br>
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (4505).png" alt="Adding additional files or folders" width="563"><figcaption></figcaption></figure>
