@@ -8,12 +8,6 @@ When I sign in to my Patch My PC (PMPC) Cloud company, why do I see a **Multi Ad
 
 <figure><img src="../../../.gitbook/assets/image (1510).png" alt="‘Multi Admin Approval Enabled’ dialog" width="455"><figcaption></figcaption></figure>
 
-
-
-
-
-
-
 ### CAUSE
 
 This is because your Microsoft Intune tenant has been configured to use one or more Multi Admin Approval access policies.
@@ -26,7 +20,7 @@ Until you add the Patch My PC Cloud Enterprise Application as an exclusion to yo
 
 ### RESOLUTION
 
-To resolve this issue, you need to add the Patch My PC Cloud Enterprise Application as an exclusion, as detailed in the [To add an exclusion](../../../patch-my-pc-product-reference/how-intune-maa-affects-patch-my-pc-products.md#to-add-an-exclusion) section of “[How Microsoft Intune Multi-Admin Approval affects Patch My PC products](../../../patch-my-pc-product-reference/how-intune-maa-affects-patch-my-pc-products.md).&#x20;
+To resolve this issue, you need to add the Patch My PC Cloud Enterprise Application as an exclusion, as detailed in the [To add an exclusion](../../../patch-my-pc-product-reference/how-intune-maa-affects-patch-my-pc-products.md#to-add-an-exclusion) section of [How Microsoft Intune Multi-Admin Approval affects Patch My PC products](../../../patch-my-pc-product-reference/how-intune-maa-affects-patch-my-pc-products.md).&#x20;
 
 Until you do this, PMPC Cloud functionality will be limited as detailed in [How Microsoft Intune Multi-Admin Approval affects Patch My PC products](../../../patch-my-pc-product-reference/how-intune-maa-affects-patch-my-pc-products.md).
 
