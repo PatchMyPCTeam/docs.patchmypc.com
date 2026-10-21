@@ -1,6 +1,6 @@
-# “Unable to verify the file you are trying to upload” error in Binary Free Apps
+# “Unable to verify the file you are trying to upload” error in Patch My PC Binary Free Apps
 
-_Applies to: Binary Free Apps_
+_Applies to: Patch My PC Binary Free Apps_
 
 ### SYMPTOMS
 
@@ -10,7 +10,7 @@ I am trying to upload the application file for a Patch My PC (PMPC) Cloud Binary
 
 **Unable to verify the file you are trying to upload. Please ensure you have uploaded the correct file.**
 
-<figure><img src="../../../.gitbook/assets/image (2750).png" alt="“Unable to verify the file you are trying to upload. Please ensure you have uploaded the correct file” error when uploading a Binary Free App "><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2750).png" alt="“Unable to verify the file you are trying to upload. Please ensure you have uploaded the correct file” error when uploading a Binary Free App"><figcaption></figcaption></figure>
 
 ### CAUSE
 

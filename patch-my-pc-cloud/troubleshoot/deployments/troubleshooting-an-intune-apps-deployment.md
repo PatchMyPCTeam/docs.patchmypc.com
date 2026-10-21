@@ -1,6 +1,6 @@
-# Troubleshooting an Intune Apps Deployment
+# Troubleshooting Patch My PC Intune Apps Deployments
 
-_Applies to: Intune Apps for Cloud_
+_Applies to: Patch My PC Intune Apps_
 
 As Intune Apps for Cloud (Intune Apps) is reliant on your Intune tenant, if you encounter any problems, first check your **Tenant Status** (located under **Tenant Administration** in the **Microsoft Intune admin center**).
 

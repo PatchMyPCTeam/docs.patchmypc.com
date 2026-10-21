@@ -1,6 +1,6 @@
-# “Intune connection with the same Id found in another environment” error in Cloud
+# “Intune connection with the same Id found in another environment” error in Patch My PC Cloud
 
-_Applies to: Intune Apps for Cloud_
+_Applies to: Patch My PC Intune Apps_
 
 ### SYMPTOMS
 

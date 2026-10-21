@@ -1,6 +1,6 @@
-# “Need admin approval” message when connecting to Intune from Cloud
+# “Need admin approval” message when connecting to Intune from Patch My PC Cloud
 
-_Applies to: Intune Apps for Cloud_
+_Applies to: Patch My PC Intune Apps_
 
 ### SYMPTOMS
 
@@ -18,4 +18,3 @@ This problem occurs because, as the message states, your Entra ID account is not
 ### RESOLUTION
 
 To resolve this issue, ensure you are completing this process using a **Global Administrator** account to create the enterprise app.
-

@@ -1,6 +1,6 @@
-# General Custom Apps Troubleshooting
+# General Patch My PC Custom Apps Troubleshooting
 
-_Applies to: Patch My PC (PMPC) Cloud Custom Apps_
+_Applies to: Patch My PC (PMPC) Custom Apps_
 
 If issues arise when deploy apps using Patch My PC (PMPC) Cloud Custom App deployments, please follow these initial troubleshooting steps:
 
@@ -28,9 +28,9 @@ Verify you are using the correct commands, switches, and parameters:
 * Resources:
   * [Silent Install HQ](https://silentinstallhq.com/)
   * [IT Ninja](https://www.itninja.com/)
-  * [App Deploy News](https://appdeploynews.com/)&#x20;
+  * [App Deploy News](https://appdeploynews.com/)
 * Try running the installer with the following common switches for guidance:\
-  &#x20;`/?`, `-?`, `/h`, or `--help`&#x20;
+  `/?`, `-?`, `/h`, or `--help`
 * Extract the installer files to locate their documentation.
 * Search vendor forums/support sites using "**command line**" terms.
 
@@ -45,15 +45,15 @@ Verify you are using the correct commands, switches, and parameters:
 
 ### **List of Common Installation Switches**
 
-<table><thead><tr><th>Installer Technology</th><th width="259">Silent/Quiet Install</th><th>Prevent Reboot</th></tr></thead><tbody><tr><td>MSI</td><td><code>/quiet</code> or <code>/q</code> or <code>/qn</code></td><td><code>/norestart</code> or <code>REBOOT=ReallySuppress</code></td></tr><tr><td>NSIS (Nullsoft)</td><td><code>/S</code> (case sensitive!)</td><td> </td></tr><tr><td>Inno Setup</td><td><code>/SP- /VERYSILENT /SUPPRESSMSGBOXES</code></td><td><code>/NORESTART</code></td></tr><tr><td>InstallShield</td><td><code>/s</code> or <code>/s</code> or <code>/SMS</code></td><td> </td></tr><tr><td><a href="https://www.advancedinstaller.com/how-to-use-installshield-silent-install.html#iss-files-and-silent-install-parameters">InstallShield + Response ISS file</a></td><td><code>/s /f1".\silentinstall.iss"</code></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Installer Technology</th><th width="259">Silent/Quiet Install</th><th>Prevent Reboot</th></tr></thead><tbody><tr><td>MSI</td><td><code>/quiet</code> or <code>/q</code> or <code>/qn</code></td><td><code>/norestart</code> or <code>REBOOT=ReallySuppress</code></td></tr><tr><td>NSIS (Nullsoft)</td><td><code>/S</code> (case sensitive!)</td><td></td></tr><tr><td>Inno Setup</td><td><code>/SP- /VERYSILENT /SUPPRESSMSGBOXES</code></td><td><code>/NORESTART</code></td></tr><tr><td>InstallShield</td><td><code>/s</code> or <code>/s</code> or <code>/SMS</code></td><td></td></tr><tr><td><a href="https://www.advancedinstaller.com/how-to-use-installshield-silent-install.html#iss-files-and-silent-install-parameters">InstallShield + Response ISS file</a></td><td><code>/s /f1".\silentinstall.iss"</code></td><td></td></tr></tbody></table>
 
 ### **Test Locally**
 
 Use a checklist similar to that below, before deploying via PMPC Cloud to thoroughly test installations locally:
 
-<table><thead><tr><th width="295">Test Case</th><th width="67">Pass</th><th width="56">Fail</th><th width="282">Notes</th></tr></thead><tbody><tr><td>Manual Installation</td><td>✔️</td><td></td><td> </td></tr><tr><td>Manual Uninstallation</td><td></td><td>❌</td><td> </td></tr><tr><td>User Prompt Verification</td><td></td><td></td><td>List prompts encountered</td></tr><tr><td>Silent Installation (/quiet /noreboot)</td><td></td><td></td><td> </td></tr><tr><td>Custom Pre-Installation Scripts</td><td></td><td></td><td> </td></tr><tr><td>Custom Post-Installation Scripts</td><td></td><td></td><td> </td></tr><tr><td>Application Launch After Install</td><td></td><td></td><td> </td></tr><tr><td>Installation on Clean System</td><td></td><td></td><td> </td></tr><tr><td>Installation over Previous Version</td><td></td><td></td><td> </td></tr><tr><td>Logging Verification</td><td></td><td></td><td> </td></tr><tr><td>Disk Space Requirements Check</td><td></td><td></td><td> </td></tr><tr><td>System Restart Behavior</td><td></td><td></td><td> </td></tr><tr><td>Installed as SYSTEM using psexec</td><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="295">Test Case</th><th width="67">Pass</th><th width="56">Fail</th><th width="282">Notes</th></tr></thead><tbody><tr><td>Manual Installation</td><td>✔️</td><td></td><td></td></tr><tr><td>Manual Uninstallation</td><td></td><td>❌</td><td></td></tr><tr><td>User Prompt Verification</td><td></td><td></td><td>List prompts encountered</td></tr><tr><td>Silent Installation (/quiet /noreboot)</td><td></td><td></td><td></td></tr><tr><td>Custom Pre-Installation Scripts</td><td></td><td></td><td></td></tr><tr><td>Custom Post-Installation Scripts</td><td></td><td></td><td></td></tr><tr><td>Application Launch After Install</td><td></td><td></td><td></td></tr><tr><td>Installation on Clean System</td><td></td><td></td><td></td></tr><tr><td>Installation over Previous Version</td><td></td><td></td><td></td></tr><tr><td>Logging Verification</td><td></td><td></td><td></td></tr><tr><td>Disk Space Requirements Check</td><td></td><td></td><td></td></tr><tr><td>System Restart Behavior</td><td></td><td></td><td></td></tr><tr><td>Installed as SYSTEM using psexec</td><td></td><td></td><td></td></tr></tbody></table>
 
-### &#x20;**Additional Troubleshooting Steps**
+### **Additional Troubleshooting Steps**
 
 * **Review Logs:** Examine vendor-specific logs for detailed error messages
 * **Simplify Installation:** Divide complex installations into simpler steps to isolate issues.
@@ -67,7 +67,7 @@ As detailed in our [Custom Apps Support Statement](https://patchmypc.com/custom-
 * Need specialized knowledge from the vendor
 * Employ installation technologies incompatible with our service.
 
-#### &#x20;**Our Support Team Can Help With:**
+#### **Our Support Team Can Help With:**
 
 * Initial setup of the Custom Apps feature
 * Successful uploads of Custom Apps
@@ -90,7 +90,7 @@ As detailed in our [Custom Apps Support Statement](https://patchmypc.com/custom-
 
 ### **Getting Support**
 
-Our team will support you within our capabilities, as outlined above.&#x20;
+Our team will support you within our capabilities, as outlined above.
 
 But, for highly specialized or complex apps, complete solutions may not always be possible. If an app issue falls beyond our scope, consider consulting directly with the application vendor.
 
