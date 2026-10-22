@@ -47,7 +47,7 @@ The installer will configure 'OPTIONS' HTTP verb at the <mark style="color:yello
 ### Additional Software Components <a href="#additional-software-components-all-will-be-added-automatically-by-the-installer-if-missing" id="additional-software-components-all-will-be-added-automatically-by-the-installer-if-missing"></a>
 
 * IIS CORS Module 1.0
-* ASP.NET Core Hosting Bundle 8.0
+* ASP.NET Core Hosting Bundle 10.0
 * SQL Server ODBC Driver 17.6 (minimum)
 * IIS URL Rewrite 2.1
 
