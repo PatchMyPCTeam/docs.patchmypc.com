@@ -91,10 +91,11 @@ Get-Acl -LiteralPath $keyPath | Format-List Owner, AccessToString
 
 Use the following table to interpret the script’s output and determine the next troubleshooting step:
 
-| Output                                      | What it means                                                                                                                                                                                                          |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Status : Found` with ACL entries           | The private key file exists, and the current account can read its permissions. Confirm the Publishing Service account has access.                                                                                      |
-| `WARNING: Invalid provider type specified.` | Windows could not open the certificate’s private key through its configured provider. The script stops before checking the file, so this does not distinguish a missing key file from a permissions or provider issue. |
+| Output                                                | What it means                                                                                                         |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| File details followed by `Owner` and `AccessToString` | The file exists, and the current account can read its permissions. Confirm the Publishing Service account has access. |
+| `Cannot find path… because it does not exist`         | The file was not found at the specified path. Confirm the provider, folder, and filename.                             |
+| An access-denied error                                | The current account cannot access the file or read its permissions. This alone does not confirm the file is missing.  |
 
 ## Repair a Missing Private Key Association
 
