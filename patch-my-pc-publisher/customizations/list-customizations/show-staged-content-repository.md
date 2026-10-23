@@ -11,5 +11,5 @@ The **Show Staged Content Repository** right-click option in Patch My PC (PMPC) 
 {% hint style="info" %}
 **Note**
 
-See [Staged Content Repository](/broken/pages/tCv28T7wFfGMxj81HK89) for more information about working with this dialog.
+See [Staged Content Repository](../../manage/advanced-tab/content-repositories.md#staged-content-repository) for more information about working with this dialog.
 {% endhint %}
