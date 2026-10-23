@@ -24,7 +24,7 @@ Premium features available for evaluation are identified by a diamond.
 
 Select **Upgrade Now** to go to the **Subscription** page, where you can start a **30-day trial of Enterprise Premium features**.
 
-<figure><img src="../../../../.gitbook/assets/image (1516).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1519).png" alt=""><figcaption></figcaption></figure>
 
 On the **Start Trial** screen, select **Start Trial**.
 
