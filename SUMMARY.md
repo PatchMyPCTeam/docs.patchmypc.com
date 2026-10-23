@@ -156,7 +156,7 @@
           * [Enable a Domain in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/company-settings/multiple-domain-support/enable-domain.md "Enable a Domain")
           * [Disable a Domain in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/company-settings/multiple-domain-support/disable-domain.md "Disable a Domain")
         * [Company Reference for Patch My PC Cloud](patch-my-pc-cloud/manage/settings/company-settings/company-reference.md "Company Reference")
-        * [Sign up for an Enterprise Premium Trial of Patch My PC Cloud from Enterprise Plus](patch-my-pc-cloud/manage/settings/company-settings/sign-up-enterprise-premium-trial.md "Sign up for an Enterprise Premium Trial")
+        * [Try Enterprise Premium Features for 30 Days with Enterprise Plus](patch-my-pc-cloud/manage/settings/company-settings/sign-up-enterprise-premium-trial.md "Sign up for an Enterprise Premium Trial")
       * [Manage Users In Patch My PC Cloud](patch-my-pc-cloud/manage/settings/users/README.md "Users")
         * [Add a User in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/users/add-user.md "Add a User")
         * [Using Entra ID Security Groups in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/users/using-entra-id-security-groups/README.md "Using Entra ID Security Groups")
