@@ -16,11 +16,19 @@ Premium features available for evaluation are identified by a diamond.
 
 <figure><img src="../../../../.gitbook/assets/image (1515).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-**Note**
+You can start a 30-day trial of Premium features by:
 
-**Upgrade Now** will not permanently change your license SKU.
-{% endhint %}
+1. Selecting **Begin a 30-Day Premium Trial** from the Banner.
+
+<figure><img src="../../../../.gitbook/assets/image (1522).png" alt=""><figcaption></figcaption></figure>
+
+2. Selecting **Upgrade Now**
+
+**Upgrade Now** will not permanently change your license SKU.&#x20;
+
+It redirects you to the **Subscription** page where you can learn more about the different SKUs and also Start a 30-Days Trial
+
+<figure><img src="../../../../.gitbook/assets/image (1524).png" alt=""><figcaption></figcaption></figure>
 
 Select **Upgrade Now** to go to the **Subscription** page, where you can start a **30-day trial of Enterprise Premium features**.
 
