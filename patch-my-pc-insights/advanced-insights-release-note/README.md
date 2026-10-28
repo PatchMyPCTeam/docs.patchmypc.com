@@ -18,6 +18,8 @@ Details the production release history for Patch My PC's Advanced Insights, the 
 
 {% hint style="info" %}
 This Dotnet update is an out-of-band .NET security update relating to Brotli compression. Advanced Insights does **not** use the vulnerable Brotli compression functionality, so there is no known exposure through this vector for prior versions of Advanced Insights.&#x20;
+
+For more information, please read the release notes for dotnet [https://github.com/dotnet/core/blob/main/release-notes/10.0/10.0.14/10.0.14.md?WT.mc\_id=dotnet-35129-website#notable-changes](https://github.com/dotnet/core/blob/main/release-notes/10.0/10.0.14/10.0.14.md?WT.mc_id=dotnet-35129-website#notable-changes)
 {% endhint %}
 
 ### 3.0.2 - 2026-10-19
