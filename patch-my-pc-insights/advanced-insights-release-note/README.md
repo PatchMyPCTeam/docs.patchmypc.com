@@ -4,6 +4,22 @@ _Applies to: Patch My PC Advanced Insights_
 
 Details the production release history for Patch My PC's Advanced Insights, the most recent release being shown first.
 
+### 3.0.3 - 2026-10-28
+
+**Bug Fixes:**
+
+* Boundary Group reporting fixes for installations on non configmgr site servers
+* Software Updates dashboard month selector/navigation fixed
+* Fix for internet requirement for installer&#x20;
+
+**Misc:**&#x20;
+
+* Upgrade to .NET 10.0.14
+
+{% hint style="info" %}
+This Dotnet update is an out-of-band .NET security update relating to Brotli compression. Advanced Insights does **not** use the vulnerable Brotli compression functionality, so there is no known exposure through this vector for prior versions of Advanced Insights.&#x20;
+{% endhint %}
+
 ### 3.0.2 - 2026-10-19
 
 **Bug Fixes:**
