@@ -32,13 +32,13 @@ As specified in the [insights-network-requirements.md](../advanced-and-patch-ins
 
           <figure><img src="../../.gitbook/assets/motificationssettings.png" alt=""><figcaption></figcaption></figure>
       5. The administrative user then needs to access the Windows Server OS where Advanced Insights is installed.
-2.  When logging into the Windows Server OS where Advanced Insights is installed, the update check is performed silently, and if an update is available, the following prompt will be automatically displayed shortly after logging on: 1.
+2. When logging into the Windows Server OS where Advanced Insights is installed, the update check is performed silently, and if an update is available, the following prompt will be automatically displayed shortly after logging on: 1.
+   1.
 
-    ```
-    <figure><img src="../../.gitbook/assets/image (611).png" alt=""><figcaption></figcaption></figure>
-    ```
+       <figure><img src="../../.gitbook/assets/image (611).png" alt=""><figcaption><p>Updater with pending update displayed to user</p></figcaption></figure>
 
-    2\. When clicking ‘Next’, the new Advanced Insights install (.exe) is downloaded and the upgrade dialog is automatically started:
+
+   2. When clicking ‘Next’, the new Advanced Insights install (.exe) is downloaded and the upgrade dialog is automatically started:
 
 <figure><img src="../../.gitbook/assets/image (4342).png" alt="Advanced Insights Upgrade" width="563"><figcaption></figcaption></figure>
 
