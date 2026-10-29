@@ -22,23 +22,16 @@ As specified in the [insights-network-requirements.md](../advanced-and-patch-ins
 ## Update check
 
 1. When an administrator role user logs into the Advanced Insight portal web page, if an update is available, the following notification will be displayed:
-   1.  Web portal notification:
+   1. Web portal notification:
+      1. ![](<../../.gitbook/assets/image (3445).png>)<br>
+      2. ![](../../.gitbook/assets/notifications.png)<br>
+      3. Within the 'Administration' node, the Notifications page displays the update information \
+         \
+         ![](<../../.gitbook/assets/image (3447).png>)
+      4.
 
-       1. ![](<../../.gitbook/assets/image (3445).png>)
-       2.
-
-       ```
-       <figure><img src="../../.gitbook/assets/image (3446).png" alt=""><figcaption></figcaption></figure>
-       ```
-
-       3. Within the 'Administration' node, the Notifications page displays the update information ![](<../../.gitbook/assets/image (3447).png>)
-       4.
-
-       ```
-       <figure><img src="../../.gitbook/assets/image (3449).png" alt=""><figcaption></figcaption></figure>
-       ```
-
-       5. The administrative user then needs to access the Windows Server OS where Advanced Insights is installed.
+          <figure><img src="../../.gitbook/assets/motificationssettings.png" alt=""><figcaption></figcaption></figure>
+      5. The administrative user then needs to access the Windows Server OS where Advanced Insights is installed.
 2.  When logging into the Windows Server OS where Advanced Insights is installed, the update check is performed silently, and if an update is available, the following prompt will be automatically displayed shortly after logging on: 1.
 
     ```
