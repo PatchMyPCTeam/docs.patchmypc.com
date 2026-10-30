@@ -10,6 +10,31 @@ Details the production release history for preview versions of Patch My PC (PMPC
 You can find the Preview release notes below, and you can also learn more about the Preview channel here: [Publisher Preview Channel](https://patchmypc.com/preview-channel).
 {% endhint %}
 
+## 3.26.10014.0 - 2026-10-27
+
+<details>
+
+<summary>Improvements</summary>
+
+* Ongoing accessibility, layout, and readability improvements.
+* Writes settings saves and UI closes to the Publisher event log.
+
+</details>
+
+<details>
+
+<summary>Fixes</summary>
+
+* Preserves ConfigMgr console folder selection after refresh.
+* Ensure dates are in the proper format when publishing ConfigMgr applications. This fixes a bug causing the release date not to display in Software Center
+* Fixes network endpoint checks so connectivity problems and required endpoint failures are reported clearly.
+* Fixes stale WSUS sync progress text and updates the WSUS update state link to the correct short URL.
+* Restore endpoint for Publisher heartbeat requests.
+* Ensure Publisher resolves role groups only as local machine groups.
+* Sorts Intune installation counts numerically.
+
+</details>
+
 ## 3.1.0.462 - 2026-09-25
 
 <details>
