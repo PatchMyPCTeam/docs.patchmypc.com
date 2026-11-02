@@ -32,6 +32,10 @@ To find the required file name:
 
 <figure><img src="../../.gitbook/assets/image (1530).png" alt="Locate the correct File Name" width="563"><figcaption></figcaption></figure>
 
+4. Copy the required file name and use it to rename the installer file in the Local Content Repository.
+
+<figure><img src="../../.gitbook/assets/image (1537).png" alt="File Name Copy" width="563"><figcaption></figcaption></figure>
+
 ## File Present but the Hash Does Not Match
 
 If the installer file is present, but the file hash does not match the value defined in the PMPC catalog, Publisher does not consume the file and publishing fails for that product. This failure is recorded in the **PatchMyPC.log**, indicating that the installer file could not be located. For example:
