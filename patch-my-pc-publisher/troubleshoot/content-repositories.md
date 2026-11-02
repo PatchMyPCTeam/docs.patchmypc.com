@@ -20,9 +20,21 @@ A webhook notification is sent with the same details if webhook alerts are enabl
 
 <figure><img src="../../.gitbook/assets/image (3937).png" alt="Webhook Notification when a file is missing from the Local Content Repository" width="563"><figcaption></figcaption></figure>
 
+## File Present but Incorrect Name
+
+The installer file name must exactly match the values defined in the PMPC catalog. If the file name does not match, Publisher _will not_ consume the file, and publishing will fail for that product.
+
+To find the required file name:
+
+1. Right-click the product in Publisher.
+2. Select **Show Package Info**.
+3. Check the **File Name** column.
+
+<figure><img src="../../.gitbook/assets/image (1530).png" alt="Locate the correct File Name" width="563"><figcaption></figcaption></figure>
+
 ## File Present but the Hash Does Not Match
 
-If the installer file is present, but the file hash does not match the value defined in the Patch My PC catalog, Publisher does not consume the file and publishing fails for that product. This failure is recorded in the **PatchMyPC.log**, indicating that the installer file could not be located. For example:
+If the installer file is present, but the file hash does not match the value defined in the PMPC catalog, Publisher does not consume the file and publishing fails for that product. This failure is recorded in the **PatchMyPC.log**, indicating that the installer file could not be located. For example:
 
 > The digest of the local content file does not match the expected one. Please ensure the latest version of Cisco Jabber 12 12.9.7.57303 is present in the configured local content repository. FileRetriever 2/1/2026 1:12:22 PM 128 (0x0080)\\
 >
