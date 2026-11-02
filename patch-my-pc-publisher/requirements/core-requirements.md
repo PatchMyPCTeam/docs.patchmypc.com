@@ -31,11 +31,11 @@ Publisher currently does not support a remote console. The Publisher application
 
 ### Service Account
 
-By default, the Publisher service runs as local **SYSTEM**.
+By default, the Publisher service runs as local **SYSTEM**. This is the recommended configuration for most environments.
 
-In most environments, this is the recommended configuration, and no service account is required. A group Managed Service Account can be used when the Publisher service must authenticate to network resources that do not support the computer account identity. A common example is an authenticated proxy used for Publisher downloads.
+Optionally, you can use a gMSA when Publisher needs to authenticate to network resources that do not support the computer account identity, such as an authenticated proxy used for downloads.
 
-When using a gMSA, review [gMSA support for the Publisher](../technical-references/gsma-support.md) before configuration.
+If you choose to use a gMSA, review [gMSA support for the Publisher](../technical-references/gsma-support.md) before configuration.
 
 ## Software
 
@@ -70,12 +70,12 @@ Publisher requires 120 GB of free disk space.
 
 The disk space recommendation covers the space Publisher needs to download and package vendor installers. Actual storage requirements may be higher depending on the number of products and the platforms you publish to.
 
-For example, ConfigMgr requires space for the application content source folder, retained app versions, and the content library. WSUS duplicates content in both the UpdateServicesPackages and WSUS Content folders.&#x20;
+For example, ConfigMgr requires space for the application content source folder, retained app versions, and the content library. WSUS duplicates content in both the UpdateServicesPackages and WSUS Content folders.
 
 See the platform-specific sections for more detailed guidance.
 {% endhint %}
 
-The table below illustrates the estimated disk space requirements based on the number of applications you plan to enable in Publisher. These estimates are based on the average application size across our catalog.&#x20;
+The table below illustrates the estimated disk space requirements based on the number of applications you plan to enable in Publisher. These estimates are based on the average application size across our catalog.
 
 {% hint style="danger" %}
 **Important**
@@ -104,7 +104,7 @@ There are additional network requirements when using Publisher with [ConfigMgr](
 {% hint style="info" %}
 **Note**
 
-The Publisher requires access to `timestamp.digicert.com` and `ocsp.digicert.com` to support timestamping operations. Additional DigiCert hostnames may appear in network monitoring, such as `ocsp.digicert.cn`, because the specific OCSP or CRL endpoint Windows contacts for a given domain are not predetermined.&#x20;
+The Publisher requires access to `timestamp.digicert.com` and `ocsp.digicert.com` to support timestamping operations. Additional DigiCert hostnames may appear in network monitoring, such as `ocsp.digicert.cn`, because the specific OCSP or CRL endpoint Windows contacts for a given domain are not predetermined.
 
 When Windows CryptoAPI processes certificate validation, it follows the certificate chain and resolves whichever revocation endpoint is referenced by that chain at runtime, which can vary by region and certificate. These endpoints are not chosen or contacted directly by Publisher, which is why the `*.digicert.com` wildcard is required.
 {% endhint %}
