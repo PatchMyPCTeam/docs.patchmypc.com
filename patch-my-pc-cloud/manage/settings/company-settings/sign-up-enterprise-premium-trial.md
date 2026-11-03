@@ -2,6 +2,12 @@
 
 _Applies to: Patch My PC Cloud_
 
+## Looking to start a Patch My PC Cloud trial?
+
+If you don't have an existing license, see [**Onboard to Intune Apps**](https://docs.patchmypc.com/patch-my-pc-cloud/intune-apps/onboard-to-intune-apps) to learn how to start a Patch My PC Cloud trial.
+
+If you already have a license, continue with this article.
+
 {% hint style="success" %}
 **Note**
 
