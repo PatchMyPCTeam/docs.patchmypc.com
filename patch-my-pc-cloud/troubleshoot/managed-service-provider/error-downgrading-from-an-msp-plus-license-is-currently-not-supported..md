@@ -1,4 +1,4 @@
-# "Error - Downgrading from an MSP Plus license is currently not supported."
+# "Error - Downgrading from an MSP Plus license is currently not supported" in Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
@@ -20,7 +20,7 @@ You are seeing this error as we currently do not support downgrading an MSP lice
 
 The workaround to this issue is:
 
-1. [Remove all of the companies](../../managed-service-provider-feature/managed-service-provider-administration/manage-msp-companies/remove-a-company-from-being-managed-cloud-msp.md) being managed by this MSP license.
+1. [Remove all of the companies](../../managed-service-provider-feature/manage-msps/manage-msp-companies/remove-company.md) being managed by this MSP license.
 2. [Delete the company](../../manage/settings/company-settings/delete-company.md) you no longer wish to be an MSP.
 3. [Onboard a new company](../../onboard-cloud.md) to PMPC Cloud.
 4. Onboard the new company to [Intune Apps](../../intune-apps/onboard-to-intune-apps/) and use the new downgraded license.

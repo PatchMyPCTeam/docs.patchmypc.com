@@ -23,4 +23,4 @@ This is because the child company has an active Intune connection.
 To resolve this issue:
 
 1. Switch to the child company.
-2. Follow the [Deleting an Intune tenant connection](/broken/pages/RoXhXa1jcXhIcPcKJk05#deleting-an-intune-tenant-connection) process, after which you will be able to [delete the child company](../../managed-service-provider-feature/managed-service-provider-administration/manage-msp-companies/remove-a-company-from-being-managed-cloud-msp.md#delete-a-child-company).
+2. Follow the [Deleting an Intune tenant connection](/broken/pages/RoXhXa1jcXhIcPcKJk05#deleting-an-intune-tenant-connection) process, after which you will be able to [delete the child company](../../managed-service-provider-feature/manage-msps/manage-msp-companies/remove-company.md#delete-a-child-company).

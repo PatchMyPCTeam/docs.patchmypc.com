@@ -1,4 +1,4 @@
-# Delete an MSP App Set
+# Delete a Managed Service Provider App Set in Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
@@ -7,7 +7,7 @@ To delete an MSP App Set in Patch My PC (PMPC) Cloud:
 {% hint style="info" %}
 **Note**
 
-This process covers deleting an entire App Set. If you want to delete just a specific application or assignment from an App Set, you should follow the [Edit an App Set](edit-an-msp-app-set.md) process.
+This process covers deleting an entire App Set. If you want to delete just a specific application or assignment from an App Set, you should follow the [Edit an App Set](edit-app-set.md) process.
 
 You cannot delete an App Set with a **Status** of **In progress** and once the deletion of the App Set has begun, you will be unable to perform any other actions on it.
 {% endhint %}

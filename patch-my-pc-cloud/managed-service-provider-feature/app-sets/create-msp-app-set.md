@@ -1,11 +1,11 @@
-# Create an MSP App Set
+# Create a Managed Service Provider App Set in Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
 Creating an App Set in Patch My PC (PMPC) Cloud is a two-stage process that involves:
 
-* [Adding Apps to the App Set](create-an-msp-app-set.md#defining-which-apps-to-include-in-the-app-set)
-* [Deploying the App Set](create-an-msp-app-set.md#defining-where-to-deploy-an-app-set)
+* [Adding Apps to the App Set](create-msp-app-set.md#defining-which-apps-to-include-in-the-app-set)
+* [Deploying the App Set](create-msp-app-set.md#defining-where-to-deploy-an-app-set)
 
 {% hint style="info" %}
 **Note**
@@ -59,7 +59,7 @@ You can click **Edit Name** beside the App Set name if you want to rename it.
 
 You can add up to 100 apps per App Set, but each app can only be added to an App Set once.
 
-You can also add an [MSP Custom App](../msp-custom-apps/) to an App Set, provided that app has been created and assigned to all customers.
+You can also add an [MSP Custom App](../custom-apps-msp/) to an App Set, provided that app has been created and assigned to all customers.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (3255).png" alt="Clicking “Add Application” to add an application to this App Set" width="563"><figcaption></figcaption></figure>

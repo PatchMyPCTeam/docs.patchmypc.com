@@ -5,16 +5,16 @@ _Applies to: Patch My PC Cloud_
 By using the invite functionality of the _Managed Service Provider_ feature of Patch My PC (PMPC) Cloud, the customer of the child company can allow the MSP to manage their PMPC Cloud company without granting them global admin rights.
 
 {% hint style="info" %}
-**Note**&#x20;
+**Note**
 
 Please note the following:
 
-* **Users not using PMPC Cloud -** If the users you plan to invite to your MSP company are not already using PMPC Cloud, you should follow the [Add a Company to Manage (Cloud MSP)](../manage-msp-companies/add-a-company-to-manage-cloud-msp.md) process.\
+* **Users not using PMPC Cloud -** If the users you plan to invite to your MSP company are not already using PMPC Cloud, you should follow the [Add a Company to Manage (Cloud MSP)](../manage-msp-companies/add-company.md) process.\
   \
-  Any users created in the MSP parent company will automatically be assigned the same role in any child company, as child companies inherit user roles from the parent company. \
+  Any users created in the MSP parent company will automatically be assigned the same role in any child company, as child companies inherit user roles from the parent company.\
   \
-  For example, if a user is created in the parent company and assigned the **Full Admin with Access Management** role, they will have the same role permissions in any child companies.&#x20;
-*   **MSP Companies in different regions -** We currently do not support an MSP Parent Company being in a different region than the Child customer they want to invite. <br>
+  For example, if a user is created in the parent company and assigned the **Full Admin with Access Management** role, they will have the same role permissions in any child companies.
+*   **MSP Companies in different regions -** We currently do not support an MSP Parent Company being in a different region than the Child customer they want to invite.<br>
 
     A workaround for now is for the Child customer to delete their PMPC Cloud Portal Company and for the MSP to recreate it in the same region as their Parent Company.
 {% endhint %}
@@ -24,9 +24,9 @@ Once a user has been invited, they will have to:
 * [Accept the invitation](manage-msp-invitations.md#accept-the-invitation-to-an-msp-parent-company)
 * [Decline the invitation](manage-msp-invitations.md#decline-the-invitation-to-an-msp-parent-company)
 
-## Inviting a User to an MSP Company&#x20;
+## Inviting a User to an MSP Company
 
-To invite a user to an existing MSP Company:&#x20;
+To invite a user to an existing MSP Company:
 
 1. Sign in to the parent PMPC Cloud MSP Company.
 2. Navigate to **MSP Customers**
@@ -83,7 +83,7 @@ If a company is greyed out on the **Company Access Request** screen, it’s eith
 
 If no companies are available to select on the **Company Access Request** screen, the user has the option to click **Create new and Accept**, which will allow them to create a brand new company that can be managed by the MSP parent company.
 
-![‘Create new and Accept’ option](<../../../../.gitbook/assets/image (589).png>)
+<img src="../../../../.gitbook/assets/image (589).png" alt="‘Create new and Accept’ option" data-size="original">
 {% endhint %}
 
 The user is signed into their PMPC Cloud company, which now shows **Managed By&#x20;**_**\<msp\_parent\_company\_name>**_ in the header.

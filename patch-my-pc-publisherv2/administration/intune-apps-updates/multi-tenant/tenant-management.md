@@ -16,7 +16,7 @@ To add a new Tenant:
 
 <figure><img src="../../../../.gitbook/assets/image (4110).png" alt="Intune Options form opened when adding a new tenant" width="563"><figcaption></figcaption></figure>
 
-2. Complete the configuration by following [Scenario 4: Intune Applications and Updates](../../../scenario-based-guidance/installation-and-configuration/scenario-4-intune-applications-and-updates.md)   . Specifically **Steps 7 through 14**.
+2. Complete the configuration by following [Scenario 4: Intune Applications and Updates](../../../scenario-based-guidance/installation-and-configuration/scenario-4-intune-applications-and-updates.md) . Specifically **Steps 7 through 14**.
 
 {% hint style="info" %}
 **Note**
@@ -24,8 +24,6 @@ To add a new Tenant:
 Steps 7 through 14 cover configuring authentication and core application settings for the new tenant, validating the connection, and enabling required publishing options.
 
 This includes entering the Tenant Friendly Name, configuring the Entra ID application details and credential, reviewing and adjusting Application Options, and testing the connection.
-
-
 {% endhint %}
 
 3. Once the Intune Options have been configured, click **OK** to close the form and return to the main Publisher window.
@@ -108,7 +106,7 @@ To import a tenant configuration from another Publisher instance:
 
 1. Export the Publisher configuration from the source Publisher instance. See Export Settings in [Backup and Restore Settings](../../advanced/backup-and-restore-settings.md) for more details.
 2. Click the **Import Intune Tenants** button.
-3. Browse to the exported file from the source Publisher instance. If the file was exported from another Publisher instance as a .cab file, change the file type filter to .cab.&#x20;
+3. Browse to the exported file from the source Publisher instance. If the file was exported from another Publisher instance as a .cab file, change the file type filter to .cab.
 
 <figure><img src="../../../../.gitbook/assets/image (4114).png" alt="Select the correct file type filter" width="563"><figcaption></figcaption></figure>
 
@@ -129,8 +127,6 @@ To import a tenant configuration from another Publisher instance:
 Client Secrets are securely salted on the source Publisher instance and cannot be restored to a different Publisher instance. Certificates are also not transferred during export and import.
 
 After importing a tenant, review the selected client authentication method and reconfigure the App Secret or App Certificate as required before testing the connection or enabling publishing.
-
-
 {% endhint %}
 
 8. Once the Intune Options have been configured, click **OK** to close the form and return to the main Publisher window.
@@ -168,7 +164,7 @@ To Import Multiple Tenants:
 
 1. Ensure each tenant configuration was exported from a supported single tenant Publisher instance (typically licensed with the Enterprise Plus or Enterprise Premium SKU).
 2. On the target multi-tenant Publisher instance, click the **Import Intune Tenant** button.
-3.   Browse to the exported files from the source Publisher instance. If the files were exported from another Publisher instance as a .cab file, change the file type filter to .cab.
+3. Browse to the exported files from the source Publisher instance. If the files were exported from another Publisher instance as a .cab file, change the file type filter to .cab.
 
 <figure><img src="../../../../.gitbook/assets/image (4117).png" alt="Import multiple tenants" width="563"><figcaption></figcaption></figure>
 
@@ -194,7 +190,7 @@ There are no global Intune configuration settings that can be applied across all
 {% hint style="success" %}
 **Tip**
 
-If you are an MSP interested in centralized application sets or shared configuration capabilities across customers, consider the Patch My PC Cloud solutions where you can leverage [Templates](../../../../patch-my-pc-cloud/deployments/use-template.md) and [MSP App Sets](../../../../patch-my-pc-cloud/managed-service-provider-feature/msp-app-sets/).
+If you are an MSP interested in centralized application sets or shared configuration capabilities across customers, consider the Patch My PC Cloud solutions where you can leverage [Templates](../../../../patch-my-pc-cloud/deployments/use-template.md) and [MSP App Sets](../../../../patch-my-pc-cloud/managed-service-provider-feature/app-sets/).
 {% endhint %}
 
 {% hint style="info" %}

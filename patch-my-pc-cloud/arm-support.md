@@ -64,6 +64,6 @@ When you [Upload the app installer](binary-free-apps/deploy-a-binary-free-app.md
 
 ## MSP App Sets
 
-If you are a Managed Service Provider (MSP) using MSP App Sets, when you [add an app to an App Set](managed-service-provider-feature/msp-app-sets/create-an-msp-app-set.md#adding-apps-to-the-app-set), if the app supports ARM, you will see **ARM** listed under the **Architecture** field on the **General Information** tab.
+If you are a Managed Service Provider (MSP) using MSP App Sets, when you [add an app to an App Set](managed-service-provider-feature/app-sets/create-msp-app-set.md#adding-apps-to-the-app-set), if the app supports ARM, you will see **ARM** listed under the **Architecture** field on the **General Information** tab.
 
 <figure><img src="../.gitbook/assets/image (3475).png" alt="“ARM” listed under the “Architecture” field on the properties page of an app." width="563"><figcaption></figcaption></figure>

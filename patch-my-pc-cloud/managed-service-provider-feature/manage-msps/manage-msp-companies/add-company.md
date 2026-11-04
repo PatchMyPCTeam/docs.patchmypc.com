@@ -1,4 +1,4 @@
-# Add a Company to Manage (Cloud MSP)
+# Add a Company to Manage using the Managed Service Provider feature of Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
@@ -7,7 +7,7 @@ Once the parent MSP company has been configured in Patch My PC (PMPC) Cloud with
 You have two options for setting up child companies:
 
 * If the company you want to add is already using PMPC Cloud, then you should follow the [Inviting a User to an MSP Company](../manage-msp-users/#inviting-a-user-to-an-msp-company) process.
-* If the company you want to add is not already using PMPC Cloud, then you should follow the [Adding a Company to be Managed](add-a-company-to-manage-cloud-msp.md#adding-a-company-to-be-managed) process.
+* If the company you want to add is not already using PMPC Cloud, then you should follow the [Adding a Company to be Managed](add-company.md#adding-a-company-to-be-managed) process.
 
 {% hint style="warning" %}
 **Important**

@@ -1,4 +1,4 @@
-# View App Set Details
+# View the Details of a Managed Service Provider App Set in Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
@@ -15,7 +15,7 @@ The properties page shows more detailed information about the App Set, including
 * **Date Created –** The date the App Set was created
 * **Last Modified –** The date the App Set was last modified.
 
-Clicking **Edit** allows you to [Edit the App Set](edit-an-msp-app-set.md).
+Clicking **Edit** allows you to [Edit the App Set](edit-app-set.md).
 
 <figure><img src="../../../.gitbook/assets/image (3485).png" alt="Clicking “Edit”" width="563"><figcaption></figcaption></figure>
 
@@ -25,7 +25,7 @@ Clicking **Edit** allows you to [Edit the App Set](edit-an-msp-app-set.md).
 Only App Sets with a **Status** of **Success** can be edited.
 {% endhint %}
 
-Clicking **Delete** allows you to [Delete the App Set](delete-an-msp-app-set.md).
+Clicking **Delete** allows you to [Delete the App Set](delete-app-set.md).
 
 <figure><img src="../../../.gitbook/assets/image (3486).png" alt="" width="563"><figcaption></figcaption></figure>
 

@@ -1,4 +1,4 @@
-# MSP App Sets
+# Managed Service Provider App Sets in Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
@@ -8,10 +8,10 @@ App Sets allow MSPs to create a predefined collection of apps and deploy them si
 
 Using the App Sets feature you can:
 
-* [Create an App Set](create-an-msp-app-set.md)
-* [Edit an App Set](edit-an-msp-app-set.md)
-* [Delete an App Set](delete-an-msp-app-set.md)
-* [View details for an App Set](view-app-set-details.md)
+* [Create an App Set](create-msp-app-set.md)
+* [Edit an App Set](edit-app-set.md)
+* [Delete an App Set](delete-app-set.md)
+* [View details for an App Set](view-details-app-set.md)
 
 {% hint style="info" %}
 **Note**

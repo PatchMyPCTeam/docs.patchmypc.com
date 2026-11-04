@@ -196,7 +196,7 @@ There are no global Intune configuration settings that can be applied across all
 {% hint style="success" %}
 **Tip**
 
-If you are an MSP interested in centralized application sets or shared configuration capabilities across customers, consider the Patch My PC Cloud solutions where you can leverage [Templates](../../../patch-my-pc-cloud/deployments/use-template.md) and [MSP App Sets](../../../patch-my-pc-cloud/managed-service-provider-feature/msp-app-sets/).
+If you are an MSP interested in centralized application sets or shared configuration capabilities across customers, consider the Patch My PC Cloud solutions where you can leverage [Templates](../../../patch-my-pc-cloud/deployments/use-template.md) and [MSP App Sets](../../../patch-my-pc-cloud/managed-service-provider-feature/app-sets/).
 {% endhint %}
 
 {% hint style="info" %}

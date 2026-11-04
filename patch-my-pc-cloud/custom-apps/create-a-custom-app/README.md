@@ -15,7 +15,7 @@ If you also intend to deploy apps from our App Catalog in addition to creating C
 
 If you are using our on-premises Publisher, you should follow the [Publish a Custom App](../publish-a-custom-app.md) process instead.
 
-Likewise, if you are a Managed Service Provider (MSP) wanting to deploy a Custom App to one or more managed companies, see [MSP Custom Apps](../../managed-service-provider-feature/msp-custom-apps/) for more details.
+Likewise, if you are a Managed Service Provider (MSP) wanting to deploy a Custom App to one or more managed companies, see [MSP Custom Apps](../../managed-service-provider-feature/custom-apps-msp/) for more details.
 {% endhint %}
 
 ## To create a PMPC Custom App

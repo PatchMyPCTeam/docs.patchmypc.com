@@ -1,10 +1,10 @@
-# Remove a Company from being Managed (Cloud MSP)
+# Remove a Company from being Managed by the Managed Service Provider feature of Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
 If a parent Patch My PC (PMPC) Cloud Managed Service Provider (MSP) company no longer wants to manage a child company, they can remove the Intune connection and then delete the company.
 
-Likewise, if a child company no longer wishes to be managed by an MSP, they can unlink themselves from the MSP using the [Unlink a Child Company](remove-a-company-from-being-managed-cloud-msp.md#unlink-a-child-company) process below.
+Likewise, if a child company no longer wishes to be managed by an MSP, they can unlink themselves from the MSP using the [Unlink a Child Company](remove-company.md#unlink-a-child-company) process below.
 
 {% hint style="info" %}
 **Note**
@@ -77,7 +77,7 @@ The portal refreshes to show that the Intune connection has been deleted and the
 
 <figure><img src="../../../../.gitbook/assets/image (1075).png" alt="Portal refreshing to show that the Intune connection has been deleted and the &#x27;Success – Intune disconnected&#x27; notification is displayed" width="563"><figcaption></figcaption></figure>
 
-You can now follow the [Delete a Child Company](remove-a-company-from-being-managed-cloud-msp.md#delete-a-child-company) process if you want to delete the child company.
+You can now follow the [Delete a Child Company](remove-company.md#delete-a-child-company) process if you want to delete the child company.
 
 ### Delete a Child Company
 

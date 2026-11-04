@@ -29,7 +29,7 @@ We provide the functionality to disable a PMPC company from being recovered. How
 {% hint style="info" %}
 **Note**
 
-If your PMPC Cloud company is either a Managed Service Provider Parent or Child company, you should follow the [Recover an MSP Patch My PC Cloud Company](../../../managed-service-provider-feature/managed-service-provider-administration/manage-msp-companies/recover-an-msp-patch-my-pc-cloud-company.md) process.
+If your PMPC Cloud company is either a Managed Service Provider Parent or Child company, you should follow the [Recover an MSP Patch My PC Cloud Company](../../../managed-service-provider-feature/manage-msps/manage-msp-companies/recover-msp-company.md) process.
 {% endhint %}
 
 ## Requirements

@@ -23,7 +23,7 @@ The multi-tenant form controls are only visible if Publisher is licensed with an
 
 For managed service providers, Patch My PC Cloud is the recommended solution. It reduces infrastructure requirements and removes the need to maintain a Publisher installation.
 
-See [Managed Service Provider Overview](../../../patch-my-pc-cloud/managed-service-provider-feature/managed-service-provider-overview.md) for more information.
+See [Managed Service Provider Overview](../../../patch-my-pc-cloud/managed-service-provider-feature/overview.md) for more information.
 {% endhint %}
 
 {% hint style="success" %}

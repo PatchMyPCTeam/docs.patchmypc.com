@@ -1,4 +1,4 @@
-# Recover an MSP Patch My PC Cloud Company
+# Recover a Managed Service Provider Patch My PC Cloud Company
 
 _Applies to: Patch My PC Cloud_
 
@@ -8,7 +8,7 @@ _Applies to: Patch My PC Cloud_
 If you are trying to recover a non-MSP Patch My PC (PMPC) Cloud Company, you should follow the [Recover your Patch My PC Cloud Company](../../../manage/settings/company-settings/recover-company.md) process.
 {% endhint %}
 
-When a Managed Service Provider (MSP) [adds a new Child MSP Patch My PC (PMPC) Cloud company](add-a-company-to-manage-cloud-msp.md), it is created without any user accounts.
+When a Managed Service Provider (MSP) [adds a new Child MSP Patch My PC (PMPC) Cloud company](add-company.md), it is created without any user accounts.
 
 When a user attempts to sign in to a Child MSP company for which they have no user account, they will see the company listed on the **Select the Company You Want to Sign In To** screen and have the option to **Request Access**.
 
@@ -29,7 +29,7 @@ To use this option, the [Enable Company Recovery](../../../manage/settings/compa
 
 If this option has not been enabled for the Company, the **No Active Administrator** dialog shown below is displayed, stating that all access has been lost to this company.
 
-![‘No Active Administrator’ dialog box](<../../../../.gitbook/assets/image (4382).png>)
+<img src="../../../../.gitbook/assets/image (4382).png" alt="‘No Active Administrator’ dialog box" data-size="original">
 {% endhint %}
 
 If the user at the MSP Parent Company still has access to the Child Company, they can either [Enable Company Recovery](../../../manage/settings/company-settings/company-recovery.md) for the Child Company, which will allow the company to be recovered, or they can create a user account in the Child Company for the user requesting access.
