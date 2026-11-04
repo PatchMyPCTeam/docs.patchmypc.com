@@ -265,6 +265,7 @@
       * [Edit an MSP App Set](patch-my-pc-cloud/managed-service-provider-feature/msp-app-sets/edit-an-msp-app-set.md)
       * [Delete an MSP App Set](patch-my-pc-cloud/managed-service-provider-feature/msp-app-sets/delete-an-msp-app-set.md)
       * [View App Set Details](patch-my-pc-cloud/managed-service-provider-feature/msp-app-sets/view-app-set-details.md)
+    * [Patch Insights for Managed Service Provider users of Patch My PC Cloud](patch-my-pc-cloud/managed-service-provider-feature/patch-insights.md "Patch Insights")
     * [MSP Custom Apps](patch-my-pc-cloud/managed-service-provider-feature/msp-custom-apps/README.md)
       * [Create an MSP Custom App](patch-my-pc-cloud/managed-service-provider-feature/msp-custom-apps/create-an-msp-custom-app.md)
       * [View all MSP Custom Apps](patch-my-pc-cloud/managed-service-provider-feature/msp-custom-apps/view-all-msp-custom-apps.md)
