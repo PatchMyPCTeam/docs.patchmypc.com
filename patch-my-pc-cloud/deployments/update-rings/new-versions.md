@@ -31,7 +31,7 @@ How Update Rings behave depends on which Update ring Start Time you chose at the
 
 For this example, we will assume you want to deploy version 2019.1 of dBase:
 
-* &#x20;Initially to the **dBase Pilot Users** group.
+* Initially to the **dBase Pilot Users** group.
 * Two days later, you want to deploy the software to the **dBase All Users** group.
 
 This is how you would configure this deployment in the PMPC Cloud portal to use **Delayed** update Rings.
@@ -84,10 +84,12 @@ In this scenario, you can:
 
 This is one of the many reasons why we recommend configuring your [Sync Schedule](../../manage/settings/sync-schedule.md) to **Daily** if you are using Update Rings.
 
-We also use the release date of the new version to validate if it is the right time to update the assignments to upgrade rings to later versions.
+We also use the new version's release date to validate whether it is the right time to update the assignments to upgrade rings to later versions.
+
+Also, when Update Rings are configured for [Binary Free](../../binary-free-apps/) apps, the date the application file is uploaded is used as the starting point for calculating Update Ring delays, rather than the version release date.
 {% endhint %}
 
-Once the deployment has been updated, you can now edit it as all of the rings have now been created. If you look at the deployment’s properties, you will see that for the **Ring 1**, version **2019.2** has now been assigned to the **dBase Pilot Users** group.
+Once the deployment is updated, you can edit it, since all of the rings have now been created. If you look at the deployment’s properties, you will see that for the **Ring 1**, version **2019.2** has now been assigned to the **dBase Pilot Users** group.
 
 <figure><img src="../../../.gitbook/assets/image (2908).png" alt="Version 2019.2 targeted to the “dBase Pilot Users” Update Ring."><figcaption></figcaption></figure>
 
