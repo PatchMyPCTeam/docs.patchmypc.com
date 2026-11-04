@@ -1,4 +1,4 @@
-# Edit an MSP App Set
+# Edit a Managed Service Provider App Set in Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
@@ -21,7 +21,15 @@ You can only edit App Sets that have been created successfully. You will be unab
    2. Editing or deleting apps and assignments
    3. Adding new apps and assignments (including adding additional companies to deploy this App Set to).
    4. Modifying the update rings (enabling, disabling, adding rings, removing rings, changing delays for rings, etc.).
-4. Once you have finished making your changes, click **Deploy**
+4. If required, add a new variant of the same app to the App Set by choosing a different **Install Context** for the new variant than that configured for the existing app in the App Set.
+
+{% hint style="info" %}
+**Note**
+
+If you try to add the same variant of an app to an existing App Set, you will see the **Duplicate variant selected. An app variant can only be included once per AppSet** error.
+{% endhint %}
+
+5. Once you have finished making your changes, click **Deploy**
 
 {% hint style="info" %}
 **Note**
