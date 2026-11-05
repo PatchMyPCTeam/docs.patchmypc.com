@@ -4,3 +4,5 @@
 - tag: new-features-improvements
   label: New Features/Improvements
   color: $primary
+- tag: misc
+  label: Misc
