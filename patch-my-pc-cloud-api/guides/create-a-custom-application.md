@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Create a custom application
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 A custom application is an application your company packages and uploads itself, rather than one Patch My PC maintains in its catalog. You create one by uploading a folder that contains the installer and any supporting files, and describing how the application installs and how it's detected.
 
 The .NET SDK and the PowerShell module do the whole job in one call: they validate the folder, compute file hashes, upload the files in chunks, and complete the application. With REST you perform each of those steps yourself, so we recommend the SDK or the module for creating applications.

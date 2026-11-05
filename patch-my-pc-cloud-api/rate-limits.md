@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Rate limits
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 The Patch My PC Cloud Customer API limits how many requests your account can make in a time window. Limits apply per account, so every user, script, and personal access token (PAT) that works with the same account shares them.
 
 ## Limits

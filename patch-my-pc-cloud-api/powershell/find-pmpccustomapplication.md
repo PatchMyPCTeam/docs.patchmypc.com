@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Find-PmpcCustomApplication
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Searches the customer's custom applications catalog.

@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Deploy an application
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 A deployment publishes an application to Microsoft Intune through one of your company's connections and assigns it to groups of users or devices. You can deploy catalog applications and your own custom applications.
 
 {% hint style="info" %}

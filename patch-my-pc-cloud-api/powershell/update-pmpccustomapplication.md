@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Update-PmpcCustomApplication
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Publishes a new version of an existing application.

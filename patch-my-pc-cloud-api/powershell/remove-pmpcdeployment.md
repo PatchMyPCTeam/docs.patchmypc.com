@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Remove-PmpcDeployment
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Deletes an Intune deployment.

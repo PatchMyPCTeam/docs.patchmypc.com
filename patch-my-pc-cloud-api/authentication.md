@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Authentication
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 The Patch My PC Cloud Customer API authenticates each request with a short-lived access token. You get an access token by exchanging a personal access token (PAT). The same flow works from the REST API, the .NET SDK, and the PowerShell module, and it doesn't need a person at the keyboard, so you can use it in scripts, services, and pipelines.
 
 Authentication takes three steps:

@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Connect-PmpcBrokerWithPat
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Connects to the Cloud Customer API with a personal access token.

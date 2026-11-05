@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Set-PmpcCustomApplication
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Edits an application's current version in place.

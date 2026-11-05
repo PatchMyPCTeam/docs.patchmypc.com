@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # .NET SDK
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 The .NET SDK is a client library for the Patch My PC Cloud Customer API. It authenticates with a personal access token, keeps track of the company and connection you're working with, uploads installer files in parallel chunks, and returns every outcome as a result object instead of throwing exceptions. Everything the SDK exposes is on one interface, `IAppCatBroker`.
 
 Use the SDK when you're building a .NET application or service. If you're scripting, the PowerShell module wraps the same interface with one cmdlet per method. If you're working from another language, call the REST API directly.

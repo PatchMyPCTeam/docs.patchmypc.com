@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Test-PmpcBrokerHealth
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Checks whether the Cloud Customer API is reachable and healthy.

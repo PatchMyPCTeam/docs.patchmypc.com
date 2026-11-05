@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Deployments
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 A deployment publishes an application to Microsoft Intune through one of your connections, with group assignments and optional configuration. These methods manage the deployments of a single application.
 
 Every method on this page needs a selected company and a selected connection. If no connection is selected, the method fails with `VALIDATION_ERROR` before it calls the Patch My PC Cloud Customer API. To select one, see [`SetSelectedConnectionAsync`](customer-and-connections.md#setselectedconnectionasync). With a personal access token (PAT), these methods need the `appcatbroker:apps:deploy` scope.

@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Applications
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 These methods search for applications, read their details, and create new applications or new versions. Applications come from two catalogs:
 
 * **Your custom applications**—applications you package and upload yourself.

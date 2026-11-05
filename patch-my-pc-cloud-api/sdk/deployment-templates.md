@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Deployment templates
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 A deployment template is a named set of deployment settings stored on a connection, such as requirements, Company Portal information, categories, and update behavior. Use templates to keep your deployments consistent.
 
 Every method on this page needs a selected company and a selected connection; templates belong to the selected connection. If no connection is selected, the method fails with `VALIDATION_ERROR`. To select one, see [`SetSelectedConnectionAsync`](customer-and-connections.md#setselectedconnectionasync). With a personal access token (PAT), these methods need the `appcatbroker:apps:deploy` scope.

@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Disconnect-PmpcBroker
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Signs out and tears down the module's session.

@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Results and errors
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 Every `IAppCatBroker` method returns a result object instead of throwing an exception when a call fails. Check the result before you use it. This page describes the result types, the error details they carry, and how to respond to each error code.
 
 ## The result types

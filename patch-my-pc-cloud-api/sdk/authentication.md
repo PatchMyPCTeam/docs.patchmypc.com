@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # SDK authentication methods
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 These methods authenticate the SDK with the Patch My PC Cloud Customer API, report which company later calls run against, and sign you out.
 
 The SDK authenticates with a personal access token (PAT). Call [`AuthenticateWithPersonalAccessTokenAsync`](authentication.md#authenticatewithpersonalaccesstokenasync) once, before any other method. It needs no user at the keyboard, so it suits services, scheduled jobs, and pipelines. You create the PAT in the Patch My PC portal; see [Create a personal access token](../create-a-personal-access-token.md).

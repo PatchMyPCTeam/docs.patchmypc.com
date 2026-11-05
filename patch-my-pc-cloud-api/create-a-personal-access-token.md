@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Create a personal access token
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 A personal access token (PAT) lets your scripts, services, and pipelines call the Patch My PC Cloud Customer API without anyone at the keyboard. You create, view, and revoke PATs in the Patch My PC portal. You then exchange a PAT for a short-lived access token, as described in [Authentication](authentication.md).
 
 ## Before you begin

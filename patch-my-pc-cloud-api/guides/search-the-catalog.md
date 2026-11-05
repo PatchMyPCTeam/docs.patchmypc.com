@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Search the catalog
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 Use the Patch My PC Cloud Customer API to find applications and read their details. There are two catalogs:
 
 * **Your custom applications**—the applications your company created and uploaded.

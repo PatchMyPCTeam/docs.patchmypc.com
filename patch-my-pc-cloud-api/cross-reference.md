@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Cross-reference: cmdlets, SDK methods, and REST operations
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 The PowerShell module, the SDK, and the REST API are three ways to call the same Patch My PC Cloud Customer API. Each cmdlet calls an SDK method, and each SDK method calls one or more REST operations. Use these tables to move between them. Where an SDK method calls several operations, the first is the main one.
 
 Operations that require enablement work only after the feature is enabled for your account. Until then they return `403 Forbidden` with the problem title `feature_not_enabled`.

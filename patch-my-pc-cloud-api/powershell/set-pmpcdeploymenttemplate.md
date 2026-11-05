@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Set-PmpcDeploymentTemplate
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Replaces the settings on a deployment template.

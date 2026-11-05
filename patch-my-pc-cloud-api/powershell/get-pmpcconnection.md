@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Get-PmpcConnection
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Lists the Intune connections available to the selected company.

@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Update an application
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 When a vendor releases a new version of an application you packaged yourself, you publish it as an update to the existing custom application. The application keeps its product ID, and the new version gets its own update ID.
 
 An update replaces the application's files and packaging details—for example the installer, install arguments, and detection. The application's descriptive details, such as its display name and publisher, stay the same.

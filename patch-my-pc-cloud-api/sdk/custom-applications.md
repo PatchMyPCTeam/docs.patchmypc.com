@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Custom applications
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 These methods work only with your custom applications—applications you package and upload yourself. They behave like the general methods on [Applications](applications.md), but always target your custom applications catalog, and they add the ability to delete an application.
 
 All of these methods need an authenticated session. For details, see [SDK authentication methods](authentication.md). Search and read methods need the `appcatbroker:apps:read` scope, and create, update, edit, and delete methods need `appcatbroker:apps:write`.

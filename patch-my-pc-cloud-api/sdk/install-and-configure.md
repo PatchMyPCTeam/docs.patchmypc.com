@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Install and configure the SDK
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 This page shows you how to add the .NET SDK for the Patch My PC Cloud Customer API to a project, register it with dependency injection, set its options, and get an `IAppCatBroker` instance to call.
 
 ## Prerequisites

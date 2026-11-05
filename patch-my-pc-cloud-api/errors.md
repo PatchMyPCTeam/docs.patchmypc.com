@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Errors
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 The Patch My PC Cloud Customer API uses standard HTTP status codes. The .NET SDK and PowerShell module translate each failure into a stable error code that you can branch on in code and scripts.
 
 ## Status codes

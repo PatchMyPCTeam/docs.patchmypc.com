@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Get-PmpcSelectedCompany
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Gets the company the session is currently scoped to.

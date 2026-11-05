@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Automate with a personal access token
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 Scheduled tasks, build agents, and other unattended jobs call the Cloud Customer API with a personal access token (PAT). You create the token once in the Patch My PC portal, store it in a secret store, and the job exchanges it for an access token each time it runs. The access token is valid for 60 minutes.
 
 For how tokens, scopes, and access tokens work, see [Authentication](../authentication.md).

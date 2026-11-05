@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Get-PmpcDeploymentTemplate
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Lists deployment templates, or reads one in detail.

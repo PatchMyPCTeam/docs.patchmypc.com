@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Get-PmpcDeploymentDependencyCandidate
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Lists deployments that can be used as a dependency.

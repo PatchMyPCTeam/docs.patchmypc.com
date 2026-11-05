@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Customer information and connections
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 These methods read information about your Patch My PC account and manage the connection the SDK works with. A connection links your Patch My PC account to a Microsoft Intune tenant. Deployment, deployment template, and public catalog methods run against the selected connection, so select one before you call them.
 
 All of these methods need an authenticated session. For details, see [SDK authentication methods](authentication.md).

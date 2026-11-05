@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Get-PmpcBrokerSession
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Reports the module's current session state.

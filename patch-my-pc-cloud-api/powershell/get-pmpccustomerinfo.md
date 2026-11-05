@@ -6,6 +6,8 @@ noRobotsIndex: true
 
 # Get-PmpcCustomerInfo
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 ## Synopsis
 
 Gets account information and usage limits for the current customer.

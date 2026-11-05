@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # Getting started
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 This page takes you from nothing to a first successful call to the Patch My PC Cloud Customer API. The first call reads your account information, which every account can do.
 
 ## Before you begin

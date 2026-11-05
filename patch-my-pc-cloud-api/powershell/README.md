@@ -8,6 +8,8 @@ noRobotsIndex: true
 
 # PowerShell module
 
+[Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
+
 The `PatchMyPC.AppCatBroker` PowerShell module lets you manage applications and deployments in the Patch My PC Cloud Customer API from a script, a scheduled task, or the PowerShell console. It has one cmdlet for each SDK method, and it calls the same service as the SDK and the REST API.
 
 ## Install the module
