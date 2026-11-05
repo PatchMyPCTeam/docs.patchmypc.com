@@ -4,20 +4,18 @@ _Applies to: Patch My PC Publisher V2.x and 3.x_
 
 Details the production release history for Patch My PC (PMPC) Publisher, the most recent release being shown first.
 
-## 3.26.10019.0 - 2026-11-04
+{% updates format="full" %}
+{% update date="2026-11-04" tags="new-features-improvements,fixes" %}
+## 3.26.10019.0
 
-<details>
-
-<summary>Improvements</summary>
+### Improvements
 
 * Ongoing accessibility, layout, and readability improvements.
 * Writes settings saves and UI closes to the Publisher event log.
 
-</details>
+### Fixes
 
-<details>
 
-<summary>Fixes</summary>
 
 * Preserves ConfigMgr console folder selection after refresh.
 * Ensure dates are in the proper format when publishing ConfigMgr applications. This fixes a bug causing the release date not to display in Software Center
@@ -26,8 +24,8 @@ Details the production release history for Patch My PC (PMPC) Publisher, the mos
 * Restore endpoint for Publisher heartbeat requests.
 * Ensure Publisher resolves role groups only as local machine groups.
 * Sorts Intune installation counts numerically.
-
-</details>
+{% endupdate %}
+{% endupdates %}
 
 ## 3.1.10.0 - 2026-10-14
 
