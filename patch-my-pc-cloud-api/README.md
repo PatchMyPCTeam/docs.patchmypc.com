@@ -3,6 +3,8 @@ description: >-
   Search the Patch My PC catalog, publish custom applications, and manage
   deployments from your own tools and scripts.
 hidden: true
+noIndex: true
+noRobotsIndex: true
 ---
 
 # Patch My PC Cloud Customer API
