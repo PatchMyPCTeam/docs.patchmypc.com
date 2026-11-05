@@ -985,6 +985,7 @@
     * [Catalog Information](patch-my-pc-publisherv2/publisher-reference/catalog-information.md)
     * [Data Flow Diagram](patch-my-pc-publisherv2/publisher-reference/data-flow-diagram.md)
     * [Telemetry Data collected by the Publisher](patch-my-pc-publisherv2/publisher-reference/telemetry-data-collected-by-the-publisher.md)
+* [Patch My PC Cloud API](patch-my-pc-cloud-api.md)
 * [Patch My PC Publisher documentation](patch-my-pc-publisher-2/README.md "Patch My PC Publisher")
   * [Publisher Release Notes](patch-my-pc-publisher-2/publisher-release-notes/README.md)
     * [Publisher Preview Releases](patch-my-pc-publisher-2/publisher-release-notes/publisher-preview-releases.md)
