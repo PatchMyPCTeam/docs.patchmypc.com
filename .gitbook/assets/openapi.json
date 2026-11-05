@@ -1,0 +1,5027 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Patch My PC Cloud Customer API",
+    "description": "The Patch My PC Cloud Customer API lets you search and manage your applications, deployments, and deployment templates. Every operation except the token exchange requires an access token.",
+    "contact": {
+      "name": "Patch My PC",
+      "email": "support@patchmypc.com"
+    },
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://us.portal.patchmypc.com",
+      "description": "United States. Use this host if your Patch My PC account is in the US region."
+    },
+    {
+      "url": "https://eu.portal.patchmypc.com",
+      "description": "Europe. Use this host if your Patch My PC account is in the EU region."
+    }
+  ],
+  "paths": {
+    "/v1/api/apps/complete": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Complete application creation",
+        "description": "Completes a new application creation process.",
+        "operationId": "CompleteApplication",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationCompletionRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Complete application update",
+        "description": "Completes an existing application update process.",
+        "operationId": "CompleteUpdate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationCompletionRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/custom/complete": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Complete custom application creation",
+        "description": "Completes a new custom application creation process.",
+        "operationId": "CompleteCustomApplication",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationCompletionRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Complete custom application update",
+        "description": "Completes an existing custom application update process.",
+        "operationId": "CompleteCustomUpdate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationCompletionRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/custom/draft": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create custom application draft",
+        "description": "Creates a new custom application draft.",
+        "operationId": "CreateCustomApplicationDraft",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/custom/edit-complete": {
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Complete custom application edit",
+        "description": "Completes an in-place edit of an existing custom application version. Changes product metadata (display name, description, publisher, owner, developer, icon, and URLs) and update-level settings without creating a new version.",
+        "operationId": "CompleteCustomEdit",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationCompletionRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/custom/edit-draft": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create custom edit draft",
+        "description": "Creates a draft for editing an existing version of a custom application in place. Unlike an update draft, this doesn't create a new version—it opens the existing version for revision, so you can correct metadata without publishing a new version number.",
+        "operationId": "CreateCustomEditDraft",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationUpdateDraftRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/custom/search": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Search custom applications",
+        "description": "Searches your own custom applications. Any feed types in the request body are ignored and replaced with `CUSTOMER`.",
+        "operationId": "SearchCustomApplications",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ProductFilterRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductFilterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/custom/update-draft": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create custom update draft",
+        "description": "Creates a new update draft for an existing custom application.",
+        "operationId": "CreateCustomUpdateDraft",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationUpdateDraftRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/custom/{productId}": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get custom application details",
+        "description": "Retrieves detailed information about an application in your custom application catalog. Returns only the fields relevant to a custom application.",
+        "operationId": "GetCustomApplicationDetails",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomApplicationDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Delete a custom application",
+        "description": "Deletes a custom application you own, freeing a slot against your custom application limit. Only your own custom applications can be deleted; public catalog applications are shared and can't be deleted. The request is rejected while the application's latest update is in a state that isn't safe to remove.",
+        "operationId": "DeleteCustomApplication",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/draft": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create application draft",
+        "description": "Creates a new application draft.",
+        "operationId": "CreateApplicationDraft",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/edit-complete": {
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Complete application edit",
+        "description": "Completes an in-place edit of an existing application version. Changes product metadata (display name, description, publisher, owner, developer, icon, and URLs) and update-level settings without creating a new version. To publish a new version instead, use `PUT /v1/api/apps/complete`.",
+        "operationId": "CompleteEdit",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationCompletionRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/edit-draft": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create edit draft",
+        "description": "Creates a draft for editing an existing version of an application in place. Unlike an update draft, this doesn't create a new version—it opens the existing version for revision, so you can correct metadata without publishing a new version number.",
+        "operationId": "CreateEditDraft",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationUpdateDraftRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/public/search": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Search public applications",
+        "description": "Searches the public Patch My PC catalog. Any feed types in the request body are ignored and replaced with `PMPC`. `connectionId` is required and identifies the Intune connection that scopes the search.",
+        "operationId": "SearchPublicApplications",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ProductFilterRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductFilterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/public/{productId}": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get public application details",
+        "description": "Retrieves detailed information about an application in the public Patch My PC catalog. Returns only the fields relevant to a public catalog application. `connectionId` is required and identifies the Intune connection that scopes the lookup. `osType` is optional and defaults to `Windows`; `MacOS` requires your account to be entitled to macOS applications, otherwise the application is reported as not found.",
+        "operationId": "GetPublicApplicationDetails",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "osType",
+            "in": "query",
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/OSType"
+                }
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublicApplicationDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/search": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Search applications",
+        "description": "Searches your custom applications using advanced filtering options. Any feed types in the request are ignored and replaced with `CUSTOMER`.",
+        "operationId": "SearchApplications",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ProductFilterRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductFilterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/update-draft": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create update draft",
+        "description": "Creates a new update draft for an existing application.",
+        "operationId": "CreateUpdateDraft",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApplicationUpdateDraftRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get application details",
+        "description": "Retrieves detailed information about an application in your custom application catalog by its product ID.",
+        "operationId": "GetApplicationDetails",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Delete an application",
+        "description": "Deletes a custom application you own, freeing a slot against your custom application limit. Only your own custom applications can be deleted; public catalog applications are shared and can't be deleted. The request is rejected while the application's latest update is in a state that isn't safe to remove.",
+        "operationId": "DeleteApplication",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}/deployments": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get application deployments",
+        "description": "Lists the Intune deployments that exist for an application under the given connection.",
+        "operationId": "GetApplicationDeployments",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DeploymentDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create application deployment",
+        "description": "Creates a new Intune deployment for an application under the given connection.",
+        "operationId": "CreateApplicationDeployment",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CreateDeploymentRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeploymentDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}/deployments/dependency-candidates": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get application deployment dependency candidates",
+        "description": "Lists the existing deployments in the given connection that you can pick as a dependency for a new or edited deployment. Every deployment in the connection is returned; filter the results on the client.",
+        "operationId": "GetApplicationDeploymentDependencyCandidates",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DeploymentDependencyDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}/deployments/{deploymentId}": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get application deployment details",
+        "description": "Retrieves full detail for a single Intune deployment, including categories, Enrollment Status Page (ESP) profiles, and the dependency chain (parent and child deployments)—fields that the list operation doesn't return.",
+        "operationId": "GetApplicationDeploymentDetails",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "deploymentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeploymentDetailDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Edit application deployment",
+        "description": "Edits an existing Intune deployment's name, group assignments, categories, ESP profiles, dependencies, and configuration—conflicting-process behavior, return codes, requirements, install parameters, application information overrides, and behavior settings. Any field you leave unset keeps its current value. Not supported for ring-enabled deployments.",
+        "operationId": "EditApplicationDeployment",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "deploymentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/EditDeploymentRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeploymentDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Delete application deployment",
+        "description": "Deletes an existing Intune deployment. Allowed only while the deployment isn't in progress or already being deleted.",
+        "operationId": "DeleteApplicationDeployment",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "deploymentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}/deployments/{deploymentId}/redeploy": {
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Redeploy application deployment",
+        "description": "Forces a deployment to be recreated in Intune. Use it to troubleshoot a stuck or corrupted deployment; for routine version updates, use the sync operation instead.",
+        "operationId": "RedeployApplicationDeployment",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "deploymentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}/deployments/{deploymentId}/scheduled-sync-pause": {
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Set application deployment sync pause status",
+        "description": "Pauses or resumes a deployment's scheduled sync.",
+        "operationId": "SetApplicationDeploymentSyncPauseStatus",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "deploymentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/SetDeploymentSyncPauseRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}/deployments/{deploymentId}/sync": {
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Sync application deployment",
+        "description": "Syncs a deployment to its latest pending version. Use it for routine version updates; to troubleshoot a stuck or corrupted deployment, use the redeploy operation instead.",
+        "operationId": "SyncApplicationDeployment",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "deploymentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/apps/{productId}/files": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get application files",
+        "description": "Lists the files of an application's current version, in exactly the shape the completion operations accept. An edit replaces the file list rather than merging it, so you must send the complete list back; use this operation to get it without rebuilding it from local state.",
+        "operationId": "GetApplicationFiles",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ApplicationFileDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/auth/token": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "Exchange a personal access token for an access token",
+        "description": "Exchanges a personal access token, supplied in the `Authorization` header as a bearer credential, for an access token that's valid for 60 minutes. Send the access token on subsequent requests, and exchange the personal access token again when the access token expires.",
+        "operationId": "ExchangePatForToken",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenExchangeResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": []
+      }
+    },
+    "/v1/api/connections": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get available connections",
+        "description": "Lists your available connections (Publisher, Intune, or Configuration Manager) that you can use as a deployment context.",
+        "operationId": "GetConnections",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConnectionDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/customer-info": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get customer info",
+        "description": "Retrieves information about your customer account, including its license and usage limits.",
+        "operationId": "GetCustomerInfo",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerInfoDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/deployments/templates": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get deployment templates",
+        "description": "Lists the deployment templates configured for a connection, so you can find one and name it when you create a deployment. To author and change templates, use the create, update, and delete deployment template operations.",
+        "operationId": "GetDeploymentTemplates",
+        "parameters": [
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DeploymentTemplateSummaryDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Create deployment template",
+        "description": "Creates a deployment template on a connection. Setting it as the default demotes the template that's currently the default.",
+        "operationId": "CreateDeploymentTemplate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/DeploymentTemplateRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeploymentTemplateDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/v1/api/deployments/templates/{deploymentTemplateId}": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get deployment template details",
+        "description": "Retrieves the settings that a deployment created from this template inherits.",
+        "operationId": "GetDeploymentTemplate",
+        "parameters": [
+          {
+            "name": "deploymentTemplateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeploymentTemplateDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Update deployment template",
+        "description": "Replaces the settings on an existing deployment template. Every field is stored as sent, so read the template first and change only what you need.",
+        "operationId": "UpdateDeploymentTemplate",
+        "parameters": [
+          {
+            "name": "deploymentTemplateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/DeploymentTemplateRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeploymentTemplateDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Delete deployment template",
+        "description": "Deletes a deployment template. You can't delete the connection's default template—make another template the default first.",
+        "operationId": "DeleteDeploymentTemplate",
+        "parameters": [
+          {
+            "name": "deploymentTemplateId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "connectionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdminConsentStatus": {
+        "enum": [
+          "Unknown",
+          "Pending",
+          "Granted",
+          "MissingPermissions"
+        ],
+        "type": "string"
+      },
+      "ApplicableArchitecture": {
+        "enum": [
+          "None",
+          "X86",
+          "X64",
+          "Arm",
+          "Neutral"
+        ],
+        "type": "string"
+      },
+      "ApplicationCompletionRequest": {
+        "type": "object",
+        "properties": {
+          "requirementArchitecture": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RequirementArchitecture"
+              }
+            ]
+          },
+          "architecture": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SqlSearchTarget"
+              }
+            ]
+          },
+          "arpDisplayNameMatch": {
+            "type": "string",
+            "nullable": true
+          },
+          "arpVersionMatch": {
+            "type": "string",
+            "nullable": true
+          },
+          "conflictingProcesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "documentationURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "privacyURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "informationURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "installContext": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallationBehavior"
+              }
+            ]
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "intuneNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "publisher": {
+            "type": "string",
+            "nullable": true
+          },
+          "developer": {
+            "type": "string",
+            "nullable": true
+          },
+          "owner": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "productId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "msiProductCode": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "detectionRules": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DetectionRulesDto"
+              }
+            ],
+            "nullable": true
+          },
+          "customRequirements": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomRequirementsDto"
+              }
+            ],
+            "nullable": true
+          },
+          "revisionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "iconUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "folderPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "primaryInstallerFile": {
+            "type": "string",
+            "nullable": true
+          },
+          "cmdArguments": {
+            "type": "string",
+            "nullable": true
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApplicationFileDto"
+            },
+            "nullable": true
+          },
+          "silentUninstallArg": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApplicationCreationResponse": {
+        "type": "object",
+        "properties": {
+          "updateId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "revisionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "customerId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fileUploadPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "chunkedFileUploadPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileCompleteUploadPath": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApplicationFileDto": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileSize": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fileType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/UpdateFileType"
+              }
+            ]
+          },
+          "sha1Hash": {
+            "type": "string",
+            "nullable": true
+          },
+          "sha256Hash": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApplicationUpdateDraftRequest": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "updateId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AssignmentTargetType": {
+        "enum": [
+          "AllUsers",
+          "AllDevices",
+          "Group",
+          "NotSet"
+        ],
+        "type": "string"
+      },
+      "BlockingProcessMgmtPolicy": {
+        "enum": [
+          "None",
+          "Kill",
+          "Skip",
+          "Notify"
+        ],
+        "type": "string"
+      },
+      "BuiltInUpdate": {
+        "enum": [
+          "NotAvailable",
+          "Disable",
+          "Enable"
+        ],
+        "type": "string"
+      },
+      "CatalogFeedType": {
+        "enum": [
+          "Undefined",
+          "PMPC",
+          "SCAPPMAN",
+          "CUSTOMER",
+          "WSUS",
+          "WINGET"
+        ],
+        "type": "string"
+      },
+      "ConnectionDto": {
+        "type": "object",
+        "properties": {
+          "connectionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ConnectionType"
+              }
+            ]
+          },
+          "adminConsent": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AdminConsentStatus"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConnectionType": {
+        "enum": [
+          "Unknown",
+          "ConfigMgr",
+          "Intune",
+          "Publisher"
+        ],
+        "type": "string"
+      },
+      "CreateDeploymentAssignmentRequest": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "string",
+            "nullable": true
+          },
+          "intent": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallationIntent"
+              }
+            ]
+          },
+          "targetType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AssignmentTargetType"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateDeploymentRequest": {
+        "type": "object",
+        "properties": {
+          "connectionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "osType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/OSType"
+              }
+            ]
+          },
+          "assignments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreateDeploymentAssignmentRequest"
+            },
+            "nullable": true
+          },
+          "categoryIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "espProfileIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "parentDeploymentIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "configuration": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentConfigurationRequest"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomApplicationDetailsDto": {
+        "type": "object",
+        "properties": {
+          "isMigrationApp": {
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomApplicationDto": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "vendorName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "updateVersion": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconURL": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconBase64": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconContentType": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "privacyUrl": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "informationUrl": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "developer": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "intuneNotes": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "installerType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallerType"
+              }
+            ],
+            "readOnly": true
+          },
+          "architecture": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RequirementArchitecture"
+              }
+            ],
+            "readOnly": true
+          },
+          "installContext": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallationBehavior"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "silentInstallArguments": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "silentUninstallArguments": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "mainFile": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "conflictingProcessList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "detectionRules": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DetectionRulesDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "customRequirements": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomRequirementsDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "arpDisplayNameMatch": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "owner": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "msiProductCode": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "readOnly": true
+          },
+          "isMigrationApp": {
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomRequirementsDto": {
+        "type": "object",
+        "properties": {
+          "applicableArchitectures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApplicableArchitecture"
+            },
+            "nullable": true
+          },
+          "minimumWindowsOSVersion": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WindowsOSVersion"
+              }
+            ],
+            "nullable": true
+          },
+          "minimumNumberOfProcessors": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minimumMemoryInMB": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minimumCpuSpeedInMHz": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "requirementFileRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FileRuleDto"
+            },
+            "nullable": true
+          },
+          "requirementRegistryRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegistryRuleDto"
+            },
+            "nullable": true
+          },
+          "requirementsScriptRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ScriptRuleDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomerInfoDto": {
+        "type": "object",
+        "properties": {
+          "limits": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/LimitDTO"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "customerId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "customerName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "license": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/GetLicenseDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "limitsProgress": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomerLimitsDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "macOSApplicationsEnabled": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomerLicense": {
+        "enum": [
+          "None",
+          "Basic",
+          "Enterprise",
+          "Enterprise_Plus",
+          "Enterprise_Premium",
+          "Intune",
+          "Trial",
+          "MSP",
+          "MSP_Plus"
+        ],
+        "type": "string"
+      },
+      "CustomerLimitsDto": {
+        "type": "object",
+        "properties": {
+          "totalSizeMb": {
+            "type": "number",
+            "format": "double"
+          },
+          "customAppsNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "intuneDeploymentsWithFilesNumber": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomerType": {
+        "enum": [
+          "None",
+          "Customer",
+          "Demo",
+          "Donation",
+          "NFR",
+          "Trial",
+          "PersonalLab",
+          "LabTrial"
+        ],
+        "type": "string"
+      },
+      "DeferPolicy": {
+        "enum": [
+          "Indefinitely",
+          "Count",
+          "Deadline"
+        ],
+        "type": "string"
+      },
+      "DeferPolicyDefaultAction": {
+        "enum": [
+          "Snooze",
+          "CloseAndUpdate"
+        ],
+        "type": "string"
+      },
+      "DeploymentAppInfoDto": {
+        "type": "object",
+        "properties": {
+          "customVendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "customDeveloper": {
+            "type": "string",
+            "nullable": true
+          },
+          "customOwner": {
+            "type": "string",
+            "nullable": true
+          },
+          "customDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "customNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "customInformationUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "customPrivacyUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "isFeatured": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentAssignmentDto": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "string",
+            "nullable": true
+          },
+          "groupName": {
+            "type": "string",
+            "nullable": true
+          },
+          "targetType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AssignmentTargetType"
+              }
+            ]
+          },
+          "intent": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallationIntent"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentCategoryDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentConfigurationDto": {
+        "type": "object",
+        "properties": {
+          "additionalArgument": {
+            "type": "string",
+            "nullable": true
+          },
+          "installLoggingPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "customRequirements": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentCustomRequirementsDto"
+              }
+            ],
+            "nullable": true
+          },
+          "appInfo": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentAppInfoDto"
+              }
+            ],
+            "nullable": true
+          },
+          "conflictingProcess": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentConflictingProcessDto"
+              }
+            ],
+            "nullable": true
+          },
+          "returnCodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentReturnCodeDto"
+            },
+            "nullable": true
+          },
+          "builtInUpdate": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BuiltInUpdate"
+              }
+            ]
+          },
+          "allowAvailableUninstall": {
+            "type": "boolean"
+          },
+          "removeDesktopShortcuts": {
+            "type": "boolean"
+          },
+          "appVersionsRetention": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleScopeTags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentRoleScopeTagDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "additionalArgument": {
+            "type": "string",
+            "nullable": true
+          },
+          "installLoggingPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "customRequirements": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/EditDeploymentCustomRequirementsRequest"
+              }
+            ],
+            "nullable": true
+          },
+          "appInfo": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentAppInfoDto"
+              }
+            ],
+            "nullable": true
+          },
+          "conflictingProcess": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentConflictingProcessDto"
+              }
+            ],
+            "nullable": true
+          },
+          "returnCodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentReturnCodeDto"
+            },
+            "nullable": true
+          },
+          "builtInUpdate": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BuiltInUpdate"
+              }
+            ],
+            "nullable": true
+          },
+          "allowAvailableUninstall": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "removeDesktopShortcuts": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "appVersionsRetention": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "roleScopeTagIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentConflictingProcessDto": {
+        "type": "object",
+        "properties": {
+          "policy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BlockingProcessMgmtPolicy"
+              }
+            ],
+            "nullable": true
+          },
+          "userAddedProcesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "userDeletedProcesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "preventConflictingProcessRestart": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "postDeploymentNotificationPolicy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PostDeploymentNotification"
+              }
+            ],
+            "nullable": true
+          },
+          "snoozingNotificationDelaySeconds": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "notification": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentUserNotificationDto"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentCustomRequirementsDto": {
+        "type": "object",
+        "properties": {
+          "disableArchitectures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApplicableArchitecture"
+            },
+            "nullable": true
+          },
+          "minimumWindowsOSVersion": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WindowsOSVersion"
+              }
+            ],
+            "nullable": true
+          },
+          "minimumNumberOfProcessors": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minimumMemoryInMB": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minimumCpuSpeedInMHz": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fileRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FileRuleDto"
+            },
+            "nullable": true
+          },
+          "registryRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegistryRuleDto"
+            },
+            "nullable": true
+          },
+          "scriptRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ScriptRuleDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentDeferralPolicyDto": {
+        "type": "object",
+        "properties": {
+          "policy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeferPolicy"
+              }
+            ],
+            "nullable": true
+          },
+          "defaultAction": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeferPolicyDefaultAction"
+              }
+            ],
+            "nullable": true
+          },
+          "deferCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "deadline": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentDependencyDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "deploymentId": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "iconUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "catalogFeedType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CatalogFeedType"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentDetailDto": {
+        "type": "object",
+        "properties": {
+          "deploymentId": {
+            "type": "string",
+            "nullable": true
+          },
+          "productId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "osType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/OSType"
+              }
+            ]
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentStatusType"
+              }
+            ]
+          },
+          "warningMessages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "syncOnHold": {
+            "type": "boolean"
+          },
+          "ringsEnabled": {
+            "type": "boolean"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "errorMessages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentCategoryDto"
+            },
+            "nullable": true
+          },
+          "espProfiles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentEspProfileDto"
+            },
+            "nullable": true
+          },
+          "assignments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentAssignmentDto"
+            },
+            "nullable": true
+          },
+          "parentDeployments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentDependencyDto"
+            },
+            "nullable": true
+          },
+          "childDeployments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentDependencyDto"
+            },
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "configuration": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentConfigurationDto"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentDto": {
+        "type": "object",
+        "properties": {
+          "deploymentId": {
+            "type": "string",
+            "nullable": true
+          },
+          "productId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "osType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/OSType"
+              }
+            ]
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentStatusType"
+              }
+            ]
+          },
+          "warningMessages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "syncOnHold": {
+            "type": "boolean"
+          },
+          "ringsEnabled": {
+            "type": "boolean"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentEspProfileDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "applicationsCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentReturnCodeDto": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ReturnCodeType"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentRoleScopeTagDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentStatusType": {
+        "enum": [
+          "InProgress",
+          "Retrying",
+          "Failed",
+          "Success",
+          "Scheduled",
+          "Deleting",
+          "DeletingFailed",
+          "Deleted"
+        ],
+        "type": "string"
+      },
+      "DeploymentTemplateDto": {
+        "type": "object",
+        "properties": {
+          "deploymentTemplateId": {
+            "type": "string",
+            "nullable": true
+          },
+          "templateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDefault": {
+            "type": "boolean"
+          },
+          "osType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/OSType"
+              }
+            ]
+          },
+          "builtInUpdate": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BuiltInUpdate"
+              }
+            ]
+          },
+          "allowAvailableUninstall": {
+            "type": "boolean"
+          },
+          "removeDesktopShortcuts": {
+            "type": "boolean"
+          },
+          "appVersionsRetention": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "customVendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "customDeveloper": {
+            "type": "string",
+            "nullable": true
+          },
+          "customOwner": {
+            "type": "string",
+            "nullable": true
+          },
+          "customNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "customRequirements": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentCustomRequirementsDto"
+              }
+            ],
+            "nullable": true
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentCategoryDto"
+            },
+            "nullable": true
+          },
+          "espProfiles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentEspProfileDto"
+            },
+            "nullable": true
+          },
+          "roleScopeTags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeploymentRoleScopeTagDto"
+            },
+            "nullable": true
+          },
+          "copyForwardAssignments": {
+            "type": "boolean"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentTemplateRequest": {
+        "type": "object",
+        "properties": {
+          "connectionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "templateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "osType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/OSType"
+              }
+            ]
+          },
+          "isDefault": {
+            "type": "boolean"
+          },
+          "builtInUpdate": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BuiltInUpdate"
+              }
+            ]
+          },
+          "allowAvailableUninstall": {
+            "type": "boolean"
+          },
+          "removeDesktopShortcuts": {
+            "type": "boolean"
+          },
+          "appVersionsRetention": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "customVendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "customDeveloper": {
+            "type": "string",
+            "nullable": true
+          },
+          "customOwner": {
+            "type": "string",
+            "nullable": true
+          },
+          "customNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "copyForwardAssignments": {
+            "type": "boolean"
+          },
+          "categoryIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "espProfileIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "roleScopeTagIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "customRequirements": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/EditDeploymentCustomRequirementsRequest"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentTemplateSummaryDto": {
+        "type": "object",
+        "properties": {
+          "deploymentTemplateId": {
+            "type": "string",
+            "nullable": true
+          },
+          "templateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDefault": {
+            "type": "boolean"
+          },
+          "osType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/OSType"
+              }
+            ]
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lastModifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeploymentUserNotificationDto": {
+        "type": "object",
+        "properties": {
+          "policy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/NotificationPolicy"
+              }
+            ],
+            "nullable": true
+          },
+          "timeOutSeconds": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "timeOutUseMaxRuntime": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "focusAssistPolicy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FocusAssistPolicy"
+              }
+            ],
+            "nullable": true
+          },
+          "defer": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentDeferralPolicyDto"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetectionRuleType": {
+        "enum": [
+          "None",
+          "PMPC",
+          "Script",
+          "Manual"
+        ],
+        "type": "string"
+      },
+      "DetectionRulesDto": {
+        "type": "object",
+        "properties": {
+          "rulesType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DetectionRuleType"
+              }
+            ]
+          },
+          "productCodeRule": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/MsiDetectionRuleDto"
+              }
+            ],
+            "nullable": true
+          },
+          "fileSystemRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FileRuleDto"
+            },
+            "nullable": true
+          },
+          "registryRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegistryRuleDto"
+            },
+            "nullable": true
+          },
+          "scriptRule": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ScriptRuleDto"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditDeploymentCustomRequirementsRequest": {
+        "type": "object",
+        "properties": {
+          "disableArchitectures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApplicableArchitecture"
+            },
+            "nullable": true
+          },
+          "minimumWindowsOSVersion": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WindowsOSVersion"
+              }
+            ],
+            "nullable": true
+          },
+          "minimumNumberOfProcessors": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minimumMemoryInMB": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minimumCpuSpeedInMHz": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fileRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FileRuleDto"
+            },
+            "nullable": true
+          },
+          "registryRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegistryRuleDto"
+            },
+            "nullable": true
+          },
+          "scriptRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ScriptRuleDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditDeploymentRequest": {
+        "type": "object",
+        "properties": {
+          "connectionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreateDeploymentAssignmentRequest"
+            },
+            "nullable": true
+          },
+          "configuration": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DeploymentConfigurationRequest"
+              }
+            ],
+            "nullable": true
+          },
+          "categoryIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "espProfileIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "parentDeploymentIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FileRuleDto": {
+        "type": "object",
+        "properties": {
+          "operator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RuleOperator"
+              }
+            ]
+          },
+          "path": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileOrFolderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "check32BitOn64System": {
+            "type": "boolean"
+          },
+          "operationType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FileRuleOperationType"
+              }
+            ]
+          },
+          "comparisonValue": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FileRuleOperationType": {
+        "enum": [
+          "NotConfigured",
+          "Exists",
+          "ModifiedDate",
+          "CreatedDate",
+          "Version",
+          "SizeInMB",
+          "DoesNotExist",
+          "SizeInBytes",
+          "AppVersion",
+          "UnknownFutureValue"
+        ],
+        "type": "string"
+      },
+      "FocusAssistPolicy": {
+        "enum": [
+          "DiscardNotification",
+          "ShowNotification",
+          "ShowIfLastChance"
+        ],
+        "type": "string"
+      },
+      "GetLicenseDto": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "licenseId": {
+            "type": "string",
+            "nullable": true
+          },
+          "devicesCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "expirationDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "subscriptionLevel": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomerLicense"
+              }
+            ]
+          },
+          "type": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomerType"
+              }
+            ]
+          },
+          "isSuspended": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "inheritedFrom": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "connectionId": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromPublisherConnection": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "showCases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LicenseShowCaseDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "InstallationBehavior": {
+        "enum": [
+          "User",
+          "System",
+          "Any"
+        ],
+        "type": "string"
+      },
+      "InstallationIntent": {
+        "enum": [
+          "Unknown",
+          "UpdateOnly",
+          "Available",
+          "Required",
+          "Uninstall",
+          "AvailableWithoutEnrollment",
+          "NoAssignmentsInstall",
+          "NoAssignmentsUpdate"
+        ],
+        "type": "string"
+      },
+      "InstallerType": {
+        "enum": [
+          "EXE",
+          "MSI",
+          "MSP",
+          "PKG",
+          "DMG",
+          "PS1",
+          "BAT",
+          "CMD",
+          "VBS"
+        ],
+        "type": "string"
+      },
+      "LicenseShowCaseDto": {
+        "type": "object",
+        "properties": {
+          "showCaseId": {
+            "type": "string",
+            "nullable": true
+          },
+          "featureLicense": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomerLicense"
+              }
+            ]
+          },
+          "expiredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "featureUniqueNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LimitDTO": {
+        "type": "object",
+        "properties": {
+          "customAppsNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "customAppSizeMb": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalSizeMb": {
+            "type": "number",
+            "format": "double"
+          },
+          "publisherConnectionsNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "intuneDeploymentsNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "intuneDeploymentsWithFilesNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "macOSIntuneDeploymentsNumber": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "rateLimits": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MsiDetectionRuleDto": {
+        "type": "object",
+        "properties": {
+          "operator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RuleOperator"
+              }
+            ]
+          },
+          "productCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "productVersion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificationPolicy": {
+        "enum": [
+          "AllowDefer",
+          "AutoClose"
+        ],
+        "type": "string"
+      },
+      "OSType": {
+        "enum": [
+          "Windows",
+          "MacOS"
+        ],
+        "type": "string"
+      },
+      "PmpcApplicationDetailsDto": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "PostDeploymentNotification": {
+        "enum": [
+          "DoNotShow",
+          "AlwaysShow",
+          "ShowIfProcessClosed"
+        ],
+        "type": "string"
+      },
+      "ProductDto": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "pmpc": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PmpcApplicationDetailsDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "custom": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomApplicationDetailsDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "winget": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WingetApplicationDetailsDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "vendorName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "silentInstallArguments": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "mainFile": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "architecture": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RequirementArchitecture"
+              }
+            ],
+            "readOnly": true
+          },
+          "installerType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallerType"
+              }
+            ],
+            "readOnly": true
+          },
+          "updateVersion": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "installContext": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallationBehavior"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "conflictingProcessList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "detectionRules": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DetectionRulesDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "customRequirements": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomRequirementsDto"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "arpDisplayNameMatch": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "msiProductCode": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconURL": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconBase64": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconContentType": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "silentUninstallArguments": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "privacyUrl": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "informationUrl": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "intuneNotes": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "developer": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "owner": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductFilterRequest": {
+        "type": "object",
+        "properties": {
+          "vendorIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "architectures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RequirementArchitecture"
+            },
+            "nullable": true
+          },
+          "osType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/OSType"
+              }
+            ],
+            "nullable": true
+          },
+          "feedTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CatalogFeedType"
+            },
+            "nullable": true
+          },
+          "connectionId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "lastModifiedFromUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastModifiedToUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastUpdatedFromUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastUpdatedToUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "displayNameSearchString": {
+            "type": "string",
+            "nullable": true
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "limit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sortField": {
+            "type": "string",
+            "nullable": true
+          },
+          "ascending": {
+            "type": "boolean"
+          },
+          "includeIconData": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductFilterResponse": {
+        "type": "object",
+        "properties": {
+          "totalAmount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalVariantsAmount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductSummaryDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductSummaryDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "productId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "pmpc": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PmpcApplicationDetailsDto"
+              }
+            ],
+            "nullable": true
+          },
+          "custom": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CustomApplicationDetailsDto"
+              }
+            ],
+            "nullable": true
+          },
+          "winget": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/WingetApplicationDetailsDto"
+              }
+            ],
+            "nullable": true
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "updateId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          },
+          "iconURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "iconBase64": {
+            "type": "string",
+            "nullable": true
+          },
+          "iconContentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/UpdateState"
+              }
+            ]
+          },
+          "lastUpdated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "version": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PublicApplicationDto": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "vendorName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "updateVersion": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconURL": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconBase64": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "iconContentType": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "privacyUrl": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "informationUrl": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "developer": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "intuneNotes": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "installerType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallerType"
+              }
+            ],
+            "readOnly": true
+          },
+          "architecture": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RequirementArchitecture"
+              }
+            ],
+            "readOnly": true
+          },
+          "installContext": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InstallationBehavior"
+              }
+            ],
+            "nullable": true,
+            "readOnly": true
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistryRuleDto": {
+        "type": "object",
+        "properties": {
+          "operator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RuleOperator"
+              }
+            ]
+          },
+          "check32BitOn64System": {
+            "type": "boolean"
+          },
+          "keyPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "valueName": {
+            "type": "string",
+            "nullable": true
+          },
+          "operationType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RegistryRuleOperationType"
+              }
+            ]
+          },
+          "comparisonValue": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistryRuleOperationType": {
+        "enum": [
+          "NotConfigured",
+          "Exists",
+          "DoesNotExist",
+          "String",
+          "Integer",
+          "Version",
+          "AppVersion",
+          "UnknownFutureValue"
+        ],
+        "type": "string"
+      },
+      "RequirementArchitecture": {
+        "enum": [
+          "Unspecified",
+          "x64",
+          "x86",
+          "ARM",
+          "Universal"
+        ],
+        "type": "string"
+      },
+      "ReturnCodeType": {
+        "enum": [
+          "Success",
+          "Retry",
+          "HardReboot",
+          "SoftReboot",
+          "Failed"
+        ],
+        "type": "string"
+      },
+      "RuleOperator": {
+        "enum": [
+          "NotConfigured",
+          "Equal",
+          "NotEqual",
+          "GreaterThan",
+          "GreaterThanOrEqual",
+          "LessThan",
+          "LessThanOrEqual"
+        ],
+        "type": "string"
+      },
+      "ScriptRuleDto": {
+        "type": "object",
+        "properties": {
+          "operator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RuleOperator"
+              }
+            ]
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "runAsAccount": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "comparisonValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "enforceSignatureCheck": {
+            "type": "boolean"
+          },
+          "runAs32Bit": {
+            "type": "boolean"
+          },
+          "scriptContent": {
+            "type": "string",
+            "nullable": true
+          },
+          "operationType": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ScriptRuleOperationType"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "ScriptRuleOperationType": {
+        "enum": [
+          "NotConfigured",
+          "String",
+          "DateTime",
+          "Integer",
+          "Float",
+          "Version",
+          "Boolean"
+        ],
+        "type": "string"
+      },
+      "SetDeploymentSyncPauseRequest": {
+        "type": "object",
+        "properties": {
+          "connectionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "pause": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SqlSearchTarget": {
+        "enum": [
+          "Target32Bit",
+          "Target64Bit",
+          "TargetDefault"
+        ],
+        "type": "string"
+      },
+      "TokenExchangeResponse": {
+        "type": "object",
+        "properties": {
+          "gatewayJwt": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiresIn": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateFileType": {
+        "enum": [
+          "Unspecified",
+          "Installation",
+          "Extra",
+          "Zip",
+          "MST",
+          "AdditionalConfig"
+        ],
+        "type": "string"
+      },
+      "UpdateState": {
+        "enum": [
+          "Undefined",
+          "Uploading",
+          "Uploaded",
+          "UploadFailed",
+          "HashMismatch",
+          "Verified",
+          "VerificationFailed",
+          "Transferred",
+          "TransferFailed",
+          "Archived",
+          "ArchiveFailed",
+          "SuccessfullyCompleted"
+        ],
+        "type": "string"
+      },
+      "WindowsOSVersion": {
+        "enum": [
+          "None",
+          "V8_0",
+          "V8_1",
+          "V10_0",
+          "Windows10_1607",
+          "Windows10_1703",
+          "Windows10_1709",
+          "Windows10_1803",
+          "Windows10_1809",
+          "Windows10_1903",
+          "Windows10_1909",
+          "Windows10_2004",
+          "Windows10_20H2",
+          "Windows10_21H1",
+          "Windows10_21H2",
+          "Windows10_22H2",
+          "Windows11_21H2",
+          "Windows11_22H2",
+          "Windows11_23H2",
+          "Windows11_24H2"
+        ],
+        "type": "string"
+      },
+      "WingetApplicationDetailsDto": {
+        "type": "object",
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "description": "An access token from exchanging a personal access token at POST /v1/api/auth/token. Access tokens are valid for 60 minutes.",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "Applications",
+      "description": "Operations for your account, connections, applications, deployments, and deployment templates."
+    },
+    {
+      "name": "Authentication",
+      "description": "Operations that exchange a personal access token for an access token."
+    }
+  ]
+}
