@@ -8,4 +8,4 @@ Patch My PC (PMPC) Cloud supports deploying apps and updates to the following ap
 * [Custom Apps](custom-apps/custom-apps-overview.md)
 * [Intune Apps](intune-apps/intune-apps-overview.md)
 * [ARM](arm-support.md)
-* [macOS](macos-support/macos-support-overview.md)
+* [macOS](macos-support/overview.md)

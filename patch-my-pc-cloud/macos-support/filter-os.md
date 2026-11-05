@@ -1,11 +1,11 @@
-# Filter by OS in Cloud
+# Filter by Operating System in Patch My PC Cloud
 
 _Applies to: Patch My PC Cloud_
 
 With the addition of macOS support to Patch My PC (PMPC) Cloud, the App Catalog can now be filtered by operating system (OS) by either:
 
-* [Switching to List view](filter-by-os-in-cloud.md#switching-to-list-view)
-* [Using the OS Filter](filter-by-os-in-cloud.md#using-the-os-filter)
+* [Switching to List view](filter-os.md#switching-to-list-view)
+* [Using the OS Filter](filter-os.md#using-the-os-filter)
 
 ### Switching to List View
 
@@ -26,8 +26,6 @@ To use the **Operating System (OS)** filter in the App Catalog:
 1.  On the **App Catalog** page, click the funnel button.<br>
 
     <figure><img src="../../.gitbook/assets/image (2983).png" alt="Clicking the funnel button."><figcaption></figcaption></figure>
-
-
 2.  Click the checkbox for the OS you want to filter by (for example **macOS**), then click **Apply All Filters**.\
     <br>
 
