@@ -1,6 +1,7 @@
 ---
 description: Official product documentation for Patch My PC Home Updater
 hidden: true
+noIndex: true
 ---
 
 # Home Updater
@@ -16,4 +17,3 @@ As we are currently migrating all of the product documentation from the existing
 
 We appreciate this is not ideal and will remove the message once the transition is complete.
 {% endhint %}
-

@@ -1,5 +1,7 @@
 ---
 hidden: true
+noIndex: true
+noRobotsIndex: true
 ---
 
 # Patch My PC Publisher documentation
@@ -22,7 +24,7 @@ The configuration guides will help you setup Patch My PC Publisher (Publisher) w
 
 ## ⚙ Installation
 
-To help get you started, we provide a few different guides (**documented** or **video**) to help you install the Patch My PC Publisher.&#x20;
+To help get you started, we provide a few different guides (**documented** or **video**) to help you install the Patch My PC Publisher.
 
 Don't feel like going it alone? You can[ **schedule a setup call** ](https://patchmypc.com/schedule-setup-call)with a Patch My PC engineer to help you install correctly first-time in your environment.
 
@@ -102,7 +104,7 @@ Not everything always works in pure documentation format and for this, we have s
 
 ### 📚 [FAQs](https://patchmypc.com/frequently-asked-questions)
 
-Got questions about licensing, subscription types, or how we handle security? Don't worry we get asked those questions all the time.&#x20;
+Got questions about licensing, subscription types, or how we handle security? Don't worry we get asked those questions all the time.
 
 {% embed url="https://patchmypc.com/frequently-asked-questions" %}
 Commonly asked questions of Patch My PC
@@ -118,11 +120,11 @@ Your ride back to the patch my pc home page
 
 ### 🚘 [Roadmap](https://patchmypc.aha.io/published/3f8482c0d42338313f5d4d02408a2bce?page=1)
 
-Curious about where we are going and what we are planning to do we make all that information publicly available on our [live roadmap](https://patchmypc.aha.io/published/3f8482c0d42338313f5d4d02408a2bce?page=1).&#x20;
+Curious about where we are going and what we are planning to do we make all that information publicly available on our [live roadmap](https://patchmypc.aha.io/published/3f8482c0d42338313f5d4d02408a2bce?page=1).
 
 ### 💡 [UserVoice](https://ideas.patchmypc.com/)
 
-Is there something we are missing? Maybe a new document, a new feature, or a new app? If you head on over to our [user voice](https://ideas.patchmypc.com/) you can submit new ideas for us and make recommendations.&#x20;
+Is there something we are missing? Maybe a new document, a new feature, or a new app? If you head on over to our [user voice](https://ideas.patchmypc.com/) you can submit new ideas for us and make recommendations.
 
 {% embed url="https://ideas.patchmypc.com" %}
 Want something we don't do today? You can request it here.
@@ -141,4 +143,3 @@ Want to learn more about us? Click here to learn more about our team.
 
 If you have any feedback or comments on our docs, please email [docs@patchmypc.com](mailto:docs@patchmypc.com).
 {% endhint %}
-
