@@ -56,7 +56,7 @@ See [Get available connections](../rest-api/applications.md#get-available-connec
 
 {% tab title="C#" %}
 ```csharp
-var connections = await broker.GetAvailableConnectionsAsync();
+var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsFailure)
 {
     Console.WriteLine($"{connections.Error.Code}: {connections.Error.Message}");
@@ -64,7 +64,7 @@ if (connections.IsFailure)
 }
 
 var connection = connections.Value.First(c => c.DisplayName == "Contoso Intune");
-await broker.SetSelectedConnectionAsync(connection);
+await client.SetSelectedConnectionAsync(connection);
 ```
 
 See [GetAvailableConnectionsAsync](../sdk/customer-and-connections.md#getavailableconnectionsasync) and [SetSelectedConnectionAsync](../sdk/customer-and-connections.md#setselectedconnectionasync).
@@ -126,7 +126,7 @@ See [Create application deployment](../rest-api/applications.md#create-applicati
 ```csharp
 using pmpc.appcatbroker.client;
 
-var created = await broker.CreateDeploymentAsync(productId, new CreateDeploymentRequest
+var created = await client.CreateDeploymentAsync(productId, new CreateDeploymentRequest
 {
     OsType = OSType.Windows,
     Assignments = new List<CreateDeploymentAssignmentRequest>
@@ -199,7 +199,7 @@ See [Get application deployment details](../rest-api/applications.md#get-applica
 
 {% tab title="C#" %}
 ```csharp
-var details = await broker.GetDeploymentDetailsAsync(productId, created.Value.DeploymentId);
+var details = await client.GetDeploymentDetailsAsync(productId, created.Value.DeploymentId);
 if (details.IsSuccess)
 {
     Console.WriteLine($"Status: {details.Value.Status}");

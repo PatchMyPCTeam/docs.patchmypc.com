@@ -97,20 +97,20 @@ var services = new ServiceCollection();
 services.AddSingleton<IConfiguration>(configuration);
 services.AddAppCatBrokerSdk();
 
-var broker = services.BuildServiceProvider().GetRequiredService<IAppCatBroker>();
+var client = services.BuildServiceProvider().GetRequiredService<IAppCatBroker>();
 
 var pat = Environment.GetEnvironmentVariable("PMPC_PAT")
     ?? throw new InvalidOperationException("Set PMPC_PAT to a personal access token.");
 
 // Exchanges the PAT for an access token for the token's company.
-var session = await broker.AuthenticateWithPersonalAccessTokenAsync(pat);
+var session = await client.AuthenticateWithPersonalAccessTokenAsync(pat);
 if (session.IsFailure)
 {
     Console.WriteLine($"{session.Error.Code}: {session.Error.Message}");
     return;
 }
 
-var info = await broker.GetCustomerInfoAsync();
+var info = await client.GetCustomerInfoAsync();
 if (info.IsSuccess)
 {
     Console.WriteLine(info.Value.CustomerName);

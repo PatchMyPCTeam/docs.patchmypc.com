@@ -26,7 +26,7 @@ Methods that return data return `Result<T>`, where `T` is the data type. Methods
 The usual pattern is to check `IsFailure` first and return early:
 
 ```csharp
-var result = await broker.GetApplicationDetailsAsync(productId);
+var result = await client.GetApplicationDetailsAsync(productId);
 if (result.IsFailure)
 {
     Console.WriteLine($"{result.Error.Code}: {result.Error.Message}");
@@ -50,7 +50,7 @@ The result types also provide helpers for composing calls without nested `if` st
 | `ToResult()` and `ToResult(value)`          | Converts between `Result` and `Result<T>`.                                                        |
 
 ```csharp
-var message = (await broker.GetCustomerInfoAsync()).Match(
+var message = (await client.GetCustomerInfoAsync()).Match(
     onSuccess: info => $"Connected to {info.CustomerName}",
     onFailure: error => $"Couldn't read account information: {error.Message}");
 ```
@@ -133,7 +133,7 @@ static async Task<Result<T>> WithRetryAsync<T>(Func<Task<Result<T>>> call, int m
     }
 }
 
-var search = await WithRetryAsync(() => broker.SearchApplicationsAsync(new ProductFilterRequest()));
+var search = await WithRetryAsync(() => client.SearchApplicationsAsync(new ProductFilterRequest()));
 ```
 
 ## Handle a feature that isn't enabled
@@ -141,7 +141,7 @@ var search = await WithRetryAsync(() => broker.SearchApplicationsAsync(new Produ
 Some operations need a feature enabled for your account. Until it is, they fail with `FEATURE_NOT_ENABLED`. Report it differently from a permission problem, because the fix is different:
 
 ```csharp
-var templates = await broker.GetDeploymentTemplatesAsync();
+var templates = await client.GetDeploymentTemplatesAsync();
 if (templates.IsFailure)
 {
     var message = templates.Error.Code switch

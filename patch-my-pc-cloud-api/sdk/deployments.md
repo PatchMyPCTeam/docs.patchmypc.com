@@ -141,7 +141,7 @@ Task<Result<IReadOnlyList<DeploymentDto>>> GetDeploymentsAsync(
 **Returns:** a list of [`DeploymentDto`](deployments.md#deployment). The list leaves out assignments, categories, profiles, and dependencies; use [`GetDeploymentDetailsAsync`](deployments.md#getdeploymentdetailsasync) for those.
 
 ```csharp
-var deployments = await broker.GetDeploymentsAsync(productId);
+var deployments = await client.GetDeploymentsAsync(productId);
 if (deployments.IsFailure)
 {
     Console.WriteLine($"Couldn't list deployments: {deployments.Error.Code} {deployments.Error.Message}");
@@ -176,7 +176,7 @@ Task<Result<DeploymentDetailDto>> GetDeploymentDetailsAsync(
 **Returns:** a [`DeploymentDetailDto`](deployments.md#deployment-details). If the deployment doesn't exist, the error code is `NOT_FOUND`.
 
 ```csharp
-var details = await broker.GetDeploymentDetailsAsync(productId, deploymentId);
+var details = await client.GetDeploymentDetailsAsync(productId, deploymentId);
 if (details.IsFailure)
 {
     Console.WriteLine($"Couldn't read the deployment: {details.Error.Code} {details.Error.Message}");
@@ -212,7 +212,7 @@ Task<Result<IReadOnlyList<DeploymentDependencyDto>>> GetDeploymentDependencyCand
 The list covers every deployment on the selected connection, not only those related to `productId`; the application ID isn't used to filter the results.
 
 ```csharp
-var candidates = await broker.GetDeploymentDependencyCandidatesAsync(productId);
+var candidates = await client.GetDeploymentDependencyCandidatesAsync(productId);
 if (candidates.IsFailure)
 {
     Console.WriteLine($"Couldn't list candidates: {candidates.Error.Code} {candidates.Error.Message}");
@@ -249,7 +249,7 @@ Task<Result<DeploymentDto>> CreateDeploymentAsync(
 ```csharp
 using pmpc.appcatbroker.client;
 
-var created = await broker.CreateDeploymentAsync(productId, new CreateDeploymentRequest
+var created = await client.CreateDeploymentAsync(productId, new CreateDeploymentRequest
 {
     OsType = OSType.Windows,
     Assignments = new List<CreateDeploymentAssignmentRequest>
@@ -301,7 +301,7 @@ Task<Result<DeploymentDto>> EditDeploymentAsync(
 Deployments that use deployment rings can't be edited with this method. When you set `Assignments`, the list replaces every existing assignment, so include the ones you want to keep.
 
 ```csharp
-var edited = await broker.EditDeploymentAsync(productId, deploymentId, new EditDeploymentRequest
+var edited = await client.EditDeploymentAsync(productId, deploymentId, new EditDeploymentRequest
 {
     Name = "{new-deployment-name}",
     CategoryIds = new List<string>()
@@ -340,7 +340,7 @@ Task<Result> DeleteDeploymentAsync(
 You can delete a deployment only when it isn't in progress or already being deleted. Check for `delete` in the deployment's `Actions` first.
 
 ```csharp
-var delete = await broker.DeleteDeploymentAsync(productId, deploymentId);
+var delete = await client.DeleteDeploymentAsync(productId, deploymentId);
 if (delete.IsFailure)
 {
     Console.WriteLine($"Delete failed: {delete.Error.Code} {delete.Error.Message}");
@@ -372,7 +372,7 @@ Task<Result> RedeployDeploymentAsync(
 Use this method to troubleshoot a deployment that's in a bad state in Intune.
 
 ```csharp
-var redeploy = await broker.RedeployDeploymentAsync(productId, deploymentId);
+var redeploy = await client.RedeployDeploymentAsync(productId, deploymentId);
 if (redeploy.IsFailure)
 {
     Console.WriteLine($"Redeploy failed: {redeploy.Error.Code} {redeploy.Error.Message}");
@@ -401,7 +401,7 @@ Task<Result> SyncDeploymentAsync(
 **Returns:** a `Result` that indicates success or failure.
 
 ```csharp
-var sync = await broker.SyncDeploymentAsync(productId, deploymentId);
+var sync = await client.SyncDeploymentAsync(productId, deploymentId);
 if (sync.IsFailure)
 {
     Console.WriteLine($"Sync failed: {sync.Error.Code} {sync.Error.Message}");
@@ -434,7 +434,7 @@ Task<Result> SetDeploymentSyncPauseStatusAsync(
 The paused state appears as `SyncOnHold` on the [deployment](deployments.md#deployment). Resuming doesn't push a new version; to update right away, call [`SyncDeploymentAsync`](deployments.md#syncdeploymentasync).
 
 ```csharp
-var pause = await broker.SetDeploymentSyncPauseStatusAsync(productId, deploymentId, pause: true);
+var pause = await client.SetDeploymentSyncPauseStatusAsync(productId, deploymentId, pause: true);
 if (pause.IsFailure)
 {
     Console.WriteLine($"Couldn't pause sync: {pause.Error.Code} {pause.Error.Message}");

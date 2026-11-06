@@ -121,7 +121,7 @@ var metadata = new ApplicationMetadata
 var progress = new Progress<UploadProgress>(p =>
     Console.WriteLine($"{p.Stage}: {p.FileName} {p.BytesUploadedOverall}/{p.TotalBytesOverall} bytes"));
 
-var created = await broker.CreateApplicationAsync(metadata, progress: progress);
+var created = await client.CreateApplicationAsync(metadata, progress: progress);
 if (created.IsFailure)
 {
     Console.WriteLine($"{created.Error.Code}: {created.Error.Message}");
@@ -177,7 +177,7 @@ See [Get application details](../rest-api/applications.md#get-application-detail
 
 {% tab title="C#" %}
 ```csharp
-var details = await broker.GetApplicationDetailsAsync(created.Value.ProductId);
+var details = await client.GetApplicationDetailsAsync(created.Value.ProductId);
 ```
 
 See [GetApplicationDetailsAsync](../sdk/applications.md#getapplicationdetailsasync).

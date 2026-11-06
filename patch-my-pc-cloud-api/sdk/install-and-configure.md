@@ -95,7 +95,7 @@ Resolve `IAppCatBroker` from a dependency injection scope. The SDK registers it 
 
 ```csharp
 using var scope = host.Services.CreateScope();
-var broker = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
+var client = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
 ```
 
 In an ASP.NET Core application or a worker service, inject `IAppCatBroker` into your own scoped services instead.
@@ -123,7 +123,7 @@ builder.Services.AddAppCatBrokerSdk();
 using var host = builder.Build();
 
 using var scope = host.Services.CreateScope();
-var broker = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
+var client = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
 
 // Authenticate with a personal access token. The session uses the token's company.
 var pat = Environment.GetEnvironmentVariable("PMPC_PAT");
@@ -133,7 +133,7 @@ if (string.IsNullOrWhiteSpace(pat))
     return 1;
 }
 
-var session = await broker.AuthenticateWithPersonalAccessTokenAsync(pat);
+var session = await client.AuthenticateWithPersonalAccessTokenAsync(pat);
 if (session.IsFailure)
 {
     Console.WriteLine($"Authentication failed: {session.Error.Code} {session.Error.Message}");
@@ -144,22 +144,22 @@ var company = session.Value;
 Console.WriteLine($"Working with {company.CompanyName}");
 
 // Show account information and limits.
-var customerInfo = await broker.GetCustomerInfoAsync();
+var customerInfo = await client.GetCustomerInfoAsync();
 if (customerInfo.IsSuccess)
 {
     Console.WriteLine($"Account: {customerInfo.Value.CustomerName}");
 }
 
 // Select a connection for deployment and catalog calls.
-var connections = await broker.GetAvailableConnectionsAsync();
+var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsSuccess && connections.Value.Count > 0)
 {
-    await broker.SetSelectedConnectionAsync(connections.Value[0]);
+    await client.SetSelectedConnectionAsync(connections.Value[0]);
     Console.WriteLine($"Connection: {connections.Value[0].DisplayName}");
 }
 
 // List the first page of your applications.
-var search = await broker.SearchApplicationsAsync(new ProductFilterRequest
+var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
     Skip = 0,
     Limit = 25,
@@ -177,7 +177,7 @@ foreach (var product in search.Value.Products)
     Console.WriteLine($"  {product.DisplayName} {product.Version} ({product.ProductId})");
 }
 
-await broker.ClearAuthenticationAsync();
+await client.ClearAuthenticationAsync();
 return 0;
 ```
 {% endcode %}

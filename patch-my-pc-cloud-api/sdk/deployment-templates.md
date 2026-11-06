@@ -80,7 +80,7 @@ Task<Result<IReadOnlyList<DeploymentTemplateSummaryDto>>> GetDeploymentTemplates
 **Returns:** a list of [`DeploymentTemplateSummaryDto`](deployment-templates.md#deployment-template-summary).
 
 ```csharp
-var templates = await broker.GetDeploymentTemplatesAsync();
+var templates = await client.GetDeploymentTemplatesAsync();
 if (templates.IsFailure)
 {
     Console.WriteLine($"Couldn't list templates: {templates.Error.Code} {templates.Error.Message}");
@@ -114,7 +114,7 @@ Task<Result<DeploymentTemplateDto>> GetDeploymentTemplateAsync(
 **Returns:** a [`DeploymentTemplateDto`](deployment-templates.md#deployment-template). If the template doesn't exist, the error code is `NOT_FOUND`.
 
 ```csharp
-var template = await broker.GetDeploymentTemplateAsync(templateId);
+var template = await client.GetDeploymentTemplateAsync(templateId);
 if (template.IsFailure)
 {
     Console.WriteLine($"Couldn't read the template: {template.Error.Code} {template.Error.Message}");
@@ -146,7 +146,7 @@ Task<Result<DeploymentTemplateDto>> CreateDeploymentTemplateAsync(
 ```csharp
 using pmpc.appcatbroker.client;
 
-var created = await broker.CreateDeploymentTemplateAsync(new DeploymentTemplateRequest
+var created = await client.CreateDeploymentTemplateAsync(new DeploymentTemplateRequest
 {
     TemplateName = "{template-name}",
     OsType = OSType.Windows,
@@ -192,7 +192,7 @@ Task<Result<DeploymentTemplateDto>> UpdateDeploymentTemplateAsync(
 Every setting is stored exactly as you send it, so a property you leave out is cleared or reset. Read the template first with [`GetDeploymentTemplateAsync`](deployment-templates.md#getdeploymenttemplateasync) and send back the settings you want to keep.
 
 ```csharp
-var current = await broker.GetDeploymentTemplateAsync(templateId);
+var current = await client.GetDeploymentTemplateAsync(templateId);
 if (current.IsFailure)
 {
     Console.WriteLine($"Couldn't read the template: {current.Error.Code} {current.Error.Message}");
@@ -200,7 +200,7 @@ if (current.IsFailure)
 }
 
 var t = current.Value;
-var updated = await broker.UpdateDeploymentTemplateAsync(templateId, new DeploymentTemplateRequest
+var updated = await client.UpdateDeploymentTemplateAsync(templateId, new DeploymentTemplateRequest
 {
     TemplateName = t.TemplateName,
     OsType = t.OsType,
@@ -249,7 +249,7 @@ Task<Result> DeleteDeploymentTemplateAsync(
 You can't delete the connection's default template; make another template the default first. Deleting a template doesn't change deployments that were created from it.
 
 ```csharp
-var delete = await broker.DeleteDeploymentTemplateAsync(templateId);
+var delete = await client.DeleteDeploymentTemplateAsync(templateId);
 if (delete.IsFailure)
 {
     Console.WriteLine($"Delete failed: {delete.Error.Code} {delete.Error.Message}");

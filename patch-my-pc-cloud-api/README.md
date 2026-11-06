@@ -9,7 +9,7 @@ noRobotsIndex: true
 
 # Patch My PC Cloud Customer API
 
-The Patch My PC Cloud Customer API (formerly AppCatBroker) gives your own applications, scripts, and pipelines programmatic access to your Patch My PC cloud account. With the Cloud Customer API you can:
+The Patch My PC Cloud Customer API gives your own applications, scripts, and pipelines programmatic access to your Patch My PC cloud account. With the Cloud Customer API you can:
 
 * **Search the Patch My PC catalog** and your own custom applications, and read application details.
 * **Create and update custom applications**, including uploading the installer files.

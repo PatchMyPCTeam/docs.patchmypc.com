@@ -121,7 +121,7 @@ Check the status code first. For a failure, read `title` from the problem detail
 ```csharp
 using pmpc.appcatbroker.sdk.Constants;
 
-var result = await broker.GetCustomerInfoAsync();
+var result = await client.GetCustomerInfoAsync();
 if (result.IsFailure)
 {
     switch (result.Error.Code)

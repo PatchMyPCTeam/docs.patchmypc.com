@@ -109,7 +109,7 @@ using pmpc.appcatbroker.sdk.Constants;
 
 for (var attempt = 1; attempt <= 5; attempt++)
 {
-    var result = await broker.GetCustomerInfoAsync();
+    var result = await client.GetCustomerInfoAsync();
     if (result.IsSuccess || result.Error.Code != BrokerErrorCodes.RateLimited)
     {
         break;

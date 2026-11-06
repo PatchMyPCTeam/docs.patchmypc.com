@@ -59,7 +59,7 @@ Task<Result<CustomerInfoDto>> GetCustomerInfoAsync(CancellationToken cancellatio
 The personal access token (PAT) needs the `appcatbroker:customer:read` scope.
 
 ```csharp
-var info = await broker.GetCustomerInfoAsync();
+var info = await client.GetCustomerInfoAsync();
 if (info.IsFailure)
 {
     Console.WriteLine($"Couldn't read account information: {info.Error.Message}");
@@ -93,7 +93,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 A PAT needs the `appcatbroker:apps:read` scope.
 
 ```csharp
-var connections = await broker.GetAvailableConnectionsAsync();
+var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsFailure)
 {
     Console.WriteLine($"Couldn't list connections: {connections.Error.Code} {connections.Error.Message}");
@@ -132,7 +132,7 @@ if (connection is null)
     return;
 }
 
-var select = await broker.SetSelectedConnectionAsync(connection);
+var select = await client.SetSelectedConnectionAsync(connection);
 if (select.IsFailure)
 {
     Console.WriteLine($"Couldn't select the connection: {select.Error.Message}");
@@ -155,7 +155,7 @@ This method has no parameters.
 **Returns:** the selected [`ConnectionDto`](customer-and-connections.md#connection), or `null` if no connection is selected. Unlike most methods, it returns the value directly rather than a result object.
 
 ```csharp
-var current = broker.GetSelectedConnection();
+var current = client.GetSelectedConnection();
 Console.WriteLine(current is null
     ? "No connection selected."
     : $"Using connection {current.DisplayName} ({current.ConnectionId})");

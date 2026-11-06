@@ -52,7 +52,7 @@ Returns the current customer account details and limits.
 
 ## Notes
 
-Works under either authentication mode. Under a personal access token (PAT), the token must carry the appcatbroker:customer:read scope; without it the call is refused, which is the scope doing its job rather than a fault.
+Works under either authentication mode. Under a personal access token (PAT), the token must carry the `appcatbroker:customer:read` scope; without it the call is refused, which is the scope doing its job rather than a fault.
 
 ## Related links
 

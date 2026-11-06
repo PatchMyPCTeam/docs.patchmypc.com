@@ -73,7 +73,7 @@ Set your company's region in configuration, for example the environment variable
 ```csharp
 var pat = Environment.GetEnvironmentVariable("PMPC_PAT");
 
-var session = await broker.AuthenticateWithPersonalAccessTokenAsync(pat!);
+var session = await client.AuthenticateWithPersonalAccessTokenAsync(pat!);
 if (session.IsFailure)
 {
     // For example PAT_NOT_ENTITLED, PAT_EXCHANGE_THROTTLED, or AUTH_ERROR.
@@ -117,7 +117,7 @@ See [Get customer info](../rest-api/applications.md#get-customer-info).
 
 {% tab title="C#" %}
 ```csharp
-var info = await broker.GetCustomerInfoAsync();
+var info = await client.GetCustomerInfoAsync();
 if (info.IsFailure)
 {
     Console.WriteLine($"{info.Error.Code}: {info.Error.Message}");

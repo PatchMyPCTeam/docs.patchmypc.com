@@ -63,7 +63,7 @@ The usual pattern is to create a PAT once in the Patch My PC portal, store it in
 var token = Environment.GetEnvironmentVariable("PMPC_PAT")
     ?? throw new InvalidOperationException("Set PMPC_PAT to a personal access token.");
 
-var session = await broker.AuthenticateWithPersonalAccessTokenAsync(token);
+var session = await client.AuthenticateWithPersonalAccessTokenAsync(token);
 if (session.IsFailure)
 {
     Console.WriteLine($"Authentication failed: {session.Error.Code} {session.Error.Message}");
@@ -88,7 +88,7 @@ This method has no parameters.
 **Returns:** the [`CompanyInfo`](authentication.md#company-model) of the token's company, or `null` if you haven't authenticated yet. Unlike the other methods, it returns the value directly rather than a result object.
 
 ```csharp
-var current = broker.GetSelectedCompany();
+var current = client.GetSelectedCompany();
 Console.WriteLine(current is null
     ? "Not authenticated."
     : $"Working with {current.CompanyName}");
@@ -111,7 +111,7 @@ This method has no parameters.
 After this call, methods that need a company fail until you authenticate again.
 
 ```csharp
-var signOut = await broker.ClearAuthenticationAsync();
+var signOut = await client.ClearAuthenticationAsync();
 if (signOut.IsFailure)
 {
     Console.WriteLine($"Sign-out failed: {signOut.Error.Message}");
@@ -135,7 +135,7 @@ Task<Result<bool>> IsServiceHealthyAsync(CancellationToken cancellationToken = d
 **Returns:** `true` if the service responded as healthy; otherwise `false`. A failed health check, or a call made before you authenticate, returns `false` rather than a failed result, so you only need to check `Value`.
 
 ```csharp
-var health = await broker.IsServiceHealthyAsync();
+var health = await client.IsServiceHealthyAsync();
 if (health.IsSuccess && health.Value)
 {
     Console.WriteLine("The Cloud Customer API is available.");

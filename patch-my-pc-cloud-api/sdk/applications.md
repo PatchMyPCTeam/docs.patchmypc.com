@@ -188,7 +188,7 @@ Task<Result<ProductFilterResponse>> SearchApplicationsAsync(
 **Returns:** a [`ProductFilterResponse`](applications.md#search-results) with one page of results.
 
 ```csharp
-var search = await broker.SearchApplicationsAsync(new ProductFilterRequest
+var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
     DisplayNameSearchString = "{search-text}",
     Limit = 25
@@ -227,7 +227,7 @@ Task<Result<ProductDto>> GetApplicationDetailsAsync(
 **Returns:** a [`ProductDto`](applications.md#application-details). If the application doesn't exist, the error code is `NOT_FOUND`. The details don't include the file list; use [`GetApplicationFilesAsync`](applications.md#getapplicationfilesasync) for that.
 
 ```csharp
-var details = await broker.GetApplicationDetailsAsync(productId);
+var details = await client.GetApplicationDetailsAsync(productId);
 if (details.IsFailure)
 {
     Console.WriteLine($"Couldn't read the application: {details.Error.Message}");
@@ -283,7 +283,7 @@ var metadata = new ApplicationMetadata
 var progress = new Progress<UploadProgress>(p =>
     Console.WriteLine($"{p.Stage}: {p.BytesUploadedOverall}/{p.TotalBytesOverall} bytes"));
 
-var created = await broker.CreateApplicationAsync(metadata, progress: progress);
+var created = await client.CreateApplicationAsync(metadata, progress: progress);
 if (created.IsFailure)
 {
     Console.WriteLine($"Create failed: {created.Error.Code} {created.Error.Message}");
@@ -319,7 +319,7 @@ Task<Result<ApplicationData>> UpdateApplicationAsync(
 To correct the current version without publishing a new one, use [`EditApplicationAsync`](applications.md#editapplicationasync) instead.
 
 ```csharp
-var update = await broker.UpdateApplicationAsync(new ApplicationUpdateMetadata
+var update = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
 {
     ProductId = product.ProductId,
     UpdateId = product.UpdateId,
@@ -367,7 +367,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 Use this method to fix a display name, change an owner, replace an icon, or amend detection rules. The SDK reads the application's current details and files, applies your changes, uploads only files that are new or changed, and submits the result, so you only set the properties you want to change.
 
 ```csharp
-var edit = await broker.EditApplicationAsync(new ApplicationEditMetadata
+var edit = await client.EditApplicationAsync(new ApplicationEditMetadata
 {
     ProductId = productId,
     DisplayName = "{new-display-name}",
@@ -417,7 +417,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 `EditApplicationAsync` reads the file list for you, so you don't need this method to edit an application.
 
 ```csharp
-var files = await broker.GetApplicationFilesAsync(productId);
+var files = await client.GetApplicationFilesAsync(productId);
 if (files.IsFailure)
 {
     Console.WriteLine($"Couldn't list files: {files.Error.Code} {files.Error.Message}");
@@ -456,7 +456,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 A public catalog search needs an Intune connection. Set `ConnectionId` or select a connection first; otherwise the method fails with the message "Either supply a connectionId or call SetSelectedConnectionAsync first." For details, see [Customer information and connections](customer-and-connections.md).
 
 ```csharp
-var search = await broker.SearchPublicApplicationsAsync(new ProductFilterRequest
+var search = await client.SearchPublicApplicationsAsync(new ProductFilterRequest
 {
     DisplayNameSearchString = "{search-text}",
     OsType = OSType.Windows
@@ -507,7 +507,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 {% endhint %}
 
 ```csharp
-var details = await broker.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
+var details = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
 if (details.IsFailure)
 {
     Console.WriteLine($"Couldn't read the application: {details.Error.Code} {details.Error.Message}");

@@ -74,7 +74,7 @@ See [Search applications](../rest-api/applications.md#search-applications).
 ```csharp
 using pmpc.appcatbroker.client;
 
-var search = await broker.SearchApplicationsAsync(new ProductFilterRequest
+var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
     DisplayNameSearchString = "Contoso",
     Skip = 0,
@@ -129,7 +129,7 @@ See [Get application details](../rest-api/applications.md#get-application-detail
 
 {% tab title="C#" %}
 ```csharp
-var details = await broker.GetApplicationDetailsAsync(productId);
+var details = await client.GetApplicationDetailsAsync(productId);
 if (details.IsSuccess)
 {
     Console.WriteLine($"{details.Value.DisplayName} {details.Value.UpdateVersion} ({details.Value.MainFile})");
@@ -195,16 +195,16 @@ Select a connection once. The SDK uses the selected connection when you don't se
 
 {% code title="Program.cs" %}
 ```csharp
-var connections = await broker.GetAvailableConnectionsAsync();
+var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsFailure)
 {
     Console.WriteLine($"{connections.Error.Code}: {connections.Error.Message}");
     return;
 }
 
-await broker.SetSelectedConnectionAsync(connections.Value[0]);
+await client.SetSelectedConnectionAsync(connections.Value[0]);
 
-var results = await broker.SearchPublicApplicationsAsync(new ProductFilterRequest
+var results = await client.SearchPublicApplicationsAsync(new ProductFilterRequest
 {
     DisplayNameSearchString = "7-Zip",
     OsType = OSType.Windows,
@@ -249,7 +249,7 @@ See [Get public application details](../rest-api/applications.md#get-public-appl
 
 {% tab title="C#" %}
 ```csharp
-var app = await broker.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
+var app = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
 ```
 
 Passing `null` for `connectionId` uses the selected connection.

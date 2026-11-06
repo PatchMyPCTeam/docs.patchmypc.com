@@ -109,7 +109,7 @@ See [Exchange a personal access token for an access token](rest-api/authenticati
 ```csharp
 var pat = Environment.GetEnvironmentVariable("PMPC_PAT");
 
-var session = await broker.AuthenticateWithPersonalAccessTokenAsync(pat!);
+var session = await client.AuthenticateWithPersonalAccessTokenAsync(pat!);
 if (session.IsFailure)
 {
     // For example PAT_NOT_ENTITLED, PAT_EXCHANGE_THROTTLED, or AUTH_ERROR.
@@ -118,7 +118,7 @@ if (session.IsFailure)
 }
 
 // The session now works with the token's company.
-var info = await broker.GetCustomerInfoAsync();
+var info = await client.GetCustomerInfoAsync();
 ```
 {% endcode %}
 

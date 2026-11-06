@@ -60,7 +60,7 @@ Task<Result<ProductFilterResponse>> SearchCustomApplicationsAsync(
 **Returns:** a [`ProductFilterResponse`](applications.md#search-results) with one page of results.
 
 ```csharp
-var search = await broker.SearchCustomApplicationsAsync(new ProductFilterRequest
+var search = await client.SearchCustomApplicationsAsync(new ProductFilterRequest
 {
     DisplayNameSearchString = "{search-text}",
     Skip = 0,
@@ -99,7 +99,7 @@ Task<Result<CustomApplicationDto>> GetCustomApplicationDetailsAsync(
 **Returns:** a [`CustomApplicationDto`](custom-applications.md#custom-application-details). If the application doesn't exist, the error code is `NOT_FOUND`. The details don't include the file list; use [`GetApplicationFilesAsync`](applications.md#getapplicationfilesasync) for that.
 
 ```csharp
-var details = await broker.GetCustomApplicationDetailsAsync(productId);
+var details = await client.GetCustomApplicationDetailsAsync(productId);
 if (details.IsFailure)
 {
     Console.WriteLine($"Couldn't read the application: {details.Error.Code} {details.Error.Message}");
@@ -140,7 +140,7 @@ Each new application counts against your custom application limit. If you've rea
 using pmpc.appcatbroker.sdk.Models;
 using static pmpc.common.Enums;
 
-var created = await broker.CreateCustomApplicationAsync(
+var created = await client.CreateCustomApplicationAsync(
     new ApplicationMetadata
     {
         FolderPath = @"{path-to-folder}",
@@ -188,7 +188,7 @@ Task<Result<ApplicationData>> UpdateCustomApplicationAsync(
 **Returns:** an [`ApplicationData`](applications.md#upload-result-and-progress) with the new version's `UpdateId`.
 
 ```csharp
-var update = await broker.UpdateCustomApplicationAsync(new ApplicationUpdateMetadata
+var update = await client.UpdateCustomApplicationAsync(new ApplicationUpdateMetadata
 {
     ProductId = product.ProductId,
     UpdateId = product.UpdateId,
@@ -232,7 +232,7 @@ Task<Result<ApplicationData>> EditCustomApplicationAsync(
 The SDK reads the application's current details and files, applies your changes, uploads only files that are new or changed, and submits the result. To clear the conflicting processes, set `ConflictingProcesses` to an empty list.
 
 ```csharp
-var edit = await broker.EditCustomApplicationAsync(new ApplicationEditMetadata
+var edit = await client.EditCustomApplicationAsync(new ApplicationEditMetadata
 {
     ProductId = productId,
     Description = "{new-description}",
@@ -270,7 +270,7 @@ Task<Result> DeleteApplicationAsync(
 Deleting an application frees a slot against your custom application limit. You can delete only your own custom applications; public catalog applications can't be deleted. The delete is rejected while the application's latest version is in a state that isn't safe to remove, for example while it's still being processed. Deleting can't be undone.
 
 ```csharp
-var delete = await broker.DeleteApplicationAsync(productId);
+var delete = await client.DeleteApplicationAsync(productId);
 if (delete.IsFailure)
 {
     Console.WriteLine($"Delete failed: {delete.Error.Code} {delete.Error.Message}");
@@ -302,7 +302,7 @@ Task<Result> DeleteCustomApplicationAsync(
 This method behaves the same as [`DeleteApplicationAsync`](custom-applications.md#deleteapplicationasync): it frees a slot, it can't delete public catalog applications, and it's rejected while the latest version isn't safe to remove.
 
 ```csharp
-var delete = await broker.DeleteCustomApplicationAsync(productId);
+var delete = await client.DeleteCustomApplicationAsync(productId);
 if (delete.IsFailure)
 {
     Console.WriteLine($"Delete failed: {delete.Error.Code} {delete.Error.Message}");

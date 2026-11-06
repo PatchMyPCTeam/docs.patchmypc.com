@@ -47,19 +47,19 @@ The SDK authenticates with a personal access token (PAT), so it needs no user at
     using var host = builder.Build();
 
     using var scope = host.Services.CreateScope();
-    var broker = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
+    var client = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
 
     var pat = Environment.GetEnvironmentVariable("PMPC_PAT")
         ?? throw new InvalidOperationException("Set PMPC_PAT to a personal access token.");
 
-    var session = await broker.AuthenticateWithPersonalAccessTokenAsync(pat);
+    var session = await client.AuthenticateWithPersonalAccessTokenAsync(pat);
     if (session.IsFailure)
     {
         Console.WriteLine($"Authentication failed: {session.Error.Code} {session.Error.Message}");
         return;
     }
 
-    var search = await broker.SearchApplicationsAsync(new ProductFilterRequest { DisplayNameSearchString = "Contoso" });
+    var search = await client.SearchApplicationsAsync(new ProductFilterRequest { DisplayNameSearchString = "Contoso" });
     if (search.IsSuccess)
     {
         foreach (var product in search.Value.Products)

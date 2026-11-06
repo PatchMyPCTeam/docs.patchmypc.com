@@ -47,7 +47,7 @@ See [Search applications](../rest-api/applications.md#search-applications).
 
 {% tab title="C#" %}
 ```csharp
-var search = await broker.SearchApplicationsAsync(new ProductFilterRequest
+var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
     DisplayNameSearchString = "Contoso Agent"
 });
@@ -122,7 +122,7 @@ See [Create update draft](../rest-api/applications.md#create-update-draft) and [
 {% tab title="C#" %}
 {% code title="Program.cs" %}
 ```csharp
-var updated = await broker.UpdateApplicationAsync(new ApplicationUpdateMetadata
+var updated = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
 {
     ProductId = current.ProductId,
     UpdateId = current.UpdateId,
@@ -184,7 +184,7 @@ A PAT needs the `appcatbroker:apps:deploy` scope. See [Sync application deployme
 
 {% tab title="C#" %}
 ```csharp
-var sync = await broker.SyncDeploymentAsync(current.ProductId, "{deployment-id}");
+var sync = await client.SyncDeploymentAsync(current.ProductId, "{deployment-id}");
 if (sync.IsFailure)
 {
     Console.WriteLine($"{sync.Error.Code}: {sync.Error.Message}");
