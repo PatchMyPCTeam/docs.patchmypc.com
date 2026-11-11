@@ -10,6 +10,53 @@ Details the production release history for preview versions of Patch My PC (PMPC
 You can find the Preview release notes below, and you can also learn more about the Preview channel here: [Publisher Preview Channel](https://patchmypc.com/preview-channel).
 {% endhint %}
 
+{% updates format="full" %}
+{% update date="2026-11-11" tags="fixes,new-features-improvements" %}
+## 3.26.11013.0
+
+### Improvements <a href="#h-improvements" id="h-improvements"></a>
+
+* Adds access to wsyncmgr.log in remote console sessions.
+* Reuses cached Intune sign-in tokens to reduce repeated authentication requests during tenant syncs.
+* Improves accessibility, keyboard navigation, and readability across the Publisher.
+* Consolidates product configuration menus.
+
+### Fixes <a href="#h-fixes" id="h-fixes"></a>
+
+* Fixes next-run calculations for Monthly and Custom schedules, including the Last weekday.
+* Prevents Publisher from waiting indefinitely for feature checks behind TLS-inspecting proxies.
+* Restores support for UNC Additional Content paths when copying pre-install and post-install scripts during sync.
+* Refreshes schedule information in remote console sessions without restarting Publisher.
+* Refreshes settings-save status in remote console sessions.
+* Identifies products managed through Patch My PC Cloud for coexistence indicators and overlapping-deployment warnings.
+* Expands folders containing the current console-folder selection after refresh.
+* Fixes content-copy errors when users with Publisher Intune permissions apply settings.
+* Preserves app selections from both administrators when separate sessions merge settings.
+* Updates published Intune application descriptions during metadata sync to reflect changes made in Publisher.
+* Preserves the default language when clearing the conflicting-process language filter.
+* Clarifies custom application property validation messages, including missing icon files, before saving.
+* Fixes settings saves rejecting unchanged Intune or SMTP OAuth secrets because saved sign-in address formats differ.
+* Revises published WSUS EXE updates when installer return codes no longer match the expected configuration.
+* Saves custom installer return codes in the Configuration Wizard only when they differ from defaults.
+* Uses catalog-defined installer return codes by default for WSUS, Configuration Manager, and Intune publishing.
+* Fixes Configuration Manager content-folder renaming for paths ending in a backslash.
+* Renames existing Configuration Manager content folders before writing replacement content when enabled, avoiding access-denied errors during in-place updates.
+* Limits concurrent Intune report requests during background reporting.
+* Allows on-demand App Manager requests to proceed during background Intune reporting.
+* Defers settings backups delayed by the frequency limit so recent settings changes reach a later backup.
+* Preserves existing SMS Provider connection settings when configuration is canceled.
+* Hides WSUS and Configuration Manager schedule targets when their publishing options are disabled.
+* Requires priority-only schedules to meet every configured priority threshold.
+* Preserves the disabled state of the install-behavior option instead of showing it as enabled.
+* Retains Configuration Manager applications by supersedence order and creation time to prevent deleting newer applications when publish dates match.
+* Hardens Publisher self-update installer staging.
+* Removes the misleading open-folder instruction from Manage Scripts.
+* Updates the tray "Configure External Access" option to match current feature availability in the Advanced tab.
+* Saves Configuration Wizard quick options for newly selected publishing targets without reverting selections.
+* Saves "Pause" settings for newly selected publishing targets without losing selections.
+{% endupdate %}
+{% endupdates %}
+
 ## 3.26.10014.0 - 2026-10-27
 
 <details>
