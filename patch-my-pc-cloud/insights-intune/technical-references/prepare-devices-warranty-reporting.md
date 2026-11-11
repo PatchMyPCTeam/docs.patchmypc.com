@@ -38,7 +38,7 @@ Confirm that:
 The warranty inventory schedule comes from Patch My PC policy. You do not need to create a separate scheduled task.
 {% endhint %}
 
-## Configure Dell devices
+## Configure Dell devices <a href="#dell" id="dell"></a>
 
 The device client reads warranty data captured by **Dell Command | Monitor**.
 
@@ -63,7 +63,7 @@ If the WMI class is missing, the device client reports that the Dell dependency 
 The PMPC Client reads existing Dell warranty data. It does not install **Dell Command | Monitor** or run any executables.
 {% endhint %}
 
-## Configure HP devices
+## Configure HP devices <a href="#hp" id="hp"></a>
 
 The device client reads warranty data that the **HP Client Management Script Library (CMSL)** publishes through HP Instrumented Services.
 
@@ -100,7 +100,7 @@ The Patch My PC Client reads existing HP warranty data. It does not install **HP
 
 If the WMI class is missing, the device client reports that the HP dependency is missing. If the class exists but contains no records, **HP CMSL** may not have refreshed the warranty data yet.
 
-## Configure Lenovo Commercial Vantage to expose warranty information in WMI
+## Configure Lenovo Commercial Vantage to expose warranty information in WMI <a href="#lenovo" id="lenovo"></a>
 
 Patch My PC can collect Lenovo warranty information from Windows Management Instrumentation (WMI). Before warranty information can be collected, **Lenovo Commercial Vantage** must be installed and configured to publish warranty data to WMI.
 
