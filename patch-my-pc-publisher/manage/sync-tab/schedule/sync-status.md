@@ -83,6 +83,8 @@ When multiple Sync Schedules are configured, when you click **Run Publishing Ser
 
 <figure><img src="../../../../.gitbook/assets/image (1597).png" alt="&#x27;Run Publishing service sync&#x27; screen" width="462"><figcaption></figcaption></figure>
 
+Select the Sync Schedule you want to run and click **Run**.
+
 Only the schedule you select runs now. Your schedules keep running as planned.
 
 ## How manual syncs affect schedules
