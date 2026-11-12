@@ -138,7 +138,7 @@ The **ADDITIONAL CONTENT REPOSITORY** section allows you to configure a service-
 For allowed paths for the Additional Content Repository, see [Content Repository Folder Requirements](content-repositories.md#content-repository-folder-requirements).
 {% endhint %}
 
-## Content Repository Folder Requirements
+## Content Repository folder requirements
 
 When configuring the [**Staged Content Repository**](content-repositories.md#staged-content-repository) or the [**Additional Content Repository**](content-repositories.md#additional-content-repository), please consider protected folders that cannot be used.
 
@@ -155,7 +155,7 @@ Publisher blocks the following folders and their subfolders for both content rep
 * **Additional Content Repository**\
   &#x20;`C:\Program Files\Patch My PC\Patch My PC Publishing Service\AdditionalContent`
 
-### Other Unsupported Paths
+### Other unsupported paths
 
 Publisher also rejects the following paths for the Staged Content and Additional Content Repositories:
 
