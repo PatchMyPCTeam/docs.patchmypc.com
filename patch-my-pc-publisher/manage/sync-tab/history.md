@@ -2,12 +2,9 @@
 description: >-
   Review recent syncs in Patch My PC Publisher and export sync history as an
   HTML report or JSON file.
-hidden: true
-noIndex: true
-noRobotsIndex: true
 ---
 
-# History
+# History in Patch My PC Publisher
 
 Use the **History** page in Patch My PC Publisher (Publisher) to see which syncs ran, whether they succeeded, and which schedule started them. You can also export sync history to share or keep a record.
 

@@ -100,7 +100,7 @@ Only those targets enabled in Publisher will appear.
 
 <figure><img src="../../../../.gitbook/assets/image (1566).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="176.888916015625" valign="top">Target</th><th valign="top">Includes...</th></tr></thead><tbody><tr><td valign="top">WSUS</td><td valign="top">Publishing to WSUS.</td></tr><tr><td valign="top">ConfigMgr</td><td valign="top">Publishing applications to ConfigMgr.</td></tr><tr><td valign="top">Intune Apps</td><td valign="top">Publishing apps to Intune.</td></tr><tr><td valign="top">Intune Updates</td><td valign="top">Publishing updates to Intune.</td></tr><tr><td valign="top">Only priority updates</td><td valign="top">Only updates that meet the priority thresholds on the <a href="configuration.md">Configuration</a> tab.</td></tr><tr><td valign="top">Intune tenants</td><td valign="top">Only the selected Intune tenants. If you select none, the schedule covers all enabled tenants.</td></tr></tbody></table>
+<table><thead><tr><th width="176.888916015625" valign="top">Target</th><th valign="top">Includes...</th></tr></thead><tbody><tr><td valign="top">WSUS</td><td valign="top">Publishing to WSUS.</td></tr><tr><td valign="top">ConfigMgr</td><td valign="top">Publishing applications to ConfigMgr.</td></tr><tr><td valign="top">Intune Apps</td><td valign="top">Publishing apps to Intune.</td></tr><tr><td valign="top">Intune Updates</td><td valign="top">Publishing updates to Intune.</td></tr><tr><td valign="top">Only priority updates</td><td valign="top">Only updates that meet the priority thresholds on the <a href="../configuration.md">Configuration</a> tab.</td></tr><tr><td valign="top">Intune tenants</td><td valign="top">Only the selected Intune tenants. If you select none, the schedule covers all enabled tenants.</td></tr></tbody></table>
 {% endstep %}
 
 {% step %}
@@ -144,7 +144,7 @@ Clicking **Go to schedule** opens the other schedule. To see when the runs overl
 {% hint style="info" %}
 **Note**
 
-See [Timeline](timeline.md) for more information on working with the Timeline.
+See [Timeline](../timeline.md) for more information on working with the Timeline.
 
 Also, overlapping messages are a warning only. You can save a Sync Schedule that overlaps with another one.
 {% endhint %}

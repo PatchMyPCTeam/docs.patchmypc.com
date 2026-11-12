@@ -6,7 +6,7 @@ The **Timeline** tab of the **Sync** tab of Patch My PC (PMPC) Publisher shows y
 
 Navigate to **Sync** | **Timeline.**
 
-<figure><img src="../../../../.gitbook/assets/image (1598).png" alt="Timeline" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1598).png" alt="Timeline" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -28,7 +28,7 @@ The **Timeline** tab can be viewed using the following options:
 * **List**\
   The **List** view shows each run with its start time, the time until it starts, the schedule name, and its targets. It also shows how long the run usually takes and its status, such as **Planned**. A warning appears when the run shares a target with another schedule.
 
-<figure><img src="../../../../.gitbook/assets/image (1600).png" alt="&#x27;List&#x27; view" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1600).png" alt="&#x27;List&#x27; view" width="563"><figcaption></figcaption></figure>
 
 * **Show**\
   Sets how far ahead the timeline shows (default is **7 days**). **Month** shows about 31 days.
@@ -44,5 +44,5 @@ Clicking **Refresh** reloads the timeline from the Publishing Service.
 {% hint style="info" %}
 **Note**
 
-See [Resolving Conflicts](multiple-schedules.md#resolving-conflicts) for more information about how a Sync Schedule handles overlaps.
+See [Resolving Conflicts](schedule/multiple-schedules.md#resolving-conflicts) for more information about how a Sync Schedule handles overlaps.
 {% endhint %}

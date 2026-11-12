@@ -14,7 +14,7 @@ The **Configuration** tab of the **Sync** tab of Patch My PC (PMPC) Publisher al
 
 Navigate to **Sync** | **Configuration.**
 
-<figure><img src="../../../../.gitbook/assets/image (1603).png" alt="Configuration tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1603).png" alt="Configuration tab" width="563"><figcaption></figcaption></figure>
 
 This tab consists of the following sections:
 
@@ -27,7 +27,7 @@ This tab consists of the following sections:
 
 The **Sync Priority** section contains the **Prioritize updates when publishing** option. When this option is enabled (which is disabled by default), you can configure minimum thresholds for both the severity and CVE count for updates. Any updates meeting either threshold are published first on every target device, ordered by severity, then CVE count.
 
-<figure><img src="../../../../.gitbook/assets/image (1296).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1296).png" alt=""><figcaption></figcaption></figure>
 
 ### To enable Sync Priority
 
@@ -43,21 +43,21 @@ The **Sync Priority** section contains the **Prioritize updates when publishing*
 
 The **ConfigMgr SUP Sync Options** section contains the **Trigger ConfigMgr SUP Sync after publishing** option.
 
-<figure><img src="../../../../.gitbook/assets/image (1290).png" alt="&#x27;ConfigMgr SUP Sync Options&#x27; section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1290).png" alt="&#x27;ConfigMgr SUP Sync Options&#x27; section" width="563"><figcaption></figcaption></figure>
 
 When this option is enabled, Publisher triggers a ConfigMgr Software Update Point (SUP) sync after new third-party updates are published. This ensures that newly published updates become available in ConfigMgr as soon as possible, without waiting for the next scheduled SUP sync.
 
 {% hint style="danger" %}
 **Important**
 
-Before you can use this option, you need to [configure the SMS Provider connection](../../configmgr-apps-tab/base-install-options/connection-source.md#configure-sms-provider-connection).
+Before you can use this option, you need to [configure the SMS Provider connection](../configmgr-apps-tab/base-install-options/connection-source.md#configure-sms-provider-connection).
 {% endhint %}
 
 ## Report settings
 
 The **Report settings** section lets you configure the **Sync report cadence** to control when Publisher sends sync report emails.
 
-<figure><img src="../../../../.gitbook/assets/image (1604).png" alt="Report settings" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1604).png" alt="Report settings" width="563"><figcaption></figcaption></figure>
 
 The available options are:
 
@@ -69,7 +69,7 @@ The available options are:
 {% hint style="info" %}
 **Note**
 
-Sync reports use the email settings on the [Alerts](../../alerts-tab/) tab. Configure email settings there before you change the cadence.
+Sync reports use the email settings on the [Alerts](../alerts-tab/) tab. Configure email settings there before you change the cadence.
 {% endhint %}
 
 ## Sync Status
@@ -77,5 +77,5 @@ Sync reports use the email settings on the [Alerts](../../alerts-tab/) tab. Conf
 {% hint style="info" %}
 **Note**
 
-See [Sync Status section of Patch My PC Publisher](sync-status.md) for more information.
+See [Sync Status section of Patch My PC Publisher](schedule/sync-status.md) for more information.
 {% endhint %}
