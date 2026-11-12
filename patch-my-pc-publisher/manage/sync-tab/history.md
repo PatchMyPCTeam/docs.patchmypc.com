@@ -3,6 +3,8 @@ description: >-
   Review recent syncs in Patch My PC Publisher and export sync history as an
   HTML report or JSON file.
 hidden: true
+noIndex: true
+noRobotsIndex: true
 ---
 
 # History
@@ -45,8 +47,3 @@ To open the page, go to **Sync** > **History**.
 | **Date range**     | Syncs between the dates you enter in **From** and **To**.     |
 
 A JSON export always includes every sync on record.
-
-### Related pages
-
-* Schedule
-* Timeline

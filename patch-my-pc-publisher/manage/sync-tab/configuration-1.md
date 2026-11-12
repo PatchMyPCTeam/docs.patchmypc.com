@@ -3,6 +3,7 @@ description: >-
   Configure sync priority, the Configuration Manager software update point  
   sync trigger, and the sync report cadence in Patch My PC Publisher.
 hidden: true
+noIndex: true
 ---
 
 # Configuration
@@ -56,8 +57,3 @@ Use **Sync report cadence** to choose when Publisher sends sync report emails.
 | **Daily digest** | Collects the results of each day's syncs and sends one report after the last sync of the day. If the email fails, Publisher tries again later. |
 
 Sync reports use the email settings on the **Alerts** tab. Configure email there before you change the cadence.
-
-### Related pages
-
-* Schedule
-* History

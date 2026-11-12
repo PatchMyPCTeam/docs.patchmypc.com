@@ -3,6 +3,7 @@ description: >-
   Preview when your Patch My PC Publisher sync schedules run, which runs  
   overlap, and which runs are queued, running, or finished.
 hidden: true
+noIndex: true
 ---
 
 # Timeline
@@ -57,8 +58,3 @@ The **List** view shows each run with its start time, the time until it starts, 
 | Shares a target with another schedule | The schedule publishes to the same target as another schedule at an overlapping time.  |
 
 To change how a schedule handles overlaps, see Schedule.
-
-### Related pages
-
-* Schedule
-* History
