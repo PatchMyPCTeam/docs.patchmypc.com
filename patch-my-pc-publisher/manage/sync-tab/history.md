@@ -1,46 +1,49 @@
----
-description: >-
-  Review recent syncs in Patch My PC Publisher and export sync history as an
-  HTML report or JSON file.
----
-
 # History in Patch My PC Publisher
 
-Use the **History** page in Patch My PC Publisher (Publisher) to see which syncs ran, whether they succeeded, and which schedule started them. You can also export sync history to share or keep a record.
+_Applies to: Patch My PC Publisher V3.x_
 
-To open the page, go to **Sync** > **History**.
+The **History** tab of the **Sync** tab of Patch My PC (PMPC) Publisher lets you see which syncs ran, whether they succeeded, and which schedule started them. You can also export sync history to share or keep a record.
 
-<figure><img src="../../../.gitbook/assets/image (1498).png" alt=""><figcaption></figcaption></figure>
+## To open the History tab
+
+Navigate to **Sync** **|** **History.**
+
+<figure><img src="../../../.gitbook/assets/image (1605).png" alt="&#x27;Sync history&#x27; tab" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**History** is available whether or not the multiple schedule feature is enabled. Publisher keeps sync history for 60 days.
+**Note**
+
+History is available whether or not the Multiple schedule feature is enabled. Publisher keeps sync history for 60 days.
 {% endhint %}
 
-### Recent syncs
+The list of **Recent syncs** is shown, listing the syncs that ran on this Publisher in the last seven days, newest first.
 
-**Recent syncs** lists the syncs that ran on this Publisher in the last seven days, newest first.
+<table><thead><tr><th width="181.22216796875" valign="top">Column</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">When</td><td valign="top">When the sync started.</td></tr><tr><td valign="top">Status</td><td valign="top"><strong>Succeeded</strong> or <strong>Failed</strong>.</td></tr><tr><td valign="top">Schedule/Run type</td><td valign="top">The schedule that started the sync, or <strong>Manual</strong> for a sync you started manually. See Run a manual sync.</td></tr></tbody></table>
 
-| Column                  | Description                                                                                               |
-| ----------------------- | --------------------------------------------------------------------------------------------------------- |
-| **When**                | When the sync started.                                                                                    |
-| **Status**              | **Succeeded** or **Failed**.                                                                              |
-| **Schedule / Run type** | The schedule that started the sync, or **Manual** for a sync you started manually. See Run a manual sync. |
+## To export the sync history
 
-### Export sync history
+1. Navigate to **Sync | History**.
+2. From the **Format** dropdown, select the required format for the report.
+3. If you selected **HTML report** in step 2, select which syncs to export from the **Include** dropdown.
 
-**Export sync history** shows how many syncs are on record and the date of the oldest one.
-
-1. Go to **Sync** > **History**.
-2. In **Format**, select **HTML report** or **JSON**.
-3. If you selected **HTML report**, in **Include**, select which syncs to export.
-4. Select **Export**.
-5. Choose where to save the file.
-
-| **Include** option | Exports                                                       |
-| ------------------ | ------------------------------------------------------------- |
-| **All syncs**      | Every sync on record.                                         |
-| **Last sync**      | The most recent sync.                                         |
-| **Last X syncs**   | The number of recent syncs you enter in **Count**, up to 500. |
-| **Date range**     | Syncs between the dates you enter in **From** and **To**.     |
+{% hint style="info" %}
+**Note**
 
 A JSON export always includes every sync on record.
+{% endhint %}
+
+4. Click **Export**.
+5. Choose where to save the file.
+
+## Include options
+
+The following options are available from the **Include** dropdown:
+
+* **All syncs**\
+  Exports every sync on record.
+* **Last sync**\
+  Exports the most recent sync.
+* **Last X syncs**\
+  Exports the number of recent syncs you enter in the **Count** field, up to **500**.
+* **Date range**\
+  Exports syncs between the dates you enter in **From** and **To**.

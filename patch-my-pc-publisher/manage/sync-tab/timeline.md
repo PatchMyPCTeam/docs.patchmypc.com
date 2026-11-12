@@ -1,5 +1,7 @@
 # Timeline section of Patch My PC Publisher
 
+_Applies to: Patch My PC Publisher V3.x_
+
 The **Timeline** tab of the **Sync** tab of Patch My PC (PMPC) Publisher shows you when your Sync Schedules run. This helps you spot overlapping schedules before they cause a run to wait or be skipped.
 
 ## To open the Timeline

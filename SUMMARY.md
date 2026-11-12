@@ -529,7 +529,6 @@
         * [Schedule section of Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/schedule.md "Schedule")
         * [Configure Multiple Schedules in Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/multiple-schedules.md "Multiple schedules")
         * [Sync Status section of Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/sync-status.md "Sync Status")
-        * [\*\*\*\*\*\*](patch-my-pc-publisher/manage/sync-tab/schedule/undefined.md)
       * [Timeline section of Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/timeline.md "Timeline")
       * [Configuration in Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/configuration.md "Configuration")
       * [History in Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/history.md "History")
