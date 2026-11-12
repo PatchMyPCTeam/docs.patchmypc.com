@@ -18,7 +18,7 @@ History is available whether or not the Multiple schedule feature is enabled. Pu
 
 The list of **Recent syncs** is shown, listing the syncs that ran on this Publisher in the last seven days, newest first.
 
-<table><thead><tr><th width="181.22216796875" valign="top">Column</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">When</td><td valign="top">When the sync started.</td></tr><tr><td valign="top">Status</td><td valign="top"><strong>Succeeded</strong> or <strong>Failed</strong>.</td></tr><tr><td valign="top">Schedule/Run type</td><td valign="top">The schedule that started the sync, or <strong>Manual</strong> for a sync you started manually. See Run a manual sync.</td></tr></tbody></table>
+<table><thead><tr><th width="181.22216796875" valign="top">Column</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">When</td><td valign="top">When the sync started.</td></tr><tr><td valign="top">Status</td><td valign="top"><strong>Succeeded</strong> or <strong>Failed</strong>.</td></tr><tr><td valign="top">Schedule/Run type</td><td valign="top">The schedule that started the sync, or <strong>Manual</strong> for a sync you started manually.</td></tr></tbody></table>
 
 ## To export the sync history
 
