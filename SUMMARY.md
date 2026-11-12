@@ -530,7 +530,7 @@
         * [Configure Multiple Schedules in Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/multiple-schedules.md "Multiple schedules")
         * [ConfigMgr SUP Sync Options section of Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/configmgr-sup-sync-options.md "ConfigMgr SUP Sync Options")
         * [Sync Status section of Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/sync-status.md "Sync Status")
-        * [Timeline section of Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/timeline-section-of-patch-my-pc-publisher.md)
+        * [Timeline section of Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/schedule/timeline.md "Timeline")
         * [\*\*\*\*\*\*](patch-my-pc-publisher/manage/sync-tab/schedule/undefined.md)
       * [Configuration in Patch My PC Publisher](patch-my-pc-publisher/manage/sync-tab/configuration.md "Configuration")
       * [Configuration](patch-my-pc-publisher/manage/sync-tab/configuration-1.md)

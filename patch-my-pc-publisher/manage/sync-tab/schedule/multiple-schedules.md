@@ -122,7 +122,7 @@ The new Sync Schedule appears under the list of configured schedules.
 
 ## Resolving Conflicts
 
-Two schedules overlap when they are due to run at the same time and publish to the same target, such as WSUS, ConfigMgr, or an Intune tenant. Overlapping runs don't run at the same time.
+Two schedules overlap when they are due to run at the same time and publish to the same target, such as WSUS, ConfigMgr, or an Intune tenant. Overlapping runs do not run at the same time.
 
 When the selected schedule overlaps with another, the **This schedule overlaps with 1 other schedule** message is shown, explaining the overlapping schedule and the target they share.
 
@@ -144,9 +144,9 @@ Clicking **Go to schedule** opens the other schedule. To see when the runs overl
 {% hint style="info" %}
 **Note**
 
-See [Timeline](timeline-section-of-patch-my-pc-publisher.md) for more information on working with the Timeline.
+See [Timeline](timeline.md) for more information on working with the Timeline.
 
-Also, overlapping messages are a warning only. You can save a Schedule that overlaps with another one.
+Also, overlapping messages are a warning only. You can save a Sync Schedule that overlaps with another one.
 {% endhint %}
 
 ## Schedules running in parallel
@@ -159,7 +159,7 @@ Publisher runs up to three scheduled syncs at the same time.
 
 ## Working with Sync Schedules
 
-The following actions can be performed on Sync Schedule:
+The following actions can be performed on a Sync Schedule:
 
 * **Remove**\
   Clicking **Remove** deletes the Sync Schedule

@@ -1,20 +1,16 @@
----
-description: >-
-  Preview when your Patch My PC Publisher sync schedules run, which runs  
-  overlap, and which runs are queued, running, or finished.
-hidden: true
-noIndex: true
----
-
 # Timeline section of Patch My PC Publisher
 
-Use the **Timeline** page in Patch My PC Publisher (Publisher) to see when your schedules run. The timeline helps you spot overlapping schedules before they cause a run to wait or be skipped.
+The **Timeline** tab of the **Sync** section of Patch My PC (PMPC) Publisher shows you when your Sync Schedules run. This helps you spot overlapping schedules before they cause a run to wait or be skipped.
 
-To open the page, go to **Sync** > **Timeline**.
+## To open the Timeline
 
-<figure><img src="../../../../.gitbook/assets/sync-timeline-by-schedule.png" alt=""><figcaption></figcaption></figure>
+Navigate to **Sync** | **Timeline.**
+
+<figure><img src="../../../../.gitbook/assets/image (1598).png" alt="Timeline" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
+**Note**
+
 Dots mark planned start times. Run length is unknown until a sync finishes, so the timeline uses the typical run length from previous syncs.
 {% endhint %}
 
