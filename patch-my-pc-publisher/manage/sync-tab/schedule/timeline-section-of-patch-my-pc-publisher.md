@@ -6,13 +6,13 @@ hidden: true
 noIndex: true
 ---
 
-# Timeline
+# Timeline section of Patch My PC Publisher
 
 Use the **Timeline** page in Patch My PC Publisher (Publisher) to see when your schedules run. The timeline helps you spot overlapping schedules before they cause a run to wait or be skipped.
 
 To open the page, go to **Sync** > **Timeline**.
 
-<figure><img src="../../../.gitbook/assets/sync-timeline-by-schedule.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sync-timeline-by-schedule.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Dots mark planned start times. Run length is unknown until a sync finishes, so the timeline uses the typical run length from previous syncs.
@@ -41,7 +41,7 @@ Hover over a run to see:
 
 The **List** view shows each run with its start time, the time until it starts, the schedule name, and its targets. It also shows how long the run usually takes and its status, such as **Planned**. A warning appears when the run shares a target with another schedule.
 
-<figure><img src="../../../.gitbook/assets/sync-timeline-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sync-timeline-list.png" alt=""><figcaption></figcaption></figure>
 
 ### Legend
 

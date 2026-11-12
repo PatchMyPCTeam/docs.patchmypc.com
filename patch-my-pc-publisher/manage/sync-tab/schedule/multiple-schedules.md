@@ -1,8 +1,3 @@
----
-hidden: true
-noIndex: true
----
-
 # Configure Multiple Schedules in Patch My PC Publisher
 
 _Applies to: Patch My PC Publisher V3.x_
@@ -10,14 +5,14 @@ _Applies to: Patch My PC Publisher V3.x_
 {% hint style="danger" %}
 **PRIVATE PREVIEW**
 
-This feature is currently only available through an invitation-only Private Preview, as both it and the documentation are under development, incomplete, and subject to change.
+This feature is currently available only through an invitation-only Private Preview, as both the feature and the documentation are under development, incomplete, and subject to change.
 
 Please do not share links to these docs with others outside of the Private Preview.
 
 Once this feature is released, it will be announced, and this banner will be removed.
 {% endhint %}
 
-Multiple Sync Schedules can be configured in Patch My PC (PMPC) Publisher. Each schedule requires a unique name and can be configured with settings for recurrence, targets, and overlapping behavior, if required.
+Multiple _Sync Schedules_ can be configured in Patch My PC (PMPC) Publisher. Each schedule requires a unique name and can be configured with settings for recurrence, targets, and overlapping behavior, if required.
 
 For example, you can sync Microsoft Intune Updates every 6 hours and publish to Microsoft Configuration Manager (ConfigMgr) once a week.
 
@@ -42,6 +37,12 @@ If the Multiple Schedule feature is not enabled for your Publisher license, only
 <figure><img src="../../../../.gitbook/assets/image (1551).png" alt="Clicking &#x27;+ Add schedule&#x27;" width="563"><figcaption></figcaption></figure>
 
 The current **Default schedule** is duplicated.
+
+{% hint style="success" %}
+**Tip**
+
+You can also copy an existing Sync Schedule by clicking **Duplicate** and then amending it's properties to create a new schedule.
+{% endhint %}
 {% endstep %}
 
 {% step %}
@@ -79,7 +80,7 @@ Use **Custom** to run relative to a weekday in the month. For example, to sync t
 {% endstep %}
 
 {% step %}
-### Optionally configure to run a missed scheduled sync
+### Configure to run a missed scheduled sync (optional)
 
 Decide whether you want to enable the **Run a missed scheduled sync on startup** option (disabled by default). Enabling this option forces Publisher to catch up as soon as possible if the service was offline at the scheduled time. This setting is not affected by manual.
 
@@ -103,7 +104,23 @@ Only those targets enabled in Publisher will appear.
 {% endstep %}
 
 {% step %}
-### Resolve any conflicts
+### Review any conflicts
+
+There are several reasons that conflicts can occur in a Sync Schedule, as detailed [Resolving Conflicts](multiple-schedules.md#resolving-conflicts).
+{% endstep %}
+
+{% step %}
+### Click **Apply**
+
+To save the new Sync Schedule, click **Apply**.
+
+The new Sync Schedule appears under the list of configured schedules.
+
+<figure><img src="../../../../.gitbook/assets/image (1583).png" alt="Newly added Sync Schedule" width="563"><figcaption></figcaption></figure>
+{% endstep %}
+{% endstepper %}
+
+## Resolving Conflicts
 
 Two schedules overlap when they are due to run at the same time and publish to the same target, such as WSUS, ConfigMgr, or an Intune tenant. Overlapping runs don't run at the same time.
 
@@ -111,107 +128,46 @@ When the selected schedule overlaps with another, the **This schedule overlaps w
 
 <figure><img src="../../../../.gitbook/assets/image (1570).png" alt="Overlapping schedule" width="563"><figcaption></figcaption></figure>
 
-???
-{% endstep %}
+You then have the option of either configuring one of the following two options or clicking [Go to schedule](multiple-schedules.md#go-to-schedule) to edit the conflicting schedule:
 
-{% step %}
-### Click **Apply**
+* **Wait, then run**\
+  When selected, the run waits until the earlier run finishes, then starts.<br>
+* **Skip this run**\
+  The run is skipped. The schedule runs again at its next scheduled time.
 
-To save the new Sync Schedule, click **Apply**.
-{% endstep %}
-{% endstepper %}
+### Go to schedule
 
+Clicking **Go to schedule** opens the other schedule. To see when the runs overlap, click **View timeline**.&#x20;
 
-
-
-
-
-
-**\*\*\***
-
-<figure><img src="../../../../.gitbook/assets/sync-schedule-multi.png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
-### Duplicate, disable, or remove a schedule
-
-| Action    | How                                             | Result                                                                                                            |
-| --------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Duplicate | Select the schedule, then select **Duplicate**. | Creates a copy that you can rename and change.                                                                    |
-| Disable   | Turn off **Enabled**.                           | Keeps the schedule but stops it from running automatically. You can still run it manually. See Run a manual sync. |
-| Remove    | Select the schedule, then select **Remove**.    | Deletes the schedule.                                                                                             |
-
-### Overlapping schedules
-
-Two schedules overlap when they are due at the same time and publish to the same target, such as WSUS, Configuration Manager, or an Intune tenant. Overlapping runs don't run at the same time.
-
-When the selected schedule overlaps with another, the editor shows a message such as "This schedule overlaps with 1 other schedule". The message lists each overlapping schedule and the target they share.
-
-<figure><img src="../../../../.gitbook/assets/sync-schedule-overlap (1).png" alt=""><figcaption></figcaption></figure>
-
-Under **When a run overlaps**, select what this schedule does when it is due while an overlapping run is still in progress:
-
-| Option             | Result                                                                  |
-| ------------------ | ----------------------------------------------------------------------- |
-| **Wait, then run** | The run waits until the earlier run finishes, then starts.              |
-| **Skip this run**  | The run is skipped. The schedule runs again at its next scheduled time. |
-
-To change the other schedule, select **Go to schedule**. To see when the runs overlap, select **View timeline**. See Timeline.
-
-Overlap messages are a warning only. You can save a schedule that overlaps with another one.
-
-#### Schedules that run in parallel
-
-Schedules that publish to different targets can run at the same time. When this applies, a message such as "Runs alongside 2 schedules" lists them. Publisher runs up to three scheduled syncs at the same time.
-
-### Single schedule editor
-
-If the multiple schedule feature is not enabled, the **Schedule** page shows one schedule. It has the same schedule types. **Next sync if saved:** shows when the next sync runs if you save your changes.
-
-The **ConfigMgr SUP Sync Options** also appear on this page. See Configuration.
-
-### Sync status
-
-**Sync Status** appears at the bottom of the **Sync** tab and shows what the Publishing Service is doing.
-
-| Status        | Description                                                           |
-| ------------- | --------------------------------------------------------------------- |
-| **Idle**      | No sync is running.                                                   |
-| **Syncing**   | A sync is in progress.                                                |
-| **Completed** | The last sync finished.                                               |
-| **Error**     | The last sync finished with an error. Check the sync log for details. |
-
-When syncs are running or queued, **Active and queued syncs** lists them.
-
-### Run a manual sync
-
-1. Save any pending changes.
-2. Select **Run Publishing Service Sync**.
-3. Select what to run. See Manual sync options.
-4. Select **Run**.
-
-Only the option you select runs now. Your schedules keep running as planned.
-
-<figure><img src="../../../../.gitbook/assets/sync-run-now-picker.png" alt=""><figcaption></figcaption></figure>
-
-#### Manual sync options
-
-| Option                         | When it appears                                        | What it runs                                                                                                                                               |
-| ------------------------------ | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Selective sync**             | When one or more products are flagged for Publish Now. | Only the flagged products. The row lists the products and their targets. Select **Show all** to see the full list. The flags clear when the sync finishes. |
-| **Full sync**                  | Always.                                                | Everything, for all targets and all tenants.                                                                                                               |
-| A schedule under **SCHEDULES** | One row for each schedule.                             | Only that schedule's targets. Each row shows the last and next run. Disabled schedules show a disabled label but you can still run them.                   |
-
-For more information about flagging products, see Publish Now.
+<figure><img src="../../../../.gitbook/assets/image (1579).png" alt="Clicking &#x27;View timeline&#x27; " width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-If products are flagged for Publish Now and you select an option other than **Selective sync**, Publisher asks whether to clear the flags. Select **Yes** to clear the flags and run the sync, or **No** to cancel.
+**Note**
+
+See [Timeline](timeline-section-of-patch-my-pc-publisher.md) for more information on working with the Timeline.
+
+Also, overlapping messages are a warning only. You can save a Schedule that overlaps with another one.
 {% endhint %}
 
-#### How manual syncs affect schedules
+## Schedules running in parallel
 
-* Running a schedule manually doesn't change its next scheduled run.
-* **Full sync** and **Selective sync** wait for running scheduled syncs to finish before they start.
-* If you run a schedule that shares a target with a sync that is already running, the window tells you. The run waits and starts when the running sync finishes. See Overlapping schedules.
+Sync Schedules that publish to different targets can run at the same time. When this applies, a message such as **Runs alongside 2 schedules** lists them.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1591).png" alt="Parallel schedules" width="563"><figcaption></figcaption></figure>
+
+Publisher runs up to three scheduled syncs at the same time.
+
+## Working with Sync Schedules
+
+The following actions can be performed on Sync Schedule:
+
+* **Remove**\
+  Clicking **Remove** deletes the Sync Schedule
+* **Enabled**\
+  Disabling the **Enabled** option disables the Sync Schedule and prevents it from running
+
+{% hint style="info" %}
+**Note**
+
+Disabling a Sync Schedule does not prevent it from being run manually.
+{% endhint %}

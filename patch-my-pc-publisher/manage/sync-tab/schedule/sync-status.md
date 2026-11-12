@@ -4,7 +4,7 @@ _Applies to: Patch My PC Publisher V3.x_
 
 The _Sync Status_ section on the **Schedule** tab of Patch My PC (PMPC) Publisher displays the current state of a Publisher synchronization and also allows you to manually [run a Publishing sync.](sync-status.md#run-publishing-service-sync)
 
-<figure><img src="../../../../.gitbook/assets/image (1292).png" alt="Sync Status section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1596).png" alt="Sync Status section" width="563"><figcaption></figcaption></figure>
 
 ## Status
 
@@ -12,14 +12,26 @@ The **Status** field updates in real time as products are evaluated and processe
 
 <table><thead><tr><th width="121.77783203125" valign="top">Status</th><th valign="top">Means Publisher...</th></tr></thead><tbody><tr><td valign="top">Idle</td><td valign="top">Is idle and not actively evaluating or publishing content.</td></tr><tr><td valign="top">Syncing</td><td valign="top"><p>Is actively syncing. The status bar displays the current operation, which includes the product name and version currently being evaluated or published.</p><p>As the sync runs, the status updates for each product processed. This provides visibility into which updates or applications are being evaluated at that moment and confirms that the publishing service is actively working through the configured selections.</p><p>This status is particularly useful during large publishing synchronizations, as it confirms ongoing progress and helps identify where Publisher is in the evaluation or publishing process.</p></td></tr><tr><td valign="top">Completed</td><td valign="top">Has completed successfully. The <strong>Sync completed at &#x3C;</strong><em><strong>date_time</strong></em><strong>></strong> message is displayed under the <strong>Status</strong> field.</td></tr><tr><td valign="top">Error</td><td valign="top">Has encountered an error when trying to run a synchronization.</td></tr></tbody></table>
 
+When syncs are running or queued, **Active and queued syncs** lists them.
+
 ## Run Publishing Service Sync
 
-What happens when you click **Run Publishing Service Sync** depends on whether one or more products have been marked for a Selective Sync using the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option:
+What happens when you click **Run Publishing Service Sync** depends on whether you are using a [Single Schedule](sync-status.md#single-schedule) or have configured [Multiple schedules](sync-status.md#multiple-schedules).
+
+{% hint style="danger" %}
+**Important**
+
+The [Multiple schedules](multiple-schedules.md) feature is currently under development and available only via an invitation private preview.
+{% endhint %}
+
+### Single Schedule
+
+When a single Sync Schedule is configured, what happens when you click **Run Publishing Service Sync** depends on whether one or more products have been marked for a Selective Sync using the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option:
 
 * If a product(s) has been marked for a Selective Sync, then a [Selective Sync](sync-status.md#selective-sync) is run.
 * If no product(s) has been marked for a Selective Sync, then a [Full Sync](sync-status.md#full-sync) is run.
 
-### Selective Sync
+#### Selective Sync
 
 If you have used the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher displays the **Products for Selective Sync** dialog box listing all products currently marked for Selective Sync.
 
@@ -36,7 +48,7 @@ If you click **Cancel**, the **Selective Sync canceled** dialog box is displayed
 
 <figure><img src="../../../../.gitbook/assets/image (4445).png" alt="&#x27;Selective Sync cancelled&#x27; dialog" width="383"><figcaption></figcaption></figure>
 
-### Full Sync
+#### Full Sync
 
 If you have not used the [Publish Now](../../../customizations/list-customizations/publish-now.md) right-click option to selectively publish one or more specific products, when you click **Run Publishing Service Sync**, Publisher will run a Full Sync, which performs the same evaluation as a scheduled sync.
 
@@ -61,4 +73,20 @@ After a period of time, the Sync Status changes to **Syncing** to show that the 
 
 <figure><img src="../../../../.gitbook/assets/image (1294).png" alt="Sync status syncing" width="563"><figcaption></figcaption></figure>
 
-Once the sync has completed, the Sync Status changes to **Completed** as detailed at the top of this article.
+Once the sync is complete, the Sync Status changes to **Completed** as detailed at the top of this article.
+
+### Multiple Schedules
+
+When multiple Sync Schedules are configured, when you click **Run Publishing Service Sync** the **Run Publishing service sync** screen appears, containing the following options.
+
+<table><thead><tr><th valign="top">Option</th><th valign="top">Appears...</th><th valign="top">Syncs...</th></tr></thead><tbody><tr><td valign="top">Selective sync</td><td valign="top">When one or more products are flagged for Publish Now.</td><td valign="top">Only the flagged products. The row lists the products and their targets. Select <strong>Show all</strong> to see the full list. The flags clear when the sync finishes.</td></tr><tr><td valign="top">Full sync</td><td valign="top">Always.</td><td valign="top">Everything, for all targets and all tenants.</td></tr><tr><td valign="top">A schedule under the list of configured <strong>SCHEDULES</strong></td><td valign="top">One row for each schedule.</td><td valign="top">Only the schedule's targets. Each row shows the last and next run. Disabled schedules show a disabled label but you can still run them.</td></tr></tbody></table>
+
+<figure><img src="../../../../.gitbook/assets/image (1597).png" alt="&#x27;Run Publishing service sync&#x27; screen" width="462"><figcaption></figcaption></figure>
+
+Only the schedule you select runs now. Your schedules keep running as planned.
+
+## How manual syncs affect schedules
+
+* Running a schedule manually doesn't change its next scheduled run.
+* **Full sync** and **Selective sync** wait for running scheduled syncs to finish before they start.
+* If you run a schedule that shares a target with a sync that is already running, the window tells you. The run waits and starts when the running sync finishes.
