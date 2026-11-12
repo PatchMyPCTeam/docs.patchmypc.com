@@ -3,11 +3,9 @@
 _Applies to: Patch My PC (PMPC) Cloud_
 
 {% hint style="danger" %}
-**PRIVATE PREVIEW**
+**Public Preview**
 
-This feature is currently only available through an invitation-only Private Preview, as both it and the documentation are under development, incomplete, and subject to change.
-
-Please do not share links to these docs with others outside of the Private Preview.
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
 
 Once this feature is released, it will be announced, and this banner will be removed.
 {% endhint %}
@@ -15,6 +13,12 @@ Once this feature is released, it will be announced, and this banner will be rem
 All Patch My PC (PMPC) Cloud management-related tasks are performed through the browser-based Cloud Portal. When you sign in to PMPC Cloud using the following link, you see the **Home** page.
 
 [https://portal.patchmypc.com/](https://portal.patchmypc.com/)
+
+{% hint style="info" %}
+**Note**
+
+The Home page is currently available to Enterprise Customers only.
+{% endhint %}
 
 The version of the **Home** page you see depends on your PMPC Cloud subscription type.
 
