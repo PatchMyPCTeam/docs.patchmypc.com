@@ -14,30 +14,36 @@ Navigate to **Sync** | **Timeline.**
 Dots mark planned start times. Run length is unknown until a sync finishes, so the timeline uses the typical run length from previous syncs.
 {% endhint %}
 
-### Change the view
+## Change the view
+
+The **Timeline** tab can be viewed using the following options:
+
+*   **By schedule (default)**\
+    The **By schedule** view groups lanes by target, such as **Intune Updates**, **Intune Apps**, **ConfigMgr**, and **WSUS**. Schedules that publish to more than one target appear in a mixed group. Manual runs and catch-up runs appear under **Other runs**. A line marks the current time.
+
+    \
+    Hover over a run to see:
+
+    * When the run starts.
+    * The target.
+    * How long the run typically takes.
+    * When the schedule last ran.<br>
+* **List**\
+  The **List** view shows each run with its start time, the time until it starts, the schedule name, and its targets. It also shows how long the run usually takes and its status, such as **Planned**. A warning appears when the run shares a target with another schedule.
+
+<figure><img src="../../../../.gitbook/assets/image (1600).png" alt="&#x27;List&#x27; view" width="563"><figcaption></figcaption></figure>
+
+
+
+
+
+
 
 | Control     | Options                                                                 | Description                                                                                                                            |
 | ----------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | View        | **By schedule**, **List**                                               | **By schedule** shows one lane for each schedule, grouped by target. **List** shows running and queued runs, then planned runs by day. |
 | **Show**    | **4 hours**, **12 hours**, **1 day**, **3 days**, **7 days**, **Month** | Sets how far ahead the timeline shows. **Month** shows about 31 days.                                                                  |
 | **Refresh** | Not applicable                                                          | Reloads the timeline from the Publishing Service.                                                                                      |
-
-### By schedule view
-
-The **By schedule** view groups lanes by target, such as Intune Updates, Intune Apps, ConfigMgr, and WSUS. Schedules that publish to more than one target appear in a mixed group. Manual runs and catch-up runs appear under **Other runs**. A line marks the current time.
-
-Hover over a run to see:
-
-* When the run starts.
-* The target.
-* How long the run typically takes.
-* When the schedule last ran.
-
-### List view
-
-The **List** view shows each run with its start time, the time until it starts, the schedule name, and its targets. It also shows how long the run usually takes and its status, such as **Planned**. A warning appears when the run shares a target with another schedule.
-
-<figure><img src="../../../../.gitbook/assets/sync-timeline-list.png" alt=""><figcaption></figcaption></figure>
 
 ### Legend
 
