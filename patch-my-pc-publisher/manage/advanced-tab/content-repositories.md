@@ -29,14 +29,14 @@ See [About the Staged Content Repository](technical-references/about-staged-cont
 2. Navigate to **Advanced | Content Repositories**.
 3. In the **Content path** field, specify/browse to a folder or UNC path where installer files will be stored.
 
-<figure><img src="../../../.gitbook/assets/image (1366).png" alt="&#x27;Content path&#x27; field" width="496"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1548).png" alt="&#x27;Content path&#x27; field" width="563"><figcaption></figcaption></figure>
 
 Underneath this field the name of the server where the **PatchMyPCService** is installed is shown.
 
-{% hint style="danger" %}
-**Important**
+{% hint style="info" %}
+**Note**
 
-If you use a UNC path, ensure the computer account of the server running the Publishing Service has read and modify permissions to the share.
+For allowed paths for the Staged Content Repository, see [Content Repository Folder Requirements](content-repositories.md#content-repository-folder-requirements).
 {% endhint %}
 
 4. Click **Apply**.\
@@ -131,3 +131,35 @@ Enabling email or webhook Alerts is strongly recommended, as these alerts includ
 The **ADDITIONAL CONTENT REPOSITORY** section allows you to configure a service-side folder for pre/post scripts and extra files a remote Ul attaches to a product.
 
 <figure><img src="../../../.gitbook/assets/image (1369).png" alt="&#x27;ADDITIONAL CONTENT REPOSITORY&#x27; section" width="500"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note**
+
+For allowed paths for the Additional Content Repository, see [Content Repository Folder Requirements](content-repositories.md#content-repository-folder-requirements).
+{% endhint %}
+
+## Content Repository Folder Requirements
+
+When configuring the [**Staged Content Repository**](content-repositories.md#staged-content-repository) or the [**Additional Content Repository**](content-repositories.md#additional-content-repository), please consider protected folders that cannot be used.
+
+### Protected folders
+
+Publisher blocks the following folders and their subfolders for both content repositories.
+
+<table data-search="false"><thead><tr><th valign="top">Protected folder</th><th valign="top">Typical path</th></tr></thead><tbody><tr><td valign="top">Windows directory (<code>%WINDIR%</code> or <code>%SystemRoot%</code>)</td><td valign="top"><code>C:\Windows</code></td></tr><tr><td valign="top">Program Files</td><td valign="top"><code>C:\Program Files</code></td></tr><tr><td valign="top">Program Files (x86)</td><td valign="top"><code>C:\Program Files (x86)</code></td></tr><tr><td valign="top">Parent of the profile folder for the account running Publisher</td><td valign="top"><code>C:\Users</code></td></tr><tr><td valign="top">Common Start Menu</td><td valign="top"><code>C:\ProgramData\Microsoft\Windows\Start Menu</code></td></tr><tr><td valign="top">Common Startup</td><td valign="top"><code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup</code></td></tr><tr><td valign="top">Per-user Start Menu</td><td valign="top"><code>%APPDATA%\Microsoft\Windows\Start Menu</code></td></tr><tr><td valign="top">Per-user Startup</td><td valign="top"><code>%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup</code></td></tr><tr><td valign="top">Microsoft folder under <code>%ProgramData%</code></td><td valign="top"><code>C:\ProgramData\Microsoft</code></td></tr><tr><td valign="top">Publisher installation folder</td><td valign="top"><code>C:\Program Files\Patch My PC\Patch My PC Publishing Service *</code></td></tr></tbody></table>
+
+\* The only exception is the default Staged Content and Additional Content folders directly under the Publisher installation folder. For a default installation, the paths are:
+
+* **Staged Content Repository**\
+  `C:\Program Files\Patch My PC\Patch My PC Publishing Service\StagedContent`
+* **Additional Content Repository**\
+  &#x20;`C:\Program Files\Patch My PC\Patch My PC Publishing Service\AdditionalContent`
+
+### Other Unsupported Paths
+
+Publisher also rejects the following paths for the Staged Content and Additional Content Repositories:
+
+* UNC paths
+* Volume roots, such as `D:\`
+* Paths that point to an existing file
+* Paths where the selected folder or any existing parent folder is a reparse point, such as a junction or symbolic link
