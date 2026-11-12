@@ -20,7 +20,6 @@ The **Timeline** tab can be viewed using the following options:
 
 * **By schedule (default)**\
   The **By schedule** view groups lanes by target, such as **Intune Updates**, **Intune Apps**, **ConfigMgr**, and **WSUS**. Schedules that publish to more than one target appear in a mixed group. Manual runs and catch-up runs appear under **Other runs**. A line marks the current time.\
-  \
   Hover over a run to see:
   * When the run starts.
   * The target.
