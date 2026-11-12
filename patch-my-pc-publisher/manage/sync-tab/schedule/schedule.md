@@ -24,7 +24,7 @@ The available options are:
 {% hint style="danger" %}
 **Important**
 
-Publisher uses a single, global Sync Schedule that applies across all tabs and products. You cannot configure different Sync Schedules per platform or product.
+Publisher uses a single, global Sync Schedule that applies across all tabs and products, unless you are using the [Multiple schedules](multiple-schedules.md) feature, which is currently under development and available only through an invitation-only Private Preview.
 {% endhint %}
 
 ## Next scheduled sync
