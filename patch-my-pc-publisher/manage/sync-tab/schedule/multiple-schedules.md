@@ -79,7 +79,7 @@ Use **Custom** to run relative to a weekday in the month. For example, to sync t
 {% endstep %}
 
 {% step %}
-### Run a missed scheduled sync
+### Optionally configure to run a missed scheduled sync
 
 Decide whether you want to enable the **Run a missed scheduled sync on startup** option (disabled by default). Enabling this option forces Publisher to catch up as soon as possible if the service was offline at the scheduled time. This setting is not affected by manual.
 
