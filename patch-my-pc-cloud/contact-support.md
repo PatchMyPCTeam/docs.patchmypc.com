@@ -4,14 +4,35 @@ _Applies to: Patch My PC Cloud_
 
 If you encounter any issues with Patch My PC (PMPC) Cloud and need to contact us:
 
-1. In the Portal header, click the "**?**" and select **Contact Support**.
+{% stepper %}
+{% step %}
+### **In the Portal header, click the "?" and select Contact Support**
 
-<figure><img src="../.gitbook/assets/image (1617).png" alt="&#x27;Contact Support&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 
 The **Contact Support** dialog box appears.
 
 <figure><img src="../.gitbook/assets/image (806).png" alt="&#x22;Contact Support&#x22; dialog box" width="384"><figcaption></figcaption></figure>
+{% endstep %}
 
+{% step %}
+###
+
+
+{% endstep %}
+{% endstepper %}
+
+
+
+
+
+
+
+
+
+
+
+1.
 2. Verify that the **From** email address is valid, as this is the email address we will use to contact you.
 3. Select the relevant reason for contacting us from the **Subject** dropdown.
 
