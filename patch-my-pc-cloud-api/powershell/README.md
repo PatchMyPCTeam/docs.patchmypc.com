@@ -10,29 +10,29 @@ noRobotsIndex: true
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
-The `PatchMyPC.AppCatBroker` PowerShell module lets you manage applications and deployments in the Patch My PC Cloud Customer API from a script, a scheduled task, or the PowerShell console. It has one cmdlet for each SDK method, and it calls the same service as the SDK and the REST API.
+The `PatchMyPC.Cloud` PowerShell module lets you manage applications and deployments in the Patch My PC Cloud Customer API from a script, a scheduled task, or the PowerShell console. It has one cmdlet for each SDK method, and it calls the same service as the SDK and the REST API.
 
 ## Install the module
 
 The module requires PowerShell 7.4 or later on Windows, macOS, or Linux. It's published to the PowerShell Gallery. To install it for your user account, run:
 
 ```powershell
-Install-Module PatchMyPC.AppCatBroker -Scope CurrentUser
+Install-Module PatchMyPC.Cloud -Scope CurrentUser
 ```
 
 Then import it:
 
 ```powershell
-Import-Module PatchMyPC.AppCatBroker
+Import-Module PatchMyPC.Cloud
 ```
 
 ## Connect
 
-Every cmdlet that calls the Cloud Customer API needs a connected session. Connect with a personal access token (PAT) that you created in the Patch My PC portal under **Settings** > **Access Tokens**. [Connect-PmpcBrokerWithPat](connect-pmpcbrokerwithpat.md) exchanges the PAT for an access token, and exchanges the PAT again when the access token expires. Use `-Region` for the region your account is in.
+Every cmdlet that calls the Cloud Customer API needs a connected session. Connect with a personal access token (PAT) that you created in the Patch My PC portal under **Settings** > **Access Tokens**. [Connect-PmpcCloudWithPat](connect-pmpccloudwithpat.md) exchanges the PAT for an access token, and exchanges the PAT again when the access token expires. Use `-Region` for the region your account is in.
 
 ```powershell
 $token = Read-Host -AsSecureString 'PAT'
-Connect-PmpcBrokerWithPat -Token $token -Region Us
+Connect-PmpcCloudWithPat -Token $token -Region Us
 Get-PmpcCustomerInfo
 ```
 
@@ -53,13 +53,13 @@ Cmdlets marked as requiring enablement work only after the feature is enabled fo
 
 ### Session and authentication
 
-| Cmdlet                                                    | Synopsis                                                         | Requires enablement |
-| --------------------------------------------------------- | ---------------------------------------------------------------- | ------------------- |
-| [Connect-PmpcBrokerWithPat](connect-pmpcbrokerwithpat.md) | Connects to the Cloud Customer API with a personal access token. | No                  |
-| [Disconnect-PmpcBroker](disconnect-pmpcbroker.md)         | Signs out and tears down the module's session.                   | No                  |
-| [Get-PmpcBrokerSession](get-pmpcbrokersession.md)         | Reports the module's current session state.                      | No                  |
-| [Test-PmpcBrokerHealth](test-pmpcbrokerhealth.md)         | Checks whether the Cloud Customer API is reachable and healthy.  | No                  |
-| [Get-PmpcSelectedCompany](get-pmpcselectedcompany.md)     | Gets the company the session is currently scoped to.             | No                  |
+| Cmdlet                                                  | Synopsis                                                               | Requires enablement |
+| ------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------- |
+| [Connect-PmpcCloudWithPat](connect-pmpccloudwithpat.md) | Authenticates using a personal access token.                           | No                  |
+| [Disconnect-PmpcCloud](disconnect-pmpccloud.md)         | Signs out and tears down the module's session.                         | No                  |
+| [Get-PmpcCloudSession](get-pmpccloudsession.md)         | Reports the module's current session state.                            | No                  |
+| [Test-PmpcCloudHealth](test-pmpccloudhealth.md)         | Checks whether the Patch My PC Cloud service is reachable and healthy. | No                  |
+| [Get-PmpcSelectedCompany](get-pmpcselectedcompany.md)   | Gets the company the session is currently scoped to.                   | No                  |
 
 ### Customer and connections
 

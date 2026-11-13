@@ -108,7 +108,7 @@ Forces Intune to recreate the deployment.
 ### Example 2: Recreate every failed deployment
 
 ```powershell
-Get-PmpcDeployment -ProductId $productId | Where-Object Status -eq 'Failed' | Restart-PmpcDeployment
+Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Restart-PmpcDeployment
 ```
 
 Pipes failed deployments in and recreates each one.

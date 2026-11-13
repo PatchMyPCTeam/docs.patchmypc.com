@@ -17,9 +17,10 @@ The .NET SDK and the PowerShell module do the whole job in one call: they valida
 ## Before you begin
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
-* The REST examples use the US host, `https://us.portal.patchmypc.com`. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+* The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:write` scope.
 * Check that your account has room for another custom application. Your account information lists your usage and limits—see [Getting started](../getting-started.md). When you're at your limit, creating the application fails with `400 Bad Request`.
+* Choose a display name that does not conflict with an application already available to your company.
 
 ## Step 1: Prepare the application folder
 
@@ -71,7 +72,7 @@ Content-Type: application/json
   "productId": "{product-id}",
   "updateId": "{update-id}",
   "revisionId": 1,
-  "displayName": "Contoso Agent",
+  "displayName": "Contoso Sample Agent",
   "description": "Endpoint agent for Contoso services.",
   "publisher": "Contoso",
   "language": "en-US",
@@ -101,20 +102,23 @@ See [Create application draft](../rest-api/applications.md#create-application-dr
 
 {% code title="Program.cs" %}
 ```csharp
-using pmpc.appcatbroker.sdk.Models;
-using static pmpc.common.Enums;
+using PatchMyPC.Cloud.Models;
+using PatchMyPC.Cloud.Client;
 
 var metadata = new ApplicationMetadata
 {
     FolderPath = @"C:\Packages\ContosoAgent",
     PrimaryInstallerFile = "ContosoAgent.msi",
-    DisplayName = "Contoso Agent",
+    DisplayName = "Contoso Sample Agent",
     Description = "Endpoint agent for Contoso services.",
     Publisher = "Contoso",
     Architecture = RequirementArchitecture.X64,
     Language = "en-US",
     InstallContext = InstallationBehavior.System,
+    ArpDisplayNameMatch = "Contoso Sample Agent",
+    ArpVersionMatch = "1.0",
     MsiProductCode = Guid.Parse("{msi-product-code}"),
+    CmdArguments = "/qn",
     IconPath = @"C:\Packages\ContosoAgent.png"
 };
 
@@ -143,14 +147,19 @@ See [CreateApplicationAsync](../sdk/applications.md#createapplicationasync).
 $app = New-PmpcCustomApplication `
     -FolderPath 'C:\Packages\ContosoAgent' `
     -PrimaryInstallerFile 'ContosoAgent.msi' `
-    -DisplayName 'Contoso Agent' `
+    -DisplayName 'Contoso Sample Agent' `
     -Description 'Endpoint agent for Contoso services.' `
     -Publisher 'Contoso' `
     -MsiProductCode '{msi-product-code}' `
+    -CmdArguments '/qn' `
+    -ArpDisplayNameMatch 'Contoso Sample Agent' `
+    -ArpVersionMatch '1.0' `
     -IconPath 'C:\Packages\ContosoAgent.png'
 
-$app.ProductId
-$app.UpdateId
+[pscustomobject]@{
+    ProductId = $app.ProductId
+    UpdateId = $app.UpdateId
+}
 ```
 
 `New-PmpcCustomApplication` supports `-WhatIf` and `-Confirm`. It uses an operation that must be enabled for your account; until it is, the cmdlet reports the error code `FEATURE_NOT_ENABLED`.
@@ -185,7 +194,7 @@ See [GetApplicationDetailsAsync](../sdk/applications.md#getapplicationdetailsasy
 
 {% tab title="PowerShell" %}
 ```powershell
-Get-PmpcCustomApplication -ProductId $app.ProductId
+Get-PmpcCustomApplication -ProductId '{product-id}'
 ```
 
 See [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md).

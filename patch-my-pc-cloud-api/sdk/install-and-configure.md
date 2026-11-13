@@ -10,7 +10,7 @@ noRobotsIndex: true
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
-This page shows you how to add the .NET SDK for the Patch My PC Cloud Customer API to a project, register it with dependency injection, set its options, and get an `IAppCatBroker` instance to call.
+This page shows you how to add the .NET SDK for the Patch My PC Cloud Customer API to a project, register it with dependency injection, set its options, and get an `IPmpcCloudClient` instance to call.
 
 ## Prerequisites
 
@@ -19,10 +19,10 @@ This page shows you how to add the .NET SDK for the Patch My PC Cloud Customer A
 
 ## Install the package
 
-The `pmpc.appcatbroker.sdk` package is published on nuget.org. Add it to your project:
+The `PatchMyPC.Cloud` package is published on nuget.org. Add it to your project:
 
 ```bash
-dotnet add package pmpc.appcatbroker.sdk
+dotnet add package PatchMyPC.Cloud
 ```
 
 The examples on this page also use the .NET generic host, so add it if your project doesn't reference it already:
@@ -33,37 +33,37 @@ dotnet add package Microsoft.Extensions.Hosting
 
 ## Register the SDK
 
-Call `AddAppCatBrokerSdk` on your service collection. It registers `IAppCatBroker` and everything it depends on, and binds the `AppCatBrokerSdkConfig` configuration section to the SDK's options.
+Call `AddPmpcCloudSdk` on your service collection. It registers `IPmpcCloudClient` and everything it depends on, and binds the `PmpcCloudSdkConfig` configuration section to the SDK's options.
 
 ```csharp
-using pmpc.appcatbroker.sdk.Extensions;
+using PatchMyPC.Cloud.Extensions;
 
-builder.Services.AddAppCatBrokerSdk();
+builder.Services.AddPmpcCloudSdk();
 ```
 
-`AddAppCatBrokerSdk` reads its options from `IConfiguration`, so register configuration before you call it. The .NET generic host (`Host.CreateApplicationBuilder` or `Host.CreateDefaultBuilder`) does this for you.
+`AddPmpcCloudSdk` reads its options from `IConfiguration`, so register configuration before you call it. The .NET generic host (`Host.CreateApplicationBuilder` or `Host.CreateDefaultBuilder`) does this for you.
 
 ## Configure the SDK
 
-Put the SDK's options in an `AppCatBrokerSdkConfig` section, for example in `appsettings.json`:
+Put the SDK's options in an `PmpcCloudSdkConfig` section, for example in `appsettings.json`:
 
 {% code title="appsettings.json" %}
 ```json
 {
-  "AppCatBrokerSdkConfig": {
+  "PmpcCloudSdkConfig": {
     "Region": "Us"
   }
 }
 ```
 {% endcode %}
 
-Like any .NET configuration, you can also supply the values as environment variables, for example `AppCatBrokerSdkConfig__Region=Eu`. Keep your personal access token out of configuration files and source control; read it from a secret store or an environment variable at run time.
+Like any .NET configuration, you can also supply the values as environment variables, for example `PmpcCloudSdkConfig__Region=Eu`. Keep your personal access token out of configuration files and source control; read it from a secret store or an environment variable at run time.
 
 ### SDK options
 
-| Option   | Type                 | Default | Description                                                                                                                                  |
-| -------- | -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Region` | `AppCatBrokerRegion` | None    | The region your Patch My PC account is hosted in: `Us` or `Eu`. Required, so the SDK knows which regional service to exchange your PAT with. |
+| Option   | Type               | Default | Description                                                                                                               |
+| -------- | ------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `Region` | `PmpcCloudRegion?` | `null`  | Optionally select your account's regional host: `Us`, `Eu`, or `Uk`. When omitted, the SDK uses the standard portal host. |
 
 ### Upload options
 
@@ -89,16 +89,16 @@ var uploadOptions = new ChunkUploadOptions
 };
 ```
 
-## Get an IAppCatBroker instance
+## Get an IPmpcCloudClient instance
 
-Resolve `IAppCatBroker` from a dependency injection scope. The SDK registers it as a scoped service, and the instance remembers your access token, company, and selected connection, so use the same instance for a whole session.
+Resolve `IPmpcCloudClient` from a dependency injection scope. The SDK registers it as a scoped service, and the instance remembers your access token, company, and selected connection, so use the same instance for a whole session.
 
 ```csharp
 using var scope = host.Services.CreateScope();
-var client = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
+var client = scope.ServiceProvider.GetRequiredService<IPmpcCloudClient>();
 ```
 
-In an ASP.NET Core application or a worker service, inject `IAppCatBroker` into your own scoped services instead.
+In an ASP.NET Core application or a worker service, inject `IPmpcCloudClient` into your own scoped services instead.
 
 ## Authenticate
 
@@ -108,22 +108,22 @@ For deployment, deployment template, and public catalog methods, also select a c
 
 ## Complete example
 
-This console application authenticates with a personal access token read from the `PMPC_PAT` environment variable, selects the first connection, prints the account's information, and lists the first page of applications. Set `Region` in configuration before you run it.
+This console application authenticates with a personal access token read from the `PMPC_PAT` environment variable, selects the first connection, prints the account's information, and lists the first page of applications. Set `Region` to `Us`, `Eu`, or `Uk` in configuration to use your account's regional host.
 
 {% code title="Program.cs" %}
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using pmpc.appcatbroker.client;
-using pmpc.appcatbroker.sdk.Extensions;
-using pmpc.appcatbroker.sdk.Services;
+using PatchMyPC.Cloud.Client;
+using PatchMyPC.Cloud.Extensions;
+using PatchMyPC.Cloud.Services;
 
 var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AddAppCatBrokerSdk();
+builder.Services.AddPmpcCloudSdk();
 using var host = builder.Build();
 
 using var scope = host.Services.CreateScope();
-var client = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
+var client = scope.ServiceProvider.GetRequiredService<IPmpcCloudClient>();
 
 // Authenticate with a personal access token. The session uses the token's company.
 var pat = Environment.GetEnvironmentVariable("PMPC_PAT");

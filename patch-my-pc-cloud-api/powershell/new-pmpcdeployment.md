@@ -215,6 +215,7 @@ Deploys the application to Windows devices in the group as a required install.
 
 ```powershell
 $parent = Get-PmpcDeploymentDependencyCandidate -ProductId $productId | Where-Object Name -like '*Visual C++*'
+$assignment = New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required
 New-PmpcDeployment -ProductId $productId -OsType Windows -Assignment $assignment -ParentDeploymentId $parent.Id
 ```
 
@@ -223,8 +224,8 @@ Makes the deployment depend on an existing one, so the runtime installs first.
 ### Example 3: Create a deployment from a template
 
 ```powershell
-$t = Get-PmpcDeploymentTemplate | Where-Object IsDefault
-New-PmpcDeployment -ProductId $productId -OsType Windows -Template $t
+$t = Get-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
+New-PmpcDeployment -ProductId $productId -OsType Windows -Template $t -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required)
 ```
 
 Starts from the connection's default template. The template supplies categories, Enrollment Status Page (ESP) profiles, scope tags, and the configuration block.
@@ -232,7 +233,8 @@ Starts from the connection's default template. The template supplies categories,
 ### Example 4: Override one thing the template sets
 
 ```powershell
-New-PmpcDeployment -ProductId $productId -OsType Windows -Template $t -CategoryId $categoryId
+$t = Get-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
+New-PmpcDeployment -ProductId $productId -OsType Windows -Template $t -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required) -CategoryId $categoryId
 ```
 
 The explicit category wins; everything else still comes from the template.
@@ -241,7 +243,7 @@ The explicit category wins; everything else still comes from the template.
 
 ```powershell
 $config = New-PmpcDeploymentConfiguration -AdditionalArgument '/qn' -AppVersionsRetention 3
-New-PmpcDeployment -ProductId $productId -OsType Windows -Assignment $assignment -Configuration $config
+New-PmpcDeployment -ProductId $productId -OsType Windows -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required) -Configuration $config
 ```
 
 Sets installer arguments and version retention at create time; anything left unset gets the deployment's normal default.

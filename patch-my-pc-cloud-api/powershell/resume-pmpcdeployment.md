@@ -106,7 +106,7 @@ Restarts the deployment's scheduled sync.
 ### Example 2: Resume everything that was paused
 
 ```powershell
-Get-PmpcDeployment -ProductId $productId | Where-Object SyncOnHold | Resume-PmpcDeployment
+Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Resume-PmpcDeployment
 ```
 
 Finds the paused deployments and restarts each one.

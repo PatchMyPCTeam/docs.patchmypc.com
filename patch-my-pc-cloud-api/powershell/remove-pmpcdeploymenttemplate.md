@@ -91,15 +91,15 @@ This cmdlet does not return output.
 Remove-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
 ```
 
-Prompts for confirmation, because deleting a template cannot be undone.
+Deletes the specified non-default template. Add -Confirm to display a confirmation prompt.
 
-### Example 2: Delete every non-default template
+### Example 2: Delete without prompting
 
 ```powershell
-Get-PmpcDeploymentTemplate | Where-Object { -not $_.IsDefault } | Remove-PmpcDeploymentTemplate
+Remove-PmpcDeploymentTemplate -DeploymentTemplateId $templateId -Confirm:$false
 ```
 
-Filtering out the default first avoids a refusal on the one template that cannot be removed.
+Deletes the template without prompting. The default template cannot be removed.
 
 ## Notes
 

@@ -99,18 +99,18 @@ for ($attempt = 1; $attempt -le 5; $attempt++) {
 }
 ```
 
-The example uses the US host. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+The example uses the US host. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 {% endtab %}
 
 {% tab title="C#" %}
 {% code title="Program.cs" %}
 ```csharp
-using pmpc.appcatbroker.sdk.Constants;
+using PatchMyPC.Cloud.Constants;
 
 for (var attempt = 1; attempt <= 5; attempt++)
 {
     var result = await client.GetCustomerInfoAsync();
-    if (result.IsSuccess || result.Error.Code != BrokerErrorCodes.RateLimited)
+    if (result.IsSuccess || result.Error.Code != PmpcCloudErrorCodes.RateLimited)
     {
         break;
     }

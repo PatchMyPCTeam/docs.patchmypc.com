@@ -213,7 +213,7 @@ Changes only the name; assignments and every other setting are untouched.
 ### Example 2: Replace the assignments
 
 ```powershell
-Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Assignment (New-PmpcDeploymentAssignment -GroupId $allUsers -Intent Available)
+Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Available)
 ```
 
 Replaces the deployment's group assignments with a single available assignment.
@@ -225,7 +225,7 @@ $config = New-PmpcDeploymentConfiguration -AppVersionsRetention 5
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Configuration $config
 ```
 
-Changes only the retention count. Every other configuration setting the deployment already has, including its conflicting-process behavior and return codes, is left alone.
+Changes only the retention count. Every other configuration setting the deployment already has, including its conflicting-process behaviour and return codes, is left alone.
 
 ### Example 4: Change the installer arguments
 
@@ -234,7 +234,7 @@ $config = New-PmpcDeploymentConfiguration -AdditionalArgument '/qn REBOOT=Really
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Configuration $config
 ```
 
-Replaces the installer arguments and leaves every other configuration setting unchanged.
+AdditionalArgument is a member of -Configuration; it used to be a parameter of its own.
 
 ### Example 5: Remove all categories
 

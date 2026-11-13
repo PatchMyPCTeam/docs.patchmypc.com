@@ -18,7 +18,7 @@ All of these methods need an authenticated session. For details, see [SDK authen
 
 ### Customer information
 
-`CustomerInfoDto` (namespace `pmpc.appcatbroker.client`) describes your account.
+`CustomerInfoDto` (namespace `PatchMyPC.Cloud.Client`) describes your account.
 
 | Property                   | Type     | Description                                                                                                                     |
 | -------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,7 +31,7 @@ All of these methods need an authenticated session. For details, see [SDK authen
 
 ### Connection
 
-`ConnectionDto` (namespace `pmpc.appcatbroker.client`) describes one connection.
+`ConnectionDto` (namespace `PatchMyPC.Cloud.Client`) describes one connection.
 
 | Property       | Type      | Description                                                                                                                        |
 | -------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------- |

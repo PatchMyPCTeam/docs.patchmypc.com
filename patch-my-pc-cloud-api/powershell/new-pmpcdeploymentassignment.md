@@ -110,12 +110,12 @@ Creates an assignment that installs the application on the group's devices.
 ```powershell
 $assignments = @(
   New-PmpcDeploymentAssignment -GroupId $pilotGroup -Intent Required
-  New-PmpcDeploymentAssignment -GroupId $allUsers -Intent Available
+  New-PmpcDeploymentAssignment -GroupId $salesGroup -Intent Available
 )
 New-PmpcDeployment -ProductId $productId -OsType Windows -Assignment $assignments
 ```
 
-Makes the application required for a pilot group and available to everyone else.
+Makes the application required for a pilot group and available to a second group.
 
 ### Example 3: Assign to All Devices
 

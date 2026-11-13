@@ -4,7 +4,7 @@ noIndex: true
 noRobotsIndex: true
 ---
 
-# Get-PmpcBrokerSession
+# Get-PmpcCloudSession
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
@@ -15,7 +15,7 @@ Reports the module's current session state.
 ## Syntax
 
 ```powershell
-Get-PmpcBrokerSession [<CommonParameters>]
+Get-PmpcCloudSession [<CommonParameters>]
 ```
 
 ## Description
@@ -38,7 +38,7 @@ This cmdlet does not accept pipeline input.
 
 ## Outputs
 
-### AppCatBrokerSessionInfo
+### PmpcCloudSessionInfo
 
 The session snapshot.
 
@@ -47,18 +47,10 @@ The session snapshot.
 ### Example 1: Show the current session
 
 ```powershell
-Get-PmpcBrokerSession
+Get-PmpcCloudSession
 ```
 
 Displays connection state along with the selected company and connection.
-
-### Example 2: Guard a script on being connected
-
-```powershell
-if (-not (Get-PmpcBrokerSession).IsConnected) { throw 'Run Connect-PmpcBrokerWithPat first.' }
-```
-
-Fails fast with a clear message instead of letting the first real command produce a connection error.
 
 ## Notes
 
@@ -66,8 +58,7 @@ Credentials are never exposed in the session summary, because a session summary 
 
 ## Related links
 
-* [Connect-PmpcBrokerWithPat](connect-pmpcbrokerwithpat.md)
-* [Disconnect-PmpcBroker](disconnect-pmpcbroker.md)
+* [Disconnect-PmpcCloud](disconnect-pmpccloud.md)
 * PowerShell module
 
 ## See also

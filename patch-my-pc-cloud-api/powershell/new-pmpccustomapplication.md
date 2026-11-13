@@ -72,7 +72,7 @@ Architecture the application targets. Defaults to X64.
 
 ### -ArpDisplayNameMatch
 
-Pattern matched against the application's Add/Remove Programs display name. Used for detection when no custom detection rules are supplied.
+Pattern matched against the application's Add/Remove Programs display name. Required when creating an application. Also used for detection when no custom detection rules are supplied.
 
 | Attribute      | Value           |
 | -------------- | --------------- |
@@ -85,7 +85,7 @@ Pattern matched against the application's Add/Remove Programs display name. Used
 
 ### -ArpVersionMatch
 
-Pattern matched against the application's Add/Remove Programs version. Used for detection alongside -ArpDisplayNameMatch.
+The application's Add/Remove Programs version number: numbers only, with two to four dot-separated parts, for example 24.08 or 1.2.3.4. Wildcards are not accepted. Required when creating an application. Also used for detection alongside -ArpDisplayNameMatch.
 
 | Attribute      | Value           |
 | -------------- | --------------- |
@@ -519,23 +519,23 @@ The created application's IDs and upload statistics.
 ### Example 1: Create an application
 
 ```powershell
-New-PmpcCustomApplication -FolderPath .\7zip -PrimaryInstallerFile '7z2408-x64.msi' -DisplayName '7-Zip' -Description 'File archiver' -Publisher 'Igor Pavlov'
+New-PmpcCustomApplication -FolderPath .\7zip -PrimaryInstallerFile '7z2408-x64.msi' -DisplayName 'Contoso Archive Tool' -Description 'Sample file archiver' -Publisher 'Contoso' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpDisplayNameMatch '7-Zip*' -ArpVersionMatch '24.08'
 ```
 
-Uploads every file in the folder and creates the application.
+Uploads every file in the folder and creates the application. The custom display name avoids a collision with the public 7-Zip catalog entry.
 
 ### Example 2: Create an EXE application with detection and silent arguments
 
 ```powershell
-New-PmpcCustomApplication -FolderPath .\app -PrimaryInstallerFile 'setup.exe' -DisplayName 'Contoso App' -Description 'Line of business app' -Publisher 'Contoso' -CmdArguments '/S' -SilentUninstallArg '/S /uninstall' -ArpDisplayNameMatch 'Contoso App*' -ArpVersionMatch '1.*'
+New-PmpcCustomApplication -FolderPath .\app -PrimaryInstallerFile 'setup.exe' -DisplayName 'Contoso App' -Description 'Line of business app' -Publisher 'Contoso' -CmdArguments '/S' -SilentUninstallArg '/S /uninstall' -ArpDisplayNameMatch 'Contoso App*' -ArpVersionMatch '1.0'
 ```
 
-Supplies silent install and uninstall arguments and Add/Remove Programs detection patterns.
+Supplies silent install and uninstall arguments and Add/Remove Programs detection values.
 
 ### Example 3: Tune the upload for a large folder
 
 ```powershell
-New-PmpcCustomApplication -FolderPath .\bigapp -PrimaryInstallerFile 'setup.msi' -DisplayName 'Big App' -Description 'Large application' -Publisher 'Contoso' -MaxFileConcurrency 8 -ChunkSize 16MB -RetryAttempt 5
+New-PmpcCustomApplication -FolderPath .\bigapp -PrimaryInstallerFile 'setup.msi' -DisplayName 'Big App' -Description 'Large application' -Publisher 'Contoso' -CmdArguments '/qn' -ArpDisplayNameMatch 'Big App*' -ArpVersionMatch '1.0' -MaxFileConcurrency 8 -ChunkSize 16MB -RetryAttempt 5
 ```
 
 Raises file concurrency and chunk size, and allows more retries on a flaky link.
@@ -543,12 +543,16 @@ Raises file concurrency and chunk size, and allows more retries on a flaky link.
 ### Example 4: Create from a metadata object
 
 ```powershell
-$metadata = [pmpc.appcatbroker.sdk.Models.ApplicationMetadata]::new()
-$metadata.FolderPath = 'C:\apps\7zip'
+$metadata = [PatchMyPC.Cloud.Models.ApplicationMetadata]::new()
+$metadata.FolderPath = (Resolve-Path '.\7zip').Path
 $metadata.PrimaryInstallerFile = '7z2408-x64.msi'
-$metadata.DisplayName = '7-Zip'
-$metadata.Description = 'File archiver'
-$metadata.Publisher = 'Igor Pavlov'
+$metadata.DisplayName = 'Contoso File Archiver'
+$metadata.Description = 'Sample file archiver'
+$metadata.Publisher = 'Contoso'
+$metadata.MsiProductCode = [guid]'{msi-product-code}'
+$metadata.CmdArguments = '/qn'
+$metadata.ArpDisplayNameMatch = '7-Zip*'
+$metadata.ArpVersionMatch = '24.08'
 New-PmpcCustomApplication -Metadata $metadata
 ```
 
@@ -557,6 +561,10 @@ Uses the SDK metadata type directly, which is useful when the values come from a
 ## Notes
 
 Counts against the customer's custom-application limit. Use Remove-PmpcCustomApplication to free a slot.
+
+Choose a display name that does not conflict with an application already available to your company. The example uses a distinct custom-app name with the 7-Zip installer to avoid a collision with the public catalog entry.
+
+The installer type is set by -MsiProductCode: with a product code the application is an MSI, and without one it is an EXE, which also requires -CmdArguments. Provide -MsiProductCode for an MSI installer.
 
 Press Ctrl-C to cancel: the upload is canceled rather than left running to completion in the background.
 

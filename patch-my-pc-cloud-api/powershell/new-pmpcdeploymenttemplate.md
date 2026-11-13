@@ -277,7 +277,7 @@ The created template, read back from the service rather than echoed.
 ### Example 1: Create a minimal template
 
 ```powershell
-New-PmpcDeploymentTemplate -TemplateName 'Standard Windows apps'
+New-PmpcDeploymentTemplate -TemplateName "Standard Windows apps $([guid]::NewGuid())"
 ```
 
 Creates a template with default settings on the selected connection.
@@ -286,18 +286,18 @@ Creates a template with default settings on the selected connection.
 
 ```powershell
 $reqs = New-PmpcDeploymentRequirement -MinimumWindowsOSVersion Windows11_21H2 -MinimumMemoryInMB 8192
-New-PmpcDeploymentTemplate -TemplateName 'Windows 11 baseline' -CustomRequirements $reqs
+New-PmpcDeploymentTemplate -TemplateName "Windows 11 baseline $([guid]::NewGuid())" -CustomRequirements $reqs
 ```
 
 Deployments created from this template start with the same requirements.
 
-### Example 3: Create the connection default
+### Example 3: Set deployment options
 
 ```powershell
-New-PmpcDeploymentTemplate -TemplateName 'Company default' -Default
+New-PmpcDeploymentTemplate -TemplateName "Retain previous versions $([guid]::NewGuid())" -AppVersionsRetention 3
 ```
 
-Demotes whichever template is currently the default. A connection has exactly one, and it is what a deployment created without a template inherits.
+Deployments created from this template retain the three most recent previous application versions.
 
 ## Notes
 

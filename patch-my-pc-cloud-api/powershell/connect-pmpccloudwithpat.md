@@ -1,30 +1,30 @@
 ---
-description: Connects to the Cloud Customer API with a personal access token.
+description: Authenticates using a personal access token.
 noIndex: true
 noRobotsIndex: true
 ---
 
-# Connect-PmpcBrokerWithPat
+# Connect-PmpcCloudWithPat
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
 ## Synopsis
 
-Connects to the Cloud Customer API with a personal access token.
+Authenticates using a personal access token.
 
 ## Syntax
 
 ```powershell
-Connect-PmpcBrokerWithPat [-Token] <SecureString> [-PassThru]
-  [-Region <AppCatBrokerRegion>] [-ConfigurationFile <String>]
-  [-MaxSingleFileUploadSize <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Connect-PmpcCloudWithPat [-Token] <SecureString> [-PassThru] [-Region <PmpcCloudRegion>]
+  [-ConfigurationFile <String>] [-MaxSingleFileUploadSize <Int64>] [-WhatIf] [-Confirm]
+  [<CommonParameters>]
 ```
 
 ## Description
 
-Exchanges a personal access token (PAT) for an access token that's valid for 60 minutes, and scopes the session to the customer that token belongs to. The session exchanges the PAT again when the access token expires. Because it needs no prompt, it works from scripts, scheduled tasks, and build agents. No company selection is needed afterwards, because the token identifies its own customer.
+Exchanges a personal access token (PAT) for a short-lived gateway token and scopes the session to the customer that token belongs to. This is the authentication path for unattended callers. No company selection is needed afterwards, because the token identifies its own customer.
 
-Provide the customer's region with -Region so the token exchange reaches the correct regional service.
+Provide the customer's region with -Region so the token exchange reaches the correct regional PatchMyPC.Cloud host.
 
 ## Parameters
 
@@ -80,14 +80,14 @@ Emit the resolved company, which is otherwise not written to the pipeline.
 
 Production region that owns the customer this token belongs to. Accepted values are Eu, Us, and Uk. Required.
 
-| Attribute       | Value                |
-| --------------- | -------------------- |
-| Type            | `AppCatBrokerRegion` |
-| Required        | False                |
-| Position        | Named                |
-| Pipeline input  | False                |
-| Aliases         | None                 |
-| Accepted values | Eu, Us, Uk           |
+| Attribute       | Value             |
+| --------------- | ----------------- |
+| Type            | `PmpcCloudRegion` |
+| Required        | False             |
+| Position        | Named             |
+| Pipeline input  | False             |
+| Aliases         | None              |
+| Accepted values | Eu, Us, Uk        |
 
 ### -Token
 
@@ -135,7 +135,7 @@ The customer the token belongs to. Emitted only with -PassThru.
 
 ```powershell
 $token = Read-Host -AsSecureString "PAT"
-Connect-PmpcBrokerWithPat -Token $token -Region Us
+Connect-PmpcCloudWithPat -Token $token -Region Us
 ```
 
 Prompts without echoing the token, then authenticates against the US production region.
@@ -144,21 +144,21 @@ Prompts without echoing the token, then authenticates against the US production 
 
 ```powershell
 $token = ConvertTo-SecureString $env:PMPC_PAT -AsPlainText -Force
-$company = Connect-PmpcBrokerWithPat -Token $token -Region Eu -PassThru
+$company = Connect-PmpcCloudWithPat -Token $token -Region Eu -PassThru
 ```
 
 Reads the token from the environment, as a build agent would, and captures the resolved customer.
 
 ## Notes
 
-Takes a SecureString so the token is not left in command history or a transcript. What the session can then do is bounded by the scopes the token was granted, so a call may be refused for lack of scope even though authentication succeeded. Creating, listing, and revoking tokens are not available from a PAT session; manage tokens on the Access Tokens page of the Patch My PC portal.
+Takes a SecureString so the token is not left in command history or a transcript. What the session can then do is bounded by the scopes the token was granted, so a call may be refused for lack of scope even though authentication succeeded. To list or revoke tokens, use the Access Tokens page of the Patch My PC portal.
 
--Region maps to the Patch My PC production regions only.
+-Region maps only to Patch My PC production regional hosts.
 
 ## Related links
 
-* [Get-PmpcBrokerSession](get-pmpcbrokersession.md)
-* [Disconnect-PmpcBroker](disconnect-pmpcbroker.md)
+* [Get-PmpcCloudSession](get-pmpccloudsession.md)
+* [Disconnect-PmpcCloud](disconnect-pmpccloud.md)
 * PowerShell module
 
 ## See also

@@ -19,7 +19,7 @@ Like creating an application, an update uploads files. The .NET SDK and the Powe
 ## Before you begin
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
-* The REST examples use the US host, `https://us.portal.patchmypc.com`. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+* The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:write` scope, and `appcatbroker:apps:read` to look up the application.
 * Prepare a folder with the new version's installer and supporting files, as described in [Create a custom application](create-a-custom-application.md).
 
@@ -36,7 +36,7 @@ Authorization: Bearer {access-token}
 Content-Type: application/json
 
 {
-  "displayNameSearchString": "Contoso Agent"
+  "displayNameSearchString": "Contoso Sample Agent"
 }
 ```
 
@@ -49,7 +49,7 @@ See [Search applications](../rest-api/applications.md#search-applications).
 ```csharp
 var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
-    DisplayNameSearchString = "Contoso Agent"
+    DisplayNameSearchString = "Contoso Sample Agent"
 });
 
 var current = search.Value.Products.First();
@@ -60,7 +60,7 @@ See [SearchApplicationsAsync](../sdk/applications.md#searchapplicationsasync).
 
 {% tab title="PowerShell" %}
 ```powershell
-$current = Find-PmpcCustomApplication -DisplayName 'Contoso Agent' | Select-Object -First 1
+$current = Find-PmpcCustomApplication -DisplayName 'Contoso Sample Agent' | Select-Object -First 1
 $current | Select-Object DisplayName, Version, ProductId, UpdateId
 ```
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 {
   "productId": "{product-id}",
   "updateId": "{new-update-id}",
-  "revisionId": {revision-id},
+  "revisionId": 123,
   "primaryInstallerFile": "ContosoAgent.msi",
   "msiProductCode": "{msi-product-code}",
   "files": [
@@ -128,7 +128,9 @@ var updated = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
     UpdateId = current.UpdateId,
     FolderPath = @"C:\Packages\ContosoAgent-4.3",
     PrimaryInstallerFile = "ContosoAgent.msi",
-    MsiProductCode = Guid.Parse("{msi-product-code}")
+    MsiProductCode = Guid.Parse("{msi-product-code}"),
+    CmdArguments = "/qn",
+    ArpVersionMatch = "{version}"
 });
 
 if (updated.IsFailure)
@@ -147,12 +149,10 @@ See [UpdateApplicationAsync](../sdk/applications.md#updateapplicationasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-`Update-PmpcCustomApplication` takes the product ID and update ID from the pipeline, so you can pipe a search result into it.
+Use the product and update IDs returned by `Get-PmpcCustomApplication` or `Find-PmpcCustomApplication`. Provide the new version with `-ArpVersionMatch`. For an MSI installer, also provide the new installer's product code; the installer type cannot change between versions.
 
 ```powershell
-Find-PmpcCustomApplication -DisplayName 'Contoso Agent' |
-    Select-Object -First 1 |
-    Update-PmpcCustomApplication -FolderPath 'C:\Packages\ContosoAgent-4.3' -PrimaryInstallerFile 'ContosoAgent.msi'
+Update-PmpcCustomApplication -ProductId '{product-id}' -UpdateId '{update-id}' -FolderPath 'C:\Packages\ContosoAgent-4.3' -PrimaryInstallerFile 'ContosoAgent.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '{version}'
 ```
 
 The cmdlets in this example use operations that must be enabled for your account. Until they are, they report the error code `FEATURE_NOT_ENABLED`.

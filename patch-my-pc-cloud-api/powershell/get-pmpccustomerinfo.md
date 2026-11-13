@@ -57,7 +57,7 @@ Works under either authentication mode. Under a personal access token (PAT), the
 ## Related links
 
 * [Get-PmpcSelectedCompany](get-pmpcselectedcompany.md)
-* [Connect-PmpcBrokerWithPat](connect-pmpcbrokerwithpat.md)
+* [Connect-PmpcCloudWithPat](connect-pmpccloudwithpat.md)
 * PowerShell module
 
 ## See also

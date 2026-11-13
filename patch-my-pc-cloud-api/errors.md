@@ -36,7 +36,7 @@ Authorization: Bearer {access-token}
 Accept: application/json, application/problem+json
 ```
 
-The REST examples on this page use the US host. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+The REST examples on this page use the US host. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 
 ```json
 {
@@ -82,21 +82,21 @@ Retrying a `403` response doesn't help—the result is the same until the permis
 
 ## Error codes in the SDK and PowerShell module
 
-SDK methods return a result instead of throwing. When `IsFailure` is `true`, `Error.Code` holds one of the codes below. The constants are defined on `BrokerErrorCodes`. The PowerShell module writes a non-terminating error record whose error ID is the same code.
+SDK methods return a result instead of throwing. When `IsFailure` is `true`, `Error.Code` holds one of the codes below. The constants are defined on `PmpcCloudErrorCodes`. The PowerShell module writes a non-terminating error record whose error ID is the same code.
 
-| HTTP status and problem title             | Error code               | `BrokerErrorCodes` constant |
-| ----------------------------------------- | ------------------------ | --------------------------- |
-| `400` `validation_error`                  | `VALIDATION_ERROR`       | `ValidationError`           |
-| `401` `unauthorized`                      | `AUTH_ERROR`             | `AuthenticationFailed`      |
-| `403` `forbidden` or `insufficient_scope` | `AUTHZ_ERROR`            | `AuthorizationFailed`       |
-| `403` `feature_not_enabled`               | `FEATURE_NOT_ENABLED`    | `FeatureNotEnabled`         |
-| `404` `not_found`                         | `NOT_FOUND`              | `NotFound`                  |
-| `409` `conflict`                          | `CONFLICT`               | `Conflict`                  |
-| `429` `rate_limit_exceeded`               | `RATE_LIMITED`           | `RateLimited`               |
-| `5xx` `internal_error`                    | `UNEXPECTED_ERROR`       | `UnexpectedError`           |
-| `429` from the PAT exchange               | `PAT_EXCHANGE_THROTTLED` | `PatExchangeThrottled`      |
-| `403` from the PAT exchange               | `PAT_NOT_ENTITLED`       | `PatExchangeNotEntitled`    |
-| None—you canceled the operation           | `OPERATION_CANCELLED`    | `OperationCancelled`        |
+| HTTP status and problem title             | Error code               | `PmpcCloudErrorCodes` constant |
+| ----------------------------------------- | ------------------------ | ------------------------------ |
+| `400` `validation_error`                  | `VALIDATION_ERROR`       | `ValidationError`              |
+| `401` `unauthorized`                      | `AUTH_ERROR`             | `AuthenticationFailed`         |
+| `403` `forbidden` or `insufficient_scope` | `AUTHZ_ERROR`            | `AuthorizationFailed`          |
+| `403` `feature_not_enabled`               | `FEATURE_NOT_ENABLED`    | `FeatureNotEnabled`            |
+| `404` `not_found`                         | `NOT_FOUND`              | `NotFound`                     |
+| `409` `conflict`                          | `CONFLICT`               | `Conflict`                     |
+| `429` `rate_limit_exceeded`               | `RATE_LIMITED`           | `RateLimited`                  |
+| `5xx` `internal_error`                    | `UNEXPECTED_ERROR`       | `UnexpectedError`              |
+| `429` from the PAT exchange               | `PAT_EXCHANGE_THROTTLED` | `PatExchangeThrottled`         |
+| `403` from the PAT exchange               | `PAT_NOT_ENTITLED`       | `PatExchangeNotEntitled`       |
+| None—you canceled the operation           | `OPERATION_CANCELLED`    | `OperationCancelled`           |
 
 The SDK can also report `NETWORK_ERROR` when it can't reach the service and `CONFIG_ERROR` when its configuration is incomplete.
 
@@ -119,17 +119,17 @@ Check the status code first. For a failure, read `title` from the problem detail
 {% tab title="C#" %}
 {% code title="Program.cs" %}
 ```csharp
-using pmpc.appcatbroker.sdk.Constants;
+using PatchMyPC.Cloud.Constants;
 
 var result = await client.GetCustomerInfoAsync();
 if (result.IsFailure)
 {
     switch (result.Error.Code)
     {
-        case BrokerErrorCodes.FeatureNotEnabled:
+        case PmpcCloudErrorCodes.FeatureNotEnabled:
             Console.WriteLine("Ask Patch My PC to enable this feature for your account.");
             break;
-        case BrokerErrorCodes.RateLimited:
+        case PmpcCloudErrorCodes.RateLimited:
             result.Error.Metadata.TryGetValue("retryAfterSeconds", out var retryAfter);
             Console.WriteLine($"Rate limited. Retry after {retryAfter ?? 60} seconds.");
             break;

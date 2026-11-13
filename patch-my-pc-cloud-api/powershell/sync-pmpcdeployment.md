@@ -108,7 +108,7 @@ Updates the deployment to the latest pending version.
 ### Example 2: Sync every deployment of an application
 
 ```powershell
-Get-PmpcDeployment -ProductId $productId | Sync-PmpcDeployment
+Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Sync-PmpcDeployment
 ```
 
 Rolls the latest version out to all of the application's deployments.

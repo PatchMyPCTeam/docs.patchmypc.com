@@ -16,7 +16,7 @@ This page takes you from nothing to a first successful call to the Patch My PC C
 
 You need:
 
-* **A Patch My PC cloud account.** The Cloud Customer API acts on the account—also called the company—that your token belongs to. Your account is hosted in one region, US or EU.
+* **A Patch My PC cloud account.** The Cloud Customer API acts on the account—also called the company—that your token belongs to. Your account is hosted in one region: US, EU, or UK.
 * **Permissions in that account.** The Cloud Customer API never lets you do more than you can do yourself. To read applications you need read access to applications; to create or update them you need write access; to manage deployments you need deployment access.
 * **A personal access token (PAT).** Create one in the Patch My PC portal, and give it the `appcatbroker:customer:read` scope for this first call. For the steps, see [Create a personal access token](authentication.md#create-a-personal-access-token).
 
@@ -40,7 +40,7 @@ Read your account information and usage limits.
 
 {% tabs %}
 {% tab title="REST" %}
-These examples use the US host, `https://us.portal.patchmypc.com`. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+These examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 
 1. Exchange your PAT for an access token. For details, see [Exchange the PAT for an access token](authentication.md#exchange-the-pat-for-an-access-token).
 
@@ -61,18 +61,18 @@ See [Get customer info](rest-api/applications.md#get-customer-info).
 {% endtab %}
 
 {% tab title="C#" %}
-1. Add the `pmpc.appcatbroker.sdk` package from nuget.org to your project. The SDK targets .NET 8 and .NET 10.
+1. Add the `PatchMyPC.Cloud` package from nuget.org to your project. The SDK targets .NET 8 and .NET 10.
 
 ```bash
-dotnet add package pmpc.appcatbroker.sdk
+dotnet add package PatchMyPC.Cloud
 ```
 
-2. Set your account's region, `Us` or `Eu`, in configuration.
+2. Set your account's region, `Us`, `Eu`, or `Uk`, in configuration.
 
 {% code title="appsettings.json" %}
 ```json
 {
-  "AppCatBrokerSdkConfig": {
+  "PmpcCloudSdkConfig": {
     "Region": "Us"
   }
 }
@@ -85,8 +85,8 @@ dotnet add package pmpc.appcatbroker.sdk
 ```csharp
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using pmpc.appcatbroker.sdk.Extensions;
-using pmpc.appcatbroker.sdk.Services;
+using PatchMyPC.Cloud.Extensions;
+using PatchMyPC.Cloud.Services;
 
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
@@ -95,9 +95,9 @@ var configuration = new ConfigurationBuilder()
 
 var services = new ServiceCollection();
 services.AddSingleton<IConfiguration>(configuration);
-services.AddAppCatBrokerSdk();
+services.AddPmpcCloudSdk();
 
-var client = services.BuildServiceProvider().GetRequiredService<IAppCatBroker>();
+var client = services.BuildServiceProvider().GetRequiredService<IPmpcCloudClient>();
 
 var pat = Environment.GetEnvironmentVariable("PMPC_PAT")
     ?? throw new InvalidOperationException("Set PMPC_PAT to a personal access token.");
@@ -125,20 +125,20 @@ See [GetCustomerInfoAsync](sdk/customer-and-connections.md#getcustomerinfoasync)
 1. Install the module from the PowerShell Gallery. It requires PowerShell 7.4 or later on Windows, macOS, or Linux.
 
 ```powershell
-Install-Module PatchMyPC.AppCatBroker -Scope CurrentUser
+Install-Module PatchMyPC.Cloud -Scope CurrentUser
 ```
 
 2. Connect with your PAT and make the call. `Read-Host -AsSecureString` prompts for the token without showing it on screen.
 
 ```powershell
 $token = Read-Host -AsSecureString -Prompt 'Personal access token'
-Connect-PmpcBrokerWithPat -Token $token -Region Us
+Connect-PmpcCloudWithPat -Token $token -Region Us
 Get-PmpcCustomerInfo
 ```
 
-If your account is hosted in the EU, use `-Region Eu`.
+Set `-Region` to your account's region: `Us`, `Eu`, or `Uk`.
 
-See [Connect-PmpcBrokerWithPat](powershell/connect-pmpcbrokerwithpat.md) and [Get-PmpcCustomerInfo](powershell/get-pmpccustomerinfo.md).
+See [Connect-PmpcCloudWithPat](powershell/connect-pmpccloudwithpat.md) and [Get-PmpcCustomerInfo](powershell/get-pmpccustomerinfo.md).
 {% endtab %}
 {% endtabs %}
 

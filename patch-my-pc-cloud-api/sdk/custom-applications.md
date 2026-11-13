@@ -26,19 +26,19 @@ These methods use the models described on [Applications](applications.md): the [
 
 ### Custom application details
 
-`CustomApplicationDto` (namespace `pmpc.appcatbroker.client`) describes one of your custom applications in full. It has the descriptive properties of a public catalog application—`ProductId`, `Type`, `DisplayName`, `Description`, `Language`, `VendorName`, `UpdateVersion`, the icon properties, `PrivacyUrl`, `InformationUrl`, `Developer`, `IntuneNotes`, `InstallerType`, `Architecture`, `InstallContext`, and `Actions`—plus these packaging details.
+`CustomApplicationDto` (namespace `PatchMyPC.Cloud.Client`) describes one of your custom applications in full. It has the descriptive properties of a public catalog application—`ProductId`, `Type`, `DisplayName`, `Description`, `Language`, `VendorName`, `UpdateVersion`, the icon properties, `PrivacyUrl`, `InformationUrl`, `Developer`, `IntuneNotes`, `InstallerType`, `Architecture`, `InstallContext`, and `Actions`—plus these packaging details.
 
-| Property                                             | Type                   | Description                                               |
-| ---------------------------------------------------- | ---------------------- | --------------------------------------------------------- |
-| `MainFile`                                           | `string?`              | The primary installer file.                               |
-| `SilentInstallArguments`, `SilentUninstallArguments` | `string?`              | The silent install and uninstall arguments.               |
-| `ConflictingProcessList`                             | collection of `string` | Processes that block installation while running.          |
-| `DetectionRules`                                     | object                 | How Intune detects that the application is installed.     |
-| `CustomRequirements`                                 | object                 | The installation requirements.                            |
-| `ArpDisplayNameMatch`                                | `string?`              | The Add or Remove Programs display name to match.         |
-| `MsiProductCode`                                     | `Guid?`                | The MSI product code, for MSI installers.                 |
-| `Notes`, `Owner`                                     | `string?`              | Additional information.                                   |
-| `IsMigrationApp`                                     | `bool?`                | Whether the application was migrated from another system. |
+| Property                                             | Type                   | Description                                                                                                                                                                                                                                                                                                       |
+| ---------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `MainFile`                                           | `string?`              | The primary installer file.                                                                                                                                                                                                                                                                                       |
+| `SilentInstallArguments`, `SilentUninstallArguments` | `string?`              | The silent install and uninstall arguments.                                                                                                                                                                                                                                                                       |
+| `ConflictingProcessList`                             | collection of `string` | Processes that block installation while running.                                                                                                                                                                                                                                                                  |
+| `DetectionRules`                                     | object                 | How Intune detects that the application is installed.                                                                                                                                                                                                                                                             |
+| `CustomRequirements`                                 | object                 | The installation requirements.                                                                                                                                                                                                                                                                                    |
+| `ArpDisplayNameMatch`, `ArpVersionMatch`             | `string?`              | The Add or Remove Programs display name and version to match. Both are required when you create an application, and `ArpVersionMatch` is required when you update one. `ArpVersionMatch` is a version number with two to four parts separated by dots, such as `24.08` or `1.2.3.4`, and can't contain wildcards. |
+| `MsiProductCode`                                     | `Guid?`                | The MSI product code, for MSI installers.                                                                                                                                                                                                                                                                         |
+| `Notes`, `Owner`                                     | `string?`              | Additional information.                                                                                                                                                                                                                                                                                           |
+| `IsMigrationApp`                                     | `bool?`                | Whether the application was migrated from another system.                                                                                                                                                                                                                                                         |
 
 ## Methods
 
@@ -137,8 +137,8 @@ Task<Result<ApplicationData>> CreateCustomApplicationAsync(
 Each new application counts against your custom application limit. If you've reached the limit, the method fails with `VALIDATION_ERROR`. To free a slot, delete an application with [`DeleteCustomApplicationAsync`](custom-applications.md#deletecustomapplicationasync).
 
 ```csharp
-using pmpc.appcatbroker.sdk.Models;
-using static pmpc.common.Enums;
+using PatchMyPC.Cloud.Models;
+using PatchMyPC.Cloud.Client;
 
 var created = await client.CreateCustomApplicationAsync(
     new ApplicationMetadata
@@ -151,7 +151,8 @@ var created = await client.CreateCustomApplicationAsync(
         Architecture = RequirementArchitecture.X64,
         CmdArguments = "/S",
         SilentUninstallArg = "/S",
-        ArpDisplayNameMatch = "{display-name}"
+        ArpDisplayNameMatch = "{display-name}",
+        ArpVersionMatch = "{version}"
     },
     uploadOptions: new ChunkUploadOptions { MaxFileConcurrency = 4 });
 
@@ -194,7 +195,8 @@ var update = await client.UpdateCustomApplicationAsync(new ApplicationUpdateMeta
     UpdateId = product.UpdateId,
     FolderPath = @"{path-to-new-version}",
     PrimaryInstallerFile = "{installer-file-name}.exe",
-    CmdArguments = "/S"
+    CmdArguments = "/S",
+    ArpVersionMatch = "{version}"
 });
 
 if (update.IsFailure)

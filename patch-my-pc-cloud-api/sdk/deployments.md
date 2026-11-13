@@ -22,7 +22,7 @@ Every method on this page requires the feature described above.
 
 ## Models
 
-The deployment models are in the `pmpc.appcatbroker.client` namespace.
+The deployment models are in the `PatchMyPC.Cloud.Client` namespace.
 
 ### Deployment
 
@@ -247,7 +247,7 @@ Task<Result<DeploymentDto>> CreateDeploymentAsync(
 **Returns:** the new [`DeploymentDto`](deployments.md#deployment).
 
 ```csharp
-using pmpc.appcatbroker.client;
+using PatchMyPC.Cloud.Client;
 
 var created = await client.CreateDeploymentAsync(productId, new CreateDeploymentRequest
 {

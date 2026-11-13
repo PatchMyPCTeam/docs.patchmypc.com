@@ -82,7 +82,7 @@ POST https://us.portal.patchmypc.com/v1/api/auth/token
 Authorization: Bearer {personal-access-token}
 ```
 
-The examples on this page use the US host. If your Patch My PC account is in the EU region, use `https://eu.portal.patchmypc.com` instead.
+The examples on this page use the US host. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 
 A successful response returns the access token in the `gatewayJwt` property, and its lifetime in seconds:
 
@@ -122,7 +122,7 @@ var info = await client.GetCustomerInfoAsync();
 ```
 {% endcode %}
 
-To route the session to your company's region, set `Region` (`Eu` or `Us`) in the `AppCatBrokerSdkConfig` configuration section.
+To route the session to your company's region, set `Region` (`Us`, `Eu`, or `Uk`) in the `PmpcCloudSdkConfig` configuration section.
 
 See [AuthenticateWithPersonalAccessTokenAsync](sdk/authentication.md#authenticatewithpersonalaccesstokenasync).
 {% endtab %}
@@ -130,13 +130,13 @@ See [AuthenticateWithPersonalAccessTokenAsync](sdk/authentication.md#authenticat
 {% tab title="PowerShell" %}
 ```powershell
 $pat = Read-Host -AsSecureString -Prompt 'Personal access token'
-Connect-PmpcBrokerWithPat -Token $pat -Region Us
+Connect-PmpcCloudWithPat -Token $pat -Region Us
 Get-PmpcCustomerInfo
 ```
 
-`-Token` takes a `SecureString`. Set `-Region` to your company's region, `Eu` or `Us`. The session works with the token's company.
+`-Token` takes a `SecureString`. Set `-Region` to your company's region: `Us`, `Eu`, or `Uk`. The session works with the token's company.
 
-See [Connect-PmpcBrokerWithPat](powershell/connect-pmpcbrokerwithpat.md).
+See [Connect-PmpcCloudWithPat](powershell/connect-pmpccloudwithpat.md).
 {% endtab %}
 {% endtabs %}
 

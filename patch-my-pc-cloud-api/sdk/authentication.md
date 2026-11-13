@@ -18,7 +18,7 @@ Until you authenticate, most other methods fail with `VALIDATION_ERROR` because 
 
 ## Company model
 
-`CompanyInfo` (namespace `pmpc.appcatbroker.sdk.Models`) identifies the company a session works with.
+`CompanyInfo` (namespace `PatchMyPC.Cloud.Models`) identifies the company a session works with.
 
 | Property      | Type                          | Description                                                                                  |
 | ------------- | ----------------------------- | -------------------------------------------------------------------------------------------- |
@@ -47,7 +47,7 @@ Task<Result<CompanyInfo>> AuthenticateWithPersonalAccessTokenAsync(
 
 **Returns:** the [`CompanyInfo`](authentication.md#company-model) of the company the token belongs to. Every later call runs against that company.
 
-The SDK exchanges the PAT for an access token that's valid for 60 minutes, then exchanges the PAT again as the access token expires, so one authenticated `IAppCatBroker` instance works for a long-running job. Set `Region` (`Us` or `Eu`) in the SDK configuration so the SDK knows which regional service to authenticate with. For details, see [Install and configure the SDK](install-and-configure.md).
+The SDK exchanges the PAT for an access token that's valid for 60 minutes, then exchanges the PAT again as the access token expires, so one authenticated `IPmpcCloudClient` instance works for a long-running job. Set `Region` (`Us`, `Eu`, or `Uk`) in the SDK configuration to use your account's regional host. If you omit it, the SDK uses the standard portal host. For details, see [Install and configure the SDK](install-and-configure.md).
 
 A PAT can only do what its scopes allow, and never more than the user who created it. The `appcatbroker:apps:deploy` scope covers both deployments and deployment templates. For the full list, see [Scopes](../authentication.md#scopes). Calls outside its scopes fail with `AUTHZ_ERROR`. Authentication itself can fail with these codes:
 
@@ -73,7 +73,7 @@ if (session.IsFailure)
 Console.WriteLine($"Connected to {session.Value.CompanyName}");
 ```
 
-**See also:** [Connect-PmpcBrokerWithPat](../powershell/connect-pmpcbrokerwithpat.md) and [Exchange a personal access token for an access token](../rest-api/authentication.md#exchange-a-personal-access-token-for-an-access-token).
+**See also:** [Connect-PmpcCloudWithPat](../powershell/connect-pmpccloudwithpat.md) and [Exchange a personal access token for an access token](../rest-api/authentication.md#exchange-a-personal-access-token-for-an-access-token).
 
 ### GetSelectedCompany
 
@@ -118,7 +118,7 @@ if (signOut.IsFailure)
 }
 ```
 
-**See also:** [Disconnect-PmpcBroker](../powershell/disconnect-pmpcbroker.md). This method has no REST operation.
+**See also:** [Disconnect-PmpcCloud](../powershell/disconnect-pmpccloud.md). This method has no REST operation.
 
 ### IsServiceHealthyAsync
 
@@ -146,4 +146,4 @@ else
 }
 ```
 
-**See also:** [Test-PmpcBrokerHealth](../powershell/test-pmpcbrokerhealth.md). This method calls the service's health endpoint, which isn't part of the documented REST operations.
+**See also:** [Test-PmpcCloudHealth](../powershell/test-pmpccloudhealth.md). This method calls the service's health endpoint, which isn't part of the documented REST operations.

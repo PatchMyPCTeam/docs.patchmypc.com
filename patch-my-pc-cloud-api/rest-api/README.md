@@ -12,7 +12,7 @@ noRobotsIndex: true
 
 The Patch My PC Cloud Customer API is a REST API over HTTPS that you can use to search and manage your applications, deployments, and deployment templates. You can call it directly, or use the .NET SDK or the PowerShell module, which call the same operations for you.
 
-The complete OpenAPI 3.0 description of the Cloud Customer API is in [openapi.json](<../../.gitbook/assets/openapi (1).json>). You can import it into an API client or a code generator.
+The complete OpenAPI 3.0 description of the Cloud Customer API is in [openapi.json](<../../.gitbook/assets/openapi (2).json>). You can import it into an API client or a code generator.
 
 ## Base URL
 

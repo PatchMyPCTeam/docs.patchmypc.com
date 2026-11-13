@@ -20,13 +20,13 @@ You need the product ID from a search result to read details, publish a new vers
 ## Before you begin
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
-* The REST examples use the US host, `https://us.portal.patchmypc.com`. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+* The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:read` scope.
 
 ## Search your custom applications
 
 1. Send a search with the text to match against the display name. Every filter is optional; for example, you can also filter by language, architecture, or the date an application was last updated.
-2. Page through the results with `skip` and `limit`. A page returns up to 50 applications by default.
+2. Page through the results with `skip` and `limit`. The default page size is 50; `totalAmount` reports the number of matches across all pages.
 3. Note the `productId` and `updateId` of the application you want. You need the `updateId` to publish a new version.
 
 {% tabs %}
@@ -72,26 +72,42 @@ See [Search applications](../rest-api/applications.md#search-applications).
 {% tab title="C#" %}
 {% code title="Program.cs" %}
 ```csharp
-using pmpc.appcatbroker.client;
+using PatchMyPC.Cloud.Client;
 
-var search = await client.SearchApplicationsAsync(new ProductFilterRequest
-{
-    DisplayNameSearchString = "Contoso",
-    Skip = 0,
-    Limit = 25
-});
+const int pageSize = 50;
+var skip = 0;
+long totalAmount;
 
-if (search.IsFailure)
+do
 {
-    Console.WriteLine($"{search.Error.Code}: {search.Error.Message}");
-    return;
+    var pageResult = await client.SearchCustomApplicationsAsync(new ProductFilterRequest
+    {
+        DisplayNameSearchString = "Contoso",
+        Skip = skip,
+        Limit = pageSize
+    });
+
+    if (pageResult.IsFailure)
+    {
+        Console.WriteLine($"{pageResult.Error.Code}: {pageResult.Error.Message}");
+        return;
+    }
+
+    var page = pageResult.Value;
+    totalAmount = page.TotalAmount;
+    foreach (var app in page.Products)
+    {
+        Console.WriteLine($"{app.DisplayName} {app.Version}  product: {app.ProductId}  update: {app.UpdateId}");
+    }
+
+    if (page.Products.Count == 0)
+    {
+        break;
+    }
+
+    skip += page.Products.Count;
 }
-
-Console.WriteLine($"{search.Value.TotalAmount} match(es)");
-foreach (var app in search.Value.Products)
-{
-    Console.WriteLine($"{app.DisplayName} {app.Version}  product: {app.ProductId}  update: {app.UpdateId}");
-}
+while (skip < totalAmount);
 ```
 {% endcode %}
 
@@ -103,6 +119,8 @@ See [SearchApplicationsAsync](../sdk/applications.md#searchapplicationsasync).
 Find-PmpcCustomApplication -DisplayName 'Contoso' -Limit 25 |
     Select-Object DisplayName, Version, ProductId, UpdateId
 ```
+
+This returns one page. To request the next 25 matches, set `-Skip 25 -Limit 25`; continue increasing `-Skip` until you reach the total from `Find-PmpcCustomApplication -DisplayName 'Contoso' -Limit 1 -AsResponse`.
 
 `Find-PmpcCustomApplication` uses an operation that must be enabled for your account. Until it is, the cmdlet reports the error code `FEATURE_NOT_ENABLED`.
 
@@ -191,10 +209,12 @@ See [Get available connections](../rest-api/applications.md#get-available-connec
 {% endtab %}
 
 {% tab title="C#" %}
-Select a connection once. The SDK uses the selected connection when you don't set `ConnectionId` on the request.
+Select a connection once. The SDK uses the selected connection when you don't set `ConnectionId` on the request. This search returns one page; set `Skip` and `Limit` on `ProductFilterRequest` to page through additional results as described above.
 
 {% code title="Program.cs" %}
 ```csharp
+using PatchMyPC.Cloud.Client;
+
 var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsFailure)
 {
@@ -208,6 +228,7 @@ var results = await client.SearchPublicApplicationsAsync(new ProductFilterReques
 {
     DisplayNameSearchString = "7-Zip",
     OsType = OSType.Windows,
+    Skip = 0,
     Limit = 25
 });
 ```

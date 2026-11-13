@@ -45,7 +45,7 @@ The job exchanges the token for an access token. The token identifies its own co
 
 {% tabs %}
 {% tab title="REST" %}
-This example uses the US host. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+This example uses the US host. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 
 ```http
 POST https://us.portal.patchmypc.com/v1/api/auth/token
@@ -67,7 +67,7 @@ See [Exchange a personal access token for an access token](../rest-api/authentic
 {% endtab %}
 
 {% tab title="C#" %}
-Set your company's region in configuration, for example the environment variable `AppCatBrokerSdkConfig__Region=Us`, then exchange the token:
+Set your company's region in configuration, for example the environment variable `PmpcCloudSdkConfig__Region=Us`, then exchange the token:
 
 {% code title="Program.cs" %}
 ```csharp
@@ -89,12 +89,12 @@ See [AuthenticateWithPersonalAccessTokenAsync](../sdk/authentication.md#authenti
 {% tab title="PowerShell" %}
 ```powershell
 $token = ConvertTo-SecureString $env:PMPC_PAT -AsPlainText -Force
-Connect-PmpcBrokerWithPat -Token $token -Region Us
+Connect-PmpcCloudWithPat -Token $token -Region Us
 ```
 
-`-Token` takes a `SecureString`, so the token value isn't left in your command history. If your account is hosted in the EU, use `-Region Eu`.
+`-Token` takes a `SecureString`, so the token value isn't left in your command history. Set `-Region` to your company's region: `Us`, `Eu`, or `Uk`.
 
-See [Connect-PmpcBrokerWithPat](../powershell/connect-pmpcbrokerwithpat.md).
+See [Connect-PmpcCloudWithPat](../powershell/connect-pmpccloudwithpat.md).
 {% endtab %}
 {% endtabs %}
 

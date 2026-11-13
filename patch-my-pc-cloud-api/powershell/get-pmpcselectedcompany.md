@@ -20,7 +20,7 @@ Get-PmpcSelectedCompany [<CommonParameters>]
 
 ## Description
 
-Returns the company the session is scoped to, or nothing when there is none. A session started with Connect-PmpcBrokerWithPat is scoped to the customer its token belongs to. Use it to confirm the customer context before running a command that changes something.
+Returns the company the session is scoped to, or nothing when there is none. A session started with Connect-PmpcCloudWithPat is scoped to the customer its token belongs to. Use it to confirm the customer context before running a command that changes something.
 
 ## Parameters
 
@@ -56,7 +56,7 @@ Writes an explanatory message to the verbose stream, rather than an error, when 
 
 ## Related links
 
-* [Connect-PmpcBrokerWithPat](connect-pmpcbrokerwithpat.md)
+* [Connect-PmpcCloudWithPat](connect-pmpccloudwithpat.md)
 * PowerShell module
 
 ## See also

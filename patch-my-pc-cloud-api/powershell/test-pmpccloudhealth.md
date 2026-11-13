@@ -1,26 +1,26 @@
 ---
-description: Checks whether the Cloud Customer API is reachable and healthy.
+description: Checks whether the Patch My PC Cloud service is reachable and healthy.
 noIndex: true
 noRobotsIndex: true
 ---
 
-# Test-PmpcBrokerHealth
+# Test-PmpcCloudHealth
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
 ## Synopsis
 
-Checks whether the Cloud Customer API is reachable and healthy.
+Checks whether the Patch My PC Cloud service is reachable and healthy.
 
 ## Syntax
 
 ```powershell
-Test-PmpcBrokerHealth [<CommonParameters>]
+Test-PmpcCloudHealth [<CommonParameters>]
 ```
 
 ## Description
 
-Calls the service's health check and returns a Boolean. Use it to separate 'the service is down' from 'my request was wrong' when something else fails.
+Calls the broker's health endpoint and returns a boolean. Use it to separate 'the service is down' from 'my request was wrong' when something else fails.
 
 ## Parameters
 
@@ -45,15 +45,15 @@ True when the service is healthy.
 ### Example 1: Check service health
 
 ```powershell
-Test-PmpcBrokerHealth
+Test-PmpcCloudHealth
 ```
 
-Returns True when the service is healthy.
+Returns True when the broker is healthy.
 
 ### Example 2: Gate a script on service health
 
 ```powershell
-if (-not (Test-PmpcBrokerHealth)) { Write-Warning 'The service is unhealthy; skipping publish.'; return }
+if (-not (Test-PmpcCloudHealth)) { Write-Warning 'Patch My PC Cloud is unhealthy; skipping publish.'; return }
 ```
 
 Avoids starting a long upload against a service that has already said it is unhealthy.

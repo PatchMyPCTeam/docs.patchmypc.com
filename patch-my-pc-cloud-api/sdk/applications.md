@@ -21,7 +21,7 @@ All of these methods need an authenticated session. For details, see [SDK authen
 
 ## Models
 
-The application types live in two namespaces: request models such as `ApplicationMetadata` are in `pmpc.appcatbroker.sdk.Models`, and response types such as `ProductDto` and the `OSType` enumeration are in `pmpc.appcatbroker.client`. The enumerations `RequirementArchitecture` and `InstallationBehavior` are nested in `pmpc.common.Enums`, so add `using static pmpc.common.Enums;` to use them unqualified.
+The application types live in two namespaces: request models such as `ApplicationMetadata` are in `PatchMyPC.Cloud.Models`, and response types such as `ProductDto` and the `OSType` enumeration are in `PatchMyPC.Cloud.Client`. The `RequirementArchitecture` and `InstallationBehavior` enumerations are available from the SDK's client types as well.
 
 ### Search filter
 
@@ -73,26 +73,26 @@ Each `ProductSummaryDto` has these key properties.
 
 `ProductDto` describes one of your applications in detail.
 
-| Property                                               | Type                      | Description                                                  |
-| ------------------------------------------------------ | ------------------------- | ------------------------------------------------------------ |
-| `ProductId`                                            | `Guid`                    | The application ID.                                          |
-| `Type`                                                 | `string`                  | The application type.                                        |
-| `DisplayName`, `Description`, `VendorName`, `Language` | `string?`                 | Descriptive details.                                         |
-| `UpdateVersion`                                        | `string?`                 | The current version.                                         |
-| `MainFile`                                             | `string?`                 | The primary installer file.                                  |
-| `Architecture`                                         | `RequirementArchitecture` | The architecture the application targets.                    |
-| `InstallerType`                                        | enum                      | The installer type, for example MSI or EXE.                  |
-| `InstallContext`                                       | `InstallationBehavior?`   | Whether the application installs for the system or the user. |
-| `SilentInstallArguments`, `SilentUninstallArguments`   | `string?`                 | The silent install and uninstall arguments.                  |
-| `ConflictingProcessList`                               | collection of `string`    | Processes that block installation while running.             |
-| `DetectionRules`                                       | object                    | How Intune detects that the application is installed.        |
-| `CustomRequirements`                                   | object                    | The installation requirements.                               |
-| `ArpDisplayNameMatch`                                  | `string?`                 | The Add or Remove Programs display name to match.            |
-| `MsiProductCode`                                       | `Guid?`                   | The MSI product code, for MSI installers.                    |
-| `Notes`, `IntuneNotes`, `Owner`, `Developer`           | `string?`                 | Additional information shown in Intune.                      |
-| `PrivacyUrl`, `InformationUrl`                         | `string?`                 | Links shown in Intune.                                       |
-| `IconURL`, `IconBase64`, `IconContentType`             | `string?`                 | The icon.                                                    |
-| `Actions`                                              | collection of `string`    | The operations currently available on the application.       |
+| Property                                               | Type                      | Description                                                                                |
+| ------------------------------------------------------ | ------------------------- | ------------------------------------------------------------------------------------------ |
+| `ProductId`                                            | `Guid`                    | The application ID.                                                                        |
+| `Type`                                                 | `string`                  | The application type.                                                                      |
+| `DisplayName`, `Description`, `VendorName`, `Language` | `string?`                 | Descriptive details.                                                                       |
+| `UpdateVersion`                                        | `string?`                 | The current version.                                                                       |
+| `MainFile`                                             | `string?`                 | The primary installer file.                                                                |
+| `Architecture`                                         | `RequirementArchitecture` | The architecture the application targets.                                                  |
+| `InstallerType`                                        | enum                      | The installer type, for example MSI or EXE.                                                |
+| `InstallContext`                                       | `InstallationBehavior?`   | Whether the application installs for the system or the user.                               |
+| `SilentInstallArguments`, `SilentUninstallArguments`   | `string?`                 | The silent install and uninstall arguments.                                                |
+| `ConflictingProcessList`                               | collection of `string`    | Processes that block installation while running.                                           |
+| `DetectionRules`                                       | object                    | How Intune detects that the application is installed.                                      |
+| `CustomRequirements`                                   | object                    | The installation requirements.                                                             |
+| `ArpDisplayNameMatch`                                  | `string?`                 | The Add or Remove Programs display name to match. Required when you create an application. |
+| `MsiProductCode`                                       | `Guid?`                   | The MSI product code, for MSI installers.                                                  |
+| `Notes`, `IntuneNotes`, `Owner`, `Developer`           | `string?`                 | Additional information shown in Intune.                                                    |
+| `PrivacyUrl`, `InformationUrl`                         | `string?`                 | Links shown in Intune.                                                                     |
+| `IconURL`, `IconBase64`, `IconContentType`             | `string?`                 | The icon.                                                                                  |
+| `Actions`                                              | collection of `string`    | The operations currently available on the application.                                     |
 
 `PublicApplicationDto` describes a public catalog application. It has the descriptive properties of `ProductDto`—`ProductId`, `Type`, `DisplayName`, `Description`, `Language`, `VendorName`, `UpdateVersion`, the icon properties, `PrivacyUrl`, `InformationUrl`, `Developer`, `IntuneNotes`, `InstallerType`, `Architecture`, `InstallContext`, and `Actions`—but not the packaging details, which Patch My PC maintains for you.
 
@@ -100,28 +100,28 @@ Each `ProductSummaryDto` has these key properties.
 
 `ApplicationMetadata` describes a new application.
 
-| Property                                             | Type                      | Default   | Description                                                                                                  |
-| ---------------------------------------------------- | ------------------------- | --------- | ------------------------------------------------------------------------------------------------------------ |
-| `FolderPath`                                         | `string`                  | none      | Required. The folder that contains the application's files. Every file in the folder is uploaded.            |
-| `PrimaryInstallerFile`                               | `string`                  | none      | Required. The main installer file, relative to `FolderPath` or as an absolute path.                          |
-| `DisplayName`                                        | `string`                  | none      | Required. The display name.                                                                                  |
-| `Description`                                        | `string`                  | none      | Required. The description.                                                                                   |
-| `Publisher`                                          | `string`                  | none      | Required. The publisher or vendor name.                                                                      |
-| `Architecture`                                       | `RequirementArchitecture` | `X64`     | The architecture the application targets.                                                                    |
-| `Language`                                           | `string`                  | `"en-US"` | The language code.                                                                                           |
-| `InstallContext`                                     | `InstallationBehavior`    | `System`  | Whether the application installs for the system or the user.                                                 |
-| `CmdArguments`                                       | `string?`                 | `null`    | The silent install arguments.                                                                                |
-| `SilentUninstallArg`                                 | `string?`                 | `null`    | The silent uninstall arguments.                                                                              |
-| `MsiProductCode`                                     | `Guid?`                   | `null`    | The MSI product code, for MSI installers.                                                                    |
-| `ArpDisplayNameMatch`, `ArpVersionMatch`             | `string?`                 | `null`    | The Add or Remove Programs display name and version to match for detection.                                  |
-| `DetectionRules`                                     | object                    | `null`    | Custom detection rules. When omitted, detection uses `MsiProductCode` or the Add or Remove Programs matches. |
-| `CustomRequirements`                                 | object                    | `null`    | Custom installation requirements. When omitted, the requirement is derived from `Architecture`.              |
-| `ConflictingProcesses`                               | `List<string>`            | empty     | Processes that block installation while running.                                                             |
-| `IconPath`                                           | `string?`                 | `null`    | The path to an icon file. The SDK uploads it for you.                                                        |
-| `DocumentationUrl`, `PrivacyUrl`, `InformationalUrl` | `string?`                 | `null`    | Links shown in Intune.                                                                                       |
-| `Notes`, `IntuneNotes`, `Owner`, `Developer`         | `string?`                 | `null`    | Additional information shown in Intune.                                                                      |
+| Property                                             | Type                      | Default   | Description                                                                                                                                                                                                                       |
+| ---------------------------------------------------- | ------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `FolderPath`                                         | `string`                  | none      | Required. The folder that contains the application's files. Every file in the folder is uploaded.                                                                                                                                 |
+| `PrimaryInstallerFile`                               | `string`                  | none      | Required. The main installer file, relative to `FolderPath` or as an absolute path.                                                                                                                                               |
+| `DisplayName`                                        | `string`                  | none      | Required. The display name.                                                                                                                                                                                                       |
+| `Description`                                        | `string`                  | none      | Required. The description.                                                                                                                                                                                                        |
+| `Publisher`                                          | `string`                  | none      | Required. The publisher or vendor name.                                                                                                                                                                                           |
+| `Architecture`                                       | `RequirementArchitecture` | `X64`     | The architecture the application targets.                                                                                                                                                                                         |
+| `Language`                                           | `string`                  | `"en-US"` | The language code.                                                                                                                                                                                                                |
+| `InstallContext`                                     | `InstallationBehavior`    | `System`  | Whether the application installs for the system or the user.                                                                                                                                                                      |
+| `CmdArguments`                                       | `string?`                 | `null`    | The silent install arguments.                                                                                                                                                                                                     |
+| `SilentUninstallArg`                                 | `string?`                 | `null`    | The silent uninstall arguments.                                                                                                                                                                                                   |
+| `MsiProductCode`                                     | `Guid?`                   | `null`    | The MSI product code, for MSI installers.                                                                                                                                                                                         |
+| `ArpDisplayNameMatch`, `ArpVersionMatch`             | `string?`                 | `null`    | The Add or Remove Programs display name and version to match for detection. Both are required when you create an application. The version is numeric, with two to four parts separated by dots, for example `24.08` or `1.2.3.4`. |
+| `DetectionRules`                                     | object                    | `null`    | Custom detection rules. When omitted, detection uses `MsiProductCode` or the Add or Remove Programs matches.                                                                                                                      |
+| `CustomRequirements`                                 | object                    | `null`    | Custom installation requirements. When omitted, the requirement is derived from `Architecture`.                                                                                                                                   |
+| `ConflictingProcesses`                               | `List<string>`            | empty     | Processes that block installation while running.                                                                                                                                                                                  |
+| `IconPath`                                           | `string?`                 | `null`    | The path to an icon file. The SDK uploads it for you.                                                                                                                                                                             |
+| `DocumentationUrl`, `PrivacyUrl`, `InformationalUrl` | `string?`                 | `null`    | Links shown in Intune.                                                                                                                                                                                                            |
+| `Notes`, `IntuneNotes`, `Owner`, `Developer`         | `string?`                 | `null`    | Additional information shown in Intune.                                                                                                                                                                                           |
 
-`ApplicationUpdateMetadata` describes a new version of an existing application. It has `ProductId` and `UpdateId`—the application and the version the new one follows—plus the packaging properties from the table above: `FolderPath`, `PrimaryInstallerFile`, `CmdArguments`, `SilentUninstallArg`, `MsiProductCode`, `ArpDisplayNameMatch`, `ArpVersionMatch`, `DetectionRules`, `CustomRequirements`, and `ConflictingProcesses`. Get both IDs from a search result.
+`ApplicationUpdateMetadata` describes a new version of an existing application. It has `ProductId` and `UpdateId`—the application and the version the new one follows—plus the packaging properties from the table above: `FolderPath`, `PrimaryInstallerFile`, `CmdArguments`, `SilentUninstallArg`, `MsiProductCode`, `ArpDisplayNameMatch`, `ArpVersionMatch`, `DetectionRules`, `CustomRequirements`, and `ConflictingProcesses`. Get both IDs from a search result. `ArpVersionMatch` is required, because each version has its own version number.
 
 ### Edit metadata
 
@@ -209,6 +209,51 @@ foreach (var product in search.Value.Products)
 
 **See also:** [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md) and [Search applications](../rest-api/applications.md#search-applications).
 
+### Read all search pages
+
+Application searches use offset-based pagination. `Skip` defaults to `0`, `Limit` defaults to `50`, and each response's `TotalAmount` is the total number of matches before paging. To collect every match, request pages until the offset reaches `TotalAmount`; advance `Skip` by the number of products actually returned. Stop if a page is empty.
+
+```csharp
+using PatchMyPC.Cloud.Client;
+
+const int pageSize = 50;
+var skip = 0;
+long totalAmount;
+
+do
+{
+    var pageResult = await client.SearchApplicationsAsync(new ProductFilterRequest
+    {
+        DisplayNameSearchString = "{search-text}",
+        Skip = skip,
+        Limit = pageSize
+    });
+
+    if (pageResult.IsFailure)
+    {
+        Console.WriteLine($"Search failed: {pageResult.Error.Code} {pageResult.Error.Message}");
+        return;
+    }
+
+    var page = pageResult.Value;
+    totalAmount = page.TotalAmount;
+    foreach (var product in page.Products)
+    {
+        Console.WriteLine($"{product.DisplayName} ({product.ProductId})");
+    }
+
+    if (page.Products.Count == 0)
+    {
+        break;
+    }
+
+    skip += page.Products.Count;
+}
+while (skip < totalAmount);
+```
+
+Use the same `Skip` and `Limit` pattern with [`SearchCustomApplicationsAsync`](custom-applications.md#searchcustomapplicationsasync) or [`SearchPublicApplicationsAsync`](applications.md#searchpublicapplicationsasync). A public-catalog search also requires a selected connection.
+
 ### GetApplicationDetailsAsync
 
 Gets the details of one of your custom applications.
@@ -264,8 +309,8 @@ Task<Result<ApplicationData>> CreateApplicationAsync(
 The SDK creates a draft, uploads the files in chunks, and completes the application. Each new application counts against your custom application limit; check `GetCustomerInfoAsync` to see your usage. If you've reached the limit, the method fails with `VALIDATION_ERROR` and a message that says you have reached the maximum number of custom applications.
 
 ```csharp
-using pmpc.appcatbroker.sdk.Models;
-using static pmpc.common.Enums;
+using PatchMyPC.Cloud.Models;
+using PatchMyPC.Cloud.Client;
 
 var metadata = new ApplicationMetadata
 {
@@ -277,6 +322,8 @@ var metadata = new ApplicationMetadata
     Architecture = RequirementArchitecture.X64,
     InstallContext = InstallationBehavior.System,
     CmdArguments = "/qn",
+    ArpDisplayNameMatch = "{display-name}",
+    ArpVersionMatch = "{version}",
     MsiProductCode = Guid.Parse("{msi-product-code}")
 };
 
@@ -316,6 +363,8 @@ Task<Result<ApplicationData>> UpdateApplicationAsync(
 
 **Returns:** an [`ApplicationData`](applications.md#upload-result-and-progress) with the new version's `UpdateId`.
 
+For an MSI application, set `MsiProductCode` to the new installer's product code. An update can't change the installer type, and an MSI update without a product code is rejected.
+
 To correct the current version without publishing a new one, use [`EditApplicationAsync`](applications.md#editapplicationasync) instead.
 
 ```csharp
@@ -325,7 +374,9 @@ var update = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
     UpdateId = product.UpdateId,
     FolderPath = @"{path-to-new-version}",
     PrimaryInstallerFile = "{installer-file-name}.msi",
-    CmdArguments = "/qn"
+    MsiProductCode = Guid.Parse("{msi-product-code}"),
+    CmdArguments = "/qn",
+    ArpVersionMatch = "{version}"
 });
 
 if (update.IsFailure)

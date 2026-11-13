@@ -66,7 +66,7 @@ Pattern matched against the application's Add/Remove Programs display name. Used
 
 ### -ArpVersionMatch
 
-Pattern matched against the application's Add/Remove Programs version. Used for detection alongside -ArpDisplayNameMatch.
+The application's Add/Remove Programs version number: numbers only, with two to four dot-separated parts, for example 24.09 or 1.2.3.4. Wildcards are not accepted. Required when publishing a new version, because each version has its own version number. Also used for detection alongside -ArpDisplayNameMatch.
 
 | Attribute      | Value           |
 | -------------- | --------------- |
@@ -356,7 +356,7 @@ The new version's IDs and upload statistics.
 ### Example 1: Publish a new version
 
 ```powershell
-Update-PmpcCustomApplication -ProductId $productId -UpdateId $updateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi'
+Update-PmpcCustomApplication -ProductId $productId -UpdateId $updateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '24.09'
 ```
 
 Uploads the new version's files and publishes it.
@@ -364,15 +364,17 @@ Uploads the new version's files and publishes it.
 ### Example 2: Publish a new version found by search
 
 ```powershell
-$app = Find-PmpcCustomApplication -DisplayName '7-Zip' | Select-Object -First 1
-Update-PmpcCustomApplication -ProductId $app.Id -UpdateId $app.UpdateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi'
+$app = Find-PmpcCustomApplication | Where-Object ProductId -eq $productId | Select-Object -First 1
+Update-PmpcCustomApplication -ProductId $app.ProductId -UpdateId $app.UpdateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '24.09'
 ```
 
-Takes both identifiers from a search result rather than hard-coding them.
+Reads the product and update IDs from search results before publishing the next version. Get-PmpcCustomApplication returns the product ID but not the update ID.
 
 ## Notes
 
 Requires both -ProductId and -UpdateId, identifying the application and the version the new one follows. Get them from Find-PmpcCustomApplication.
+
+For an MSI installer, provide -MsiProductCode for the new version. The installer type cannot change between versions, so omitting the product code from an MSI update is rejected.
 
 Press Ctrl-C to cancel: the upload is canceled rather than left running to completion in the background.
 

@@ -20,11 +20,11 @@ The Patch My PC Cloud Customer API gives your own applications, scripts, and pip
 
 You can reach the same operations in three ways. Pick the one that fits your toolingâ€”all three use the same account, permissions, and rate limits.
 
-| Surface                                      | Best for                                                                          | Authentication                                              |
-| -------------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| REST API                                     | Any language or platform that can send HTTPS requests                             | Access token obtained by exchanging a personal access token |
-| .NET SDK (`pmpc.appcatbroker.sdk`)           | .NET 8 and .NET 10 applications                                                   | Personal access token                                       |
-| PowerShell module (`PatchMyPC.AppCatBroker`) | Administrators and scripts on PowerShell 7.4 or later on Windows, macOS, or Linux | Personal access token                                       |
+| Surface                               | Best for                                                                          | Authentication                                              |
+| ------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| REST API                              | Any language or platform that can send HTTPS requests                             | Access token obtained by exchanging a personal access token |
+| .NET SDK (`PatchMyPC.Cloud`)          | .NET 8 and .NET 10 applications                                                   | Personal access token                                       |
+| PowerShell module (`PatchMyPC.Cloud`) | Administrators and scripts on PowerShell 7.4 or later on Windows, macOS, or Linux | Personal access token                                       |
 
 {% content-ref url="rest-api/" %}
 [rest-api](rest-api/)
@@ -81,13 +81,13 @@ Some operationsâ€”for example deployments and editing or deleting applicationsâ€
 ### PowerShell module
 
 * PowerShell module
-  * [Connect-PmpcBrokerWithPat](powershell/connect-pmpcbrokerwithpat.md)
-  * [Disconnect-PmpcBroker](powershell/disconnect-pmpcbroker.md)
+  * [Connect-PmpcCloudWithPat](powershell/connect-pmpccloudwithpat.md)
+  * [Disconnect-PmpcCloud](powershell/disconnect-pmpccloud.md)
   * [Find-PmpcApplication](powershell/find-pmpcapplication.md)
   * [Find-PmpcCustomApplication](powershell/find-pmpccustomapplication.md)
   * [Get-PmpcApplication](powershell/get-pmpcapplication.md)
   * [Get-PmpcApplicationFile](powershell/get-pmpcapplicationfile.md)
-  * [Get-PmpcBrokerSession](powershell/get-pmpcbrokersession.md)
+  * [Get-PmpcCloudSession](powershell/get-pmpccloudsession.md)
   * [Get-PmpcConnection](powershell/get-pmpcconnection.md)
   * [Get-PmpcCustomApplication](powershell/get-pmpccustomapplication.md)
   * [Get-PmpcCustomerInfo](powershell/get-pmpccustomerinfo.md)
@@ -120,7 +120,7 @@ Some operationsâ€”for example deployments and editing or deleting applicationsâ€
   * [Set-PmpcDeploymentTemplate](powershell/set-pmpcdeploymenttemplate.md)
   * [Suspend-PmpcDeployment](powershell/suspend-pmpcdeployment.md)
   * [Sync-PmpcDeployment](powershell/sync-pmpcdeployment.md)
-  * [Test-PmpcBrokerHealth](powershell/test-pmpcbrokerhealth.md)
+  * [Test-PmpcCloudHealth](powershell/test-pmpccloudhealth.md)
   * [Update-PmpcCustomApplication](powershell/update-pmpccustomapplication.md)
 
 ### Reference

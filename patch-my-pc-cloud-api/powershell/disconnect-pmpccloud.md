@@ -4,7 +4,7 @@ noIndex: true
 noRobotsIndex: true
 ---
 
-# Disconnect-PmpcBroker
+# Disconnect-PmpcCloud
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
@@ -15,12 +15,12 @@ Signs out and tears down the module's session.
 ## Syntax
 
 ```powershell
-Disconnect-PmpcBroker [-WhatIf] [-Confirm] [<CommonParameters>]
+Disconnect-PmpcCloud [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## Description
 
-Clears the current session and the selected company. Run Connect-PmpcBrokerWithPat to connect again.
+Clears the current session and the selected company. Run Connect-PmpcCloudWithPat to connect again.
 
 If no session is active, the cmdlet does nothing and reports that on the verbose stream.
 
@@ -71,10 +71,10 @@ This cmdlet returns no output.
 ### Example 1: Sign out
 
 ```powershell
-Disconnect-PmpcBroker
+Disconnect-PmpcCloud
 ```
 
-Ends the session. A later command reports that you are not connected.
+Clears authentication and disposes the session. A later command reports that you are not connected.
 
 ## Notes
 
@@ -82,8 +82,7 @@ Disconnecting doesn't revoke your personal access token. To revoke a token, use 
 
 ## Related links
 
-* [Connect-PmpcBrokerWithPat](connect-pmpcbrokerwithpat.md)
-* [Get-PmpcBrokerSession](get-pmpcbrokersession.md)
+* [Get-PmpcCloudSession](get-pmpccloudsession.md)
 * PowerShell module
 
 ## See also

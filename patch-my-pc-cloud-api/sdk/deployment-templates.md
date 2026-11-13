@@ -24,7 +24,7 @@ Every method on this page requires the feature described above.
 
 ## Models
 
-The template models are in the `pmpc.appcatbroker.client` namespace.
+The template models are in the `PatchMyPC.Cloud.Client` namespace.
 
 ### Deployment template request
 
@@ -144,7 +144,7 @@ Task<Result<DeploymentTemplateDto>> CreateDeploymentTemplateAsync(
 **Returns:** the new [`DeploymentTemplateDto`](deployment-templates.md#deployment-template).
 
 ```csharp
-using pmpc.appcatbroker.client;
+using PatchMyPC.Cloud.Client;
 
 var created = await client.CreateDeploymentTemplateAsync(new DeploymentTemplateRequest
 {

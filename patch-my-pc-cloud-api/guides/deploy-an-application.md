@@ -19,7 +19,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 ## Before you begin
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
-* The REST examples use the US host, `https://us.portal.patchmypc.com`. If your account is hosted in the EU, use `https://eu.portal.patchmypc.com` instead.
+* The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:read` scope to list connections and the `appcatbroker:apps:deploy` scope to create and read deployments.
 * Find the product ID of the application to deploy. See [Search the catalog](search-the-catalog.md).
 * Have the object IDs of the Microsoft Entra ID groups you want to assign the application to.
@@ -110,8 +110,7 @@ Content-Type: application/json
   "connectionId": "{connection-id}",
   "osType": "Windows",
   "assignments": [
-    { "groupId": "{group-id}", "intent": "Required" },
-    { "targetType": "AllUsers", "intent": "Available" }
+    { "groupId": "{group-id}", "intent": "Required" }
   ]
 }
 ```
@@ -124,7 +123,7 @@ See [Create application deployment](../rest-api/applications.md#create-applicati
 {% tab title="C#" %}
 {% code title="Program.cs" %}
 ```csharp
-using pmpc.appcatbroker.client;
+using PatchMyPC.Cloud.Client;
 
 var created = await client.CreateDeploymentAsync(productId, new CreateDeploymentRequest
 {
@@ -135,11 +134,6 @@ var created = await client.CreateDeploymentAsync(productId, new CreateDeployment
         {
             GroupId = "{group-id}",
             Intent = InstallationIntent.Required
-        },
-        new CreateDeploymentAssignmentRequest
-        {
-            TargetType = AssignmentTargetType.AllUsers,
-            Intent = InstallationIntent.Available
         }
     }
 });
@@ -163,11 +157,10 @@ See [CreateDeploymentAsync](../sdk/deployments.md#createdeploymentasync).
 ```powershell
 $assignments = @(
     New-PmpcDeploymentAssignment -GroupId '{group-id}' -Intent Required
-    New-PmpcDeploymentAssignment -TargetType AllUsers -Intent Available
 )
 
 $deployment = New-PmpcDeployment -ProductId '{product-id}' -OsType Windows -Assignment $assignments
-$deployment.DeploymentId
+$deployment | Select-Object ProductId, DeploymentId
 ```
 
 `New-PmpcDeployment` supports `-WhatIf` and `-Confirm`.
@@ -215,7 +208,7 @@ See [GetDeploymentDetailsAsync](../sdk/deployments.md#getdeploymentdetailsasync)
 
 {% tab title="PowerShell" %}
 ```powershell
-Get-PmpcDeployment -ProductId '{product-id}' -DeploymentId $deployment.DeploymentId |
+Get-PmpcDeployment -ProductId '{product-id}' -DeploymentId '{deployment-id}' |
     Select-Object DisplayName, Status, WarningMessages, ErrorMessages
 ```
 

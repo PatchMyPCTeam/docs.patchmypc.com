@@ -108,7 +108,7 @@ Holds the deployment's scheduled sync.
 ### Example 2: Pause every deployment during a change freeze
 
 ```powershell
-Get-PmpcDeployment -ProductId $productId | Suspend-PmpcDeployment
+Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Suspend-PmpcDeployment
 ```
 
 Holds all of the application's deployments so no new version rolls out.

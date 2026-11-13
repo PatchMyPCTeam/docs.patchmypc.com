@@ -103,13 +103,13 @@ Remove-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 
 Prompts for confirmation, then deletes the deployment.
 
-### Example 2: Delete every failed deployment
+### Example 2: Delete without prompting
 
 ```powershell
-Get-PmpcDeployment -ProductId $productId | Where-Object Status -eq 'Failed' | Remove-PmpcDeployment -Confirm:$false
+Remove-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Confirm:$false
 ```
 
-Pipes failed deployments in by their ProductId and DeploymentId properties and removes them without prompting.
+Deletes the deployment without prompting. The cmdlet also accepts deployments piped from Get-PmpcDeployment, matched by their ProductId and DeploymentId properties.
 
 ## Notes
 

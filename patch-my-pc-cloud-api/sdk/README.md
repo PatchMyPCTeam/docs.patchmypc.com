@@ -10,13 +10,13 @@ noRobotsIndex: true
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
-The .NET SDK is a client library for the Patch My PC Cloud Customer API. It authenticates with a personal access token, keeps track of the company and connection you're working with, uploads installer files in parallel chunks, and returns every outcome as a result object instead of throwing exceptions. Everything the SDK exposes is on one interface, `IAppCatBroker`.
+The .NET SDK is a client library for the Patch My PC Cloud Customer API. It authenticates with a personal access token, keeps track of the company and connection you're working with, uploads installer files in parallel chunks, and returns every outcome as a result object instead of throwing exceptions. Everything the SDK exposes is on one interface, `IPmpcCloudClient`.
 
 Use the SDK when you're building a .NET application or service. If you're scripting, the PowerShell module wraps the same interface with one cmdlet per method. If you're working from another language, call the REST API directly.
 
 ## Supported frameworks
 
-The NuGet package `pmpc.appcatbroker.sdk` targets:
+The NuGet package `PatchMyPC.Cloud` targets:
 
 | Target framework | Use it for                       |
 | ---------------- | -------------------------------- |
@@ -30,24 +30,24 @@ The SDK authenticates with a personal access token (PAT), so it needs no user at
 1.  Add the package to your project. It's published on nuget.org:
 
     ```bash
-    dotnet add package pmpc.appcatbroker.sdk
+    dotnet add package PatchMyPC.Cloud
     ```
-2. Set your account's region, `Us` or `Eu`, in the `AppCatBrokerSdkConfig` configuration section, for example with the environment variable `AppCatBrokerSdkConfig__Region=Us`.
+2. Set your account's region, `Us`, `Eu`, or `Uk`, in the `PmpcCloudSdkConfig` configuration section, for example with the environment variable `PmpcCloudSdkConfig__Region=Us`.
 3.  Register the SDK, authenticate with your personal access token, and make a call:
 
     ```csharp
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
-    using pmpc.appcatbroker.client;
-    using pmpc.appcatbroker.sdk.Extensions;
-    using pmpc.appcatbroker.sdk.Services;
+    using PatchMyPC.Cloud.Client;
+    using PatchMyPC.Cloud.Extensions;
+    using PatchMyPC.Cloud.Services;
 
     var builder = Host.CreateApplicationBuilder(args);
-    builder.Services.AddAppCatBrokerSdk();
+    builder.Services.AddPmpcCloudSdk();
     using var host = builder.Build();
 
     using var scope = host.Services.CreateScope();
-    var client = scope.ServiceProvider.GetRequiredService<IAppCatBroker>();
+    var client = scope.ServiceProvider.GetRequiredService<IPmpcCloudClient>();
 
     var pat = Environment.GetEnvironmentVariable("PMPC_PAT")
         ?? throw new InvalidOperationException("Set PMPC_PAT to a personal access token.");
