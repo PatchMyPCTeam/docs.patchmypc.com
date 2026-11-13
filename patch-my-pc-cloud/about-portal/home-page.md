@@ -116,8 +116,7 @@ The **License Usage** tile displays the count of devices patched based on the fo
 
 * If at least one deployment is assigned to **All Users** or **All Devices**, the tile displays the total number of Windows devices active within the last 21 days (macOS devices are excluded).
 * If no deployments are assigned to **All Users** or **All Devices**, the device count is calculated separately for each deployed app by adding together the number of devices (in the following deployment states: Failed, Installed, Not Applicable, Not Installed, and Pending Install). The highest total across all apps is then used as the **Devices Patched** count.
-* \
-  If no Deployments exist, the device count is **0**.
+* If no Deployments exist, the device count is **0**.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (269).png" alt="‘License Information’ section" width="563"><figcaption></figcaption></figure>
