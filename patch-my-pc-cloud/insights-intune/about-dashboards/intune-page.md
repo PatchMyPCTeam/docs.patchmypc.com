@@ -9,7 +9,7 @@ The **Intune** dashboard page consists of the following five tabs, each containi
 {% hint style="danger" %}
 **Important**
 
-We store your Intune data in a secure database for a total of three (3) hours, after which it is automatically deleted from our systems.
+We store your Intune data in a secure database for 1 day, after which it is automatically deleted from our systems.
 
 For a detailed explanation on how we collect and process your Intune data, see [Intune Data Collection](../technical-references/data-collected.md).
 {% endhint %}
