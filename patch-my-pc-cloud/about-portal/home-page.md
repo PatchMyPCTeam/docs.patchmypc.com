@@ -107,19 +107,17 @@ The **Share Your Feedback** section of the **Home** page provides links to indep
 
 ## License Information
 
-The **License Information** section of the **Home** page shows useful licensing information.
-
-If you are an Enterprise Plus customer, the **License Information** section shows you which Enterprise Premium features you are missing, which you can try out by clicking the **Free Trial** button.
+The **License Information** section of the **Home** page gives you a clear overview of how many devices you are currently patching and how that compares to your subscriptions' device limit.
 
 {% hint style="info" %}
 **Note**
 
-The number of devices shown for **License Usage** reflects the number of Windows devices in scope for PMPC in your environment, which is calculated based on your Intune assignments:
+The **License Usage** tile displays the count of devices patched based on the following rules:
 
-* If you deploy to the **All Users** and **All Devices** virtual groups, the count comes directly from the Windows device total reported by Intune.
-* If you do not use those assignments, the count instead reflects the number of devices the PMPC Client has reported on.
-
-In either case, if the PMPC Client has never been deployed and you have no universal assignments in Intune, no device data will be available and this value will not populate.
+* If at least one deployment is assigned to **All Users** or **All Devices**, the tile displays the total number of Windows devices active within the last 21 days (macOS devices are excluded).
+* If no deployments are assigned to **All Users** or **All Devices**, the device count is calculated separately for each deployed app by adding together the number of devices (in the following deployment states: Failed, Installed, Not Applicable, Not Installed, and Pending Install). The highest total across all apps is then used as the **Devices Patched** count.
+* \
+  If no Deployments exist, the device count is **0**.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (269).png" alt="‘License Information’ section" width="563"><figcaption></figcaption></figure>
