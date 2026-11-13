@@ -18,7 +18,7 @@ The **Contact Support** dialog box appears.
 {% step %}
 ### **Verify that the From email address is valid**
 
-Verify that the From email address is valid, as this is the email address we will use to contact you.
+Verify that the **From** email address is valid, as we will use it to contact you.
 {% endstep %}
 
 {% step %}
