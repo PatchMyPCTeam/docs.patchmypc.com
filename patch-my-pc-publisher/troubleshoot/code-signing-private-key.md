@@ -80,10 +80,20 @@ Look for **Provider** and **Unique container name**. The unique container name i
 To check whether the private key file exists and view its permissions, run the following in an elevated PowerShell session. Set $keyPath to the folder appropriate to your provider, replacing `UNIQUE_CONTAINER_NAME` with the value identified above.
 
 ```
-$keyPath = 'C:\ProgramData\Microsoft\Crypto\Keys\UNIQUE_CONTAINER_NAME'
+$keyName = 'UNIQUE_CONTAINER_NAME'
+$cryptoRoot = Join-Path $env:ProgramData 'Microsoft\Crypto'
 
-Get-Item -LiteralPath $keyPath -Force
-Get-Acl -LiteralPath $keyPath | Format-List Owner, AccessToString
+foreach ($folder in 'Keys', 'RSA\MachineKeys') {
+    $keyPath = Join-Path $cryptoRoot "$folder\$keyName"
+
+    try {
+        $keyFile = Get-Item -LiteralPath $keyPath -Force -ErrorAction Stop
+        Get-Acl -LiteralPath $keyFile.FullName -ErrorAction Stop | Format-List PSPath, Owner, AccessToString
+    }
+    catch {
+        Write-Warning ("{0}: {1}" -f $keyPath, $_.Exception.Message)
+    }
+}
 ```
 
 Use the following table to interpret the script’s output and determine the next troubleshooting step:
