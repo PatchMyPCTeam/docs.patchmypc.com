@@ -224,7 +224,7 @@
       * [V2 Manage your Patch My PC Cloud Subscription](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/README.md)
         * [Subscription Plans in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/subscription-plans-in-patch-my-pc-cloud/README.md)
           * [License Validation in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/subscription-plans-in-patch-my-pc-cloud/license-validation-in-patch-my-pc-cloud/README.md)
-            * [Validate Your Patch My PC Cloud License](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/subscription-plans-in-patch-my-pc-cloud/license-validation-in-patch-my-pc-cloud/validate-your-patch-my-pc-cloud-license.md)
+            * [Validate Ownership of Your Patch My PC Cloud License](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/subscription-plans-in-patch-my-pc-cloud/license-validation-in-patch-my-pc-cloud/validate-ownership-of-your-patch-my-pc-cloud-license.md)
             * [Manage License Validation Requests](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/subscription-plans-in-patch-my-pc-cloud/license-validation-in-patch-my-pc-cloud/manage-license-validation-requests.md)
         * [Environments in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/environments-in-patch-my-pc-cloud/README.md)
           * [Add an Environment in Patch My PC Cloud](patch-my-pc-cloud/manage/settings/v2-manage-your-patch-my-pc-cloud-subscription/environments-in-patch-my-pc-cloud/add-an-environment-in-patch-my-pc-cloud.md)
