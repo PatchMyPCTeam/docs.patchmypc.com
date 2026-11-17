@@ -1006,6 +1006,7 @@
     * [Update an application](patch-my-pc-cloud-api/guides/update-an-application.md)
     * [Deploy an application](patch-my-pc-cloud-api/guides/deploy-an-application.md)
     * [Automate with a personal access token](patch-my-pc-cloud-api/guides/automate-with-a-personal-access-token.md)
+    * [Create and deploy a custom application with REST](patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest.md)
   * [REST API reference](patch-my-pc-cloud-api/rest-api/README.md)
     * [Authentication](patch-my-pc-cloud-api/rest-api/authentication.md)
     * [Applications](patch-my-pc-cloud-api/rest-api/applications.md)
