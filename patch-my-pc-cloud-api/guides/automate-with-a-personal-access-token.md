@@ -14,6 +14,8 @@ Scheduled tasks, build agents, and other unattended jobs call the Cloud Customer
 
 For how tokens, scopes, and access tokens work, see [Authentication](../authentication.md).
 
+The code examples below use the SDK and PowerShell module. For direct HTTP requests, follow [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest), starting with authentication. See the [REST authentication reference](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/authentication) for the token exchange contract.
+
 ## Before you begin
 
 * Have a Patch My PC portal account for your company that can open **Settings** > **Access Tokens**. A token never has more access than the user who creates it, so the account needs the permissions the job will use.
@@ -44,32 +46,10 @@ The token's scopes can be fewer than you chose if your own account lacks a permi
 The job exchanges the token for an access token. The token identifies its own company, so the job doesn't select one.
 
 {% tabs %}
-{% tab title="REST" %}
-This example uses the US host. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
-
-```http
-POST https://us.portal.patchmypc.com/v1/api/auth/token
-Authorization: Bearer {personal-access-token}
-```
-
-The `gatewayJwt` property of the response holds the access token:
-
-```json
-{
-  "gatewayJwt": "{access-token}",
-  "expiresIn": 3600
-}
-```
-
-Keep the access token in memory and note when it expires: the time of the response plus `expiresIn` seconds.
-
-See [Exchange a personal access token for an access token](../rest-api/authentication.md#exchange-a-personal-access-token-for-an-access-token).
-{% endtab %}
-
 {% tab title="C#" %}
 Set your company's region in configuration, for example the environment variable `PmpcCloudSdkConfig__Region=Us`, then exchange the token:
 
-{% code title="Program.cs" %}
+{% code title="Program.cs" collapsedlinecount="10" %}
 ```csharp
 var pat = Environment.GetEnvironmentVariable("PMPC_PAT");
 
@@ -87,10 +67,12 @@ See [AuthenticateWithPersonalAccessTokenAsync](../sdk/authentication.md#authenti
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $token = ConvertTo-SecureString $env:PMPC_PAT -AsPlainText -Force
 Connect-PmpcCloudWithPat -Token $token -Region Us
 ```
+{% endcode %}
 
 `-Token` takes a `SecureString`, so the token value isn't left in your command history. Set `-Region` to your company's region: `Us`, `Eu`, or `Uk`.
 
@@ -103,19 +85,8 @@ See [Connect-PmpcCloudWithPat](../powershell/connect-pmpccloudwithpat.md).
 Make requests as usual. What the job can do is limited to the token's scopes; a request outside them returns `403 Forbidden` with the problem title `insufficient_scope`.
 
 {% tabs %}
-{% tab title="REST" %}
-```http
-GET https://us.portal.patchmypc.com/v1/api/customer-info
-Authorization: Bearer {access-token}
-Accept: application/json
-```
-
-Exchange the PAT again shortly before the access token expires, or when a request returns `401 Unauthorized` with the error `invalid_token`. Don't exchange on every request—exchanges are throttled.
-
-See [Get customer info](../rest-api/applications.md#get-customer-info).
-{% endtab %}
-
 {% tab title="C#" %}
+{% code collapsedlinecount="10" %}
 ```csharp
 var info = await client.GetCustomerInfoAsync();
 if (info.IsFailure)
@@ -123,6 +94,7 @@ if (info.IsFailure)
     Console.WriteLine($"{info.Error.Code}: {info.Error.Message}");
 }
 ```
+{% endcode %}
 
 The SDK exchanges the PAT again when it needs a new access token.
 
@@ -130,9 +102,11 @@ See [GetCustomerInfoAsync](../sdk/customer-and-connections.md#getcustomerinfoasy
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomerInfo
 ```
+{% endcode %}
 
 The module exchanges the PAT again when it needs a new access token.
 

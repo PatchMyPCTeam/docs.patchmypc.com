@@ -14,10 +14,11 @@ A custom application is an application your company packages and uploads itself,
 
 The .NET SDK and the PowerShell module do the whole job in one call: they validate the folder, compute file hashes, upload the files in chunks, and complete the application. With REST you perform each of those steps yourself, so we recommend the SDK or the module for creating applications.
 
+This guide covers the SDK and PowerShell module. For direct HTTP requests, follow [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest), which carries the returned IDs through upload, completion, and deployment. See the [REST API reference](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api) for individual operations.
+
 ## Before you begin
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
-* The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:write` scope.
 * Check that your account has room for another custom application. Your account information lists your usage and limits—see [Getting started](../getting-started.md). When you're at your limit, creating the application fails with `400 Bad Request`.
 * Choose a display name that does not conflict with an application already available to your company.
@@ -34,73 +35,10 @@ The .NET SDK and the PowerShell module do the whole job in one call: they valida
 ## Step 2: Create the application
 
 {% tabs %}
-{% tab title="REST" %}
-Creating an application over REST takes three stages.
-
-1. Create a draft. The request has no body.
-
-```http
-POST https://us.portal.patchmypc.com/v1/api/apps/draft
-Authorization: Bearer {access-token}
-Accept: application/json
-```
-
-The response identifies the new application and returns the paths to upload its files to:
-
-```json
-{
-  "productId": "{product-id}",
-  "updateId": "{update-id}",
-  "revisionId": 1,
-  "displayName": "",
-  "customerId": "{customer-id}",
-  "fileUploadPath": "{file-upload-path}",
-  "chunkedFileUploadPath": "{chunked-file-upload-path}",
-  "fileCompleteUploadPath": "{file-complete-upload-path}"
-}
-```
-
-2. Upload each file to the paths the draft returned. Small files can be sent in a single request; larger files are sent in chunks and then finalized with a separate request. Each file is verified against its SHA-1 and SHA-256 hashes. Because this involves chunking, hashing, and retries, we recommend the SDK or PowerShell module for uploads.
-3. Complete the application. Send the IDs from the draft, the application's details, and the list of files you uploaded.
-
-```http
-POST https://us.portal.patchmypc.com/v1/api/apps/complete
-Authorization: Bearer {access-token}
-Content-Type: application/json
-
-{
-  "productId": "{product-id}",
-  "updateId": "{update-id}",
-  "revisionId": 1,
-  "displayName": "Contoso Archive Tool",
-  "description": "Sample file archiver",
-  "publisher": "Contoso",
-  "language": "en-US",
-  "installContext": "System",
-  "primaryInstallerFile": "7z2408-x64.msi",
-  "msiProductCode": "{msi-product-code}",
-  "files": [
-    {
-      "productId": "{product-id}",
-      "fileName": "7z2408-x64.msi",
-      "fileSize": 52428800,
-      "fileType": "{file-type}",
-      "sha1Hash": "{sha1-hash}",
-      "sha256Hash": "{sha256-hash}"
-    }
-  ]
-}
-```
-
-Completing an application can take up to a minute.
-
-See [Create application draft](../rest-api/applications.md#create-application-draft) and [Complete application creation](../rest-api/applications.md#complete-application-creation) for every field.
-{% endtab %}
-
 {% tab title="C#" %}
 `CreateApplicationAsync` validates the folder, uploads the files, and completes the application. Pass an `IProgress<UploadProgress>` to report progress.
 
-{% code title="Program.cs" %}
+{% code title="Program.cs" collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Models;
 using PatchMyPC.Cloud.Client;
@@ -142,6 +80,7 @@ See [CreateApplicationAsync](../sdk/applications.md#createapplicationasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $displayName = "Contoso Archive Tool $([guid]::NewGuid().ToString('N'))"
 $app = New-PmpcCustomApplication `
@@ -160,6 +99,7 @@ $app = New-PmpcCustomApplication `
     UpdateId = $app.UpdateId
 }
 ```
+{% endcode %}
 
 `-IconPath` is optional and omitted here; pass an image path to include an icon. `New-PmpcCustomApplication` supports `-WhatIf` and `-Confirm`. It uses an operation that must be enabled for your account; until it is, the cmdlet reports the error code `FEATURE_NOT_ENABLED`.
 
@@ -173,17 +113,8 @@ See [New-PmpcCustomApplication](../powershell/new-pmpccustomapplication.md).
 2. Check the display name, version, and primary installer. The detail response carries custom identity in `custom`: use `custom.updateId` as the canonical version ID, and use `custom.catalogEntryId` when creating a deployment.
 
 {% tabs %}
-{% tab title="REST" %}
-```http
-GET https://us.portal.patchmypc.com/v1/api/apps/custom/{product-id}
-Authorization: Bearer {access-token}
-Accept: application/json
-```
-
-The response includes a `custom` block with the canonical `updateId` and optional `productId` and `catalogEntryId` fields. See [Get custom application details](../rest-api/applications.md#get-custom-application-details).
-{% endtab %}
-
 {% tab title="C#" %}
+{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetCustomApplicationDetailsAsync(created.Value.ProductId);
 if (details.IsSuccess)
@@ -192,15 +123,18 @@ if (details.IsSuccess)
     Console.WriteLine($"Deployment entry ID: {details.Value.Custom?.CatalogEntryId}");
 }
 ```
+{% endcode %}
 
 See [GetCustomApplicationDetailsAsync](../sdk/custom-applications.md#getcustomapplicationdetailsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $details = Get-PmpcCustomApplication -ProductId '{product-id}'
 $details | Select-Object DisplayName, UpdateVersion, @{ Name = 'UpdateId'; Expression = { $_.Custom.UpdateId } }, @{ Name = 'CatalogEntryId'; Expression = { $_.Custom.CatalogEntryId } }
 ```
+{% endcode %}
 
 See [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md).
 {% endtab %}

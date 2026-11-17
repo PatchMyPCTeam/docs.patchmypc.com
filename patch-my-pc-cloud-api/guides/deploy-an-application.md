@@ -16,45 +16,26 @@ A deployment publishes an application to Microsoft Intune through one of your co
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
 {% endhint %}
 
+This guide covers the SDK and PowerShell module. For direct HTTP requests, follow [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest). For other deployment operations, see the [REST API reference](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api).
+
 ## Before you begin
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
-* The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:read` scope to list connections and the `appcatbroker:apps:deploy` scope to create and read deployments.
 * Find the product ID of the application to deploy. See [Search the catalog](search-the-catalog.md). A deployment also requires a catalog entry ID: use `custom.catalogEntryId` from custom application details, or choose one public variant and use its `catalogEntryId`.
 * Have the object IDs of the Microsoft Entra ID groups you want to assign the application to.
 
 ## Step 1: Select a connection
 
-Every deployment belongs to a connection. With the SDK and the PowerShell module, you select a connection once and later deployment calls use it. With REST, you pass the connection ID on each deployment request.
+Every deployment belongs to a connection. With the SDK and the PowerShell module, you select a connection once and later deployment calls use it.
 
 1. List your connections.
 2. Choose an Intune connection whose `adminConsent` is `Granted`.
 3. Note its `connectionId`, or select it.
 
 {% tabs %}
-{% tab title="REST" %}
-```http
-GET https://us.portal.patchmypc.com/v1/api/connections
-Authorization: Bearer {access-token}
-Accept: application/json
-```
-
-```json
-[
-  {
-    "connectionId": "{connection-id}",
-    "displayName": "Contoso Intune",
-    "type": "Intune",
-    "adminConsent": "Granted"
-  }
-]
-```
-
-See [Get available connections](../rest-api/applications.md#get-available-connections).
-{% endtab %}
-
 {% tab title="C#" %}
+{% code collapsedlinecount="10" %}
 ```csharp
 var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsFailure)
@@ -66,15 +47,18 @@ if (connections.IsFailure)
 var connection = connections.Value.First(c => c.DisplayName == "Contoso Intune");
 await client.SetSelectedConnectionAsync(connection);
 ```
+{% endcode %}
 
 See [GetAvailableConnectionsAsync](../sdk/customer-and-connections.md#getavailableconnectionsasync) and [SetSelectedConnectionAsync](../sdk/customer-and-connections.md#setselectedconnectionasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcConnection
 Set-PmpcConnection -Name 'Contoso Intune'
 ```
+{% endcode %}
 
 See [Get-PmpcConnection](../powershell/get-pmpcconnection.md) and [Set-PmpcConnection](../powershell/set-pmpcconnection.md).
 {% endtab %}
@@ -101,29 +85,8 @@ The `NoAssignmentsInstall` and `NoAssignmentsUpdate` intents publish the applica
 4. Note the `deploymentId` in the response.
 
 {% tabs %}
-{% tab title="REST" %}
-```http
-POST https://us.portal.patchmypc.com/v1/api/apps/{product-id}/deployments
-Authorization: Bearer {access-token}
-Content-Type: application/json
-
-{
-  "connectionId": "{connection-id}",
-  "catalogEntryId": "{catalog-entry-id}",
-  "osType": "Windows",
-  "assignments": [
-    { "groupId": "{group-id}", "intent": "Required" }
-  ]
-}
-```
-
-The response describes the new deployment, including its `deploymentId` and `status`.
-
-See [Create application deployment](../rest-api/applications.md#create-application-deployment).
-{% endtab %}
-
 {% tab title="C#" %}
-{% code title="Program.cs" %}
+{% code title="Program.cs" collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Client;
 
@@ -164,6 +127,7 @@ See [CreateDeploymentAsync](../sdk/deployments.md#createdeploymentasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $assignments = @(
     New-PmpcDeploymentAssignment -GroupId '{group-id}' -Intent Required
@@ -176,6 +140,7 @@ $deployment = New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.
     DeploymentId = $deployment.DeploymentId
 }
 ```
+{% endcode %}
 
 `New-PmpcDeployment` supports `-WhatIf` and `-Confirm`. `-CatalogEntryId` is required; get it from custom details or from one selected public variant. `ProductId` and `UpdateId` are not substitutes.
 
@@ -187,6 +152,7 @@ See [New-PmpcDeploymentAssignment](../powershell/new-pmpcdeploymentassignment.md
 
 Select the exact variant from public application details and pass its `CatalogEntryId` in the create request. The product ID alone does not identify which catalog entry to deploy.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var publicDetails = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
 if (publicDetails.IsFailure)
@@ -232,6 +198,7 @@ if (deployment.IsFailure)
 
 Console.WriteLine($"Created {deployment.Value.DeploymentId}");
 ```
+{% endcode %}
 
 ## Step 4: Monitor the deployment
 
@@ -242,19 +209,8 @@ A new deployment is processed in the background. Check its status until it settl
 3. Review `warningMessages` and `errorMessages`. A deployment can succeed and still carry warnings.
 
 {% tabs %}
-{% tab title="REST" %}
-```http
-GET https://us.portal.patchmypc.com/v1/api/apps/{product-id}/deployments/{deployment-id}?connectionId={connection-id}
-Authorization: Bearer {access-token}
-Accept: application/json
-```
-
-To list every deployment of the application on the connection, omit the deployment ID: `GET /v1/api/apps/{product-id}/deployments?connectionId={connection-id}`.
-
-See [Get application deployment details](../rest-api/applications.md#get-application-deployment-details) and [Get application deployments](../rest-api/applications.md#get-application-deployments).
-{% endtab %}
-
 {% tab title="C#" %}
+{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetDeploymentDetailsAsync(productId, created.Value.DeploymentId);
 if (details.IsSuccess)
@@ -266,15 +222,18 @@ if (details.IsSuccess)
     }
 }
 ```
+{% endcode %}
 
 See [GetDeploymentDetailsAsync](../sdk/deployments.md#getdeploymentdetailsasync) and [GetDeploymentsAsync](../sdk/deployments.md#getdeploymentsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId '{product-id}' -DeploymentId '{deployment-id}' |
     Select-Object DisplayName, Status, WarningMessages, ErrorMessages
 ```
+{% endcode %}
 
 To list every deployment of the application, omit `-DeploymentId`.
 

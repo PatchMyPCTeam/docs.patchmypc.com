@@ -16,10 +16,11 @@ An update replaces the application's files and packaging details—for example t
 
 Like creating an application, an update uploads files. The .NET SDK and the PowerShell module do the upload for you, so we recommend them over REST.
 
+This guide covers the SDK and PowerShell module. For REST, see [Create update draft](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#create-update-draft), [Complete application update](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#complete-application-update), and [Sync application deployment](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#sync-application-deployment). The separate [REST walkthrough](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest) demonstrates creating and deploying an application, not publishing a new version.
+
 ## Before you begin
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
-* The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:write` scope, and `appcatbroker:apps:read` to look up the application.
 * Prepare a folder with the new version's installer and supporting files, as described in [Create a custom application](create-a-custom-application.md).
 
@@ -29,23 +30,8 @@ Like creating an application, an update uploads files. The .NET SDK and the Powe
 2. Note its `productId` and `custom.updateId`. `custom.updateId` is the canonical ID of the current version, which the new version follows. The deprecated top-level `updateId` is retained only for compatibility.
 
 {% tabs %}
-{% tab title="REST" %}
-```http
-POST https://us.portal.patchmypc.com/v1/api/apps/search
-Authorization: Bearer {access-token}
-Content-Type: application/json
-
-{
-  "displayNameSearchString": "Contoso Sample Agent"
-}
-```
-
-Each custom result has `productId` and `custom.updateId`. The top-level `updateId` is deprecated; use the nested value. `id` and `productId` contain the same application ID.
-
-See [Search applications](../rest-api/applications.md#search-applications).
-{% endtab %}
-
 {% tab title="C#" %}
+{% code collapsedlinecount="10" %}
 ```csharp
 var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
@@ -54,15 +40,18 @@ var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 
 var current = search.Value.Products.First();
 ```
+{% endcode %}
 
 See [SearchApplicationsAsync](../sdk/applications.md#searchapplicationsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $current = Find-PmpcCustomApplication -DisplayName 'Contoso Sample Agent' | Select-Object -First 1
 $current | Select-Object DisplayName, Version, ProductId, @{ Name = 'UpdateId'; Expression = { $_.Custom.UpdateId } }
 ```
+{% endcode %}
 
 See [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md).
 {% endtab %}
@@ -71,56 +60,8 @@ See [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md).
 ## Step 2: Publish the new version
 
 {% tabs %}
-{% tab title="REST" %}
-1. Create an update draft for the application's current version.
-
-```http
-POST https://us.portal.patchmypc.com/v1/api/apps/update-draft
-Authorization: Bearer {access-token}
-Content-Type: application/json
-
-{
-  "productId": "{product-id}",
-  "updateId": "{current-update-id}"
-}
-```
-
-The response has the same shape as a new draft: the same `productId`, a new `updateId` and `revisionId`, and the paths to upload files to.
-
-2. Upload the new version's files to those paths. The upload works the same way as for a new application—see [Create a custom application](create-a-custom-application.md).
-3. Complete the update with `PUT`. Send the IDs from the update draft, the packaging details, and the list of files.
-
-```http
-PUT https://us.portal.patchmypc.com/v1/api/apps/complete
-Authorization: Bearer {access-token}
-Content-Type: application/json
-
-{
-  "productId": "{product-id}",
-  "updateId": "{new-update-id}",
-  "revisionId": 123,
-  "primaryInstallerFile": "ContosoAgent.msi",
-  "msiProductCode": "{msi-product-code}",
-  "files": [
-    {
-      "productId": "{product-id}",
-      "fileName": "ContosoAgent.msi",
-      "fileSize": 53477376,
-      "fileType": "{file-type}",
-      "sha1Hash": "{sha1-hash}",
-      "sha256Hash": "{sha256-hash}"
-    }
-  ]
-}
-```
-
-If the application or draft doesn't exist, the response is `404 Not Found`. Completing an update can take up to a minute.
-
-See [Create update draft](../rest-api/applications.md#create-update-draft) and [Complete application update](../rest-api/applications.md#complete-application-update).
-{% endtab %}
-
 {% tab title="C#" %}
-{% code title="Program.cs" %}
+{% code title="Program.cs" collapsedlinecount="10" %}
 ```csharp
 var updated = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
 {
@@ -151,9 +92,11 @@ See [UpdateApplicationAsync](../sdk/applications.md#updateapplicationasync).
 {% tab title="PowerShell" %}
 Use the product and update IDs returned by `Get-PmpcCustomApplication` or `Find-PmpcCustomApplication`. Provide the new version with `-ArpVersionMatch`. For an MSI installer, also provide the new installer's product code; the installer type cannot change between versions.
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Update-PmpcCustomApplication -ProductId '{product-id}' -UpdateId '{update-id}' -FolderPath 'C:\Packages\ContosoAgent-4.3' -PrimaryInstallerFile 'ContosoAgent.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '{version}'
 ```
+{% endcode %}
 
 The cmdlets in this example use operations that must be enabled for your account. Until they are, they report the error code `FEATURE_NOT_ENABLED`.
 
@@ -173,16 +116,8 @@ This feature must be enabled for your account. Until it is, requests return `403
 2. Sync that deployment.
 
 {% tabs %}
-{% tab title="REST" %}
-```http
-PUT https://us.portal.patchmypc.com/v1/api/apps/{product-id}/deployments/{deployment-id}/sync?connectionId={connection-id}
-Authorization: Bearer {access-token}
-```
-
-A PAT needs the `appcatbroker:apps:deploy` scope. See [Sync application deployment](../rest-api/applications.md#sync-application-deployment).
-{% endtab %}
-
 {% tab title="C#" %}
+{% code collapsedlinecount="10" %}
 ```csharp
 var sync = await client.SyncDeploymentAsync(current.ProductId, "{deployment-id}");
 if (sync.IsFailure)
@@ -190,15 +125,18 @@ if (sync.IsFailure)
     Console.WriteLine($"{sync.Error.Code}: {sync.Error.Message}");
 }
 ```
+{% endcode %}
 
 See [SyncDeploymentAsync](../sdk/deployments.md#syncdeploymentasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $current.ProductId
 Sync-PmpcDeployment -ProductId $current.ProductId -DeploymentId '{deployment-id}'
 ```
+{% endcode %}
 
 See [Sync-PmpcDeployment](../powershell/sync-pmpcdeployment.md).
 {% endtab %}
