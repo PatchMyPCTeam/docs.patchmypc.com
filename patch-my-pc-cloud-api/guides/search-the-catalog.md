@@ -86,8 +86,6 @@ Find-PmpcCustomApplication -DisplayName 'Contoso' -Limit 25 |
 
 This returns one page. To request the next 25 matches, set `-Skip 25 -Limit 25`; continue increasing `-Skip` until you reach the total from `Find-PmpcCustomApplication -DisplayName 'Contoso' -Limit 1 -AsResponse`.
 
-`Find-PmpcCustomApplication` uses an operation that must be enabled for your account. Until it is, the cmdlet reports the error code `FEATURE_NOT_ENABLED`.
-
 See [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md).
 {% endtab %}
 {% endtabs %}
@@ -120,23 +118,17 @@ Get-PmpcCustomApplication -ProductId '{product-id}'
 ```
 {% endcode %}
 
-Like `Find-PmpcCustomApplication`, this cmdlet reports `FEATURE_NOT_ENABLED` until the operation is enabled for your account.
-
 See [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md).
 {% endtab %}
 {% endtabs %}
 
 ## Search the Patch My PC catalog
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 The legacy `/apps/search` route is for custom applications. Public catalog results come from `/apps/public/search`. A public catalog search is scoped to one of your connections, so you choose a connection first. Public search results omit `updateId` from JSON (the SDK's nullable property reads as `null`); use the `catalogEntryId` values in public details to select a deployment.
 
 1. List your connections and note the `connectionId` of the one you want. A PAT needs the `appcatbroker:apps:read` scope to list connections.
 2. Search the catalog with that connection.
-3. To search macOS applications, set the operating system to `MacOS`. macOS applications must be enabled for your account; otherwise a macOS search returns no results, and a details lookup reports the application as not found.
+3. To search macOS applications, set the operating system to `MacOS`. If your account isn't entitled to macOS applications, the search returns no results and a details lookup reports the application as not found.
 
 {% tabs %}
 {% tab title="C#" %}

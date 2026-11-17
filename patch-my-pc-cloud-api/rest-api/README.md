@@ -29,9 +29,11 @@ The examples in this reference use the US host. If your account is in the EU reg
 
 Every operation except [Exchange a personal access token for an access token](authentication.md#exchange-a-personal-access-token-for-an-access-token) requires an access token, sent as a bearer token in the `Authorization` header:
 
+{% code collapsedlinecount="10" %}
 ```http
 Authorization: Bearer {access-token}
 ```
+{% endcode %}
 
 To get an access token:
 
@@ -56,79 +58,79 @@ Requests are rate limited per account, with separate counters for read and write
 
 ## Errors
 
-Errors are returned with a standard HTTP status code. A request that isn't valid returns `400 Bad Request`, a missing or expired token returns `401 Unauthorized`, and a token without the required permission returns `403 Forbidden`. Operations marked as requiring enablement return `403 Forbidden` with the problem title `feature_not_enabled` until they're enabled for your account. For the error format and the error codes the SDK and PowerShell module report, see [Errors](../errors.md).
+Errors are returned with a standard HTTP status code. A request that isn't valid returns `400 Bad Request`, a missing or expired token returns `401 Unauthorized`, and a token without the required permission returns `403 Forbidden`. For the error format and the error codes the SDK and PowerShell module report, see [Errors](../errors.md).
 
 ## Operations
 
 ### Account and connections
 
-| Method | Path                    | Operation                                                              | PAT scope                    | Requires enablement |
-| ------ | ----------------------- | ---------------------------------------------------------------------- | ---------------------------- | ------------------- |
-| `GET`  | `/v1/api/customer-info` | [Get customer info](applications.md#get-customer-info)                 | `appcatbroker:customer:read` | No                  |
-| `GET`  | `/v1/api/connections`   | [Get available connections](applications.md#get-available-connections) | `appcatbroker:apps:read`     | Yes                 |
+| Method | Path                    | Operation                                                              | PAT scope                    |
+| ------ | ----------------------- | ---------------------------------------------------------------------- | ---------------------------- |
+| `GET`  | `/v1/api/customer-info` | [Get customer info](applications.md#get-customer-info)                 | `appcatbroker:customer:read` |
+| `GET`  | `/v1/api/connections`   | [Get available connections](applications.md#get-available-connections) | `appcatbroker:apps:read`     |
 
 ### Application management
 
-| Method   | Path                             | Operation                                                                      | PAT scope                 | Requires enablement |
-| -------- | -------------------------------- | ------------------------------------------------------------------------------ | ------------------------- | ------------------- |
-| `POST`   | `/v1/api/apps/search`            | [Search applications](applications.md#search-applications)                     | `appcatbroker:apps:read`  | No                  |
-| `GET`    | `/v1/api/apps/{productId}`       | [Get application details](applications.md#get-application-details)             | `appcatbroker:apps:read`  | No                  |
-| `DELETE` | `/v1/api/apps/{productId}`       | [Delete an application](applications.md#delete-an-application)                 | `appcatbroker:apps:write` | Yes                 |
-| `GET`    | `/v1/api/apps/{productId}/files` | [Get application files](applications.md#get-application-files)                 | `appcatbroker:apps:read`  | Yes                 |
-| `POST`   | `/v1/api/apps/draft`             | [Create application draft](applications.md#create-application-draft)           | `appcatbroker:apps:write` | No                  |
-| `POST`   | `/v1/api/apps/update-draft`      | [Create update draft](applications.md#create-update-draft)                     | `appcatbroker:apps:write` | No                  |
-| `POST`   | `/v1/api/apps/complete`          | [Complete application creation](applications.md#complete-application-creation) | `appcatbroker:apps:write` | No                  |
-| `PUT`    | `/v1/api/apps/complete`          | [Complete application update](applications.md#complete-application-update)     | `appcatbroker:apps:write` | No                  |
-| `POST`   | `/v1/api/apps/edit-draft`        | [Create edit draft](applications.md#create-edit-draft)                         | `appcatbroker:apps:write` | Yes                 |
-| `PUT`    | `/v1/api/apps/edit-complete`     | [Complete application edit](applications.md#complete-application-edit)         | `appcatbroker:apps:write` | Yes                 |
+| Method   | Path                             | Operation                                                                      | PAT scope                 |
+| -------- | -------------------------------- | ------------------------------------------------------------------------------ | ------------------------- |
+| `POST`   | `/v1/api/apps/search`            | [Search applications](applications.md#search-applications)                     | `appcatbroker:apps:read`  |
+| `GET`    | `/v1/api/apps/{productId}`       | [Get application details](applications.md#get-application-details)             | `appcatbroker:apps:read`  |
+| `DELETE` | `/v1/api/apps/{productId}`       | [Delete an application](applications.md#delete-an-application)                 | `appcatbroker:apps:write` |
+| `GET`    | `/v1/api/apps/{productId}/files` | [Get application files](applications.md#get-application-files)                 | `appcatbroker:apps:read`  |
+| `POST`   | `/v1/api/apps/draft`             | [Create application draft](applications.md#create-application-draft)           | `appcatbroker:apps:write` |
+| `POST`   | `/v1/api/apps/update-draft`      | [Create update draft](applications.md#create-update-draft)                     | `appcatbroker:apps:write` |
+| `POST`   | `/v1/api/apps/complete`          | [Complete application creation](applications.md#complete-application-creation) | `appcatbroker:apps:write` |
+| `PUT`    | `/v1/api/apps/complete`          | [Complete application update](applications.md#complete-application-update)     | `appcatbroker:apps:write` |
+| `POST`   | `/v1/api/apps/edit-draft`        | [Create edit draft](applications.md#create-edit-draft)                         | `appcatbroker:apps:write` |
+| `PUT`    | `/v1/api/apps/edit-complete`     | [Complete application edit](applications.md#complete-application-edit)         | `appcatbroker:apps:write` |
 
 ### Custom applications
 
-| Method   | Path                                | Operation                                                                                    | PAT scope                 | Requires enablement |
-| -------- | ----------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------- | ------------------- |
-| `GET`    | `/v1/api/apps/custom/{productId}`   | [Get custom application details](applications.md#get-custom-application-details)             | `appcatbroker:apps:read`  | Yes                 |
-| `DELETE` | `/v1/api/apps/custom/{productId}`   | [Delete a custom application](applications.md#delete-a-custom-application)                   | `appcatbroker:apps:write` | Yes                 |
-| `POST`   | `/v1/api/apps/custom/search`        | [Search custom applications](applications.md#search-custom-applications)                     | `appcatbroker:apps:read`  | Yes                 |
-| `POST`   | `/v1/api/apps/custom/draft`         | [Create custom application draft](applications.md#create-custom-application-draft)           | `appcatbroker:apps:write` | Yes                 |
-| `POST`   | `/v1/api/apps/custom/update-draft`  | [Create custom update draft](applications.md#create-custom-update-draft)                     | `appcatbroker:apps:write` | Yes                 |
-| `POST`   | `/v1/api/apps/custom/complete`      | [Complete custom application creation](applications.md#complete-custom-application-creation) | `appcatbroker:apps:write` | Yes                 |
-| `PUT`    | `/v1/api/apps/custom/complete`      | [Complete custom application update](applications.md#complete-custom-application-update)     | `appcatbroker:apps:write` | Yes                 |
-| `POST`   | `/v1/api/apps/custom/edit-draft`    | [Create custom edit draft](applications.md#create-custom-edit-draft)                         | `appcatbroker:apps:write` | Yes                 |
-| `PUT`    | `/v1/api/apps/custom/edit-complete` | [Complete custom application edit](applications.md#complete-custom-application-edit)         | `appcatbroker:apps:write` | Yes                 |
+| Method   | Path                                | Operation                                                                                    | PAT scope                 |
+| -------- | ----------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------- |
+| `GET`    | `/v1/api/apps/custom/{productId}`   | [Get custom application details](applications.md#get-custom-application-details)             | `appcatbroker:apps:read`  |
+| `DELETE` | `/v1/api/apps/custom/{productId}`   | [Delete a custom application](applications.md#delete-a-custom-application)                   | `appcatbroker:apps:write` |
+| `POST`   | `/v1/api/apps/custom/search`        | [Search custom applications](applications.md#search-custom-applications)                     | `appcatbroker:apps:read`  |
+| `POST`   | `/v1/api/apps/custom/draft`         | [Create custom application draft](applications.md#create-custom-application-draft)           | `appcatbroker:apps:write` |
+| `POST`   | `/v1/api/apps/custom/update-draft`  | [Create custom update draft](applications.md#create-custom-update-draft)                     | `appcatbroker:apps:write` |
+| `POST`   | `/v1/api/apps/custom/complete`      | [Complete custom application creation](applications.md#complete-custom-application-creation) | `appcatbroker:apps:write` |
+| `PUT`    | `/v1/api/apps/custom/complete`      | [Complete custom application update](applications.md#complete-custom-application-update)     | `appcatbroker:apps:write` |
+| `POST`   | `/v1/api/apps/custom/edit-draft`    | [Create custom edit draft](applications.md#create-custom-edit-draft)                         | `appcatbroker:apps:write` |
+| `PUT`    | `/v1/api/apps/custom/edit-complete` | [Complete custom application edit](applications.md#complete-custom-application-edit)         | `appcatbroker:apps:write` |
 
 ### Public catalog applications
 
-| Method | Path                              | Operation                                                                        | PAT scope                | Requires enablement |
-| ------ | --------------------------------- | -------------------------------------------------------------------------------- | ------------------------ | ------------------- |
-| `GET`  | `/v1/api/apps/public/{productId}` | [Get public application details](applications.md#get-public-application-details) | `appcatbroker:apps:read` | Yes                 |
-| `POST` | `/v1/api/apps/public/search`      | [Search public applications](applications.md#search-public-applications)         | `appcatbroker:apps:read` | Yes                 |
+| Method | Path                              | Operation                                                                        | PAT scope                |
+| ------ | --------------------------------- | -------------------------------------------------------------------------------- | ------------------------ |
+| `GET`  | `/v1/api/apps/public/{productId}` | [Get public application details](applications.md#get-public-application-details) | `appcatbroker:apps:read` |
+| `POST` | `/v1/api/apps/public/search`      | [Search public applications](applications.md#search-public-applications)         | `appcatbroker:apps:read` |
 
 ### Deployments
 
-| Method   | Path                                                                       | Operation                                                                                                            | PAT scope                  | Requires enablement |
-| -------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------- |
-| `GET`    | `/v1/api/apps/{productId}/deployments`                                     | [Get application deployments](applications.md#get-application-deployments)                                           | `appcatbroker:apps:deploy` | Yes                 |
-| `POST`   | `/v1/api/apps/{productId}/deployments`                                     | [Create application deployment](applications.md#create-application-deployment)                                       | `appcatbroker:apps:deploy` | Yes                 |
-| `GET`    | `/v1/api/apps/{productId}/deployments/{deploymentId}`                      | [Get application deployment details](applications.md#get-application-deployment-details)                             | `appcatbroker:apps:deploy` | Yes                 |
-| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}`                      | [Edit application deployment](applications.md#edit-application-deployment)                                           | `appcatbroker:apps:deploy` | Yes                 |
-| `DELETE` | `/v1/api/apps/{productId}/deployments/{deploymentId}`                      | [Delete application deployment](applications.md#delete-application-deployment)                                       | `appcatbroker:apps:deploy` | Yes                 |
-| `GET`    | `/v1/api/apps/{productId}/deployments/dependency-candidates`               | [Get application deployment dependency candidates](applications.md#get-application-deployment-dependency-candidates) | `appcatbroker:apps:deploy` | Yes                 |
-| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}/redeploy`             | [Redeploy application deployment](applications.md#redeploy-application-deployment)                                   | `appcatbroker:apps:deploy` | Yes                 |
-| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}/sync`                 | [Sync application deployment](applications.md#sync-application-deployment)                                           | `appcatbroker:apps:deploy` | Yes                 |
-| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}/scheduled-sync-pause` | [Set application deployment sync pause status](applications.md#set-application-deployment-sync-pause-status)         | `appcatbroker:apps:deploy` | Yes                 |
+| Method   | Path                                                                       | Operation                                                                                                            | PAT scope                  |
+| -------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| `GET`    | `/v1/api/apps/{productId}/deployments`                                     | [Get application deployments](applications.md#get-application-deployments)                                           | `appcatbroker:apps:deploy` |
+| `POST`   | `/v1/api/apps/{productId}/deployments`                                     | [Create application deployment](applications.md#create-application-deployment)                                       | `appcatbroker:apps:deploy` |
+| `GET`    | `/v1/api/apps/{productId}/deployments/{deploymentId}`                      | [Get application deployment details](applications.md#get-application-deployment-details)                             | `appcatbroker:apps:deploy` |
+| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}`                      | [Edit application deployment](applications.md#edit-application-deployment)                                           | `appcatbroker:apps:deploy` |
+| `DELETE` | `/v1/api/apps/{productId}/deployments/{deploymentId}`                      | [Delete application deployment](applications.md#delete-application-deployment)                                       | `appcatbroker:apps:deploy` |
+| `GET`    | `/v1/api/apps/{productId}/deployments/dependency-candidates`               | [Get application deployment dependency candidates](applications.md#get-application-deployment-dependency-candidates) | `appcatbroker:apps:deploy` |
+| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}/redeploy`             | [Redeploy application deployment](applications.md#redeploy-application-deployment)                                   | `appcatbroker:apps:deploy` |
+| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}/sync`                 | [Sync application deployment](applications.md#sync-application-deployment)                                           | `appcatbroker:apps:deploy` |
+| `PUT`    | `/v1/api/apps/{productId}/deployments/{deploymentId}/scheduled-sync-pause` | [Set application deployment sync pause status](applications.md#set-application-deployment-sync-pause-status)         | `appcatbroker:apps:deploy` |
 
 ### Deployment templates
 
-| Method   | Path                                                   | Operation                                                                          | PAT scope                  | Requires enablement |
-| -------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------- | -------------------------- | ------------------- |
-| `GET`    | `/v1/api/deployments/templates`                        | [Get deployment templates](applications.md#get-deployment-templates)               | `appcatbroker:apps:deploy` | Yes                 |
-| `POST`   | `/v1/api/deployments/templates`                        | [Create deployment template](applications.md#create-deployment-template)           | `appcatbroker:apps:deploy` | Yes                 |
-| `GET`    | `/v1/api/deployments/templates/{deploymentTemplateId}` | [Get deployment template details](applications.md#get-deployment-template-details) | `appcatbroker:apps:deploy` | Yes                 |
-| `PUT`    | `/v1/api/deployments/templates/{deploymentTemplateId}` | [Update deployment template](applications.md#update-deployment-template)           | `appcatbroker:apps:deploy` | Yes                 |
-| `DELETE` | `/v1/api/deployments/templates/{deploymentTemplateId}` | [Delete deployment template](applications.md#delete-deployment-template)           | `appcatbroker:apps:deploy` | Yes                 |
+| Method   | Path                                                   | Operation                                                                          | PAT scope                  |
+| -------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------- | -------------------------- |
+| `GET`    | `/v1/api/deployments/templates`                        | [Get deployment templates](applications.md#get-deployment-templates)               | `appcatbroker:apps:deploy` |
+| `POST`   | `/v1/api/deployments/templates`                        | [Create deployment template](applications.md#create-deployment-template)           | `appcatbroker:apps:deploy` |
+| `GET`    | `/v1/api/deployments/templates/{deploymentTemplateId}` | [Get deployment template details](applications.md#get-deployment-template-details) | `appcatbroker:apps:deploy` |
+| `PUT`    | `/v1/api/deployments/templates/{deploymentTemplateId}` | [Update deployment template](applications.md#update-deployment-template)           | `appcatbroker:apps:deploy` |
+| `DELETE` | `/v1/api/deployments/templates/{deploymentTemplateId}` | [Delete deployment template](applications.md#delete-deployment-template)           | `appcatbroker:apps:deploy` |
 
 ### Authentication
 
-| Method | Path                 | Operation                                                                                                                      | PAT scope     | Requires enablement |
-| ------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------- | ------------------- |
-| `POST` | `/v1/api/auth/token` | [Exchange a personal access token for an access token](authentication.md#exchange-a-personal-access-token-for-an-access-token) | None required | No                  |
+| Method | Path                 | Operation                                                                                                                      | PAT scope     |
+| ------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| `POST` | `/v1/api/auth/token` | [Exchange a personal access token for an access token](authentication.md#exchange-a-personal-access-token-for-an-access-token) | None required |

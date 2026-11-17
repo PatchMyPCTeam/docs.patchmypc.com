@@ -180,11 +180,13 @@ To tune the upload, pass `ChunkUploadOptions`. For details, see [Install and con
 
 Searches your custom applications. This legacy method and `/apps/search` return custom applications only. Use [`SearchPublicApplicationsAsync`](applications.md#searchpublicapplicationsasync) for the public catalog.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ProductFilterResponse>> SearchApplicationsAsync(
     ProductFilterRequest filterRequest,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                    | Description                    |
 | ------------------- | ------------------------------------------------------- | ------------------------------ |
@@ -193,6 +195,7 @@ Task<Result<ProductFilterResponse>> SearchApplicationsAsync(
 
 **Returns:** a [`ProductFilterResponse`](applications.md#search-results) with one page of results.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
@@ -213,6 +216,7 @@ foreach (var product in search.Value.Products)
     Console.WriteLine($"Current custom version: {product.Custom?.UpdateId}");
 }
 ```
+{% endcode %}
 
 **See also:** [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md) and [Search applications](../rest-api/applications.md#search-applications).
 
@@ -220,6 +224,7 @@ foreach (var product in search.Value.Products)
 
 Application searches use offset-based pagination. `Skip` defaults to `0`, `Limit` defaults to `50`, and each response's `TotalAmount` is the total number of matches before paging. To collect every match, request pages until the offset reaches `TotalAmount`; advance `Skip` by the number of products actually returned. Stop if a page is empty.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Client;
 
@@ -258,6 +263,7 @@ do
 }
 while (skip < totalAmount);
 ```
+{% endcode %}
 
 Use the same `Skip` and `Limit` pattern with [`SearchCustomApplicationsAsync`](custom-applications.md#searchcustomapplicationsasync) or [`SearchPublicApplicationsAsync`](applications.md#searchpublicapplicationsasync). A public-catalog search also requires a selected connection.
 
@@ -265,11 +271,13 @@ Use the same `Skip` and `Limit` pattern with [`SearchCustomApplicationsAsync`](c
 
 Gets the details of one of your custom applications.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ProductDto>> GetApplicationDetailsAsync(
     Guid productId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                   |
 | ------------------- | ------------------- | ----------------------------- |
@@ -278,6 +286,7 @@ Task<Result<ProductDto>> GetApplicationDetailsAsync(
 
 **Returns:** a [`ProductDto`](applications.md#application-details). If the application doesn't exist, the error code is `NOT_FOUND`. The details don't include the file list; use [`GetApplicationFilesAsync`](applications.md#getapplicationfilesasync) for that.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetApplicationDetailsAsync(productId);
 if (details.IsFailure)
@@ -289,6 +298,7 @@ if (details.IsFailure)
 Console.WriteLine($"{details.Value.DisplayName} {details.Value.UpdateVersion}");
 Console.WriteLine($"Installer: {details.Value.MainFile} {details.Value.SilentInstallArguments}");
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md) and [Get application details](../rest-api/applications.md#get-application-details).
 
@@ -296,6 +306,7 @@ Console.WriteLine($"Installer: {details.Value.MainFile} {details.Value.SilentIns
 
 Creates a custom application and uploads its files in one call.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ApplicationData>> CreateApplicationAsync(
     ApplicationMetadata metadata,
@@ -303,6 +314,7 @@ Task<Result<ApplicationData>> CreateApplicationAsync(
     IProgress<UploadProgress>? progress = null,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                          | Description                                                                       |
 | ------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -315,6 +327,7 @@ Task<Result<ApplicationData>> CreateApplicationAsync(
 
 The SDK creates a draft, uploads the files in chunks, and completes the application. Each new application counts against your custom application limit; check `GetCustomerInfoAsync` to see your usage. If you've reached the limit, the method fails with `VALIDATION_ERROR` and a message that says you have reached the maximum number of custom applications.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Models;
 using PatchMyPC.Cloud.Client;
@@ -346,6 +359,7 @@ if (created.IsFailure)
 
 Console.WriteLine($"Created {created.Value.ProductId} in {created.Value.Duration}");
 ```
+{% endcode %}
 
 **See also:** [New-PmpcCustomApplication](../powershell/new-pmpccustomapplication.md), [Create application draft](../rest-api/applications.md#create-application-draft), and [Complete application creation](../rest-api/applications.md#complete-application-creation).
 
@@ -353,6 +367,7 @@ Console.WriteLine($"Created {created.Value.ProductId} in {created.Value.Duration
 
 Publishes a new version of one of your custom applications and uploads its files.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ApplicationData>> UpdateApplicationAsync(
     ApplicationUpdateMetadata updateMetadata,
@@ -360,6 +375,7 @@ Task<Result<ApplicationData>> UpdateApplicationAsync(
     IProgress<UploadProgress>? progress = null,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                                | Description                                                                           |
 | ------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -374,6 +390,7 @@ For an MSI application, set `MsiProductCode` to the new installer's product code
 
 To correct the current version without publishing a new one, use [`EditApplicationAsync`](applications.md#editapplicationasync) instead.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 if (product.Custom?.UpdateId is not Guid currentUpdateId)
 {
@@ -400,6 +417,7 @@ if (update.IsFailure)
 
 Console.WriteLine($"Published version {update.Value.UpdateId}");
 ```
+{% endcode %}
 
 **See also:** [Update-PmpcCustomApplication](../powershell/update-pmpccustomapplication.md), [Create update draft](../rest-api/applications.md#create-update-draft), and [Complete application update](../rest-api/applications.md#complete-application-update).
 
@@ -407,6 +425,7 @@ Console.WriteLine($"Published version {update.Value.UpdateId}");
 
 Corrects an application's current version in place, without publishing a new version.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ApplicationData>> EditApplicationAsync(
     ApplicationEditMetadata editMetadata,
@@ -414,6 +433,7 @@ Task<Result<ApplicationData>> EditApplicationAsync(
     IProgress<UploadProgress>? progress = null,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                       | Description                                                                       |
 | ------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -424,12 +444,9 @@ Task<Result<ApplicationData>> EditApplicationAsync(
 
 **Returns:** an [`ApplicationData`](applications.md#upload-result-and-progress) for the edited version.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 Use this method to fix a display name, change an owner, replace an icon, or amend detection rules. The SDK reads the application's current details and files, applies your changes, uploads only files that are new or changed, and submits the result, so you only set the properties you want to change.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var edit = await client.EditApplicationAsync(new ApplicationEditMetadata
 {
@@ -446,6 +463,7 @@ if (edit.IsFailure)
 
 Console.WriteLine($"Edited version {edit.Value.UpdateId}");
 ```
+{% endcode %}
 
 **See also:** [Set-PmpcCustomApplication](../powershell/set-pmpccustomapplication.md), [Create edit draft](../rest-api/applications.md#create-edit-draft), and [Complete application edit](../rest-api/applications.md#complete-application-edit).
 
@@ -453,11 +471,13 @@ Console.WriteLine($"Edited version {edit.Value.UpdateId}");
 
 Lists the files in an application's current version.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<IReadOnlyList<ApplicationFileDto>>> GetApplicationFilesAsync(
     Guid productId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                   |
 | ------------------- | ------------------- | ----------------------------- |
@@ -474,12 +494,9 @@ Task<Result<IReadOnlyList<ApplicationFileDto>>> GetApplicationFilesAsync(
 | `FileType`               | enum     | The file's role, for example `Installation` or `Extra`. |
 | `Sha1Hash`, `Sha256Hash` | `string` | The file hashes. `Sha256Hash` can be `null`.            |
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 `EditApplicationAsync` reads the file list for you, so you don't need this method to edit an application.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var files = await client.GetApplicationFilesAsync(productId);
 if (files.IsFailure)
@@ -493,6 +510,7 @@ foreach (var file in files.Value)
     Console.WriteLine($"{file.FileName} ({file.FileSize:N0} bytes, {file.FileType})");
 }
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcApplicationFile](../powershell/get-pmpcapplicationfile.md) and [Get application files](../rest-api/applications.md#get-application-files).
 
@@ -500,11 +518,13 @@ foreach (var file in files.Value)
 
 Searches the Patch My PC public catalog.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ProductFilterResponse>> SearchPublicApplicationsAsync(
     ProductFilterRequest filterRequest,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                    | Description                                                                                                          |
 | ------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -513,12 +533,9 @@ Task<Result<ProductFilterResponse>> SearchPublicApplicationsAsync(
 
 **Returns:** a [`ProductFilterResponse`](applications.md#search-results) with one page of public catalog results.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 A public catalog search needs an Intune connection. Set `ConnectionId` or select a connection first; otherwise the method fails with the message "Either supply a connectionId or call SetSelectedConnectionAsync first." For details, see [Customer information and connections](customer-and-connections.md).
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var search = await client.SearchPublicApplicationsAsync(new ProductFilterRequest
 {
@@ -538,6 +555,7 @@ foreach (var product in search.Value.Products)
     Console.WriteLine(product.UpdateId is null ? "No updateId is returned for public results." : $"Legacy updateId: {product.UpdateId}");
 }
 ```
+{% endcode %}
 
 The public search response omits `updateId` from JSON; the SDK's nullable `UpdateId` property reads as `null`. Public applications are selected for deployment from their detail variants, not by an update ID.
 
@@ -547,6 +565,7 @@ The public search response omits `updateId` from JSON; the SDK's nullable `Updat
 
 Gets the details of one public catalog application.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<PublicApplicationDto>> GetPublicApplicationDetailsAsync(
     Guid productId,
@@ -559,6 +578,7 @@ Task<Result<PublicApplicationDto>> GetPublicApplicationDetailsAsync(
     OSType? osType,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                                                                            |
 | ------------------- | ------------------- | -------------------------------------------------------------------------------------- |
@@ -569,10 +589,7 @@ Task<Result<PublicApplicationDto>> GetPublicApplicationDetailsAsync(
 
 **Returns:** a [`PublicApplicationDto`](applications.md#application-details). If you look up a macOS application and your account isn't entitled to macOS applications, the error code is `NOT_FOUND`.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
+{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
 if (details.IsFailure)
@@ -583,5 +600,6 @@ if (details.IsFailure)
 
 Console.WriteLine($"{details.Value.DisplayName} {details.Value.UpdateVersion} by {details.Value.VendorName}");
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcApplication](../powershell/get-pmpcapplication.md) and [Get public application details](../rest-api/applications.md#get-public-application-details).

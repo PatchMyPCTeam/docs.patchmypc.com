@@ -38,10 +38,6 @@ You can reach the same operations in three ways. Pick the one that fits your too
 [powershell](powershell/)
 {% endcontent-ref %}
 
-{% hint style="info" %}
-Some operations—for example deployments and editing or deleting applications—must be enabled for your account before you can use them. The pages that describe those operations say so.
-{% endhint %}
-
 ## Contents
 
 ### Start here

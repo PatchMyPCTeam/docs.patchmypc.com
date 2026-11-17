@@ -14,12 +14,6 @@ A deployment publishes an application to Microsoft Intune through one of your co
 
 Every method on this page needs a selected company and a selected connection. If no connection is selected, the method fails with `VALIDATION_ERROR` before it calls the Patch My PC Cloud Customer API. To select one, see [`SetSelectedConnectionAsync`](customer-and-connections.md#setselectedconnectionasync). With a personal access token (PAT), these methods need the `appcatbroker:apps:deploy` scope.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
-Every method on this page requires the feature described above.
-
 ## Models
 
 The deployment models are in the `PatchMyPC.Cloud.Client` namespace.
@@ -129,11 +123,13 @@ The deployment models are in the `PatchMyPC.Cloud.Client` namespace.
 
 Lists the deployments of an application on the selected connection.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<IReadOnlyList<DeploymentDto>>> GetDeploymentsAsync(
     Guid productId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                   |
 | ------------------- | ------------------- | ----------------------------- |
@@ -142,6 +138,7 @@ Task<Result<IReadOnlyList<DeploymentDto>>> GetDeploymentsAsync(
 
 **Returns:** a list of [`DeploymentDto`](deployments.md#deployment). The list leaves out assignments, categories, profiles, and dependencies; use [`GetDeploymentDetailsAsync`](deployments.md#getdeploymentdetailsasync) for those.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var deployments = await client.GetDeploymentsAsync(productId);
 if (deployments.IsFailure)
@@ -155,6 +152,7 @@ foreach (var deployment in deployments.Value)
     Console.WriteLine($"{deployment.DeploymentId} {deployment.DisplayName} {deployment.Status} paused={deployment.SyncOnHold}");
 }
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcDeployment](../powershell/get-pmpcdeployment.md) and [Get application deployments](../rest-api/applications.md#get-application-deployments).
 
@@ -162,12 +160,14 @@ foreach (var deployment in deployments.Value)
 
 Gets one deployment in full, including its assignments, categories, profiles, dependencies, and configuration.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<DeploymentDetailDto>> GetDeploymentDetailsAsync(
     Guid productId,
     string deploymentId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                   |
 | ------------------- | ------------------- | ----------------------------- |
@@ -177,6 +177,7 @@ Task<Result<DeploymentDetailDto>> GetDeploymentDetailsAsync(
 
 **Returns:** a [`DeploymentDetailDto`](deployments.md#deployment-details). If the deployment doesn't exist, the error code is `NOT_FOUND`.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetDeploymentDetailsAsync(productId, deploymentId);
 if (details.IsFailure)
@@ -191,6 +192,7 @@ foreach (var error in details.Value.ErrorMessages)
     Console.WriteLine($"Last failure: {error}");
 }
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcDeployment](../powershell/get-pmpcdeployment.md) and [Get application deployment details](../rest-api/applications.md#get-application-deployment-details).
 
@@ -198,11 +200,13 @@ foreach (var error in details.Value.ErrorMessages)
 
 Lists the deployments that a deployment can depend on.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<IReadOnlyList<DeploymentDependencyDto>>> GetDeploymentDependencyCandidatesAsync(
     Guid productId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                                                    |
 | ------------------- | ------------------- | -------------------------------------------------------------- |
@@ -213,6 +217,7 @@ Task<Result<IReadOnlyList<DeploymentDependencyDto>>> GetDeploymentDependencyCand
 
 The list covers every deployment on the selected connection, not only those related to `productId`; the application ID isn't used to filter the results.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var candidates = await client.GetDeploymentDependencyCandidatesAsync(productId);
 if (candidates.IsFailure)
@@ -226,6 +231,7 @@ foreach (var candidate in candidates.Value)
     Console.WriteLine($"{candidate.DeploymentId} {candidate.Name}");
 }
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcDeploymentDependencyCandidate](../powershell/get-pmpcdeploymentdependencycandidate.md) and [Get application deployment dependency candidates](../rest-api/applications.md#get-application-deployment-dependency-candidates).
 
@@ -233,12 +239,14 @@ foreach (var candidate in candidates.Value)
 
 Creates a deployment of an application on the selected connection.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<DeploymentDto>> CreateDeploymentAsync(
     Guid productId,
     CreateDeploymentRequest request,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                                  | Description                             |
 | ------------------- | --------------------------------------------------------------------- | --------------------------------------- |
@@ -248,6 +256,7 @@ Task<Result<DeploymentDto>> CreateDeploymentAsync(
 
 **Returns:** the new [`DeploymentDto`](deployments.md#deployment).
 
+{% code collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Client;
 
@@ -284,6 +293,7 @@ if (created.IsFailure)
 
 Console.WriteLine($"Created {created.Value.DeploymentId} ({created.Value.Status})");
 ```
+{% endcode %}
 
 **See also:** [New-PmpcDeployment](../powershell/new-pmpcdeployment.md) and [Create application deployment](../rest-api/applications.md#create-application-deployment).
 
@@ -291,6 +301,7 @@ Console.WriteLine($"Created {created.Value.DeploymentId} ({created.Value.Status}
 
 Changes an existing deployment.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<DeploymentDto>> EditDeploymentAsync(
     Guid productId,
@@ -298,6 +309,7 @@ Task<Result<DeploymentDto>> EditDeploymentAsync(
     EditDeploymentRequest request,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                              | Description                                                  |
 | ------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -310,6 +322,7 @@ Task<Result<DeploymentDto>> EditDeploymentAsync(
 
 Deployments that use deployment rings can't be edited with this method. When you set `Assignments`, the list replaces every existing assignment, so include the ones you want to keep.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var edited = await client.EditDeploymentAsync(productId, deploymentId, new EditDeploymentRequest
 {
@@ -325,6 +338,7 @@ if (edited.IsFailure)
 
 Console.WriteLine($"Renamed to {edited.Value.DisplayName}");
 ```
+{% endcode %}
 
 **See also:** [Set-PmpcDeployment](../powershell/set-pmpcdeployment.md) and [Edit application deployment](../rest-api/applications.md#edit-application-deployment).
 
@@ -332,12 +346,14 @@ Console.WriteLine($"Renamed to {edited.Value.DisplayName}");
 
 Deletes a deployment.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> DeleteDeploymentAsync(
     Guid productId,
     string deploymentId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                         |
 | ------------------- | ------------------- | ----------------------------------- |
@@ -349,6 +365,7 @@ Task<Result> DeleteDeploymentAsync(
 
 You can delete a deployment only when it isn't in progress or already being deleted. Check for `delete` in the deployment's `Actions` first.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var delete = await client.DeleteDeploymentAsync(productId, deploymentId);
 if (delete.IsFailure)
@@ -357,6 +374,7 @@ if (delete.IsFailure)
     return;
 }
 ```
+{% endcode %}
 
 **See also:** [Remove-PmpcDeployment](../powershell/remove-pmpcdeployment.md) and [Delete application deployment](../rest-api/applications.md#delete-application-deployment).
 
@@ -364,12 +382,14 @@ if (delete.IsFailure)
 
 Re-creates a deployment in Microsoft Intune.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> RedeployDeploymentAsync(
     Guid productId,
     string deploymentId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                           |
 | ------------------- | ------------------- | ------------------------------------- |
@@ -381,6 +401,7 @@ Task<Result> RedeployDeploymentAsync(
 
 Use this method to troubleshoot a deployment that's in a bad state in Intune.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var redeploy = await client.RedeployDeploymentAsync(productId, deploymentId);
 if (redeploy.IsFailure)
@@ -388,6 +409,7 @@ if (redeploy.IsFailure)
     Console.WriteLine($"Redeploy failed: {redeploy.Error.Code} {redeploy.Error.Message}");
 }
 ```
+{% endcode %}
 
 **See also:** [Restart-PmpcDeployment](../powershell/restart-pmpcdeployment.md) and [Redeploy application deployment](../rest-api/applications.md#redeploy-application-deployment).
 
@@ -395,12 +417,14 @@ if (redeploy.IsFailure)
 
 Updates a deployment to the latest available version of its application.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> SyncDeploymentAsync(
     Guid productId,
     string deploymentId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                       |
 | ------------------- | ------------------- | --------------------------------- |
@@ -410,6 +434,7 @@ Task<Result> SyncDeploymentAsync(
 
 **Returns:** a `Result` that indicates success or failure.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var sync = await client.SyncDeploymentAsync(productId, deploymentId);
 if (sync.IsFailure)
@@ -417,6 +442,7 @@ if (sync.IsFailure)
     Console.WriteLine($"Sync failed: {sync.Error.Code} {sync.Error.Message}");
 }
 ```
+{% endcode %}
 
 **See also:** [Sync-PmpcDeployment](../powershell/sync-pmpcdeployment.md) and [Sync application deployment](../rest-api/applications.md#sync-application-deployment).
 
@@ -424,6 +450,7 @@ if (sync.IsFailure)
 
 Pauses or resumes scheduled sync for a deployment.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> SetDeploymentSyncPauseStatusAsync(
     Guid productId,
@@ -431,6 +458,7 @@ Task<Result> SetDeploymentSyncPauseStatusAsync(
     bool pause,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                                                 |
 | ------------------- | ------------------- | ----------------------------------------------------------- |
@@ -443,6 +471,7 @@ Task<Result> SetDeploymentSyncPauseStatusAsync(
 
 The paused state appears as `SyncOnHold` on the [deployment](deployments.md#deployment). Resuming doesn't push a new version; to update right away, call [`SyncDeploymentAsync`](deployments.md#syncdeploymentasync).
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var pause = await client.SetDeploymentSyncPauseStatusAsync(productId, deploymentId, pause: true);
 if (pause.IsFailure)
@@ -450,5 +479,6 @@ if (pause.IsFailure)
     Console.WriteLine($"Couldn't pause sync: {pause.Error.Code} {pause.Error.Message}");
 }
 ```
+{% endcode %}
 
 **See also:** [Suspend-PmpcDeployment](../powershell/suspend-pmpcdeployment.md), [Resume-PmpcDeployment](../powershell/resume-pmpcdeployment.md), and [Set application deployment sync pause status](../rest-api/applications.md#set-application-deployment-sync-pause-status).

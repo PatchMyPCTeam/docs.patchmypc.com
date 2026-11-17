@@ -20,10 +20,6 @@ You need:
 * **Permissions in that account.** The Cloud Customer API never lets you do more than you can do yourself. To read applications you need read access to applications; to create or update them you need write access; to manage deployments you need deployment access.
 * **A personal access token (PAT).** Create one in the Patch My PC portal, and give it the `appcatbroker:customer:read` scope for this first call. For the steps, see [Create a personal access token](authentication.md#create-a-personal-access-token).
 
-{% hint style="info" %}
-Some operations—for example deployments, connections, and editing or deleting applications—must be enabled for your account. Reading your account information, searching your own applications, and creating applications and publishing new versions of them are always available.
-{% endhint %}
-
 ## Choose a surface
 
 | If you…                                                        | Use                              |

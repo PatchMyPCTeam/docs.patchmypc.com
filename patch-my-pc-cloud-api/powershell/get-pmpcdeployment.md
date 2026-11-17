@@ -12,10 +12,6 @@ noRobotsIndex: true
 
 Gets an application's Intune deployments, or one deployment in full.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 ## Syntax
 
 ### List (Default)

@@ -14,12 +14,6 @@ These methods work only with your custom applications—applications you package
 
 All of these methods need an authenticated session. For details, see [SDK authentication methods](authentication.md). Search and read methods need the `appcatbroker:apps:read` scope, and create, update, edit, and delete methods need `appcatbroker:apps:write`.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
-Every method on this page requires the feature described above.
-
 ## Models
 
 These methods use the models described on [Applications](applications.md): the [search filter](applications.md#search-filter), [search results](applications.md#search-results), [application metadata](applications.md#application-metadata), [edit metadata](applications.md#edit-metadata), and [upload result and progress](applications.md#upload-result-and-progress).
@@ -48,11 +42,13 @@ The `Custom` block also carries identity fields. `Custom.UpdateId` is the canoni
 
 Searches your custom applications.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ProductFilterResponse>> SearchCustomApplicationsAsync(
     ProductFilterRequest filterRequest,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                    | Description                                                                                               |
 | ------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -61,6 +57,7 @@ Task<Result<ProductFilterResponse>> SearchCustomApplicationsAsync(
 
 **Returns:** a [`ProductFilterResponse`](applications.md#search-results) with one page of results.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var search = await client.SearchCustomApplicationsAsync(new ProductFilterRequest
 {
@@ -80,6 +77,7 @@ foreach (var product in search.Value.Products)
     Console.WriteLine($"{product.DisplayName} {product.Version} ({product.ProductId}, latest version {product.Custom?.UpdateId})");
 }
 ```
+{% endcode %}
 
 **See also:** [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md) and [Search custom applications](../rest-api/applications.md#search-custom-applications).
 
@@ -87,11 +85,13 @@ foreach (var product in search.Value.Products)
 
 Gets the full details of one of your custom applications.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<CustomApplicationDto>> GetCustomApplicationDetailsAsync(
     Guid productId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                   |
 | ------------------- | ------------------- | ----------------------------- |
@@ -100,6 +100,7 @@ Task<Result<CustomApplicationDto>> GetCustomApplicationDetailsAsync(
 
 **Returns:** a [`CustomApplicationDto`](custom-applications.md#custom-application-details). If the application doesn't exist, the error code is `NOT_FOUND`. The details don't include the file list; use [`GetApplicationFilesAsync`](applications.md#getapplicationfilesasync) for that.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetCustomApplicationDetailsAsync(productId);
 if (details.IsFailure)
@@ -114,6 +115,7 @@ Console.WriteLine($"Installer: {app.MainFile} {app.SilentInstallArguments}");
 Console.WriteLine($"Version ID: {app.Custom?.UpdateId}");
 Console.WriteLine($"Deployment entry ID: {app.Custom?.CatalogEntryId}");
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md) and [Get custom application details](../rest-api/applications.md#get-custom-application-details).
 
@@ -121,6 +123,7 @@ Console.WriteLine($"Deployment entry ID: {app.Custom?.CatalogEntryId}");
 
 Creates a custom application and uploads its files in one call.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ApplicationData>> CreateCustomApplicationAsync(
     ApplicationMetadata metadata,
@@ -128,6 +131,7 @@ Task<Result<ApplicationData>> CreateCustomApplicationAsync(
     IProgress<UploadProgress>? progress = null,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                          | Description                                                                       |
 | ------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -140,6 +144,7 @@ Task<Result<ApplicationData>> CreateCustomApplicationAsync(
 
 Each new application counts against your custom application limit. If you've reached the limit, the method fails with `VALIDATION_ERROR`. To free a slot, delete an application with [`DeleteCustomApplicationAsync`](custom-applications.md#deletecustomapplicationasync).
 
+{% code collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Models;
 using PatchMyPC.Cloud.Client;
@@ -168,6 +173,7 @@ if (created.IsFailure)
 
 Console.WriteLine($"Created {created.Value.ProductId}: {created.Value.FilesUploaded} files uploaded");
 ```
+{% endcode %}
 
 **See also:** [New-PmpcCustomApplication](../powershell/new-pmpccustomapplication.md), [Create custom application draft](../rest-api/applications.md#create-custom-application-draft), and [Complete custom application creation](../rest-api/applications.md#complete-custom-application-creation).
 
@@ -175,6 +181,7 @@ Console.WriteLine($"Created {created.Value.ProductId}: {created.Value.FilesUploa
 
 Publishes a new version of one of your custom applications and uploads its files.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ApplicationData>> UpdateCustomApplicationAsync(
     ApplicationUpdateMetadata updateMetadata,
@@ -182,6 +189,7 @@ Task<Result<ApplicationData>> UpdateCustomApplicationAsync(
     IProgress<UploadProgress>? progress = null,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                                | Description                                                                           |
 | ------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -192,6 +200,7 @@ Task<Result<ApplicationData>> UpdateCustomApplicationAsync(
 
 **Returns:** an [`ApplicationData`](applications.md#upload-result-and-progress) with the new version's `UpdateId`.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 if (product.Custom?.UpdateId is not Guid currentUpdateId)
 {
@@ -218,6 +227,7 @@ if (update.IsFailure)
 
 Console.WriteLine($"Published version {update.Value.UpdateId}");
 ```
+{% endcode %}
 
 **See also:** [Update-PmpcCustomApplication](../powershell/update-pmpccustomapplication.md), [Create custom update draft](../rest-api/applications.md#create-custom-update-draft), and [Complete custom application update](../rest-api/applications.md#complete-custom-application-update).
 
@@ -225,6 +235,7 @@ Console.WriteLine($"Published version {update.Value.UpdateId}");
 
 Corrects a custom application's current version in place, without publishing a new version.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<ApplicationData>> EditCustomApplicationAsync(
     ApplicationEditMetadata editMetadata,
@@ -232,6 +243,7 @@ Task<Result<ApplicationData>> EditCustomApplicationAsync(
     IProgress<UploadProgress>? progress = null,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                       | Description                                                                       |
 | ------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -244,6 +256,7 @@ Task<Result<ApplicationData>> EditCustomApplicationAsync(
 
 The SDK reads the application's current details and files, applies your changes, uploads only files that are new or changed, and submits the result. To clear the conflicting processes, set `ConflictingProcesses` to an empty list.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var edit = await client.EditCustomApplicationAsync(new ApplicationEditMetadata
 {
@@ -260,6 +273,7 @@ if (edit.IsFailure)
 
 Console.WriteLine($"Edited version {edit.Value.UpdateId}");
 ```
+{% endcode %}
 
 **See also:** [Set-PmpcCustomApplication](../powershell/set-pmpccustomapplication.md), [Create custom edit draft](../rest-api/applications.md#create-custom-edit-draft), and [Complete custom application edit](../rest-api/applications.md#complete-custom-application-edit).
 
@@ -267,11 +281,13 @@ Console.WriteLine($"Edited version {edit.Value.UpdateId}");
 
 Deletes one of your custom applications.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> DeleteApplicationAsync(
     Guid productId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                                 |
 | ------------------- | ------------------- | ------------------------------------------- |
@@ -282,6 +298,7 @@ Task<Result> DeleteApplicationAsync(
 
 Deleting an application frees a slot against your custom application limit. You can delete only your own custom applications; public catalog applications can't be deleted. The delete is rejected while the application's latest version is in a state that isn't safe to remove, for example while it's still being processed. Deleting can't be undone.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var delete = await client.DeleteApplicationAsync(productId);
 if (delete.IsFailure)
@@ -292,6 +309,7 @@ if (delete.IsFailure)
 
 Console.WriteLine("Application deleted.");
 ```
+{% endcode %}
 
 **See also:** [Remove-PmpcCustomApplication](../powershell/remove-pmpccustomapplication.md) and [Delete an application](../rest-api/applications.md#delete-an-application).
 
@@ -299,11 +317,13 @@ Console.WriteLine("Application deleted.");
 
 Deletes one of your custom applications through the custom applications operation.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> DeleteCustomApplicationAsync(
     Guid productId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                                 |
 | ------------------- | ------------------- | ------------------------------------------- |
@@ -314,6 +334,7 @@ Task<Result> DeleteCustomApplicationAsync(
 
 This method behaves the same as [`DeleteApplicationAsync`](custom-applications.md#deleteapplicationasync): it frees a slot, it can't delete public catalog applications, and it's rejected while the latest version isn't safe to remove.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var delete = await client.DeleteCustomApplicationAsync(productId);
 if (delete.IsFailure)
@@ -322,5 +343,6 @@ if (delete.IsFailure)
     return;
 }
 ```
+{% endcode %}
 
 **See also:** [Remove-PmpcCustomApplication](../powershell/remove-pmpccustomapplication.md) and [Delete a custom application](../rest-api/applications.md#delete-a-custom-application).

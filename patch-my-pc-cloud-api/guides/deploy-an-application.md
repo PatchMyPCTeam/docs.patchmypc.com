@@ -12,10 +12,6 @@ noRobotsIndex: true
 
 A deployment publishes an application to Microsoft Intune through one of your company's connections and assigns it to groups of users or devices. You can deploy catalog applications and your own custom applications.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 This guide covers the SDK and PowerShell module. For direct HTTP requests, follow [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest). For other deployment operations, see the [REST API reference](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api).
 
 ## Before you begin

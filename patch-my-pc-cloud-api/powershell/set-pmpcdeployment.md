@@ -12,10 +12,6 @@ noRobotsIndex: true
 
 Changes an existing Intune deployment.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 ## Syntax
 
 ### Properties (Default)

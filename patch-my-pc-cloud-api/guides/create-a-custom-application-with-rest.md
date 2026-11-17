@@ -8,7 +8,7 @@ noRobotsIndex: true
 
 Create a custom application from an MSI, upload its installer, and deploy it using settings from a deployment template. Choose PowerShell or curl (Bash), then use that tab at every step in the same shell session. Both versions send HTTP requests directly; neither requires the Patch My PC PowerShell module.
 
-You need a PAT with `appcatbroker:apps:write` and `appcatbroker:apps:deploy`, an Intune connection with granted admin consent, and an approved test group. Your account must have custom applications and deployment management enabled, with room for another application.
+You need a PAT with `appcatbroker:apps:write` and `appcatbroker:apps:deploy`, an Intune connection with granted admin consent, an approved test group, and room in your account for another application.
 
 This example uses one Windows x64 MSI smaller than 32 MiB. Use the actual MSI product code, publisher, language, ARP display name and version for your installer; the values below describe the example file, not every MSI.
 
@@ -20,6 +20,7 @@ Use your company's regional portal: `us.portal.patchmypc.com`, `eu.portal.patchm
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $ErrorActionPreference = 'Stop'
 $portal = 'https://us.portal.patchmypc.com'
@@ -40,9 +41,11 @@ if ($connection.Count -ne 1 -or $connection[0].adminConsent -ne 'Granted') {
     throw 'Choose a listed Intune connection with granted admin consent.'
 }
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 set -euo pipefail
 portal='https://us.portal.patchmypc.com'
@@ -60,6 +63,7 @@ jq -e --arg id "$connection_id" \
   '[.[] | select(.connectionId == $id)] | length == 1 and .[0].adminConsent == "Granted"' \
   <<< "$connections" > /dev/null
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -71,6 +75,7 @@ Set the metadata to match your installer. The unique display name identifies the
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $installerPath = 'C:\Packages\7zip\7z2408-x64.msi'
 $installer = Get-Item -LiteralPath $installerPath
@@ -97,11 +102,13 @@ $metadata = @{
 $draft = Invoke-RestMethod -Method Post -Uri "$api/apps/custom/draft" -Headers $headers
 $productId = $draft.productId
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
 In Git Bash, use a drive-letter path with forward slashes, such as `C:/Packages/7zip/7z2408-x64.msi`, so Windows curl can open the multipart file.
 
+{% code collapsedlinecount="10" %}
 ```bash
 installer_path='/path/to/7z2408-x64.msi'
 if [[ ! -f "$installer_path" || "$installer_path" != *.msi ]]; then
@@ -135,6 +142,7 @@ product_id=$(jq -er '.productId' <<< "$draft")
 update_id=$(jq -er '.updateId' <<< "$draft")
 revision_id=$(jq -er '.revisionId' <<< "$draft")
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -161,6 +169,7 @@ Compute the hashes from the exact file you will send. Do not modify or replace i
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $sha1 = (Get-FileHash -LiteralPath $installerPath -Algorithm SHA1).Hash.ToLowerInvariant()
 $sha256 = (Get-FileHash -LiteralPath $installerPath -Algorithm SHA256).Hash.ToLowerInvariant()
@@ -190,9 +199,11 @@ $applicationFile = [ordered]@{
     sha256Hash = $sha256
 }
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 sha1=$(openssl dgst -sha1 "$installer_path")
 sha1="${sha1##* }"
@@ -218,6 +229,7 @@ if [[ "$upload_status" != 201 ]]; then
   exit 1
 fi
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -229,6 +241,7 @@ After the upload succeeds, submit the metadata and the file you just uploaded, k
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $completion = $metadata.Clone()
 $completion.productId = $productId
@@ -245,9 +258,11 @@ if ($created.productId -ne $productId -or $created.updateId -ne $draft.updateId 
     throw 'The completion response did not identify this draft.'
 }
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 completion=$(jq --arg product "$product_id" --arg update "$update_id" \
   --argjson revision "$revision_id" --arg file "$file_name" --argjson size "$file_size" \
@@ -264,6 +279,7 @@ jq -e --arg product "$product_id" --arg update "$update_id" --argjson revision "
   '.productId == $product and .updateId == $update and .revisionId == $revision' \
   <<< "$created" > /dev/null
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -273,6 +289,7 @@ After completion, the application may briefly return `404` while background proc
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $deadline = [DateTimeOffset]::UtcNow.AddMinutes(2)
 do {
@@ -309,9 +326,11 @@ if ($catalogEntryId -eq [guid]::Empty) {
 $app | Select-Object productId, displayName, updateVersion, mainFile
 $files | Select-Object fileName, fileSize, sha1Hash, sha256Hash
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 deadline=$((SECONDS + 120))
 while :; do
@@ -350,6 +369,7 @@ catalog_entry_id=$(jq -er '.custom.catalogEntryId |
 jq '{productId, displayName, updateVersion, mainFile}' <<< "$app"
 jq '.[] | {fileName, fileSize, sha1Hash, sha256Hash}' <<< "$files"
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -361,6 +381,7 @@ Create a uniquely named Windows template on the connection you selected. This ex
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $templateName = "$displayName template"
 $templateRequest = @{
@@ -379,9 +400,11 @@ if ([string]::IsNullOrWhiteSpace($templateId)) {
     throw 'The template creation response did not return a template ID.'
 }
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 template_name="$display_name template"
 template_request=$(jq -n --arg connection "$connection_id" --arg name "$template_name" '{
@@ -393,6 +416,7 @@ new_template=$(curl --fail-with-body --silent --show-error --request POST "$api/
   --data "$template_request")
 template_id=$(jq -er '.deploymentTemplateId | select(type == "string" and length > 0)' <<< "$new_template")
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -402,6 +426,7 @@ Retrieve the exact template on the same connection. Use this read-back, rather t
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $template = Invoke-RestMethod -Method Get `
     -Uri "$api/deployments/templates/${templateId}?connectionId=$connectionId" -Headers $headers
@@ -411,9 +436,11 @@ if ($template.deploymentTemplateId -ne $templateId -or $template.templateName -n
     throw 'The returned template does not match the template just created.'
 }
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 template=$(curl --fail-with-body --silent --show-error \
   "$api/deployments/templates/$template_id?connectionId=$connection_id" \
@@ -423,6 +450,7 @@ jq -e --arg id "$template_id" --arg name "$template_name" \
    .isDefault == false and .allowAvailableUninstall == true and .appVersionsRetention == 2' \
   <<< "$template" > /dev/null
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -434,6 +462,7 @@ REST deployment creation does not take a template ID. Copy the settings you want
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $groupId = [guid](Read-Host 'Approved test group ID')
 if ($groupId -eq [guid]::Empty -or $groupId -in @(
@@ -459,9 +488,11 @@ if ([string]::IsNullOrWhiteSpace($deploymentId) -or $newDeployment.productId -ne
     throw 'The deployment creation response does not identify this application and catalog entry.'
 }
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 read -r -p 'Approved test group ID: ' group_id
 case "${group_id,,}" in
@@ -486,6 +517,7 @@ jq -e --arg product "$product_id" --arg catalog "$catalog_entry_id" \
   '.productId == $product and .catalogEntryId == $catalog and .osType == "Windows"' \
   <<< "$new_deployment" > /dev/null
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -495,6 +527,7 @@ Read the exact product/deployment pair with the selected `connectionId`. Creatio
 
 {% tabs %}
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 $deadline = [DateTimeOffset]::UtcNow.AddMinutes(10)
 $deploymentUri = "$api/apps/$productId/deployments/${deploymentId}?connectionId=$connectionId"
@@ -518,9 +551,11 @@ if ($deployment.deploymentId -ne $deploymentId -or $deployment.productId -ne $pr
 }
 $deployment | Select-Object deploymentId, displayName, status, version, warningMessages
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="curl (Bash)" %}
+{% code collapsedlinecount="10" %}
 ```bash
 deadline=$((SECONDS + 600))
 deployment_url="$api/apps/$product_id/deployments/$deployment_id?connectionId=$connection_id"
@@ -548,6 +583,7 @@ jq -e --arg id "$deployment_id" --arg product "$product_id" --arg catalog "$cata
   <<< "$deployment" > /dev/null
 jq '{deploymentId, displayName, status, version, warningMessages}' <<< "$deployment"
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

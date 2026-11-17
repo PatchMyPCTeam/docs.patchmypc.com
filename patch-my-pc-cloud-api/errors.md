@@ -18,7 +18,7 @@ The Patch My PC Cloud Customer API uses standard HTTP status codes. The .NET SDK
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | `400 Bad Request`           | The request is invalid—for example a missing field, an invalid value, or a request that conflicts with the application's current state       | No. Fix the request.                                                      |
 | `401 Unauthorized`          | Authentication is missing, expired, or was rejected                                                                                          | After you exchange your personal access token (PAT) again                 |
-| `403 Forbidden`             | You're authenticated but not allowed to perform the operation, the PAT lacks a required scope, or the feature isn't enabled for your account | No. See [Forbidden responses](errors.md#understand-forbidden-responses).  |
+| `403 Forbidden`             | The request wasn't authorized. Common causes include missing account permissions or PAT scopes, or an operation unavailable for the account. | No. See [Forbidden responses](errors.md#understand-forbidden-responses).  |
 | `404 Not Found`             | The application, deployment, or other resource doesn't exist in your account                                                                 | No                                                                        |
 | `429 Too Many Requests`     | You exceeded a rate limit                                                                                                                    | Yes, after the `Retry-After` interval. See [Rate limits](rate-limits.md). |
 | `500 Internal Server Error` | An unexpected failure occurred                                                                                                               | Yes, with backoff                                                         |
@@ -30,14 +30,17 @@ By default, error bodies are kept simple for compatibility with existing clients
 
 To receive structured errors, send `application/problem+json` in the `Accept` header. Error responses then use the problem details format ([RFC 9457](https://www.rfc-editor.org/rfc/rfc9457)):
 
+{% code collapsedlinecount="10" %}
 ```http
 GET https://us.portal.patchmypc.com/v1/api/apps/{product-id}
 Authorization: Bearer {access-token}
 Accept: application/json, application/problem+json
 ```
+{% endcode %}
 
 The REST examples on this page use the US host. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 
+{% code collapsedlinecount="10" %}
 ```json
 {
   "title": "not_found",
@@ -45,6 +48,7 @@ The REST examples on this page use the US host. Use `https://eu.portal.patchmypc
   "detail": "{explanation}"
 }
 ```
+{% endcode %}
 
 | Member        | Description                                                                                 |
 | ------------- | ------------------------------------------------------------------------------------------- |
@@ -53,32 +57,21 @@ The REST examples on this page use the US host. Use `https://eu.portal.patchmypc
 | `detail`      | A human-readable explanation. Don't parse it—the wording can change.                        |
 | Other members | Structured context for specific errors, for example `retryAfterSeconds` on a `429` response |
 
-Rate-limit (`429`), feature-not-enabled (`403`), and insufficient-scope (`403`) responses always use the problem details format, whether or not you ask for it.
+Rate-limit (`429`) and insufficient-scope (`403`) responses always use the problem details format, whether or not you ask for it.
 
 The SDK requests problem details for you.
 
 ## Understand forbidden responses
 
-A `403 Forbidden` response can mean three different things. With problem details, the `title` tells them apart.
+Common causes of a `403 Forbidden` response are missing account permissions, a PAT without the required scope, or an operation unavailable for the account. With problem details, the `title` distinguishes these cases.
 
 | `title`               | Cause                                                                                                          | What to do                                                                                |
 | --------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `forbidden`           | Your account doesn't have the permission the operation needs                                                   | Ask your administrator for the permission                                                 |
+| `forbidden`           | Your account doesn't have the permission the operation needs                                                   | Ask your administrator about the permission                                               |
 | `insufficient_scope`  | The PAT doesn't include the scope the operation needs. The response lists `requiredScope` and `grantedScopes`. | Create a new PAT with the required scope. See [Authentication](authentication.md#scopes). |
-| `feature_not_enabled` | The operation is available, but not yet enabled for your account                                               | Contact Patch My PC                                                                       |
+| `feature_not_enabled` | The operation is unavailable for this account                                                                  | Contact Patch My PC support                                                               |
 
-A feature-not-enabled response looks like this:
-
-```json
-{
-  "title": "feature_not_enabled",
-  "status": 403,
-  "detail": "The '{feature}' feature is not enabled for this customer, and this endpoint requires it. Contact Patch My PC to have it enabled for your account.",
-  "requiredFeature": "{feature}"
-}
-```
-
-Retrying a `403` response doesn't help—the result is the same until the permission, scope, or feature changes.
+Retrying a `403` response doesn't help. Resolve the authorization issue or contact support if the operation is unavailable.
 
 ## Error codes in the SDK and PowerShell module
 
@@ -104,6 +97,7 @@ For `RATE_LIMITED`, and for `PAT_EXCHANGE_THROTTLED` when the service sends a re
 
 {% tabs %}
 {% tab title="REST" %}
+{% code collapsedlinecount="10" %}
 ```http
 POST https://us.portal.patchmypc.com/v1/api/apps/search
 Authorization: Bearer {access-token}
@@ -112,12 +106,13 @@ Accept: application/json, application/problem+json
 
 { "displayNameSearchString": "{display-name}" }
 ```
+{% endcode %}
 
 Check the status code first. For a failure, read `title` from the problem details body.
 {% endtab %}
 
 {% tab title="C#" %}
-{% code title="Program.cs" %}
+{% code title="Program.cs" collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Constants;
 
@@ -126,9 +121,6 @@ if (result.IsFailure)
 {
     switch (result.Error.Code)
     {
-        case PmpcCloudErrorCodes.FeatureNotEnabled:
-            Console.WriteLine("Ask Patch My PC to enable this feature for your account.");
-            break;
         case PmpcCloudErrorCodes.RateLimited:
             result.Error.Metadata.TryGetValue("retryAfterSeconds", out var retryAfter);
             Console.WriteLine($"Rate limited. Retry after {retryAfter ?? 60} seconds.");
@@ -143,16 +135,17 @@ if (result.IsFailure)
 {% endtab %}
 
 {% tab title="PowerShell" %}
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomerInfo -ErrorAction SilentlyContinue -ErrorVariable failures
 foreach ($failure in $failures) {
     switch ($failure.FullyQualifiedErrorId.Split(',')[0]) {
-        'FEATURE_NOT_ENABLED' { 'Ask Patch My PC to enable this feature for your account.' }
         'RATE_LIMITED'        { 'Rate limited. Wait and try again.' }
         default               { $failure.Exception.Message }
     }
 }
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

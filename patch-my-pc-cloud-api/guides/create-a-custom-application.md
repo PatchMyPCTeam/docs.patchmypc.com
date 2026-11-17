@@ -20,7 +20,6 @@ This guide covers the SDK, PowerShell module, and a direct REST example using Po
 
 * Exchange a personal access token (PAT) for an access token. See [Authentication](https://docs.patchmypc.com/patch-my-pc-cloud-api/authentication).
 * A PAT needs the `appcatbroker:apps:write` scope, plus `appcatbroker:apps:read` to verify the result.
-* Custom application management must be enabled for your account.
 * Check that your account has room for another custom application. Your account information lists your usage and limits—see [Getting started](https://docs.patchmypc.com/patch-my-pc-cloud-api/getting-started). When you're at your limit, creating the application fails with `400 Bad Request`.
 * Choose a display name that does not conflict with an application already available to your company.
 
@@ -102,7 +101,7 @@ $app = New-PmpcCustomApplication `
 ```
 {% endcode %}
 
-`-IconPath` is optional and omitted here; pass an image path to include an icon. `New-PmpcCustomApplication` supports `-WhatIf` and `-Confirm`. It uses an operation that must be enabled for your account; until it is, the cmdlet reports the error code `FEATURE_NOT_ENABLED`.
+`-IconPath` is optional and omitted here; pass an image path to include an icon. `New-PmpcCustomApplication` supports `-WhatIf` and `-Confirm`.
 
 See [New-PmpcCustomApplication](../powershell/new-pmpccustomapplication.md).
 {% endtab %}

@@ -14,7 +14,7 @@ Operations that exchange a personal access token for an access token. For the ba
 
 The examples use the US host, `https://us.portal.patchmypc.com`. If your Patch My PC account is in the EU region, use `https://eu.portal.patchmypc.com` instead.
 
-Each operation lists the scope a personal access token (PAT) needs to call it. Some operations must be enabled for your account before you can use them; those operations say so.
+Each operation lists the scope a personal access token (PAT) needs to call it.
 
 ## Exchange a personal access token for an access token
 

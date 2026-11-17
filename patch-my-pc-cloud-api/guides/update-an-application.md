@@ -98,8 +98,6 @@ Update-PmpcCustomApplication -ProductId '{product-id}' -UpdateId '{update-id}' -
 ```
 {% endcode %}
 
-The cmdlets in this example use operations that must be enabled for your account. Until they are, they report the error code `FEATURE_NOT_ENABLED`.
-
 See [Update-PmpcCustomApplication](../powershell/update-pmpccustomapplication.md).
 {% endtab %}
 {% endtabs %}
@@ -107,10 +105,6 @@ See [Update-PmpcCustomApplication](../powershell/update-pmpccustomapplication.md
 ## Step 3: Roll out the new version to an existing deployment
 
 If the application is already deployed, sync the deployment to move it to the latest pending version instead of waiting for its scheduled sync. Deployments belong to a connection, so select the connection first—see [Deploy an application](deploy-an-application.md).
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 1. List the application's deployments and note the `deploymentId` of the one to update.
 2. Sync that deployment.

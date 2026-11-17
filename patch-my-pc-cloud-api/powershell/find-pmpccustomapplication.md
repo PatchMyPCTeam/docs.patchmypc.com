@@ -12,10 +12,6 @@ noRobotsIndex: true
 
 Searches the customer's custom applications catalog.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 ## Syntax
 
 ### Criteria (Default)
@@ -308,7 +304,7 @@ Returns custom applications modified in the last week, newest first.
 
 ## Notes
 
-Custom.UpdateId is the canonical update identifier for each custom search result. The top-level UpdateId is deprecated and retained with the same value for Master Packager compatibility. It identifies the update selected for the custom product family, not necessarily the displayed summary version.
+Custom.UpdateId is the canonical update identifier for each custom search result. The top-level UpdateId is deprecated and retained with the same value. It identifies the update selected for the custom product family, not necessarily the displayed summary version.
 
 -IncludeIconData embeds base64 icon data in every result and makes responses considerably larger; leave it off unless the icons are the point.
 

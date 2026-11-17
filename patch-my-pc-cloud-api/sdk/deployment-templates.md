@@ -14,12 +14,6 @@ A deployment template is a named set of deployment settings stored on a connecti
 
 Every method on this page needs a selected company and a selected connection; templates belong to the selected connection. If no connection is selected, the method fails with `VALIDATION_ERROR`. To select one, see [`SetSelectedConnectionAsync`](customer-and-connections.md#setselectedconnectionasync). With a personal access token (PAT), these methods need the `appcatbroker:apps:deploy` scope.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
-Every method on this page requires the feature described above.
-
 [`CreateDeploymentAsync`](deployments.md#createdeploymentasync) doesn't take a template. To start a deployment from a template, read the template with [`GetDeploymentTemplateAsync`](deployment-templates.md#getdeploymenttemplateasync) and copy the settings you want into your [create deployment request](deployments.md#create-deployment-request). The request still requires `CatalogEntryId`: use `Custom.CatalogEntryId` from custom details or the `CatalogEntryId` of the selected public variant. Template settings for custom scripts, the PowerShell App Deployment Toolkit (PSADT), and deployment rings aren't available through the SDK.
 
 ## Models
@@ -68,10 +62,12 @@ The template models are in the `PatchMyPC.Cloud.Client` namespace.
 
 Lists the deployment templates on the selected connection.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<IReadOnlyList<DeploymentTemplateSummaryDto>>> GetDeploymentTemplatesAsync(
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                 |
 | ------------------- | ------------------- | --------------------------- |
@@ -79,6 +75,7 @@ Task<Result<IReadOnlyList<DeploymentTemplateSummaryDto>>> GetDeploymentTemplates
 
 **Returns:** a list of [`DeploymentTemplateSummaryDto`](deployment-templates.md#deployment-template-summary).
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var templates = await client.GetDeploymentTemplatesAsync();
 if (templates.IsFailure)
@@ -93,6 +90,7 @@ foreach (var template in templates.Value)
     Console.WriteLine($"{template.DeploymentTemplateId} {template.TemplateName}{marker}");
 }
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcDeploymentTemplate](../powershell/get-pmpcdeploymenttemplate.md) and [Get deployment templates](../rest-api/applications.md#get-deployment-templates).
 
@@ -100,11 +98,13 @@ foreach (var template in templates.Value)
 
 Gets the full settings of one deployment template.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<DeploymentTemplateDto>> GetDeploymentTemplateAsync(
     string deploymentTemplateId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter              | Type                | Description                 |
 | ---------------------- | ------------------- | --------------------------- |
@@ -113,6 +113,7 @@ Task<Result<DeploymentTemplateDto>> GetDeploymentTemplateAsync(
 
 **Returns:** a [`DeploymentTemplateDto`](deployment-templates.md#deployment-template). If the template doesn't exist, the error code is `NOT_FOUND`.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var template = await client.GetDeploymentTemplateAsync(templateId);
 if (template.IsFailure)
@@ -123,6 +124,7 @@ if (template.IsFailure)
 
 Console.WriteLine($"{template.Value.TemplateName}: retention {template.Value.AppVersionsRetention}");
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcDeploymentTemplate](../powershell/get-pmpcdeploymenttemplate.md) and [Get deployment template details](../rest-api/applications.md#get-deployment-template-details).
 
@@ -130,11 +132,13 @@ Console.WriteLine($"{template.Value.TemplateName}: retention {template.Value.App
 
 Creates a deployment template on the selected connection.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<DeploymentTemplateDto>> CreateDeploymentTemplateAsync(
     DeploymentTemplateRequest request,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                                                                               | Description                      |
 | ------------------- | ---------------------------------------------------------------------------------- | -------------------------------- |
@@ -143,6 +147,7 @@ Task<Result<DeploymentTemplateDto>> CreateDeploymentTemplateAsync(
 
 **Returns:** the new [`DeploymentTemplateDto`](deployment-templates.md#deployment-template).
 
+{% code collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Client;
 
@@ -167,6 +172,7 @@ if (created.IsFailure)
 
 Console.WriteLine($"Created template {created.Value.DeploymentTemplateId}");
 ```
+{% endcode %}
 
 **See also:** [New-PmpcDeploymentTemplate](../powershell/new-pmpcdeploymenttemplate.md) and [Create deployment template](../rest-api/applications.md#create-deployment-template).
 
@@ -174,12 +180,14 @@ Console.WriteLine($"Created template {created.Value.DeploymentTemplateId}");
 
 Replaces the settings of an existing deployment template.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<DeploymentTemplateDto>> UpdateDeploymentTemplateAsync(
     string deploymentTemplateId,
     DeploymentTemplateRequest request,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter              | Type                                                                               | Description                          |
 | ---------------------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
@@ -191,6 +199,7 @@ Task<Result<DeploymentTemplateDto>> UpdateDeploymentTemplateAsync(
 
 Every setting is stored exactly as you send it, so a property you leave out is cleared or reset. Read the template first with [`GetDeploymentTemplateAsync`](deployment-templates.md#getdeploymenttemplateasync) and send back the settings you want to keep.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var current = await client.GetDeploymentTemplateAsync(templateId);
 if (current.IsFailure)
@@ -224,6 +233,7 @@ if (updated.IsFailure)
     Console.WriteLine($"Update failed: {updated.Error.Code} {updated.Error.Message}");
 }
 ```
+{% endcode %}
 
 This example doesn't copy `CustomRequirements`, so the update clears them. Copy them too if you want to keep them.
 
@@ -233,11 +243,13 @@ This example doesn't copy `CustomRequirements`, so the update clears them. Copy 
 
 Deletes a deployment template.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> DeleteDeploymentTemplateAsync(
     string deploymentTemplateId,
     CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter              | Type                | Description                       |
 | ---------------------- | ------------------- | --------------------------------- |
@@ -248,6 +260,7 @@ Task<Result> DeleteDeploymentTemplateAsync(
 
 You can't delete the connection's default template; make another template the default first. Deleting a template doesn't change deployments that were created from it.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var delete = await client.DeleteDeploymentTemplateAsync(templateId);
 if (delete.IsFailure)
@@ -255,5 +268,6 @@ if (delete.IsFailure)
     Console.WriteLine($"Delete failed: {delete.Error.Code} {delete.Error.Message}");
 }
 ```
+{% endcode %}
 
 **See also:** [Remove-PmpcDeploymentTemplate](../powershell/remove-pmpcdeploymenttemplate.md) and [Delete deployment template](../rest-api/applications.md#delete-deployment-template).

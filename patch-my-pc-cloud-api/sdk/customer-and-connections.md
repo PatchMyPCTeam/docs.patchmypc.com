@@ -46,9 +46,11 @@ All of these methods need an authenticated session. For details, see [SDK authen
 
 Gets your account information and usage limits.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<CustomerInfoDto>> GetCustomerInfoAsync(CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                 |
 | ------------------- | ------------------- | --------------------------- |
@@ -58,6 +60,7 @@ Task<Result<CustomerInfoDto>> GetCustomerInfoAsync(CancellationToken cancellatio
 
 The personal access token (PAT) needs the `appcatbroker:customer:read` scope.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var info = await client.GetCustomerInfoAsync();
 if (info.IsFailure)
@@ -69,6 +72,7 @@ if (info.IsFailure)
 Console.WriteLine($"{info.Value.CustomerName} ({info.Value.CustomerId})");
 Console.WriteLine($"macOS applications enabled: {info.Value.MacOSApplicationsEnabled}");
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcCustomerInfo](../powershell/get-pmpccustomerinfo.md) and [Get customer info](../rest-api/applications.md#get-customer-info).
 
@@ -76,9 +80,11 @@ Console.WriteLine($"macOS applications enabled: {info.Value.MacOSApplicationsEna
 
 Lists the Intune connections for your company.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result<IReadOnlyList<ConnectionDto>>> GetAvailableConnectionsAsync(CancellationToken cancellationToken = default);
 ```
+{% endcode %}
 
 | Parameter           | Type                | Description                 |
 | ------------------- | ------------------- | --------------------------- |
@@ -86,12 +92,9 @@ Task<Result<IReadOnlyList<ConnectionDto>>> GetAvailableConnectionsAsync(Cancella
 
 **Returns:** a list of [`ConnectionDto`](customer-and-connections.md#connection) objects. The list is empty if the company has no Intune connections.
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 A PAT needs the `appcatbroker:apps:read` scope.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsFailure)
@@ -105,6 +108,7 @@ foreach (var connection in connections.Value)
     Console.WriteLine($"{connection.DisplayName} ({connection.ConnectionId}) consent: {connection.AdminConsent}");
 }
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcConnection](../powershell/get-pmpcconnection.md) and [Get available connections](../rest-api/applications.md#get-available-connections).
 
@@ -112,9 +116,11 @@ foreach (var connection in connections.Value)
 
 Selects the connection that deployment, deployment template, and public catalog methods use.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 Task<Result> SetSelectedConnectionAsync(ConnectionDto selectedConnection);
 ```
+{% endcode %}
 
 | Parameter            | Type                                                      | Description                                                                  |
 | -------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
@@ -124,6 +130,7 @@ Task<Result> SetSelectedConnectionAsync(ConnectionDto selectedConnection);
 
 Selecting a connection doesn't change the session's company. The SDK applies the selected connection automatically to deployment create and edit requests, overwriting any connection ID you set on the request. Until you select a connection, deployment methods fail with `VALIDATION_ERROR` and the message "No connection selected. Please call SetSelectedConnectionAsync first."
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var connection = connections.Value.FirstOrDefault(c => c.DisplayName == "{connection-name}");
 if (connection is null)
@@ -139,6 +146,7 @@ if (select.IsFailure)
     return;
 }
 ```
+{% endcode %}
 
 **See also:** [Set-PmpcConnection](../powershell/set-pmpcconnection.md). This method has no REST operation; the selection is stored in the SDK.
 
@@ -146,19 +154,23 @@ if (select.IsFailure)
 
 Returns the currently selected connection.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 ConnectionDto? GetSelectedConnection();
 ```
+{% endcode %}
 
 This method has no parameters.
 
 **Returns:** the selected [`ConnectionDto`](customer-and-connections.md#connection), or `null` if no connection is selected. Unlike most methods, it returns the value directly rather than a result object.
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var current = client.GetSelectedConnection();
 Console.WriteLine(current is null
     ? "No connection selected."
     : $"Using connection {current.DisplayName} ({current.ConnectionId})");
 ```
+{% endcode %}
 
 **See also:** [Get-PmpcSelectedConnection](../powershell/get-pmpcselectedconnection.md). This method has no REST operation; it reads the selection stored in the SDK.

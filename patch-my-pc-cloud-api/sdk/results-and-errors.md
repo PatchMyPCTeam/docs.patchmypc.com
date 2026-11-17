@@ -25,6 +25,7 @@ Methods that return data return `Result<T>`, where `T` is the data type. Methods
 
 The usual pattern is to check `IsFailure` first and return early:
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var result = await client.GetApplicationDetailsAsync(productId);
 if (result.IsFailure)
@@ -36,6 +37,7 @@ if (result.IsFailure)
 var product = result.Value;
 Console.WriteLine($"{product.DisplayName} {product.UpdateVersion}");
 ```
+{% endcode %}
 
 ### Helper methods
 
@@ -49,11 +51,13 @@ The result types also provide helpers for composing calls without nested `if` st
 | `OnSuccess(action)` and `OnFailure(action)` | Runs an action for one outcome and returns the same result.                                       |
 | `ToResult()` and `ToResult(value)`          | Converts between `Result` and `Result<T>`.                                                        |
 
+{% code collapsedlinecount="10" %}
 ```csharp
 var message = (await client.GetCustomerInfoAsync()).Match(
     onSuccess: info => $"Connected to {info.CustomerName}",
     onFailure: error => $"Couldn't read account information: {error.Message}");
 ```
+{% endcode %}
 
 ## Error details
 
@@ -76,7 +80,7 @@ var message = (await client.GetCustomerInfoAsync()).Match(
 | `remaining`         | `RATE_LIMITED`        | The number of requests left in the current window.                          |
 | `resetSeconds`      | `RATE_LIMITED`        | Seconds until the current window resets.                                    |
 | `policy`            | `RATE_LIMITED`        | Which limit you exceeded, for example `tenant:read` or `tenant:write`.      |
-| `requiredFeature`   | `FEATURE_NOT_ENABLED` | The feature to mention when you ask Patch My PC to enable it.               |
+| `requiredFeature`   | `FEATURE_NOT_ENABLED` | Identifies the unavailable feature; include it when contacting support.     |
 
 Validation failures can also carry details about which fields were rejected.
 
@@ -90,7 +94,7 @@ The SDK exposes the codes it returns from the Cloud Customer API as constants on
 | `NotFound`               | `NOT_FOUND`              | The resource doesn't exist or isn't visible to your account.                                                                                                                                                 | Check the ID. Confirm you selected the right company and connection.                                                                                   |
 | `Conflict`               | `CONFLICT`               | The request conflicts with the current state of the resource, for example a duplicate name.                                                                                                                  | Read the current state, adjust your request, and try again.                                                                                            |
 | `RateLimited`            | `RATE_LIMITED`           | You exceeded your account's request rate.                                                                                                                                                                    | Wait for `retryAfterSeconds` from `Error.Metadata`, then retry. See [Rate limits](../rate-limits.md).                                                  |
-| `FeatureNotEnabled`      | `FEATURE_NOT_ENABLED`    | The operation belongs to a feature that isn't enabled for your account yet.                                                                                                                                  | Contact Patch My PC to enable it. Quote `requiredFeature` from `Error.Metadata` if it's present. Retrying won't help.                                  |
+| `FeatureNotEnabled`      | `FEATURE_NOT_ENABLED`    | The operation is unavailable for this account.                                                                                                                                                               | Contact Patch My PC supp`or`t. Retrying won't help.                                                                                                    |
 | `AuthenticationFailed`   | `AUTH_ERROR`             | You haven't authenticated, or your personal access token (PAT) was rejected, expired, or revoked.                                                                                                            | Check the PAT in the portal, create a new one if needed, and call `AuthenticateWithPersonalAccessTokenAsync` again.                                    |
 | `AuthorizationFailed`    | `AUTHZ_ERROR`            | You're authenticated, but the operation isn't allowed. This includes a PAT whose scopes don't cover the operation, or an account without the permission.                                                     | Ask an administrator for the permission, or create a PAT with the required scope. Retrying won't help.                                                 |
 | `PatExchangeThrottled`   | `PAT_EXCHANGE_THROTTLED` | Too many PAT exchanges in a short time.                                                                                                                                                                      | Wait, then call `AuthenticateWithPersonalAccessTokenAsync` again. Reuse one authenticated `IPmpcCloudClient` instead of authenticating for every call. |
@@ -106,6 +110,7 @@ For the HTTP status codes behind these errors, see [Errors](../errors.md).
 
 When you exceed your account's rate limit, the result fails with `RATE_LIMITED`. Wait for the interval the service asks for, then retry:
 
+{% code collapsedlinecount="10" %}
 ```csharp
 using PatchMyPC.Cloud.Constants;
 using PatchMyPC.Cloud.Models;
@@ -135,25 +140,7 @@ static async Task<Result<T>> WithRetryAsync<T>(Func<Task<Result<T>>> call, int m
 
 var search = await WithRetryAsync(() => client.SearchApplicationsAsync(new ProductFilterRequest()));
 ```
-
-## Handle a feature that isn't enabled
-
-Some operations need a feature enabled for your account. Until it is, they fail with `FEATURE_NOT_ENABLED`. Report it differently from a permission problem, because the fix is different:
-
-```csharp
-var templates = await client.GetDeploymentTemplatesAsync();
-if (templates.IsFailure)
-{
-    var message = templates.Error.Code switch
-    {
-        PmpcCloudErrorCodes.FeatureNotEnabled => "Deployment templates aren't enabled for your account. Contact Patch My PC to enable them.",
-        PmpcCloudErrorCodes.AuthorizationFailed => "Your account doesn't have permission to read deployment templates.",
-        _ => templates.Error.Message,
-    };
-
-    Console.WriteLine(message);
-}
-```
+{% endcode %}
 
 ## Related pages
 

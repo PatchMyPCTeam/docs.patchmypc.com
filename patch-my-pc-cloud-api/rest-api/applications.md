@@ -14,7 +14,7 @@ Operations for your account, connections, applications, deployments, and deploym
 
 The examples use the US host, `https://us.portal.patchmypc.com`. If your Patch My PC account is in the EU region, use `https://eu.portal.patchmypc.com` instead.
 
-Each operation lists the scope a personal access token (PAT) needs to call it. Some operations must be enabled for your account before you can use them; those operations say so.
+Each operation lists the scope a personal access token (PAT) needs to call it.
 
 ## Account and connections
 
@@ -64,10 +64,6 @@ Operation ID: `GetConnections`
 GET /v1/api/connections
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:read`
 
@@ -208,10 +204,6 @@ DELETE /v1/api/apps/{productId}
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:write`
 
 **Rate limit:** Counts against your write limit.
@@ -253,10 +245,6 @@ Operation ID: `GetApplicationFiles`
 GET /v1/api/apps/{productId}/files
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:read`
 
@@ -531,10 +519,6 @@ POST /v1/api/apps/edit-draft
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:write`
 
 **Rate limit:** Counts against your write limit.
@@ -584,10 +568,6 @@ Operation ID: `CompleteEdit`
 PUT /v1/api/apps/edit-complete
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -666,10 +646,6 @@ GET /v1/api/apps/custom/{productId}
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:read`
 
 **Rate limit:** Counts against your read limit.
@@ -712,10 +688,6 @@ DELETE /v1/api/apps/custom/{productId}
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:write`
 
 **Rate limit:** Counts against your write limit.
@@ -757,10 +729,6 @@ Operation ID: `SearchCustomApplications`
 POST /v1/api/apps/custom/search
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:read`
 
@@ -822,10 +790,6 @@ POST /v1/api/apps/custom/draft
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:write`
 
 **Rate limit:** Counts against your write limit.
@@ -860,10 +824,6 @@ Operation ID: `CreateCustomUpdateDraft`
 POST /v1/api/apps/custom/update-draft
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -913,10 +873,6 @@ Operation ID: `CompleteCustomApplication`
 POST /v1/api/apps/custom/complete
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -991,10 +947,6 @@ Operation ID: `CompleteCustomUpdate`
 PUT /v1/api/apps/custom/complete
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -1071,10 +1023,6 @@ POST /v1/api/apps/custom/edit-draft
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:write`
 
 **Rate limit:** Counts against your write limit.
@@ -1124,10 +1072,6 @@ Operation ID: `CompleteCustomEdit`
 PUT /v1/api/apps/custom/edit-complete
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -1206,10 +1150,6 @@ GET /v1/api/apps/public/{productId}
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:read`
 
 **Rate limit:** Counts against your read limit.
@@ -1253,10 +1193,6 @@ Operation ID: `SearchPublicApplications`
 POST /v1/api/apps/public/search
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:read`
 
@@ -1320,10 +1256,6 @@ GET /v1/api/apps/{productId}/deployments
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
 **Rate limit:** Counts against your read limit.
@@ -1366,10 +1298,6 @@ Operation ID: `CreateApplicationDeployment`
 POST /v1/api/apps/{productId}/deployments
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
@@ -1445,10 +1373,6 @@ GET /v1/api/apps/{productId}/deployments/{deploymentId}
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
 **Rate limit:** Counts against your read limit.
@@ -1492,10 +1416,6 @@ Operation ID: `EditApplicationDeployment`
 PUT /v1/api/apps/{productId}/deployments/{deploymentId}
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
@@ -1571,10 +1491,6 @@ DELETE /v1/api/apps/{productId}/deployments/{deploymentId}
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
 **Rate limit:** Counts against your write limit.
@@ -1619,10 +1535,6 @@ GET /v1/api/apps/{productId}/deployments/dependency-candidates
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
 **Rate limit:** Counts against your read limit.
@@ -1665,10 +1577,6 @@ Operation ID: `RedeployApplicationDeployment`
 PUT /v1/api/apps/{productId}/deployments/{deploymentId}/redeploy
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
@@ -1714,10 +1622,6 @@ PUT /v1/api/apps/{productId}/deployments/{deploymentId}/sync
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
 **Rate limit:** Counts against your write limit.
@@ -1761,10 +1665,6 @@ Operation ID: `SetApplicationDeploymentSyncPauseStatus`
 PUT /v1/api/apps/{productId}/deployments/{deploymentId}/scheduled-sync-pause
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
@@ -1825,10 +1725,6 @@ GET /v1/api/deployments/templates
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
 **Rate limit:** Counts against your read limit.
@@ -1869,10 +1765,6 @@ Operation ID: `CreateDeploymentTemplate`
 POST /v1/api/deployments/templates
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
@@ -1935,10 +1827,6 @@ GET /v1/api/deployments/templates/{deploymentTemplateId}
 ```
 {% endcode %}
 
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
-
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
 **Rate limit:** Counts against your read limit.
@@ -1981,10 +1869,6 @@ Operation ID: `UpdateDeploymentTemplate`
 PUT /v1/api/deployments/templates/{deploymentTemplateId}
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
@@ -2053,10 +1937,6 @@ Operation ID: `DeleteDeploymentTemplate`
 DELETE /v1/api/deployments/templates/{deploymentTemplateId}
 ```
 {% endcode %}
-
-{% hint style="info" %}
-This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
-{% endhint %}
 
 **Required PAT scope:** `appcatbroker:apps:deploy`
 
