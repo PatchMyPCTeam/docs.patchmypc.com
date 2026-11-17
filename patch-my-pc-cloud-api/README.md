@@ -56,6 +56,7 @@ Some operationsâ€”for example deployments and editing or deleting applicationsâ€
 
 * [Search the catalog](guides/search-the-catalog.md)
 * [Create a custom application](guides/create-a-custom-application.md)
+* [Create and deploy a custom application with REST](guides/create-a-custom-application-with-rest.md)
 * [Update an application](guides/update-an-application.md)
 * [Deploy an application](guides/deploy-an-application.md)
 * [Automate with a personal access token](guides/automate-with-a-personal-access-token.md)
