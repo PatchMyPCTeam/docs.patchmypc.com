@@ -54,20 +54,22 @@ The application types live in two namespaces: request models such as `Applicatio
 | `TotalVariantsAmount` | `long`                            | The total number of matching application variants, for example language or architecture variants. |
 | `Products`            | collection of `ProductSummaryDto` | The applications on this page.                                                                    |
 
-Each `ProductSummaryDto` has these key properties.
+Each `ProductSummaryDto` has these key properties. Its `Id` and `ProductId` properties contain the same application ID; prefer `ProductId`. The type-specific `Custom`, `Pmpc`, or `Winget` block is present only for that application type.
 
-| Property                                   | Type                   | Description                                                                                                        |
-| ------------------------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `ProductId`                                | `Guid`                 | The application ID. `Id` carries the same value; prefer `ProductId`.                                               |
-| `UpdateId`                                 | `Guid`                 | The ID of the application's latest version. You need it to publish a new version.                                  |
-| `Type`                                     | `string`               | The application type: `pmpc` (Patch My PC catalog), `custom` (your custom applications), or `winget` (Winget).     |
-| `DisplayName`                              | `string`               | The display name.                                                                                                  |
-| `Description`, `VendorName`, `Language`    | `string?`              | Descriptive details.                                                                                               |
-| `Version`                                  | `string?`              | The latest version.                                                                                                |
-| `State`                                    | enum                   | The state of the latest version, for example `SuccessfullyCompleted`.                                              |
-| `LastUpdated`                              | `DateTimeOffset`       | When the application was last updated.                                                                             |
-| `IconURL`, `IconBase64`, `IconContentType` | `string?`              | The icon. `IconBase64` is only set when you request icon data.                                                     |
-| `Actions`                                  | collection of `string` | The operations currently available on the application: `deploy`, `update`, `edit`, `delete`, and `download-files`. |
+| Property                                   | Type                   | Description                                                                                                                                                            |
+| ------------------------------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ProductId`                                | `Guid`                 | The application ID. `Id` carries the same value; prefer `ProductId`.                                                                                                   |
+| `UpdateId`                                 | `Guid?`                | Deprecated for custom applications; use `Custom.UpdateId`. It is omitted from public and Winget search JSON, so the nullable SDK property is `null` for those results. |
+| `Type`                                     | `string`               | The application type: `pmpc` (Patch My PC catalog), `custom` (your custom applications), or `winget` (Winget).                                                         |
+| `DisplayName`                              | `string`               | The display name.                                                                                                                                                      |
+| `Description`, `VendorName`, `Language`    | `string?`              | Descriptive details.                                                                                                                                                   |
+| `Version`                                  | `string?`              | The latest version.                                                                                                                                                    |
+| `State`                                    | enum                   | The state of the latest version, for example `SuccessfullyCompleted`.                                                                                                  |
+| `LastUpdated`                              | `DateTimeOffset`       | When the application was last updated.                                                                                                                                 |
+| `IconURL`, `IconBase64`, `IconContentType` | `string?`              | The icon. `IconBase64` is only set when you request icon data.                                                                                                         |
+| `Actions`                                  | collection of `string` | The operations currently available on the application: `deploy`, `update`, `edit`, `delete`, and `download-files`.                                                     |
+
+For custom search results, `Custom.UpdateId` is the canonical version ID. The deprecated top-level `UpdateId` remains for compatibility on custom rows. Public and Winget search JSON omits top-level `updateId` rather than returning `null`; the nullable SDK property reads as `null`.
 
 ### Application details
 
@@ -94,7 +96,11 @@ Each `ProductSummaryDto` has these key properties.
 | `IconURL`, `IconBase64`, `IconContentType`             | `string?`                 | The icon.                                                                                  |
 | `Actions`                                              | collection of `string`    | The operations currently available on the application.                                     |
 
-`PublicApplicationDto` describes a public catalog application. It has the descriptive properties of `ProductDto`—`ProductId`, `Type`, `DisplayName`, `Description`, `Language`, `VendorName`, `UpdateVersion`, the icon properties, `PrivacyUrl`, `InformationUrl`, `Developer`, `IntuneNotes`, `InstallerType`, `Architecture`, `InstallContext`, and `Actions`—but not the packaging details, which Patch My PC maintains for you.
+`PublicApplicationDto` describes a public catalog application. It has the descriptive properties of `ProductDto`—`ProductId`, `Type`, `DisplayName`, `Description`, `Language`, `VendorName`, `UpdateVersion`, the icon properties, `PrivacyUrl`, `InformationUrl`, `Developer`, `IntuneNotes`, `InstallerType`, `Architecture`, `InstallContext`, and `Actions`—but not the packaging details, which Patch My PC maintains for you. Its `Variants` collection contains the exact selectable options for the requested operating system. Each variant has its owning `ProductId` and a `CatalogEntryId`; use that entry ID when creating a deployment.
+
+### Catalog identities
+
+Search results use the same value for `Id` and `ProductId`; use `ProductId` in new code. A custom search result's `Custom.UpdateId` is the canonical version ID, and custom details may also include `Custom.ProductId` and `Custom.CatalogEntryId`. Those detail-only IDs may be absent from search results. Public details expose `Variants`; each variant carries `ProductId` and `CatalogEntryId`. `CatalogEntryId`, not `ProductId` or `UpdateId`, identifies the exact entry to deploy.
 
 ### Application metadata
 
@@ -121,7 +127,7 @@ Each `ProductSummaryDto` has these key properties.
 | `DocumentationUrl`, `PrivacyUrl`, `InformationalUrl` | `string?`                 | `null`    | Links shown in Intune.                                                                                                                                                                                                            |
 | `Notes`, `IntuneNotes`, `Owner`, `Developer`         | `string?`                 | `null`    | Additional information shown in Intune.                                                                                                                                                                                           |
 
-`ApplicationUpdateMetadata` describes a new version of an existing application. It has `ProductId` and `UpdateId`—the application and the version the new one follows—plus the packaging properties from the table above: `FolderPath`, `PrimaryInstallerFile`, `CmdArguments`, `SilentUninstallArg`, `MsiProductCode`, `ArpDisplayNameMatch`, `ArpVersionMatch`, `DetectionRules`, `CustomRequirements`, and `ConflictingProcesses`. Get both IDs from a search result. `ArpVersionMatch` is required, because each version has its own version number.
+`ApplicationUpdateMetadata` describes a new version of an existing custom application. It has `ProductId` and `UpdateId`—the application and the version the new one follows—plus the packaging properties from the table above: `FolderPath`, `PrimaryInstallerFile`, `CmdArguments`, `SilentUninstallArg`, `MsiProductCode`, `ArpDisplayNameMatch`, `ArpVersionMatch`, `DetectionRules`, `CustomRequirements`, and `ConflictingProcesses`. Get `ProductId` and the canonical `Custom.UpdateId` from a custom search result. `ArpVersionMatch` is required, because each version has its own version number.
 
 ### Edit metadata
 
@@ -172,7 +178,7 @@ To tune the upload, pass `ChunkUploadOptions`. For details, see [Install and con
 
 ### SearchApplicationsAsync
 
-Searches your custom applications.
+Searches your custom applications. This legacy method and `/apps/search` return custom applications only. Use [`SearchPublicApplicationsAsync`](applications.md#searchpublicapplicationsasync) for the public catalog.
 
 ```csharp
 Task<Result<ProductFilterResponse>> SearchApplicationsAsync(
@@ -204,6 +210,7 @@ Console.WriteLine($"{search.Value.TotalAmount} matching applications");
 foreach (var product in search.Value.Products)
 {
     Console.WriteLine($"{product.DisplayName} {product.Version} ({product.ProductId})");
+    Console.WriteLine($"Current custom version: {product.Custom?.UpdateId}");
 }
 ```
 
@@ -368,10 +375,16 @@ For an MSI application, set `MsiProductCode` to the new installer's product code
 To correct the current version without publishing a new one, use [`EditApplicationAsync`](applications.md#editapplicationasync) instead.
 
 ```csharp
+if (product.Custom?.UpdateId is not Guid currentUpdateId)
+{
+    Console.WriteLine("The custom application has no current version ID.");
+    return;
+}
+
 var update = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
 {
     ProductId = product.ProductId,
-    UpdateId = product.UpdateId,
+    UpdateId = currentUpdateId,
     FolderPath = @"{path-to-new-version}",
     PrimaryInstallerFile = "{installer-file-name}.msi",
     MsiProductCode = Guid.Parse("{msi-product-code}"),
@@ -522,8 +535,11 @@ if (search.IsFailure)
 foreach (var product in search.Value.Products)
 {
     Console.WriteLine($"{product.DisplayName} {product.Version} ({product.ProductId})");
+    Console.WriteLine(product.UpdateId is null ? "No updateId is returned for public results." : $"Legacy updateId: {product.UpdateId}");
 }
 ```
+
+The public search response omits `updateId` from JSON; the SDK's nullable `UpdateId` property reads as `null`. Public applications are selected for deployment from their detail variants, not by an update ID.
 
 **See also:** [Find-PmpcApplication](../powershell/find-pmpcapplication.md) and [Search public applications](../rest-api/applications.md#search-public-applications).
 

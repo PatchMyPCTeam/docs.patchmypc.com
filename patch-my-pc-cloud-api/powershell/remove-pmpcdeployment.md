@@ -103,13 +103,15 @@ Remove-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 
 Prompts for confirmation, then deletes the deployment.
 
-### Example 2: Delete without prompting
+### Example 2: Delete a deployment after reading it
 
 ```powershell
-Remove-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Confirm:$false
+$deployment = Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
+if (-not $deployment) { throw 'The requested deployment was not found.' }
+Remove-PmpcDeployment -ProductId $deployment.ProductId -DeploymentId $deployment.DeploymentId -Confirm:$false
 ```
 
-Deletes the deployment without prompting. The cmdlet also accepts deployments piped from Get-PmpcDeployment, matched by their ProductId and DeploymentId properties.
+Reads one deployment by both IDs, then removes that specific deployment without prompting.
 
 ## Notes
 

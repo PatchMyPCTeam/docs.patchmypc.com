@@ -40,6 +40,8 @@ These methods use the models described on [Applications](applications.md): the [
 | `Notes`, `Owner`                                     | `string?`              | Additional information.                                                                                                                                                                                                                                                                                           |
 | `IsMigrationApp`                                     | `bool?`                | Whether the application was migrated from another system.                                                                                                                                                                                                                                                         |
 
+The `Custom` block also carries identity fields. `Custom.UpdateId` is the canonical version ID in search results. In custom details, `Custom.ProductId` is the owning application ID and `Custom.CatalogEntryId` is the entry ID required to create a deployment; those two fields may be omitted when unavailable or in search results. The legacy top-level `UpdateId` is deprecated and retained only for compatibility.
+
 ## Methods
 
 ### SearchCustomApplicationsAsync
@@ -75,7 +77,7 @@ if (search.IsFailure)
 
 foreach (var product in search.Value.Products)
 {
-    Console.WriteLine($"{product.DisplayName} {product.Version} ({product.ProductId}, latest version {product.UpdateId})");
+    Console.WriteLine($"{product.DisplayName} {product.Version} ({product.ProductId}, latest version {product.Custom?.UpdateId})");
 }
 ```
 
@@ -109,6 +111,8 @@ if (details.IsFailure)
 var app = details.Value;
 Console.WriteLine($"{app.DisplayName} {app.UpdateVersion}");
 Console.WriteLine($"Installer: {app.MainFile} {app.SilentInstallArguments}");
+Console.WriteLine($"Version ID: {app.Custom?.UpdateId}");
+Console.WriteLine($"Deployment entry ID: {app.Custom?.CatalogEntryId}");
 ```
 
 **See also:** [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md) and [Get custom application details](../rest-api/applications.md#get-custom-application-details).
@@ -189,12 +193,19 @@ Task<Result<ApplicationData>> UpdateCustomApplicationAsync(
 **Returns:** an [`ApplicationData`](applications.md#upload-result-and-progress) with the new version's `UpdateId`.
 
 ```csharp
+if (product.Custom?.UpdateId is not Guid currentUpdateId)
+{
+    Console.WriteLine("The custom application has no current version ID.");
+    return;
+}
+
 var update = await client.UpdateCustomApplicationAsync(new ApplicationUpdateMetadata
 {
     ProductId = product.ProductId,
-    UpdateId = product.UpdateId,
+    UpdateId = currentUpdateId,
     FolderPath = @"{path-to-new-version}",
-    PrimaryInstallerFile = "{installer-file-name}.exe",
+    PrimaryInstallerFile = "{installer-file-name}.msi",
+    MsiProductCode = Guid.Parse("{msi-product-code}"),
     CmdArguments = "/S",
     ArpVersionMatch = "{version}"
 });

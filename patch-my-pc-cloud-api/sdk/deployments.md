@@ -32,6 +32,7 @@ The deployment models are in the `PatchMyPC.Cloud.Client` namespace.
 | ----------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `DeploymentId`    | `string`               | The deployment ID. Pass it to the other methods on this page.                                                                                                                |
 | `ProductId`       | `Guid`                 | The application the deployment publishes.                                                                                                                                    |
+| `CatalogEntryId`  | `Guid?`                | The selected catalog entry, when available.                                                                                                                                  |
 | `DisplayName`     | `string`               | The deployment name.                                                                                                                                                         |
 | `OsType`          | `OSType`               | The target operating system.                                                                                                                                                 |
 | `Status`          | `DeploymentStatusType` | The current status of the deployment.                                                                                                                                        |
@@ -69,11 +70,12 @@ The deployment models are in the `PatchMyPC.Cloud.Client` namespace.
 
 ### Create deployment request
 
-`CreateDeploymentRequest` describes a new deployment.
+`CreateDeploymentRequest` describes a new deployment. Every deployment needs the application's `CatalogEntryId`: use `Custom.CatalogEntryId` from custom application details or `CatalogEntryId` from one selected public variant. `ProductId` and `UpdateId` are not substitutes.
 
 | Property              | Type                                      | Description                                                                                                                                                    |
 | --------------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OsType`              | `OSType`                                  | Required. The target operating system.                                                                                                                         |
+| `CatalogEntryId`      | `Guid`                                    | Required. The exact custom catalog entry or selected public variant to deploy. Get it from custom details or the chosen public detail variant.                 |
 | `Assignments`         | `List<CreateDeploymentAssignmentRequest>` | Required. The [assignments](deployments.md#assignment).                                                                                                        |
 | `CategoryIds`         | `List<string>?`                           | Optional. Company Portal category IDs.                                                                                                                         |
 | `EspProfileIds`       | `List<string>?`                           | Optional. ESP profile IDs. You need to know these IDs already; the SDK has no method to list them.                                                             |
@@ -249,8 +251,16 @@ Task<Result<DeploymentDto>> CreateDeploymentAsync(
 ```csharp
 using PatchMyPC.Cloud.Client;
 
+var details = await client.GetCustomApplicationDetailsAsync(productId);
+if (details.IsFailure || details.Value.Custom?.CatalogEntryId is not Guid catalogEntryId)
+{
+    Console.WriteLine("Couldn't find a deployment entry for the custom application.");
+    return;
+}
+
 var created = await client.CreateDeploymentAsync(productId, new CreateDeploymentRequest
 {
+    CatalogEntryId = catalogEntryId,
     OsType = OSType.Windows,
     Assignments = new List<CreateDeploymentAssignmentRequest>
     {

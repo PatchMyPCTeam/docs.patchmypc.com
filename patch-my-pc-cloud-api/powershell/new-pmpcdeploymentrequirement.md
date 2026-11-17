@@ -25,7 +25,7 @@ New-PmpcDeploymentRequirement [[-DisableArchitecture] <ApplicableArchitecture[]>
 
 Creates the requirements a deployment must satisfy before it installs, as accepted by Set-PmpcDeployment.
 
-Separate from New-PmpcRequirement because deployment requirements have a different shape from application requirements. Its lists are nullable, so a list you do not mention is left as it is rather than emptied, and its architecture parameter is inverted: it names the architectures to disable.
+Separate from New-PmpcRequirement because the deployment wire type is not the application one. Its lists are nullable, so a list you do not mention is left as it is rather than emptied, and its architecture parameter is inverted: it names the architectures to disable.
 
 ## Parameters
 
@@ -148,7 +148,8 @@ The deployment requirement set.
 ### Example 1: Block 32-bit installs
 
 ```powershell
-$config = New-PmpcDeploymentConfiguration -CustomRequirements (New-PmpcDeploymentRequirement -DisableArchitecture X86)
+$requirements = New-PmpcDeploymentRequirement -DisableArchitecture X86
+$config = New-PmpcDeploymentConfiguration -CustomRequirements $requirements
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Configuration $config
 ```
 

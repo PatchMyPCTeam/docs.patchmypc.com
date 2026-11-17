@@ -287,7 +287,7 @@ The updated template, read back from the service.
 
 ## Examples
 
-### Example 1: Rename a template
+### Example 1: Replace a template with minimal settings
 
 ```powershell
 Set-PmpcDeploymentTemplate -DeploymentTemplateId $templateId -TemplateName 'Windows 11 baseline (2026)'
@@ -299,16 +299,45 @@ Every other setting is replaced with its default, because the update replaces ra
 
 ```powershell
 $t = Get-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
-Set-PmpcDeploymentTemplate -DeploymentTemplateId $templateId -TemplateName $t.TemplateName -OsType $t.OsType -CustomRequirements $t.CustomRequirements -AppVersionsRetention 5
+$requirements = if ($null -ne $t.CustomRequirements) {
+    $requirementValues = @{}
+    foreach ($property in $t.CustomRequirements.PSObject.Properties) {
+        if ($null -ne $property.Value) {
+            $requirementValues[$property.Name] = $property.Value
+        }
+    }
+    New-PmpcDeploymentRequirement @requirementValues
+}
+
+$settings = @{
+    DeploymentTemplateId    = $t.DeploymentTemplateId
+    TemplateName            = $t.TemplateName
+    OsType                  = $t.OsType
+    Default                 = $t.IsDefault
+    BuiltInUpdate           = $t.BuiltInUpdate
+    AllowAvailableUninstall = $t.AllowAvailableUninstall
+    RemoveDesktopShortcuts  = $t.RemoveDesktopShortcuts
+    AppVersionsRetention    = 5
+    CustomVendor            = $t.CustomVendor
+    CustomDeveloper         = $t.CustomDeveloper
+    CustomOwner             = $t.CustomOwner
+    CustomNotes             = $t.CustomNotes
+    CopyForwardAssignments  = $t.CopyForwardAssignments
+    CategoryId              = @($t.Categories | ForEach-Object Id)
+    EspProfileId            = @($t.EspProfiles | ForEach-Object Id)
+    RoleScopeTagId           = @($t.RoleScopeTags | ForEach-Object Id)
+    CustomRequirements      = $requirements
+}
+Set-PmpcDeploymentTemplate @settings
 ```
 
-Reads the current values and passes them back, so only AppVersionsRetention changes.
+Changes only AppVersionsRetention among the settings returned by Get-PmpcDeploymentTemplate. The other settings are explicitly copied back, including default status, category, ESP profile and scope tag IDs. New-PmpcDeploymentRequirement converts the returned requirements into the input type Set-PmpcDeploymentTemplate accepts.
 
 ## Notes
 
 Requires a selected company and connection.
 
-Because the update replaces the whole template, omitting -CustomRequirements clears any requirements the template previously carried. That is the same behavior the portal has, and it is why reading the template first is the safe pattern.
+Because the update replaces the whole template, omitting -CustomRequirements clears any requirements the template previously carried. That is the same behaviour the portal has, and it is why reading the template first is the safe pattern.
 
 ## Related links
 

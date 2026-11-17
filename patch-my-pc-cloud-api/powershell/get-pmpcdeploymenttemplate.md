@@ -26,7 +26,7 @@ Get-PmpcDeploymentTemplate [-DeploymentTemplateId] <String> [<CommonParameters>]
 
 Retrieves the deployment templates configured for the selected connection, or the settings of a single template.
 
-A template is a stored set of deployment settings. To use one, pass the result to New-PmpcDeployment -Template, which fills in the new deployment's settings the same way the portal does. Creating a deployment doesn't accept a template ID.
+A template is a stored set of deployment settings. Applying one is client-side: pass the result to New-PmpcDeployment -Template, which pre-fills the request the same way the portal pre-fills its create form. No create operation accepts a template id server-side, so there is nothing to apply remotely.
 
 Author templates with New-PmpcDeploymentTemplate, change them with Set-PmpcDeploymentTemplate.
 
@@ -94,7 +94,7 @@ Returns the settings a deployment created from this template would inherit.
 
 ## Notes
 
-Requires a selected company and connection. Custom install scripts, PSADT version, ring configuration, and CreateWithDelay are not returned: they have no counterpart on the deployment surface this module exposes.
+Requires a selected company and connection. Custom install scripts, PSADT version, ring configuration and CreateWithDelay are not returned: they have no counterpart on the deployment surface this module exposes.
 
 ## Related links
 

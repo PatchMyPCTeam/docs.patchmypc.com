@@ -72,17 +72,17 @@ Content-Type: application/json
   "productId": "{product-id}",
   "updateId": "{update-id}",
   "revisionId": 1,
-  "displayName": "Contoso Sample Agent",
-  "description": "Endpoint agent for Contoso services.",
+  "displayName": "Contoso Archive Tool",
+  "description": "Sample file archiver",
   "publisher": "Contoso",
   "language": "en-US",
   "installContext": "System",
-  "primaryInstallerFile": "ContosoAgent.msi",
+  "primaryInstallerFile": "7z2408-x64.msi",
   "msiProductCode": "{msi-product-code}",
   "files": [
     {
       "productId": "{product-id}",
-      "fileName": "ContosoAgent.msi",
+      "fileName": "7z2408-x64.msi",
       "fileSize": 52428800,
       "fileType": "{file-type}",
       "sha1Hash": "{sha1-hash}",
@@ -107,19 +107,18 @@ using PatchMyPC.Cloud.Client;
 
 var metadata = new ApplicationMetadata
 {
-    FolderPath = @"C:\Packages\ContosoAgent",
-    PrimaryInstallerFile = "ContosoAgent.msi",
-    DisplayName = "Contoso Sample Agent",
-    Description = "Endpoint agent for Contoso services.",
+    FolderPath = @"C:\Packages\7zip",
+    PrimaryInstallerFile = "7z2408-x64.msi",
+    DisplayName = $"Contoso Archive Tool {Guid.NewGuid():N}",
+    Description = "Sample file archiver",
     Publisher = "Contoso",
     Architecture = RequirementArchitecture.X64,
     Language = "en-US",
     InstallContext = InstallationBehavior.System,
-    ArpDisplayNameMatch = "Contoso Sample Agent",
-    ArpVersionMatch = "1.0",
+    ArpDisplayNameMatch = "7-Zip*",
+    ArpVersionMatch = "24.08",
     MsiProductCode = Guid.Parse("{msi-product-code}"),
-    CmdArguments = "/qn",
-    IconPath = @"C:\Packages\ContosoAgent.png"
+    CmdArguments = "/qn"
 };
 
 var progress = new Progress<UploadProgress>(p =>
@@ -137,24 +136,24 @@ Console.WriteLine($"Uploaded {created.Value.FilesUploaded} file(s) in {created.V
 ```
 {% endcode %}
 
-If the icon can't be uploaded, the application is still created, without an icon.
+The example omits an icon. To include one, set `IconPath` to an image file; if that file can't be uploaded, the application is still created without an icon.
 
 See [CreateApplicationAsync](../sdk/applications.md#createapplicationasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
 ```powershell
+$displayName = "Contoso Archive Tool $([guid]::NewGuid().ToString('N'))"
 $app = New-PmpcCustomApplication `
-    -FolderPath 'C:\Packages\ContosoAgent' `
-    -PrimaryInstallerFile 'ContosoAgent.msi' `
-    -DisplayName 'Contoso Sample Agent' `
-    -Description 'Endpoint agent for Contoso services.' `
+    -FolderPath 'C:\Packages\7zip' `
+    -PrimaryInstallerFile '7z2408-x64.msi' `
+    -DisplayName $displayName `
+    -Description 'Sample file archiver' `
     -Publisher 'Contoso' `
     -MsiProductCode '{msi-product-code}' `
     -CmdArguments '/qn' `
-    -ArpDisplayNameMatch 'Contoso Sample Agent' `
-    -ArpVersionMatch '1.0' `
-    -IconPath 'C:\Packages\ContosoAgent.png'
+    -ArpDisplayNameMatch '7-Zip*' `
+    -ArpVersionMatch '24.08'
 
 [pscustomobject]@{
     ProductId = $app.ProductId
@@ -162,7 +161,7 @@ $app = New-PmpcCustomApplication `
 }
 ```
 
-`New-PmpcCustomApplication` supports `-WhatIf` and `-Confirm`. It uses an operation that must be enabled for your account; until it is, the cmdlet reports the error code `FEATURE_NOT_ENABLED`.
+`-IconPath` is optional and omitted here; pass an image path to include an icon. `New-PmpcCustomApplication` supports `-WhatIf` and `-Confirm`. It uses an operation that must be enabled for your account; until it is, the cmdlet reports the error code `FEATURE_NOT_ENABLED`.
 
 See [New-PmpcCustomApplication](../powershell/new-pmpccustomapplication.md).
 {% endtab %}
@@ -170,31 +169,37 @@ See [New-PmpcCustomApplication](../powershell/new-pmpccustomapplication.md).
 
 ## Step 3: Verify the application
 
-1. Read the new application's details with the product ID you received.
-2. Check the display name, version, and primary installer.
+1. Read the custom application's details with the product ID you received.
+2. Check the display name, version, and primary installer. The detail response carries custom identity in `custom`: use `custom.updateId` as the canonical version ID, and use `custom.catalogEntryId` when creating a deployment.
 
 {% tabs %}
 {% tab title="REST" %}
 ```http
-GET https://us.portal.patchmypc.com/v1/api/apps/{product-id}
+GET https://us.portal.patchmypc.com/v1/api/apps/custom/{product-id}
 Authorization: Bearer {access-token}
 Accept: application/json
 ```
 
-See [Get application details](../rest-api/applications.md#get-application-details).
+The response includes a `custom` block with the canonical `updateId` and optional `productId` and `catalogEntryId` fields. See [Get custom application details](../rest-api/applications.md#get-custom-application-details).
 {% endtab %}
 
 {% tab title="C#" %}
 ```csharp
-var details = await client.GetApplicationDetailsAsync(created.Value.ProductId);
+var details = await client.GetCustomApplicationDetailsAsync(created.Value.ProductId);
+if (details.IsSuccess)
+{
+    Console.WriteLine($"Version ID: {details.Value.Custom?.UpdateId}");
+    Console.WriteLine($"Deployment entry ID: {details.Value.Custom?.CatalogEntryId}");
+}
 ```
 
-See [GetApplicationDetailsAsync](../sdk/applications.md#getapplicationdetailsasync).
+See [GetCustomApplicationDetailsAsync](../sdk/custom-applications.md#getcustomapplicationdetailsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
 ```powershell
-Get-PmpcCustomApplication -ProductId '{product-id}'
+$details = Get-PmpcCustomApplication -ProductId '{product-id}'
+$details | Select-Object DisplayName, UpdateVersion, @{ Name = 'UpdateId'; Expression = { $_.Custom.UpdateId } }, @{ Name = 'CatalogEntryId'; Expression = { $_.Custom.CatalogEntryId } }
 ```
 
 See [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md).

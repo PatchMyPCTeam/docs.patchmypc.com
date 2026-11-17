@@ -103,13 +103,13 @@ Resume-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 
 Restarts the deployment's scheduled sync.
 
-### Example 2: Resume everything that was paused
+### Example 2: Resume a deployment selected by ID
 
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Resume-PmpcDeployment
 ```
 
-Finds the paused deployments and restarts each one.
+Reads one deployment by both IDs and pipes it to Resume-PmpcDeployment.
 
 ## Notes
 

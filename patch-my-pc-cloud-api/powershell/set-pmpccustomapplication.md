@@ -493,9 +493,9 @@ An explicitly empty array clears the list; omitting the parameter would keep it.
 
 ## Notes
 
-The service replaces the whole application, but this cmdlet does not. The SDK reads the application's current metadata and file list, lays your changes over the top, and submits the complete payload, so changing one field means supplying one parameter.
+The underlying endpoint is a full replacement, but this cmdlet is not. The SDK reads the application's current metadata and file list, lays your changes over the top, and submits the complete payload, so changing one field means supplying one parameter.
 
--MsiProductCode cannot be used to clear a product code. Its presence is what tells the service the installer is an MSI, so dropping it reads as a switch to EXE and the edit is rejected.
+-MsiProductCode cannot be used to clear a product code. Its presence is what tells the broker the installer is an MSI, so dropping it reads as a switch to EXE and the edit is rejected.
 
 -ConflictingProcess is the one parameter where an explicitly empty array is meaningful: it clears the list, whereas omitting the parameter keeps it.
 

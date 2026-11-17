@@ -21,7 +21,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 * Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
 * The REST examples use the US host, `https://us.portal.patchmypc.com`. Use `https://eu.portal.patchmypc.com` for EU accounts or `https://uk.portal.patchmypc.com` for UK accounts.
 * A PAT needs the `appcatbroker:apps:read` scope to list connections and the `appcatbroker:apps:deploy` scope to create and read deployments.
-* Find the product ID of the application to deploy. See [Search the catalog](search-the-catalog.md).
+* Find the product ID of the application to deploy. See [Search the catalog](search-the-catalog.md). A deployment also requires a catalog entry ID: use `custom.catalogEntryId` from custom application details, or choose one public variant and use its `catalogEntryId`.
 * Have the object IDs of the Microsoft Entra ID groups you want to assign the application to.
 
 ## Step 1: Select a connection
@@ -95,9 +95,10 @@ The `NoAssignmentsInstall` and `NoAssignmentsUpdate` intents publish the applica
 
 ## Step 3: Create the deployment
 
-1. Send the operating system and the assignments.
-2. Optionally, add category IDs, Enrollment Status Page profile IDs, deployments this one depends on, and configuration settings.
-3. Note the `deploymentId` in the response.
+1. Choose the exact catalog entry. For a custom application, read its details and use `custom.catalogEntryId`. For a public application, read public details for the operating system and choose one item from `variants`.
+2. Send the product ID, required catalog entry ID, operating system, and assignments.
+3. Optionally, add category IDs, Enrollment Status Page profile IDs, deployments this one depends on, and configuration settings.
+4. Note the `deploymentId` in the response.
 
 {% tabs %}
 {% tab title="REST" %}
@@ -108,6 +109,7 @@ Content-Type: application/json
 
 {
   "connectionId": "{connection-id}",
+  "catalogEntryId": "{catalog-entry-id}",
   "osType": "Windows",
   "assignments": [
     { "groupId": "{group-id}", "intent": "Required" }
@@ -125,8 +127,16 @@ See [Create application deployment](../rest-api/applications.md#create-applicati
 ```csharp
 using PatchMyPC.Cloud.Client;
 
+var details = await client.GetCustomApplicationDetailsAsync(productId);
+if (details.IsFailure || details.Value.Custom?.CatalogEntryId is not Guid catalogEntryId)
+{
+    Console.WriteLine("Couldn't find a deployment entry for the custom application.");
+    return;
+}
+
 var created = await client.CreateDeploymentAsync(productId, new CreateDeploymentRequest
 {
+    CatalogEntryId = catalogEntryId,
     OsType = OSType.Windows,
     Assignments = new List<CreateDeploymentAssignmentRequest>
     {
@@ -159,15 +169,69 @@ $assignments = @(
     New-PmpcDeploymentAssignment -GroupId '{group-id}' -Intent Required
 )
 
-$deployment = New-PmpcDeployment -ProductId '{product-id}' -OsType Windows -Assignment $assignments
-$deployment | Select-Object ProductId, DeploymentId
+$app = Get-PmpcCustomApplication -ProductId '{product-id}'
+$deployment = New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Assignment $assignments
+[pscustomobject]@{
+    ProductId = $app.ProductId
+    DeploymentId = $deployment.DeploymentId
+}
 ```
 
-`New-PmpcDeployment` supports `-WhatIf` and `-Confirm`.
+`New-PmpcDeployment` supports `-WhatIf` and `-Confirm`. `-CatalogEntryId` is required; get it from custom details or from one selected public variant. `ProductId` and `UpdateId` are not substitutes.
 
 See [New-PmpcDeploymentAssignment](../powershell/new-pmpcdeploymentassignment.md) and [New-PmpcDeployment](../powershell/new-pmpcdeployment.md).
 {% endtab %}
 {% endtabs %}
+
+### Create a deployment for a selected public variant
+
+Select the exact variant from public application details and pass its `CatalogEntryId` in the create request. The product ID alone does not identify which catalog entry to deploy.
+
+```csharp
+var publicDetails = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
+if (publicDetails.IsFailure)
+{
+    Console.WriteLine($"Could not load public application details: {publicDetails.Error.Code} {publicDetails.Error.Message}");
+    return;
+}
+
+var matchingVariants = publicDetails.Value.Variants
+    .Where(variant =>
+        variant.Architecture == RequirementArchitecture.X64 &&
+        variant.InstallerType == InstallerType.MSI &&
+        variant.InstallContext == InstallationBehavior.System &&
+        variant.Language == "en-US")
+    .ToList();
+
+if (matchingVariants.Count != 1)
+{
+    Console.WriteLine($"Expected one x64, MSI, system, en-US variant; found {matchingVariants.Count}. Choose your intended variant explicitly.");
+    return;
+}
+
+var selectedVariant = matchingVariants[0];
+var deployment = await client.CreateDeploymentAsync(selectedVariant.ProductId, new CreateDeploymentRequest
+{
+    CatalogEntryId = selectedVariant.CatalogEntryId,
+    OsType = OSType.Windows,
+    Assignments = new List<CreateDeploymentAssignmentRequest>
+    {
+        new CreateDeploymentAssignmentRequest
+        {
+            GroupId = "{group-id}",
+            Intent = InstallationIntent.Required
+        }
+    }
+});
+
+if (deployment.IsFailure)
+{
+    Console.WriteLine($"Deployment failed: {deployment.Error.Code} {deployment.Error.Message}");
+    return;
+}
+
+Console.WriteLine($"Created {deployment.Value.DeploymentId}");
+```
 
 ## Step 4: Monitor the deployment
 

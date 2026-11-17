@@ -1,5 +1,5 @@
 ---
-description: Checks whether the Patch My PC Cloud service is reachable and healthy.
+description: Checks whether the Cloud Customer API responds to a heartbeat request.
 noIndex: true
 noRobotsIndex: true
 ---
@@ -10,7 +10,7 @@ noRobotsIndex: true
 
 ## Synopsis
 
-Checks whether the Patch My PC Cloud service is reachable and healthy.
+Checks whether the Cloud Customer API responds to a heartbeat request.
 
 ## Syntax
 
@@ -20,7 +20,7 @@ Test-PmpcCloudHealth [<CommonParameters>]
 
 ## Description
 
-Calls the broker's health endpoint and returns a boolean. Use it to separate 'the service is down' from 'my request was wrong' when something else fails.
+Returns a boolean indicating whether the session received a heartbeat response from the Cloud Customer API. This is a reachability check, not a check of every service dependency.
 
 ## Parameters
 
@@ -38,7 +38,7 @@ This cmdlet does not accept pipeline input.
 
 ### System.Boolean
 
-True when the service is healthy.
+True when a heartbeat response is received; otherwise False.
 
 ## Examples
 
@@ -48,7 +48,7 @@ True when the service is healthy.
 Test-PmpcCloudHealth
 ```
 
-Returns True when the broker is healthy.
+Returns True when a heartbeat response is received.
 
 ### Example 2: Gate a script on service health
 
@@ -56,11 +56,11 @@ Returns True when the broker is healthy.
 if (-not (Test-PmpcCloudHealth)) { Write-Warning 'Patch My PC Cloud is unhealthy; skipping publish.'; return }
 ```
 
-Avoids starting a long upload against a service that has already said it is unhealthy.
+Skips the upload when the health check cannot obtain a heartbeat response. The warning alone does not identify the cause.
 
 ## Notes
 
-Returns $false rather than throwing when the service reports itself unhealthy. A transport failure is reported as an error, because being unable to ask is different from getting an answer of no.
+Connect before running this cmdlet; without an active module session it reports a not-connected error. With a session, a failed health check returns $false, including network or token-acquisition failures and a missing selected company. A false result does not distinguish these causes.
 
 ## Related links
 

@@ -24,7 +24,7 @@ Get-PmpcConnection [[-Name] <String>] [-ConnectionId <Guid>] [<CommonParameters>
 
 ## Description
 
-Returns the connections configured for the selected company. Deployment commands are scoped to one of these, chosen with Set-PmpcConnection, and public-catalog lookups use one to scope the request.
+Returns the Intune connections configured for the selected company; Publisher and ConfigMgr connections are not returned. Deployment commands are scoped to one of these, chosen with Set-PmpcConnection, and public-catalog lookups use one to scope the request.
 
 ## Parameters
 
@@ -76,7 +76,7 @@ One object per available connection.
 Get-PmpcConnection
 ```
 
-Shows the display name, ID, type, and admin-consent state of each connection.
+Shows the display name, ID, type and admin-consent state of each connection.
 
 ### Example 2: Find Intune connections
 
@@ -84,7 +84,7 @@ Shows the display name, ID, type, and admin-consent state of each connection.
 Get-PmpcConnection | Where-Object Type -eq 'Intune'
 ```
 
-Filters to Intune connections, excluding Publisher and ConfigMgr ones.
+The API currently returns only Intune connections, so this filter makes the intended type explicit.
 
 ## Notes
 

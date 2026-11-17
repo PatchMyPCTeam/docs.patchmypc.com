@@ -27,7 +27,7 @@ Remove-PmpcDeploymentTemplate [-DeploymentTemplateId] <String> [-WhatIf] [-Confi
 
 Deletes a deployment template from the selected connection.
 
-The connection's default template cannot be deleted. It is what every deployment created without a template inherits, so removing it would change the behavior of future creates in a way the caller cannot see from here. Make another template the default first.
+The connection's default template cannot be deleted. It is what every deployment created without a template inherits, so removing it would change the behaviour of future creates in a way the caller cannot see from here. Make another template the default first.
 
 ## Parameters
 
@@ -85,21 +85,13 @@ This cmdlet does not return output.
 
 ## Examples
 
-### Example 1: Delete a template
-
-```powershell
-Remove-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
-```
-
-Deletes the specified non-default template. Add -Confirm to display a confirmation prompt.
-
-### Example 2: Delete without prompting
+### Example 1: Delete a template without prompting
 
 ```powershell
 Remove-PmpcDeploymentTemplate -DeploymentTemplateId $templateId -Confirm:$false
 ```
 
-Deletes the template without prompting. The default template cannot be removed.
+Deletes the specified non-default template without prompting. Omit -Confirm:$false to make PowerShell prompt before deleting the template. The default template cannot be removed.
 
 ## Notes
 

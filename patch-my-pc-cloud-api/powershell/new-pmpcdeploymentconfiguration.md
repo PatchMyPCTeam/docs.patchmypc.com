@@ -29,7 +29,7 @@ New-PmpcDeploymentConfiguration [[-AdditionalArgument] <String>]
 
 Creates the configuration carried by a deployment, as accepted by the deployment create flow.
 
-Anything you do not name is left unset, and the service reads that as "not specified"—the deployment keeps the value it would otherwise have received. That is why this cmdlet sets nothing by default: filling in a field you never mentioned would silently change it.
+Anything you do not name is left unset, and the service reads that as "not specified" -- the deployment keeps the value it would otherwise have received. That is why this cmdlet sets nothing by default: filling in a field you never mentioned would silently change it.
 
 ReturnCode replaces the deployment's whole set of exit codes rather than adding to it, so pass every code the deployment should end up with.
 

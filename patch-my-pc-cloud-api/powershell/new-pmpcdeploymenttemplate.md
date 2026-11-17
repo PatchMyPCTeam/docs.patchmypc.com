@@ -32,7 +32,7 @@ New-PmpcDeploymentTemplate -TemplateName <String> [-OsType <OSType>] [-Default]
 
 Creates a deployment template on the selected connection. A template is a stored set of deployment settings that a later deployment can start from.
 
-To use a template, pass the result of Get-PmpcDeploymentTemplate to New-PmpcDeployment -Template, which fills in the new deployment's settings the same way the portal does. Creating a deployment doesn't accept a template ID.
+Applying a template is client-side: pass the result of Get-PmpcDeploymentTemplate to New-PmpcDeployment -Template, which pre-fills the request the same way the portal pre-fills its create form. No create operation accepts a template id server-side, so there is nothing to apply remotely.
 
 Requirements are stated in the same shape a deployment uses, so New-PmpcDeploymentRequirement produces requirements for either.
 
@@ -277,7 +277,8 @@ The created template, read back from the service rather than echoed.
 ### Example 1: Create a minimal template
 
 ```powershell
-New-PmpcDeploymentTemplate -TemplateName "Standard Windows apps $([guid]::NewGuid())"
+$templateName = "Standard Windows apps $([guid]::NewGuid().ToString('N'))"
+New-PmpcDeploymentTemplate -TemplateName $templateName
 ```
 
 Creates a template with default settings on the selected connection.
@@ -286,24 +287,26 @@ Creates a template with default settings on the selected connection.
 
 ```powershell
 $reqs = New-PmpcDeploymentRequirement -MinimumWindowsOSVersion Windows11_21H2 -MinimumMemoryInMB 8192
-New-PmpcDeploymentTemplate -TemplateName "Windows 11 baseline $([guid]::NewGuid())" -CustomRequirements $reqs
+$templateName = "Windows 11 baseline $([guid]::NewGuid().ToString('N'))"
+New-PmpcDeploymentTemplate -TemplateName $templateName -CustomRequirements $reqs
 ```
 
 Deployments created from this template start with the same requirements.
 
-### Example 3: Set deployment options
+### Example 3: Create a template with an owner and notes
 
 ```powershell
-New-PmpcDeploymentTemplate -TemplateName "Retain previous versions $([guid]::NewGuid())" -AppVersionsRetention 3
+$templateName = "Company app settings $([guid]::NewGuid().ToString('N'))"
+New-PmpcDeploymentTemplate -TemplateName $templateName -CustomOwner 'Workplace IT' -CustomNotes 'Managed application defaults'
 ```
 
-Deployments created from this template retain the three most recent previous application versions.
+Adds ownership and context without changing the connection's default template.
 
 ## Notes
 
 Requires a selected company and connection. The template is created on the selected connection; there is no parameter to target another one.
 
-Custom install scripts, PSADT version, and ring configuration cannot be set here: they have no counterpart on the deployment surface this module exposes, so accepting them would store settings this module can neither show nor act on.
+Custom install scripts, PSADT version and ring configuration cannot be set here: they have no counterpart on the deployment surface this module exposes, so accepting them would store settings this module can neither show nor act on.
 
 ## Related links
 

@@ -34,7 +34,9 @@ Get-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [<CommonParamete
 
 Without -DeploymentId, lists every deployment of the application on the selected connection.
 
-With -DeploymentId, returns that one deployment in full, including its categories, Enrollment Status Page profiles, and dependency chain. Those fields aren't included in the list, to keep it fast.
+Both forms include nullable CatalogEntryId alongside the existing ProductId. CatalogEntryId is the stored category identifier: the selected public variant or the customer-owned custom catalog entry. Older deployments without a stored category identifier return null; the identity is never inferred from the current catalog and does not pin a version or revision.
+
+With -DeploymentId, returns that one deployment in full, including its categories, Enrollment Status Page profiles and dependency chain. Those fields are deliberately left off the list form to avoid an extra backend round-trip per item.
 
 ## Parameters
 
@@ -100,7 +102,7 @@ Returns each deployment with its status and target operating system.
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 ```
 
-Returns the deployment including categories, Enrollment Status Page (ESP) profiles, and its parent and child deployments.
+Returns the deployment including categories, ESP profiles and its parent and child deployments.
 
 ### Example 3: Find failed deployments
 

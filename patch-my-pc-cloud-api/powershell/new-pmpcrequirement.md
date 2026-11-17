@@ -25,7 +25,7 @@ New-PmpcRequirement [[-Architecture] <ApplicableArchitecture[]>]
 
 Creates the requirements an application must satisfy before it installs, as accepted by New-PmpcCustomApplication and Update-PmpcCustomApplication.
 
-Deployment requirements use different property names and handle unset values differently, so they have their own builder: New-PmpcDeploymentRequirement.
+The deployment-level equivalent is a different wire type with different property names and different null handling, so it has its own builder: New-PmpcDeploymentRequirement.
 
 ## Parameters
 

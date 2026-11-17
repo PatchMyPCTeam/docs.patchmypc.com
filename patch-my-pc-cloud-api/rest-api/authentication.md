@@ -51,7 +51,7 @@ The types used by the operations on this page. Property names are case-sensitive
 
 ### TokenExchangeResponse
 
-| Name         | Type            | Required | Description    |
-| ------------ | --------------- | -------- | -------------- |
-| `gatewayJwt` | string          | No       | Can be `null`. |
-| `expiresIn`  | integer (int32) | No       |                |
+| Name         | Type            | Required | Description                                                                                                                                  |
+| ------------ | --------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `gatewayJwt` | string          | No       | A short-lived access token. Send it as a bearer token in the `Authorization` header of subsequent API calls until it expires. Can be `null`. |
+| `expiresIn`  | integer (int32) | No       | Number of seconds until the access token in `gatewayJwt` expires. Exchange your personal access token again to get a new access token.       |

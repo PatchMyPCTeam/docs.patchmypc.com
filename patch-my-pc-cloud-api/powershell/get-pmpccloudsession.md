@@ -54,7 +54,7 @@ Displays connection state along with the selected company and connection.
 
 ## Notes
 
-Credentials are never exposed in the session summary, because a session summary is exactly the kind of object that ends up in a transcript.
+Credentials are never included in the session summary, because a session summary is exactly the kind of object that ends up in a transcript.
 
 ## Related links
 

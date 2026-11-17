@@ -24,7 +24,7 @@ Get-PmpcApplicationFile [-ProductId] <Guid> [<CommonParameters>]
 
 ## Description
 
-Returns the application's current file list with names, sizes, types, and hashes, in exactly the shape the completion payload accepts.
+Returns the application's current file list with names, sizes, types and hashes, in exactly the shape the completion payload accepts.
 
 Get-PmpcCustomApplication returns a trimmed projection with no file list, so this exists to let a caller read a file set back in order to send it again.
 
@@ -66,7 +66,7 @@ One object per file.
 Get-PmpcApplicationFile -ProductId $productId
 ```
 
-Returns each file with its size, type, and hashes.
+Returns each file with its size, type and hashes.
 
 ### Example 2: Total an application's size
 

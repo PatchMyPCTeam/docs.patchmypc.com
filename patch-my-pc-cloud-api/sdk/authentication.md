@@ -122,7 +122,7 @@ if (signOut.IsFailure)
 
 ### IsServiceHealthyAsync
 
-Checks whether the Cloud Customer API is reachable for the session's company.
+Checks whether the Cloud Customer API responds to a heartbeat request for the session's company. This does not check every service dependency.
 
 ```csharp
 Task<Result<bool>> IsServiceHealthyAsync(CancellationToken cancellationToken = default);
@@ -132,7 +132,7 @@ Task<Result<bool>> IsServiceHealthyAsync(CancellationToken cancellationToken = d
 | ------------------- | ------------------- | --------------------------- |
 | `cancellationToken` | `CancellationToken` | Optional. Cancels the call. |
 
-**Returns:** `true` if the service responded as healthy; otherwise `false`. A failed health check, or a call made before you authenticate, returns `false` rather than a failed result, so you only need to check `Value`.
+**Returns:** A successful `Result<bool>` containing `true` when a heartbeat response is received; otherwise `false`. A failed health check, including a network or token-acquisition failure, or a call with no selected company, returns `false` rather than a failed result. A false value does not distinguish these causes.
 
 ```csharp
 var health = await client.IsServiceHealthyAsync();

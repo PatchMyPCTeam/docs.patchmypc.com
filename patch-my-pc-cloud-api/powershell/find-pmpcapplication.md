@@ -37,7 +37,7 @@ Find-PmpcApplication [-Filter] <ProductFilterRequest> [-AsResponse] [<CommonPara
 
 ## Description
 
-Searches public catalog applications by name, vendor, language, architecture, and modification dates, returning one object per match.
+Searches public catalog applications by name, vendor, language, architecture, and modification dates, returning one object per match. Each PMPC summary includes independent architecture, language, installer-type, and install-context options for the requested operating system. These are separate availability sets, not a promise that every combination is valid; use Get-PmpcApplication to inspect the exact selectable variants.
 
 By default the matching products are written to the pipeline one at a time, which is what makes filtering and piping work naturally. Use -AsResponse when you need the total match count for paging rather than the products themselves.
 
@@ -202,7 +202,7 @@ Only applications last updated at or before this time.
 
 ### -Limit
 
-Maximum number of matches to return.
+Maximum number of matches to return. Defaults to 50.
 
 | Attribute      | Value          |
 | -------------- | -------------- |
@@ -331,6 +331,8 @@ Asks for the count without pulling every match down.
 ## Notes
 
 Searching the public catalog requires an Intune connection. If -ConnectionId is omitted, the session's selected connection is used.
+
+Inspect Pmpc.Architectures, Pmpc.Languages, Pmpc.InstallerTypes, and Pmpc.InstallContexts for available options. Public search results omit updateId from JSON; the nullable UpdateId property reads as null and must be ignored. Older clients with a non-nullable property read Guid.Empty instead. Get-PmpcApplication returns exact variants with ProductId and CatalogEntryId for deployment selection; pipe one explicitly selected variant, not the search result or family block.
 
 -IncludeIconData embeds base64 icon data in every result and makes responses considerably larger; leave it off unless the icons are the point.
 

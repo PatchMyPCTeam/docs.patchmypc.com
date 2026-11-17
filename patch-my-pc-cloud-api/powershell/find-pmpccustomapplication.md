@@ -190,7 +190,7 @@ Only applications last updated at or before this time.
 
 ### -Limit
 
-Maximum number of matches to return.
+Maximum number of matches to return. Defaults to 50.
 
 | Attribute      | Value          |
 | -------------- | -------------- |
@@ -295,6 +295,8 @@ Find-PmpcCustomApplication -LastModifiedFrom (Get-Date).AddDays(-7) -SortField '
 Returns custom applications modified in the last week, newest first.
 
 ## Notes
+
+Custom.UpdateId is the canonical update identifier for each custom search result. The top-level UpdateId is deprecated and retained with the same value for Master Packager compatibility. It identifies the update selected for the custom product family, not necessarily the displayed summary version.
 
 -IncludeIconData embeds base64 icon data in every result and makes responses considerably larger; leave it off unless the icons are the point.
 

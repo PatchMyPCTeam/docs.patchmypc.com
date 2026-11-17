@@ -58,7 +58,7 @@ Cmdlets marked as requiring enablement work only after the feature is enabled fo
 | [Connect-PmpcCloudWithPat](connect-pmpccloudwithpat.md) | Authenticates using a personal access token.                           | No                  |
 | [Disconnect-PmpcCloud](disconnect-pmpccloud.md)         | Signs out and tears down the module's session.                         | No                  |
 | [Get-PmpcCloudSession](get-pmpccloudsession.md)         | Reports the module's current session state.                            | No                  |
-| [Test-PmpcCloudHealth](test-pmpccloudhealth.md)         | Checks whether the Patch My PC Cloud service is reachable and healthy. | No                  |
+| [Test-PmpcCloudHealth](test-pmpccloudhealth.md)         | Checks whether the Cloud Customer API responds to a heartbeat request. | No                  |
 | [Get-PmpcSelectedCompany](get-pmpcselectedcompany.md)   | Gets the company the session is currently scoped to.                   | No                  |
 
 ### Customer and connections

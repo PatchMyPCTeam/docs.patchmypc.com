@@ -76,7 +76,7 @@ Narrows a connection-wide list down to the runtime the application depends on.
 
 ## Notes
 
-The candidate list is connection-wide rather than product-scoped. The product ID is informational. Every deployment on the connection is returned; filter the results yourself.
+The candidate list is connection-wide rather than product-scoped. The product ID is informational: the underlying service does not currently support server-side filtering.
 
 ## Related links
 

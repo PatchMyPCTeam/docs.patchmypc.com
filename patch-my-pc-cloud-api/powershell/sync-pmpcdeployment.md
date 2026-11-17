@@ -105,13 +105,13 @@ Sync-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 
 Updates the deployment to the latest pending version.
 
-### Example 2: Sync every deployment of an application
+### Example 2: Sync a deployment selected by ID
 
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Sync-PmpcDeployment
 ```
 
-Rolls the latest version out to all of the application's deployments.
+Reads one deployment by both IDs and pipes it to Sync-PmpcDeployment.
 
 ## Notes
 

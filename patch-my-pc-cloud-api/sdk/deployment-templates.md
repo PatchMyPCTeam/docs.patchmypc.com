@@ -20,7 +20,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 Every method on this page requires the feature described above.
 
-[`CreateDeploymentAsync`](deployments.md#createdeploymentasync) doesn't take a template. To start a deployment from a template, read the template with [`GetDeploymentTemplateAsync`](deployment-templates.md#getdeploymenttemplateasync) and copy the settings you want into your [create deployment request](deployments.md#create-deployment-request). Template settings for custom scripts, the PowerShell App Deployment Toolkit (PSADT), and deployment rings aren't available through the SDK.
+[`CreateDeploymentAsync`](deployments.md#createdeploymentasync) doesn't take a template. To start a deployment from a template, read the template with [`GetDeploymentTemplateAsync`](deployment-templates.md#getdeploymenttemplateasync) and copy the settings you want into your [create deployment request](deployments.md#create-deployment-request). The request still requires `CatalogEntryId`: use `Custom.CatalogEntryId` from custom details or the `CatalogEntryId` of the selected public variant. Template settings for custom scripts, the PowerShell App Deployment Toolkit (PSADT), and deployment rings aren't available through the SDK.
 
 ## Models
 

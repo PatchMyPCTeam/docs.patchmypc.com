@@ -22,9 +22,9 @@ Connect-PmpcCloudWithPat [-Token] <SecureString> [-PassThru] [-Region <PmpcCloud
 
 ## Description
 
-Exchanges a personal access token (PAT) for a short-lived gateway token and scopes the session to the customer that token belongs to. This is the authentication path for unattended callers. No company selection is needed afterwards, because the token identifies its own customer.
+Exchanges a personal access token (PAT) for a short-lived gateway token and scopes the session to the customer that token belongs to. Use this for scripts and other unattended callers. No company selection is needed afterwards, because the token identifies its own customer.
 
-Provide the customer's region with -Region so the token exchange reaches the correct regional PatchMyPC.Cloud host.
+Production callers must provide the customer's region with -Region so the token exchange reaches the correct regional Patch My PC host.
 
 ## Parameters
 
@@ -78,7 +78,7 @@ Emit the resolved company, which is otherwise not written to the pipeline.
 
 ### -Region
 
-Production region that owns the customer this token belongs to. Accepted values are Eu, Us, and Uk. Required.
+Production region that owns the customer this token belongs to. Accepted values are Eu, Us, and Uk. Honoured by Release builds; maps to Patch My PC production regional hosts.
 
 | Attribute       | Value             |
 | --------------- | ----------------- |
@@ -91,7 +91,7 @@ Production region that owns the customer this token belongs to. Accepted values 
 
 ### -Token
 
-The personal access token, as created in the Patch My PC portal.
+The personal access token created in the Patch My PC portal.
 
 | Attribute      | Value                          |
 | -------------- | ------------------------------ |
@@ -151,14 +151,13 @@ Reads the token from the environment, as a build agent would, and captures the r
 
 ## Notes
 
-Takes a SecureString so the token is not left in command history or a transcript. What the session can then do is bounded by the scopes the token was granted, so a call may be refused for lack of scope even though authentication succeeded. To list or revoke tokens, use the Access Tokens page of the Patch My PC portal.
+Takes a SecureString so the token is not left in command history or a transcript. What the session can then do is bounded by the scopes the token was granted, so a call may be refused for lack of scope even though authentication succeeded. Manage personal access tokens from the Patch My PC portal.
 
 -Region maps only to Patch My PC production regional hosts.
 
 ## Related links
 
 * [Get-PmpcCloudSession](get-pmpccloudsession.md)
-* [Disconnect-PmpcCloud](disconnect-pmpccloud.md)
 * PowerShell module
 
 ## See also

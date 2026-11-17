@@ -37,7 +37,7 @@ Set-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String>
 
 ## Description
 
-Edits a deployment's name, assignments, categories, Enrollment Status Page profiles, dependencies, and its configuration—conflicting-process behavior, return codes, requirements, install parameters, app-info overrides, and the portal's behavior toggles.
+Edits a deployment's name, assignments, categories, Enrollment Status Page profiles, dependencies, and its configuration -- conflicting-process behaviour, return codes, requirements, install parameters, app-info overrides and the portal's behaviour toggles.
 
 Everything you do not specify is preserved unchanged, including every configuration field you do not name. Fields outside this surface (rings, custom scripts, extra files) are preserved too and cannot be changed here.
 
@@ -71,7 +71,7 @@ Replacement Intune category IDs. An empty array clears them.
 
 ### -Configuration
 
-Deployment configuration changes: conflicting-process behavior, return codes, requirements, install parameters, app-info overrides, and the portal's behavior toggles. Any member left unset keeps the deployment's current value. Build it with New-PmpcDeploymentConfiguration.
+Deployment configuration changes: conflicting-process behaviour, return codes, requirements, install parameters, app-info overrides and the portal's behaviour toggles. Any member left unset keeps the deployment's current value. Replaces the former -AdditionalArgument and -CustomRequirements parameters, which are now members of this object.
 
 | Attribute      | Value                            |
 | -------------- | -------------------------------- |

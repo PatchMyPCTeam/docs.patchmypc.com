@@ -105,13 +105,13 @@ Suspend-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 
 Holds the deployment's scheduled sync.
 
-### Example 2: Pause every deployment during a change freeze
+### Example 2: Pause a deployment selected by ID
 
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Suspend-PmpcDeployment
 ```
 
-Holds all of the application's deployments so no new version rolls out.
+Reads one deployment by both IDs and pipes it to Suspend-PmpcDeployment.
 
 ## Notes
 

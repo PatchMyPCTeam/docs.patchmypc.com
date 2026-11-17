@@ -20,9 +20,9 @@ Disconnect-PmpcCloud [-WhatIf] [-Confirm] [<CommonParameters>]
 
 ## Description
 
-Clears the current session and the selected company. Run Connect-PmpcCloudWithPat to connect again.
+Clears the SDK's cached authentication and selected company, then disposes the session. Any persisted token cache is erased as well, so signing out really does sign out.
 
-If no session is active, the cmdlet does nothing and reports that on the verbose stream.
+Doing nothing when no session is active is not an error; the cmdlet reports it on the verbose stream and returns.
 
 ## Parameters
 
@@ -78,7 +78,7 @@ Clears authentication and disposes the session. A later command reports that you
 
 ## Notes
 
-Disconnecting doesn't revoke your personal access token. To revoke a token, use the Access Tokens page of the Patch My PC portal.
+The sign-out runs before the session is disposed, because clearing credentials goes through the very services the session owns.
 
 ## Related links
 

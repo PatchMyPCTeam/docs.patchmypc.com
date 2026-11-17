@@ -105,17 +105,17 @@ Restart-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 
 Forces Intune to recreate the deployment.
 
-### Example 2: Recreate every failed deployment
+### Example 2: Recreate a deployment selected by ID
 
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Restart-PmpcDeployment
 ```
 
-Pipes failed deployments in and recreates each one.
+Reads one deployment by both IDs and pipes it to Restart-PmpcDeployment.
 
 ## Notes
 
-Named Restart because it stops the deployment and starts it again, which is what recreation amounts to. The equivalent SDK method is RedeployDeploymentAsync.
+Named Restart because it stops the deployment and starts it again, which is what recreation amounts to. The underlying SDK call is RedeployDeploymentAsync.
 
 ## Related links
 

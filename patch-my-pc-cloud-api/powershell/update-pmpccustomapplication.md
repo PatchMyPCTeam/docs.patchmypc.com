@@ -47,7 +47,7 @@ Creates a new version of an existing application from the files in -FolderPath a
 
 This is the cmdlet for shipping new content. To correct metadata on the version that is already published, without creating a new one, use Set-PmpcCustomApplication instead.
 
-Product-level details such as display name, vendor, and description are not part of the update flow; they belong to the application, not to a version.
+Product-level details such as display name, vendor and description are not part of the update flow; they belong to the application, not to a version.
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Pattern matched against the application's Add/Remove Programs display name. Used
 
 ### -ArpVersionMatch
 
-The application's Add/Remove Programs version number: numbers only, with two to four dot-separated parts, for example 24.09 or 1.2.3.4. Wildcards are not accepted. Required when publishing a new version, because each version has its own version number. Also used for detection alongside -ArpDisplayNameMatch.
+Pattern matched against the application's Add/Remove Programs version. When creating or publishing an application version, this also supplies the update version and must be a concrete valid version, such as '24.08'; wildcard patterns are not accepted.
 
 | Attribute      | Value           |
 | -------------- | --------------- |
@@ -364,19 +364,18 @@ Uploads the new version's files and publishes it.
 ### Example 2: Publish a new version found by search
 
 ```powershell
-$app = Find-PmpcCustomApplication | Where-Object ProductId -eq $productId | Select-Object -First 1
-Update-PmpcCustomApplication -ProductId $app.ProductId -UpdateId $app.UpdateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '24.09'
+$app = Find-PmpcCustomApplication -DisplayName 'Contoso File Archiver' | Select-Object -First 1
+if (-not $app) { throw 'No custom application named Contoso File Archiver was found.' }
+Update-PmpcCustomApplication -ProductId $app.ProductId -UpdateId $app.Custom.UpdateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '24.09'
 ```
 
-Reads the product and update IDs from search results before publishing the next version. Get-PmpcCustomApplication returns the product ID but not the update ID.
+Finds the application by name, then uses its product ID and canonical update ID to publish the next version.
 
 ## Notes
 
-Requires both -ProductId and -UpdateId, identifying the application and the version the new one follows. Get them from Find-PmpcCustomApplication.
+Requires both -ProductId and -UpdateId, identifying the application and the update the new one follows. Get the canonical update identifier from Custom.UpdateId on a Find-PmpcCustomApplication result; it is not necessarily tied to that result's displayed summary version. The deprecated top-level UpdateId remains populated for existing callers.
 
-For an MSI installer, provide -MsiProductCode for the new version. The installer type cannot change between versions, so omitting the product code from an MSI update is rejected.
-
-Press Ctrl-C to cancel: the upload is canceled rather than left running to completion in the background.
+Press Ctrl-C to cancel: the upload is cancelled rather than left running to completion in the background.
 
 ## Related links
 

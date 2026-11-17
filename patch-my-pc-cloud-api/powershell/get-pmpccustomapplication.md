@@ -24,7 +24,7 @@ Get-PmpcCustomApplication [-ProductId] <Guid> [<CommonParameters>]
 
 ## Description
 
-Returns the full metadata of one custom application: display name, vendor, version, install arguments, detection rules, and requirements.
+Returns the full metadata of one custom application: display name, vendor, version, install arguments, detection rules and requirements.
 
 ## Parameters
 
@@ -69,10 +69,10 @@ Returns the custom application details.
 ### Example 2: Look up search results
 
 ```powershell
-Find-PmpcCustomApplication -DisplayName '7-Zip' | Get-PmpcCustomApplication
+Find-PmpcCustomApplication -DisplayName 'Contoso File Archiver' | Get-PmpcCustomApplication
 ```
 
-Pipes each search result in by its Id property to fetch full details.
+Pipes each matching custom application in by its Id property to fetch full details. Replace the example name with one in your custom applications catalog.
 
 ## Notes
 

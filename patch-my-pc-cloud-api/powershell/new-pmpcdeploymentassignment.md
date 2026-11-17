@@ -108,11 +108,12 @@ Creates an assignment that installs the application on the group's devices.
 ### Example 2: Build several assignments
 
 ```powershell
+$app = Get-PmpcCustomApplication -ProductId $productId
 $assignments = @(
   New-PmpcDeploymentAssignment -GroupId $pilotGroup -Intent Required
   New-PmpcDeploymentAssignment -GroupId $salesGroup -Intent Available
 )
-New-PmpcDeployment -ProductId $productId -OsType Windows -Assignment $assignments
+New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Assignment $assignments
 ```
 
 Makes the application required for a pilot group and available to a second group.
@@ -137,9 +138,9 @@ Produces the marker the portal writes for an "install app" (or "update only", wi
 
 This cmdlet makes no network call and does not require a session.
 
-The -GroupId and -TargetType forms are separate parameter sets: -GroupId targets a group, while -TargetType covers AllUsers, AllDevices, and NotSet (a no-assignment marker) and takes no group.
+The -GroupId and -TargetType forms are separate parameter sets: -GroupId targets a group, while -TargetType covers AllUsers, AllDevices and NotSet (a no-assignment marker) and takes no group.
 
-The no-assignment intents (NoAssignmentsInstall, NoAssignmentsUpdate) require the NotSet target: either omit -TargetType or pass -TargetType NotSet. Pairing a no-assignment intent with an explicit AllUsers, AllDevices, or Group target is rejected by the service with 400 Bad Request naming the field; it is not silently coerced. Passing -TargetType Group is refused locally, before any call, because that set carries no group id.
+The no-assignment intents (NoAssignmentsInstall, NoAssignmentsUpdate) require the NotSet target: either omit -TargetType or pass -TargetType NotSet. Pairing a no-assignment intent with an explicit AllUsers, AllDevices or Group target is rejected by the broker with a 400 naming the field; it is not silently coerced. Passing -TargetType Group is refused locally, before any call, because that set carries no group id.
 
 ## Related links
 

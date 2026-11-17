@@ -26,7 +26,7 @@ Like creating an application, an update uploads files. The .NET SDK and the Powe
 ## Step 1: Find the application and its current version
 
 1. Search for the application.
-2. Note its `productId` and its `updateId`. The `updateId` identifies the current version, which the new version follows.
+2. Note its `productId` and `custom.updateId`. `custom.updateId` is the canonical ID of the current version, which the new version follows. The deprecated top-level `updateId` is retained only for compatibility.
 
 {% tabs %}
 {% tab title="REST" %}
@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 ```
 
-Each result in `products` has a `productId` and an `updateId`.
+Each custom result has `productId` and `custom.updateId`. The top-level `updateId` is deprecated; use the nested value. `id` and `productId` contain the same application ID.
 
 See [Search applications](../rest-api/applications.md#search-applications).
 {% endtab %}
@@ -61,7 +61,7 @@ See [SearchApplicationsAsync](../sdk/applications.md#searchapplicationsasync).
 {% tab title="PowerShell" %}
 ```powershell
 $current = Find-PmpcCustomApplication -DisplayName 'Contoso Sample Agent' | Select-Object -First 1
-$current | Select-Object DisplayName, Version, ProductId, UpdateId
+$current | Select-Object DisplayName, Version, ProductId, @{ Name = 'UpdateId'; Expression = { $_.Custom.UpdateId } }
 ```
 
 See [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md).
@@ -125,7 +125,7 @@ See [Create update draft](../rest-api/applications.md#create-update-draft) and [
 var updated = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
 {
     ProductId = current.ProductId,
-    UpdateId = current.UpdateId,
+    UpdateId = current.Custom!.UpdateId,
     FolderPath = @"C:\Packages\ContosoAgent-4.3",
     PrimaryInstallerFile = "ContosoAgent.msi",
     MsiProductCode = Guid.Parse("{msi-product-code}"),

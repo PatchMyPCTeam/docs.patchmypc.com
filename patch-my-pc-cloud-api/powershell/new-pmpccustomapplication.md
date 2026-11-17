@@ -50,9 +50,9 @@ New-PmpcCustomApplication [-Metadata] <ApplicationMetadata>
 
 Creates a new custom application for the selected company and uploads everything in -FolderPath, reporting progress as it goes.
 
-Files are hashed, then uploaded singly or in chunks depending on size, then the application is finalized in one call. Upload concurrency, chunk size, and retries can all be tuned; the defaults are sensible for most folders.
+Files are hashed, then uploaded singly or in chunks depending on size, then the application is finalized in one call. Upload concurrency, chunk size and retries can all be tuned; the defaults are sensible for most folders.
 
-Detection defaults to the MSI product code when -MsiProductCode is given, and otherwise to the Add or Remove Programs (ARP) match patterns. Supply -DetectionRules to replace that entirely.
+Detection defaults to the MSI product code when -MsiProductCode is given, and otherwise to the ARP match patterns. Supply -DetectionRules to replace that entirely.
 
 ## Parameters
 
@@ -72,7 +72,7 @@ Architecture the application targets. Defaults to X64.
 
 ### -ArpDisplayNameMatch
 
-Pattern matched against the application's Add/Remove Programs display name. Required when creating an application. Also used for detection when no custom detection rules are supplied.
+Pattern matched against the application's Add/Remove Programs display name. Used for detection when no custom detection rules are supplied.
 
 | Attribute      | Value           |
 | -------------- | --------------- |
@@ -85,7 +85,7 @@ Pattern matched against the application's Add/Remove Programs display name. Requ
 
 ### -ArpVersionMatch
 
-The application's Add/Remove Programs version number: numbers only, with two to four dot-separated parts, for example 24.08 or 1.2.3.4. Wildcards are not accepted. Required when creating an application. Also used for detection alongside -ArpDisplayNameMatch.
+Pattern matched against the application's Add/Remove Programs version. When creating or publishing an application version, this also supplies the update version and must be a concrete valid version, such as '24.08'; wildcard patterns are not accepted.
 
 | Attribute      | Value           |
 | -------------- | --------------- |
@@ -519,23 +519,26 @@ The created application's IDs and upload statistics.
 ### Example 1: Create an application
 
 ```powershell
-New-PmpcCustomApplication -FolderPath .\7zip -PrimaryInstallerFile '7z2408-x64.msi' -DisplayName 'Contoso Archive Tool' -Description 'Sample file archiver' -Publisher 'Contoso' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpDisplayNameMatch '7-Zip*' -ArpVersionMatch '24.08'
+$displayName = "Contoso Archive Tool $([guid]::NewGuid().ToString('N'))"
+New-PmpcCustomApplication -FolderPath .\7zip -PrimaryInstallerFile '7z2408-x64.msi' -DisplayName $displayName -Description 'Sample file archiver' -Publisher 'Contoso' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpDisplayNameMatch '7-Zip*' -ArpVersionMatch '24.08'
 ```
 
-Uploads every file in the folder and creates the application. The custom display name avoids a collision with the public 7-Zip catalog entry.
+Uploads every file in the folder and creates the application. The unique suffix lets you run the example more than once.
 
 ### Example 2: Create an EXE application with detection and silent arguments
 
 ```powershell
-New-PmpcCustomApplication -FolderPath .\app -PrimaryInstallerFile 'setup.exe' -DisplayName 'Contoso App' -Description 'Line of business app' -Publisher 'Contoso' -CmdArguments '/S' -SilentUninstallArg '/S /uninstall' -ArpDisplayNameMatch 'Contoso App*' -ArpVersionMatch '1.0'
+$displayName = "Contoso App $([guid]::NewGuid().ToString('N'))"
+New-PmpcCustomApplication -FolderPath .\app -PrimaryInstallerFile 'setup.exe' -DisplayName $displayName -Description 'Line of business app' -Publisher 'Contoso' -CmdArguments '/S' -SilentUninstallArg '/S /uninstall' -ArpDisplayNameMatch 'Contoso App*' -ArpVersionMatch '1.0'
 ```
 
-Supplies silent install and uninstall arguments and Add/Remove Programs detection values.
+Supplies silent install and uninstall arguments and Add/Remove Programs detection patterns.
 
 ### Example 3: Tune the upload for a large folder
 
 ```powershell
-New-PmpcCustomApplication -FolderPath .\bigapp -PrimaryInstallerFile 'setup.msi' -DisplayName 'Big App' -Description 'Large application' -Publisher 'Contoso' -CmdArguments '/qn' -ArpDisplayNameMatch 'Big App*' -ArpVersionMatch '1.0' -MaxFileConcurrency 8 -ChunkSize 16MB -RetryAttempt 5
+$displayName = "Big App $([guid]::NewGuid().ToString('N'))"
+New-PmpcCustomApplication -FolderPath .\bigapp -PrimaryInstallerFile 'setup.exe' -DisplayName $displayName -Description 'Large application' -Publisher 'Contoso' -CmdArguments '/S' -ArpDisplayNameMatch 'Big App*' -ArpVersionMatch '1.0' -MaxFileConcurrency 8 -ChunkSize 16MB -RetryAttempt 5
 ```
 
 Raises file concurrency and chunk size, and allows more retries on a flaky link.
@@ -543,14 +546,15 @@ Raises file concurrency and chunk size, and allows more retries on a flaky link.
 ### Example 4: Create from a metadata object
 
 ```powershell
+$displayName = "7-Zip $([guid]::NewGuid().ToString('N'))"
 $metadata = [PatchMyPC.Cloud.Models.ApplicationMetadata]::new()
-$metadata.FolderPath = (Resolve-Path '.\7zip').Path
+$metadata.FolderPath = 'C:\Packages\7zip'
 $metadata.PrimaryInstallerFile = '7z2408-x64.msi'
-$metadata.DisplayName = 'Contoso File Archiver'
-$metadata.Description = 'Sample file archiver'
-$metadata.Publisher = 'Contoso'
-$metadata.MsiProductCode = [guid]'{msi-product-code}'
+$metadata.MsiProductCode = '{msi-product-code}'
 $metadata.CmdArguments = '/qn'
+$metadata.DisplayName = $displayName
+$metadata.Description = 'File archiver'
+$metadata.Publisher = 'Igor Pavlov'
 $metadata.ArpDisplayNameMatch = '7-Zip*'
 $metadata.ArpVersionMatch = '24.08'
 New-PmpcCustomApplication -Metadata $metadata
@@ -562,11 +566,7 @@ Uses the SDK metadata type directly, which is useful when the values come from a
 
 Counts against the customer's custom-application limit. Use Remove-PmpcCustomApplication to free a slot.
 
-Choose a display name that does not conflict with an application already available to your company. The example uses a distinct custom-app name with the 7-Zip installer to avoid a collision with the public catalog entry.
-
-The installer type is set by -MsiProductCode: with a product code the application is an MSI, and without one it is an EXE, which also requires -CmdArguments. Provide -MsiProductCode for an MSI installer.
-
-Press Ctrl-C to cancel: the upload is canceled rather than left running to completion in the background.
+Press Ctrl-C to cancel: the upload is cancelled rather than left running to completion in the background.
 
 ## Related links
 

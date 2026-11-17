@@ -25,7 +25,7 @@ New-PmpcDetectionRule [-RulesType] <DetectionRuleType> [-FileRule <FileRuleDto[]
 
 Creates the detection rule set that says whether an application is already installed, as accepted by New-PmpcCustomApplication and Update-PmpcCustomApplication.
 
-Rules come from New-PmpcFileRule, New-PmpcRegistryRule, and New-PmpcScriptRule. A product-code rule is built here rather than by a separate cmdlet because an application has only one MSI product code, so there is nothing to compose.
+Rules come from New-PmpcFileRule, New-PmpcRegistryRule and New-PmpcScriptRule. A product-code rule is built here rather than by a separate cmdlet because an application has only one MSI product code, so there is nothing to compose.
 
 ## Parameters
 
@@ -92,7 +92,7 @@ Registry rules.
 
 ### -RulesType
 
-Which detection strategy the application uses: PMPC (detect by MSI product code, with -ProductCode), Manual (your own file and registry rules), or Script (a detection script).
+Which detection strategy the application uses.
 
 | Attribute       | Value                      |
 | --------------- | -------------------------- |
