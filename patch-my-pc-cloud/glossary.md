@@ -20,7 +20,7 @@ The following is a glossary of terms and abbreviations for our Patch My PC (PMPC
 
 ## L
 
-<table><thead><tr><th valign="top">Term</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">License Owner</td><td valign="top">People listed in our records as authorized contacts for your PMPC Cloud license. License Owners approve or decline License Validation requests.</td></tr></tbody></table>
+<table><thead><tr><th valign="top">Term</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">License Owner</td><td valign="top">People listed in our records as authorized contacts for your PMPC Cloud license. License Owners approve or decline License Validation requests.</td></tr><tr><td valign="top">License Validation request</td><td valign="top">A process to claim ownership of a PMPC Cloud license for a Cloud Company.</td></tr></tbody></table>
 
 ## P
 
