@@ -16,25 +16,31 @@ The `PatchMyPC.Cloud` PowerShell module lets you manage applications and deploym
 
 The module requires PowerShell 7.4 or later on Windows, macOS, or Linux. It's published to the PowerShell Gallery. To install it for your user account, run:
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Install-Module PatchMyPC.Cloud -Scope CurrentUser
 ```
+{% endcode %}
 
 Then import it:
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Import-Module PatchMyPC.Cloud
 ```
+{% endcode %}
 
 ## Connect
 
 Every cmdlet that calls the Cloud Customer API needs a connected session. Connect with a personal access token (PAT) that you created in the Patch My PC portal under **Settings** > **Access Tokens**. [Connect-PmpcCloudWithPat](connect-pmpccloudwithpat.md) exchanges the PAT for an access token, and exchanges the PAT again when the access token expires. Use `-Region` for the region your account is in.
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $token = Read-Host -AsSecureString 'PAT'
 Connect-PmpcCloudWithPat -Token $token -Region Us
 Get-PmpcCustomerInfo
 ```
+{% endcode %}
 
 The session can do everything the token's scopes allow. To create a PAT, choose its scopes, or revoke it, use the portal; see [Create a personal access token](../create-a-personal-access-token.md).
 
@@ -42,10 +48,12 @@ The session can do everything the token's scopes allow. To create a PAT, choose 
 
 The help on these pages ships with the module, so `Get-Help` works without an internet connection. For example:
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-Help New-PmpcDeployment -Full
 Get-Help New-PmpcDeployment -Examples
 ```
+{% endcode %}
 
 ## Cmdlets by area
 
@@ -125,5 +133,5 @@ Cmdlets marked as requiring enablement work only after the feature is enabled fo
 ## Related pages
 
 * [Cross-reference: cmdlets, SDK methods, and REST operations](../cross-reference.md)
-* SDK reference
-* REST API reference
+* [SDK reference](../sdk/)
+* [REST API reference](../rest-api/)

@@ -14,9 +14,11 @@ Gets account information and usage limits for the current customer.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomerInfo [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -44,9 +46,11 @@ Account information and usage limits.
 
 ### Example 1: Show customer information
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomerInfo
 ```
+{% endcode %}
 
 Returns the current customer account details and limits.
 
@@ -58,7 +62,7 @@ Works under either authentication mode. Under a personal access token the token 
 
 * [Get-PmpcSelectedCompany](get-pmpcselectedcompany.md)
 * [Connect-PmpcCloudWithPat](connect-pmpccloudwithpat.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

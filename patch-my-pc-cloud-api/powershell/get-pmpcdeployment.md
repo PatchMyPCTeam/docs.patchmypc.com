@@ -20,15 +20,19 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### List (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment [-ProductId] <Guid> [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Detail
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -90,25 +94,31 @@ The full deployment, when -DeploymentId is supplied.
 
 ### Example 1: List an application's deployments
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $productId
 ```
+{% endcode %}
 
 Returns each deployment with its status and target operating system.
 
 ### Example 2: Get one deployment in full
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 ```
+{% endcode %}
 
 Returns the deployment including categories, ESP profiles and its parent and child deployments.
 
 ### Example 3: Find failed deployments
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $productId | Where-Object Status -eq 'Failed'
 ```
+{% endcode %}
 
 Filters the list down to deployments that need attention.
 
@@ -120,7 +130,7 @@ Scoped to the connection selected with Set-PmpcConnection.
 
 * [New-PmpcDeployment](new-pmpcdeployment.md)
 * [Set-PmpcDeployment](set-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

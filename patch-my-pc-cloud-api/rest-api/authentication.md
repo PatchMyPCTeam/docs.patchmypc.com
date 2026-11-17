@@ -10,7 +10,7 @@ noRobotsIndex: true
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
-Operations that exchange a personal access token for an access token. For the base URL, authentication, rate limits, and errors that apply to every operation, see REST API reference.
+Operations that exchange a personal access token for an access token. For the base URL, authentication, rate limits, and errors that apply to every operation, see [REST API reference](./).
 
 The examples use the US host, `https://us.portal.patchmypc.com`. If your Patch My PC account is in the EU region, use `https://eu.portal.patchmypc.com` instead.
 
@@ -22,9 +22,11 @@ Exchanges a personal access token, supplied in the `Authorization` header as a b
 
 Operation ID: `ExchangePatForToken`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/auth/token
 ```
+{% endcode %}
 
 **Authentication:** None. Send the PAT itself in the `Authorization` header.
 
@@ -40,10 +42,12 @@ POST /v1/api/auth/token
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/auth/token" \
   -H "Authorization: Bearer {personal-access-token}"
 ```
+{% endcode %}
 
 ## Schemas
 

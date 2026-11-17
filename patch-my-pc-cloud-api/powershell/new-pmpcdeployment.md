@@ -20,13 +20,16 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Request (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeployment [-ProductId] <Guid> -Request <CreateDeploymentRequest> [-WhatIf]
   [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Properties
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeployment [-ProductId] <Guid> [-OsType] <OSType> -CatalogEntryId <Guid>
   [-Assignment <CreateDeploymentAssignmentRequest[]>] [-CategoryId <String[]>]
@@ -34,6 +37,7 @@ New-PmpcDeployment [-ProductId] <Guid> [-OsType] <OSType> -CatalogEntryId <Guid>
   [-Template <DeploymentTemplateDto>] [-Configuration <DeploymentConfigurationRequest>]
   [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -230,35 +234,42 @@ The created deployment.
 
 ### Example 1: Create a custom application deployment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomApplication -ProductId $productId | New-PmpcDeployment -OsType Windows -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required)
 ```
+{% endcode %}
 
 The typed custom details supply ProductId and Custom.CatalogEntryId. No product/update ID fallback or automatic catalog lookup occurs during creation.
 
 ### Example 2: Pipe a standalone custom detail block
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $details = Get-PmpcCustomApplication -ProductId $productId
 $assignment = New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required
 $details.Custom | New-PmpcDeployment -OsType Windows -Assignment $assignment
 ```
+{% endcode %}
 
 The canonical Custom block carries both ProductId and CatalogEntryId.
 
 ### Example 3: Choose a public catalog variant
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Get-PmpcApplication -ProductId $productId -OsType Windows
 $variants = @($app.Variants | Where-Object { $_.Architecture -eq 'X64' -and $_.InstallerType -eq 'MSI' -and $_.InstallContext -eq 'System' -and $_.Language -eq $language })
 if ($variants.Count -ne 1) { throw 'Choose exactly one installer combination from Variants.' }
 $variants[0] | New-PmpcDeployment -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required)
 ```
+{% endcode %}
 
 Set $language to the desired value from the returned variants and choose the installer combination deliberately. The selected variant supplies ProductId, CatalogEntryId and OsType. Nothing automatically selects the first variant.
 
 ### Example 4: Create a deployment with a dependency
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Get-PmpcCustomApplication -ProductId $productId
 $parent = @(Get-PmpcDeploymentDependencyCandidate -ProductId $app.ProductId | Where-Object DeploymentId -eq $parentDeploymentId)
@@ -266,11 +277,13 @@ if ($parent.Count -ne 1) { throw 'Choose exactly one intended deployment from th
 $assignment = New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required
 New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Assignment $assignment -ParentDeploymentId $parent[0].DeploymentId
 ```
+{% endcode %}
 
 Set $parentDeploymentId to the ID of the intended prerequisite deployment, chosen from the candidates. This configures the dependency rather than choosing an arbitrary deployment on the connection; it does not wait for installation on a device.
 
 ### Example 5: Create a deployment from the default template
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Get-PmpcCustomApplication -ProductId $productId
 $summary = Get-PmpcDeploymentTemplate | Where-Object IsDefault | Select-Object -First 1
@@ -279,11 +292,13 @@ $t = Get-PmpcDeploymentTemplate -DeploymentTemplateId $summary.DeploymentTemplat
 $assignment = New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required
 New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Template $t -Assignment $assignment
 ```
+{% endcode %}
 
 Reads the default template summary, then retrieves its detailed settings before applying it. The template supplies categories, Enrollment Status Page (ESP) profiles, scope tags, and the configuration block.
 
 ### Example 6: Override one thing the template sets
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Get-PmpcCustomApplication -ProductId $productId
 $summary = Get-PmpcDeploymentTemplate | Where-Object IsDefault | Select-Object -First 1
@@ -292,27 +307,32 @@ $t = Get-PmpcDeploymentTemplate -DeploymentTemplateId $summary.DeploymentTemplat
 $assignment = New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required
 New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Template $t -CategoryId $categoryId -Assignment $assignment
 ```
+{% endcode %}
 
 The explicit category wins; everything else still comes from the template. Define $categoryId as an Intune category ID for your tenant.
 
 ### Example 7: Create a deployment with a configuration
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Get-PmpcCustomApplication -ProductId $productId
 $config = New-PmpcDeploymentConfiguration -AdditionalArgument '/qn' -AppVersionsRetention 3
 New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required) -Configuration $config
 ```
+{% endcode %}
 
 Sets installer arguments and version retention at create time; anything left unset gets the deployment's normal default.
 
 ### Example 8: Create a deployment from a specific template
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Get-PmpcCustomApplication -ProductId $productId
 $t = Get-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
 $assignment = New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required
 New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Template $t -Assignment $assignment
 ```
+{% endcode %}
 
 Set $templateId to the ID of the Windows template you want to apply, listed by Get-PmpcDeploymentTemplate. This retrieves its full settings and applies its categories, ESP profiles, scope tags, supported configuration settings and requirements without making it the default template. The assignment is supplied explicitly; this does not wait for publication or installation.
 
@@ -327,7 +347,7 @@ CatalogEntryId is a durable recipe identity, not ProductId or UpdateId. Creation
 * [New-PmpcDeploymentAssignment](new-pmpcdeploymentassignment.md)
 * [Get-PmpcDeployment](get-pmpcdeployment.md)
 * [Set-PmpcDeployment](set-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

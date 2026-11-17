@@ -18,10 +18,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Remove-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -97,19 +99,23 @@ This cmdlet returns no output.
 
 ### Example 1: Delete a deployment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Remove-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 ```
+{% endcode %}
 
 Prompts for confirmation, then deletes the deployment.
 
 ### Example 2: Delete a deployment after reading it
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $deployment = Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 if (-not $deployment) { throw 'The requested deployment was not found.' }
 Remove-PmpcDeployment -ProductId $deployment.ProductId -DeploymentId $deployment.DeploymentId -Confirm:$false
 ```
+{% endcode %}
 
 Reads one deployment by both IDs, then removes that specific deployment without prompting.
 
@@ -123,7 +129,7 @@ Confirmation impact is High, so this prompts by default. Pass -Confirm:$false to
 
 * [Get-PmpcDeployment](get-pmpcdeployment.md)
 * [New-PmpcDeployment](new-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

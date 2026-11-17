@@ -14,9 +14,11 @@ Builds one installer exit code and the outcome it maps to.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentReturnCode [-Code] <Int32> [-Type] <ReturnCodeType> [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -71,20 +73,24 @@ A single deployment return code.
 
 ### Example 1: Map a soft reboot
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentReturnCode -Code 3010 -Type SoftReboot
 ```
+{% endcode %}
 
 Treats exit code 3010 as a success that requires a reboot.
 
 ### Example 2: Build a full set
 
+{% code collapsedlinecount="10" %}
 ```powershell
 @(
     New-PmpcDeploymentReturnCode -Code 0 -Type Success
     New-PmpcDeploymentReturnCode -Code 1618 -Type Retry
 ) | ForEach-Object { $_ }
 ```
+{% endcode %}
 
 Collects several codes for one configuration.
 
@@ -95,7 +101,7 @@ This cmdlet makes no network call and does not require a session.
 ## Related links
 
 * [New-PmpcDeploymentConfiguration](new-pmpcdeploymentconfiguration.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

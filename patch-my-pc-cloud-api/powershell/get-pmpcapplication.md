@@ -18,10 +18,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcApplication [-ProductId] <Guid> [-ConnectionId <Guid>] [-OsType <OSType>]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -86,25 +88,31 @@ The public catalog application's details.
 
 ### Example 1: Get a public catalog application
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcApplication -ProductId $productId
 ```
+{% endcode %}
 
 Returns the public catalog application details using the session's selected connection.
 
 ### Example 2: Get with an explicit connection
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcApplication -ProductId $productId -ConnectionId $connectionId
 ```
+{% endcode %}
 
 Resolves the product from the Patch My PC public catalog using the specified connection.
 
 ### Example 3: Look up search results
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcApplication -DisplayName '7-Zip' | Get-PmpcApplication
 ```
+{% endcode %}
 
 Pipes each search result in by its Id property to fetch full public application details.
 
@@ -116,7 +124,7 @@ Resolving a public catalog application requires an Intune connection. If -Connec
 
 * [Find-PmpcApplication](find-pmpcapplication.md)
 * [Get-PmpcConnection](get-pmpcconnection.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

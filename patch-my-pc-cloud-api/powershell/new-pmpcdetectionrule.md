@@ -14,12 +14,14 @@ Builds a detection rule set.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDetectionRule [-RulesType] <DetectionRuleType> [-FileRule <FileRuleDto[]>]
   [-RegistryRule <RegistryRuleDto[]>] [-ScriptRule <ScriptRuleDto>]
   [-ProductCode <String>] [-ProductVersion <String>] [-ProductCodeOperator <RuleOperator>]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -135,19 +137,23 @@ The detection rule set.
 
 ### Example 1: Detect by MSI product code
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDetectionRule -RulesType PMPC -ProductCode '{12345678-1234-1234-1234-123456789012}'
 ```
+{% endcode %}
 
 Detects the application by the product code its MSI registers.
 
 ### Example 2: Detect by file and registry
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $file = New-PmpcFileRule -Path 'C:\Program Files\Contoso' -FileOrFolderName 'app.exe' -OperationType Exists
 $reg  = New-PmpcRegistryRule -KeyPath 'HKLM:\SOFTWARE\Contoso\App' -OperationType Exists
 New-PmpcDetectionRule -RulesType Manual -FileRule $file -RegistryRule $reg
 ```
+{% endcode %}
 
 Combines rules built by the rule cmdlets into one set.
 
@@ -161,7 +167,7 @@ This cmdlet makes no network call and does not require a session.
 * [New-PmpcRegistryRule](new-pmpcregistryrule.md)
 * [New-PmpcScriptRule](new-pmpcscriptrule.md)
 * [New-PmpcCustomApplication](new-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

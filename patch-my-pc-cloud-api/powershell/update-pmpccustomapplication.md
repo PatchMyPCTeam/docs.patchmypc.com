@@ -20,6 +20,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Properties (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Update-PmpcCustomApplication [-ProductId] <Guid> [-UpdateId] <Guid> [-FolderPath] <String>
   [-PrimaryInstallerFile] <String> [-ArpVersionMatch <String>]
@@ -30,9 +31,11 @@ Update-PmpcCustomApplication [-ProductId] <Guid> [-UpdateId] <Guid> [-FolderPath
   [-ConflictingProcess <String[]>] [-DetectionRules <DetectionRulesDto>]
   [-CustomRequirements <CustomRequirementsDto>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Metadata
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Update-PmpcCustomApplication [-Metadata] <ApplicationUpdateMetadata>
   [-UploadOption <ChunkUploadOptions>] [-ChunkSize <Int32>] [-MaxChunkConcurrency <Int32>]
@@ -40,6 +43,7 @@ Update-PmpcCustomApplication [-Metadata] <ApplicationUpdateMetadata>
   [-UploadTimeout <TimeSpan>] [-RetryAttempt <Int32>] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -355,19 +359,23 @@ The new version's IDs and upload statistics.
 
 ### Example 1: Publish a new version
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Update-PmpcCustomApplication -ProductId $productId -UpdateId $updateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '24.09'
 ```
+{% endcode %}
 
 Uploads the new version's files and publishes it.
 
 ### Example 2: Publish a new version found by search
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Find-PmpcCustomApplication -DisplayName 'Contoso File Archiver' | Select-Object -First 1
 if (-not $app) { throw 'No custom application named Contoso File Archiver was found.' }
 Update-PmpcCustomApplication -ProductId $app.ProductId -UpdateId $app.Custom.UpdateId -FolderPath .\7zip-2409 -PrimaryInstallerFile '7z2409-x64.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '24.09'
 ```
+{% endcode %}
 
 Finds the application by name, then uses its product ID and canonical update ID to publish the next version.
 
@@ -381,7 +389,7 @@ Press Ctrl-C to cancel: the upload is cancelled rather than left running to comp
 
 * [New-PmpcCustomApplication](new-pmpccustomapplication.md)
 * [Set-PmpcCustomApplication](set-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

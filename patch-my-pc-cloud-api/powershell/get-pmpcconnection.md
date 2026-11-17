@@ -18,9 +18,11 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcConnection [[-Name] <String>] [-ConnectionId <Guid>] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -72,17 +74,21 @@ One object per available connection.
 
 ### Example 1: List connections
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcConnection
 ```
+{% endcode %}
 
 Shows the display name, ID, type and admin-consent state of each connection.
 
 ### Example 2: Find Intune connections
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcConnection | Where-Object Type -eq 'Intune'
 ```
+{% endcode %}
 
 The API currently returns only Intune connections, so this filter makes the intended type explicit.
 
@@ -94,7 +100,7 @@ Requires a selected company. Check the AdminConsent property: a connection witho
 
 * [Set-PmpcConnection](set-pmpcconnection.md)
 * [Get-PmpcSelectedConnection](get-pmpcselectedconnection.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

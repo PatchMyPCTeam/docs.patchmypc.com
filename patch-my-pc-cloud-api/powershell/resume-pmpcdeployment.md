@@ -18,10 +18,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Resume-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -97,17 +99,21 @@ This cmdlet returns no output.
 
 ### Example 1: Resume a deployment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Resume-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 ```
+{% endcode %}
 
 Restarts the deployment's scheduled sync.
 
 ### Example 2: Resume a deployment selected by ID
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Resume-PmpcDeployment
 ```
+{% endcode %}
 
 Reads one deployment by both IDs and pipes it to Resume-PmpcDeployment.
 
@@ -119,7 +125,7 @@ Resuming does not itself push a new version. Use Sync-PmpcDeployment to update i
 
 * [Suspend-PmpcDeployment](suspend-pmpcdeployment.md)
 * [Sync-PmpcDeployment](sync-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

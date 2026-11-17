@@ -18,9 +18,11 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeploymentDependencyCandidate [-ProductId] <Guid> [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -60,17 +62,21 @@ One object per candidate deployment.
 
 ### Example 1: List dependency candidates
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeploymentDependencyCandidate -ProductId $productId
 ```
+{% endcode %}
 
 Returns every deployment on the connection that could be a dependency.
 
 ### Example 2: Find a specific dependency
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeploymentDependencyCandidate -ProductId $productId | Where-Object Name -like '*Visual C++*'
 ```
+{% endcode %}
 
 Narrows a connection-wide list down to the runtime the application depends on.
 
@@ -82,7 +88,7 @@ The candidate list is connection-wide rather than product-scoped. The product ID
 
 * [New-PmpcDeployment](new-pmpcdeployment.md)
 * [Set-PmpcDeployment](set-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

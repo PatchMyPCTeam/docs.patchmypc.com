@@ -20,23 +20,29 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Name (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcConnection [-Name] <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ### ConnectionId
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcConnection -ConnectionId <Guid> [-PassThru] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ### InputObject
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcConnection [-InputObject] <ConnectionDto> [-PassThru] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -142,17 +148,21 @@ Returned only with -PassThru.
 
 ### Example 1: Select a connection by name
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcConnection -Name 'Contoso Intune'
 ```
+{% endcode %}
 
 Resolves the name against the available connections and selects the match.
 
 ### Example 2: Select a connection from the pipeline
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcConnection | Where-Object Type -eq 'Intune' | Set-PmpcConnection -PassThru
 ```
+{% endcode %}
 
 Selects the connection object directly and emits what was selected.
 
@@ -164,7 +174,7 @@ Selecting a connection does not change the selected company, but the connection 
 
 * [Get-PmpcConnection](get-pmpcconnection.md)
 * [Get-PmpcSelectedConnection](get-pmpcselectedconnection.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

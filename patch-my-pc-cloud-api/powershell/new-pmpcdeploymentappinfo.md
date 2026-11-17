@@ -14,12 +14,14 @@ Builds the catalogue metadata shown for a deployment.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAppInfo [[-CustomVendor] <String>] [-CustomDeveloper <String>]
   [-CustomOwner <String>] [-CustomDescription <String>] [-CustomNotes <String>]
   [-CustomInformationUrl <String>] [-CustomPrivacyUrl <String>] [-IsFeatured <Boolean>]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -145,17 +147,21 @@ The deployment app-information overrides.
 
 ### Example 1: Override the owner
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAppInfo -CustomOwner 'Workplace IT'
 ```
+{% endcode %}
 
 Sets the owner and leaves every other catalogue value in place.
 
 ### Example 2: Feature the application
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAppInfo -IsFeatured $true -CustomDescription 'Approved browser'
 ```
+{% endcode %}
 
 Features the application in the Company Portal and replaces its description.
 
@@ -166,7 +172,7 @@ This cmdlet makes no network call and does not require a session.
 ## Related links
 
 * [New-PmpcDeploymentConfiguration](new-pmpcdeploymentconfiguration.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

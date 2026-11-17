@@ -63,13 +63,13 @@ Some operationsâ€”for example deployments and editing or deleting applicationsâ€
 
 ### REST API
 
-* REST API reference
+* [REST API reference](rest-api/)
   * [Authentication](rest-api/authentication.md)
   * [Applications](rest-api/applications.md)
 
 ### .NET SDK
 
-* .NET SDK
+* [.NET SDK](sdk/)
   * [Install and configure the SDK](sdk/install-and-configure.md)
   * [Results and errors](sdk/results-and-errors.md)
   * [SDK authentication methods](sdk/authentication.md)
@@ -81,7 +81,7 @@ Some operationsâ€”for example deployments and editing or deleting applicationsâ€
 
 ### PowerShell module
 
-* PowerShell module
+* [PowerShell module](powershell/)
   * [Connect-PmpcCloudWithPat](powershell/connect-pmpccloudwithpat.md)
   * [Disconnect-PmpcCloud](powershell/disconnect-pmpccloud.md)
   * [Find-PmpcApplication](powershell/find-pmpcapplication.md)

@@ -14,11 +14,13 @@ Builds a registry rule.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcRegistryRule [-KeyPath] <String> [-OperationType] <RegistryRuleOperationType>
   [[-ValueName] <String>] [-Operator <RuleOperator>] [-ComparisonValue <String>]
   [-Check32BitOn64System] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -122,17 +124,21 @@ The registry rule.
 
 ### Example 1: Detect an uninstall key
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcRegistryRule -KeyPath 'HKLM:\SOFTWARE\Contoso\App' -OperationType Exists
 ```
+{% endcode %}
 
 Passes when the key is present.
 
 ### Example 2: Compare a version value
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcRegistryRule -KeyPath 'HKLM:\SOFTWARE\Contoso\App' -ValueName 'Version' -OperationType Version -Operator GreaterThanOrEqual -ComparisonValue '2.1.0'
 ```
+{% endcode %}
 
 Passes when the recorded version is 2.1.0 or newer.
 
@@ -144,7 +150,7 @@ This cmdlet makes no network call and does not require a session.
 
 * [New-PmpcDetectionRule](new-pmpcdetectionrule.md)
 * [New-PmpcRequirement](new-pmpcrequirement.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

@@ -18,10 +18,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Suspend-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -99,17 +101,21 @@ This cmdlet returns no output.
 
 ### Example 1: Pause a deployment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Suspend-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 ```
+{% endcode %}
 
 Holds the deployment's scheduled sync.
 
 ### Example 2: Pause a deployment selected by ID
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Suspend-PmpcDeployment
 ```
+{% endcode %}
 
 Reads one deployment by both IDs and pipes it to Suspend-PmpcDeployment.
 
@@ -121,7 +127,7 @@ Pausing is reflected in the SyncOnHold property returned by Get-PmpcDeployment.
 
 * [Resume-PmpcDeployment](resume-pmpcdeployment.md)
 * [Sync-PmpcDeployment](sync-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

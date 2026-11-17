@@ -20,6 +20,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Criteria (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcCustomApplication [[-DisplayName] <String>] [-VendorId <Guid[]>]
   [-Language <String[]>] [-Architecture <RequirementArchitecture[]>]
@@ -28,13 +29,16 @@ Find-PmpcCustomApplication [[-DisplayName] <String>] [-VendorId <Guid[]>]
   [-Limit <Int32>] [-SortField <String>] [-Descending] [-IncludeIconData] [-AsResponse]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Filter
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcCustomApplication [-Filter] <ProductFilterRequest> [-AsResponse]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -264,33 +268,41 @@ The whole response including total counts, with -AsResponse.
 
 ### Example 1: Search by name
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcCustomApplication -DisplayName '7-Zip'
 ```
+{% endcode %}
 
 Returns custom applications whose display name contains 7-Zip.
 
 ### Example 2: Page through results
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcCustomApplication -DisplayName 'Adobe' -Skip 50 -Limit 50
 ```
+{% endcode %}
 
 Returns the second page of 50 matches.
 
 ### Example 3: Get the total match count
 
+{% code collapsedlinecount="10" %}
 ```powershell
 (Find-PmpcCustomApplication -DisplayName 'Adobe' -Limit 1 -AsResponse).TotalAmount
 ```
+{% endcode %}
 
 Asks for the count without pulling every match down.
 
 ### Example 4: Find recently changed applications
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcCustomApplication -LastModifiedFrom (Get-Date).AddDays(-7) -SortField 'LastUpdated' -Descending
 ```
+{% endcode %}
 
 Returns custom applications modified in the last week, newest first.
 
@@ -304,7 +316,7 @@ Custom.UpdateId is the canonical update identifier for each custom search result
 
 * [Get-PmpcCustomApplication](get-pmpccustomapplication.md)
 * [New-PmpcCustomApplication](new-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

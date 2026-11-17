@@ -18,9 +18,11 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeploymentTemplate [-DeploymentTemplateId] <String> [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -70,25 +72,31 @@ The template settings when an id is supplied.
 
 ### Example 1: List the templates on the selected connection
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeploymentTemplate
 ```
+{% endcode %}
 
 Returns every template, including which one is the connection default.
 
 ### Example 2: Find the default template
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeploymentTemplate | Where-Object IsDefault
 ```
+{% endcode %}
 
 The default is what a deployment created without a template inherits.
 
 ### Example 3: Read one template in detail
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
 ```
+{% endcode %}
 
 Returns the settings a deployment created from this template would inherit.
 
@@ -100,7 +108,7 @@ Requires a selected company and connection. Custom install scripts, PSADT versio
 
 * [New-PmpcDeployment](new-pmpcdeployment.md)
 * [New-PmpcDeploymentRequirement](new-pmpcdeploymentrequirement.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

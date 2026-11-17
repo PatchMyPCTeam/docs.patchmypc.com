@@ -18,9 +18,11 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcApplicationFile [-ProductId] <Guid> [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -62,17 +64,21 @@ One object per file.
 
 ### Example 1: List an application's files
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcApplicationFile -ProductId $productId
 ```
+{% endcode %}
 
 Returns each file with its size, type and hashes.
 
 ### Example 2: Total an application's size
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcApplicationFile -ProductId $productId | Measure-Object -Property FileSize -Sum
 ```
+{% endcode %}
 
 Sums the file sizes to find how large the application is.
 
@@ -84,7 +90,7 @@ Set-PmpcCustomApplication does this itself when it needs to, so callers editing 
 
 * [Get-PmpcCustomApplication](get-pmpccustomapplication.md)
 * [Set-PmpcCustomApplication](set-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

@@ -14,6 +14,7 @@ Builds a deployment's optional configuration block.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentConfiguration [[-AdditionalArgument] <String>]
   [-InstallLoggingPath <String>]
@@ -24,6 +25,7 @@ New-PmpcDeploymentConfiguration [[-AdditionalArgument] <String>]
   [-AllowAvailableUninstall <Boolean>] [-RemoveDesktopShortcuts <Boolean>]
   [-AppVersionsRetention <Int32>] [-RoleScopeTagId <String[]>] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -190,24 +192,29 @@ The deployment configuration block.
 
 ### Example 1: Set the install log path
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentConfiguration -InstallLoggingPath 'C:\Windows\Logs\Contoso'
 ```
+{% endcode %}
 
 Sets only the logging path. Every other configuration field stays unspecified, so the deployment keeps its usual values.
 
 ### Example 2: Compose requirements and metadata
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $req  = New-PmpcDeploymentRequirement -MinimumMemoryInMB 8192
 $info = New-PmpcDeploymentAppInfo -CustomOwner 'Workplace IT' -IsFeatured $true
 New-PmpcDeploymentConfiguration -CustomRequirements $req -AppInfo $info
 ```
+{% endcode %}
 
 Builds the nested pieces separately and combines them into one configuration.
 
 ### Example 3: Replace the exit codes
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $codes = @(
     New-PmpcDeploymentReturnCode -Code 0 -Type Success
@@ -215,6 +222,7 @@ $codes = @(
 )
 New-PmpcDeploymentConfiguration -ReturnCode $codes
 ```
+{% endcode %}
 
 The set replaces the deployment's codes outright, so list every code it should have.
 
@@ -227,7 +235,7 @@ This cmdlet makes no network call and does not require a session.
 * [New-PmpcDeploymentAppInfo](new-pmpcdeploymentappinfo.md)
 * [New-PmpcDeploymentReturnCode](new-pmpcdeploymentreturncode.md)
 * [New-PmpcDeploymentRequirement](new-pmpcdeploymentrequirement.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

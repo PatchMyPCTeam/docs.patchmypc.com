@@ -20,6 +20,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Properties (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcCustomApplication [-ProductId] <Guid> [-UpdateId <Guid>] [-DisplayName <String>]
   [-Description <String>] [-Publisher <String>] [-Owner <String>] [-Developer <String>]
@@ -32,9 +33,11 @@ Set-PmpcCustomApplication [-ProductId] <Guid> [-UpdateId <Guid>] [-DisplayName <
   [-ConflictingProcess <String[]>] [-DetectionRules <DetectionRulesDto>]
   [-CustomRequirements <CustomRequirementsDto>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Metadata
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcCustomApplication [-Metadata] <ApplicationEditMetadata>
   [-UploadOption <ChunkUploadOptions>] [-ChunkSize <Int32>] [-MaxChunkConcurrency <Int32>]
@@ -42,6 +45,7 @@ Set-PmpcCustomApplication [-Metadata] <ApplicationEditMetadata>
   [-UploadTimeout <TimeSpan>] [-RetryAttempt <Int32>] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -461,33 +465,41 @@ The edited application's IDs and upload statistics.
 
 ### Example 1: Correct a display name
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcCustomApplication -ProductId $productId -DisplayName '7-Zip (x64)'
 ```
+{% endcode %}
 
 Changes only the display name; every other property, and the whole file list, is left untouched.
 
 ### Example 2: Replace the icon
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcCustomApplication -ProductId $productId -IconPath .\icons\7zip.png
 ```
+{% endcode %}
 
 Uploads the new icon and leaves the application's files alone.
 
 ### Example 3: Replace the application's files
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcCustomApplication -ProductId $productId -FolderPath .\7zip-fixed -PrimaryInstallerFile '7z2408-x64.msi'
 ```
+{% endcode %}
 
 Hashes the folder and uploads only the files whose content actually changed.
 
 ### Example 4: Clear the conflicting-process list
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcCustomApplication -ProductId $productId -ConflictingProcess @()
 ```
+{% endcode %}
 
 An explicitly empty array clears the list; omitting the parameter would keep it.
 
@@ -504,7 +516,7 @@ The underlying endpoint is a full replacement, but this cmdlet is not. The SDK r
 * [Update-PmpcCustomApplication](update-pmpccustomapplication.md)
 * [Get-PmpcCustomApplication](get-pmpccustomapplication.md)
 * [Get-PmpcApplicationFile](get-pmpcapplicationfile.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

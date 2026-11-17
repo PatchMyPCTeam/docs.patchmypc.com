@@ -18,10 +18,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Sync-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -99,17 +101,21 @@ This cmdlet returns no output.
 
 ### Example 1: Sync a deployment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Sync-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 ```
+{% endcode %}
 
 Updates the deployment to the latest pending version.
 
 ### Example 2: Sync a deployment selected by ID
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Sync-PmpcDeployment
 ```
+{% endcode %}
 
 Reads one deployment by both IDs and pipes it to Sync-PmpcDeployment.
 
@@ -121,7 +127,7 @@ Scoped to the connection selected with Set-PmpcConnection.
 
 * [Restart-PmpcDeployment](restart-pmpcdeployment.md)
 * [Suspend-PmpcDeployment](suspend-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

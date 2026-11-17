@@ -18,6 +18,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcDeploymentTemplate [-DeploymentTemplateId] <String> -TemplateName <String>
   [-OsType <OSType>] [-Default] [-BuiltInUpdate <BuiltInUpdate>]
@@ -28,6 +29,7 @@ Set-PmpcDeploymentTemplate [-DeploymentTemplateId] <String> -TemplateName <Strin
   [-CustomRequirements <EditDeploymentCustomRequirementsRequest>] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -289,14 +291,17 @@ The updated template, read back from the service.
 
 ### Example 1: Replace a template with minimal settings
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcDeploymentTemplate -DeploymentTemplateId $templateId -TemplateName 'Windows 11 baseline (2026)'
 ```
+{% endcode %}
 
 Every other setting is replaced with its default, because the update replaces rather than merges.
 
 ### Example 2: Change one setting and keep the rest
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $t = Get-PmpcDeploymentTemplate -DeploymentTemplateId $templateId
 $requirements = if ($null -ne $t.CustomRequirements) {
@@ -330,6 +335,7 @@ $settings = @{
 }
 Set-PmpcDeploymentTemplate @settings
 ```
+{% endcode %}
 
 Changes only AppVersionsRetention among the settings returned by Get-PmpcDeploymentTemplate. The other settings are explicitly copied back, including default status, category, ESP profile and scope tag IDs. New-PmpcDeploymentRequirement converts the returned requirements into the input type Set-PmpcDeploymentTemplate accepts.
 
@@ -343,7 +349,7 @@ Because the update replaces the whole template, omitting -CustomRequirements cle
 
 * [Get-PmpcDeploymentTemplate](get-pmpcdeploymenttemplate.md)
 * [New-PmpcDeploymentTemplate](new-pmpcdeploymenttemplate.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

@@ -14,12 +14,14 @@ Builds a script rule.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcScriptRule [-DisplayName] <String> [-ScriptContent] <String>
   [-OperationType] <ScriptRuleOperationType> [-Operator <RuleOperator>]
   [-ComparisonValue <String>] [-RunAsUser] [-EnforceSignatureCheck] [-RunAs32Bit]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -147,10 +149,12 @@ The script rule.
 
 ### Example 1: Detect with a script
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $script = Get-Content .\detect.ps1 -Raw
 New-PmpcScriptRule -DisplayName 'Contoso detection' -ScriptContent $script -OperationType Boolean -Operator Equal -ComparisonValue 'true'
 ```
+{% endcode %}
 
 Reads the script from disk and sends its contents, not its path.
 
@@ -162,7 +166,7 @@ This cmdlet makes no network call and does not require a session.
 
 * [New-PmpcDetectionRule](new-pmpcdetectionrule.md)
 * [New-PmpcRequirement](new-pmpcrequirement.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

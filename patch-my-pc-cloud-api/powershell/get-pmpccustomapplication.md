@@ -18,9 +18,11 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomApplication [-ProductId] <Guid> [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -60,17 +62,21 @@ The custom application's details.
 
 ### Example 1: Get a custom application
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomApplication -ProductId $productId
 ```
+{% endcode %}
 
 Returns the custom application details.
 
 ### Example 2: Look up search results
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcCustomApplication -DisplayName 'Contoso File Archiver' | Get-PmpcCustomApplication
 ```
+{% endcode %}
 
 Pipes each matching custom application in by its Id property to fetch full details. Replace the example name with one in your custom applications catalog.
 
@@ -83,7 +89,7 @@ The returned object does not include the application's file list; use Get-PmpcAp
 * [Find-PmpcCustomApplication](find-pmpccustomapplication.md)
 * [Get-PmpcApplicationFile](get-pmpcapplicationfile.md)
 * [New-PmpcCustomApplication](new-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

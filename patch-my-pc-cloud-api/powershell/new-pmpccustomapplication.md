@@ -20,6 +20,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Properties (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcCustomApplication [-FolderPath] <String> [-PrimaryInstallerFile] <String>
   [-DisplayName] <String> -Description <String> -Publisher <String>
@@ -35,9 +36,11 @@ New-PmpcCustomApplication [-FolderPath] <String> [-PrimaryInstallerFile] <String
   [-DetectionRules <DetectionRulesDto>] [-CustomRequirements <CustomRequirementsDto>]
   [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Metadata
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcCustomApplication [-Metadata] <ApplicationMetadata>
   [-UploadOption <ChunkUploadOptions>] [-ChunkSize <Int32>] [-MaxChunkConcurrency <Int32>]
@@ -45,6 +48,7 @@ New-PmpcCustomApplication [-Metadata] <ApplicationMetadata>
   [-UploadTimeout <TimeSpan>] [-RetryAttempt <Int32>] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -518,33 +522,40 @@ The created application's IDs and upload statistics.
 
 ### Example 1: Create an application
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $displayName = "Contoso Archive Tool $([guid]::NewGuid().ToString('N'))"
 New-PmpcCustomApplication -FolderPath .\7zip -PrimaryInstallerFile '7z2408-x64.msi' -DisplayName $displayName -Description 'Sample file archiver' -Publisher 'Contoso' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpDisplayNameMatch '7-Zip*' -ArpVersionMatch '24.08'
 ```
+{% endcode %}
 
 Uploads every file in the folder and creates the application. The unique suffix lets you run the example more than once.
 
 ### Example 2: Create an EXE application with detection and silent arguments
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $displayName = "Contoso App $([guid]::NewGuid().ToString('N'))"
 New-PmpcCustomApplication -FolderPath .\app -PrimaryInstallerFile 'setup.exe' -DisplayName $displayName -Description 'Line of business app' -Publisher 'Contoso' -CmdArguments '/S' -SilentUninstallArg '/S /uninstall' -ArpDisplayNameMatch 'Contoso App*' -ArpVersionMatch '1.0'
 ```
+{% endcode %}
 
 Supplies silent install and uninstall arguments and Add/Remove Programs detection patterns.
 
 ### Example 3: Tune the upload for a large folder
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $displayName = "Big App $([guid]::NewGuid().ToString('N'))"
 New-PmpcCustomApplication -FolderPath .\bigapp -PrimaryInstallerFile 'setup.exe' -DisplayName $displayName -Description 'Large application' -Publisher 'Contoso' -CmdArguments '/S' -ArpDisplayNameMatch 'Big App*' -ArpVersionMatch '1.0' -MaxFileConcurrency 8 -ChunkSize 16MB -RetryAttempt 5
 ```
+{% endcode %}
 
 Raises file concurrency and chunk size, and allows more retries on a flaky link.
 
 ### Example 4: Create from a metadata object
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $displayName = "7-Zip $([guid]::NewGuid().ToString('N'))"
 $metadata = [PatchMyPC.Cloud.Models.ApplicationMetadata]::new()
@@ -559,6 +570,7 @@ $metadata.ArpDisplayNameMatch = '7-Zip*'
 $metadata.ArpVersionMatch = '24.08'
 New-PmpcCustomApplication -Metadata $metadata
 ```
+{% endcode %}
 
 Uses the SDK metadata type directly, which is useful when the values come from a configuration file.
 
@@ -573,7 +585,7 @@ Press Ctrl-C to cancel: the upload is cancelled rather than left running to comp
 * [Update-PmpcCustomApplication](update-pmpccustomapplication.md)
 * [Set-PmpcCustomApplication](set-pmpccustomapplication.md)
 * [Remove-PmpcCustomApplication](remove-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

@@ -20,6 +20,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Criteria (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcApplication [[-DisplayName] <String>] [-VendorId <Guid[]>] [-Language <String[]>]
   [-Architecture <RequirementArchitecture[]>] [-ConnectionId <Guid>] [-OsType <OSType>]
@@ -28,12 +29,15 @@ Find-PmpcApplication [[-DisplayName] <String>] [-VendorId <Guid[]>] [-Language <
   [-Limit <Int32>] [-SortField <String>] [-Descending] [-IncludeIconData] [-AsResponse]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Filter
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcApplication [-Filter] <ProductFilterRequest> [-AsResponse] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -290,41 +294,51 @@ The whole response including total counts, with -AsResponse.
 
 ### Example 1: Search public catalog by name
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcApplication -DisplayName '7-Zip'
 ```
+{% endcode %}
 
 Returns public catalog applications whose display name contains 7-Zip, using the selected connection.
 
 ### Example 2: Search with an explicit connection
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcApplication -DisplayName 'Notepad++' -ConnectionId $connectionId
 ```
+{% endcode %}
 
 Searches the Patch My PC public catalog scoped by the specified Intune connection.
 
 ### Example 3: Page through results
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcApplication -DisplayName 'Adobe' -Skip 50 -Limit 50
 ```
+{% endcode %}
 
 Returns the second page of 50 matches.
 
 ### Example 4: Search macOS applications
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcApplication -DisplayName 'Zoom' -OsType MacOS
 ```
+{% endcode %}
 
 Searches the public catalog for macOS applications. Requires the customer's "macOS Applications" entitlement; results are returned as empty when the customer is not entitled.
 
 ### Example 5: Get the total match count
 
+{% code collapsedlinecount="10" %}
 ```powershell
 (Find-PmpcApplication -DisplayName 'Adobe' -Limit 1 -AsResponse).TotalAmount
 ```
+{% endcode %}
 
 Asks for the count without pulling every match down.
 
@@ -340,7 +354,7 @@ Inspect Pmpc.Architectures, Pmpc.Languages, Pmpc.InstallerTypes, and Pmpc.Instal
 
 * [Get-PmpcApplication](get-pmpcapplication.md)
 * [Get-PmpcConnection](get-pmpcconnection.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

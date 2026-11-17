@@ -16,17 +16,21 @@ Builds an assignment for a deployment.
 
 ### Group (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAssignment [-GroupId] <String> [-Intent] <InstallationIntent>
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Target
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAssignment [-Intent] <InstallationIntent>
   -TargetType <AssignmentTargetType> [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -99,14 +103,17 @@ The assignment object.
 
 ### Example 1: Build a required assignment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAssignment -GroupId $groupId -Intent Required
 ```
+{% endcode %}
 
 Creates an assignment that installs the application on the group's devices.
 
 ### Example 2: Build several assignments
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $app = Get-PmpcCustomApplication -ProductId $productId
 $assignments = @(
@@ -115,22 +122,27 @@ $assignments = @(
 )
 New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.Custom.CatalogEntryId -OsType Windows -Assignment $assignments
 ```
+{% endcode %}
 
 Makes the application required for a pilot group and available to a second group.
 
 ### Example 3: Assign to All Devices
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAssignment -TargetType AllDevices -Intent Required
 ```
+{% endcode %}
 
 Targets every managed device in the tenant, with no group. Use AllUsers for every user.
 
 ### Example 4: Create an install-app deployment assigned to nobody
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentAssignment -TargetType NotSet -Intent NoAssignmentsInstall
 ```
+{% endcode %}
 
 Produces the marker the portal writes for an "install app" (or "update only", with NoAssignmentsUpdate) deployment that is assigned to no group.
 
@@ -146,7 +158,7 @@ The no-assignment intents (NoAssignmentsInstall, NoAssignmentsUpdate) require th
 
 * [New-PmpcDeployment](new-pmpcdeployment.md)
 * [Set-PmpcDeployment](set-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

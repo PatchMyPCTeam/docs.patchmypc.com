@@ -14,9 +14,11 @@ Signs out and tears down the module's session.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Disconnect-PmpcCloud [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -70,9 +72,11 @@ This cmdlet returns no output.
 
 ### Example 1: Sign out
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Disconnect-PmpcCloud
 ```
+{% endcode %}
 
 Clears authentication and disposes the session. A later command reports that you are not connected.
 
@@ -83,7 +87,7 @@ The sign-out runs before the session is disposed, because clearing credentials g
 ## Related links
 
 * [Get-PmpcCloudSession](get-pmpccloudsession.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

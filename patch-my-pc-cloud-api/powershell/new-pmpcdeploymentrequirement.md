@@ -14,12 +14,14 @@ Builds a deployment's installation requirements.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentRequirement [[-DisableArchitecture] <ApplicableArchitecture[]>]
   [-MinimumWindowsOSVersion <WindowsOSVersion>] [-MinimumNumberOfProcessors <Int32>]
   [-MinimumMemoryInMB <Int32>] [-MinimumCpuSpeedInMHz <Int32>] [-FileRule <FileRuleDto[]>]
   [-RegistryRule <RegistryRuleDto[]>] [-ScriptRule <ScriptRuleDto[]>] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -147,19 +149,23 @@ The deployment requirement set.
 
 ### Example 1: Block 32-bit installs
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $requirements = New-PmpcDeploymentRequirement -DisableArchitecture X86
 $config = New-PmpcDeploymentConfiguration -CustomRequirements $requirements
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Configuration $config
 ```
+{% endcode %}
 
 Stops the deployment installing on x86, leaving every other requirement untouched.
 
 ### Example 2: Raise the memory floor
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentRequirement -MinimumMemoryInMB 16384
 ```
+{% endcode %}
 
 Sets only the memory requirement; unmentioned rules are left alone.
 
@@ -171,7 +177,7 @@ This cmdlet makes no network call and does not require a session.
 
 * [New-PmpcRequirement](new-pmpcrequirement.md)
 * [Set-PmpcDeployment](set-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

@@ -20,6 +20,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ### Properties (Default)
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [-Name <String>]
   [-Assignment <CreateDeploymentAssignmentRequest[]>]
@@ -27,13 +28,16 @@ Set-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [-Name <String>]
   [-EspProfileId <String[]>] [-ParentDeploymentId <String[]>] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ### Request
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String>
   -Request <EditDeploymentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -204,43 +208,53 @@ The updated deployment.
 
 ### Example 1: Rename a deployment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Name '7-Zip (Pilot)'
 ```
+{% endcode %}
 
 Changes only the name; assignments and every other setting are untouched.
 
 ### Example 2: Replace the assignments
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Assignment (New-PmpcDeploymentAssignment -GroupId $groupId -Intent Available)
 ```
+{% endcode %}
 
 Replaces the deployment's group assignments with a single available assignment.
 
 ### Example 3: Change one configuration setting
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $config = New-PmpcDeploymentConfiguration -AppVersionsRetention 5
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Configuration $config
 ```
+{% endcode %}
 
 Changes only the retention count. Every other configuration setting the deployment already has, including its conflicting-process behaviour and return codes, is left alone.
 
 ### Example 4: Change the installer arguments
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $config = New-PmpcDeploymentConfiguration -AdditionalArgument '/qn REBOOT=ReallySuppress'
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -Configuration $config
 ```
+{% endcode %}
 
 AdditionalArgument is a member of -Configuration; it used to be a parameter of its own.
 
 ### Example 5: Remove all categories
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Set-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId -CategoryId @()
 ```
+{% endcode %}
 
 An explicitly empty array clears the categories; omitting the parameter would keep them.
 
@@ -256,7 +270,7 @@ The selected connection is applied automatically; any connection set on a reques
 
 * [Get-PmpcDeployment](get-pmpcdeployment.md)
 * [New-PmpcDeployment](new-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

@@ -14,11 +14,13 @@ Authenticates using a personal access token.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Connect-PmpcCloudWithPat [-Token] <SecureString> [-PassThru] [-Region <PmpcCloudRegion>]
   [-ConfigurationFile <String>] [-MaxSingleFileUploadSize <Int64>] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -133,19 +135,23 @@ The customer the token belongs to. Emitted only with -PassThru.
 
 ### Example 1: Authenticate from a stored token
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $token = Read-Host -AsSecureString "PAT"
 Connect-PmpcCloudWithPat -Token $token -Region Us
 ```
+{% endcode %}
 
 Prompts without echoing the token, then authenticates against the US production region.
 
 ### Example 2: Authenticate unattended and keep the company
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $token = ConvertTo-SecureString $env:PMPC_PAT -AsPlainText -Force
 $company = Connect-PmpcCloudWithPat -Token $token -Region Eu -PassThru
 ```
+{% endcode %}
 
 Reads the token from the environment, as a build agent would, and captures the resolved customer.
 
@@ -158,7 +164,7 @@ Takes a SecureString so the token is not left in command history or a transcript
 ## Related links
 
 * [Get-PmpcCloudSession](get-pmpccloudsession.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

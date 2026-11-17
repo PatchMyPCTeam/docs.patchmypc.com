@@ -14,11 +14,13 @@ Builds a file or folder rule.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcFileRule [-Path] <String> [-FileOrFolderName] <String>
   [-OperationType] <FileRuleOperationType> [-Operator <RuleOperator>]
   [-ComparisonValue <String>] [-Check32BitOn64System] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -122,17 +124,21 @@ The file rule.
 
 ### Example 1: Detect an installed executable
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcFileRule -Path 'C:\Program Files\Contoso' -FileOrFolderName 'app.exe' -OperationType Exists
 ```
+{% endcode %}
 
 Passes when the file is present.
 
 ### Example 2: Require a minimum file version
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcFileRule -Path 'C:\Program Files\Contoso' -FileOrFolderName 'app.exe' -OperationType Version -Operator GreaterThanOrEqual -ComparisonValue '2.1.0'
 ```
+{% endcode %}
 
 Passes when the installed file is version 2.1.0 or newer.
 
@@ -144,7 +150,7 @@ This cmdlet makes no network call and does not require a session.
 
 * [New-PmpcDetectionRule](new-pmpcdetectionrule.md)
 * [New-PmpcRequirement](new-pmpcrequirement.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

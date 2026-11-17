@@ -14,9 +14,11 @@ Gets the company the session is currently scoped to.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcSelectedCompany [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -44,9 +46,11 @@ The selected company, or nothing when none is selected.
 
 ### Example 1: Show the selected company
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcSelectedCompany
 ```
+{% endcode %}
 
 Returns the current company, or nothing if none is selected.
 
@@ -56,7 +60,7 @@ Writes an explanatory message to the verbose stream, rather than an error, when 
 
 ## Related links
 
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

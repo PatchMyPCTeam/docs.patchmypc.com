@@ -10,7 +10,7 @@ noRobotsIndex: true
 
 [Back to the Cloud Customer API overview](https://docs.patchmypc.com/patch-my-pc-cloud-api)
 
-Operations for your account, connections, applications, deployments, and deployment templates. For the base URL, authentication, rate limits, and errors that apply to every operation, see REST API reference.
+Operations for your account, connections, applications, deployments, and deployment templates. For the base URL, authentication, rate limits, and errors that apply to every operation, see [REST API reference](./).
 
 The examples use the US host, `https://us.portal.patchmypc.com`. If your Patch My PC account is in the EU region, use `https://eu.portal.patchmypc.com` instead.
 
@@ -24,9 +24,11 @@ Retrieves information about your customer account, including its license and usa
 
 Operation ID: `GetCustomerInfo`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/customer-info
 ```
+{% endcode %}
 
 **Required PAT scope:** `appcatbroker:customer:read`
 
@@ -44,10 +46,12 @@ GET /v1/api/customer-info
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/customer-info" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Get available connections
 
@@ -55,9 +59,11 @@ Lists the Intune connections available to the selected company. Use a connection
 
 Operation ID: `GetConnections`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/connections
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -79,10 +85,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/connections" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ## Application management
 
@@ -92,9 +100,11 @@ Searches your custom applications using advanced filtering options. Any feed typ
 
 Operation ID: `SearchApplications`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/search
 ```
+{% endcode %}
 
 **Required PAT scope:** `appcatbroker:apps:read`
 
@@ -135,12 +145,14 @@ Required. Content type `application/json`. Type: `ProductFilterRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/search" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Get application details
 
@@ -148,9 +160,11 @@ Retrieves detailed information about an application in your custom application c
 
 Operation ID: `GetApplicationDetails`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/apps/{productId}
 ```
+{% endcode %}
 
 **Required PAT scope:** `appcatbroker:apps:read`
 
@@ -175,10 +189,12 @@ GET /v1/api/apps/{productId}
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/apps/{productId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Delete an application
 
@@ -186,9 +202,11 @@ Deletes a custom application you own, freeing a slot against your custom applica
 
 Operation ID: `DeleteApplication`
 
+{% code collapsedlinecount="10" %}
 ```http
 DELETE /v1/api/apps/{productId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -217,10 +235,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X DELETE "https://us.portal.patchmypc.com/v1/api/apps/{productId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Get application files
 
@@ -228,9 +248,11 @@ Lists the files of an application's current version, in exactly the shape the co
 
 Operation ID: `GetApplicationFiles`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/apps/{productId}/files
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -259,10 +281,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/apps/{productId}/files" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Create application draft
 
@@ -270,9 +294,11 @@ Creates a new application draft.
 
 Operation ID: `CreateApplicationDraft`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/draft
 ```
+{% endcode %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -290,10 +316,12 @@ POST /v1/api/apps/draft
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/draft" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Create update draft
 
@@ -301,9 +329,11 @@ Creates a new update draft for an existing application.
 
 Operation ID: `CreateUpdateDraft`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/update-draft
 ```
+{% endcode %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -330,6 +360,7 @@ Required. Content type `application/json`. Type: `ApplicationUpdateDraftRequest`
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/update-draft" \
   -H "Authorization: Bearer {access-token}" \
@@ -339,6 +370,7 @@ curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/update-draft" \
   "updateId": "{updateId}"
 }'
 ```
+{% endcode %}
 
 ### Complete application creation
 
@@ -346,9 +378,11 @@ Completes a new application creation process.
 
 Operation ID: `CompleteApplication`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/complete
 ```
+{% endcode %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -402,12 +436,14 @@ Required. Content type `application/json`. Type: `ApplicationCompletionRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/complete" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Complete application update
 
@@ -415,9 +451,11 @@ Completes an existing application update process.
 
 Operation ID: `CompleteUpdate`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/complete
 ```
+{% endcode %}
 
 **Required PAT scope:** `appcatbroker:apps:write`
 
@@ -472,12 +510,14 @@ Required. Content type `application/json`. Type: `ApplicationCompletionRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/complete" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Create edit draft
 
@@ -485,9 +525,11 @@ Creates a draft for editing an existing version of an application in place. Unli
 
 Operation ID: `CreateEditDraft`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/edit-draft
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -519,6 +561,7 @@ Required. Content type `application/json`. Type: `ApplicationUpdateDraftRequest`
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/edit-draft" \
   -H "Authorization: Bearer {access-token}" \
@@ -528,6 +571,7 @@ curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/edit-draft" \
   "updateId": "{updateId}"
 }'
 ```
+{% endcode %}
 
 ### Complete application edit
 
@@ -535,9 +579,11 @@ Completes an in-place edit of an existing application version. Changes product m
 
 Operation ID: `CompleteEdit`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/edit-complete
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -597,12 +643,14 @@ Required. Content type `application/json`. Type: `ApplicationCompletionRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/edit-complete" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ## Custom applications
 
@@ -612,9 +660,11 @@ Retrieves detailed information about an application in your custom application c
 
 Operation ID: `GetCustomApplicationDetails`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/apps/custom/{productId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -643,10 +693,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/apps/custom/{productId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Delete a custom application
 
@@ -654,9 +706,11 @@ Deletes a custom application you own, freeing a slot against your custom applica
 
 Operation ID: `DeleteCustomApplication`
 
+{% code collapsedlinecount="10" %}
 ```http
 DELETE /v1/api/apps/custom/{productId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -685,10 +739,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X DELETE "https://us.portal.patchmypc.com/v1/api/apps/custom/{productId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Search custom applications
 
@@ -696,9 +752,11 @@ Searches your own custom applications. Any feed types in the request body are ig
 
 Operation ID: `SearchCustomApplications`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/custom/search
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -743,12 +801,14 @@ Required. Content type `application/json`. Type: `ProductFilterRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/custom/search" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Create custom application draft
 
@@ -756,9 +816,11 @@ Creates a new custom application draft.
 
 Operation ID: `CreateCustomApplicationDraft`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/custom/draft
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -780,10 +842,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/custom/draft" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Create custom update draft
 
@@ -791,9 +855,11 @@ Creates a new update draft for an existing custom application.
 
 Operation ID: `CreateCustomUpdateDraft`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/custom/update-draft
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -824,6 +890,7 @@ Required. Content type `application/json`. Type: `ApplicationUpdateDraftRequest`
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/custom/update-draft" \
   -H "Authorization: Bearer {access-token}" \
@@ -833,6 +900,7 @@ curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/custom/update-draft" \
   "updateId": "{updateId}"
 }'
 ```
+{% endcode %}
 
 ### Complete custom application creation
 
@@ -840,9 +908,11 @@ Completes a new custom application creation process.
 
 Operation ID: `CompleteCustomApplication`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/custom/complete
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -901,12 +971,14 @@ Required. Content type `application/json`. Type: `ApplicationCompletionRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/custom/complete" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Complete custom application update
 
@@ -914,9 +986,11 @@ Completes an existing custom application update process.
 
 Operation ID: `CompleteCustomUpdate`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/custom/complete
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -976,12 +1050,14 @@ Required. Content type `application/json`. Type: `ApplicationCompletionRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/custom/complete" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Create custom edit draft
 
@@ -989,9 +1065,11 @@ Creates a draft for editing an existing version of a custom application in place
 
 Operation ID: `CreateCustomEditDraft`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/custom/edit-draft
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1023,6 +1101,7 @@ Required. Content type `application/json`. Type: `ApplicationUpdateDraftRequest`
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/custom/edit-draft" \
   -H "Authorization: Bearer {access-token}" \
@@ -1032,6 +1111,7 @@ curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/custom/edit-draft" \
   "updateId": "{updateId}"
 }'
 ```
+{% endcode %}
 
 ### Complete custom application edit
 
@@ -1039,9 +1119,11 @@ Completes an in-place edit of an existing custom application version. Changes pr
 
 Operation ID: `CompleteCustomEdit`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/custom/edit-complete
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1101,12 +1183,14 @@ Required. Content type `application/json`. Type: `ApplicationCompletionRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/custom/edit-complete" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ## Public catalog applications
 
@@ -1116,9 +1200,11 @@ Retrieves detailed information about an application in the public Patch My PC ca
 
 Operation ID: `GetPublicApplicationDetails`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/apps/public/{productId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1149,10 +1235,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/apps/public/{productId}?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Search public applications
 
@@ -1160,9 +1248,11 @@ Searches the public Patch My PC catalog. Results describe the architecture, lang
 
 Operation ID: `SearchPublicApplications`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/public/search
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1207,12 +1297,14 @@ Required. Content type `application/json`. Type: `ProductFilterRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/public/search" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ## Deployments
 
@@ -1222,9 +1314,11 @@ Lists the Intune deployments that exist for an application under the given conne
 
 Operation ID: `GetApplicationDeployments`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/apps/{productId}/deployments
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1254,10 +1348,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Create application deployment
 
@@ -1265,9 +1361,11 @@ Creates a new Intune deployment. Both custom and public applications require Cat
 
 Operation ID: `CreateApplicationDeployment`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/apps/{productId}/deployments
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1311,6 +1409,7 @@ Required. Content type `application/json`. Type: `CreateDeploymentRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments" \
   -H "Authorization: Bearer {access-token}" \
@@ -1332,6 +1431,7 @@ curl -X POST "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployment
   "configuration": {}
 }'
 ```
+{% endcode %}
 
 ### Get application deployment details
 
@@ -1339,9 +1439,11 @@ Retrieves full detail for a single Intune deployment, including categories, Enro
 
 Operation ID: `GetApplicationDeploymentDetails`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/apps/{productId}/deployments/{deploymentId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1372,10 +1474,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments/{deploymentId}?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Edit application deployment
 
@@ -1383,9 +1487,11 @@ Edits an existing Intune deployment's name, group assignments, categories, ESP p
 
 Operation ID: `EditApplicationDeployment`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/{productId}/deployments/{deploymentId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1430,6 +1536,7 @@ Required. Content type `application/json`. Type: `EditDeploymentRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments/{deploymentId}" \
   -H "Authorization: Bearer {access-token}" \
@@ -1450,6 +1557,7 @@ curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments
   "parentDeploymentIds": []
 }'
 ```
+{% endcode %}
 
 ### Delete application deployment
 
@@ -1457,9 +1565,11 @@ Deletes an existing Intune deployment. Allowed only while the deployment isn't i
 
 Operation ID: `DeleteApplicationDeployment`
 
+{% code collapsedlinecount="10" %}
 ```http
 DELETE /v1/api/apps/{productId}/deployments/{deploymentId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1490,10 +1600,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X DELETE "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments/{deploymentId}?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Get application deployment dependency candidates
 
@@ -1501,9 +1613,11 @@ Lists the existing deployments in the given connection that you can pick as a de
 
 Operation ID: `GetApplicationDeploymentDependencyCandidates`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/apps/{productId}/deployments/dependency-candidates
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1533,10 +1647,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments/dependency-candidates?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Redeploy application deployment
 
@@ -1544,9 +1660,11 @@ Forces a deployment to be recreated in Intune. Use it to troubleshoot a stuck or
 
 Operation ID: `RedeployApplicationDeployment`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/{productId}/deployments/{deploymentId}/redeploy
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1577,10 +1695,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments/{deploymentId}/redeploy?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Sync application deployment
 
@@ -1588,9 +1708,11 @@ Syncs a deployment to its latest pending version. Use it for routine version upd
 
 Operation ID: `SyncApplicationDeployment`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/{productId}/deployments/{deploymentId}/sync
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1621,10 +1743,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments/{deploymentId}/sync?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Set application deployment sync pause status
 
@@ -1632,9 +1756,11 @@ Pauses or resumes a deployment's scheduled sync.
 
 Operation ID: `SetApplicationDeploymentSyncPauseStatus`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/apps/{productId}/deployments/{deploymentId}/scheduled-sync-pause
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1673,6 +1799,7 @@ Required. Content type `application/json`. Type: `SetDeploymentSyncPauseRequest`
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments/{deploymentId}/scheduled-sync-pause" \
   -H "Authorization: Bearer {access-token}" \
@@ -1682,6 +1809,7 @@ curl -X PUT "https://us.portal.patchmypc.com/v1/api/apps/{productId}/deployments
   "pause": false
 }'
 ```
+{% endcode %}
 
 ## Deployment templates
 
@@ -1691,9 +1819,11 @@ Lists the deployment templates configured for a connection, so you can find one 
 
 Operation ID: `GetDeploymentTemplates`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/deployments/templates
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1721,10 +1851,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/deployments/templates?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Create deployment template
 
@@ -1732,9 +1864,11 @@ Creates a deployment template on a connection. Setting it as the default demotes
 
 Operation ID: `CreateDeploymentTemplate`
 
+{% code collapsedlinecount="10" %}
 ```http
 POST /v1/api/deployments/templates
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1780,12 +1914,14 @@ Required. Content type `application/json`. Type: `DeploymentTemplateRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X POST "https://us.portal.patchmypc.com/v1/api/deployments/templates" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Get deployment template details
 
@@ -1793,9 +1929,11 @@ Retrieves the settings that a deployment created from this template inherits.
 
 Operation ID: `GetDeploymentTemplate`
 
+{% code collapsedlinecount="10" %}
 ```http
 GET /v1/api/deployments/templates/{deploymentTemplateId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1825,10 +1963,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl "https://us.portal.patchmypc.com/v1/api/deployments/templates/{deploymentTemplateId}?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ### Update deployment template
 
@@ -1836,9 +1976,11 @@ Replaces the settings on an existing deployment template. Every field is stored 
 
 Operation ID: `UpdateDeploymentTemplate`
 
+{% code collapsedlinecount="10" %}
 ```http
 PUT /v1/api/deployments/templates/{deploymentTemplateId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1891,12 +2033,14 @@ Required. Content type `application/json`. Type: `DeploymentTemplateRequest`.
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X PUT "https://us.portal.patchmypc.com/v1/api/deployments/templates/{deploymentTemplateId}" \
   -H "Authorization: Bearer {access-token}" \
   -H "Content-Type: application/json" \
   -d @request.json
 ```
+{% endcode %}
 
 ### Delete deployment template
 
@@ -1904,9 +2048,11 @@ Deletes a deployment template. You can't delete the connection's default templat
 
 Operation ID: `DeleteDeploymentTemplate`
 
+{% code collapsedlinecount="10" %}
 ```http
 DELETE /v1/api/deployments/templates/{deploymentTemplateId}
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This feature must be enabled for your account. Until it is, requests return `403 Forbidden` with the problem title `feature_not_enabled`, and the SDK and PowerShell module report the error code `FEATURE_NOT_ENABLED`.
@@ -1936,10 +2082,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 **Example request**
 
+{% code collapsedlinecount="10" %}
 ```bash
 curl -X DELETE "https://us.portal.patchmypc.com/v1/api/deployments/templates/{deploymentTemplateId}?connectionId={connectionId}" \
   -H "Authorization: Bearer {access-token}"
 ```
+{% endcode %}
 
 ## Schemas
 

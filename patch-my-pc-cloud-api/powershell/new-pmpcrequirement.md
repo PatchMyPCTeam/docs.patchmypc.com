@@ -14,12 +14,14 @@ Builds an application's installation requirements.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcRequirement [[-Architecture] <ApplicableArchitecture[]>]
   [-MinimumWindowsOSVersion <WindowsOSVersion>] [-MinimumNumberOfProcessors <Int32>]
   [-MinimumMemoryInMB <Int32>] [-MinimumCpuSpeedInMHz <Int32>] [-FileRule <FileRuleDto[]>]
   [-RegistryRule <RegistryRuleDto[]>] [-ScriptRule <ScriptRuleDto[]>] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -147,18 +149,22 @@ The requirement set.
 
 ### Example 1: Require 64-bit Windows 11 and 8 GB of memory
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcRequirement -Architecture X64 -MinimumWindowsOSVersion Windows11_22H2 -MinimumMemoryInMB 8192
 ```
+{% endcode %}
 
 The application installs only where all three hold.
 
 ### Example 2: Require a prerequisite to be present
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $prereq = New-PmpcFileRule -Path 'C:\Program Files\Contoso' -FileOrFolderName 'runtime.dll' -OperationType Exists
 New-PmpcRequirement -Architecture X64 -FileRule $prereq
 ```
+{% endcode %}
 
 Adds a file rule that must pass before the application installs.
 
@@ -171,7 +177,7 @@ This cmdlet makes no network call and does not require a session.
 * [New-PmpcDeploymentRequirement](new-pmpcdeploymentrequirement.md)
 * [New-PmpcFileRule](new-pmpcfilerule.md)
 * [New-PmpcCustomApplication](new-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

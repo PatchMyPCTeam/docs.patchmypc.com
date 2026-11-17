@@ -18,9 +18,11 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Remove-PmpcCustomApplication [-ProductId] <Guid> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -86,17 +88,21 @@ This cmdlet returns no output.
 
 ### Example 1: Delete an application
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Remove-PmpcCustomApplication -ProductId $productId
 ```
+{% endcode %}
 
 Prompts for confirmation, then deletes the application.
 
 ### Example 2: Delete without prompting
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Remove-PmpcCustomApplication -ProductId $productId -Confirm:$false
 ```
+{% endcode %}
 
 Suppresses the confirmation prompt, for use in automation.
 
@@ -110,7 +116,7 @@ Confirmation impact is High, so this prompts by default. Pass -Confirm:$false to
 
 * [New-PmpcCustomApplication](new-pmpccustomapplication.md)
 * [Get-PmpcCustomApplication](get-pmpccustomapplication.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

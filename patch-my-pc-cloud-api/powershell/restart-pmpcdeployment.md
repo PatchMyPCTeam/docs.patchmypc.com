@@ -18,10 +18,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Restart-PmpcDeployment [-ProductId] <Guid> [-DeploymentId] <String> [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -99,17 +101,21 @@ This cmdlet returns no output.
 
 ### Example 1: Recreate a stuck deployment
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Restart-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId
 ```
+{% endcode %}
 
 Forces Intune to recreate the deployment.
 
 ### Example 2: Recreate a deployment selected by ID
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $productId -DeploymentId $deploymentId | Restart-PmpcDeployment
 ```
+{% endcode %}
 
 Reads one deployment by both IDs and pipes it to Restart-PmpcDeployment.
 
@@ -121,7 +127,7 @@ Named Restart because it stops the deployment and starts it again, which is what
 
 * [Sync-PmpcDeployment](sync-pmpcdeployment.md)
 * [Get-PmpcDeployment](get-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

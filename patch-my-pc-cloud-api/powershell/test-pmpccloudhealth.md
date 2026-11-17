@@ -14,9 +14,11 @@ Checks whether the Cloud Customer API responds to a heartbeat request.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Test-PmpcCloudHealth [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -44,17 +46,21 @@ True when a heartbeat response is received; otherwise False.
 
 ### Example 1: Check service health
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Test-PmpcCloudHealth
 ```
+{% endcode %}
 
 Returns True when a heartbeat response is received.
 
 ### Example 2: Gate a script on service health
 
+{% code collapsedlinecount="10" %}
 ```powershell
 if (-not (Test-PmpcCloudHealth)) { Write-Warning 'Patch My PC Cloud is unhealthy; skipping publish.'; return }
 ```
+{% endcode %}
 
 Skips the upload when the health check cannot obtain a heartbeat response. The warning alone does not identify the cause.
 
@@ -64,7 +70,7 @@ Connect before running this cmdlet; without an active module session it reports 
 
 ## Related links
 
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

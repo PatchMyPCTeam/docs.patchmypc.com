@@ -94,6 +94,6 @@ Operations that require enablement work only after the feature is enabled for yo
 
 ## Related pages
 
-* PowerShell module
-* SDK reference
-* REST API reference
+* [PowerShell module](powershell/)
+* [SDK reference](sdk/)
+* [REST API reference](rest-api/)

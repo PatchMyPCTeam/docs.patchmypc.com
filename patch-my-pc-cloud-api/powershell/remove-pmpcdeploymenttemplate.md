@@ -18,10 +18,12 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Remove-PmpcDeploymentTemplate [-DeploymentTemplateId] <String> [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -87,9 +89,11 @@ This cmdlet does not return output.
 
 ### Example 1: Delete a template without prompting
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Remove-PmpcDeploymentTemplate -DeploymentTemplateId $templateId -Confirm:$false
 ```
+{% endcode %}
 
 Deletes the specified non-default template without prompting. Omit -Confirm:$false to make PowerShell prompt before deleting the template. The default template cannot be removed.
 
@@ -101,7 +105,7 @@ Requires a selected company and connection. Deleting a template does not affect 
 
 * [Get-PmpcDeploymentTemplate](get-pmpcdeploymenttemplate.md)
 * [New-PmpcDeploymentTemplate](new-pmpcdeploymenttemplate.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

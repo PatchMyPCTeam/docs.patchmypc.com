@@ -14,9 +14,11 @@ Reports the module's current session state.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCloudSession [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -46,9 +48,11 @@ The session snapshot.
 
 ### Example 1: Show the current session
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCloudSession
 ```
+{% endcode %}
 
 Displays connection state along with the selected company and connection.
 
@@ -59,7 +63,7 @@ Credentials are never included in the session summary, because a session summary
 ## Related links
 
 * [Disconnect-PmpcCloud](disconnect-pmpccloud.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

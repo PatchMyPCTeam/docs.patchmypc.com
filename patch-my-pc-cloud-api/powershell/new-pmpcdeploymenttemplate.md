@@ -18,6 +18,7 @@ This feature must be enabled for your account. Until it is, requests return `403
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 New-PmpcDeploymentTemplate -TemplateName <String> [-OsType <OSType>] [-Default]
   [-BuiltInUpdate <BuiltInUpdate>] [-AllowAvailableUninstall] [-RemoveDesktopShortcuts]
@@ -27,6 +28,7 @@ New-PmpcDeploymentTemplate -TemplateName <String> [-OsType <OSType>] [-Default]
   [-CustomRequirements <EditDeploymentCustomRequirementsRequest>] [-WhatIf] [-Confirm]
   [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -276,29 +278,35 @@ The created template, read back from the service rather than echoed.
 
 ### Example 1: Create a minimal template
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $templateName = "Standard Windows apps $([guid]::NewGuid().ToString('N'))"
 New-PmpcDeploymentTemplate -TemplateName $templateName
 ```
+{% endcode %}
 
 Creates a template with default settings on the selected connection.
 
 ### Example 2: Create a template that carries requirements
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $reqs = New-PmpcDeploymentRequirement -MinimumWindowsOSVersion Windows11_21H2 -MinimumMemoryInMB 8192
 $templateName = "Windows 11 baseline $([guid]::NewGuid().ToString('N'))"
 New-PmpcDeploymentTemplate -TemplateName $templateName -CustomRequirements $reqs
 ```
+{% endcode %}
 
 Deployments created from this template start with the same requirements.
 
 ### Example 3: Create a template with an owner and notes
 
+{% code collapsedlinecount="10" %}
 ```powershell
 $templateName = "Company app settings $([guid]::NewGuid().ToString('N'))"
 New-PmpcDeploymentTemplate -TemplateName $templateName -CustomOwner 'Workplace IT' -CustomNotes 'Managed application defaults'
 ```
+{% endcode %}
 
 Adds ownership and context without changing the connection's default template.
 
@@ -313,7 +321,7 @@ Custom install scripts, PSADT version and ring configuration cannot be set here:
 * [Get-PmpcDeploymentTemplate](get-pmpcdeploymenttemplate.md)
 * [Set-PmpcDeploymentTemplate](set-pmpcdeploymenttemplate.md)
 * [New-PmpcDeployment](new-pmpcdeployment.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 

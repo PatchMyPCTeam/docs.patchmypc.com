@@ -14,9 +14,11 @@ Gets the Intune connection the session is currently scoped to.
 
 ## Syntax
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcSelectedConnection [<CommonParameters>]
 ```
+{% endcode %}
 
 ## Description
 
@@ -44,9 +46,11 @@ The selected connection, or nothing when none is selected.
 
 ### Example 1: Show the selected connection
 
+{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcSelectedConnection
 ```
+{% endcode %}
 
 Returns the current connection, or nothing if none is selected.
 
@@ -58,7 +62,7 @@ Writes an explanatory message to the verbose stream, rather than an error, when 
 
 * [Set-PmpcConnection](set-pmpcconnection.md)
 * [Get-PmpcConnection](get-pmpcconnection.md)
-* PowerShell module
+* [PowerShell module](./)
 
 ## See also
 
