@@ -39,7 +39,7 @@ The **Success - License Key copied** notification is shown.
 {% hint style="info" %}
 **Note**
 
-Only user accouts granted the following roles can copy license keys:
+Only user accounts granted the following roles can copy license keys:
 
 * Full Admin With Access Management
 * Full Admin
