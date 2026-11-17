@@ -8,7 +8,7 @@ The following is a glossary of terms and abbreviations for our Patch My PC (PMPC
 
 ## C
 
-<table><thead><tr><th width="355.666748046875" valign="top">Term</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Cloud Company</td><td valign="top">Your Patch My PC Cloud tenant, with its own users, settings, and Intune connection.</td></tr><tr><td valign="top">Cloud Portal</td><td valign="top">The primary user interface for PMPC Cloud available at <a href="https://portal.patchmypc.com/">https://portal.patchmypc.com/</a></td></tr><tr><td valign="top">Custom App Admin</td><td valign="top">A user role in PMPC Cloud that can perform various Custom App-related actions in PMPC Cloud.<br><br><mark style="color:blue;"><strong>Note</strong></mark><br><mark style="color:blue;">See</mark> <a href="manage/settings/users/user-roles-reference.md"><mark style="color:blue;">User Roles Reference</mark></a> <mark style="color:blue;">for more information.</mark></td></tr><tr><td valign="top"></td><td valign="top"></td></tr></tbody></table>
+<table><thead><tr><th width="355.666748046875" valign="top">Term</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Cloud Company</td><td valign="top">Your PMPC Cloud tenant, with its own users, settings, and Intune connection.</td></tr><tr><td valign="top">Cloud Portal</td><td valign="top">The primary user interface for PMPC Cloud available at <a href="https://portal.patchmypc.com/">https://portal.patchmypc.com/</a></td></tr><tr><td valign="top">Custom App Admin</td><td valign="top">A user role in PMPC Cloud that can perform various Custom App-related actions in PMPC Cloud.<br><br><mark style="color:blue;"><strong>Note</strong></mark><br><mark style="color:blue;">See</mark> <a href="manage/settings/users/user-roles-reference.md"><mark style="color:blue;">User Roles Reference</mark></a> <mark style="color:blue;">for more information.</mark></td></tr><tr><td valign="top"></td><td valign="top"></td></tr></tbody></table>
 
 ## D
 
@@ -40,5 +40,5 @@ The following is a glossary of terms and abbreviations for our Patch My PC (PMPC
 
 ## V
 
-<table><thead><tr><th width="355.6666259765625" valign="top">Term</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Validated Cloud Company</td><td valign="top">The PMPC Cloud Company responsible for managing its license and Environments.</td></tr></tbody></table>
+<table><thead><tr><th width="355.6666259765625" valign="top">Term</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top">Validated Cloud Company</td><td valign="top">The Cloud Company responsible for managing its license and Environments.</td></tr></tbody></table>
 
