@@ -12,16 +12,16 @@ Enhanced software inventory is another significant facet of Advanced Insights fo
 
 The _Software_ page consists of the following tabs, which contain a collection of dashboard items:
 
-<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="software-page.md#system-apps">System Apps</a></td><td valign="top"><a href="software-page.md#user-apps">User Apps</a></td><td valign="top"><a href="software-page.md#browser-extensions">Browser Extensions</a></td><td valign="top"><a href="software-page.md#msi-source-health">MSI Source Health</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="./#system-apps">System Apps</a></td><td valign="top"><a href="./#user-apps">User Apps</a></td><td valign="top"><a href="./#browser-extensions">Browser Extensions</a></td><td valign="top"><a href="./#msi-source-health">MSI Source Health</a></td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4393).png" alt="&#x27;Software&#x27; page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4393).png" alt="&#x27;Software&#x27; page" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
 
-See [About Advanced/Patch Insights for Intune Dashboards](./) and [Working with Advanced/Patch Insights for Intune Dashboards](../working-dashboards.md) for more information.
+See [About Advanced/Patch Insights for Intune Dashboards](../) and [Working with Advanced/Patch Insights for Intune Dashboards](../../working-dashboards.md) for more information.
 
-Also, only devices running the Patch My PC (PMPC) Client will appear on this page. See [Manage the Patch My PC Client](../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
+Also, only devices running the Patch My PC (PMPC) Client will appear on this page. See [Manage the Patch My PC Client](../../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
 {% endhint %}
 
 The layout of the views differs depending on the tab you select.
@@ -30,8 +30,8 @@ The layout of the views differs depending on the tab you select.
 
 The **System Apps** tab is split into the following sections:
 
-* [Statistics](software-page.md#statistics)
-* [Total System Applications](software-page.md#total-system-applications)
+* [Statistics](./#statistics)
+* [Total System Applications](./#total-system-applications)
 
 ### Statistics
 
@@ -39,11 +39,11 @@ The top row of the **Systems App** page is called _Statistics_ and displays the 
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Total system applications</td><td valign="top">Applications installed in the SYSTEM context in your environment, including the app title, publisher, and number of instances found.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4395).png" alt="&#x27;Software&#x27; page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4395).png" alt="&#x27;Software&#x27; page" width="563"><figcaption></figcaption></figure>
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-<figure><img src="../../../.gitbook/assets/image (4396).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4396).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
 
 ### Total System Applications
 
@@ -65,8 +65,8 @@ As is standard, clicking a record in a device list modal allows you to drill dow
 
 The **User Apps** tab is split into the following sections:
 
-* [Statistics](software-page.md#statistics-1)
-* [Total User Applications](software-page.md#total-user-applications)
+* [Statistics](./#statistics-1)
+* [Total User Applications](./#total-user-applications)
 
 ### Statistics
 
@@ -74,11 +74,11 @@ The top row of the **User Apps** page is called _Statistics_ and displays the fo
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Total user applications</td><td valign="top">Applications installed in any user profiles, including the app title, publisher, and number of instances found.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4397).png" alt="&#x27;User Apps&#x27; page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4397).png" alt="&#x27;User Apps&#x27; page" width="563"><figcaption></figcaption></figure>
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-<figure><img src="../../../.gitbook/assets/image (4398).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4398).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
 
 ### Total User Applications
 
@@ -100,8 +100,8 @@ As is standard, clicking a record in a device list modal allows you to drill dow
 
 The **Browser Extensions** tab is split into the following sections:
 
-* [Statistics](software-page.md#statistics-2)
-* [Total Browser Extensions](software-page.md#total-browser-extensions)
+* [Statistics](./#statistics-2)
+* [Total Browser Extensions](./#total-browser-extensions)
 
 ### Statistics
 
@@ -109,11 +109,11 @@ The top row of the **Browser Extensions** page is called _Statistics_ and displa
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Total browser extensions</td><td valign="top">Firefox, Chrome, and Edge browser extensions installed in your environment, including the title of the extension and the number of instances found.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4399).png" alt="&#x27;Total browser extensions&#x27;" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4399).png" alt="&#x27;Total browser extensions&#x27;" width="563"><figcaption></figcaption></figure>
 
 When you click a statistic, the device list modal for that statistic opens, displaying more information.
 
-<figure><img src="../../../.gitbook/assets/image (4400).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4400).png" alt="Device list modal" width="563"><figcaption></figcaption></figure>
 
 ### Total Browser Extensions
 
@@ -137,9 +137,9 @@ The **MSI Source Health** tab provides visibility into devices that may experien
 
 It is split into the following sections:
 
-* [Statistics](software-page.md#statistics-3)
-* [Missing MSI Sources](software-page.md#missing-msi-sources)
-* [All Missing MSI Sources](software-page.md#all-missing-msi-sources)
+* [Statistics](./#statistics-3)
+* [Missing MSI Sources](./#missing-msi-sources)
+* [All Missing MSI Sources](./#all-missing-msi-sources)
 
 ### Statistics
 
@@ -147,7 +147,7 @@ The top row of the **MSI Source Health** page is called _Statistics_ and display
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Count of devices where MSI sources are missing</td><td valign="top">Devices where MSI source health issues have been detected.</td></tr><tr><td valign="top">Missing MSI sources detected across all devices</td><td valign="top">Devices where MSI source health issues have been detected.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4401).png" alt="&#x27;Software&#x27; page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4401).png" alt="&#x27;Software&#x27; page" width="563"><figcaption></figcaption></figure>
 
 ### Missing MSI Sources
 
