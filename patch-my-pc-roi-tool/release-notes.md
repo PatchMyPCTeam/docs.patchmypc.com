@@ -2,6 +2,12 @@
 
 _Applies to: Patch My PC Return on Investment Tool_
 
+## 2.0.0 - 2026-11-18
+
+* Intune auth is now handled by the OS native browser, allowing MFA options such as passkeys to be used.
+* Target .net framework version updated to 4.7.2, 4.6.2 is EOL January 12, 2027.
+* Updated dependencies.
+
 ## 1.9.0 - 2025-04-28
 
 * Pressing Ctrl+D will now enable debug mode and output a log at your %TEMP% directory.
