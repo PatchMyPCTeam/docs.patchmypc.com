@@ -125,6 +125,8 @@
     * [About Patch My PC Advanced/Patch Insights for Intune Dashboards](patch-my-pc-cloud/insights-intune/about-dashboards/README.md "About Dashboards")
       * ["Home" Page of the Patch My PC Advanced/Patch Insights for Intune Dashboard](patch-my-pc-cloud/insights-intune/about-dashboards/home-page.md "\"Home\" Page")
       * ["Updates" Page of the Patch My PC Advanced/Patch Insights for Intune Dashboard](patch-my-pc-cloud/insights-intune/about-dashboards/updates-page.md "\"Updates\" Page")
+      * [Operating Systems page](patch-my-pc-cloud/insights-intune/about-dashboards/operating-systems-page.md)
+      * [System Crashes Page](patch-my-pc-cloud/insights-intune/about-dashboards/system-crashes-page.md)
       * ["Hardware" Page of the Patch My PC Advanced/Patch Insights for Intune Dashboard](patch-my-pc-cloud/insights-intune/about-dashboards/hardware-page/README.md "\"Hardware\" Page")
         * ["Warranty" tab of the "Hardware" page of Patch My PC Advanced Insights for Intune](patch-my-pc-cloud/insights-intune/about-dashboards/hardware-page/warranty-tab.md "\"Warranty\" tab")
       * ["Software" Page of the Patch My PC Advanced/Patch Insights for Intune Dashboard](patch-my-pc-cloud/insights-intune/about-dashboards/software-page.md "\"Software\" Page")
