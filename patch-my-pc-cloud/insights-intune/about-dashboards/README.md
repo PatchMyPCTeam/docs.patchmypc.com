@@ -4,8 +4,8 @@ _Applies to: Advanced/Patch Insights for Intune_
 
 The Advanced/Patch Insights for Intune node of the Patch My PC (PMPC) Cloud portal consists of the following Dashboards:
 
-| [Home](home-page.md) | [Updates](updates-page.md) | [Hardware](hardware-page/) | [Software](software-page/) | [Secure Boot](secure-boot-page-of-the-patch-my-pc-advanced-patch-insights-for-intune-dashboard.md) | [Intune](intune-page.md) |
-| -------------------- | -------------------------- | -------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------ |
+| [Home](home-page.md) | [Updates](updates-page.md) | [Hardware](hardware-page/) | [Software](software-page/) | [Secure Boot](operating-system-page/secure-boot-page-of-the-patch-my-pc-advanced-patch-insights-for-intune-dashboard.md) | [Intune](intune-page.md) |
+| -------------------- | -------------------------- | -------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
 
 Clicking any of these nodes opens a _Dashboard_ that displays the relevant information in a consistent format.
 

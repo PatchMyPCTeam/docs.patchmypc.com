@@ -1,4 +1,4 @@
-# "Secure Boot" Page of the Patch My PC Advanced/Patch Insights for Intune Dashboard
+# "Secure Boot" Tab
 
 _Applies to: Advanced Insights for Intune_
 
@@ -11,11 +11,11 @@ The **Secure Boot** page is only available in Advanced Insights for Intune, whic
 {% hint style="info" %}
 **Note**
 
-See [About Patch My PC Advanced/Patch Insights for Intune Dashboards](./) and [Working with Advanced/Patch Insights for Intune](../working-dashboards.md) for more information.
+See [About Patch My PC Advanced/Patch Insights for Intune Dashboards](../) and [Working with Advanced/Patch Insights for Intune](../../working-dashboards.md) for more information.
 
 Also, this page relies on data from any devices running version 1.0.60 or later of the Patch My PC (PMPC) Client.
 
-See [Manage the Patch My PC Client](../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
+See [Manage the Patch My PC Client](../../../manage/settings/client.md) for more details on deploying and managing the PMPC Client.
 {% endhint %}
 
 Secure Boot reporting is another feature of Advanced Insights for Intune. The Patch My PC (PMPC) Client gathers Secure Boot inventory data, including details of the 2023 certificate rollout.
@@ -33,7 +33,7 @@ The top row of the Secure Boot page is called _Statistics_ and displays the foll
 
 <table><thead><tr><th width="193.77783203125" valign="top">Statistic</th><th valign="top">Shows the number of…</th></tr></thead><tbody><tr><td valign="top">Secure Boot Enabled</td><td valign="top">Reported devices with Secure Boot enabled</td></tr><tr><td valign="top">Completed 2023 Certificate Rollout</td><td valign="top">Devices with secure boot enabled that have completed the 2023 certificate process</td></tr><tr><td valign="top">Devices blocked by pending reboot</td><td valign="top">Devices that require a reboot to proceed with the 2023 certificate rollout</td></tr><tr><td valign="top">Devices blocked by firmware</td><td valign="top">Devices that require firmware updates to complete the 2023 certificate rollout</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4357).png" alt="&#x27;Hardware&#x27; page"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4357).png" alt="&#x27;Hardware&#x27; page"><figcaption></figcaption></figure>
 
 Clicking any statistic opens the device list modal, which contains the following additional information:
 
@@ -45,7 +45,7 @@ The _Table_ section of the Secure Boot page lists devices and their current Secu
 
 Use this table to view detailed 2023 Certficate rollout data across all devices with Secure Boot enabled.
 
-<figure><img src="../../../.gitbook/assets/image (4361).png" alt="Charts"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4361).png" alt="Charts"><figcaption></figcaption></figure>
 
 ## Donut charts
 
@@ -55,9 +55,9 @@ Clicking the action menu (![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcA
 
 <table><thead><tr><th width="153.77777099609375" valign="top">Chart</th><th valign="top">Shows a breakdown by…</th></tr></thead><tbody><tr><td valign="top">Rollout Progress</td><td valign="top">High-level 2023 certificate rollout progress across all devices where Secure Boot is enabled.</td></tr><tr><td valign="top">Rollout Progress (Detailed Statuses)</td><td valign="top">Detailed 2023 certificate rollout progress across all devices where Secure Boot is enabled.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4358).png" alt="Charts"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4358).png" alt="Charts"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4359).png" alt="Charts"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4359).png" alt="Charts"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
@@ -71,7 +71,7 @@ Clicking a device in any Secure Boot list opens that device’s modal.
 
 The **Secure Boot** tab shows detailed Secure Boot status and 2023 certificate rollout details for the selected device.
 
-<figure><img src="../../../.gitbook/assets/image (4360).png" alt="Charts"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4360).png" alt="Charts"><figcaption></figcaption></figure>
 
 ***
 

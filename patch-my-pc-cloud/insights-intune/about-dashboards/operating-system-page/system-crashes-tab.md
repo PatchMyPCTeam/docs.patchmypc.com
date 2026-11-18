@@ -1,13 +1,13 @@
 ---
 description: >-
-  :The System Crashes tab is only available in Advanced Insights for Intune,
+  The System Crashes tab is only available in Advanced Insights for Intune,
   which requires an Enterprise Premium license and depends on the Patch My PC
   Client being operational on the client device.
 ---
 
-# System Crashes Page
+# "System Crashes" Tab
 
-<figure><img src="../../../.gitbook/assets/image (1624).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1624).png" alt=""><figcaption></figcaption></figure>
 
 The System Crashes tab of the Operating System page of Patch My PC Advanced Insights for Intune lists the system crashes reported by devices managed by your Patch My PC Cloud Company. A system crash, also called a stop error, bug check or blue screen (BSOD), happens when Windows detects a critical problem, halts to protect the device and its data, and then restarts.
 
@@ -59,13 +59,13 @@ Missing values display as N/A. Use the search icon to find a record and the acti
 
 ## Device view
 
-<figure><img src="../../../.gitbook/assets/image (1628).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1628).png" alt=""><figcaption></figcaption></figure>
 
 Clicking a record in the All System Crashes table, or in a model's list of system crashes, opens that device's view on its Operating System tab, with System selected. The System Crashes card on the right lists the system crashes recorded for the device, latest first, and each one shows:
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Field</td><td valign="top">Shows</td></tr><tr><td valign="top">Date and time</td><td valign="top">When the system crash occurred, in UTC.</td></tr><tr><td valign="top">Stop Code</td><td valign="top">The bug check code, as a decimal number.</td></tr><tr><td valign="top">Stop Code Name</td><td valign="top">The name Microsoft gives the stop code.</td></tr><tr><td valign="top">Dmp File Path</td><td valign="top">Where Windows saved the memory dump on the device, usually %SystemRoot%\MEMORY.DMP, or the %SystemRoot%\Minidump folder for small memory dumps. The dump file itself is not uploaded and stays on the device.</td></tr><tr><td valign="top"></td><td valign="top"></td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (1631).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1631).png" alt=""><figcaption></figcaption></figure>
 
 ## Stop codes
 
