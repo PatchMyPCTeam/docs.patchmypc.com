@@ -2,15 +2,15 @@
 
 _Applies to: Patch My PC Publisher V3.x_
 
-Version 3.0 of the Patch My PC (PMPC) Publisher includes a new user interface, with the menu options now down the left-hand side of the screen rather than across the top.
-
 {% hint style="info" %}
 **Note**
 
-This article was created on a pre-release version of Publisher so the screenshots are for information only and may not accurately reflect the released product.
+For details of what’s changed in each version, see the [Patch My PC Publisher release notes.](release-notes/)
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (9).png" alt="New Patch My PC Publisher user interface" width="563"><figcaption></figcaption></figure>
+Version 3.0 of the Patch My PC (PMPC) Publisher includes a new user interface, with the menu options now down the left-hand side of the screen rather than across the top.
+
+<figure><img src="../.gitbook/assets/image (1679).png" alt="New Patch My PC Publisher user interface" width="563"><figcaption></figcaption></figure>
 
 Other new features and improvements include:
 
@@ -18,11 +18,17 @@ Other new features and improvements include:
 
 See the relevant section below for more details.
 
+{% hint style="info" %}
+**Note**
+
+This article was created on a pre-release version of Publisher so the screenshots are for information only and may not accurately reflect the released product.
+{% endhint %}
+
 ## Ability to Switch Modes
 
 Clicking the **Theme** control at the bottom of the screen lets you switch between modes (such as light and dark) to find the one that suits you best.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt="‘Theme’ control to switch modes" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1680).png" alt="‘Theme’ control to switch modes" width="563"><figcaption></figcaption></figure>
 
 ## New Stats View
 
