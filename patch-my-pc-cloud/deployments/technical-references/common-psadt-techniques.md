@@ -25,7 +25,7 @@ When you type or paste a PSADT function into the script editor:
 Devices that receive the deployment must have .NET Framework 4.7.2 or greater installed.
 {% endhint %}
 
-* The **Enable PSADT Module** checkbox is enabled, which uploads the PSADT Toolkit to Intune when the deployment is created.
+* The **Enable PSADT Module** checkbox is enabled, which uploads the toolkit to Intune when the deployment is created.
 
 <figure><img src="../../../.gitbook/assets/image (1661).png" alt="PSADT Module Enabled" width="563"><figcaption></figcaption></figure>
 
