@@ -15,9 +15,16 @@ Use the Patch My PC Cloud Customer API to find applications and read their detai
 * **Your custom applications**—the applications your company created and uploaded.
 * **The Patch My PC catalog**—the public catalog of applications that Patch My PC packages and maintains for you. Searching it is scoped to one of your connections.
 
-Use the `productId` from a search result to read details or publish a new version. To create a deployment, also get the `catalogEntryId` from custom application details or a selected public variant.
+This guide covers the SDK and PowerShell module. For REST search requests, see [Search applications](../rest-api/applications.md#search-applications) and [Search public applications](../rest-api/applications.md#search-public-applications). For a complete custom-application workflow, see [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest); it does not demonstrate public-catalog search.
 
-This guide covers the SDK and PowerShell module. For REST search requests, see [Search applications](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#search-applications) and [Search public applications](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#search-public-applications). For a complete custom-application workflow, see [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest); it does not demonstrate public-catalog search.
+## Which ID should I use?
+
+| What you want to do                                | Which ID to use                                                                                                          |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Read application details                           | Use `productId` from the search result for either catalog.                                                               |
+| Publish a new version of your custom application   | Use `productId` and `custom.updateId` from the custom search result.                                                     |
+| Deploy your custom application                     | Use `productId` and `custom.catalogEntryId` from the custom application details.                                         |
+| Deploy an application from the Patch My PC catalog | Choose an installer variant in the application details and use that variant's `productId` and `catalogEntryId` together. |
 
 ## Before you begin
 
@@ -28,11 +35,11 @@ This guide covers the SDK and PowerShell module. For REST search requests, see [
 
 1. Send a search with the text to match against the display name. Every filter is optional; for example, you can also filter by language, architecture, or the date an application was last updated.
 2. Page through the results with `skip` and `limit`. The default page size is 50; `totalAmount` reports the number of matches across all pages.
-3. Note the `productId` and `custom.updateId` of the application you want. `custom.updateId` is the canonical version ID to use when publishing a new version. The legacy top-level `updateId` is deprecated.
+3. Note the `productId` and `custom.updateId` of the application you want.
 
 {% tabs %}
 {% tab title="C#" %}
-{% code title="Program.cs" collapsedlinecount="10" %}
+{% code title="Program.cs" %}
 ```csharp
 using PatchMyPC.Cloud.Client;
 
@@ -77,12 +84,10 @@ See [SearchApplicationsAsync](../sdk/applications.md#searchapplicationsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 Find-PmpcCustomApplication -DisplayName 'Contoso' -Limit 25 |
     Select-Object DisplayName, Version, ProductId, @{ Name = 'UpdateId'; Expression = { $_.Custom.UpdateId } }
 ```
-{% endcode %}
 
 This returns one page. To request the next 25 matches, set `-Skip 25 -Limit 25`; continue increasing `-Skip` until you reach the total from `Find-PmpcCustomApplication -DisplayName 'Contoso' -Limit 1 -AsResponse`.
 
@@ -96,7 +101,6 @@ See [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md).
 
 {% tabs %}
 {% tab title="C#" %}
-{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetCustomApplicationDetailsAsync(productId);
 if (details.IsSuccess)
@@ -106,17 +110,14 @@ if (details.IsSuccess)
     Console.WriteLine($"Deployment entry: {details.Value.Custom?.CatalogEntryId}");
 }
 ```
-{% endcode %}
 
 See [GetApplicationDetailsAsync](../sdk/applications.md#getapplicationdetailsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcCustomApplication -ProductId '{product-id}'
 ```
-{% endcode %}
 
 See [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md).
 {% endtab %}
@@ -134,7 +135,7 @@ The legacy `/apps/search` route is for custom applications. Public catalog resul
 {% tab title="C#" %}
 Select a connection once. The SDK uses the selected connection when you don't set `ConnectionId` on the request. This search returns one page; set `Skip` and `Limit` on `ProductFilterRequest` to page through additional results as described above.
 
-{% code title="Program.cs" collapsedlinecount="10" %}
+{% code title="Program.cs" %}
 ```csharp
 using PatchMyPC.Cloud.Client;
 
@@ -161,19 +162,19 @@ See [GetAvailableConnectionsAsync](../sdk/customer-and-connections.md#getavailab
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcConnection
 Set-PmpcConnection -Name '{connection-name}'
 Find-PmpcApplication -DisplayName '7-Zip' -OsType Windows -Limit 25
 ```
-{% endcode %}
 
 `Find-PmpcApplication` uses the selected connection unless you pass `-ConnectionId`.
 
 See [Get-PmpcConnection](../powershell/get-pmpcconnection.md), [Set-PmpcConnection](../powershell/set-pmpcconnection.md), and [Find-PmpcApplication](../powershell/find-pmpcapplication.md).
 {% endtab %}
 {% endtabs %}
+
+If you don't know the vendor ID, search by application name and check the publisher in the results.
 
 ## Get the details of a catalog application
 
@@ -184,7 +185,6 @@ The details of a catalog application include its descriptive information—for e
 
 {% tabs %}
 {% tab title="C#" %}
-{% code collapsedlinecount="10" %}
 ```csharp
 var app = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
 if (app.IsSuccess)
@@ -195,7 +195,6 @@ if (app.IsSuccess)
     }
 }
 ```
-{% endcode %}
 
 Passing `null` for `connectionId` uses the selected connection.
 
@@ -203,11 +202,9 @@ See [GetPublicApplicationDetailsAsync](../sdk/applications.md#getpublicapplicati
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcApplication -ProductId '{product-id}' -OsType Windows
 ```
-{% endcode %}
 
 See [Get-PmpcApplication](../powershell/get-pmpcapplication.md).
 {% endtab %}
@@ -215,9 +212,8 @@ See [Get-PmpcApplication](../powershell/get-pmpcapplication.md).
 
 ## Read custom version IDs
 
-For custom search results, read the current version from `custom.updateId`. The top-level `updateId` is deprecated.
+Read `custom.updateId` from your custom search result and use it to [publish a new version](update-an-application.md#step-1-find-the-application-and-its-current-version).
 
-{% code collapsedlinecount="10" %}
 ```csharp
 var customResults = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
@@ -236,13 +232,11 @@ foreach (var result in customResults.Value.Products)
     Console.WriteLine($"{result.DisplayName}: {result.Custom?.UpdateId}");
 }
 ```
-{% endcode %}
 
 ## Check public search and detail IDs
 
 Public search results omit `updateId` from JSON. The nullable SDK property therefore reads as `null`:
 
-{% code collapsedlinecount="10" %}
 ```csharp
 var publicResults = await client.SearchPublicApplicationsAsync(new ProductFilterRequest
 {
@@ -262,11 +256,9 @@ foreach (var result in publicResults.Value.Products)
     Console.WriteLine(result.UpdateId is null ? $"{result.DisplayName}: no updateId" : $"{result.DisplayName}: {result.UpdateId}");
 }
 ```
-{% endcode %}
 
-Use a public detail response to inspect deployable variants. Each variant contains its `catalogEntryId` and owning `productId`:
+Use a public detail response to choose the installer you want. For deployment, take both `productId` and `catalogEntryId` from that same variant:
 
-{% code collapsedlinecount="10" %}
 ```csharp
 var publicDetails = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
 if (publicDetails.IsFailure)
@@ -280,7 +272,6 @@ foreach (var variant in publicDetails.Value.Variants)
     Console.WriteLine($"Product {variant.ProductId}; catalog entry {variant.CatalogEntryId}");
 }
 ```
-{% endcode %}
 
 ## Related pages
 

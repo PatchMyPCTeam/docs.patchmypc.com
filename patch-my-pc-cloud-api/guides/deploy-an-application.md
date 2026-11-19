@@ -12,7 +12,7 @@ noRobotsIndex: true
 
 A deployment publishes an application to Microsoft Intune through one of your company's connections and assigns it to groups of users or devices. You can deploy catalog applications and your own custom applications.
 
-This guide covers the SDK and PowerShell module. For direct HTTP requests, follow [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest). For other deployment operations, see the [REST API reference](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api).
+This guide covers the SDK and PowerShell module. For direct HTTP requests, follow [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest). For other deployment operations, see the REST API reference.
 
 ## Before you begin
 
@@ -20,6 +20,8 @@ This guide covers the SDK and PowerShell module. For direct HTTP requests, follo
 * A PAT needs the `appcatbroker:apps:read` scope to list connections and the `appcatbroker:apps:deploy` scope to create and read deployments.
 * Find the product ID of the application to deploy. See [Search the catalog](search-the-catalog.md). A deployment also requires a catalog entry ID: use `custom.catalogEntryId` from custom application details, or choose one public variant and use its `catalogEntryId`.
 * Have the object IDs of the Microsoft Entra ID groups you want to assign the application to.
+
+The Cloud Customer API doesn't support attaching extra files or folders when you create or edit a deployment. This applies to both custom and Patch My PC catalog apps. For a custom app, include any files it needs when you [upload the application](create-a-custom-application.md#step-1-prepare-the-application-folder).
 
 ## Step 1: Select a connection
 
@@ -31,7 +33,6 @@ Every deployment belongs to a connection. With the SDK and the PowerShell module
 
 {% tabs %}
 {% tab title="C#" %}
-{% code collapsedlinecount="10" %}
 ```csharp
 var connections = await client.GetAvailableConnectionsAsync();
 if (connections.IsFailure)
@@ -43,18 +44,15 @@ if (connections.IsFailure)
 var connection = connections.Value.First(c => c.DisplayName == "Contoso Intune");
 await client.SetSelectedConnectionAsync(connection);
 ```
-{% endcode %}
 
 See [GetAvailableConnectionsAsync](../sdk/customer-and-connections.md#getavailableconnectionsasync) and [SetSelectedConnectionAsync](../sdk/customer-and-connections.md#setselectedconnectionasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcConnection
 Set-PmpcConnection -Name 'Contoso Intune'
 ```
-{% endcode %}
 
 See [Get-PmpcConnection](../powershell/get-pmpcconnection.md) and [Set-PmpcConnection](../powershell/set-pmpcconnection.md).
 {% endtab %}
@@ -82,7 +80,7 @@ The `NoAssignmentsInstall` and `NoAssignmentsUpdate` intents publish the applica
 
 {% tabs %}
 {% tab title="C#" %}
-{% code title="Program.cs" collapsedlinecount="10" %}
+{% code title="Program.cs" %}
 ```csharp
 using PatchMyPC.Cloud.Client;
 
@@ -123,7 +121,6 @@ See [CreateDeploymentAsync](../sdk/deployments.md#createdeploymentasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 $assignments = @(
     New-PmpcDeploymentAssignment -GroupId '{group-id}' -Intent Required
@@ -136,7 +133,6 @@ $deployment = New-PmpcDeployment -ProductId $app.ProductId -CatalogEntryId $app.
     DeploymentId = $deployment.DeploymentId
 }
 ```
-{% endcode %}
 
 `New-PmpcDeployment` supports `-WhatIf` and `-Confirm`. `-CatalogEntryId` is required; get it from custom details or from one selected public variant. `ProductId` and `UpdateId` are not substitutes.
 
@@ -148,7 +144,6 @@ See [New-PmpcDeploymentAssignment](../powershell/new-pmpcdeploymentassignment.md
 
 Select the exact variant from public application details and pass its `CatalogEntryId` in the create request. The product ID alone does not identify which catalog entry to deploy.
 
-{% code collapsedlinecount="10" %}
 ```csharp
 var publicDetails = await client.GetPublicApplicationDetailsAsync(productId, connectionId: null, osType: OSType.Windows);
 if (publicDetails.IsFailure)
@@ -194,7 +189,6 @@ if (deployment.IsFailure)
 
 Console.WriteLine($"Created {deployment.Value.DeploymentId}");
 ```
-{% endcode %}
 
 ## Step 4: Monitor the deployment
 
@@ -206,7 +200,6 @@ A new deployment is processed in the background. Check its status until it settl
 
 {% tabs %}
 {% tab title="C#" %}
-{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetDeploymentDetailsAsync(productId, created.Value.DeploymentId);
 if (details.IsSuccess)
@@ -218,18 +211,15 @@ if (details.IsSuccess)
     }
 }
 ```
-{% endcode %}
 
 See [GetDeploymentDetailsAsync](../sdk/deployments.md#getdeploymentdetailsasync) and [GetDeploymentsAsync](../sdk/deployments.md#getdeploymentsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId '{product-id}' -DeploymentId '{deployment-id}' |
     Select-Object DisplayName, Status, WarningMessages, ErrorMessages
 ```
-{% endcode %}
 
 To list every deployment of the application, omit `-DeploymentId`.
 

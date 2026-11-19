@@ -16,7 +16,7 @@ An update replaces the application's files and packaging details—for example t
 
 Like creating an application, an update uploads files. The .NET SDK and the PowerShell module do the upload for you, so we recommend them over REST.
 
-This guide covers the SDK and PowerShell module. For REST, see [Create update draft](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#create-update-draft), [Complete application update](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#complete-application-update), and [Sync application deployment](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api/applications#sync-application-deployment). The separate [REST walkthrough](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest) demonstrates creating and deploying an application, not publishing a new version.
+This guide covers the SDK and PowerShell module. For REST, see [Create update draft](../rest-api/applications.md#create-update-draft), [Complete application update](../rest-api/applications.md#complete-application-update), and [Sync application deployment](../rest-api/applications.md#sync-application-deployment). The separate [REST walkthrough](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest) demonstrates creating and deploying an application, not publishing a new version.
 
 ## Before you begin
 
@@ -27,11 +27,10 @@ This guide covers the SDK and PowerShell module. For REST, see [Create update dr
 ## Step 1: Find the application and its current version
 
 1. Search for the application.
-2. Note its `productId` and `custom.updateId`. `custom.updateId` is the canonical ID of the current version, which the new version follows. The deprecated top-level `updateId` is retained only for compatibility.
+2. Note its `productId` and `custom.updateId`. When you create an update draft with REST, pass `custom.updateId` as the request's `updateId`.
 
 {% tabs %}
 {% tab title="C#" %}
-{% code collapsedlinecount="10" %}
 ```csharp
 var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 {
@@ -40,18 +39,15 @@ var search = await client.SearchApplicationsAsync(new ProductFilterRequest
 
 var current = search.Value.Products.First();
 ```
-{% endcode %}
 
 See [SearchApplicationsAsync](../sdk/applications.md#searchapplicationsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 $current = Find-PmpcCustomApplication -DisplayName 'Contoso Sample Agent' | Select-Object -First 1
 $current | Select-Object DisplayName, Version, ProductId, @{ Name = 'UpdateId'; Expression = { $_.Custom.UpdateId } }
 ```
-{% endcode %}
 
 See [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md).
 {% endtab %}
@@ -61,7 +57,7 @@ See [Find-PmpcCustomApplication](../powershell/find-pmpccustomapplication.md).
 
 {% tabs %}
 {% tab title="C#" %}
-{% code title="Program.cs" collapsedlinecount="10" %}
+{% code title="Program.cs" %}
 ```csharp
 var updated = await client.UpdateApplicationAsync(new ApplicationUpdateMetadata
 {
@@ -92,11 +88,9 @@ See [UpdateApplicationAsync](../sdk/applications.md#updateapplicationasync).
 {% tab title="PowerShell" %}
 Use the product and update IDs returned by `Get-PmpcCustomApplication` or `Find-PmpcCustomApplication`. Provide the new version with `-ArpVersionMatch`. For an MSI installer, also provide the new installer's product code; the installer type cannot change between versions.
 
-{% code collapsedlinecount="10" %}
 ```powershell
 Update-PmpcCustomApplication -ProductId '{product-id}' -UpdateId '{update-id}' -FolderPath 'C:\Packages\ContosoAgent-4.3' -PrimaryInstallerFile 'ContosoAgent.msi' -MsiProductCode '{msi-product-code}' -CmdArguments '/qn' -ArpVersionMatch '{version}'
 ```
-{% endcode %}
 
 See [Update-PmpcCustomApplication](../powershell/update-pmpccustomapplication.md).
 {% endtab %}
@@ -111,7 +105,6 @@ If the application is already deployed, sync the deployment to move it to the la
 
 {% tabs %}
 {% tab title="C#" %}
-{% code collapsedlinecount="10" %}
 ```csharp
 var sync = await client.SyncDeploymentAsync(current.ProductId, "{deployment-id}");
 if (sync.IsFailure)
@@ -119,18 +112,15 @@ if (sync.IsFailure)
     Console.WriteLine($"{sync.Error.Code}: {sync.Error.Message}");
 }
 ```
-{% endcode %}
 
 See [SyncDeploymentAsync](../sdk/deployments.md#syncdeploymentasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 Get-PmpcDeployment -ProductId $current.ProductId
 Sync-PmpcDeployment -ProductId $current.ProductId -DeploymentId '{deployment-id}'
 ```
-{% endcode %}
 
 See [Sync-PmpcDeployment](../powershell/sync-pmpcdeployment.md).
 {% endtab %}

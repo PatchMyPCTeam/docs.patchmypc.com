@@ -14,18 +14,18 @@ A custom application is an application your company packages and uploads itself,
 
 The .NET SDK and the PowerShell module do the whole job in one call: they validate the folder, compute file hashes, upload the files in chunks, and complete the application. With REST you perform each of those steps yourself, so we recommend the SDK or the module for creating applications.
 
-This guide covers the SDK, PowerShell module, and a direct REST example using PowerShell. For curl (Bash) or the complete deployment workflow, follow [Create and deploy a custom application with REST](https://docs.patchmypc.com/patch-my-pc-cloud-api/guides/create-a-custom-application-with-rest). See the [REST API reference](https://docs.patchmypc.com/patch-my-pc-cloud-api/rest-api) for individual operations.
+This guide covers the SDK, PowerShell module, and a direct REST example using PowerShell. For curl (Bash) or the complete deployment workflow, follow [Create and deploy a custom application with REST](create-a-custom-application-with-rest.md). See the REST API reference for individual operations.
 
 ## Before you begin
 
-* Exchange a personal access token (PAT) for an access token. See [Authentication](https://docs.patchmypc.com/patch-my-pc-cloud-api/authentication).
+* Exchange a personal access token (PAT) for an access token. See [Authentication](../authentication.md).
 * A PAT needs the `appcatbroker:apps:write` scope, plus `appcatbroker:apps:read` to verify the result.
-* Check that your account has room for another custom application. Your account information lists your usage and limits—see [Getting started](https://docs.patchmypc.com/patch-my-pc-cloud-api/getting-started). When you're at your limit, creating the application fails with `400 Bad Request`.
+* Check that your account has room for another custom application. Your account information lists your usage and limits—see [Getting started](../getting-started.md). When you're at your limit, creating the application fails with `400 Bad Request`.
 * Choose a display name that does not conflict with an application already available to your company.
 
 ## Step 1: Prepare the application folder
 
-1. Create a folder that contains the primary installer and every file the installation needs. Every file in the folder is uploaded.
+1. Create a folder that contains the primary installer and every file the installation needs. Include supporting files in the folder or its subfolders. These files are part of the application, not attachments added at deployment time.
 2. Keep the folder within the upload limits: up to 1,000 files and 30 GB in total.
 3. Decide how the application will be detected after installation:
    * For an MSI installer, use its MSI product code.
@@ -38,7 +38,7 @@ This guide covers the SDK, PowerShell module, and a direct REST example using Po
 {% tab title="C#" %}
 `CreateApplicationAsync` validates the folder, uploads the files, and completes the application. Pass an `IProgress<UploadProgress>` to report progress.
 
-{% code title="Program.cs" collapsedlinecount="10" %}
+{% code title="Program.cs" %}
 ```csharp
 using PatchMyPC.Cloud.Models;
 using PatchMyPC.Cloud.Client;
@@ -80,7 +80,6 @@ See [CreateApplicationAsync](../sdk/applications.md#createapplicationasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 $displayName = "Contoso Archive Tool $([guid]::NewGuid().ToString('N'))"
 $app = New-PmpcCustomApplication `
@@ -99,7 +98,6 @@ $app = New-PmpcCustomApplication `
     UpdateId = $app.UpdateId
 }
 ```
-{% endcode %}
 
 `-IconPath` is optional and omitted here; pass an image path to include an icon. `New-PmpcCustomApplication` supports `-WhatIf` and `-Confirm`.
 
@@ -111,7 +109,6 @@ This example sends HTTP requests directly from PowerShell 7.4 or later; it does 
 
 Set `PMPC_PAT` from your secret store and select your regional portal. Replace the installer path and metadata with your MSI's actual values; the sample describes 7-Zip 24.08. Keep this shell session open for the REST verification in step 3.
 
-{% code collapsedlinecount="10" %}
 ```powershell
 $ErrorActionPreference = 'Stop'
 $portal = 'https://us.portal.patchmypc.com'
@@ -189,7 +186,6 @@ if ($created.productId -ne $productId -or $created.updateId -ne $draft.updateId 
 }
 $created | Select-Object productId, updateId, revisionId
 ```
-{% endcode %}
 
 Upload to the draft's returned `fileUploadPath`, relative to the portal origin, using the **access token**, not the PAT. Let `-Form` set the multipart content type and boundary. `fileType = '1'` identifies the main installer and `operationType = '1'` creates an application. `scupDigest` is the SHA-1 bytes encoded as Base64, not the hexadecimal text encoded as Base64. The upload must finish with `201` before completion; a completion response is not proof that background processing has finished. Do not retry creation blindly after a later error: retain the returned product ID and check its details first.
 {% endtab %}
@@ -202,7 +198,6 @@ Upload to the draft's returned `fileUploadPath`, relative to the portal origin, 
 
 {% tabs %}
 {% tab title="C#" %}
-{% code collapsedlinecount="10" %}
 ```csharp
 var details = await client.GetCustomApplicationDetailsAsync(created.Value.ProductId);
 if (details.IsSuccess)
@@ -211,18 +206,15 @@ if (details.IsSuccess)
     Console.WriteLine($"Deployment entry ID: {details.Value.Custom?.CatalogEntryId}");
 }
 ```
-{% endcode %}
 
 See [GetCustomApplicationDetailsAsync](../sdk/custom-applications.md#getcustomapplicationdetailsasync).
 {% endtab %}
 
 {% tab title="PowerShell" %}
-{% code collapsedlinecount="10" %}
 ```powershell
 $details = Get-PmpcCustomApplication -ProductId '{product-id}'
 $details | Select-Object DisplayName, UpdateVersion, @{ Name = 'UpdateId'; Expression = { $_.Custom.UpdateId } }, @{ Name = 'CatalogEntryId'; Expression = { $_.Custom.CatalogEntryId } }
 ```
-{% endcode %}
 
 See [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md).
 {% endtab %}
@@ -230,7 +222,6 @@ See [Get-PmpcCustomApplication](../powershell/get-pmpccustomapplication.md).
 {% tab title="REST (PowerShell)" %}
 Continue in the same shell session. A newly completed application may briefly return `404`; poll for up to two minutes, stopping on any other error. Check the returned installer metadata against the exact file uploaded in step 2.
 
-{% code collapsedlinecount="10" %}
 ```powershell
 $deadline = [DateTimeOffset]::UtcNow.AddMinutes(2)
 do {
@@ -266,7 +257,6 @@ if ($catalogEntryId -eq [guid]::Empty) {
 $app | Select-Object productId, displayName, updateVersion, mainFile
 $files | Select-Object fileName, fileSize, sha1Hash, sha256Hash
 ```
-{% endcode %}
 
 The checks compare the API's stored file metadata, not a downloaded copy of the binary. The application remains available in your company; this example does not create a deployment or install anything on a device. Exchange the PAT again when the access token expires.
 {% endtab %}

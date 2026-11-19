@@ -20,13 +20,19 @@ You need:
 * **Permissions in that account.** The Cloud Customer API never lets you do more than you can do yourself. To read applications you need read access to applications; to create or update them you need write access; to manage deployments you need deployment access.
 * **A personal access token (PAT).** Create one in the Patch My PC portal, and give it the `appcatbroker:customer:read` scope for this first call. For the steps, see [Create a personal access token](authentication.md#create-a-personal-access-token).
 
+## Good to know for the private preview
+
+* **Use a personal access token (PAT).** Sign in to the portal to create your PAT. For API calls, use the PAT instead of interactive sign-in. In PowerShell, `Connect-PmpcCloud` may stop at a required prompt. If you send an API request after signing in interactively, it can return `400 Bad Request`. Use `Connect-PmpcCloudWithPat` or follow the PAT steps below.
+* **Include supporting files when you create a custom app.** The [custom application upload](guides/create-a-custom-application.md#step-1-prepare-the-application-folder) can include files in subfolders. You can't attach extra files or folders when you [create or edit a deployment](guides/deploy-an-application.md#before-you-begin).
+* **Some operations may not be available for your account.** If the API reports `feature_not_enabled`, see [Understand forbidden responses](errors.md#understand-forbidden-responses).
+
 ## Choose a surface
 
-| If you…                                                        | Use                              |
-| -------------------------------------------------------------- | -------------------------------- |
-| Build a .NET application                                       | [.NET SDK](sdk/)                 |
-| Write scripts or work at a PowerShell prompt                   | [PowerShell module](powershell/) |
-| Work in another language, or want full control of each request | [REST API](rest-api/)            |
+| If you…                                                        | Use               |
+| -------------------------------------------------------------- | ----------------- |
+| Build a .NET application                                       | .NET SDK          |
+| Write scripts or work at a PowerShell prompt                   | PowerShell module |
+| Work in another language, or want full control of each request | REST API          |
 
 The SDK and the PowerShell module handle the token exchange, regional endpoints, token renewal, file uploads, and retries for you. The REST API gives you the raw operations.
 
@@ -40,22 +46,18 @@ These examples use the US host, `https://us.portal.patchmypc.com`. Use `https://
 
 1. Exchange your PAT for an access token. For details, see [Exchange the PAT for an access token](authentication.md#exchange-the-pat-for-an-access-token).
 
-{% code collapsedlinecount="10" %}
 ```http
 POST https://us.portal.patchmypc.com/v1/api/auth/token
 Authorization: Bearer {personal-access-token}
 ```
-{% endcode %}
 
 2. Call the customer information operation with the access token from the `gatewayJwt` property of the response. The access token is valid for 60 minutes.
 
-{% code collapsedlinecount="10" %}
 ```http
 GET https://us.portal.patchmypc.com/v1/api/customer-info
 Authorization: Bearer {access-token}
 Accept: application/json
 ```
-{% endcode %}
 
 See [Get customer info](rest-api/applications.md#get-customer-info).
 {% endtab %}
@@ -63,15 +65,13 @@ See [Get customer info](rest-api/applications.md#get-customer-info).
 {% tab title="C#" %}
 1. Add the `PatchMyPC.Cloud` package from nuget.org to your project. The SDK targets .NET 8 and .NET 10.
 
-{% code collapsedlinecount="10" %}
 ```bash
 dotnet add package PatchMyPC.Cloud
 ```
-{% endcode %}
 
 2. Set your account's region, `Us`, `Eu`, or `Uk`, in configuration.
 
-{% code title="appsettings.json" collapsedlinecount="10" %}
+{% code title="appsettings.json" %}
 ```json
 {
   "PmpcCloudSdkConfig": {
@@ -83,7 +83,7 @@ dotnet add package PatchMyPC.Cloud
 
 3. Register the SDK, authenticate with your PAT, and make the call. This example reads the PAT from the `PMPC_PAT` environment variable, so the token stays out of your source code.
 
-{% code title="Program.cs" collapsedlinecount="10" %}
+{% code title="Program.cs" %}
 ```csharp
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -126,21 +126,17 @@ See [GetCustomerInfoAsync](sdk/customer-and-connections.md#getcustomerinfoasync)
 {% tab title="PowerShell" %}
 1. Install the module from the PowerShell Gallery. It requires PowerShell 7.4 or later on Windows, macOS, or Linux.
 
-{% code collapsedlinecount="10" %}
 ```powershell
 Install-Module PatchMyPC.Cloud -Scope CurrentUser
 ```
-{% endcode %}
 
 2. Connect with your PAT and make the call. `Read-Host -AsSecureString` prompts for the token without showing it on screen.
 
-{% code collapsedlinecount="10" %}
 ```powershell
 $token = Read-Host -AsSecureString -Prompt 'Personal access token'
 Connect-PmpcCloudWithPat -Token $token -Region Us
 Get-PmpcCustomerInfo
 ```
-{% endcode %}
 
 Set `-Region` to your account's region: `Us`, `Eu`, or `Uk`.
 
