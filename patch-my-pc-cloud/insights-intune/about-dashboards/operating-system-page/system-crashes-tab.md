@@ -7,6 +7,14 @@ description: >-
 
 # "System Crashes" Tab
 
+{% hint style="info" %}
+**Private Preview**
+
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
+
 <figure><img src="../../../../.gitbook/assets/image (1624).png" alt=""><figcaption></figcaption></figure>
 
 The System Crashes tab of the Operating System page of Patch My PC Advanced Insights for Intune lists the system crashes reported by devices managed by your Patch My PC Cloud Company. A system crash, also called a stop error, bug check or blue screen (BSOD), happens when Windows detects a critical problem, halts to protect the device and its data, and then restarts.

@@ -5,7 +5,15 @@ description: >-
   being operational on the client device.
 ---
 
-# "Application Errors"
+# "Application Errors" Tab
+
+{% hint style="info" %}
+**Private Preview**
+
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (1632).png" alt=""><figcaption></figcaption></figure>
 

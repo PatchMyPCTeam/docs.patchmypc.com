@@ -1,5 +1,13 @@
 # "Operating System" page
 
+{% hint style="info" %}
+**Private Preview**
+
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
+
 The **Operating System** page in Advanced Insights gives you an overview of the Windows operating systems across your environment, including Windows versions, servicing status and devices that require a restart.
 
 To open it, go to **Advanced Insights > Operating System > General**.
@@ -23,7 +31,7 @@ The statistics at the top of the page show:
 
 **Windows OS Servicing** shows the support status of Windows across your environment.
 
-Use the chart menu to change how the information is grouped, allowing you to explore operating system properties such as servicing channel, release version, edition and build version.&#x20;
+Use the chart menu to change how the information is grouped, allowing you to explore operating system properties such as servicing channel, release version, edition and build version.
 
 **Client Information**
 

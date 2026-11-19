@@ -1,6 +1,12 @@
 # "Warranty" tab of the "Hardware" page of Patch My PC Advanced Insights for Intune
 
-_Applies to: Advanced Insights for Intune_
+{% hint style="info" %}
+**Private Preview**
+
+This documentation is for a pre-release feature still under development and, therefore, incomplete. As a result, both functionality and documentation are subject to change.
+
+Once this feature is released, it will be announced, and this banner will be removed.
+{% endhint %}
 
 The **Warranty** tab of the **Hardware** page of Patch My PC (PMPC) Advanced Insights for Intune lists warranty records for devices managed by your PMPC Cloud Company. Use it to identify active, expired, and missing warranty coverage.
 
