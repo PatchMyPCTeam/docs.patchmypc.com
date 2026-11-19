@@ -76,6 +76,7 @@
         * [Use the "Sync Now" feature in a Patch My PC Cloud Deployment](patch-my-pc-cloud/deployments/manage-deployments/updates/sync-now.md "\"Sync Now\" feature")
       * [Delete a Patch My PC Cloud Deployment](patch-my-pc-cloud/deployments/manage-deployments/delete.md "Delete a Deployment")
     * [Technical references for Patch My PC Cloud Deployments](patch-my-pc-cloud/deployments/technical-references/README.md "Technical references")
+      * [Common PSADT Techniques for Deployments in Patch My PC Cloud](patch-my-pc-cloud/deployments/technical-references/common-psadt-techniques.md "Common PSADT Techniques")
       * [Deploy the same App with multiple configurations using Patch My PC Cloud](patch-my-pc-cloud/deployments/technical-references/deploy-same-app.md "Deploy the same App")
       * [Create a Deployment without Assignments in Patch My PC Cloud](patch-my-pc-cloud/deployments/technical-references/deployment-without-assignments.md "Deployment without Assignments")
       * [Reference External Scripts in a Patch My PC Cloud Deployment](patch-my-pc-cloud/deployments/technical-references/reference-external-scripts.md "Reference External Scripts")
