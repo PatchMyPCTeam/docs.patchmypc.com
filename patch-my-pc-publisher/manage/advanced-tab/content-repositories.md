@@ -160,6 +160,11 @@ Publisher blocks the following folders and their subfolders for both content rep
 Publisher also rejects the following paths for the Staged Content and Additional Content Repositories:
 
 * UNC paths
-* Volume roots, such as `D:\`
 * Paths that point to an existing file
 * Paths where the selected folder or any existing parent folder is a reparse point, such as a junction or symbolic link
+
+{% hint style="info" %}
+**Note**
+
+If you select a volume root such as `D:\` for a content repository, Publisher creates a folder at the root using the default name for that repository. For the Staged Content Repository, Publisher creates `D:\StagedContent`. For the Additional Content Repository, it creates `D:\AdditionalContent`.
+{% endhint %}
