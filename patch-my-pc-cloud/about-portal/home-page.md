@@ -149,8 +149,6 @@ The **License Information** section of the **Home** page gives you a clear overv
 
 <figure><img src="../../.gitbook/assets/image (1690).png" alt="&#x27;License Information&#x27; section" width="563"><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
 **Note**
 
@@ -165,5 +163,4 @@ The **License Usage** tile displays the count of devices patched based on the fo
 
 The **Share Your Feedback** section of the **Home** page provides links to independent, external review platforms so you can share your feedback about your Patch My PC experience.
 
-<figure><img src="../../.gitbook/assets/image (1670).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (1691).png" alt="&#x27;Share Your Feedback&#x27; section" width="563"><figcaption></figcaption></figure>
