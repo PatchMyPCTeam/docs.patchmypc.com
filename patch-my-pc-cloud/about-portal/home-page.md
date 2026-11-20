@@ -124,11 +124,12 @@ Videos can be played directly on the **Home** page, and the player supports typi
 
 ## News & Links
 
-This section of the **Home** page contains links to useful resources such as our support portal, product documentation, ideas and feedback portal, and learning hub.
+The **News & Links** section of the **Home** page contains two tabs:
 
-<figure><img src="../../.gitbook/assets/image (1672).png" alt=""><figcaption></figcaption></figure>
+* **Blog –** Contains a list of articles from our blog. Click an article to read the full article or click **View all posts** to open our blog in a new page.
+* **News –** Contains the items from our [CVE Insights newsfeed](https://cveinsights.com/news) that are relevant to apps deployed in your environment. Click a news item to read the full article or click **View all news** to open our newsfeed in a new page.
 
-
+<figure><img src="../../.gitbook/assets/image (1688).png" alt="&#x27;News &#x26; Links&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Managed Apps Install States
 
