@@ -39,6 +39,16 @@ Currently, scripts containing `"${env:ProgramFiles(x86)}"` or `"${env:ProgramFil
 To work around this issue, see the [Resolution](../../../../../troubleshoot/deployments/typeerror-failed-to-fetch-error-when-trying-to-upload-a-pre-or-post-script-in-cloud.md#resolution) section of ["TypeError: Failed to fetch" error when trying to upload a Pre or Post Script](../../../../../troubleshoot/deployments/typeerror-failed-to-fetch-error-when-trying-to-upload-a-pre-or-post-script-in-cloud.md).
 {% endhint %}
 
+{% hint style="danger" %}
+**Important**
+
+Patch My PC Cloud currently saves scripts uploaded through the Scripts tool as UTF-8 with a byte order mark (BOM). For unsigned scripts, this generally requires no action. For signed scripts, changing the encoding can invalidate the signature.
+
+If you use signed scripts, save the script as UTF-8 with BOM before signing it, then upload the signed file.
+
+We’re updating the Scripts tool to preserve UTF-8 scripts with or without a BOM and to flag unsupported encodings in the console.
+{% endhint %}
+
 To add a script:
 
 1. Add the [**Scripts** tool](../../#adding-additional-tools).
@@ -70,7 +80,7 @@ If you upload [Extra Files](../extra-files.md) as part of your Patch My PC (PMPC
 
 Also, if any PSADT commands are detected in any of the scripts configured in the **Scripts** section, a warning is displayed about ensuring that any devices to which this deployment is assigned have at least .NET Framework 4.7.2 installed.
 
-![PSADT warning](<../../../../../../.gitbook/assets/image (4223).png>)
+<img src="../../../../../../.gitbook/assets/image (4223).png" alt="PSADT warning" data-size="original">
 
 If this warning appears, check the **Enable PSADT Module** checkbox (available only if PSADT commands are detected), which will ensure the PSADT Toolkit is uploaded to Intune when this deployment is created.
 
@@ -97,10 +107,6 @@ As previously mentioned, if you deploy a Custom App where the **Installer Type**
 The **Scripts** tool will also show the **Install File** and **Uninstall Command** fields. Clicking **View** next to these fields opens the Script Editor, which displays the associated script (this is read-only, so you cannot make any changes).
 
 <figure><img src="../../../../../../.gitbook/assets/image (4367).png" alt="Script tool showing the install and uninstall scripts" width="563"><figcaption></figcaption></figure>
-
-
-
-
 
 ## Next Steps
 
