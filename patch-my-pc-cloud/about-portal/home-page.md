@@ -17,14 +17,14 @@ All Patch My PC (PMPC) Cloud management-related tasks are performed through the 
 {% hint style="info" %}
 **Note**
 
-The Home page is currently available to Enterprise Customers only.
+The **Home** page is currently available to Enterprise Customers only.
 {% endhint %}
 
 The version of the **Home** page you see depends on your PMPC Cloud subscription type.
 
 If you are an **Enterprise Plus** subscriber, you will see this version of the **Home** page:
 
-<figure><img src="../../.gitbook/assets/image (339).png" alt="Enterprise Plus ‘Home’ page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1681).png" alt="Enterprise Plus ‘Home’ page" width="563"><figcaption></figcaption></figure>
 
 Whereas if you are an **Enterprise Premium** subscriber, you will see this version of the **Home** page:
 
