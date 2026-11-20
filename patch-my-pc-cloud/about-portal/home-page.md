@@ -28,7 +28,7 @@ If you are an **Enterprise Plus** subscriber, you will see this version of the *
 
 Whereas if you are an **Enterprise Premium** subscriber, you will see this version of the **Home** page:
 
-<figure><img src="../../.gitbook/assets/image (343).png" alt="Enterprise Premium ‘Home’ page" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1682).png" alt="Enterprise Premium ‘Home’ page" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**
