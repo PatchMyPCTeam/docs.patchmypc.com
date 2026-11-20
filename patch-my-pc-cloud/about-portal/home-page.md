@@ -56,7 +56,7 @@ The **Environment Overview** section of the **Home** page provides an overview o
 You can press `F5` to refresh the data on the **Home** page.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (263).png" alt="‘Environment Overview’ section" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1683).png" alt="&#x27;Environment Overview&#x27; section" width="563"><figcaption></figcaption></figure>
 
 The **Environment Overview** section contains the following:
 
