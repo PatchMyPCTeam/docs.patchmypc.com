@@ -131,25 +131,17 @@ The **News & Links** section of the **Home** page contains two tabs:
 
 <figure><img src="../../.gitbook/assets/image (1688).png" alt="&#x27;News &#x26; Links&#x27; section" width="563"><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note**
+
+This section auto-updates as we add content.
+{% endhint %}
+
 ## Managed Apps Install States
 
-The **Managed Apps Install States** tile provides an overview of installation states across managed application deployments.
+The **Managed Apps Install States** section of the **Home** page shows the [Managed App Install States (Donut chart)](../insights-intune/about-dashboards/intune-page.md#managed-app-install-states-donut-chart), which provides a count of Windows and macOS managed app install states, based on data from Intune.
 
-The widget can include installation states for both device-based and user-based assignments. Depending on activity in the customer's environment, this can include states such as:
-
-* Failed Device Count
-* Not Applicable Device Count
-* Installed Device Count
-* Installed User Count
-* Not Applicable User Count
-* Failed User Count
-* Other installation states
-
-The total number of installation states represented is displayed in the centre of the chart.
-
-<figure><img src="../../.gitbook/assets/image (1677).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (1689).png" alt="&#x27;Managed Apps Install States&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## License Information
 
