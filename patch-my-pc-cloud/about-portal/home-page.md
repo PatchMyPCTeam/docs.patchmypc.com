@@ -38,12 +38,7 @@ The differences between the **Home** page versions are explained below.
 
 The Home page is split into the following tiled areas:
 
-* [Environment Overview](home-page.md#environment-overview)
-* [Latest Catalog Additions](home-page.md#latest-catalog-additions)
-* [Videos](home-page.md#videos)
-* [Documentation & Resources](home-page.md#documentation-and-resources)
-* [Share Your Feedback](home-page.md#share-your-feedback)
-* [License Information](home-page.md#license-information)
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><a href="home-page.md#environment-overview">Environment Overview</a></td><td valign="top"><a href="home-page.md#new-apps">New Apps</a></td><td valign="top"><a href="home-page.md#unmanaged-applications">Unmanaged Applications</a></td></tr><tr><td valign="top"><a href="home-page.md#latest-catalog-additions">Latest Catalog Additions</a></td><td valign="top"><a href="home-page.md#videos">Videos</a></td><td valign="top"><a href="home-page.md#news-and-links">News &#x26; Links</a></td></tr><tr><td valign="top"><a href="home-page.md#managed-apps-install-states">Managed Apps Install States</a></td><td valign="top"><a href="home-page.md#license-information">License Information</a></td><td valign="top"><a href="home-page.md#share-your-feedback">Share Your Feedback</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 **Note**
@@ -71,15 +66,43 @@ The **Environment Overview** section contains the following:
 
 **\*** Requires the PMPC Client to be installed - These tiles rely on device-level data reported by the PMPC Client. If you have a Premium license but have not installed the Client on your devices, no data will be reported and these tiles will appear empty. Once the Client is installed and devices begin reporting, the tiles will populate automatically.
 
-## New Apps & Unmanaged Applications
+## New Apps
+
+The **New Apps** section shows apps we have added to the PMPC App Catalog in the past three months.
+
+Clicking **View All** opens the **App Catalog** and shows a filtered list of all apps added in the past three months.
+
+## Unmanaged Applications
+
+The **Unmanaged Applications** section of the **Home** page shows apps we have detected (based on [Discovery data)](../discovery/) that are unmanaged my PMPC Cloud.
+
+
 
 <figure><img src="../../.gitbook/assets/image (1665).png" alt=""><figcaption></figcaption></figure>
 
-**New Apps** shows all applications added to the Patch My PC Catalog in the last 3 months.
 
-**Unmanaged Applications** displays application detected as installed on your managed devices based on the Intune list of Discovered Apps, but not patched by a Deployment created in the Patch My PC Cloud Portal.
 
-Clicking an unmanaged app opens its properties screen, allowing you to [deploy it](../deployments/deploy-app/).
+## Latest Catalog Additions
+
+If you have no Discovery data, the **Latest Catalog Additions** section is shown on the **Home** page instead of the [Unmanaged Applications](home-page.md#unmanaged-applications) section.
+
+The **Latest Catalog Additions** section of the **Home** page shows apps we have added to the PMPC App Catalog.
+
+## Videos
+
+The **Videos** section of the **Home** page contains links to various videos we have created.
+
+Videos can be played directly on the **Home** page, and the player supports typical video playback and control options.
+
+<figure><img src="../../.gitbook/assets/image (1669).png" alt=""><figcaption></figcaption></figure>
+
+## News & Links
+
+This section of the **Home** page contains links to useful resources such as our support portal, product documentation, ideas and feedback portal, and learning hub.
+
+<figure><img src="../../.gitbook/assets/image (1672).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Managed Apps Install States
 
@@ -99,25 +122,7 @@ The total number of installation states represented is displayed in the centre o
 
 <figure><img src="../../.gitbook/assets/image (1677).png" alt=""><figcaption></figcaption></figure>
 
-## Videos
 
-The **Videos** section of the **Home** page contains links to various videos we have created.
-
-Videos can be played directly on the **Home** page, and the player supports typical video playback and control options.
-
-<figure><img src="../../.gitbook/assets/image (1669).png" alt=""><figcaption></figcaption></figure>
-
-## News & Links
-
-This section of the **Home** page contains links to useful resources such as our support portal, product documentation, ideas and feedback portal, and learning hub.
-
-<figure><img src="../../.gitbook/assets/image (1672).png" alt=""><figcaption></figcaption></figure>
-
-## Share Your Feedback
-
-The **Share Your Feedback** section of the **Home** page provides links to independent, external review platforms so you can share your feedback about your Patch My PC experience.
-
-<figure><img src="../../.gitbook/assets/image (1670).png" alt=""><figcaption></figcaption></figure>
 
 ## License Information
 
@@ -134,3 +139,12 @@ The **License Usage** tile displays the count of devices patched based on the fo
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (1676).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Share Your Feedback
+
+The **Share Your Feedback** section of the **Home** page provides links to independent, external review platforms so you can share your feedback about your Patch My PC experience.
+
+<figure><img src="../../.gitbook/assets/image (1670).png" alt=""><figcaption></figcaption></figure>
+
