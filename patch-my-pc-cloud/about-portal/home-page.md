@@ -147,6 +147,10 @@ The **Managed Apps Install States** section of the **Home** page shows the [Mana
 
 The **License Information** section of the **Home** page gives you a clear overview of how many devices you are currently patching and how that compares to your subscriptions' device limit.
 
+<figure><img src="../../.gitbook/assets/image (1690).png" alt="&#x27;License Information&#x27; section" width="563"><figcaption></figcaption></figure>
+
+
+
 {% hint style="info" %}
 **Note**
 
@@ -156,10 +160,6 @@ The **License Usage** tile displays the count of devices patched based on the fo
 * If no deployments are assigned to **All Users** or **All Devices**, the device count is calculated separately for each deployed app by adding together the number of devices (in the following deployment states: Failed, Installed, Not Applicable, Not Installed, and Pending Install). The highest total across all apps is then used as the **Devices Patched** count.
 * If no Deployments exist, the device count is **0**.
 {% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (1676).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Share Your Feedback
 
