@@ -106,15 +106,21 @@ The **Latest Catalog Additions** section of the **Home** page shows apps we have
 
 <figure><img src="../../.gitbook/assets/image (1686).png" alt="&#x27;Latest Catalog Additions&#x27; section" width="563"><figcaption></figcaption></figure>
 
+Any newly added items are marked as **New** for three months.
 
+{% hint style="info" %}
+**Note**
+
+Multiple versions of the same app may appear separately because each version is treated as a distinct catalog item.
+{% endhint %}
 
 ## Videos
 
 The **Videos** section of the **Home** page contains links to various videos we have created.
 
-Videos can be played directly on the **Home** page, and the player supports typical video playback and control options.
+Videos can be played directly on the **Home** page, and the player supports typical video playback and control options. This section auto-updates as we add content.
 
-<figure><img src="../../.gitbook/assets/image (1669).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1687).png" alt="&#x27;Videos&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## News & Links
 
