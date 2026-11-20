@@ -74,15 +74,19 @@ The **New Apps** section shows apps we have added to the PMPC App Catalog in the
 
 Clicking **View All** opens the **App Catalog** and shows a filtered list of all apps added in the past three months.
 
+{% hint style="info" %}
+**Note**
+
+The **New Apps** section only appears with the [Unmanaged Applications](home-page.md#unmanaged-applications) section when we have detected apps (based on [Discovery](../discovery/) data) that are unmanaged.
+
+If no discovery data is detected, the [Latest Catalog Additions](home-page.md#latest-catalog-additions) section is shown instead of both the **New Apps** and **Unmanaged Applications** sections.
+{% endhint %}
+
 ## Unmanaged Applications
 
 The **Unmanaged Applications** section of the **Home** page shows apps we have detected (based on [Discovery data)](../discovery/) that are unmanaged my PMPC Cloud.
 
-
-
-<figure><img src="../../.gitbook/assets/image (1665).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (1685).png" alt="&#x27;Unmanaged Applications&#x27; section" width="563"><figcaption></figcaption></figure>
 
 ## Latest Catalog Additions
 
