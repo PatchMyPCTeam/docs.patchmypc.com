@@ -88,11 +88,25 @@ The **Unmanaged Applications** section of the **Home** page shows apps we have d
 
 <figure><img src="../../.gitbook/assets/image (1685).png" alt="&#x27;Unmanaged Applications&#x27; section" width="563"><figcaption></figcaption></figure>
 
+Clicking an unmanaged app opens its properties screen, allowing you to [deploy](../deployments/) it.
+
+{% hint style="info" %}
+**Note**
+
+The **Unmanaged Applications** section only appears with the [New Apps](home-page.md#new-apps) section when we have detected apps (based on [Discovery](../discovery/) data) that are unmanaged.
+
+If no discovery data is detected, the [Latest Catalog Additions](home-page.md#latest-catalog-additions) section is shown instead of both the **New Apps** and **Unmanaged Applications** sections.
+{% endhint %}
+
 ## Latest Catalog Additions
 
 If you have no Discovery data, the **Latest Catalog Additions** section is shown on the **Home** page instead of the [Unmanaged Applications](home-page.md#unmanaged-applications) section.
 
 The **Latest Catalog Additions** section of the **Home** page shows apps we have added to the PMPC App Catalog.
+
+<figure><img src="../../.gitbook/assets/image (1686).png" alt="&#x27;Latest Catalog Additions&#x27; section" width="563"><figcaption></figcaption></figure>
+
+
 
 ## Videos
 
