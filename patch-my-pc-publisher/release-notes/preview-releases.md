@@ -11,6 +11,41 @@ You can find the Preview release notes below, and you can also learn more about 
 {% endhint %}
 
 {% updates format="full" %}
+{% update date="2026-11-23" tags="fixes" %}
+## 3.26.11032.0
+
+#### **Important**
+
+Publisher now checks repository paths for both Additional Content and Staged Content. These checks help prevent content operations from writing to unsafe locations, such as network shares, device paths, or protected system folders. Existing non-compliant paths can still be used for publishing, but browse, upload, and delete are disabled, and Publisher displays a warning. Publisher blocks new non-compliant paths before saving. <a href="https://docs.patchmypc.com/patch-my-pc-publisher/manage/advanced-tab/content-repositories#content-repository-folder-requirements" target="_blank">Learn about repository folder requirements</a>
+
+#### Features <a href="#h-fixes" id="h-fixes"></a>
+
+* ​Public preview of Remote UI.
+  * Documentation: [Patch My PC Publisher Remote User Interface | Patch My PC documentation](https://docs.patchmypc.com/patch-my-pc-publisher/remote-ui)
+
+#### Fixes <a href="#h-fixes" id="h-fixes"></a>
+
+* Fixes ConfigMgr and WSUS feature states when their tabs are disabled or hidden.
+* Skips startup telemetry queries for disabled ConfigMgr and WSUS targets.
+* Stops App Migration retries from contacting the SMS Provider when ConfigMgr Applications and WSUS Updates are disabled.
+* Fixes SMS Provider connection testing and saves for resolvable short hostnames.
+* Persists Custom App name changes so ConfigMgr detection scripts use the updated name after Add Version updates.
+* Keeps settings writable when WSUS administration tools are missing and shows only the actionable warning.
+* Hides WSUS catalog updates that exceed the configured maximum CAB installer size of 2GB.
+* Prevents concurrent Intune sync schedules for one tenant from colliding and retries eligible failed runs once.
+* Fixes non-admin Intune settings errors and removes noisy ADR restore access-denied logs.
+* Lets Intune-only roles open Settings when Sync Schedule checks ConfigMgr status.
+* Shows a single WSUS tools warning and latches the settings session read-only until the prerequisite is installed.
+* Keeps the configured ConfigMgr Source folder after the SMS Provider is removed.
+* Removes the duplicate "Load Error" dialog when WSUS administration tools are missing.
+* Shows the full SMS Provider name in the App Manager header.
+* Surfaces the real Graph HTTP error for failed Intune publishes.
+* Logs Intune app and content file state when commit PATCH fails.
+* Restores missing WSUS administration tool files in the prerequisite dialog and logs them at the correct severity.
+* Blocks Additional Content migration from writing to unsafe destination folders.
+* Fixes the ConfigMgr App Extraction dialog layout when Output Folder validation appears.
+{% endupdate %}
+
 {% update date="2026-11-11" tags="fixes,new-features-improvements" %}
 ## 3.26.11013.0
 
