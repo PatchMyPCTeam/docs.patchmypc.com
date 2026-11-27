@@ -1,4 +1,4 @@
-# Upgrade your Patch My PC Cloud License to Enterprise Premium
+# V2 NOT DONE Upgrade your Patch My PC Cloud License to Enterprise Premium
 
 _Applies to: Patch My PC Cloud_
 
@@ -14,6 +14,6 @@ To upgrade an existing Enterprise Plus subscription to an Enterprise Premium tri
 
 4. On the Subscriptions page, click either:
    1. [Start 30-day trial](../../../company-settings/sign-up-enterprise-premium-trial.md)
-   2. [Request a Quote](../../../subscription/license/request-quote.md) to request a quote for an Enterprise Premium subscription.
+   2. [Request a Quote](../../license/request-quote.md) to request a quote for an Enterprise Premium subscription.
 
 <figure><img src="../../../../../../.gitbook/assets/image (3592).png" alt="‘Subscription’ page" width="563"><figcaption></figcaption></figure>

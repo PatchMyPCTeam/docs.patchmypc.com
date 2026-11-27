@@ -1,4 +1,4 @@
-# Example ‘License Validation Request Approved’ Email for Patch My PC Cloud
+# Overview of License Validation in Patch My PC Cloud
 
 _Applies to: Patch My PC (PMPC) Cloud_
 
@@ -11,4 +11,3 @@ Please do not share links to these docs with others outside of the Private Previ
 
 Once this feature is released, it will be announced, and this banner will be removed.
 {% endhint %}
-

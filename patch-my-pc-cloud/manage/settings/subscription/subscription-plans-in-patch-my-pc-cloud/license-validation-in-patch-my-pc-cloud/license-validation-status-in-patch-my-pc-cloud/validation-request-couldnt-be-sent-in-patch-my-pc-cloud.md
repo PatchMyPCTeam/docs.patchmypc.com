@@ -1,4 +1,4 @@
-# Technical references for Patch My PC Cloud Subscriptions
+# Validation Request Couldn’t Be Sent in Patch My PC Cloud
 
 _Applies to: Patch My PC (PMPC) Cloud_
 
@@ -11,5 +11,3 @@ Please do not share links to these docs with others outside of the Private Previ
 
 Once this feature is released, it will be announced, and this banner will be removed.
 {% endhint %}
-
-This section contains various subscription-related articles for Patch My PC (PMPC) Cloud.

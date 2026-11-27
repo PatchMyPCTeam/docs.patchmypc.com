@@ -1,11 +1,6 @@
----
-hidden: true
-noIndex: true
----
+# Overview of Environments in Patch My PC Cloud
 
-# V2 Manage your Patch My PC Cloud Subscription
-
-_Applies to: Patch My PC Cloud_
+_Applies to: Patch My PC (PMPC) Cloud_
 
 {% hint style="danger" %}
 **Private Preview**
@@ -16,9 +11,3 @@ Please do not share links to these docs with others outside of the Private Previ
 
 Once this feature is released, it will be announced, and this banner will be removed.
 {% endhint %}
-
-The _Subscription_ feature allows you to view and make the following changes to your Patch My PC (PMPC) Cloud subscription:
-
-* Subscription Plans
-* Environments
-

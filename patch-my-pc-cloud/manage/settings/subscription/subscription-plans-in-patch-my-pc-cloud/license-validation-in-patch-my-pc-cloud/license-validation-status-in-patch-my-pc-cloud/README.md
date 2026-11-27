@@ -1,4 +1,4 @@
-# Environments in Patch My PC Cloud
+# License Validation Status in Patch My PC Cloud
 
 _Applies to: Patch My PC (PMPC) Cloud_
 

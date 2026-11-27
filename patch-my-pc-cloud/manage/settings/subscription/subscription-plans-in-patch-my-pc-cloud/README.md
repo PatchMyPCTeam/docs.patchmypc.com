@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Subscription Plans in Patch My PC Cloud
 
 _Applies to: Patch My PC (PMPC) Cloud_

@@ -1,4 +1,8 @@
-# License Validation Status for Patch My PC Cloud
+---
+description: '#'
+---
+
+# Example "License Validation Request Approved" Email for Patch My PC Cloud
 
 _Applies to: Patch My PC (PMPC) Cloud_
 
